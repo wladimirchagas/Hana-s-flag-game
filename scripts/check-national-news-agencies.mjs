@@ -169,15 +169,28 @@ for (const [countryKey, list] of Object.entries(agenciesByCountry)) {
       }
     }
 
+    // 3. Logo XOR noImageReason
+    const hasLogo = typeof agency.logo === "string" && agency.logo.length > 0;
+    const hasNoImage =
+      typeof agency.noImageReason === "string" && agency.noImageReason.trim().length >= 60;
+
+    if (hasLogo && hasNoImage) {
+      failures.push(`${ctx}: has both logo and noImageReason — pick one`);
+      continue;
+    }
+    if (!hasLogo && !hasNoImage) {
+      failures.push(`${ctx}: missing logo and noImageReason`);
+      continue;
+    }
+
+    if (!hasLogo) {
+      continue; // honest gap
+    }
+
     if (!agency.logoExplainer || typeof agency.logoExplainer !== "string" || agency.logoExplainer.trim().length < 25) {
       failures.push(`${ctx}: logoExplainer must be at least 25 characters describing logo symbolism`);
     }
 
-    // 3. Bundled Logo Verification
-    if (!agency.logo || typeof agency.logo !== "string") {
-      failures.push(`${ctx}: missing logo path`);
-      continue;
-    }
     const cleanLogo = agency.logo.replace(/^\//, "");
     if (!cleanLogo.startsWith(`newspaper-logos/${countryKey.toLowerCase()}/`)) {
       failures.push(`${ctx}: logo path "${agency.logo}" must start with "newspaper-logos/${countryKey.toLowerCase()}/"`);
@@ -211,6 +224,22 @@ for (const [countryKey, list] of Object.entries(agenciesByCountry)) {
     const expectedKind = ext === ".svg" ? "svg" : ext === ".png" ? "png" : ext === ".jpg" || ext === ".jpeg" ? "jpeg" : ext === ".webp" ? "webp" : null;
     if (kind !== expectedKind) {
       failures.push(`${ctx}: file extension "${ext}" does not match detected image format "${kind}"`);
+    }
+
+    // Fabricated fingerprint (shared with newspapers)
+    if (kind === "svg") {
+      const svgText = buf.toString("utf8");
+      const hasText = /<text[\s>]/i.test(svgText);
+      const hasRect = /<rect[\s>]/i.test(svgText);
+      const pathCount = (svgText.match(/<path[\s>]/gi) || []).length;
+      const fabricated =
+        (stat.size < 2500 && hasText && hasRect && pathCount <= 2) ||
+        (stat.size < 1500 && hasText);
+      if (fabricated) {
+        failures.push(
+          `${ctx}: logo looks fabricated (small SVG with <rect>+<text> placeholder) — replace with an authentic emblem or use noImageReason`,
+        );
+      }
     }
 
     // 4. File Size Checks

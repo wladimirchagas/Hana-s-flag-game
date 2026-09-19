@@ -1017,7 +1017,7 @@ export function FlagGrid({
                           : effectiveContentType === "tourismlogo"
                             ? item.tourismLogoImage ?? item.flag
                             : effectiveContentType === "newsagency"
-                              ? item.newsAgencyLogo ?? item.flag
+                              ? item.newsAgencyLogo ?? null
                               : effectiveContentType === "newspaper"
                                 ? item.newspaperLogo ?? null
                                 : effectiveContentType === "party"

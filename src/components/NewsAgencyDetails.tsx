@@ -16,35 +16,48 @@ export function NewsAgencyDetails({
   baseUrl?: string;
   onEnlarge: (url: string) => void;
 }) {
-  const logoUrl = agency.logo.startsWith("http") || agency.logo.startsWith("data:")
-    ? agency.logo
-    : agency.logo.startsWith(baseUrl)
+  const logoUrl = agency.logo
+    ? agency.logo.startsWith("http") || agency.logo.startsWith("data:")
       ? agency.logo
-      : `${baseUrl}${agency.logo}`;
+      : agency.logo.startsWith(baseUrl)
+        ? agency.logo
+        : `${baseUrl}${agency.logo}`
+    : null;
 
   return (
     <div className="broadcaster-details news-agency-details">
       <div className="learn-fs__flag-box">
         <div className="learn-fs__flag-head">
           <span className="entity-summary__label learn-fs__flag-label">Agency logo / emblem</span>
-          <button
-            type="button"
-            className="learn-fs__flag"
-            onClick={() => onEnlarge(logoUrl)}
-            aria-label={`Enlarge ${agency.name} logo`}
-          >
-            <img
-              key={logoUrl}
-              src={logoUrl}
-              alt={`${agency.name} logo`}
-              className="learn-fs__flag-img"
-              draggable={false}
-              style={{ objectFit: "contain", maxHeight: "110px", padding: "6px" }}
-            />
-            <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-          </button>
+          {logoUrl ? (
+            <button
+              type="button"
+              className="learn-fs__flag"
+              onClick={() => onEnlarge(logoUrl)}
+              aria-label={`Enlarge ${agency.name} logo`}
+            >
+              <img
+                key={logoUrl}
+                src={logoUrl}
+                alt={`${agency.name} logo`}
+                className="learn-fs__flag-img"
+                draggable={false}
+                style={{ objectFit: "contain", maxHeight: "110px", padding: "6px" }}
+              />
+              <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
+            </button>
+          ) : (
+            <div className="learn-fs__flag learn-fs__flag--empty" aria-label="No free agency logo">
+              <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
+              <p className="learn-fs__sub-desc" style={{ margin: "0.5rem 0 0", fontSize: "0.85em" }}>
+                {agency.noImageReason ?? "No freely-citable logo is bundled for this news agency."}
+              </p>
+            </div>
+          )}
         </div>
-        <LogoExplainer description={agency.logoExplainer} label="What this logo represents" />
+        {agency.logoExplainer && (
+          <LogoExplainer description={agency.logoExplainer} label="What this logo represents" />
+        )}
       </div>
 
       <dl className="entity-summary" style={{ marginTop: "1rem" }}>

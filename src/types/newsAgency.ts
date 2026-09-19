@@ -50,10 +50,15 @@ export type NewsAgency = {
   };
   /** Revenue model and funding streams */
   readonly revenueModel: string;
-  /** Bundled logo path relative to public root (e.g. "newspaper-logos/au/aap.svg") */
-  readonly logo: string;
-  /** Sourced explanation of the logo design, symbolism, and history */
-  readonly logoExplainer: string;
+  /** Bundled logo path relative to public root (e.g. "newspaper-logos/au/aap.svg").
+   *  Absent only when paired with `noImageReason`. */
+  readonly logo?: string;
+  /** Sourced explanation of the logo design, symbolism, and history.
+   *  Required when `logo` is set. */
+  readonly logoExplainer?: string;
+  /** Documented reason no freely-citable authentic logo could be sourced —
+   *  used instead of `logo`/`logoExplainer`. */
+  readonly noImageReason?: string;
   /** Authoritative institutional sources and citations */
   readonly sources: readonly string[];
   /** Educational reference / trademark licence note */
