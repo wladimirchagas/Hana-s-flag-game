@@ -52,6 +52,11 @@ export type FlagListEntry = {
   /** Resolved passport-cover image URL for the grid's "Passports" view.
    *  null / undefined when the country has no bundled passport. */
   passport?: string | null;
+  /** Resolved central bank logo URL for the grid's "Central banks" view.
+   *  null / undefined when the country has no bundled central bank. */
+  centralBankLogo?: string | null;
+  /** Unique central bank ID (e.g. "au-rba") when this card represents a central bank. */
+  centralBankId?: string;
   /** Resolved football-association crest image URL for the grid's "Football
    *  crests" view. null / undefined when the country has no bundled crest. */
   footballCrest?: string | null;
@@ -74,6 +79,21 @@ export type FlagListEntry = {
   newsAgencyLogo?: string | null;
   /** Unique news agency ID (e.g. "au-aap") when this card represents a news agency. */
   newsAgencyId?: string;
+  /** Resolved top national newspaper logo URL for the grid's "Top newspapers" view. */
+  newspaperLogo?: string | null;
+  /** Unique newspaper ID (e.g. "au-smh") when this card represents a newspaper. */
+  newspaperId?: string;
+  /** Unique political-party ID (e.g. "AU-ALP") when this card represents a party. */
+  partyId?: string;
+  /** Resolved party-logo image URL for the grid's "Political parties" view.
+   *  null when the party has no bundled logo — never fall back to the national flag. */
+  partyLogo?: string | null;
+  /** Ordinal in `IDEOLOGY_POSITION_ORDER` — default progressive → conservative sort. */
+  partyIdeologyRank?: number;
+  /** Whether this party is currently part of its country's governing coalition/cabinet. */
+  partyInPower?: boolean;
+  /** National coalition/federation name shown as a badge, if any. */
+  partyCoalitionName?: string | null;
   /** Country display name when this entry represents an airline/broadcaster/tourism logo grouped under a country. */
   countryName?: string;
   /**

@@ -3312,6 +3312,22 @@ tool use. When reviewing a PR, wasteful patterns (whole-file reads of generated 
 change, redundant sub-agent fan-out, huge unfiltered command dumps) are legitimate review feedback.
 Never cite this rule to justify skipping a mandated sourcing, verification, or check step.
 
+## Learn-mode Show dropdown: never drop a shipped classification — hard rule, do not override without approval
+
+**The world-map grid's Show menu (`GRID_CONTENT_TYPE_ORDER` in `src/lib/gridContentType.ts`) MUST list every classification that has data in this repo, including Political parties (`party`). Removing a type from that list, or from FlagGrid's Show `<select>`, is a product regression — not a cleanup.**
+
+### Why this rule exists
+
+PR #1268 moved Political parties out of the world-map Show dropdown into the country drill-down tab strip. The per-country tab is fine as an extra surface, but the world grid lost the classification entirely. Owner direction (2026-09): put it back on Show, and do not let a later agent "tidy" it away again.
+
+### Rules
+
+1. **`party` stays in `GridContentType`, `GRID_CONTENT_TYPE_LABELS` ("Political parties"), and `GRID_CONTENT_TYPE_ORDER`.** Adding a new Show type is allowed. Deleting or hiding an existing one needs explicit owner approval.
+2. **FlagGrid must render Show options from `GRID_CONTENT_TYPE_ORDER`, not a hand-copied subset.** LearnPage must still swap the world-map panel to `PoliticalPartyDetails` when Show is Political parties, the same way newspapers/airlines get their own widgets.
+3. **The country drill-down "Political parties" tab may stay.** It is additional, not a replacement for the world-map view.
+4. **A party tile never falls back to the national flag.** No bundled logo → honest empty/"no image" tile and `noImageReason` in the panel.
+5. **`scripts/check-grid-content-types.mjs` (wired into `npm run test:ui` / `npm run build`) fails the build if `party` leaves the Show list or FlagGrid/LearnPage stop wiring it.** Do not delete or skip that check to land an unrelated change.
+
 ## A political party's logo is a SHOULD, never a MUST — the RESEARCH is the hard rule — hard rule, do not override without approval
 
 **Every political party in the Learn-mode "Political parties" grid (`src/data/politicalParties.ts`)

@@ -56,6 +56,16 @@ export function coalitionPartners(party: PoliticalParty): readonly PoliticalPart
     .filter((p): p is PoliticalParty => p != null);
 }
 
+/** Every sourced party across every covered country — one card each in the
+ *  world-map grid's "Political parties" Show view. */
+export function allPoliticalParties(): readonly PoliticalParty[] {
+  const out: PoliticalParty[] = [];
+  for (const list of Object.values(POLITICAL_PARTIES)) {
+    out.push(...list);
+  }
+  return out;
+}
+
 /** How many parties (across every covered country) the grid will show for the
  *  current "Political parties" view. */
 export function totalPartyCount(): number {

@@ -51,6 +51,17 @@ import { allCommercialAirlines } from "../lib/commercialAirlines";
 import { allPublicBroadcasters } from "../lib/publicBroadcasters";
 import { allTourismLogos } from "../lib/tourismLogos";
 import { allNationalNewsAgencies } from "../lib/nationalNewsAgencies";
+import { allNationalNewspapers } from "../lib/nationalNewspapers";
+import {
+  allPoliticalParties,
+  coalitionForParty,
+  partyById,
+  partyPowerBadges,
+} from "../lib/politicalParties";
+import {
+  IDEOLOGY_POSITION_LABELS,
+  IDEOLOGY_POSITION_ORDER,
+} from "../data/politicalParties";
 import { COUNTRY_FACTS } from "../data/countryFacts";
 
 import { GridImage } from "./GridImage";
@@ -90,6 +101,8 @@ export type FlagGridProps = {
     newsAgencyId?: string,
     olympicCommitteeId?: string,
     worldMapCode?: string,
+    newspaperId?: string,
+    partyId?: string,
   ) => void;
   /** Optional resolver to prepend the BASE_URL to relative flag paths so
    *  the grid can render flags identically to the panel. */
@@ -110,6 +123,10 @@ export type FlagGridProps = {
   selectedTourismLogoId?: string | null;
   /** Currently selected national news agency ID (if any) */
   selectedNewsAgencyId?: string | null;
+  /** Currently selected top national newspaper ID (if any) */
+  selectedNewspaperId?: string | null;
+  /** Currently selected political party ID (if any) */
+  selectedPartyId?: string | null;
 };
 
 type GroupMode =
@@ -129,7 +146,8 @@ type GroupMode =
   | "by-country"
   | "freedom-house"
   | "v-dem"
-  | "economist";
+  | "economist"
+  | "party-ideology";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
@@ -148,6 +166,8 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   "freedom-house": "Freedom House rating",
   "v-dem": "V-Dem regime type",
   economist: "The Economist Democracy Index",
+  // Political-parties-view only — buckets along the sourced ideology spectrum.
+  "party-ideology": "By ideology",
   // Passports-view only — buckets by the passport cover's colour family.
   "passport-color": "By colour",
   // Football-crests-view only — buckets by FIFA World Cup titles won.
@@ -195,8 +215,12 @@ const PASSPORT_ONLY_MODES = new Set<GroupMode>(["passport-color"]);
 // FIFA World Cup titles they have won (men's and women's, separately).
 const FOOTBALL_CREST_ONLY_MODES = new Set<GroupMode>(["wc-men", "wc-women"]);
 
-// Modes offered in the Commercial-airlines, Public-broadcasters and Tourism-logos views — group by country.
+// Modes offered in the Commercial-airlines, Public-broadcasters, Tourism-logos,
+// news, newspaper and political-parties views — group by country.
 const COUNTRY_GROUP_MODES = new Set<GroupMode>(["by-country"]);
+
+// Modes offered ONLY in the Political-parties view.
+const PARTY_ONLY_MODES = new Set<GroupMode>(["party-ideology"]);
 
 // Modes offered across all modern-era content types — group by Democracy ratings/indices.
 const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
@@ -222,11 +246,14 @@ function groupModeAvailableFor(
       (contentType === "airline" ||
         contentType === "broadcaster" ||
         contentType === "tourismlogo" ||
-        contentType === "newsagency")
+        contentType === "newsagency" ||
+        contentType === "newspaper" ||
+        contentType === "party")
     );
   }
   if (PASSPORT_ONLY_MODES.has(m)) return isModernEra && contentType === "passport";
   if (FOOTBALL_CREST_ONLY_MODES.has(m)) return isModernEra && contentType === "footballcrest";
+  if (PARTY_ONLY_MODES.has(m)) return isModernEra && contentType === "party";
   if (TODAY_ONLY_MODES.has(m)) return isModernEra && contentType === "flag";
   return true;
 }
@@ -285,6 +312,8 @@ export function FlagGrid({
   selectedBroadcasterId,
   selectedTourismLogoId,
   selectedNewsAgencyId,
+  selectedNewspaperId,
+  selectedPartyId,
 }: FlagGridProps) {
   const [groupMode, setGroupMode] = useState<GroupMode>(loadStoredGroupMode);
   // Free-text filter typed by the user — narrows the grid by country/polity
@@ -341,7 +370,9 @@ export function FlagGrid({
         effectiveContentType === "airline" ||
         effectiveContentType === "broadcaster" ||
         effectiveContentType === "tourismlogo" ||
-        effectiveContentType === "newsagency";
+        effectiveContentType === "newsagency" ||
+        effectiveContentType === "newspaper" ||
+        effectiveContentType === "party";
       setGroupMode(isCountryGrouped ? "by-country" : "none");
     }
   }, [groupMode, effectiveContentType, isModernEra]);
@@ -427,6 +458,44 @@ export function FlagGrid({
           continent: parent ? parent.continent : "Other",
           subcontinent: parent ? parent.subcontinent : "Other",
           selectId: na.countryCode,
+        };
+      });
+    }
+    if (effectiveContentType === "newspaper") {
+      const codeToEntry = new Map(entries.map((e) => [e.id, e]));
+      return allNationalNewspapers().map((np): FlagListEntry => {
+        const parent = codeToEntry.get(np.countryCode);
+        return {
+          id: np.id,
+          name: np.name,
+          flag: np.logo ?? null,
+          newspaperLogo: np.logo ?? null,
+          newspaperId: np.id,
+          countryName: parent ? parent.name : np.countryCode,
+          continent: parent ? parent.continent : "Other",
+          subcontinent: parent ? parent.subcontinent : "Other",
+          selectId: np.countryCode,
+        };
+      });
+    }
+    if (effectiveContentType === "party") {
+      const codeToEntry = new Map(entries.map((e) => [e.id, e]));
+      return allPoliticalParties().map((p): FlagListEntry => {
+        const parent = codeToEntry.get(p.country);
+        const coalition = coalitionForParty(p);
+        return {
+          id: p.id,
+          name: p.shortName,
+          flag: null,
+          partyLogo: p.logo ?? null,
+          partyId: p.id,
+          partyIdeologyRank: IDEOLOGY_POSITION_ORDER.indexOf(p.ideologyPosition),
+          partyInPower: p.inPower,
+          partyCoalitionName: coalition?.name ?? null,
+          countryName: parent ? parent.name : p.country,
+          continent: parent ? parent.continent : "Other",
+          subcontinent: parent ? parent.subcontinent : "Other",
+          selectId: p.country,
         };
       });
     }
@@ -516,7 +585,9 @@ export function FlagGrid({
         (e.airlineId && normalizeForSearch(e.airlineId).includes(q)) ||
         (e.broadcasterId && normalizeForSearch(e.broadcasterId).includes(q)) ||
         (e.tourismLogoId && normalizeForSearch(e.tourismLogoId).includes(q)) ||
-        (e.newsAgencyId && normalizeForSearch(e.newsAgencyId).includes(q)),
+        (e.newsAgencyId && normalizeForSearch(e.newsAgencyId).includes(q)) ||
+        (e.newspaperId && normalizeForSearch(e.newspaperId).includes(q)) ||
+        (e.partyId && normalizeForSearch(e.partyId).includes(q)),
     );
   }, [displayEntries, filter]);
 
@@ -524,9 +595,19 @@ export function FlagGrid({
   // alphabetise within a group; the headings themselves are ordered by
   // a per-mode comparator below.
   const groups = useMemo(() => {
-    const sorted = [...filteredEntries].sort((a, b) =>
-      (a.sortKey ?? a.name).localeCompare((b.sortKey ?? b.name), "en"),
-    );
+    const sorted =
+      effectiveContentType === "party"
+        ? [...filteredEntries].sort((a, b) => {
+            const ra = a.partyIdeologyRank ?? 999;
+            const rb = b.partyIdeologyRank ?? 999;
+            if (ra !== rb) return ra - rb;
+            const ca = (a.countryName ?? "").localeCompare(b.countryName ?? "", "en");
+            if (ca !== 0) return ca;
+            return (a.sortKey ?? a.name).localeCompare(b.sortKey ?? b.name, "en");
+          })
+        : [...filteredEntries].sort((a, b) =>
+            (a.sortKey ?? a.name).localeCompare(b.sortKey ?? b.name, "en"),
+          );
 
     if (groupMode === "none") {
       return [{ heading: null, items: sorted }];
@@ -650,6 +731,12 @@ export function FlagGrid({
       // men's title); everyone else falls into "No World Cup title".
       const titles = groupMode === "wc-men" ? MENS_WORLD_CUP_TITLES : WOMENS_WORLD_CUP_TITLES;
       for (const e of sorted) push(worldCupBucket(titles[e.id] ?? 0), e);
+    } else if (groupMode === "party-ideology") {
+      for (const e of sorted) {
+        const rank = e.partyIdeologyRank ?? IDEOLOGY_POSITION_ORDER.length - 1;
+        const key = IDEOLOGY_POSITION_ORDER[rank] ?? "other";
+        push(IDEOLOGY_POSITION_LABELS[key], e);
+      }
     } else if (groupMode === "freedom-house") {
       for (const e of sorted) {
         const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
@@ -766,6 +853,11 @@ export function FlagGrid({
         const ob = ECONOMIST_ORDER[b] ?? 99;
         if (oa !== ob) return oa - ob;
       }
+      if (groupMode === "party-ideology") {
+        const oa = ideologyHeadingOrder(a);
+        const ob = ideologyHeadingOrder(b);
+        if (oa !== ob) return oa - ob;
+      }
       if (groupMode === "alpha") {
         // Keep "#" at the end.
         if (a === "#" && b !== "#") return 1;
@@ -775,7 +867,7 @@ export function FlagGrid({
     });
 
     return list.map(([heading, items]) => ({ heading, items }));
-  }, [filteredEntries, groupMode]);
+  }, [filteredEntries, groupMode, effectiveContentType]);
 
   const groupModeAvailable = (m: GroupMode): boolean =>
     groupModeAvailableFor(m, effectiveContentType, isModernEra);
@@ -886,15 +978,19 @@ export function FlagGrid({
           )}
           <ul className="flag-grid__list">
             {g.items.map((item) => {
-              const active = item.newsAgencyId
-                ? item.newsAgencyId === selectedNewsAgencyId
-                : item.tourismLogoId
-                  ? item.tourismLogoId === selectedTourismLogoId
-                  : item.broadcasterId
-                    ? item.broadcasterId === selectedBroadcasterId
-                    : item.airlineId
-                      ? item.airlineId === selectedAirlineId
-                      : item.id === selectedId;
+              const active = item.partyId
+                ? item.partyId === selectedPartyId
+                : item.newspaperId
+                ? item.newspaperId === selectedNewspaperId
+                : item.newsAgencyId
+                  ? item.newsAgencyId === selectedNewsAgencyId
+                  : item.tourismLogoId
+                    ? item.tourismLogoId === selectedTourismLogoId
+                    : item.broadcasterId
+                      ? item.broadcasterId === selectedBroadcasterId
+                      : item.airlineId
+                        ? item.airlineId === selectedAirlineId
+                        : item.id === selectedId;
               // Which image this tile shows depends on the "Show" dropdown.
               // A country with no coat of arms / passport bundled renders the
               // empty placeholder for that view (never an invented image).
@@ -915,7 +1011,11 @@ export function FlagGrid({
                             ? item.tourismLogoImage ?? item.flag
                             : effectiveContentType === "newsagency"
                               ? item.newsAgencyLogo ?? item.flag
-                              : item.flag;
+                              : effectiveContentType === "newspaper"
+                                ? item.newspaperLogo ?? item.flag
+                                : effectiveContentType === "party"
+                                  ? item.partyLogo ?? null
+                                : item.flag;
               const url = rawImage ? resolveFlag(rawImage) : null;
               const isLearned = learnedCodes.has(item.id);
               // In shape mode, the same id can appear in multiple
@@ -950,11 +1050,13 @@ export function FlagGrid({
                         // FIFA_EXTRA / IOC_EXTRA card) — so the map highlights
                         // its own borders, not its parent's.
                         item.worldMapCode,
+                        item.newspaperId,
+                        item.partyId,
                       )
                     }
                     aria-pressed={active}
                     aria-label={
-                      item.countryName && (effectiveContentType === "airline" || effectiveContentType === "broadcaster" || effectiveContentType === "tourismlogo" || effectiveContentType === "newsagency")
+                      item.countryName && (effectiveContentType === "airline" || effectiveContentType === "broadcaster" || effectiveContentType === "tourismlogo" || effectiveContentType === "newsagency" || effectiveContentType === "newspaper" || effectiveContentType === "party")
                         ? `Select ${item.name} (${item.countryName})`
                         : isLearned
                           ? `Select ${item.name} (learned)`
@@ -1045,6 +1147,33 @@ export function FlagGrid({
                           Capital: {item.capital}
                         </span>
                       )}
+                      {effectiveContentType === "party" && item.countryName && (
+                        <span className="flag-grid__city-sub">{item.countryName}</span>
+                      )}
+                      {effectiveContentType === "party" && (() => {
+                        const party = item.partyId ? partyById(item.partyId) : null;
+                        const badges = party
+                          ? partyPowerBadges(party, party.country)
+                          : [];
+                        if (badges.length === 0 && !item.partyCoalitionName) return null;
+                        return (
+                          <span className="flag-grid__party-badges">
+                            {badges.map((b, i) => (
+                              <span
+                                key={`${b.kind}-${i}`}
+                                className={`flag-grid__party-badge flag-grid__party-badge--${b.kind}`}
+                              >
+                                {b.label}
+                              </span>
+                            ))}
+                            {item.partyCoalitionName && (
+                              <span className="flag-grid__party-badge flag-grid__party-badge--coalition">
+                                {item.partyCoalitionName}
+                              </span>
+                            )}
+                          </span>
+                        );
+                      })()}
                     </span>
                   </button>
                 </li>
@@ -1094,6 +1223,13 @@ function similarityHeadingOrder(heading: string): number {
     if (FLAG_SIMILARITY_LABELS[FLAG_SIMILARITY_ORDER[i]] === heading) return i;
   }
   return 100;
+}
+
+function ideologyHeadingOrder(heading: string): number {
+  for (let i = 0; i < IDEOLOGY_POSITION_ORDER.length; i++) {
+    if (IDEOLOGY_POSITION_LABELS[IDEOLOGY_POSITION_ORDER[i]] === heading) return i;
+  }
+  return 999;
 }
 
 function aspectRatioHeadingOrder(heading: string): number {

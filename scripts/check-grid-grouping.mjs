@@ -87,6 +87,8 @@ const ALL_CONTENT_TYPES = [
   "broadcaster",
   "tourismlogo",
   "newsagency",
+  "newspaper",
+  "party",
 ];
 
 console.log("Checking groupModeAvailableFor across all content types and eras...");
@@ -105,6 +107,17 @@ assert.equal(
   "subcontinent must be available for historical era flags",
 );
 
+assert.equal(
+  groupModeAvailableFor("party-ideology", "party", true),
+  true,
+  "By ideology must be available for the Political parties view",
+);
+assert.equal(
+  groupModeAvailableFor("party-ideology", "newspaper", true),
+  false,
+  "By ideology must not leak into non-party Show views",
+);
+
 // Verify democracy group modes are available for all modern content types
 for (const ct of ALL_CONTENT_TYPES) {
   for (const demoMode of ["freedom-house", "v-dem", "economist"]) {
@@ -121,13 +134,15 @@ for (const ct of ALL_CONTENT_TYPES) {
   }
 }
 
-// Verify by-country is only available for airline, broadcaster, tourismlogo and newsagency in modern era
+// Verify by-country is only available for airline, broadcaster, tourismlogo, newsagency, newspaper and party in modern era
 for (const ct of ALL_CONTENT_TYPES) {
   const expected =
     ct === "airline" ||
     ct === "broadcaster" ||
     ct === "tourismlogo" ||
-    ct === "newsagency";
+    ct === "newsagency" ||
+    ct === "newspaper" ||
+    ct === "party";
   assert.equal(
     groupModeAvailableFor("by-country", ct, true),
     expected,
@@ -137,7 +152,7 @@ for (const ct of ALL_CONTENT_TYPES) {
 
 // Verify that the useEffect fallback logic behaves correctly:
 // If a mode is available, it must never be reset.
-// If a mode is not available, it must fallback to "by-country" (for airline/broadcaster/tourismlogo/newsagency) or "none".
+// If a mode is not available, it must fallback to "by-country" (for airline/broadcaster/tourismlogo/newsagency/newspaper) or "none".
 for (const isModernEra of [true, false]) {
   for (const ct of ALL_CONTENT_TYPES) {
     const effectiveCt = isModernEra ? ct : "flag";
@@ -145,7 +160,9 @@ for (const isModernEra of [true, false]) {
       effectiveCt === "airline" ||
       effectiveCt === "broadcaster" ||
       effectiveCt === "tourismlogo" ||
-      effectiveCt === "newsagency";
+      effectiveCt === "newsagency" ||
+      effectiveCt === "newspaper" ||
+      effectiveCt === "party";
 
     for (const mode of ALL_GROUP_MODES) {
       const isAvailable = groupModeAvailableFor(mode, effectiveCt, isModernEra);
