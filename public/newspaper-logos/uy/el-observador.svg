@@ -1,8 +1,0 @@
-<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="120" fill="#ffffff"/>
-  <rect x="25" y="24" width="70" height="72" rx="8" fill="#e65100"/>
-  <circle cx="60" cy="60" r="16" fill="#ffffff"/>
-  <circle cx="60" cy="60" r="8" fill="#e65100"/>
-  <text x="108" y="62" font-family="'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="900" fill="#1b2a4a">EL OBSERVADOR</text>
-  <text x="110" y="86" font-family="'Arial', sans-serif" font-size="11" font-weight="600" fill="#e65100" letter-spacing="1.5">PERIODISMO INDEPENDIENTE • MONTEVIDEO</text>
-</svg>

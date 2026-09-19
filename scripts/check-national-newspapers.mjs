@@ -174,48 +174,79 @@ for (const [countryKey, list] of Object.entries(newspapersByCountry)) {
       }
     }
 
-    // 3. Logo existence and validity
-    if (!paper.logo || typeof paper.logo !== "string") {
-      failures.push(`${ctx}: missing or non-string logo path`);
+    // 3. Logo existence and validity — authentic masthead OR honest noImageReason.
+    // A fabricated rect+text placeholder is never acceptable (same spirit as
+    // "never invent flag content").
+    const hasLogo = typeof paper.logo === "string" && paper.logo.length > 0;
+    const hasNoImage =
+      typeof paper.noImageReason === "string" && paper.noImageReason.trim().length >= 60;
+
+    if (hasLogo && hasNoImage) {
+      failures.push(`${ctx}: has both logo and noImageReason — pick one`);
       continue;
     }
-    const cleanRel = paper.logo.replace(/^\//, "");
-    const logoAbs = resolve(PUBLIC_DIR, cleanRel);
-    if (!existsSync(logoAbs)) {
-      failures.push(`${ctx}: bundled logo file not found at ${cleanRel}`);
+    if (!hasLogo && !hasNoImage) {
+      failures.push(`${ctx}: missing logo and noImageReason`);
       continue;
     }
 
-    const st = statSync(logoAbs);
-    if (st.size === 0) {
-      failures.push(`${ctx}: logo file is 0 bytes`);
-      continue;
-    }
+    if (hasNoImage) {
+      // Honest gap — skip file checks; still require sources below.
+    } else {
+      const cleanRel = paper.logo.replace(/^\//, "");
+      const logoAbs = resolve(PUBLIC_DIR, cleanRel);
+      if (!existsSync(logoAbs)) {
+        failures.push(`${ctx}: bundled logo file not found at ${cleanRel}`);
+        continue;
+      }
 
-    const ext = extname(cleanRel).toLowerCase();
-    const buf = readFileSync(logoAbs);
-    const kind = sniffImageKind(buf);
+      const st = statSync(logoAbs);
+      if (st.size === 0) {
+        failures.push(`${ctx}: logo file is 0 bytes`);
+        continue;
+      }
 
-    if (ext === ".svg") {
-      if (st.size > MAX_SVG_SIZE) {
-        failures.push(`${ctx}: SVG logo size ${st.size} bytes exceeds ${MAX_SVG_SIZE} byte ceiling`);
-      }
-      if (kind !== "svg") {
-        failures.push(`${ctx}: expected SVG, but content sniffs as "${kind || "unknown"}"`);
-      }
-    } else if (ext === ".png" || ext === ".jpg" || ext === ".jpeg" || ext === ".webp") {
-      if (st.size > MAX_RASTER_SIZE) {
-        failures.push(`${ctx}: raster logo size ${st.size} bytes exceeds ${MAX_RASTER_SIZE} byte ceiling`);
-      }
-      const exp = ext === ".jpg" ? "jpeg" : ext.slice(1);
-      if (kind !== exp) {
-        failures.push(`${ctx}: extension is ${ext} but magic bytes identify as "${kind || "unknown"}"`);
-      }
-    }
+      const ext = extname(cleanRel).toLowerCase();
+      const buf = readFileSync(logoAbs);
+      const kind = sniffImageKind(buf);
 
-    // 4. Logo explainer
-    if (!paper.logoExplainer || typeof paper.logoExplainer !== "string" || paper.logoExplainer.length < 25) {
-      failures.push(`${ctx}: logoExplainer must be at least 25 characters`);
+      if (ext === ".svg") {
+        if (st.size > MAX_SVG_SIZE) {
+          failures.push(`${ctx}: SVG logo size ${st.size} bytes exceeds ${MAX_SVG_SIZE} byte ceiling`);
+        }
+        if (kind !== "svg") {
+          failures.push(`${ctx}: expected SVG, but content sniffs as "${kind || "unknown"}"`);
+        }
+        // Fabricated fingerprint: tiny hand-written SVG with a coloured <rect>
+        // and system <text> — the generator placeholders that shipped as if they
+        // were real mastheads (NYT, etc.). Path-drawn / Commons / publisher SVGs
+        // do not match this pattern.
+        const svgText = buf.toString("utf8");
+        const hasText = /<text[\s>]/i.test(svgText);
+        const hasRect = /<rect[\s>]/i.test(svgText);
+        const pathCount = (svgText.match(/<path[\s>]/gi) || []).length;
+        const fabricated =
+          (st.size < 2500 && hasText && hasRect && pathCount <= 2) ||
+          (st.size < 1500 && hasText);
+        if (fabricated) {
+          failures.push(
+            `${ctx}: logo looks fabricated (small SVG with <rect>+<text> placeholder) — replace with an authentic masthead or use noImageReason`,
+          );
+        }
+      } else if (ext === ".png" || ext === ".jpg" || ext === ".jpeg" || ext === ".webp") {
+        if (st.size > MAX_RASTER_SIZE) {
+          failures.push(`${ctx}: raster logo size ${st.size} bytes exceeds ${MAX_RASTER_SIZE} byte ceiling`);
+        }
+        const exp = ext === ".jpg" ? "jpeg" : ext.slice(1);
+        if (kind !== exp) {
+          failures.push(`${ctx}: extension is ${ext} but magic bytes identify as "${kind || "unknown"}"`);
+        }
+      }
+
+      // 4. Logo explainer (required when a logo is present)
+      if (!paper.logoExplainer || typeof paper.logoExplainer !== "string" || paper.logoExplainer.length < 25) {
+        failures.push(`${ctx}: logoExplainer must be at least 25 characters when a logo is present`);
+      }
     }
 
     // 5. Sources

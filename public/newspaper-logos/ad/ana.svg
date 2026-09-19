@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 140" width="500" height="140">
-  <rect width="500" height="140" fill="#0F172A" rx="8"/>
-  <circle cx="70" cy="70" r="32" fill="#EA580C"/>
-  <text x="70" y="79" font-family="'Inter', sans-serif" font-size="22" font-weight="900" fill="#FFFFFF" text-anchor="middle">ANA</text>
-  <text x="125" y="68" font-family="'Inter', sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">AGÈNCIA DE NOTÍCIES</text>
-  <text x="125" y="94" font-family="'Inter', sans-serif" font-size="18" fill="#F97316">ANDORRANA</text>
-</svg>

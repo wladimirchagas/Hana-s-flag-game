@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 140" width="500" height="140">
-  <rect width="500" height="140" fill="#18181B" rx="8"/>
-  <text x="250" y="70" font-family="'Bodoni MT', 'Didot', serif" font-size="34" font-weight="bold" fill="#FFFFFF" text-anchor="middle">GAZETA SHQIPTARE</text>
-  <line x1="100" y1="85" x2="400" y2="85" stroke="#EF4444" stroke-width="2"/>
-  <text x="250" y="105" font-family="'Inter', sans-serif" font-size="12" fill="#A1A1AA" text-anchor="middle" letter-spacing="3">E PËRDIATSHME PAVARUR — TIRANË</text>
-</svg>

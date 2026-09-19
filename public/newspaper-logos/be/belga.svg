@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 140" width="500" height="140">
-  <rect width="500" height="140" fill="#111827" rx="8"/>
-  <rect x="40" y="40" width="60" height="60" fill="#EAB308" rx="4"/>
-  <text x="70" y="80" font-family="'Inter', sans-serif" font-size="24" font-weight="900" fill="#111827" text-anchor="middle">B</text>
-  <text x="120" y="70" font-family="'Inter', sans-serif" font-size="34" font-weight="900" fill="#FFFFFF">BELGA<tspan fill="#EAB308">PRESS</tspan></text>
-  <text x="120" y="96" font-family="'Inter', sans-serif" font-size="13" fill="#9CA3AF" letter-spacing="1">NATIONAL NEWS AGENCY — BELGIUM</text>
-</svg>

@@ -221,8 +221,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ministry of Information and Culture / BNA Official"
       },
       "revenueModel": "Directly funded through the state budget",
-      "logo": "newspaper-logos/af/bakhtar.svg",
-      "logoExplainer": "Emblem in deep green and gold featuring classical Dari typography within a circular seal, representing state heritage and official public information.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://bakhtarnews.af",
         "https://en.wikipedia.org/wiki/Bakhtar_News_Agency"
@@ -247,8 +246,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Pajhwok Afghan News Organization Report 2024"
       },
       "revenueModel": "Newswire subscriptions, photo syndication, and international media partnerships",
-      "logo": "newspaper-logos/af/pajhwok.svg",
-      "logoExplainer": "Stylised flame symbol in amber and blue, representing illumination, truth, and nationwide provincial reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://pajhwok.com",
         "https://en.wikipedia.org/wiki/Pajhwok_Afghan_News"
@@ -273,8 +271,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Khaama Press Media Kit 2024"
       },
       "revenueModel": "Digital advertising, sponsored content, and syndication",
-      "logo": "newspaper-logos/af/khaama.svg",
-      "logoExplainer": "Deep blue square badge featuring interconnected white letterforms, symbolizing modern digital journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.khaama.com",
         "https://en.wikipedia.org/wiki/Khaama_Press"
@@ -303,8 +300,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ATSH Official Annual Report 2023"
       },
       "revenueModel": "State budget allocation and commercial newswire licensing",
-      "logo": "newspaper-logos/al/atsh.svg",
-      "logoExplainer": "Crimson crest incorporating the double-headed eagle of Albania and bold white typography 'ATSH'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ata.gov.al",
         "https://en.wikipedia.org/wiki/Albanian_Telegrafic_Agency"
@@ -332,8 +328,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "APS Annual Report 2023"
       },
       "revenueModel": "Direct state budget allocation and subscriber licensing fees",
-      "logo": "newspaper-logos/dz/aps.svg",
-      "logoExplainer": "Emerald green circular badge with white typography and stylized arrow symbolizing rapid national news distribution.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.aps.dz",
         "https://en.wikipedia.org/wiki/Alg%C3%A9rie_Presse_Service"
@@ -359,8 +354,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "OJD Middle East & North Africa"
       },
       "revenueModel": "Print retail sales and commercial display advertising",
-      "logo": "newspaper-logos/dz/el-khabar.svg",
-      "logoExplainer": "Bold Arabic calligraphic masthead in white on a deep crimson background, symbolizing national Arab-language reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.elkhabar.com",
         "https://en.wikipedia.org/wiki/El_Khabar"
@@ -388,8 +382,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Agència de Notícies Andorrana Official"
       },
       "revenueModel": "Media subscription fees and syndication",
-      "logo": "newspaper-logos/ad/ana.svg",
-      "logoExplainer": "Orange circular badge with white sans-serif lettering 'ANA', representing modern digital newswire distribution.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ana.ad",
         "https://ca.wikipedia.org/wiki/Ag%C3%A8ncia_de_Not%C3%ADcies_Andorrana"
@@ -417,8 +410,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ANGOP Institutional Report 2023"
       },
       "revenueModel": "Direct state budget allocation and subscriber licensing",
-      "logo": "newspaper-logos/ao/angop.svg",
-      "logoExplainer": "Red and yellow emblem incorporating a stylized geometric arrowhead, representing rapid national news distribution.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.angop.ao",
         "https://en.wikipedia.org/wiki/Angola_Press_Agency"
@@ -446,8 +438,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Pointville Publishing Review 2023"
       },
       "revenueModel": "Advertising and commercial publishing",
-      "logo": "newspaper-logos/ag/pointville.svg",
-      "logoExplainer": "Crimson rectangular badge with bold white text 'POINT EXPRESS', representing modern daily news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://pointville.ag"
       ]
@@ -474,8 +465,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Agencia Télam Memory Report"
       },
       "revenueModel": "State public budget funding and content subscriber fees",
-      "logo": "newspaper-logos/ar/telam.svg",
-      "logoExplainer": "Sky blue and white emblem with bold typography 'TÉLAM', reflecting the national colors of Argentina.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.telam.com.ar",
         "https://en.wikipedia.org/wiki/T%C3%A9lam"
@@ -501,8 +491,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "El Cronista Media Review 2023"
       },
       "revenueModel": "Corporate subscriptions, print sales, and financial advertising",
-      "logo": "newspaper-logos/ar/el-cronista.svg",
-      "logoExplainer": "Emerald green title logo representing financial journalism and economic markets.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.cronista.com",
         "https://es.wikipedia.org/wiki/El_Cronista_(n%C3%BAmero_comercial)"
@@ -530,8 +519,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Armenpress Official Review 2023"
       },
       "revenueModel": "State budget allocation and subscriber service licensing",
-      "logo": "newspaper-logos/am/armenpress.svg",
-      "logoExplainer": "Deep blue circular badge with gold emblem and Armenian typography 'ԱՐՄԵՆՊՐԵՍ', representing 100+ years of national news agency history.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://armenpress.am",
         "https://en.wikipedia.org/wiki/Armenpress"
@@ -557,8 +545,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "National Assembly Press Division 2023"
       },
       "revenueModel": "State parliamentary budget allocation",
-      "logo": "newspaper-logos/am/hayastani-hanrapetutyun.svg",
-      "logoExplainer": "Gold Armenian calligraphic script 'ՀԱՅԱՍՏԱՆԻ ՀԱՆՐԱՊԵՏՈՒԹՅՈՒՆ' on dark slate, representing parliamentary state publishing.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://hhpress.am",
         "https://hy.wikipedia.org/wiki/%D5%80%D5%A1%D5%B5%D5%A1%D5%BD%D5%B2%D5%A1%D5%B6%D5%AB_%D5%80%D5%A1%D5%B6%D5%BF%D5%A1%D5%BA%D5%AE%D5%BF%D5%B8%D5%A9%D5%B5%D5%B8%D5%Living"
@@ -590,8 +577,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "A$0.00 / person"
       },
       "revenueModel": "Commercial subscription fees from member newspapers, broadcasters, and corporate clients",
-      "logo": "newspaper-logos/at/apa.svg",
-      "logoExplainer": "Red square emblem next to bold typography 'APA AUSTRIAPRESSEAGENTUR', symbolising independent cooperative news agency reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://apa.at",
         "https://en.wikipedia.org/wiki/Austria_Presse_Agentur"
@@ -616,8 +602,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ÖWA (Österreichische Web-Analyse) 2024"
       },
       "revenueModel": "Digital subscriptions, pink paper print sales, and display advertising",
-      "logo": "newspaper-logos/at/der-standard.svg",
-      "logoExplainer": "Salmon-pink rectangular logo with bold sans-serif text 'DER STANDARD', matching the newspaper's signature pink print pages.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.derstandard.at",
         "https://en.wikipedia.org/wiki/Der_Standard"
@@ -645,8 +630,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "AZERTAC Annual Report 2023"
       },
       "revenueModel": "Direct state budget allocation",
-      "logo": "newspaper-logos/az/azertac.svg",
-      "logoExplainer": "Cyan blue emblem with white typography 'AZERTAC', representing Azerbaijan's official state news agency.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://azertag.az",
         "https://en.wikipedia.org/wiki/Azerbaijan_State_News_Agency"
@@ -672,8 +656,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "APA Group Media Review 2024"
       },
       "revenueModel": "Digital advertising and news syndication",
-      "logo": "newspaper-logos/az/apa.svg",
-      "logoExplainer": "Dark navy badge with bright sky blue typography 'apa', representing modern online journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://apa.az",
         "https://en.wikipedia.org/wiki/Azeri-Press_Agency"
@@ -698,8 +681,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Trend News Agency Corporate Profile"
       },
       "revenueModel": "Commercial subscriber feeds, energy reports, and advertising",
-      "logo": "newspaper-logos/az/trend.svg",
-      "logoExplainer": "Royal blue background with amber text 'TREND', symbolising economic and energy reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.trend.az",
         "https://en.wikipedia.org/wiki/Trend_News_Agency"
@@ -724,8 +706,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Report.az Media Kit 2024"
       },
       "revenueModel": "Digital display advertising and video news distribution",
-      "logo": "newspaper-logos/az/report.svg",
-      "logoExplainer": "Crimson title badge with bold white text 'REPORT.AZ', representing rapid digital breaking news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://report.az",
         "https://en.wikipedia.org/wiki/Report_News_Agency"
@@ -753,8 +734,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Bahamas Information Services"
       },
       "revenueModel": "Government parliamentary budget",
-      "logo": "newspaper-logos/bs/bis.svg",
-      "logoExplainer": "Gold and blue emblem 'BIS BAHAMAS INFORMATION SERVICES', representing official state public information.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.bahamas.gov.bs",
         "https://en.wikipedia.org/wiki/Bahamas_Information_Services"
@@ -782,8 +762,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "BNA Institutional Review 2023"
       },
       "revenueModel": "Direct state budget allocation",
-      "logo": "newspaper-logos/bh/bna.svg",
-      "logoExplainer": "Crimson circular emblem with Arabic typography 'بنا' and white text 'BAHRAIN NEWS AGENCY', representing official royal state media.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.bna.bh",
         "https://en.wikipedia.org/wiki/Bahrain_News_Agency"
@@ -811,8 +790,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "BSS Official Annual Report 2023"
       },
       "revenueModel": "Government parliamentary grant allocation and subscriber licensing",
-      "logo": "newspaper-logos/bd/bss.svg",
-      "logoExplainer": "Green and red emblem incorporating Bengali and English typography, representing Bangladesh's national press agency.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.bssnews.net",
         "https://en.wikipedia.org/wiki/Bangladesh_Sangbad_Sangstha"
@@ -837,8 +815,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Reuters Institute Digital News Report 2023"
       },
       "revenueModel": "Print newsstand sales, display advertising, and digital subscriptions",
-      "logo": "newspaper-logos/bd/daily-star.svg",
-      "logoExplainer": "Deep blue serif title font 'The Daily Star', recognized worldwide as Bangladesh's primary English newspaper.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.thedailystar.net",
         "https://en.wikipedia.org/wiki/The_Daily_Star_(Bangladesh)"
@@ -863,8 +840,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "SimilarWeb / bdnews24 Media Review 2024"
       },
       "revenueModel": "Digital advertising, sponsored sections, and mobile news syndication",
-      "logo": "newspaper-logos/bd/bdnews24.svg",
-      "logoExplainer": "Slate black logo with red text 'bdnews24.com', symbolising digital 24-hour newswire distribution.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://bdnews24.com",
         "https://en.wikipedia.org/wiki/Bdnews24.com"
@@ -892,8 +868,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "One Caribbean Media Annual Report 2023"
       },
       "revenueModel": "Print retail sales, digital advertising, and e-paper subscriptions",
-      "logo": "newspaper-logos/bb/nation-news.svg",
-      "logoExplainer": "Bold red title typography 'NATION NEWS' on white, representing Barbados's primary daily newspaper.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.nationnews.com",
         "https://en.wikipedia.org/wiki/The_Nation_(Barbados)"
@@ -921,8 +896,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "BelTA Official Annual Report 2023"
       },
       "revenueModel": "Direct state budget funding and subscriber licensing",
-      "logo": "newspaper-logos/by/belta.svg",
-      "logoExplainer": "Red circular emblem with white typography 'БЕЛТА', symbolising Belarus's official national telegraph agency.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.belta.by",
         "https://en.wikipedia.org/wiki/Belarusian_Telegraph_Agency"
@@ -948,8 +922,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "BAJ Review"
       },
       "revenueModel": "Subscriber licensing and commercial news syndication",
-      "logo": "newspaper-logos/by/belapan.svg",
-      "logoExplainer": "Slate blue title logo 'BelaPAN', representing independent wire reporting history.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://belapan.by",
         "https://en.wikipedia.org/wiki/BelaPAN"
@@ -977,8 +950,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Belga News Agency Annual Report 2023"
       },
       "revenueModel": "Subscription licensing fees from member Belgian publishers and broadcast networks",
-      "logo": "newspaper-logos/be/belga.svg",
-      "logoExplainer": "Dark slate badge with gold icon and bold text 'BELGAPRESS', representing Belgium's national cooperative news agency.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.belga.be",
         "https://en.wikipedia.org/wiki/Belga_(news_agency)"
@@ -1004,8 +976,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "CIM Belgium 2023/2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and corporate advertising",
-      "logo": "newspaper-logos/be/de-standaard.svg",
-      "logoExplainer": "Royal blue title banner with bold white text 'DE STANDAARD', symbolising quality Flemish journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.standaard.be",
         "https://en.wikipedia.org/wiki/De_Standaard"
@@ -1033,8 +1004,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ABP Annual Report 2023"
       },
       "revenueModel": "Direct state budget funding and subscriber licensing",
-      "logo": "newspaper-logos/bj/abp.svg",
-      "logoExplainer": "Green and yellow circular emblem with text 'AGENCE BÉNIN PRESSE', representing Benin's national state press agency.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.abp.bj",
         "https://fr.wikipedia.org/wiki/Agence_B%C3%A9nin_Presse"
@@ -1062,8 +1032,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ABI Annual Report 2023"
       },
       "revenueModel": "Direct state budget funding",
-      "logo": "newspaper-logos/bo/abi.svg",
-      "logoExplainer": "Emerald green badge with white typography 'ABI', representing the official news agency of Bolivia.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://abi.bo",
         "https://es.wikipedia.org/wiki/Agencia_Boliviana_de_Informaci%C3%B3n"
@@ -1091,8 +1060,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "FENA Official Review 2023"
       },
       "revenueModel": "State budget funding and commercial newswire subscriptions",
-      "logo": "newspaper-logos/ba/fena.svg",
-      "logoExplainer": "Royal blue circular emblem with gold lettering 'FENA', representing Bosnia and Herzegovina's federal news agency.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://fena.ba",
         "https://bs.wikipedia.org/wiki/Federalna_novinska_agencija"
@@ -1118,8 +1086,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "SRNA Official Report 2023"
       },
       "revenueModel": "Entity public budget funding and subscription licensing",
-      "logo": "newspaper-logos/ba/srna.svg",
-      "logoExplainer": "Crimson title badge with Cyrillic and Latin typography 'СРНА / SRNA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.srna.rs",
         "https://sr.wikipedia.org/wiki/%D0%A1%D0%A0%D0%9D%D0%90"
@@ -1147,8 +1114,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "BOPA Department Review 2023"
       },
       "revenueModel": "Direct state budget funding",
-      "logo": "newspaper-logos/bw/bopa.svg",
-      "logoExplainer": "Sky blue circular emblem with white typography 'BOPA', symbolising national public news distribution.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.dailynews.gov.bw",
         "https://en.wikipedia.org/wiki/Botswana_Press_Agency"
@@ -1173,8 +1139,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Sunday Standard Review 2023"
       },
       "revenueModel": "Print sales and corporate advertising",
-      "logo": "newspaper-logos/bw/sunday-standard.svg",
-      "logoExplainer": "Dark slate title block with white serif typography 'Sunday Standard'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sundaystandard.info"
       ]
@@ -1201,8 +1166,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "BTA Official Annual Report 2023"
       },
       "revenueModel": "State parliamentary budget allocation and subscriber licensing",
-      "logo": "newspaper-logos/bg/bta.svg",
-      "logoExplainer": "Royal blue circular emblem with Cyrillic text 'БТА', symbolising Bulgaria's 125-year-old telegraph news agency.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.bta.bg",
         "https://en.wikipedia.org/wiki/Bulgarian_Telegraph_Agency"
@@ -1230,8 +1194,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "AIB Official Review 2023"
       },
       "revenueModel": "Direct state budget funding",
-      "logo": "newspaper-logos/bf/aib.svg",
-      "logoExplainer": "Green and red circular emblem 'AIB AGENCE D'INFORMATION DU BURKINA', representing official state news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.aib.media",
         "https://fr.wikipedia.org/wiki/Agence_d%27information_du_Burkina"
@@ -1259,8 +1222,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ABP Annual Report 2023"
       },
       "revenueModel": "Direct state budget funding",
-      "logo": "newspaper-logos/bi/abp.svg",
-      "logoExplainer": "Red and green circular badge with text 'ABP AGENCE BURUNDAISE DE PRESSE'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://abpinfo.bi",
         "https://fr.wikipedia.org/wiki/Agence_burundaise_de_presse"
@@ -1285,8 +1247,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Net Press Archive"
       },
       "revenueModel": "Digital subscriptions and advertising",
-      "logo": "newspaper-logos/bi/net-press.svg",
-      "logoExplainer": "Slate black logo block with red text 'NETPRESS', representing online news distribution.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.netpress.bi"
       ]
@@ -1313,8 +1274,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "AKP Ministry Report 2023"
       },
       "revenueModel": "Direct state budget funding",
-      "logo": "newspaper-logos/kh/akp.svg",
-      "logoExplainer": "Navy blue circular emblem with crimson star and text 'AKP AGENCE KAMPUCHEA PRESSE'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.akp.gov.kh",
         "https://en.wikipedia.org/wiki/Agence_Kampuchea_Presse"
@@ -1341,8 +1301,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Torstar Corporate Media Profile 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and display advertising",
-      "logo": "newspaper-logos/ca/the-toronto-star.svg",
-      "logoExplainer": "Deep blue banner featuring white serif typography 'TORONTO STAR', symbolizing progressive civic and investigative reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.thestar.com",
         "https://en.wikipedia.org/wiki/Toronto_Star"
@@ -1376,8 +1335,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "CVE 190 / person / year (~US$1.85)"
       },
       "revenueModel": "State public service contract and wire subscription syndication",
-      "logo": "newspaper-logos/cv/inforpress.svg",
-      "logoExplainer": "White emblem with deep blue typography 'inforpress' and stylized connectivity waves, representing national archipelago communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://inforpress.cv",
         "https://pt.wikipedia.org/wiki/Inforpress"
@@ -1411,8 +1369,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "XAF 22 / person / year (~US$0.04)"
       },
       "revenueModel": "Direct state budget subsidy and subscription bulletin sales",
-      "logo": "newspaper-logos/cf/acap.svg",
-      "logoExplainer": "Deep blue emblem with white serif letters 'ACAP', representing the official national news wire of the Central African Republic.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://acap.cf",
         "https://fr.wikipedia.org/wiki/Agence_centrafricaine_de_presse"
@@ -1438,8 +1395,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Haut Conseil de la Communication RCA 2023"
       },
       "revenueModel": "Print sales and public legal notice advertising",
-      "logo": "newspaper-logos/cf/le-potentiel-centrafricain.svg",
-      "logoExplainer": "White banner with prominent green and black lettering 'Le Potentiel Centrafricain', representing national reconstruction.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lepotentielcentrafricain.com",
         "https://fr.wikipedia.org/wiki/M%C3%A9dias_en_R%C3%A9publique_centrafricaine"
@@ -1472,8 +1428,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "National international communication remit"
       },
       "revenueModel": "Central state foreign-press budget, global institutional subscriptions, and advertising",
-      "logo": "newspaper-logos/cn/china-daily.svg",
-      "logoExplainer": "Navy blue banner displaying the refined white serif masthead 'CHINA DAILY', representing China's primary international English voice.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.chinadaily.com.cn",
         "https://en.wikipedia.org/wiki/China_Daily"
@@ -1501,8 +1456,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Xinhua Media Research 2023"
       },
       "revenueModel": "Institutional and retail print subscriptions",
-      "logo": "newspaper-logos/cn/reference-news.svg",
-      "logoExplainer": "White canvas with black calligraphic Chinese characters '参考消息' penned by Lu Xun, symbolising curated international news insights.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "http://www.cankaoxiaoxi.com",
         "https://en.wikipedia.org/wiki/Reference_News"
@@ -1536,8 +1490,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "XAF 30 / person / year (~US$0.05)"
       },
       "revenueModel": "State budget allocation and wire syndication fees",
-      "logo": "newspaper-logos/cg/aci-agence-congolaise-d-information.svg",
-      "logoExplainer": "Deep blue banner with crisp white letters 'ACI Agence Congolaise d'Information', representing the statutory news agency of Congo-Brazzaville.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.aci.cg",
         "https://fr.wikipedia.org/wiki/Agence_congolaise_d%27information"
@@ -1563,8 +1516,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "La Semaine Africaine Archive 2023"
       },
       "revenueModel": "Print circulation, church subscriptions, and civic announcements",
-      "logo": "newspaper-logos/cg/la-semaine-africaine.svg",
-      "logoExplainer": "White banner with bold green and black lettering 'La Semaine Africaine', symbolising historic moral and civic journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lasemaineafricaine.info",
         "https://fr.wikipedia.org/wiki/La_Semaine_africaine"
@@ -1598,8 +1550,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "CDF 45 / person / year (~US$0.016)"
       },
       "revenueModel": "Direct state budget subsidy and institutional subscriber feeds",
-      "logo": "newspaper-logos/cd/acp-agence-congolaise-de-presse.svg",
-      "logoExplainer": "Navy blue background with bold white lettering 'ACP' and full title, symbolising the official state wire service of the DRC.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://acp.cd",
         "https://fr.wikipedia.org/wiki/Agence_congolaise_de_presse"
@@ -1627,8 +1578,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Fundación Trípode Annual Report 2023"
       },
       "revenueModel": "International journalistic grants and reader crowdfunding",
-      "logo": "newspaper-logos/cr/elfaro-cr.svg",
-      "logoExplainer": "Black emblem with golden lighthouse beam and stark typography 'elfaro', symbolising illumination of truth and investigative scrutiny.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://elfaro.net",
         "https://en.wikipedia.org/wiki/El_Faro_(digital_newspaper)"
@@ -1658,8 +1608,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Editora Granma Informe de Gestión 2023"
       },
       "revenueModel": "Direct state budget appropriation and institutional subscriptions",
-      "logo": "newspaper-logos/cu/granma.svg",
-      "logoExplainer": "Red banner with bold white lettering 'Granma' and stylized silhouette of the revolutionary yacht, the historic emblem of Cuban state journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.granma.cu",
         "https://en.wikipedia.org/wiki/Granma_(newspaper)"
@@ -1691,8 +1640,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State international agency"
       },
       "revenueModel": "State budget funding and international media syndication agreements",
-      "logo": "newspaper-logos/cu/prensa-latina.svg",
-      "logoExplainer": "Navy blue emblem with white calligraphy 'PL Prensa Latina' and globe meridians, symbolising non-aligned Latin American news distribution.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.prensa-latina.cu",
         "https://en.wikipedia.org/wiki/Prensa_Latina"
@@ -1726,8 +1674,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "DJF 60 / person / year (~US$0.34)"
       },
       "revenueModel": "State operating subsidy and commercial news syndication",
-      "logo": "newspaper-logos/dj/adi-agence-djiboutienne-d-information.svg",
-      "logoExplainer": "Blue and gold emblem displaying acronym 'ADI' and full French title, symbolising statutory news dissemination in the Horn of Africa.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.adi.dj",
         "https://fr.wikipedia.org/wiki/Agence_djiboutienne_d%27information"
@@ -1759,8 +1706,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "State budget appropriation and wire subscription fees",
-      "logo": "newspaper-logos/ir/irna-islamic-republic-news-agency.svg",
-      "logoExplainer": "Green emblem featuring stylized Persian typography of 'IRNA' surrounded by global network lines.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.irna.ir",
         "https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency"
@@ -1788,8 +1734,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "NINA Directory 2024"
       },
       "revenueModel": "Subscription licensing and wire syndication",
-      "logo": "newspaper-logos/iq/nina-iraqi-national-news-agency.svg",
-      "logoExplainer": "Gold and blue circular icon with stylized Arabic acronym for NINA.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ninanews.com",
         "https://en.wikipedia.org/wiki/National_Iraqi_News_Agency"
@@ -1816,8 +1761,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "JNLR Readership Survey 2023–24"
       },
       "revenueModel": "Print sales, digital subscription, and commercial advertising",
-      "logo": "newspaper-logos/ie/irish-examiner.svg",
-      "logoExplainer": "Traditional serif text 'Irish Examiner' in deep forest green with classic Irish typographic accents.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.irishexaminer.com",
         "https://en.wikipedia.org/wiki/Irish_Examiner"
@@ -1845,8 +1789,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ADS Italy Circulation Data 2024"
       },
       "revenueModel": "Print sales, digital subscriptions, and display advertising",
-      "logo": "newspaper-logos/it/la-stampa.svg",
-      "logoExplainer": "Traditional black Roman serif masthead 'LA STAMPA' with clean Italian press aesthetic.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lastampa.it",
         "https://en.wikipedia.org/wiki/La_Stampa"
@@ -1878,8 +1821,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "State budget subsidy and agency syndication",
-      "logo": "newspaper-logos/ci/aip-agence-ivoirienne-de-presse.svg",
-      "logoExplainer": "Ivory Coast map outline inside green circle with orange lettering 'AIP'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.aip.ci",
         "https://en.wikipedia.org/wiki/Agence_Ivoirienne_de_Presse"
@@ -1906,8 +1848,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "RJRGLEANER Communications Group 2023"
       },
       "revenueModel": "Print newsstand sales and popular advertising",
-      "logo": "newspaper-logos/jm/jamaica-star.svg",
-      "logoExplainer": "Bright red five-pointed star behind bold yellow sans-serif text 'THE STAR'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://jamaica-star.com",
         "https://en.wikipedia.org/wiki/The_Jamaica_Star"
@@ -1935,8 +1876,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "NSK Japan Newspaper Audit 2024"
       },
       "revenueModel": "Print subscriptions, digital access, and display advertising",
-      "logo": "newspaper-logos/jp/mainichi-shimbun.svg",
-      "logoExplainer": "Classic Kanji script '毎日新聞' accented by a modern blue circular eye symbol.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://mainichi.jp",
         "https://en.wikipedia.org/wiki/Mainichi_Shimbun"
@@ -1968,8 +1908,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "~0.50 JOD / person / year"
       },
       "revenueModel": "Parliamentary state budget appropriation",
-      "logo": "newspaper-logos/jo/petra-jordan-news-agency.svg",
-      "logoExplainer": "Terra-cotta red emblem of the Treasury of Petra facade with Arabic lettering 'بترا'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://petra.gov.jo",
         "https://en.wikipedia.org/wiki/Jordan_News_Agency"
@@ -1997,8 +1936,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Kazakh Newspapers LLP Audit 2023"
       },
       "revenueModel": "State publishing budget, print subscriptions, and official notices",
-      "logo": "newspaper-logos/kz/egemen-qazaqstan.svg",
-      "logoExplainer": "Sky blue banner with golden sun and eagle motif above calligraphic Kazakh script 'Егемен Қазақстан'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://egemen.kz",
         "https://en.wikipedia.org/wiki/Egemen_Qazaqstan"
@@ -2024,8 +1962,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Kazakhstanskaya Pravda Media Kit"
       },
       "revenueModel": "State publishing subsidies, print subscriptions, and legal advertising",
-      "logo": "newspaper-logos/kz/kazakhstanskaya-pravda.svg",
-      "logoExplainer": "Navy blue serif typography 'Казахстанская правда' with classic Kazakh ornament motif.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kazpravda.kz",
         "https://en.wikipedia.org/wiki/Kazakhstanskaya_Pravda"
@@ -2059,8 +1996,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "US$0.89 / person / year"
       },
       "revenueModel": "Direct state budget appropriation and news syndication services",
-      "logo": "newspaper-logos/tl/tatoli.svg",
-      "logoExplainer": "Vibrant red and black emblem inspired by the Timor-Leste national flag with clean white lettering 'TATOLI', representing national state news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://tatoli.tl",
         "https://pt.wikipedia.org/wiki/Tatoli"
@@ -2088,8 +2024,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Grupo El Comercio Business Division 2023"
       },
       "revenueModel": "Corporate subscriptions and business-to-business advertising",
-      "logo": "newspaper-logos/ec/lideres.svg",
-      "logoExplainer": "Deep emerald green banner with white typography 'LÍDERES', symbolising corporate excellence and economic leadership.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.revistalideres.ec"
       ]
@@ -2122,8 +2057,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State newspaper of record"
       },
       "revenueModel": "State budget appropriation, print subscriptions, book publishing, and advertising",
-      "logo": "newspaper-logos/eg/al-ahram.svg",
-      "logoExplainer": "Classic Arabic calligraphy 'الأهرام' in black and gold, representing over 150 years of foundational Arab journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://gate.ahram.org.eg",
         "https://en.wikipedia.org/wiki/Al-Ahram"
@@ -2156,8 +2090,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State information agency"
       },
       "revenueModel": "Direct state budget funding",
-      "logo": "newspaper-logos/gq/guinea-ecuatorial-press.svg",
-      "logoExplainer": "Official national emblem featuring the silk cotton tree (Ceiba pentandra) and blue text 'GUINEA ECUATORIAL PRESS', symbolising state authority.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://guineaecuatorialpress.com",
         "https://es.wikipedia.org/wiki/Guinea_Ecuatorial"
@@ -2190,8 +2123,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State information service"
       },
       "revenueModel": "Direct state budget funding",
-      "logo": "newspaper-logos/er/shabait.svg",
-      "logoExplainer": "Red and green banner inspired by the Eritrean flag with bold white typography 'SHABAIT', representing official state communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://shabait.com",
         "https://en.wikipedia.org/wiki/Ministry_of_Information_(Eritrea)"
@@ -2217,8 +2149,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Assenna Foundation Annual Report 2023"
       },
       "revenueModel": "Diaspora crowdfunding, foundation grants, and viewer donations",
-      "logo": "newspaper-logos/er/assenna.svg",
-      "logoExplainer": "Vibrant red banner with stylized white flame and bold typography 'ASSENNA', representing independent human rights advocacy in exile.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://assenna.com",
         "https://en.wikipedia.org/wiki/Assenna"
@@ -2245,8 +2176,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Standard Group PLC Media Report 2023–24"
       },
       "revenueModel": "Print sales, commercial advertising, and digital subscriptions",
-      "logo": "newspaper-logos/ke/the-standard.svg",
-      "logoExplainer": "Classic red serif masthead 'The Standard' symbolising over 120 years of Kenyan press history.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.standardmedia.co.ke",
         "https://en.wikipedia.org/wiki/The_Standard_(Kenya)"
@@ -2271,8 +2201,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Radio Africa Group Digital Analytics 2024"
       },
       "revenueModel": "Digital programmatic advertising, print sales, and radio cross-promotion",
-      "logo": "newspaper-logos/ke/the-star-kenya.svg",
-      "logoExplainer": "Forest green background with bright yellow star emblem beside bold white text 'THE STAR'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.the-star.co.ke",
         "https://en.wikipedia.org/wiki/The_Star_(Kenya)"
@@ -2302,8 +2231,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "Parliamentary state budget funding and agency syndication",
-      "logo": "newspaper-logos/ke/kna-kenya-news-agency.svg",
-      "logoExplainer": "Black circular emblem with white uppercase 'KNA' alongside bold text 'KENYA NEWS AGENCY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.kenyanews.go.ke",
         "https://en.wikipedia.org/wiki/Kenya_News_Agency"
@@ -2335,8 +2263,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "~2.50 KWD / person / year"
       },
       "revenueModel": "State budget funding and wire syndication fees",
-      "logo": "newspaper-logos/kw/kuna-kuwait-news-agency.svg",
-      "logoExplainer": "Navy blue box with white lettering 'KUNA' beside the title 'KUWAIT NEWS AGENCY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.kuna.net.kw",
         "https://en.wikipedia.org/wiki/Kuwait_News_Agency"
@@ -2368,8 +2295,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "State budget subvention and wire subscription licensing",
-      "logo": "newspaper-logos/kg/kabar-news-agency.svg",
-      "logoExplainer": "Light blue badge featuring bold white sans-serif uppercase title 'KABAR'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kabar.kg",
         "https://en.wikipedia.org/wiki/Kabar"
@@ -2394,8 +2320,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "24.kg Audience Audit 2024"
       },
       "revenueModel": "Digital display advertising, sponsored content, and media services",
-      "logo": "newspaper-logos/kg/24-kg.svg",
-      "logoExplainer": "Bright red rectangular box with bold white text '24.kg'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://24.kg",
         "https://en.wikipedia.org/wiki/24.kg"
@@ -2420,8 +2345,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "WWW.KG Top Sites Ranking 2024"
       },
       "revenueModel": "Digital programmatic advertising, business subscriptions, and wire licensing",
-      "logo": "newspaper-logos/kg/akipress.svg",
-      "logoExplainer": "Teal green and black typography 'AKIpress' symbolising modern Central Asian digital press.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://akipress.org",
         "https://en.wikipedia.org/wiki/AKIpress_news_agency"
@@ -2453,8 +2377,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "State budget allocation and wire distribution",
-      "logo": "newspaper-logos/la/kpl-lao-news-agency.svg",
-      "logoExplainer": "Bright red rectangular banner with bold white lettering 'KPL NEWS'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kpl.gov.la",
         "https://en.wikipedia.org/wiki/Khaosan_Pathet_Lao"
@@ -2482,8 +2405,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "LETA Information Agency Profile 2024"
       },
       "revenueModel": "B2B wire licensing and business intelligence subscriptions",
-      "logo": "newspaper-logos/lv/leta-news-agency.svg",
-      "logoExplainer": "Deep navy blue bold uppercase lettering 'LETA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.leta.lv",
         "https://en.wikipedia.org/wiki/LETA"
@@ -2513,8 +2435,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "€22.30 / person / year"
       },
       "revenueModel": "State budget subvention (100% ad-free public service media)",
-      "logo": "newspaper-logos/lv/lsm-lv.svg",
-      "logoExplainer": "Carmine red rectangular block with bold white text 'LSM.lv'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lsm.lv",
         "https://en.wikipedia.org/wiki/Public_Broadcasting_of_Latvia"
@@ -2546,8 +2467,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "Parliamentary state budget appropriation",
-      "logo": "newspaper-logos/lb/nna-national-news-agency.svg",
-      "logoExplainer": "Deep teal rectangle featuring white sans-serif uppercase lettering 'NNA LEBANON'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://nna-leb.gov.lb",
         "https://en.wikipedia.org/wiki/National_News_Agency_(Lebanon)"
@@ -2579,8 +2499,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "Parliamentary state budget funding and agency syndication",
-      "logo": "newspaper-logos/ls/lena-lesotho-news-agency.svg",
-      "logoExplainer": "Green rectangular banner with bold white lettering 'LENA NEWS'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lena.gov.ls",
         "https://en.wikipedia.org/wiki/Media_of_Lesotho"
@@ -2612,8 +2531,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "Parliamentary state budget funding and agency licensing",
-      "logo": "newspaper-logos/lr/lina-liberia-news-agency.svg",
-      "logoExplainer": "Navy blue bold text 'LINA NEWS' on white background.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://liberianewsagency.com",
         "https://en.wikipedia.org/wiki/Liberia_News_Agency"
@@ -2645,8 +2563,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "Parliamentary state budget allocation",
-      "logo": "newspaper-logos/ly/lana-libyan-news-agency.svg",
-      "logoExplainer": "Green rectangular badge with bold white lettering 'LANA NEWS'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lana.gov.ly",
         "https://en.wikipedia.org/wiki/Libyan_News_Agency"
@@ -2676,8 +2593,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "KSF Media & Bonnier News 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and cultural foundation support",
-      "logo": "newspaper-logos/fi/hufvudstadsbladet.svg",
-      "logoExplainer": "Historic black serif masthead 'Hufvudstadsbladet' with blue accent 'HBL', representing 160 years of Swedish-Finnish press tradition.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.hbl.fi",
         "https://en.wikipedia.org/wiki/Hufvudstadsbladet"
@@ -2711,8 +2627,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "XAF 95 / person / year (~US$0.16)"
       },
       "revenueModel": "State budget funding and wire subscription services",
-      "logo": "newspaper-logos/ga/agp-agence-gabonaise-de-presse.svg",
-      "logoExplainer": "Green, yellow, and blue emblem representing the national colors of Gabon with clean typography 'AGP'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://agpgabon.ga",
         "https://fr.wikipedia.org/wiki/Agence_gabonaise_de_presse"
@@ -2742,8 +2657,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Palitra Media Audience Report 2024"
       },
       "revenueModel": "Newswire subscription syndication, digital display advertising, and SMS breaking news alerts",
-      "logo": "newspaper-logos/ge/interpressnews.svg",
-      "logoExplainer": "Red and blue emblem featuring stylized globe and bold typography 'IPN Interpressnews', the benchmark wire agency of Georgia.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.interpressnews.ge",
         "https://en.wikipedia.org/wiki/Interpressnews"
@@ -2770,8 +2684,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Stabroek News Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gy/stabroek-news.svg",
-      "logoExplainer": "Official branding banner for Stabroek News in Georgetown, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.stabroeknews.com/",
         "https://guyana.gov.gy/"
@@ -2798,8 +2711,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Dainik Jagran (दैनिक जागरण) Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/in/dainik-jagran.svg",
-      "logoExplainer": "Official branding banner for Dainik Jagran (दैनिक जागरण) in Kanpur, Uttar Pradesh, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://jplcorp.in/"
       ]
@@ -2823,8 +2735,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Hindustan Times (HT) Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/in/hindustan-times.svg",
-      "logoExplainer": "Official branding banner for Hindustan Times (HT) in New Delhi, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.hindustantimes.com/",
         "https://www.htmedia.in/"
@@ -2851,8 +2762,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Vaduzer Medienhaus Financial Publishing 2023"
       },
       "revenueModel": "Corporate subscriptions and business-to-business advertising",
-      "logo": "newspaper-logos/li/wirtschaft-regional.svg",
-      "logoExplainer": "Deep corporate blue backdrop showcasing golden-amber typography 'Wirtschaft regional', signifying business and financial market authority.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.wirtschaftregional.li"
       ]
@@ -2880,8 +2790,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ministère de la Communication et de la Culture Rapport Annuel 2023"
       },
       "revenueModel": "State budget allocation and wire distribution subscriptions",
-      "logo": "newspaper-logos/mg/taratra.svg",
-      "logoExplainer": "Forest green banner with bold white geometric lettering 'TARATRA - ANTA', symbolising national unity, island agriculture, and information transmission.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://taratra.mg",
         "https://anta.mg"
@@ -2908,8 +2817,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ministry of Information Annual Review 2023"
       },
       "revenueModel": "Government subvention and news syndication",
-      "logo": "newspaper-logos/mw/mana.svg",
-      "logoExplainer": "Deep charcoal background featuring bright red 'MANA' acronym above white subtitle 'MALAWI NEWS AGENCY', evoking national information sovereignty.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://manaonline.gov.mw",
         "https://en.wikipedia.org/wiki/Malawi_News_Agency"
@@ -2938,8 +2846,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "AMAP Rapport d'Activité 2023"
       },
       "revenueModel": "State subsidies, newspaper sales, and public notice announcements",
-      "logo": "newspaper-logos/ml/amap.svg",
-      "logoExplainer": "Malian flag green banner featuring bold yellow 'AMAP - L'ESSOR' and white text 'AGENCE MALIENNE DE PRESSE'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://essor.ml",
         "https://fr.wikipedia.org/wiki/L%27Essor_(Mali)"
@@ -2966,8 +2873,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Association des Éditeurs de Presse Privée (ASSEP) 2023"
       },
       "revenueModel": "Print sales, institutional advertising, and subscriptions",
-      "logo": "newspaper-logos/ml/le-republicain.svg",
-      "logoExplainer": "Crimson red field showcasing elegant white serif typography 'Le Républicain', symbolizing democratic vigilance.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://fr.wikipedia.org/wiki/Le_R%C3%A9publicain_(Mali)"
       ]
@@ -2995,8 +2901,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "AMI Rapport Annuel d'Activité 2023"
       },
       "revenueModel": "State budget subsidy and official publication subscriptions",
-      "logo": "newspaper-logos/mr/ami.svg",
-      "logoExplainer": "Mauritanian Islamic green field adorned with gold Arabic calligraphy 'وكالة الأنباء الموريتانية (AMI)' and white French subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ami.mr",
         "https://fr.wikipedia.org/wiki/Agence_mauritanienne_d%27information"
@@ -3025,8 +2930,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Diario Oficial de la Federación / Archivo Notimex"
       },
       "revenueModel": "State budget allocations and wire service subscriptions",
-      "logo": "newspaper-logos/mx/notimex.svg",
-      "logoExplainer": "Green and red Mexican tricolor banner featuring bold white sans-serif 'NOTIMEX', commemorating Mexico's historic Olympic-era national wire agency.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://es.wikipedia.org/wiki/Notimex",
         "https://www.gob.mx"
@@ -3055,8 +2959,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Moldpres Raport de Activitate 2023"
       },
       "revenueModel": "State budget allocation and official publication sales",
-      "logo": "newspaper-logos/md/moldpres.svg",
-      "logoExplainer": "Moldovan blue banner featuring gold and white geometric sans-serif lettering 'MOLDPRES' with a stylized open newspaper motif, signifying state legislative truth.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.moldpres.md",
         "https://ro.wikipedia.org/wiki/Moldpres"
@@ -3089,8 +2992,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Montsame Centennial Review 2023"
       },
       "revenueModel": "State budgetary subvention and wire syndication fees",
-      "logo": "newspaper-logos/mn/montsame.svg",
-      "logoExplainer": "Mongolian sky-blue field featuring the golden Soyombo national symbol alongside bold white capital lettering 'MONTSAME', symbolizing independence and truth.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://montsame.mn",
         "https://en.wikipedia.org/wiki/Montsame"
@@ -3119,8 +3021,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "MINA Corporate Profile 2023"
       },
       "revenueModel": "B2B wire service subscriptions and syndication licensing",
-      "logo": "newspaper-logos/me/mina.svg",
-      "logoExplainer": "Montenegrin deep red background with bold white modern sans-serif typography 'MINA', representing the premier national news agency.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://mina.news"
       ]
@@ -3152,8 +3053,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "MAP Rapport d'Activité 2023"
       },
       "revenueModel": "State budgetary subvention, wire subscriptions, and commercial photo/video services",
-      "logo": "newspaper-logos/ma/map.svg",
-      "logoExplainer": "Moroccan crimson red background with gold pentagram star outline and bold white lettering 'MAP - AGENCE MAROCAINE DE PRESSE', evoking sovereign authority.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.mapnews.ma",
         "https://fr.wikipedia.org/wiki/Maghreb_Arabe_Presse"
@@ -3182,8 +3082,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "AIM Relatório de Actividades 2023"
       },
       "revenueModel": "State budgetary subvention and news agency syndication fees",
-      "logo": "newspaper-logos/mz/aim.svg",
-      "logoExplainer": "Mozambican flag-inspired green banner with bold golden-yellow 'AIM' and white subtitle 'AGÊNCIA DE INFORMAÇÃO DE MOÇAMBIQUE'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://aim.org.mz",
         "https://en.wikipedia.org/wiki/Ag%C3%AAncia_de_Informa%C3%A7%C3%A3o_de_Mo%C3%A7ambique"
@@ -3212,8 +3111,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ministry of Information Myanmar Annual Report 2023"
       },
       "revenueModel": "State government budget allocation and newspaper sales",
-      "logo": "newspaper-logos/mm/mna.svg",
-      "logoExplainer": "Imperial peacock-inspired golden yellow background with deep royal blue Burmese and English typography 'MYANMAR NEWS AGENCY (MNA)'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.moi.gov.mm",
         "https://en.wikipedia.org/wiki/Myanmar_News_Agency"
@@ -3240,8 +3138,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Myanmar Now Editorial Review 2023"
       },
       "revenueModel": "International investigative journalism grants, reader contributions, and syndication",
-      "logo": "newspaper-logos/mm/myanmar-now.svg",
-      "logoExplainer": "Solid black field with intense fire-red typography 'MYANMAR NOW', embodying uncompromising frontline investigative reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://myanmar-now.net",
         "https://en.wikipedia.org/wiki/Myanmar_Now"
@@ -3274,8 +3171,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ENA Corporate Review 2023"
       },
       "revenueModel": "State government subvention and wire syndication fees",
-      "logo": "newspaper-logos/et/ena.svg",
-      "logoExplainer": "Ethiopian green, yellow, and red tricolor backdrop with gold Amharic and English lettering 'ENA - ETHIOPIAN NEWS AGENCY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ena.et",
         "https://en.wikipedia.org/wiki/Ethiopian_News_Agency"
@@ -3300,8 +3196,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "JAKENN Publishing Audience Data 2024"
       },
       "revenueModel": "Digital advertising, voluntary reader contributions, and international press development grants",
-      "logo": "newspaper-logos/et/addis-standard.svg",
-      "logoExplainer": "Dark slate background displaying crisp crimson red and white modern sans-serif typography 'Addis Standard', evoking journalistic rigor.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://addisstandard.com",
         "https://en.wikipedia.org/wiki/Addis_Standard"
@@ -3364,8 +3259,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Yonhap News Agency Annual Report 2023"
       },
       "revenueModel": "B2B wire service subscriptions and government public service contract",
-      "logo": "newspaper-logos/kr/yonhap.svg",
-      "logoExplainer": "Deep navy blue background displaying dynamic red and white sans-serif lettering 'YONHAP NEWS', representing Korea's premier news wire.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.yna.co.kr",
         "https://www.yna.co.kr",
@@ -3397,8 +3291,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "NAMPA Annual Report 2023"
       },
       "revenueModel": "State government funding and commercial news syndication",
-      "logo": "newspaper-logos/na/nampa.svg",
-      "logoExplainer": "Namibian blue and golden-yellow banner displaying bold white capital lettering 'NAMPA' with a stylized sunrise globe, representing national communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.nampa.org",
         "https://en.wikipedia.org/wiki/Namibia_Press_Agency"
@@ -3423,8 +3316,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Free Press of Namibia Audited Statement 2023"
       },
       "revenueModel": "Print sales, commercial advertising, and digital subscriptions",
-      "logo": "newspaper-logos/na/the-namibian.svg",
-      "logoExplainer": "Vibrant ultramarine blue field featuring bold white sans-serif title 'The Namibian' with red accent, symbolizing courageous independence.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.namibian.com.na",
         "https://en.wikipedia.org/wiki/The_Namibian"
@@ -3457,8 +3349,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "RSS Annual Progress Report 2023"
       },
       "revenueModel": "Government budgetary grant and wire syndication fees",
-      "logo": "newspaper-logos/np/rss.svg",
-      "logoExplainer": "Crimson red field featuring golden Devanagari script and bold white Latin acronym 'RSS - NEPAL NEWS AGENCY', evoking national institutional trust.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.rssnepal.org.np",
         "https://en.wikipedia.org/wiki/Rastriya_Samachar_Samiti"
@@ -3485,8 +3376,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Similarweb / Onlinekhabar Audience Metrics 2023"
       },
       "revenueModel": "Digital programmatic advertising, video sponsorships, and branded content",
-      "logo": "newspaper-logos/np/onlinekhabar.svg",
-      "logoExplainer": "Bright red and dark charcoal rectangular field with modern sans-serif typography 'onlinekhabar', signifying digital breaking news speed.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.onlinekhabar.com",
         "https://english.onlinekhabar.com"
@@ -3515,8 +3405,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ANP Jaarverslag 2023"
       },
       "revenueModel": "B2B wire service contracts, corporate communications, and photo licensing",
-      "logo": "newspaper-logos/nl/anp.svg",
-      "logoExplainer": "Dutch navy blue background with bold stark white geometric sans-serif lettering 'ANP', embodying the foundational news wire of the Netherlands.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.anp.nl",
         "https://nl.wikipedia.org/wiki/Algemeen_Nederlands_Persbureau"
@@ -3545,8 +3434,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ANP Rapport d'Activité 2023"
       },
       "revenueModel": "State government budget allocation and wire distribution subscriptions",
-      "logo": "newspaper-logos/ne/anp.svg",
-      "logoExplainer": "Nigerien flag orange, white, and green tricolor emblem with bold black lettering 'ANP - AGENCE NIGÉRIENNE DE PRESSE'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.anp.ne",
         "https://fr.wikipedia.org/wiki/Agence_nig%C3%A9rienne_de_presse"
@@ -3573,8 +3461,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Maison de la Presse du Niger 2023"
       },
       "revenueModel": "Newsstand sales, institutional subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/ne/le-republicain.svg",
-      "logoExplainer": "Forest green background displaying stark white serif typography 'Le Républicain', symbolizing democratic renewal in Niger.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://republicain-niger.com",
         "https://fr.wikipedia.org/wiki/Le_R%C3%A9publicain_(Niger)"
@@ -3605,8 +3492,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "News Agency of Nigeria Annual Audit 2023"
       },
       "revenueModel": "Federal government subvention and wire syndication subscription fees",
-      "logo": "newspaper-logos/ng/nan.svg",
-      "logoExplainer": "Nigerian green and white national colors banner displaying bold gold lettering 'NAN' and white subtitle 'NEWS AGENCY OF NIGERIA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://nannews.ng",
         "https://en.wikipedia.org/wiki/News_Agency_of_Nigeria"
@@ -3639,8 +3525,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "MIA Godisen Izvestaj 2023"
       },
       "revenueModel": "State public service subvention and B2B wire subscriptions",
-      "logo": "newspaper-logos/mk/mia.svg",
-      "logoExplainer": "Red and yellow Macedonian sunburst banner with bold white lettering 'MIA - MEDIA INFORMATION AGENCY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://mia.mk",
         "https://en.wikipedia.org/wiki/Media_Information_Agency"
@@ -3669,8 +3554,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "NTB Årsrapport 2023"
       },
       "revenueModel": "B2B wire subscriptions, editorial tech syndication, and photo licensing",
-      "logo": "newspaper-logos/no/ntb.svg",
-      "logoExplainer": "Nordic navy blue background with crisp white heavyweight geometric sans-serif lettering 'NTB', symbolizing foundational wire authority.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ntb.no",
         "https://no.wikipedia.org/wiki/Norsk_Telegrambyr%C3%A5"
@@ -3699,8 +3583,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ministry of Information Sultanate of Oman 2023"
       },
       "revenueModel": "State government budget allocation",
-      "logo": "newspaper-logos/om/ona.svg",
-      "logoExplainer": "Omani national colors (red, white, and green) field featuring the iconic Khanjar dagger emblem and gold Arabic/English lettering 'ONA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://omannews.gov.om",
         "https://en.wikipedia.org/wiki/Oman_News_Agency"
@@ -3727,8 +3610,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "MPPH Audience Metrics 2023"
       },
       "revenueModel": "Commercial print and digital advertising",
-      "logo": "newspaper-logos/om/al-shabiba.svg",
-      "logoExplainer": "Vibrant royal blue background with bright orange and white Arabic script 'الشبيبة' (Al Shabiba), signifying energy and youth engagement.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.shabiba.com",
         "https://en.wikipedia.org/wiki/Al-Shabiba"
@@ -3759,8 +3641,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "APP Annual Review 2023"
       },
       "revenueModel": "Federal government budget subvention and media subscriber licensing",
-      "logo": "newspaper-logos/pk/app.svg",
-      "logoExplainer": "Pakistani emerald green banner with white crescent and star motif and bold gold typography 'APP - ASSOCIATED PRESS OF PAKISTAN'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.app.com.pk",
         "https://en.wikipedia.org/wiki/Associated_Press_of_Pakistan"
@@ -3789,8 +3670,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "MITIC Paraguay Memoria Institucional 2023"
       },
       "revenueModel": "State government budget allocation",
-      "logo": "newspaper-logos/py/ipparaguay.svg",
-      "logoExplainer": "Paraguayan tricolor (red, white, blue) bar with bold white letters 'IP' and gold subtitle 'AGENCIA DE INFORMACIÓN PARAGUAYA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ip.gov.py",
         "https://es.wikipedia.org/wiki/Agencia_IP"
@@ -3823,8 +3703,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Editora Perú Memoria Anual 2023"
       },
       "revenueModel": "State budget allocation, official legal announcements, and wire subscriptions",
-      "logo": "newspaper-logos/pe/andina.svg",
-      "logoExplainer": "Peruvian crimson red banner featuring bold white modern geometric lettering 'ANDINA' with gold accent, symbolising the national news agency.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://andina.pe",
         "https://es.wikipedia.org/wiki/Andina_(agencia_de_informaci%C3%B3n)"
@@ -3855,8 +3734,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "PNA Annual Accomplishment Report 2023"
       },
       "revenueModel": "National government budgetary funding",
-      "logo": "newspaper-logos/ph/pna.svg",
-      "logoExplainer": "Philippine blue and red bicolor banner with golden three-star sunburst element and white bold typography 'PNA - PHILIPPINE NEWS AGENCY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.pna.gov.ph",
         "https://en.wikipedia.org/wiki/Philippine_News_Agency"
@@ -3881,8 +3759,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "UPMG Audit Statement 2023"
       },
       "revenueModel": "Print sales, extensive corporate advertising, and digital sponsorships",
-      "logo": "newspaper-logos/ph/the-philippine-star.svg",
-      "logoExplainer": "Deep navy blue background displaying commanding white serif capitals 'THE PHILIPPINE STAR' with gold starburst accent, embodying national broadsheet prestige.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.philstar.com",
         "https://en.wikipedia.org/wiki/The_Philippine_Star"
@@ -3915,8 +3792,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "PAP Sprawozdanie Finansowe i Działalności 2023"
       },
       "revenueModel": "State budget subsidy and commercial wire distribution licensing",
-      "logo": "newspaper-logos/pl/pap.svg",
-      "logoExplainer": "Vibrant crimson red rectangular background with bold white modern sans-serif typography 'PAP' and subtitle 'POLSKA AGENCJA PRASOWA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.pap.pl",
         "https://en.wikipedia.org/wiki/Polish_Press_Agency"
@@ -3949,8 +3825,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Relatório de Gestão e Contas Lusa 2023"
       },
       "revenueModel": "State public-service contract funding and news licensing fees",
-      "logo": "newspaper-logos/pt/lusa.svg",
-      "logoExplainer": "Deep Portuguese navy background with vibrant red circular emblem featuring white 'L' alongside bold white lettering 'LUSA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lusa.pt",
         "https://en.wikipedia.org/wiki/Lusa_News_Agency"
@@ -3983,8 +3858,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "QNA Annual Review 2023"
       },
       "revenueModel": "State government budget funding",
-      "logo": "newspaper-logos/qa/qna.svg",
-      "logoExplainer": "Qatari national maroon rectangular field with bold white typography 'QNA' and subtitle 'QATAR NEWS AGENCY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.qna.org.qa",
         "https://en.wikipedia.org/wiki/Qatar_News_Agency"
@@ -4017,8 +3891,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Agerpres Raport de Activitate 2023"
       },
       "revenueModel": "Parliamentary state budget appropriation and news service subscriptions",
-      "logo": "newspaper-logos/ro/agerpres.svg",
-      "logoExplainer": "Royal blue background with golden yellow crest bearing bold blue 'A' and clean white lettering 'AGERPRES'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.agerpres.ro",
         "https://en.wikipedia.org/wiki/Agerpres"
@@ -4051,8 +3924,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "TASS Corporate Report 2023"
       },
       "revenueModel": "Federal budget subsidy and news wire syndication",
-      "logo": "newspaper-logos/ru/tass.svg",
-      "logoExplainer": "Deep Russian royal blue banner with prominent bold white modern sans-serif typography 'TASS' and formal subtitle 'RUSSIAN NEWS AGENCY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://tass.ru",
         "https://en.wikipedia.org/wiki/TASS"
@@ -4081,8 +3953,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "RNA Corporate Profile 2023"
       },
       "revenueModel": "Wire syndication licensing and digital advertising",
-      "logo": "newspaper-logos/rw/rna.svg",
-      "logoExplainer": "Rwandan sky blue rectangular banner with bold white lettering 'RNA' and radiant golden yellow subtitle 'RWANDA NEWS AGENCY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.rnanews.com",
         "https://en.wikipedia.org/wiki/Media_of_Rwanda"
@@ -4115,8 +3986,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Government of St. Kitts & Nevis Estimates for 2024"
       },
       "revenueModel": "Federal government budgetary appropriation",
-      "logo": "newspaper-logos/kn/sknis.svg",
-      "logoExplainer": "Green rectangular field with national flag black diagonal chevron featuring bold white typography 'SKNIS' and golden subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sknis.gov.kn",
         "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
@@ -4149,8 +4019,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Saint Lucia Estimates of Revenue and Expenditure 2024"
       },
       "revenueModel": "State government budget allocation",
-      "logo": "newspaper-logos/lc/gis-saint-lucia.svg",
-      "logoExplainer": "Deep navy field featuring iconic yellow, black, and white stylized Pitons emblem beside bold white lettering 'GIS'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.govt.lc",
         "https://en.wikipedia.org/wiki/Saint_Lucia"
@@ -4177,8 +4046,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Voice Publishing Company 2023"
       },
       "revenueModel": "Retail print sales, government notices, and advertising",
-      "logo": "newspaper-logos/lc/the-voice.svg",
-      "logoExplainer": "Classic dark slate card with distinguished white serif masthead 'THE VOICE' and golden subtitle 'The Newspaper of Saint Lucia Since 1885'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://thevoiceslu.com",
         "https://en.wikipedia.org/wiki/Saint_Lucia"
@@ -4205,8 +4073,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Star Publishing Company 2023"
       },
       "revenueModel": "Print sales and commercial advertising",
-      "logo": "newspaper-logos/lc/the-star.svg",
-      "logoExplainer": "Vibrant crimson red background featuring bold white uppercase serif title 'THE STAR' accented with golden yellow 'SAINT LUCIA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://stluciastar.com",
         "https://en.wikipedia.org/wiki/Saint_Lucia"
@@ -4233,8 +4100,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Trend Media Caribbean Analytics 2023"
       },
       "revenueModel": "Digital mobile advertising and telecom integration",
-      "logo": "newspaper-logos/lc/loop-slu.svg",
-      "logoExplainer": "Vibrant purple background featuring white circular badge with infinity loop symbol and bold white block typography 'LOOP'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://stlucia.loopnews.com",
         "https://en.wikipedia.org/wiki/Saint_Lucia"
@@ -4267,8 +4133,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Government of SVG Budget Estimates 2024"
       },
       "revenueModel": "State government budgetary funding",
-      "logo": "newspaper-logos/vc/api-svg.svg",
-      "logoExplainer": "Deep navy blue card featuring bold white initials 'API' and bright green subtitle 'AGENCY FOR PUBLIC INFORMATION'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.gov.vc",
         "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
@@ -4301,8 +4166,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "STP-Press Relatório Anual 2023"
       },
       "revenueModel": "State government budget appropriation and syndication agreements",
-      "logo": "newspaper-logos/st/stp-press.svg",
-      "logoExplainer": "National flag green rectangular background with bold white sans-serif block lettering 'STP-PRESS' and golden yellow subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.stp-press.st",
         "https://en.wikipedia.org/wiki/STP-Press"
@@ -4329,8 +4193,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Jornal Transparência Editorial Review 2023"
       },
       "revenueModel": "Retail print sales and institutional public notices",
-      "logo": "newspaper-logos/st/jornal-transparencia.svg",
-      "logoExplainer": "Dark slate background displaying refined white serif title 'JORNAL TRANSPARÊNCIA' accented with green subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://transparenciastep.com",
         "https://en.wikipedia.org/wiki/Media_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
@@ -4363,8 +4226,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "SPA Annual Corporate Report 2023"
       },
       "revenueModel": "State government budget allocation",
-      "logo": "newspaper-logos/sa/spa.svg",
-      "logoExplainer": "Saudi national forest green rectangular field displaying bold white typography 'SPA' with formal subtitle 'SAUDI PRESS AGENCY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.spa.gov.sa",
         "https://en.wikipedia.org/wiki/Saudi_Press_Agency"
@@ -4397,8 +4259,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "APS Rapport d'Activité 2023"
       },
       "revenueModel": "State public service subsidy and commercial news licensing",
-      "logo": "newspaper-logos/sn/aps.svg",
-      "logoExplainer": "Emerald green field with bold white modern sans-serif typography 'APS' and bright golden yellow subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://aps.sn",
         "https://en.wikipedia.org/wiki/Agence_de_Presse_S%C3%A9n%C3%A9galaise"
@@ -4427,8 +4288,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Tanjug Media Kit 2023"
       },
       "revenueModel": "News wire licensing, broadcast commercial advertising, and multimedia syndication",
-      "logo": "newspaper-logos/rs/tanjug.svg",
-      "logoExplainer": "Serbian red field featuring bold white Cyrillic typography 'ТАНЈУГ' with English subtitle 'TANJUG NEWS AGENCY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.tanjug.rs",
         "https://en.wikipedia.org/wiki/Tanjug"
@@ -4461,8 +4321,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Seychelles National Budget Estimates 2024"
       },
       "revenueModel": "State government budget allocation",
-      "logo": "newspaper-logos/sc/sna.svg",
-      "logoExplainer": "Indian Ocean deep blue card with bold white lettering 'SNA' and radiant golden yellow subtitle 'SEYCHELLES NEWS AGENCY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "http://www.seychellesnewsagency.com",
         "https://en.wikipedia.org/wiki/Seychelles_News_Agency"
@@ -4495,8 +4354,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ministry of Information & Civic Education Budget 2024"
       },
       "revenueModel": "State government budgetary funding",
-      "logo": "newspaper-logos/sl/slena.svg",
-      "logoExplainer": "Sierra Leonean emerald green banner featuring bold white typography 'SLENA' and national light blue subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://moice.gov.sl",
         "https://en.wikipedia.org/wiki/Sierra_Leone"
@@ -4523,8 +4381,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "SLAJ Annual Review 2023"
       },
       "revenueModel": "Print sales and local business advertising",
-      "logo": "newspaper-logos/sl/standard-times.svg",
-      "logoExplainer": "Crimson red background featuring bold white serif typography 'STANDARD TIMES' with clean white subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.standardtimespress.org",
         "https://en.wikipedia.org/wiki/Standard_Times_(Sierra_Leone)"
@@ -4557,8 +4414,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Mediacorp Corporate Review 2023"
       },
       "revenueModel": "Public service broadcasting funding from the Singapore government and commercial advertising",
-      "logo": "newspaper-logos/sg/cna.svg",
-      "logoExplainer": "Dramatic black field featuring distinctive red geometric chevron and bold white modern typography 'CNA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.channelnewsasia.com",
         "https://en.wikipedia.org/wiki/CNA_(TV_network)"
@@ -4591,8 +4447,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "TASR Správa o činnosti a hospodárení 2023"
       },
       "revenueModel": "State public service contract funding and commercial news distribution fees",
-      "logo": "newspaper-logos/sk/tasr.svg",
-      "logoExplainer": "Slovak royal blue field with crisp white bold typography 'TASR' and red subtitle 'TLAČOVÁ AGENTÚRA SLOVENSKA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.tasr.sk",
         "https://en.wikipedia.org/wiki/News_Agency_of_the_Slovak_Republic"
@@ -4625,8 +4480,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "STA Letno poročilo 2023"
       },
       "revenueModel": "State public service contract and commercial news licensing fees",
-      "logo": "newspaper-logos/si/sta.svg",
-      "logoExplainer": "Slovenian royal blue rectangular field with bold white typography 'STA' and red subtitle 'SLOVENSKA TISKOVNA AGENCIJA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sta.si",
         "https://en.wikipedia.org/wiki/Slovenian_Press_Agency"
@@ -4653,8 +4507,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Media Association of Solomon Islands (MASI) / Solomon Star Media Kit"
       },
       "revenueModel": "Print newsstand sales, national commercial advertising, and public notices",
-      "logo": "newspaper-logos/sb/solomon-star.svg",
-      "logoExplainer": "Deep navy field featuring a gold five-pointed star representing the island provinces, with classic white serif masthead typography and bright blue Pacific subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.solomonstarnews.com",
         "https://en.wikipedia.org/wiki/Solomon_Star"
@@ -4683,8 +4536,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "SIBC Annual Report / Commonwealth Broadcasting Association"
       },
       "revenueModel": "State statutory subvention, broadcast advertising, and government communications",
-      "logo": "newspaper-logos/sb/sibc.svg",
-      "logoExplainer": "Forest green background with golden-yellow emblem tile containing bold 'SIBC' letters and crisp white institutional titles.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sibconline.com.sb",
         "https://en.wikipedia.org/wiki/Solomon_Islands_Broadcasting_Corporation"
@@ -4717,8 +4569,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ministry of Information, Culture and Tourism Annual Briefing"
       },
       "revenueModel": "Federal budget allocation and institutional news syndication",
-      "logo": "newspaper-logos/so/sonna.svg",
-      "logoExplainer": "Somali sky-blue field featuring the national white five-pointed star, bold block typography 'SONNA', and crisp white institutional text.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://sonna.so",
         "https://en.wikipedia.org/wiki/Somali_National_News_Agency"
@@ -4745,8 +4596,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Dalsan Media Listener Survey / National Union of Somali Journalists (NUSOJ)"
       },
       "revenueModel": "Commercial corporate advertising, public service announcements, and sponsorships",
-      "logo": "newspaper-logos/so/dalsan.svg",
-      "logoExplainer": "White background with a crimson red circular emblem bearing a white play arrow, bold slate gray 'DALSAN' lettering, and red broadcast subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.radiodalsan.com",
         "https://en.wikipedia.org/wiki/Radio_Dalsan"
@@ -4773,8 +4623,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ABC South Africa / Independent Media Readership Audit"
       },
       "revenueModel": "Print street sales, classifieds, corporate advertising, and digital syndication on IOL",
-      "logo": "newspaper-logos/za/the-star.svg",
-      "logoExplainer": "Crisp white field displaying a crimson 5-pointed star emblem, historic black serif masthead 'The Star', and clean gray heritage subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.iol.co.za/the-star",
         "https://en.wikipedia.org/wiki/The_Star_(South_Africa)"
@@ -4801,8 +4650,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "SSNA Editorial Web Analytics"
       },
       "revenueModel": "Digital advertising, independent contributions, and content licensing",
-      "logo": "newspaper-logos/ss/ssna.svg",
-      "logoExplainer": "Forest green field with light mint badge bearing bold 'SSNA' letters, flanked by white block typography 'SOUTH SUDAN NEWS AGENCY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://southsudannewsagency.org",
         "https://en.wikipedia.org/wiki/Media_of_South_Sudan"
@@ -4835,8 +4683,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Memoria Anual de Agencia EFE / SEPI"
       },
       "revenueModel": "State public service contract and media licensing subscriptions worldwide",
-      "logo": "newspaper-logos/es/agencia-efe.svg",
-      "logoExplainer": "Cobalt blue field with iconic scarlet red circle bearing white bold 'EFE', accompanied by white wordmark 'AGENCIA EFE' and light blue tagline.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://efe.com",
         "https://en.wikipedia.org/wiki/EFE"
@@ -4869,8 +4716,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Sudan Ministry of Information Annual Review"
       },
       "revenueModel": "State budget subvention and institutional wire subscriptions",
-      "logo": "newspaper-logos/sd/suna.svg",
-      "logoExplainer": "Pan-Arab emerald green field with white square badge displaying Arabic calligraphy 'سونا', flanked by white block capitals 'SUNA' and bilingual subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://suna-sd.net",
         "https://en.wikipedia.org/wiki/Sudan_News_Agency"
@@ -4899,8 +4745,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Google Analytics / StarNieuws Public Metrics"
       },
       "revenueModel": "Digital banner advertising, corporate sponsorships, and commercial partnerships",
-      "logo": "newspaper-logos/sr/starnieuws.svg",
-      "logoExplainer": "Cool light grey background featuring a bright red 5-pointed star emblem, navy and red dual-color typography 'Starnieuws', and slate gray subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.starnieuws.com",
         "https://en.wikipedia.org/wiki/Media_of_Suriname"
@@ -4929,8 +4774,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "TT Nyhetsbyrån Årsredovisning 2023"
       },
       "revenueModel": "B2B commercial licensing, syndication contracts, and visual archive sales",
-      "logo": "newspaper-logos/se/tt-nyhetsbyran.svg",
-      "logoExplainer": "Nordic blue background with a white square bearing navy 'TT' monogram, accompanied by bold white sans-serif 'NYHETSBYRÅN' and light blue tagline.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://tt.se",
         "https://en.wikipedia.org/wiki/Tidningarnas_Telegrambyr%C3%A5"
@@ -4963,8 +4807,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Keystone-SDA Geschäftsbericht 2023"
       },
       "revenueModel": "Federal statutory subvention for linguistic diversity and B2B media licensing contracts",
-      "logo": "newspaper-logos/ch/keystone-sda.svg",
-      "logoExplainer": "Midnight blue field with a Swiss red square tile bearing bold white 'SDA', accompanied by modern white 'KEYSTONE-SDA' lettering and multilingual subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://keystone-sda.ch",
         "https://en.wikipedia.org/wiki/Swiss_News_Agency"
@@ -4997,8 +4840,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ministry of Information Syrian Arab Republic"
       },
       "revenueModel": "State treasury subvention and international news exchange agreements",
-      "logo": "newspaper-logos/sy/sana.svg",
-      "logoExplainer": "Syrian emerald green background with white badge displaying red Arabic calligraphy 'سانا', bold white block capitals 'SANA', and bilingual institutional title.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://sana.sy",
         "https://en.wikipedia.org/wiki/Syrian_Arab_News_Agency"
@@ -5031,8 +4873,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "NIAT Khovar Official Annual Briefing"
       },
       "revenueModel": "State budget subvention and institutional news licensing",
-      "logo": "newspaper-logos/tj/khovar.svg",
-      "logoExplainer": "Deep royal blue field with golden Tajik star emblem, bold white Cyrillic 'ХОВАР' typography, gold English 'KHOVAR', and silver national wire subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://khovar.tj",
         "https://en.wikipedia.org/wiki/Khovar"
@@ -5065,8 +4906,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "MCOT Annual Report / OANA Registry"
       },
       "revenueModel": "Commercial broadcast advertising, syndication licensing, and government subventions",
-      "logo": "newspaper-logos/th/tna.svg",
-      "logoExplainer": "Dark slate navy background with orange circular MCOT emblem, bold white sans-serif 'THAI NEWS AGENCY', and golden Thai wire subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://tna.mcot.net",
         "https://en.wikipedia.org/wiki/Thai_News_Agency"
@@ -5099,8 +4939,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "HAAC (Haute Autorité de l'Audiovisuel et de la Communication) Togo"
       },
       "revenueModel": "State ministry subvention and news subscription contracts",
-      "logo": "newspaper-logos/tg/atop.svg",
-      "logoExplainer": "Dark navy field featuring a red circular roundel with white 'A', bold white block capitals 'ATOP', and light blue wire agency subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://atop.tg",
         "https://en.wikipedia.org/wiki/Media_of_Togo"
@@ -5131,8 +4970,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "TTT Corporate Review / Telecommunications Authority of Trinidad and Tobago (TATT)"
       },
       "revenueModel": "State budget subvention and commercial television spot advertising",
-      "logo": "newspaper-logos/tt/ttt-news.svg",
-      "logoExplainer": "Vibrant national scarlet red field with rounded white badge containing red 'ttt', bold white 'TTT NEWS' title, and public broadcaster subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ttt.live",
         "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Television"
@@ -5165,8 +5003,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Rapport d'Activité de l'Agence TAP / Présidence du Gouvernement"
       },
       "revenueModel": "State public service subvention and commercial media wire subscriptions",
-      "logo": "newspaper-logos/tn/tap.svg",
-      "logoExplainer": "Tunisian national red field with white circular badge containing the national crescent and star, bold white block 'TAP', and bilingual subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.tap.info.tn",
         "https://en.wikipedia.org/wiki/Tunis_Afrique_Presse"
@@ -5199,8 +5036,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Anadolu Ajansı Annual Report 2023"
       },
       "revenueModel": "State treasury subvention and global media licensing subscriptions",
-      "logo": "newspaper-logos/tr/anadolu-agency.svg",
-      "logoExplainer": "Deep navy field with Turkish red square tile containing bold white 'AA', bold sans-serif 'ANADOLU AJANSI', and light blue global wire subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.aa.com.tr",
         "https://en.wikipedia.org/wiki/Anadolu_Agency"
@@ -5233,8 +5069,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "State Committee of Turkmenistan on Television, Radio Broadcasting and Cinematography"
       },
       "revenueModel": "Direct state budget subvention",
-      "logo": "newspaper-logos/tm/tdh.svg",
-      "logoExplainer": "Turkmen emerald green field with white roundel bearing green crescent and stars, bold white block capitals 'TDH', and gold-mint national subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://tdh.gov.tm",
         "https://en.wikipedia.org/wiki/State_News_Agency_of_Turkmenistan"
@@ -5261,8 +5096,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Turkmen State Publishing Service"
       },
       "revenueModel": "State budget funding and mandatory institutional subscriptions",
-      "logo": "newspaper-logos/tm/neytralny-turkmenistan.svg",
-      "logoExplainer": "Clean white field with dark green Cyrillic serif lettering 'НЕЙТРАЛЬНЫЙ ТУРКМЕНИСТАН', gold divider line, and foundation year 1924 mark.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://metbugat.gov.tm",
         "https://en.wikipedia.org/wiki/Neytralny_Turkmenistan"
@@ -5289,8 +5123,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Turkmen State Publishing Service Register"
       },
       "revenueModel": "State subsidies and nationwide institutional subscriptions",
-      "logo": "newspaper-logos/tm/turkmenistan-gazeti.svg",
-      "logoExplainer": "Emerald green background with elegant white serif lettering 'TÜRKMENISTAN GAZETI', underlined by a gold divider and golden foundation 1920 subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://turkmenmetbugat.gov.tm",
         "https://tk.wikipedia.org/wiki/T%C3%BCrkmenistan_(gazet)"
@@ -5317,8 +5150,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Uganda Communications Commission (UCC) Media Assessment"
       },
       "revenueModel": "Media subscription syndication fees and donor journalism project grants",
-      "logo": "newspaper-logos/ug/urn.svg",
-      "logoExplainer": "Deep navy field with vibrant orange square tile displaying white 'URN', bold white typography 'UGANDA RADIO', and orange national wire subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ugandaradionetwork.net",
         "https://en.wikipedia.org/wiki/Media_of_Uganda"
@@ -5351,8 +5183,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ukrinform Annual Public Report"
       },
       "revenueModel": "State budget funding, media licensing subscriptions, and photographic archive services",
-      "logo": "newspaper-logos/ua/ukrinform.svg",
-      "logoExplainer": "Ukrainian blue field with gold emblem tile bearing 'UI', bold white typography 'UKRINFORM', and golden national news agency subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ukrinform.ua",
         "https://en.wikipedia.org/wiki/Ukrinform"
@@ -5379,8 +5210,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Similarweb Ukraine Media Rankings / Gemius"
       },
       "revenueModel": "Digital advertising, reader club memberships (UP Club), and independent grant funding",
-      "logo": "newspaper-logos/ua/ukrainska-pravda.svg",
-      "logoExplainer": "White field with red square tile bearing white Cyrillic initials 'УП', classic black serif masthead 'Українська правда', and red investigative subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.pravda.com.ua",
         "https://en.wikipedia.org/wiki/Ukrainska_Pravda"
@@ -5407,8 +5237,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Interfax-Ukraine Client Registry"
       },
       "revenueModel": "Commercial terminal subscriptions, wire feeds, and press conference hosting services",
-      "logo": "newspaper-logos/ua/interfax-ukraine.svg",
-      "logoExplainer": "White field with dark blue rounded badge containing 'IFX', navy block capitals 'INTERFAX', red 'UKRAINE', and slate gray news wire subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://interfax.com.ua",
         "https://en.wikipedia.org/wiki/Interfax-Ukraine"
@@ -5441,8 +5270,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "WAM Annual Report / UAE National Media Office"
       },
       "revenueModel": "Federal government budget funding and international media exchange agreements",
-      "logo": "newspaper-logos/ae/wam.svg",
-      "logoExplainer": "Pan-Arab green field with white square badge displaying red Arabic calligraphy 'وام', bold white typography 'WAM', and bilingual subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://wam.ae",
         "https://en.wikipedia.org/wiki/Emirates_News_Agency"
@@ -5469,8 +5297,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Thomson Reuters Annual Report 2023 / Reuters Institute"
       },
       "revenueModel": "Commercial terminal news syndication (LSEG Workspace / Eikon), enterprise media licensing, and digital advertising",
-      "logo": "newspaper-logos/gb/reuters.svg",
-      "logoExplainer": "Signature bright orange field with white circular emblem, bold white sans-serif typography 'REUTERS', and charcoal global news subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.reuters.com",
         "https://en.wikipedia.org/wiki/Reuters"
@@ -5497,8 +5324,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "The Associated Press Annual Report 2023"
       },
       "revenueModel": "Member cooperative assessments, enterprise commercial licensing, and commercial photo sales",
-      "logo": "newspaper-logos/us/ap.svg",
-      "logoExplainer": "Black field with red square tile bearing white sans-serif 'AP', bold white typography 'ASSOCIATED PRESS', and red 1846 founding mark.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://apnews.com",
         "https://en.wikipedia.org/wiki/Associated_Press"
@@ -5531,8 +5357,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Agency of Information and Mass Communications under the Administration of the President of Uzbekistan"
       },
       "revenueModel": "State budget subvention and corporate news syndication",
-      "logo": "newspaper-logos/uz/uza.svg",
-      "logoExplainer": "Cyan-turquoise field with white badge containing teal 'UzA', bold white block capitals 'UzA', and light cyan national agency subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://uza.uz",
         "https://en.wikipedia.org/wiki/Uzbekistan_National_News_Agency"
@@ -5561,8 +5386,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Efecto Cocuyo Transparency Report / CPJ"
       },
       "revenueModel": "International investigative journalism grants, reader crowdfunding, and educational training programs",
-      "logo": "newspaper-logos/ve/efecto-cocuyo.svg",
-      "logoExplainer": "Dark night blue field with glowing yellow firefly circle emblem, white 'efecto', yellow 'cocuyo', and cyan journalism subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://efectococuyo.com",
         "https://en.wikipedia.org/wiki/Efecto_Cocuyo"
@@ -5593,8 +5417,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ministerio del Poder Popular para la Comunicación y la Información (MIPPCI)"
       },
       "revenueModel": "State budget allocations and institutional media syndication",
-      "logo": "newspaper-logos/ve/avn.svg",
-      "logoExplainer": "Deep navy field with crimson square tile bearing white 'AVN', bold white 'AGENCIA VENEZOLANA', and golden Bolivarian Republic subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://avn.info.ve",
         "https://en.wikipedia.org/wiki/Agencia_Venezolana_de_Noticias"
@@ -5627,8 +5450,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "VNA Annual Review / Ministry of Information and Communications"
       },
       "revenueModel": "State budget funding, media commercial syndication, and publishing subsidiaries",
-      "logo": "newspaper-logos/vn/vna.svg",
-      "logoExplainer": "Vibrant red field with yellow emblem tile bearing 'VNA', bold white typography 'THÔNG TẤN XÃ', and golden 'VIỆT NAM • TTXVN' subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://vnanet.vn",
         "https://en.wikipedia.org/wiki/Vietnam_News_Agency"
@@ -5661,8 +5483,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Yemen Ministry of Information Annual Report"
       },
       "revenueModel": "State budget allocations and international wire syndication",
-      "logo": "newspaper-logos/ye/saba.svg",
-      "logoExplainer": "Dark charcoal field with red square tile bearing white Arabic calligraphy 'سبأ', bold white typography 'SABA', and light pink bilingual subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sabanew.net",
         "https://en.wikipedia.org/wiki/Saba_News_Agency"
@@ -5693,8 +5514,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ministry of Information and Media Annual Review"
       },
       "revenueModel": "State budget subvention and institutional news licensing",
-      "logo": "newspaper-logos/zm/zanis.svg",
-      "logoExplainer": "Zambian emerald green field with orange square badge containing a black eagle silhouette, bold white 'ZANIS', and warm orange national subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.zanis.com.zm",
         "https://en.wikipedia.org/wiki/Media_of_Zambia"
@@ -5727,8 +5547,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Palestine Ministry of Information Official Report"
       },
       "revenueModel": "State treasury subvention and international news exchange partnerships",
-      "logo": "newspaper-logos/ps/wafa.svg",
-      "logoExplainer": "Pan-Arab green field with white square badge displaying red Arabic calligraphy 'وفا', bold white impact 'WAFA', and bilingual institutional title.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.wafa.ps",
         "https://en.wikipedia.org/wiki/WAFA"
@@ -5755,8 +5574,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ma'an Audience Review / Similarweb"
       },
       "revenueModel": "Commercial digital banner advertising, international media development partnerships, and television broadcasting spots",
-      "logo": "newspaper-logos/ps/maan-news.svg",
-      "logoExplainer": "Deep navy field with crimson circle enclosing white 'M', bold white impact 'MA'AN NEWS', and light cyan independent Bethlehem agency subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.maannews.net",
         "https://en.wikipedia.org/wiki/Ma%27an_News_Agency"
