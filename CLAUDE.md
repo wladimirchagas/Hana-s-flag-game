@@ -3493,6 +3493,49 @@ lack one.** The gate is on the research, not the image. If `noImageReason` is pr
 genuine, named research effort — but a party is never withheld from the dataset for want of a
 picture.
 
+## Political-party "Exec power" is the head of government — hard rule, do not override without approval
+
+**The Learn-mode Political parties grid badge "Exec power" means the party that supplies the
+head of government.** It does not mean "sits in the cabinet", and it does not mean "is the head
+of state". Cabinet coalitions are irrelevant to this badge: junior partners who hold ministries
+keep `inPower` / "Leg power" (or "In-power" in Westminster systems) and do not receive Exec
+power. Where head of state and head of government are different offices — typical
+semi-presidential systems — Exec power follows the **prime minister's** party, even when the
+president's party is different (cohabitation). Where they are the same person (a presidential
+republic), that person's party is the one Exec-power card.
+
+### Why this rule exists
+
+Owner direction, 2026-09: an Exec-power badge on every coalition minister made Brazil's eleven
+cabinet parties look like eleven executives. The office being labelled is the head of
+government, one per country.
+
+| System | Exec power goes to | Example |
+|--------|--------------------|---------|
+| Presidential (president is HoG) | The president's party | Brazil → Workers' Party (Lula); Indonesia → Gerindra (Prabowo) |
+| Semi-presidential (PM is HoG) | The prime minister's party, not merely the president's | France → Renaissance (PM Lecornu); Timor-Leste → CNRT (PM Gusmão), not the president's party |
+| Parliamentary / Westminster | No Exec/Leg split — a single "In-power" badge | Canada Liberals |
+
+### Rules
+
+1. **`headOfGovernment` is the only input to the Exec-power badge** (`partyPowerBadges` in
+   `src/lib/politicalParties.ts`). Never key Exec power off `inExecutive`. `inExecutive` remains
+   the cabinet-portfolio flag (who sits in the ministry); it is a different fact.
+2. **At most one party per country may have `headOfGovernment: true`.** A country whose HoG is
+   independent of every listed party simply has none — omit the flag rather than pinning it to
+   a coalition partner.
+3. **Never mark a cabinet junior partner `headOfGovernment` to fill the badge.** Missing is
+   honest; eleven Exec-power cards is the bug this rule exists to prevent.
+4. **Verify in the running app:** a presidential coalition (Brazil) shows Exec power on the
+   president's party alone; France shows it on the PM's party; Canada still shows In-power
+   only.
+
+### Enforcement
+
+`scripts/check-political-parties.mjs` fails if two parties in one country both have
+`headOfGovernment: true`. `scripts/check-grid-content-types.mjs` fails if `partyPowerBadges`
+keys Exec power off `inExecutive` or drops the `headOfGovernment` read.
+
 ## The political-party audit is a STANDING SWEEP — 195 countries, one at a time, shipped one at a time — hard rule, do not override without approval
 
 **The owner has directed (2026-09-11) that the Learn-mode political-party dataset be audited AND
@@ -3535,8 +3578,9 @@ Before doing any work on a country, and after each material boundary (current-ch
    omitted, not guessed. Local-language sources are part of the search, not an optional extra.
 6. **A country's entry must satisfy the dataset's own invariants**: the seat sum must not exceed
    `seatsTotal`; one `seatsTotal` per country; every seated party the chamber lists is either
-   present or its absence is explained in the ledger; `inPower`/`inExecutive` reflect the government
-   in office today; a coalition every member references must exist in `POLITICAL_COALITIONS`.
+   present or its absence is explained in the ledger; `inPower`/`inExecutive`/`headOfGovernment`
+   reflect the government in office today (`headOfGovernment` is the Exec-power badge — the HoG
+   party only); a coalition every member references must exist in `POLITICAL_COALITIONS`.
 7. **Never weaken `scripts/check-political-parties.mjs`** to make a country pass. If it fires, the
    data is wrong.
 8. **Verify in the running app before every push** (the mandatory visual-verification rule applies):

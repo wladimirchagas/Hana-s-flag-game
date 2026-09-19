@@ -132,6 +132,11 @@ assert.ok(
   'partyPowerBadges must label presidential/semi-presidential offices "Exec power" / "Leg power", and keep "In-power" for Westminster fusion',
 );
 assert.ok(
+  /party\.headOfGovernment/.test(partyLibSrc) &&
+    !/if \(party\.inExecutive\)/.test(partyLibSrc),
+  'Exec power must key off headOfGovernment (the HoG party), never inExecutive (cabinet partners)',
+);
+assert.ok(
   !partyLibSrc.includes("Hold executive power") &&
     !partyLibSrc.includes("Hold legislative power"),
   'partyPowerBadges must not use the long "Hold executive/legislative power" labels on grid cards',

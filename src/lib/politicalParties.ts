@@ -146,14 +146,14 @@ export function partyPowerBadges(party: PoliticalParty, countryCode: string): Pa
   const cat = getGovernmentCategory(countryCode);
   const badges: PartyBadgeItem[] = [];
 
-  // Presidential and semi-presidential systems split the two offices: the
-  // presidency (and/or cabinet) is not the same thing as a chamber majority.
-  // Several parties can carry "Exec power" at once when they sit in a
-  // coalition cabinet (Brazil, Chile, Indonesia, France) — that is accurate,
-  // not a uniqueness bug. Parliamentary / Westminster systems fuse the two,
-  // so they keep a single "In-power" badge.
+  // Presidential / semi-presidential: split the two offices.
+  // "Exec power" is the party of the HEAD OF GOVERNMENT only — never every
+  // cabinet partner, and never the head of state's party merely for holding
+  // that office (France: Macron is HoS, Lecornu/Renaissance is HoG).
+  // Parliamentary / Westminster systems fuse the two, so they keep a single
+  // "In-power" badge.
   if (cat === "presidential" || cat === "semi-presidential") {
-    if (party.inExecutive) {
+    if (party.headOfGovernment) {
       badges.push({ label: "Exec power", kind: "executive" });
     }
     if (party.inPower) {
