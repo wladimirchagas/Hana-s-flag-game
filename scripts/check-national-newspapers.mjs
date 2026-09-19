@@ -120,6 +120,60 @@ for (const [countryKey, list] of Object.entries(newspapersByCountry)) {
       failures.push(`${ctx}: missing or incomplete readership (metric and source required)`);
     }
 
+    // 2b. Negative assertions — this dataset is print/digital NEWSPAPERS only.
+    // TV networks, radio stations, public broadcasters and government press offices
+    // belong elsewhere (public broadcasters / news agencies). A print newspaper may
+    // mention an auxiliary cross-media affiliate in format/stance, but the NAME must
+    // still read as a newspaper and the format must lead with a print/digital-press form.
+    {
+      const nameBlob = `${paper.name || ""} ${paper.officialName || ""} ${paper.nativeName || ""} ${paper.englishTranslation || ""}`;
+      const format = paper.format || "";
+      const stance = paper.editorialStance || "";
+      const ownerType = paper.owner?.type || "";
+
+      const FORBIDDEN_NAME = /\b(radio|television|\btv\b|télévision|teleradio|broadcaster|cable channel|streaming network|news agency|wire service|press agency|press office|information service|information agency|national information)\b/i;
+      if (FORBIDDEN_NAME.test(nameBlob)) {
+        failures.push(
+          `${ctx}: name/officialName looks like a broadcaster, radio/TV service, news agency or press office — purge from nationalNewspapers.ts`,
+        );
+      }
+
+      const FORBIDDEN_OWNER = /\b(public broadcaster|television network|radio network|broadcasting corporation)\b/i;
+      const printLedFormat =
+        /^(broadsheet|tabloid|compact|berliner|newspaper|daily newspaper|print|compact tabloid|digital-only|digital newspaper|digital news portal|digital portal|magazine|weekly newspaper|bi-weekly)/i.test(
+          format.trim(),
+        );
+      if (FORBIDDEN_OWNER.test(ownerType) && !printLedFormat) {
+        failures.push(
+          `${ctx}: owner.type is a broadcaster and format is not print/digital-newspaper-led`,
+        );
+      }
+
+      // Format may mention an affiliate TV/radio channel only as an auxiliary clause
+      // AFTER a print form (e.g. "Broadsheet newspaper & digital portal (with affiliated X Television)").
+      const FORBIDDEN_FORMAT_CORE =
+        /^(radio broadcast|am\/fm|fm radio|am radio|linear television|terrestrial television|cable television|public tv|public television|television channel|television network|web tv|web streaming|satellite broadcast|public tv, radio|television, radio)/i;
+      if (FORBIDDEN_FORMAT_CORE.test(format.trim())) {
+        failures.push(
+          `${ctx}: format is broadcast-led ("${format}") — newspapers must lead with a print/digital press form; TV/radio affiliates belong in a trailing clause only`,
+        );
+      }
+
+      // Remit text that declares the entry IS a broadcaster / radio / TV channel
+      // (not merely that the newspaper has a sister station).
+      const FORBIDDEN_STANCE =
+        /\b(public broadcaster|radio station|television station|tv network|cable channel|streaming network)\b/i;
+      const nameLooksLikePaper =
+        /\b(times|post|herald|tribune|gazette|daily|journal|news|zeitung|zeit|sinmun|choson|bulletin|matin|sun|guardian|independent|observer|mirror|mail|telegraph|express|standard|chronicle|press|vaterland|volksblatt|permata)\b/i.test(
+          paper.name || "",
+        );
+      if (FORBIDDEN_STANCE.test(stance) && !nameLooksLikePaper) {
+        failures.push(
+          `${ctx}: editorialStance describes a broadcaster/radio/TV service rather than a newspaper`,
+        );
+      }
+    }
+
     // 3. Logo existence and validity
     if (!paper.logo || typeof paper.logo !== "string") {
       failures.push(`${ctx}: missing or non-string logo path`);
