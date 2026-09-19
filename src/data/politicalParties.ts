@@ -140,10 +140,18 @@ export interface PoliticalParty {
   readonly coalitionId?: string;
   readonly leader?: string;
   readonly leaderTitle?: string;
-  /** Currently part of the national governing coalition/cabinet. */
+  /** Currently part of the national governing coalition / legislative majority. */
   readonly inPower: boolean;
-  /** Party holds executive office (presidency / ministerial cabinet portfolios). */
+  /** Party holds a cabinet portfolio (or equivalent). Distinct from
+   *  `headOfGovernment` — junior coalition partners sit in cabinet without
+   *  supplying the head of government. */
   readonly inExecutive?: boolean;
+  /** The party that supplies the head of government (president in a
+   *  presidential system; prime minister where that office is HoG). At most
+   *  one party per country. Drives the "Exec power" grid badge — never the
+   *  head of state merely for being head of state, and never every cabinet
+   *  party. */
+  readonly headOfGovernment?: boolean;
   /** When the party's current continuous stint in government began (or a brief
    *  sourced summary for a longer/complex history). Absent when not in power. */
   readonly timeInPower?: string;
@@ -2132,6 +2140,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "President (2023–present)",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "2023-present",
       "seats": 95,
       "seatsTotal": 257,
@@ -8442,6 +8451,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Party Leader",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "Holds the presidency: Lee Jae-myung, a Democratic Party member, has been President of South Korea since 4 June 2025, and the party holds 161 of the National Assembly's 300 seats.",
       "seats": 161,
       "seatsTotal": 300,
@@ -10629,6 +10639,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "National Chairman",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "2022-present",
       "seats": 52,
       "seatsTotal": 318,
@@ -14164,6 +14175,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "National President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "2023-present",
       "seats": 64,
       "seatsTotal": 513,
@@ -16160,6 +16172,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Secretary-General",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "In government since Emmanuel Macron's election in 2017; the second Lecornu government took office in 2025.",
       "seats": 91,
       "seatsTotal": 577,
@@ -19397,6 +19410,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "U.S. President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "In the White House since Donald Trump's second inauguration on 20 January 2025, with the House majority in the 119th Congress.",
       "seats": 218,
       "seatsTotal": 435,
@@ -19470,6 +19484,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "seats": 31,
       "seatsTotal": 155,
       "chamberName": "Chamber of Deputies",
@@ -21236,6 +21251,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Chairman (President, 2024–present)",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "2024-present",
       "seats": 86,
       "seatsTotal": 580,
@@ -24084,6 +24100,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Leader",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "Forms the government: the 67th cabinet of Turkey, under President Recep Tayyip Erdoğan, who is also the party's leader.",
       "seats": 280,
       "seatsTotal": 600,
@@ -24704,6 +24721,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Party President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "seats": 41,
       "seatsTotal": 130,
       "chamberName": "Chamber of Deputies",
@@ -29766,6 +29784,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "President & Prime Minister",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "July 2023–present",
       "seats": 31,
       "seatsTotal": 65,
@@ -30048,6 +30067,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "In government since Yamandú Orsi took office on 1 March 2025.",
       "seats": 48,
       "seatsTotal": 99,
@@ -30273,6 +30293,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Party President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "In government since Daniel Noboa took office in November 2023; re-elected in 2025.",
       "seats": 66,
       "seatsTotal": 151,
@@ -30633,6 +30654,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Party President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "In government continuously since 1989, apart from 2008–2013; Santiago Peña has been president since 15 August 2023.",
       "seats": 48,
       "seatsTotal": 80,
@@ -30878,6 +30900,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "In government since Jennifer Geerlings-Simons was inaugurated president on 16 July 2025.",
       "seats": 18,
       "seatsTotal": 51,
@@ -31117,6 +31140,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Party leader",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "Governing party since 2007; Chavismo has held the presidency since 1999.",
       "seats": 219,
       "seatsTotal": 285,

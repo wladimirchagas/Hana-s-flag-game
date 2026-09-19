@@ -208,6 +208,9 @@ for (const [country, parties] of Object.entries(partiesByCountry)) {
     if (p.inExecutive !== undefined && typeof p.inExecutive !== "boolean") {
       fail(id, "inExecutive must be a boolean when present");
     }
+    if (p.headOfGovernment !== undefined && typeof p.headOfGovernment !== "boolean") {
+      fail(id, "headOfGovernment must be a boolean when present");
+    }
 
     // B. sources
     checkSources(id, p.sources, "party");
@@ -285,6 +288,13 @@ for (const [country, parties] of Object.entries(partiesByCountry)) {
 
     // F. logo meaning
     checkMeaning(id, p.logoMeaning, "party");
+  }
+}
+
+for (const [country, list] of Object.entries(partiesByCountry)) {
+  const hogs = list.filter((p) => p.headOfGovernment === true).map((p) => p.id);
+  if (hogs.length > 1) {
+    fail(country, `headOfGovernment is true on ${hogs.length} parties (${hogs.join(", ")}); at most one party may supply the head of government`);
   }
 }
 
