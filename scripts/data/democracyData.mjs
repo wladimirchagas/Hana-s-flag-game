@@ -880,9 +880,9 @@ export const DEMOCRACY_DATA = {
     economist: { year: 2026, rating: "Full democracy", rank: 18, rankChange: 0, score: 8.28 }
   },
   US: {
-    freedomHouse: { year: 2026, rating: "Free", rank: 37, rankChange: 0, score: 83 },
-    vDem: { year: 2026, rating: "Liberal Democracy", rank: 24, rankChange: 0, score: 0.78 },
-    economist: { year: 2026, rating: "Flawed democracy", rank: 29, rankChange: +1, score: 7.85 }
+    freedomHouse: { year: 2026, rating: "Free", rank: 45, rankChange: -8, score: 81 },
+    vDem: { year: 2026, rating: "Electoral Democracy", rank: 51, rankChange: -31, score: 0.55 },
+    economist: { year: 2026, rating: "Flawed democracy", rank: 34, rankChange: -5, score: 7.65 }
   },
   UY: {
     freedomHouse: { year: 2026, rating: "Free", rank: 11, rankChange: 0, score: 96 },
