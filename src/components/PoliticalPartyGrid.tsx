@@ -220,7 +220,7 @@ export function PoliticalPartyGrid({
                         <AutoFitName className="flag-grid__name-text" text={partyCardName(party, countryName)} />
                         {(badges.length > 0 || coalition) && (
                           <span className="flag-grid__party-badges">
-                            {badges.map((b, i) => (
+                            {badges.map((b) => (
                               <span
                                 key={`${b.kind}-${b.label}`}
                                 className={`flag-grid__party-badge flag-grid__party-badge--${b.kind}`}
