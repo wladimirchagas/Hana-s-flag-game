@@ -1019,7 +1019,7 @@ export function FlagGrid({
                             : effectiveContentType === "newsagency"
                               ? item.newsAgencyLogo ?? item.flag
                               : effectiveContentType === "newspaper"
-                                ? item.newspaperLogo ?? item.flag
+                                ? item.newspaperLogo ?? null
                                 : effectiveContentType === "party"
                                   ? item.partyLogo ?? null
                                 : item.flag;

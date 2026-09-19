@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 140" width="500" height="140">
-  <rect width="500" height="140" fill="#111827" rx="8"/>
-  <polygon points="40,25 90,70 40,115" fill="#E11D48"/>
-  <polygon points="65,40 100,70 65,100" fill="#F59E0B"/>
-  <text x="120" y="82" font-family="'Montserrat', 'Helvetica', sans-serif" font-size="44" font-weight="900" fill="#FFFFFF" letter-spacing="2">TOLO<tspan fill="#E11D48">NEWS</tspan></text>
-</svg>

@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 140" width="500" height="140">
-  <rect width="500" height="140" fill="#059669" rx="8"/>
-  <circle cx="70" cy="70" r="32" fill="#DC2626"/>
-  <text x="70" y="79" font-family="'Inter', sans-serif" font-size="22" font-weight="900" fill="#FFFFFF" text-anchor="middle">BSS</text>
-  <text x="120" y="68" font-family="'Inter', sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">BANGLADESH SANGBAD</text>
-  <text x="120" y="94" font-family="'Noto Serif Bengali', serif" font-size="18" fill="#A7F3D0">বাংলাদেশ সংবাদ সংস্থা</text>
-</svg>

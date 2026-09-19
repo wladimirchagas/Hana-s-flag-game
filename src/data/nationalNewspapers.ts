@@ -26,8 +26,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Premsa Andorrana Annual Report 2023"
       },
       "revenueModel": "Print retail sales, digital advertising, and commercial announcements",
-      "logo": "newspaper-logos/ad/diari-d-andorra.svg",
-      "logoExplainer": "Navy blue serif title block with yellow accent line, representing the principal newspaper of the Principality of Andorra.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.diariandorra.ad",
         "https://en.wikipedia.org/wiki/Diari_d%27Andorra"
@@ -53,8 +52,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Periòdic Media Kit 2024"
       },
       "revenueModel": "Print circulation and commercial advertising",
-      "logo": "newspaper-logos/ad/el-periodic.svg",
-      "logoExplainer": "Red and navy typography logo reflecting dynamic local news coverage across the Principality.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.elperiodic.ad",
         "https://en.wikipedia.org/wiki/El_Peri%C3%B2dic_d%27Andorra"
@@ -80,8 +78,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Altaveu Digital Audience Review 2024"
       },
       "revenueModel": "Digital display advertising and local commercial partnerships",
-      "logo": "newspaper-logos/ad/altaveu.svg",
-      "logoExplainer": "Purple modern sans-serif lowercase typography symbolising fresh independent digital journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.altaveu.com"
       ]
@@ -106,8 +103,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "BonDia Media Kit 2024"
       },
       "revenueModel": "Commercial advertising and sponsored features",
-      "logo": "newspaper-logos/ad/bondia.svg",
-      "logoExplainer": "Sunny orange logo with white script typography, representing friendly morning news delivery.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.bondia.ad"
       ]
@@ -133,8 +129,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "IMI Annual Performance Review / BPA Worldwide"
       },
       "revenueModel": "Commercial print advertising, corporate sponsorships, and digital programmatic ads",
-      "logo": "newspaper-logos/ae/the-national.svg",
-      "logoExplainer": "Dark slate background featuring refined white serif typography 'The National', gold divider rule, and golden Middle East perspective subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.thenationalnews.com",
         "https://en.wikipedia.org/wiki/The_National_(Abu_Dhabi)"
@@ -159,8 +154,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "BPA Worldwide Circulation Audit / Gulf News Media Pack"
       },
       "revenueModel": "Print newsstand sales, corporate display advertising, classified notices, and digital subscriptions",
-      "logo": "newspaper-logos/ae/gulf-news.svg",
-      "logoExplainer": "Clean white field with navy blue circular roundel containing 'GN', heavy navy sans-serif 'GULF NEWS', and red tagline.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://gulfnews.com",
         "https://en.wikipedia.org/wiki/Gulf_News"
@@ -187,8 +181,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Abu Dhabi Media Audience Research"
       },
       "revenueModel": "Government notices, corporate commercial advertising, and newsstand distribution",
-      "logo": "newspaper-logos/ae/al-ittihad.svg",
-      "logoExplainer": "Deep navy field with magnificent white Arabic calligraphy 'صحيفة الاتحاد', emerald green divider bar, and gold founding year 1969 subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.alittihad.ae",
         "https://en.wikipedia.org/wiki/Al_Ittihad_(Emirati_newspaper)"
@@ -215,8 +208,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "BPA Worldwide / Khaleej Times Media Kit"
       },
       "revenueModel": "Print advertising, classified notices, digital banner advertising, and sponsored events",
-      "logo": "newspaper-logos/ae/khaleej-times.svg",
-      "logoExplainer": "White field with bold crimson red impact title 'KHALEEJ TIMES', horizontal black rule, and dark grey heritage subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.khaleejtimes.com",
         "https://en.wikipedia.org/wiki/Khaleej_Times"
@@ -243,8 +235,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Moby Media Group Impact Review 2023"
       },
       "revenueModel": "Commercial advertising, digital display ads, and international content syndication",
-      "logo": "newspaper-logos/af/tolonews.svg",
-      "logoExplainer": "Bold geometric red arrow logo symbolising forward motion, breaking news, and 24-hour broadcast coverage across Afghanistan.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://tolonews.com",
         "https://en.wikipedia.org/wiki/TOLOnews"
@@ -270,8 +261,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Hasht-e Subh Publishing House"
       },
       "revenueModel": "Print sales, digital subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/af/hasht-e-subh.svg",
-      "logoExplainer": "Emerald green emblem with the Arabic numeral 8 ('۸') representing dawn, truth, and morning journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://8am.media",
         "https://en.wikipedia.org/wiki/Hasht-e_Subh"
@@ -298,8 +288,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Observer Media Group Impact Review 2023"
       },
       "revenueModel": "Digital display advertising, commercial radio ads, and sponsored features",
-      "logo": "newspaper-logos/ag/antigua-observer.svg",
-      "logoExplainer": "Ocean blue rectangular banner with a golden sun emblem, symbolising Caribbean island journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://antiguaobserver.com",
         "https://en.wikipedia.org/wiki/Antigua_Observer"
@@ -324,8 +313,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Real News Media Report 2024"
       },
       "revenueModel": "Digital advertising and classifieds",
-      "logo": "newspaper-logos/ag/real-news.svg",
-      "logoExplainer": "Vibrant green block typography 'REAL NEWS ANTIGUA' representing bold digital reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://realnewsantigua.com"
       ]
@@ -349,8 +337,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Antigua Trumpet Media Kit"
       },
       "revenueModel": "Advertising and private sponsorships",
-      "logo": "newspaper-logos/ag/antigua-trumpet.svg",
-      "logoExplainer": "Indigo banner with yellow serif text 'ANTIGUA TRUMPET', symbolizing community voice and civic discourse.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://antiguatrumpet.com"
       ]
@@ -376,8 +363,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Ownership Monitor Albania 2023"
       },
       "revenueModel": "Print sales, display advertising, and digital sponsorships",
-      "logo": "newspaper-logos/al/panorama.svg",
-      "logoExplainer": "Bold serif title logo in dark red, conveying authority and national circulation prominence.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.panorama.com.al",
         "https://en.wikipedia.org/wiki/Panorama_(Albanian_newspaper)"
@@ -403,8 +389,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Albanian Media Institute Review 2023"
       },
       "revenueModel": "Print retail sales and commercial display advertising",
-      "logo": "newspaper-logos/al/gazeta-shqiptare.svg",
-      "logoExplainer": "Classic black serif typography with a red accent line representing historic Albanian print journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.balkanweb.com",
         "https://en.wikipedia.org/wiki/Gazeta_Shqiptare"
@@ -430,8 +415,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Albanian Media Institute"
       },
       "revenueModel": "Print sales and advertising",
-      "logo": "newspaper-logos/al/koha-jone.svg",
-      "logoExplainer": "Vibrant red block typography symbolizing post-1990 free press and energetic daily reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.kohajone.com",
         "https://en.wikipedia.org/wiki/Koha_Jon%C3%AB"
@@ -457,8 +441,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Ownership Monitor Albania"
       },
       "revenueModel": "Print sales and digital advertising",
-      "logo": "newspaper-logos/al/shekulli.svg",
-      "logoExplainer": "Sky blue serif title typography representing 21st-century modern Albanian press.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://shekulli.com.al",
         "https://en.wikipedia.org/wiki/Shekulli"
@@ -486,8 +469,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Yerevan Press Club Report 2023"
       },
       "revenueModel": "Print sales, digital display advertising, and subscriptions",
-      "logo": "newspaper-logos/am/aravot.svg",
-      "logoExplainer": "Navy and red Armenian script logo 'ԱՌԱՎՈՏ' representing morning independent news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.aravot.am",
         "https://en.wikipedia.org/wiki/Aravot"
@@ -512,8 +494,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SimilarWeb / News.am Media Kit 2024"
       },
       "revenueModel": "Digital display advertising, video pre-rolls, and commercial partnerships",
-      "logo": "newspaper-logos/am/news-am.svg",
-      "logoExplainer": "Red bold typography 'NEWS.am' symbolising rapid digital breaking news reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://news.am",
         "https://en.wikipedia.org/wiki/News.am"
@@ -539,8 +520,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Global Investigative Journalism Network (GIJN)"
       },
       "revenueModel": "Philanthropic grants, non-profit foundations, and reader donations",
-      "logo": "newspaper-logos/am/hetq.svg",
-      "logoExplainer": "Forest green badge with white Armenian typography 'ՀԵՏՔ', representing independent investigative integrity.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://hetq.am",
         "https://en.wikipedia.org/wiki/Hetq"
@@ -568,8 +548,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Edições Novembro EP Annual Report 2023"
       },
       "revenueModel": "State subsidy, print retail sales, and official government advertising",
-      "logo": "newspaper-logos/ao/jornal-de-angola.svg",
-      "logoExplainer": "Classic red serif title typography on white, representing the historic national daily paper of Angola.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.jornaldeangola.ao",
         "https://en.wikipedia.org/wiki/Jornal_de_Angola"
@@ -595,8 +574,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Nova Group Review 2023"
       },
       "revenueModel": "Print sales and commercial advertising",
-      "logo": "newspaper-logos/ao/o-pais.svg",
-      "logoExplainer": "Bold crimson block typography 'O PAÍS' symbolising dynamic commercial reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://opais.ao",
         "https://pt.wikipedia.org/wiki/O_Pa%C3%ADs_(Angola)"
@@ -622,8 +600,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Novo Jornal Media Kit 2024"
       },
       "revenueModel": "Print sales and digital display advertising",
-      "logo": "newspaper-logos/ao/novo-jornal.svg",
-      "logoExplainer": "Cyan blue title logo representing modern independent print journalism in Angola.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://novojornal.co.ao",
         "https://pt.wikipedia.org/wiki/Novo_Jornal"
@@ -649,8 +626,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Folha 8 Archive"
       },
       "revenueModel": "Print newsstand sales and private subscriptions",
-      "logo": "newspaper-logos/ao/folha-8.svg",
-      "logoExplainer": "Red and black stencil font 'FOLHA 8' representing courageous independent reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://jornalf8.net",
         "https://pt.wikipedia.org/wiki/Folha_8"
@@ -677,8 +653,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Instituto Verificador de Circulaciones (IVC) Argentina 2023"
       },
       "revenueModel": "Digital subscriptions, print sales, display advertising, and media syndication",
-      "logo": "newspaper-logos/ar/clarin.svg",
-      "logoExplainer": "Iconic red serif title logo 'Clarín', recognized across Latin America as Argentina's flagship daily.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.clarin.com",
         "https://en.wikipedia.org/wiki/Clar%C3%ADn_(Argentine_newspaper)"
@@ -704,8 +679,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "IVC Argentina / Comscore 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and corporate advertising",
-      "logo": "newspaper-logos/ar/la-nacion.svg",
-      "logoExplainer": "Classic black serif title logo 'LA NACION', symbolizing 150+ years of Argentine journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lanacion.com.ar",
         "https://en.wikipedia.org/wiki/La_Naci%C3%B3n"
@@ -731,8 +705,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "IVC Argentina 2023"
       },
       "revenueModel": "Print sales, digital subscriptions, and institutional advertising",
-      "logo": "newspaper-logos/ar/pagina-12.svg",
-      "logoExplainer": "Modern blue and white title logo 'Página/12', representing post-dictatorship progressive press freedom.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.pagina12.com.ar",
         "https://en.wikipedia.org/wiki/P%C3%A1gina/12"
@@ -760,8 +733,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media-Analyse Austria 2023/2024"
       },
       "revenueModel": "Print retail sales, digital subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/at/kronen-zeitung.svg",
-      "logoExplainer": "Red banner featuring traditional Fraktur script typography 'Kronen Zeitung', iconic across Austrian print history.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.krone.at",
         "https://en.wikipedia.org/wiki/Kronen_Zeitung"
@@ -787,8 +759,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media-Analyse Austria 2023/2024"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and corporate advertising",
-      "logo": "newspaper-logos/at/die-presse.svg",
-      "logoExplainer": "Classic serif title logo 'Die Presse' with subtitle 'SEIT 1848 UNABHÄNGIG', reflecting 175+ years of liberal press tradition.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.diepresse.com",
         "https://en.wikipedia.org/wiki/Die_Presse"
@@ -814,8 +785,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media-Analyse Austria 2023/2024"
       },
       "revenueModel": "Print newsstand sales, digital subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/at/kurier.svg",
-      "logoExplainer": "Bold blue sans-serif title logo 'KURIER', symbolizing modern Austrian mainstream daily journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kurier.at",
         "https://en.wikipedia.org/wiki/Kurier"
@@ -980,8 +950,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Press Council of Azerbaijan"
       },
       "revenueModel": "Print sales and commercial advertising",
-      "logo": "newspaper-logos/az/525.svg",
-      "logoExplainer": "Dark slate background with gold text '525-ci QƏZET', representing 30+ years of independent print press.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://525.az",
         "https://az.wikipedia.org/wiki/525-ci_q%C9%99zet"
@@ -1009,8 +978,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Oslobođenje Publishing House 2023"
       },
       "revenueModel": "Print sales, display advertising, and digital subscriptions",
-      "logo": "newspaper-logos/ba/oslobodjenje.svg",
-      "logoExplainer": "Classic red serif title logo 'Oslobođenje', symbolising historic wartime free press courage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.oslobodjenje.ba",
         "https://en.wikipedia.org/wiki/Oslobo%C4%91enje"
@@ -1036,8 +1004,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ABC Central & Eastern Europe 2023"
       },
       "revenueModel": "Print sales, digital display advertising, and commercial classifieds",
-      "logo": "newspaper-logos/ba/dnevni-avaz.svg",
-      "logoExplainer": "Slate black logo block with bright blue and white text 'DNEVNI AVAZ', iconic in Bosnian daily print.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://avaz.ba",
         "https://en.wikipedia.org/wiki/Dnevni_avaz"
@@ -1063,8 +1030,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nezavisne Media Kit 2024"
       },
       "revenueModel": "Print circulation and commercial advertising",
-      "logo": "newspaper-logos/ba/nezavisne.svg",
-      "logoExplainer": "Forest green title logo 'NEZAVISNE NOVINE', representing regional print press leadership.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.nezavisne.com",
         "https://en.wikipedia.org/wiki/Nezavisne_novine"
@@ -1091,8 +1057,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Advocate Publishers Review 2023"
       },
       "revenueModel": "Print newsstand sales, digital subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/bb/barbados-advocate.svg",
-      "logoExplainer": "Deep blue serif title font 'The Barbados Advocate' with yellow subtitle, symbolising 125+ years of Barbadian print journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.barbadosadvocate.com",
         "https://en.wikipedia.org/wiki/The_Barbados_Advocate"
@@ -1117,8 +1082,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Barbados Today Media Review 2024"
       },
       "revenueModel": "Digital display advertising, video pre-rolls, and corporate sponsorships",
-      "logo": "newspaper-logos/bb/barbados-today.svg",
-      "logoExplainer": "Cyan blue title banner with white and yellow text 'BARBADOS TODAY', representing modern digital island news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://barbadostoday.bb"
       ]
@@ -1142,8 +1106,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Trend Media Group 2024"
       },
       "revenueModel": "Digital mobile advertising and branded partnerships",
-      "logo": "newspaper-logos/bb/loop-barbados.svg",
-      "logoExplainer": "Purple modern logo 'loop NEWS', representing Caribbean mobile digital publishing.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://barbados.loopnews.com"
       ]
@@ -1170,8 +1133,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Department of Film and Publications (DFP) Bangladesh 2023"
       },
       "revenueModel": "Print sales, digital display advertising, and e-paper subscriptions",
-      "logo": "newspaper-logos/bd/prothom-alo.svg",
-      "logoExplainer": "Red Bengali script title logo 'প্রথম আলো', symbolising morning enlightenment and national news leadership.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.prothomalo.com",
         "https://en.wikipedia.org/wiki/Prothom_Alo"
@@ -1197,8 +1159,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "DFP Bangladesh 2023"
       },
       "revenueModel": "Print circulation and commercial advertising",
-      "logo": "newspaper-logos/bd/ittefaq.svg",
-      "logoExplainer": "Emerald green title block with white Bengali calligraphy 'ইত্তেফাক', reflecting liberation era journalism heritage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ittefaq.com.bd",
         "https://en.wikipedia.org/wiki/The_Daily_Ittefaq"
@@ -1226,8 +1187,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "CIM (Centre d'Information sur les Média) Belgium 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/be/le-soir.svg",
-      "logoExplainer": "Classic serif title logo 'LE SOIR' on white, representing Belgian francophone press leadership.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lesoir.be",
         "https://en.wikipedia.org/wiki/Le_Soir"
@@ -1253,8 +1213,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "CIM Belgium 2023/2024"
       },
       "revenueModel": "Print retail sales, digital display advertising, and subscriptions",
-      "logo": "newspaper-logos/be/hln.svg",
-      "logoExplainer": "Vibrant red title logo with white text 'HLN', iconic across Flanders as the highest-circulation news brand.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.hln.be",
         "https://en.wikipedia.org/wiki/Het_Laatste_Nieuws"
@@ -1280,8 +1239,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "CIM Belgium 2023"
       },
       "revenueModel": "Digital paywall subscriptions and print sales",
-      "logo": "newspaper-logos/be/la-libre.svg",
-      "logoExplainer": "Classic serif title logo 'La Libre Belgique' with gold accent, symbolising 140+ years of Belgian francophone journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lalibre.be",
         "https://en.wikipedia.org/wiki/La_Libre_Belgique"
@@ -1309,8 +1267,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Éditions Sidwaya Annual Report 2023"
       },
       "revenueModel": "State subsidy, print sales, and official government advertising",
-      "logo": "newspaper-logos/bf/sidwaya.svg",
-      "logoExplainer": "Red title banner with gold text 'SIDWAYA', representing Burkina Faso's official public daily newspaper.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sidwaya.info",
         "https://fr.wikipedia.org/wiki/Sidwaya"
@@ -1336,8 +1293,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "L'Observateur Paalga Review 2023"
       },
       "revenueModel": "Print sales and commercial advertising",
-      "logo": "newspaper-logos/bf/lobservateur.svg",
-      "logoExplainer": "Classic black serif title logo 'L'Observateur Paalga' with red subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lobservateur.bf",
         "https://fr.wikipedia.org/wiki/L%27Observateur_Paalga"
@@ -1363,8 +1319,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Le Pays Media Kit 2024"
       },
       "revenueModel": "Print newsstand sales and private advertising",
-      "logo": "newspaper-logos/bf/le-pays.svg",
-      "logoExplainer": "Dark blue title banner 'LE PAYS' in bold white block typography.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lepays.bf",
         "https://fr.wikipedia.org/wiki/Le_Pays_(Burkina_Faso)"
@@ -1390,8 +1345,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "L'Événement Archive"
       },
       "revenueModel": "Print sales and digital subscriptions",
-      "logo": "newspaper-logos/bf/levenement.svg",
-      "logoExplainer": "Dark slate badge with sky blue font 'L'ÉVÉNEMENT', representing investigative journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.evenement-bf.net"
       ]
@@ -1418,8 +1372,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Group Bulgaria Review 2023"
       },
       "revenueModel": "Print sales, display advertising, and digital subscriptions",
-      "logo": "newspaper-logos/bg/24-chasa.svg",
-      "logoExplainer": "Crimson rectangular title banner with bold white text '24 ЧАСА', iconic in Bulgarian print press.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.24chasa.bg",
         "https://en.wikipedia.org/wiki/24_Chasa"
@@ -1445,8 +1398,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Trud Media Kit 2023"
       },
       "revenueModel": "Print sales and commercial display advertising",
-      "logo": "newspaper-logos/bg/trud.svg",
-      "logoExplainer": "Classic black serif Cyrillic title font 'ТРУД' on white canvas.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://trud.bg",
         "https://en.wikipedia.org/wiki/Trud_(Bulgarian_newspaper)"
@@ -1472,8 +1424,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gemius Bulgaria 2024"
       },
       "revenueModel": "Digital subscriptions, display advertising, and e-paper subscriptions",
-      "logo": "newspaper-logos/bg/dnevnik.svg",
-      "logoExplainer": "Dark slate badge with sky blue text 'ДНЕВНИК', symbolising modern European digital journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.dnevnik.bg",
         "https://en.wikipedia.org/wiki/Dnevnik_(Bulgarian_newspaper)"
@@ -1498,8 +1449,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Economedia AD Review 2023"
       },
       "revenueModel": "Corporate paywall subscriptions, print sales, and financial advertising",
-      "logo": "newspaper-logos/bg/capital.svg",
-      "logoExplainer": "Forest green title banner 'CAPITAL' in bold serif typography, symbolising economic press leadership.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.capital.bg",
         "https://en.wikipedia.org/wiki/Capital_(Bulgarian_newspaper)"
@@ -1527,8 +1477,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al Ayam Publishing Review 2023"
       },
       "revenueModel": "Print sales, subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/bh/al-ayam.svg",
-      "logoExplainer": "Sky blue title banner with white Arabic calligraphic typography 'الأيام'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.alayam.com",
         "https://en.wikipedia.org/wiki/Al_Ayam_(Bahrain)"
@@ -1554,8 +1503,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Dar Al Bilad Media Kit 2024"
       },
       "revenueModel": "Print sales and corporate display advertising",
-      "logo": "newspaper-logos/bh/al-bilad.svg",
-      "logoExplainer": "Forest green background with white calligraphic text 'البلاد', representing financial and national affairs.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.albiladpress.com",
         "https://en.wikipedia.org/wiki/Al_Bilad_(Bahraini_newspaper)"
@@ -1581,8 +1529,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al Hilal Publishing"
       },
       "revenueModel": "Print circulation and commercial advertising",
-      "logo": "newspaper-logos/bh/akhbar-al-khaleej.svg",
-      "logoExplainer": "Deep red title block with Arabic calligraphy 'أخبار الخليج', symbolizing historic Gulf journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.akhbar-alkhaleej.com",
         "https://en.wikipedia.org/wiki/Akhbar_Al_Khaleej"
@@ -1608,8 +1555,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Daily Tribune Media Kit 2024"
       },
       "revenueModel": "Print sales, digital display ads, and corporate sponsorships",
-      "logo": "newspaper-logos/bh/daily-tribune.svg",
-      "logoExplainer": "Slate blue title banner with white serif text 'THE DAILY TRIBUNE' and red subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.newsofbahrain.com",
         "https://en.wikipedia.org/wiki/The_Daily_Tribune_(Bahrain)"
@@ -1637,8 +1583,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "PPB Burundi 2023"
       },
       "revenueModel": "State subsidy and official government announcements",
-      "logo": "newspaper-logos/bi/le-renouveau.svg",
-      "logoExplainer": "Forest green title banner 'LE RENOUVEAU DU BURUNDI' with yellow subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://renouveau.bi"
       ]
@@ -1663,8 +1608,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "IWACU Media Review 2023"
       },
       "revenueModel": "Print sales, digital advertising, and reader subscriptions",
-      "logo": "newspaper-logos/bi/iwacu.svg",
-      "logoExplainer": "White rectangular banner with bold dark blue text 'IWACU', symbolising independent Burundian media.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.iwacu-burundi.org",
         "https://fr.wikipedia.org/wiki/Iwacu"
@@ -1690,8 +1634,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Jimbere Media Kit 2024"
       },
       "revenueModel": "Print sales and corporate sponsorships",
-      "logo": "newspaper-logos/bi/jimbere.svg",
-      "logoExplainer": "Purple modern title font 'JIMBERE', representing youth empowerment and social progress.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.jimbere-mag.org"
       ]
@@ -1718,8 +1661,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ONIP Benin Annual Report 2023"
       },
       "revenueModel": "State subsidy, print sales, and official government advertising",
-      "logo": "newspaper-logos/bj/la-nation.svg",
-      "logoExplainer": "Green serif title typography 'LA NATION' on white, symbolising the official public daily of Benin.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lanation.bj",
         "https://fr.wikipedia.org/wiki/La_Nation_(B%C3%A9nin)"
@@ -1745,8 +1687,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Groupe Le Matinal Review 2023"
       },
       "revenueModel": "Print retail sales and commercial display advertising",
-      "logo": "newspaper-logos/bj/le-matinal.svg",
-      "logoExplainer": "Dark blue title banner with gold text 'LE MATINAL', representing morning commercial reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lespharaons.com",
         "https://fr.wikipedia.org/wiki/Le_Matinal"
@@ -1772,8 +1713,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Fraternité Media Kit"
       },
       "revenueModel": "Print sales and local advertising",
-      "logo": "newspaper-logos/bj/fraternite.svg",
-      "logoExplainer": "Crimson title logo 'Fraternité', representing democratic dialogue and community press.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.fraternitebj.info"
       ]
@@ -1798,8 +1738,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "La Nouvelle Tribune Archive"
       },
       "revenueModel": "Print sales and digital display advertising",
-      "logo": "newspaper-logos/bj/la-nouvelle-tribune.svg",
-      "logoExplainer": "Dark slate banner with sky blue text 'LA NOUVELLE TRIBUNE', symbolising critical political commentary.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lanouvelletribune.info",
         "https://fr.wikipedia.org/wiki/La_Nouvelle_Tribune_(B%C3%A9nin)"
@@ -1885,8 +1824,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Deber Media Kit 2023"
       },
       "revenueModel": "Print sales, display advertising, and digital subscriptions",
-      "logo": "newspaper-logos/bo/el-deber.svg",
-      "logoExplainer": "Crimson title block with white serif font 'EL DEBER', iconic in Santa Cruz regional press.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://eldeber.com.bo",
         "https://en.wikipedia.org/wiki/El_Deber"
@@ -1912,8 +1850,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Los Tiempos Archive 2023"
       },
       "revenueModel": "Print circulation and commercial advertising",
-      "logo": "newspaper-logos/bo/los-tiempos.svg",
-      "logoExplainer": "Deep blue title banner with classic white serif typography 'LOS TIEMPOS'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lostiempos.com",
         "https://en.wikipedia.org/wiki/Los_Tiempos"
@@ -1939,8 +1876,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "La Razón Media Kit 2024"
       },
       "revenueModel": "Print sales, corporate display ads, and subscriptions",
-      "logo": "newspaper-logos/bo/la-razon.svg",
-      "logoExplainer": "Classic black serif title 'LA RAZON' on white canvas, symbolising national press presence.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.la-razon.com",
         "https://en.wikipedia.org/wiki/La_Raz%C3%B3n_(Bolivia)"
@@ -1966,8 +1902,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Opinión Publishing 2023"
       },
       "revenueModel": "Print newsstand sales and local advertising",
-      "logo": "newspaper-logos/bo/opinion.svg",
-      "logoExplainer": "Sky blue title logo 'OPINIÓN' in bold sans-serif lettering.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.opinion.com.bo",
         "https://es.wikipedia.org/wiki/Opini%C3%B3n_(peri%C3%B3dico_boliviano)"
@@ -2131,8 +2066,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Nassau Guardian Media Review 2023"
       },
       "revenueModel": "Print retail sales, digital subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/bs/nassau-guardian.svg",
-      "logoExplainer": "Teal blue rectangular banner with white serif title typography 'The Nassau Guardian', representing Bahamian print history.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://thenassauguardian.com",
         "https://en.wikipedia.org/wiki/The_Nassau_Guardian"
@@ -2157,8 +2091,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Tribune Media Kit 2023"
       },
       "revenueModel": "Print newsstand sales and advertising",
-      "logo": "newspaper-logos/bs/tribune.svg",
-      "logoExplainer": "Classic black serif title font on white canvas, reflecting 120+ years of independent Bahamian journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.tribune242.com",
         "https://en.wikipedia.org/wiki/The_Tribune_(Bahamas)"
@@ -2183,8 +2116,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Punch Publishing Group"
       },
       "revenueModel": "Newsstand retail sales and local advertising",
-      "logo": "newspaper-logos/bs/punch.svg",
-      "logoExplainer": "Bold red title banner with yellow typography 'THE PUNCH', representing energetic tabloid reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/The_Punch_(Bahamas)"
       ]
@@ -2208,8 +2140,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Eyewitness News Media Kit 2024"
       },
       "revenueModel": "Digital display ads, telecom sponsorship, and video commercials",
-      "logo": "newspaper-logos/bs/eyewitness.svg",
-      "logoExplainer": "Dark blue badge with white and sky blue text 'EYEWITNESS NEWS', symbolising modern digital broadcasting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ewnews.com"
       ]
@@ -2236,8 +2167,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kuensel Corporation Annual Report 2023"
       },
       "revenueModel": "Print sales, official government advertising, and commercial subscriptions",
-      "logo": "newspaper-logos/bt/kuensel.svg",
-      "logoExplainer": "Orange title banner featuring Dzongkha script 'ཀུན་གསལ།' and gold lettering 'KUENSEL', symbolising Himalayan enlightenment.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kuenselonline.com",
         "https://en.wikipedia.org/wiki/Kuensel"
@@ -2262,8 +2192,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Bhutanese Media Kit 2024"
       },
       "revenueModel": "Print retail sales and digital display advertising",
-      "logo": "newspaper-logos/bt/the-bhutanese.svg",
-      "logoExplainer": "Dark navy title logo with gold text 'The Bhutanese', representing independent investigative reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://thebhutanese.bt",
         "https://en.wikipedia.org/wiki/The_Bhutanese"
@@ -2288,8 +2217,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Business Bhutan Review 2023"
       },
       "revenueModel": "Print subscriptions and corporate advertising",
-      "logo": "newspaper-logos/bt/business-bhutan.svg",
-      "logoExplainer": "Forest green title logo 'Business Bhutan', representing economic and financial journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://businessbhutan.bt"
       ]
@@ -2313,8 +2241,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Centre for Bhutan & GNH Studies"
       },
       "revenueModel": "Royal Government research grants and academic subscriptions",
-      "logo": "newspaper-logos/bt/jbs.svg",
-      "logoExplainer": "Indigo title banner 'JOURNAL OF BHUTAN STUDIES', symbolising scholarly academic research.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.bhutanstudies.org.bt",
         "https://en.wikipedia.org/wiki/Journal_of_Bhutan_Studies"
@@ -2342,8 +2269,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Dikgang Publishing Review 2023"
       },
       "revenueModel": "Print newsstand sales, display advertising, and digital subscriptions",
-      "logo": "newspaper-logos/bw/mmegi.svg",
-      "logoExplainer": "Classic black serif title logo 'Mmegi', representing independent print journalism in Botswana.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.mmegi.bw",
         "https://en.wikipedia.org/wiki/Mmegi"
@@ -2368,8 +2294,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Voice Media Kit 2023"
       },
       "revenueModel": "Print retail sales and local commercial advertising",
-      "logo": "newspaper-logos/bw/the-voice.svg",
-      "logoExplainer": "Red title banner with bold white text 'THE VOICE', symbolising energetic tabloid reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://news.thevoicebw.com",
         "https://en.wikipedia.org/wiki/The_Voice_(Botswana)"
@@ -2394,8 +2319,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "CBET Publishing 2023"
       },
       "revenueModel": "Print circulation and commercial display advertising",
-      "logo": "newspaper-logos/bw/botswana-guardian.svg",
-      "logoExplainer": "Blue title banner 'BOTSWANA GUARDIAN' in bold sans-serif text.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.botswanaguardian.co.bw"
       ]
@@ -2422,8 +2346,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministry of Information of the Republic of Belarus 2023"
       },
       "revenueModel": "State budget subsidy, print retail sales, and mandatory public institution subscriptions",
-      "logo": "newspaper-logos/by/sb-segodnya.svg",
-      "logoExplainer": "Royal blue title banner with white serif text 'СБ. БЕЛАРУСЬ СЕГОДНЯ', representing the main state daily paper.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sb.by",
         "https://en.wikipedia.org/wiki/Sovetskaya_Belorussiya_%E2%80%93_Belarus_Segodnya"
@@ -2449,8 +2372,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministry of Information of Belarus"
       },
       "revenueModel": "State subsidy and print subscription sales",
-      "logo": "newspaper-logos/by/zvyazda.svg",
-      "logoExplainer": "Forest green title banner with white Cyrillic calligraphic script 'ЗВЯЗДА', symbolising historic Belarusian print press.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://zviazda.by",
         "https://en.wikipedia.org/wiki/Zvyazda"
@@ -2476,8 +2398,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Belarusian Association of Journalists (BAJ)"
       },
       "revenueModel": "Reader donations, grant funding, and digital advertising",
-      "logo": "newspaper-logos/by/nasha-niva.svg",
-      "logoExplainer": "Classic white banner with red script typography 'Наша Ніва', representing 115+ years of Belarusian cultural journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://nashaniva.com",
         "https://en.wikipedia.org/wiki/Nasha_Niva"
@@ -2504,8 +2425,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Amandala Publishing Review 2023"
       },
       "revenueModel": "Print retail sales and local commercial advertising",
-      "logo": "newspaper-logos/bz/amandala.svg",
-      "logoExplainer": "Forest green title banner with bold white text 'AMANDALA', representing Belize's leading independent print voice.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://amandala.com.bz",
         "https://en.wikipedia.org/wiki/Amandala"
@@ -2530,8 +2450,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Reporter Media Kit 2023"
       },
       "revenueModel": "Print newsstand sales and commercial advertising",
-      "logo": "newspaper-logos/bz/reporter.svg",
-      "logoExplainer": "Classic blue serif title 'The Reporter' on white canvas, symbolizing established weekly journalism in Belize.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.reporter.bz",
         "https://en.wikipedia.org/wiki/The_Reporter_(Belize)"
@@ -2556,8 +2475,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The San Pedro Sun Media Kit 2024"
       },
       "revenueModel": "Tourism business advertising and print sales",
-      "logo": "newspaper-logos/bz/san-pedro-sun.svg",
-      "logoExplainer": "Sky blue banner with golden sun emblem, symbolising Ambergris Caye island community reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sanpedrosun.com"
       ]
@@ -2582,8 +2500,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "BBN Media Review 2024"
       },
       "revenueModel": "Digital display ads, mobile advertising, and corporate sponsorships",
-      "logo": "newspaper-logos/bz/bbn.svg",
-      "logoExplainer": "Red title banner with white text 'BREAKING BELIZE NEWS', symbolising modern 24-hour online reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.breakingbelizenews.com"
       ]
@@ -2610,7 +2527,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Digital subscriptions, print sales, and corporate advertising",
       "logo": "newspaper-logos/ca/the-globe-and-mail.svg",
-      "logoExplainer": "White banner featuring the iconic serif typography 'The Globe and Mail' in black, representing Canada's historic newspaper of record.",
+      "logoExplainer": "White serif capitals 'THE GLOBE AND MAIL' on a red field, with a small white maple leaf after MAIL — the paper's Canadian nameplate.",
+      "licenceNote": "The Globe and Mail masthead trademark bundled from Wikimedia Commons (File:The Globe and Mail (2019-10-31).svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.theglobeandmail.com",
         "https://en.wikipedia.org/wiki/The_Globe_and_Mail"
@@ -2637,7 +2555,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Reader subscriptions, philanthropic donations, and targeted advertising",
       "logo": "newspaper-logos/ca/le-devoir.svg",
-      "logoExplainer": "Minimalist white background with crisp black serif masthead 'LE DEVOIR', representing intellectual independence and journalistic duty.",
+      "logoExplainer": "High-contrast black serif capitals spelling 'LE DEVOIR' — the Montreal French-language daily's classic nameplate.",
+      "licenceNote": "Le Devoir masthead trademark bundled from Wikimedia Commons (File:Logo Le Devoir.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.ledevoir.com",
         "https://en.wikipedia.org/wiki/Le_Devoir"
@@ -2662,8 +2581,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Postmedia Network Annual Report 2023"
       },
       "revenueModel": "Print advertising, digital paywall, and sponsored content",
-      "logo": "newspaper-logos/ca/national-post.svg",
-      "logoExplainer": "Modern black uppercase sans-serif title 'NATIONAL POST' on white ground, reflecting contemporary business and national political journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://nationalpost.com",
         "https://en.wikipedia.org/wiki/National_Post"
@@ -2690,7 +2608,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Philanthropic donations, government journalism tax credits, and digital advertising",
       "logo": "newspaper-logos/ca/la-presse.svg",
-      "logoExplainer": "Red rectangular emblem featuring clean white sans-serif letters 'LA PRESSE', symbolising modern Quebec digital news leadership.",
+      "logoExplainer": "Bold wordmark for La Presse — the Montreal daily's 2012 digital-era title treatment.",
+      "licenceNote": "La Presse masthead trademark bundled from Wikimedia Commons (File:2012 logo for La Presse newspaper.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.lapresse.ca",
         "https://en.wikipedia.org/wiki/La_Presse_(Canadian_newspaper)"
@@ -2718,8 +2637,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Groupe Le Potentiel Profile 2023"
       },
       "revenueModel": "Print sales, institutional advertising, and online sponsorships",
-      "logo": "newspaper-logos/cd/le-potentiel.svg",
-      "logoExplainer": "Deep blue banner with white serif font 'Le Potentiel', representing decades of independent investigative journalism in Central Africa.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lepotentiel.cd",
         "https://fr.wikipedia.org/wiki/Le_Potentiel"
@@ -2744,8 +2662,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Actualite.cd Audience Review 2024"
       },
       "revenueModel": "Digital display advertising, international donor media grants, and syndicated reporting",
-      "logo": "newspaper-logos/cd/actualite-cd.svg",
-      "logoExplainer": "Dark charcoal banner with bold white text 'ACTUALITE.CD' and vivid red dot, symbolising real-time breaking news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://actualite.cd"
       ]
@@ -2770,8 +2687,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Groupe L'Avenir Media Review 2023"
       },
       "revenueModel": "Print newspaper sales and commercial advertising",
-      "logo": "newspaper-logos/cd/l-avenir.svg",
-      "logoExplainer": "White banner featuring blue and red font 'L'AVENIR', representing optimistic national development and daily news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://groupelavenir.cd",
         "https://fr.wikipedia.org/wiki/L%27Avenir_(journal_congolais)"
@@ -2797,8 +2713,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "CSAC RDC Media Registry 2023"
       },
       "revenueModel": "Print sales and official legal publication notices",
-      "logo": "newspaper-logos/cd/la-prospérité.svg",
-      "logoExplainer": "Emerald green title banner with bold white typography 'La Prospérité', reflecting economic growth and national progress.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://laprosperite.online"
       ]
@@ -2825,8 +2740,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Union des Journalistes de Centrafrique 2023"
       },
       "revenueModel": "Street print sales and private advertising",
-      "logo": "newspaper-logos/cf/le-démocrate.svg",
-      "logoExplainer": "White banner with bold black masthead 'LE DÉMOCRATE', symbolising democratic transition and independent press history in CAR.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.le-democrate.com",
         "https://fr.wikipedia.org/wiki/M%C3%A9dias_en_R%C3%A9publique_centrafricaine"
@@ -2851,8 +2765,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Corbeau News Analytics 2024"
       },
       "revenueModel": "Digital web advertising and private reader donations",
-      "logo": "newspaper-logos/cf/corbeau-news-centrafrique.svg",
-      "logoExplainer": "Dark charcoal banner with bold white text 'CNC' and 'Corbeau News Centrafrique', symbolising independent investigative news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://corbeaunews-centrafrique.org"
       ]
@@ -2877,8 +2790,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministère de la Communication RCA 2023"
       },
       "revenueModel": "Print sales and corporate sponsorships",
-      "logo": "newspaper-logos/cf/l-expansion.svg",
-      "logoExplainer": "Clean white masthead with blue serif title 'L'EXPANSION', representing economic focus and development journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://fr.wikipedia.org/wiki/M%C3%A9dias_en_R%C3%A9publique_centrafricaine"
       ]
@@ -2905,8 +2817,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ADIAC Corporate Review 2023"
       },
       "revenueModel": "Print sales, cultural sponsorships, and institutional subscriptions",
-      "logo": "newspaper-logos/cg/les-dépêches-de-brazzaville.svg",
-      "logoExplainer": "Black background with white serif title 'Les Dépêches de Brazzaville', the most prominent daily masthead in the Congo Basin.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lesdepechesdebrazzaville.fr",
         "https://fr.wikipedia.org/wiki/Les_D%C3%A9p%C3%AAches_de_Brazzaville"
@@ -2932,8 +2843,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Conseil Supérieur de la Liberté de Communication 2023"
       },
       "revenueModel": "Print retail sales and local advertising",
-      "logo": "newspaper-logos/cg/le-patriote.svg",
-      "logoExplainer": "Red title banner with bold white lettering 'LE PATRIOTE', representing national civic engagement and public debate.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://fr.wikipedia.org/wiki/M%C3%A9dias_en_R%C3%A9publique_du_Congo"
       ]
@@ -2961,8 +2871,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "WEMF AG für Werbemedienforschung / NZZ Jahresbericht 2023"
       },
       "revenueModel": "Paid digital subscriptions, print subscriptions, and high-end advertising",
-      "logo": "newspaper-logos/ch/nzz.svg",
-      "logoExplainer": "Pristine white field with historic dark navy serif typography 'Neue Zürcher Zeitung', a crisp dividing line, and Swiss quality press subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.nzz.ch",
         "https://en.wikipedia.org/wiki/Neue_Z%C3%BCrcher_Zeitung"
@@ -2989,8 +2898,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "WEMF / Fondation Aventinus Annual Report 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print subscriptions, foundation endowment, and advertising",
-      "logo": "newspaper-logos/ch/le-temps.svg",
-      "logoExplainer": "Clean white field with prominent navy serif typography 'LE TEMPS', an elegant rule bar, and gray Swiss reference daily subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.letemps.ch",
         "https://en.wikipedia.org/wiki/Le_Temps"
@@ -3017,8 +2925,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "WEMF Circulation Bulletin / TX Group Financial Report 2023"
       },
       "revenueModel": "Paid digital subscriptions, daily print deliveries, and commercial display advertising",
-      "logo": "newspaper-logos/ch/tages-anzeiger.svg",
-      "logoExplainer": "White background with deep blue serif lettering 'Tages-Anzeiger' and bold crimson red subtitle 'DIE GROSSE SCHWEIZER TAGESZEITUNG'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.tagesanzeiger.ch",
         "https://en.wikipedia.org/wiki/Tages-Anzeiger"
@@ -3045,8 +2952,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "WEMF / Gruppo CdT Readership Data"
       },
       "revenueModel": "Print subscriptions, digital paywall, and cantonal commercial advertising",
-      "logo": "newspaper-logos/ch/corriere-del-ticino.svg",
-      "logoExplainer": "Deep navy field featuring refined white serif typography 'CORRIERE DEL TICINO', underlined by an antique gold divider rule and founding year 1891 subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.cdt.ch",
         "https://en.wikipedia.org/wiki/Corriere_del_Ticino"
@@ -3078,8 +2984,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "Print sales, legal announcements, and government advertising",
-      "logo": "newspaper-logos/ci/fraternite-matin.svg",
-      "logoExplainer": "Green and orange banner with bold white text 'Fraternité Matin', reflecting the national colors of Ivory Coast.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.fratmat.info",
         "https://en.wikipedia.org/wiki/Fraternité_Matin"
@@ -3105,8 +3010,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ivorian Press Council (ANP) Audit 2023"
       },
       "revenueModel": "Print newsstand sales and commercial advertising",
-      "logo": "newspaper-logos/ci/l-inter.svg",
-      "logoExplainer": "Bold red rectangular logo containing white serif title 'L'Inter' with dynamic underline.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.linfodrome.com",
         "https://fr.wikipedia.org/wiki/L%27Inter"
@@ -3132,8 +3036,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ANP (Autorité Nationale de la Presse) Côte d'Ivoire 2023"
       },
       "revenueModel": "Print newsstand copy sales and local commercial advertising",
-      "logo": "newspaper-logos/ci/soir-info.svg",
-      "logoExplainer": "Dark blue badge featuring white script 'Soir Info' accented with a bright yellow sun emblem.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.linfodrome.com/soir-info",
         "https://fr.wikipedia.org/wiki/Soir_Info"
@@ -3159,8 +3062,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ANP Press Audit 2023"
       },
       "revenueModel": "Print newsstand sales and political advertising",
-      "logo": "newspaper-logos/ci/nouveau-reveil.svg",
-      "logoExplainer": "Bold orange typography 'Le Nouveau Réveil' on white background.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://nouveaureveil.com",
         "https://fr.wikipedia.org/wiki/Le_Nouveau_R%C3%A9veil"
@@ -3188,8 +3090,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Mercurio SAP Memoria Anual 2023"
       },
       "revenueModel": "Print sales, digital subscriptions, and display advertising",
-      "logo": "newspaper-logos/cl/el-mercurio.svg",
-      "logoExplainer": "White banner displaying the classic black gothic and serif masthead 'EL MERCURIO', representing Chile's oldest major news institution.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.elmercurio.com",
         "https://en.wikipedia.org/wiki/El_Mercurio"
@@ -3215,8 +3116,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Copesa Audience Report 2024"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and programmatic advertising",
-      "logo": "newspaper-logos/cl/la-tercera.svg",
-      "logoExplainer": "Vibrant red banner with bold white lowercase typography 'la tercera', reflecting modern investigative and dynamic daily reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.latercera.com",
         "https://en.wikipedia.org/wiki/La_Tercera"
@@ -3242,8 +3142,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Diario Financiero Media Kit 2024"
       },
       "revenueModel": "Corporate subscriptions and financial sector advertising",
-      "logo": "newspaper-logos/cl/diario-financiero.svg",
-      "logoExplainer": "White banner with distinctive navy blue lettering 'DF DIARIO FINANCIERO', symbolising market analysis and corporate integrity.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.df.cl",
         "https://es.wikipedia.org/wiki/Diario_Financiero"
@@ -3269,8 +3168,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "LUN Media Metrics 2023"
       },
       "revenueModel": "Retail print sales and retail commercial advertising",
-      "logo": "newspaper-logos/cl/las-últimas-noticias.svg",
-      "logoExplainer": "Royal blue background with bright yellow and white typography 'LUN Las Últimas Noticias', iconic across Chilean newsstands.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lun.com",
         "https://en.wikipedia.org/wiki/Las_%C3%9Altimas_Noticias"
@@ -3295,8 +3193,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Clinic Audience Review 2023"
       },
       "revenueModel": "Print sales, digital display advertising, and reader memberships",
-      "logo": "newspaper-logos/cl/the-clinic.svg",
-      "logoExplainer": "Dark black banner with bold white text 'THE CLINIC', symbolising sharp political satire and counter-cultural investigative journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.theclinic.cl",
         "https://en.wikipedia.org/wiki/The_Clinic_(newspaper)"
@@ -3323,8 +3220,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SOPECAM Annual Report 2023"
       },
       "revenueModel": "State public budget subsidy, print retail sales, and official government advertising",
-      "logo": "newspaper-logos/cm/cameroon-tribune.svg",
-      "logoExplainer": "Green title banner with white serif text 'Cameroon Tribune' and yellow subtitle, representing Cameroon's official bilingual daily.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.cameroon-tribune.cm",
         "https://en.wikipedia.org/wiki/Cameroon_Tribune"
@@ -3350,8 +3246,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Groupe Le Jour Review 2023"
       },
       "revenueModel": "Print sales and commercial display advertising",
-      "logo": "newspaper-logos/cm/le-jour.svg",
-      "logoExplainer": "Red title banner with bold white font 'LE JOUR', representing modern independent daily reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lejour.cm",
         "https://fr.wikipedia.org/wiki/Le_Jour_(Cameroun)"
@@ -3376,8 +3271,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "South Media Corporation 2023"
       },
       "revenueModel": "Print sales and commercial advertising",
-      "logo": "newspaper-logos/cm/mutations.svg",
-      "logoExplainer": "Royal blue title font 'MUTATIONS' in bold serif typography.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.mutations-online.com",
         "https://fr.wikipedia.org/wiki/Mutations_(journal)"
@@ -3402,8 +3296,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Guardian Post Media Kit 2024"
       },
       "revenueModel": "Print newsstand sales and commercial advertising",
-      "logo": "newspaper-logos/cm/guardian-post.svg",
-      "logoExplainer": "Dark slate banner with white text 'The Guardian Post' and red subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://theguardianpostcameroon.com"
       ]
@@ -3428,8 +3321,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Free Media Group Archive"
       },
       "revenueModel": "Print sales and local advertising",
-      "logo": "newspaper-logos/cm/le-messager.svg",
-      "logoExplainer": "Classic black serif title 'Le Messager' on white canvas, symbolising historic press freedom in Cameroon.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lemessager.cm",
         "https://en.wikipedia.org/wiki/Le_Messager_(Cameroon)"
@@ -3459,8 +3351,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "People's Daily Annual Report 2023"
       },
       "revenueModel": "State institutional subscriptions, official public notices, and digital media advertising",
-      "logo": "newspaper-logos/cn/people-s-daily.svg",
-      "logoExplainer": "Crimson red banner featuring golden-yellow calligraphic characters '人民日报' written by Mao Zedong, the defining insignia of China's principal state paper.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "http://en.people.cn",
         "https://en.wikipedia.org/wiki/People%27s_Daily"
@@ -3488,8 +3379,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Global Times Audience Report 2023"
       },
       "revenueModel": "Print sales, corporate advertising, and digital subscriptions",
-      "logo": "newspaper-logos/cn/huanqiu-shibao.svg",
-      "logoExplainer": "Burgundy red banner with white typography 'GLOBAL TIMES' and Chinese characters '环球时报', symbolising forthright geopolitical reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.globaltimes.cn",
         "https://en.wikipedia.org/wiki/Global_Times"
@@ -3517,8 +3407,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nanfang Media Group Annual Review 2023"
       },
       "revenueModel": "Provincial institutional subscriptions and regional commercial advertising",
-      "logo": "newspaper-logos/cn/nanfang-ribao.svg",
-      "logoExplainer": "White banner displaying red calligraphic characters '南方日报', representing the dynamic Greater Bay Area and Guangdong journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.nanfangdaily.com.cn",
         "https://en.wikipedia.org/wiki/Nanfang_Daily"
@@ -3546,8 +3435,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Casa Editorial El Tiempo Media Profile 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and cross-media advertising",
-      "logo": "newspaper-logos/co/el-tiempo.svg",
-      "logoExplainer": "Navy blue title banner with white serif masthead 'EL TIEMPO', representing Colombia's preeminent historic daily newspaper.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.eltiempo.com",
         "https://en.wikipedia.org/wiki/El_Tiempo_(Colombia)"
@@ -3573,8 +3461,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Valorem Annual Report 2023"
       },
       "revenueModel": "Digital subscriber paywall, print sales, and civic journalism grants",
-      "logo": "newspaper-logos/co/el-espectador.svg",
-      "logoExplainer": "White banner displaying the iconic black gothic masthead 'El Espectador', symbolising heroic defence of press freedom in Colombia.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.elespectador.com",
         "https://en.wikipedia.org/wiki/El_Espectador_(newspaper)"
@@ -3600,8 +3487,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Colombiano Media Kit 2024"
       },
       "revenueModel": "Print subscriptions, digital access plans, and regional advertising",
-      "logo": "newspaper-logos/co/el-colombiano.svg",
-      "logoExplainer": "Red banner with clean white serif font 'EL COLOMBIANO', representing century-old journalistic tradition in Antioquia.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.elcolombiano.com",
         "https://en.wikipedia.org/wiki/El_Colombiano"
@@ -3627,8 +3513,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Portafolio Corporate Profile 2023"
       },
       "revenueModel": "Financial corporate subscriptions and business-to-business advertising",
-      "logo": "newspaper-logos/co/portafolio.svg",
-      "logoExplainer": "Dark slate badge with clean white title 'PORTAFOLIO', symbolising authoritative financial analysis and business intelligence.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.portafolio.co",
         "https://es.wikipedia.org/wiki/Portafolio_(peri%C3%B3dico)"
@@ -3654,8 +3539,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Ardila Lülle Media Review 2023"
       },
       "revenueModel": "Corporate subscriptions and commercial banking advertising",
-      "logo": "newspaper-logos/co/la-república.svg",
-      "logoExplainer": "White banner displaying red and black serif lettering 'La República', representing Colombia's first dedicated economic daily.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.larepublica.co",
         "https://es.wikipedia.org/wiki/La_Rep%C3%BAblica_(Colombia)"
@@ -3683,8 +3567,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Nación Memoria Anual 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and corporate advertising",
-      "logo": "newspaper-logos/cr/la-nación.svg",
-      "logoExplainer": "Classic black serif masthead 'La Nación' on white canvas, symbolising democratic governance and public interest reporting in Costa Rica.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.nacion.com",
         "https://en.wikipedia.org/wiki/La_Naci%C3%B3n_(San_Jos%C3%A9)"
@@ -3710,8 +3593,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "La República Media Profile 2024"
       },
       "revenueModel": "Corporate subscriptions and financial sector advertising",
-      "logo": "newspaper-logos/cr/la-república.svg",
-      "logoExplainer": "Vibrant red banner with crisp white serif typography 'LA REPÚBLICA', representing business intelligence and commerce.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.larepublica.net",
         "https://es.wikipedia.org/wiki/La_Rep%C3%BAblica_(Costa_Rica)"
@@ -3737,8 +3619,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Diario Extra Media Kit 2023"
       },
       "revenueModel": "Retail print sales and classified advertising",
-      "logo": "newspaper-logos/cr/diario-extra.svg",
-      "logoExplainer": "Red and yellow title block with bold sans-serif lettering 'DIARIO EXTRA', iconic across Costa Rican kiosks.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.diarioextra.com",
         "https://es.wikipedia.org/wiki/Diario_Extra_(Costa_Rica)"
@@ -3763,8 +3644,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Similarweb & CRHoy Media Review 2024"
       },
       "revenueModel": "Digital programmatic advertising and sponsored content",
-      "logo": "newspaper-logos/cr/crhoy.svg",
-      "logoExplainer": "Bold blue and orange typography 'crhoy.com' representing rapid breaking digital journalism in Central America.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.crhoy.com",
         "https://es.wikipedia.org/wiki/CRHoy"
@@ -3792,8 +3672,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Editora Juventud Rebelde 2023"
       },
       "revenueModel": "State youth media subsidies and retail print distribution",
-      "logo": "newspaper-logos/cu/juventud-rebelde.svg",
-      "logoExplainer": "Blue and red badge with bold sans-serif text 'JUVENTUD REBELDE', symbolising revolutionary youth energy and education.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.juventudrebelde.cu",
         "https://en.wikipedia.org/wiki/Juventud_Rebelde"
@@ -3819,8 +3698,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "CTC Departamento de Prensa 2023"
       },
       "revenueModel": "Trade union dues and state publishing subsidy",
-      "logo": "newspaper-logos/cu/trabajadores.svg",
-      "logoExplainer": "Red and black title banner with bold uppercase typography 'TRABAJADORES', representing trade union solidarity.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.trabajadores.cu",
         "https://es.wikipedia.org/wiki/Trabajadores_(peri%C3%B3dico)"
@@ -3845,8 +3723,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Cubadebate Métricas Digitales 2024"
       },
       "revenueModel": "State digital communication grant allocation",
-      "logo": "newspaper-logos/cu/cubadebate.svg",
-      "logoExplainer": "Red speech bubble emblem with clean white typography 'cubadebate', symbolising ideological discussion and digital news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "http://www.cubadebate.cu",
         "https://en.wikipedia.org/wiki/Cubadebate"
@@ -3874,8 +3751,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "A Semana Online Profile 2023"
       },
       "revenueModel": "Print sales and digital display advertising",
-      "logo": "newspaper-logos/cv/a-semana.svg",
-      "logoExplainer": "White canvas displaying bold black masthead 'A SEMANA', symbolising thirty years of independent democratic journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://asemana.publ.cv",
         "https://pt.wikipedia.org/wiki/A_Semana"
@@ -3901,8 +3777,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Expresso das Ilhas Editorial Review 2023"
       },
       "revenueModel": "Commercial advertising and newspaper circulation",
-      "logo": "newspaper-logos/cv/expressodasilhas.svg",
-      "logoExplainer": "Navy blue background with gold-yellow lettering 'Expresso das Ilhas', highlighting maritime connectivity and national reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://expressodasilhas.cv",
         "https://pt.wikipedia.org/wiki/Expresso_das_Ilhas"
@@ -3927,8 +3802,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Jornal i Archive 2023"
       },
       "revenueModel": "Print sales and local corporate advertising",
-      "logo": "newspaper-logos/cv/jornal-i.svg",
-      "logoExplainer": "Red title banner featuring crisp white letter 'i' and modern typography, symbolising innovative urban press.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.facebook.com/jornalicv",
         "https://pt.wikipedia.org/wiki/Cabo_Verde#Comunica%C3%A7%C3%A3o_social"
@@ -3953,8 +3827,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Santiago Magazine Analytics 2024"
       },
       "revenueModel": "Digital banner advertising and sponsored opinion columns",
-      "logo": "newspaper-logos/cv/santiago-magazine.svg",
-      "logoExplainer": "Dark slate badge with clean white uppercase title 'SANTIAGO MAGAZINE', representing fearless modern digital investigative journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://santiagomagazine.cv"
       ]
@@ -3980,8 +3853,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Cyprus Mail Circulation Review 2023"
       },
       "revenueModel": "Digital subscriptions, print sales, and corporate advertising",
-      "logo": "newspaper-logos/cy/cyprus-mail.svg",
-      "logoExplainer": "Navy blue banner with classical white serif typography 'Cyprus Mail', representing eighty years of authoritative journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://cyprus-mail.com",
         "https://en.wikipedia.org/wiki/Cyprus_Mail"
@@ -4009,8 +3881,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Phileleftheros Group Annual Review 2023"
       },
       "revenueModel": "Print sales, corporate display advertising, and digital subscriptions",
-      "logo": "newspaper-logos/cy/o-phileleftheros.svg",
-      "logoExplainer": "Blue banner with classic white Greek typography 'Ο ΦΙΛΕΛΕΥΘΕΡΟΣ', the defining masthead of Cypriot print journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.philenews.com",
         "https://en.wikipedia.org/wiki/Phileleftheros"
@@ -4037,8 +3908,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Politis Media Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/cy/politis.svg",
-      "logoExplainer": "Red and black logo with modern Greek sans-serif lettering 'ΠΟΛΙΤΗΣ', symbolising democratic citizenship and progressive civic debate.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://politis.com.cy",
         "https://en.wikipedia.org/wiki/Politis_(Cyprus)"
@@ -4065,8 +3935,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Haravgi Publishing Data 2023"
       },
       "revenueModel": "Print sales, party subscriptions, and institutional advertisements",
-      "logo": "newspaper-logos/cy/haravgi.svg",
-      "logoExplainer": "Red title banner featuring golden sunrise symbol and white Greek lettering 'ΧΑΡΑΥΓΗ', representing a new socialist dawn.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://dialogos.com.cy/haravgi",
         "https://en.wikipedia.org/wiki/Haravgi"
@@ -4093,8 +3962,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Dias Publishing Group 2023"
       },
       "revenueModel": "Print retail sales and network television-digital advertising",
-      "logo": "newspaper-logos/cy/simerini.svg",
-      "logoExplainer": "Deep blue title banner with white serif font 'ΣΗΜΕΡΙΝΗ', symbolising traditional Greek Cypriot conservative press heritage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://simerini.sigmalive.com",
         "https://en.wikipedia.org/wiki/Simerini"
@@ -4124,8 +3992,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "NetMonitor Czech Republic & MAFRA 2024"
       },
       "revenueModel": "Digital subscriptions (iDNES Premium), print retail sales, and corporate advertising",
-      "logo": "newspaper-logos/cz/mfdnes.svg",
-      "logoExplainer": "Red and blue emblem featuring bold uppercase text 'MF DNES', representing modern Czech national journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.idnes.cz",
         "https://en.wikipedia.org/wiki/Mlad%C3%A1_fronta_DNES"
@@ -4152,8 +4019,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Borgis a.s. Annual Report 2023"
       },
       "revenueModel": "Print sales, subscriptions, and web traffic partnership with Seznam.cz",
-      "logo": "newspaper-logos/cz/právo.svg",
-      "logoExplainer": "Classic black serif typography 'Právo' on clean white canvas, symbolising justice, legal rights, and democratic accountability.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.novinky.cz",
         "https://en.wikipedia.org/wiki/Pr%C3%A1vo"
@@ -4180,8 +4046,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Economia Media Kit 2024"
       },
       "revenueModel": "Digital paywall subscriptions (HN.cz) and financial sector advertising",
-      "logo": "newspaper-logos/cz/hospodářské-noviny.svg",
-      "logoExplainer": "Navy blue banner with clean white typography 'Hospodářské noviny', reflecting market integrity and economic analysis.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://hn.cz",
         "https://en.wikipedia.org/wiki/Hospod%C3%A1%C5%99sk%C3%A9_noviny"
@@ -4208,8 +4073,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "MAFRA Publishing Report 2023"
       },
       "revenueModel": "Digital subscriptions and specialized cultural advertising",
-      "logo": "newspaper-logos/cz/lidové-noviny.svg",
-      "logoExplainer": "Historic black serif masthead 'Lidové noviny' on white ground, symbolising 130 years of Czech intellectual journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lidovky.cz",
         "https://en.wikipedia.org/wiki/Lidov%C3%A9_noviny"
@@ -4236,8 +4100,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Czech News Center Annual Review 2024"
       },
       "revenueModel": "Retail print sales, digital display advertising, and consumer media services",
-      "logo": "newspaper-logos/cz/blesk.svg",
-      "logoExplainer": "Vivid red rectangular banner with bold yellow italic text 'BLESK', iconic across Czech newsstands.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.blesk.cz",
         "https://en.wikipedia.org/wiki/Blesk_(newspaper)"
@@ -4268,7 +4131,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Digital paywall subscriptions, print circulation, and corporate display advertising",
       "logo": "newspaper-logos/de/frankfurter-allgemeine-zeitung.svg",
-      "logoExplainer": "Historic Fraktur blackletter masthead 'Frankfurter Allgemeine' on white canvas, the definitive typographic symbol of German quality journalism.",
+      "logoExplainer": "Blackletter gothic masthead spelling 'Frankfurter Allgemeine' — the FAZ nameplate used across print and digital.",
+      "licenceNote": "Frankfurter Allgemeine Zeitung masthead trademark bundled from Wikimedia Commons (File:Frankfurter Allgemeine Logo 2019.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.faz.net",
         "https://en.wikipedia.org/wiki/Frankfurter_Allgemeine_Zeitung"
@@ -4297,7 +4161,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and commercial display advertising",
       "logo": "newspaper-logos/de/süddeutsche-zeitung.svg",
-      "logoExplainer": "Gothic serif masthead 'Süddeutsche Zeitung' featuring the historic Munich cathedral (Frauenturm) silhouette, symbolising investigative authority.",
+      "logoExplainer": "Wordmark for Süddeutsche Zeitung — the Munich broadsheet's title treatment.",
+      "licenceNote": "Süddeutsche Zeitung masthead trademark bundled from Wikimedia Commons (File:Süddeutsche Zeitung Logo.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.sueddeutsche.de",
         "https://en.wikipedia.org/wiki/S%C3%BCddeutsche_Zeitung"
@@ -4324,8 +4189,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Axel Springer Financial Results 2024"
       },
       "revenueModel": "Digital subscriptions, television broadcasting revenue, and programmatic advertising",
-      "logo": "newspaper-logos/de/die-welt.svg",
-      "logoExplainer": "Deep blue rectangular banner with bold white capital typography 'WELT', representing transatlantic conservatism and 24-hour news.",
+      "logo": "newspaper-logos/de/die-welt.png",
+      "logoExplainer": "Wordmark for Die Welt — the Berlin daily's title treatment on white.",
+      "licenceNote": "Die Welt masthead trademark bundled from Wikimedia Commons (File:Die Welt Logo 2015.png) for educational reference in Learn mode.",
       "sources": [
         "https://www.welt.de",
         "https://en.wikipedia.org/wiki/Die_Welt"
@@ -4353,7 +4219,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Corporate subscriptions, specialized economic research, and B2B financial advertising",
       "logo": "newspaper-logos/de/handelsblatt.svg",
-      "logoExplainer": "Signature orange and black title banner with bold uppercase typography 'Handelsblatt', iconic across German corporate boardrooms.",
+      "logoExplainer": "Wordmark for Handelsblatt — Germany's leading business daily title treatment.",
+      "licenceNote": "Handelsblatt masthead trademark bundled from Wikimedia Commons (File:Handelsblatt logo.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.handelsblatt.com",
         "https://en.wikipedia.org/wiki/Handelsblatt"
@@ -4382,7 +4249,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Street print sales, BILDplus digital paywall, and high-volume commercial advertising",
       "logo": "newspaper-logos/de/bild.svg",
-      "logoExplainer": "Iconic red square emblem with white bold uppercase lettering 'BILD', the most recognizable tabloid logo across Europe.",
+      "logoExplainer": "White condensed sans-serif 'BILD' on a red field — the tabloid's signature cover title.",
+      "licenceNote": "Bild masthead trademark bundled from Wikimedia Commons (File:Bild logo.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.bild.de",
         "https://en.wikipedia.org/wiki/Bild"
@@ -4414,8 +4282,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "perCapita": "DJF 85 / person / year (~US$0.48)"
       },
       "revenueModel": "Direct state budget appropriation, print sales, and official legal notices",
-      "logo": "newspaper-logos/dj/la-nation.svg",
-      "logoExplainer": "Emerald green title banner with crisp white typography 'LA NATION', embodying Djibouti's national identity and public communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lanation.dj",
         "https://fr.wikipedia.org/wiki/La_Nation_(Djibouti)"
@@ -4442,8 +4309,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministère de la Communication de Djibouti 2023"
       },
       "revenueModel": "State budget funding and public notices",
-      "logo": "newspaper-logos/dj/al-qarn.svg",
-      "logoExplainer": "Green and white banner featuring elegant Arabic calligraphy 'القرن' (The Horn), reflecting Arab League heritage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.alqarn.dj"
       ]
@@ -4467,8 +4333,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Djib-Post Audience Analytics 2024"
       },
       "revenueModel": "Digital display advertising and sponsored corporate media",
-      "logo": "newspaper-logos/dj/djib-post.svg",
-      "logoExplainer": "Modern navy blue and cyan banner featuring 'DJIB-POST', symbolising youth-driven digital journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://djibpost.com"
       ]
@@ -4492,8 +4357,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Human Village Association 2023"
       },
       "revenueModel": "Cultural foundation grants and publication subscriptions",
-      "logo": "newspaper-logos/dj/human-village.svg",
-      "logoExplainer": "Warm terracotta badge with white typography 'Human Village', symbolising humanism, culture, and environmental awareness.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "http://www.human-village.org",
         "https://fr.wikipedia.org/wiki/Culture_de_Djibouti"
@@ -4523,8 +4387,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kantar Gallup Denmark & Berlingske Media 2024"
       },
       "revenueModel": "Digital paywall subscriptions, print circulation, and corporate advertising",
-      "logo": "newspaper-logos/dk/berlingske.svg",
-      "logoExplainer": "Classical black serif typography 'Berlingske' on clean white canvas, representing 275 years of Danish journalistic excellence.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.berlingske.dk",
         "https://en.wikipedia.org/wiki/Berlingske"
@@ -4551,8 +4414,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "JP/Politikens Hus Annual Report 2023"
       },
       "revenueModel": "Digital reader subscriptions, print sales, and cultural advertisements",
-      "logo": "newspaper-logos/dk/politiken.svg",
-      "logoExplainer": "Historic gothic and serif masthead 'POLITIKEN' anchored at Copenhagen's City Hall Square, symbolising progressive civic journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://politiken.dk",
         "https://en.wikipedia.org/wiki/Politiken"
@@ -4580,8 +4442,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "JP/Politikens Hus Media Review 2024"
       },
       "revenueModel": "Print sales, digital subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/dk/jyllands-posten.svg",
-      "logoExplainer": "Bold black serif title 'Jyllands-Posten' on white background, representing Jutland business resilience and national reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://jyllands-posten.dk",
         "https://en.wikipedia.org/wiki/Jyllands-Posten"
@@ -4609,8 +4470,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Dagbladet Børsen Audience Report 2023"
       },
       "revenueModel": "Corporate subscriptions and financial market advertising",
-      "logo": "newspaper-logos/dk/børsen.svg",
-      "logoExplainer": "Classic serif masthead 'BØRSEN' printed on signature salmon-pink paper, symbolising Nordic financial leadership.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://borsen.dk",
         "https://en.wikipedia.org/wiki/Dagbladet_B%C3%B8rsen"
@@ -4637,8 +4497,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Dansk Online Index & Kantar 2024"
       },
       "revenueModel": "Digital subscriptions (+Ekstra), programmatic ads, and street print sales",
-      "logo": "newspaper-logos/dk/ekstra-bladet.svg",
-      "logoExplainer": "Stark black and yellow badge with bold typography 'EKSTRA BLADET', iconic for anti-authoritarian investigative reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ekstrabladet.dk",
         "https://en.wikipedia.org/wiki/Ekstra_Bladet"
@@ -4665,8 +4524,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Dominica Chronicle Media Profile 2023"
       },
       "revenueModel": "Print sales, legal notices, and commercial display advertising",
-      "logo": "newspaper-logos/dm/the-chronicle.svg",
-      "logoExplainer": "Classic black serif masthead 'The Chronicle' on white canvas, symbolising over a century of print journalism in Dominica.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://thechronicle.dm",
         "https://en.wikipedia.org/wiki/The_Chronicle_(Dominica)"
@@ -4692,8 +4550,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Dominica News Online Audience Report 2024"
       },
       "revenueModel": "Digital banner advertising and diaspora community promotions",
-      "logo": "newspaper-logos/dm/dominica-news-online.svg",
-      "logoExplainer": "Cyan and navy banner with white lettering 'DOMINICA NEWS ONLINE', representing modern real-time island reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://dominicanewsonline.com"
       ]
@@ -4717,8 +4574,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sun Publishing Review 2023"
       },
       "revenueModel": "Print sales and local business advertising",
-      "logo": "newspaper-logos/dm/the-sun-dominica.svg",
-      "logoExplainer": "Bright golden sunburst icon with bold black typography 'The Sun', symbolising vibrant truth and community journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://sundominica.com"
       ]
@@ -4742,8 +4598,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Dominica Vibes Audience Review 2023"
       },
       "revenueModel": "Digital display ads and festival event promotions",
-      "logo": "newspaper-logos/dm/dominica-vibes.svg",
-      "logoExplainer": "Green and yellow banner with modern typography 'DOMINICA VIBES', reflecting the nature island's cultural vitality.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.dominicavibes.dm"
       ]
@@ -4767,8 +4622,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "EmoNews Media Analytics 2024"
       },
       "revenueModel": "Social media monetization, local sponsorships, and live stream advertising",
-      "logo": "newspaper-logos/dm/ebean-news.svg",
-      "logoExplainer": "Red and black badge with bold white lettering 'EMONEWS', representing dynamic mobile-first island reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://emonewsdm.com"
       ]
@@ -4795,8 +4649,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Corripio Informe Anual 2023"
       },
       "revenueModel": "Digital subscriptions, print circulation, and corporate display advertising",
-      "logo": "newspaper-logos/do/listín-diario.svg",
-      "logoExplainer": "Classic black gothic masthead 'Listín Diario' on white canvas, symbolising over 135 years of Dominican press heritage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://listindiario.com",
         "https://en.wikipedia.org/wiki/List%C3%ADn_Diario"
@@ -4822,8 +4675,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Diario Libre Media Kit 2024"
       },
       "revenueModel": "Commercial print display advertising and digital programmatic revenue",
-      "logo": "newspaper-logos/do/diario-libre.svg",
-      "logoExplainer": "Deep blue banner with clean white sans-serif typography 'Diario Libre', reflecting modern investigative and independent reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.diariolibre.com",
         "https://en.wikipedia.org/wiki/Diario_Libre"
@@ -4849,8 +4701,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Periódico Hoy Memoria 2023"
       },
       "revenueModel": "Print sales, official legal notices, and advertising",
-      "logo": "newspaper-logos/do/hoy.svg",
-      "logoExplainer": "Vibrant red title banner with bold white lettering 'HOY', representing immediate daily news and editorial vitality.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://hoy.com.do",
         "https://es.wikipedia.org/wiki/Hoy_(Rep%C3%BAblica_Dominicana)"
@@ -4876,8 +4727,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Multimedios del Caribe 2023"
       },
       "revenueModel": "Print circulation and multimedia broadcast-digital advertising",
-      "logo": "newspaper-logos/do/el-caribe.svg",
-      "logoExplainer": "Navy blue background with bold serif typography 'elCaribe', symbolising Caribbean identity and journalistic integrity.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.elcaribe.com.do",
         "https://en.wikipedia.org/wiki/El_Caribe_(newspaper)"
@@ -4903,8 +4753,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Día Media Distribution 2024"
       },
       "revenueModel": "Commercial print advertising and digital web sponsorships",
-      "logo": "newspaper-logos/do/el-día.svg",
-      "logoExplainer": "Yellow and red masthead featuring bold typography 'El Día', iconic for morning urban commuter news in the capital.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://eldia.com.do",
         "https://es.wikipedia.org/wiki/El_D%C3%ADa_(Rep%C3%BAblica_Dominicana)"
@@ -4932,8 +4781,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Reuters Institute Digital News Report 2023"
       },
       "revenueModel": "Print sales, commercial advertising, and digital subscriptions",
-      "logo": "newspaper-logos/dz/el-watan.svg",
-      "logoExplainer": "Classic serif masthead in dark charcoal, representing prestigious independent francophone journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://elwatan-dz.com",
         "https://en.wikipedia.org/wiki/El_Watan"
@@ -4959,8 +4807,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Echorouk Media Kit 2024"
       },
       "revenueModel": "Print sales, digital advertising, and TV cross-promotion",
-      "logo": "newspaper-logos/dz/echorouk.svg",
-      "logoExplainer": "Bright orange sun emblem next to bold Arabic typography, representing morning news and high-volume readership.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.echoroukonline.com",
         "https://en.wikipedia.org/wiki/Echorouk_El_Yaoumi"
@@ -4986,8 +4833,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Algerian Press Archive"
       },
       "revenueModel": "Print sales and private sector advertising",
-      "logo": "newspaper-logos/dz/liberte.svg",
-      "logoExplainer": "Royal blue sans-serif title logo representing secular democratic ideals and free press principles.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.liberte-algerie.com",
         "https://en.wikipedia.org/wiki/Libert%C3%A9_(Algerian_newspaper)"
@@ -5015,8 +4861,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo El Comercio Memoria Anual 2023"
       },
       "revenueModel": "Digital subscriptions, print sales, and corporate advertising",
-      "logo": "newspaper-logos/ec/el-comercio.svg",
-      "logoExplainer": "Classic black serif typography 'EL COMERCIO' on clean white canvas, representing over 118 years of Ecuadorian journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.elcomercio.com",
         "https://en.wikipedia.org/wiki/El_Comercio_(Ecuador)"
@@ -5042,8 +4887,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Universo Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial display advertising",
-      "logo": "newspaper-logos/ec/el-universo.svg",
-      "logoExplainer": "Deep blue banner with white serif masthead 'EL UNIVERSO', the most recognized newspaper emblem in the Pacific coast of Ecuador.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.eluniverso.com",
         "https://en.wikipedia.org/wiki/El_Universo"
@@ -5069,8 +4913,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Granasa Media Kit 2024"
       },
       "revenueModel": "Print circulation, digital paywall, and business advertising",
-      "logo": "newspaper-logos/ec/expreso.svg",
-      "logoExplainer": "Vibrant red banner with crisp white serif typography 'EXPRESO', symbolising energetic independent daily journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.expreso.ec",
         "https://es.wikipedia.org/wiki/Expreso_(Ecuador)"
@@ -5096,8 +4939,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Similarweb & Primicias Analytics 2024"
       },
       "revenueModel": "Digital advertising, corporate brand partnerships, and investigative grants",
-      "logo": "newspaper-logos/ec/primicias.svg",
-      "logoExplainer": "Minimalist navy and yellow badge with modern lowercase typography 'primicias', representing data-driven digital scoops.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.primicias.ec"
       ]
@@ -5125,8 +4967,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Estonian Media Association & Kantar Emor 2024"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and corporate advertising",
-      "logo": "newspaper-logos/ee/postimees.svg",
-      "logoExplainer": "Deep blue banner with white serif typography 'Postimees', the historic symbol of Estonian national awakening and journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.postimees.ee",
         "https://en.wikipedia.org/wiki/Postimees"
@@ -5151,8 +4992,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ekspress Grupp Financial Results 2024"
       },
       "revenueModel": "Digital paywall subscriptions (Delfi Kogupakett) and programmatic advertising",
-      "logo": "newspaper-logos/ee/delfi-ee.svg",
-      "logoExplainer": "Orange and dark blue badge with bold sans-serif text 'DELFI', representing modern Baltic digital breaking journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.delfi.ee",
         "https://en.wikipedia.org/wiki/Delfi_(web_portal)"
@@ -5180,8 +5020,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ekspress Grupp Media Report 2023"
       },
       "revenueModel": "Digital subscriber packages and institutional subscriptions",
-      "logo": "newspaper-logos/ee/eesti-päevaleht.svg",
-      "logoExplainer": "Blue and red logo with bold clean lettering 'Eesti Päevaleht', symbolising contemporary analytical journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://epl.delfi.ee",
         "https://en.wikipedia.org/wiki/Eesti_P%C3%A4evaleht"
@@ -5208,8 +5047,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Bonnier Business Press Estonia 2024"
       },
       "revenueModel": "Digital corporate paywall, specialized business conferences, and B2B advertising",
-      "logo": "newspaper-logos/ee/äripäev.svg",
-      "logoExplainer": "Signature magenta-red banner with crisp white typography 'Äripäev', representing Nordic business intelligence in the Baltics.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.aripaev.ee",
         "https://en.wikipedia.org/wiki/%C3%84rip%C3%A4ev"
@@ -5236,8 +5074,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Õhtuleht Kirjastus Annual Report 2023"
       },
       "revenueModel": "Print newsstand sales, digital subscriptions, and display advertising",
-      "logo": "newspaper-logos/ee/õhtuleht.svg",
-      "logoExplainer": "Red and yellow title block with bold uppercase font 'ÕHTULEHT', iconic across Estonian newsstands.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ohtuleht.ee",
         "https://en.wikipedia.org/wiki/%C3%95htuleht"
@@ -5266,8 +5103,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al-Masry Media Audience Report 2024"
       },
       "revenueModel": "Print sales, digital display advertising, and corporate sponsorships",
-      "logo": "newspaper-logos/eg/al-masry-al-youm.svg",
-      "logoExplainer": "Blue and red title badge featuring modern Arabic typography 'المصري اليوم', symbolising independent pluralistic Egyptian news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.almasryalyoum.com",
         "https://en.wikipedia.org/wiki/Al-Masry_Al-Youm"
@@ -5295,8 +5131,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Similarweb & UMS Group 2024"
       },
       "revenueModel": "Digital programmatic advertising, video monetization, and commercial partnerships",
-      "logo": "newspaper-logos/eg/youm7.svg",
-      "logoExplainer": "Vivid red and black badge with stylized Arabic numeral '7' and typography 'اليوم السابع', iconic across Middle Eastern mobile news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.youm7.com",
         "https://en.wikipedia.org/wiki/Youm7"
@@ -5323,8 +5158,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al-Wafd Media Center 2023"
       },
       "revenueModel": "Print sales, party subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/eg/al-wafd.svg",
-      "logoExplainer": "Classic green title banner with white Arabic lettering 'جريدة الوفد', representing liberal nationalist democratic heritage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://alwafd.news",
         "https://en.wikipedia.org/wiki/Al-Wafd_(newspaper)"
@@ -5349,8 +5183,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "UMS International Division 2024"
       },
       "revenueModel": "Print magazine circulation, international subscriptions, and tourism advertising",
-      "logo": "newspaper-logos/eg/egypt-today.svg",
-      "logoExplainer": "Gold and black emblem with refined serif typography 'EGYPT TODAY', evoking Egyptian antiquities and international diplomacy.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.egypttoday.com",
         "https://en.wikipedia.org/wiki/Egypt_Today"
@@ -5379,8 +5212,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Eritrean Ministry of Information 2023"
       },
       "revenueModel": "State publishing subsidy and retail kiosk print sales",
-      "logo": "newspaper-logos/er/haddas-eritrea.svg",
-      "logoExplainer": "Elegant Tigrinya Ge'ez calligraphy 'ሓዳስ ኤርትራ' on white ground, symbolising national renewal and indigenous language heritage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://shabait.com/category/haddas-ertra/",
         "https://en.wikipedia.org/wiki/Haddas_Eritrea"
@@ -5405,8 +5237,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministry of Information Profile 2023"
       },
       "revenueModel": "State budget funding and print sales",
-      "logo": "newspaper-logos/er/eritrea-profile.svg",
-      "logoExplainer": "Deep blue banner with classical serif lettering 'ERITREA PROFILE', the definitive English print masthead of Asmara.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://shabait.com/category/eritrea-profile/",
         "https://en.wikipedia.org/wiki/Eritrea_Profile"
@@ -5431,8 +5262,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Eritrean Digest Analytics 2024"
       },
       "revenueModel": "Reader patronage and academic media grants",
-      "logo": "newspaper-logos/er/eritrean-digest.svg",
-      "logoExplainer": "Warm terracotta badge with modern typography 'ERITREAN DIGEST', symbolising independent historical analysis and debate.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://eritreandigest.com"
       ]
@@ -5460,8 +5290,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Oficina de Justificación de la Difusión (OJD) / PRISA Annual Report 2023"
       },
       "revenueModel": "Paid digital subscriptions, print sales, corporate advertising, and events",
-      "logo": "newspaper-logos/es/el-pais.svg",
-      "logoExplainer": "Timeless white masthead with heavy black serif capitals 'EL PAÍS', an underline bar, and the historic subtitle 'EL PERIÓDICO GLOBAL'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://elpais.com",
         "https://en.wikipedia.org/wiki/El_Pa%C3%ADs"
@@ -5488,8 +5317,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "GfK DAM / OJD Interactiva / Unidad Editorial 2023"
       },
       "revenueModel": "Digital subscriptions, newsstand sales, and commercial brand advertising",
-      "logo": "newspaper-logos/es/el-mundo.svg",
-      "logoExplainer": "White field with vibrant cerulean globe emblem, dark navy ultra-bold sans-serif lettering 'EL MUNDO', and blue morning daily subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.elmundo.es",
         "https://en.wikipedia.org/wiki/El_Mundo_(Spain)"
@@ -5516,8 +5344,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "OJD / Vocento Resultados Anuales 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and print and digital display advertising",
-      "logo": "newspaper-logos/es/abc.svg",
-      "logoExplainer": "Deep black background featuring the iconic grand Bodoni serif lettering 'ABC' in white, separated by a gold line from Madrid heritage text.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.abc.es",
         "https://en.wikipedia.org/wiki/ABC_(Spanish_newspaper)"
@@ -5544,8 +5371,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "GfK DAM / OJD Interactiva 2023"
       },
       "revenueModel": "Digital subscriptions, daily print distribution, and premium brand advertising",
-      "logo": "newspaper-logos/es/la-vanguardia.svg",
-      "logoExplainer": "Deep navy rectangular banner with elegant white serif capitals 'LA VANGUARDIA', underlined by a warm gold rule and historic 1881 foundation mark.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lavanguardia.com",
         "https://en.wikipedia.org/wiki/La_Vanguardia"
@@ -5572,8 +5398,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Addis Fortune Circulation Profile 2023"
       },
       "revenueModel": "Print sales, corporate digital paywall subscriptions, and financial advertising",
-      "logo": "newspaper-logos/et/addis-fortune.svg",
-      "logoExplainer": "Deep corporate navy blue field featuring bold white typography 'FORTUNE' with golden accent line, signifying economic and financial authority.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://addisfortune.news",
         "https://en.wikipedia.org/wiki/Addis_Fortune"
@@ -5600,8 +5425,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media and Communications Center Audience Audit 2023"
       },
       "revenueModel": "Print newsstand sales, classifieds, and digital display advertising",
-      "logo": "newspaper-logos/et/the-reporter.svg",
-      "logoExplainer": "Bold red rectangular background with dignified white serif typography 'The Reporter', reflecting three decades of independent journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.thereporterethiopia.com",
         "https://am.thereporterethiopia.com"
@@ -5631,8 +5455,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sanoma Corporation Annual Report 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print circulation, and corporate display advertising",
-      "logo": "newspaper-logos/fi/helsingin-sanomat.svg",
-      "logoExplainer": "Iconic black square emblem with white interlocking initials 'HS' and classic serif typography, the benchmark insignia of Finnish journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.hs.fi",
         "https://en.wikipedia.org/wiki/Helsingin_Sanomat"
@@ -5659,8 +5482,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "FIAM (Finnish Internet Audience Measurement) 2024"
       },
       "revenueModel": "Digital subscriptions (IL Plus), programmatic ads, and print newsstand sales",
-      "logo": "newspaper-logos/fi/iltalehti.svg",
-      "logoExplainer": "Vibrant red banner with clean white typography 'ILTALEHTI', symbolising fast-paced breaking digital news across Finland.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.iltalehti.fi",
         "https://en.wikipedia.org/wiki/Iltalehti"
@@ -5688,8 +5510,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sanoma Media Audience Review 2024"
       },
       "revenueModel": "Digital advertising, premium digital packages (IS Extra), and retail sales",
-      "logo": "newspaper-logos/fi/ilta-sanomat.svg",
-      "logoExplainer": "Red and blue emblem featuring bold letters 'IS' and full title, iconic on Finnish newsstands since the 1930s.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.is.fi",
         "https://en.wikipedia.org/wiki/Ilta-Sanomat"
@@ -5716,8 +5537,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Alma Media Corporate Review 2023"
       },
       "revenueModel": "Corporate subscriptions and B2B financial advertising",
-      "logo": "newspaper-logos/fi/kauppalehti.svg",
-      "logoExplainer": "Dark green and black banner with bold sans-serif text 'Kauppalehti', representing Finnish corporate leadership and market analysis.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.kauppalehti.fi",
         "https://en.wikipedia.org/wiki/Kauppalehti"
@@ -5832,7 +5652,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Digital subscriptions, print circulation, and corporate advertising",
       "logo": "newspaper-logos/fr/le-monde.svg",
-      "logoExplainer": "Iconic black gothic masthead 'Le Monde' designed in 1944, representing moral independence and authoritative intellectual journalism.",
+      "logoExplainer": "Blackletter gothic masthead spelling 'Le Monde' with a light engraved edge — the Paris daily's classic nameplate.",
+      "licenceNote": "Le Monde masthead trademark bundled from Wikimedia Commons (File:Le Monde logo.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.lemonde.fr",
         "https://en.wikipedia.org/wiki/Le_Monde"
@@ -5859,7 +5680,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Digital subscriptions, print sales, luxury advertising, and magazine supplements",
       "logo": "newspaper-logos/fr/le-figaro.svg",
-      "logoExplainer": "Classic blue and black serif masthead 'LE FIGARO' accompanied by Beaumarchais' motto 'Sans la liberté de blâmer, il n'est point d'éloge flatteur'.",
+      "logoExplainer": "Ornate gothic masthead spelling 'Le Figaro' — the historic Paris daily's nameplate.",
+      "licenceNote": "Le Figaro masthead trademark bundled from Wikimedia Commons (File:Le Figaro logo.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.lefigaro.fr",
         "https://en.wikipedia.org/wiki/Le_Figaro"
@@ -5885,8 +5707,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Groupe Les Échos-Le Parisien 2024"
       },
       "revenueModel": "Corporate subscriptions and financial market advertising",
-      "logo": "newspaper-logos/fr/les-echos.svg",
-      "logoExplainer": "Red and black title banner with bold modern typography 'Les Echos', symbolising authoritative market intelligence.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lesechos.fr",
         "https://en.wikipedia.org/wiki/Les_%C3%89chos_(France)"
@@ -5913,7 +5734,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Reader subscriptions, philanthropic endowment support, and advertising",
       "logo": "newspaper-logos/fr/libération.svg",
-      "logoExplainer": "Iconic red rectangular emblem with bold white typography 'Libération', the visual hallmark of French progressive intellectual journalism.",
+      "logoExplainer": "Condensed white sans-serif 'Libération' over a red lozenge with a black drop shadow — the paper's distinctive title treatment.",
+      "licenceNote": "Libération masthead trademark bundled from Wikimedia Commons (File:Logo liberation.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.liberation.fr",
         "https://en.wikipedia.org/wiki/Lib%C3%A9ration"
@@ -5940,7 +5762,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Print subscriptions, retail kiosk sales, and local display advertising",
       "logo": "newspaper-logos/fr/ouest-france.svg",
-      "logoExplainer": "Red and blue emblem with bold sans-serif lettering 'ouest france', representing grassroots democratic humanism in regional France.",
+      "logoExplainer": "Wordmark for Ouest-France — Brittany's high-circulation regional daily title treatment.",
+      "licenceNote": "Ouest-France masthead trademark bundled from Wikimedia Commons (File:Ouest-France logo.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.ouest-france.fr",
         "https://en.wikipedia.org/wiki/Ouest-France"
@@ -5972,8 +5795,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "perCapita": "XAF 150 / person / year (~US$0.25)"
       },
       "revenueModel": "State operating subsidies, retail print sales, and official legal notices",
-      "logo": "newspaper-logos/ga/l-union.svg",
-      "logoExplainer": "Deep blue title banner with white serif font 'L'UNION', symbolising national unity and public press heritage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.union.sonapresse.com",
         "https://fr.wikipedia.org/wiki/L%27Union_(journal_gabonais)"
@@ -5998,8 +5820,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gabon Review Audience Report 2024"
       },
       "revenueModel": "Digital display advertising, sponsored columns, and consulting",
-      "logo": "newspaper-logos/ga/gabon-review.svg",
-      "logoExplainer": "Red and black title banner with modern font 'GabonReview', symbolising fearless independent investigative journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.gabonreview.com",
         "https://fr.wikipedia.org/wiki/Gabon_Review"
@@ -6024,8 +5845,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "GMT Audience Review 2024"
       },
       "revenueModel": "Digital programmatic advertising and brand content production",
-      "logo": "newspaper-logos/ga/gabon-medias-time.svg",
-      "logoExplainer": "Clean white background with elegant black and gold lettering 'GABON MEDIA TIME', symbolising contemporary media innovation.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://gabonmediatime.com"
       ]
@@ -6052,7 +5872,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Hard digital paywall subscriptions, print subscriptions, and premium brand advertising",
       "logo": "newspaper-logos/gb/the-times.svg",
-      "logoExplainer": "Classic white field with authoritative black Times New Roman typography 'THE TIMES', a divider rule, and heritage 1785 subtitle.",
+      "logoExplainer": "Serif capitals 'THE' and 'TIMES' flanking the Royal Coat of Arms of the United Kingdom — the traditional Times of London nameplate.",
+      "licenceNote": "The Times masthead trademark bundled from Wikimedia Commons (File:The Times masthead.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.thetimes.com",
         "https://en.wikipedia.org/wiki/The_Times"
@@ -6078,7 +5899,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Voluntary reader donations/memberships, digital subscriptions, print sales, and philanthropic foundation grants",
       "logo": "newspaper-logos/gb/the-guardian.svg",
-      "logoExplainer": "Signature dark navy blue field with elegant white serif masthead 'The Guardian' and bright yellow Scott Trust subtitle.",
+      "logoExplainer": "Stacked slab-serif wordmark 'The Guardian' in Guardian Egyptian — the post-2018 title treatment used across print and digital.",
+      "licenceNote": "The Guardian masthead trademark bundled from Wikimedia Commons (File:The Guardian 2018.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.theguardian.com",
         "https://en.wikipedia.org/wiki/The_Guardian"
@@ -6104,7 +5926,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Digital paywall subscriptions, print home deliveries, and high-end advertising",
       "logo": "newspaper-logos/gb/the-telegraph.svg",
-      "logoExplainer": "Charcoal black field with historic Old English gothic masthead 'The Daily Telegraph', a cyan divider rule, and London 1855 subtitle.",
+      "logoExplainer": "Blackletter gothic masthead spelling 'The Telegraph' — the nameplate used by The Daily Telegraph.",
+      "licenceNote": "The Telegraph masthead trademark bundled from Wikimedia Commons (File:The Telegraph logo.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.telegraph.co.uk",
         "https://en.wikipedia.org/wiki/The_Daily_Telegraph"
@@ -6130,7 +5953,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Premium digital enterprise and individual subscriptions, print sales, and financial advertising",
       "logo": "newspaper-logos/gb/financial-times.svg",
-      "logoExplainer": "Signature salmon-pink background with dark teal square tile bearing serif 'FT', crisp black serif capitals 'FINANCIAL TIMES', and teal subtitle.",
+      "logoExplainer": "Serif capitals spelling 'FINANCIAL TIMES' — the FT wordmark used on the salmon-pink print masthead and digital header.",
+      "licenceNote": "Financial Times masthead trademark bundled from Wikimedia Commons (File:Financial Times masthead.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.ft.com",
         "https://en.wikipedia.org/wiki/Financial_Times"
@@ -6157,8 +5981,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Now Grenada Analytics 2024"
       },
       "revenueModel": "Digital display advertising and local corporate sponsorships",
-      "logo": "newspaper-logos/gd/now-grenada.svg",
-      "logoExplainer": "Green, red, and yellow badge featuring bold typography 'NOW Grenada', reflecting the national colors of the Spice Isle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://nowgrenada.com"
       ]
@@ -6182,8 +6005,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Barnacle Media Review 2023"
       },
       "revenueModel": "Print advertising and local business listings",
-      "logo": "newspaper-logos/gd/the-barnacle.svg",
-      "logoExplainer": "Navy blue banner with classical white serif masthead 'The Barnacle', representing over thirty years of community journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://thebarnaclenews.com"
       ]
@@ -6207,8 +6029,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grenada Informer Publishing 2023"
       },
       "revenueModel": "Print sales, legal notices, and commercial advertising",
-      "logo": "newspaper-logos/gd/grenada-informer.svg",
-      "logoExplainer": "Bold red and yellow title banner 'THE GRENADA INFORMER', iconic across island kiosks.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://thegrenadainformer.com"
       ]
@@ -6232,8 +6053,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grenada National Archives 2023"
       },
       "revenueModel": "Print sales and community notices",
-      "logo": "newspaper-logos/gd/the-grenada-guardian.svg",
-      "logoExplainer": "Classic black serif title 'THE GRENADA GUARDIAN' on white ground, symbolising foundational post-war political press history.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/Eric_Gairy"
       ]
@@ -6257,8 +6077,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Pure Grenada Digital Analytics 2024"
       },
       "revenueModel": "Digital display advertising and international tourism partnerships",
-      "logo": "newspaper-logos/gd/pure-grenada-news.svg",
-      "logoExplainer": "Golden-yellow and green emblem with nutmeg spice motif and clean typography 'Pure Grenada News', evoking the Spice Isle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.puregrenada.com"
       ]
@@ -6285,8 +6104,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Civil.ge / UNAG Annual Review 2023"
       },
       "revenueModel": "International democratic governance grants and philanthropic donations",
-      "logo": "newspaper-logos/ge/civil-ge.svg",
-      "logoExplainer": "Clean white background with modern blue typography 'Civil.ge', representing objective, non-partisan analytical journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://civil.ge",
         "https://en.wikipedia.org/wiki/Civil_Georgia"
@@ -6313,8 +6131,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Georgian National Parliamentary Library 2023"
       },
       "revenueModel": "Print subscriptions, retail sales, and official announcements",
-      "logo": "newspaper-logos/ge/sakartvelos-respublika.svg",
-      "logoExplainer": "Historic Georgian Asomtavruli and Mkhedruli script calligraphy 'საქართველოს რესპუბლიკა' with the national coat of arms motif.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://sakresh.ge",
         "https://ka.wikipedia.org/wiki/%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A1_%E1%83%A0%E1%83%94%E1%83%A1%E1%83%A0%E1%83%A3%E1%83%91%E1%83%9A%E1%83%98%E1%83%99%E1%83%90_(%E1%83%92%E1%83%90%E1%83%96%E1%83%94%E1%83%97%E1%83%98)"
@@ -6341,8 +6158,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Palitra Media Holding 2024"
       },
       "revenueModel": "Print sales, digital subscriptions, and display advertising",
-      "logo": "newspaper-logos/ge/kviris-palitra.svg",
-      "logoExplainer": "Palette of colors and bold Georgian font 'კვირის პალიტრა', symbolising a diverse spectrum of national perspectives.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kvirispalitra.ge",
         "https://ka.wikipedia.org/wiki/%E1%83%99%E1%83%95%E1%83%98%E1%83%A0%E1%83%98%E1%83%A1_%E1%83%A0%E1%83%90%E1%83%9A%E1%83%98%E1%83%A2%E1%83%A0%E1%83%90"
@@ -6369,8 +6185,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Rezonansi Media Archive 2023"
       },
       "revenueModel": "Print retail sales and digital display advertising",
-      "logo": "newspaper-logos/ge/rezo-nansi.svg",
-      "logoExplainer": "Red and black title banner with bold Georgian lettering 'რეზონანსი', representing public resonance and civic debate.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://resonancedaily.com"
       ]
@@ -6396,8 +6211,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Graphic Communications Group Annual Report 2023"
       },
       "revenueModel": "Commercial print circulation, state legal advertising, and digital display revenue",
-      "logo": "newspaper-logos/gh/daily-graphic.svg",
-      "logoExplainer": "Red and blue title banner with bold serif lettering 'Daily Graphic', symbolising over seventy years of authoritative Ghanaian journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.graphic.com.gh",
         "https://en.wikipedia.org/wiki/Daily_Graphic_(Ghana)"
@@ -6422,8 +6236,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "New Times Corporation Ghana 2023"
       },
       "revenueModel": "State budget subsidies, print sales, and official government advertising",
-      "logo": "newspaper-logos/gh/the-ghanaian-times.svg",
-      "logoExplainer": "Classic black serif masthead 'THE GHANAIAN TIMES' on white ground, representing foundational post-independence national press.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ghanaiantimes.com.gh",
         "https://en.wikipedia.org/wiki/The_Ghanaian_Times"
@@ -6448,8 +6261,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Similarweb & Multimedia Group Ghana 2024"
       },
       "revenueModel": "Digital programmatic advertising, cross-broadcast sponsorships, and video production",
-      "logo": "newspaper-logos/gh/myjoyonline.svg",
-      "logoExplainer": "Vibrant yellow and black emblem 'MyJoyOnline.com', representing independent multimedia innovation in West Africa.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.myjoyonline.com"
       ]
@@ -6473,8 +6285,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Omni Media Audience Review 2024"
       },
       "revenueModel": "Digital display advertising, broadcast commercial revenue, and event sponsorships",
-      "logo": "newspaper-logos/gh/citinewsroom.svg",
-      "logoExplainer": "Red and blue modern typography 'citinewsroom', symbolising progressive urban broadcast and digital journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://citinewsroom.com"
       ]
@@ -6498,8 +6309,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Western Publications Media Kit 2023"
       },
       "revenueModel": "Print newsstand sales and private corporate advertising",
-      "logo": "newspaper-logos/gh/daily-guide.svg",
-      "logoExplainer": "Red banner with bold white serif font 'DAILY GUIDE', iconic across Ghanaian newsstands for over four decades.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://dailyguidenetwork.com",
         "https://en.wikipedia.org/wiki/Daily_Guide"
@@ -6526,8 +6336,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Point Newspaper Review 2023"
       },
       "revenueModel": "Print newsstand sales, legal notices, and commercial display advertising",
-      "logo": "newspaper-logos/gm/the-point.svg",
-      "logoExplainer": "Bold black and red serif masthead 'THE POINT' on white canvas, symbolising decades of brave journalistic integrity in West Africa.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://thepoint.gm",
         "https://en.wikipedia.org/wiki/The_Point_(Gambia)"
@@ -6554,8 +6363,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Foroyaa Media Profile 2023"
       },
       "revenueModel": "Print sales, subscriptions, and civic society notices",
-      "logo": "newspaper-logos/gm/foroyaa.svg",
-      "logoExplainer": "Red and green title banner with bold uppercase typography 'FOROYAA', representing thirty-seven years of civic freedom struggle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://foroyaa.net",
         "https://en.wikipedia.org/wiki/Foroyaa"
@@ -6581,8 +6389,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Chronicle Audience Review 2024"
       },
       "revenueModel": "Digital banner advertising and philanthropic investigative grants",
-      "logo": "newspaper-logos/gm/the-chronicle-gambia.svg",
-      "logoExplainer": "Dark navy banner with crisp white serif typography 'THE CHRONICLE', reflecting analytical investigative journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.chronicle.gm"
       ]
@@ -6606,8 +6413,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gambia Press Union Historical Archive 2023"
       },
       "revenueModel": "Print sales and historical archives licensing",
-      "logo": "newspaper-logos/gm/daily-observer-gambia.svg",
-      "logoExplainer": "Classic serif masthead 'DAILY OBSERVER' in green and black, symbolising the foundation of daily print journalism in the Gambia.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/Daily_Observer_(The_Gambia)"
       ]
@@ -6633,8 +6439,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Le Lynx Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gn/le-lynx.svg",
-      "logoExplainer": "Official branding banner for Le Lynx in Conakry, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lelynx.net/",
         "https://hacguinee.org/"
@@ -6659,8 +6464,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Guineenews Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gn/guineenews.svg",
-      "logoExplainer": "Official branding banner for Guineenews in Conakry, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://guineenews.org/",
         "https://hacguinee.org/"
@@ -6685,8 +6489,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Horoya Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gn/horoya.svg",
-      "logoExplainer": "Official branding banner for Horoya in Conakry, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://horoya.info/",
         "https://mic.gov.gn/"
@@ -6711,8 +6514,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Africaguinee Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gn/africaguinee.svg",
-      "logoExplainer": "Official branding banner for Africaguinee in Conakry, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.africaguinee.com/",
         "https://hacguinee.org/"
@@ -6737,8 +6539,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mediaguinee Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gn/mediaguinee.svg",
-      "logoExplainer": "Official branding banner for Mediaguinee in Conakry, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://mediaguinee.org/",
         "https://hacguinee.org/"
@@ -6766,8 +6567,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "AhoraEG Audience Analytics 2024"
       },
       "revenueModel": "Digital display advertising and sponsored corporate media",
-      "logo": "newspaper-logos/gq/ahora-eg.svg",
-      "logoExplainer": "Modern red and navy blue banner with bold typography 'AhoraEG', representing dynamic digital journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ahoraeg.com"
       ]
@@ -6791,8 +6591,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Real EG Media Kit 2023"
       },
       "revenueModel": "Corporate partnerships and digital branding campaigns",
-      "logo": "newspaper-logos/gq/real-equatorial-guinea.svg",
-      "logoExplainer": "Gold and dark slate emblem featuring 'Real Equatorial Guinea', symbolising cultural pride and modern economic progress.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://realequatorialguinea.com"
       ]
@@ -6817,8 +6616,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministerio de Información, Prensa y Radio 2023"
       },
       "revenueModel": "State publishing subsidy",
-      "logo": "newspaper-logos/gq/ébano.svg",
-      "logoExplainer": "Classic black typography 'ÉBANO' on white ground, symbolising the historic print press of Bioko Island.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://es.wikipedia.org/wiki/%C3%89bano_(peri%C3%B3dico)"
       ]
@@ -6842,8 +6640,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Diario Rombe Audience Report 2023"
       },
       "revenueModel": "Reader donations and investigative journalism grants",
-      "logo": "newspaper-logos/gq/diario-rombe.svg",
-      "logoExplainer": "Black and red emblem with stylized bold text 'DIARIO ROMBE', representing independent investigative journalism in exile.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://diariorombe.es",
         "https://es.wikipedia.org/wiki/Diario_Rombe"
@@ -6872,8 +6669,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kathimerini Publishing Annual Review 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and corporate advertising",
-      "logo": "newspaper-logos/gr/kathimerini.svg",
-      "logoExplainer": "Classical black Greek serif typography 'Η ΚΑΘΗΜΕΡΙΝΗ' on white canvas, the benchmark masthead of Greek quality journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.kathimerini.gr",
         "https://en.wikipedia.org/wiki/Kathimerini"
@@ -6900,8 +6696,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Alter Ego Media Audience Report 2024"
       },
       "revenueModel": "Print newsstand sales, digital subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/gr/ta-nea.svg",
-      "logoExplainer": "Red and blue emblem with bold white Greek lettering 'ΤΑ ΝΕΑ', iconic across Greek kiosks for almost a century.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.tanea.gr",
         "https://en.wikipedia.org/wiki/Ta_Nea"
@@ -6928,8 +6723,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Alter Ego Media Review 2023"
       },
       "revenueModel": "Sunday print sales, premium book/magazine bundle sales, and digital advertising",
-      "logo": "newspaper-logos/gr/to-vima.svg",
-      "logoExplainer": "Blue banner with classical white Greek serif font 'ΤΟ ΒΗΜΑ', symbolising over a century of political authority.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.tovima.gr",
         "https://en.wikipedia.org/wiki/To_Vima"
@@ -6956,8 +6750,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Naftemporiki Centennial Review 2024"
       },
       "revenueModel": "Corporate subscriptions and financial market advertising",
-      "logo": "newspaper-logos/gr/naftemporiki.svg",
-      "logoExplainer": "Navy blue banner with classical white Greek typography 'Η ΝΑΥΤΕΜΠΟΡΙΚΗ', embodying maritime shipping and commerce excellence.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.naftemporiki.gr",
         "https://en.wikipedia.org/wiki/Naftemporiki"
@@ -6985,8 +6778,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "EFSYN Cooperative Annual Report 2023"
       },
       "revenueModel": "Reader cooperative subscriptions, print sales, and community advertising",
-      "logo": "newspaper-logos/gr/efimerida-ton-syntakton.svg",
-      "logoExplainer": "Red and black badge with stylized Greek typography 'ΕΦ.ΣΥΝ.', representing cooperative worker-owned journalism in Greece.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.efsyn.gr",
         "https://en.wikipedia.org/wiki/Efimerida_ton_Syntakton"
@@ -7013,8 +6805,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Prensa Libre Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gt/prensa-libre.svg",
-      "logoExplainer": "Official branding banner for Prensa Libre in Guatemala City, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.prensalibre.com/",
         "https://guatemala.mom-gmr.org/"
@@ -7039,8 +6830,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "elPeriódico Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gt/el-periódico.svg",
-      "logoExplainer": "Official branding banner for elPeriódico in Guatemala City, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://elperiodico.com.gt/",
         "https://cpj.org/"
@@ -7065,8 +6855,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Diario de Centro América Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gt/diario-de-centro-américa.svg",
-      "logoExplainer": "Official branding banner for Diario de Centro América in Guatemala City, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://dca.gob.gt/",
         "https://guatemala.gob.gt/"
@@ -7091,8 +6880,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Soy502 Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gt/soy502.svg",
-      "logoExplainer": "Official branding banner for Soy502 in Guatemala City, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.soy502.com/",
         "https://guatemala.mom-gmr.org/"
@@ -7117,8 +6905,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Plaza Pública Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gt/plaza-pública.svg",
-      "logoExplainer": "Official branding banner for Plaza Pública in Guatemala City, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.plazapublica.com.gt/",
         "https://url.edu.gt/"
@@ -7145,8 +6932,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "N'Pinti Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gw/n-pinti.svg",
-      "logoExplainer": "Official branding banner for N'Pinti in Bissau, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.gov.gw/",
         "https://www.unesco.org/"
@@ -7171,8 +6957,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "O Democrata Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gw/jornal-o-democrata.svg",
-      "logoExplainer": "Official branding banner for O Democrata in Bissau, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.odemocratagb.com/",
         "https://rsf.org/"
@@ -7197,8 +6982,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ANG (Agência Noticiosa da Guiné) Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gw/ang-agência-noticiosa-da-guiné.svg",
-      "logoExplainer": "Official branding banner for ANG (Agência Noticiosa da Guiné) in Bissau, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://agencianoticiosadaguine.com/",
         "https://www.gov.gw/"
@@ -7223,8 +7007,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Guinendade Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gw/guinendade.svg",
-      "logoExplainer": "Official branding banner for Guinendade in Bissau, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://guinendade.com/",
         "https://rsf.org/"
@@ -7249,8 +7032,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Bissau Weekly Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gw/bissau-weekly.svg",
-      "logoExplainer": "Official branding banner for Bissau Weekly in Bissau, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://bissauweekly.com/",
         "https://www.unesco.org/"
@@ -7277,8 +7059,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kaieteur News Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gy/kaieteur-news.svg",
-      "logoExplainer": "Official branding banner for Kaieteur News in Georgetown, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.kaieteurnewsonline.com/",
         "https://guyana.gov.gy/"
@@ -7303,8 +7084,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Guyana Chronicle Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gy/guyana-chronicle.svg",
-      "logoExplainer": "Official branding banner for Guyana Chronicle in Georgetown, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://guyanachronicle.com/",
         "https://dpi.gov.gy/"
@@ -7329,8 +7109,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "News Room Guyana Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gy/news-room-guyana.svg",
-      "logoExplainer": "Official branding banner for News Room Guyana in Georgetown, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://newsroom.gy/",
         "https://guyana.gov.gy/"
@@ -7355,8 +7134,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Demerara Waves Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/gy/demerara-waves.svg",
-      "logoExplainer": "Official branding banner for Demerara Waves in Georgetown, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://demerarawaves.com/",
         "https://guyana.gov.gy/"
@@ -7383,8 +7161,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "La Prensa Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/hn/la-prensa.svg",
-      "logoExplainer": "Official branding banner for La Prensa in San Pedro Sula, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.laprensa.hn/",
         "https://www.grupoopsa.com/"
@@ -7409,8 +7186,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Heraldo Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/hn/el-heraldo.svg",
-      "logoExplainer": "Official branding banner for El Heraldo in Tegucigalpa, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.elheraldo.hn/",
         "https://www.grupoopsa.com/"
@@ -7435,8 +7211,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Diario Tiempo Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/hn/diario-tiempo.svg",
-      "logoExplainer": "Official branding banner for Diario Tiempo in San Pedro Sula, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://tiempo.hn/",
         "https://honduras.mom-gmr.org/"
@@ -7461,8 +7236,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "La Tribuna Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/hn/la-tribuna.svg",
-      "logoExplainer": "Official branding banner for La Tribuna in Tegucigalpa, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.latribuna.hn/",
         "https://cph.hn/"
@@ -7487,8 +7261,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Criterio.hn Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/hn/criterio-hn.svg",
-      "logoExplainer": "Official branding banner for Criterio.hn in Tegucigalpa, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://criterio.hn/",
         "https://cph.hn/"
@@ -7516,8 +7289,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Styria Media Group Croatia 2023"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/hr/večernji-list.svg",
-      "logoExplainer": "Red and black logo with stylized bold text 'Večernji list', an iconic masthead across Croatia for over sixty years.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.vecernji.hr",
         "https://en.wikipedia.org/wiki/Ve%C4%8Dernji_list"
@@ -7543,8 +7315,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Hanza Media Audience Report 2024"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and display advertising",
-      "logo": "newspaper-logos/hr/jutarnji-list.svg",
-      "logoExplainer": "Deep blue banner with modern bold white serif lettering 'JutarnjiLIST', symbolising contemporary liberal journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.jutarnji.hr",
         "https://en.wikipedia.org/wiki/Jutarnji_list"
@@ -7570,8 +7341,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Styria Media Croatia Audience Review 2024"
       },
       "revenueModel": "Retail print sales, programmatic digital advertising, and native video production",
-      "logo": "newspaper-logos/hr/24sata.svg",
-      "logoExplainer": "Orange rectangular badge featuring white numeral '24' and text 'sata', representing 24-hour fast-paced multimedia news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.24sata.hr",
         "https://en.wikipedia.org/wiki/24sata_(Croatia)"
@@ -7597,8 +7367,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Hanza Media Regional Division 2023"
       },
       "revenueModel": "Print circulation and regional corporate advertising",
-      "logo": "newspaper-logos/hr/slobodna-dalmacija.svg",
-      "logoExplainer": "Classic blue and white title banner with serif typography 'SLOBODNA DALMACIJA', evoking the Adriatic sea and Mediterranean tradition.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://slobodnadalmacija.hr",
         "https://en.wikipedia.org/wiki/Slobodna_Dalmacija"
@@ -7624,8 +7393,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Novi List Nakladnik 2023"
       },
       "revenueModel": "Print sales, subscriptions, and display advertising",
-      "logo": "newspaper-logos/hr/novi-list.svg",
-      "logoExplainer": "Red and black uppercase masthead 'NOVI LIST' on white ground, symbolising century-old civic journalism in Rijeka.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.novilist.hr",
         "https://en.wikipedia.org/wiki/Novi_list"
@@ -7652,8 +7420,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Le Nouvelliste Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/ht/le-nouvelliste.svg",
-      "logoExplainer": "Official branding banner for Le Nouvelliste in Port-au-Prince, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lenouvelliste.com/",
         "https://rsf.org/"
@@ -7678,8 +7445,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "HaitiLibre Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/ht/haitilibre.svg",
-      "logoExplainer": "Official branding banner for HaitiLibre in Port-au-Prince, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.haitilibre.com/",
         "https://rsf.org/"
@@ -7704,8 +7470,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Le Matin Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/ht/le-matin.svg",
-      "logoExplainer": "Official branding banner for Le Matin in Port-au-Prince, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lenouvelliste.com/",
         "https://www.unesco.org/"
@@ -7730,8 +7495,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Haiti 24 Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/ht/haiti-24.svg",
-      "logoExplainer": "Official branding banner for Haiti 24 in Port-au-Prince, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://haiti24.net/",
         "https://rsf.org/"
@@ -7756,8 +7520,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "AlterPresse Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/ht/alterpresse.svg",
-      "logoExplainer": "Official branding banner for AlterPresse in Port-au-Prince, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.alterpresse.org/",
         "https://www.alterpresse.org/"
@@ -7784,8 +7547,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Magyar Nemzet Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/hu/magyar-nemzet.svg",
-      "logoExplainer": "Official branding banner for Magyar Nemzet in Budapest, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://magyarnemzet.hu/",
         "https://kesma.hu/"
@@ -7810,8 +7572,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Népszava Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/hu/népszava.svg",
-      "logoExplainer": "Official branding banner for Népszava in Budapest, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://nepszava.hu/",
         "https://muosz.hu/"
@@ -7836,8 +7597,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "HVG (Heti Világgazdaság) Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/hu/hvg.svg",
-      "logoExplainer": "Official branding banner for HVG (Heti Világgazdaság) in Budapest, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://hvg.hu/",
         "https://hvg.hu/"
@@ -7862,8 +7622,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Blikk Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/hu/blikk.svg",
-      "logoExplainer": "Official branding banner for Blikk in Budapest, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ringier.hu/",
         "https://www.blikk.hu/"
@@ -7888,8 +7647,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Telex Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/hu/telex.svg",
-      "logoExplainer": "Official branding banner for Telex in Budapest, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://telex.hu/",
         "https://ipi.media/"
@@ -7916,8 +7674,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kompas Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/id/kompas.svg",
-      "logoExplainer": "Official branding banner for Kompas in Jakarta, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.kompasgramedia.com/",
         "https://www.kompas.com/"
@@ -7942,8 +7699,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Koran Tempo Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/id/koran-tempo.svg",
-      "logoExplainer": "Official branding banner for Koran Tempo in Jakarta, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://corporate.tempo.co/",
         "https://koran.tempo.co/"
@@ -7968,8 +7724,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Jawa Pos Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/id/jawa-pos.svg",
-      "logoExplainer": "Official branding banner for Jawa Pos in Surabaya, East Java, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.jawapos.com/",
         "https://dewanpers.or.id/"
@@ -7994,8 +7749,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "detikcom Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/id/detikcom.svg",
-      "logoExplainer": "Official branding banner for detikcom in Jakarta, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.detik.com/",
         "https://www.ctcorporation.com/"
@@ -8020,8 +7774,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Jakarta Post Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/id/the-jakarta-post.svg",
-      "logoExplainer": "Official branding banner for The Jakarta Post in Jakarta, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.thejakartapost.com/",
         "https://dewanpers.or.id/"
@@ -8048,8 +7801,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "JNLR / ABC Ireland Circulation Audit 2024"
       },
       "revenueModel": "Digital subscriptions, print copy sales, and display advertising",
-      "logo": "newspaper-logos/ie/the-irish-times.svg",
-      "logoExplainer": "Classic black gothic blackletter serif title 'THE IRISH TIMES' symbolising over 160 years of newspaper heritage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.irishtimes.com",
         "https://en.wikipedia.org/wiki/The_Irish_Times"
@@ -8074,8 +7826,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "JNLR / Mediahuis Audience Report 2024"
       },
       "revenueModel": "Print sales, digital subscriptions (Independent Premium), and advertising",
-      "logo": "newspaper-logos/ie/irish-independent.svg",
-      "logoExplainer": "Bold green capital lettering 'IRISH INDEPENDENT' with a harp emblem representing Irish national identity.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.independent.ie",
         "https://en.wikipedia.org/wiki/Irish_Independent"
@@ -8100,8 +7851,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "JNLR Sunday Readership Survey 2024"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and corporate event sponsorship",
-      "logo": "newspaper-logos/ie/business-post.svg",
-      "logoExplainer": "Deep navy blue rectangular block with crisp white typography 'BUSINESS POST'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.businesspost.ie",
         "https://en.wikipedia.org/wiki/Business_Post"
@@ -8126,8 +7876,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Reuters Institute Digital News Report 2024"
       },
       "revenueModel": "Digital advertising, sponsored content, and European press grant funding for fact-checking",
-      "logo": "newspaper-logos/ie/thejournal-ie.svg",
-      "logoExplainer": "Red square icon containing white letter 'J' beside sleek dark lowercase text 'thejournal.ie'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.thejournal.ie",
         "https://en.wikipedia.org/wiki/TheJournal.ie"
@@ -8155,8 +7904,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Haaretz Financial Statement & TGI Survey 2024"
       },
       "revenueModel": "Digital paywall subscriptions, print copy sales, and premium advertising",
-      "logo": "newspaper-logos/il/haaretz.svg",
-      "logoExplainer": "Classic Hebrew serif calligraphic title 'הארץ' in dark indigo blue.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.haaretz.com",
         "https://en.wikipedia.org/wiki/Haaretz"
@@ -8182,8 +7930,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "TGI Israel Media Survey 2024"
       },
       "revenueModel": "Advertising, print subscriptions, and digital media",
-      "logo": "newspaper-logos/il/yedioth-ahronoth.svg",
-      "logoExplainer": "Bold red and black Hebrew typography 'ידיעות אחרונות' with iconic red border frame.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ynet.co.il",
         "https://en.wikipedia.org/wiki/Yedioth_Ahronoth"
@@ -8208,8 +7955,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Jerusalem Post Media Kit 2024"
       },
       "revenueModel": "Digital subscriptions, global print editions, and advertising",
-      "logo": "newspaper-logos/il/the-jerusalem-post.svg",
-      "logoExplainer": "Stately navy blue serif masthead 'THE JERUSALEM POST' with a lion emblem of Jerusalem.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.jpost.com",
         "https://en.wikipedia.org/wiki/The_Jerusalem_Post"
@@ -8234,8 +7980,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Globes Financial Media Group 2023"
       },
       "revenueModel": "Paid digital paywall subscriptions, print subscriptions, and corporate advertising",
-      "logo": "newspaper-logos/il/globes.svg",
-      "logoExplainer": "Bright orange globe symbol beside modern grey and black bold typography 'GLOBES'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.globes.co.il",
         "https://en.wikipedia.org/wiki/Globes"
@@ -8261,8 +8006,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "TGI Israel Exposure Audit 2024"
       },
       "revenueModel": "Display and classified advertising",
-      "logo": "newspaper-logos/il/israel-hayom.svg",
-      "logoExplainer": "Bold red rectangular block featuring white Hebrew lettering 'ישראל היום'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.israelhayom.co.il",
         "https://en.wikipedia.org/wiki/Israel_Hayom"
@@ -8289,8 +8033,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Times of India (TOI) Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/in/the-times-of-india.svg",
-      "logoExplainer": "Official branding banner for The Times of India (TOI) in New Delhi, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://timesofindia.indiatimes.com/",
         "http://www.auditbureau.org/"
@@ -8315,8 +8058,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Hindu Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/in/the-hindu.svg",
-      "logoExplainer": "Official branding banner for The Hindu in Chennai, Tamil Nadu, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.thehindu.com/",
         "http://www.auditbureau.org/"
@@ -8341,8 +8083,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Indian Express Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/in/the-indian-express.svg",
-      "logoExplainer": "Official branding banner for The Indian Express in Noida, Uttar Pradesh, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://indianexpress.com/",
         "http://www.auditbureau.org/"
@@ -8374,8 +8115,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "Parliamentary state budget allocation and legal notices",
-      "logo": "newspaper-logos/iq/al-sabaah.svg",
-      "logoExplainer": "Dark slate circular emblem featuring white Arabic script 'الصباح'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://alsabaah.iq",
         "https://en.wikipedia.org/wiki/Al-Sabaah"
@@ -8401,8 +8141,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Iraqi Press Union Report 2023"
       },
       "revenueModel": "Print advertising, sales, and subscription",
-      "logo": "newspaper-logos/iq/al-zaman.svg",
-      "logoExplainer": "Classic black and green Arabic typography 'الزمان' with a globe accent.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.azzaman.com",
         "https://en.wikipedia.org/wiki/Azzaman"
@@ -8428,8 +8167,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Shafaq Digital Metrics 2024"
       },
       "revenueModel": "Digital display advertising and media licensing",
-      "logo": "newspaper-logos/iq/shafaq-news.svg",
-      "logoExplainer": "Bright orange sun icon beside bold dark Arabic lettering 'شفق نيوز'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://shafaq.com",
         "https://en.wikipedia.org/wiki/Shafaq_News"
@@ -8455,8 +8193,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al-Mada Cultural Foundation 2023"
       },
       "revenueModel": "Print sales, cultural events, and commercial advertising",
-      "logo": "newspaper-logos/iq/al-mada.svg",
-      "logoExplainer": "Deep maroon rectangular badge featuring white stylized calligraphic Arabic script 'المدى'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://almadapaper.net",
         "https://en.wikipedia.org/wiki/Al-Mada"
@@ -8484,8 +8221,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kayhan Publishing Institute 2024"
       },
       "revenueModel": "Public subsidies, print subscriptions, and official advertising",
-      "logo": "newspaper-logos/ir/kayhan.svg",
-      "logoExplainer": "Traditional black calligraphic Persian masthead 'کیهان' on white backdrop.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kayhan.ir",
         "https://en.wikipedia.org/wiki/Kayhan"
@@ -8510,8 +8246,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tehran Times Media Guide"
       },
       "revenueModel": "State subsidy, print subscription, and advertising",
-      "logo": "newspaper-logos/ir/tehran-times.svg",
-      "logoExplainer": "Bold red and black serif masthead with a globe emblem embedded in the letter 'T'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.tehrantimes.com",
         "https://en.wikipedia.org/wiki/Tehran_Times"
@@ -8537,8 +8272,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ettela'at Publishing House"
       },
       "revenueModel": "Print sales, publishing services, and public subsidies",
-      "logo": "newspaper-logos/ir/ettela-at.svg",
-      "logoExplainer": "Classic calligraphic Persian masthead 'اطلاعات' in deep green serif script.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ettelaat.com",
         "https://en.wikipedia.org/wiki/Ettela%27at"
@@ -8564,8 +8298,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Shargh Media Group 2024"
       },
       "revenueModel": "Print sales, digital subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/ir/shargh.svg",
-      "logoExplainer": "Modern red circular sunburst paired with elegant Persian typography 'شرق'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sharghdaily.com",
         "https://en.wikipedia.org/wiki/Shargh"
@@ -8592,8 +8325,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Morgunblaðið Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/is/morgunblaðið.svg",
-      "logoExplainer": "Official branding banner for Morgunblaðið in Reykjavík, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.mbl.is/",
         "https://www.mbl.is/mm/morgunbladid/"
@@ -8618,8 +8350,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Fréttablaðið Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/is/fréttablaðið.svg",
-      "logoExplainer": "Official branding banner for Fréttablaðið in Reykjavík, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://timarit.is/",
         "https://press.is/"
@@ -8644,8 +8375,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Vísir Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/is/vísir.svg",
-      "logoExplainer": "Official branding banner for Vísir in Reykjavík, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.visir.is/",
         "https://syn.is/"
@@ -8670,8 +8400,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Heimildin Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/is/heimildin.svg",
-      "logoExplainer": "Official branding banner for Heimildin in Reykjavík, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://heimildin.is/",
         "https://press.is/"
@@ -8696,8 +8425,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kjarninn Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/is/kjarninn.svg",
-      "logoExplainer": "Official branding banner for Kjarninn in Reykjavík, representing national journalism and civic communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kjarninn.is/",
         "https://press.is/"
@@ -8725,8 +8453,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ADS (Accertamenti Diffusione Stampa) Italy 2024"
       },
       "revenueModel": "Digital subscriptions, print copy sales, and display advertising",
-      "logo": "newspaper-logos/it/corriere-della-sera.svg",
-      "logoExplainer": "Classic Italian blackletter calligraphic masthead 'Corriere della Sera' with historic Milanese crest.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.corriere.it",
         "https://en.wikipedia.org/wiki/Corriere_della_Sera"
@@ -8752,8 +8479,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ADS Italy Readership Audit 2024"
       },
       "revenueModel": "Print sales, digital subscriptions (Rep+), and advertising",
-      "logo": "newspaper-logos/it/la-repubblica.svg",
-      "logoExplainer": "Bold black sans-serif lettering 'la Repubblica' with distinctive lowercase 'l' and red decorative line.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.repubblica.it",
         "https://en.wikipedia.org/wiki/La_Repubblica"
@@ -8779,8 +8505,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ADS Italy / Confindustria Report 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, professional databases, and financial advertising",
-      "logo": "newspaper-logos/it/il-sole-24-ore.svg",
-      "logoExplainer": "Salmon-orange rectangle with bold black serif title 'Il Sole 24 ORE' matching its signature pink financial newsprint.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ilsole24ore.com",
         "https://en.wikipedia.org/wiki/Il_Sole_24_Ore"
@@ -8806,8 +8531,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ADS Italy Media Audit 2024"
       },
       "revenueModel": "Print sales, legal notices, and commercial advertising",
-      "logo": "newspaper-logos/it/il-messaggero.svg",
-      "logoExplainer": "Classic serif typography 'Il Messaggero' in dark blue.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ilmessaggero.it",
         "https://en.wikipedia.org/wiki/Il_Messaggero"
@@ -8834,8 +8558,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "RJRGLEANER Group Annual Report 2023–24"
       },
       "revenueModel": "Print copy sales, digital advertising, classifieds, and subscription",
-      "logo": "newspaper-logos/jm/the-jamaica-gleaner.svg",
-      "logoExplainer": "Historic black Gothic blackletter title 'The Gleaner' with classic Jamaican lion crest.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://jamaica-gleaner.com",
         "https://en.wikipedia.org/wiki/The_Gleaner"
@@ -8860,8 +8583,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Jamaica Observer Media Kit 2024"
       },
       "revenueModel": "Print sales, commercial advertising, and digital promotions",
-      "logo": "newspaper-logos/jm/jamaica-observer.svg",
-      "logoExplainer": "Bold green capital text 'JAMAICA OBSERVER' featuring a stylized golden sun disk in the letter 'O'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.jamaicaobserver.com",
         "https://en.wikipedia.org/wiki/Jamaica_Observer"
@@ -8886,8 +8608,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Our Today Analytics 2024"
       },
       "revenueModel": "Digital display programmatic and native corporate advertising",
-      "logo": "newspaper-logos/jm/our-today.svg",
-      "logoExplainer": "Vibrant yellow and blue geometric lettering 'OUR TODAY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://our.today"
       ]
@@ -8911,8 +8632,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Trend Media Caribbean Analytics 2024"
       },
       "revenueModel": "Digital programmatic advertising and mobile carrier partnerships",
-      "logo": "newspaper-logos/jm/loop-news-jamaica.svg",
-      "logoExplainer": "Cyan blue infinity loop icon beside bold purple text 'loop Jamaica'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://jamaica.loopnews.com",
         "https://www.trendmediagroup.com"
@@ -8940,8 +8660,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Jordan Press Foundation Annual Report 2023"
       },
       "revenueModel": "Print copy sales, official government notices, and advertising",
-      "logo": "newspaper-logos/jo/al-rai.svg",
-      "logoExplainer": "Traditional green and gold Arabic script 'الرأي' with an emblem of Jordan's crown.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://alrai.com",
         "https://en.wikipedia.org/wiki/Al_Rai_(Jordanian_newspaper)"
@@ -8966,8 +8685,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Jordan Press Foundation Media Guide"
       },
       "revenueModel": "Print copy sales, corporate subscriptions, and display advertising",
-      "logo": "newspaper-logos/jo/jordan-times.svg",
-      "logoExplainer": "Classic black serif title 'THE JORDAN TIMES' on white background.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.jordantimes.com",
         "https://en.wikipedia.org/wiki/The_Jordan_Times"
@@ -8993,8 +8711,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al-Ghad Media Group Audit 2024"
       },
       "revenueModel": "Commercial advertising, digital display, and print sales",
-      "logo": "newspaper-logos/jo/al-ghad.svg",
-      "logoExplainer": "Modern blue and orange circular logo with stylized Arabic calligraphic text 'الغد'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://alghad.com",
         "https://en.wikipedia.org/wiki/Al_Ghad"
@@ -9020,8 +8737,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Jordan Press Association 2023"
       },
       "revenueModel": "Print copy sales and display advertising",
-      "logo": "newspaper-logos/jo/al-dustour.svg",
-      "logoExplainer": "Deep maroon Arabic title 'الدستور' in traditional calligraphic style.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.addustour.com",
         "https://en.wikipedia.org/wiki/Addustour"
@@ -9049,8 +8765,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Japan Newspaper Publishers & Editors Association (NSK) 2024"
       },
       "revenueModel": "Home print subscriptions, digital access, and corporate advertising",
-      "logo": "newspaper-logos/jp/yomiuri-shimbun.svg",
-      "logoExplainer": "Traditional Japanese Kanji title '読売新聞' in crisp black calligraphic brush script.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.yomiuri.co.jp",
         "https://en.wikipedia.org/wiki/Yomiuri_Shimbun"
@@ -9076,8 +8791,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "NSK Audit Report 2024"
       },
       "revenueModel": "Print subscriptions, digital paywall, and commercial advertising",
-      "logo": "newspaper-logos/jp/asahi-shimbun.svg",
-      "logoExplainer": "Kanji masthead '朝日新聞' in bold black brush lettering with the red rising sun emblem.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.asahi.com",
         "https://en.wikipedia.org/wiki/Asahi_Shimbun"
@@ -9104,8 +8818,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nikkei Inc. Corporate Report 2024"
       },
       "revenueModel": "Paid digital subscriptions, print subscriptions, index licensing, and corporate advertising",
-      "logo": "newspaper-logos/jp/nikkei-nihon-keizai-shimbun.svg",
-      "logoExplainer": "Modern dark blue geometric Kanji typography '日本經濟新聞' with crisp Nikkei corporate block logo.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.nikkei.com",
         "https://en.wikipedia.org/wiki/Nihon_Keizai_Shimbun"
@@ -9130,8 +8843,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Japan Times Media Kit 2024"
       },
       "revenueModel": "Print subscription, digital paywall, and advertising",
-      "logo": "newspaper-logos/jp/japan-times.svg",
-      "logoExplainer": "Classic black Gothic title 'The Japan Times' with cherry blossom accent.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.japantimes.co.jp",
         "https://en.wikipedia.org/wiki/The_Japan_Times"
@@ -9158,8 +8870,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nation Media Group Annual Audit 2024"
       },
       "revenueModel": "Print copy sales, digital subscriptions (Nation.Africa), and corporate display advertising",
-      "logo": "newspaper-logos/ke/daily-nation.svg",
-      "logoExplainer": "Navy blue rectangle featuring bold white sans-serif uppercase title 'DAILY NATION'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://nation.africa",
         "https://en.wikipedia.org/wiki/Daily_Nation"
@@ -9184,8 +8895,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nation Media Group Financial Media Division 2024"
       },
       "revenueModel": "Print newsstand sales, corporate subscriptions, and financial advertising",
-      "logo": "newspaper-logos/ke/business-daily-africa.svg",
-      "logoExplainer": "Clean dark blue and red typography 'BUSINESS DAILY AFRICA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.businessdailyafrica.com",
         "https://en.wikipedia.org/wiki/Business_Daily_Africa"
@@ -9213,8 +8923,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Vecherniy Bishkek Publisher Report"
       },
       "revenueModel": "Print newsstand sales, classifieds, and display advertising",
-      "logo": "newspaper-logos/kg/vecherniy-bishkek.svg",
-      "logoExplainer": "Classic Cyrillic serif masthead 'Вечерний Бишкек' in bold black.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.vb.kg",
         "https://ru.wikipedia.org/wiki/Вечерний_Бишкек"
@@ -9239,8 +8948,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kaktus Media Audience Overview 2024"
       },
       "revenueModel": "Digital display advertising, crowdfunding, and commercial media partnerships",
-      "logo": "newspaper-logos/kg/kaktus-media.svg",
-      "logoExplainer": "Vibrant green rectangle with bold white lowercase text 'kaktus.media'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kaktus.media"
       ]
@@ -9267,8 +8975,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Rasmei Kampuchea Publishing Review 2023"
       },
       "revenueModel": "Print retail sales and commercial display advertising",
-      "logo": "newspaper-logos/kh/rasmei-kampuchea.svg",
-      "logoExplainer": "Red title banner featuring traditional Khmer script 'រស្មីកម្ពុជា' and yellow subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.rasmeinews.com",
         "https://en.wikipedia.org/wiki/Rasmei_Kampuchea_Daily"
@@ -9293,8 +9000,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Post Media Review 2023"
       },
       "revenueModel": "Print newsstand sales, display advertising, and digital subscriptions",
-      "logo": "newspaper-logos/kh/phnom-penh-post.svg",
-      "logoExplainer": "Classic black serif title font 'The Phnom Penh Post' on white canvas.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.phnompenhpost.com",
         "https://en.wikipedia.org/wiki/The_Phnom_Penh_Post"
@@ -9319,8 +9025,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Khmer Times Media Kit 2024"
       },
       "revenueModel": "Print sales, commercial display ads, and digital partnerships",
-      "logo": "newspaper-logos/kh/khmer-times.svg",
-      "logoExplainer": "Dark slate logo banner with bright blue text 'KHMER TIMES'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.khmertimeskh.com",
         "https://en.wikipedia.org/wiki/Khmer_Times"
@@ -9346,8 +9051,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Koh Santepheap Media Kit 2023"
       },
       "revenueModel": "Print sales and local commercial advertising",
-      "logo": "newspaper-logos/kh/koh-santepheap.svg",
-      "logoExplainer": "Forest green banner featuring traditional Khmer script 'កោះសន្តិភាព'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kohsantepheapdaily.com.kh",
         "https://en.wikipedia.org/wiki/Koh_Santepheap_Daily"
@@ -9379,8 +9083,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "State subsidy, print sales, and community notices",
-      "logo": "newspaper-logos/ki/te-uai.svg",
-      "logoExplainer": "Navy blue banner with stately white serif text 'TE UAI'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.bpa.gov.ki",
         "https://en.wikipedia.org/wiki/Te_Uekera"
@@ -9405,8 +9108,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Pacific Media Centre Survey"
       },
       "revenueModel": "Print sales and local advertising",
-      "logo": "newspaper-logos/ki/kiribati-independent.svg",
-      "logoExplainer": "Red and navy blue typography 'KIRIBATI INDEPENDENT' reflecting the Pacific republic's flag colors.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://pmc.aut.ac.nz",
         "https://en.wikipedia.org/wiki/Media_of_Kiribati"
@@ -9432,8 +9134,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kiribati Church Press 2023"
       },
       "revenueModel": "Church subventions and community subscriptions",
-      "logo": "newspaper-logos/ki/te-mauriai.svg",
-      "logoExplainer": "Warm golden sun disk beside elegant deep blue serif title 'Te Mauriai'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/Media_of_Kiribati"
       ]
@@ -9457,8 +9158,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kiribati Digital Analytics 2024"
       },
       "revenueModel": "Digital display advertising and community sponsorship",
-      "logo": "newspaper-logos/ki/kiribati-updates.svg",
-      "logoExplainer": "Ocean blue rectangular background featuring white bold uppercase text 'KIRIBATI UPDATES'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.facebook.com/kiribatiupdates"
       ]
@@ -9483,8 +9183,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Pacific Islands News Association (PINA)"
       },
       "revenueModel": "Party subscriptions and local press sales",
-      "logo": "newspaper-logos/ki/te-kaekae.svg",
-      "logoExplainer": "Dark green serif text 'Te Kaekae' on clean white backdrop.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://pina.com.fj",
         "https://en.wikipedia.org/wiki/Media_of_Kiribati"
@@ -9517,8 +9216,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "perCapita": "KMF 95 / person / year (~US$0.21)"
       },
       "revenueModel": "State operating subsidy, print sales, and official legal notices",
-      "logo": "newspaper-logos/km/al-watwan.svg",
-      "logoExplainer": "Green title banner with white serif font 'AL-WATWAN', embodying the national color of Comoros and state press heritage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://alwatwan.net",
         "https://fr.wikipedia.org/wiki/Al-Watwan"
@@ -9544,8 +9242,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Groupe La Gazette Media Review 2023"
       },
       "revenueModel": "Print sales and local business advertising",
-      "logo": "newspaper-logos/km/la-gazette-des-comores.svg",
-      "logoExplainer": "White canvas displaying bold black font 'La Gazette des Comores', representing independent civic journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lagazettedescomores.com"
       ]
@@ -9571,8 +9268,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Habari Za Comores Analytics 2024"
       },
       "revenueModel": "Digital banner advertising and diaspora promotions",
-      "logo": "newspaper-logos/km/habari-za-comores.svg",
-      "logoExplainer": "White banner with bold green and navy typography 'HABARI ZA COMORES', symbolising community news and archipelago culture.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://habarizacomores.com"
       ]
@@ -9597,8 +9293,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Comores Infos Digital Review 2023"
       },
       "revenueModel": "Digital display ads and multimedia sponsorships",
-      "logo": "newspaper-logos/km/comores-infos.svg",
-      "logoExplainer": "Red title banner with modern white typography 'COMORES INFOS', symbolising dynamic digital breaking news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.comoresinfos.net"
       ]
@@ -9623,8 +9318,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mohéli Media Collective 2023"
       },
       "revenueModel": "Community sponsorships and tourism advertising",
-      "logo": "newspaper-logos/km/mwali-info.svg",
-      "logoExplainer": "Yellow title block with bold blue font 'MWALI INFO', reflecting the vibrant biodiversity and island heritage of Mohéli.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://fr.wikipedia.org/wiki/Moh%C3%A9li"
       ]
@@ -9652,8 +9346,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Observer Media Kit 2023"
       },
       "revenueModel": "Print sales, classified advertising, and digital banner placements",
-      "logo": "newspaper-logos/kn/skn-observer.svg",
-      "logoExplainer": "Deep navy blue rectangular card displaying white serif title 'The St. Kitts-Nevis' accented by bold golden serif wordmark 'OBSERVER'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.thestkittsnevisobserver.com",
         "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
@@ -9680,8 +9373,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SKNT&LU Annual Report 2023"
       },
       "revenueModel": "Print sales, union dues, and classified advertisements",
-      "logo": "newspaper-logos/kn/the-labour-spokesman.svg",
-      "logoExplainer": "Bold scarlet red background displaying classical white serif lettering 'The Labour Spokesman' and heritage tagline 'EST. 1957'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.facebook.com/LabourSpokesman",
         "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
@@ -9708,8 +9400,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SKNVibes Traffic Metrics 2023"
       },
       "revenueModel": "Digital banner advertising, classifieds, and event ticketing",
-      "logo": "newspaper-logos/kn/sknvibes.svg",
-      "logoExplainer": "Dark charcoal background featuring modern sans-serif typography 'SKN' in white with 'Vibes' in yellow and green subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sknvibes.com",
         "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
@@ -9800,8 +9491,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Audit Bureau of Circulations (ABC) Korea 2023"
       },
       "revenueModel": "Print sales, digital premium memberships, and major commercial advertising",
-      "logo": "newspaper-logos/kr/chosun-ilbo.svg",
-      "logoExplainer": "Stark white canvas featuring historic black Hanja calligraphy '朝鮮日報' (The Chosun Ilbo), denoting over a century of Korean press history.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.chosun.com",
         "https://en.wikipedia.org/wiki/The_Chosun_Ilbo"
@@ -9828,8 +9518,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Korea ABC Statement 2023"
       },
       "revenueModel": "Print circulation, enterprise subscriptions, broadcast ads, and digital sponsorships",
-      "logo": "newspaper-logos/kr/joongang-ilbo.svg",
-      "logoExplainer": "Royal blue background with clean white bold typography 'JoongAng Ilbo' and signature orange disc emblem, symbolizing central journalistic balance.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.joongang.co.kr",
         "https://koreajoongangdaily.joins.com",
@@ -9857,8 +9546,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Korea ABC Statement 2023"
       },
       "revenueModel": "Print sales, corporate advertising, and broadcasting commercial revenues",
-      "logo": "newspaper-logos/kr/donga-ilbo.svg",
-      "logoExplainer": "Deep crimson red rectangular field with prominent white Hanja typography '東亞日報' (The Dong-A Ilbo), honoring anti-colonial heritage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.donga.com",
         "https://en.wikipedia.org/wiki/The_Dong-a_Ilbo"
@@ -9885,8 +9573,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Reuters Institute Digital News Report Korea 2023"
       },
       "revenueModel": "Citizen shareholder dividends, print sales, reader contributions, and ethical advertising",
-      "logo": "newspaper-logos/kr/hankyoreh.svg",
-      "logoExplainer": "Warm golden-yellow and blue field featuring clean Hangul lettering '한겨레' (Hankyoreh), representing democracy born from citizen crowdfunding.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.hani.co.kr",
         "https://english.hani.co.kr",
@@ -9915,8 +9602,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Ownership Monitor Kuwait / IPSOS 2024"
       },
       "revenueModel": "Print copy sales, digital video advertising, and corporate sponsorships",
-      "logo": "newspaper-logos/kw/al-qabas.svg",
-      "logoExplainer": "Clean azure blue calligraphic Arabic masthead 'القبس' symbolising light and truth.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.alqabas.com",
         "https://en.wikipedia.org/wiki/Al-Qabas"
@@ -9942,8 +9628,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al-Rai Media Group Financial Audit 2024"
       },
       "revenueModel": "Print subscriptions, commercial advertising, and broadcast syndication",
-      "logo": "newspaper-logos/kw/al-rai-kuwait.svg",
-      "logoExplainer": "Crimson red Arabic script 'الراي' with elegant calligraphic styling.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.alraimedia.com",
         "https://en.wikipedia.org/wiki/Al-Rai_(Kuwaiti_newspaper)"
@@ -9969,8 +9654,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kuwait Journalists Association Audit 2023"
       },
       "revenueModel": "Print subscriptions, corporate advertising, and official notices",
-      "logo": "newspaper-logos/kw/al-anba.svg",
-      "logoExplainer": "Deep green rectangular badge featuring white stylized Arabic typography 'الأنباء'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.alanba.com.kw",
         "https://en.wikipedia.org/wiki/Al-Anba_(Kuwait)"
@@ -9995,8 +9679,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kuwait Times Media Kit 2024"
       },
       "revenueModel": "Print subscriptions, corporate advertising, and digital sponsorships",
-      "logo": "newspaper-logos/kw/kuwait-times.svg",
-      "logoExplainer": "Stately black Roman serif title 'KUWAIT TIMES' representing historic Gulf English press.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.kuwaittimes.com",
         "https://en.wikipedia.org/wiki/Kuwait_Times"
@@ -10023,8 +9706,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Zero.kz Audit 2024"
       },
       "revenueModel": "Digital programmatic advertising and sponsored content",
-      "logo": "newspaper-logos/kz/informburo-kz.svg",
-      "logoExplainer": "Red and dark grey rectangular logo with bold white lettering 'informburo'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://informburo.kz"
       ]
@@ -10048,8 +9730,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Zero.kz Internet Ranking / Alash Media 2024"
       },
       "revenueModel": "Digital programmatic advertising, native advertising, and media projects",
-      "logo": "newspaper-logos/kz/tengrinews.svg",
-      "logoExplainer": "Vibrant yellow circle with dark stylized letter 't' and bold typography 'TENGRINEWS'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://tengrinews.kz",
         "https://en.wikipedia.org/wiki/Tengrinews.kz"
@@ -10075,8 +9756,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Vlast.kz Annual Audience Overview 2024"
       },
       "revenueModel": "Reader subscriptions, crowdfunding, and grant-funded research reporting",
-      "logo": "newspaper-logos/kz/vlast-kz.svg",
-      "logoExplainer": "Sleek red geometric icon featuring uppercase sans-serif text 'ВЛАСТЬ'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://vlast.kz",
         "https://en.wikipedia.org/wiki/Vlast_(magazine)"
@@ -10107,8 +9787,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "State budget appropriation, print subscriptions, and foreign corporate advertising",
-      "logo": "newspaper-logos/la/vientiane-times.svg",
-      "logoExplainer": "Stately navy blue serif masthead 'Vientiane Times' on white canvas.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.vientianetimes.org.la",
         "https://en.wikipedia.org/wiki/Vientiane_Times"
@@ -10134,8 +9813,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Pasaxon Publishing House"
       },
       "revenueModel": "State party budget appropriation",
-      "logo": "newspaper-logos/la/pasaxon.svg",
-      "logoExplainer": "Bold red sans-serif uppercase title 'PASAXON' reflecting party media tradition.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.pasaxon.org.la",
         "https://en.wikipedia.org/wiki/Pasaxon"
@@ -10161,8 +9839,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministry of Information Laos 2023"
       },
       "revenueModel": "State budget subvention and print sales",
-      "logo": "newspaper-logos/la/pathet-lao.svg",
-      "logoExplainer": "Deep navy blue rectangle with stately white serif text 'PATHET LAO'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kpl.gov.la",
         "https://en.wikipedia.org/wiki/Media_of_Laos"
@@ -10188,8 +9865,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Lao Press Foreign Language Division"
       },
       "revenueModel": "State budget support and subscriptions",
-      "logo": "newspaper-logos/la/lao-pdr-daily.svg",
-      "logoExplainer": "Clean black sans-serif lettering 'LAO PDR DAILY' on white backdrop.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lerenovateur.org.la",
         "https://en.wikipedia.org/wiki/Media_of_Laos"
@@ -10217,8 +9893,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "An-Nahar Media Group Audit 2024"
       },
       "revenueModel": "Digital paywall subscriptions, print copy sales, and premium advertising",
-      "logo": "newspaper-logos/lb/an-nahar.svg",
-      "logoExplainer": "Classic dark blue calligraphic Arabic masthead 'النهار' symbolising sunrise over Beirut.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.annahar.com",
         "https://en.wikipedia.org/wiki/An-Nahar"
@@ -10244,8 +9919,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "OJD International Press Audit 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and display advertising",
-      "logo": "newspaper-logos/lb/l-orient-le-jour.svg",
-      "logoExplainer": "Red serif title 'L'ORIENT-LE JOUR' representing historic French journalism heritage in Lebanon.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lorientlejour.com",
         "https://en.wikipedia.org/wiki/L%27Orient-Le_Jour"
@@ -10271,8 +9945,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Lebanese Press Syndicate 2023"
       },
       "revenueModel": "Print copy sales and display advertising",
-      "logo": "newspaper-logos/lb/al-joumhouria.svg",
-      "logoExplainer": "Bold crimson red calligraphic Arabic script 'الجمهورية'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.aljoumhouria.com",
         "https://en.wikipedia.org/wiki/Al-Joumhouria"
@@ -10297,8 +9970,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Naharnet Digital Media 2024"
       },
       "revenueModel": "Digital display advertising and programmatic networks",
-      "logo": "newspaper-logos/lb/naharnet.svg",
-      "logoExplainer": "Sky blue rectangular badge with crisp white lowercase typography 'naharnet'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.naharnet.com",
         "https://en.wikipedia.org/wiki/Naharnet"
@@ -10327,8 +9999,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "St. Lucia Times Analytics 2023"
       },
       "revenueModel": "Digital programmatic advertising and sponsored campaigns",
-      "logo": "newspaper-logos/lc/st-lucia-times.svg",
-      "logoExplainer": "Dark navy card featuring refined white serif typography 'St. Lucia Times' underscored with bright cyan accent line.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://stluciatimes.com",
         "https://en.wikipedia.org/wiki/Saint_Lucia"
@@ -10415,8 +10086,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Wijeya Newspapers Media Pack / Lanka Market Research Bureau (LMRB)"
       },
       "revenueModel": "Print newsstand sales, corporate commercial display advertising, and digital ads",
-      "logo": "newspaper-logos/lk/daily-mirror.svg",
-      "logoExplainer": "Vibrant crimson red background with bold white typography 'Daily Mirror' and light pink national subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.dailymirror.lk",
         "https://en.wikipedia.org/wiki/Daily_Mirror_(Sri_Lanka)"
@@ -10445,8 +10115,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ANCL Lake House Annual Report"
       },
       "revenueModel": "Government notices, corporate print advertising, and newsstand distribution",
-      "logo": "newspaper-logos/lk/daily-news.svg",
-      "logoExplainer": "Deep navy field featuring classic serif masthead 'Daily News' in white, underlined by gold 'LAKE HOUSE • ESTABLISHED 1918' lettering.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.dailynews.lk",
         "https://en.wikipedia.org/wiki/Daily_News_(Sri_Lanka)"
@@ -10473,8 +10142,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "LMRB National Readership Survey / Wijeya Media"
       },
       "revenueModel": "Mass print circulation sales, nationwide commercial ads, and classifieds",
-      "logo": "newspaper-logos/lk/lankadeepa.svg",
-      "logoExplainer": "Clean white field with deep maroon square emblem containing white 'LD', bold maroon 'LANKADEEPA' title, and Sinhala script subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lankadeepa.lk",
         "https://en.wikipedia.org/wiki/Lankadeepa_(newspaper)"
@@ -10501,8 +10169,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kantar Sri Lanka Media Ratings / Ada Derana Audience Report"
       },
       "revenueModel": "Digital video ads, telecom SMS subscription revenue shares, and broadcast sponsorships",
-      "logo": "newspaper-logos/lk/ada-derana.svg",
-      "logoExplainer": "Deep navy blue field with bold orange circular monogram 'ad', white impact lettering 'ada DERANA', and warm orange 24x7 news tagline.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.adaderana.lk",
         "https://en.wikipedia.org/wiki/Ada_Derana"
@@ -10529,8 +10196,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Express Newspapers Audit / LMRB"
       },
       "revenueModel": "Print sales, community classified notices, and commercial advertising",
-      "logo": "newspaper-logos/lk/virakesari.svg",
-      "logoExplainer": "White field with historic deep crimson serif lettering 'VIRAKESARI', supported by Tamil script subtitle and founding year 1930.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.virakesari.lk",
         "https://en.wikipedia.org/wiki/Virakesari"
@@ -10557,8 +10223,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "FrontPageAfrica Analytics / Press Union of Liberia 2024"
       },
       "revenueModel": "Print sales, digital display advertising, and international investigative grants",
-      "logo": "newspaper-logos/lr/frontpage-africa.svg",
-      "logoExplainer": "Deep navy blue rectangular banner featuring white bold sans-serif text 'FrontPageAfrica'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://frontpageafricaonline.com",
         "https://en.wikipedia.org/wiki/FrontPageAfrica"
@@ -10583,8 +10248,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Press Union of Liberia Survey 2023"
       },
       "revenueModel": "Print copy sales, classifieds, and corporate advertising",
-      "logo": "newspaper-logos/lr/daily-observer-liberia.svg",
-      "logoExplainer": "Crimson red serif masthead 'Daily Observer' symbolising independent Liberian press heritage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.liberianobserver.com",
         "https://en.wikipedia.org/wiki/Daily_Observer_(Liberia)"
@@ -10609,8 +10273,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Press Union of Liberia Audit 2023"
       },
       "revenueModel": "Print newsstand sales and local advertising",
-      "logo": "newspaper-logos/lr/the-inquirer-liberia.svg",
-      "logoExplainer": "Teal green banner with white serif text 'The Inquirer'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://inquirernewspaper.com",
         "https://en.wikipedia.org/wiki/Media_of_Liberia"
@@ -10635,8 +10298,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Press Union of Liberia 2023"
       },
       "revenueModel": "Print sales and commercial advertising",
-      "logo": "newspaper-logos/lr/the-analyst.svg",
-      "logoExplainer": "Clean black uppercase sans-serif title 'THE ANALYST'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://analystliberiaonline.com"
       ]
@@ -10662,8 +10324,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "African Media Holdings Audit 2024"
       },
       "revenueModel": "Print sales, corporate advertising, and digital promotions",
-      "logo": "newspaper-logos/ls/lesotho-times.svg",
-      "logoExplainer": "Deep blue serif masthead 'LESOTHO TIMES' on clean white canvas.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lestimes.com",
         "https://en.wikipedia.org/wiki/Lesotho_Times"
@@ -10688,8 +10349,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Lesotho Press Survey 2023"
       },
       "revenueModel": "Sunday copy sales and commercial display advertising",
-      "logo": "newspaper-logos/ls/sunday-express.svg",
-      "logoExplainer": "Vibrant red background with bold white uppercase title 'SUNDAY EXPRESS'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://sundayexpress.co.ls"
       ]
@@ -10713,8 +10373,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Public Eye Media Group 2023"
       },
       "revenueModel": "Print copy sales and corporate advertising",
-      "logo": "newspaper-logos/ls/public-eye.svg",
-      "logoExplainer": "Black circular eye icon beside elegant black serif text 'Public Eye'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://publiceyenews.com",
         "https://en.wikipedia.org/wiki/Media_of_Lesotho"
@@ -10739,8 +10398,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Post Media Audit 2024"
       },
       "revenueModel": "Print sales, classifieds, and digital display advertising",
-      "logo": "newspaper-logos/ls/the-post-lesotho.svg",
-      "logoExplainer": "Deep red serif title 'the post' on white background.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.thepost.co.ls"
       ]
@@ -10766,8 +10424,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gemius Audience Lithuania 2024"
       },
       "revenueModel": "Digital display advertising, programmatic ads, and premium paid subscriptions (15min MAX)",
-      "logo": "newspaper-logos/lt/15min.svg",
-      "logoExplainer": "Signature bright red field with prominent stark white heavyweight typography '15min', evoking speed, urgency, and investigative rigor.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.15min.lt",
         "https://lt.wikipedia.org/wiki/15min"
@@ -10792,8 +10449,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gemius Audience Lithuania 2023"
       },
       "revenueModel": "Digital advertising, native sponsored content, and Delfi Plius subscriptions",
-      "logo": "newspaper-logos/lt/delfi-lt.svg",
-      "logoExplainer": "Dark slate rectangular backdrop emblazoned with vibrant tangerine-orange bold lettering 'DELFI', symbolizing digital vibrancy across the Baltics.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.delfi.lt",
         "https://en.wikipedia.org/wiki/Delfi_(web_portal)"
@@ -10820,8 +10476,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kantar TNS Lithuania Survey 2023"
       },
       "revenueModel": "Print sales, classifieds, digital ads, and corporate sponsorships",
-      "logo": "newspaper-logos/lt/lietuvos-rytas.svg",
-      "logoExplainer": "Clean white background featuring dignified dark serif typography 'Lietuvos rytas', honoring Lithuania's venerable independence-era daily.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lrytas.lt",
         "https://lt.wikipedia.org/wiki/Lietuvos_rytas"
@@ -10850,8 +10505,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "TNS Ilres Plurimedia Luxembourg 2023"
       },
       "revenueModel": "Print subscriptions, digital paywall (Wort+), and display advertising",
-      "logo": "newspaper-logos/lu/luxemburger-wort.svg",
-      "logoExplainer": "Royal blue header featuring crisp white elegant serif lettering 'Luxemburger Wort', representing the historic voice of Luxembourg.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.wort.lu",
         "https://en.wikipedia.org/wiki/Luxemburger_Wort"
@@ -10878,8 +10532,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "TNS Ilres Luxembourg Press Study 2023"
       },
       "revenueModel": "Subscription circulation, newsstand sales, and press subsidies",
-      "logo": "newspaper-logos/lu/tageblatt.svg",
-      "logoExplainer": "Bold crimson red banner emblazoned with solid white sans-serif lettering 'Tageblatt', projecting progressive vigor and industrial heritage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.tageblatt.lu",
         "https://en.wikipedia.org/wiki/Tageblatt"
@@ -10906,8 +10559,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "TNS Ilres Plurimedia Study 2023"
       },
       "revenueModel": "100% advertising-funded print and digital model",
-      "logo": "newspaper-logos/lu/l-essentiel.svg",
-      "logoExplainer": "Deep blue banner accented with bright cyan uppercase typography 'L'ESSENTIEL', symbolising modern commuter clarity and accessibility.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lessentiel.lu",
         "https://fr.wikipedia.org/wiki/L%27essentiel_(Luxembourg)"
@@ -10934,8 +10586,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "TNS Ilres Media Survey 2023"
       },
       "revenueModel": "Subscriptions, single-copy sales, and corporate advertising",
-      "logo": "newspaper-logos/lu/le-quotidien.svg",
-      "logoExplainer": "Clean white field displaying refined crimson red serif typography 'Le Quotidien', denoting analytical French-language journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lequotidien.lu",
         "https://fr.wikipedia.org/wiki/Le_Quotidien_(Luxembourg)"
@@ -10963,8 +10614,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Latvian Newspaper Publishers Association 2024"
       },
       "revenueModel": "Print copy sales, digital subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/lv/diena.svg",
-      "logoExplainer": "Carmine red bold uppercase sans-serif title 'DIENA' matching the national red of Latvia.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.diena.lv",
         "https://en.wikipedia.org/wiki/Diena"
@@ -10989,8 +10639,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gemius Audience Latvia 2024"
       },
       "revenueModel": "Digital paywall subscriptions (Delfi Plus) and digital advertising",
-      "logo": "newspaper-logos/lv/delfi-latvia.svg",
-      "logoExplainer": "Bright blue rectangular block featuring bold white text 'DELFI'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.delfi.lv",
         "https://en.wikipedia.org/wiki/Delfi_(web_portal)"
@@ -11016,8 +10665,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Latvian Newspaper Publishers Association 2024"
       },
       "revenueModel": "Print subscriptions, portal advertising, and book publishing",
-      "logo": "newspaper-logos/lv/latvijas-avize.svg",
-      "logoExplainer": "Traditional black serif masthead 'Latvijas Avīze' on white background.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.la.lv",
         "https://en.wikipedia.org/wiki/Latvijas_Avīze"
@@ -11045,8 +10693,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al-Wasat Digital Analytics 2024"
       },
       "revenueModel": "Digital programmatic advertising, print copy sales, and broadcast syndication",
-      "logo": "newspaper-logos/ly/al-wasat.svg",
-      "logoExplainer": "Bold red Arabic calligraphic typography 'الوسط' on clean white backdrop.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://alwasat.ly",
         "https://en.wikipedia.org/wiki/Al-Wasat_(Libyan_newspaper)"
@@ -11071,8 +10718,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Libya Herald Analytics 2024"
       },
       "revenueModel": "Paid digital subscriptions and corporate advertising",
-      "logo": "newspaper-logos/ly/libya-herald.svg",
-      "logoExplainer": "Navy blue rectangle with white serif text 'Libya Herald'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.libyaherald.com",
         "https://en.wikipedia.org/wiki/Libya_Herald"
@@ -11097,8 +10743,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Libya Observer Media Report 2024"
       },
       "revenueModel": "Digital display advertising and media licensing",
-      "logo": "newspaper-logos/ly/libya-observer.svg",
-      "logoExplainer": "Green and dark grey typography 'THE LIBYA OBSERVER'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.libyaobserver.ly",
         "https://en.wikipedia.org/wiki/The_Libya_Observer"
@@ -11124,8 +10769,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Febrayer Media Network 2023"
       },
       "revenueModel": "Commercial advertising and broadcast syndication",
-      "logo": "newspaper-logos/ly/febrayer.svg",
-      "logoExplainer": "Classic black Arabic typography 'فبراير' on white background.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://febrayer.ly"
       ]
@@ -11153,8 +10797,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Similarweb / Hespress Audited Metrics 2023"
       },
       "revenueModel": "Digital programmatic advertising, sponsored features, and video production",
-      "logo": "newspaper-logos/ma/hespress.svg",
-      "logoExplainer": "Vibrant orange-red background featuring clean white Arabic calligraphy 'هسبريس' (Hespress), signifying energetic digital journalism across the Kingdom.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.hespress.com",
         "https://fr.wikipedia.org/wiki/Hespress"
@@ -11181,8 +10824,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "OJD Maroc / Groupe Maroc Soir 2023"
       },
       "revenueModel": "Print sales, institutional subscriptions, and premium corporate display advertising",
-      "logo": "newspaper-logos/ma/le-matin.svg",
-      "logoExplainer": "Dignified dark navy field displaying refined golden-orange serif lettering 'LE MATIN', symbolizing Moroccan newspaper of record prestige.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lematin.ma",
         "https://fr.wikipedia.org/wiki/Le_Matin_(Maroc)"
@@ -11207,8 +10849,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Le360 Media Data 2023"
       },
       "revenueModel": "Digital advertising, video production, and branded events",
-      "logo": "newspaper-logos/ma/le360.svg",
-      "logoExplainer": "Deep black rectangular backdrop featuring stylized crimson red circular emblem with white numerals '360', representing comprehensive 360-degree news coverage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://fr.le360.ma",
         "https://ar.le360.ma"
@@ -11267,8 +10908,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Independent Journalism Center (IJC) Moldova 2023"
       },
       "revenueModel": "Print subscriptions, reader donations, and international media integrity grants",
-      "logo": "newspaper-logos/md/ziarul-de-garda.svg",
-      "logoExplainer": "Pure white canvas showcasing bold black and crimson red gothic-style typography 'Ziarul de Gardă', representing an unyielding democratic watchdog.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.zdg.md",
         "https://ro.wikipedia.org/wiki/Ziarul_de_Gard%C4%83"
@@ -11293,8 +10933,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gemius Audience Moldova 2023"
       },
       "revenueModel": "Digital programmatic advertising and classifieds",
-      "logo": "newspaper-logos/md/point-md.svg",
-      "logoExplainer": "Modern charcoal field featuring bright red circle and stark white lowercase lettering 'point.md', denoting real-time digital news centrality.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://point.md"
       ]
@@ -11322,8 +10961,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ipsos Strategic Marketing Montenegro 2023"
       },
       "revenueModel": "Print sales, digital advertising, cable retransmission, and TV commercial ads",
-      "logo": "newspaper-logos/me/vijesti.svg",
-      "logoExplainer": "Vibrant royal blue background with sharp white and red geometric lettering 'VIJESTI', symbolizing investigative rigor and free press.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.vijesti.me",
         "https://en.wikipedia.org/wiki/Vijesti"
@@ -11350,8 +10988,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Nea Audience Report 2023"
       },
       "revenueModel": "Print sales, subscriptions, legal announcements, and commercial advertising",
-      "logo": "newspaper-logos/me/pobjeda.svg",
-      "logoExplainer": "Dark slate background featuring bold red title 'Pobjeda' in classical serif lettering, commemorating eight decades of Montenegrin press history.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://pobjeda.me",
         "https://en.wikipedia.org/wiki/Pobjeda_(newspaper)"
@@ -11378,8 +11015,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ipsos Print Readership Study Montenegro 2023"
       },
       "revenueModel": "Print copy sales, classifieds, and commercial advertising",
-      "logo": "newspaper-logos/me/dan.svg",
-      "logoExplainer": "Clean white background with heavy red Cyrillic typography 'ДАН', representing a foundational morning newspaper of Montenegro.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.dan.co.me",
         "https://en.wikipedia.org/wiki/Dan_(newspaper)"
@@ -11408,8 +11044,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Midi Madagasikara Media Kit 2023"
       },
       "revenueModel": "Print sales, classifieds, and digital banner advertising",
-      "logo": "newspaper-logos/mg/midi-madagasikara.svg",
-      "logoExplainer": "Deep crimson background housing elegant white serif font 'Midi Madagasikara', representing Madagascar's leading commercial newspaper.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://midi-madagasikara.mg",
         "https://fr.wikipedia.org/wiki/Midi_Madagasikara"
@@ -11436,8 +11071,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Étude Médias Madagascar 2023"
       },
       "revenueModel": "Single-copy street sales, corporate subscriptions, and commercial ads",
-      "logo": "newspaper-logos/mg/l-express-de-madagascar.svg",
-      "logoExplainer": "Stark white background with dignified black serif typography 'L'Express de Madagascar', signifying analytical gravity.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lexpress.mg",
         "https://fr.wikipedia.org/wiki/L%27Express_de_Madagascar"
@@ -11464,8 +11098,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ultima Media Group Profile 2023"
       },
       "revenueModel": "Print sales, event sponsorships, and advertising partnerships",
-      "logo": "newspaper-logos/mg/les-nouvelles.svg",
-      "logoExplainer": "Marine blue field with clean bold white sans-serif lettering 'Les Nouvelles', reflecting fresh and dynamic national reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.newsmada.com"
       ]
@@ -11491,8 +11124,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Madagascar Tribune Digital Analytics 2023"
       },
       "revenueModel": "Digital display ads, sponsored columns, and voluntary reader contributions",
-      "logo": "newspaper-logos/mg/madagascar-tribune.svg",
-      "logoExplainer": "Warm golden amber background with sharp charcoal sans-serif lettering 'Madagascar Tribune', highlighting debate and independent thought.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.madagascar-tribune.com",
         "https://fr.wikipedia.org/wiki/Madagascar_Tribune"
@@ -11550,8 +11182,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Press Council of North Macedonia 2023"
       },
       "revenueModel": "Print sales, subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/mk/nova-makedonija.svg",
-      "logoExplainer": "Dark blue background featuring elegant gold Cyrillic serif typography 'Нова Македонија', symbolising national press heritage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://novamakedonija.com.mk",
         "https://en.wikipedia.org/wiki/Nova_Makedonija"
@@ -11578,8 +11209,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Association of North Macedonia 2023"
       },
       "revenueModel": "Print copy sales, classified ads, and digital banners",
-      "logo": "newspaper-logos/mk/vecer.svg",
-      "logoExplainer": "Deep scarlet red banner with heavy white Cyrillic typography 'ВЕЧЕР', evoking evening daily news urgency.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://vecer.mk",
         "https://en.wikipedia.org/wiki/Ve%C4%8Der"
@@ -11606,8 +11236,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Association of Albanian Journalists North Macedonia 2023"
       },
       "revenueModel": "Print sales, community advertising, and digital subscriptions",
-      "logo": "newspaper-logos/mk/koha-mk.svg",
-      "logoExplainer": "Black and red emblem with bold white modern serif lettering 'KOHA', representing the principal Albanian-language daily.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.koha.mk"
       ]
@@ -11635,8 +11264,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Maison de la Presse du Mali 2023"
       },
       "revenueModel": "Print sales, private display advertising, and legal notices",
-      "logo": "newspaper-logos/ml/l-independant.svg",
-      "logoExplainer": "Deep blue rectangle bearing crisp white serif title 'L'Indépendant', denoting journalistic objectivity and independence.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lindependant.org"
       ]
@@ -11660,8 +11288,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Maliweb Traffic Analytics 2023"
       },
       "revenueModel": "Digital display ads, sponsored articles, and classifieds",
-      "logo": "newspaper-logos/ml/maliweb.svg",
-      "logoExplainer": "Dark slate background featuring bright grass-green heavy lettering 'MALIWEB.NET', symbolizing online connectivity across the nation.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.maliweb.net"
       ]
@@ -11685,8 +11312,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Malijet Media Data 2023"
       },
       "revenueModel": "Digital advertising networks and commercial sponsorships",
-      "logo": "newspaper-logos/ml/malijet.svg",
-      "logoExplainer": "Vibrant orange backdrop emblazoned with prominent white impact font 'MALIJET', representing urgent real-time digital news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://malijet.com"
       ]
@@ -11714,8 +11340,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "News and Periodicals Enterprise 2023"
       },
       "revenueModel": "Newspaper copy sales and mandatory public tender announcements",
-      "logo": "newspaper-logos/mm/myanma-alinn.svg",
-      "logoExplainer": "Deep crimson red background emblazoned with traditional white Burmese calligraphy 'မြန်မာ့အလင်း' (Myanma Alinn), recalling over a century of publishing history.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.moi.gov.mm",
         "https://en.wikipedia.org/wiki/Myanma_Alinn"
@@ -11742,8 +11367,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Irrawaddy Publishing Group Audience Report 2023"
       },
       "revenueModel": "Reader donations, international philanthropic press grants, and digital ads",
-      "logo": "newspaper-logos/mm/the-irrawaddy.svg",
-      "logoExplainer": "Dark slate backdrop displaying bold crimson red and white uppercase typography 'THE IRRAWADDY', symbolizing steadfast independent journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.irrawaddy.com",
         "https://en.wikipedia.org/wiki/The_Irrawaddy"
@@ -11770,8 +11394,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mizzima Media Group Audience Audit 2023"
       },
       "revenueModel": "Donor press development funding, commercial sponsorships, and syndicated video",
-      "logo": "newspaper-logos/mm/mizzima.svg",
-      "logoExplainer": "Vibrant yellow-gold banner featuring distinct stylized red and navy lettering 'mizzima', representing the Middle Path of truth and democratic reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.mizzima.com",
         "https://en.wikipedia.org/wiki/Mizzima_News"
@@ -11800,8 +11423,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Press Institute of Mongolia Media Report 2023"
       },
       "revenueModel": "Print copy sales, subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/mn/udriin-sonin.svg",
-      "logoExplainer": "Deep blue rectangular header emblazoned with bright golden Cyrillic lettering 'Өдрийн сонин', representing Mongolia's premier daily press.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://dnn.mn",
         "https://mn.wikipedia.org/wiki/%D3%A8%D0%B4%D1%80%D0%B8%D0%B9%D0%BD_%D1%81%D0%BE%D0%BD%D0%B8%D0%BD"
@@ -11826,8 +11448,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Press Institute of Mongolia / Ikon Audience Metrics 2023"
       },
       "revenueModel": "Digital display advertising, native sponsored content, and data analytics services",
-      "logo": "newspaper-logos/mn/ikon-mn.svg",
-      "logoExplainer": "Crisp white canvas displaying modern red and dark grey minimalist sans-serif 'ikon.mn', denoting clarity, speed, and analytical data journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ikon.mn"
       ]
@@ -11851,8 +11472,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mongol Content Corporate Profile 2023"
       },
       "revenueModel": "Digital advertising, content syndication, and digital entertainment services",
-      "logo": "newspaper-logos/mn/gogo-mn.svg",
-      "logoExplainer": "Playful and bold orange-red rectangular backdrop with prominent white rounded font 'gogo.mn', reflecting digital connectivity.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://gogo.mn"
       ]
@@ -11880,8 +11500,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "CRIDEM Media Kit 2023"
       },
       "revenueModel": "Web display advertising and corporate communications",
-      "logo": "newspaper-logos/mr/cridem.svg",
-      "logoExplainer": "Dark slate background featuring bright golden-yellow bold lettering 'CRIDEM', representing the crossroads of Mauritanian news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://cridem.org"
       ]
@@ -11907,8 +11526,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sahara Media Corporate Analytics 2023"
       },
       "revenueModel": "Commercial advertising, documentary production, and regional broadcast partnerships",
-      "logo": "newspaper-logos/mr/sahara-medias.svg",
-      "logoExplainer": "Desert-orange rectangular field bearing crisp white sans-serif font 'SAHARA MÉDIAS', symbolising the vast Saharan horizon.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://saharamedias.net",
         "https://fr.saharamedias.net"
@@ -11935,8 +11553,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Syndicat des Journalistes Mauritans 2023"
       },
       "revenueModel": "Newsstand sales, institutional subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/mr/le-calame.svg",
-      "logoExplainer": "Deep marine blue backdrop featuring refined white serif typography 'Le Calame', recalling the ancient reed pen and free expression.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lecalame.info",
         "https://fr.wikipedia.org/wiki/Le_Calame"
@@ -11963,8 +11580,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Broadcasting Authority / Allied Group Annual Audit 2023"
       },
       "revenueModel": "Print sales, digital premium subscriptions (Times of Malta Premium), and advertising",
-      "logo": "newspaper-logos/mt/times-of-malta.svg",
-      "logoExplainer": "Dark navy field with distinguished white capital serif typography 'TIMES OF MALTA', embodying Maltese newspaper of record status.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://timesofmalta.com",
         "https://en.wikipedia.org/wiki/Times_of_Malta"
@@ -11989,8 +11605,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Malta Broadcasting Authority Press Study 2023"
       },
       "revenueModel": "Print sales, corporate display advertising, and web advertising",
-      "logo": "newspaper-logos/mt/the-malta-independent.svg",
-      "logoExplainer": "Stark white background showcasing crimson red serif typography 'The Malta Independent', representing principled and autonomous commentary.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.independent.com.mt",
         "https://en.wikipedia.org/wiki/The_Malta_Independent"
@@ -12015,8 +11630,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "MediaToday Market Research 2023"
       },
       "revenueModel": "Print sales, digital advertising, commercial survey services, and events",
-      "logo": "newspaper-logos/mt/maltatoday.svg",
-      "logoExplainer": "Vivid red rectangle with stark white modern sans-serif typography 'MaltaToday', evoking progressive and fearless reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.maltatoday.com.mt",
         "https://en.wikipedia.org/wiki/MaltaToday"
@@ -12043,8 +11657,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "General Workers' Union Media Report 2023"
       },
       "revenueModel": "Print sales, union backing, and commercial advertising",
-      "logo": "newspaper-logos/mt/l-orizzont.svg",
-      "logoExplainer": "Royal blue background with bold white condensed uppercase lettering 'L-ORIZZONT', symbolizing labor solidarity and progressive vision.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://talk.mt",
         "https://en.wikipedia.org/wiki/L-Orizzont"
@@ -12071,8 +11684,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Watch Organisation Mauritius 2023"
       },
       "revenueModel": "Print sales, digital advertising, and corporate subscriptions",
-      "logo": "newspaper-logos/mu/l-express.svg",
-      "logoExplainer": "Deep navy blue rectangle with bold white italicized serif typography 'l'express', symbolizing dynamic and fast investigative journalism in Mauritius.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lexpress.mu",
         "https://fr.wikipedia.org/wiki/L%27Express_(Maurice)"
@@ -12097,8 +11709,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Le Mauricien Audience Survey 2023"
       },
       "revenueModel": "Print sales, legal notices, and commercial display ads",
-      "logo": "newspaper-logos/mu/le-mauricien.svg",
-      "logoExplainer": "Clean white background with dignified crimson red gothic serif typography 'Le Mauricien', reflecting more than a century of national heritage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lemauricien.com",
         "https://fr.wikipedia.org/wiki/Le_Mauricien"
@@ -12123,8 +11734,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kantar TNS Mauritius Media Study 2023"
       },
       "revenueModel": "Commercial multimedia advertising, radio sponsorships, and print sales",
-      "logo": "newspaper-logos/mu/defi-media.svg",
-      "logoExplainer": "Vibrant royal blue background with fiery red and white bold lettering 'DÉFI MÉDIA GROUP', conveying popular momentum and breaking coverage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://defimedia.info"
       ]
@@ -12148,8 +11758,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ION Media Analytics 2024"
       },
       "revenueModel": "Digital programmatic advertising, video production, and sponsored roundtables",
-      "logo": "newspaper-logos/mu/ion-news.svg",
-      "logoExplainer": "Dark slate backdrop featuring electric cyan stylized typography 'ION NEWS', embodying digital innovation and forward-looking journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ionnews.mu"
       ]
@@ -12177,8 +11786,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mihaaru Media Kit 2023"
       },
       "revenueModel": "Digital advertising, commercial print sponsorships, and events",
-      "logo": "newspaper-logos/mv/mihaaru.svg",
-      "logoExplainer": "Fiery red badge with stark white heavy sans-serif typography 'MIHAARU', representing prompt, authoritative breaking coverage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://mihaaru.com",
         "https://en.wikipedia.org/wiki/Mihaaru"
@@ -12205,8 +11813,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sun Media Analytics 2023"
       },
       "revenueModel": "Digital display advertising, sponsored features, and video production",
-      "logo": "newspaper-logos/mv/sun-online.svg",
-      "logoExplainer": "Warm sun-gold rectangular background with strong charcoal lettering 'SUN ONLINE', signifying equatorial warmth and illuminating reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://sun.mv"
       ]
@@ -12232,8 +11839,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Avas Audience Insight 2024"
       },
       "revenueModel": "Digital advertising, programmatic networks, and commercial sponsorships",
-      "logo": "newspaper-logos/mv/avas.svg",
-      "logoExplainer": "Vibrant ocean-sky blue canvas bearing heavy white typography 'AVAS', echoing the surrounding Maldivian waters and swift delivery.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://avas.mv"
       ]
@@ -12257,8 +11863,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Edition Editorial Report 2023"
       },
       "revenueModel": "Digital advertising and tourism sector sponsorships",
-      "logo": "newspaper-logos/mv/the-edition.svg",
-      "logoExplainer": "Clean white background featuring refined dark navy serif lettering 'The Edition', projecting international journalistic prestige.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://edition.mv"
       ]
@@ -12284,8 +11889,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Times Group Audience Metrics 2023"
       },
       "revenueModel": "Print copy sales, classified ads, and multimedia advertising",
-      "logo": "newspaper-logos/mw/the-daily-times.svg",
-      "logoExplainer": "Deep colonial blue background with classical white serif headline font 'The Daily Times', conveying over a century of journalistic authority.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://times.mw",
         "https://en.wikipedia.org/wiki/The_Daily_Times_(Malawi)"
@@ -12310,8 +11914,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nation Publications Corporate Report 2023"
       },
       "revenueModel": "Print sales, institutional subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/mw/the-nation.svg",
-      "logoExplainer": "Pure white field showcasing commanding crimson red serif lettering 'The Nation', denoting democratic integrity.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://mwnation.com",
         "https://en.wikipedia.org/wiki/The_Nation_(Malawi)"
@@ -12336,8 +11939,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Malawi24 Digital Engagement Data 2024"
       },
       "revenueModel": "Programmatic digital ads, affiliate partnerships, and sponsored content",
-      "logo": "newspaper-logos/mw/malawi24.svg",
-      "logoExplainer": "Bold red backdrop displaying modern white impact typography 'MALAWI 24', emphasizing round-the-clock digital breaking news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://malawi24.com"
       ]
@@ -12361,8 +11963,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nyasa Times Web Analytics 2023"
       },
       "revenueModel": "Online display advertising and corporate promotional features",
-      "logo": "newspaper-logos/mw/nyasa-times.svg",
-      "logoExplainer": "Dark navy canvas highlighted by sky-blue uppercase typography 'NYASA TIMES', representing the enduring voice of Lake Malawi and diaspora.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.nyasatimes.com",
         "https://en.wikipedia.org/wiki/Nyasa_Times"
@@ -12389,8 +11990,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Comscore Mexico / El Universal Audit 2023"
       },
       "revenueModel": "Print circulation, digital subscriptions (El Universal Plus), and display advertising",
-      "logo": "newspaper-logos/mx/el-universal.svg",
-      "logoExplainer": "Deep navy blue field displaying the iconic stylized soaring eagle emblem and bold white serif headline 'EL UNIVERSAL', evoking national stature.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.eluniversal.com.mx",
         "https://es.wikipedia.org/wiki/El_Universal_(M%C3%A9xico)"
@@ -12415,8 +12015,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Reforma Annual Statement 2023"
       },
       "revenueModel": "Hard digital paywall subscriptions, print sales, and premium advertising",
-      "logo": "newspaper-logos/mx/reforma.svg",
-      "logoExplainer": "Distinctive scarlet red background with bold white condensed serif capital letters 'REFORMA', symbolizing journalistic vigor and editorial courage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.reforma.com",
         "https://en.wikipedia.org/wiki/Reforma_(newspaper)"
@@ -12441,8 +12040,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "DEMOS S.A. Audited Metrics 2023"
       },
       "revenueModel": "Print sales, open digital advertising, and institutional subscriptions",
-      "logo": "newspaper-logos/mx/la-jornada.svg",
-      "logoExplainer": "Classic black and white masthead featuring distinctive bold brush script 'La Jornada', representing grassroots democratic journalism and social justice.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.jornada.com.mx",
         "https://es.wikipedia.org/wiki/La_Jornada"
@@ -12467,8 +12065,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Financiero Bloomberg Media Kit 2023"
       },
       "revenueModel": "Corporate print/digital subscriptions, financial advertising, and television broadcast",
-      "logo": "newspaper-logos/mx/el-financiero.svg",
-      "logoExplainer": "Corporate navy blue background with crisp white typography 'EL FINANCIERO' and gold accent line, signifying market authority and financial intelligence.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.elfinanciero.com.mx",
         "https://es.wikipedia.org/wiki/El_Financiero"
@@ -12638,8 +12235,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sociedade do Notícias Relatório Anual 2023"
       },
       "revenueModel": "Print sales, state and commercial advertising, and digital subscriptions",
-      "logo": "newspaper-logos/mz/noticias.svg",
-      "logoExplainer": "Deep navy blue background displaying classic crisp white serif typography 'NOTÍCIAS', representing the historic daily newspaper of record.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.jornalnoticias.co.mz",
         "https://pt.wikipedia.org/wiki/Jornal_Not%C3%ADcias"
@@ -12666,8 +12262,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo SOICO Relatório de Gestão 2023"
       },
       "revenueModel": "Print sales, multimedia advertising, and broadcast commercial sponsors",
-      "logo": "newspaper-logos/mz/o-pais.svg",
-      "logoExplainer": "Vibrant crimson red background featuring bold modern white sans-serif lettering 'O PAÍS', evoking dynamic independent news reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://opais.co.mz",
         "https://pt.wikipedia.org/wiki/O_Pa%C3%ADs_(Mo%C3%A7ambique)"
@@ -12694,8 +12289,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "MISA Moçambique Media Freedom Report 2023"
       },
       "revenueModel": "Newsstand sales, individual subscriptions, and limited independent ads",
-      "logo": "newspaper-logos/mz/canal-de-mocambique.svg",
-      "logoExplainer": "Stark white canvas showcasing sharp black and red uppercase lettering 'CANAL DE MOÇAMBIQUE', representing courageous investigative journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://canal.co.mz",
         "https://pt.wikipedia.org/wiki/Canal_de_Mo%C3%A7ambique"
@@ -12724,8 +12318,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Namibia Media Holdings Audit 2023"
       },
       "revenueModel": "Print copy sales, farming classifieds, and corporate advertising",
-      "logo": "newspaper-logos/na/die-republikein.svg",
-      "logoExplainer": "Deep scarlet red background emblazoned with crisp white serif typography 'Die Republikein', representing four decades of Afrikaans journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.republikein.com.na",
         "https://en.wikipedia.org/wiki/Die_Republikein"
@@ -12750,8 +12343,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "NEPC Annual Report 2023"
       },
       "revenueModel": "State budget grant, newspaper sales, and government tender notices",
-      "logo": "newspaper-logos/na/new-era.svg",
-      "logoExplainer": "Forest green background with clean white and gold modern typography 'NEW ERA', denoting post-independence reconstruction and national development.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://neweralive.na",
         "https://en.wikipedia.org/wiki/New_Era_(Namibia)"
@@ -12780,8 +12372,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ONEP Rapport d'Entreprise 2023"
       },
       "revenueModel": "Print sales, mandatory public tender notices, and official advertisements",
-      "logo": "newspaper-logos/ne/le-sahel.svg",
-      "logoExplainer": "Deep Sahara-sand gold background with elegant black serif typography 'Le Sahel', evoking the geographical heart of the Sahel region.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lesahel.org",
         "https://fr.wikipedia.org/wiki/Le_Sahel_(journal)"
@@ -12806,8 +12397,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Aïr Info Media Kit 2023"
       },
       "revenueModel": "Print copy sales, donor partnership reporting, and digital advertising",
-      "logo": "newspaper-logos/ne/air-info.svg",
-      "logoExplainer": "Desert sand-orange field featuring the stylized Cross of Agadez symbol and bold black lettering 'AÏR INFO', representing the desert north.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://airinfoagadez.com",
         "https://fr.wikipedia.org/wiki/A%C3%AFr_Info"
@@ -12834,8 +12424,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Audit Bureau of Circulations Nigeria / Similarweb 2023"
       },
       "revenueModel": "Print sales, digital advertising, classifieds, and event partnerships",
-      "logo": "newspaper-logos/ng/the-punch.svg",
-      "logoExplainer": "Distinctive scarlet red background with bold white heavyweight sans-serif typography 'PUNCH', representing independent editorial impact.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://punchng.com",
         "https://en.wikipedia.org/wiki/The_Punch"
@@ -12860,8 +12449,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Premium Times Annual Review 2023"
       },
       "revenueModel": "Digital advertising, investigative philanthropy grants, and reader subscriptions",
-      "logo": "newspaper-logos/ng/premium-times.svg",
-      "logoExplainer": "Sleek dark navy blue backdrop with vibrant golden-yellow and white typography 'PREMIUM TIMES', denoting uncompromising investigative excellence.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.premiumtimesng.com",
         "https://en.wikipedia.org/wiki/Premium_Times"
@@ -12886,8 +12474,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Advertisers Association of Nigeria (ADVAN) 2023"
       },
       "revenueModel": "Print sales, institutional subscriptions, and corporate display advertising",
-      "logo": "newspaper-logos/ng/the-guardian.svg",
-      "logoExplainer": "Clean white background with the iconic classic black serif title 'The Guardian' and golden motto 'Conscience, Nurtured by Truth'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://guardian.ng",
         "https://en.wikipedia.org/wiki/The_Guardian_(Nigeria)"
@@ -12912,8 +12499,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Reach OMD Nigeria 2023"
       },
       "revenueModel": "Print sales, classifieds, and digital advertising networks",
-      "logo": "newspaper-logos/ng/vanguard.svg",
-      "logoExplainer": "Bright red rectangular background featuring prominent bold white italic sans-serif lettering 'Vanguard', symbolizing dynamic national news delivery.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.vanguardngr.com",
         "https://en.wikipedia.org/wiki/Vanguard_(Nigeria)"
@@ -12940,8 +12526,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "La Prensa Digital Analytics 2023"
       },
       "revenueModel": "Digital paywall subscriptions, reader donations, and international press support grants",
-      "logo": "newspaper-logos/ni/la-prensa.svg",
-      "logoExplainer": "Dignified dark navy field displaying classical white serif typography 'LA PRENSA' with cyan blue accent, symbolizing unwavering truth in exile.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.laprensani.com",
         "https://es.wikipedia.org/wiki/La_Prensa_(Nicaragua)"
@@ -12966,8 +12551,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Confidencial Audience Report 2023"
       },
       "revenueModel": "Reader membership club, voluntary donations, and international investigative journalism funds",
-      "logo": "newspaper-logos/ni/confidencial.svg",
-      "logoExplainer": "Pure white canvas showcasing bold black and scarlet red lowercase typography 'confidencial', representing rigorous investigative scrutiny.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://confidencial.digital",
         "https://es.wikipedia.org/wiki/Confidencial_(peri%C3%B3dico)"
@@ -12992,8 +12576,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Consejo de Comunicación y Ciudadanía 2023"
       },
       "revenueModel": "State government operational budget",
-      "logo": "newspaper-logos/ni/el-19-digital.svg",
-      "logoExplainer": "FSLN red and black bicolor emblem featuring bold white numeral '19' and clean lettering 'EL 19 DIGITAL', signifying state institutional news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.el19digital.com"
       ]
@@ -13017,8 +12600,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Artículo 66 Digital Metrics 2023"
       },
       "revenueModel": "Citizen donations, independent digital advertising, and press defense grants",
-      "logo": "newspaper-logos/ni/articulo-66.svg",
-      "logoExplainer": "Sky-blue rectangular banner with bold white numerals '66' and uppercase text 'ARTÍCULO 66', celebrating constitutional free speech.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.articulo66.com"
       ]
@@ -13044,8 +12626,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nationaal Onderzoek Multimedia (NOM) 2023"
       },
       "revenueModel": "Print sales, digital subscriptions (Telegraaf Premium), and high-volume commercial advertising",
-      "logo": "newspaper-logos/nl/de-telegraaf.svg",
-      "logoExplainer": "Distinctive black gothic-style masthead 'De Telegraaf' on pure white background, reflecting the iconic style of the nation's best-selling paper.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.telegraaf.nl",
         "https://en.wikipedia.org/wiki/De_Telegraaf"
@@ -13072,8 +12653,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "NOM Print & Digital Media Monitor 2023"
       },
       "revenueModel": "Print and digital paid subscriptions, and selective display advertising",
-      "logo": "newspaper-logos/nl/de-volkskrant.svg",
-      "logoExplainer": "Clean white background with refined black bold serif typography 'de Volkskrant', symbolising analytical depth and intellectual authority.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.volkskrant.nl",
         "https://en.wikipedia.org/wiki/De_Volkskrant"
@@ -13100,8 +12680,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mediahuis Corporate Audit 2023"
       },
       "revenueModel": "Paid print/digital subscriptions and quality commercial advertising",
-      "logo": "newspaper-logos/nl/nrc.svg",
-      "logoExplainer": "Minimalist black rectangular field featuring stark white geometric serif capitals 'NRC', embodying journalistic elegance and independence.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.nrc.nl",
         "https://en.wikipedia.org/wiki/NRC_Handelsblad"
@@ -13130,8 +12709,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mediebedriftenes Landsforening (MBL) 2023"
       },
       "revenueModel": "Paid digital subscriptions (Aftenposten+), print circulation, and display ads",
-      "logo": "newspaper-logos/no/aftenposten.svg",
-      "logoExplainer": "Classic black gothic masthead 'Aftenposten' on pure white background, reflecting Norway's most prestigious broadsheet tradition.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.aftenposten.no",
         "https://en.wikipedia.org/wiki/Aftenposten"
@@ -13158,8 +12736,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mediebedriftenes Landsforening 2023"
       },
       "revenueModel": "Digital subscriptions (Dagbladet Pluss), single-copy print sales, and video ads",
-      "logo": "newspaper-logos/no/dagbladet.svg",
-      "logoExplainer": "Red and white circle emblem with distinctive lowercase 'd' alongside bold black serif text 'Dagbladet', symbolizing progressive Norwegian journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.dagbladet.no",
         "https://en.wikipedia.org/wiki/Dagbladet"
@@ -13186,8 +12763,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "MBL Opplagstall / Schibsted Annual Report 2023"
       },
       "revenueModel": "Digital paywall subscriptions (VG+), print sales, and digital advertising",
-      "logo": "newspaper-logos/no/vg.svg",
-      "logoExplainer": "Vibrant red square featuring bold white sans-serif letters 'VG', the undisputed symbol of Norwegian breaking news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.vg.no",
         "https://en.wikipedia.org/wiki/Verdens_Gang"
@@ -13216,8 +12792,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gorkhapatra Sansthan Annual Report 2023"
       },
       "revenueModel": "State government institutional advertising, public tender notices, and print subscriptions",
-      "logo": "newspaper-logos/np/gorkhapatra.svg",
-      "logoExplainer": "Traditional crimson red banner with elegant gold Devanagari lettering 'गोरखापत्र' (Gorkhapatra), embodying over 120 years of Nepali newspaper history.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://gorkhapatraonline.com",
         "https://en.wikipedia.org/wiki/Gorkhapatra"
@@ -13244,8 +12819,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nepal Press Council Audit 2023"
       },
       "revenueModel": "Print sales, corporate display advertising, and digital subscriptions",
-      "logo": "newspaper-logos/np/kantipur.svg",
-      "logoExplainer": "Deep royal blue banner with iconic white Devanagari calligraphy 'कान्तिपुर' (Kantipur) and red accent, symbolising Nepal's flagship daily press.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ekantipur.com",
         "https://en.wikipedia.org/wiki/Kantipur_(daily)"
@@ -13270,8 +12844,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kantipur Media Group Audience Statement 2023"
       },
       "revenueModel": "Print copy sales, corporate advertising, and digital subscriptions",
-      "logo": "newspaper-logos/np/the-kathmandu-post.svg",
-      "logoExplainer": "Clean white background featuring dignified dark navy serif typography 'The Kathmandu Post', representing English-language journalistic prestige in the Himalayas.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kathmandupost.com",
         "https://en.wikipedia.org/wiki/The_Kathmandu_Post"
@@ -13328,8 +12901,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nauru Community Media Archive"
       },
       "revenueModel": "Community grants and local public announcements",
-      "logo": "newspaper-logos/nr/mwinen-ko.svg",
-      "logoExplainer": "Emerald green masthead featuring the 12-pointed Nauruan star, meaning 'Let's Talk About It' in the Nauruan language.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.naurugov.nr",
         "https://en.wikipedia.org/wiki/Nauru"
@@ -13355,8 +12927,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Pacific Islands News Association (PINA)"
       },
       "revenueModel": "Community contributions and local sponsor notices",
-      "logo": "newspaper-logos/nr/nauru-chronicle.svg",
-      "logoExplainer": "Dignified classical serif headline with clean horizontal rules representing independent Pacific journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.pina.com.fj",
         "https://en.wikipedia.org/wiki/Media_of_Nauru"
@@ -13382,8 +12953,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Local Council Records"
       },
       "revenueModel": "Local council funding and community contributions",
-      "logo": "newspaper-logos/nr/central-star-news.svg",
-      "logoExplainer": "Deep blue and gold emblem with the 12-pointed Nauru star symbolising island unity and community news.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.naurugov.nr",
         "https://en.wikipedia.org/wiki/Districts_of_Nauru"
@@ -13410,8 +12980,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nielsen Media Research New Zealand 2023"
       },
       "revenueModel": "Print sales, NZ Herald Premium digital paywall subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/nz/the-new-zealand-herald.svg",
-      "logoExplainer": "Deep navy blue background displaying the historic white gothic masthead 'The New Zealand Herald', symbolising over 160 years of national journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.nzherald.co.nz",
         "https://en.wikipedia.org/wiki/The_New_Zealand_Herald"
@@ -13436,8 +13005,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nielsen Online Ratings NZ 2023"
       },
       "revenueModel": "Digital advertising, voluntary reader contributions (Stuff Supporter), and print subscriptions",
-      "logo": "newspaper-logos/nz/stuff.svg",
-      "logoExplainer": "Vibrant solid green background featuring stark white rounded lowercase typography 'stuff', evoking modern digital agility.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.stuff.co.nz",
         "https://en.wikipedia.org/wiki/Stuff_(website)"
@@ -13462,8 +13030,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Allied Press Circulation Audit 2023"
       },
       "revenueModel": "Print sales, regional classifieds, and digital subscriptions",
-      "logo": "newspaper-logos/nz/otago-daily-times.svg",
-      "logoExplainer": "Classic dark navy blue background featuring refined white serif typography 'Otago Daily Times', celebrating over 160 years of South Island publishing.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.odt.co.nz",
         "https://en.wikipedia.org/wiki/Otago_Daily_Times"
@@ -13488,8 +13055,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nielsen Television Audience Measurement 2023"
       },
       "revenueModel": "Commercial broadcast advertising and digital sponsorships",
-      "logo": "newspaper-logos/nz/1news.svg",
-      "logoExplainer": "Bright red square with bold white numeral '1' and clean typography 'NEWS', representing New Zealand's dominant television news service.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.1news.co.nz",
         "https://en.wikipedia.org/wiki/1_News"
@@ -13518,8 +13084,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Oman Establishment for Press 2023"
       },
       "revenueModel": "Print subscriptions, official gazette advertising, and retail sales",
-      "logo": "newspaper-logos/om/oman-daily.svg",
-      "logoExplainer": "Dignified dark green background adorned with golden Arabic calligraphy 'جريدة عمان' (Jaridat Oman), embodying half a century of national publishing.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.omandaily.om"
       ]
@@ -13543,8 +13108,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Muscat Press & Publishing House Audit 2023"
       },
       "revenueModel": "Print sales, digital display advertising, and corporate sponsorships",
-      "logo": "newspaper-logos/om/times-of-oman.svg",
-      "logoExplainer": "Sleek navy blue field with bold white serif capitals 'TIMES OF OMAN' and red accent, representing private English-language press leadership.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://timesofoman.com",
         "https://en.wikipedia.org/wiki/Times_of_Oman"
@@ -13569,8 +13133,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Oman Establishment for Press, Publication and Advertising 2023"
       },
       "revenueModel": "Print sales, corporate advertising, and public notice announcements",
-      "logo": "newspaper-logos/om/oman-daily-observer.svg",
-      "logoExplainer": "Deep burgundy red background featuring stately white serif typography 'Oman Observer' with gold accent line, signifying authoritative national broadsheet status.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.omanobserver.om",
         "https://en.wikipedia.org/wiki/Oman_Daily_Observer"
@@ -13597,8 +13160,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "GESE Corporate Profile 2023"
       },
       "revenueModel": "Print sales, legal notices, and commercial display advertising",
-      "logo": "newspaper-logos/pa/la-estrella-de-panama.svg",
-      "logoExplainer": "Deep crimson red background with gleaming gold star emblem and refined serif typography 'La Estrella de Panamá', reflecting 175 years of press history.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.laestrella.com.pa",
         "https://es.wikipedia.org/wiki/La_Estrella_de_Panam%C3%A1"
@@ -13623,8 +13185,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Epasa Audience Audit 2023"
       },
       "revenueModel": "Print copy sales, classifieds, and digital display advertising",
-      "logo": "newspaper-logos/pa/panama-america.svg",
-      "logoExplainer": "Vibrant royal blue rectangular field emblazoned with stark white modern sans-serif typography 'PANAMÁ AMÉRICA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.panamaamerica.com.pa",
         "https://es.wikipedia.org/wiki/El_Panam%C3%A1_Am%C3%A9rica"
@@ -13649,8 +13210,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Corprensa Audited Financial Statements 2023"
       },
       "revenueModel": "Print sales, digital paywall subscriptions (Prensa Digital), and display advertising",
-      "logo": "newspaper-logos/pa/la-prensa.svg",
-      "logoExplainer": "Clean white background with iconic dark navy blue serif lettering 'LA PRENSA' and blue accent, symbolising independent democratic watchdog journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.prensa.com",
         "https://es.wikipedia.org/wiki/La_Prensa_(Panam%C3%A1)"
@@ -13677,8 +13237,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Audit Bureau of Circulations Latin America / Comscore 2023"
       },
       "revenueModel": "Print circulation, digital paywall subscriptions (El Comercio+), and display advertising",
-      "logo": "newspaper-logos/pe/el-comercio.svg",
-      "logoExplainer": "Classic black gothic masthead 'El Comercio' on clean white background, evoking nearly two centuries of Peruvian newspaper leadership.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://elcomercio.pe",
         "https://es.wikipedia.org/wiki/El_Comercio_(Per%C3%BA)"
@@ -13703,8 +13262,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kantar IBOPE Media Peru 2023"
       },
       "revenueModel": "Print sales, digital programmatic advertising, and video sponsorships",
-      "logo": "newspaper-logos/pe/la-republica.svg",
-      "logoExplainer": "Vivid scarlet red background displaying crisp white condensed serif capital letters 'LA REPÚBLICA', denoting fearless democratic journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://larepublica.pe",
         "https://es.wikipedia.org/wiki/La_Rep%C3%BAblica_(Per%C3%BA)"
@@ -13729,8 +13287,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo El Comercio Financial Publishing 2023"
       },
       "revenueModel": "Paid enterprise subscriptions, financial market advertising, and corporate events",
-      "logo": "newspaper-logos/pe/gestion.svg",
-      "logoExplainer": "Deep corporate navy blue field with bold white typography 'GESTIÓN' and golden accent line, symbolising financial market intelligence.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://gestion.pe",
         "https://es.wikipedia.org/wiki/Gesti%C3%B3n_(diario)"
@@ -13757,8 +13314,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "South Pacific Post Circulation Audit 2023"
       },
       "revenueModel": "Print sales, corporate display advertising, and public notice tenders",
-      "logo": "newspaper-logos/pg/post-courier.svg",
-      "logoExplainer": "Deep red background displaying bold white modern serif title 'Post-Courier', symbolising over half a century of national reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://postcourier.com.pg",
         "https://en.wikipedia.org/wiki/Papua_New_Guinea_Post-Courier"
@@ -13785,8 +13341,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Word Publishing Circulation Review 2023"
       },
       "revenueModel": "Print sales, community church distribution, and educational subscriptions",
-      "logo": "newspaper-logos/pg/wantok-niuspepa.svg",
-      "logoExplainer": "Forest green background displaying traditional tribal kundu drum motif and white Tok Pisin typography 'WANTOK NIUSPEPA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/Wantok_(newspaper)"
       ]
@@ -13810,8 +13365,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Pacific Star Limited Annual Review 2023"
       },
       "revenueModel": "Print copy sales, mining/petroleum industry advertising, and classifieds",
-      "logo": "newspaper-logos/pg/the-national.svg",
-      "logoExplainer": "Vibrant yellow-gold rectangular field with stark black and red bold typography 'The National', capturing Papua New Guinean enterprise.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.thenational.com.pg",
         "https://en.wikipedia.org/wiki/The_National_(Papua_New_Guinea)"
@@ -13838,8 +13392,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Manila Bulletin Publishing Corp Annual Report 2023"
       },
       "revenueModel": "Print sales, classifieds, digital advertising, and corporate announcements",
-      "logo": "newspaper-logos/ph/manila-bulletin.svg",
-      "logoExplainer": "Traditional black Old English masthead 'MANILA BULLETIN' on pure white background, reflecting over 120 years of continuous publishing in Intramuros.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://mb.com.ph",
         "https://en.wikipedia.org/wiki/Manila_Bulletin"
@@ -13864,8 +13417,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "United Print Media Group (UPMG) / Similarweb 2023"
       },
       "revenueModel": "Print sales, digital subscriptions (Inquirer Plus), and corporate display advertising",
-      "logo": "newspaper-logos/ph/philippine-daily-inquirer.svg",
-      "logoExplainer": "Classic black gothic masthead 'PHILIPPINE DAILY INQUIRER' on clean white background with signature red underline, symbolizing courageous press freedom.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.inquirer.net",
         "https://en.wikipedia.org/wiki/Philippine_Daily_Inquirer"
@@ -13890,8 +13442,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Reuters Institute Digital News Report 2023"
       },
       "revenueModel": "Reader crowdfunding (Rappler+), digital display ads, investigative grants, and civic data projects",
-      "logo": "newspaper-logos/ph/rappler.svg",
-      "logoExplainer": "Dark slate background featuring bright orange circular emblem and crisp white lowercase typography 'rappler', symbolising courageous digital truth-telling.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.rappler.com",
         "https://en.wikipedia.org/wiki/Rappler"
@@ -13920,8 +13471,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Audit Bureau of Circulation (ABC) Pakistan 2023"
       },
       "revenueModel": "Print sales, high-volume classifieds, commercial advertising, and TV revenues",
-      "logo": "newspaper-logos/pk/daily-jang.svg",
-      "logoExplainer": "Vibrant red and green field featuring distinctive Nastaliq Urdu calligraphy 'روزنامہ جنگ' (Daily Jang), the voice of the Urdu-reading majority.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://jang.com.pk",
         "https://en.wikipedia.org/wiki/Daily_Jang"
@@ -13946,8 +13496,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "All Pakistan Newspapers Society (APNS) / Comscore 2023"
       },
       "revenueModel": "Print sales, corporate display advertising, and digital sponsorships",
-      "logo": "newspaper-logos/pk/dawn.svg",
-      "logoExplainer": "Iconic stark black serif masthead 'DAWN' on pure white background, reflecting over eight decades of uncompromising journalistic integrity.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.dawn.com",
         "https://en.wikipedia.org/wiki/Dawn_(newspaper)"
@@ -13972,8 +13521,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "APNS Circulation Statement 2023"
       },
       "revenueModel": "Print sales, institutional subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/pk/the-news-international.svg",
-      "logoExplainer": "Deep navy blue background displaying bold white serif title 'THE NEWS' with international red globe accent.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.thenews.com.pk",
         "https://en.wikipedia.org/wiki/The_News_International"
@@ -13998,8 +13546,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Lakson Media Group Audience Profile 2023"
       },
       "revenueModel": "Print sales, international syndication, and digital programmatic advertising",
-      "logo": "newspaper-logos/pk/the-express-tribune.svg",
-      "logoExplainer": "Clean white background featuring crimson red and black modern sans-serif typography 'THE EXPRESS TRIBUNE', symbolising progressive Pakistani journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://tribune.com.pk",
         "https://en.wikipedia.org/wiki/The_Express_Tribune"
@@ -14028,8 +13575,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Polskie Badania Czytelnictwa & Agora Q4 2023 Report"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and advertising",
-      "logo": "newspaper-logos/pl/wyborcza.svg",
-      "logoExplainer": "Clean modern black lowercase serif wordmark 'wyborcza' paired with a red dot accent and bold red '.pl' digital domain mark.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://wyborcza.pl",
         "https://en.wikipedia.org/wiki/Gazeta_Wyborcza"
@@ -14056,8 +13602,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Polskie Badania Czytelnictwa 2023"
       },
       "revenueModel": "Corporate subscriptions, print sales, and high-tier display advertising",
-      "logo": "newspaper-logos/pl/rzeczpospolita.svg",
-      "logoExplainer": "Deep navy blue rectangular field featuring regal white serif capitals 'RZECZPOSPOLITA' underlined by an elegant golden accent rule.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.rp.pl",
         "https://en.wikipedia.org/wiki/Rzeczpospolita_(newspaper)"
@@ -14084,8 +13629,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Infor PL 2023 Annual Report"
       },
       "revenueModel": "Professional corporate subscriptions and advertising",
-      "logo": "newspaper-logos/pl/dgp.svg",
-      "logoExplainer": "Carmine red rectangular emblem featuring bold white acronym 'DGP' above crisp subtitle 'DZIENNIK GAZETA PRAWNA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.gazetaprawna.pl",
         "https://en.wikipedia.org/wiki/Dziennik_Gazeta_Prawna"
@@ -14112,8 +13656,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Polskie Badania Czytelnictwa 2023"
       },
       "revenueModel": "High-volume retail print sales and programmatic digital advertising",
-      "logo": "newspaper-logos/pl/fakt.svg",
-      "logoExplainer": "High-impact crimson red field with prominent bold italicized white block typography 'FAKT'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.fakt.pl",
         "https://en.wikipedia.org/wiki/Fakt"
@@ -14142,8 +13685,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Palestinian Journalists Syndicate (PJS) Survey"
       },
       "revenueModel": "Print newsstand sales, corporate commercial advertising, and digital subscriptions",
-      "logo": "newspaper-logos/ps/al-ayyam.svg",
-      "logoExplainer": "White field with green rectangular frame, emerald green Arabic calligraphy 'الأيام • AL-AYYAM', and crimson red national daily subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.al-ayyam.ps",
         "https://en.wikipedia.org/wiki/Al-Ayyam_(Palestine)"
@@ -14170,8 +13712,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "PJS Audit / Al-Quds Commercial Kit"
       },
       "revenueModel": "Newsstand retail sales, commercial display advertisements, and classifieds",
-      "logo": "newspaper-logos/ps/al-quds.svg",
-      "logoExplainer": "Solid dark charcoal field with ornate white Arabic calligraphy 'صحيفة القدس', golden divider line, and gold Jerusalem 1951 subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.alquds.com",
         "https://en.wikipedia.org/wiki/Al-Quds_(newspaper)"
@@ -14202,8 +13743,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "PNA Ministry of Information Register"
       },
       "revenueModel": "Government budget allocations and official legal notices",
-      "logo": "newspaper-logos/ps/al-hayat-al-jadida.svg",
-      "logoExplainer": "Clean white field with crimson red emblem tile bearing 'حياة', dark charcoal Arabic lettering 'الحياة الجديدة', and red official daily subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.alhayat-j.com",
         "https://en.wikipedia.org/wiki/Al-Hayat_al-Jadida"
@@ -14232,8 +13772,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "APCT & Reuters Institute Digital News Report 2024"
       },
       "revenueModel": "Digital subscriptions, newsstand sales, and premium advertising",
-      "logo": "newspaper-logos/pt/publico.svg",
-      "logoExplainer": "Dark graphite background with warm orange square badge enclosing a white serif 'P' beside bold white title 'PÚBLICO'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.publico.pt",
         "https://en.wikipedia.org/wiki/P%C3%BAblico_(Portugal)"
@@ -14260,8 +13799,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "APCT Portugal 2023"
       },
       "revenueModel": "Circulation sales, digital subscriptions, and display advertising",
-      "logo": "newspaper-logos/pt/diario-de-noticias.svg",
-      "logoExplainer": "Classic marine blue rectangular frame displaying refined white serif capitals 'DIÁRIO DE NOTÍCIAS' with heritage date 'Desde 1864'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.dn.pt",
         "https://en.wikipedia.org/wiki/Di%C3%A1rio_de_Not%C3%ADcias_(Portugal)"
@@ -14288,8 +13826,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "APCT Portugal 2023"
       },
       "revenueModel": "Print sales, digital subscriptions, and advertising",
-      "logo": "newspaper-logos/pt/jornal-de-noticias.svg",
-      "logoExplainer": "Bright crimson red field displaying bold white acronym 'JN' above clean uppercase title 'JORNAL DE NOTÍCIAS'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.jn.pt",
         "https://en.wikipedia.org/wiki/Jornal_de_Not%C3%ADcias"
@@ -14316,8 +13853,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "APCT 2023 & Medialivre Corporate Report"
       },
       "revenueModel": "High retail print sales and multimedia advertising",
-      "logo": "newspaper-logos/pt/correio-da-manha.svg",
-      "logoExplainer": "Vibrant scarlet red rectangular banner with white square icon enclosing red 'CM' initials and bold stacked white typography.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.cmjornal.pt",
         "https://en.wikipedia.org/wiki/Correio_da_Manh%C3%A3"
@@ -14348,8 +13884,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Belau National Museum Report 2023"
       },
       "revenueModel": "State statutory appropriation, museum memberships, and cultural publications",
-      "logo": "newspaper-logos/pw/belau-national-gazette.svg",
-      "logoExplainer": "Traditional Palauan Bai meeting house silhouette in gold on deep navy blue with text 'BELAU NATIONAL GAZETTE'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.belaunationalmuseum.net"
       ]
@@ -14375,8 +13910,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tia Belau Circulation Profile 2023"
       },
       "revenueModel": "Print copy sales, political notices, and local display ads",
-      "logo": "newspaper-logos/pw/tia-belau.svg",
-      "logoExplainer": "Deep ocean blue field featuring bold gold Palauan lettering 'TIA BELAU', evoking national pride and traditional island self-determination.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/Tia_Belau"
       ]
@@ -14400,8 +13934,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Palau Conservation Society Annual Review 2023"
       },
       "revenueModel": "Civic conservation grants, educational subscriptions, and donor support",
-      "logo": "newspaper-logos/pw/eco-palau-news.svg",
-      "logoExplainer": "Deep lagoon green background with stylized sea turtle icon and white text 'ECO PALAU NEWS', signifying marine biodiversity stewardship.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://palauconservation.org"
       ]
@@ -14425,8 +13958,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Palau Media Council 2023"
       },
       "revenueModel": "Print sales, government legal notices, and commercial advertising",
-      "logo": "newspaper-logos/pw/island-times.svg",
-      "logoExplainer": "Pacific azure blue background with crisp white typography 'ISLAND TIMES PALAU' and golden full moon accent, symbolising the Palau flag.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://islandtimes.org",
         "https://en.wikipedia.org/wiki/Island_Times"
@@ -14453,8 +13985,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Editorial Azeta / Similarweb 2023"
       },
       "revenueModel": "Print sales, digital subscriptions (ABC Digital), and major commercial advertising",
-      "logo": "newspaper-logos/py/abc-color.svg",
-      "logoExplainer": "Signature golden-yellow square with bold black serif letters 'ABC' and blue accent, symbolising independent investigative journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.abc.com.py",
         "https://es.wikipedia.org/wiki/ABC_Color"
@@ -14479,8 +14010,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Vierci Audited Report 2023"
       },
       "revenueModel": "Print sales, corporate advertising, and digital sponsorships",
-      "logo": "newspaper-logos/py/ultima-hora.svg",
-      "logoExplainer": "Deep scarlet red rectangular background with prominent white modern sans-serif typography 'ÚLTIMA HORA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ultimahora.com",
         "https://es.wikipedia.org/wiki/%C3%9Altima_Hora_(Paraguay)"
@@ -14505,8 +14035,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Nación Media Audit 2023"
       },
       "revenueModel": "Print circulation, commercial display advertising, and television broadcast ads",
-      "logo": "newspaper-logos/py/la-nacion.svg",
-      "logoExplainer": "Dignified dark navy blue field featuring refined white serif typography 'LA NACIÓN' with red and blue accent lines.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.lanacion.com.py",
         "https://es.wikipedia.org/wiki/La_Naci%C3%B3n_(Paraguay)"
@@ -14539,8 +14068,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al Jazeera Media Network Global Reach 2023"
       },
       "revenueModel": "State funding grant, commercial advertising, and digital syndication",
-      "logo": "newspaper-logos/qa/aljazeera.svg",
-      "logoExplainer": "Dark petrol blue field featuring distinctive orange circular badge with calligraphic 'AJ' monogram and bold white lettering 'AL JAZEERA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.aljazeera.com",
         "https://en.wikipedia.org/wiki/Al_Jazeera_Media_Network"
@@ -14567,8 +14095,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gulf Publishing and Printing Co. 2023"
       },
       "revenueModel": "Print sales, government legal notices, and commercial advertising",
-      "logo": "newspaper-logos/qa/al-raya.svg",
-      "logoExplainer": "Qatari maroon banner featuring elegant white Arabic script 'الراية' and clean Latin subtitle 'AL RAYA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.raya.com",
         "https://en.wikipedia.org/wiki/Al_Raya_(newspaper)"
@@ -14595,8 +14122,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Dar Al Sharq Group Media Kit 2023"
       },
       "revenueModel": "Corporate advertising, subscriptions, and government public notices",
-      "logo": "newspaper-logos/qa/al-sharq.svg",
-      "logoExplainer": "Deep green field with flowing white Arabic calligraphic masthead 'الشرق' and crisp English subtitle 'AL SHARQ'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://al-sharq.com",
         "https://en.wikipedia.org/wiki/Al_Sharq_(newspaper)"
@@ -14623,8 +14149,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gulf Publishing & Printing 2023"
       },
       "revenueModel": "Commercial advertising, retail print sales, and corporate subscriptions",
-      "logo": "newspaper-logos/qa/gulf-times.svg",
-      "logoExplainer": "Deep navy field featuring regal white serif capitals 'GULF TIMES' accented with golden subtitle 'QATAR’S TOP ENGLISH DAILY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.gulf-times.com",
         "https://en.wikipedia.org/wiki/Gulf_Times"
@@ -14653,8 +14178,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "BRAT (Biroul Român de Audit Transmedia) 2023"
       },
       "revenueModel": "Digital advertising, print subscriptions, and retail sales",
-      "logo": "newspaper-logos/ro/adevarul.svg",
-      "logoExplainer": "Clean white field with prominent black serif typography 'adevarul' accented with a red dot and bold red '.ro'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://adevarul.ro",
         "https://en.wikipedia.org/wiki/Adev%C4%83rul"
@@ -14681,8 +14205,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SATI (Studiul de Audiență și Trafic Internet) 2023"
       },
       "revenueModel": "Digital advertising and multimedia content licensing",
-      "logo": "newspaper-logos/ro/evenimentul-zilei.svg",
-      "logoExplainer": "Bold red rectangular field with prominent white block lettering 'EVENIMENTUL ZILEI (EVZ)'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://evz.ro",
         "https://en.wikipedia.org/wiki/Evenimentul_Zilei"
@@ -14709,8 +14232,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "BRAT Romania 2023"
       },
       "revenueModel": "Print sales, corporate subscriptions, and display advertising",
-      "logo": "newspaper-logos/ro/romania-libera.svg",
-      "logoExplainer": "Deep navy field featuring refined white serif capitals 'ROMÂNIA LIBERĂ' with gold historical inscription 'Fondat 1877'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://romanialibera.ro",
         "https://en.wikipedia.org/wiki/Rom%C3%A2nia_Liber%C4%83"
@@ -14737,8 +14259,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "BRAT & Mediafax Group 2023"
       },
       "revenueModel": "Corporate premium paywalls, print subscriptions, and financial advertising",
-      "logo": "newspaper-logos/ro/ziarul-financiar.svg",
-      "logoExplainer": "Warm orange-ochre banner displaying bold white monogram 'ZF' alongside clean uppercase subtitle 'ZIARUL FINANCIAR'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.zf.ro",
         "https://en.wikipedia.org/wiki/Ziarul_Financiar"
@@ -14767,8 +14288,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ABC Srbija & Politika NM 2023"
       },
       "revenueModel": "Retail print sales, digital advertising, and official public announcements",
-      "logo": "newspaper-logos/rs/politika.svg",
-      "logoExplainer": "Dark navy card displaying refined white serif Cyrillic capitals 'ПОЛИТИКА' and historic date 'Основана 1904. године — Београд'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.politika.rs",
         "https://en.wikipedia.org/wiki/Politika"
@@ -14795,8 +14315,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ABC Srbija 2023"
       },
       "revenueModel": "Print sales, classifieds, and digital banner advertising",
-      "logo": "newspaper-logos/rs/vecernje-novosti.svg",
-      "logoExplainer": "Dark field with red square icon containing white Cyrillic 'Н' beside bold title 'ВЕЧЕРЊЕ НОВОСТИ'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.novosti.rs",
         "https://en.wikipedia.org/wiki/Ve%C4%8Dernje_novosti"
@@ -14823,8 +14342,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gemius Audience Serbia 2023"
       },
       "revenueModel": "Reader digital membership club, print sales, and digital advertising",
-      "logo": "newspaper-logos/rs/danas.svg",
-      "logoExplainer": "Clean white rectangular field displaying prominent black serif wordmark 'Danas' accented with a red dot and '.rs'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.danas.rs",
         "https://en.wikipedia.org/wiki/Danas_(newspaper)"
@@ -14851,8 +14369,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gemius Audience Serbia & Ringier 2023"
       },
       "revenueModel": "High-volume retail print sales and programmatic digital advertising",
-      "logo": "newspaper-logos/rs/blic.svg",
-      "logoExplainer": "Vibrant scarlet red background with bold italicized white block typography 'BLIC'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.blic.rs",
         "https://en.wikipedia.org/wiki/Blic"
@@ -14881,8 +14398,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mediascope Russia 2023"
       },
       "revenueModel": "Print sales, digital subscriptions, and financial advertising",
-      "logo": "newspaper-logos/ru/kommersant.svg",
-      "logoExplainer": "Dark graphite field with distinguished white pre-revolutionary Cyrillic masthead 'Коммерсантъ' retaining the historic hard sign 'ъ'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.kommersant.ru",
         "https://en.wikipedia.org/wiki/Kommersant"
@@ -14913,8 +14429,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mediascope & RG Corporate 2023"
       },
       "revenueModel": "State budget funding, official legal notices, and commercial advertising",
-      "logo": "newspaper-logos/ru/rossiyskaya-gazeta.svg",
-      "logoExplainer": "Imperial blue field featuring refined white serif Cyrillic capitals 'РОССИЙСКАЯ ГАЗЕТА' underscored with a red banner.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://rg.ru",
         "https://en.wikipedia.org/wiki/Rossiyskaya_Gazeta"
@@ -14941,8 +14456,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mediascope Russia 2023"
       },
       "revenueModel": "Retail print sales, television integration, and online advertising",
-      "logo": "newspaper-logos/ru/izvestia.svg",
-      "logoExplainer": "Deep crimson red rectangular field showcasing bold white classical serif Cyrillic lettering 'ИЗВЕСТИЯ'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://iz.ru",
         "https://en.wikipedia.org/wiki/Izvestia"
@@ -14971,8 +14485,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The New Times Media Kit 2023"
       },
       "revenueModel": "Print advertising, retail sales, and corporate subscriptions",
-      "logo": "newspaper-logos/rw/the-new-times.svg",
-      "logoExplainer": "Deep navy field featuring elegant white serif masthead 'The New Times' with Rwandan sky blue subtitle 'RWANDA’S LEADING DAILY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.newtimes.co.rw",
         "https://en.wikipedia.org/wiki/The_New_Times_(Rwanda)"
@@ -15003,8 +14516,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Rwanda Governance Board Media Barometer 2023"
       },
       "revenueModel": "State budget subsidy, public announcements, and retail print sales",
-      "logo": "newspaper-logos/rw/imvaho-nshya.svg",
-      "logoExplainer": "Forest green background with distinguished white serif title 'IMVAHO NSHYA' accented by golden yellow Kinyarwanda subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://imvahonshya.co.rw",
         "https://en.wikipedia.org/wiki/Media_of_Rwanda"
@@ -15031,8 +14543,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SimilarWeb & Igihe Media Analytics 2023"
       },
       "revenueModel": "Digital display advertising, sponsored content, and video production",
-      "logo": "newspaper-logos/rw/igihe.svg",
-      "logoExplainer": "Crisp white rectangular field with blue bordered enclosure displaying bold blue lettering 'IGIHE' with red dot accent and '.com'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.igihe.com",
         "https://en.wikipedia.org/wiki/Media_of_Rwanda"
@@ -15059,8 +14570,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kigali Today Corporate Review 2023"
       },
       "revenueModel": "Commercial advertising, event sponsorship, and radio broadcasting syndication",
-      "logo": "newspaper-logos/rw/kigali-today.svg",
-      "logoExplainer": "Modern navy blue banner featuring bold white typography 'KIGALI TODAY' with golden yellow secondary title 'KT PRESS & DIGITAL'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ktpress.rw",
         "https://en.wikipedia.org/wiki/Media_of_Rwanda"
@@ -15089,8 +14599,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SRMG Annual Report 2023"
       },
       "revenueModel": "High-tier corporate advertising, print circulation sales, and digital subscriptions",
-      "logo": "newspaper-logos/sa/asharq-al-awsat.svg",
-      "logoExplainer": "Dark slate field showcasing elegant white Arabic calligraphy 'الشرق الأوسط' accented with vivid green Latin subtitle 'ASHARQ AL-AWSAT'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://aawsat.com",
         "https://en.wikipedia.org/wiki/Asharq_Al-Awsat"
@@ -15117,8 +14626,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SRMG Media Kit 2023"
       },
       "revenueModel": "Display advertising, sponsored content, and print sales",
-      "logo": "newspaper-logos/sa/arab-news.svg",
-      "logoExplainer": "Saudi green field with distinguished white serif title 'ARAB NEWS' and subtitle 'THE VOICE OF A CHANGING REGION'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.arabnews.com",
         "https://en.wikipedia.org/wiki/Arab_News"
@@ -15145,8 +14653,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al Yamamah Press Establishment 2023"
       },
       "revenueModel": "Print subscriptions, government notices, and display advertising",
-      "logo": "newspaper-logos/sa/al-riyadh.svg",
-      "logoExplainer": "Deep green field featuring flowing classical Arabic calligraphic title 'الرياض' and crisp English subtitle 'AL RIYADH'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.alriyadh.com",
         "https://en.wikipedia.org/wiki/Al_Riyadh_(newspaper)"
@@ -15173,8 +14680,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Okaz Organization Media Kit 2023"
       },
       "revenueModel": "Commercial advertising, retail print sales, and digital sponsorships",
-      "logo": "newspaper-logos/sa/okaz.svg",
-      "logoExplainer": "Crimson red banner with bold classical Arabic calligraphy 'عكاظ' and white block typography 'OKAZ'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.okaz.com.sa",
         "https://en.wikipedia.org/wiki/Okaz"
@@ -15201,8 +14707,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "MASI Directory of Solomon Islands Media"
       },
       "revenueModel": "Print sales, commercial display advertising, and classified notices",
-      "logo": "newspaper-logos/sb/island-sun.svg",
-      "logoExplainer": "Clean white field with vibrant concentric orange and amber sun emblem, bold navy typography 'ISLAND SUN', and rust-red national subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://theislandsun.com.sb",
         "https://en.wikipedia.org/wiki/Island_Sun"
@@ -15227,8 +14732,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Pacific Islands Media Association (PIMA)"
       },
       "revenueModel": "Single-copy retail sales and weekend commercial advertisements",
-      "logo": "newspaper-logos/sb/sunday-isles.svg",
-      "logoExplainer": "Crisp white rectangular field with emerald border frame, refined green serif masthead 'Sunday Isles', and golden-amber subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://islesmedia.net",
         "https://en.wikipedia.org/wiki/Media_of_the_Solomon_Islands"
@@ -15253,8 +14757,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Solomon Times Web Analytics / MASI"
       },
       "revenueModel": "Digital display advertising, sponsored industry features, and syndication",
-      "logo": "newspaper-logos/sb/solomon-times.svg",
-      "logoExplainer": "Midnight blue dark badge with cyan circular monogram 'ST' and modern white sans-serif wordmark with light cyan digital subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.solomontimes.com",
         "https://en.wikipedia.org/wiki/Media_of_the_Solomon_Islands"
@@ -15287,8 +14790,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "NISA Annual Financial Report 2023"
       },
       "revenueModel": "State institutional funding, retail print sales, and official gazette notices",
-      "logo": "newspaper-logos/sc/seychelles-nation.svg",
-      "logoExplainer": "Deep navy field featuring elegant white serif masthead 'Seychelles NATION' underscored with green subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.nation.sc",
         "https://en.wikipedia.org/wiki/Seychelles_Nation"
@@ -15315,8 +14817,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Today Publishers Media Kit 2023"
       },
       "revenueModel": "Print circulation sales and corporate advertising",
-      "logo": "newspaper-logos/sc/today-in-seychelles.svg",
-      "logoExplainer": "Crimson red rectangular field with bold white modern sans-serif typography 'TODAY IN SEYCHELLES'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.facebook.com/todayinsey",
         "https://en.wikipedia.org/wiki/Media_of_Seychelles"
@@ -15343,8 +14844,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "United Seychelles Publications 2023"
       },
       "revenueModel": "Print sales, party subscriptions, and classified advertising",
-      "logo": "newspaper-logos/sc/the-people.svg",
-      "logoExplainer": "Dark slate background displaying distinguished white serif lettering 'The People' with golden subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://unitedseychelles.com",
         "https://en.wikipedia.org/wiki/Media_of_Seychelles"
@@ -15371,8 +14871,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Seychelles Heritage Foundation 2023"
       },
       "revenueModel": "Cultural grant funding and subscription sales",
-      "logo": "newspaper-logos/sc/le-seychellois.svg",
-      "logoExplainer": "Forest green background showcasing classic white serif typography 'Le Seychellois' and French historical subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.nation.sc",
         "https://en.wikipedia.org/wiki/Media_of_Seychelles"
@@ -15401,8 +14900,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sudan Press Council Archive / Al-Sudani Analytics"
       },
       "revenueModel": "Print sales, digital news subscriptions, and commercial advertisements",
-      "logo": "newspaper-logos/sd/al-sudani.svg",
-      "logoExplainer": "White framed rectangle with ruby red Arabic script and English text 'السوداني • AL-SUDANI', flanked by dark slate gray national subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://alsudaninews.com",
         "https://en.wikipedia.org/wiki/Media_of_Sudan"
@@ -15429,8 +14927,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sudanese Journalists Syndicate (SJS) Reports"
       },
       "revenueModel": "Print sales, commercial notices, and digital advertisements",
-      "logo": "newspaper-logos/sd/al-intibaha.svg",
-      "logoExplainer": "Dark midnight navy banner with ornate white Arabic calligraphy 'الانتباهة • AL-INTIBAHA' and silver political press subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://alintibaha.net",
         "https://en.wikipedia.org/wiki/Al-Intibaha"
@@ -15455,8 +14952,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sudan Tribune Analytics Overview"
       },
       "revenueModel": "Digital programmatic advertising and independent foundation grants",
-      "logo": "newspaper-logos/sd/sudan-tribune.svg",
-      "logoExplainer": "White background with a dark charcoal badge bearing red 'ST' monogram, classic serif 'Sudan Tribune' typography, and gray tagline.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://sudantribune.com",
         "https://en.wikipedia.org/wiki/Sudan_Tribune"
@@ -15485,8 +14981,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kantar Sifo Media Audit / Bonnier News Annual Report 2023"
       },
       "revenueModel": "Paid digital subscriptions, print subscriptions, and premium brand advertising",
-      "logo": "newspaper-logos/se/dagens-nyheter.svg",
-      "logoExplainer": "Classic white field with authoritative dark charcoal serif masthead 'DAGENS NYHETER.', a horizontal rule, and clean Swedish subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.dn.se",
         "https://en.wikipedia.org/wiki/Dagens_Nyheter"
@@ -15513,8 +15008,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kantar Sifo / Schibsted Annual Report 2023"
       },
       "revenueModel": "Digital subscriptions, print delivery subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/se/svenska-dagbladet.svg",
-      "logoExplainer": "Navy blue field with elegant white serif lettering 'SVENSKA DAGBLADET', separated by a gold divider bar from golden-yellow subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.svd.se",
         "https://en.wikipedia.org/wiki/Svenska_Dagbladet"
@@ -15541,8 +15035,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kantar Sifo Web Audit / Schibsted 2023"
       },
       "revenueModel": "Digital subscription service (Plus), digital advertising, and retail tabloid newsstand sales",
-      "logo": "newspaper-logos/se/aftonbladet.svg",
-      "logoExplainer": "Iconic Swedish yellow field with massive black sans-serif typography 'AFTONBLADET' and clean dark gray heritage subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.aftonbladet.se",
         "https://en.wikipedia.org/wiki/Aftonbladet"
@@ -15569,8 +15062,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kantar Sifo / Bonnier News"
       },
       "revenueModel": "Digital subscriptions (Premium), digital programmatic advertising, and single-copy newsstand sales",
-      "logo": "newspaper-logos/se/expressen.svg",
-      "logoExplainer": "Royal blue background with a red circle enclosing a white Swedish wasp/star motif, bold white 'EXPRESSEN' title, and light blue subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.expressen.se",
         "https://en.wikipedia.org/wiki/Expressen"
@@ -15603,8 +15095,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SPH Media Trust Annual Report 2023"
       },
       "revenueModel": "Government public-interest trust funding, print and digital subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/sg/the-straits-times.svg",
-      "logoExplainer": "Deep navy field featuring distinguished classical serif typography 'THE STRAITS TIMES' with gold heritage inscription 'SINGAPORE SINCE 1845'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.straitstimes.com",
         "https://en.wikipedia.org/wiki/The_Straits_Times"
@@ -15631,8 +15122,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SPH Media Trust 2023"
       },
       "revenueModel": "Government trust grant support, subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/sg/lianhe-zaobao.svg",
-      "logoExplainer": "Singapore red field featuring bold white Chinese characters '联合早报' and Latin subtitle 'LIANHE ZAOBAO'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.zaobao.com.sg",
         "https://en.wikipedia.org/wiki/Lianhe_Zaobao"
@@ -15659,8 +15149,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SPH Media Trust 2023"
       },
       "revenueModel": "Public trust grant funding, retail sales, and advertising",
-      "logo": "newspaper-logos/sg/berita-harian-sg.svg",
-      "logoExplainer": "Deep marine blue rectangular banner with dignified white serif typography 'BERITA HARIAN' and red subtitle 'SINGAPURA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.beritaharian.sg",
         "https://en.wikipedia.org/wiki/Berita_Harian_(Singapore)"
@@ -15687,8 +15176,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mediacorp Digital Reach 2023"
       },
       "revenueModel": "Digital display advertising, video sponsorships, and public service grants",
-      "logo": "newspaper-logos/sg/today-sg.svg",
-      "logoExplainer": "Vibrant scarlet red background with impactful white sans-serif uppercase block typography 'TODAY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.todayonline.com",
         "https://en.wikipedia.org/wiki/Today_(Singapore_newspaper)"
@@ -15717,8 +15205,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Delo d.o.o. Poslovno poročilo 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print circulation sales, and premium advertising",
-      "logo": "newspaper-logos/si/delo.svg",
-      "logoExplainer": "Deep navy field featuring distinguished classical white serif masthead 'Delo'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.delo.si",
         "https://en.wikipedia.org/wiki/Delo_(newspaper)"
@@ -15745,8 +15232,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Slovenska oglaševalska zbornica (SOZ) 2023"
       },
       "revenueModel": "Print sales, digital subscriptions, and display advertising",
-      "logo": "newspaper-logos/si/dnevnik-si.svg",
-      "logoExplainer": "Vibrant scarlet red background featuring bold white classical serif capitals 'DNEVNIK'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.dnevnik.si",
         "https://en.wikipedia.org/wiki/Dnevnik_(Slovenia)"
@@ -15773,8 +15259,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SOZ Slovenia 2023"
       },
       "revenueModel": "Print sales, local corporate advertising, and digital subscriptions",
-      "logo": "newspaper-logos/si/vecer.svg",
-      "logoExplainer": "Dark charcoal field with bold white serif capitals 'VEČER'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://vecer.com",
         "https://en.wikipedia.org/wiki/Ve%C4%8Der"
@@ -15801,8 +15286,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Bonnier Business Press Annual Report 2023"
       },
       "revenueModel": "High-value corporate digital subscriptions and business advertising",
-      "logo": "newspaper-logos/si/finance.svg",
-      "logoExplainer": "Deep pine green field with modern white typography 'FINANCE' and golden subtitle 'ČASNIK ZA GOSPODARSTVO'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.finance.si",
         "https://en.wikipedia.org/wiki/Finance_(newspaper)"
@@ -15831,8 +15315,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Petit Press & Audit Bureau of Circulations (ABC SR) 2023"
       },
       "revenueModel": "Digital paywalls, retail print sales, and display advertising",
-      "logo": "newspaper-logos/sk/sme.svg",
-      "logoExplainer": "High-visibility scarlet red field featuring bold white serif block typography 'SME'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sme.sk",
         "https://en.wikipedia.org/wiki/SME_(newspaper)"
@@ -15859,8 +15342,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "N Press Výročná správa 2023"
       },
       "revenueModel": "Pure reader-funded subscription model (90%+ subscription revenue)",
-      "logo": "newspaper-logos/sk/dennik-n.svg",
-      "logoExplainer": "Dark charcoal field with red square icon enclosing white 'N' beside bold white sans-serif title 'DENNÍK N'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://dennikn.sk",
         "https://en.wikipedia.org/wiki/Denn%C3%ADk_N"
@@ -15887,8 +15369,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ABC SR & IAB Slovakia 2023"
       },
       "revenueModel": "Print circulation sales and programmatic digital advertising",
-      "logo": "newspaper-logos/sk/pravda-sk.svg",
-      "logoExplainer": "Clean white field with prominent red serif title 'Pravda' alongside blue dot and '.sk' domain mark.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.pravda.sk",
         "https://en.wikipedia.org/wiki/Pravda_(Slovakia)"
@@ -15915,8 +15396,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ABC SR & MAFRA Slovakia 2023"
       },
       "revenueModel": "Corporate subscriptions, print sales, and business-to-business advertising",
-      "logo": "newspaper-logos/sk/hospodarske-noviny.svg",
-      "logoExplainer": "Deep navy field featuring refined white serif typography 'HOSPODÁRSKE NOVINY' and blue 'HN ONLINE'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://hnonline.sk",
         "https://en.wikipedia.org/wiki/Hospod%C3%A1rske_noviny"
@@ -15945,8 +15425,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sierra Leone Association of Journalists (SLAJ) 2023"
       },
       "revenueModel": "Print sales, commercial display advertising, and corporate sponsorships",
-      "logo": "newspaper-logos/sl/awoko.svg",
-      "logoExplainer": "Deep navy field featuring distinguished white serif title 'AWOKO' accented by vibrant green subtitle 'SIERRA LEONE DAILY NEWSPAPER'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://awokonewspaper.sl",
         "https://en.wikipedia.org/wiki/Awoko_(newspaper)"
@@ -15973,8 +15452,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Concord Times Communications 2023"
       },
       "revenueModel": "Retail print sales and institutional public notices",
-      "logo": "newspaper-logos/sl/concord-times.svg",
-      "logoExplainer": "Dark blue card with bold white serif capitals 'CONCORD TIMES' and bright blue subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://slconcordtimes.com",
         "https://en.wikipedia.org/wiki/Concord_Times"
@@ -16001,8 +15479,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Sierra Leone Telegraph Analytics 2023"
       },
       "revenueModel": "Digital display advertising, reader donations, and syndicated analyses",
-      "logo": "newspaper-logos/sl/sl-telegraph.svg",
-      "logoExplainer": "Charcoal black rectangular card with white serif masthead 'Sierra Leone Telegraph' and bright green subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.thesierraleonetelegraph.com",
         "https://en.wikipedia.org/wiki/Media_of_Sierra_Leone"
@@ -16035,8 +15512,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "San Marino RTV Bilancio di Esercizio 2023"
       },
       "revenueModel": "State public service grant from San Marino government, RAI Italian state broadcasting subsidy, and local commercial advertising",
-      "logo": "newspaper-logos/sm/smrtv-notizie.svg",
-      "logoExplainer": "Sammarinese azure blue background with a white square emblem bearing blue 'RTV' and bold white lettering 'SAN MARINO NOTIZIE'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sanmarinortv.sm",
         "https://en.wikipedia.org/wiki/San_Marino_RTV"
@@ -16063,8 +15539,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Consulta per l'Informazione San Marino 2023"
       },
       "revenueModel": "Newsstand retail print sales and commercial display advertising",
-      "logo": "newspaper-logos/sm/informazione.svg",
-      "logoExplainer": "Navy blue rectangular frame featuring refined white serif typography 'L'INFORMAZIONE' accented with light blue subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.libertas.sm",
         "https://en.wikipedia.org/wiki/San_Marino"
@@ -16091,8 +15566,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Registro delle Pubblicazioni Sammarinesi 2023"
       },
       "revenueModel": "Print sales and local corporate advertisements",
-      "logo": "newspaper-logos/sm/la-serenissima.svg",
-      "logoExplainer": "Crisp white rectangular field bordered in Sammarinese blue with elegant serif masthead 'LA SERENISSIMA'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.libertas.sm",
         "https://en.wikipedia.org/wiki/San_Marino"
@@ -16119,8 +15593,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Consulta per l'Informazione San Marino 2023"
       },
       "revenueModel": "Retail newspaper sales and business advertising",
-      "logo": "newspaper-logos/sm/tribuna-sammarinese.svg",
-      "logoExplainer": "Navy blue background displaying dignified white serif title 'TRIBUNA' highlighted with golden subtitle 'SAMMARINESE'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.libertas.sm",
         "https://en.wikipedia.org/wiki/San_Marino"
@@ -16147,8 +15620,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ANIS Relazione Annuale 2023"
       },
       "revenueModel": "Corporate subscriptions and business-to-business financial advertising",
-      "logo": "newspaper-logos/sm/san-marino-fixing.svg",
-      "logoExplainer": "Dark charcoal card with bright red square icon showing bold white 'F' beside crisp white lettering 'FIXING'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sanmarinofixing.com",
         "https://en.wikipedia.org/wiki/San_Marino"
@@ -16181,8 +15653,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SSPP Le Soleil Rapport Financier 2023"
       },
       "revenueModel": "State subvention, retail print sales, and legal public notices",
-      "logo": "newspaper-logos/sn/le-soleil.svg",
-      "logoExplainer": "Deep navy field featuring radiant yellow circular sun icon alongside white serif title 'Le Soleil'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lesoleil.sn",
         "https://en.wikipedia.org/wiki/Le_Soleil_(Senegal)"
@@ -16209,8 +15680,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Groupe Futurs Médias Audit 2023"
       },
       "revenueModel": "High-volume retail print sales and commercial advertising",
-      "logo": "newspaper-logos/sn/lobservateur.svg",
-      "logoExplainer": "Dark slate field with red square badge displaying white 'L'Obs' beside bold serif typography 'L'OBSERVATEUR'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://gfm.sn",
         "https://en.wikipedia.org/wiki/Media_of_Senegal"
@@ -16237,8 +15707,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sud Communication Review 2023"
       },
       "revenueModel": "Print sales, corporate subscriptions, and display advertising",
-      "logo": "newspaper-logos/sn/sud-quotidien.svg",
-      "logoExplainer": "Warm orange-ochre banner displaying bold white sans-serif title 'SUD QUOTIDIEN' with clean white subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sudquotidien.sn",
         "https://en.wikipedia.org/wiki/Media_of_Senegal"
@@ -16265,8 +15734,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Groupe Wal Fadjri 2023"
       },
       "revenueModel": "Print sales, broadcast sponsorships, and advertising",
-      "logo": "newspaper-logos/sn/wal-fadjri.svg",
-      "logoExplainer": "Deep forest green field with classic white serif masthead 'Wal Fadjri' and radiant yellow subtitle 'L'AURORE — DAKAR'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.walf-groupe.com",
         "https://en.wikipedia.org/wiki/Wal_Fadjri"
@@ -16295,8 +15763,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Hiiraan Online Traffic Overview / Alexa Internet Archive"
       },
       "revenueModel": "Digital programmatic advertising, diaspora remittances service notices, and sponsored content",
-      "logo": "newspaper-logos/so/hiiraan-online.svg",
-      "logoExplainer": "Clean white field with royal blue rounded badge featuring white monogram 'HOL', bold blue title, and amber-orange Horn of Africa tagline.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.hiiraan.com",
         "https://en.wikipedia.org/wiki/Hiiraan_Online"
@@ -16323,8 +15790,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Garowe Media Audit / NUSOJ"
       },
       "revenueModel": "Digital banner advertising, radio broadcasts, and corporate sponsorships",
-      "logo": "newspaper-logos/so/garowe-online.svg",
-      "logoExplainer": "Deep navy field with glowing cyan circular monogram 'GO', bold white and cyan 'GAROWE ONLINE' wordmark, and clean silver subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.garoweonline.com",
         "https://en.wikipedia.org/wiki/Garowe_Online"
@@ -16353,8 +15819,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "DWT Media Groep / Surinaamse Journalisten Kring (SJK)"
       },
       "revenueModel": "Print newsstand sales, corporate commercial advertising, and family classified notices",
-      "logo": "newspaper-logos/sr/de-ware-tijd.svg",
-      "logoExplainer": "Deep navy field featuring elegant white Times serif typography 'De Ware Tijd' and bright golden-yellow founding year subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://dwtonline.com",
         "https://en.wikipedia.org/wiki/De_Ware_Tijd"
@@ -16381,8 +15846,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SJK Media Directory / De West"
       },
       "revenueModel": "Afternoon retail print sales, classified announcements, and commercial ads",
-      "logo": "newspaper-logos/sr/de-west.svg",
-      "logoExplainer": "White field framed by a fine black line with bold black serif title 'DE WEST' and crimson heritage subtitle 'SEDERT 1892'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://dagbladdewest.com",
         "https://en.wikipedia.org/wiki/De_West"
@@ -16409,8 +15873,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Fash-Sur Multimedia Commercial Data"
       },
       "revenueModel": "Print sales, classified advertising, and digital ad banners",
-      "logo": "newspaper-logos/sr/dagblad-suriname.svg",
-      "logoExplainer": "Forest green background with heavy white and golden-yellow typography 'DAGBLAD SURINAME' and mint green subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.dbsuriname.com",
         "https://en.wikipedia.org/wiki/Media_of_Suriname"
@@ -16437,8 +15900,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Union of Journalists of South Sudan (UJOSS) Report"
       },
       "revenueModel": "Print sales, commercial notices, NGO advertisements, and institutional tenders",
-      "logo": "newspaper-logos/ss/juba-monitor.svg",
-      "logoExplainer": "White framed banner with crisp black double border, prominent dark navy serif lettering 'THE JUBA MONITOR', and crimson South Sudan subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/The_Juba_Monitor",
         "https://cpj.org/tags/juba-monitor"
@@ -16463,8 +15925,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sudan Tribune Readership Metrics"
       },
       "revenueModel": "Digital banner advertising and philanthropic foundation grants",
-      "logo": "newspaper-logos/ss/sudan-tribune-ss.svg",
-      "logoExplainer": "Charcoal dark background with crimson square tile bearing white 'ST' monogram, elegant serif 'Sudan Tribune' masthead, and red subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://sudantribune.com",
         "https://en.wikipedia.org/wiki/Sudan_Tribune"
@@ -16493,8 +15954,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Téla Nón Web Analytics 2023"
       },
       "revenueModel": "Online banner advertising and voluntary community reader contributions",
-      "logo": "newspaper-logos/st/tela-non.svg",
-      "logoExplainer": "Deep navy blue card featuring warm golden yellow serif masthead 'TÉLA NÓN' with white subtitle 'DIÁRIO DIGITAL DE STP'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.telanon.info",
         "https://en.wikipedia.org/wiki/Media_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
@@ -16521,8 +15981,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "STP Media Analytics 2023"
       },
       "revenueModel": "Digital advertising networks and commercial partnerships",
-      "logo": "newspaper-logos/st/noticias-stp.svg",
-      "logoExplainer": "Dark teal green field with bold white sans-serif typography 'NOTÍCIAS STP' and golden yellow secondary title.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://noticias.st",
         "https://en.wikipedia.org/wiki/Media_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
@@ -16551,8 +16010,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Dutriz Memoria Anual 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and corporate advertising",
-      "logo": "newspaper-logos/sv/la-pensa-gráfica.svg",
-      "logoExplainer": "Navy blue banner with classical white serif masthead 'LA PRENSA GRÁFICA', symbolising over a century of Salvadoran news leadership.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.laprensagrafica.com",
         "https://en.wikipedia.org/wiki/La_Prensa_Gr%C3%A1fica"
@@ -16579,8 +16037,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Editorial Altamirano Madriz 2024"
       },
       "revenueModel": "Print sales, digital subscriptions, and display advertising",
-      "logo": "newspaper-logos/sv/el-diario-de-hoy.svg",
-      "logoExplainer": "Red and black logo with bold serif text 'elsalvador.com / El Diario de Hoy', iconic in Salvadoran conservative journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.elsalvador.com",
         "https://en.wikipedia.org/wiki/El_Diario_de_Hoy"
@@ -16606,8 +16063,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Fundación Trípode Impact Report 2023"
       },
       "revenueModel": "Philanthropic journalism grants, reader crowdfunding, and syndicated investigations",
-      "logo": "newspaper-logos/sv/el-faro.svg",
-      "logoExplainer": "Stark black and gold emblem featuring a glowing lighthouse beam and lowercase text 'elfaro', symbolising courage and transparency.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://elfaro.net",
         "https://en.wikipedia.org/wiki/El_Faro_(digital_newspaper)"
@@ -16633,8 +16089,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Diario El Salvador Informe Institucional 2023"
       },
       "revenueModel": "State institutional advertising and low-cost retail print sales",
-      "logo": "newspaper-logos/sv/diario-el-salvador.svg",
-      "logoExplainer": "Cyan blue and white badge with clean modern typography 'DIARIO EL SALVADOR', representing contemporary state public communication.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://diarioelsalvador.com",
         "https://es.wikipedia.org/wiki/Diario_El_Salvador"
@@ -16660,8 +16115,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Diario El Mundo Media Kit 2024"
       },
       "revenueModel": "Print sales and commercial advertising",
-      "logo": "newspaper-logos/sv/el-mundo.svg",
-      "logoExplainer": "Red and blue title banner with white serif font 'EL MUNDO', symbolising reliable daily news coverage in El Salvador.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://diario.elmundo.sv",
         "https://es.wikipedia.org/wiki/El_Mundo_(El_Salvador)"
@@ -16690,8 +16144,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Arab Media Forum / Al-Watan Media Profile"
       },
       "revenueModel": "Newsstand retail sales, commercial advertising, and corporate announcements",
-      "logo": "newspaper-logos/sy/al-watan.svg",
-      "logoExplainer": "White field framed by a crimson border, bearing red traditional Arabic calligraphy 'الوطن • AL-WATAN' and gray national daily subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://alwatan.sy",
         "https://en.wikipedia.org/wiki/Al-Watan_(Syria)"
@@ -16718,8 +16171,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al-Wahda Press Foundation Annual Review"
       },
       "revenueModel": "State budget funding, government notices, and commercial display ads",
-      "logo": "newspaper-logos/sy/tishreen.svg",
-      "logoExplainer": "Deep navy field with elegant white Arabic lettering 'تشرين • TISHREEN', gold divider rule, and golden Damascus foundation subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://tishreen.news.sy",
         "https://en.wikipedia.org/wiki/Tishreen_(newspaper)"
@@ -16746,8 +16198,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Syrian Journalists Union Reports"
       },
       "revenueModel": "Party institutional subsidies and official public notices",
-      "logo": "newspaper-logos/sy/al-baath.svg",
-      "logoExplainer": "Deep crimson field with bold white traditional Arabic calligraphy 'صحيفة البعث' and light red bilingual title banner.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://albaathmedia.sy",
         "https://en.wikipedia.org/wiki/Al-Ba%27ath_(newspaper)"
@@ -16774,8 +16225,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Enab Baladi Annual Transparency Report / WAN-IFRA"
       },
       "revenueModel": "International media support grants, reader donations, and philanthropic contributions",
-      "logo": "newspaper-logos/sy/enab-baladi.svg",
-      "logoExplainer": "White field with purple circular grape emblem, dark violet Arabic calligraphy 'عنب بلدي', and bold modern sans-serif wordmark 'ENAB BALADI'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.enabbaladi.net",
         "https://en.wikipedia.org/wiki/Enab_Baladi"
@@ -16803,8 +16253,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Times of Eswatini Corporate Profile 2023"
       },
       "revenueModel": "Print sales, legal notices, and commercial display advertising",
-      "logo": "newspaper-logos/sz/times-of-eswatini.svg",
-      "logoExplainer": "Classic black serif masthead 'Times of Eswatini' on white canvas, symbolising over 125 years of independent press history.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "http://www.times.co.sz",
         "https://en.wikipedia.org/wiki/The_Times_of_Swaziland"
@@ -16830,8 +16279,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tibiyo Taka Ngwane Annual Report 2023"
       },
       "revenueModel": "Commercial sales, official state notices, and royal trust funding",
-      "logo": "newspaper-logos/sz/ebuswini-observer.svg",
-      "logoExplainer": "Navy blue banner with white serif lettering 'Eswatini Observer', representing the royal chartered press of the Kingdom.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://new.observer.org.sz",
         "https://en.wikipedia.org/wiki/Swazi_Observer"
@@ -16856,8 +16304,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Swaziland News Analytics 2024"
       },
       "revenueModel": "Digital reader donations and international investigative journalism grants",
-      "logo": "newspaper-logos/sz/swaziland-news.svg",
-      "logoExplainer": "Red and black badge with bold typography 'SWAZILAND NEWS', symbolising fearless pro-democracy investigative journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://swazilandnews.co.za"
       ]
@@ -16881,8 +16328,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Swazi Bridge Audience Review 2023"
       },
       "revenueModel": "Digital advertising and community sponsorships",
-      "logo": "newspaper-logos/sz/swazi-bridge.svg",
-      "logoExplainer": "Green and gold emblem with stylized arch bridge 'SWAZI BRIDGE', symbolising community connection and national dialogue.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://swazibridge.com"
       ]
@@ -16906,8 +16352,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Independent News Media 2023"
       },
       "revenueModel": "Print retail sales and local commercial advertising",
-      "logo": "newspaper-logos/sz/independent-news-eswatini.svg",
-      "logoExplainer": "Dark slate banner with clean white text 'INDEPENDENT NEWS ESWATINI', representing commercial and economic weekly reporting.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://independentnews.co.sz"
       ]
@@ -16935,8 +16380,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Alwihda Info Analytics 2023"
       },
       "revenueModel": "Online banner advertising and media consulting",
-      "logo": "newspaper-logos/td/alwihda-info.svg",
-      "logoExplainer": "White banner featuring red and black font 'ALWIHDA INFO', representing national unity and comprehensive Sahel coverage.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.alwihdainfo.com",
         "https://fr.wikipedia.org/wiki/Alwihda_Info"
@@ -16962,8 +16406,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Union des Journalistes Tchadiens 2023"
       },
       "revenueModel": "Print retail sales and private advertisements",
-      "logo": "newspaper-logos/td/journal-le-pays.svg",
-      "logoExplainer": "Emerald green badge with white typography 'LE PAYS', reflecting agricultural resilience and independent public oversight.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lepaystchad.com"
       ]
@@ -16988,8 +16431,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Haute Autorité des Médias et de l'Audiovisuel (HAMA) 2023"
       },
       "revenueModel": "Print sales and official notices",
-      "logo": "newspaper-logos/td/le-progrès.svg",
-      "logoExplainer": "Deep navy blue masthead with white serif font 'LE PROGRÈS', symbolising historic democratic press evolution in Chad.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://fr.wikipedia.org/wiki/Le_Progr%C3%A8s_(Tchad)"
       ]
@@ -17014,8 +16456,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Reporters Without Borders & HAMA Chad 2023"
       },
       "revenueModel": "Print retail sales and classified advertisements",
-      "logo": "newspaper-logos/td/n-djamena-hebdo.svg",
-      "logoExplainer": "White canvas displaying bold black masthead 'N'DJAMÉNA HEBDO', representing thirty-five years of independent Chadian press.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://fr.wikipedia.org/wiki/N%27Djam%C3%A9na_Hebdo"
       ]
@@ -17047,8 +16488,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "EDITOGO Rapport d'Activité / Ministère de la Communication"
       },
       "revenueModel": "Official state announcements, legal notices, and newsstand sales",
-      "logo": "newspaper-logos/tg/togo-presse.svg",
-      "logoExplainer": "Togolese forest green background with warm yellow emblem tile bearing 'TP', white serif title 'Togo Presse', and golden institutional subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://togopresse.tg",
         "https://en.wikipedia.org/wiki/Media_of_Togo"
@@ -17075,8 +16515,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Observatoire des Médias du Togo (OTM)"
       },
       "revenueModel": "Newsstand retail sales, independent subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/tg/liberte-togo.svg",
-      "logoExplainer": "White field with prominent crimson serif lettering 'LIBERTÉ', dark gray 'TOGO', a red divider line, and gray investigative subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/Media_of_Togo",
         "https://rsf.org/en/country/togo"
@@ -17103,8 +16542,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Togo Matin Commercial Profile / OTM"
       },
       "revenueModel": "Single-copy retail sales, corporate display ads, and web advertising",
-      "logo": "newspaper-logos/tg/togo-matin.svg",
-      "logoExplainer": "Deep navy field with golden-amber circle bearing white 'TM', bold white lettering 'TOGO MATIN', and amber Lomé daily tagline.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://togomatin.tg",
         "https://en.wikipedia.org/wiki/Media_of_Togo"
@@ -17135,8 +16573,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Presidency of the Republic of Togo Communications Bureau"
       },
       "revenueModel": "State governmental budget funding",
-      "logo": "newspaper-logos/tg/republic-of-togo.svg",
-      "logoExplainer": "White field with green square badge bearing Togo's national red star emblem, green title 'REPUBLIC OF TOGO', and dark gray subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.republicoftogo.com",
         "https://en.wikipedia.org/wiki/Media_of_Togo"
@@ -17163,8 +16600,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Bangkok Post Plc Annual Report 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print circulation, and corporate display advertising",
-      "logo": "newspaper-logos/th/bangkok-post.svg",
-      "logoExplainer": "Navy blue background with elegant white serif lettering 'Bangkok Post', underlined by a warm gold dividing rule and founding year 1946 mark.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.bangkokpost.com",
         "https://en.wikipedia.org/wiki/Bangkok_Post"
@@ -17191,8 +16627,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Thairath Media Kit / Thailand Media Rating Association"
       },
       "revenueModel": "Mass print sales, nationwide commercial advertising, and digital video sponsorships",
-      "logo": "newspaper-logos/th/thairath.svg",
-      "logoExplainer": "Signature emerald green field with white square badge bearing bold green 'TR', heavy impact typography 'THAIRATH', and yellow Thai script subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.thairath.co.th",
         "https://en.wikipedia.org/wiki/Thai_Rath"
@@ -17219,8 +16654,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Matichon Plc Annual Report 2023"
       },
       "revenueModel": "Print sales, book publishing, digital advertising, and policy conferences",
-      "logo": "newspaper-logos/th/matichon.svg",
-      "logoExplainer": "Clean white field with cerulean blue square containing Thai initials 'มช', dark blue sans-serif typography 'MATICHON', and bilingual subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.matichon.co.th",
         "https://en.wikipedia.org/wiki/Matichon"
@@ -17247,8 +16681,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Thailand Newspaper Association Audit"
       },
       "revenueModel": "High-volume print retail sales and national consumer advertising",
-      "logo": "newspaper-logos/th/daily-news.svg",
-      "logoExplainer": "Signature bright magenta-pink field with bold white impact typography 'DAILY NEWS' and light pink Thai script subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.dailynews.co.th",
         "https://en.wikipedia.org/wiki/Daily_News_(Thailand)"
@@ -17281,8 +16714,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministry of Culture of the Republic of Tajikistan Press Register"
       },
       "revenueModel": "State budget funding, institutional mandatory subscriptions, and legal announcements",
-      "logo": "newspaper-logos/tj/jumhuriyat.svg",
-      "logoExplainer": "National emerald green field with classic white serif Cyrillic lettering 'ҶУМҲУРИЯТ', underlined by a golden divider bar and state gazette subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://jumhuriyat.tj",
         "https://tg.wikipedia.org/wiki/%D2%B6%D1%83%D0%BC%D2%B cordance"
@@ -17309,8 +16741,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Majlisi Oli Press Office Annual Summary"
       },
       "revenueModel": "Parliamentary budget appropriations and public sector subscriptions",
-      "logo": "newspaper-logos/tj/sadoi-mardum.svg",
-      "logoExplainer": "White background with deep red Cyrillic serif lettering 'САДОИ МАРДУМ', a fine red line, and slate grey parliamentary subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://sadoimardum.tj",
         "https://tg.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B4%D0%BE%D0%B8_%D0%BC%D0%B0%D1%80%D0%B4%D1%83%D0%BC"
@@ -17337,8 +16768,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tajik National Association of Independent Mass Media (NANSMIT)"
       },
       "revenueModel": "Print sales, classifieds, and independent civil society research grants",
-      "logo": "newspaper-logos/tj/farazh.svg",
-      "logoExplainer": "Dark slate field with amber-gold square containing Cyrillic 'Ф', prominent white impact title 'ФАРАЖ • FARAJ', and amber journalistic subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://faraj.tj",
         "https://tg.wikipedia.org/wiki/%D0%A4%D0%B0%D1%80%D0%B0%D0%B6_(%D2%B3%D0%B0%D1%84%D1%82%D0%B0%D0%BD%D0%BE%D0%BC%D0%B0)"
@@ -17368,8 +16798,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "STL Media Group Overview 2023"
       },
       "revenueModel": "Print sales, official advertisements, and commercial broadcast sponsorships",
-      "logo": "newspaper-logos/tl/suara-timor-lorosae.svg",
-      "logoExplainer": "Red and blue emblem displaying traditional sunrise motif and bold typography 'STL', symbolising the Voice of East Timor.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://suara-timor-lorosae.com",
         "https://en.wikipedia.org/wiki/Suara_Timor_Lorosae"
@@ -17396,8 +16825,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Timor Post Corporate Kit 2024"
       },
       "revenueModel": "Print newspaper circulation, institutional advertising, and web banners",
-      "logo": "newspaper-logos/tl/timor-post.svg",
-      "logoExplainer": "Red and yellow title block with bold sans-serif lettering 'TIMOR POST', representing independent national journalism.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://diariutimorpost.com",
         "https://en.wikipedia.org/wiki/Timor_Post"
@@ -17423,8 +16851,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Conselho de Imprensa de Timor-Leste 2023"
       },
       "revenueModel": "Print sales and local corporate advertisements",
-      "logo": "newspaper-logos/tl/jornal-independente.svg",
-      "logoExplainer": "Blue banner with white typography 'INDEPENDENTE', symbolising democratic transparency and press freedom in Timor-Leste.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://independente.tl"
       ]
@@ -17452,8 +16879,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Turkmenportal Web Analytics / Alexa Archive"
       },
       "revenueModel": "Commercial digital banner advertising, corporate sponsorships, and business directory services",
-      "logo": "newspaper-logos/tm/turkmenportal.svg",
-      "logoExplainer": "Dark night navy field with bright cyan square badge bearing white 'TP', bold white modern typography 'TURKMENPORTAL', and cyan information subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://turkmenportal.com",
         "https://en.wikipedia.org/wiki/Turkmenportal"
@@ -17480,8 +16906,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "UIET Annual Business Report"
       },
       "revenueModel": "Commercial display advertising, bank notices, and retail sales",
-      "logo": "newspaper-logos/tm/rysgal.svg",
-      "logoExplainer": "White field with green double border, prominent bold emerald green impact typography 'RYSGAL', and charcoal gray business subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://rysgalbank.com.tm",
         "https://en.wikipedia.org/wiki/Media_of_Turkmenistan"
@@ -17514,8 +16939,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SNIPE Annual Report / Ministère des Affaires Culturelles"
       },
       "revenueModel": "Public legal notices, commercial print advertising, and newsstand distribution",
-      "logo": "newspaper-logos/tn/la-presse.svg",
-      "logoExplainer": "Clean white field with authoritative navy serif typography 'LA PRESSE DE TUNISIE', a ruby red divider line, and historic 1936 subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://lapresse.tn",
         "https://en.wikipedia.org/wiki/La_Presse_de_Tunisie"
@@ -17542,8 +16966,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SNIPE Press Distribution Audit"
       },
       "revenueModel": "State public notices, commercial advertisements, and retail sales",
-      "logo": "newspaper-logos/tn/essahafa.svg",
-      "logoExplainer": "Deep teal field with graceful white Arabic calligraphy 'الصحافة اليوم' and light mint bilingual national newspaper subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://essahafa.tn",
         "https://en.wikipedia.org/wiki/Media_of_Tunisia"
@@ -17570,8 +16993,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Syndicat National des Journalistes Tunisiens (SNJT)"
       },
       "revenueModel": "Print newsstand sales, commercial advertising, and digital subscriptions",
-      "logo": "newspaper-logos/tn/assabah.svg",
-      "logoExplainer": "White framed rectangle with brilliant red Arabic calligraphy 'الصباح • ASSABAH' and charcoal gray heritage subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.assabah.com.tn",
         "https://en.wikipedia.org/wiki/Assabah_(newspaper)"
@@ -17596,8 +17018,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Google Analytics / Business News Media Pack"
       },
       "revenueModel": "Digital display advertising, sponsored corporate analysis, and business directory services",
-      "logo": "newspaper-logos/tn/business-news.svg",
-      "logoExplainer": "Deep navy field with bold white typography 'BUSINESS', vibrant red 'NEWS', and light blue economic daily subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.businessnews.com.tn",
         "https://en.wikipedia.org/wiki/Media_of_Tunisia"
@@ -17626,8 +17047,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Vava'u Press Readership Audit / Pacific Islands News Association (PINA)"
       },
       "revenueModel": "Digital display advertising, quarterly print subscriptions, and photo syndication",
-      "logo": "newspaper-logos/to/matangi-tonga.svg",
-      "logoExplainer": "Deep royal blue field with a crimson red circle displaying the national white cross, elegant white serif typography 'Matangi Tonga', and light blue subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://matangitonga.to",
         "https://en.wikipedia.org/wiki/Matangi_Tonga"
@@ -17654,8 +17074,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tonga Media Council Review"
       },
       "revenueModel": "Retail newspaper sales, commercial advertisements, and family notices",
-      "logo": "newspaper-logos/to/talaki.svg",
-      "logoExplainer": "White field framed with a fine crimson red border, featuring bold red impact typography 'TALAKI' and black weekly newspaper subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/Media_of_Tonga",
         "https://pina.com.fj"
@@ -17682,8 +17101,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Pacific Journalism Review / PINA"
       },
       "revenueModel": "Single-copy retail sales and diaspora classified advertising",
-      "logo": "newspaper-logos/to/taimi-o-tonga.svg",
-      "logoExplainer": "Dark charcoal background featuring classic white Old English serif masthead 'Taimi 'o Tonga', crimson divider line, and silver subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://taimiotonga.com",
         "https://en.wikipedia.org/wiki/Taimi_ʻo_Tonga"
@@ -17710,8 +17128,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kaniva Pacific Audience Review"
       },
       "revenueModel": "Digital banner advertising, community sponsorships, and reader support",
-      "logo": "newspaper-logos/to/kaniva-tonga.svg",
-      "logoExplainer": "White field with blue circular monogram 'KT', bold blue typography 'KANIVA TONGA', and crimson red bilingual tagline.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kanivatonga.co.nz",
         "https://en.wikipedia.org/wiki/Media_of_Tonga"
@@ -17740,8 +17157,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "BİK (Basın İlan Kurumu) Circulation Audit / Gemius"
       },
       "revenueModel": "Print retail sales, commercial display advertising, and digital ad revenue",
-      "logo": "newspaper-logos/tr/hurriyet.svg",
-      "logoExplainer": "Clean white field with massive red impact typography 'HÜRRİYET' and black subtitle 'TÜRKİYE'NİN AÇILIŞ KAPISI • EST. 1948'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.hurriyet.com.tr",
         "https://en.wikipedia.org/wiki/H%C3%BCrriyet"
@@ -17768,8 +17184,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Cumhuriyet Vakfı Annual Report / BİK"
       },
       "revenueModel": "Print subscriptions, digital paywall, reader donations, and classifieds",
-      "logo": "newspaper-logos/tr/cumhuriyet.svg",
-      "logoExplainer": "White field with historic red serif masthead 'Cumhuriyet', underlined by a horizontal black rule and founding year 1924 subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.cumhuriyet.com.tr",
         "https://en.wikipedia.org/wiki/Cumhuriyet"
@@ -17796,8 +17211,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "BİK Circulation Bulletin / Turkuvaz Media"
       },
       "revenueModel": "Commercial print display advertising, government public notices, and newsstand sales",
-      "logo": "newspaper-logos/tr/sabah.svg",
-      "logoExplainer": "Vibrant crimson red background with large white impact typography 'SABAH' and light pink national readership tagline.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sabah.com.tr",
         "https://en.wikipedia.org/wiki/Sabah_(newspaper)"
@@ -17824,8 +17238,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "BİK Official Circulation Report / Gemius Analytics"
       },
       "revenueModel": "Print single-copy newsstand sales, digital advertising, and Sözcü TV broadcasting revenue",
-      "logo": "newspaper-logos/tr/sozcu.svg",
-      "logoExplainer": "Dark charcoal black field with vibrant red sans-serif lettering 'SÖZCÜ', a crisp white divider bar, and white civic slogan subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.sozcu.com.tr",
         "https://en.wikipedia.org/wiki/S%C3%B6zc%C3%BC"
@@ -17852,8 +17265,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Market Facts & Opinions (MFO) Media Survey / One Caribbean Media Annual Report 2023"
       },
       "revenueModel": "Print newsstand sales, corporate advertising, classifieds, and digital ads",
-      "logo": "newspaper-logos/tt/trinidad-express.svg",
-      "logoExplainer": "White background with heavy crimson red typography 'EXPRESS', solid black 'TRINIDAD', and charcoal national newspaper subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://trinidadexpress.com",
         "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Express"
@@ -17878,8 +17290,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "MFO Media Survey Trinidad & Tobago"
       },
       "revenueModel": "Print sales, commercial display advertisements, and digital banners",
-      "logo": "newspaper-logos/tt/newsday.svg",
-      "logoExplainer": "Vibrant royal blue background with heavy white sans-serif masthead 'NEWSDAY' and golden yellow national slogan bar.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://newsday.co.tt",
         "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Newsday"
@@ -17904,8 +17315,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Guardian Media Limited Annual Report 2023"
       },
       "revenueModel": "Commercial print ads, newsstand sales, and cross-media broadcast syndication",
-      "logo": "newspaper-logos/tt/guardian.svg",
-      "logoExplainer": "Classic dark charcoal black background with historic Old English serif masthead 'Trinidad Guardian', gold divider bar, and heritage subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.guardian.co.tt",
         "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Guardian"
@@ -17930,8 +17340,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Trend Media Digital Measurement / Google Analytics"
       },
       "revenueModel": "Digital video advertising, native mobile campaigns, and brand partnerships",
-      "logo": "newspaper-logos/tt/loop-tt.svg",
-      "logoExplainer": "White field with purple loop infinity monogram, vibrant purple lowercase 'loop', bold black 'NEWS', and cyan digital subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://tt.loopnews.com",
         "https://en.wikipedia.org/wiki/Loop_News"
@@ -17962,8 +17371,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tuvalu Central Statistics Division / Commonwealth Broadcasting Association"
       },
       "revenueModel": "Government budgetary allocation and public service notices",
-      "logo": "newspaper-logos/tv/tuvalu-media-dept.svg",
-      "logoExplainer": "Pacific ocean blue field with golden circle enclosing a yellow star, bold white sans-serif 'TUVALU MEDIA', and sky blue government subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.gov.tv",
         "https://en.wikipedia.org/wiki/Tuvalu_Media_Department"
@@ -17990,8 +17398,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tuvalu Media Review / UNESCO Pacific"
       },
       "revenueModel": "Government publishing subsidy and retail sales",
-      "logo": "newspaper-logos/tv/tuvalu-echoes.svg",
-      "logoExplainer": "White framed banner with blue double border, prominent ocean blue serif lettering 'Tuvalu Echoes', and amber Tuvaluan subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/Tuvalu_Echoes",
         "https://www.unesco.org/en/countries/tv"
@@ -18018,8 +17425,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tuvalu Media Department Newsletter Statistics"
       },
       "revenueModel": "State media operational budget",
-      "logo": "newspaper-logos/tv/fenui-news.svg",
-      "logoExplainer": "Deep teal field with dark teal badge containing 'FN' monogram, bold white sans-serif 'FENUI NEWS', and seafoam green subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/Media_of_Tuvalu",
         "https://www.rnz.co.nz/international/pacific-news"
@@ -18044,8 +17450,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tuvalu Paradise Analytics / PINA"
       },
       "revenueModel": "Community sponsorships, tourism notices, and independent contributions",
-      "logo": "newspaper-logos/tv/tuvalu-paradise.svg",
-      "logoExplainer": "White field with vibrant turquoise circular emblem and gold core, dark navy impact typography 'TUVALU PARADISE', and coral-red subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/Media_of_Tuvalu",
         "https://pina.com.fj"
@@ -18074,8 +17479,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tuvalu Ministry of Justice, Communications and Foreign Affairs"
       },
       "revenueModel": "Government communications budget",
-      "logo": "newspaper-logos/tv/tuvalu-national-portal.svg",
-      "logoExplainer": "Navy blue background with golden star emblem, white bold typography 'TUVALU NEWS', and light blue Funafuti central desk subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.gov.tv",
         "https://en.wikipedia.org/wiki/Tuvalu"
@@ -18106,8 +17510,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "TSN Annual Report / Tanzania Audit Bureau of Circulations"
       },
       "revenueModel": "State institutional notices, commercial display advertising, and newsstand sales",
-      "logo": "newspaper-logos/tz/daily-news.svg",
-      "logoExplainer": "Deep navy field with classic white Times serif title 'Daily News', underlined by an authoritative yellow divider and gold heritage subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://dailynews.co.tz",
         "https://en.wikipedia.org/wiki/Daily_News_(Tanzania)"
@@ -18132,8 +17535,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nation Media Group Annual Report 2023 / GeoPoll Media Ratings"
       },
       "revenueModel": "Corporate subscriptions, commercial print advertising, and digital subscriptions",
-      "logo": "newspaper-logos/tz/the-citizen.svg",
-      "logoExplainer": "Clean white field with bold navy sans-serif lettering 'THE CITIZEN' and striking crimson red subtitle bar.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.thecitizen.co.tz",
         "https://en.wikipedia.org/wiki/The_Citizen_(Tanzania)"
@@ -18160,8 +17562,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "GeoPoll Tanzania Media Measurement / Mwananchi Media Pack"
       },
       "revenueModel": "Mass retail newspaper sales, nationwide commercial ads, and digital advertisements",
-      "logo": "newspaper-logos/tz/mwananchi.svg",
-      "logoExplainer": "Vibrant emerald green background with heavy white Impact title 'MWANANCHI' and bright yellow Swahili daily subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.mwananchi.co.tz",
         "https://en.wikipedia.org/wiki/Mwananchi"
@@ -18192,8 +17593,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "TSN Financial & Performance Review"
       },
       "revenueModel": "Government advertisements, public notices, and retail print sales",
-      "logo": "newspaper-logos/tz/habarileo.svg",
-      "logoExplainer": "Teal rectangular field with white square emblem displaying teal 'HL' letters, bold white 'HABARILEO' title, and light mint government subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://habarileo.co.tz",
         "https://en.wikipedia.org/wiki/HabariLeo"
@@ -18218,8 +17618,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "IPP Media Commercial Profile / GeoPoll"
       },
       "revenueModel": "Print advertising, private sector corporate partnerships, and multimedia commercial packages",
-      "logo": "newspaper-logos/tz/ipp-media.svg",
-      "logoExplainer": "Dark charcoal background featuring a ruby red roundel with white 'IPP', classic white serif 'The Guardian' title, and teal subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.ippmedia.com",
         "https://en.wikipedia.org/wiki/IPP_Media"
@@ -18246,8 +17645,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kyiv Post Audience Data"
       },
       "revenueModel": "Digital subscriptions, corporate advertising, and event conferences",
-      "logo": "newspaper-logos/ua/kyiv-post.svg",
-      "logoExplainer": "Charcoal black field with bold white serif typography 'Kyiv Post', a Ukrainian blue divider bar, and golden-yellow foundation 1995 subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.kyivpost.com",
         "https://en.wikipedia.org/wiki/Kyiv_Post"
@@ -18272,8 +17670,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Kyiv Independent Transparency Report 2023"
       },
       "revenueModel": "Reader community memberships, international journalistic grants, and editorial newsletters",
-      "logo": "newspaper-logos/ua/kyiv-independent.svg",
-      "logoExplainer": "Pure black background featuring a yellow circular badge with bold black 'K', heavy white sans-serif 'THE KYIV', and vibrant yellow 'INDEPENDENT'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kyivindependent.com",
         "https://en.wikipedia.org/wiki/The_Kyiv_Independent"
@@ -18304,8 +17701,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Vision Group Annual Report 2023 / Audit Bureau of Circulations"
       },
       "revenueModel": "Commercial print advertising, digital subscriptions, government notices, and retail sales",
-      "logo": "newspaper-logos/ug/new-vision.svg",
-      "logoExplainer": "Signature crimson red field with bold white typography 'NEW VISION' and warm yellow Vision Group subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.newvision.co.ug",
         "https://en.wikipedia.org/wiki/New_Vision_(newspaper)"
@@ -18330,8 +17726,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nation Media Group Annual Report 2023 / GeoPoll Uganda"
       },
       "revenueModel": "Single-copy retail sales, corporate advertising, and digital sponsorships",
-      "logo": "newspaper-logos/ug/daily-monitor.svg",
-      "logoExplainer": "White field with bold navy sans-serif lettering 'Daily Monitor', a crimson red divider line, and charcoal slogan bar.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.monitor.co.ug",
         "https://en.wikipedia.org/wiki/Daily_Monitor"
@@ -18356,8 +17751,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Uganda Journalists Association (UJA) Audit"
       },
       "revenueModel": "Print sales, corporate display ads, and online banner advertising",
-      "logo": "newspaper-logos/ug/the-observer.svg",
-      "logoExplainer": "Dark charcoal background featuring an eye roundel emblem with gold iris, classic white serif 'The Observer' title, and yellow subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://observer.ug",
         "https://en.wikipedia.org/wiki/The_Observer_(Uganda)"
@@ -18384,8 +17778,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Vision Group Annual Report / GeoPoll"
       },
       "revenueModel": "Mass retail newspaper sales, local classified advertisements, and multimedia TV ad spots",
-      "logo": "newspaper-logos/ug/bukedde.svg",
-      "logoExplainer": "Bright yellow background with heavy crimson red typography 'BUKEDDE' and black Luganda daily subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.bukedde.co.ug",
         "https://en.wikipedia.org/wiki/Bukedde"
@@ -18413,7 +17806,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Paid digital subscriptions (bundle, news, cooking, games, audio), print subscriptions, and premium brand advertising",
       "logo": "newspaper-logos/us/nyt.svg",
-      "logoExplainer": "Classic white field with the historic blackletter masthead 'The New York Times', horizontal divider rule, and iconic slogan 'ALL THE NEWS THAT'S FIT TO PRINT'.",
+      "logoExplainer": "Historic blackletter (Old English) masthead spelling 'The New York Times' — the nameplate used on the print front page and digital masthead.",
+      "licenceNote": "The New York Times masthead is a trademark of The New York Times Company, bundled from the publisher's public brand artwork for educational reference in Learn mode.",
       "sources": [
         "https://www.nytimes.com",
         "https://en.wikipedia.org/wiki/The_New_York_Times"
@@ -18439,7 +17833,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Digital paywall subscriptions, print deliveries, and digital corporate advertising",
       "logo": "newspaper-logos/us/washington-post.svg",
-      "logoExplainer": "Midnight black background with grand white gothic masthead 'The Washington Post', white dividing line, and silver italic motto 'Democracy Dies in Darkness'.",
+      "logoExplainer": "Blackletter gothic masthead spelling 'The Washington Post' — the nameplate used across print and digital editions.",
+      "licenceNote": "The Washington Post masthead is a trademark of Nash Holdings / The Washington Post, bundled from Wikimedia Commons (File:The Logo of The Washington Post Newspaper.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.washingtonpost.com",
         "https://en.wikipedia.org/wiki/The_Washington_Post"
@@ -18465,7 +17860,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Digital subscriptions, print delivery subscriptions, and high-value corporate financial advertising",
       "logo": "newspaper-logos/us/wsj.svg",
-      "logoExplainer": "Clean white field with traditional black serif capitals 'THE WALL STREET JOURNAL.', horizontal divider line, and Dow Jones business subtitle.",
+      "logoExplainer": "Classic serif capitals spelling 'THE WALL STREET JOURNAL.' (with the trailing period) — the nameplate used on the print front page.",
+      "licenceNote": "The Wall Street Journal masthead is a trademark of Dow Jones & Company, bundled from Wikimedia Commons (File:The Wall Street Journal Logo.svg) for educational reference in Learn mode.",
       "sources": [
         "https://www.wsj.com",
         "https://en.wikipedia.org/wiki/The_Wall_Street_Journal"
@@ -18491,7 +17887,8 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Print newsstand sales, hotel distribution agreements, digital paywall subscriptions, and programmatic digital advertising",
       "logo": "newspaper-logos/us/usa-today.svg",
-      "logoExplainer": "Vibrant USA Today cyan blue field with iconic white circular badge, bold white Futura typography 'USA TODAY', and white Gannett subtitle.",
+      "logoExplainer": "Cyan-blue circular badge beside the bold sans-serif wordmark 'USA TODAY' — the 2020 identity combining the signature blue disc with the Futura-derived title.",
+      "licenceNote": "USA Today masthead is a trademark of Gannett Co., Inc., bundled from Wikimedia Commons (File:USA Today (2020-01-29).svg; PD-textlogo) for educational reference in Learn mode.",
       "sources": [
         "https://www.usatoday.com",
         "https://en.wikipedia.org/wiki/USA_Today"
@@ -18520,8 +17917,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Instituto Verificador de Circulaciones (IVC) / El País Media Pack"
       },
       "revenueModel": "Print sales, digital subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/uy/el-pais-uy.svg",
-      "logoExplainer": "Uruguayan royal blue field with golden Sol de Mayo circular emblem, bold white serif 'EL PAÍS' lettering, and golden foundation 1918 subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.elpais.com.uy",
         "https://en.wikipedia.org/wiki/El_Pa%C3%ADs_(Uruguay)"
@@ -18548,8 +17944,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Observador Public Metrics / Comscore Uruguay"
       },
       "revenueModel": "Digital subscriptions, corporate brand advertising, and digital sponsorships",
-      "logo": "newspaper-logos/uy/el-observador.svg",
-      "logoExplainer": "White field with an orange square badge enclosing an eye roundel, heavy navy sans-serif 'EL OBSERVADOR', and orange Montevideo subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.elobservador.com.uy",
         "https://en.wikipedia.org/wiki/El_Observador_(Uruguay)"
@@ -18576,8 +17971,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "La Diaria Balance Social Cooperativo 2023"
       },
       "revenueModel": "Direct reader cooperative subscriptions and cultural event partnerships",
-      "logo": "newspaper-logos/uy/la-diaria.svg",
-      "logoExplainer": "Deep teal field with graceful white serif typography 'la diaria', an orange horizontal rule, and bright tangerine cooperative subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ladiaria.com.uy",
         "https://en.wikipedia.org/wiki/La_Diaria"
@@ -18604,8 +17998,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "IVC Uruguay / Búsqueda Media Kit"
       },
       "revenueModel": "Single-issue print sales, annual corporate subscriptions, and financial advertising",
-      "logo": "newspaper-logos/uy/busqueda.svg",
-      "logoExplainer": "Solid black field with fine gold border, prominent white Bodoni serif typography 'BÚSQUEDA', and gold national investigative weekly subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.busqueda.com.uy",
         "https://en.wikipedia.org/wiki/B%C3%BAsqueda_(newspaper)"
@@ -18630,8 +18023,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Comscore Uruguay / Montevideo COMM"
       },
       "revenueModel": "Digital display advertising, programmatic video campaigns, and sponsored features",
-      "logo": "newspaper-logos/uy/montevideo-portal.svg",
-      "logoExplainer": "Clean white field with cerulean blue monogram badge, dark navy typography 'MONTEVIDEO', cyan 'PORTAL', and grey pioneer portal subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.montevideo.com.uy",
         "https://en.wikipedia.org/wiki/Montevideo_Portal"
@@ -18660,8 +18052,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Afisha Media Public Analytics / Yandex Metrika"
       },
       "revenueModel": "Commercial digital display advertising, sponsored content studio, and business listings",
-      "logo": "newspaper-logos/uz/gazeta-uz.svg",
-      "logoExplainer": "White field with an orange square emblem displaying white 'G', bold black lettering 'Gazeta.uz' with orange domain suffix, and informative subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.gazeta.uz",
         "https://en.wikipedia.org/wiki/Media_of_Uzbekistan"
@@ -18688,8 +18079,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kun.uz Media Kit / SocialBlade Analytics"
       },
       "revenueModel": "Digital video advertising, native marketing, and commercial banner ads",
-      "logo": "newspaper-logos/uz/kun-uz.svg",
-      "logoExplainer": "Navy blue field with cyan circle bearing white 'K', bold white sans-serif typography 'Kun.uz' with cyan suffix, and light blue tagline.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kun.uz",
         "https://en.wikipedia.org/wiki/Media_of_Uzbekistan"
@@ -18716,8 +18106,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Daryo Analytics / Google Play Store"
       },
       "revenueModel": "Digital advertising, mobile app promotional placements, and corporate partnerships",
-      "logo": "newspaper-logos/uz/daryo-uz.svg",
-      "logoExplainer": "Clean white background with blue rounded emblem displaying white river wave motif, blue bold 'Daryo.uz' typography, and slate gray subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://daryo.uz",
         "https://en.wikipedia.org/wiki/Media_of_Uzbekistan"
@@ -18748,8 +18137,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Agency of Information and Mass Communications of Uzbekistan"
       },
       "revenueModel": "State budget allocations, mandatory civil service subscriptions, and legal announcements",
-      "logo": "newspaper-logos/uz/xalq-sozi.svg",
-      "logoExplainer": "Deep forest green field with classic white serif typography 'XALQ SO'ZI', a golden divider rule, and golden parliamentary subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://xs.uz",
         "https://uz.wikipedia.org/wiki/Xalq_so%CA%BBzi"
@@ -18861,8 +18249,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "L'Osservatore Romano Editorial Board"
       },
       "revenueModel": "Holy See communication funding and periodical subscriptions",
-      "logo": "newspaper-logos/va/donne-chiesa-mondo.svg",
-      "logoExplainer": "Deep magenta masthead with Didot serif typography and the subtitle 'Mensile dell'Osservatore Romano'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.osservatoreromano.va/it/donne-chiesa-mondo.html",
         "https://en.wikipedia.org/wiki/L%27Osservatore_Romano"
@@ -18891,8 +18278,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Interactive Media Ltd 2023"
       },
       "revenueModel": "Print sales, commercial advertising, and digital subscriptions",
-      "logo": "newspaper-logos/vc/searchlight.svg",
-      "logoExplainer": "Vibrant orange rectangular banner featuring bold modern white sans-serif wordmark 'SEARCHLIGHT' with clean subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://searchlight.vc",
         "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
@@ -18919,8 +18305,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Vincentian Publishing Co. 2023"
       },
       "revenueModel": "Print sales, public notices, and corporate advertising",
-      "logo": "newspaper-logos/vc/the-vincentian.svg",
-      "logoExplainer": "Deep navy field featuring distinguished classical white serif typography 'The Vincentian' and golden date 'Established 1907'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://thevincentian.com",
         "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
@@ -18947,8 +18332,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "News784 Web Metrics 2023"
       },
       "revenueModel": "Online display advertising and sponsored content",
-      "logo": "newspaper-logos/vc/news784.svg",
-      "logoExplainer": "Marine blue card with modern sans-serif white word 'NEWS' paired with golden yellow area code '784'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://news784.com",
         "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
@@ -18975,8 +18359,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "iWitness News Analytics 2023"
       },
       "revenueModel": "Digital subscriptions, reader donations, and ethical local advertising",
-      "logo": "newspaper-logos/vc/iwitness-news.svg",
-      "logoExplainer": "Sleek dark charcoal field featuring crimson circle with white italic 'i' beside bold white title 'iWitness' and red 'NEWS SVG'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.iwnsvg.com",
         "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
@@ -19005,8 +18388,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Universal Media Kit / Comscore Venezuela"
       },
       "revenueModel": "Digital subscriptions, programmatic advertising, and commercial classifieds",
-      "logo": "newspaper-logos/ve/el-universal.svg",
-      "logoExplainer": "White field with dark blue globe emblem, classic navy serif typography 'EL UNIVERSAL', and dark gray 1909 foundation subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.eluniversal.com",
         "https://en.wikipedia.org/wiki/El_Universal_(Caracas)"
@@ -19033,8 +18415,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Nacional Audience Analytics / WAN-IFRA"
       },
       "revenueModel": "Digital subscriptions, programmatic advertising, and independent donor support",
-      "logo": "newspaper-logos/ve/el-nacional.svg",
-      "logoExplainer": "Deep navy field with historic white serif typography 'EL NACIONAL', crimson divider line, and red founding year 1943 subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.elnacional.com",
         "https://en.wikipedia.org/wiki/El_Nacional_(Venezuela)"
@@ -19061,8 +18442,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Últimas Noticias Commercial Dossier"
       },
       "revenueModel": "Mass print sales, commercial display advertising, and digital banners",
-      "logo": "newspaper-logos/ve/ultimas-noticias.svg",
-      "logoExplainer": "Vibrant crimson red background with large white impact typography 'ÚLTIMAS NOTICIAS' and warm yellow Caracas 1941 tagline.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ultimasnoticias.com.ve",
         "https://en.wikipedia.org/wiki/%C3%9Altimas_Noticias"
@@ -19091,8 +18471,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tuổi Trẻ Media Pack / Vietnam Internet Network Information Center (VNNIC)"
       },
       "revenueModel": "Print newsstand sales, corporate commercial advertising, and digital advertisements",
-      "logo": "newspaper-logos/vn/tuoi-tre.svg",
-      "logoExplainer": "White field with red circular roundel bearing white 'T', prominent red Impact masthead 'TUỔI TRẺ', and royal blue youth daily subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://tuoitre.vn",
         "https://en.wikipedia.org/wiki/Tu%E1%BB%95i_Tr%E1%BA%BB"
@@ -19119,8 +18498,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Thanh Niên Advertising Kit / VNNIC"
       },
       "revenueModel": "Print sales, commercial display advertisements, and digital programmatic ads",
-      "logo": "newspaper-logos/vn/thanh-nien.svg",
-      "logoExplainer": "Deep royal blue field with heavy white sans-serif typography 'THANH NIÊN' and bright yellow youth league subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://thanhnien.vn",
         "https://en.wikipedia.org/wiki/Thanh_Ni%C3%AAn"
@@ -19151,8 +18529,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Báo Nhân Dân Annual Audit"
       },
       "revenueModel": "State institutional appropriations, mandatory public sector subscriptions, and official announcements",
-      "logo": "newspaper-logos/vn/nhan-dan.svg",
-      "logoExplainer": "National red background with golden five-pointed star, refined white Times serif 'Nhân Dân' title, and yellow central organ subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://nhandan.vn",
         "https://en.wikipedia.org/wiki/Nh%C3%A2n_D%C3%A2n"
@@ -19177,8 +18554,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Google Analytics / Similarweb Vietnam / VNNIC"
       },
       "revenueModel": "Digital display advertising, sponsored native articles, and video content sponsorships",
-      "logo": "newspaper-logos/vn/vnexpress.svg",
-      "logoExplainer": "White background with ruby red circular badge bearing a white play arrow, bold crimson 'VnExpress' wordmark, and grey readership subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://vnexpress.net",
         "https://en.wikipedia.org/wiki/VnExpress"
@@ -19205,8 +18581,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Association of Vanuatu (MAV) / Daily Post Media Kit"
       },
       "revenueModel": "Newsstand retail sales, commercial display ads, and classified notices",
-      "logo": "newspaper-logos/vu/daily-post.svg",
-      "logoExplainer": "White field with red star emblem, black serif typography 'Vanuatu Daily Post', a red dividing rule, and green Port Vila daily subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.dailypost.vu",
         "https://en.wikipedia.org/wiki/Vanuatu_Daily_Post"
@@ -19231,8 +18606,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Buzz Media Analytics / MAV"
       },
       "revenueModel": "Digital display advertising, sponsored industry features, and social promotions",
-      "logo": "newspaper-logos/vu/daily-buzz.svg",
-      "logoExplainer": "Charcoal black field with bright yellow circular badge displaying 'B', bold yellow impact lettering 'DAILY BUZZ', and white community subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/Media_of_Vanuatu",
         "https://pina.com.fj"
@@ -19257,8 +18631,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Vanuatu Media Association Directory"
       },
       "revenueModel": "Print newsstand sales, classifieds, and commercial advertising",
-      "logo": "newspaper-logos/vu/vanuatu-times.svg",
-      "logoExplainer": "White field with thin dark frame, dark green serif lettering 'Vanuatu Times', and crimson red weekly digest subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/Media_of_Vanuatu",
         "https://pina.com.fj"
@@ -19291,8 +18664,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministry of Prime Minister & Cabinet Samoa 2023"
       },
       "revenueModel": "State government budget subsidy and official government notices",
-      "logo": "newspaper-logos/ws/savali.svg",
-      "logoExplainer": "Regal Pacific royal blue card with proud white serif capitals 'SAVALI' accented with red subtitle 'GOVERNMENT OF SAMOA GAZETTE'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://savalinews.com",
         "https://en.wikipedia.org/wiki/Savali"
@@ -19319,8 +18691,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Samoa Observer Media Profile 2023"
       },
       "revenueModel": "Print newsstand sales, digital subscriptions, and display advertising",
-      "logo": "newspaper-logos/ws/samoa-observer.svg",
-      "logoExplainer": "Deep oceanic blue field featuring refined white serif capitals 'SAMOA OBSERVER' underscored with red tagline 'SAMOA’S ONLY INDEPENDENT DAILY'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.samoaobserver.ws",
         "https://en.wikipedia.org/wiki/Samoa_Observer"
@@ -19347,8 +18718,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Talamua Media Analytics 2023"
       },
       "revenueModel": "Digital advertising, media consulting, and subscriptions",
-      "logo": "newspaper-logos/ws/talamua-media.svg",
-      "logoExplainer": "Polynesian emerald green banner displaying bold white block wordmark 'TALAMUA' with golden yellow subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://talamua.com",
         "https://en.wikipedia.org/wiki/Media_of_Samoa"
@@ -19375,8 +18745,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Samoa Global News Web Traffic 2023"
       },
       "revenueModel": "Digital advertising, live stream sponsorships, and corporate partnerships",
-      "logo": "newspaper-logos/ws/samoa-global-news.svg",
-      "logoExplainer": "Pacific marine blue card with crisp white sans-serif masthead 'SAMOA GLOBAL NEWS' underscored with crimson subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://samoaglobalnews.com",
         "https://en.wikipedia.org/wiki/Media_of_Samoa"
@@ -19403,8 +18772,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Newsline Media Profile 2023"
       },
       "revenueModel": "Retail print sales and classified advertising",
-      "logo": "newspaper-logos/ws/newsline-samoa.svg",
-      "logoExplainer": "Dark graphite card displaying refined white serif masthead 'Newsline Samoa' and bright cyan subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.facebook.com/newslinesamoa",
         "https://en.wikipedia.org/wiki/Media_of_Samoa"
@@ -19433,8 +18801,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Yemen Press Syndicate (YPS) Archive"
       },
       "revenueModel": "State operational subsidies, public notices, and newsstand distribution",
-      "logo": "newspaper-logos/ye/al-thawra.svg",
-      "logoExplainer": "White field framed by a crimson double line, with elegant red Arabic calligraphy 'صحيفة الثورة' and black heritage subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://althawrah.ye",
         "https://en.wikipedia.org/wiki/Al-Thawra_(Yemen)"
@@ -19461,8 +18828,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "YPS Audit / Al-Ayyam Media Profile"
       },
       "revenueModel": "Print newsstand sales, corporate commercial advertising, and digital ads",
-      "logo": "newspaper-logos/ye/al-ayyam.svg",
-      "logoExplainer": "Deep royal blue field with majestic white Arabic calligraphy 'صحيفة الأيام', red divider rule, and light pink Aden heritage subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.alayyam.info",
         "https://en.wikipedia.org/wiki/Al-Ayyam_(Yemen)"
@@ -19489,8 +18855,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Google Analytics / Al-Masdar Press Briefing"
       },
       "revenueModel": "Digital banner advertising, research syndication, and reader contributions",
-      "logo": "newspaper-logos/ye/al-masdar.svg",
-      "logoExplainer": "White background with orange circle bearing white 'M', vibrant burnt orange Arabic title 'المصدر أونلاين', and dark slate grey subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://almasdaronline.com",
         "https://en.wikipedia.org/wiki/Al-Masdar_(Yemen)"
@@ -19517,8 +18882,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Similarweb Yemen Media Rankings / Alexa Archive"
       },
       "revenueModel": "Digital programmatic advertising and sponsored commercial features",
-      "logo": "newspaper-logos/ye/al-mashhad.svg",
-      "logoExplainer": "Deep navy field with cyan square tile displaying white Arabic 'مشهد', bold white typography 'AL-MASHHAD', and bright blue subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://almashhad-alyemeni.com",
         "https://en.wikipedia.org/wiki/Media_of_Yemen"
@@ -19545,8 +18909,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Audit Bureau of Circulations of South Africa (ABC SA) / M&G Annual"
       },
       "revenueModel": "Print sales, digital subscriptions, donor grant funding, and advertising",
-      "logo": "newspaper-logos/za/mail-and-guardian.svg",
-      "logoExplainer": "Signature bold red rectangular field with white square box containing the iconic serif 'M&G' monogram and white masthead lettering.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://mg.co.za",
         "https://en.wikipedia.org/wiki/Mail_%26_Guardian"
@@ -19571,8 +18934,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ABC South Africa Q4 2023 / Publisher Research Council"
       },
       "revenueModel": "Single-copy retail sales, home delivery subscriptions, and high-volume commercial print advertising",
-      "logo": "newspaper-logos/za/sunday-times.svg",
-      "logoExplainer": "Dramatic dark charcoal field with historic Old English blackletter typography 'Sunday Times', underlined with an antique gold divider bar.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.timeslive.co.za/sunday-times",
         "https://en.wikipedia.org/wiki/Sunday_Times_(South_Africa)"
@@ -19597,8 +18959,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ABC South Africa / BusinessLIVE Media Pack"
       },
       "revenueModel": "Corporate subscriptions, financial notices, market ads, and premium digital paywall",
-      "logo": "newspaper-logos/za/business-day.svg",
-      "logoExplainer": "Clean white field with navy corporate block 'BD' monogram, deep blue serif masthead 'Business Day', and warm gold subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.businesslive.co.za/bd",
         "https://en.wikipedia.org/wiki/Business_Day_(South_Africa)"
@@ -19623,8 +18984,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Narrative Audience Measurement / Media24 Annual Report 2023"
       },
       "revenueModel": "Digital subscription memberships (News24+), programmatic video ads, and sponsored brand studio content",
-      "logo": "newspaper-logos/za/news24.svg",
-      "logoExplainer": "Navy blue field with modern bold white lowercase 'news' and vibrant orange '24' badge, accompanied by a bright orange beacon dot.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.news24.com",
         "https://en.wikipedia.org/wiki/News24"
@@ -19655,8 +19015,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Audit Bureau of Circulations Zambia / ZICCL"
       },
       "revenueModel": "Government notices, commercial print advertisements, and newsstand sales",
-      "logo": "newspaper-logos/zm/times-of-zambia.svg",
-      "logoExplainer": "Clean white field with authoritative black Times serif lettering 'Times of Zambia', green divider line, and orange founding year 1943 mark.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.times.co.zm",
         "https://en.wikipedia.org/wiki/Times_of_Zambia"
@@ -19685,8 +19044,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Zambia Daily Mail Ltd Annual Report"
       },
       "revenueModel": "State public notices, corporate commercial advertising, and daily retail sales",
-      "logo": "newspaper-logos/zm/zambia-daily-mail.svg",
-      "logoExplainer": "Deep navy field with bold white typography 'Zambia Daily Mail', an orange divider bar, and light blue motto 'WITHOUT FEAR OR FAVOUR'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.daily-mail.co.zm",
         "https://en.wikipedia.org/wiki/Zambia_Daily_Mail"
@@ -19711,8 +19069,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Institute of Southern Africa (MISA) Zambia"
       },
       "revenueModel": "Single-copy retail print sales, independent subscriptions, and commercial advertising",
-      "logo": "newspaper-logos/zm/the-mast.svg",
-      "logoExplainer": "Signature crimson red background with large white impact typography 'THE MAST' and light pink independent daily subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://themastonline.com",
         "https://en.wikipedia.org/wiki/Media_of_Zambia"
@@ -19737,8 +19094,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "MISA Zambia Media Awards / Diggers Audience Analytics"
       },
       "revenueModel": "Paid digital subscriptions, print sales, and commercial display advertisements",
-      "logo": "newspaper-logos/zm/diggers-news.svg",
-      "logoExplainer": "Dark charcoal field with golden exclamation mark badge, bold yellow impact title 'NEWS DIGGERS!', and white investigative motto bar.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://diggers.news",
         "https://en.wikipedia.org/wiki/Media_of_Zambia"
@@ -19769,8 +19125,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Zimbabwe All Media Products Survey (ZAMPS) / Zimpapers Annual Report 2023"
       },
       "revenueModel": "Commercial print advertising, government public notices, and retail newsstand distribution",
-      "logo": "newspaper-logos/zw/the-herald.svg",
-      "logoExplainer": "White field featuring a red Zimbabwe chevron star, classic dark green Times serif 'The Herald', a red rule line, and charcoal heritage subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.herald.co.zw",
         "https://en.wikipedia.org/wiki/The_Herald_(Zimbabwe)"
@@ -19795,8 +19150,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ZAMPS Audit / AMH Commercial Profile"
       },
       "revenueModel": "Single-copy retail sales, corporate display advertisements, and digital subscriptions",
-      "logo": "newspaper-logos/zw/newsday.svg",
-      "logoExplainer": "Deep navy field with bold white Impact typography 'NEWSDAY' and golden yellow tagline 'EVERYDAY NEWS FOR EVERYDAY PEOPLE'.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.newsday.co.zw",
         "https://en.wikipedia.org/wiki/NewsDay_(Zimbabwe)"
@@ -19821,8 +19175,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ZAMPS / Zimpapers Bulawayo Branch Review"
       },
       "revenueModel": "Government notices, local commercial ads, and print sales",
-      "logo": "newspaper-logos/zw/the-chronicle.svg",
-      "logoExplainer": "Classic white field with historic Old English blackletter masthead 'The Chronicle', dark green rule line, and Bulawayo heritage subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.chronicle.co.zw",
         "https://en.wikipedia.org/wiki/The_Chronicle_(Zimbabwe)"
@@ -19847,8 +19200,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ZAMPS / AMH Corporate Pack"
       },
       "revenueModel": "Paid weekly subscriptions, corporate financial notices, and print advertising",
-      "logo": "newspaper-logos/zw/the-zimbabwe-independent.svg",
-      "logoExplainer": "Dark charcoal field with crimson square tile bearing white serif 'ZI', white 'THE ZIMBABWE', and warm gold 'INDEPENDENT' lettering.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.theindependent.co.zw",
         "https://en.wikipedia.org/wiki/Zimbabwe_Independent"
@@ -19873,8 +19225,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "New Zimbabwe Web Analytics / Similarweb"
       },
       "revenueModel": "Digital display advertising, sponsored content, and diaspora services promotion",
-      "logo": "newspaper-logos/zw/new-zimbabwe.svg",
-      "logoExplainer": "White field with green circular badge enclosing gold Zimbabwe star, bold green 'NEW', red 'ZIMBABWE', and charcoal online subtitle.",
+      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.newzimbabwe.com",
         "https://en.wikipedia.org/wiki/NewZimbabwe.com"

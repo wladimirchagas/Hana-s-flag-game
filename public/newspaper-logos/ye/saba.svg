@@ -1,7 +1,0 @@
-<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="120" fill="#1b1b1b"/>
-  <rect x="25" y="24" width="70" height="72" rx="6" fill="#ce1126"/>
-  <text x="60" y="70" font-family="'Traditional Arabic', 'Amiri', serif" font-size="30" font-weight="bold" fill="#ffffff" text-anchor="middle">سبأ</text>
-  <text x="108" y="62" font-family="'Impact', 'Arial Black', sans-serif" font-size="42" fill="#ffffff" letter-spacing="2">SABA</text>
-  <text x="110" y="86" font-family="'Arial', sans-serif" font-size="11" font-weight="700" fill="#ffcdd2" letter-spacing="1.5">YEMEN NEWS AGENCY • وكالة الأنباء اليمنية</text>
-</svg>

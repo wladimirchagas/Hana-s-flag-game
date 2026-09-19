@@ -50,10 +50,16 @@ export type Newspaper = {
   };
   /** Revenue model and funding streams */
   readonly revenueModel: string;
-  /** Bundled logo path relative to public root (e.g. "newspaper-logos/ar/clarin.svg") */
-  readonly logo: string;
-  /** Sourced explanation of the logo design, typography, and heritage */
-  readonly logoExplainer: string;
+  /** Bundled logo path relative to public root (e.g. "newspaper-logos/ar/clarin.svg").
+   *  Absent only when paired with `noImageReason`. */
+  readonly logo?: string;
+  /** Sourced explanation of the logo design, typography, and heritage.
+   *  Required when `logo` is set. */
+  readonly logoExplainer?: string;
+  /** Documented reason no freely-citable authentic masthead could be sourced —
+   *  used instead of `logo`/`logoExplainer`. A fabricated placeholder is never
+   *  an acceptable substitute; missing is honest. */
+  readonly noImageReason?: string;
   /** Authoritative institutional sources and citations */
   readonly sources: readonly string[];
   /** Educational reference / trademark licence note */
