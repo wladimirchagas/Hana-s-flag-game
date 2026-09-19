@@ -1,5 +1,5 @@
 import { IDEOLOGY_POSITION_LABELS, type PoliticalParty } from "../data/politicalParties";
-import { coalitionForParty, coalitionPartners } from "../lib/politicalParties";
+import { coalitionForParty, coalitionPartners, legislatureForCountry } from "../lib/politicalParties";
 
 /**
  * The Learn-mode "Political parties" detail widget — rendered in the SAME
@@ -13,8 +13,11 @@ import { coalitionForParty, coalitionPartners } from "../lib/politicalParties";
 export function PoliticalPartyFacts({ party }: { party: PoliticalParty }) {
   const coalition = coalitionForParty(party);
   const partners = coalitionPartners(party);
-  const pct = party.seatsTotal > 0 ? (party.seats / party.seatsTotal) * 100 : null;
-  const pctLabel = pct == null ? null : pct >= 10 ? Math.round(pct) : Math.round(pct * 10) / 10;
+  const legislature = legislatureForCountry(party.country);
+  const seatRows =
+    party.chambers && party.chambers.length > 0
+      ? party.chambers
+      : [{ name: party.chamberName, seats: party.seats, seatsTotal: party.seatsTotal }];
 
   const nameWithTranslation = (name: string, nameEn?: string) =>
     nameEn && nameEn !== name ? `${name} (${nameEn})` : name;
@@ -98,13 +101,27 @@ export function PoliticalPartyFacts({ party }: { party: PoliticalParty }) {
             <dd className="entity-summary__value">{party.timeInPower}</dd>
           </div>
         )}
-        <div className="entity-summary__row">
-          <dt className="entity-summary__label">Seats</dt>
-          <dd className="entity-summary__value">
-            {party.seats} / {party.seatsTotal}
-            {pctLabel != null ? ` (${pctLabel}%)` : ""} in the {party.chamberName}
-          </dd>
-        </div>
+        {legislature?.note && (
+          <div className="entity-summary__row">
+            <dt className="entity-summary__label">Legislature</dt>
+            <dd className="entity-summary__value">{legislature.note}</dd>
+          </div>
+        )}
+        {seatRows.map((row) => {
+          const pct = row.seatsTotal > 0 ? (row.seats / row.seatsTotal) * 100 : null;
+          const pctLabel = pct == null ? null : pct >= 10 ? Math.round(pct) : Math.round(pct * 10) / 10;
+          const majority = "majority" in row && row.majority ? " — majority" : "";
+          return (
+            <div className="entity-summary__row" key={row.name}>
+              <dt className="entity-summary__label">Seats ({row.name})</dt>
+              <dd className="entity-summary__value">
+                {row.seats} / {row.seatsTotal}
+                {pctLabel != null ? ` (${pctLabel}%)` : ""}
+                {majority}
+              </dd>
+            </div>
+          );
+        })}
       </dl>
     </>
   );

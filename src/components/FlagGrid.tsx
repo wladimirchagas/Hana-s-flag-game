@@ -1166,7 +1166,7 @@ export function FlagGrid({
                           <span className="flag-grid__party-badges">
                             {badges.map((b, i) => (
                               <span
-                                key={`${b.kind}-${i}`}
+                                key={`${b.kind}-${b.label}`}
                                 className={`flag-grid__party-badge flag-grid__party-badge--${b.kind}`}
                               >
                                 {b.label}

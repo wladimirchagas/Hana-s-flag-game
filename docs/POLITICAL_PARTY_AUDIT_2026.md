@@ -37,6 +37,7 @@ survey, each to be closed as its country comes up in the queue:
 | B5 | No logo | 69 parties, against a 23-entry grandfather allowlist |
 | B6 | `inPower` true but no `inExecutive` party | 59 of 90 countries |
 | B6a | **Exec-power badge must be the HoG party only** (owner, 2026-09-19) | `headOfGovernment`; cabinet partners stay on `inExecutive` / Leg power |
+| B6b | **Leg power is a chamber majority, not the coalition flag** (owner, 2026-09-19) | `PARTY_LEGISLATURES` + `chambers[]`; US/AU/BR seeded |
 | B7 | Single-source concentration | 664 of ~750 citations are English Wikipedia |
 | B8 | **No date field in the schema** — staleness is undetectable by construction | whole dataset |
 
@@ -51,6 +52,8 @@ forgotten; it is tracked here.
 **Countries audited: 77 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
 
 **2026-09-19 — Exec-power badge = head of government.** Owner direction: cabinet coalitions are irrelevant to "Exec power"; the badge is the party that supplies the HoG (president where that office is HoG; prime minister otherwise), never the head of state merely for being HoS. Field: `headOfGovernment` (at most one per country). Sourced HoG parties set in the same change: BR-PT (Lula), CL-REP (Kast, aligned with the Republican Party he founded), ID-GERINDRA (Prabowo), FR-RE (PM Lecornu / Renaissance), TL-CNRT (PM Gusmão), plus the presidential systems that already had a single `inExecutive` party (AR, KR, PH, US, TR, PE, UY, EC, PY, SR, VE).
+
+**2026-09-19 — Leg power is per-chamber majority.** Owner follow-up: bicameral bodies (BR, AU, US) can have different parties in each house. `inPower` stays the government-coalition flag. Catalog `PARTY_LEGISLATURES` + optional `chambers[]`: a Leg badge is only a party that holds more than half that chamber's seats, labelled House/Senate (not a generic "Leg power"). Seeded: US Republicans House 218/435 + Senate 53/100 (both majorities); US Democrats 214 + 45 (neither); Australia Labor 94/150 House (In-power) and 30/76 Senate (hung — no Senate badge); Brazil catalogued as bicameral with no party-level majority in either house (Senate Wikipedia infobox summed to 82 against 81 seats, so per-party Senate figures are omitted rather than guessed). Coalition partners no longer inherit a Leg badge from `inPower`.
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|

@@ -89,6 +89,8 @@ function imageKind(buf) {
 const src = readFileSync(DATA_PATH, "utf8");
 const coalitions = loadConst(src, "export const POLITICAL_COALITIONS");
 const partiesByCountry = loadConst(src, "export const POLITICAL_PARTIES");
+const LEG_PATH = resolve(__dirname, "..", "src", "data", "partyLegislatures.ts");
+const legislatures = loadConst(readFileSync(LEG_PATH, "utf8"), "export const PARTY_LEGISLATURES");
 
 // A party SHOULD have a bundled logo, but a logo is not a hard requirement for
 // the entry to exist (owner direction, 2026-09-12). The rule that was here
@@ -211,6 +213,41 @@ for (const [country, parties] of Object.entries(partiesByCountry)) {
     if (p.headOfGovernment !== undefined && typeof p.headOfGovernment !== "boolean") {
       fail(id, "headOfGovernment must be a boolean when present");
     }
+    if (p.chambers !== undefined) {
+      if (!Array.isArray(p.chambers) || p.chambers.length === 0) {
+        fail(id, "chambers must be a non-empty array when present");
+      } else {
+        const names = new Set();
+        for (const c of p.chambers) {
+          if (!nonEmpty(c.name)) fail(id, "chambers entry missing name");
+          if (names.has(c.name)) fail(id, `duplicate chambers name ${JSON.stringify(c.name)}`);
+          names.add(c.name);
+          if (!Number.isInteger(c.seats) || c.seats < 0) fail(id, `invalid chambers.seats for ${c.name}`);
+          if (!Number.isInteger(c.seatsTotal) || c.seatsTotal <= 0) fail(id, `invalid chambers.seatsTotal for ${c.name}`);
+          if (c.seats > c.seatsTotal) fail(id, `chambers ${c.name}: seats exceed seatsTotal`);
+          if (c.majority !== undefined && typeof c.majority !== "boolean") {
+            fail(id, `chambers ${c.name}: majority must be a boolean when present`);
+          }
+          if (c.majority === true && 2 * c.seats <= c.seatsTotal) {
+            fail(id, `chambers ${c.name}: majority is true but ${c.seats}/${c.seatsTotal} is not more than half the seats`);
+          }
+          if (c.name === p.chamberName && (c.seats !== p.seats || c.seatsTotal !== p.seatsTotal)) {
+            fail(id, `chambers entry for ${c.name} must repeat the party's seats/seatsTotal`);
+          }
+          const leg = legislatures[p.country];
+          if (leg) {
+            const body = (leg.bodies ?? []).find((b) => b.name === c.name);
+            if (!body) fail(id, `chambers ${JSON.stringify(c.name)} is not a body in PARTY_LEGISLATURES.${p.country}`);
+            else if (body.seatsTotal !== c.seatsTotal) {
+              fail(id, `chambers ${c.name} seatsTotal ${c.seatsTotal} != catalog ${body.seatsTotal}`);
+            }
+          }
+        }
+        if (!names.has(p.chamberName)) {
+          fail(id, `chambers must include the primary chamber ${JSON.stringify(p.chamberName)}`);
+        }
+      }
+    }
 
     // B. sources
     checkSources(id, p.sources, "party");
@@ -295,6 +332,38 @@ for (const [country, list] of Object.entries(partiesByCountry)) {
   const hogs = list.filter((p) => p.headOfGovernment === true).map((p) => p.id);
   if (hogs.length > 1) {
     fail(country, `headOfGovernment is true on ${hogs.length} parties (${hogs.join(", ")}); at most one party may supply the head of government`);
+  }
+  const majorityByChamber = new Map();
+  for (const p of list) {
+    for (const c of p.chambers ?? []) {
+      if (c.majority !== true) continue;
+      const key = c.name;
+      const prev = majorityByChamber.get(key);
+      if (prev) {
+        fail(country, `majority in ${JSON.stringify(key)} is set on both ${prev} and ${p.id} — at most one party per chamber`);
+      }
+      majorityByChamber.set(key, p.id);
+    }
+  }
+}
+
+for (const [cc, leg] of Object.entries(legislatures)) {
+  if (!nonEmpty(leg.confidenceHouse)) fail(cc, "PARTY_LEGISLATURES.confidenceHouse missing");
+  if (!Array.isArray(leg.bodies) || leg.bodies.length < 2) {
+    fail(cc, "PARTY_LEGISLATURES.bodies must list at least two chambers");
+  }
+  if (!nonEmpty(leg.note) || leg.note.length < 40) {
+    fail(cc, "PARTY_LEGISLATURES.note must explain how the houses relate (min 40 chars)");
+  }
+  if (!nonEmpty(leg.source?.title) || !/^https?:\/\//.test(leg.source?.url ?? "")) {
+    fail(cc, "PARTY_LEGISLATURES.source must have a title and http(s) url");
+  }
+  const shorts = new Set();
+  for (const b of leg.bodies ?? []) {
+    if (!nonEmpty(b.name) || !nonEmpty(b.shortName)) fail(cc, "legislature body missing name/shortName");
+    if (!Number.isInteger(b.seatsTotal) || b.seatsTotal <= 0) fail(cc, `invalid seatsTotal on ${b.name}`);
+    if (shorts.has(b.shortName)) fail(cc, `duplicate legislature shortName ${b.shortName}`);
+    shorts.add(b.shortName);
   }
 }
 
