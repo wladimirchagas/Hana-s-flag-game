@@ -3328,6 +3328,23 @@ PR #1268 moved Political parties out of the world-map Show dropdown into the cou
 4. **A party tile never falls back to the national flag.** No bundled logo → honest empty/"no image" tile and `noImageReason` in the panel.
 5. **`scripts/check-grid-content-types.mjs` (wired into `npm run test:ui` / `npm run build`) fails the build if `party` leaves the Show list or FlagGrid/LearnPage stop wiring it.** Do not delete or skip that check to land an unrelated change.
 
+## Party grid cards: readable names, A–Z when ungrouped — hard rule, do not override without approval
+
+**A Political parties tile's main label is a readable party name, never a chamber abbreviation.** Canada's Liberals are **Liberal**, not **LIB**. `shortName` stays in the data as the abbreviation the chamber uses; the card title is always `partyCardName()` (`src/lib/politicalParties.ts`). Word-like short names (Vooruit, Groen, Die Mitte) are kept. A party whose official name *is* the brand (DENK, JA21, ANO 2011) may keep that brand.
+
+**When Group by is "No grouping" (or A–Z buckets), party tiles sort alphabetically by that card name.** Ideology order is only for the ideology / by-country groupings, where the spectrum is the grouping.
+
+### Why this rule exists
+
+Owner request (2026-09): abbreviations are unreadable as the main name on a grid of ~800 parties, and an ungrouped list that is still ordered by ideology is not an A–Z index. PR #1478 shipped both; this rule stops a later change from putting `shortName` back on the tile or ideology-sorting the ungrouped view.
+
+### Rules
+
+1. **World-map `FlagGrid` and the country-tab `PoliticalPartyGrid` both title tiles with `partyCardName(party, countryName)`.** Never render `shortName` as the card's main name when it is an acronym.
+2. **`partyCardName` prefers a non-abbreviation `shortName`, otherwise derives a label from `nameEn` / `name`** (strip a leading "The", a trailing "Party" / "Party of {country}"). It must never invent a name — only shorten the sourced official one.
+3. **Ungrouped and A–Z party lists sort by that card name** (`localeCompare` in `en`). Do not reintroduce ideology rank as the ungrouped comparator.
+4. **`scripts/check-political-parties.mjs` fails if Canada's Liberals (`CA-LIB`) would not card as `"Liberal"`, or if any party with a readable official name still cards as an abbreviation.** `scripts/check-grid-content-types.mjs` fails if either grid stops calling `partyCardName`, or if FlagGrid ideology-sorts when Group by is No grouping / A–Z. Never weaken those gates to land an unrelated change.
+
 ## A political party's logo is a SHOULD, never a MUST — the RESEARCH is the hard rule — hard rule, do not override without approval
 
 **Every political party in the Learn-mode "Political parties" grid (`src/data/politicalParties.ts`)
