@@ -84,42 +84,16 @@ export function isPartyNameAbbreviation(label: string): boolean {
   return false;
 }
 
-function latinOrEnglishName(party: PoliticalParty): string {
-  const en = party.nameEn?.trim();
-  if (en) return en;
-  const native = party.name.trim();
-  if (/\p{Script=Latin}/u.test(native)) return native;
-  return native;
-}
-
-function stripPartyOfCountry(raw: string, countryName?: string): string {
-  let s = raw.replace(/^The\s+/iu, "").trim();
-  // "Liberal Party of Canada" → "Liberal"; also "Democratic Labour Party" →
-  // "Democratic Labour". Country-specific "of X" is stripped even when the
-  // caller did not pass a country name, so a card never reads as an acronym.
-  s = s.replace(/\s+Part(?:y|ies) of(?: the)?\s+.+$/iu, "").trim();
-  if (countryName) {
-    const cn = countryName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    s = s.replace(new RegExp(`\\s+of(?:\\s+the)?\\s+${cn}$`, "iu"), "").trim();
-  }
-  s = s.replace(/\s+Part(?:y|ies)$/iu, "").trim();
-  return s || raw;
-}
-
 /**
- * The name shown on a party grid card. `shortName` is often a chamber
- * abbreviation (Canada's Liberals are recorded as "LIB"); the card must
- * show a readable name instead ("Liberal"). Word-like short names
- * (Vooruit, Groen, Die Mitte) are kept.
+ * The name shown on a party grid card: the official name in the party's
+ * own language, with the sourced English translation in parentheses when
+ * it differs. Never the chamber abbreviation (`shortName` "LIB").
  */
-export function partyCardName(party: PoliticalParty, countryName?: string): string {
-  const short = party.shortName.trim();
-  if (short && !isPartyNameAbbreviation(short)) return short;
-  const official = latinOrEnglishName(party);
-  const derived = stripPartyOfCountry(official, countryName);
-  if (derived && !isPartyNameAbbreviation(derived)) return derived;
-  if (official && !isPartyNameAbbreviation(official)) return official;
-  return official || short;
+export function partyCardName(party: PoliticalParty, _countryName?: string): string {
+  const native = party.name.trim();
+  const en = party.nameEn?.trim();
+  if (native && en && en !== native) return `${native} (${en})`;
+  return native || en || party.shortName.trim();
 }
 
 /** How many parties (across every covered country) the grid will show for the
@@ -168,26 +142,31 @@ function chamberMajorityBadges(party: PoliticalParty, countryCode: string): Part
   return out;
 }
 
+function countryHasChamberMajority(countryCode: string): boolean {
+  return partiesForCountry(countryCode).some((p) =>
+    (p.chambers ?? []).some((c) => c.majority === true),
+  );
+}
+
 export function partyPowerBadges(party: PoliticalParty, countryCode: string): PartyBadgeItem[] {
   const cat = getGovernmentCategory(countryCode);
   const badges: PartyBadgeItem[] = [];
   const splitLegislature = legislatureForCountry(countryCode) != null;
+  const chamberMajorities = countryHasChamberMajority(countryCode);
 
   // Presidential / semi-presidential: split the two offices.
-  // "Exec power" is the party of the HEAD OF GOVERNMENT only — never every
-  // cabinet partner, and never the head of state's party merely for holding
-  // that office (France: Macron is HoS, Lecornu/Renaissance is HoG).
-  // "Leg power" is a chamber majority, not the governing coalition: in a
-  // catalogued bicameral country the badges are the short chamber names
-  // (House / Senate). A hung chamber, or a majority that is only a
-  // multi-party bloc, has no Leg badge.
+  // "Exec power" is the party of the HEAD OF GOVERNMENT only.
+  // "Leg power" is the governing coalition when no single party holds a
+  // chamber majority. Where a party does hold more than half a chamber,
+  // that house is labelled by name (House / Senate) instead of a generic
+  // Leg badge — so a split Congress can disagree without looking empty.
   // Parliamentary / Westminster systems fuse executive and the confidence
   // house into "In-power", and may still show an upper-house majority.
   if (cat === "presidential" || cat === "semi-presidential") {
     if (party.headOfGovernment) {
       badges.push({ label: "Exec power", kind: "executive" });
     }
-    if (splitLegislature) {
+    if (splitLegislature && chamberMajorities) {
       badges.push(...chamberMajorityBadges(party, countryCode));
     } else if (party.inPower) {
       badges.push({ label: "Leg power", kind: "legislative" });
