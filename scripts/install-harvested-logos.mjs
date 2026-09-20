@@ -11,39 +11,39 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 32 — montage-scanned. */
+/** Visually verified batch 33 — montage-scanned. */
 const MANIFEST = [
   {
-    id: "ml-malijet",
-    src: "tmp/batch32-manual/malijet-sm.png",
+    id: "ug-new-vision",
+    src: "tmp/batch33-manual/nv-official.svg",
     explainer:
-      "Green 'mali' pill beside a red 'J' and grey 'et', with tagline 'Numéro 1 au Mali' — Malian digital news masthead.",
+      "Black 'NEW' joined to red 'VISION' in rounded sans-serif — Ugandan daily masthead from newvision.co.ug.",
     licence:
-      "MaliJet masthead trademark bundled from the publisher's official site brand assets (malijet.com) for educational reference in Learn mode.",
+      "New Vision masthead trademark bundled from the publisher's official site brand assets (newvision.co.ug) for educational reference in Learn mode.",
   },
   {
-    id: "zw-new-zimbabwe",
-    src: "tmp/batch32-manual/new-zimbabwe.png",
+    id: "np-the-kathmandu-post",
+    src: "tmp/batch33-manual/kp-logo-color.png",
     explainer:
-      "Circular Victoria Falls sunset framed in Zimbabwe flag colours with a magenta 'New Zimbabwe.com' banner — Zimbabwean digital news crest.",
+      "Black serif 'THE KATHMANDU POST' with a Nepali pagoda emblem above the centre word — English-language Nepali daily masthead.",
     licence:
-      "New Zimbabwe masthead trademark bundled from the publisher's official site brand assets (newzimbabwe.com) for educational reference in Learn mode.",
+      "The Kathmandu Post masthead trademark bundled from the publisher's official CDN brand assets (kathmandupost.com) for educational reference in Learn mode.",
   },
   {
-    id: "ao-novo-jornal",
-    src: "tmp/batch32-manual/novo-jornal-lettering.svg",
+    id: "gy-demerara-waves",
+    src: "tmp/batch33-manual/demerara-waves.png",
     explainer:
-      "White lowercase 'novo jornal' sans-serif wordmark — Angolan independent daily masthead.",
+      "Lime-and-copper wave crest above lowercase 'demerara waves' with tagline 'RIDING ON THE CREST OF TRUTH' — Guyanese digital news masthead.",
     licence:
-      "Novo Jornal masthead trademark bundled from the publisher's official site brand assets (novojornal.co.ao) for educational reference in Learn mode.",
+      "Demerara Waves masthead trademark bundled from the publisher's official site brand assets (demerarawaves.com) for educational reference in Learn mode.",
   },
   {
-    id: "td-alwihda-info",
-    src: "tmp/batch32-manual/alwihda.png",
+    id: "hu-telex",
+    src: "tmp/batch33-manual/telex-fb.png",
     explainer:
-      "Red Arabic 'الوحدة' above blue Latin 'AL WIHDA' on black — Chadian digital news masthead.",
+      "White lowercase serif 'telex' on a navy-to-lime vertical gradient — Hungarian independent news portal wordmark.",
     licence:
-      "Alwihda Info masthead trademark bundled from the publisher's official site brand assets (alwihdainfo.com) for educational reference in Learn mode.",
+      "Telex masthead trademark bundled from the publisher's official site brand assets (telex.hu) for educational reference in Learn mode.",
   },
 ];
 

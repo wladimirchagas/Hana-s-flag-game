@@ -9397,7 +9397,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Demerara Waves Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gy/demerara-waves.png",
+      "logoExplainer": "Lime-and-copper wave crest above lowercase 'demerara waves' with tagline 'RIDING ON THE CREST OF TRUTH' — Guyanese digital news masthead.",
+      "licenceNote": "Demerara Waves masthead trademark bundled from the publisher's official site brand assets (demerarawaves.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://demerarawaves.com/",
         "https://guyana.gov.gy/"
@@ -9970,7 +9973,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Telex Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/hu/telex.png",
+      "logoExplainer": "White lowercase serif 'telex' on a navy-to-lime vertical gradient — Hungarian independent news portal wordmark.",
+      "licenceNote": "Telex masthead trademark bundled from the publisher's official site brand assets (telex.hu) for educational reference in Learn mode.",
+
       "sources": [
         "https://telex.hu/",
         "https://ipi.media/"
@@ -17349,7 +17355,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kantipur Media Group Audience Statement 2023"
       },
       "revenueModel": "Print copy sales, corporate advertising, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/np/the-kathmandu-post.png",
+      "logoExplainer": "Black serif 'THE KATHMANDU POST' with a Nepali pagoda emblem above the centre word — English-language Nepali daily masthead.",
+      "licenceNote": "The Kathmandu Post masthead trademark bundled from the publisher's official CDN brand assets (kathmandupost.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://kathmandupost.com",
         "https://en.wikipedia.org/wiki/The_Kathmandu_Post"
@@ -23945,7 +23954,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Vision Group Annual Report 2023 / Audit Bureau of Circulations"
       },
       "revenueModel": "Commercial print advertising, digital subscriptions, government notices, and retail sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ug/new-vision.svg",
+      "logoExplainer": "Black 'NEW' joined to red 'VISION' in rounded sans-serif — Ugandan daily masthead from newvision.co.ug.",
+      "licenceNote": "New Vision masthead trademark bundled from the publisher's official site brand assets (newvision.co.ug) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.newvision.co.ug",
         "https://en.wikipedia.org/wiki/New_Vision_(newspaper)"
