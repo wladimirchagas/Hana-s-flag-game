@@ -14,7 +14,38 @@ const ROOT = resolve(__dirname, "..");
 
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
-  // filled per batch before running
+  {
+    id: "mg-midi-madagasikara",
+    src: "tmp/batch54-final/mg-midi-madagasikara.jpg",
+    explainer:
+      "Bold lowercase 'midi' in brick-red and 'madagasikara' in black with tagline 'Premier Quotidien National d’Information de Madagascar' — Midi Madagasikara masthead.",
+    licence:
+      "Midi Madagasikara trademark bundled from the publisher's official site brand assets (midi-madagasikara.mg) for educational reference in Learn mode.",
+  },
+  {
+    id: "mc-monaco-hebdo",
+    src: "tmp/batch54-final/mc-monaco-hebdo.svg",
+    explainer:
+      "Black slab-serif 'MONACO' with smaller outlined red 'HEBDO' nested at the lower right — Monaco Hebdo masthead.",
+    licence:
+      "Monaco Hebdo trademark bundled from the publisher's official site brand assets (monaco-hebdo.com) for educational reference in Learn mode.",
+  },
+  {
+    id: "mn-ikon-mn",
+    src: "tmp/batch54-final/mn-ikon-mn.png",
+    explainer:
+      "Four-colour square frame mark beside bold dark 'ikon™' wordmark — Ikon.mn masthead.",
+    licence:
+      "Ikon.mn trademark bundled from the publisher's official site brand assets (ikon.mn) for educational reference in Learn mode.",
+  },
+  {
+    id: "bi-net-press",
+    src: "tmp/batch54-final/bi-net-press.png",
+    explainer:
+      "Black brush-script 'rugamba.Net Press' wordmark — Net Press (Agence Burundaise d'Information) masthead.",
+    licence:
+      "Net Press trademark bundled from the agency's official site brand assets (netpress.bi / netpress.online) for educational reference in Learn mode.",
+  },
 ];
 
 function findObjectSpan(src, id) {

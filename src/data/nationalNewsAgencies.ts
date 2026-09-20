@@ -530,8 +530,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Independent online news agency; local news, political commentary, and civil affairs",
       "readership": {"metric":"Pioneer digital news agency in Burundi","source":"Net Press Archive"},
       "revenueModel": "Digital subscriptions and advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": ["https://www.netpress.bi"],
+      "logo": "newspaper-logos/bi/net-press.png",
+      "logoExplainer": "Black brush-script 'rugamba.Net Press' wordmark — Net Press (Agence Burundaise d'Information) masthead.",
+      "licenceNote": "Net Press trademark bundled from the agency's official site brand assets (netpress.bi / netpress.online) for educational reference in Learn mode.",
+
+      "sources": ["https://www.netpress.bi"]
     }
   ],
   "BJ": [
