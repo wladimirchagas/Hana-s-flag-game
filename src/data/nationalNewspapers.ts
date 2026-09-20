@@ -2190,7 +2190,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "bg-mediapool",
       "countryCode": "BG",
       "name": "Mediapool",
@@ -2206,6 +2205,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Bulgarian news website",
         "source": "https://www.mediapool.bg"
       },
+      "logo": "newspaper-logos/bg/mediapool.svg",
+      "logoExplainer": "White 'MEDIAPOOL' wordmark with grey '.BG' suffix and a small square mark on a black bar — Bulgarian digital news outlet.",
+      "licenceNote": "Mediapool masthead trademark bundled from the publisher's official site brand assets (mediapool.bg/assets/images/logo-simple.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.mediapool.bg"
       ]
@@ -2849,7 +2852,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "bo-el-diario",
       "countryCode": "BO",
       "name": "El Diario",
@@ -2865,6 +2867,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Long-standing Bolivian daily",
         "source": "https://en.wikipedia.org/wiki/El_Diario_(La_Paz)"
       },
+      "logo": "newspaper-logos/bo/el-diario.jpg",
+      "logoExplainer": "Blue 'EL DIARIO' masthead with the Bolivian tricolour between the words and the tagline 'Decano de la Prensa Nacional' — La Paz daily.",
+      "licenceNote": "El Diario logo.jpg from Wikimedia Commons (PD-textlogo; Newspaper logos of Bolivia); brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.eldiario.net",
         "https://en.wikipedia.org/wiki/El_Diario_(La_Paz)"
@@ -6328,7 +6334,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Periódico Hoy Memoria 2023"
       },
       "revenueModel": "Print sales, official legal notices, and advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/do/hoy.png",
+      "logoExplainer": "White slab-serif 'Hoy' wordmark on a cyan field — Dominican Republic daily masthead.",
+      "licenceNote": "Hoy masthead trademark bundled from the publisher's official site brand assets (imagenes.hoy.com.do/static/img/hoy.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://hoy.com.do",
         "https://es.wikipedia.org/wiki/Hoy_(Rep%C3%BAblica_Dominicana)"

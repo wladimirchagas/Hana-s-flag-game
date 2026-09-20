@@ -627,7 +627,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "BNA Institutional Review 2023"
       },
       "revenueModel": "Direct state budget allocation",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bh/bna.png",
+      "logoExplainer": "White dotted shield emblem above Arabic 'وكالة أنباء البحرين' and English 'Bahrain News Agency' on red — Bahrain's national wire.",
+      "licenceNote": "BNA logo (Bna logo.gif) from Arabic Wikipedia; brand mark trademark bundled for educational reference in Learn mode with licenceNote.",
+
       "sources": [
         "https://www.bna.bh",
         "https://en.wikipedia.org/wiki/Bahrain_News_Agency"
@@ -1879,7 +1882,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Palitra Media Audience Report 2024"
       },
       "revenueModel": "Newswire subscription syndication, digital display advertising, and SMS breaking news alerts",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ge/interpressnews.svg",
+      "logoExplainer": "Blue italic 'ipn' monogram with a red square tittle over Georgian 'ინტერპრესნიუსი' — Georgian news agency crest.",
+      "licenceNote": "Interpressnews brand mark trademark bundled from the agency's official site brand assets (interpressnews.ge/static/img/logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.interpressnews.ge",
         "https://en.wikipedia.org/wiki/Interpressnews"
@@ -2574,7 +2580,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ministry of Information Sultanate of Oman 2023"
       },
       "revenueModel": "State government budget allocation",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/om/ona.png",
+      "logoExplainer": "Grey Arabic calligraphy with coral diacritics above coral 'Oman News Agency' — Oman's national wire wordmark.",
+      "licenceNote": "Oman News Agency logo (شعار وكالة الأنباء العمانية.png) from Arabic Wikipedia; brand mark trademark bundled for educational reference in Learn mode with licenceNote.",
+
       "sources": [
         "https://omannews.gov.om",
         "https://en.wikipedia.org/wiki/Oman_News_Agency"
