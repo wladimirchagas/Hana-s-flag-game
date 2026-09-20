@@ -5886,7 +5886,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Palestine Ministry of Information Official Report"
       },
       "revenueModel": "State treasury subvention and international news exchange partnerships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ps/wafa.png",
+      "logoExplainer": "Stacked 'WAFA' mark with Arabic title and 'Palestinian News & Info Agency' strap — the official agency crest.",
+      "licenceNote": "WAFA brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.wafa.ps",
         "https://en.wikipedia.org/wiki/WAFA"
