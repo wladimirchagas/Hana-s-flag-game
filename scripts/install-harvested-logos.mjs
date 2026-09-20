@@ -11,55 +11,31 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 43 — official-site mastheads via Playwright, montage-scanned. */
+/** Visually verified batch 44 — Caribbean portal mastheads, montage-scanned. */
 const MANIFEST = [
   {
-    id: "am-civilnet",
-    src: "tmp/batch43-install/am-civilnet.svg",
+    id: "ag-antigua-news-room",
+    src: "tmp/batch44-install/ag-antigua-news-room.png",
     explainer:
-      "Red sans all-caps 'CIVILNET' with a red square containing a diagonal negative-space N — CivilNet Armenia masthead.",
+      "Black globe line-art behind stacked 'ANTIGUA' over red 'NEWS' and blue 'ROOM' — Antigua News Room masthead.",
     licence:
-      "CivilNet logo trademark bundled from the publisher's official site brand assets (civilnet.am/logos/CivilnetLarge.svg) for educational reference in Learn mode.",
+      "Antigua News Room masthead trademark bundled from the publisher's official site brand assets (antiguanewsroom.com) for educational reference in Learn mode.",
   },
   {
-    id: "ag-antigua-observer",
-    src: "tmp/batch43-install/ag-antigua-observer.png",
+    id: "dm-dominica-news-online",
+    src: "tmp/batch44-install/dm-dominica-news-online.png",
     explainer:
-      "Black serif 'Observer' with an orange-to-yellow flame inside the O, plus small 'by Newco Ltd.' — Antigua Observer masthead.",
+      "Serif 'DOMINICA' with a Dominica-flag O (Sisserou parrot) over green 'News' and red 'ONLINE', tagline 'Independent. Immediate. Trusted.'",
     licence:
-      "Antigua Observer masthead trademark bundled from the publisher's official site brand assets (antiguaobserver.com) for educational reference in Learn mode.",
+      "Dominica News Online masthead trademark bundled from the publisher's official site brand assets (dominicanewsonline.com) for educational reference in Learn mode.",
   },
   {
-    id: "bz-amandala",
-    src: "tmp/batch43-install/bz-amandala.png",
+    id: "gd-now-grenada",
+    src: "tmp/batch44-install/gd-now-grenada.png",
     explainer:
-      "Black serif 'AMANDALA' with satellite-dish figure and newspaper stack flanking the wordmark and tagline \"Belize's Leading Newspaper\".",
+      "Red play-triangle with white negative-space N beside stacked black 'NOW' / 'GRENADA' — Now Grenada masthead.",
     licence:
-      "Amandala masthead trademark bundled from the publisher's official site brand assets (amandala.com.bz) for educational reference in Learn mode.",
-  },
-  {
-    id: "gy-guyana-chronicle",
-    src: "tmp/batch43-install/gy-guyana-chronicle.png",
-    explainer:
-      "Red serif 'CHRONICLE' under black 'GUYANA' with hoatzin-flanked shield emblem and 'The Nation's Paper' tagline.",
-    licence:
-      "Guyana Chronicle masthead trademark bundled from the publisher's official site brand assets (guyanachronicle.com) for educational reference in Learn mode.",
-  },
-  {
-    id: "jo-ammon",
-    src: "tmp/batch43-install/jo-ammon.png",
-    explainer:
-      "Gold calligraphic 'Ammon' with a winged Pegasus on the final n and tagline 'Voice of the Silent Majority'.",
-    licence:
-      "Ammon News masthead trademark bundled from the publisher's official site brand assets (en.ammonnews.net) for educational reference in Learn mode.",
-  },
-  {
-    id: "me-mina",
-    src: "tmp/batch43-install/me-mina.png",
-    explainer:
-      "Black italic 'mina.' wordmark beside a red-and-gold '20 godina od obnove nezavisnosti' commemorative panel — MINA Montenegro agency mark.",
-    licence:
-      "MINA News Agency logo trademark bundled from the agency's official site brand assets (mina.news) for educational reference in Learn mode.",
+      "Now Grenada masthead trademark bundled from the publisher's official site brand assets (nowgrenada.com) for educational reference in Learn mode.",
   },
 ];
 

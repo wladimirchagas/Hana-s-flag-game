@@ -513,7 +513,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ag-antigua-news-room",
       "countryCode": "AG",
       "name": "Antigua News Room",
@@ -529,6 +528,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Antigua news website",
         "source": "https://antiguanewsroom.com"
       },
+      "logo": "newspaper-logos/ag/antigua-news-room.png",
+      "logoExplainer": "Black globe line-art behind stacked 'ANTIGUA' over red 'NEWS' and blue 'ROOM' — Antigua News Room masthead.",
+      "licenceNote": "Antigua News Room masthead trademark bundled from the publisher's official site brand assets (antiguanewsroom.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://antiguanewsroom.com"
       ]
@@ -6192,7 +6195,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Dominica News Online Audience Report 2024"
       },
       "revenueModel": "Digital banner advertising and diaspora community promotions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/dm/dominica-news-online.png",
+      "logoExplainer": "Serif 'DOMINICA' with a Dominica-flag O (Sisserou parrot) over green 'News' and red 'ONLINE', tagline 'Independent. Immediate. Trusted.'",
+      "licenceNote": "Dominica News Online masthead trademark bundled from the publisher's official site brand assets (dominicanewsonline.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://dominicanewsonline.com"
       ]
@@ -8109,7 +8115,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Now Grenada Analytics 2024"
       },
       "revenueModel": "Digital display advertising and local corporate sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gd/now-grenada.png",
+      "logoExplainer": "Red play-triangle with white negative-space N beside stacked black 'NOW' / 'GRENADA' — Now Grenada masthead.",
+      "licenceNote": "Now Grenada masthead trademark bundled from the publisher's official site brand assets (nowgrenada.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://nowgrenada.com"
       ]
