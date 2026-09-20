@@ -31,7 +31,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Premsa Andorrana Annual Report 2023"
       },
       "revenueModel": "Print retail sales, digital advertising, and commercial announcements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ad/diari-d-andorra.png",
+      "logoExplainer": "Blue sans 'Diari d'Andorra' wordmark with a yellow triangular accent on the apostrophe — official masthead from diariandorra.ad.",
+      "licenceNote": "Diari d'Andorra masthead from the publisher's official site brand assets; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.diariandorra.ad",
         "https://en.wikipedia.org/wiki/Diari_d%27Andorra"
@@ -1454,7 +1457,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ABC Central & Eastern Europe 2023"
       },
       "revenueModel": "Print sales, digital display advertising, and commercial classifieds",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ba/dnevni-avaz.png",
+      "logoExplainer": "Black serif 'Dnevni avaz' wordmark with the paper's heraldic dragon emblem at left — masthead from avaz.ba (fill adapted from the site's white SVG for light UI).",
+      "licenceNote": "Dnevni avaz masthead from the publisher's official site (avaz.ba/avaz.svg); brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://avaz.ba",
         "https://en.wikipedia.org/wiki/Dnevni_avaz"
@@ -2569,7 +2575,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "La Nouvelle Tribune Archive"
       },
       "revenueModel": "Print sales and digital display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bj/la-nouvelle-tribune.webp",
+      "logoExplainer": "Deep-red serif 'La Nouvelle Tribune' wordmark beside a red globe grid icon — masthead from lanouvelletribune.info.",
+      "licenceNote": "La Nouvelle Tribune masthead from the publisher's official site brand assets; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://lanouvelletribune.info",
         "https://fr.wikipedia.org/wiki/La_Nouvelle_Tribune_(B%C3%A9nin)"
@@ -22673,7 +22682,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "tl-tatoli",
       "countryCode": "TL",
       "name": "Tatoli",
@@ -22689,6 +22697,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Official Timor-Leste news brand",
         "source": "https://www.tatoli.tl"
       },
+      "logo": "newspaper-logos/tl/tatoli.png",
+      "logoExplainer": "Green serif 'Tatoli' with a globe replacing the o, Timor-Leste flag-coloured rule, and 'Agência Noticiosa de Timor-Leste' subline.",
+      "licenceNote": "Tatoli.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.tatoli.tl"
       ]
