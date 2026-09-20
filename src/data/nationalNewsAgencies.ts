@@ -410,7 +410,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/bd/unb.png",
       "logoExplainer": "Red field with bold white 'UNB' above a black bar reading 'UNITED NEWS OF BANGLADESH' — United News of Bangladesh masthead.",
       "licenceNote": "United News of Bangladesh brand mark trademark bundled from the agency's official site brand assets (unb.com.bd) for educational reference in Learn mode.",
-
       "sources": ["https://www.unb.com.bd/about","https://en.wikipedia.org/wiki/United_News_of_Bangladesh","https://en.banglapedia.org/index.php?title=News_Agencies"]
     }
   ],
@@ -619,7 +618,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/br/agencia-estado.png",
       "logoExplainer": "Agência Estado wordmark / emblem as published on Wikimedia Commons — Brazilian national wire brand mark.",
       "licenceNote": "Agência Estado brand mark trademark bundled from Wikimedia Commons (File:Logo Agência Estado.png) for educational reference in Learn mode.",
-
       "sources": ["https://en.wikipedia.org/wiki/Ag%C3%AAncia_Estado","https://pt.wikipedia.org/wiki/Ag%C3%AAncia_Estado","http://www.ae.com.br/institucional/pag_historia.php"]
     }
   ],
@@ -724,7 +722,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ca/canadian-press.svg",
       "logoExplainer": "The Canadian Press wordmark from thecanadianpress.com — national Canadian newswire brand.",
       "licenceNote": "The Canadian Press brand mark trademark bundled from the agency's official site brand assets (thecanadianpress.com) for educational reference in Learn mode.",
-
       "sources": ["https://www.thecanadianpress.com","https://en.wikipedia.org/wiki/The_Canadian_Press","https://thecanadianencyclopedia.ca/index.php/en/article/canadian-press"]
     }
   ],
@@ -749,7 +746,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/cd/acp.jpg",
       "logoExplainer": "Yellow 'ACP' and 'CONGO' flanking a circular yellow tree emblem on a navy rounded rectangle — Agence Congolaise de Presse wordmark from acpcongo.com.",
       "licenceNote": "ACP Congo trademark bundled from the agency's official site brand assets (acpcongo.com) for educational reference in Learn mode.",
-
       "sources": ["https://acp.cd","https://fr.wikipedia.org/wiki/Agence_congolaise_de_presse"]
     }
   ],
@@ -865,7 +861,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/cn/xinhua.png",
       "logoExplainer": "Blue stacked 'NEWS' beside white Chinese '新华网' with an orange swoosh and xinhuanet.com — Xinhua online portal mark.",
       "licenceNote": "Xinhua News Agency / Xinhuanet emblem trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.xinhuanet.com","https://en.wikipedia.org/wiki/Xinhua_News_Agency"]
     },
     {
@@ -888,7 +883,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/cn/cns.png",
       "logoExplainer": "Red italic 'Ecns.cn' with flame flourish and grey 中新网 — China News Service English portal brand mark.",
       "licenceNote": "China News Service / ECNS brand mark trademark bundled from the agency's English portal brand assets (ecns.cn / chinanews.com.cn) for educational reference in Learn mode.",
-
       "sources": ["https://www.chinanews.com.cn","https://en.wikipedia.org/wiki/China_News_Service"]
     }
   ],
@@ -959,7 +953,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/de/dpa.png",
       "logoExplainer": "Lowercase charcoal 'dpa' beside three bright green dots — Deutsche Presse-Agentur wordmark.",
       "licenceNote": "dpa (Deutsche Presse-Agentur) trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.dpa.com","https://en.wikipedia.org/wiki/Deutsche_Presse-Agentur"]
     },
     {
@@ -980,7 +973,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/de/epd.svg",
       "logoExplainer": "epd Evangelischer Pressedienst wordmark from the Protestant press service site.",
       "licenceNote": "epd brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.epd.de","https://de.wikipedia.org/wiki/Evangelischer_Pressedienst"]
     },
     {
@@ -1001,7 +993,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/de/sid.png",
       "logoExplainer": "SID Sport-Informations-Dienst brand mark from the German sports wire site.",
       "licenceNote": "SID brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.sid.de","https://en.wikipedia.org/wiki/Sport-Informations-Dienst"]
     }
   ],
@@ -1113,7 +1104,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/es/europa-press.svg",
       "logoExplainer": "Europa Press wordmark from the Spanish national wire's official site.",
       "licenceNote": "Europa Press brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.europapress.es","https://en.wikipedia.org/wiki/Europa_Press"]
     },
     {
@@ -1136,7 +1126,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/es/acn.svg",
       "logoExplainer": "Burgundy 'ACN' wordmark — Agència Catalana de Notícies / Catalan News Agency brand from Wikimedia Commons.",
       "licenceNote": "Agència Catalana de Notícies brand mark trademark bundled from Wikimedia Commons (Catalan News Agency logo.svg) for educational reference in Learn mode.",
-
       "sources": ["https://www.acn.cat","https://en.wikipedia.org/wiki/Catalan_News_Agency"]
     }
   ],
@@ -1225,7 +1214,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/gb/pa-media.svg",
       "logoExplainer": "PA Media wordmark from the UK national wire's official brand assets.",
       "licenceNote": "PA Media brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://pa.media","https://en.wikipedia.org/wiki/PA_Media"]
     }
   ],
@@ -1296,7 +1284,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/id/antara.png",
       "logoExplainer": "Maroon stylised Antara emblem beside bold 'ANTARA' with grey tagline 'KANTOR BERITA INDONESIA' — official LKBN Antara masthead from antaranews.com.",
       "licenceNote": "Antara brand mark trademark bundled from the agency's official site brand assets (static.antaranews.com/assets/img/ANTARA-id.svg) for educational reference in Learn mode.",
-
       "sources": ["https://www.antaranews.com","https://en.wikipedia.org/wiki/Antara_(news_agency)"]
     },
     {
@@ -1317,7 +1304,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/id/kbr.svg",
       "logoExplainer": "KBR (Kantor Berita Radio) logo from Wikimedia Commons.",
       "licenceNote": "KBR brand mark trademark bundled from Wikimedia Commons (File:KBR Logo.svg) for educational reference in Learn mode.",
-
       "sources": ["https://kbr.id","https://en.wikipedia.org/wiki/KBR_(news_agency)"]
     }
   ],
@@ -1340,7 +1326,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/in/pti.jpg",
       "logoExplainer": "Red halftone-dot capital 'PTI' on white — Press Trust of India agency mark.",
       "licenceNote": "Press Trust of India trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.ptinews.com","https://en.wikipedia.org/wiki/Press_Trust_of_India"]
     },
     {
@@ -1361,7 +1346,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/in/uni.svg",
       "logoExplainer": "United News of India wordmark from the agency's official site.",
       "licenceNote": "United News of India brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.uniindia.com","https://en.wikipedia.org/wiki/United_News_of_India"]
     },
     {
@@ -1382,7 +1366,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/in/ians.png",
       "logoExplainer": "Sky-blue italic 'IANS' beside green script 'live' — Indo-Asian News Service digital brand mark.",
       "licenceNote": "Indo-Asian News Service brand mark trademark bundled from the agency's official brand assets (ianslive.in / ians.in) for educational reference in Learn mode.",
-
       "sources": ["https://www.ians.in","https://en.wikipedia.org/wiki/Indo-Asian_News_Service"]
     },
     {
@@ -1403,7 +1386,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/in/ani.svg",
       "logoExplainer": "Asian News International logo from Wikimedia Commons.",
       "licenceNote": "Asian News International brand mark trademark bundled from Wikimedia Commons (File:Logo Asian News International.svg) for educational reference in Learn mode.",
-
       "sources": ["https://www.aninews.in","https://en.wikipedia.org/wiki/Asian_News_International"]
     }
   ],
@@ -1467,7 +1449,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ir/fars.jpg",
       "logoExplainer": "Blue Persian 'فارس' with blue/yellow overlapping diamonds, 'FARSNEWS.ir' and orange slogan — Fars News Agency brand.",
       "licenceNote": "Fars News Agency brand mark trademark bundled from Wikimedia Commons (File:Fars News Agency New Logo.jpg) / farsnews.ir for educational reference in Learn mode.",
-
       "sources": ["https://www.farsnews.ir","https://en.wikipedia.org/wiki/Fars_News_Agency"]
     },
     {
@@ -1487,7 +1468,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ir/tasnim.png",
       "logoExplainer": "White Persian calligraphy and 'Tasnim News Agency' on a rounded red square — compact Tasnim brand mark from Wikimedia Commons.",
       "licenceNote": "Tasnim News Agency brand mark trademark bundled from Wikimedia Commons (File:Tasnim News Agency logo 2color rounded square.png) for educational reference in Learn mode.",
-
       "sources": ["https://www.tasnimnews.com","https://en.wikipedia.org/wiki/Tasnim_News_Agency"]
     },
     {
@@ -1508,7 +1488,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ir/isna.jpg",
       "logoExplainer": "ISNA (Iranian Students' News Agency) logo from Wikimedia Commons.",
       "licenceNote": "ISNA brand mark trademark bundled from Wikimedia Commons (File:ISNA logo.jpg) for educational reference in Learn mode.",
-
       "sources": ["https://www.isna.ir","https://en.wikipedia.org/wiki/Iranian_Students%27_News_Agency"]
     },
     {
@@ -1528,7 +1507,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ir/mehr.svg",
       "logoExplainer": "Mehr News Agency wordmark from the agency's official site.",
       "licenceNote": "Mehr News Agency brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.mehrnews.com","https://en.wikipedia.org/wiki/Mehr_News_Agency"]
     },
     {
@@ -1549,7 +1527,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ir/ilna.webp",
       "logoExplainer": "ILNA (Iranian Labour News Agency) brand mark from the agency's official site.",
       "licenceNote": "ILNA brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.ilna.ir","https://en.wikipedia.org/wiki/Iranian_Labour_News_Agency"]
     }
   ],
@@ -1572,7 +1549,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/it/ansa.png",
       "logoExplainer": "Bold slab-serif 'ANSA' with smaller 'it' suffix — Agenzia Nazionale Stampa Associata wordmark.",
       "licenceNote": "ANSA trademark bundled from the agency's official site brand assets (ansa.it) for educational reference in Learn mode.",
-
       "sources": ["https://www.ansa.it","https://en.wikipedia.org/wiki/Agenzia_Nazionale_Stampa_Associata"]
     },
     {
@@ -1593,7 +1569,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/it/agi.png",
       "logoExplainer": "Bold 'AGI' with a yellow chevron above stacked 'AGENZIA ITALIA' — Agenzia Giornalistica Italia wordmark.",
       "licenceNote": "AGI trademark bundled from Wikimedia Commons (AGI logo 2020) for educational reference in Learn mode.",
-
       "sources": ["https://www.agi.it","https://en.wikipedia.org/wiki/Agenzia_Giornalistica_Italia"]
     },
     {
@@ -1613,7 +1588,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/it/adnkronos.svg",
       "logoExplainer": "Adnkronos wordmark from Wikimedia Commons.",
       "licenceNote": "Adnkronos brand mark trademark bundled from Wikimedia Commons (File:Adnkronos Logo.svg) for educational reference in Learn mode.",
-
       "sources": ["https://www.adnkronos.com","https://en.wikipedia.org/wiki/Adnkronos"]
     }
   ],
@@ -1660,7 +1634,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/jp/kyodo.png",
       "logoExplainer": "White 'KYODO' inside a red crescent disc beside dark 'KYODO NEWS' — Kyodo News agency mark.",
       "licenceNote": "Kyodo News trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.kyodonews.jp","https://en.wikipedia.org/wiki/Kyodo_News"]
     },
     {
@@ -1683,7 +1656,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/jp/jiji.svg",
       "logoExplainer": "Jiji Press logo from Wikimedia Commons — Japanese national wire brand mark.",
       "licenceNote": "Jiji Press brand mark trademark bundled from Wikimedia Commons (File:Jiji Press logo.svg) for educational reference in Learn mode.",
-
       "sources": ["https://www.jiji.com","https://en.wikipedia.org/wiki/Jiji_Press"]
     }
   ],
@@ -1857,7 +1829,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/kr/newsis.png",
       "logoExplainer": "Newsis brand mark from the South Korean news agency's official site.",
       "licenceNote": "Newsis brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.newsis.com","https://en.wikipedia.org/wiki/Newsis"]
     }
   ],
@@ -2155,8 +2126,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "National news agency and historical daily paper of record; official government communiqués, national security, diplomacy, and Sahel cooperation",
       "readership": {"metric":"Over 10,000 daily print copies distributed across Bamako and regional capitals, syndicating to regional media","source":"AMAP Rapport d'Activité 2023"},
       "revenueModel": "State subsidies, newspaper sales, and public notice announcements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": ["https://essor.ml","https://fr.wikipedia.org/wiki/L%27Essor_(Mali)"],
+      "logo": "newspaper-logos/ml/amap.webp",
+      "logoExplainer": "Yellow/blue AMAP globe on a carved stool beside 'AGENCE MALIENNE DE PRESSE' and the Malian coat of arms.",
+      "licenceNote": "AMAP (Agence Malienne de Presse) logo trademark bundled from the agency's official site brand assets (amap.ml) for educational reference in Learn mode.",
+      "sources": ["https://essor.ml","https://fr.wikipedia.org/wiki/L%27Essor_(Mali)"]
     }
   ],
   "MM": [
@@ -2440,7 +2413,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/np/rss.png",
       "logoExplainer": "Blue rounded badge with Devanagari 'नेपाल', broadcast arcs and an RSS monogram above a block 'RSS' / 'NEPAL' lockup — Rastriya Samachar Samiti mark.",
       "licenceNote": "RSS (Rastriya Samachar Samiti) trademark bundled from the agency's official site brand assets (rssnepal.org.np, via Wayback Machine) for educational reference in Learn mode.",
-
       "sources": ["https://www.rssnepal.org.np","https://en.wikipedia.org/wiki/Rastriya_Samachar_Samiti"]
     }
   ],
@@ -2549,7 +2521,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/pk/ppi.png",
       "logoExplainer": "White serif 'PPI' on navy-striped field framed by navy bars — Pakistan Press International brand mark.",
       "licenceNote": "Pakistan Press International brand mark trademark bundled from the agency's published brand mark (PPI) for educational reference in Learn mode.",
-
       "sources": ["https://en.wikipedia.org/wiki/Pakistan_Press_International"]
     }
   ],
@@ -2729,7 +2700,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ro/mediafax.png",
       "logoExplainer": "Red 'MEDIAFAX' with grey '35' and tagline 'DE ANI DE JURNALISM INDEPENDENT' — Romanian agency anniversary lockup.",
       "licenceNote": "Mediafax trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.mediafax.ro","https://en.wikipedia.org/wiki/Mediafax"]
     },
     {
@@ -2750,7 +2720,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ro/rador.jpg",
       "logoExplainer": "RADOR (Radio România news agency) brand mark from the agency's official site.",
       "licenceNote": "RADOR brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.rador.ro","https://en.wikipedia.org/wiki/Romanian_Radio_Broadcasting_Company"]
     }
   ],
@@ -2817,7 +2786,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ru/interfax.png",
       "logoExplainer": "Teal Cyrillic 'интерфакс' with a stylised integral-like 'ф' — Interfax agency wordmark.",
       "licenceNote": "Interfax trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.interfax.ru","https://en.wikipedia.org/wiki/Interfax"]
     },
     {
@@ -2840,7 +2808,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ru/rossiya-segodnya.svg",
       "logoExplainer": "Navy Cyrillic 'Россия сегодня' wordmark with red accent — Rossiya Segodnya official brand SVG.",
       "licenceNote": "Rossiya Segodnya brand mark trademark bundled from the agency's official site brand assets (rossiyasegodnya.com) for educational reference in Learn mode.",
-
       "sources": ["https://rossiyasegodnya.com","https://en.wikipedia.org/wiki/Rossiya_Segodnya"]
     }
   ],
@@ -3336,7 +3303,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/tr/dha.png",
       "logoExplainer": "Red stylised 'DHA' with an open-base D and crossbar-less A — Demirören News Agency wordmark.",
       "licenceNote": "DHA (Demirören News Agency) trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.dha.com.tr","https://en.wikipedia.org/wiki/Demir%C3%B6ren_News_Agency"]
     },
     {
@@ -3357,7 +3323,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/tr/iha.svg",
       "logoExplainer": "İHA (İhlas Haber Ajansı) wordmark from the agency's official site.",
       "licenceNote": "İHA brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.iha.com.tr","https://en.wikipedia.org/wiki/%C4%B0hlas_News_Agency"]
     }
   ],
@@ -3423,7 +3388,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ua/unian.svg",
       "logoExplainer": "White geometric Cyrillic 'УНІАН' with a striped microphone capsule over the І — UNIAN agency wordmark.",
       "licenceNote": "UNIAN trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": ["https://www.unian.info","https://en.wikipedia.org/wiki/UNIAN"]
     },
     {
@@ -3501,7 +3465,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/us/upi.svg",
       "logoExplainer": "United Press International wordmark SVG — UPI national wire brand mark.",
       "licenceNote": "United Press International brand mark trademark bundled from the agency's published brand mark / Wikimedia-sourced UPI logo for educational reference in Learn mode.",
-
       "sources": ["https://www.upi.com","https://en.wikipedia.org/wiki/United_Press_International"]
     }
   ],
