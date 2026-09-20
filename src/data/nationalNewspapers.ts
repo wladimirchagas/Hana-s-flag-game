@@ -5362,7 +5362,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -5381,6 +5380,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "National Cabo Verde news brand",
         "source": "https://inforpress.cv"
       },
+      "logo": "newspaper-logos/cv/inforpress.svg",
+      "logoExplainer": "Blue stacked 'infor/press' wordmark beside a red squared globe — Cape Verde Inforpress crest.",
+      "licenceNote": "Inforpress brand mark trademark bundled from the agency's official site brand assets (inforpress.cv/logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://inforpress.cv"
       ]
@@ -14021,7 +14024,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "lv-lsm",
       "countryCode": "LV",
       "name": "LSM.lv",
@@ -14037,6 +14039,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Latvian public news website",
         "source": "https://www.lsm.lv"
       },
+      "logo": "newspaper-logos/lv/lsm.svg",
+      "logoExplainer": "Black 'LSM' bar beside 'Latvijas Sabiedriskais medijs' — Latvian Public Media crest.",
+      "licenceNote": "LSM brand mark trademark bundled from the publisher's official site brand assets (lsm.lv) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.lsm.lv"
       ]
