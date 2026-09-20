@@ -14424,7 +14424,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ma-medias24",
       "countryCode": "MA",
       "name": "Médias24",
@@ -14440,6 +14439,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Moroccan French-language news site",
         "source": "https://medias24.com"
       },
+      "logo": "newspaper-logos/ma/medias24.png",
+      "logoExplainer": "White '24' numerals breaking a dark-red circle — Médias24 (Morocco) brand mark.",
+      "licenceNote": "Médias24 trademark from Wikimedia Commons File:Medias24-logo.jpg, bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://medias24.com"
       ]
@@ -18811,7 +18814,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Palestinian Journalists Syndicate (PJS) Survey"
       },
       "revenueModel": "Print newsstand sales, corporate commercial advertising, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ps/al-ayyam.svg",
+      "logoExplainer": "Geometric Arabic الأيام with a green eight-pointed star above — Al-Ayyam (Palestine) masthead.",
+      "licenceNote": "Al-Ayyam (Palestine) masthead from Wikimedia Commons File:Al-Ayyam, Palestine (2025-07-30).svg (public domain), bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.al-ayyam.ps",
         "https://en.wikipedia.org/wiki/Al-Ayyam_(Palestine)"
@@ -19535,7 +19541,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SATI (Studiul de Audiență și Trafic Internet) 2023"
       },
       "revenueModel": "Digital advertising and multimedia content licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ro/evenimentul-zilei.png",
+      "logoExplainer": "Maroon lowercase 'evz.ro' with a globe in the domain dot and tagline CEL MAI BUN PORTAL DE STIRI — Evenimentul Zilei digital masthead.",
+      "licenceNote": "Evenimentul Zilei / EVZ trademark bundled from the publisher's official site brand assets (evz.ro) for educational reference in Learn mode.",
+
       "sources": [
         "https://evz.ro",
         "https://en.wikipedia.org/wiki/Evenimentul_Zilei"
@@ -19822,7 +19831,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mediascope & RG Corporate 2023"
       },
       "revenueModel": "State budget funding, official legal notices, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ru/rossiyskaya-gazeta.svg",
+      "logoExplainer": "Blue double-headed eagle crest beside serif Cyrillic 'Российская Газета' — Rossiyskaya Gazeta masthead.",
+      "licenceNote": "Rossiyskaya Gazeta trademark from Wikimedia Commons File:Ross g logo.svg, bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://rg.ru",
         "https://en.wikipedia.org/wiki/Rossiyskaya_Gazeta"
@@ -20954,7 +20966,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SOZ Slovenia 2023"
       },
       "revenueModel": "Print sales, local corporate advertising, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/si/vecer.svg",
+      "logoExplainer": "Bold black slab-serif 'VEČER' wordmark — Večer (Slovenia) masthead.",
+      "licenceNote": "Večer trademark bundled from the publisher's official site brand assets (vecer.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://vecer.com",
         "https://en.wikipedia.org/wiki/Ve%C4%8Der"
@@ -24097,7 +24112,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ua-lb-ua",
       "countryCode": "UA",
       "name": "LB.ua",
@@ -24113,6 +24127,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Ukrainian news website",
         "source": "https://en.wikipedia.org/wiki/LB.ua"
       },
+      "logo": "newspaper-logos/ua/lb-ua.png",
+      "logoExplainer": "White serif 'LB' with blue '.ua' over a thin rule and Ukrainian tagline ДОРОСЛИЙ ПОГЛЯД НА СВІТ — LB.ua masthead.",
+      "licenceNote": "LB.ua trademark bundled from the publisher's official site brand assets (lb.ua) for educational reference in Learn mode.",
+
       "sources": [
         "https://lb.ua",
         "https://en.wikipedia.org/wiki/LB.ua"
@@ -24449,7 +24467,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Instituto Verificador de Circulaciones (IVC) / El País Media Pack"
       },
       "revenueModel": "Print sales, digital subscriptions, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/uy/el-pais-uy.svg",
+      "logoExplainer": "Bold blue slab-serif 'EL PAIS' wordmark — El País (Uruguay) masthead.",
+      "licenceNote": "El País (Uruguay) trademark from Wikimedia Commons File:El Pais Uruguay.svg, bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.elpais.com.uy",
         "https://en.wikipedia.org/wiki/El_Pa%C3%ADs_(Uruguay)"
