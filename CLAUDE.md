@@ -1565,6 +1565,7 @@ The widget shows, for a modern country, these rows (each rendered only when its 
 | Freedom House | `country.democracy.freedomHouse` |
 | V-Dem | `country.democracy.vDem` |
 | The Economist | `country.democracy.economist` |
+| Corruption Perceptions Index | `country.democracy.cpi` |
 | Government | `GOVERNMENT_TYPES[code]` (curated local map) |
 
 ### Why this rule exists
