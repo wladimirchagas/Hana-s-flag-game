@@ -450,7 +450,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Observer Media Group Impact Review 2023"
       },
       "revenueModel": "Digital display advertising, commercial radio ads, and sponsored features",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ag/antigua-observer.png",
+      "logoExplainer": "Black serif 'Observer' with an orange-to-yellow flame inside the O, plus small 'by Newco Ltd.' — Antigua Observer masthead.",
+      "licenceNote": "Antigua Observer masthead trademark bundled from the publisher's official site brand assets (antiguaobserver.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://antiguaobserver.com",
         "https://en.wikipedia.org/wiki/Antigua_Observer"
@@ -809,7 +812,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "am-civilnet",
       "countryCode": "AM",
       "name": "CivilNet",
@@ -825,6 +827,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Armenian digital news brand",
         "source": "https://www.civilnet.am"
       },
+      "logo": "newspaper-logos/am/civilnet.svg",
+      "logoExplainer": "Red sans all-caps 'CIVILNET' with a red square containing a diagonal negative-space N — CivilNet Armenia masthead.",
+      "licenceNote": "CivilNet logo trademark bundled from the publisher's official site brand assets (civilnet.am/logos/CivilnetLarge.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.civilnet.am"
       ]
@@ -3579,7 +3585,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Amandala Publishing Review 2023"
       },
       "revenueModel": "Print retail sales and local commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bz/amandala.png",
+      "logoExplainer": "Black serif 'AMANDALA' with satellite-dish figure and newspaper stack flanking the wordmark and tagline \"Belize's Leading Newspaper\".",
+      "licenceNote": "Amandala masthead trademark bundled from the publisher's official site brand assets (amandala.com.bz) for educational reference in Learn mode.",
+
       "sources": [
         "https://amandala.com.bz",
         "https://en.wikipedia.org/wiki/Amandala"
@@ -9330,7 +9339,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Guyana Chronicle Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gy/guyana-chronicle.png",
+      "logoExplainer": "Red serif 'CHRONICLE' under black 'GUYANA' with hoatzin-flanked shield emblem and 'The Nation's Paper' tagline.",
+      "licenceNote": "Guyana Chronicle masthead trademark bundled from the publisher's official site brand assets (guyanachronicle.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://guyanachronicle.com/",
         "https://dpi.gov.gy/"
@@ -11327,7 +11339,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "jo-ammon",
       "countryCode": "JO",
       "name": "Ammon News",
@@ -11343,6 +11354,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Jordanian news website",
         "source": "https://en.wikipedia.org/wiki/Ammon_News"
       },
+      "logo": "newspaper-logos/jo/ammon.png",
+      "logoExplainer": "Gold calligraphic 'Ammon' with a winged Pegasus on the final n and tagline 'Voice of the Silent Majority'.",
+      "licenceNote": "Ammon News masthead trademark bundled from the publisher's official site brand assets (en.ammonnews.net) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.ammonnews.net",
         "https://en.wikipedia.org/wiki/Ammon_News"

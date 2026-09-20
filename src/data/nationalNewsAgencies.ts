@@ -2063,8 +2063,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Montenegro's leading independent news wire agency; provides objective real-time dispatches on parliamentary affairs, EU accession talks, judicial reform, and regional Balkan relations",
       "readership": {"metric":"Syndicated to over 90% of domestic media outlets, radio stations, TV networks, and state bodies in Montenegro","source":"MINA Corporate Profile 2023"},
       "revenueModel": "B2B wire service subscriptions and syndication licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": ["https://mina.news"],
+      "logo": "newspaper-logos/me/mina.png",
+      "logoExplainer": "Black italic 'mina.' wordmark beside a red-and-gold '20 godina od obnove nezavisnosti' commemorative panel — MINA Montenegro agency mark.",
+      "licenceNote": "MINA News Agency logo trademark bundled from the agency's official site brand assets (mina.news) for educational reference in Learn mode.",
+
+      "sources": ["https://mina.news"]
     }
   ],
   "MG": [

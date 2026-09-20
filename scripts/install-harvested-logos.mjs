@@ -11,39 +11,55 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 42 — Commons mastheads, montage-scanned. */
+/** Visually verified batch 43 — official-site mastheads via Playwright, montage-scanned. */
 const MANIFEST = [
   {
-    id: "jo-al-dustour",
-    src: "tmp/batch42-install/jo-al-dustour.jpg",
+    id: "am-civilnet",
+    src: "tmp/batch43-install/am-civilnet.svg",
     explainer:
-      "Black Arabic calligraphy 'الدستور' over a blue Dome of the Rock outline and red Petra Treasury with founding year ١٩٦٧ — Ad-Dustour masthead.",
+      "Red sans all-caps 'CIVILNET' with a red square containing a diagonal negative-space N — CivilNet Armenia masthead.",
     licence:
-      "Ad-Dustour masthead from Wikimedia Commons File:الدستور الاردنية.jpg (fair-use trademark) bundled for educational reference in Learn mode.",
+      "CivilNet logo trademark bundled from the publisher's official site brand assets (civilnet.am/logos/CivilnetLarge.svg) for educational reference in Learn mode.",
   },
   {
-    id: "is-frettablaðið",
-    src: "tmp/batch42-install/is-frettablaðið.svg",
+    id: "ag-antigua-observer",
+    src: "tmp/batch43-install/ag-antigua-observer.png",
     explainer:
-      "White serif all-caps 'FRÉTTABLAÐIÐ' on a deep-blue panel with a thin double border — Fréttablaðið masthead.",
+      "Antigua Observer wordmark from the publisher's Newsco site header — ObserverByNewscoLogo brand asset.",
     licence:
-      "Fréttablaðið masthead from Wikimedia Commons File:Fréttablaðið.svg (fair-use trademark) bundled for educational reference in Learn mode.",
+      "Antigua Observer masthead trademark bundled from the publisher's official site brand assets (antiguaobserver.com) for educational reference in Learn mode.",
   },
   {
-    id: "nz-the-press",
-    src: "tmp/batch42-install/nz-the-press.png",
+    id: "bz-amandala",
+    src: "tmp/batch43-install/bz-amandala.png",
     explainer:
-      "Royal arms (lion and unicorn) over 'DIEU ET MON DROIT' and Latin motto above bold serif 'THE PRESS' — Christchurch The Press masthead.",
+      "Black serif 'AMANDALA' with satellite-dish figure and newspaper stack flanking the wordmark and tagline \"Belize's Leading Newspaper\".",
     licence:
-      "The Press (Christchurch) masthead from Wikimedia Commons File:The Press Christchurch.png (fair-use trademark) bundled for educational reference in Learn mode.",
+      "Amandala masthead trademark bundled from the publisher's official site brand assets (amandala.com.bz) for educational reference in Learn mode.",
   },
   {
-    id: "by-tut-by-archive",
-    src: "tmp/batch42-install/by-tut-by-archive.png",
+    id: "gy-guyana-chronicle",
+    src: "tmp/batch43-install/gy-guyana-chronicle.png",
     explainer:
-      "Red shield with white 'Z' beside black sans 'ZERKALO' — Zerkalo.io successor mark to TUT.BY.",
+      "Red serif 'CHRONICLE' under black 'GUYANA' with hoatzin-flanked shield emblem and 'The Nation's Paper' tagline.",
     licence:
-      "Zerkalo.io wordmark from Wikimedia Commons File:Zerkalo.io.png (fair-use trademark) bundled for educational reference in Learn mode.",
+      "Guyana Chronicle masthead trademark bundled from the publisher's official site brand assets (guyanachronicle.com) for educational reference in Learn mode.",
+  },
+  {
+    id: "jo-ammon",
+    src: "tmp/batch43-install/jo-ammon.png",
+    explainer:
+      "Gold calligraphic 'Ammon' with a winged Pegasus on the final n and tagline 'Voice of the Silent Majority'.",
+    licence:
+      "Ammon News masthead trademark bundled from the publisher's official site brand assets (en.ammonnews.net) for educational reference in Learn mode.",
+  },
+  {
+    id: "me-mina",
+    src: "tmp/batch43-install/me-mina.png",
+    explainer:
+      "Black italic 'mina.' wordmark beside a red-and-gold '20 godina od obnove nezavisnosti' commemorative panel — MINA Montenegro agency mark.",
+    licence:
+      "MINA News Agency logo trademark bundled from the agency's official site brand assets (mina.news) for educational reference in Learn mode.",
   },
 ];
 
