@@ -4212,7 +4212,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "WEMF Circulation Bulletin / TX Group Financial Report 2023"
       },
       "revenueModel": "Paid digital subscriptions, daily print deliveries, and commercial display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ch/tages-anzeiger.svg",
+      "logoExplainer": "Black Fraktur 'Tages Anzeiger' with a blue-and-white shield between the words — Swiss daily Tages-Anzeiger masthead.",
+      "licenceNote": "Logo Tagesanzeiger.svg from German Wikipedia (logo / non-free local file); trademark bundled for educational reference in Learn mode with licenceNote.",
+
       "sources": [
         "https://www.tagesanzeiger.ch",
         "https://en.wikipedia.org/wiki/Tages-Anzeiger"
@@ -9661,7 +9664,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Novi List Nakladnik 2023"
       },
       "revenueModel": "Print sales, subscriptions, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/hr/novi-list.svg",
+      "logoExplainer": "White sans all-caps 'NOVI LIST' on a solid blue bar — Croatian daily Novi list masthead.",
+      "licenceNote": "Novi list Logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.novilist.hr",
         "https://en.wikipedia.org/wiki/Novi_list"
@@ -10677,7 +10683,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tehran Times Media Guide"
       },
       "revenueModel": "State subsidy, print subscription, and advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ir/tehran-times.svg",
+      "logoExplainer": "Red serif 'TEHRANTIMES' wordmark with an 'INTERNATIONAL DAILY' strap — Tehran Times masthead.",
+      "licenceNote": "TehranTimes.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.tehrantimes.com",
         "https://en.wikipedia.org/wiki/Tehran_Times"
@@ -10703,7 +10712,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ettela'at Publishing House"
       },
       "revenueModel": "Print sales, publishing services, and public subsidies",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ir/ettelaat.svg",
+      "logoExplainer": "Orange Persian calligraphy masthead — Ettela'at newspaper wordmark.",
+      "licenceNote": "Ettelaat.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.ettelaat.com",
         "https://en.wikipedia.org/wiki/Ettela%27at"
@@ -10741,7 +10753,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ir-hamshahri",
       "countryCode": "IR",
       "name": "Hamshahri",
@@ -10757,6 +10768,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Among Iran's highest-circulation dailies",
         "source": "https://en.wikipedia.org/wiki/Hamshahri"
       },
+      "logo": "newspaper-logos/ir/hamshahri.png",
+      "logoExplainer": "Dark green geometric Persian calligraphy — Hamshahri newspaper masthead.",
+      "licenceNote": "Hamshahri newspaper logo.gif from Wikimedia Commons (rasterised to PNG); brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.hamshahrionline.ir",
         "https://en.wikipedia.org/wiki/Hamshahri"

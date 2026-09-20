@@ -11,39 +11,63 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 26 — montage-scanned. */
+/** Visually verified batch 27 — montage-scanned. */
 const MANIFEST = [
   {
-    id: "af-tolo-news",
-    src: "tmp/batch26-manual/af/tolo-news.jpg",
+    id: "hr-novi-list",
+    src: "tmp/batch27-manual/novi-list.svg",
     explainer:
-      "White rounded 'TOLO' wordmark on an orange–red field with a Dari/Pashto 'فارسی | پښتو' strap — TOLO News masthead.",
+      "White sans all-caps 'NOVI LIST' on a solid blue bar — Croatian daily Novi list masthead.",
     licence:
-      "TOLOnews خبرهای تازه.jpg from Wikimedia Commons (Wikidata P154); brand mark trademark bundled for educational reference in Learn mode.",
+      "Novi list Logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "ug-daily-monitor",
-    src: "tmp/logo-harvest/ug/daily-monitor.svg",
+    id: "ir-tehran-times",
+    src: "tmp/batch27-manual/tehran-times.svg",
     explainer:
-      "Black serif all-caps 'MONITOR' wordmark with a barred O — Uganda Daily Monitor masthead.",
+      "Red serif 'TEHRANTIMES' wordmark with an 'INTERNATIONAL DAILY' strap — Tehran Times masthead.",
     licence:
-      "Daily Monitor logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "TehranTimes.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "ve-el-nacional",
-    src: "tmp/logo-harvest/ve/el-nacional.svg",
+    id: "ir-ettelaat",
+    src: "tmp/batch27-manual/ettelaat.svg",
     explainer:
-      "White serif all-caps 'EL NACIONAL' on a solid blue bar — Venezuelan daily El Nacional masthead.",
+      "Orange Persian calligraphy masthead — Ettela'at newspaper wordmark.",
     licence:
-      "El-Nacional-Logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "Ettelaat.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "gr-efimerida-ton-syntakton",
-    src: "tmp/batch26-manual/gr/efimerida-ton-syntakton.svg",
+    id: "ir-hamshahri",
+    src: "tmp/batch27-manual/ir-hamshahri.png",
     explainer:
-      "Red triple pen-nib mark beside black 'Η ΕΦΗΜΕΡΙΔΑ' over a red bar 'ΤΩΝ ΣΥΝΤΑΚΤΩΝ' — Efimerida ton Syntakton masthead extracted from efsyn.gr.",
+      "Dark green geometric Persian calligraphy — Hamshahri newspaper masthead.",
     licence:
-      "EfSyn site logo SVG from the publisher's official theme assets (efsyn.gr); trademark bundled for educational reference in Learn mode.",
+      "Hamshahri newspaper logo.gif from Wikimedia Commons (rasterised to PNG); brand mark trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "ch-tages-anzeiger",
+    src: "tmp/batch27-manual/tages-anzeiger.svg",
+    explainer:
+      "Black Fraktur 'Tages Anzeiger' with a blue-and-white shield between the words — Swiss daily Tages-Anzeiger masthead.",
+    licence:
+      "Logo Tagesanzeiger.svg from German Wikipedia (logo / non-free local file); trademark bundled for educational reference in Learn mode with licenceNote.",
+  },
+  {
+    id: "kw-kuna",
+    src: "tmp/batch27-manual/kuna.png",
+    explainer:
+      "Blue circular emblem beside bilingual 'KUNA' / Arabic title and 'Kuwait News Agency' strap — KUNA wire logo.",
+    licence:
+      "KUNA-logo.png from English Wikipedia (fair-use / non-free); trademark bundled for educational reference in Learn mode with licenceNote.",
+  },
+  {
+    id: "ir-irna",
+    src: "tmp/batch27-manual/irna.svg",
+    explainer:
+      "Blue barred mark beside bold 'IRNA' with '1934' in the A — Islamic Republic News Agency logo.",
+    licence:
+      "Islamic Republic News Agency logo.svg from English Wikipedia (fair-use / non-free); trademark bundled for educational reference in Learn mode with licenceNote.",
   },
 ];
 
