@@ -5537,7 +5537,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Haravgi Publishing Data 2023"
       },
       "revenueModel": "Print sales, party subscriptions, and institutional advertisements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cy/haravgi.png",
+      "logoExplainer": "Black Greek ΧΑΡΑΥΓΗ with a small orange sunrise icon — Haravgi Cyprus masthead.",
+      "licenceNote": "Haravgi trademark bundled from the publisher's official site brand assets (dialogos.com.cy/haravgi) for educational reference in Learn mode.",
+
       "sources": [
         "https://dialogos.com.cy/haravgi",
         "https://en.wikipedia.org/wiki/Haravgi"
@@ -14162,7 +14165,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al-Wasat Digital Analytics 2024"
       },
       "revenueModel": "Digital programmatic advertising, print copy sales, and broadcast syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ly/al-wasat.png",
+      "logoExplainer": "Blocky Arabic الوسط with blue accents and Latin 'AL WASAT' — Al-Wasat Libya masthead.",
+      "licenceNote": "Al-Wasat trademark bundled from the publisher's official site brand assets (alwasat.ly) for educational reference in Learn mode.",
+
       "sources": [
         "https://alwasat.ly",
         "https://en.wikipedia.org/wiki/Al-Wasat_(Libyan_newspaper)"
@@ -14792,7 +14798,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "me-rtcng-news",
       "countryCode": "ME",
       "name": "Portal Analitika",
@@ -14808,6 +14813,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Established Montenegrin news website",
         "source": "https://www.analitika.me"
       },
+      "logo": "newspaper-logos/me/rtcng-news.svg",
+      "logoExplainer": "Red disc with a white stylised 'a' beside grey serif 'analitika' — Portal Analitika mark.",
+      "licenceNote": "Portal Analitika trademark bundled from the publisher's official site brand assets (portalanalitika.me) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.analitika.me"
       ]
@@ -15166,7 +15175,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Maliweb Traffic Analytics 2023"
       },
       "revenueModel": "Digital display ads, sponsored articles, and classifieds",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ml/maliweb.png",
+      "logoExplainer": "Red-yellow-green swoosh over 'maliweb.net' inside a white circle — Maliweb site mark.",
+      "licenceNote": "Maliweb trademark bundled from the publisher's official site brand assets (maliweb.net) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.maliweb.net"
       ]
@@ -17880,7 +17892,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "GESE Corporate Profile 2023"
       },
       "revenueModel": "Print sales, legal notices, and commercial display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pa/la-estrella-de-panama.png",
+      "logoExplainer": "Black serif 'LA ESTRELLA DE PANAMÁ' with a sun-over-water crest and red '177' — La Estrella de Panamá masthead.",
+      "licenceNote": "La Estrella de Panamá trademark bundled from the publisher's official site brand assets (laestrella.com.pa) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.laestrella.com.pa",
         "https://es.wikipedia.org/wiki/La_Estrella_de_Panam%C3%A1"
@@ -21431,7 +21446,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Groupe Wal Fadjri 2023"
       },
       "revenueModel": "Print sales, broadcast sponsorships, and advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sn/wal-fadjri.png",
+      "logoExplainer": "Italic black 'Walf' beside red 'Quotidien' — Walf Quotidien masthead.",
+      "licenceNote": "Walf Quotidien trademark bundled from the publisher's official Groupe Walfadjri brand assets (walf-groupe.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.walf-groupe.com",
         "https://en.wikipedia.org/wiki/Wal_Fadjri"
@@ -21653,7 +21671,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SJK Media Directory / De West"
       },
       "revenueModel": "Afternoon retail print sales, classified announcements, and commercial ads",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sr/de-west.png",
+      "logoExplainer": "Bold black 'DE WEST' over light-blue italic 'Dagblad uit en voor Suriname' — De West masthead.",
+      "licenceNote": "De West trademark bundled from the publisher's official site brand assets (dagbladdewest.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://dagbladdewest.com",
         "https://en.wikipedia.org/wiki/De_West"
@@ -23069,7 +23090,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SNIPE Annual Report / Ministère des Affaires Culturelles"
       },
       "revenueModel": "Public legal notices, commercial print advertising, and newsstand distribution",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tn/la-presse.png",
+      "logoExplainer": "Black serif 'La Presse' with a gold quill through the P — La Presse de Tunisie masthead.",
+      "licenceNote": "La Presse trademark bundled from the publisher's official site brand assets (lapresse.tn) for educational reference in Learn mode.",
+
       "sources": [
         "https://lapresse.tn",
         "https://en.wikipedia.org/wiki/La_Presse_de_Tunisie"
@@ -23162,7 +23186,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "tn-kapitalis",
       "countryCode": "TN",
       "name": "Kapitalis",
@@ -23178,6 +23201,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Established Tunisian digital news brand",
         "source": "https://kapitalis.com"
       },
+      "logo": "newspaper-logos/tn/kapitalis.png",
+      "logoExplainer": "Blue-and-red chevron 'K' beside 'Kapitalis' over a red bar reading \"l'actualité AUTREMENT\" — Kapitalis masthead.",
+      "licenceNote": "Kapitalis trademark bundled from the publisher's official site brand assets (kapitalis.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://kapitalis.com"
       ]
@@ -24405,7 +24432,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "IVC Uruguay / Búsqueda Media Kit"
       },
       "revenueModel": "Single-issue print sales, annual corporate subscriptions, and financial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/uy/busqueda.svg",
+      "logoExplainer": "Heavy black all-caps 'BÚSQUEDA' block wordmark — Búsqueda Uruguay masthead.",
+      "licenceNote": "Búsqueda trademark bundled from the publisher's official site brand assets (busqueda.com.uy) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.busqueda.com.uy",
         "https://en.wikipedia.org/wiki/B%C3%BAsqueda_(newspaper)"
@@ -25132,7 +25162,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "vn-lao-dong",
       "countryCode": "VN",
       "name": "Lao Động",
@@ -25148,6 +25177,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Vietnamese national daily",
         "source": "https://en.wikipedia.org/wiki/Lao_Động"
       },
+      "logo": "newspaper-logos/vn/lao-dong.png",
+      "logoExplainer": "Bold red 'LAO ĐỘNG' with a starred O in ĐỘNG — Lao Động Vietnam masthead.",
+      "licenceNote": "Lao Động trademark bundled from the publisher's official site brand assets (laodong.vn) for educational reference in Learn mode.",
+
       "sources": [
         "https://laodong.vn",
         "https://en.wikipedia.org/wiki/Lao_Động"
