@@ -15614,7 +15614,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "CRIDEM Media Kit 2023"
       },
       "revenueModel": "Web display advertising and corporate communications",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mr/cridem.png",
+      "logoExplainer": "Golden upward crescent and radiant sun on a green field — CRIDEM site brand mark.",
+      "licenceNote": "CRIDEM trademark bundled from the publisher's official site brand assets (cridem.org) for educational reference in Learn mode.",
+
       "sources": [
         "https://cridem.org"
       ]
@@ -18330,7 +18333,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "pg-emt",
       "countryCode": "PG",
       "name": "EMTV News (digital)",
@@ -18346,6 +18348,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major PNG news brand",
         "source": "https://emtv.com.pg"
       },
+      "logo": "newspaper-logos/pg/emt.jpg",
+      "logoExplainer": "Yellow Bird of Paradise silhouette on a red-glow circle beside yellow 'EM' and white 'TV' block letters — EMTV Online masthead.",
+      "licenceNote": "EMTV trademark bundled from the broadcaster's official site brand assets (emtv.com.pg) for educational reference in Learn mode.",
+
       "sources": [
         "https://emtv.com.pg"
       ]
@@ -25617,7 +25623,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -25636,6 +25641,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Official Yemen news brand",
         "source": "https://www.saba.ye"
       },
+      "logo": "newspaper-logos/ye/saba-news.jpg",
+      "logoExplainer": "Blue Arabic سبا wordmark over orange 'SABA NET' with grey Arabic agency caption — Yemen News Agency (Saba) masthead.",
+      "licenceNote": "Saba Net trademark bundled from the agency's official site brand assets (saba.ye) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.saba.ye"
       ]
