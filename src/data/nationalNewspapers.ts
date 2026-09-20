@@ -2740,7 +2740,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Deber Media Kit 2023"
       },
       "revenueModel": "Print sales, display advertising, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bo/el-deber.png",
+      "logoExplainer": "Green lowercase 'eldeber' wordmark with an orange period — El Deber (Bolivia) masthead.",
+      "licenceNote": "EL DEBER PERD BOL.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://eldeber.com.bo",
         "https://en.wikipedia.org/wiki/El_Deber"
@@ -4697,7 +4700,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "People's Daily Annual Report 2023"
       },
       "revenueModel": "State institutional subscriptions, official public notices, and digital media advertising",
-      "noImageReason": "Harvested asset was People's Daily Online (人民网 / en.people.cn), not the Renmin Ribao (人民日报) newspaper masthead. Official publisher sites and Wikimedia Commons were checked for the newspaper's own nameplate; none confidently sourced on this pass — listed with no image rather than the wrong sister-brand logo.",
+      "logo": "newspaper-logos/cn/people-s-daily.svg",
+      "logoExplainer": "Red calligraphic masthead 人民日报 (Renmin Ribao) in Mao Zedong's brush style — People's Daily logo from Wikimedia Commons.",
+      "licenceNote": "People's Daily logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "http://en.people.cn",
         "https://en.wikipedia.org/wiki/People%27s_Daily"
@@ -6596,7 +6602,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Similarweb & Primicias Analytics 2024"
       },
       "revenueModel": "Digital advertising, corporate brand partnerships, and investigative grants",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ec/primicias.png",
+      "logoExplainer": "Black stacked sans 'PRI / MI / CIAS' with a light-blue bar under the C — Primicias Ecuador masthead.",
+      "licenceNote": "Logo primicias.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.primicias.ec"
       ]
