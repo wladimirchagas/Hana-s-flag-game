@@ -3433,7 +3433,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Sudan Ministry of Information Annual Review"
       },
       "revenueModel": "State budget subvention and institutional wire subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sd/suna.png",
+      "logoExplainer": "Sky-blue 'SUNA' with a red triangle on a blue arc above grey English and Arabic agency names on black — Sudan's national wire.",
+      "licenceNote": "SUNA Logo.png from Arabic Wikipedia; brand mark trademark bundled for educational reference in Learn mode with licenceNote.",
+
       "sources": [
         "https://suna-sd.net",
         "https://en.wikipedia.org/wiki/Sudan_News_Agency"
@@ -3672,7 +3675,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Rapport d'Activité de l'Agence TAP / Présidence du Gouvernement"
       },
       "revenueModel": "State public service subvention and commercial media wire subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tn/tap.jpg",
+      "logoExplainer": "White Arabic 'وكالة تونس إفريقيا للأنباء' and French 'AGENCE TUNIS AFRIQUE PRESSE' on a blue field with a TAP monogram and globe — Tunisia's national wire.",
+      "licenceNote": "Tap logo2.jpg from Arabic Wikipedia; brand mark trademark bundled for educational reference in Learn mode with licenceNote.",
+
       "sources": [
         "https://www.tap.info.tn",
         "https://en.wikipedia.org/wiki/Tunis_Afrique_Presse"
