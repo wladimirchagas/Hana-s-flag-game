@@ -3705,12 +3705,41 @@ copy to other outlets vs public distribution as the product.
    datasets. The newspaper check already fails names that read as news agency / wire /
    press agency; keep that guard, and apply this rule when adding or moving entries.
 
+### Coverage notes — countries without a wire, and countries with several
+
+**Countries without a national news agency (honest gaps — do not invent a retailer to
+fill the slot):**
+
+| Country / group | Why absent |
+|-----------------|------------|
+| Liechtenstein | No dedicated national newswire; relies on foreign media and small local outlets |
+| Monaco | Relies on French agencies and local bureaux; no dedicated national newswire |
+| Vatican City | Official press/communication organs (e.g. Vatican News) exist, but there is no commercial or state newswire in the traditional wholesaler sense |
+| New Zealand | NZPA ceased in 2011; no single primary national wire has replaced it |
+| Pacific microstates (Kiribati, Marshall Islands, FSM, Nauru, Palau, Tuvalu) | No independent domestic newswire; rely on regional networks (e.g. PACNEWS) or foreign agencies. Nauru's Government Information Office / bulletin is **not** a news agency — do not re-add it |
+
+**San Marino** is an edge case that *does* have a registered daily information agency
+(SMNA, 2016, under Law 211/2014) — it belongs in `nationalNewsAgencies.ts`.
+
+**Canada** has a single national agency — The Canadian Press — not zero and not several.
+
+**Countries with more than one national news agency** (state + private pairs, dual
+central wires, or specialized national wires) may list every genuine wholesaler. Do not
+drop a real wire to force a one-per-country rule. Ownership badges (State / Official /
+Private / Public / Cooperative / Regional / Independent / Government) must show on every
+agency card and on the Ownership row of `NewsAgencyDetails` via `agencyOwnershipBadge()`
+(`src/lib/nationalNewsAgencies.ts`). Prefer an explicit `ownershipKind` when the short
+label would otherwise be ambiguous.
+
 ### Enforcement
 
 There is no separate automated "wholesaler vs retailer" classifier — that judgement needs
 the organisation's remit. The guard is this rule plus the existing cross-dataset name
 guards in `check-national-newspapers.mjs`. When reviewing any PR that adds or moves a
 media entry, confirm the core business model matches the target dataset before merging.
+`scripts/check-national-news-agencies.mjs` must keep validating schema/logos; badge
+rendering is guarded by `scripts/check-grid-content-types.mjs` referencing
+`agencyOwnershipBadge`.
 
 ## Commercial airline logos: show brand emblems, never route maps or aircraft photos — hard rule, do not override without approval
 

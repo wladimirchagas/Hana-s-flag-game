@@ -11,7 +11,7 @@ import {
 import { airlinesForCountry } from "./commercialAirlines";
 import { broadcastersForCountry } from "./publicBroadcasters";
 import { tourismLogosForCountry } from "./tourismLogos";
-import { newsAgenciesForCountry } from "./nationalNewsAgencies";
+import { newsAgenciesForCountry, agencyOwnershipBadge } from "./nationalNewsAgencies";
 import { newspapersForCountry } from "./nationalNewspapers";
 import {
   coalitionForParty,
@@ -79,11 +79,15 @@ export function chooserItemsForCountry(
         image: t.logo ?? null,
       }));
     case "newsagency":
-      return newsAgenciesForCountry(countryCode).map((n) => ({
-        id: n.id,
-        name: n.name,
-        image: n.logo ?? null,
-      }));
+      return newsAgenciesForCountry(countryCode).map((n) => {
+        const badge = agencyOwnershipBadge(n);
+        return {
+          id: n.id,
+          name: n.name,
+          image: n.logo ?? null,
+          badges: [{ label: badge.label, kind: badge.kind }],
+        };
+      });
     case "newspaper":
       return newspapersForCountry(countryCode).map((n) => ({
         id: n.id,

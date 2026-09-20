@@ -8,6 +8,32 @@
  * class — see CLAUDE.md "National news agencies are wholesalers, not retailers".
  */
 
+/**
+ * Short ownership badge shown on agency cards / the detail panel.
+ * Prefer an explicit `ownershipKind` on the entry; otherwise
+ * `agencyOwnershipBadge()` classifies from `owner.type`.
+ */
+export type NewsAgencyOwnershipKind =
+  | "state"
+  | "official"
+  | "private"
+  | "public"
+  | "cooperative"
+  | "regional"
+  | "independent"
+  | "government";
+
+export const NEWS_AGENCY_OWNERSHIP_LABELS: Record<NewsAgencyOwnershipKind, string> = {
+  state: "State",
+  official: "Official",
+  private: "Private",
+  public: "Public",
+  cooperative: "Cooperative",
+  regional: "Regional",
+  independent: "Independent",
+  government: "Government",
+};
+
 export type NewsAgency = {
   /** Stable unique identifier (e.g. "au-aap", "my-bernama") */
   readonly id: string;
@@ -41,6 +67,11 @@ export type NewsAgency = {
     readonly name: string;
     readonly type: string;
   };
+  /**
+   * Short ownership badge kind (State / Official / Private / …).
+   * When omitted, derived from `owner.type` by `agencyOwnershipBadge()`.
+   */
+  readonly ownershipKind?: NewsAgencyOwnershipKind;
   /** Editorial stance and remit */
   readonly editorialStance: string;
   /** Comparable audience and reach metrics */
