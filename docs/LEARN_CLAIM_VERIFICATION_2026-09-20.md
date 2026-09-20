@@ -1,10 +1,20 @@
 # Learn claim and artwork verification — 20 September 2026
 
-**Universal verification is not complete.** This report records completed full-dataset comparisons and new image/metadata findings. It does not certify all 4,480 records, every sentence, every historical date, every boundary or all artwork as correct. Unchecked and unresolved claims remain explicitly unverified; an image decoding successfully or matching a third-party download does not establish authenticity.
+**Universal verification is not complete.** This report records completed full-dataset comparisons and new image/metadata findings. It does not certify all 4,638 records in the seven large registries at `db3ba05`, every sentence, every historical date, every boundary or all artwork as correct. Unchecked and unresolved claims remain explicitly unverified; an image decoding successfully or matching a third-party download does not establish authenticity.
 
 This supplements [the original audit](LEARN_FACTUAL_AUDIT_2026-09-13.md) and [the continuation findings F40–F59](LEARN_FACTUAL_AUDIT_2026-09-19.md). No application data was changed. The evidence ledgers below are intended to preserve both positive verification and failures for subsequent work.
 
-## Exact revision and new changes
+## Latest reconciliation — application revision db3ba05
+
+The audit now includes application changes through **`db3ba0559016b20bfd0243ef13b1d16413979b33`**. Audit-document commits after this hash are separate from application changes. The sections below that describe `43cfd13` retain their historical denominators.
+
+Two further deltas were inspected: `43cfd13` → `d130b10` (409 additional images, two new newspaper-selection scripts, installer changes and registry changes), and `d130b10` → `db3ba05` (74 additional images, agency-category cleanup, grid rendering/CSS and checker changes). All **483** additional image blobs were fetched at their pinned hashes and decoded; every image was visually screened. The corresponding **503 record references** (428 + 75) were read. This is complete screening of these deltas, not certification that all depicted identities are correct.
+
+At `db3ba05`, newspapers contain **937 records, 612 with images**; agencies contain **128 records, 113 with images**. **340 no-image records** remain across these two registries. The latest cleanup removes 60 agency entries and adds ten newspaper entries. Removal closes that entry’s agency-category problem, but does not verify the migrated facts or image. All five earlier F60 wrong-entity logos and all 25 further F64 wrong-entity logos remain referenced, unchanged.
+
+The previous deployed UI check established `63adaf3`. Repository reconciliation alone does not establish which newer revision is publicly deployed. No application data or artwork was changed by this audit.
+
+## Earlier reconciliation — revision 43cfd13
 
 Previous audited application revision: `63adaf34cbe32bc20c4362fe2636a1cd7bc5371b`. This pass also reconciles the three subsequent application commits through **`43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67`**, after the earlier audit-save commits. The new delta contains **231 paths: 227 added newspaper/agency images, two added scripts, and two modified registries**. Every downloaded file matched its pinned Git blob hash. All 227 images decoded and were visually read, together with all 227 accompanying descriptions.
 
@@ -22,6 +32,7 @@ The most recent deployed UI previously inspected showed `63adaf3`. **This pass d
 | Newly added media images | 227 | All exact blobs decoded and visually screened; five wrong entities and one additional conflict with current publisher branding identified | Visual screening is not primary-source certification of all remaining identities |
 | New media image descriptions | 227 | Ten direct visual-description conflicts; five variant/rendering caveats recorded | No-conflict observations do not verify the prose's institutional or historical claims |
 | Exact Commons artwork references in new media records | 85 | All requested; metadata recovered for 79; six unresolved | Commons records are evidence about the cited artwork, not blanket authority for official brand status |
+| V-Dem v16 bundled entries | 173 | All scores and regime labels agree; all ranks/rank changes consistent with same-version tied-rank ranges | 2026 release, 2025 observations; PS is West Bank only; report-table differences are not treated as factual errors |
 | GICG passport image provenance | 188 | **188/188 live source hashes match the manifest** | Third-party source consistency only; official issuance series/currentness not established |
 
 The GDP and Freedom House counts are individual field comparisons, not merely file counts or sampled countries. The media ledger identifies the extent of each individual review.
@@ -131,14 +142,94 @@ Do not collapse first-issued date, last-issued date and expiry/validity into a s
 
 F02's Japanese cover-symbol error and F14's missing version/period information remain open. No passport has been newly certified as a current official design solely because its source hash matches.
 
+## F64 — 25 further wrong-entity logos in the newer media batches (P1)
+
+Each item below is an actual bundled image, not a hypothetical name collision. The cited artwork metadata, readable image and/or publisher HTML identifies a different entity. These are **in addition to F60’s five**. All 25 remain in the current pinned application revision. Country and domain identity must be checked before a matching acronym or publication name is accepted.
+
+| Record | What the bundled image actually represents | Evidence |
+|---|---|---|
+| `al-panorama` | German NDR/Das Erste Panorama television programme, not the Albanian newspaper. | [Source](https://commons.wikimedia.org/wiki/File:Panorama-Logo.svg) |
+| `ba-klix` | TELUS Digital advertiser logo, not Klix.ba. Exact bundled bytes match the advertiser asset on Klix.ba; its img alt identifies TELUS Digital. | [Source](https://www.klix.ba) |
+| `bo-la-razon` | Spanish La Razón (larazon.es), not the Bolivian newspaper. | [Source](https://commons.wikimedia.org/wiki/File:La_Raz%C3%B3n_logo.svg) |
+| `bs-tribune` | Indian The Tribune (tribuneindia.com), not The Tribune of the Bahamas. | [Source](https://commons.wikimedia.org/wiki/File:The_Tribune_logo.jpg) |
+| `cm-le-messager` | French Le Messager (lemessager.fr), not the Cameroonian newspaper. | [Source](https://commons.wikimedia.org/wiki/File:Logo_Le_Messager.svg) |
+| `cv-a-semana` | Colombian Semana 35th-anniversary artwork, not Cape Verde’s A Semana. | [Source](https://commons.wikimedia.org/wiki/File:Logo-semana.svg) |
+| `fi-aamulehti` | Visible HELSINGIN SANOMAT masthead, not Aamulehti. | [Source](https://www.aamulehti.fi) |
+| `gm-daily-observer-gambia` | Bangladeshi Daily Observer (observerbd.com), not the Gambian publication. | [Source](https://commons.wikimedia.org/wiki/File:The_Daily_Observer.jpg) |
+| `hn-diario-tiempo` | Argentine Diario El Tiempo (diarioeltiempo.com.ar), not Honduras’s Diario Tiempo. | [Source](https://commons.wikimedia.org/wiki/File:Logo_Diario_El_Tiempo.png) |
+| `hn-la-tribuna` | Historical Paraguayan La Tribuna photograph; cited file use identifies Paraguay and visible nameplate names director Carlos Ruiz Apezteguia. Not a current Honduran masthead. | [Source](https://commons.wikimedia.org/wiki/File:Logo_La_Tribuna.jpg) |
+| `jo-al-ghad` | AlGhad TV logo (alghad.tv), not the Jordanian newspaper Al Ghad. | [Source](https://commons.wikimedia.org/wiki/File:AlGhad_TV.svg) |
+| `mu-l-express` | French L’Express magazine artwork; cited source issue numbers and file use concern the French publication, not Mauritius’s daily. | [Source](https://commons.wikimedia.org/wiki/File:Logo_L%27Express.svg) |
+| `mv-avas` | Association of Voluntary Actions for Society (AVAS), not the Maldivian news website. | [Source](https://commons.wikimedia.org/wiki/File:Logo_of_AVAS.jpg) |
+| `na-new-era` | New Era headwear brand mark, not Namibia’s New Era newspaper. Official manufacturer and newspaper sites corroborate different identities. | [Source](https://commons.wikimedia.org/wiki/File:New-Era-Logo.jpg) |
+| `ng-the-punch` | Nigeria Police emblem, not The Punch masthead. The publisher page identifies the police image as an article thumbnail. | [Source](https://punchng.com) |
+| `ng-thisday` | Federal Roads Maintenance Agency (FERMA) logo, not THISDAY. Exact bytes match the publisher’s FERMA article thumbnail. | [Source](https://www.thisdaylive.com) |
+| `nz-the-post` | The Post film title artwork; Japanese file description and movie-logo category identify the film, not New Zealand’s newspaper. | [Source](https://commons.wikimedia.org/wiki/File:The_post_logo.png) |
+| `pg-loop-png` | Loops.video social-video software logo, not Loop PNG news. | [Source](https://commons.wikimedia.org/wiki/File:Loops_logo.png) |
+| `pt-expresso` | EXPRESSO German industrial equipment company logo, not Portugal’s Expresso weekly; primary expresso.de brand corroborates it. | [Source](https://commons.wikimedia.org/wiki/File:EXPRESSO_Logo.svg) |
+| `py-abc-color` | American Broadcasting Company’s historical colour-TV logo, not Paraguay’s ABC Color. | [Source](https://commons.wikimedia.org/wiki/File:ABC_color_logo.jpg) |
+| `by-belta` | Japanese BonBelta retail brand, not the Belarusian news agency BelTA. | [Source](https://commons.wikimedia.org/wiki/File:BonBelta.svg) |
+| `bw-bopa` | Danish resistance group BOPA, not Botswana Press Agency. | [Source](https://commons.wikimedia.org/wiki/File:BOPA_logo.svg) |
+| `ci-aip` | American Institute of Physics, not Agence Ivoirienne de Presse. | [Source](https://commons.wikimedia.org/wiki/File:AIP_Logo.png) |
+| `ke-kna` | German Katholische Nachrichten-Agentur, spelled out in the asset, not Kenya News Agency. | [Source](https://commons.wikimedia.org/wiki/File:KNA-Logo.svg) |
+| `ng-nan` | All Progressives Congress political-party logo, not News Agency of Nigeria. NAN homepage uses an APC article thumbnail as well as a separate NAN logo. | [Source](https://nannews.ng) |
+
+The Klix image is byte-for-byte identical to `https://static.klix.ba/logos/logo_1759913845.png`, whose publisher HTML identifies TELUS Digital. THISDAY’s bundled image exactly matches its FERMA article thumbnail. These cases demonstrate that downloading from the correct publisher domain does not establish that the selected asset is that publisher’s logo. The new prose’s claim of official identity is false for these records; 155 of the 428 new references additionally say “visually verified,” which is not reliable evidence of a successful identity check.
+
+**Required change:** quarantine these assets from the relevant Learn cards until the intended entity is verified. Reject article images, adverts, unrelated footer brands and acronym/name matches without an entity match. Store exact source asset URLs and observed roles; retain an explicit no-image state when identity cannot be established.
+
+## F65 — asset role, edition and period are still misrepresented (P1/P2)
+
+The following ten records have a wrong or unspecified artwork role. A related corporate mark is not automatically the named publication’s masthead.
+
+| Record | Observed artwork / limitation |
+|---|---|
+| `ar-perfil` | PERIODISMO PURO slogan/programme artwork; the PERFIL masthead is absent. Record exact intended variant before claiming a newspaper masthead. |
+| `at-salzburger-nachrichten` | Publisher-branded Die gefragte Frau feature/podcast artwork, not the general newspaper masthead. |
+| `co-el-tiempo` | Bag-shaped utility/shop icon, not a visible EL TIEMPO masthead; precise source role unresolved. |
+| `dk-kristeligt-dagblad` | LÆSEKREDS reading-club mark, not the newspaper masthead. |
+| `gq-ahora-eg` | Malabo 2019 Annual Meetings graphic dated 11–14 June, not AhoraEG masthead. |
+| `id-kompas` | Kompas Gramedia corporate-group logo, not the Kompas newspaper masthead. |
+| `nl-algemeen-dagblad` | DPG Media corporate-group logo, not Algemeen Dagblad masthead. |
+| `nl-trouw` | DPG Media corporate-group logo, not Trouw masthead. |
+| `sg-the-new-paper` | SPH Media corporate-group logo, not The New Paper masthead. |
+| `sl-slena` | Sierra Leone Ministry of Information and Civic Education mark, not a SLENA-specific agency mark. |
+
+Other assets need explicit variant metadata: anniversary artwork for ABI, Fana, Kyunghyang, Zakon, Virakesari, The Analyst, Hoy (Paraguay), and Slovenske novice; portal/network variants for Guangming, Al-Ahram, Yedioth Ahronoth/ynet and Ma’an. A commemorative numeral is not necessarily fabricated, but cannot silently stand for an undated standard masthead. El Universo’s SVG clips its name in the static renderer; a browser defect is **not** asserted without a browser comparison.
+
+The 428-reference ledger attempts all **77 exact Commons references (75 distinct file pages)** and retrieves **74/75 pages**. The cited `APS Sénégal logo.png` page is unresolved (HTTP 404); this alone does not prove the depicted APS logo false. The other **351 references lack an exact Commons file citation** and commonly provide only a publisher homepage/generic source assertion. Licence terms, authors and transformation history remain distinct from trademark ownership and educational purpose.
+
+## F66 — new newspaper-selection code repeats unsupported defaults (P1)
+
+The `d130b10` selection batches add **250 records** and remove 42. Among the additions, **192** have `frequency: "Daily newspaper"`; **83** of those simultaneously have `format: "Digital news portal"`. **176** receive the same generic advertising/subscription/print-sales revenue formula. These counts are not proof that every individual value is false; the problem is that the helper supplies factual defaults without field-level evidence.
+
+Concrete counterexamples are `am-azatutyun`, `kg-azattyk`, and `kz-azattyq`, all labelled daily newspapers. RFE/RL identifies them as radio/multimedia services on its [Armenian](https://about.rferl.org/service/armenian-service/), [Kyrgyz](https://about.rferl.org/service/kyrgyz-service/), and [Kazakh](https://about.rferl.org/service/kazakh-service/) pages. The Armenian record also says founded **1950**, while the service’s own history gives **1953**. The Kyrgyz and Kazakh 1953 values agree with their service histories; do not replace correct values merely because a neighbouring field is wrong.
+
+The helper also manufactures a narrative that official sites and Commons were searched whenever no image is supplied. This repeats F58: absence of an image cannot establish that a search occurred. Store `unverified`/`not sourced`, not an invented work history. Likewise, “leading” or “highest traffic” claims need a defined metric, population, comparison set, date and source; a homepage URL does not substantiate a ranking.
+
+**Required change:** make media type, publication frequency, revenue sources and launch date separately sourced, nullable fields. Permit a multimedia news outlet where that is the intended scope, and label it accurately in the UI. Do not require five entries at the expense of factual confidence. Preserve print founding, digital launch, brand rename and relaunch dates separately.
+
+## V-Dem complete dataset comparison and F67 scope metadata (P2)
+
+All **173 bundled entries** were compared with the publisher-recommended `vdemdata` v16 dataset, pinned to source commit `f4dd26922e658442524dfd954bf14f7ebe622d5d`; the downloaded RData also matches Git blob `5a472621427337cebf032a9c4e397e0bedd57aea`. **173/173 scores** agree within two-decimal rounding and **173/173 regime labels** agree with `v2x_regime`. Every rank is inside its tied-rank interval across all 179 source units, and every rank change is compatible with 2024 → 2025 ranks within the same dataset version.
+
+Table A2 in the 2026 PDF differs from the app in seven rounded scores and 15 ordinal ranks. The underlying dataset supports the app values, so these differences are **not counted as seven/15 app errors**. The ledger preserves both comparisons. A tied-rank interval establishes consistency, not the exact unpublished tie-breaking algorithm used by the app.
+
+F67 concerns presentation: `year: 2026` is the **release year**, whereas these are **2025 observations**. The `PS` entry maps specifically to **Palestine/West Bank**, while V-Dem separately codes Gaza. A country-wide Palestine label without this scope note is imprecise. Store `releaseYear`, `observationYear`, `datasetVersion`, `sourceUnit` and rank methodology separately. Do not compare absolute scores from different V-Dem versions.
+
+Sources: [publisher dataset page](https://www.v-dem.net/data/the-v-dem-dataset/), [v16 codebook §5.1.1](https://www.v-dem.net/documents/70/codebook_v16.pdf), [pinned dataset](https://github.com/vdeminstitute/vdemdata/blob/f4dd26922e658442524dfd954bf14f7ebe622d5d/data/vdem.RData), [2026 report Table A2](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf). Dataset attribution: Coppedge et al. (2026), V-Dem Country-Year Dataset v16, DOI `10.23696/vdemds26`; source data licence CC BY-SA 4.0.
+
 ## Evidence files and remaining work
 
+- [V-Dem claim ledger](audit/VDEM_CLAIM_VERIFICATION_2026-09-20.json): all 173 entries, report/dataset comparisons, ranks and scope.
+- [World Bank source snapshot](audit/WORLD_BANK_SOURCE_SNAPSHOT_2026-09-20.json): dated source observations behind the GDP comparisons.
+- [Additional media ledger through d130](audit/MEDIA_D130_CLAIM_VERIFICATION_2026-09-20.json): 409 images, 428 record references and individual verdicts.
 - [GDP claim ledger](audit/GDP_CLAIM_VERIFICATION_2026-09-20.json): all 766 values, source URLs and outcomes.
 - [Freedom House claim ledger](audit/FREEDOM_HOUSE_CLAIM_VERIFICATION_2026-09-20.json): all 193 scores/statuses, source methods and separate rank status.
 - [Media image ledger](audit/MEDIA_IMAGE_VERIFICATION_2026-09-20.json): all 227 new assets, hashes, exact review scope, source-page observations and individual findings.
 - [Passport origin ledger](audit/PASSPORT_ORIGIN_VERIFICATION_2026-09-20.json): all 188 source-hash comparisons and explicit limits.
 - [Revision delta](audit/REVISION_43CFD13_DELTA_2026-09-20.json): all 231 changed paths and pinned blob identifiers.
 
-Still **not universally verified**: all prose and metadata in the seven registries; official identity/currentness for the remaining images; each flag's legal adoption and symbolic interpretation; all arms blazons; passport variants; party leadership/seats/ideology and logos; airline/broadcaster ownership and brands; all population estimates and methods; V-Dem/EIU values; complete tourism/media claims; every historical territorial assignment and polygon boundary. The earlier structural map checks and visual samples cannot be relabelled as claim-level verification. Prior findings F01–F59 remain applicable except where a specific closure was recorded.
+Still **not universally verified**: all prose and metadata in the seven registries; official identity/currentness for the remaining images; each flag's legal adoption and symbolic interpretation; all arms blazons; passport variants; party leadership/seats/ideology and logos; airline/broadcaster ownership and brands; all population estimates and methods; EIU values and V-Dem presentation/scope metadata; complete tourism/media claims; every historical territorial assignment and polygon boundary. The earlier structural map checks and visual samples cannot be relabelled as claim-level verification. Prior findings F01–F59 remain applicable except where a specific closure was recorded.
 
 For completion, every factual field and distinct prose assertion needs its own verdict with evidence and an applicable date; every image needs both file provenance and identity/variant verification. An unresolved claim is an audit outcome, but it must not be counted as a verified claim. **This report therefore leaves the universal-verification request open.**
