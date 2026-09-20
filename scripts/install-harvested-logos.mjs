@@ -11,95 +11,47 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 48 — montage-scanned light/dark. */
+/** Visually verified batch 49 — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "cy-haravgi",
-    src: "tmp/batch48-install/cy-haravgi.png",
+    id: "lt-15min",
+    src: "tmp/batch49-install/lt-15min.svg",
     explainer:
-      "Black Greek ΧΑΡΑΥΓΗ with a small orange sunrise icon — Haravgi Cyprus masthead.",
+      "Green rounded square with white '15', black 'min', and a green clock-face mark — 15min Lithuania masthead.",
     licence:
-      "Haravgi trademark bundled from the publisher's official site brand assets (dialogos.com.cy/haravgi) for educational reference in Learn mode.",
+      "15min trademark from Wikimedia Commons File:15 min.svg (PD-textlogo) for educational reference in Learn mode.",
   },
   {
-    id: "me-rtcng-news",
-    src: "tmp/batch48-install/me-rtcng-news.svg",
+    id: "md-ziarul-de-garda",
+    src: "tmp/batch49-install/md-ziarul-de-garda.svg",
     explainer:
-      "Red disc with a white stylised 'a' beside grey serif 'analitika' — Portal Analitika mark.",
+      "Black serif 'zdg' under italic 'spune adevărul' with 'ZIARUL de GARDĂ' below — Ziarul de Gardă masthead.",
     licence:
-      "Portal Analitika trademark bundled from the publisher's official site brand assets (portalanalitika.me) for educational reference in Learn mode.",
+      "Ziarul de Gardă trademark bundled from the publisher's official site brand assets (zdg.md) for educational reference in Learn mode.",
   },
   {
-    id: "ml-maliweb",
-    src: "tmp/batch48-install/ml-maliweb.png",
+    id: "pa-la-prensa",
+    src: "tmp/batch49-install/pa-la-prensa.svg",
     explainer:
-      "Red-yellow-green swoosh over 'maliweb.net' inside a white circle — Maliweb site mark.",
+      "Bold black 'La Prensa' with a solid red underline — La Prensa Panamá masthead.",
     licence:
-      "Maliweb trademark bundled from the publisher's official site brand assets (maliweb.net) for educational reference in Learn mode.",
+      "La Prensa trademark bundled from the publisher's official Corprensa brand assets (prensa.com / multimedia.corprensa.com) for educational reference in Learn mode.",
   },
   {
-    id: "pa-la-estrella-de-panama",
-    src: "tmp/batch48-install/pa-la-estrella-de-panama.png",
+    id: "gm-standard",
+    src: "tmp/batch49-install/gm-standard.svg",
     explainer:
-      "Black serif 'LA ESTRELLA DE PANAMÁ' with a sun-over-water crest and red '177' — La Estrella de Panamá masthead.",
+      "Blackletter gothic 'The Standard' wordmark — The Standard Newspaper (Gambia) masthead.",
     licence:
-      "La Estrella de Panamá trademark bundled from the publisher's official site brand assets (laestrella.com.pa) for educational reference in Learn mode.",
+      "The Standard trademark bundled from the publisher's official site brand assets (standard.gm/wp-content/uploads/2020/04/StandardLogo.svg); white fill recolored to near-black for legibility on light Learn-mode cards — letterforms unchanged.",
   },
   {
-    id: "sr-de-west",
-    src: "tmp/batch48-install/sr-de-west.png",
+    id: "er-assenna",
+    src: "tmp/batch49-install/er-assenna.png",
     explainer:
-      "Bold black 'DE WEST' over light-blue italic 'Dagblad uit en voor Suriname' — De West masthead.",
+      "Grey TV icon with orange bunny-ear antennas and bold orange 'ATV' beside 'Asena Eritrean Satellite Television' — Assenna / Asena TV mark.",
     licence:
-      "De West trademark bundled from the publisher's official site brand assets (dagbladdewest.com) for educational reference in Learn mode.",
-  },
-  {
-    id: "sn-wal-fadjri",
-    src: "tmp/batch48-install/sn-wal-fadjri.png",
-    explainer:
-      "Italic black 'Walf' beside red 'Quotidien' — Walf Quotidien masthead.",
-    licence:
-      "Walf Quotidien trademark bundled from the publisher's official Groupe Walfadjri brand assets (walf-groupe.com) for educational reference in Learn mode.",
-  },
-  {
-    id: "tn-kapitalis",
-    src: "tmp/batch48-install/tn-kapitalis.png",
-    explainer:
-      "Blue-and-red chevron 'K' beside 'Kapitalis' over a red bar reading \"l'actualité AUTREMENT\" — Kapitalis masthead.",
-    licence:
-      "Kapitalis trademark bundled from the publisher's official site brand assets (kapitalis.com) for educational reference in Learn mode.",
-  },
-  {
-    id: "uy-busqueda",
-    src: "tmp/batch48-install/uy-busqueda.svg",
-    explainer:
-      "Heavy black all-caps 'BÚSQUEDA' block wordmark — Búsqueda Uruguay masthead.",
-    licence:
-      "Búsqueda trademark bundled from the publisher's official site brand assets (busqueda.com.uy) for educational reference in Learn mode.",
-  },
-  {
-    id: "vn-lao-dong",
-    src: "tmp/batch48-install/vn-lao-dong.png",
-    explainer:
-      "Bold red 'LAO ĐỘNG' with a starred O in ĐỘNG — Lao Động Vietnam masthead.",
-    licence:
-      "Lao Động trademark bundled from the publisher's official site brand assets (laodong.vn) for educational reference in Learn mode.",
-  },
-  {
-    id: "ly-al-wasat",
-    src: "tmp/batch48-install/ly-al-wasat.png",
-    explainer:
-      "Blocky Arabic الوسط with blue accents and Latin 'AL WASAT' — Al-Wasat Libya masthead.",
-    licence:
-      "Al-Wasat trademark bundled from the publisher's official site brand assets (alwasat.ly) for educational reference in Learn mode.",
-  },
-  {
-    id: "tn-la-presse",
-    src: "tmp/batch48-install/tn-la-presse.png",
-    explainer:
-      "Black serif 'La Presse' with a gold quill through the P — La Presse de Tunisie masthead.",
-    licence:
-      "La Presse trademark bundled from the publisher's official site brand assets (lapresse.tn) for educational reference in Learn mode.",
+      "Assenna / Asena TV trademark bundled from the publisher's official site brand assets (asenatv.com) for educational reference in Learn mode.",
   },
 ];
 

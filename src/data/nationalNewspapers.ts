@@ -7086,7 +7086,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Assenna Foundation Annual Report 2023"
       },
       "revenueModel": "Diaspora crowdfunding, foundation grants, and viewer donations",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/er/assenna.png",
+      "logoExplainer": "Grey TV icon with orange bunny-ear antennas and bold orange 'ATV' beside 'Asena Eritrean Satellite Television' — Assenna / Asena TV mark.",
+      "licenceNote": "Assenna / Asena TV trademark bundled from the publisher's official site brand assets (asenatv.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://assenna.com",
         "https://en.wikipedia.org/wiki/Assenna"
@@ -8608,7 +8611,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
@@ -8627,6 +8629,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Gambian national newspaper",
         "source": "https://standard.gm"
       },
+      "logo": "newspaper-logos/gm/standard.svg",
+      "logoExplainer": "Blackletter gothic 'The Standard' wordmark — The Standard Newspaper (Gambia) masthead.",
+      "licenceNote": "The Standard trademark bundled from the publisher's official site brand assets (standard.gm/wp-content/uploads/2020/04/StandardLogo.svg); white fill recolored to near-black for legibility on light Learn-mode cards — letterforms unchanged.",
+
       "sources": [
         "https://standard.gm"
       ]
@@ -13750,7 +13756,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gemius Audience Lithuania 2024"
       },
       "revenueModel": "Digital display advertising, programmatic ads, and premium paid subscriptions (15min MAX)",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/lt/15min.svg",
+      "logoExplainer": "Green rounded square with white '15', black 'min', and a green clock-face mark — 15min Lithuania masthead.",
+      "licenceNote": "15min trademark from Wikimedia Commons File:15 min.svg (PD-textlogo) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.15min.lt",
         "https://lt.wikipedia.org/wiki/15min"
@@ -14569,7 +14578,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Independent Journalism Center (IJC) Moldova 2023"
       },
       "revenueModel": "Print subscriptions, reader donations, and international media integrity grants",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/md/ziarul-de-garda.svg",
+      "logoExplainer": "Black serif 'zdg' under italic 'spune adevărul' with 'ZIARUL de GARDĂ' below — Ziarul de Gardă masthead.",
+      "licenceNote": "Ziarul de Gardă trademark bundled from the publisher's official site brand assets (zdg.md) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.zdg.md",
         "https://ro.wikipedia.org/wiki/Ziarul_de_Gard%C4%83"
@@ -17948,7 +17960,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Corprensa Audited Financial Statements 2023"
       },
       "revenueModel": "Print sales, digital paywall subscriptions (Prensa Digital), and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pa/la-prensa.svg",
+      "logoExplainer": "Bold black 'La Prensa' with a solid red underline — La Prensa Panamá masthead.",
+      "licenceNote": "La Prensa trademark bundled from the publisher's official Corprensa brand assets (prensa.com / multimedia.corprensa.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.prensa.com",
         "https://es.wikipedia.org/wiki/La_Prensa_(Panam%C3%A1)"
