@@ -36,7 +36,7 @@ export type Country = {
   gdpPerCapitaUsd?: number;
   /** GDP per capita in local currency unit. */
   gdpPerCapitaLcu?: number;
-  /** Democracy ratings & ranks (Freedom House, V-Dem, EIU Economist) and CPI. */
+  /** Democracy ratings & ranks (Freedom House, V-Dem, EIU Economist), CPI, and DPI. */
   democracy?: DemocracyData;
   /**
    * Set only when the game is quizzing a national SYMBOL rather than the flag

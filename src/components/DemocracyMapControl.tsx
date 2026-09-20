@@ -97,6 +97,13 @@ export function DemocracyMapControl({ mode, onChange }: DemocracyMapControlProps
             >
               Corruption Perceptions Index
             </button>
+            <button
+              type="button"
+              className={`map-view-control__preset${mode === "perception" ? " map-view-control__preset--active" : ""}`}
+              onClick={() => selectMode("perception")}
+            >
+              Democracy Perception Index
+            </button>
           </div>
         </div>
       )}
