@@ -158,6 +158,19 @@ assert.ok(
   'partyPowerBadges must not use the long "Hold executive/legislative power" labels on grid cards',
 );
 
+assert.ok(
+  flagGridSrc.includes("flag-grid__country-sub") &&
+    flagGridSrc.includes("({item.countryName})") &&
+    fs.readFileSync(path.join(root, "src/pages/LearnPage.css"), "utf8").includes(
+      "flag-grid__country-sub",
+    ),
+  "FlagGrid multi-item Show cards (newspapers / agencies / tourism / airlines / broadcasters / parties) must show the country as a separate grey \"(Country)\" line under the title",
+);
+assert.ok(
+  !/name:\s*`\$\{tagline\} \(\$\{countryName\}\)`/.test(flagGridSrc),
+  "Tourism-logo tiles must not bake the country into the title string — country goes on the grey subtitle line",
+);
+
 console.log(
   `PASS: Show dropdown keeps ${order.length} classifications (${order.join(", ")}).`,
 );

@@ -1984,6 +1984,21 @@
   color: var(--ink-fixed);
 }
 
+/* Country under a multi-item Show card (newspaper / agency / tourism /
+   airline / broadcaster / party). Separate line, grey parentheses — stays
+   soft even on the selected tile so it never competes with the title. */
+.flag-grid__country-sub {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  margin-top: 0.12em;
+}
+
+.flag-grid__card--active .flag-grid__country-sub {
+  color: var(--ink-soft);
+}
+
 /* "In-power" / "Exec power" / "Leg power" / coalition-name badges on a
    Political-parties grid card. */
 .flag-grid__party-badges {
