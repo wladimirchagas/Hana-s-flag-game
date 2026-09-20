@@ -1391,11 +1391,14 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "https://en.wikipedia.org/wiki/The_Courier-Mail"
       },
       "revenueModel": "Print sales, subscriptions, and advertising",
+      "logo": "newspaper-logos/au/courier-mail.png",
+      "logoExplainer": "Blackletter 'The Courier-Mail' with a red Queensland silhouette and 'We're for you' tagline on white.",
+      "licenceNote": "The Courier-Mail Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.couriermail.com.au",
         "https://en.wikipedia.org/wiki/The_Courier-Mail"
-      ],
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+      ]
     }
   ],
   "AZ": [
@@ -1725,7 +1728,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "DFP Bangladesh 2023"
       },
       "revenueModel": "Print circulation and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bd/ittefaq.png",
+      "logoExplainer": "Bold Bengali 'দৈনিক ইত্তেফাক' masthead with smaller founder attribution — The Daily Ittefaq crest.",
+      "licenceNote": "The Daily Ittefaq Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.ittefaq.com.bd",
         "https://en.wikipedia.org/wiki/The_Daily_Ittefaq"
@@ -1763,7 +1769,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "bd-jugantor",
       "countryCode": "BD",
       "name": "Jugantor",
@@ -1779,6 +1784,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Among Bangladesh's largest Bengali dailies",
         "source": "https://en.wikipedia.org/wiki/Jugantor"
       },
+      "logo": "newspaper-logos/bd/jugantor.png",
+      "logoExplainer": "Stylised black Bengali 'যুগান্তর' wordmark on white — Daily Jugantor masthead.",
+      "licenceNote": "Jugantor Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.jugantor.com",
         "https://en.wikipedia.org/wiki/Jugantor"
