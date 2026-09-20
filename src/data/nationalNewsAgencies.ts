@@ -1331,7 +1331,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Torstar Corporate Media Profile 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ca/toronto-star.svg",
+      "logoExplainer": "Black 'Toronto Star' wordmark — Canada's highest-circulation daily masthead.",
+      "licenceNote": "Toronto Star masthead trademark bundled from Wikimedia Commons (File:Toronto-Star-Logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.thestar.com",
         "https://en.wikipedia.org/wiki/Toronto_Star"
@@ -2285,7 +2288,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "Parliamentary state budget funding and agency syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ke/kna.svg",
+      "logoExplainer": "Official 'KNA' masthead/logo as used by the publisher — sourced from Wikimedia Commons.",
+      "licenceNote": "KNA masthead trademark bundled from Wikimedia Commons (File:KNA-Logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.kenyanews.go.ke",
         "https://en.wikipedia.org/wiki/Kenya_News_Agency"
@@ -3570,7 +3576,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "News Agency of Nigeria Annual Audit 2023"
       },
       "revenueModel": "Federal government subvention and wire syndication subscription fees",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ng/nan.png",
+      "logoExplainer": "Official 'NAN (News Agency of Nigeria)' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "NAN (News Agency of Nigeria) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://nannews.ng",
         "https://en.wikipedia.org/wiki/News_Agency_of_Nigeria"
@@ -4734,7 +4743,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ABC South Africa / Independent Media Readership Audit"
       },
       "revenueModel": "Print street sales, classifieds, corporate advertising, and digital syndication on IOL",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/za/the-star.webp",
+      "logoExplainer": "Red blackletter 'The Star' masthead — the Johannesburg daily's nameplate from its own site.",
+      "licenceNote": "The Star (Johannesburg) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.iol.co.za/the-star",
         "https://en.wikipedia.org/wiki/The_Star_(South_Africa)"
@@ -5309,7 +5321,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ukrinform Annual Public Report"
       },
       "revenueModel": "State budget funding, media licensing subscriptions, and photographic archive services",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ua/ukrinform.svg",
+      "logoExplainer": "Official 'Ukrinform (National News Agency of Ukraine)' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "Ukrinform (National News Agency of Ukraine) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.ukrinform.ua",
         "https://en.wikipedia.org/wiki/Ukrinform"
@@ -5432,7 +5447,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Thomson Reuters Annual Report 2023 / Reuters Institute"
       },
       "revenueModel": "Commercial terminal news syndication (LSEG Workspace / Eikon), enterprise media licensing, and digital advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gb/reuters.svg",
+      "logoExplainer": "Official 'Reuters' masthead/logo as used by the publisher — sourced from Wikimedia Commons.",
+      "licenceNote": "Reuters masthead trademark bundled from Wikimedia Commons (File:Reuters logo 2024.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.reuters.com",
         "https://en.wikipedia.org/wiki/Reuters"
@@ -5459,7 +5477,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "The Associated Press Annual Report 2023"
       },
       "revenueModel": "Member cooperative assessments, enterprise commercial licensing, and commercial photo sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/us/ap.svg",
+      "logoExplainer": "Official 'Associated Press (AP)' masthead/logo as used by the publisher — sourced from Wikimedia Commons.",
+      "licenceNote": "Associated Press (AP) masthead trademark bundled from Wikimedia Commons (File:Associated Press logo 2012.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://apnews.com",
         "https://en.wikipedia.org/wiki/Associated_Press"
