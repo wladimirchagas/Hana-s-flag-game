@@ -860,8 +860,8 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Official state news agency of the PRC; gathers and distributes domestic and international wire copy, photos and video to media clients worldwide",
       "readership": {"metric":"Primary official Chinese newswire with global bureaux","source":"Xinhua / Wikipedia"},
       "logo": "newspaper-logos/cn/xinhua.png",
-      "logoExplainer": "Xinhua News Agency site masthead mark from news.cn — China's state national news agency brand.",
-      "licenceNote": "Xinhua News Agency brand mark trademark bundled from the agency's official site brand assets (news.cn / xinhuanet.com) for educational reference in Learn mode.",
+      "logoExplainer": "Blue stacked 'NEWS' beside white Chinese '新华网' with an orange swoosh and xinhuanet.com — Xinhua online portal mark.",
+      "licenceNote": "Xinhua News Agency / Xinhuanet emblem trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
 
       "sources": ["https://www.xinhuanet.com","https://en.wikipedia.org/wiki/Xinhua_News_Agency"]
     },
@@ -954,8 +954,8 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Germany's principal national and international news agency; independent of government, owned by media shareholders; supplies text, photos and multimedia to print, broadcast and digital clients",
       "readership": {"metric":"Largest German press agency; ~170 media shareholders; worldwide wire","source":"dpa.com / Wikipedia"},
       "logo": "newspaper-logos/de/dpa.png",
-      "logoExplainer": "dpa Deutsche Presse-Agentur brand mark from the agency's official site.",
-      "licenceNote": "dpa brand mark trademark bundled from the agency's official site brand assets (dpa.com) for educational reference in Learn mode.",
+      "logoExplainer": "Lowercase charcoal 'dpa' beside three bright green dots — Deutsche Presse-Agentur wordmark.",
+      "licenceNote": "dpa (Deutsche Presse-Agentur) trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
 
       "sources": ["https://www.dpa.com","https://en.wikipedia.org/wiki/Deutsche_Presse-Agentur"]
     },
@@ -1335,8 +1335,8 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "India's largest news agency; not-for-profit cooperative owned by Indian newspapers; syndicates text and photos nationwide",
       "readership": {"metric":"Primary Indian national wire serving hundreds of newspapers and broadcasters","source":"PTI / Wikipedia"},
       "logo": "newspaper-logos/in/pti.jpg",
-      "logoExplainer": "Press Trust of India brand mark from the agency's official site metadata.",
-      "licenceNote": "Press Trust of India brand mark trademark bundled from the agency's official site brand assets (ptinews.com) for educational reference in Learn mode.",
+      "logoExplainer": "Red halftone-dot capital 'PTI' on white — Press Trust of India agency mark.",
+      "licenceNote": "Press Trust of India trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
 
       "sources": ["https://www.ptinews.com","https://en.wikipedia.org/wiki/Press_Trust_of_India"]
     },
@@ -1567,8 +1567,8 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Italy's principal national news agency; cooperative owned by Italian publishers; syndicates text, photos and video",
       "readership": {"metric":"Primary Italian national newswire","source":"ANSA / Wikipedia"},
       "logo": "newspaper-logos/it/ansa.png",
-      "logoExplainer": "White serif 'ANSA.it' on black — Agenzia Nazionale Stampa Associata web brand mark.",
-      "licenceNote": "ANSA brand mark trademark bundled from the agency's official site brand assets (ansa.it) for educational reference in Learn mode.",
+      "logoExplainer": "Bold slab-serif 'ANSA' with smaller 'it' suffix — Agenzia Nazionale Stampa Associata wordmark.",
+      "licenceNote": "ANSA trademark bundled from the agency's official site brand assets (ansa.it) for educational reference in Learn mode.",
 
       "sources": ["https://www.ansa.it","https://en.wikipedia.org/wiki/Agenzia_Nazionale_Stampa_Associata"]
     },
@@ -1588,8 +1588,8 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Major Italian national news agency; text and multimedia syndication",
       "readership": {"metric":"Major Italian national wire","source":"AGI / Wikipedia"},
       "logo": "newspaper-logos/it/agi.png",
-      "logoExplainer": "AGI (Agenzia Giornalistica Italia) logo 2020 from Wikimedia Commons.",
-      "licenceNote": "AGI brand mark trademark bundled from Wikimedia Commons (File:AGI logo 2020.png) for educational reference in Learn mode.",
+      "logoExplainer": "Bold 'AGI' with a yellow chevron above stacked 'AGENZIA ITALIA' — Agenzia Giornalistica Italia wordmark.",
+      "licenceNote": "AGI trademark bundled from Wikimedia Commons (AGI logo 2020) for educational reference in Learn mode.",
 
       "sources": ["https://www.agi.it","https://en.wikipedia.org/wiki/Agenzia_Giornalistica_Italia"]
     },
@@ -1655,8 +1655,8 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "One of Japan's two central news agencies; nonprofit cooperative serving Japanese newspapers and broadcasters",
       "readership": {"metric":"Major Japanese national newswire","source":"Kyodo / Wikipedia"},
       "logo": "newspaper-logos/jp/kyodo.png",
-      "logoExplainer": "Maroon circle with bite cutout beside italic grey 'KYODO' on black — Kyodo News brand mark.",
-      "licenceNote": "Kyodo News brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "logoExplainer": "White 'KYODO' inside a red crescent disc beside dark 'KYODO NEWS' — Kyodo News agency mark.",
+      "licenceNote": "Kyodo News trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
 
       "sources": ["https://www.kyodonews.jp","https://en.wikipedia.org/wiki/Kyodo_News"]
     },
@@ -2721,8 +2721,8 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Private Romanian national news agency; text and multimedia wire",
       "readership": {"metric":"Major private Romanian national wire","source":"Mediafax / Wikipedia"},
       "logo": "newspaper-logos/ro/mediafax.png",
-      "logoExplainer": "Mediafax brand mark from the Romanian national wire's official site.",
-      "licenceNote": "Mediafax brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "logoExplainer": "Red 'MEDIAFAX' with grey '35' and tagline 'DE ANI DE JURNALISM INDEPENDENT' — Romanian agency anniversary lockup.",
+      "licenceNote": "Mediafax trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
 
       "sources": ["https://www.mediafax.ro","https://en.wikipedia.org/wiki/Mediafax"]
     },
@@ -2809,8 +2809,8 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Major private Russian national and international news agency; text and financial wires",
       "readership": {"metric":"One of Russia's three largest national news agencies","source":"Interfax / Wikipedia"},
       "logo": "newspaper-logos/ru/interfax.png",
-      "logoExplainer": "Interfax brand mark from the Russian national wire's official site.",
-      "licenceNote": "Interfax brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "logoExplainer": "Teal Cyrillic 'интерфакс' with a stylised integral-like 'ф' — Interfax agency wordmark.",
+      "licenceNote": "Interfax trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
 
       "sources": ["https://www.interfax.ru","https://en.wikipedia.org/wiki/Interfax"]
     },
@@ -3328,8 +3328,8 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Major private Turkish national news agency; text, photo and video syndication",
       "readership": {"metric":"Major private Turkish national wire","source":"DHA / Wikipedia"},
       "logo": "newspaper-logos/tr/dha.png",
-      "logoExplainer": "DHA (Demirören Haber Ajansı) brand mark from the agency's official site.",
-      "licenceNote": "DHA brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "logoExplainer": "Red stylised 'DHA' with an open-base D and crossbar-less A — Demirören News Agency wordmark.",
+      "licenceNote": "DHA (Demirören News Agency) trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
 
       "sources": ["https://www.dha.com.tr","https://en.wikipedia.org/wiki/Demir%C3%B6ren_News_Agency"]
     },
@@ -3414,9 +3414,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Major private Ukrainian national news agency; text and multimedia syndication",
       "readership": {"metric":"Major private Ukrainian national wire","source":"UNIAN / Wikipedia"},
-      "logo": "newspaper-logos/ua/unian.png",
-      "logoExplainer": "Compressed charcoal 'UNIAN' wordmark with mic/broadcast mark over the I — Ukrainian Independent Information Agency brand.",
-      "licenceNote": "UNIAN brand mark trademark bundled from the agency's official site schema brand asset (unian.info) for educational reference in Learn mode.",
+      "logo": "newspaper-logos/ua/unian.svg",
+      "logoExplainer": "White geometric Cyrillic 'УНІАН' with a striped microphone capsule over the І — UNIAN agency wordmark.",
+      "licenceNote": "UNIAN trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
 
       "sources": ["https://www.unian.info","https://en.wikipedia.org/wiki/UNIAN"]
     },

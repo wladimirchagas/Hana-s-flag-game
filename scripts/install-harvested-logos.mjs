@@ -11,39 +11,87 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 33 — montage-scanned. */
+/** Visually verified batch 34 — agency logos, montage-scanned. */
 const MANIFEST = [
   {
-    id: "ug-new-vision",
-    src: "tmp/batch33-manual/nv-official.svg",
+    id: "cn-xinhua",
+    src: "tmp/logo-harvest/cn/xinhua.png",
     explainer:
-      "Black 'NEW' joined to red 'VISION' in rounded sans-serif — Ugandan daily masthead from newvision.co.ug.",
+      "Blue stacked 'NEWS' beside white Chinese '新华网' with an orange swoosh and xinhuanet.com — Xinhua online portal mark.",
     licence:
-      "New Vision masthead trademark bundled from the publisher's official site brand assets (newvision.co.ug) for educational reference in Learn mode.",
+      "Xinhua News Agency / Xinhuanet emblem trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "np-the-kathmandu-post",
-    src: "tmp/batch33-manual/kp-logo-color.png",
+    id: "de-dpa",
+    src: "tmp/logo-harvest/de/dpa.png",
     explainer:
-      "Black serif 'THE KATHMANDU POST' with a Nepali pagoda emblem above the centre word — English-language Nepali daily masthead.",
+      "Lowercase charcoal 'dpa' beside three bright green dots — Deutsche Presse-Agentur wordmark.",
     licence:
-      "The Kathmandu Post masthead trademark bundled from the publisher's official CDN brand assets (kathmandupost.com) for educational reference in Learn mode.",
+      "dpa (Deutsche Presse-Agentur) trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "gy-demerara-waves",
-    src: "tmp/batch33-manual/demerara-waves.png",
+    id: "in-pti",
+    src: "tmp/logo-harvest/in/pti.jpg",
     explainer:
-      "Lime-and-copper wave crest above lowercase 'demerara waves' with tagline 'RIDING ON THE CREST OF TRUTH' — Guyanese digital news masthead.",
+      "Red halftone-dot capital 'PTI' on white — Press Trust of India agency mark.",
     licence:
-      "Demerara Waves masthead trademark bundled from the publisher's official site brand assets (demerarawaves.com) for educational reference in Learn mode.",
+      "Press Trust of India trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "hu-telex",
-    src: "tmp/batch33-manual/telex-fb.png",
+    id: "it-ansa",
+    src: "tmp/logo-harvest/it/ansa.png",
     explainer:
-      "White lowercase serif 'telex' on a navy-to-lime vertical gradient — Hungarian independent news portal wordmark.",
+      "Bold slab-serif 'ANSA' with smaller 'it' suffix — Agenzia Nazionale Stampa Associata wordmark.",
     licence:
-      "Telex masthead trademark bundled from the publisher's official site brand assets (telex.hu) for educational reference in Learn mode.",
+      "ANSA trademark bundled from the agency's official site brand assets (ansa.it) for educational reference in Learn mode.",
+  },
+  {
+    id: "it-agi",
+    src: "tmp/logo-harvest/it/agi.png",
+    explainer:
+      "Bold 'AGI' with a yellow chevron above stacked 'AGENZIA ITALIA' — Agenzia Giornalistica Italia wordmark.",
+    licence:
+      "AGI trademark bundled from Wikimedia Commons (AGI logo 2020) for educational reference in Learn mode.",
+  },
+  {
+    id: "jp-kyodo",
+    src: "tmp/logo-harvest/jp/kyodo.png",
+    explainer:
+      "White 'KYODO' inside a red crescent disc beside dark 'KYODO NEWS' — Kyodo News agency mark.",
+    licence:
+      "Kyodo News trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "ro-mediafax",
+    src: "tmp/logo-harvest/ro/mediafax.png",
+    explainer:
+      "Red 'MEDIAFAX' with grey '35' and tagline 'DE ANI DE JURNALISM INDEPENDENT' — Romanian agency anniversary lockup.",
+    licence:
+      "Mediafax trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "ru-interfax",
+    src: "tmp/logo-harvest/ru/interfax.png",
+    explainer:
+      "Teal Cyrillic 'интерфакс' with a stylised integral-like 'ф' — Interfax agency wordmark.",
+    licence:
+      "Interfax trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "tr-dha",
+    src: "tmp/logo-harvest/tr/dha.png",
+    explainer:
+      "Red stylised 'DHA' with an open-base D and crossbar-less A — Demirören News Agency wordmark.",
+    licence:
+      "DHA (Demirören News Agency) trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "ua-unian",
+    src: "tmp/logo-harvest/ua/unian.svg",
+    explainer:
+      "White geometric Cyrillic 'УНІАН' with a striped microphone capsule over the І — UNIAN agency wordmark.",
+    licence:
+      "UNIAN trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
   },
 ];
 
