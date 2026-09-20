@@ -23413,7 +23413,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Market Facts & Opinions (MFO) Media Survey / One Caribbean Media Annual Report 2023"
       },
       "revenueModel": "Print newsstand sales, corporate advertising, classifieds, and digital ads",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tt/trinidad-express.png",
+      "logoExplainer": "White italic 'Trinidad Express Newspapers' beside a white X flanked by red shards — Trinidadian daily masthead.",
+      "licenceNote": "Trinidad Express Newspapers masthead trademark bundled from the publisher's official site brand assets (trinidadexpress.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://trinidadexpress.com",
         "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Express"
@@ -24659,7 +24662,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Interactive Media Ltd 2023"
       },
       "revenueModel": "Print sales, commercial advertising, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/vc/searchlight.jpg",
+      "logoExplainer": "Blue 'SEARCHLIGHT' with a compass-star eye icon and tagline 'Journalism you can trust' — Vincentian weekly masthead.",
+      "licenceNote": "Searchlight masthead trademark bundled from the publisher's official site brand assets (searchlight.vc) for educational reference in Learn mode.",
+
       "sources": [
         "https://searchlight.vc",
         "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"

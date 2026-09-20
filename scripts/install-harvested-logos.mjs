@@ -11,39 +11,23 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 35 — hard-agency + paper logos, montage-scanned. */
+/** Visually verified batch 36 — newspaper mastheads, montage-scanned. */
 const MANIFEST = [
   {
-    id: "cd-acp",
-    src: "tmp/batch35-manual/cd-acp.jpg",
+    id: "tt-trinidad-express",
+    src: "tmp/batch36-manual/tt-trinidad-express.png",
     explainer:
-      "Yellow 'ACP' and 'CONGO' flanking a circular yellow tree emblem on a navy rounded rectangle — Agence Congolaise de Presse wordmark from acpcongo.com.",
+      "White italic 'Trinidad Express Newspapers' beside a white X flanked by red shards — Trinidadian daily masthead.",
     licence:
-      "ACP Congo trademark bundled from the agency's official site brand assets (acpcongo.com) for educational reference in Learn mode.",
+      "Trinidad Express Newspapers masthead trademark bundled from the publisher's official site brand assets (trinidadexpress.com) for educational reference in Learn mode.",
   },
   {
-    id: "np-rss",
-    src: "tmp/batch35-manual/np-rss-wb-85912.png",
+    id: "vc-searchlight",
+    src: "tmp/batch36-manual/vc-searchlight.jpg",
     explainer:
-      "Blue rounded badge with Devanagari 'नेपाल', broadcast arcs and an RSS monogram above a block 'RSS' / 'NEPAL' lockup — Rastriya Samachar Samiti mark.",
+      "Blue 'SEARCHLIGHT' with a compass-star eye icon and tagline 'Journalism you can trust' — Vincentian weekly masthead.",
     licence:
-      "RSS (Rastriya Samachar Samiti) trademark bundled from the agency's official site brand assets (rssnepal.org.np, via Wayback Machine) for educational reference in Learn mode.",
-  },
-  {
-    id: "bt-bhutan-today",
-    src: "tmp/batch35-manual/bt-bhutan-today.png",
-    explainer:
-      "Black serif 'BHUTAN TODAY' flanking a circular Bhutanese emblem under the tagline 'THE NEW PERSPECTIVE' — English-language Bhutanese daily masthead.",
-    licence:
-      "Bhutan Today masthead trademark bundled from the publisher's official site brand assets (bhutantoday.bt) for educational reference in Learn mode.",
-  },
-  {
-    id: "cr-ameliarueda",
-    src: "tmp/batch35-manual/cr-ameliarueda.jpg",
-    explainer:
-      "Cream 'AR' monogram above blue-yellow-green-red stripes and 'AMELIARUEDA.COM' on charcoal — Costa Rican digital news masthead.",
-    licence:
-      "AmeliaRueda.com masthead trademark bundled from the publisher's official site brand assets (ameliarueda.com) for educational reference in Learn mode.",
+      "Searchlight masthead trademark bundled from the publisher's official site brand assets (searchlight.vc) for educational reference in Learn mode.",
   },
 ];
 
