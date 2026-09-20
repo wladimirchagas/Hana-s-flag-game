@@ -8276,7 +8276,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Palitra Media Holding 2024"
       },
       "revenueModel": "Print sales, digital subscriptions, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ge/kviris-palitra.png",
+      "logoExplainer": "Blue three-chevron emblem beside Georgian Mkhedruli 'კვირის პალიტრა' on bright yellow — Kviris Palitra masthead.",
+      "licenceNote": "Kviris Palitra masthead trademark bundled from the publisher's official site brand assets (kvirispalitra.ge) for educational reference in Learn mode.",
+
       "sources": [
         "https://kvirispalitra.ge",
         "https://ka.wikipedia.org/wiki/%E1%83%99%E1%83%95%E1%83%98%E1%83%A0%E1%83%98%E1%83%A1_%E1%83%A0%E1%83%90%E1%83%9A%E1%83%98%E1%83%A2%E1%83%A0%E1%83%90"
@@ -10864,7 +10867,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Vísir Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/is/visir.svg",
+      "logoExplainer": "White italic lowercase 'vísir' with a chevron over the first í on blue — Vísir digital news mark.",
+      "licenceNote": "Vísir logo trademark bundled from the publisher's official site brand assets (visir.is) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.visir.is/",
         "https://syn.is/"
@@ -10889,7 +10895,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Heimildin Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/is/heimildin.svg",
+      "logoExplainer": "Black high-contrast serif wordmark 'Heimildin' — Icelandic investigative daily masthead.",
+      "licenceNote": "Heimildin masthead trademark bundled from the publisher's official site brand assets (heimildin.is / cdn.heimildin.is) for educational reference in Learn mode.",
+
       "sources": [
         "https://heimildin.is/",
         "https://press.is/"
