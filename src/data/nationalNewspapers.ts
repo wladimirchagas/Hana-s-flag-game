@@ -9381,7 +9381,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
@@ -9400,6 +9399,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Principal Guyanese independent daily",
         "source": "https://en.wikipedia.org/wiki/Stabroek_News"
       },
+      "logo": "newspaper-logos/gy/stabroek-news.png",
+      "logoExplainer": "Cyan sans-serif 'SN' monogram on black — Stabroek News brand mark from the publisher's site.",
+      "licenceNote": "Stabroek News brand mark trademark bundled from the publisher's official site brand assets (stabroeknews.com) for educational reference in Learn mode.",
       "sources": [
         "https://www.stabroeknews.com",
         "https://en.wikipedia.org/wiki/Stabroek_News"
@@ -18076,7 +18078,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Word Publishing Circulation Review 2023"
       },
       "revenueModel": "Print sales, community church distribution, and educational subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pg/wantok-niuspepa.jpg",
+      "logoExplainer": "Shell-and-sunburst emblem beside red 'Wantok' and Tok Pisin tagline 'NIUSPEPA BILONG YUMI OL PNG STRET'.",
+      "licenceNote": "Wantok Niuspepa masthead trademark bundled from the publisher's official site brand assets (wantokniuspepa.com) for educational reference in Learn mode.",
       "sources": [
         "https://en.wikipedia.org/wiki/Wantok_(newspaper)"
       ]
@@ -23092,7 +23096,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Vava'u Press Readership Audit / Pacific Islands News Association (PINA)"
       },
       "revenueModel": "Digital display advertising, quarterly print subscriptions, and photo syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/to/matangi-tonga.svg",
+      "logoExplainer": "Red italic 'Matangi' with grey 'Online' underneath — Matangi Tonga Online masthead from Wikimedia Commons.",
+      "licenceNote": "Matangi Tonga Online masthead from Wikimedia Commons File:Matangi Tonga logo 3.svg, bundled for educational reference in Learn mode.",
       "sources": [
         "https://matangitonga.to",
         "https://en.wikipedia.org/wiki/Matangi_Tonga"
@@ -23424,7 +23430,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Guardian Media Limited Annual Report 2023"
       },
       "revenueModel": "Commercial print ads, newsstand sales, and cross-media broadcast syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tt/guardian.png",
+      "logoExplainer": "White serif 'Trinidad & Tobago Guardian' with a scarlet ibis bearing a golden sword — Guardian masthead.",
+      "licenceNote": "Trinidad and Tobago Guardian masthead trademark bundled from the publisher's official site brand assets (guardian.co.tt) for educational reference in Learn mode.",
       "sources": [
         "https://www.guardian.co.tt",
         "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Guardian"

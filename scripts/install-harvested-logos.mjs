@@ -11,63 +11,39 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 37 — Pacific/Caribbean papers + AMAP agency, montage-scanned. */
+/** Visually verified batch 38 — Pacific/Caribbean mastheads, montage-scanned. */
 const MANIFEST = [
   {
-    id: "vu-daily-post",
-    src: "tmp/batch37-manual/vu-daily-post.jpg",
+    id: "to-matangi-tonga",
+    src: "tmp/batch39-manual/Matangi_Tonga_logo_3.svg",
     explainer:
-      "Tam-tam drum and boar's tusk with sound waves beside teal 'DAILY' and black 'POST' — Vanuatu Daily Post masthead.",
+      "Red italic 'Matangi' with grey 'Online' underneath — Matangi Tonga Online masthead from Wikimedia Commons.",
     licence:
-      "Vanuatu Daily Post masthead trademark bundled from the publisher's official site brand assets (dailypost.vu) for educational reference in Learn mode.",
+      "Matangi Tonga Online masthead from Wikimedia Commons File:Matangi Tonga logo 3.svg, bundled for educational reference in Learn mode.",
   },
   {
-    id: "ws-samoa-observer",
-    src: "tmp/batch38-commons/Logo_of_Samoa_Observer.svg",
+    id: "pg-wantok-niuspepa",
+    src: "tmp/batch39-manual/pg-wantok-logo.jpg",
     explainer:
-      "Blue 'SAMOA' and red 'OBSERVER' wordmark in a clean sans-serif — Samoa Observer masthead from Wikimedia Commons.",
+      "Shell-and-sunburst emblem beside red 'Wantok' and Tok Pisin tagline 'NIUSPEPA BILONG YUMI OL PNG STRET'.",
     licence:
-      "Samoa Observer masthead from Wikimedia Commons File:Logo of Samoa Observer.svg, bundled for educational reference in Learn mode.",
+      "Wantok Niuspepa masthead trademark bundled from the publisher's official site brand assets (wantokniuspepa.com) for educational reference in Learn mode.",
   },
   {
-    id: "sb-solomon-times",
-    src: "tmp/batch38-manual/sb-solomon-times.png",
+    id: "tt-guardian",
+    src: "tmp/batch39-manual/tt-guardian-white.png",
     explainer:
-      "Blackletter 'Solomon Times Online' wordmark on white — Solomon Islands digital newspaper masthead.",
+      "White serif 'Trinidad & Tobago Guardian' with a scarlet ibis bearing a golden sword — Guardian masthead.",
     licence:
-      "Solomon Times Online masthead trademark bundled from the publisher's official site brand assets (solomontimes.com) for educational reference in Learn mode.",
+      "Trinidad and Tobago Guardian masthead trademark bundled from the publisher's official site brand assets (guardian.co.tt) for educational reference in Learn mode.",
   },
   {
-    id: "sr-de-ware-tijd",
-    src: "tmp/batch38-commons/Logo_dwt_bl.png",
+    id: "gy-stabroek-news",
+    src: "tmp/batch39-manual/gy-stabroek.png",
     explainer:
-      "Dark calligraphic 'de Ware Tijd' script wordmark — Surinamese daily masthead from Wikimedia Commons.",
+      "Cyan sans-serif 'SN' monogram on black — Stabroek News brand mark from the publisher's site.",
     licence:
-      "de Ware Tijd masthead from Wikimedia Commons File:Logo dwt bl.png, bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "tt-newsday",
-    src: "tmp/batch38-commons/Newsday_Trinidad_and_Tobago_logo.png",
-    explainer:
-      "White 'TRINIDAD and TOBAGO' over bold serif 'NEWSDAY' on black — Trinidad and Tobago Newsday masthead.",
-    licence:
-      "Newsday Trinidad and Tobago masthead from Wikimedia Commons File:Newsday Trinidad and Tobago logo.png, bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "ws-talamua-media",
-    src: "tmp/batch38-manual/ws-talamua.jpg",
-    explainer:
-      "White 'TALAMUA' on charcoal over white 'ONLINE NEWS' on red — Talamua Media digital masthead.",
-    licence:
-      "Talamua Media masthead trademark bundled from the publisher's official site brand assets (talamua.com) for educational reference in Learn mode.",
-  },
-  {
-    id: "ml-amap",
-    src: "tmp/batch38-manual/ml-amap.webp",
-    explainer:
-      "Yellow/blue AMAP globe on a carved stool beside 'AGENCE MALIENNE DE PRESSE' and the Malian coat of arms.",
-    licence:
-      "AMAP (Agence Malienne de Presse) logo trademark bundled from the agency's official site brand assets (amap.ml) for educational reference in Learn mode.",
+      "Stabroek News brand mark trademark bundled from the publisher's official site brand assets (stabroeknews.com) for educational reference in Learn mode.",
   },
 ];
 
