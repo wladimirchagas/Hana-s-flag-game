@@ -3397,7 +3397,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "Wikimedia Commons (no file), ukranews.com (HTTP 403 from this environment), Wayback Machine (503), Wikipedia (no page image), Clearbit (unreachable) — no freely-citable authentic emblem confidently sourced; listed with no image rather than an invented logo.",
       "id": "ua-ukrainian-news",
       "countryCode": "UA",
       "name": "Ukrainian News Agency",
@@ -3409,7 +3408,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Private Ukrainian national news agency; syndicates political and business wire copy",
       "readership": {"metric":"Major Ukrainian national news agency","source":"Ukrainian News / Wikipedia"},
-      "sources": ["https://ukranews.com","https://en.wikipedia.org/wiki/Ukrainian_News"],
+      "logo": "newspaper-logos/ua/ukrainian-news.png",
+      "logoExplainer": "Cyan connected lowercase 'un' monogram with an orange dot over the n — Ukrainian News Agency (Українські Новини) brand mark.",
+      "licenceNote": "Ukrainian News Agency trademark bundled from the agency's official site brand assets (ukranews.com) for educational reference in Learn mode.",
+
+      "sources": ["https://ukranews.com","https://en.wikipedia.org/wiki/Ukrainian_News"]
     }
   ],
   "UG": [
