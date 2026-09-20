@@ -15,36 +15,28 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "mg-midi-madagasikara",
-    src: "tmp/batch54-final/mg-midi-madagasikara.jpg",
+    id: "pg-emt",
+    src: "tmp/batch55-final/pg-emt.jpg",
     explainer:
-      "Bold lowercase 'midi' in brick-red and 'madagasikara' in black with tagline 'Premier Quotidien National d’Information de Madagascar' — Midi Madagasikara masthead.",
+      "Yellow Bird of Paradise silhouette on a red-glow circle beside yellow 'EM' and white 'TV' block letters — EMTV Online masthead.",
     licence:
-      "Midi Madagasikara trademark bundled from the publisher's official site brand assets (midi-madagasikara.mg) for educational reference in Learn mode.",
+      "EMTV trademark bundled from the broadcaster's official site brand assets (emtv.com.pg) for educational reference in Learn mode.",
   },
   {
-    id: "mc-monaco-hebdo",
-    src: "tmp/batch54-final/mc-monaco-hebdo.svg",
+    id: "ye-saba-news",
+    src: "tmp/batch55-final/ye-saba-news.jpg",
     explainer:
-      "Black slab-serif 'MONACO' with smaller outlined red 'HEBDO' nested at the lower right — Monaco Hebdo masthead.",
+      "Blue Arabic سبا wordmark over orange 'SABA NET' with grey Arabic agency caption — Yemen News Agency (Saba) masthead.",
     licence:
-      "Monaco Hebdo trademark bundled from the publisher's official site brand assets (monaco-hebdo.com) for educational reference in Learn mode.",
+      "Saba Net trademark bundled from the agency's official site brand assets (saba.ye) for educational reference in Learn mode.",
   },
   {
-    id: "mn-ikon-mn",
-    src: "tmp/batch54-final/mn-ikon-mn.png",
+    id: "mr-cridem",
+    src: "tmp/batch55-final/mr-cridem.png",
     explainer:
-      "Four-colour square frame mark beside bold dark 'ikon™' wordmark — Ikon.mn masthead.",
+      "Golden upward crescent and radiant sun on a green field — CRIDEM site brand mark.",
     licence:
-      "Ikon.mn trademark bundled from the publisher's official site brand assets (ikon.mn) for educational reference in Learn mode.",
-  },
-  {
-    id: "bi-net-press",
-    src: "tmp/batch54-final/bi-net-press.png",
-    explainer:
-      "Black brush-script 'rugamba.Net Press' wordmark — Net Press (Agence Burundaise d'Information) masthead.",
-    licence:
-      "Net Press trademark bundled from the agency's official site brand assets (netpress.bi / netpress.online) for educational reference in Learn mode.",
+      "CRIDEM trademark bundled from the publisher's official site brand assets (cridem.org) for educational reference in Learn mode.",
   },
 ];
 
