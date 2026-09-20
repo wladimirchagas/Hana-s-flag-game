@@ -465,7 +465,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Agencia Télam Memory Report"
       },
       "revenueModel": "State public budget funding and content subscriber fees",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ar/telam.svg",
+      "logoExplainer": "Lowercase 'télam' with signal-arc marks — Argentina's national news agency emblem.",
+      "licenceNote": "Télam logo trademark bundled from Wikimedia Commons (File:Télam-logo-2021.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.telam.com.ar",
         "https://en.wikipedia.org/wiki/T%C3%A9lam"
@@ -491,7 +494,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "El Cronista Media Review 2023"
       },
       "revenueModel": "Corporate subscriptions, print sales, and financial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ar/el-cronista.png",
+      "logoExplainer": "Teal 'C' disc beside 'El Cronista' — Argentina's business daily brand mark from its own site.",
+      "licenceNote": "El Cronista masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.cronista.com",
         "https://es.wikipedia.org/wiki/El_Cronista_(n%C3%BAmero_comercial)"
@@ -1789,7 +1795,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ADS Italy Circulation Data 2024"
       },
       "revenueModel": "Print sales, digital subscriptions, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/it/la-stampa.png",
+      "logoExplainer": "Bold slab-serif 'LA STAMPA' capitals — the Turin daily's masthead.",
+      "licenceNote": "La Stampa masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.lastampa.it",
         "https://en.wikipedia.org/wiki/La_Stampa"
@@ -1876,7 +1885,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "NSK Japan Newspaper Audit 2024"
       },
       "revenueModel": "Print subscriptions, digital access, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/jp/mainichi-shimbun.svg",
+      "logoExplainer": "Kanji '毎日新聞' flanked by blue star and eye emblems — the Mainichi Shimbun's full brand lockup.",
+      "licenceNote": "Mainichi Shimbun masthead trademark bundled from Wikimedia Commons (File:Mainichi Shimbun logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://mainichi.jp",
         "https://en.wikipedia.org/wiki/Mainichi_Shimbun"
@@ -2930,7 +2942,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Diario Oficial de la Federación / Archivo Notimex"
       },
       "revenueModel": "State budget allocations and wire service subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mx/notimex.png",
+      "logoExplainer": "Black 'NOTIMEX' capitals with a colourful hummingbird emblem and the motto 'VERDAD, LIBERTAD Y DERECHO A LA INFORMACIÓN'.",
+      "licenceNote": "Notimex logo trademark bundled from Wikimedia Commons (File:Logo NOTIMEX.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://es.wikipedia.org/wiki/Notimex",
         "https://www.gob.mx"
@@ -3405,7 +3420,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ANP Jaarverslag 2023"
       },
       "revenueModel": "B2B wire service contracts, corporate communications, and photo licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/nl/anp.jpg",
+      "logoExplainer": "White '.ANP' on a blue field — the Algemeen Nederlands Persbureau agency mark.",
+      "licenceNote": "ANP logo trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.anp.nl",
         "https://nl.wikipedia.org/wiki/Algemeen_Nederlands_Persbureau"
@@ -3554,7 +3572,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "NTB Årsrapport 2023"
       },
       "revenueModel": "B2B wire subscriptions, editorial tech syndication, and photo licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/no/ntb.svg",
+      "logoExplainer": "Orange geometric letterforms spelling NTB — the Norwegian News Agency brand mark.",
+      "licenceNote": "NTB logo trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.ntb.no",
         "https://no.wikipedia.org/wiki/Norsk_Telegrambyr%C3%A5"
@@ -3792,7 +3813,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "PAP Sprawozdanie Finansowe i Działalności 2023"
       },
       "revenueModel": "State budget subsidy and commercial wire distribution licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pl/pap.svg",
+      "logoExplainer": "Lowercase orange-red 'pap' inside an oval frame — the Polish Press Agency brand mark.",
+      "licenceNote": "PAP (Polska Agencja Prasowa) logo trademark bundled from Wikimedia Commons (File:PAP logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.pap.pl",
         "https://en.wikipedia.org/wiki/Polish_Press_Agency"
@@ -4683,7 +4707,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Memoria Anual de Agencia EFE / SEPI"
       },
       "revenueModel": "State public service contract and media licensing subscriptions worldwide",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/es/agencia-efe.svg",
+      "logoExplainer": "Navy 'EFE:' wordmark — Spain's international news agency brand mark.",
+      "licenceNote": "Agencia EFE logo trademark bundled from Wikimedia Commons (File:Logotipo Agencia EFE 2022.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://efe.com",
         "https://en.wikipedia.org/wiki/EFE"
@@ -5270,7 +5297,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "WAM Annual Report / UAE National Media Office"
       },
       "revenueModel": "Federal government budget funding and international media exchange agreements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ae/wam.png",
+      "logoExplainer": "Bilingual Arabic/English 'WAM' wordmark with a dotted globe — the Emirates News Agency emblem.",
+      "licenceNote": "WAM (Emirates News Agency) logo trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://wam.ae",
         "https://en.wikipedia.org/wiki/Emirates_News_Agency"
