@@ -1988,6 +1988,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     )}
     <div className={`learn-fs${subdivisionMode ? " learn-fs--drilldown" : ""}`}>
       <div className="learn-fs__map-col">
+      <div className="learn-fs__map-stick">
       <div className="learn-fs__map" aria-label="World map">
         {isModernEra && subdivisionMode ? (
           <SubdivisionMap
@@ -2111,6 +2112,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             groupKeyOf={historicalGroupKeyOf}
           />
         )}
+      </div>
       </div>
       {isModernEra && !subdivisionMode && democracyChartEnabled && (
         <DemocracyIndexChart

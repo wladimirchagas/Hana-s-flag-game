@@ -241,8 +241,9 @@
 }
 
 /* Map column: sticky map on top, optional democracy chart beneath it (same
-   width as the map, above the flag grid). The chart is NOT sticky — only the
-   map sticks — so enabling the chart does not pin a double-height block. */
+   width as the map, above the flag grid). The sticky wrapper wraps ONLY the
+   map so the sticky map unpins before the chart — otherwise it would float
+   over the chart while scrolling the column. */
 .learn-fs__map-col {
   grid-area: map;
   display: flex;
@@ -252,7 +253,13 @@
   min-width: 0;
 }
 
-.learn-fs__map-col > .learn-fs__map {
+.learn-fs__map-stick {
+  /* Isolates sticky containment to the map frame alone. */
+  display: block;
+  width: 100%;
+}
+
+.learn-fs__map-col .learn-fs__map {
   grid-area: unset;
 }
 

@@ -64,6 +64,7 @@ export function DemocracyIndexChart({
     yLabel: string;
     left: number;
     top: number;
+    below: boolean;
   } | null>(null);
 
   const byCode = useMemo(() => {
@@ -134,6 +135,8 @@ export function DemocracyIndexChart({
       yLabel: formatDemocracyAxisValue(yKey, pt.yIndex),
       left,
       top,
+      // Top-third markers flip the tip below so it stays legible.
+      below: cy < VIEW_H * 0.28,
     });
   };
 
@@ -385,7 +388,10 @@ export function DemocracyIndexChart({
 
         {tooltip && (
           <div
-            className="democracy-index-chart__tooltip"
+            className={
+              "democracy-index-chart__tooltip" +
+              (tooltip.below ? " democracy-index-chart__tooltip--below" : "")
+            }
             style={{
               left: tooltip.left,
               top: tooltip.top,
@@ -394,10 +400,12 @@ export function DemocracyIndexChart({
           >
             <strong className="democracy-index-chart__tooltip-name">{tooltip.name}</strong>
             <span className="democracy-index-chart__tooltip-row">
-              X · {getDemocracyIndexLabel(xKey)}: {tooltip.xLabel}
+              <span className="democracy-index-chart__tooltip-axis">X</span>
+              {getDemocracyIndexLabel(xKey)}: {tooltip.xLabel}
             </span>
             <span className="democracy-index-chart__tooltip-row">
-              Y · {getDemocracyIndexLabel(yKey)}: {tooltip.yLabel}
+              <span className="democracy-index-chart__tooltip-axis">Y</span>
+              {getDemocracyIndexLabel(yKey)}: {tooltip.yLabel}
             </span>
           </div>
         )}
