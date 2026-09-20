@@ -8393,7 +8393,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Graphic Communications Group Annual Report 2023"
       },
       "revenueModel": "Commercial print circulation, state legal advertising, and digital display revenue",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gh/daily-graphic.png",
+      "logoExplainer": "Bold black sans 'GRAPHIC ONLINE' wordmark — Daily Graphic's digital masthead on graphic.com.gh.",
+      "licenceNote": "Graphic Online / Daily Graphic trademark bundled from the publisher's official site brand assets (graphic.com.gh) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.graphic.com.gh",
         "https://en.wikipedia.org/wiki/Daily_Graphic_(Ghana)"
@@ -14241,7 +14244,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Libya Herald Analytics 2024"
       },
       "revenueModel": "Paid digital subscriptions and corporate advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ly/libya-herald.png",
+      "logoExplainer": "White stacked serif 'Libya / Herald' with smaller Arabic ليبيا هيرلد on a blue field — Libya Herald masthead.",
+      "licenceNote": "Libya Herald trademark bundled from the publisher's official site brand assets (libyaherald.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.libyaherald.com",
         "https://en.wikipedia.org/wiki/Libya_Herald"
@@ -20918,7 +20924,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Slovenska oglaševalska zbornica (SOZ) 2023"
       },
       "revenueModel": "Print sales, digital subscriptions, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/si/dnevnik-si.png",
+      "logoExplainer": "Bold orange-red slab-serif 'DNEVNIK' wordmark — Dnevnik (Slovenia) masthead.",
+      "licenceNote": "Dnevnik trademark bundled from the publisher's official site brand assets (dnevnik.si) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.dnevnik.si",
         "https://en.wikipedia.org/wiki/Dnevnik_(Slovenia)"
@@ -24585,7 +24594,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Afisha Media Public Analytics / Yandex Metrika"
       },
       "revenueModel": "Commercial digital display advertising, sponsored content studio, and business listings",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/uz/gazeta-uz.png",
+      "logoExplainer": "Blue-over-green bars beside lowercase black 'gazeta' — Gazeta.uz masthead.",
+      "licenceNote": "Gazeta.uz trademark bundled from the publisher's official site brand assets (gazeta.uz) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.gazeta.uz",
         "https://en.wikipedia.org/wiki/Media_of_Uzbekistan"
