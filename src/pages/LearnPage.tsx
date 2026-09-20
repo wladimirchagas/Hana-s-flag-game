@@ -17,7 +17,9 @@ import { useZoomPan } from "../hooks/useZoomPan";
 import { MapViewControl } from "../components/MapViewControl";
 import { DemocracyMapControl } from "../components/DemocracyMapControl";
 import { DemocracyMapLegend } from "../components/DemocracyMapLegend";
+import { DemocracyIndexChart } from "../components/DemocracyIndexChart";
 import {
+  type DemocracyIndexKey,
   type DemocracyMapMode,
   getDemocracyColorOverlay,
 } from "../lib/democracyColors";
@@ -297,6 +299,14 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [showCities, setShowCities] = useState(false);
   // "Colour countries by Democracy Index" layer for the world map.
   const [democracyMapMode, setDemocracyMapMode] = useState<DemocracyMapMode>(null);
+  // Scatter chart of two democracy indexes, shown below the world map when
+  // enabled from the Democracy Index control. Axis keys are independent of
+  // the map colour mode so users can compare any pair of indexes.
+  const [democracyChartEnabled, setDemocracyChartEnabled] = useState(false);
+  const [democracyChartXKey, setDemocracyChartXKey] =
+    useState<DemocracyIndexKey>("cpi");
+  const [democracyChartYKey, setDemocracyChartYKey] =
+    useState<DemocracyIndexKey>("v-dem");
 
   // First-run tips card shown in the empty state. Dismissal is remembered so
   // it's a one-time nudge, re-openable from a "Show tips" affordance.
@@ -1354,6 +1364,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           <DemocracyMapControl
             mode={democracyMapMode}
             onChange={handleDemocracyMapModeChange}
+            chartEnabled={democracyChartEnabled}
+            onChartEnabledChange={setDemocracyChartEnabled}
           />
         )}
         {/* Rotation + globe (view-centre) are secondary — they collapse into the
@@ -1375,7 +1387,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       </>
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap, isModernEra, showPassportColors, togglePassportColors, showCities, toggleCities, democracyMapMode, handleDemocracyMapModeChange, eraId, setEraId],
+    [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap, isModernEra, showPassportColors, togglePassportColors, showCities, toggleCities, democracyMapMode, handleDemocracyMapModeChange, democracyChartEnabled, eraId, setEraId],
   );
 
   // Leaner control set for the subdivision map: just the flag-overlay
@@ -1975,6 +1987,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       </nav>
     )}
     <div className={`learn-fs${subdivisionMode ? " learn-fs--drilldown" : ""}`}>
+      <div className="learn-fs__map-col">
       <div className="learn-fs__map" aria-label="World map">
         {isModernEra && subdivisionMode ? (
           <SubdivisionMap
@@ -2098,6 +2111,48 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             groupKeyOf={historicalGroupKeyOf}
           />
         )}
+      </div>
+      {isModernEra && !subdivisionMode && democracyChartEnabled && (
+        <DemocracyIndexChart
+          countries={countries as Country[]}
+          xKey={democracyChartXKey}
+          yKey={democracyChartYKey}
+          onXKeyChange={setDemocracyChartXKey}
+          onYKeyChange={setDemocracyChartYKey}
+          selectedCode={
+            selected?.kind === "modern" ? selected.country.code : null
+          }
+          hoveredCode={
+            hovered?.kind === "modern" ? hovered.country.code : null
+          }
+          onSelect={(code) => {
+            const c = codeToCountry.get(code);
+            if (!c) return;
+            if (hoverClearTimer.current) {
+              clearTimeout(hoverClearTimer.current);
+              hoverClearTimer.current = null;
+            }
+            setSelected({ kind: "modern", country: c });
+            setHovered(null);
+            clearGridItemSelection();
+          }}
+          onHover={(code) => {
+            if (!code) {
+              hoverClearTimer.current = setTimeout(() => {
+                setHovered(null);
+                hoverClearTimer.current = null;
+              }, 200);
+              return;
+            }
+            if (hoverClearTimer.current) {
+              clearTimeout(hoverClearTimer.current);
+              hoverClearTimer.current = null;
+            }
+            const c = codeToCountry.get(code);
+            if (c) setHovered({ kind: "modern", country: c });
+          }}
+        />
+      )}
       </div>
 
       <div className="learn-fs__panel-wrap">

@@ -240,6 +240,22 @@
   padding: 0.25rem 0.25rem 0;
 }
 
+/* Map column: sticky map on top, optional democracy chart beneath it (same
+   width as the map, above the flag grid). The chart is NOT sticky — only the
+   map sticks — so enabling the chart does not pin a double-height block. */
+.learn-fs__map-col {
+  grid-area: map;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.65rem;
+  min-width: 0;
+}
+
+.learn-fs__map-col > .learn-fs__map {
+  grid-area: unset;
+}
+
 /* === Sticky map (both world-map and drill-down modes) =============
    In BOTH the world-map (non-drilldown) view and the drilled-into-a-country
    view, the map + its controls stay pinned to the top as the user scrolls

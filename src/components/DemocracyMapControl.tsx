@@ -1,17 +1,29 @@
 import { UiIcon } from "./UiIcon";
 import { usePopoverBounds } from "../hooks/usePopoverBounds";
 import { useEffect, useRef, useState } from "react";
-import type { DemocracyMapMode } from "../lib/democracyColors";
+import {
+  DEMOCRACY_INDEX_KEYS,
+  type DemocracyMapMode,
+  getDemocracyIndexLabel,
+} from "../lib/democracyColors";
 
 export type DemocracyMapControlProps = {
   mode: DemocracyMapMode;
   onChange: (next: DemocracyMapMode) => void;
+  /** When true, the democracy scatter chart is shown below the world map. */
+  chartEnabled: boolean;
+  onChartEnabledChange: (next: boolean) => void;
 };
 
-export function DemocracyMapControl({ mode, onChange }: DemocracyMapControlProps) {
+export function DemocracyMapControl({
+  mode,
+  onChange,
+  chartEnabled,
+  onChartEnabledChange,
+}: DemocracyMapControlProps) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-  const popoverStyle = usePopoverBounds(open, ref, 256);
+  const popoverStyle = usePopoverBounds(open, ref, 280);
 
   useEffect(() => {
     if (!open) return;
@@ -36,7 +48,7 @@ export function DemocracyMapControl({ mode, onChange }: DemocracyMapControlProps
     setOpen(false);
   };
 
-  const isActive = mode !== null;
+  const isActive = mode !== null || chartEnabled;
 
   return (
     <div className="democracy-map-control" ref={ref}>
@@ -64,53 +76,33 @@ export function DemocracyMapControl({ mode, onChange }: DemocracyMapControlProps
           <div className="democracy-map-control__options">
             <button
               type="button"
+              className={`map-view-control__preset democracy-map-control__chart-toggle${chartEnabled ? " map-view-control__preset--active" : ""}`}
+              onClick={() => {
+                onChartEnabledChange(!chartEnabled);
+                setOpen(false);
+              }}
+              aria-pressed={chartEnabled}
+            >
+              {chartEnabled ? "Chart view · On" : "Chart view"}
+            </button>
+            <hr className="democracy-map-control__divider" aria-hidden="true" />
+            <button
+              type="button"
               className={`map-view-control__preset${mode === null ? " map-view-control__preset--active" : ""}`}
               onClick={() => selectMode(null)}
             >
               Off (Default map)
             </button>
-            <button
-              type="button"
-              className={`map-view-control__preset${mode === "freedom-house" ? " map-view-control__preset--active" : ""}`}
-              onClick={() => selectMode("freedom-house")}
-            >
-              Freedom House rating
-            </button>
-            <button
-              type="button"
-              className={`map-view-control__preset${mode === "v-dem" ? " map-view-control__preset--active" : ""}`}
-              onClick={() => selectMode("v-dem")}
-            >
-              V-Dem regime type
-            </button>
-            <button
-              type="button"
-              className={`map-view-control__preset${mode === "economist" ? " map-view-control__preset--active" : ""}`}
-              onClick={() => selectMode("economist")}
-            >
-              The Economist Index
-            </button>
-            <button
-              type="button"
-              className={`map-view-control__preset${mode === "cpi" ? " map-view-control__preset--active" : ""}`}
-              onClick={() => selectMode("cpi")}
-            >
-              Corruption Perceptions Index
-            </button>
-            <button
-              type="button"
-              className={`map-view-control__preset${mode === "perception" ? " map-view-control__preset--active" : ""}`}
-              onClick={() => selectMode("perception")}
-            >
-              Democracy Perception Index
-            </button>
-            <button
-              type="button"
-              className={`map-view-control__preset${mode === "rsf-press" ? " map-view-control__preset--active" : ""}`}
-              onClick={() => selectMode("rsf-press")}
-            >
-              RSF Press Freedom Index
-            </button>
+            {DEMOCRACY_INDEX_KEYS.map((key) => (
+              <button
+                key={key}
+                type="button"
+                className={`map-view-control__preset${mode === key ? " map-view-control__preset--active" : ""}`}
+                onClick={() => selectMode(key)}
+              >
+                {getDemocracyIndexLabel(key)}
+              </button>
+            ))}
           </div>
         </div>
       )}
