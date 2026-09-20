@@ -1281,7 +1281,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "State budget appropriation and wire subscription fees",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ir/irna.svg",
+      "logoExplainer": "Blue barred mark beside bold 'IRNA' with '1934' in the A — Islamic Republic News Agency logo.",
+      "licenceNote": "Islamic Republic News Agency logo.svg from English Wikipedia (fair-use / non-free); trademark bundled for educational reference in Learn mode with licenceNote.",
+
       "sources": [
         "https://www.irna.ir",
         "https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency"
@@ -1552,7 +1555,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "~2.50 KWD / person / year"
       },
       "revenueModel": "State budget funding and wire syndication fees",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/kw/kuna.png",
+      "logoExplainer": "Blue circular emblem beside bilingual 'KUNA' / Arabic title and 'Kuwait News Agency' strap — KUNA wire logo.",
+      "licenceNote": "KUNA-logo.png from English Wikipedia (fair-use / non-free); trademark bundled for educational reference in Learn mode with licenceNote.",
+
       "sources": [
         "https://www.kuna.net.kw",
         "https://en.wikipedia.org/wiki/Kuwait_News_Agency"
