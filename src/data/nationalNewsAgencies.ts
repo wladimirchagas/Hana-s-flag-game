@@ -428,7 +428,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ANGOP Institutional Report 2023"
       },
       "revenueModel": "Direct state budget allocation and subscriber licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ao/angop.jpg",
+      "logoExplainer": "Orange italic 'ANGOP' with grey signal swooshes over 'Agência Angola Press' — the agency wordmark.",
+      "licenceNote": "ANGOP brand mark trademark bundled from Wikimedia Commons (File:Logo Angop.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.angop.ao",
         "https://en.wikipedia.org/wiki/Angola_Press_Agency"
@@ -922,7 +925,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "One Caribbean Media Annual Report 2023"
       },
       "revenueModel": "Print retail sales, digital advertising, and e-paper subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bb/nation-news.png",
+      "logoExplainer": "Magenta 'NationNews' wordmark with a star built into the 'a' — Barbados NationNews digital masthead.",
+      "licenceNote": "NationNews Barbados masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.nationnews.com",
         "https://en.wikipedia.org/wiki/The_Nation_(Barbados)"
@@ -1217,7 +1223,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Sunday Standard Review 2023"
       },
       "revenueModel": "Print sales and corporate advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bw/sunday-standard.png",
+      "logoExplainer": "Overlapping black and slate 'S' letters — Sunday Standard (Botswana) brand monogram from its site.",
+      "licenceNote": "Sunday Standard brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.sundaystandard.info"
       ]
@@ -1710,7 +1719,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Editora Granma Informe de Gestión 2023"
       },
       "revenueModel": "Direct state budget appropriation and institutional subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cu/granma.png",
+      "logoExplainer": "Bold italic red 'Granma' wordmark — the Cuban Communist Party newspaper's classic masthead.",
+      "licenceNote": "Granma masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.granma.cu",
         "https://en.wikipedia.org/wiki/Granma_(newspaper)"
@@ -1779,7 +1791,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "DJF 60 / person / year (~US$0.34)"
       },
       "revenueModel": "State operating subsidy and commercial news syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/dj/adi.png",
+      "logoExplainer": "ADI mark with globe and green/red letter tiles beside 'AGENCE DJIBOUTIENNE D'INFORMATION'.",
+      "licenceNote": "ADI brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.adi.dj",
         "https://fr.wikipedia.org/wiki/Agence_djiboutienne_d%27information"
@@ -2461,7 +2476,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "24.kg Audience Audit 2024"
       },
       "revenueModel": "Digital display advertising, sponsored content, and media services",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/kg/24-kg.png",
+      "logoExplainer": "Stylised red '24' with stacked navy 'KG' — the 24.kg news portal brand mark.",
+      "licenceNote": "24.kg brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://24.kg",
         "https://en.wikipedia.org/wiki/24.kg"
@@ -2486,7 +2504,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "WWW.KG Top Sites Ranking 2024"
       },
       "revenueModel": "Digital programmatic advertising, business subscriptions, and wire licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/kg/akipress.png",
+      "logoExplainer": "Teal diagonal-bar icon beside 'AKИpress' wordmark — AKIPress news agency crest.",
+      "licenceNote": "AKIPress brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://akipress.org",
         "https://en.wikipedia.org/wiki/AKIpress_news_agency"
@@ -3233,7 +3254,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "MAP Rapport d'Activité 2023"
       },
       "revenueModel": "State budgetary subvention, wire subscriptions, and commercial photo/video services",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ma/map.jpg",
+      "logoExplainer": "Blue square with Arabic title, white 'MAP' and 'AGENCE MAROCAINE DE PRESSE' — Maghreb Arabe Presse crest.",
+      "licenceNote": "MAP / Agence Marocaine de Presse brand mark trademark bundled from Wikimedia Commons (File:MAPmaroc-logo.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.mapnews.ma",
         "https://fr.wikipedia.org/wiki/Maghreb_Arabe_Presse"
@@ -4164,7 +4188,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "TASS Corporate Report 2023"
       },
       "revenueModel": "Federal budget subsidy and news wire syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ru/tass.svg",
+      "logoExplainer": "Navy square with white 'Tass' wordmark — the agency's 2022 Latin brand mark from Wikimedia Commons.",
+      "licenceNote": "TASS brand mark trademark bundled from Wikimedia Commons (File:TASS Logo (Latin) 2022.svg; Public domain) for educational reference in Learn mode.",
+
       "sources": [
         "https://tass.ru",
         "https://en.wikipedia.org/wiki/TASS"
@@ -4517,7 +4544,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "APS Rapport d'Activité 2023"
       },
       "revenueModel": "State public service subsidy and commercial news licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sn/aps.png",
+      "logoExplainer": "Globe highlighting Senegal beside bold 'APS' over 'Agence de Presse Sénégalaise' — the APS crest.",
+      "licenceNote": "APS Sénégal brand mark trademark bundled from Wikimedia Commons (File:APS Sénégal logo.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://aps.sn",
         "https://en.wikipedia.org/wiki/Agence_de_Presse_S%C3%A9n%C3%A9galaise"
@@ -4750,7 +4780,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "STA Letno poročilo 2023"
       },
       "revenueModel": "State public service contract and commercial news licensing fees",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/si/sta.jpg",
+      "logoExplainer": "Black rounded bar with white 'sta', yellow triangle accent, and Slovenian/English agency names.",
+      "licenceNote": "STA brand mark trademark bundled from Wikimedia Commons (File:Sta logotip.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.sta.si",
         "https://en.wikipedia.org/wiki/Slovenian_Press_Agency"
@@ -5916,7 +5949,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ma'an Audience Review / Similarweb"
       },
       "revenueModel": "Commercial digital banner advertising, international media development partnerships, and television broadcasting spots",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ps/maan-news.jpg",
+      "logoExplainer": "Glossy red circular badge with white Arabic 'معاً' calligraphy — Ma'an News Agency emblem.",
+      "licenceNote": "Ma'an News Agency brand mark trademark bundled from Wikimedia Commons (File:Ma'an Logo.jpg; CC BY 3.0) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.maannews.net",
         "https://en.wikipedia.org/wiki/Ma%27an_News_Agency"

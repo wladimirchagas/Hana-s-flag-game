@@ -14,41 +14,105 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
 /**
- * Visually verified batch (2026-09). Each row: id, source path (repo-relative),
+ * Visually verified batch 14 (2026-09). Each row: id, source path (repo-relative),
  * logoExplainer, licenceNote, optional kind override.
  */
 const MANIFEST = [
   {
-    id: "ly-lanews",
-    src: "tmp/logo-harvest/ly/lanews.png",
+    id: "ru-tass",
+    src: "tmp/logo-harvest/manual/ru/tass.svg",
     explainer:
-      "Light-blue Arabic wordmark with a globe mark \u2014 Libya Al-Ahrar News digital masthead from its own site.",
+      "Navy square with white 'Tass' wordmark — the agency's 2022 Latin brand mark from Wikimedia Commons.",
     licence:
-      "Libya Al-Ahrar News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "TASS brand mark trademark bundled from Wikimedia Commons (File:TASS Logo (Latin) 2022.svg; Public domain) for educational reference in Learn mode.",
   },
   {
-    id: "mz-canal-de-mocambique",
-    src: "tmp/logo-harvest/mz/canal-de-mocambique.png",
+    id: "ma-map",
+    src: "tmp/logo-harvest/manual/ma/map.jpg",
     explainer:
-      "Dark-blue 'Canal' script over orange 'de Mo\u00e7ambique' \u2014 Canal de Mo\u00e7ambique newspaper masthead.",
+      "Blue square with Arabic title, white 'MAP' and 'AGENCE MAROCAINE DE PRESSE' — Maghreb Arabe Presse crest.",
     licence:
-      "Canal de Mo\u00e7ambique masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "MAP / Agence Marocaine de Presse brand mark trademark bundled from Wikimedia Commons (File:MAPmaroc-logo.jpg) for educational reference in Learn mode.",
   },
   {
-    id: "ps-wafa",
-    src: "tmp/logo-harvest/ps/wafa.png",
+    id: "ao-angop",
+    src: "tmp/logo-harvest/manual/ao/angop.jpg",
     explainer:
-      "Stacked 'WAFA' mark with Arabic title and 'Palestinian News & Info Agency' strap \u2014 the official agency crest.",
+      "Orange italic 'ANGOP' with grey signal swooshes over 'Agência Angola Press' — the agency wordmark.",
     licence:
-      "WAFA brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "ANGOP brand mark trademark bundled from Wikimedia Commons (File:Logo Angop.jpg) for educational reference in Learn mode.",
   },
   {
-    id: "pg-loop-png",
-    src: "tmp/logo-harvest/pg/loop-png.png",
+    id: "sn-aps",
+    src: "tmp/logo-harvest/manual/sn/aps.png",
     explainer:
-      "Yellow disc with black overlapping-loop play mark \u2014 Loop PNG's digital news brand emblem.",
+      "Globe highlighting Senegal beside bold 'APS' over 'Agence de Presse Sénégalaise' — the APS crest.",
     licence:
-      "Loop PNG brand mark trademark bundled from Wikimedia Commons (File:Loops logo.png) for educational reference in Learn mode.",
+      "APS Sénégal brand mark trademark bundled from Wikimedia Commons (File:APS Sénégal logo.png) for educational reference in Learn mode.",
+  },
+  {
+    id: "si-sta",
+    src: "tmp/logo-harvest/manual/si/sta.jpg",
+    explainer:
+      "Black rounded bar with white 'sta', yellow triangle accent, and Slovenian/English agency names.",
+    licence:
+      "STA brand mark trademark bundled from Wikimedia Commons (File:Sta logotip.jpg) for educational reference in Learn mode.",
+  },
+  {
+    id: "ps-maan-news",
+    src: "tmp/logo-harvest/manual/ps/maan-news.jpg",
+    explainer:
+      "Glossy red circular badge with white Arabic 'معاً' calligraphy — Ma'an News Agency emblem.",
+    licence:
+      "Ma'an News Agency brand mark trademark bundled from Wikimedia Commons (File:Ma'an Logo.jpg; CC BY 3.0) for educational reference in Learn mode.",
+  },
+  {
+    id: "bb-nation-news",
+    src: "tmp/logo-harvest/bb/nation-news.png",
+    explainer:
+      "Magenta 'NationNews' wordmark with a star built into the 'a' — Barbados NationNews digital masthead.",
+    licence:
+      "NationNews Barbados masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "bw-sunday-standard",
+    src: "tmp/logo-harvest/bw/sunday-standard.png",
+    explainer:
+      "Overlapping black and slate 'S' letters — Sunday Standard (Botswana) brand monogram from its site.",
+    licence:
+      "Sunday Standard brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "cu-granma",
+    src: "tmp/logo-harvest/cu/granma.png",
+    explainer:
+      "Bold italic red 'Granma' wordmark — the Cuban Communist Party newspaper's classic masthead.",
+    licence:
+      "Granma masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "dj-adi",
+    src: "tmp/logo-harvest/dj/adi.png",
+    explainer:
+      "ADI mark with globe and green/red letter tiles beside 'AGENCE DJIBOUTIENNE D'INFORMATION'.",
+    licence:
+      "ADI brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "kg-24-kg",
+    src: "tmp/logo-harvest/kg/24-kg.png",
+    explainer:
+      "Stylised red '24' with stacked navy 'KG' — the 24.kg news portal brand mark.",
+    licence:
+      "24.kg brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "kg-akipress",
+    src: "tmp/logo-harvest/kg/akipress.png",
+    explainer:
+      "Teal diagonal-bar icon beside 'AKИpress' wordmark — AKIPress news agency crest.",
+    licence:
+      "AKIPress brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
   },
 ];
 
@@ -119,46 +183,45 @@ function main() {
   let installed = 0;
   for (const row of MANIFEST) {
     const abs = resolve(ROOT, row.src);
-    if (!existsSync(abs)) throw new Error(`missing source ${row.src}`);
+    if (!existsSync(abs)) throw new Error(`missing source: ${row.src}`);
     const buf = readFileSync(abs);
-    const kind =
-      buf[0] === 0x89
-        ? "png"
-        : buf[0] === 0xff
-          ? "jpg"
-          : buf.toString("utf8", 0, 200).includes("<svg")
-            ? "svg"
-            : buf.toString("latin1", 0, 4) === "RIFF"
-              ? "webp"
-              : extname(row.src).slice(1).replace("jpeg", "jpg");
+    const ext = extname(row.src).toLowerCase() || ".png";
     const cc = row.id.slice(0, 2);
     const slug = row.id.slice(3);
     const relDir = `newspaper-logos/${cc}`;
-    const destDir = resolve(ROOT, "public", relDir);
-    mkdirSync(destDir, { recursive: true });
-    const destName = `${slug}.${kind === "jpeg" ? "jpg" : kind}`;
-    const destAbs = join(destDir, destName);
+    const destName = `${slug}${ext}`;
+    const destRel = `${relDir}/${destName}`;
+    const destAbs = resolve(ROOT, "public", destRel);
+    mkdirSync(dirname(destAbs), { recursive: true });
     copyFileSync(abs, destAbs);
-    const logoPath = `${relDir}/${destName}`;
-    const fields = { logo: logoPath, explainer: row.explainer, licence: row.licence };
-    console.log(`install ${row.id} → ${logoPath} (${buf.length}b sha=${sha256(buf).slice(0, 12)})`);
-    let found = false;
-    if (papers.includes(`"id": "${row.id}"`)) {
+    const fields = {
+      logo: destRel,
+      explainer: row.explainer,
+      licence: row.licence,
+      sha256: sha256(buf),
+    };
+    console.log(`install ${row.id} → ${destRel} (${buf.length}b sha=${fields.sha256.slice(0, 12)}…)`);
+    // Dual-patch: same id may exist in both datasets
+    const beforeP = papers;
+    const beforeA = agencies;
+    try {
       papers = patchEntry(papers, row.id, fields);
-      found = true;
+    } catch (e) {
+      if (!String(e.message).includes("not found")) throw e;
     }
-    if (agencies.includes(`"id": "${row.id}"`)) {
+    try {
       agencies = patchEntry(agencies, row.id, fields);
-      found = true;
+    } catch (e) {
+      if (!String(e.message).includes("not found")) throw e;
     }
-    if (!found) {
-      throw new Error(`id ${row.id} not in papers or agencies`);
+    if (papers === beforeP && agencies === beforeA) {
+      throw new Error(`${row.id}: not found in newspapers or agencies`);
     }
     installed++;
   }
   writeFileSync(resolve(ROOT, "src/data/nationalNewspapers.ts"), papers);
   writeFileSync(resolve(ROOT, "src/data/nationalNewsAgencies.ts"), agencies);
-  console.log(`\nInstalled ${installed} logos.`);
+  console.log(`Installed ${installed} logos.`);
 }
 
 main();
