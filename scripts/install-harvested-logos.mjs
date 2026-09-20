@@ -4,38 +4,30 @@
  * Only entries listed in MANIFEST are touched. Never invents images.
  */
 import { readFileSync, writeFileSync, copyFileSync, mkdirSync, existsSync } from "node:fs";
-import { dirname, resolve, extname } from "node:path";
+import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 19 — en.wikipedia fair-use mastheads (montage-scanned). */
+/** Visually verified batch 20 — Commons mastheads (montage-scanned). */
 const MANIFEST = [
   {
-    id: "au-courier-mail",
-    src: "tmp/logo-harvest/manual/au/courier-mail-b19-plate.png",
+    id: "cl-las-ultimas-noticias",
+    src: "tmp/logo-harvest/manual/cl/las-ultimas-noticias-b20.svg",
     explainer:
-      "Blackletter 'The Courier-Mail' with a red Queensland silhouette and 'We're for you' tagline on white.",
+      "White 'Las Últimas Noticias' sans wordmark on a navy bar topped by a thin red stripe — LUN masthead.",
     licence:
-      "The Courier-Mail Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+      "Las Últimas Noticias logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "bd-ittefaq",
-    src: "tmp/logo-harvest/manual/bd/ittefaq-b19-plate.png",
+    id: "co-el-pais-cali",
+    src: "tmp/logo-harvest/manual/co/el-pais-cali-b20-plate.png",
     explainer:
-      "Bold Bengali 'দৈনিক ইত্তেফাক' masthead with smaller founder attribution — The Daily Ittefaq crest.",
+      "Black serif 'El País' with a light-blue wedge accent on the í — El País Cali masthead on white.",
     licence:
-      "The Daily Ittefaq Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "bd-jugantor",
-    src: "tmp/logo-harvest/manual/bd/jugantor-b19-plate.png",
-    explainer:
-      "Stylised black Bengali 'যুগান্তর' wordmark on white — Daily Jugantor masthead.",
-    licence:
-      "Jugantor Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+      "El País (Colombia) Logotype.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
 ];
 
@@ -104,7 +96,7 @@ function main() {
     const buf = readFileSync(abs);
     const cc = row.id.slice(0, 2);
     const slug = row.id.slice(3);
-    const cleanExt = row.src.endsWith(".svg") ? ".svg" : row.src.endsWith(".jpg") || row.src.endsWith(".jpeg") ? ".jpg" : ".png";
+    const cleanExt = row.src.endsWith(".svg") ? ".svg" : ".png";
     const destRel = `newspaper-logos/${cc}/${slug}${cleanExt}`;
     const destAbs = resolve(ROOT, "public", destRel);
     mkdirSync(dirname(destAbs), { recursive: true });

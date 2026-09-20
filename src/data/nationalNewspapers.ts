@@ -4487,7 +4487,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "LUN Media Metrics 2023"
       },
       "revenueModel": "Retail print sales and retail commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cl/las-ultimas-noticias.svg",
+      "logoExplainer": "White 'Las Últimas Noticias' sans wordmark on a navy bar topped by a thin red stripe — LUN masthead.",
+      "licenceNote": "Las Últimas Noticias logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.lun.com",
         "https://en.wikipedia.org/wiki/Las_%C3%9Altimas_Noticias"
@@ -4976,11 +4979,14 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "https://en.wikipedia.org/wiki/El_País_(Cali)"
       },
       "revenueModel": "Advertising and print/digital sales",
+      "logo": "newspaper-logos/co/el-pais-cali.png",
+      "logoExplainer": "Black serif 'El País' with a light-blue wedge accent on the í — El País Cali masthead on white.",
+      "licenceNote": "El País (Colombia) Logotype.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.elpais.com.co",
         "https://en.wikipedia.org/wiki/El_País_(Cali)"
-      ],
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+      ]
     }
   ],
   "CR": [
