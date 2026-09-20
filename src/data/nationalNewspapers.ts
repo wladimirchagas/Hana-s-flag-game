@@ -14308,7 +14308,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ma-assabah",
       "countryCode": "MA",
       "name": "Assabah",
@@ -14324,6 +14323,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Leading Moroccan Arabic daily",
         "source": "https://en.wikipedia.org/wiki/Assabah"
       },
+      "logo": "newspaper-logos/ma/assabah.jpg",
+      "logoExplainer": "Official masthead/brand mark for Assabah, sourced from Wikimedia Commons and visually verified.",
+      "licenceNote": "Assabah masthead trademark bundled from Wikimedia Commons (File:Assabah-logo.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://assabah.ma",
         "https://en.wikipedia.org/wiki/Assabah"
@@ -14387,7 +14390,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "mc-nice-matin-monaco",
       "countryCode": "MC",
       "name": "Nice-Matin (Monaco coverage)",
@@ -14403,6 +14405,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Leading regional daily serving Monaco",
         "source": "https://en.wikipedia.org/wiki/Nice-Matin"
       },
+      "logo": "newspaper-logos/mc/nice-matin-monaco.png",
+      "logoExplainer": "Official masthead/brand mark for Nice-Matin (Monaco coverage), sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Nice-Matin (Monaco coverage) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.nicematin.com",
         "https://en.wikipedia.org/wiki/Nice-Matin"
@@ -14534,7 +14540,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -14553,12 +14558,15 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Moldovan independent news brand",
         "source": "https://newsmaker.md"
       },
+      "logo": "newspaper-logos/md/newsmaker.jpg",
+      "logoExplainer": "Official masthead/brand mark for NewsMaker, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "NewsMaker masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://newsmaker.md"
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -14577,6 +14585,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Moldova news website",
         "source": "https://tv8.md"
       },
+      "logo": "newspaper-logos/md/tv8.svg",
+      "logoExplainer": "Official masthead/brand mark for TV8.md News, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "TV8.md News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://tv8.md"
       ]
@@ -14604,7 +14616,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ipsos Strategic Marketing Montenegro 2023"
       },
       "revenueModel": "Print sales, digital advertising, cable retransmission, and TV commercial ads",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/me/vijesti.svg",
+      "logoExplainer": "Official masthead/brand mark for Vijesti, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Vijesti masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.vijesti.me",
         "https://en.wikipedia.org/wiki/Vijesti"
@@ -14631,7 +14646,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Nea Audience Report 2023"
       },
       "revenueModel": "Print sales, subscriptions, legal announcements, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/me/pobjeda.jpg",
+      "logoExplainer": "Official masthead/brand mark for Pobjeda, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Pobjeda masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://pobjeda.me",
         "https://en.wikipedia.org/wiki/Pobjeda_(newspaper)"
@@ -14658,7 +14676,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ipsos Print Readership Study Montenegro 2023"
       },
       "revenueModel": "Print copy sales, classifieds, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/me/dan.png",
+      "logoExplainer": "Official masthead/brand mark for Dan, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Dan masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.dan.co.me",
         "https://en.wikipedia.org/wiki/Dan_(newspaper)"
@@ -14762,7 +14783,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Étude Médias Madagascar 2023"
       },
       "revenueModel": "Single-copy street sales, corporate subscriptions, and commercial ads",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mg/l-express.jpg",
+      "logoExplainer": "Official masthead/brand mark for L'Express de Madagascar, sourced from Wikimedia Commons and visually verified.",
+      "licenceNote": "L'Express de Madagascar masthead trademark bundled from Wikimedia Commons (File:Logo L'Express de Madagascar.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://lexpress.mg",
         "https://fr.wikipedia.org/wiki/L%27Express_de_Madagascar"
@@ -14815,14 +14839,16 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Madagascar Tribune Digital Analytics 2023"
       },
       "revenueModel": "Digital display ads, sponsored columns, and voluntary reader contributions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mg/madagascar-tribune.gif",
+      "logoExplainer": "Official masthead/brand mark for Madagascar Tribune, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Madagascar Tribune masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.madagascar-tribune.com",
         "https://fr.wikipedia.org/wiki/Madagascar_Tribune"
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -14841,6 +14867,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Madagascar news website",
         "source": "https://www.newsmada.com"
       },
+      "logo": "newspaper-logos/mg/newsmada.png",
+      "logoExplainer": "Official masthead/brand mark for NewsMada, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "NewsMada masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.newsmada.com"
       ]
@@ -14897,7 +14927,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Press Council of North Macedonia 2023"
       },
       "revenueModel": "Print sales, subscriptions, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mk/nova-makedonija.png",
+      "logoExplainer": "Official masthead/brand mark for Nova Makedonija, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Nova Makedonija masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://novamakedonija.com.mk",
         "https://en.wikipedia.org/wiki/Nova_Makedonija"
@@ -14951,7 +14984,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Association of Albanian Journalists North Macedonia 2023"
       },
       "revenueModel": "Print sales, community advertising, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mk/koha-mk.png",
+      "logoExplainer": "Official masthead/brand mark for Koha (North Macedonia), sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Koha (North Macedonia) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.koha.mk"
       ]
@@ -14985,7 +15021,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "mk-sakam-da-kazam",
       "countryCode": "MK",
       "name": "Sakam da kažam (SDK.mk)",
@@ -15001,6 +15036,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Macedonian news website",
         "source": "https://sdk.mk"
       },
+      "logo": "newspaper-logos/mk/sakam-da-kazam.svg",
+      "logoExplainer": "Official masthead/brand mark for Sakam da kažam (SDK.mk), sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Sakam da kažam (SDK.mk) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://sdk.mk"
       ]
@@ -15028,7 +15067,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Maison de la Presse du Mali 2023"
       },
       "revenueModel": "Print sales, private display advertising, and legal notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ml/l-independant.jpg",
+      "logoExplainer": "Official masthead/brand mark for L'Indépendant, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "L'Indépendant masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://lindependant.org"
       ]
@@ -15085,7 +15127,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ml-studio-tamani",
       "countryCode": "ML",
       "name": "Studio Tamani",
@@ -15101,6 +15142,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Malian news brand",
         "source": "https://www.studiotamani.org"
       },
+      "logo": "newspaper-logos/ml/studio-tamani.svg",
+      "logoExplainer": "Official masthead/brand mark for Studio Tamani, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Studio Tamani masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.studiotamani.org"
       ]
@@ -15241,7 +15286,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "mm-democratic-voice",
       "countryCode": "MM",
       "name": "Democratic Voice of Burma (DVB)",
@@ -15257,6 +15301,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Myanmar exile/independent news brand",
         "source": "https://en.wikipedia.org/wiki/Democratic_Voice_of_Burma"
       },
+      "logo": "newspaper-logos/mm/democratic-voice.png",
+      "logoExplainer": "Official masthead/brand mark for Democratic Voice of Burma (DVB), sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Democratic Voice of Burma (DVB) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.dvb.no",
         "https://en.wikipedia.org/wiki/Democratic_Voice_of_Burma"
@@ -15285,7 +15333,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Press Institute of Mongolia Media Report 2023"
       },
       "revenueModel": "Print copy sales, subscriptions, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mn/udriin-sonin.png",
+      "logoExplainer": "Official masthead/brand mark for Udriin Sonin, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Udriin Sonin masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://dnn.mn",
         "https://mn.wikipedia.org/wiki/%D3%A8%D0%B4%D1%80%D0%B8%D0%B9%D0%BD_%D1%81%D0%BE%D0%BD%D0%B8%D0%BD"
@@ -15334,13 +15385,15 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mongol Content Corporate Profile 2023"
       },
       "revenueModel": "Digital advertising, content syndication, and digital entertainment services",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mn/gogo-mn.png",
+      "logoExplainer": "Official masthead/brand mark for Gogo.mn, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Gogo.mn masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://gogo.mn"
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -15359,6 +15412,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Official Mongolia news brand",
         "source": "https://www.montsame.mn"
       },
+      "logo": "newspaper-logos/mn/montsame.png",
+      "logoExplainer": "Official masthead/brand mark for Montsame, sourced from Wikimedia Commons and visually verified.",
+      "licenceNote": "Montsame masthead trademark bundled from Wikimedia Commons (File:Montsame logo.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.montsame.mn"
       ]
@@ -15463,7 +15520,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Syndicat des Journalistes Mauritans 2023"
       },
       "revenueModel": "Newsstand sales, institutional subscriptions, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mr/le-calame.jpg",
+      "logoExplainer": "Official masthead/brand mark for Le Calame, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Le Calame masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://lecalame.info",
         "https://fr.wikipedia.org/wiki/Le_Calame"
@@ -15577,7 +15637,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "mt-newsbook",
       "countryCode": "MT",
       "name": "Newsbook",
@@ -15593,6 +15652,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Maltese news website",
         "source": "https://newsbook.com.mt"
       },
+      "logo": "newspaper-logos/mt/newsbook.jpg",
+      "logoExplainer": "Official masthead/brand mark for Newsbook, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Newsbook masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://newsbook.com.mt"
       ]
@@ -15618,7 +15681,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Watch Organisation Mauritius 2023"
       },
       "revenueModel": "Print sales, digital advertising, and corporate subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mu/l-express.svg",
+      "logoExplainer": "Official masthead/brand mark for L'Express, sourced from Wikimedia Commons and visually verified.",
+      "licenceNote": "L'Express masthead trademark bundled from Wikimedia Commons (File:Logo L'Express.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://lexpress.mu",
         "https://fr.wikipedia.org/wiki/L%27Express_(Maurice)"
@@ -15643,7 +15709,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Le Mauricien Audience Survey 2023"
       },
       "revenueModel": "Print sales, legal notices, and commercial display ads",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mu/le-mauricien.png",
+      "logoExplainer": "Official masthead/brand mark for Le Mauricien, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Le Mauricien masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://lemauricien.com",
         "https://fr.wikipedia.org/wiki/Le_Mauricien"
@@ -15668,7 +15737,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kantar TNS Mauritius Media Study 2023"
       },
       "revenueModel": "Commercial multimedia advertising, radio sponsorships, and print sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mu/defi-media.png",
+      "logoExplainer": "Official masthead/brand mark for Défi Média, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Défi Média masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://defimedia.info"
       ]
@@ -15745,7 +15817,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mihaaru Media Kit 2023"
       },
       "revenueModel": "Digital advertising, commercial print sponsorships, and events",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mv/mihaaru.png",
+      "logoExplainer": "Official masthead/brand mark for Mihaaru, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Mihaaru masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://mihaaru.com",
         "https://en.wikipedia.org/wiki/Mihaaru"
@@ -15798,7 +15873,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Avas Audience Insight 2024"
       },
       "revenueModel": "Digital advertising, programmatic networks, and commercial sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mv/avas.jpg",
+      "logoExplainer": "Official masthead/brand mark for Avas, sourced from Wikimedia Commons and visually verified.",
+      "licenceNote": "Avas masthead trademark bundled from Wikimedia Commons (File:Logo of AVAS.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://avas.mv"
       ]
@@ -15822,13 +15900,15 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Edition Editorial Report 2023"
       },
       "revenueModel": "Digital advertising and tourism sector sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mv/the-edition.png",
+      "logoExplainer": "Official masthead/brand mark for The Edition, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "The Edition masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://edition.mv"
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -15847,6 +15927,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Maldivian public news website",
         "source": "https://psmnews.mv"
       },
+      "logo": "newspaper-logos/mv/psm-news.png",
+      "logoExplainer": "Official masthead/brand mark for PSM News, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "PSM News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://psmnews.mv"
       ]
@@ -15897,7 +15981,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nation Publications Corporate Report 2023"
       },
       "revenueModel": "Print sales, institutional subscriptions, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mw/the-nation.png",
+      "logoExplainer": "Official masthead/brand mark for The Nation, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "The Nation masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://mwnation.com",
         "https://en.wikipedia.org/wiki/The_Nation_(Malawi)"
@@ -15922,7 +16009,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Malawi24 Digital Engagement Data 2024"
       },
       "revenueModel": "Programmatic digital ads, affiliate partnerships, and sponsored content",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mw/malawi24.png",
+      "logoExplainer": "Official masthead/brand mark for Malawi24, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Malawi24 masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://malawi24.com"
       ]
@@ -15946,14 +16036,16 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nyasa Times Web Analytics 2023"
       },
       "revenueModel": "Online display advertising and corporate promotional features",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mw/nyasa-times.png",
+      "logoExplainer": "Official masthead/brand mark for Nyasa Times, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Nyasa Times masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.nyasatimes.com",
         "https://en.wikipedia.org/wiki/Nyasa_Times"
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -15972,6 +16064,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "National Malawi news brand",
         "source": "https://www.manaonline.gov.mw"
       },
+      "logo": "newspaper-logos/mw/mana.png",
+      "logoExplainer": "Official masthead/brand mark for Mana Online, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Mana Online masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.manaonline.gov.mw"
       ]
@@ -16250,7 +16346,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "https://en.wikipedia.org/wiki/Utusan_Malaysia"
       },
       "revenueModel": "Advertising and print/digital sales",
-      "noImageReason": "Harvested site asset was the wrong brand (Iklaneka classifieds, not Utusan Malaysia). Official publisher site and Wikimedia Commons were re-checked; no confidently authentic Utusan Malaysia masthead bundled on this pass — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/my/utusan-malaysia.png",
+      "logoExplainer": "Official masthead/brand mark for Utusan Malaysia, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Utusan Malaysia masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
 
 
       "sources": [
@@ -16342,7 +16441,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -16361,6 +16459,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Mozambican independent news brand",
         "source": "https://cartamz.com"
       },
+      "logo": "newspaper-logos/mz/carta.png",
+      "logoExplainer": "Official masthead/brand mark for Carta de Moçambique, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Carta de Moçambique masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://cartamz.com"
       ]
@@ -16437,14 +16539,16 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "NEPC Annual Report 2023"
       },
       "revenueModel": "State budget grant, newspaper sales, and government tender notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/na/new-era.jpg",
+      "logoExplainer": "Official masthead/brand mark for New Era, sourced from Wikimedia Commons and visually verified.",
+      "licenceNote": "New Era masthead trademark bundled from Wikimedia Commons (File:New-Era-Logo.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://neweralive.na",
         "https://en.wikipedia.org/wiki/New_Era_(Namibia)"
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
@@ -16463,13 +16567,16 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Principal Namibian independent daily",
         "source": "https://en.wikipedia.org/wiki/The_Namibian"
       },
+      "logo": "newspaper-logos/na/the-namibian.png",
+      "logoExplainer": "Official masthead/brand mark for The Namibian, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "The Namibian masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.namibian.com.na",
         "https://en.wikipedia.org/wiki/The_Namibian"
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
@@ -16488,13 +16595,16 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Namibian daily",
         "source": "https://en.wikipedia.org/wiki/Namibian_Sun"
       },
+      "logo": "newspaper-logos/na/namibian-sun.png",
+      "logoExplainer": "Official masthead/brand mark for Namibian Sun, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Namibian Sun masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.namibiansun.com",
         "https://en.wikipedia.org/wiki/Namibian_Sun"
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
@@ -16513,6 +16623,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Established Namibian newspaper",
         "source": "https://en.wikipedia.org/wiki/Windhoek_Observer"
       },
+      "logo": "newspaper-logos/na/observer.png",
+      "logoExplainer": "Official masthead/brand mark for Windhoek Observer, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Windhoek Observer masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.observer.com.na",
         "https://en.wikipedia.org/wiki/Windhoek_Observer"
@@ -16541,7 +16655,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ONEP Rapport d'Entreprise 2023"
       },
       "revenueModel": "Print sales, mandatory public tender notices, and official advertisements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ne/le-sahel.jpg",
+      "logoExplainer": "Official masthead/brand mark for Le Sahel, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Le Sahel masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://lesahel.org",
         "https://fr.wikipedia.org/wiki/Le_Sahel_(journal)"
@@ -16566,7 +16683,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Aïr Info Media Kit 2023"
       },
       "revenueModel": "Print copy sales, donor partnership reporting, and digital advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ne/air-info.png",
+      "logoExplainer": "Official masthead/brand mark for Aïr Info, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Aïr Info masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://airinfoagadez.com",
         "https://fr.wikipedia.org/wiki/A%C3%AFr_Info"
@@ -16758,7 +16878,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Confidencial Audience Report 2023"
       },
       "revenueModel": "Reader membership club, voluntary donations, and international investigative journalism funds",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ni/confidencial.jpg",
+      "logoExplainer": "Official masthead/brand mark for Confidencial, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Confidencial masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://confidencial.digital",
         "https://es.wikipedia.org/wiki/Confidencial_(peri%C3%B3dico)"
@@ -17151,7 +17274,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gorkhapatra Sansthan Annual Report 2023"
       },
       "revenueModel": "State government institutional advertising, public tender notices, and print subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/np/gorkhapatra.svg",
+      "logoExplainer": "Official masthead/brand mark for Gorkhapatra, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Gorkhapatra masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://gorkhapatraonline.com",
         "https://en.wikipedia.org/wiki/Gorkhapatra"
@@ -17213,7 +17339,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "np-nagarik",
       "countryCode": "NP",
       "name": "Nagarik",
@@ -17229,6 +17354,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Leading Nepali daily",
         "source": "https://en.wikipedia.org/wiki/Nagarik"
       },
+      "logo": "newspaper-logos/np/nagarik.png",
+      "logoExplainer": "Official masthead/brand mark for Nagarik, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Nagarik masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://nagariknews.nagariknetwork.com",
         "https://en.wikipedia.org/wiki/Nagarik"
@@ -17238,7 +17367,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "np-onlinekhabar",
       "countryCode": "NP",
       "name": "Onlinekhabar",
@@ -17254,6 +17382,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Highest-traffic Nepali news website",
         "source": "https://www.onlinekhabar.com"
       },
+      "logo": "newspaper-logos/np/onlinekhabar.svg",
+      "logoExplainer": "Official masthead/brand mark for Onlinekhabar, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Onlinekhabar masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.onlinekhabar.com"
       ]
@@ -17579,14 +17711,16 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Oman Establishment for Press, Publication and Advertising 2023"
       },
       "revenueModel": "Print sales, corporate advertising, and public notice announcements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/om/oman-daily-observer.svg",
+      "logoExplainer": "Official masthead/brand mark for Oman Daily Observer, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Oman Daily Observer masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.omanobserver.om",
         "https://en.wikipedia.org/wiki/Oman_Daily_Observer"
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
@@ -17605,6 +17739,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Omani English daily",
         "source": "https://en.wikipedia.org/wiki/Muscat_Daily"
       },
+      "logo": "newspaper-logos/om/muscat-daily.webp",
+      "logoExplainer": "Official masthead/brand mark for Muscat Daily, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Muscat Daily masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.muscatdaily.com",
         "https://en.wikipedia.org/wiki/Muscat_Daily"
@@ -17614,7 +17752,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "om-shabiba",
       "name": "Shabiba",
       "founded": 2000,
@@ -17630,6 +17767,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Omani Arabic daily",
         "source": "https://www.shabiba.com"
       },
+      "logo": "newspaper-logos/om/shabiba.svg",
+      "logoExplainer": "Official masthead/brand mark for Shabiba, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Shabiba masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.shabiba.com"
       ]
@@ -17715,7 +17856,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "pa-critica",
       "countryCode": "PA",
       "name": "Crítica",
@@ -17731,6 +17871,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Panamanian daily",
         "source": "https://en.wikipedia.org/wiki/Crítica_(Panama)"
       },
+      "logo": "newspaper-logos/pa/critica.png",
+      "logoExplainer": "Official masthead/brand mark for Crítica, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Crítica masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.critica.com.pa",
         "https://en.wikipedia.org/wiki/Media_of_Panama"
@@ -17755,7 +17899,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "https://www.midiario.com"
       },
       "revenueModel": "Advertising and print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pa/midiario.png",
+      "logoExplainer": "Official masthead/brand mark for Mi Diario, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Mi Diario masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.midiario.com"
       ]
@@ -17845,7 +17992,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "pe-correo",
       "countryCode": "PE",
       "name": "Correo",
@@ -17861,6 +18007,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Large multi-city Peruvian daily",
         "source": "https://en.wikipedia.org/wiki/Diario_Correo"
       },
+      "logo": "newspaper-logos/pe/correo.jpg",
+      "logoExplainer": "Official masthead/brand mark for Correo, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Correo masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://diariocorreo.pe",
         "https://en.wikipedia.org/wiki/Diario_Correo"
@@ -17885,7 +18035,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "https://wayka.pe"
       },
       "revenueModel": "Memberships and digital advertising",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pe/wayka.png",
+      "logoExplainer": "Official masthead/brand mark for Wayka, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Wayka masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://wayka.pe"
       ]
@@ -17911,7 +18064,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "South Pacific Post Circulation Audit 2023"
       },
       "revenueModel": "Print sales, corporate display advertising, and public notice tenders",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pg/post-courier.webp",
+      "logoExplainer": "Official masthead/brand mark for Post-Courier, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Post-Courier masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://postcourier.com.pg",
         "https://en.wikipedia.org/wiki/Papua_New_Guinea_Post-Courier"
@@ -17962,7 +18118,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Pacific Star Limited Annual Review 2023"
       },
       "revenueModel": "Print copy sales, mining/petroleum industry advertising, and classifieds",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pg/the-national.png",
+      "logoExplainer": "Official masthead/brand mark for The National, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "The National masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.thenational.com.pg",
         "https://en.wikipedia.org/wiki/The_National_(Papua_New_Guinea)"
@@ -18530,7 +18689,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
@@ -18549,6 +18707,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Palestinian news website",
         "source": "https://www.wattan.net"
       },
+      "logo": "newspaper-logos/ps/wattan.png",
+      "logoExplainer": "Official masthead/brand mark for Wattan News, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Wattan News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.wattan.net"
       ]
@@ -18823,7 +18985,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Palau Media Council 2023"
       },
       "revenueModel": "Print sales, government legal notices, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pw/island-times.png",
+      "logoExplainer": "Official masthead/brand mark for Island Times Palau, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Island Times Palau masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://islandtimes.org",
         "https://en.wikipedia.org/wiki/Island_Times"
@@ -18874,7 +19039,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Editorial Azeta / Similarweb 2023"
       },
       "revenueModel": "Print sales, digital subscriptions (ABC Digital), and major commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/py/abc-color.jpg",
+      "logoExplainer": "Official masthead/brand mark for ABC Color, sourced from Wikimedia Commons and visually verified.",
+      "licenceNote": "ABC Color masthead trademark bundled from Wikimedia Commons (File:ABC color logo.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.abc.com.py",
         "https://es.wikipedia.org/wiki/ABC_Color"
@@ -18899,7 +19067,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Vierci Audited Report 2023"
       },
       "revenueModel": "Print sales, corporate advertising, and digital sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/py/ultima-hora.png",
+      "logoExplainer": "Official masthead/brand mark for Última Hora, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Última Hora masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.ultimahora.com",
         "https://es.wikipedia.org/wiki/%C3%9Altima_Hora_(Paraguay)"
@@ -18924,7 +19095,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Nación Media Audit 2023"
       },
       "revenueModel": "Print circulation, commercial display advertising, and television broadcast ads",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/py/la-nacion.png",
+      "logoExplainer": "Official masthead/brand mark for La Nación Paraguay, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "La Nación Paraguay masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.lanacion.com.py",
         "https://es.wikipedia.org/wiki/La_Naci%C3%B3n_(Paraguay)"
@@ -18934,7 +19108,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Tabloid & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "py-extra",
       "countryCode": "PY",
       "name": "Diario Extra",
@@ -18950,6 +19123,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Among Paraguay's highest-circulation dailies",
         "source": "https://en.wikipedia.org/wiki/Media_of_Paraguay"
       },
+      "logo": "newspaper-logos/py/extra.svg",
+      "logoExplainer": "Official masthead/brand mark for Diario Extra, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Diario Extra masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.extra.com.py"
       ]
@@ -18958,7 +19135,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "py-hoy",
       "countryCode": "PY",
       "name": "Hoy",
@@ -18974,6 +19150,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Asunción daily",
         "source": "https://www.hoy.com.py"
       },
+      "logo": "newspaper-logos/py/hoy.svg",
+      "logoExplainer": "Official masthead/brand mark for Hoy, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Hoy masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.hoy.com.py"
       ]
@@ -19071,7 +19251,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "qa-the-peninsula",
       "countryCode": "QA",
       "name": "The Peninsula",
@@ -19087,6 +19266,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Qatari English daily",
         "source": "https://en.wikipedia.org/wiki/The_Peninsula_(newspaper)"
       },
+      "logo": "newspaper-logos/qa/the-peninsula.png",
+      "logoExplainer": "Official masthead/brand mark for The Peninsula, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "The Peninsula masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://thepeninsulaqatar.com",
         "https://en.wikipedia.org/wiki/The_Peninsula_(newspaper)"
@@ -19096,7 +19279,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "qa-qatar-tribune",
       "countryCode": "QA",
       "name": "Qatar Tribune",
@@ -19112,6 +19294,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Qatari English daily",
         "source": "https://en.wikipedia.org/wiki/Qatar_Tribune"
       },
+      "logo": "newspaper-logos/qa/qatar-tribune.png",
+      "logoExplainer": "Official masthead/brand mark for Qatar Tribune, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Qatar Tribune masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.qatar-tribune.com",
         "https://en.wikipedia.org/wiki/Qatar_Tribune"
@@ -19310,7 +19496,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ABC Srbija 2023"
       },
       "revenueModel": "Print sales, classifieds, and digital banner advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/rs/vecernje-novosti.png",
+      "logoExplainer": "Official masthead/brand mark for Večernje Novosti, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Večernje Novosti masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.novosti.rs",
         "https://en.wikipedia.org/wiki/Ve%C4%8Dernje_novosti"
@@ -19378,7 +19567,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "rs-nova-rs",
       "countryCode": "RS",
       "name": "Nova.rs",
@@ -19394,6 +19582,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Leading Serbian digital news brand",
         "source": "https://nova.rs"
       },
+      "logo": "newspaper-logos/rs/nova-rs.svg",
+      "logoExplainer": "Official masthead/brand mark for Nova.rs, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Nova.rs masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://nova.rs"
       ]
@@ -19565,7 +19757,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The New Times Media Kit 2023"
       },
       "revenueModel": "Print advertising, retail sales, and corporate subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/rw/the-new-times.png",
+      "logoExplainer": "Official masthead/brand mark for The New Times, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "The New Times masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.newtimes.co.rw",
         "https://en.wikipedia.org/wiki/The_New_Times_(Rwanda)"
@@ -19650,7 +19845,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kigali Today Corporate Review 2023"
       },
       "revenueModel": "Commercial advertising, event sponsorship, and radio broadcasting syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/rw/kigali-today.png",
+      "logoExplainer": "Official masthead/brand mark for Kigali Today (KT Press), sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Kigali Today (KT Press) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.ktpress.rw",
         "https://en.wikipedia.org/wiki/Media_of_Rwanda"
@@ -19845,7 +20043,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "MASI Directory of Solomon Islands Media"
       },
       "revenueModel": "Print sales, commercial display advertising, and classified notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sb/island-sun.png",
+      "logoExplainer": "Official masthead/brand mark for Island Sun, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Island Sun masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://theislandsun.com.sb",
         "https://en.wikipedia.org/wiki/Island_Sun"
@@ -19928,7 +20129,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "NISA Annual Financial Report 2023"
       },
       "revenueModel": "State institutional funding, retail print sales, and official gazette notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sc/seychelles-nation.png",
+      "logoExplainer": "Official masthead/brand mark for Seychelles Nation, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Seychelles Nation masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.nation.sc",
         "https://en.wikipedia.org/wiki/Seychelles_Nation"
@@ -20062,7 +20266,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sudan Press Council Archive / Al-Sudani Analytics"
       },
       "revenueModel": "Print sales, digital news subscriptions, and commercial advertisements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sd/al-sudani.png",
+      "logoExplainer": "Official masthead/brand mark for Al-Sudani, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Al-Sudani masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://alsudaninews.com",
         "https://en.wikipedia.org/wiki/Media_of_Sudan"
@@ -20121,7 +20328,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
@@ -20140,6 +20346,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Sudanese digital news brand",
         "source": "https://www.sudanile.com"
       },
+      "logo": "newspaper-logos/sd/sudanile.png",
+      "logoExplainer": "Official masthead/brand mark for Sudanile, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Sudanile masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.sudanile.com"
       ]
@@ -20148,7 +20358,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "sd-ayin",
       "name": "Ayin Network",
       "founded": 2018,
@@ -20164,6 +20373,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Sudanese independent news brand",
         "source": "https://3ayin.com"
       },
+      "logo": "newspaper-logos/sd/ayin.png",
+      "logoExplainer": "Official masthead/brand mark for Ayin Network, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Ayin Network masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://3ayin.com"
       ]
@@ -20489,7 +20702,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Delo d.o.o. Poslovno poročilo 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print circulation sales, and premium advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/si/delo.svg",
+      "logoExplainer": "Official masthead/brand mark for Delo, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Delo masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.delo.si",
         "https://en.wikipedia.org/wiki/Delo_(newspaper)"
@@ -20553,7 +20769,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Tabloid & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "si-slovenske-novice",
       "countryCode": "SI",
       "name": "Slovenske novice",
@@ -20569,6 +20784,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Highest-circulation Slovene daily",
         "source": "https://en.wikipedia.org/wiki/Slovenske_novice"
       },
+      "logo": "newspaper-logos/si/slovenske-novice.svg",
+      "logoExplainer": "Official masthead/brand mark for Slovenske novice, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Slovenske novice masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.slovenskenovice.si",
         "https://en.wikipedia.org/wiki/Slovenske_novice"
@@ -20691,7 +20910,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "sk-aktuality",
       "countryCode": "SK",
       "name": "Aktuality.sk",
@@ -20707,6 +20925,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Highest-traffic Slovak news website",
         "source": "https://en.wikipedia.org/wiki/Aktuality.sk"
       },
+      "logo": "newspaper-logos/sk/aktuality.svg",
+      "logoExplainer": "Official masthead/brand mark for Aktuality.sk, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Aktuality.sk masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.aktuality.sk",
         "https://en.wikipedia.org/wiki/Aktuality.sk"
@@ -20716,7 +20938,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Tabloid & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "sk-plus-jeden-den",
       "countryCode": "SK",
       "name": "Plus jeden deň",
@@ -20732,6 +20953,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Slovak daily by circulation",
         "source": "https://en.wikipedia.org/wiki/Plus_jeden_deň"
       },
+      "logo": "newspaper-logos/sk/plus-jeden-den.png",
+      "logoExplainer": "Official masthead/brand mark for Plus jeden deň, sourced from Wikimedia Commons and visually verified.",
+      "licenceNote": "Plus jeden deň masthead trademark bundled from Wikimedia Commons (File:Logo Plus JEDEN DEN.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://www1.pluska.sk",
         "https://en.wikipedia.org/wiki/Plus_jeden_deň"
@@ -20821,7 +21046,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -20840,6 +21064,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Sierra Leone news website",
         "source": "https://www.switsalone.com"
       },
+      "logo": "newspaper-logos/sl/swit-salone.png",
+      "logoExplainer": "Official masthead/brand mark for SwitSalone, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "SwitSalone masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.switsalone.com"
       ]
@@ -20848,7 +21076,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "sl-politico",
       "name": "Politico SL",
       "founded": 2015,
@@ -20864,6 +21091,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Sierra Leone news website",
         "source": "https://www.politicosl.com"
       },
+      "logo": "newspaper-logos/sl/politico.jpg",
+      "logoExplainer": "Official masthead/brand mark for Politico SL, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Politico SL masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.politicosl.com"
       ]
@@ -20895,7 +21126,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "San Marino RTV Bilancio di Esercizio 2023"
       },
       "revenueModel": "State public service grant from San Marino government, RAI Italian state broadcasting subsidy, and local commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sm/smrtv-notizie.png",
+      "logoExplainer": "Official masthead/brand mark for San Marino RTV (SMRTV Notizie), sourced from the publisher's official site and visually verified.",
+      "licenceNote": "San Marino RTV (SMRTV Notizie) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.sanmarinortv.sm",
         "https://en.wikipedia.org/wiki/San_Marino_RTV"
@@ -21036,7 +21270,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SSPP Le Soleil Rapport Financier 2023"
       },
       "revenueModel": "State subvention, retail print sales, and legal public notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sn/le-soleil.webp",
+      "logoExplainer": "Official masthead/brand mark for Le Soleil, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Le Soleil masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://lesoleil.sn",
         "https://en.wikipedia.org/wiki/Le_Soleil_(Senegal)"
@@ -21127,7 +21364,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "sn-seneweb",
       "countryCode": "SN",
       "name": "Seneweb",
@@ -21143,6 +21379,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Highest-traffic Senegalese news website",
         "source": "https://www.seneweb.com"
       },
+      "logo": "newspaper-logos/sn/seneweb.png",
+      "logoExplainer": "Official masthead/brand mark for Seneweb, sourced from Wikimedia Commons and visually verified.",
+      "licenceNote": "Seneweb masthead trademark bundled from Wikimedia Commons (File:Logo seneweb.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.seneweb.com"
       ]
@@ -21197,14 +21437,16 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Garowe Media Audit / NUSOJ"
       },
       "revenueModel": "Digital banner advertising, radio broadcasts, and corporate sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/so/garowe-online.svg",
+      "logoExplainer": "Official masthead/brand mark for Garowe Online, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Garowe Online masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.garoweonline.com",
         "https://en.wikipedia.org/wiki/Garowe_Online"
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -21223,12 +21465,15 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Somali news website",
         "source": "https://horseedmedia.net"
       },
+      "logo": "newspaper-logos/so/horseed.png",
+      "logoExplainer": "Official masthead/brand mark for Horseed Media, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Horseed Media masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://horseedmedia.net"
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -21247,6 +21492,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Somali news website",
         "source": "https://goobjoog.com"
       },
+      "logo": "newspaper-logos/so/goobjoog.png",
+      "logoExplainer": "Official masthead/brand mark for Goobjoog News, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Goobjoog News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://goobjoog.com"
       ]
@@ -21352,14 +21601,16 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Fash-Sur Multimedia Commercial Data"
       },
       "revenueModel": "Print sales, classified advertising, and digital ad banners",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sr/dagblad-suriname.png",
+      "logoExplainer": "Official masthead/brand mark for Dagblad Suriname, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Dagblad Suriname masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.dbsuriname.com",
         "https://en.wikipedia.org/wiki/Media_of_Suriname"
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -21378,6 +21629,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Suriname news website",
         "source": "https://www.starnieuws.com"
       },
+      "logo": "newspaper-logos/sr/starnieuws.svg",
+      "logoExplainer": "Official masthead/brand mark for Starnieuws, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Starnieuws masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.starnieuws.com"
       ]
@@ -21386,7 +21641,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "sr-dwtonline",
       "name": "DwT Online",
       "founded": 2010,
@@ -21402,6 +21656,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Suriname news website",
         "source": "https://www.dwtonline.com"
       },
+      "logo": "newspaper-logos/sr/dwtonline.jpg",
+      "logoExplainer": "Official masthead/brand mark for DwT Online, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "DwT Online masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.dwtonline.com"
       ]
@@ -21481,7 +21739,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Téla Nón Web Analytics 2023"
       },
       "revenueModel": "Online banner advertising and voluntary community reader contributions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/st/tela-non.png",
+      "logoExplainer": "Official masthead/brand mark for Téla Nón, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Téla Nón masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.telanon.info",
         "https://en.wikipedia.org/wiki/Media_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
@@ -21537,7 +21798,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Dutriz Memoria Anual 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and corporate advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sv/la-prensa-grafica.png",
+      "logoExplainer": "Official masthead/brand mark for La Prensa Gráfica, sourced from Wikimedia Commons and visually verified.",
+      "licenceNote": "La Prensa Gráfica masthead trademark bundled from Wikimedia Commons (File:Logo de La Prensa Gráfica.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.laprensagrafica.com",
         "https://en.wikipedia.org/wiki/La_Prensa_Gr%C3%A1fica"
@@ -21564,7 +21828,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Editorial Altamirano Madriz 2024"
       },
       "revenueModel": "Print sales, digital subscriptions, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sv/el-diario-de-hoy.svg",
+      "logoExplainer": "Official masthead/brand mark for El Diario de Hoy, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "El Diario de Hoy masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.elsalvador.com",
         "https://en.wikipedia.org/wiki/El_Diario_de_Hoy"
@@ -21590,7 +21857,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Fundación Trípode Impact Report 2023"
       },
       "revenueModel": "Philanthropic journalism grants, reader crowdfunding, and syndicated investigations",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sv/el-faro.jpg",
+      "logoExplainer": "Official masthead/brand mark for El Faro, sourced from Wikimedia Commons and visually verified.",
+      "licenceNote": "El Faro masthead trademark bundled from Wikimedia Commons (File:Logo El Faro.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://elfaro.net",
         "https://en.wikipedia.org/wiki/El_Faro_(digital_newspaper)"
@@ -21616,7 +21886,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Diario El Salvador Informe Institucional 2023"
       },
       "revenueModel": "State institutional advertising and low-cost retail print sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sv/diario-el-salvador.png",
+      "logoExplainer": "Official masthead/brand mark for Diario El Salvador, sourced from Wikimedia Commons and visually verified.",
+      "licenceNote": "Diario El Salvador masthead trademark bundled from Wikimedia Commons (File:Logo of Diario El Salvador.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://diarioelsalvador.com",
         "https://es.wikipedia.org/wiki/Diario_El_Salvador"
@@ -21642,7 +21915,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Diario El Mundo Media Kit 2024"
       },
       "revenueModel": "Print sales and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sv/el-mundo.svg",
+      "logoExplainer": "Official masthead/brand mark for Diario El Mundo, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Diario El Mundo masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://diario.elmundo.sv",
         "https://es.wikipedia.org/wiki/El_Mundo_(El_Salvador)"
@@ -21671,7 +21947,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Arab Media Forum / Al-Watan Media Profile"
       },
       "revenueModel": "Newsstand retail sales, commercial advertising, and corporate announcements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sy/al-watan.svg",
+      "logoExplainer": "Official masthead/brand mark for Al-Watan, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Al-Watan masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://alwatan.sy",
         "https://en.wikipedia.org/wiki/Al-Watan_(Syria)"
@@ -21752,14 +22031,16 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Enab Baladi Annual Transparency Report / WAN-IFRA"
       },
       "revenueModel": "International media support grants, reader donations, and philanthropic contributions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sy/enab-baladi.jpg",
+      "logoExplainer": "Official masthead/brand mark for Enab Baladi, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Enab Baladi masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.enabbaladi.net",
         "https://en.wikipedia.org/wiki/Enab_Baladi"
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -21778,6 +22059,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Syrian independent news brand",
         "source": "https://syriadirect.org"
       },
+      "logo": "newspaper-logos/sy/syria-direct.png",
+      "logoExplainer": "Official masthead/brand mark for Syria Direct, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Syria Direct masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://syriadirect.org"
       ]
@@ -21804,7 +22089,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Times of Eswatini Corporate Profile 2023"
       },
       "revenueModel": "Print sales, legal notices, and commercial display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sz/times-of-eswatini.png",
+      "logoExplainer": "Official masthead/brand mark for Times of Eswatini, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Times of Eswatini masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "http://www.times.co.sz",
         "https://en.wikipedia.org/wiki/The_Times_of_Swaziland"
@@ -21830,7 +22118,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tibiyo Taka Ngwane Annual Report 2023"
       },
       "revenueModel": "Commercial sales, official state notices, and royal trust funding",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sz/ebuswini-observer.png",
+      "logoExplainer": "Official masthead/brand mark for Eswatini Observer, sourced from Wikimedia Commons and visually verified.",
+      "licenceNote": "Eswatini Observer masthead trademark bundled from Wikimedia Commons (File:Eswatini Observer-Logo.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://new.observer.org.sz",
         "https://en.wikipedia.org/wiki/Swazi_Observer"

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 51.02 17.01"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#0052a1;}</style>
+  </defs>
+  <title
+     id="title6">delo_logo</title>
+  <path
+     class="cls-1"
+     d="M1,14v.67H6.77c5,0,7.06-2.51,7.06-6,0-4-2.23-6-6.65-6H1v.65l1.7.25v10.2ZM6.55,3.38c2.92,0,4.31,1.76,4.31,5.33C10.86,11.5,10,14,7.08,14H5.49V3.38ZM24.73,14.69V11.5h-.58L23.38,14H19V8.87h2.5l.56,1.69h.58V6.46H22.1l-.56,1.69H19V3.39H23l.66,2.31h.6v-3H14.57v.65l1.71.25v10.2L14.57,14v.67Zm11.15,0V11H35.3L34.42,14h-3.8V3.59l1.75-.25V2.69H26.15v.65l1.71.25v10.2L26.15,14v.67Zm7,.21a6,6,0,0,0,6.34-6.23,6,6,0,0,0-6.34-6.23,6,6,0,0,0-6.34,6.23,6,6,0,0,0,6.34,6.23m0-.79c-2,0-3.3-1.93-3.3-5.44s1.25-5.44,3.3-5.44,3.28,1.95,3.28,5.44S45,14.11,42.89,14.11"
+     id="path8"
+     style="fill:#ffffff" />
+  <metadata
+     id="metadata310">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>delo_logo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
