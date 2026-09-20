@@ -2892,7 +2892,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ministry of Information Annual Review 2023"
       },
       "revenueModel": "Government subvention and news syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mw/mana.png",
+      "logoExplainer": "Official masthead/brand mark for Mana Online, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Mana Online masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://manaonline.gov.mw",
         "https://en.wikipedia.org/wiki/Malawi_News_Agency"
@@ -3070,7 +3073,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Montsame Centennial Review 2023"
       },
       "revenueModel": "State budgetary subvention and wire syndication fees",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mn/montsame.png",
+      "logoExplainer": "Official masthead/brand mark for Montsame, sourced from Wikimedia Commons and visually verified.",
+      "licenceNote": "Montsame masthead trademark bundled from Wikimedia Commons (File:Montsame logo.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://montsame.mn",
         "https://en.wikipedia.org/wiki/Montsame"
@@ -3403,7 +3409,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Free Press of Namibia Audited Statement 2023"
       },
       "revenueModel": "Print sales, commercial advertising, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/na/the-namibian.png",
+      "logoExplainer": "Official masthead/brand mark for The Namibian, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "The Namibian masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.namibian.com.na",
         "https://en.wikipedia.org/wiki/The_Namibian"
@@ -3463,7 +3472,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Similarweb / Onlinekhabar Audience Metrics 2023"
       },
       "revenueModel": "Digital programmatic advertising, video sponsorships, and branded content",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/np/onlinekhabar.svg",
+      "logoExplainer": "Official masthead/brand mark for Onlinekhabar, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Onlinekhabar masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.onlinekhabar.com",
         "https://english.onlinekhabar.com"
@@ -4880,7 +4892,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Google Analytics / StarNieuws Public Metrics"
       },
       "revenueModel": "Digital banner advertising, corporate sponsorships, and commercial partnerships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sr/starnieuws.svg",
+      "logoExplainer": "Official masthead/brand mark for Starnieuws, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "Starnieuws masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.starnieuws.com",
         "https://en.wikipedia.org/wiki/Media_of_Suriname"

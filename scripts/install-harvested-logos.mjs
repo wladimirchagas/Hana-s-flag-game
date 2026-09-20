@@ -19,244 +19,780 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "ad-el-periodic",
-    src: "tmp/logo-harvest/ad/el-periodic.png",
+    id: "ma-assabah",
+    src: "tmp/logo-harvest/ma/assabah.jpg",
     explainer:
-      "White 'el Peri\u00f2dic' wordmark with three slanted bars \u2014 Andorra's Catalan daily masthead from its own site.",
+      "Official masthead/brand mark for Assabah, sourced from Wikimedia Commons and visually verified.",
     licence:
-      "El Peri\u00f2dic d'Andorra masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Assabah masthead trademark bundled from Wikimedia Commons (File:Assabah-logo.jpg) for educational reference in Learn mode.",
   },
   {
-    id: "af-pajhwok",
-    src: "tmp/logo-harvest/af/pajhwok.png",
+    id: "mc-nice-matin-monaco",
+    src: "tmp/logo-harvest/mc/nice-matin-monaco.png",
     explainer:
-      "White 'PAJHWOK AFGHAN NEWS' wordmark with calligraphic mark and 'Reflecting the Truth' strap \u2014 the agency's official masthead.",
+      "Official masthead/brand mark for Nice-Matin (Monaco coverage), sourced from the publisher's official site and visually verified.",
     licence:
-      "Pajhwok Afghan News masthead trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "Nice-Matin (Monaco coverage) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "am-hetq",
-    src: "tmp/logo-harvest/am/hetq.png",
+    id: "md-newsmaker",
+    src: "tmp/logo-harvest/md/newsmaker.jpg",
     explainer:
-      "Grey 'HETQ' wordmark beside a concentric-oval investigative mark \u2014 Armenia's investigative outlet masthead.",
+      "Official masthead/brand mark for NewsMaker, sourced from the publisher's official site and visually verified.",
     licence:
-      "Hetq masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "NewsMaker masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "cz-hospodarske-noviny",
-    src: "tmp/logo-harvest/cz/hospodarske-noviny.svg",
+    id: "md-tv8",
+    src: "tmp/logo-harvest/md/tv8.svg",
     explainer:
-      "White small-caps serif 'HOSPOD\u00c1\u0158SK\u00c9 NOVINY' wordmark \u2014 the Czech business daily's masthead.",
+      "Official masthead/brand mark for TV8.md News, sourced from the publisher's official site and visually verified.",
     licence:
-      "Hospod\u00e1\u0159sk\u00e9 noviny masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "TV8.md News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "ec-expreso",
-    src: "tmp/logo-harvest/ec/expreso.png",
+    id: "me-vijesti",
+    src: "tmp/logo-harvest/me/vijesti.svg",
     explainer:
-      "Blue lowercase 'expreso' wordmark with a thin red underline \u2014 Ecuador's Expreso daily masthead.",
+      "Official masthead/brand mark for Vijesti, sourced from the publisher's official site and visually verified.",
     licence:
-      "Expreso (Ecuador) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Vijesti masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "cv-expressodasilhas",
-    src: "tmp/logo-harvest/cv/expressodasilhas.png",
+    id: "me-pobjeda",
+    src: "tmp/logo-harvest/me/pobjeda.jpg",
     explainer:
-      "White conjoined 'iE' mark \u2014 Expresso das Ilhas (Cape Verde) brand emblem from its own site.",
+      "Official masthead/brand mark for Pobjeda, sourced from the publisher's official site and visually verified.",
     licence:
-      "Expresso das Ilhas masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Pobjeda masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "gq-guineaecuatorialpress",
-    src: "tmp/logo-harvest/gq/guineaecuatorialpress.png",
+    id: "me-dan",
+    src: "tmp/logo-harvest/me/dan.png",
     explainer:
-      "Equatorial Guinea coat of arms beside 'GUINEA ECUATORIAL' government press portal wordmark.",
+      "Official masthead/brand mark for Dan, sourced from the publisher's official site and visually verified.",
     licence:
-      "Guinea Ecuatorial Press portal mark bundled from the official government press site brand assets for educational reference in Learn mode.",
+      "Dan masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "hn-la-tribuna",
-    src: "tmp/logo-harvest/hn/la-tribuna.jpg",
+    id: "mg-l-express",
+    src: "tmp/logo-harvest/mg/l-express.jpg",
     explainer:
-      "Blackletter 'LA TRIBUNA' nameplate with 'Decano de la Prensa Nacional' strap \u2014 Honduras daily masthead.",
+      "Official masthead/brand mark for L'Express de Madagascar, sourced from Wikimedia Commons and visually verified.",
     licence:
-      "La Tribuna (Honduras) masthead trademark bundled from Wikimedia Commons (File:Logo La Tribuna.jpg) for educational reference in Learn mode.",
+      "L'Express de Madagascar masthead trademark bundled from Wikimedia Commons (File:Logo L'Express de Madagascar.jpg) for educational reference in Learn mode.",
   },
   {
-    id: "ht-le-nouvelliste",
-    src: "tmp/logo-harvest/ht/le-nouvelliste.svg",
+    id: "mg-madagascar-tribune",
+    src: "tmp/logo-harvest/mg/madagascar-tribune.gif",
     explainer:
-      "White blackletter 'Le Nouvelliste' masthead \u2014 Haiti's historic daily nameplate from its own site.",
+      "Official masthead/brand mark for Madagascar Tribune, sourced from the publisher's official site and visually verified.",
     licence:
-      "Le Nouvelliste masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Madagascar Tribune masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "iq-rudaw",
-    src: "tmp/logo-harvest/iq/rudaw.svg",
+    id: "mg-newsmada",
+    src: "tmp/logo-harvest/mg/newsmada.png",
     explainer:
-      "White sunburst mark beside bold 'R\u00dbDAW' wordmark \u2014 Kurdistan's Rudaw Media Network brand.",
+      "Official masthead/brand mark for NewsMada, sourced from the publisher's official site and visually verified.",
     licence:
-      "Rudaw masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "NewsMada masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "iq-shafaq-news",
-    src: "tmp/logo-harvest/iq/shafaq-news.png",
+    id: "mk-nova-makedonija",
+    src: "tmp/logo-harvest/mk/nova-makedonija.png",
     explainer:
-      "White Arabic title with 'NEWS' and red accent bars \u2014 Shafaq News masthead from its own site.",
+      "Official masthead/brand mark for Nova Makedonija, sourced from the publisher's official site and visually verified.",
     licence:
-      "Shafaq News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Nova Makedonija masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "kh-koh-santepheap",
-    src: "tmp/logo-harvest/kh/koh-santepheap.svg",
+    id: "mk-koha-mk",
+    src: "tmp/logo-harvest/mk/koha-mk.png",
     explainer:
-      "White Khmer-script masthead for Koh Santepheap Daily from its own site.",
+      "Official masthead/brand mark for Koha (North Macedonia), sourced from the publisher's official site and visually verified.",
     licence:
-      "Koh Santepheap masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Koha (North Macedonia) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "km-comores-infos",
-    src: "tmp/logo-harvest/km/comores-infos.png",
+    id: "mk-sakam-da-kazam",
+    src: "tmp/logo-harvest/mk/sakam-da-kazam.svg",
     explainer:
-      "Serif 'Comores-infos' wordmark with four coloured dots \u2014 Comorian news portal masthead.",
+      "Official masthead/brand mark for Sakam da ka\u017eam (SDK.mk), sourced from the publisher's official site and visually verified.",
     licence:
-      "Comores-Infos masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Sakam da ka\u017eam (SDK.mk) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "km-habari-za-comores",
-    src: "tmp/logo-harvest/km/habari-za-comores.png",
+    id: "ml-l-independant",
+    src: "tmp/logo-harvest/ml/l-independant.jpg",
     explainer:
-      "Serif 'HABARI ZA COMORES' wordmark with red/blue swoosh \u2014 Comorian news portal masthead.",
+      "Official masthead/brand mark for L'Ind\u00e9pendant, sourced from the publisher's official site and visually verified.",
     licence:
-      "Habari Za Comores masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "L'Ind\u00e9pendant masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "km-al-watwan",
-    src: "tmp/logo-harvest/km/al-watwan.png",
+    id: "ml-studio-tamani",
+    src: "tmp/logo-harvest/ml/studio-tamani.svg",
     explainer:
-      "Green italic 'Al-watwan' wordmark \u2014 Comoros national daily masthead from Wikimedia Commons.",
+      "Official masthead/brand mark for Studio Tamani, sourced from the publisher's official site and visually verified.",
     licence:
-      "Al-Watwan masthead trademark bundled from Wikimedia Commons (File:Al-Watwan Logo.png) for educational reference in Learn mode.",
+      "Studio Tamani masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "kn-ziz-online",
-    src: "tmp/logo-harvest/kn/ziz-online.jpg",
+    id: "mm-democratic-voice",
+    src: "tmp/logo-harvest/mm/democratic-voice.png",
     explainer:
-      "Yellow outlined block capitals 'ZIZ' \u2014 Saint Kitts and Nevis broadcaster news brand mark.",
+      "Official masthead/brand mark for Democratic Voice of Burma (DVB), sourced from the publisher's official site and visually verified.",
     licence:
-      "ZIZ Online brand mark trademark bundled from the broadcaster's official site brand assets for educational reference in Learn mode.",
+      "Democratic Voice of Burma (DVB) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "kw-al-anba",
-    src: "tmp/logo-harvest/kw/al-anba.png",
+    id: "mn-udriin-sonin",
+    src: "tmp/logo-harvest/mn/udriin-sonin.png",
     explainer:
-      "White Arabic calligraphic masthead for Kuwait's Al-Anba daily from its own site.",
+      "Official masthead/brand mark for Udriin Sonin, sourced from the publisher's official site and visually verified.",
     licence:
-      "Al-Anba masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Udriin Sonin masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "kw-al-rai",
-    src: "tmp/logo-harvest/kw/al-rai.svg",
+    id: "mn-gogo-mn",
+    src: "tmp/logo-harvest/mn/gogo-mn.png",
     explainer:
-      "White Arabic calligraphic masthead for Kuwait's Al-Rai daily from its own site.",
+      "Official masthead/brand mark for Gogo.mn, sourced from the publisher's official site and visually verified.",
     licence:
-      "Al-Rai (Kuwait) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Gogo.mn masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "kz-azattyq",
-    src: "tmp/logo-harvest/kz/azattyq.png",
+    id: "mn-montsame",
+    src: "tmp/logo-harvest/mn/montsame.png",
     explainer:
-      "Orange RFE/RL torch with blue Cyrillic '\u0410\u0437\u0430\u0442\u0442\u044b\u049b \u0420\u0430\u0434\u0438\u043e\u0441\u044b' \u2014 Azattyq's official brand mark.",
+      "Official masthead/brand mark for Montsame, sourced from Wikimedia Commons and visually verified.",
     licence:
-      "Azattyq (RFE/RL) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Montsame masthead trademark bundled from Wikimedia Commons (File:Montsame logo.png) for educational reference in Learn mode.",
   },
   {
-    id: "la-kpl",
-    src: "tmp/logo-harvest/la/kpl.png",
+    id: "mr-le-calame",
+    src: "tmp/logo-harvest/mr/le-calame.jpg",
     explainer:
-      "Circular KPL Lao News Agency emblem with Lao wordmark \u2014 the state news agency crest.",
+      "Official masthead/brand mark for Le Calame, sourced from the publisher's official site and visually verified.",
     licence:
-      "KPL Lao News Agency crest trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "Le Calame masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "lc-the-voice",
-    src: "tmp/logo-harvest/lc/the-voice.png",
+    id: "mt-newsbook",
+    src: "tmp/logo-harvest/mt/newsbook.jpg",
     explainer:
-      "'VP Digital' badge beside outlined 'THE VOICE' wordmark \u2014 St Lucia Voice newspaper digital masthead.",
+      "Official masthead/brand mark for Newsbook, sourced from the publisher's official site and visually verified.",
     licence:
-      "The Voice (St Lucia) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Newsbook masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "lk-virakesari",
-    src: "tmp/logo-harvest/lk/virakesari.jpg",
+    id: "mu-l-express",
+    src: "tmp/logo-harvest/mu/l-express.svg",
     explainer:
-      "Tamil/English 'VIRAKESARI ONLINE' anniversary masthead with trophies \u2014 Sri Lanka Tamil daily brand.",
+      "Official masthead/brand mark for L'Express, sourced from Wikimedia Commons and visually verified.",
     licence:
-      "Virakesari masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "L'Express masthead trademark bundled from Wikimedia Commons (File:Logo L'Express.svg) for educational reference in Learn mode.",
   },
   {
-    id: "lr-daily-observer",
-    src: "tmp/logo-harvest/lr/daily-observer.png",
+    id: "mu-le-mauricien",
+    src: "tmp/logo-harvest/mu/le-mauricien.png",
     explainer:
-      "Black serif 'Daily OBSERVER' nameplate with rule lines \u2014 Liberia's Daily Observer masthead.",
+      "Official masthead/brand mark for Le Mauricien, sourced from the publisher's official site and visually verified.",
     licence:
-      "Daily Observer masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Le Mauricien masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "lr-frontpage-africa",
-    src: "tmp/logo-harvest/lr/frontpage-africa.png",
+    id: "mu-defi-media",
+    src: "tmp/logo-harvest/mu/defi-media.png",
     explainer:
-      "Orange Africa map with 'FPA' and 'FRONT PAGE AFRICA' wordmark \u2014 Liberian daily brand mark.",
+      "Official masthead/brand mark for D\u00e9fi M\u00e9dia, sourced from the publisher's official site and visually verified.",
     licence:
-      "FrontPageAfrica masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "D\u00e9fi M\u00e9dia masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "lr-the-analyst",
-    src: "tmp/logo-harvest/lr/the-analyst.webp",
+    id: "mv-mihaaru",
+    src: "tmp/logo-harvest/mv/mihaaru.png",
     explainer:
-      "Blue banner 'The ANALYST' with anniversary seal \u2014 Liberia's The Analyst masthead.",
+      "Official masthead/brand mark for Mihaaru, sourced from the publisher's official site and visually verified.",
     licence:
-      "The Analyst masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Mihaaru masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "ls-public-eye",
-    src: "tmp/logo-harvest/ls/public-eye.png",
+    id: "mv-avas",
+    src: "tmp/logo-harvest/mv/avas.jpg",
     explainer:
-      "Blue 'Public Eye' wordmark with eye-dot on the i \u2014 Lesotho weekly masthead.",
+      "Official masthead/brand mark for Avas, sourced from Wikimedia Commons and visually verified.",
     licence:
-      "Public Eye masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Avas masthead trademark bundled from Wikimedia Commons (File:Logo of AVAS.jpg) for educational reference in Learn mode.",
   },
   {
-    id: "lt-lrt-news",
-    src: "tmp/logo-harvest/lt/lrt-news.jpg",
+    id: "mv-the-edition",
+    src: "tmp/logo-harvest/mv/the-edition.png",
     explainer:
-      "Dark blue 'LRT | .lt' wordmark \u2014 Lithuanian public broadcaster news portal brand.",
+      "Official masthead/brand mark for The Edition, sourced from the publisher's official site and visually verified.",
     licence:
-      "LRT.lt brand mark trademark bundled from the broadcaster's official site brand assets for educational reference in Learn mode.",
+      "The Edition masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "lt-lrytas",
-    src: "tmp/logo-harvest/lt/lrytas.jpg",
+    id: "mv-psm-news",
+    src: "tmp/logo-harvest/mv/psm-news.png",
     explainer:
-      "White 'lrytas.lt' serif wordmark on a red rounded rectangle \u2014 Lietuvos rytas digital brand.",
+      "Official masthead/brand mark for PSM News, sourced from the publisher's official site and visually verified.",
     licence:
-      "Lrytas.lt masthead trademark bundled from Wikimedia Commons (File:Lrytas.lt logotipas.jpg) for educational reference in Learn mode.",
+      "PSM News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "lv-latvijas-avize",
-    src: "tmp/logo-harvest/lv/latvijas-avize.svg",
+    id: "mw-the-nation",
+    src: "tmp/logo-harvest/mw/the-nation.png",
     explainer:
-      "White 'LA.LV' wordmark \u2014 Latvijas Av\u012bze digital masthead from its own site.",
+      "Official masthead/brand mark for The Nation, sourced from the publisher's official site and visually verified.",
     licence:
-      "Latvijas Av\u012bze (LA.LV) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "The Nation masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "lv-tvnet",
-    src: "tmp/logo-harvest/lv/tvnet.png",
+    id: "mw-malawi24",
+    src: "tmp/logo-harvest/mw/malawi24.png",
     explainer:
-      "Blue/orange 'TVNET' wordmark with star mark \u2014 Latvia's Tvnet.lv news portal brand.",
+      "Official masthead/brand mark for Malawi24, sourced from the publisher's official site and visually verified.",
     licence:
-      "Tvnet.lv brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Malawi24 masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "mw-nyasa-times",
+    src: "tmp/logo-harvest/mw/nyasa-times.png",
+    explainer:
+      "Official masthead/brand mark for Nyasa Times, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Nyasa Times masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "mw-mana",
+    src: "tmp/logo-harvest/mw/mana.png",
+    explainer:
+      "Official masthead/brand mark for Mana Online, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Mana Online masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "my-utusan-malaysia",
+    src: "tmp/logo-harvest/my/utusan-malaysia.png",
+    explainer:
+      "Official masthead/brand mark for Utusan Malaysia, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Utusan Malaysia masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "mz-carta",
+    src: "tmp/logo-harvest/mz/carta.png",
+    explainer:
+      "Official masthead/brand mark for Carta de Mo\u00e7ambique, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Carta de Mo\u00e7ambique masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "na-new-era",
+    src: "tmp/logo-harvest/na/new-era.jpg",
+    explainer:
+      "Official masthead/brand mark for New Era, sourced from Wikimedia Commons and visually verified.",
+    licence:
+      "New Era masthead trademark bundled from Wikimedia Commons (File:New-Era-Logo.jpg) for educational reference in Learn mode.",
+  },
+  {
+    id: "na-the-namibian",
+    src: "tmp/logo-harvest/na/the-namibian.png",
+    explainer:
+      "Official masthead/brand mark for The Namibian, sourced from the publisher's official site and visually verified.",
+    licence:
+      "The Namibian masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "na-namibian-sun",
+    src: "tmp/logo-harvest/na/namibian-sun.png",
+    explainer:
+      "Official masthead/brand mark for Namibian Sun, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Namibian Sun masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "na-observer",
+    src: "tmp/logo-harvest/na/observer.png",
+    explainer:
+      "Official masthead/brand mark for Windhoek Observer, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Windhoek Observer masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "ne-le-sahel",
+    src: "tmp/logo-harvest/ne/le-sahel.jpg",
+    explainer:
+      "Official masthead/brand mark for Le Sahel, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Le Sahel masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "ne-air-info",
+    src: "tmp/logo-harvest/ne/air-info.png",
+    explainer:
+      "Official masthead/brand mark for A\u00efr Info, sourced from the publisher's official site and visually verified.",
+    licence:
+      "A\u00efr Info masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "ni-confidencial",
+    src: "tmp/logo-harvest/ni/confidencial.jpg",
+    explainer:
+      "Official masthead/brand mark for Confidencial, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Confidencial masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "np-gorkhapatra",
+    src: "tmp/logo-harvest/np/gorkhapatra.svg",
+    explainer:
+      "Official masthead/brand mark for Gorkhapatra, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Gorkhapatra masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "np-nagarik",
+    src: "tmp/logo-harvest/np/nagarik.png",
+    explainer:
+      "Official masthead/brand mark for Nagarik, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Nagarik masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "np-onlinekhabar",
+    src: "tmp/logo-harvest/np/onlinekhabar.svg",
+    explainer:
+      "Official masthead/brand mark for Onlinekhabar, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Onlinekhabar masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "om-oman-daily-observer",
+    src: "tmp/logo-harvest/om/oman-daily-observer.svg",
+    explainer:
+      "Official masthead/brand mark for Oman Daily Observer, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Oman Daily Observer masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "om-muscat-daily",
+    src: "tmp/logo-harvest/om/muscat-daily.webp",
+    explainer:
+      "Official masthead/brand mark for Muscat Daily, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Muscat Daily masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "om-shabiba",
+    src: "tmp/logo-harvest/om/shabiba.svg",
+    explainer:
+      "Official masthead/brand mark for Shabiba, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Shabiba masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "pa-critica",
+    src: "tmp/logo-harvest/pa/critica.png",
+    explainer:
+      "Official masthead/brand mark for Cr\u00edtica, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Cr\u00edtica masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "pa-midiario",
+    src: "tmp/logo-harvest/pa/midiario.png",
+    explainer:
+      "Official masthead/brand mark for Mi Diario, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Mi Diario masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "pe-correo",
+    src: "tmp/logo-harvest/pe/correo.jpg",
+    explainer:
+      "Official masthead/brand mark for Correo, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Correo masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "pe-wayka",
+    src: "tmp/logo-harvest/pe/wayka.png",
+    explainer:
+      "Official masthead/brand mark for Wayka, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Wayka masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "pg-post-courier",
+    src: "tmp/logo-harvest/pg/post-courier.webp",
+    explainer:
+      "Official masthead/brand mark for Post-Courier, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Post-Courier masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "pg-the-national",
+    src: "tmp/logo-harvest/pg/the-national.png",
+    explainer:
+      "Official masthead/brand mark for The National, sourced from the publisher's official site and visually verified.",
+    licence:
+      "The National masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "ps-wattan",
+    src: "tmp/logo-harvest/ps/wattan.png",
+    explainer:
+      "Official masthead/brand mark for Wattan News, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Wattan News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "pw-island-times",
+    src: "tmp/logo-harvest/pw/island-times.png",
+    explainer:
+      "Official masthead/brand mark for Island Times Palau, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Island Times Palau masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "py-abc-color",
+    src: "tmp/logo-harvest/py/abc-color.jpg",
+    explainer:
+      "Official masthead/brand mark for ABC Color, sourced from Wikimedia Commons and visually verified.",
+    licence:
+      "ABC Color masthead trademark bundled from Wikimedia Commons (File:ABC color logo.jpg) for educational reference in Learn mode.",
+  },
+  {
+    id: "py-ultima-hora",
+    src: "tmp/logo-harvest/py/ultima-hora.png",
+    explainer:
+      "Official masthead/brand mark for \u00daltima Hora, sourced from the publisher's official site and visually verified.",
+    licence:
+      "\u00daltima Hora masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "py-la-nacion",
+    src: "tmp/logo-harvest/py/la-nacion.png",
+    explainer:
+      "Official masthead/brand mark for La Naci\u00f3n Paraguay, sourced from the publisher's official site and visually verified.",
+    licence:
+      "La Naci\u00f3n Paraguay masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "py-extra",
+    src: "tmp/logo-harvest/py/extra.svg",
+    explainer:
+      "Official masthead/brand mark for Diario Extra, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Diario Extra masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "py-hoy",
+    src: "tmp/logo-harvest/py/hoy.svg",
+    explainer:
+      "Official masthead/brand mark for Hoy, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Hoy masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "qa-the-peninsula",
+    src: "tmp/logo-harvest/qa/the-peninsula.png",
+    explainer:
+      "Official masthead/brand mark for The Peninsula, sourced from the publisher's official site and visually verified.",
+    licence:
+      "The Peninsula masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "qa-qatar-tribune",
+    src: "tmp/logo-harvest/qa/qatar-tribune.png",
+    explainer:
+      "Official masthead/brand mark for Qatar Tribune, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Qatar Tribune masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "rs-vecernje-novosti",
+    src: "tmp/logo-harvest/rs/vecernje-novosti.png",
+    explainer:
+      "Official masthead/brand mark for Ve\u010dernje Novosti, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Ve\u010dernje Novosti masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "rs-nova-rs",
+    src: "tmp/logo-harvest/rs/nova-rs.svg",
+    explainer:
+      "Official masthead/brand mark for Nova.rs, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Nova.rs masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "rw-the-new-times",
+    src: "tmp/logo-harvest/rw/the-new-times.png",
+    explainer:
+      "Official masthead/brand mark for The New Times, sourced from the publisher's official site and visually verified.",
+    licence:
+      "The New Times masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "rw-kigali-today",
+    src: "tmp/logo-harvest/rw/kigali-today.png",
+    explainer:
+      "Official masthead/brand mark for Kigali Today (KT Press), sourced from the publisher's official site and visually verified.",
+    licence:
+      "Kigali Today (KT Press) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sb-island-sun",
+    src: "tmp/logo-harvest/sb/island-sun.png",
+    explainer:
+      "Official masthead/brand mark for Island Sun, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Island Sun masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sc-seychelles-nation",
+    src: "tmp/logo-harvest/sc/seychelles-nation.png",
+    explainer:
+      "Official masthead/brand mark for Seychelles Nation, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Seychelles Nation masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sd-al-sudani",
+    src: "tmp/logo-harvest/sd/al-sudani.png",
+    explainer:
+      "Official masthead/brand mark for Al-Sudani, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Al-Sudani masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sd-sudanile",
+    src: "tmp/logo-harvest/sd/sudanile.png",
+    explainer:
+      "Official masthead/brand mark for Sudanile, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Sudanile masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sd-ayin",
+    src: "tmp/logo-harvest/sd/ayin.png",
+    explainer:
+      "Official masthead/brand mark for Ayin Network, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Ayin Network masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "si-delo",
+    src: "tmp/logo-harvest/si/delo.svg",
+    explainer:
+      "Official masthead/brand mark for Delo, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Delo masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "si-slovenske-novice",
+    src: "tmp/logo-harvest/si/slovenske-novice.svg",
+    explainer:
+      "Official masthead/brand mark for Slovenske novice, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Slovenske novice masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sk-aktuality",
+    src: "tmp/logo-harvest/sk/aktuality.svg",
+    explainer:
+      "Official masthead/brand mark for Aktuality.sk, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Aktuality.sk masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sk-plus-jeden-den",
+    src: "tmp/logo-harvest/sk/plus-jeden-den.png",
+    explainer:
+      "Official masthead/brand mark for Plus jeden de\u0148, sourced from Wikimedia Commons and visually verified.",
+    licence:
+      "Plus jeden de\u0148 masthead trademark bundled from Wikimedia Commons (File:Logo Plus JEDEN DEN.png) for educational reference in Learn mode.",
+  },
+  {
+    id: "sl-swit-salone",
+    src: "tmp/logo-harvest/sl/swit-salone.png",
+    explainer:
+      "Official masthead/brand mark for SwitSalone, sourced from the publisher's official site and visually verified.",
+    licence:
+      "SwitSalone masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sl-politico",
+    src: "tmp/logo-harvest/sl/politico.jpg",
+    explainer:
+      "Official masthead/brand mark for Politico SL, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Politico SL masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sm-smrtv-notizie",
+    src: "tmp/logo-harvest/sm/smrtv-notizie.png",
+    explainer:
+      "Official masthead/brand mark for San Marino RTV (SMRTV Notizie), sourced from the publisher's official site and visually verified.",
+    licence:
+      "San Marino RTV (SMRTV Notizie) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sn-le-soleil",
+    src: "tmp/logo-harvest/sn/le-soleil.webp",
+    explainer:
+      "Official masthead/brand mark for Le Soleil, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Le Soleil masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sn-seneweb",
+    src: "tmp/logo-harvest/sn/seneweb.png",
+    explainer:
+      "Official masthead/brand mark for Seneweb, sourced from Wikimedia Commons and visually verified.",
+    licence:
+      "Seneweb masthead trademark bundled from Wikimedia Commons (File:Logo seneweb.png) for educational reference in Learn mode.",
+  },
+  {
+    id: "so-garowe-online",
+    src: "tmp/logo-harvest/so/garowe-online.svg",
+    explainer:
+      "Official masthead/brand mark for Garowe Online, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Garowe Online masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "so-horseed",
+    src: "tmp/logo-harvest/so/horseed.png",
+    explainer:
+      "Official masthead/brand mark for Horseed Media, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Horseed Media masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "so-goobjoog",
+    src: "public/newspaper-logos/so/goobjoog.png",
+    explainer:
+      "Official masthead/brand mark for Goobjoog News, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Goobjoog News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sr-dagblad-suriname",
+    src: "tmp/logo-harvest/sr/dagblad-suriname.png",
+    explainer:
+      "Official masthead/brand mark for Dagblad Suriname, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Dagblad Suriname masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sr-starnieuws",
+    src: "tmp/logo-harvest/sr/starnieuws.svg",
+    explainer:
+      "Official masthead/brand mark for Starnieuws, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Starnieuws masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sr-dwtonline",
+    src: "tmp/logo-harvest/sr/dwtonline.jpg",
+    explainer:
+      "Official masthead/brand mark for DwT Online, sourced from the publisher's official site and visually verified.",
+    licence:
+      "DwT Online masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "st-tela-non",
+    src: "tmp/logo-harvest/st/tela-non.png",
+    explainer:
+      "Official masthead/brand mark for T\u00e9la N\u00f3n, sourced from the publisher's official site and visually verified.",
+    licence:
+      "T\u00e9la N\u00f3n masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sv-la-prensa-grafica",
+    src: "tmp/logo-harvest/sv/la-prensa-grafica.png",
+    explainer:
+      "Official masthead/brand mark for La Prensa Gr\u00e1fica, sourced from Wikimedia Commons and visually verified.",
+    licence:
+      "La Prensa Gr\u00e1fica masthead trademark bundled from Wikimedia Commons (File:Logo de La Prensa Gr\u00e1fica.png) for educational reference in Learn mode.",
+  },
+  {
+    id: "sv-el-diario-de-hoy",
+    src: "tmp/logo-harvest/sv/el-diario-de-hoy.svg",
+    explainer:
+      "Official masthead/brand mark for El Diario de Hoy, sourced from the publisher's official site and visually verified.",
+    licence:
+      "El Diario de Hoy masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sv-el-faro",
+    src: "tmp/logo-harvest/sv/el-faro.jpg",
+    explainer:
+      "Official masthead/brand mark for El Faro, sourced from Wikimedia Commons and visually verified.",
+    licence:
+      "El Faro masthead trademark bundled from Wikimedia Commons (File:Logo El Faro.jpg) for educational reference in Learn mode.",
+  },
+  {
+    id: "sv-diario-el-salvador",
+    src: "tmp/logo-harvest/sv/diario-el-salvador.png",
+    explainer:
+      "Official masthead/brand mark for Diario El Salvador, sourced from Wikimedia Commons and visually verified.",
+    licence:
+      "Diario El Salvador masthead trademark bundled from Wikimedia Commons (File:Logo of Diario El Salvador.png) for educational reference in Learn mode.",
+  },
+  {
+    id: "sv-el-mundo",
+    src: "tmp/logo-harvest/sv/el-mundo-alt1.svg",
+    explainer:
+      "Official masthead/brand mark for Diario El Mundo, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Diario El Mundo masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sy-al-watan",
+    src: "tmp/logo-harvest/sy/al-watan.svg",
+    explainer:
+      "Official masthead/brand mark for Al-Watan, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Al-Watan masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sy-enab-baladi",
+    src: "tmp/logo-harvest/sy/enab-baladi.jpg",
+    explainer:
+      "Official masthead/brand mark for Enab Baladi, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Enab Baladi masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sy-syria-direct",
+    src: "tmp/logo-harvest/sy/syria-direct.png",
+    explainer:
+      "Official masthead/brand mark for Syria Direct, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Syria Direct masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sz-times-of-eswatini",
+    src: "tmp/logo-harvest/sz/times-of-eswatini.png",
+    explainer:
+      "Official masthead/brand mark for Times of Eswatini, sourced from the publisher's official site and visually verified.",
+    licence:
+      "Times of Eswatini masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "sz-ebuswini-observer",
+    src: "tmp/logo-harvest/sz/ebuswini-observer.png",
+    explainer:
+      "Official masthead/brand mark for Eswatini Observer, sourced from Wikimedia Commons and visually verified.",
+    licence:
+      "Eswatini Observer masthead trademark bundled from Wikimedia Commons (File:Eswatini Observer-Logo.png) for educational reference in Learn mode.",
   },
 ];
 
