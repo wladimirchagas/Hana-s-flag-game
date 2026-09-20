@@ -82,7 +82,7 @@ export function chooserItemsForCountry(
       return newsAgenciesForCountry(countryCode).map((n) => ({
         id: n.id,
         name: n.name,
-        image: n.logo,
+        image: n.logo ?? null,
       }));
     case "newspaper":
       return newspapersForCountry(countryCode).map((n) => ({
