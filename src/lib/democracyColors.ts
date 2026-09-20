@@ -6,6 +6,7 @@ export type DemocracyMapMode =
   | "economist"
   | "cpi"
   | "perception"
+  | "rsf-press"
   | null;
 
 export type DemocracyLegendItem = {
@@ -62,6 +63,16 @@ export const CPI_BAND_ORDER: readonly string[] = [
   "0–9",
 ];
 
+// RSF World Press Freedom Index map colours follow the Index methodology bands
+// (good / satisfactory / problematic / difficult / very serious).
+export const RSF_PRESS_MAP_COLORS: Record<string, string> = {
+  Good: "#2e7d32",
+  Satisfactory: "#c0ca33",
+  Problematic: "#fb8c00",
+  Difficult: "#ef6c00",
+  "Very serious": "#b71c1c",
+};
+
 /** Democracy Perception Index 2026 tiers (±5 / ±15 on Index Score). */
 export const PERCEPTION_MAP_COLORS: Record<string, string> = {
   "Very Positive": "#1b5e20",
@@ -85,6 +96,7 @@ export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
   if (mode === "economist") return "The Economist Index";
   if (mode === "cpi") return "Corruption Perceptions Index";
   if (mode === "perception") return "Democracy Perception Index";
+  if (mode === "rsf-press") return "RSF Press Freedom";
   return "";
 }
 
@@ -124,6 +136,15 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
       color: PERCEPTION_MAP_COLORS[label],
     }));
   }
+  if (mode === "rsf-press") {
+    return [
+      { label: "Good", color: RSF_PRESS_MAP_COLORS.Good },
+      { label: "Satisfactory", color: RSF_PRESS_MAP_COLORS.Satisfactory },
+      { label: "Problematic", color: RSF_PRESS_MAP_COLORS.Problematic },
+      { label: "Difficult", color: RSF_PRESS_MAP_COLORS.Difficult },
+      { label: "Very serious", color: RSF_PRESS_MAP_COLORS["Very serious"] },
+    ];
+  }
   return [];
 }
 
@@ -147,9 +168,12 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
     } else if (mode === "cpi") {
       rating = demo.cpi?.rating;
       colorMap = CPI_MAP_COLORS;
-    } else {
+    } else if (mode === "perception") {
       rating = demo.perception?.rating;
       colorMap = PERCEPTION_MAP_COLORS;
+    } else {
+      rating = demo.rsfPress?.rating;
+      colorMap = RSF_PRESS_MAP_COLORS;
     }
     if (rating && colorMap[rating]) {
       overlay.set(code, colorMap[rating]);

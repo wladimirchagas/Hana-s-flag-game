@@ -55,6 +55,11 @@ on:
       # Flag Master's symbol packs — the decks are derived from the national-symbols
       # data above, so a change to either the data or the builders must re-run the gate.
       - "scripts/check-quiz-symbol-decks.mjs"
+      - "scripts/check-rsf-press-freedom.mjs"
+      - "scripts/data/rsf-press-freedom-2026.csv"
+      - "scripts/data/democracyData.mjs"
+      - "src/data/countryFacts.ts"
+      - "src/lib/democracyColors.ts"
       - "src/lib/quizSymbols.ts"
       - "src/lib/historicalQuiz.ts"
       - "src/hooks/useGame.ts"
@@ -151,6 +156,9 @@ jobs:
 
       - name: Verify every <img> is keyed by its src (no stale/blanked images)
         run: node scripts/check-image-element-keys.mjs
+
+      - name: Verify RSF World Press Freedom Index 2026 data matches the official CSV
+        run: node scripts/check-rsf-press-freedom.mjs
 
       - name: Verify every flags:check gate actually runs in CI
         run: node scripts/check-ci-coverage.mjs

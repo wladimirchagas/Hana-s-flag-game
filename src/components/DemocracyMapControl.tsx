@@ -104,6 +104,13 @@ export function DemocracyMapControl({ mode, onChange }: DemocracyMapControlProps
             >
               Democracy Perception Index
             </button>
+            <button
+              type="button"
+              className={`map-view-control__preset${mode === "rsf-press" ? " map-view-control__preset--active" : ""}`}
+              onClick={() => selectMode("rsf-press")}
+            >
+              RSF Press Freedom Index
+            </button>
           </div>
         </div>
       )}

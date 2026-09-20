@@ -151,6 +151,7 @@ type GroupMode =
   | "economist"
   | "cpi"
   | "perception"
+  | "rsf-press"
   | "party-ideology";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
@@ -172,6 +173,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   economist: "The Economist Democracy Index",
   cpi: "Corruption Perceptions Index",
   perception: "Democracy Perception Index",
+  "rsf-press": "RSF Press Freedom Index",
   // Political-parties-view only — buckets along the sourced ideology spectrum.
   "party-ideology": "By ideology",
   // Passports-view only — buckets by the passport cover's colour family.
@@ -235,6 +237,7 @@ const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
   "economist",
   "cpi",
   "perception",
+  "rsf-press",
 ]);
 
 /** Whether a grouping mode is offered for the given view. The flag-appearance
@@ -311,6 +314,15 @@ const PERCEPTION_ORDER: Record<string, number> = {
   Neutral: 3,
   Negative: 4,
   "Very Negative": 5,
+  "Not rated": 6,
+};
+
+const RSF_PRESS_ORDER: Record<string, number> = {
+  Good: 1,
+  Satisfactory: 2,
+  Problematic: 3,
+  Difficult: 4,
+  "Very serious": 5,
   "Not rated": 6,
 };
 
@@ -809,6 +821,12 @@ export function FlagGrid({
         const rating = COUNTRY_FACTS[code]?.democracy?.perception?.rating ?? "Not rated";
         push(rating, e);
       }
+    } else if (groupMode === "rsf-press") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.rsfPress?.rating ?? "Not rated";
+        push(rating, e);
+      }
     }
 
     if (
@@ -816,7 +834,8 @@ export function FlagGrid({
       groupMode === "v-dem" ||
       groupMode === "economist" ||
       groupMode === "cpi" ||
-      groupMode === "perception"
+      groupMode === "perception" ||
+      groupMode === "rsf-press"
     ) {
       for (const [, items] of buckets) {
         items.sort((a, b) => {
@@ -833,7 +852,9 @@ export function FlagGrid({
               ? factsA?.economist
               : groupMode === "cpi"
               ? factsA?.cpi
-              : factsA?.perception;
+              : groupMode === "perception"
+              ? factsA?.perception
+              : factsA?.rsfPress;
           const indexB =
             groupMode === "freedom-house"
               ? factsB?.freedomHouse
@@ -843,7 +864,9 @@ export function FlagGrid({
               ? factsB?.economist
               : groupMode === "cpi"
               ? factsB?.cpi
-              : factsB?.perception;
+              : groupMode === "perception"
+              ? factsB?.perception
+              : factsB?.rsfPress;
           const rankA = indexA?.rank ?? Infinity;
           const rankB = indexB?.rank ?? Infinity;
           if (rankA !== rankB) return rankA - rankB;
@@ -929,6 +952,11 @@ export function FlagGrid({
       if (groupMode === "perception") {
         const oa = PERCEPTION_ORDER[a] ?? 99;
         const ob = PERCEPTION_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "rsf-press") {
+        const oa = RSF_PRESS_ORDER[a] ?? 99;
+        const ob = RSF_PRESS_ORDER[b] ?? 99;
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "party-ideology") {
