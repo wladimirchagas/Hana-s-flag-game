@@ -11,23 +11,55 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 23 — montage-scanned. */
+/** Visually verified batch 24 — montage-scanned. */
 const MANIFEST = [
   {
-    id: "al-gazeta-shqiptare",
-    src: "tmp/batch23-manual/al/gazeta-shqiptare.svg",
+    id: "bg-24-chasa",
+    src: "tmp/batch24-manual/bg/24-chasa.svg",
     explainer:
-      "Black serif all-caps 'GAZETA SHQIPTARE' masthead — Albanian daily newspaper wordmark.",
+      "Black '24 часа' wordmark with italic Cyrillic 'часа' and a thick underline — Bulgarian daily 24 Chasa masthead.",
     licence:
-      "Gazeta Shqiptare.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "Logo 24 Tschasa.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "bi-jimbere",
-    src: "tmp/batch23-manual/bi/jimbere.png",
+    id: "cz-blesk",
+    src: "tmp/batch24-manual/cz/blesk.svg",
     explainer:
-      "Two-tone slab-serif 'Jimbere' wordmark (cyan 'Jim' + orange 'bere') — Jimbere Magazine masthead.",
+      "White italic all-caps 'BLESK' on a solid red rectangle — Czech tabloid Blesk masthead.",
     licence:
-      "Jimbere Magazine logo.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "Blesk Logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "cz-pravo",
+    src: "tmp/batch24-manual/cz/pravo-1995.svg",
+    explainer:
+      "Tall condensed orange-red 'PRÁVO' wordmark — Czech daily Právo masthead (Commons vector of the design in use since the mid-1990s).",
+    licence:
+      "Pravo-logo ca. 1995.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "ee-eesti-paevaleht",
+    src: "tmp/batch24-manual/ee/eesti-paevaleht.svg",
+    explainer:
+      "Three red dots beside black 'Eesti' and red 'Päevaleht' — Estonian daily Eesti Päevaleht masthead.",
+    licence:
+      "Eesti Päevaleht logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "ci-fraternite-matin",
+    src: "tmp/batch24-manual/ci/fraternite-matin.png",
+    explainer:
+      "Green 'Fratmat' + orange '.info' wordmark with orange swooshes and the strap 'l'Actualité en continu…' — Fraternité Matin's digital masthead from fratmat.info.",
+    licence:
+      "Fraternité Matin masthead from the publisher's official site brand assets (fratmat.info); trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "cu-trabajadores",
+    src: "tmp/batch24-manual/cu/trabajadores.png",
+    explainer:
+      "Black serif all-caps 'TRABAJADORES' wordmark — Cuban workers' daily newspaper masthead.",
+    licence:
+      "Logotipo del periódico Trabajadores.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
 ];
 

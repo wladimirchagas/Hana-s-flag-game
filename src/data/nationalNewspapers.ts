@@ -2091,7 +2091,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Group Bulgaria Review 2023"
       },
       "revenueModel": "Print sales, display advertising, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bg/24-chasa.svg",
+      "logoExplainer": "Black '24 часа' wordmark with italic Cyrillic 'часа' and a thick underline — Bulgarian daily 24 Chasa masthead.",
+      "licenceNote": "Logo 24 Tschasa.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.24chasa.bg",
         "https://en.wikipedia.org/wiki/24_Chasa"
@@ -4292,7 +4295,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "Print sales, legal announcements, and government advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ci/fraternite-matin.png",
+      "logoExplainer": "Green 'Fratmat' + orange '.info' wordmark with orange swooshes and the strap 'l'Actualité en continu…' — Fraternité Matin's digital masthead from fratmat.info.",
+      "licenceNote": "Fraternité Matin masthead from the publisher's official site brand assets (fratmat.info); trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.fratmat.info",
         "https://en.wikipedia.org/wiki/Fraternité_Matin"
@@ -5158,7 +5164,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "CTC Departamento de Prensa 2023"
       },
       "revenueModel": "Trade union dues and state publishing subsidy",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cu/trabajadores.png",
+      "logoExplainer": "Black serif all-caps 'TRABAJADORES' wordmark — Cuban workers' daily newspaper masthead.",
+      "licenceNote": "Logotipo del periódico Trabajadores.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.trabajadores.cu",
         "https://es.wikipedia.org/wiki/Trabajadores_(peri%C3%B3dico)"
@@ -5577,7 +5586,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Borgis a.s. Annual Report 2023"
       },
       "revenueModel": "Print sales, subscriptions, and web traffic partnership with Seznam.cz",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cz/pravo.svg",
+      "logoExplainer": "Tall condensed orange-red 'PRÁVO' wordmark — Czech daily Právo masthead (Commons vector of the design in use since the mid-1990s).",
+      "licenceNote": "Pravo-logo ca. 1995.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.novinky.cz",
         "https://en.wikipedia.org/wiki/Pr%C3%A1vo"
@@ -5662,7 +5674,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Czech News Center Annual Review 2024"
       },
       "revenueModel": "Retail print sales, digital display advertising, and consumer media services",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cz/blesk.svg",
+      "logoExplainer": "White italic all-caps 'BLESK' on a solid red rectangle — Czech tabloid Blesk masthead.",
+      "licenceNote": "Blesk Logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.blesk.cz",
         "https://en.wikipedia.org/wiki/Blesk_(newspaper)"
@@ -6720,7 +6735,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ekspress Grupp Media Report 2023"
       },
       "revenueModel": "Digital subscriber packages and institutional subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ee/eesti-paevaleht.svg",
+      "logoExplainer": "Three red dots beside black 'Eesti' and red 'Päevaleht' — Estonian daily Eesti Päevaleht masthead.",
+      "licenceNote": "Eesti Päevaleht logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://epl.delfi.ee",
         "https://en.wikipedia.org/wiki/Eesti_P%C3%A4evaleht"
