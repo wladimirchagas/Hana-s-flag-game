@@ -129,7 +129,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "IMI Annual Performance Review / BPA Worldwide"
       },
       "revenueModel": "Commercial print advertising, corporate sponsorships, and digital programmatic ads",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ae/the-national.svg",
+      "logoExplainer": "Two-tone 'TheNational' wordmark with underline — the English-language UAE daily's digital masthead.",
+      "licenceNote": "The National (UAE) masthead trademark bundled from Wikimedia Commons (File:Logo The National-svg.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.thenationalnews.com",
         "https://en.wikipedia.org/wiki/The_National_(Abu_Dhabi)"
@@ -154,7 +157,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "BPA Worldwide Circulation Audit / Gulf News Media Pack"
       },
       "revenueModel": "Print newsstand sales, corporate display advertising, classified notices, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ae/gulf-news.webp",
+      "logoExplainer": "Black circular emblem with a falcon silhouette above stacked 'GULF NEWS' capitals — the Dubai daily's brand mark from its own site.",
+      "licenceNote": "Gulf News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://gulfnews.com",
         "https://en.wikipedia.org/wiki/Gulf_News"
@@ -181,7 +187,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Abu Dhabi Media Audience Research"
       },
       "revenueModel": "Government notices, corporate commercial advertising, and newsstand distribution",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ae/al-ittihad.svg",
+      "logoExplainer": "Arabic calligraphy title with an 'ALETIHAD NEWS CENTER' English strap — Al-Ittihad's official masthead from its site.",
+      "licenceNote": "Al-Ittihad masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.alittihad.ae",
         "https://en.wikipedia.org/wiki/Al_Ittihad_(Emirati_newspaper)"
@@ -208,7 +217,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "BPA Worldwide / Khaleej Times Media Kit"
       },
       "revenueModel": "Print advertising, classified notices, digital banner advertising, and sponsored events",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ae/khaleej-times.svg",
+      "logoExplainer": "Blackletter 'Khaleej Times' masthead — the Dubai English-language daily's traditional nameplate from its own site.",
+      "licenceNote": "Khaleej Times masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.khaleejtimes.com",
         "https://en.wikipedia.org/wiki/Khaleej_Times"
@@ -653,7 +665,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Instituto Verificador de Circulaciones (IVC) Argentina 2023"
       },
       "revenueModel": "Digital subscriptions, print sales, display advertising, and media syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ar/clarin.svg",
+      "logoExplainer": "Red 'Clarín' wordmark beside a circular bugle emblem — Argentina's mass-circulation daily masthead.",
+      "licenceNote": "Clarín masthead trademark bundled from Wikimedia Commons (File:Clarín logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.clarin.com",
         "https://en.wikipedia.org/wiki/Clar%C3%ADn_(Argentine_newspaper)"
@@ -679,7 +694,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "IVC Argentina / Comscore 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and corporate advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ar/la-nacion.svg",
+      "logoExplainer": "Blue serif capitals 'LA NACION' — La Nación's contemporary digital wordmark.",
+      "licenceNote": "La Nación masthead trademark bundled from Wikimedia Commons (File:Logo La Nación.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.lanacion.com.ar",
         "https://en.wikipedia.org/wiki/La_Naci%C3%B3n"
@@ -705,7 +723,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "IVC Argentina 2023"
       },
       "revenueModel": "Print sales, digital subscriptions, and institutional advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ar/pagina-12.svg",
+      "logoExplainer": "Serif 'Página|12' masthead with a vertical bar separating the numeral — the Buenos Aires daily's nameplate.",
+      "licenceNote": "Página/12 masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.pagina12.com.ar",
         "https://en.wikipedia.org/wiki/P%C3%A1gina/12"
@@ -5290,7 +5311,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Oficina de Justificación de la Difusión (OJD) / PRISA Annual Report 2023"
       },
       "revenueModel": "Paid digital subscriptions, print sales, corporate advertising, and events",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/es/el-pais.svg",
+      "logoExplainer": "Serif 'EL PAÍS' with a blue triangular accent — Spain's leading daily masthead.",
+      "licenceNote": "El País masthead trademark bundled from Wikimedia Commons (File:El País logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://elpais.com",
         "https://en.wikipedia.org/wiki/El_Pa%C3%ADs"
@@ -5317,7 +5341,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "GfK DAM / OJD Interactiva / Unidad Editorial 2023"
       },
       "revenueModel": "Digital subscriptions, newsstand sales, and commercial brand advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/es/el-mundo.svg",
+      "logoExplainer": "Black 'EL MUNDO' wordmark with an oversized red capital M — the Spanish daily's distinctive masthead.",
+      "licenceNote": "El Mundo masthead trademark bundled from Wikimedia Commons (File:Periodico El Mundo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.elmundo.es",
         "https://en.wikipedia.org/wiki/El_Mundo_(Spain)"
@@ -5344,7 +5371,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "OJD / Vocento Resultados Anuales 2023"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and print and digital display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/es/abc.jpg",
+      "logoExplainer": "Classic black serif capitals 'ABC' — the Madrid daily's historic three-letter masthead.",
+      "licenceNote": "ABC (Spain) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.abc.es",
         "https://en.wikipedia.org/wiki/ABC_(Spanish_newspaper)"
@@ -5371,7 +5401,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "GfK DAM / OJD Interactiva 2023"
       },
       "revenueModel": "Digital subscriptions, daily print distribution, and premium brand advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/es/la-vanguardia.svg",
+      "logoExplainer": "White serif 'LA VANGUARDIA' on a navy banner — Barcelona's newspaper of record masthead.",
+      "licenceNote": "La Vanguardia masthead trademark bundled from Wikimedia Commons (File:La Vanguardia (cabecera).svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.lavanguardia.com",
         "https://en.wikipedia.org/wiki/La_Vanguardia"
@@ -8453,7 +8486,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ADS (Accertamenti Diffusione Stampa) Italy 2024"
       },
       "revenueModel": "Digital subscriptions, print copy sales, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/it/corriere-della-sera.svg",
+      "logoExplainer": "Italic serif 'CORRIERE DELLA SERA' — Milan's historic daily masthead from its own site.",
+      "licenceNote": "Corriere della Sera masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.corriere.it",
         "https://en.wikipedia.org/wiki/Corriere_della_Sera"
@@ -8479,7 +8515,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ADS Italy Readership Audit 2024"
       },
       "revenueModel": "Print sales, digital subscriptions (Rep+), and advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/it/la-repubblica.png",
+      "logoExplainer": "Black serif 'la Repubblica' wordmark — the Rome daily's familiar lowercase-plus-capital masthead.",
+      "licenceNote": "la Repubblica masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.repubblica.it",
         "https://en.wikipedia.org/wiki/La_Repubblica"
@@ -8505,7 +8544,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ADS Italy / Confindustria Report 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, professional databases, and financial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/it/il-sole-24-ore.svg",
+      "logoExplainer": "'Il Sole' beside a shadowed white '24 ORE' block — Italy's financial daily masthead.",
+      "licenceNote": "Il Sole 24 Ore masthead trademark bundled from Wikimedia Commons (File:Il Sole 24 Ore.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.ilsole24ore.com",
         "https://en.wikipedia.org/wiki/Il_Sole_24_Ore"
@@ -8531,7 +8573,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ADS Italy Media Audit 2024"
       },
       "revenueModel": "Print sales, legal notices, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/it/il-messaggero.svg",
+      "logoExplainer": "Blackletter 'Il Messaggero' masthead — the Rome daily's traditional nameplate.",
+      "licenceNote": "Il Messaggero masthead trademark bundled from Wikimedia Commons (File:Il Messaggero.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.ilmessaggero.it",
         "https://en.wikipedia.org/wiki/Il_Messaggero"
@@ -8765,7 +8810,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Japan Newspaper Publishers & Editors Association (NSK) 2024"
       },
       "revenueModel": "Home print subscriptions, digital access, and corporate advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/jp/yomiuri-shimbun.png",
+      "logoExplainer": "Kanji '讀賣新聞' with a YOL Online lockup — the Yomiuri Shimbun's brand mark from its own site.",
+      "licenceNote": "Yomiuri Shimbun masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.yomiuri.co.jp",
         "https://en.wikipedia.org/wiki/Yomiuri_Shimbun"
@@ -8791,7 +8839,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "NSK Audit Report 2024"
       },
       "revenueModel": "Print subscriptions, digital paywall, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/jp/asahi-shimbun.svg",
+      "logoExplainer": "Mincho-style kanji '朝日新聞' wordmark — the Asahi Shimbun's classic masthead from its own site.",
+      "licenceNote": "Asahi Shimbun masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.asahi.com",
         "https://en.wikipedia.org/wiki/Asahi_Shimbun"
@@ -8818,7 +8869,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nikkei Inc. Corporate Report 2024"
       },
       "revenueModel": "Paid digital subscriptions, print subscriptions, index licensing, and corporate advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/jp/nikkei.png",
+      "logoExplainer": "Brush-style kanji '日本經濟新聞' masthead — the Nikkei's traditional calligraphic nameplate.",
+      "licenceNote": "Nikkei masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.nikkei.com",
         "https://en.wikipedia.org/wiki/Nihon_Keizai_Shimbun"
@@ -8843,7 +8897,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Japan Times Media Kit 2024"
       },
       "revenueModel": "Print subscription, digital paywall, and advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/jp/japan-times.svg",
+      "logoExplainer": "Lowercase 'the japan times' with a red dotted j — the English-language Tokyo daily's wordmark.",
+      "licenceNote": "The Japan Times masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.japantimes.co.jp",
         "https://en.wikipedia.org/wiki/The_Japan_Times"
@@ -11990,7 +12047,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Comscore Mexico / El Universal Audit 2023"
       },
       "revenueModel": "Print circulation, digital subscriptions (El Universal Plus), and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mx/el-universal.svg",
+      "logoExplainer": "Burgundy serif 'EL UNIVERSAL' — Mexico City's historic daily masthead.",
+      "licenceNote": "El Universal masthead trademark bundled from Wikimedia Commons (File:Logo El Universal 2021.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.eluniversal.com.mx",
         "https://es.wikipedia.org/wiki/El_Universal_(M%C3%A9xico)"
@@ -12015,7 +12075,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Reforma Annual Statement 2023"
       },
       "revenueModel": "Hard digital paywall subscriptions, print sales, and premium advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mx/reforma.png",
+      "logoExplainer": "White slab-serif 'REFORMA' on a green bar — the Mexico City daily's brand masthead.",
+      "licenceNote": "Reforma masthead trademark bundled from Wikimedia Commons (File:Logo REFORMA (México).png) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.reforma.com",
         "https://en.wikipedia.org/wiki/Reforma_(newspaper)"
@@ -12040,7 +12103,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "DEMOS S.A. Audited Metrics 2023"
       },
       "revenueModel": "Print sales, open digital advertising, and institutional subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mx/la-jornada.webp",
+      "logoExplainer": "Joined 'LaJornada' wordmark — Mexico City's left-leaning daily masthead from its own site.",
+      "licenceNote": "La Jornada masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.jornada.com.mx",
         "https://es.wikipedia.org/wiki/La_Jornada"
@@ -12065,7 +12131,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Financiero Bloomberg Media Kit 2023"
       },
       "revenueModel": "Corporate print/digital subscriptions, financial advertising, and television broadcast",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mx/el-financiero.svg",
+      "logoExplainer": "Dark-blue 'EL FINANCIERO' with a globe device — Mexico's financial daily masthead.",
+      "licenceNote": "El Financiero masthead trademark bundled from Wikimedia Commons (File:El Financiero Logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.elfinanciero.com.mx",
         "https://es.wikipedia.org/wiki/El_Financiero"
@@ -12626,7 +12695,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nationaal Onderzoek Multimedia (NOM) 2023"
       },
       "revenueModel": "Print sales, digital subscriptions (Telegraaf Premium), and high-volume commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/nl/de-telegraaf.svg",
+      "logoExplainer": "Blackletter 'De Telegraaf' masthead — the Amsterdam mass-circulation daily's traditional nameplate.",
+      "licenceNote": "De Telegraaf masthead trademark bundled from Wikimedia Commons (File:Telegraaf.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.telegraaf.nl",
         "https://en.wikipedia.org/wiki/De_Telegraaf"
@@ -12653,7 +12725,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "NOM Print & Digital Media Monitor 2023"
       },
       "revenueModel": "Print and digital paid subscriptions, and selective display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/nl/de-volkskrant.svg",
+      "logoExplainer": "Black serif 'deVolkskrant' joined wordmark — the Amsterdam quality daily's masthead.",
+      "licenceNote": "De Volkskrant masthead trademark bundled from Wikimedia Commons (File:Volkskrant.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.volkskrant.nl",
         "https://en.wikipedia.org/wiki/De_Volkskrant"
@@ -12680,7 +12755,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mediahuis Corporate Audit 2023"
       },
       "revenueModel": "Paid print/digital subscriptions and quality commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/nl/nrc.svg",
+      "logoExplainer": "Bold lowercase 'nrc' with a red chevron and 'handelsblad' strap — NRC's brand lockup.",
+      "licenceNote": "NRC Handelsblad masthead trademark bundled from Wikimedia Commons (File:NRC Handelsblad logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.nrc.nl",
         "https://en.wikipedia.org/wiki/NRC_Handelsblad"
@@ -12709,7 +12787,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mediebedriftenes Landsforening (MBL) 2023"
       },
       "revenueModel": "Paid digital subscriptions (Aftenposten+), print circulation, and display ads",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/no/aftenposten.svg",
+      "logoExplainer": "Blackletter 'Aftenposten' masthead — Oslo's newspaper of record nameplate.",
+      "licenceNote": "Aftenposten masthead trademark bundled from Wikimedia Commons (File:Aftenposten logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.aftenposten.no",
         "https://en.wikipedia.org/wiki/Aftenposten"
@@ -12736,7 +12817,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mediebedriftenes Landsforening 2023"
       },
       "revenueModel": "Digital subscriptions (Dagbladet Pluss), single-copy print sales, and video ads",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/no/dagbladet.svg",
+      "logoExplainer": "White 'Dagbladet' on a red bar — the Oslo tabloid's brand masthead.",
+      "licenceNote": "Dagbladet masthead trademark bundled from Wikimedia Commons (File:Dagbladet logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.dagbladet.no",
         "https://en.wikipedia.org/wiki/Dagbladet"
@@ -12763,7 +12847,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "MBL Opplagstall / Schibsted Annual Report 2023"
       },
       "revenueModel": "Digital paywall subscriptions (VG+), print sales, and digital advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/no/vg.png",
+      "logoExplainer": "White 'VG' capitals on a red block — Verdens Gang's iconic two-letter brand mark.",
+      "licenceNote": "VG masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.vg.no",
         "https://en.wikipedia.org/wiki/Verdens_Gang"
@@ -12980,7 +13067,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nielsen Media Research New Zealand 2023"
       },
       "revenueModel": "Print sales, NZ Herald Premium digital paywall subscriptions, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/nz/the-new-zealand-herald.svg",
+      "logoExplainer": "Ornate blackletter 'H' lettermark — the New Zealand Herald's historic monogram masthead.",
+      "licenceNote": "The New Zealand Herald masthead trademark bundled from Wikimedia Commons (File:The New Zealand Herald logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.nzherald.co.nz",
         "https://en.wikipedia.org/wiki/The_New_Zealand_Herald"
@@ -13005,7 +13095,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nielsen Online Ratings NZ 2023"
       },
       "revenueModel": "Digital advertising, voluntary reader contributions (Stuff Supporter), and print subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/nz/stuff.svg",
+      "logoExplainer": "Lowercase 'stuff' wordmark with a multicolour underline — Stuff.co.nz's digital brand mark.",
+      "licenceNote": "Stuff.co.nz masthead trademark bundled from Wikimedia Commons (File:Stuff.co.nz logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.stuff.co.nz",
         "https://en.wikipedia.org/wiki/Stuff_(website)"
@@ -13030,7 +13123,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Allied Press Circulation Audit 2023"
       },
       "revenueModel": "Print sales, regional classifieds, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/nz/otago-daily-times.png",
+      "logoExplainer": "White 'ODT' initials over '.co.nz' on a navy square — the Otago Daily Times digital brand mark.",
+      "licenceNote": "Otago Daily Times masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.odt.co.nz",
         "https://en.wikipedia.org/wiki/Otago_Daily_Times"
@@ -13055,7 +13151,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nielsen Television Audience Measurement 2023"
       },
       "revenueModel": "Commercial broadcast advertising and digital sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/nz/1news.svg",
+      "logoExplainer": "Red '1 NEWS' wordmark — TVNZ's national news brand mark from the official 1News site.",
+      "licenceNote": "1News masthead trademark bundled from the publisher's official site brand assets (1-newsPrimaryLogo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.1news.co.nz",
         "https://en.wikipedia.org/wiki/1_News"
@@ -13575,7 +13674,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Polskie Badania Czytelnictwa & Agora Q4 2023 Report"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pl/wyborcza.svg",
+      "logoExplainer": "'wyborcza.pl' wordmark — Gazeta Wyborcza's digital masthead from its own site.",
+      "licenceNote": "Gazeta Wyborcza masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://wyborcza.pl",
         "https://en.wikipedia.org/wiki/Gazeta_Wyborcza"
@@ -13602,7 +13704,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Polskie Badania Czytelnictwa 2023"
       },
       "revenueModel": "Corporate subscriptions, print sales, and high-tier display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pl/rzeczpospolita.svg",
+      "logoExplainer": "Polish eagle emblem beside 'RZECZPOSPOLITA' capitals — the Warsaw daily's masthead.",
+      "licenceNote": "Rzeczpospolita masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.rp.pl",
         "https://en.wikipedia.org/wiki/Rzeczpospolita_(newspaper)"
@@ -13629,7 +13734,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Infor PL 2023 Annual Report"
       },
       "revenueModel": "Professional corporate subscriptions and advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pl/dgp.jpg",
+      "logoExplainer": "'DZIENNIK GAZETA PRAWNA' with a blue globe device — Poland's legal/business daily masthead.",
+      "licenceNote": "Dziennik Gazeta Prawna masthead trademark bundled from Wikimedia Commons (File:Dziennik Gazeta Prawna.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.gazetaprawna.pl",
         "https://en.wikipedia.org/wiki/Dziennik_Gazeta_Prawna"
@@ -13656,7 +13764,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Polskie Badania Czytelnictwa 2023"
       },
       "revenueModel": "High-volume retail print sales and programmatic digital advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pl/fakt.svg",
+      "logoExplainer": "White 'Fakt' wordmark on a red field — Poland's mass-circulation tabloid masthead.",
+      "licenceNote": "Fakt masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.fakt.pl",
         "https://en.wikipedia.org/wiki/Fakt"
