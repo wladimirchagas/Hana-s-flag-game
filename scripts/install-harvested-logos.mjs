@@ -11,31 +11,55 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 28 — montage-scanned. */
+/** Visually verified batch 29 — montage-scanned. */
 const MANIFEST = [
   {
-    id: "cd-le-potentiel",
-    src: "tmp/batch28-manual/le-potentiel.png",
+    id: "bo-el-diario",
+    src: "tmp/batch29-manual/el-diario.jpg",
     explainer:
-      "Red italic 'Le Potentiel' wordmark with a white outline — Congolese (DRC) daily masthead.",
+      "Blue 'EL DIARIO' masthead with the Bolivian tricolour between the words and the tagline 'Decano de la Prensa Nacional' — La Paz daily.",
     licence:
-      "Logo - Le Potentiel.png from French Wikipedia (marque déposée / logo); trademark bundled for educational reference in Learn mode with licenceNote.",
+      "El Diario logo.jpg from Wikimedia Commons (PD-textlogo; Newspaper logos of Bolivia); brand mark trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "lb-l-orient-le-jour",
-    src: "tmp/batch28-manual/l-orient-le-jour.svg",
+    id: "do-hoy",
+    src: "tmp/batch29-manual/hoy.png",
     explainer:
-      "Black serif 'L'Orient-Le Jour' wordmark with a decorated O — Lebanese French-language daily masthead.",
+      "White slab-serif 'Hoy' wordmark on a cyan field — Dominican Republic daily masthead.",
     licence:
-      "L'Orient-Le Jour (logo).svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "Hoy masthead trademark bundled from the publisher's official site brand assets (imagenes.hoy.com.do/static/img/hoy.png) for educational reference in Learn mode.",
   },
   {
-    id: "kz-tengrinews",
-    src: "tmp/batch28-manual/tengrinews.png",
+    id: "bg-mediapool",
+    src: "tmp/batch29-manual/mediapool-simple.svg",
     explainer:
-      "Green stylised 'T' mark beside black 'TENGRI NEWS' — Kazakhstan digital news portal masthead.",
+      "White 'MEDIAPOOL' wordmark with grey '.BG' suffix and a small square mark on a black bar — Bulgarian digital news outlet.",
     licence:
-      "Tengrinews-logo.png from Wikimedia Commons (CC0); brand mark trademark bundled for educational reference in Learn mode.",
+      "Mediapool masthead trademark bundled from the publisher's official site brand assets (mediapool.bg/assets/images/logo-simple.svg) for educational reference in Learn mode.",
+  },
+  {
+    id: "ge-interpressnews",
+    src: "tmp/batch29-manual/interpressnews.svg",
+    explainer:
+      "Blue italic 'ipn' monogram with a red square tittle over Georgian 'ინტერპრესნიუსი' — Georgian news agency crest.",
+    licence:
+      "Interpressnews brand mark trademark bundled from the agency's official site brand assets (interpressnews.ge/static/img/logo.svg) for educational reference in Learn mode.",
+  },
+  {
+    id: "bh-bna",
+    src: "tmp/batch29-manual/bna-logo.png",
+    explainer:
+      "White dotted shield emblem above Arabic 'وكالة أنباء البحرين' and English 'Bahrain News Agency' on red — Bahrain's national wire.",
+    licence:
+      "BNA logo (Bna logo.gif) from Arabic Wikipedia; brand mark trademark bundled for educational reference in Learn mode with licenceNote.",
+  },
+  {
+    id: "om-ona",
+    src: "tmp/batch29-manual/ona.png",
+    explainer:
+      "Grey Arabic calligraphy with coral diacritics above coral 'Oman News Agency' — Oman's national wire wordmark.",
+    licence:
+      "Oman News Agency logo (شعار وكالة الأنباء العمانية.png) from Arabic Wikipedia; brand mark trademark bundled for educational reference in Learn mode with licenceNote.",
   },
 ];
 
