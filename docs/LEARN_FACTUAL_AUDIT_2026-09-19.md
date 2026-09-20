@@ -1,5 +1,7 @@
 # Learn factual audit — 19 September 2026 continuation
 
+> Latest claim-level evidence: [20 September verification](LEARN_CLAIM_VERIFICATION_2026-09-20.md). Counts in this older report describe its pinned revision; consult the later report for GDP, Freedom House, image and passport-source verification.
+
 Last updated: **20 September 2026 UTC**. Status: completed revision-bounded audit report, with explicitly unverified material below. **This is not a certification that every fact, image and boundary has been independently verified.** This file supplements, and does not erase, `LEARN_FACTUAL_AUDIT_2026-09-13.md`. Findings F01–F39 retain their original definitions. No application data or hard rules have been edited by this audit.
 
 ## Revision and scope
