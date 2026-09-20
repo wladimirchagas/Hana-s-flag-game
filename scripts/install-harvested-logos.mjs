@@ -11,47 +11,43 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 51 — montage-scanned light/dark. */
+/** Visually verified batch 52 — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "mg-les-nouvelles",
-    src: "tmp/batch51-install/mg-les-nouvelles.png",
+    id: "dj-human-village",
+    src: "tmp/batch52-install/dj-human-village.jpg",
+    sourceUrl: "http://www.human-village.org/squelettes/images/HumanVillage_840x142.jpg",
     explainer:
-      "White stylised 'N' with a gold triangle over 'NEWSMADA' and gold tagline 'INFORMER - DIVERTIR - IMPACTER' on a dark teal field — Newsmada / Les Nouvelles masthead.",
+      "Hand-drawn house icon beside beige 'HUMAN' and dark-red brush 'Village' with ochre tagline 'l\\'information autrement' — Human Village magazine masthead.",
     licence:
-      "Newsmada trademark bundled from the publisher's official site brand assets (newsmada.com) for educational reference in Learn mode.",
+      "Human Village trademark bundled from the publisher's official site brand assets (human-village.org) for educational reference in Learn mode.",
   },
   {
-    id: "mk-vecer",
-    src: "tmp/batch51-install/mk-vecer.svg",
+    id: "gn-africaguinee",
+    src: "tmp/batch52-install/gn-africaguinee.png",
+    sourceUrl: "https://www.africaguinee.com/app/themes/understrap/img/africa.png",
     explainer:
-      "Bold black Cyrillic 'Вечер.' wordmark — Večer North Macedonia masthead.",
+      "White serif 'Africaguinee.com' wordmark on green with a white Africa silhouette and red-yellow-green target over Guinea — Africaguinee masthead.",
     licence:
-      "Večer trademark bundled from the publisher's official site brand assets (vecer.mk); white fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
+      "Africaguinee trademark bundled from the publisher's official site brand assets (africaguinee.com) for educational reference in Learn mode.",
   },
   {
-    id: "mr-sahara-medias",
-    src: "tmp/batch51-install/mr-sahara-medias.png",
+    id: "kn-sknvibes",
+    src: "tmp/batch52-install/kn-sknvibes.png",
+    sourceUrl: "https://www.sknvibes.com/display/img/sknvibesnew.png",
     explainer:
-      "Purple-and-gold Arabic wordmark over 'SAHARA MEDIA' beside a gold wireframe globe — Sahara Medias masthead.",
+      "Cream bubbly lowercase 'skn / vibes' wordmark with cyan and yellow splash flourishes on black — SKNVibes masthead.",
     licence:
-      "Sahara Medias trademark bundled from the publisher's official site brand assets (saharamedias.net) for educational reference in Learn mode.",
+      "SKNVibes trademark bundled from the publisher's official site brand assets (sknvibes.com) for educational reference in Learn mode.",
   },
   {
-    id: "ni-la-prensa",
-    src: "tmp/batch51-install/ni-la-prensa.svg",
+    id: "la-vientiane-times",
+    src: "tmp/batch52-install/la-vientiane-times.jpg",
+    sourceUrl: "https://www.vientianetimes.org.la/Access/VTT_banner2025.jpg",
     explainer:
-      "Bold black serif 'LP' monogram — La Prensa Nicaragua masthead mark.",
+      "Gold globe with dok champa over 'LAO PRESS' beside royal-blue serif 'Vientiane Times' wordmark — Vientiane Times masthead.",
     licence:
-      "La Prensa trademark bundled from the publisher's official site brand assets (laprensani.com); white fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
-  },
-  {
-    id: "sm-smna",
-    src: "tmp/batch51-install/sm-smna.png",
-    explainer:
-      "Blue square with white 'SAN MARINO' over large 'RTV' — San Marino RTV / News Agency mark.",
-    licence:
-      "San Marino RTV trademark bundled from the publisher's official site brand assets (sanmarinortv.sm) for educational reference in Learn mode; SMNA is the agency arm of San Marino RTV.",
+      "Vientiane Times trademark bundled from the publisher's official site brand assets (vientianetimes.org.la) for educational reference in Learn mode.",
   },
 ];
 
@@ -59,100 +55,56 @@ function sha256(buf) {
   return createHash("sha256").update(buf).digest("hex");
 }
 
-function patchEntry(src, id, fields) {
-  const idRe = new RegExp(`"id":\\s*"${id}"`);
-  const m = idRe.exec(src);
-  if (!m) throw new Error(`id not found: ${id}`);
-  let start = m.index;
-  while (start > 0 && src[start] !== "{") start--;
-  let depth = 0,
-    i = start,
-    inStr = null;
-  for (; i < src.length; i++) {
-    const c = src[i];
-    if (inStr) {
-      if (c === "\\") {
-        i++;
-        continue;
-      }
-      if (c === inStr) inStr = null;
-      continue;
-    }
-    if (c === '"' || c === "'" || c === "`") {
-      inStr = c;
-      continue;
-    }
-    if (c === "{") depth++;
-    else if (c === "}") {
-      depth--;
-      if (depth === 0) {
-        i++;
-        break;
-      }
-    }
+function patchEntry(filePath, id, patch) {
+  let src = readFileSync(filePath, "utf8");
+  const idRe = new RegExp(`("id"\\s*:\\s*"${id}"[\\s\\S]*?)(\\n\\s*\\})`);
+  const m = src.match(idRe);
+  if (!m) throw new Error(`entry not found: ${id} in ${filePath}`);
+  let block = m[1];
+  block = block.replace(/\n\s*"noImageReason"\s*:\s*"(?:\\.|[^"\\])*"\s*,?/, "\n");
+  for (const k of ["logo", "sha256", "logoSourceUrl", "logoExplainer", "licenceNote"]) {
+    block = block.replace(new RegExp(`\\n\\s*"${k}"\\s*:\\s*"(?:\\\\.|[^"\\\\])*"\\s*,?`), "\n");
   }
-  let block = src.slice(start, i);
-  if (!block.includes("noImageReason") && block.includes('"logo"')) {
-    console.log(`  skip ${id} (already has logo)`);
-    return src;
-  }
-  if (block.includes("noImageReason")) {
-    block = block.replace(/\s*"noImageReason":\s*"(?:\\.|[^"\\])*",?\n?/, "\n");
-  }
-  const insert = `      "logo": ${JSON.stringify(fields.logo)},\n      "logoExplainer": ${JSON.stringify(fields.explainer)},\n      "licenceNote": ${JSON.stringify(fields.licence)},\n`;
-  if (/"sources":/.test(block)) {
-    block = block.replace(/(\n\s*)"sources":/, `\n${insert}$1"sources":`);
-  } else {
-    block = block.replace(/\n(\s*)\}$/, `,\n${insert}$1}`);
-  }
-  block = block.replace(/,(\s*),/g, ",$1").replace(/,(\s*)\}/g, "$1}");
-  return src.slice(0, start) + block + src.slice(i);
+  block = block.replace(/,(\s*)$/, "$1");
+  const insert = Object.entries(patch)
+    .map(([k, v]) => `\n      "${k}": ${JSON.stringify(v)}`)
+    .join(",");
+  if (!/,\s*$/.test(block)) block = block.replace(/(\S)(\s*)$/, "$1,$2");
+  const newBlock = block + insert;
+  src = src.replace(idRe, newBlock + m[2]);
+  writeFileSync(filePath, src);
 }
 
-function main() {
-  let papers = readFileSync(resolve(ROOT, "src/data/nationalNewspapers.ts"), "utf8");
-  let agencies = readFileSync(resolve(ROOT, "src/data/nationalNewsAgencies.ts"), "utf8");
-  let installed = 0;
-  for (const row of MANIFEST) {
-    const abs = resolve(ROOT, row.src);
-    if (!existsSync(abs)) throw new Error(`missing source: ${row.src}`);
-    const buf = readFileSync(abs);
-    const cc = row.id.slice(0, 2);
-    const slug = row.id.slice(3);
-    const cleanExt = row.src.endsWith(".svg")
-      ? ".svg"
-      : row.src.endsWith(".webp")
-        ? ".webp"
-        : row.src.endsWith(".jpg") || row.src.endsWith(".jpeg")
-          ? ".jpg"
-          : ".png";
-    const destRel = `newspaper-logos/${cc}/${slug}${cleanExt}`;
-    const destAbs = resolve(ROOT, "public", destRel);
-    mkdirSync(dirname(destAbs), { recursive: true });
-    copyFileSync(abs, destAbs);
-    const fields = { logo: destRel, explainer: row.explainer, licence: row.licence, sha256: sha256(buf) };
-    console.log(`install ${row.id} → ${destRel} (${buf.length}b)`);
-    const beforeP = papers,
-      beforeA = agencies;
-    try {
-      papers = patchEntry(papers, row.id, fields);
-    } catch (e) {
-      if (!String(e.message).includes("not found")) throw e;
-    }
-    try {
-      agencies = patchEntry(agencies, row.id, fields);
-    } catch (e) {
-      if (!String(e.message).includes("not found")) throw e;
-    }
-    if (papers === beforeP && agencies === beforeA) {
-      console.log(`  ${row.id}: data unchanged (already had logo)`);
-      continue;
-    }
-    installed++;
-  }
-  writeFileSync(resolve(ROOT, "src/data/nationalNewspapers.ts"), papers);
-  writeFileSync(resolve(ROOT, "src/data/nationalNewsAgencies.ts"), agencies);
-  console.log(`Installed ${installed} logos.`);
-}
+const papersPath = resolve(ROOT, "src/data/nationalNewspapers.ts");
+const agenciesPath = resolve(ROOT, "src/data/nationalNewsAgencies.ts");
 
-main();
+for (const entry of MANIFEST) {
+  const abs = resolve(ROOT, entry.src);
+  if (!existsSync(abs)) throw new Error(`missing src ${entry.src}`);
+  const buf = readFileSync(abs);
+  const hash = sha256(buf);
+  const ext = entry.src.split(".").pop().toLowerCase();
+  const [cc, ...rest] = entry.id.split("-");
+  const slug = rest.join("-");
+  const relDir = `newspaper-logos/${cc}`;
+  const relPath = `${relDir}/${slug}.${ext}`;
+  const dest = resolve(ROOT, "public", relPath);
+  mkdirSync(dirname(dest), { recursive: true });
+  copyFileSync(abs, dest);
+  console.log(`install ${entry.id} → ${relPath} (${buf.length}b)`);
+
+  const papersSrc = readFileSync(papersPath, "utf8");
+  const agenciesSrc = readFileSync(agenciesPath, "utf8");
+  const inPapers = papersSrc.includes(`"id": "${entry.id}"`);
+  const inAgencies = agenciesSrc.includes(`"id": "${entry.id}"`);
+  if (!inPapers && !inAgencies) throw new Error(`id not in data: ${entry.id}`);
+  const target = inPapers ? papersPath : agenciesPath;
+  patchEntry(target, entry.id, {
+    logo: `/${relPath}`,
+    sha256: hash,
+    logoSourceUrl: entry.sourceUrl,
+    logoExplainer: entry.explainer,
+    licenceNote: entry.licence,
+  });
+}
+console.log(`Installed ${MANIFEST.length} logos.`);

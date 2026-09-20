@@ -5967,7 +5967,12 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "headquarters": "Djibouti City",
       "owner": {
         "name": "Association Human Village",
-        "type": "Independent trust / foundation"
+        "type": "Independent trust / foundation",
+      "logo": "/newspaper-logos/dj/human-village.jpg",
+      "sha256": "f28c458c4803c768a50f5a8a2e1ef37d7492167ccfdb6f729178d33418dd9f3e",
+      "logoSourceUrl": "http://www.human-village.org/squelettes/images/HumanVillage_840x142.jpg",
+      "logoExplainer": "Hand-drawn house icon beside beige 'HUMAN' and dark-red brush 'Village' with ochre tagline 'l\\'information autrement' — Human Village magazine masthead.",
+      "licenceNote": "Human Village trademark bundled from the publisher's official site brand assets (human-village.org) for educational reference in Learn mode."
       },
       "editorialStance": "Independent socio-cultural and economic journal; environmental conservation, architectural heritage, and historical research on Djibouti",
       "readership": {
@@ -8729,7 +8734,12 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "headquarters": "Conakry",
       "owner": {
         "name": "Africaguinee Media",
-        "type": "Independent commercial media"
+        "type": "Independent commercial media",
+      "logo": "/newspaper-logos/gn/africaguinee.png",
+      "sha256": "da13993a1c12cef0edea34129292ee4c0397ccf57426a1e3cc59e21e19423ee1",
+      "logoSourceUrl": "https://www.africaguinee.com/app/themes/understrap/img/africa.png",
+      "logoExplainer": "White serif 'Africaguinee.com' wordmark on green with a white Africa silhouette and red-yellow-green target over Guinea — Africaguinee masthead.",
+      "licenceNote": "Africaguinee trademark bundled from the publisher's official site brand assets (africaguinee.com) for educational reference in Learn mode."
       },
       "editorialStance": "Independent",
       "readership": {
@@ -12287,7 +12297,12 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "headquarters": "Basseterre, Saint Kitts",
       "owner": {
         "name": "SKNVibes Inc.",
-        "type": "Independent digital media company"
+        "type": "Independent digital media company",
+      "logo": "/newspaper-logos/kn/sknvibes.png",
+      "sha256": "3d007e268a350c618cb9ab3c37e2e74e329a2878333dac0aa5e5b10a4c8a40d3",
+      "logoSourceUrl": "https://www.sknvibes.com/display/img/sknvibesnew.png",
+      "logoExplainer": "Cream bubbly lowercase 'skn / vibes' wordmark with cyan and yellow splash flourishes on black — SKNVibes masthead.",
+      "licenceNote": "SKNVibes trademark bundled from the publisher's official site brand assets (sknvibes.com) for educational reference in Learn mode."
       },
       "editorialStance": "Leading online news and entertainment network in Saint Kitts and Nevis; focuses on fast breaking news, crime updates, live election results, community announcements, and Caribbean cultural carnivals (Sugar Mas)",
       "readership": {
@@ -12825,7 +12840,12 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "headquarters": "Vientiane",
       "owner": {
         "name": "Lao Press in Foreign Languages / Ministry of Information, Culture and Tourism",
-        "type": "State-owned foreign language media house"
+        "type": "State-owned foreign language media house",
+      "logo": "/newspaper-logos/la/vientiane-times.jpg",
+      "sha256": "5ee9406f297c05b1a7434f31dabe25d478b3c446d12fe4273c6c179b3bfa9d23",
+      "logoSourceUrl": "https://www.vientianetimes.org.la/Access/VTT_banner2025.jpg",
+      "logoExplainer": "Gold globe with dok champa over 'LAO PRESS' beside royal-blue serif 'Vientiane Times' wordmark — Vientiane Times masthead.",
+      "licenceNote": "Vientiane Times trademark bundled from the publisher's official site brand assets (vientianetimes.org.la) for educational reference in Learn mode."
       },
       "editorialStance": "Laos' official English-language daily newspaper; authoritative reporting on government policy, foreign investment, ASEAN diplomacy, and culture",
       "readership": {
