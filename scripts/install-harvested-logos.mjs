@@ -11,47 +11,31 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 21 — montage-scanned; Commons collisions rejected. */
+/** Visually verified batch 22 — montage-scanned. */
 const MANIFEST = [
   {
-    id: "ba-dnevni-avaz",
-    src: "tmp/logo-harvest/manual/ba/dnevni-avaz.png",
+    id: "cn-people-s-daily",
+    src: "tmp/batch22-manual/cn/people-s-daily.svg",
     explainer:
-      "Black serif 'Dnevni avaz' wordmark with the paper's heraldic dragon emblem at left — masthead from avaz.ba (fill adapted from the site's white SVG for light UI).",
+      "Red calligraphic masthead 人民日报 (Renmin Ribao) in Mao Zedong's brush style — People's Daily logo from Wikimedia Commons.",
     licence:
-      "Dnevni avaz masthead from the publisher's official site (avaz.ba/avaz.svg); brand mark trademark bundled for educational reference in Learn mode.",
+      "People's Daily logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "ad-diari-d-andorra",
-    src: "tmp/logo-harvest/manual/ad/diari-d-andorra.png",
+    id: "ec-primicias",
+    src: "tmp/batch22-manual/ec/primicias.png",
     explainer:
-      "Blue sans 'Diari d'Andorra' wordmark with a yellow triangular accent on the apostrophe — official masthead from diariandorra.ad.",
+      "Black stacked sans 'PRI / MI / CIAS' with a light-blue bar under the C — Primicias Ecuador masthead.",
     licence:
-      "Diari d'Andorra masthead from the publisher's official site brand assets; trademark bundled for educational reference in Learn mode.",
+      "Logo primicias.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "bj-la-nouvelle-tribune",
-    src: "tmp/logo-harvest/manual/bj/la-nouvelle-tribune.webp",
+    id: "bo-el-deber",
+    src: "tmp/batch22-manual/bo/el-deber.png",
     explainer:
-      "Deep-red serif 'La Nouvelle Tribune' wordmark beside a red globe grid icon — masthead from lanouvelletribune.info.",
+      "Green lowercase 'eldeber' wordmark with an orange period — El Deber (Bolivia) masthead.",
     licence:
-      "La Nouvelle Tribune masthead from the publisher's official site brand assets; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "tl-tatoli",
-    src: "tmp/logo-harvest/manual/tl/tatoli.png",
-    explainer:
-      "Green serif 'Tatoli' with a globe replacing the o, Timor-Leste flag-coloured rule, and 'Agência Noticiosa de Timor-Leste' subline.",
-    licence:
-      "Tatoli.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "vc-api-svg",
-    src: "tmp/logo-harvest/manual/vc/api-svg.png",
-    explainer:
-      "Coat of arms of Saint Vincent and the Grenadines (Pax et Justitia) — used as the Agency for Public Information's official mark on gov.vc.",
-    licence:
-      "National coat of arms from the Government of Saint Vincent and the Grenadines official site; bundled for educational reference in Learn mode.",
+      "EL DEBER PERD BOL.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
 ];
 
@@ -145,7 +129,7 @@ function main() {
     } catch (e) {
       if (!String(e.message).includes("not found")) throw e;
     }
-    if (papers === beforeP && agencies === beforeA) throw new Error(`${row.id}: not found`);
+    if (papers === beforeP && agencies === beforeA) throw new Error(`${row.id}: not found in data`);
     installed++;
   }
   writeFileSync(resolve(ROOT, "src/data/nationalNewspapers.ts"), papers);
