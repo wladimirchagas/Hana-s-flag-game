@@ -11,31 +11,31 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 40 — West/Southern Africa mastheads, montage-scanned. */
+/** Visually verified batch 41 — Georgia + Iceland mastheads, montage-scanned. */
 const MANIFEST = [
   {
-    id: "ci-soir-info",
-    src: "tmp/batch41-manual/ci-soir-info.png",
+    id: "ge-kviris-palitra",
+    src: "tmp/batch41-install/ge-kviris-palitra.png",
     explainer:
-      "Cartoon megaphone with reaction bubbles beside black 'Soir' and red 'Info' — Soir Info masthead.",
+      "Blue three-chevron emblem beside Georgian Mkhedruli 'კვირის პალიტრა' on bright yellow — Kviris Palitra masthead.",
     licence:
-      "Soir Info masthead trademark bundled from the publisher's official site brand assets (soirinfo.com) for educational reference in Learn mode.",
+      "Kviris Palitra masthead trademark bundled from the publisher's official site brand assets (kvirispalitra.ge) for educational reference in Learn mode.",
   },
   {
-    id: "tg-republic-of-togo",
-    src: "tmp/batch41-manual/tg-republique.svg",
+    id: "is-visir",
+    src: "tmp/batch41-install/is-visir.svg",
     explainer:
-      "White stylized Togolese mask beside stacked white 'TO / GO' — Republic of Togo news portal mark.",
+      "White italic lowercase 'vísir' with a chevron over the first í on blue — Vísir digital news mark.",
     licence:
-      "Republic of Togo news portal logo trademark bundled from the publisher's official site brand assets (republicoftogo.com) for educational reference in Learn mode.",
+      "Vísir logo trademark bundled from the publisher's official site brand assets (visir.is) for educational reference in Learn mode.",
   },
   {
-    id: "zm-zambia-daily-mail",
-    src: "tmp/batch41-manual/zm-daily-mail.jpg",
+    id: "is-heimildin",
+    src: "tmp/batch41-install/is-heimildin.svg",
     explainer:
-      "White 'ZAMBIA DAILY MAIL LIMITED' and flying eagle on cyan, with slogan 'Without fear or favour'.",
+      "Black high-contrast serif wordmark 'Heimildin' — Icelandic investigative daily masthead.",
     licence:
-      "Zambia Daily Mail masthead trademark bundled from the publisher's official site brand assets (daily-mail.co.zm) for educational reference in Learn mode.",
+      "Heimildin masthead trademark bundled from the publisher's official site brand assets (heimildin.is / cdn.heimildin.is) for educational reference in Learn mode.",
   },
 ];
 
