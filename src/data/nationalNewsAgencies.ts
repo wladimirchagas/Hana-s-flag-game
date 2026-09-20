@@ -354,7 +354,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "OJD Middle East & North Africa"
       },
       "revenueModel": "Print retail sales and commercial display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/dz/el-khabar.svg",
+      "logoExplainer": "Arabic 'الخبر' masthead — El Khabar's brand mark.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.elkhabar.com",
         "https://en.wikipedia.org/wiki/El_Khabar"
@@ -827,7 +830,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Reuters Institute Digital News Report 2023"
       },
       "revenueModel": "Print newsstand sales, display advertising, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bd/daily-star.svg",
+      "logoExplainer": "'The Daily Star' masthead — Bangladesh's English daily.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.thedailystar.net",
         "https://en.wikipedia.org/wiki/The_Daily_Star_(Bangladesh)"
@@ -852,7 +858,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "SimilarWeb / bdnews24 Media Review 2024"
       },
       "revenueModel": "Digital advertising, sponsored sections, and mobile news syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bd/bdnews24.png",
+      "logoExplainer": "'bdnews24' wordmark — Bangladesh's digital news brand.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://bdnews24.com",
         "https://en.wikipedia.org/wiki/Bdnews24.com"
@@ -1184,7 +1193,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "BTA Official Annual Report 2023"
       },
       "revenueModel": "State parliamentary budget allocation and subscriber licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bg/bta.jpg",
+      "logoExplainer": "'BTA' brand mark — the Bulgarian News Agency emblem.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.bta.bg",
         "https://en.wikipedia.org/wiki/Bulgarian_Telegraph_Agency"
@@ -1446,7 +1458,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "National international communication remit"
       },
       "revenueModel": "Central state foreign-press budget, global institutional subscriptions, and advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cn/china-daily.png",
+      "logoExplainer": "'China Daily' masthead — China's English-language daily.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.chinadaily.com.cn",
         "https://en.wikipedia.org/wiki/China_Daily"
@@ -1474,7 +1489,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Xinhua Media Research 2023"
       },
       "revenueModel": "Institutional and retail print subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cn/reference-news.png",
+      "logoExplainer": "Chinese '参考消息' / Reference News masthead.",
+      "licenceNote": "Trademark bundled from Wikimedia Commons (File:Logo of Reference News (Black).png) for educational reference in Learn mode.",
+
       "sources": [
         "http://www.cankaoxiaoxi.com",
         "https://en.wikipedia.org/wiki/Reference_News"
@@ -2206,7 +2224,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Standard Group PLC Media Report 2023–24"
       },
       "revenueModel": "Print sales, commercial advertising, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ke/the-standard.png",
+      "logoExplainer": "'The Standard' masthead — the Nairobi daily brand mark.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.standardmedia.co.ke",
         "https://en.wikipedia.org/wiki/The_Standard_(Kenya)"
@@ -2231,7 +2252,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Radio Africa Group Digital Analytics 2024"
       },
       "revenueModel": "Digital programmatic advertising, print sales, and radio cross-promotion",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ke/the-star.webp",
+      "logoExplainer": "'The Star' masthead — the Nairobi daily brand mark.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.the-star.co.ke",
         "https://en.wikipedia.org/wiki/The_Star_(Kenya)"
@@ -3213,7 +3237,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ENA Corporate Review 2023"
       },
       "revenueModel": "State government subvention and wire syndication fees",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/et/ena.png",
+      "logoExplainer": "'ENA' brand mark — the Ethiopian News Agency emblem.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.ena.et",
         "https://en.wikipedia.org/wiki/Ethiopian_News_Agency"
@@ -3238,7 +3265,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "JAKENN Publishing Audience Data 2024"
       },
       "revenueModel": "Digital advertising, voluntary reader contributions, and international press development grants",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/et/addis-standard.png",
+      "logoExplainer": "'Addis Standard' wordmark — the Addis Ababa news magazine brand.",
+      "licenceNote": "Trademark bundled from Wikimedia Commons (File:Addis Standard.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://addisstandard.com",
         "https://en.wikipedia.org/wiki/Addis_Standard"
@@ -3661,7 +3691,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "MPPH Audience Metrics 2023"
       },
       "revenueModel": "Commercial print and digital advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/om/al-shabiba.svg",
+      "logoExplainer": "Arabic 'الشبيبة' masthead — Al Shabiba's brand mark.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.shabiba.com",
         "https://en.wikipedia.org/wiki/Al-Shabiba"
@@ -3754,7 +3787,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Editora Perú Memoria Anual 2023"
       },
       "revenueModel": "State budget allocation, official legal announcements, and wire subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pe/andina.png",
+      "logoExplainer": "'ANDINA' brand mark — Peru's national news agency emblem.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://andina.pe",
         "https://es.wikipedia.org/wiki/Andina_(agencia_de_informaci%C3%B3n)"
@@ -3810,7 +3846,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "UPMG Audit Statement 2023"
       },
       "revenueModel": "Print sales, extensive corporate advertising, and digital sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ph/the-philippine-star.svg",
+      "logoExplainer": "'The Philippine Star' masthead — the Manila daily brand mark.",
+      "licenceNote": "Trademark bundled from Wikimedia Commons (File:The Philippine STAR logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.philstar.com",
         "https://en.wikipedia.org/wiki/The_Philippine_Star"
@@ -3915,7 +3954,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "QNA Annual Review 2023"
       },
       "revenueModel": "State government budget funding",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/qa/qna.png",
+      "logoExplainer": "'QNA' brand mark — Qatar News Agency emblem.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.qna.org.qa",
         "https://en.wikipedia.org/wiki/Qatar_News_Agency"
@@ -3948,7 +3990,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Agerpres Raport de Activitate 2023"
       },
       "revenueModel": "Parliamentary state budget appropriation and news service subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ro/agerpres.png",
+      "logoExplainer": "'AGERPRES' brand mark — Romania's national news agency emblem.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.agerpres.ro",
         "https://en.wikipedia.org/wiki/Agerpres"
@@ -4510,7 +4555,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "TASR Správa o činnosti a hospodárení 2023"
       },
       "revenueModel": "State public service contract funding and commercial news distribution fees",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sk/tasr.png",
+      "logoExplainer": "'TASR' brand mark — Slovakia's national news agency emblem.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.tasr.sk",
         "https://en.wikipedia.org/wiki/News_Agency_of_the_Slovak_Republic"
@@ -4978,7 +5026,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "MCOT Annual Report / OANA Registry"
       },
       "revenueModel": "Commercial broadcast advertising, syndication licensing, and government subventions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/th/tna.png",
+      "logoExplainer": "'TNA' brand mark — Thai News Agency emblem.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://tna.mcot.net",
         "https://en.wikipedia.org/wiki/Thai_News_Agency"
@@ -5285,7 +5336,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Similarweb Ukraine Media Rankings / Gemius"
       },
       "revenueModel": "Digital advertising, reader club memberships (UP Club), and independent grant funding",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ua/ukrainska-pravda.jpg",
+      "logoExplainer": "'Українська правда' / Ukrainska Pravda wordmark.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.pravda.com.ua",
         "https://en.wikipedia.org/wiki/Ukrainska_Pravda"
@@ -5312,7 +5366,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Interfax-Ukraine Client Registry"
       },
       "revenueModel": "Commercial terminal subscriptions, wire feeds, and press conference hosting services",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ua/interfax-ukraine.svg",
+      "logoExplainer": "'Interfax-Ukraine' brand mark — the Kyiv news agency emblem.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://interfax.com.ua",
         "https://en.wikipedia.org/wiki/Interfax-Ukraine"
@@ -5528,7 +5585,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "VNA Annual Review / Ministry of Information and Communications"
       },
       "revenueModel": "State budget funding, media commercial syndication, and publishing subsidiaries",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/vn/vna.png",
+      "logoExplainer": "'VNA' brand mark — Vietnam News Agency emblem.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://vnanet.vn",
         "https://en.wikipedia.org/wiki/Vietnam_News_Agency"
