@@ -15,20 +15,36 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "vc-iwitness-news",
-    src: "tmp/batch57-final/vc-iwitness-news.svg",
+    id: "ly-libya-herald",
+    src: "tmp/batch58-final/ly-libya-herald.png",
     explainer:
-      "Black 'iwn' wordmark with broadcast arcs on the dotted i, plus smaller 'iWitness News' — iWitness News (SVG) masthead.",
+      "White stacked serif 'Libya / Herald' with smaller Arabic ليبيا هيرلد on a blue field — Libya Herald masthead.",
     licence:
-      "iWitness News trademark bundled from the publisher's official CDN brand assets (cdn.iwnsvg.com) for educational reference in Learn mode.",
+      "Libya Herald trademark bundled from the publisher's official site brand assets (libyaherald.com) for educational reference in Learn mode.",
   },
   {
-    id: "gm-foroyaa",
-    src: "tmp/batch57-final/gm-foroyaa.png",
+    id: "uz-gazeta-uz",
+    src: "tmp/batch58-final/uz-gazeta-uz.png",
     explainer:
-      "Bold red serif 'FOROYAA' wordmark on a light field — Foroyaa Newspaper masthead.",
+      "Blue-over-green bars beside lowercase black 'gazeta' — Gazeta.uz masthead.",
     licence:
-      "Foroyaa trademark bundled from the publisher's official site brand assets (foroyaa.net) for educational reference in Learn mode.",
+      "Gazeta.uz trademark bundled from the publisher's official site brand assets (gazeta.uz) for educational reference in Learn mode.",
+  },
+  {
+    id: "si-dnevnik-si",
+    src: "tmp/batch58-final/si-dnevnik-si.png",
+    explainer:
+      "Bold orange-red slab-serif 'DNEVNIK' wordmark — Dnevnik (Slovenia) masthead.",
+    licence:
+      "Dnevnik trademark bundled from the publisher's official site brand assets (dnevnik.si) for educational reference in Learn mode.",
+  },
+  {
+    id: "gh-daily-graphic",
+    src: "tmp/batch58-final/gh-daily-graphic.png",
+    explainer:
+      "Bold black sans 'GRAPHIC ONLINE' wordmark — Daily Graphic's digital masthead on graphic.com.gh.",
+    licence:
+      "Graphic Online / Daily Graphic trademark bundled from the publisher's official site brand assets (graphic.com.gh) for educational reference in Learn mode.",
   },
 ];
 
