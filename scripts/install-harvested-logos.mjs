@@ -11,39 +11,31 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 39 — Caribbean + Mozambique mastheads, montage-scanned. */
+/** Visually verified batch 40 — West/Southern Africa mastheads, montage-scanned. */
 const MANIFEST = [
   {
-    id: "vc-stvincent-times",
-    src: "tmp/batch40-manual/vc-stvincent-times.webp",
+    id: "ci-soir-info",
+    src: "tmp/batch41-manual/ci-soir-info.png",
     explainer:
-      "Blue/yellow/green 'TS' monogram beside black serif 'St. Vincent TIMES' — St Vincent Times masthead.",
+      "Cartoon megaphone with reaction bubbles beside black 'Soir' and red 'Info' — Soir Info masthead.",
     licence:
-      "St Vincent Times masthead trademark bundled from the publisher's official site brand assets (stvincenttimes.com) for educational reference in Learn mode.",
+      "Soir Info masthead trademark bundled from the publisher's official site brand assets (soirinfo.com) for educational reference in Learn mode.",
   },
   {
-    id: "mz-noticias",
-    src: "tmp/batch40-manual/mz-noticias.png",
+    id: "tg-republic-of-togo",
+    src: "tmp/batch41-manual/tg-republique.svg",
     explainer:
-      "Red rounded block with white 'n' cutout beside red lowercase 'oticias' — Jornal Notícias masthead.",
+      "White stylized Togolese mask beside stacked white 'TO / GO' — Republic of Togo news portal mark.",
     licence:
-      "Jornal Notícias masthead trademark bundled from the publisher's official site brand assets (noticias.co.mz) for educational reference in Learn mode.",
+      "Republic of Togo news portal logo trademark bundled from the publisher's official site brand assets (republicoftogo.com) for educational reference in Learn mode.",
   },
   {
-    id: "mz-o-pais",
-    src: "tmp/batch40-manual/mz-o-pais.jpg",
+    id: "zm-zambia-daily-mail",
+    src: "tmp/batch41-manual/zm-daily-mail.jpg",
     explainer:
-      "Heavy slab-serif 'OPais' with an orange bar on the i and a green-white-red triangle on the s.",
+      "White 'ZAMBIA DAILY MAIL LIMITED' and flying eagle on cyan, with slogan 'Without fear or favour'.",
     licence:
-      "O País (Mozambique) masthead trademark bundled from the publisher's official site brand assets (opais.co.mz) for educational reference in Learn mode.",
-  },
-  {
-    id: "mz-voz",
-    src: "tmp/batch40-manual/mz-verdade.jpg",
-    explainer:
-      "Red '@Verdade' with an oversized V over a black bar reading 'A verdade em cada palavra'.",
-    licence:
-      "@Verdade masthead trademark bundled from the publisher's official site brand assets (verdade.co.mz) for educational reference in Learn mode.",
+      "Zambia Daily Mail masthead trademark bundled from the publisher's official site brand assets (daily-mail.co.zm) for educational reference in Learn mode.",
   },
 ];
 
