@@ -3175,8 +3175,17 @@
   font-size: 10px;
   font-weight: 700;
   font-family: var(--font-display, system-ui, sans-serif);
-  opacity: 0.7;
+  opacity: 0.72;
   letter-spacing: 0.01em;
+  paint-order: stroke;
+  stroke: var(--paper, #ffffff);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.democracy-index-chart__band-label--y {
+  font-size: 11px;
+  opacity: 0.8;
 }
 
 .democracy-index-chart__markers {

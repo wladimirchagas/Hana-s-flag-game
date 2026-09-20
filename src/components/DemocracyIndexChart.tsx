@@ -25,7 +25,7 @@ export type DemocracyIndexChartProps = {
   onHover: (code: string | null) => void;
 };
 
-const PAD = { top: 16, right: 18, bottom: 64, left: 108 };
+const PAD = { top: 16, right: 18, bottom: 64, left: 52 };
 const VIEW_W = 960;
 const VIEW_H = 500;
 
@@ -276,10 +276,12 @@ export function DemocracyIndexChart({
             </g>
           ))}
 
-          {/* Classification labels along X */}
+          {/* Classification labels along X — skip bands too narrow for text. */}
           {xBands.map((band) => {
-            const mid = (band.min + band.max) / 2;
-            const x = scaleLinear(mid, xDomain, { min: plot.x0, max: plot.x1 });
+            const x0 = scaleLinear(band.min, xDomain, { min: plot.x0, max: plot.x1 });
+            const x1 = scaleLinear(band.max, xDomain, { min: plot.x0, max: plot.x1 });
+            if (x1 - x0 < 36) return null;
+            const x = (x0 + x1) / 2;
             return (
               <text
                 key={`xl-${band.label}`}
@@ -293,17 +295,20 @@ export function DemocracyIndexChart({
             );
           })}
 
-          {/* Classification labels along Y (rotated) */}
+          {/* Classification labels along Y — horizontal, inside the plot,
+              only when the band is tall enough that the label fits. */}
           {yBands.map((band) => {
-            const mid = (band.min + band.max) / 2;
-            const y = scaleLinear(mid, yDomain, { min: plot.y1, max: plot.y0 });
+            const yHi = scaleLinear(band.max, yDomain, { min: plot.y1, max: plot.y0 });
+            const yLo = scaleLinear(band.min, yDomain, { min: plot.y1, max: plot.y0 });
+            const bandH = yLo - yHi;
+            if (bandH < 22) return null;
+            const y = (yHi + yLo) / 2;
             return (
               <text
                 key={`yl-${band.label}`}
-                x={48}
-                y={y}
-                textAnchor="middle"
-                transform={`rotate(-90 48 ${y})`}
+                x={plot.x0 + 8}
+                y={y + 4}
+                textAnchor="start"
                 className="democracy-index-chart__band-label democracy-index-chart__band-label--y"
               >
                 {band.label}
