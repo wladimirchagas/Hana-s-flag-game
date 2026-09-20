@@ -11,23 +11,47 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 20 — Commons mastheads (montage-scanned). */
+/** Visually verified batch 21 — montage-scanned; Commons collisions rejected. */
 const MANIFEST = [
   {
-    id: "cl-las-ultimas-noticias",
-    src: "tmp/logo-harvest/manual/cl/las-ultimas-noticias-b20.svg",
+    id: "ba-dnevni-avaz",
+    src: "tmp/logo-harvest/manual/ba/dnevni-avaz.png",
     explainer:
-      "White 'Las Últimas Noticias' sans wordmark on a navy bar topped by a thin red stripe — LUN masthead.",
+      "Black serif 'Dnevni avaz' wordmark with the paper's heraldic dragon emblem at left — masthead from avaz.ba (fill adapted from the site's white SVG for light UI).",
     licence:
-      "Las Últimas Noticias logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "Dnevni avaz masthead from the publisher's official site (avaz.ba/avaz.svg); brand mark trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "co-el-pais-cali",
-    src: "tmp/logo-harvest/manual/co/el-pais-cali-b20-plate.png",
+    id: "ad-diari-d-andorra",
+    src: "tmp/logo-harvest/manual/ad/diari-d-andorra.png",
     explainer:
-      "Black serif 'El País' with a light-blue wedge accent on the í — El País Cali masthead on white.",
+      "Blue sans 'Diari d'Andorra' wordmark with a yellow triangular accent on the apostrophe — official masthead from diariandorra.ad.",
     licence:
-      "El País (Colombia) Logotype.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "Diari d'Andorra masthead from the publisher's official site brand assets; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "bj-la-nouvelle-tribune",
+    src: "tmp/logo-harvest/manual/bj/la-nouvelle-tribune.webp",
+    explainer:
+      "Deep-red serif 'La Nouvelle Tribune' wordmark beside a red globe grid icon — masthead from lanouvelletribune.info.",
+    licence:
+      "La Nouvelle Tribune masthead from the publisher's official site brand assets; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "tl-tatoli",
+    src: "tmp/logo-harvest/manual/tl/tatoli.png",
+    explainer:
+      "Green serif 'Tatoli' with a globe replacing the o, Timor-Leste flag-coloured rule, and 'Agência Noticiosa de Timor-Leste' subline.",
+    licence:
+      "Tatoli.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "vc-api-svg",
+    src: "tmp/logo-harvest/manual/vc/api-svg.png",
+    explainer:
+      "Coat of arms of Saint Vincent and the Grenadines (Pax et Justitia) — used as the Agency for Public Information's official mark on gov.vc.",
+    licence:
+      "National coat of arms from the Government of Saint Vincent and the Grenadines official site; bundled for educational reference in Learn mode.",
   },
 ];
 
@@ -96,7 +120,13 @@ function main() {
     const buf = readFileSync(abs);
     const cc = row.id.slice(0, 2);
     const slug = row.id.slice(3);
-    const cleanExt = row.src.endsWith(".svg") ? ".svg" : ".png";
+    const cleanExt = row.src.endsWith(".svg")
+      ? ".svg"
+      : row.src.endsWith(".webp")
+        ? ".webp"
+        : row.src.endsWith(".jpg") || row.src.endsWith(".jpeg")
+          ? ".jpg"
+          : ".png";
     const destRel = `newspaper-logos/${cc}/${slug}${cleanExt}`;
     const destAbs = resolve(ROOT, "public", destRel);
     mkdirSync(dirname(destAbs), { recursive: true });

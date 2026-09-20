@@ -1413,7 +1413,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "US$0.89 / person / year"
       },
       "revenueModel": "Direct state budget appropriation and news syndication services",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tl/tatoli.png",
+      "logoExplainer": "Green serif 'Tatoli' with a globe replacing the o, Timor-Leste flag-coloured rule, and 'Agência Noticiosa de Timor-Leste' subline.",
+      "licenceNote": "Tatoli.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://tatoli.tl",
         "https://pt.wikipedia.org/wiki/Tatoli"
@@ -3006,7 +3009,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Government of SVG Budget Estimates 2024"
       },
       "revenueModel": "State government budgetary funding",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/vc/api-svg.png",
+      "logoExplainer": "Coat of arms of Saint Vincent and the Grenadines (Pax et Justitia) — used as the Agency for Public Information's official mark on gov.vc.",
+      "licenceNote": "National coat of arms from the Government of Saint Vincent and the Grenadines official site; bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.gov.vc",
         "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
