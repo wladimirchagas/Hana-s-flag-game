@@ -11,47 +11,55 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 30 — montage-scanned. */
+/** Visually verified batch 31 — montage-scanned. */
 const MANIFEST = [
   {
-    id: "tn-tap",
-    src: "tmp/batch30-manual/tap.jpg",
+    id: "ga-gabon-medias-time",
+    src: "tmp/batch31-manual/gabon-medias-time.png",
     explainer:
-      "White Arabic 'وكالة تونس إفريقيا للأنباء' and French 'AGENCE TUNIS AFRIQUE PRESSE' on a blue field with a TAP monogram and globe — Tunisia's national wire.",
+      "Teal 'GMT' monogram with a clock face in the G above 'GABON MEDIA TIME' on black — Gabonese digital news masthead.",
     licence:
-      "Tap logo2.jpg from Arabic Wikipedia; brand mark trademark bundled for educational reference in Learn mode with licenceNote.",
+      "Gabon Media Time masthead trademark bundled from the publisher's official site brand assets (gabonmediatime.com) for educational reference in Learn mode.",
   },
   {
-    id: "sd-suna",
-    src: "tmp/batch30-manual/suna.png",
+    id: "ao-angonoticias",
+    src: "tmp/batch31-manual/angonoticias.png",
     explainer:
-      "Sky-blue 'SUNA' with a red triangle on a blue arc above grey English and Arabic agency names on black — Sudan's national wire.",
+      "White slab-serif 'ANGO / NOTÍCIAS' on an orange square — Angolan digital news masthead.",
     licence:
-      "SUNA Logo.png from Arabic Wikipedia; brand mark trademark bundled for educational reference in Learn mode with licenceNote.",
+      "AngoNotícias masthead trademark bundled from the publisher's official site brand assets (angonoticias.com) for educational reference in Learn mode.",
   },
   {
-    id: "bj-le-matinal",
-    src: "tmp/batch30-manual/le-matinal.png",
+    id: "na-die-republikein",
+    src: "tmp/batch31-manual/republikein.png",
     explainer:
-      "Red 'LE MATINAL' on black with vertical 'QUOTIDIEN BÉNINOIS' and slogan 'Le défi d'une génération' — Beninese daily masthead.",
+      "White 'Republikein' wordmark with Afrikaans tagline 'Jou land. Jou mense. Jou nuus.' on black — Namibian Afrikaans daily masthead.",
     licence:
-      "Le Matinal masthead trademark bundled from the publisher's official site brand assets (lematinal.bj) for educational reference in Learn mode.",
+      "Die Republikein masthead trademark bundled from the publisher's official site brand assets (republikein.com.na) for educational reference in Learn mode.",
   },
   {
-    id: "bj-banouto",
-    src: "tmp/batch30-manual/banouto.png",
+    id: "so-hiiraan-online",
+    src: "tmp/batch31-manual/hiiraan-light.jpg",
     explainer:
-      "Brush-stroke red 'BANOUTO' wordmark on a black bar — Beninese digital news masthead.",
+      "Green palm-tree shield beside dark green 'HIIRAAN ONLINE' — Somali digital news masthead.",
     licence:
-      "Banouto masthead trademark bundled from the publisher's official site brand assets (banouto.bj/logo-bnt.png) for educational reference in Learn mode.",
+      "Hiiraan Online masthead trademark bundled from the publisher's official site brand assets (hiiraan.com) for educational reference in Learn mode.",
   },
   {
-    id: "et-the-reporter",
-    src: "tmp/batch30-manual/the-reporter.jpg",
+    id: "so-caasimada",
+    src: "tmp/batch31-manual/caasimada.webp",
     explainer:
-      "Red 'THE Reporter' serif masthead with a fountain-pen emblem and tagline 'FREE PRESS. FREE SPEECH. FREE SPIRIT.' — Ethiopian English daily.",
+      "White swirling 'C' mark beside 'Caasimada ONLINE' with a star — Somali digital news masthead.",
     licence:
-      "The Reporter Ethiopia masthead trademark bundled from the publisher's official site brand assets (thereporterethiopia.com) for educational reference in Learn mode.",
+      "Caasimada Online masthead trademark bundled from the publisher's official site brand assets (caasimada.net) for educational reference in Learn mode.",
+  },
+  {
+    id: "sz-swaziland-news",
+    src: "tmp/batch31-manual/swaziland-news.png",
+    explainer:
+      "Red-outlined 'SWAZILAND' with a red feather and solid red 'NEWS' on black — Eswatini digital news masthead.",
+    licence:
+      "Swaziland News masthead trademark bundled from the publisher's official site brand assets (swazilandnews.co.za) for educational reference in Learn mode.",
   },
 ];
 
@@ -94,7 +102,7 @@ function patchEntry(src, id, fields) {
   let block = src.slice(start, i);
   if (!block.includes("noImageReason") && block.includes('"logo"')) {
     console.log(`  skip ${id} (already has logo)`);
-    return src; // caller treats unchanged src as skip when both files unchanged
+    return src;
   }
   if (!block.includes("noImageReason")) {
     throw new Error(`${id}: expected noImageReason to replace`);
@@ -146,7 +154,6 @@ function main() {
       if (!String(e.message).includes("not found")) throw e;
     }
     if (papers === beforeP && agencies === beforeA) {
-      // Already had a logo (skip path) — file was still copied above.
       console.log(`  ${row.id}: data unchanged (already had logo)`);
       continue;
     }
