@@ -9376,7 +9376,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "News Room Guyana Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gy/news-room-guyana.png",
+      "logoExplainer": "White stacked 'NEWS' / 'ROOM' inside a thin white frame on a navy square — News Room Guyana site mark.",
+      "licenceNote": "News Room Guyana trademark bundled from the publisher's official site brand assets (newsroom.gy) for educational reference in Learn mode.",
+
       "sources": [
         "https://newsroom.gy/",
         "https://guyana.gov.gy/"
@@ -12211,7 +12214,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Observer Media Kit 2023"
       },
       "revenueModel": "Print sales, classified advertising, and digital banner placements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/kn/skn-observer.png",
+      "logoExplainer": "Black 'St KITTS & NEVIS' with two stars beside bold red 'OBSERVER', underlined by green and yellow bars — St. Kitts-Nevis Observer masthead.",
+      "licenceNote": "The St. Kitts-Nevis Observer masthead trademark bundled from the publisher's official site brand assets (thestkittsnevisobserver.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.thestkittsnevisobserver.com",
         "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
@@ -14194,7 +14200,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Libya Observer Media Report 2024"
       },
       "revenueModel": "Digital display advertising and media licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ly/libya-observer.png",
+      "logoExplainer": "Grey serif 'THE LIBYA' over 'OBSERVER' with the O drawn as a red bullseye/eye mark — The Libya Observer masthead.",
+      "licenceNote": "The Libya Observer masthead trademark bundled from the publisher's official site brand assets (libyaobserver.ly) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.libyaobserver.ly",
         "https://en.wikipedia.org/wiki/The_Libya_Observer"
@@ -14738,7 +14747,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "me-cdm",
       "countryCode": "ME",
       "name": "CdM (Cafe del Montenegro)",
@@ -14754,6 +14762,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Montenegrin news website",
         "source": "https://www.cdm.me"
       },
+      "logo": "newspaper-logos/me/cdm.svg",
+      "logoExplainer": "White boxed 'C|D|M' letter marks in three square cells — Cafe del Montenegro (CdM) site wordmark.",
+      "licenceNote": "CdM (Cafe del Montenegro) trademark bundled from the publisher's official site brand assets (cdm.me) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.cdm.me"
       ]
@@ -23084,7 +23096,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "tn-mosaique-info",
       "countryCode": "TN",
       "name": "Mosaique Info",
@@ -23100,6 +23111,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Among Tunisia's most-consumed news brands",
         "source": "https://www.mosaiquefm.net"
       },
+      "logo": "newspaper-logos/tn/mosaique-info.png",
+      "logoExplainer": "Red italic 'fm' beside bold Arabic موزاييك with a tapering red swoosh — Mosaique FM / Mosaique Info wordmark.",
+      "licenceNote": "Mosaique FM trademark bundled from the publisher's official site brand assets (mosaiquefm.net) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.mosaiquefm.net"
       ]

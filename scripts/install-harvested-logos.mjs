@@ -11,31 +11,55 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 44 — Caribbean portal mastheads, montage-scanned. */
+/** Visually verified batch 45 — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "ag-antigua-news-room",
-    src: "tmp/batch44-install/ag-antigua-news-room.png",
+    id: "kn-skn-observer",
+    src: "tmp/batch45-install/kn-skn-observer.png",
     explainer:
-      "Black globe line-art behind stacked 'ANTIGUA' over red 'NEWS' and blue 'ROOM' — Antigua News Room masthead.",
+      "Black 'St KITTS & NEVIS' with two stars beside bold red 'OBSERVER', underlined by green and yellow bars — St. Kitts-Nevis Observer masthead.",
     licence:
-      "Antigua News Room masthead trademark bundled from the publisher's official site brand assets (antiguanewsroom.com) for educational reference in Learn mode.",
+      "The St. Kitts-Nevis Observer masthead trademark bundled from the publisher's official site brand assets (thestkittsnevisobserver.com) for educational reference in Learn mode.",
   },
   {
-    id: "dm-dominica-news-online",
-    src: "tmp/batch44-install/dm-dominica-news-online.png",
+    id: "ua-ukrainian-news",
+    src: "tmp/batch45-install/ua-ukrainian-news.png",
     explainer:
-      "Serif 'DOMINICA' with a Dominica-flag O (Sisserou parrot) over green 'News' and red 'ONLINE', tagline 'Independent. Immediate. Trusted.'",
+      "Cyan connected lowercase 'un' monogram with an orange dot over the n — Ukrainian News Agency (Українські Новини) brand mark.",
     licence:
-      "Dominica News Online masthead trademark bundled from the publisher's official site brand assets (dominicanewsonline.com) for educational reference in Learn mode.",
+      "Ukrainian News Agency trademark bundled from the agency's official site brand assets (ukranews.com) for educational reference in Learn mode.",
   },
   {
-    id: "gd-now-grenada",
-    src: "tmp/batch44-install/gd-now-grenada.png",
+    id: "gy-news-room-guyana",
+    src: "tmp/batch45-install/gy-news-room-guyana.png",
     explainer:
-      "Red play-triangle with white negative-space N beside stacked black 'NOW' / 'GRENADA' — Now Grenada masthead.",
+      "White stacked 'NEWS' / 'ROOM' inside a thin white frame on a navy square — News Room Guyana site mark.",
     licence:
-      "Now Grenada masthead trademark bundled from the publisher's official site brand assets (nowgrenada.com) for educational reference in Learn mode.",
+      "News Room Guyana trademark bundled from the publisher's official site brand assets (newsroom.gy) for educational reference in Learn mode.",
+  },
+  {
+    id: "ly-libya-observer",
+    src: "tmp/batch45-install/ly-libya-observer.png",
+    explainer:
+      "Grey serif 'THE LIBYA' over 'OBSERVER' with the O drawn as a red bullseye/eye mark — The Libya Observer masthead.",
+    licence:
+      "The Libya Observer masthead trademark bundled from the publisher's official site brand assets (libyaobserver.ly) for educational reference in Learn mode.",
+  },
+  {
+    id: "tn-mosaique-info",
+    src: "tmp/batch45-install/tn-mosaique-info.png",
+    explainer:
+      "Red italic 'fm' beside bold Arabic موزاييك with a tapering red swoosh — Mosaique FM / Mosaique Info wordmark.",
+    licence:
+      "Mosaique FM trademark bundled from the publisher's official site brand assets (mosaiquefm.net) for educational reference in Learn mode.",
+  },
+  {
+    id: "me-cdm",
+    src: "tmp/batch45-install/me-cdm.svg",
+    explainer:
+      "White boxed 'C|D|M' letter marks in three square cells — Cafe del Montenegro (CdM) site wordmark.",
+    licence:
+      "CdM (Cafe del Montenegro) trademark bundled from the publisher's official site brand assets (cdm.me) for educational reference in Learn mode.",
   },
 ];
 
@@ -80,10 +104,9 @@ function patchEntry(src, id, fields) {
     console.log(`  skip ${id} (already has logo)`);
     return src;
   }
-  if (!block.includes("noImageReason")) {
-    throw new Error(`${id}: expected noImageReason to replace`);
+  if (block.includes("noImageReason")) {
+    block = block.replace(/\s*"noImageReason":\s*"(?:\\.|[^"\\])*",?\n?/, "\n");
   }
-  block = block.replace(/\s*"noImageReason":\s*"(?:\\.|[^"\\])*",?\n?/, "\n");
   const insert = `      "logo": ${JSON.stringify(fields.logo)},\n      "logoExplainer": ${JSON.stringify(fields.explainer)},\n      "licenceNote": ${JSON.stringify(fields.licence)},\n`;
   if (/"sources":/.test(block)) {
     block = block.replace(/(\n\s*)"sources":/, `\n${insert}$1"sources":`);
