@@ -11,63 +11,31 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 27 — montage-scanned. */
+/** Visually verified batch 28 — montage-scanned. */
 const MANIFEST = [
   {
-    id: "hr-novi-list",
-    src: "tmp/batch27-manual/novi-list.svg",
+    id: "cd-le-potentiel",
+    src: "tmp/batch28-manual/le-potentiel.png",
     explainer:
-      "White sans all-caps 'NOVI LIST' on a solid blue bar — Croatian daily Novi list masthead.",
+      "Red italic 'Le Potentiel' wordmark with a white outline — Congolese (DRC) daily masthead.",
     licence:
-      "Novi list Logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "Logo - Le Potentiel.png from French Wikipedia (marque déposée / logo); trademark bundled for educational reference in Learn mode with licenceNote.",
   },
   {
-    id: "ir-tehran-times",
-    src: "tmp/batch27-manual/tehran-times.svg",
+    id: "lb-l-orient-le-jour",
+    src: "tmp/batch28-manual/l-orient-le-jour.svg",
     explainer:
-      "Red serif 'TEHRANTIMES' wordmark with an 'INTERNATIONAL DAILY' strap — Tehran Times masthead.",
+      "Black serif 'L'Orient-Le Jour' wordmark with a decorated O — Lebanese French-language daily masthead.",
     licence:
-      "TehranTimes.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "L'Orient-Le Jour (logo).svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "ir-ettelaat",
-    src: "tmp/batch27-manual/ettelaat.svg",
+    id: "kz-tengrinews",
+    src: "tmp/batch28-manual/tengrinews.png",
     explainer:
-      "Orange Persian calligraphy masthead — Ettela'at newspaper wordmark.",
+      "Green stylised 'T' mark beside black 'TENGRI NEWS' — Kazakhstan digital news portal masthead.",
     licence:
-      "Ettelaat.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "ir-hamshahri",
-    src: "tmp/batch27-manual/ir-hamshahri.png",
-    explainer:
-      "Dark green geometric Persian calligraphy — Hamshahri newspaper masthead.",
-    licence:
-      "Hamshahri newspaper logo.gif from Wikimedia Commons (rasterised to PNG); brand mark trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "ch-tages-anzeiger",
-    src: "tmp/batch27-manual/tages-anzeiger.svg",
-    explainer:
-      "Black Fraktur 'Tages Anzeiger' with a blue-and-white shield between the words — Swiss daily Tages-Anzeiger masthead.",
-    licence:
-      "Logo Tagesanzeiger.svg from German Wikipedia (logo / non-free local file); trademark bundled for educational reference in Learn mode with licenceNote.",
-  },
-  {
-    id: "kw-kuna",
-    src: "tmp/batch27-manual/kuna.png",
-    explainer:
-      "Blue circular emblem beside bilingual 'KUNA' / Arabic title and 'Kuwait News Agency' strap — KUNA wire logo.",
-    licence:
-      "KUNA-logo.png from English Wikipedia (fair-use / non-free); trademark bundled for educational reference in Learn mode with licenceNote.",
-  },
-  {
-    id: "ir-irna",
-    src: "tmp/batch27-manual/irna.svg",
-    explainer:
-      "Blue barred mark beside bold 'IRNA' with '1934' in the A — Islamic Republic News Agency logo.",
-    licence:
-      "Islamic Republic News Agency logo.svg from English Wikipedia (fair-use / non-free); trademark bundled for educational reference in Learn mode with licenceNote.",
+      "Tengrinews-logo.png from Wikimedia Commons (CC0); brand mark trademark bundled for educational reference in Learn mode.",
   },
 ];
 

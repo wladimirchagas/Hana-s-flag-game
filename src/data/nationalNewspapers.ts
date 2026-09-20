@@ -3832,7 +3832,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Groupe Le Potentiel Profile 2023"
       },
       "revenueModel": "Print sales, institutional advertising, and online sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cd/le-potentiel.png",
+      "logoExplainer": "Red italic 'Le Potentiel' wordmark with a white outline — Congolese (DRC) daily masthead.",
+      "licenceNote": "Logo - Le Potentiel.png from French Wikipedia (marque déposée / logo); trademark bundled for educational reference in Learn mode with licenceNote.",
+
       "sources": [
         "https://lepotentiel.cd",
         "https://fr.wikipedia.org/wiki/Le_Potentiel"
@@ -12638,7 +12641,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Zero.kz Internet Ranking / Alash Media 2024"
       },
       "revenueModel": "Digital programmatic advertising, native advertising, and media projects",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/kz/tengrinews.png",
+      "logoExplainer": "Green stylised 'T' mark beside black 'TENGRI NEWS' — Kazakhstan digital news portal masthead.",
+      "licenceNote": "Tengrinews-logo.png from Wikimedia Commons (CC0); brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://tengrinews.kz",
         "https://en.wikipedia.org/wiki/Tengrinews.kz"
@@ -12911,7 +12917,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "OJD International Press Audit 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/lb/l-orient-le-jour.svg",
+      "logoExplainer": "Black serif 'L'Orient-Le Jour' wordmark with a decorated O — Lebanese French-language daily masthead.",
+      "licenceNote": "L'Orient-Le Jour (logo).svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.lorientlejour.com",
         "https://en.wikipedia.org/wiki/L%27Orient-Le_Jour"
