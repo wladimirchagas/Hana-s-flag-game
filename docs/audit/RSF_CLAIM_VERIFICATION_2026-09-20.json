@@ -1,0 +1,3347 @@
+{
+  "applicationRevision": "7dda29d2444d237c6dde9dc3aabbec08408bd03b",
+  "checkedAt": "2026-09-20",
+  "source": "https://rsf.org/sites/default/files/import_classement/2026.csv",
+  "sha256": "65ec7bd9b9740e0f51e9b4eea585030b2226c1a96938ec06a4cbbdbd2639aae2",
+  "methodology": "https://rsf.org/en/methodology-used-compiling-world-press-freedom-index-2026",
+  "extraction": "Primary CSV decoded as Windows-1252 and compared field by field, using World Bank ISO3/ISO2 mapping plus PSE=PS. Original bytes differ from UTF-8 repository encoding. Only one Country_AR field differs after decoding; no numeric field differs.",
+  "summary": {
+    "sourceUnits": 180,
+    "appEntries": 175,
+    "scoresMatch": 175,
+    "ranksMatch": 175,
+    "rankChangesMatch": 175,
+    "categoriesMatch": 175,
+    "yearLabelsMatch": 175
+  },
+  "rows": [
+    {
+      "code": "FI",
+      "sourceUnit": "Finland",
+      "claim": {
+        "year": 2026,
+        "rating": "Good",
+        "rank": 6,
+        "rankChange": -1,
+        "score": 86.22
+      },
+      "primary": {
+        "year": 2026,
+        "score": 86.22,
+        "rank": 6,
+        "rankChange": -1,
+        "rating": "Good"
+      },
+      "differences": {}
+    },
+    {
+      "code": "EE",
+      "sourceUnit": "Estonia",
+      "claim": {
+        "year": 2026,
+        "rating": "Good",
+        "rank": 3,
+        "rankChange": -1,
+        "score": 88.54
+      },
+      "primary": {
+        "year": 2026,
+        "score": 88.54,
+        "rank": 3,
+        "rankChange": -1,
+        "rating": "Good"
+      },
+      "differences": {}
+    },
+    {
+      "code": "NL",
+      "sourceUnit": "Netherlands",
+      "claim": {
+        "year": 2026,
+        "rating": "Good",
+        "rank": 2,
+        "rankChange": 1,
+        "score": 88.92
+      },
+      "primary": {
+        "year": 2026,
+        "score": 88.92,
+        "rank": 2,
+        "rankChange": 1,
+        "rating": "Good"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SE",
+      "sourceUnit": "Sweden",
+      "claim": {
+        "year": 2026,
+        "rating": "Good",
+        "rank": 5,
+        "rankChange": -1,
+        "score": 87.61
+      },
+      "primary": {
+        "year": 2026,
+        "score": 87.61,
+        "rank": 5,
+        "rankChange": -1,
+        "rating": "Good"
+      },
+      "differences": {}
+    },
+    {
+      "code": "LT",
+      "sourceUnit": "Lithuania",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 15,
+        "rankChange": -1,
+        "score": 81.34
+      },
+      "primary": {
+        "year": 2026,
+        "score": 81.34,
+        "rank": 15,
+        "rankChange": -1,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "DK",
+      "sourceUnit": "Denmark",
+      "claim": {
+        "year": 2026,
+        "rating": "Good",
+        "rank": 4,
+        "rankChange": 2,
+        "score": 88.47
+      },
+      "primary": {
+        "year": 2026,
+        "score": 88.47,
+        "rank": 4,
+        "rankChange": 2,
+        "rating": "Good"
+      },
+      "differences": {}
+    },
+    {
+      "code": "IE",
+      "sourceUnit": "Ireland",
+      "claim": {
+        "year": 2026,
+        "rating": "Good",
+        "rank": 7,
+        "rankChange": 0,
+        "score": 85.93
+      },
+      "primary": {
+        "year": 2026,
+        "score": 85.93,
+        "rank": 7,
+        "rankChange": 0,
+        "rating": "Good"
+      },
+      "differences": {}
+    },
+    {
+      "code": "PT",
+      "sourceUnit": "Portugal",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 10,
+        "rankChange": -2,
+        "score": 83.71
+      },
+      "primary": {
+        "year": 2026,
+        "score": 83.71,
+        "rank": 10,
+        "rankChange": -2,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CH",
+      "sourceUnit": "Switzerland",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 8,
+        "rankChange": 1,
+        "score": 84.83
+      },
+      "primary": {
+        "year": 2026,
+        "score": 84.83,
+        "rank": 8,
+        "rankChange": 1,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CZ",
+      "sourceUnit": "Czechia",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 11,
+        "rankChange": -1,
+        "score": 83.01
+      },
+      "primary": {
+        "year": 2026,
+        "score": 83.01,
+        "rank": 11,
+        "rankChange": -1,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "NO",
+      "sourceUnit": "Norway",
+      "claim": {
+        "year": 2026,
+        "rating": "Good",
+        "rank": 1,
+        "rankChange": 0,
+        "score": 92.72
+      },
+      "primary": {
+        "year": 2026,
+        "score": 92.72,
+        "rank": 1,
+        "rankChange": 0,
+        "rating": "Good"
+      },
+      "differences": {}
+    },
+    {
+      "code": "LI",
+      "sourceUnit": "Liechtenstein",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 13,
+        "rankChange": -1,
+        "score": 82.62
+      },
+      "primary": {
+        "year": 2026,
+        "score": 82.62,
+        "rank": 13,
+        "rankChange": -1,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "LU",
+      "sourceUnit": "Luxembourg",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 9,
+        "rankChange": 4,
+        "score": 84.14
+      },
+      "primary": {
+        "year": 2026,
+        "score": 84.14,
+        "rank": 9,
+        "rankChange": 4,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "DE",
+      "sourceUnit": "Germany",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 14,
+        "rankChange": -3,
+        "score": 82.17
+      },
+      "primary": {
+        "year": 2026,
+        "score": 82.17,
+        "rank": 14,
+        "rankChange": -3,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "LV",
+      "sourceUnit": "Latvia",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 17,
+        "rankChange": -2,
+        "score": 81
+      },
+      "primary": {
+        "year": 2026,
+        "score": 81.0,
+        "rank": 17,
+        "rankChange": -2,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "NZ",
+      "sourceUnit": "New Zealand",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 22,
+        "rankChange": -6,
+        "score": 77.38
+      },
+      "primary": {
+        "year": 2026,
+        "score": 77.38,
+        "rank": 22,
+        "rankChange": -6,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "IS",
+      "sourceUnit": "Iceland",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 12,
+        "rankChange": 5,
+        "score": 82.77
+      },
+      "primary": {
+        "year": 2026,
+        "score": 82.77,
+        "rank": 12,
+        "rankChange": 5,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BE",
+      "sourceUnit": "Belgium",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 16,
+        "rankChange": 2,
+        "score": 81.17
+      },
+      "primary": {
+        "year": 2026,
+        "score": 81.17,
+        "rank": 16,
+        "rankChange": 2,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "TT",
+      "sourceUnit": "Trinidad and Tobago",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 32,
+        "rankChange": -13,
+        "score": 74.7
+      },
+      "primary": {
+        "year": 2026,
+        "score": 74.7,
+        "rank": 32,
+        "rankChange": -13,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "GB",
+      "sourceUnit": "United Kingdom",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 18,
+        "rankChange": 2,
+        "score": 79.45
+      },
+      "primary": {
+        "year": 2026,
+        "score": 79.45,
+        "rank": 18,
+        "rankChange": 2,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CA",
+      "sourceUnit": "Canada",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 20,
+        "rankChange": 1,
+        "score": 78.76
+      },
+      "primary": {
+        "year": 2026,
+        "score": 78.76,
+        "rank": 20,
+        "rankChange": 1,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "AT",
+      "sourceUnit": "Austria",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 19,
+        "rankChange": 3,
+        "score": 79.43
+      },
+      "primary": {
+        "year": 2026,
+        "score": 79.43,
+        "rank": 19,
+        "rankChange": 3,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "ES",
+      "sourceUnit": "Spain",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 29,
+        "rankChange": -6,
+        "score": 75.42
+      },
+      "primary": {
+        "year": 2026,
+        "score": 75.42,
+        "rank": 29,
+        "rankChange": -6,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "FR",
+      "sourceUnit": "France",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 25,
+        "rankChange": 0,
+        "score": 76.68
+      },
+      "primary": {
+        "year": 2026,
+        "score": 76.68,
+        "rank": 25,
+        "rankChange": 0,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "JM",
+      "sourceUnit": "Jamaica",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 26,
+        "rankChange": 0,
+        "score": 75.87
+      },
+      "primary": {
+        "year": 2026,
+        "score": 75.87,
+        "rank": 26,
+        "rankChange": 0,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "ZA",
+      "sourceUnit": "South Africa",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 21,
+        "rankChange": 6,
+        "score": 77.95
+      },
+      "primary": {
+        "year": 2026,
+        "score": 77.95,
+        "rank": 21,
+        "rankChange": 6,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "NA",
+      "sourceUnit": "Namibia",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 23,
+        "rankChange": 5,
+        "score": 76.97
+      },
+      "primary": {
+        "year": 2026,
+        "score": 76.97,
+        "rank": 23,
+        "rankChange": 5,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "AU",
+      "sourceUnit": "Australia",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 33,
+        "rankChange": -4,
+        "score": 74.58
+      },
+      "primary": {
+        "year": 2026,
+        "score": 74.58,
+        "rank": 33,
+        "rankChange": -4,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CV",
+      "sourceUnit": "Cabo Verde",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 40,
+        "rankChange": -10,
+        "score": 71.98
+      },
+      "primary": {
+        "year": 2026,
+        "score": 71.98,
+        "rank": 40,
+        "rankChange": -10,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "PL",
+      "sourceUnit": "Poland",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 27,
+        "rankChange": 4,
+        "score": 75.52
+      },
+      "primary": {
+        "year": 2026,
+        "score": 75.52,
+        "rank": 27,
+        "rankChange": 4,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SR",
+      "sourceUnit": "Suriname",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 34,
+        "rankChange": -2,
+        "score": 73.2
+      },
+      "primary": {
+        "year": 2026,
+        "score": 73.2,
+        "rank": 34,
+        "rankChange": -2,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SI",
+      "sourceUnit": "Slovenia",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 36,
+        "rankChange": -3,
+        "score": 72.88
+      },
+      "primary": {
+        "year": 2026,
+        "score": 72.88,
+        "rank": 36,
+        "rankChange": -3,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "AM",
+      "sourceUnit": "Armenia",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 50,
+        "rankChange": -16,
+        "score": 67.02
+      },
+      "primary": {
+        "year": 2026,
+        "score": 67.02,
+        "rank": 50,
+        "rankChange": -16,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "MD",
+      "sourceUnit": "Moldova",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 31,
+        "rankChange": 4,
+        "score": 74.77
+      },
+      "primary": {
+        "year": 2026,
+        "score": 74.77,
+        "rank": 31,
+        "rankChange": 4,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CR",
+      "sourceUnit": "Costa Rica",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 38,
+        "rankChange": -2,
+        "score": 72.35
+      },
+      "primary": {
+        "year": 2026,
+        "score": 72.35,
+        "rank": 38,
+        "rankChange": -2,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "FJ",
+      "sourceUnit": "Fiji",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 24,
+        "rankChange": 16,
+        "score": 76.76
+      },
+      "primary": {
+        "year": 2026,
+        "score": 76.76,
+        "rank": 24,
+        "rankChange": 16,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SK",
+      "sourceUnit": "Slovakia",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 37,
+        "rankChange": 1,
+        "score": 72.71
+      },
+      "primary": {
+        "year": 2026,
+        "score": 72.71,
+        "rank": 37,
+        "rankChange": 1,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "TL",
+      "sourceUnit": "East Timor",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 30,
+        "rankChange": 9,
+        "score": 75.29
+      },
+      "primary": {
+        "year": 2026,
+        "score": 75.29,
+        "rank": 30,
+        "rankChange": 9,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "LY",
+      "sourceUnit": "Libya",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 138,
+        "rankChange": -1,
+        "score": 40.34
+      },
+      "primary": {
+        "year": 2026,
+        "score": 40.34,
+        "rank": 138,
+        "rankChange": -1,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "GA",
+      "sourceUnit": "Gabon",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 43,
+        "rankChange": -2,
+        "score": 70.57
+      },
+      "primary": {
+        "year": 2026,
+        "score": 70.57,
+        "rank": 43,
+        "rankChange": -2,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "MK",
+      "sourceUnit": "North Macedonia",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 45,
+        "rankChange": -3,
+        "score": 69.49
+      },
+      "primary": {
+        "year": 2026,
+        "score": 69.49,
+        "rank": 45,
+        "rankChange": -3,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "DO",
+      "sourceUnit": "Dominican Republic",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 44,
+        "rankChange": -1,
+        "score": 69.73
+      },
+      "primary": {
+        "year": 2026,
+        "score": 69.73,
+        "rank": 44,
+        "rankChange": -1,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "WS",
+      "sourceUnit": "Samoa",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 59,
+        "rankChange": -15,
+        "score": 64.53
+      },
+      "primary": {
+        "year": 2026,
+        "score": 64.53,
+        "rank": 59,
+        "rankChange": -15,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SC",
+      "sourceUnit": "Seychelles",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 35,
+        "rankChange": 10,
+        "score": 73.04
+      },
+      "primary": {
+        "year": 2026,
+        "score": 73.04,
+        "rank": 35,
+        "rankChange": 10,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "TO",
+      "sourceUnit": "Tonga",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 51,
+        "rankChange": -5,
+        "score": 66.62
+      },
+      "primary": {
+        "year": 2026,
+        "score": 66.62,
+        "rank": 51,
+        "rankChange": -5,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BZ",
+      "sourceUnit": "Belize",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 66,
+        "rankChange": -19,
+        "score": 61.66
+      },
+      "primary": {
+        "year": 2026,
+        "score": 61.66,
+        "rank": 66,
+        "rankChange": -19,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "IT",
+      "sourceUnit": "Italy",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 56,
+        "rankChange": -7,
+        "score": 65.16
+      },
+      "primary": {
+        "year": 2026,
+        "score": 65.16,
+        "rank": 56,
+        "rankChange": -7,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "MR",
+      "sourceUnit": "Mauritania",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 61,
+        "rankChange": -11,
+        "score": 63.36
+      },
+      "primary": {
+        "year": 2026,
+        "score": 63.36,
+        "rank": 61,
+        "rankChange": -11,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "MU",
+      "sourceUnit": "Mauritius",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 42,
+        "rankChange": 9,
+        "score": 70.92
+      },
+      "primary": {
+        "year": 2026,
+        "score": 70.92,
+        "rank": 42,
+        "rankChange": 9,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "GH",
+      "sourceUnit": "Ghana",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 39,
+        "rankChange": 13,
+        "score": 72.2
+      },
+      "primary": {
+        "year": 2026,
+        "score": 72.2,
+        "rank": 39,
+        "rankChange": 13,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "PA",
+      "sourceUnit": "Panama",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 65,
+        "rankChange": -12,
+        "score": 62.14
+      },
+      "primary": {
+        "year": 2026,
+        "score": 62.14,
+        "rank": 65,
+        "rankChange": -12,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "LR",
+      "sourceUnit": "Liberia",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 58,
+        "rankChange": -4,
+        "score": 64.54
+      },
+      "primary": {
+        "year": 2026,
+        "score": 64.54,
+        "rank": 58,
+        "rankChange": -4,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "RO",
+      "sourceUnit": "Romania",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 49,
+        "rankChange": 6,
+        "score": 67.71
+      },
+      "primary": {
+        "year": 2026,
+        "score": 67.71,
+        "rank": 49,
+        "rankChange": 6,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SL",
+      "sourceUnit": "Sierra Leone",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 79,
+        "rankChange": -23,
+        "score": 57.06
+      },
+      "primary": {
+        "year": 2026,
+        "score": 57.06,
+        "rank": 79,
+        "rankChange": -23,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "US",
+      "sourceUnit": "United States",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 64,
+        "rankChange": -7,
+        "score": 62.61
+      },
+      "primary": {
+        "year": 2026,
+        "score": 62.61,
+        "rank": 64,
+        "rankChange": -7,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "GM",
+      "sourceUnit": "Gambia",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 46,
+        "rankChange": 12,
+        "score": 69.42
+      },
+      "primary": {
+        "year": 2026,
+        "score": 69.42,
+        "rank": 46,
+        "rankChange": 12,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "UY",
+      "sourceUnit": "Uruguay",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 48,
+        "rankChange": 11,
+        "score": 68.72
+      },
+      "primary": {
+        "year": 2026,
+        "score": 68.72,
+        "rank": 48,
+        "rankChange": 11,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "HR",
+      "sourceUnit": "Croatia",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 53,
+        "rankChange": 7,
+        "score": 66.31
+      },
+      "primary": {
+        "year": 2026,
+        "score": 66.31,
+        "rank": 53,
+        "rankChange": 7,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "QA",
+      "sourceUnit": "Qatar",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 75,
+        "rankChange": 4,
+        "score": 59.79
+      },
+      "primary": {
+        "year": 2026,
+        "score": 59.79,
+        "rank": 75,
+        "rankChange": 4,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "UA",
+      "sourceUnit": "Ukraine",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 55,
+        "rankChange": 7,
+        "score": 66.1
+      },
+      "primary": {
+        "year": 2026,
+        "score": 66.1,
+        "rank": 55,
+        "rankChange": 7,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BR",
+      "sourceUnit": "Brazil",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 52,
+        "rankChange": 11,
+        "score": 66.37
+      },
+      "primary": {
+        "year": 2026,
+        "score": 66.37,
+        "rank": 52,
+        "rankChange": 11,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CI",
+      "sourceUnit": "Côte d'Ivoire",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 54,
+        "rankChange": 10,
+        "score": 66.27
+      },
+      "primary": {
+        "year": 2026,
+        "score": 66.27,
+        "rank": 54,
+        "rankChange": 10,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "AD",
+      "sourceUnit": "Andorra",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 60,
+        "rankChange": 5,
+        "score": 63.91
+      },
+      "primary": {
+        "year": 2026,
+        "score": 63.91,
+        "rank": 60,
+        "rankChange": 5,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "JP",
+      "sourceUnit": "Japan",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 62,
+        "rankChange": 4,
+        "score": 62.9
+      },
+      "primary": {
+        "year": 2026,
+        "score": 62.9,
+        "rank": 62,
+        "rankChange": 4,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "MT",
+      "sourceUnit": "Malta",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 67,
+        "rankChange": 0,
+        "score": 61.44
+      },
+      "primary": {
+        "year": 2026,
+        "score": 61.44,
+        "rank": 67,
+        "rankChange": 0,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "HU",
+      "sourceUnit": "Hungary",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 74,
+        "rankChange": -6,
+        "score": 59.85
+      },
+      "primary": {
+        "year": 2026,
+        "score": 59.85,
+        "rank": 74,
+        "rankChange": -6,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CL",
+      "sourceUnit": "Chile",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 70,
+        "rankChange": -1,
+        "score": 60.84
+      },
+      "primary": {
+        "year": 2026,
+        "score": 60.84,
+        "rank": 70,
+        "rankChange": -1,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BG",
+      "sourceUnit": "Bulgaria",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 71,
+        "rankChange": -1,
+        "score": 60.28
+      },
+      "primary": {
+        "year": 2026,
+        "score": 60.28,
+        "rank": 71,
+        "rankChange": -1,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CG",
+      "sourceUnit": "Congo-Brazzaville",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 68,
+        "rankChange": 3,
+        "score": 61.21
+      },
+      "primary": {
+        "year": 2026,
+        "score": 61.21,
+        "rank": 68,
+        "rankChange": 3,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CF",
+      "sourceUnit": "Central African Republic",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 81,
+        "rankChange": -9,
+        "score": 56.73
+      },
+      "primary": {
+        "year": 2026,
+        "score": 56.73,
+        "rank": 81,
+        "rankChange": -9,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "GY",
+      "sourceUnit": "Guyana",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 76,
+        "rankChange": -3,
+        "score": 59.58
+      },
+      "primary": {
+        "year": 2026,
+        "score": 59.58,
+        "rank": 76,
+        "rankChange": -3,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SN",
+      "sourceUnit": "Senegal",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 78,
+        "rankChange": -4,
+        "score": 58.11
+      },
+      "primary": {
+        "year": 2026,
+        "score": 58.11,
+        "rank": 78,
+        "rankChange": -4,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "KM",
+      "sourceUnit": "Comoros",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 72,
+        "rankChange": 3,
+        "score": 60.23
+      },
+      "primary": {
+        "year": 2026,
+        "score": 60.23,
+        "rank": 72,
+        "rankChange": 3,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "MW",
+      "sourceUnit": "Malawi",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 69,
+        "rankChange": 7,
+        "score": 60.96
+      },
+      "primary": {
+        "year": 2026,
+        "score": 60.96,
+        "rank": 69,
+        "rankChange": 7,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CY",
+      "sourceUnit": "Cyprus",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 80,
+        "rankChange": -3,
+        "score": 56.91
+      },
+      "primary": {
+        "year": 2026,
+        "score": 56.91,
+        "rank": 80,
+        "rankChange": -3,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "PG",
+      "sourceUnit": "Papua New Guinea",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 73,
+        "rankChange": 5,
+        "score": 60.11
+      },
+      "primary": {
+        "year": 2026,
+        "score": 60.11,
+        "rank": 73,
+        "rankChange": 5,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "OM",
+      "sourceUnit": "Oman",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 127,
+        "rankChange": 7,
+        "score": 43.67
+      },
+      "primary": {
+        "year": 2026,
+        "score": 43.67,
+        "rank": 127,
+        "rankChange": 7,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "AL",
+      "sourceUnit": "Albania",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 83,
+        "rankChange": -3,
+        "score": 56.52
+      },
+      "primary": {
+        "year": 2026,
+        "score": 56.52,
+        "rank": 83,
+        "rankChange": -3,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BW",
+      "sourceUnit": "Botswana",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 63,
+        "rankChange": 18,
+        "score": 62.89
+      },
+      "primary": {
+        "year": 2026,
+        "score": 62.89,
+        "rank": 63,
+        "rankChange": 18,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "ZM",
+      "sourceUnit": "Zambia",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 77,
+        "rankChange": 5,
+        "score": 58.58
+      },
+      "primary": {
+        "year": 2026,
+        "score": 58.58,
+        "rank": 77,
+        "rankChange": 5,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "NE",
+      "sourceUnit": "Niger",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 120,
+        "rankChange": -37,
+        "score": 46.02
+      },
+      "primary": {
+        "year": 2026,
+        "score": 46.02,
+        "rank": 120,
+        "rankChange": -37,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "PY",
+      "sourceUnit": "Paraguay",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 88,
+        "rankChange": -4,
+        "score": 54.67
+      },
+      "primary": {
+        "year": 2026,
+        "score": 54.67,
+        "rank": 88,
+        "rankChange": -4,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "ME",
+      "sourceUnit": "Montenegro",
+      "claim": {
+        "year": 2026,
+        "rating": "Satisfactory",
+        "rank": 41,
+        "rankChange": -4,
+        "score": 71.8
+      },
+      "primary": {
+        "year": 2026,
+        "score": 71.8,
+        "rank": 41,
+        "rankChange": -4,
+        "rating": "Satisfactory"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BA",
+      "sourceUnit": "Bosnia-Herzegovina",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 90,
+        "rankChange": -4,
+        "score": 54.29
+      },
+      "primary": {
+        "year": 2026,
+        "score": 54.29,
+        "rank": 90,
+        "rankChange": -4,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "AR",
+      "sourceUnit": "Argentina",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 98,
+        "rankChange": -11,
+        "score": 52.44
+      },
+      "primary": {
+        "year": 2026,
+        "score": 52.44,
+        "rank": 98,
+        "rankChange": -11,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "MY",
+      "sourceUnit": "Malaysia",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 95,
+        "rankChange": -7,
+        "score": 52.73
+      },
+      "primary": {
+        "year": 2026,
+        "score": 52.73,
+        "rank": 95,
+        "rankChange": -7,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "GR",
+      "sourceUnit": "Greece",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 86,
+        "rankChange": 3,
+        "score": 55.05
+      },
+      "primary": {
+        "year": 2026,
+        "score": 55.05,
+        "rank": 86,
+        "rankChange": 3,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "NP",
+      "sourceUnit": "Nepal",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 87,
+        "rankChange": 3,
+        "score": 54.8
+      },
+      "primary": {
+        "year": 2026,
+        "score": 54.8,
+        "rank": 87,
+        "rankChange": 3,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BJ",
+      "sourceUnit": "Benin",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 113,
+        "rankChange": -21,
+        "score": 47.39
+      },
+      "primary": {
+        "year": 2026,
+        "score": 47.39,
+        "rank": 113,
+        "rankChange": -21,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BO",
+      "sourceUnit": "Bolivia",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 91,
+        "rankChange": 2,
+        "score": 54.25
+      },
+      "primary": {
+        "year": 2026,
+        "score": 54.25,
+        "rank": 91,
+        "rankChange": 2,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "EC",
+      "sourceUnit": "Ecuador",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 125,
+        "rankChange": -31,
+        "score": 44.37
+      },
+      "primary": {
+        "year": 2026,
+        "score": 44.37,
+        "rank": 125,
+        "rankChange": -31,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "LA",
+      "sourceUnit": "Laos",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 154,
+        "rankChange": -4,
+        "score": 32.54
+      },
+      "primary": {
+        "year": 2026,
+        "score": 32.54,
+        "rank": 154,
+        "rankChange": -4,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "KW",
+      "sourceUnit": "Kuwait",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 136,
+        "rankChange": -8,
+        "score": 40.44
+      },
+      "primary": {
+        "year": 2026,
+        "score": 40.44,
+        "rank": 136,
+        "rankChange": -8,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BN",
+      "sourceUnit": "Brunei",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 96,
+        "rankChange": 1,
+        "score": 52.58
+      },
+      "primary": {
+        "year": 2026,
+        "score": 52.58,
+        "rank": 96,
+        "rankChange": 1,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SZ",
+      "sourceUnit": "Eswatini",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 101,
+        "rankChange": -3,
+        "score": 51.94
+      },
+      "primary": {
+        "year": 2026,
+        "score": 51.94,
+        "rank": 101,
+        "rankChange": -3,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "AO",
+      "sourceUnit": "Angola",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 109,
+        "rankChange": -9,
+        "score": 48.82
+      },
+      "primary": {
+        "year": 2026,
+        "score": 48.82,
+        "rank": 109,
+        "rankChange": -9,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "MZ",
+      "sourceUnit": "Mozambique",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 99,
+        "rankChange": 2,
+        "score": 52.27
+      },
+      "primary": {
+        "year": 2026,
+        "score": 52.27,
+        "rank": 99,
+        "rankChange": 2,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "MN",
+      "sourceUnit": "Mongolia",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 85,
+        "rankChange": 17,
+        "score": 55.79
+      },
+      "primary": {
+        "year": 2026,
+        "score": 55.79,
+        "rank": 85,
+        "rankChange": 17,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "GN",
+      "sourceUnit": "Guinea",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 111,
+        "rankChange": -8,
+        "score": 48.45
+      },
+      "primary": {
+        "year": 2026,
+        "score": 48.45,
+        "rank": 111,
+        "rankChange": -8,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "MV",
+      "sourceUnit": "Maldives",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 108,
+        "rankChange": -4,
+        "score": 49.23
+      },
+      "primary": {
+        "year": 2026,
+        "score": 49.23,
+        "rank": 108,
+        "rankChange": -4,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BF",
+      "sourceUnit": "Burkina Faso",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 110,
+        "rankChange": -5,
+        "score": 48.52
+      },
+      "primary": {
+        "year": 2026,
+        "score": 48.52,
+        "rank": 110,
+        "rankChange": -5,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "ZW",
+      "sourceUnit": "Zimbabwe",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 124,
+        "rankChange": -18,
+        "score": 44.37
+      },
+      "primary": {
+        "year": 2026,
+        "score": 44.37,
+        "rank": 124,
+        "rankChange": -18,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "LS",
+      "sourceUnit": "Lesotho",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 89,
+        "rankChange": 18,
+        "score": 54.37
+      },
+      "primary": {
+        "year": 2026,
+        "score": 54.37,
+        "rank": 89,
+        "rankChange": 18,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "TD",
+      "sourceUnit": "Chad",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 93,
+        "rankChange": 15,
+        "score": 53.9
+      },
+      "primary": {
+        "year": 2026,
+        "score": 53.9,
+        "rank": 93,
+        "rankChange": 15,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SS",
+      "sourceUnit": "South Sudan",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 118,
+        "rankChange": -9,
+        "score": 46.16
+      },
+      "primary": {
+        "year": 2026,
+        "score": 46.16,
+        "rank": 118,
+        "rankChange": -9,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "GW",
+      "sourceUnit": "Guinea-Bissau",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 100,
+        "rankChange": 10,
+        "score": 51.99
+      },
+      "primary": {
+        "year": 2026,
+        "score": 51.99,
+        "rank": 100,
+        "rankChange": 10,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "HT",
+      "sourceUnit": "Haiti",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 107,
+        "rankChange": 4,
+        "score": 50.32
+      },
+      "primary": {
+        "year": 2026,
+        "score": 50.32,
+        "rank": 107,
+        "rankChange": 4,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "IL",
+      "sourceUnit": "Israel",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 116,
+        "rankChange": -4,
+        "score": 46.46
+      },
+      "primary": {
+        "year": 2026,
+        "score": 46.46,
+        "rank": 116,
+        "rankChange": -4,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "MG",
+      "sourceUnit": "Madagascar",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 103,
+        "rankChange": 10,
+        "score": 50.95
+      },
+      "primary": {
+        "year": 2026,
+        "score": 50.95,
+        "rank": 103,
+        "rankChange": 10,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "GE",
+      "sourceUnit": "Georgia",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 135,
+        "rankChange": -21,
+        "score": 40.77
+      },
+      "primary": {
+        "year": 2026,
+        "score": 40.77,
+        "rank": 135,
+        "rankChange": -21,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CO",
+      "sourceUnit": "Colombia",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 102,
+        "rankChange": 13,
+        "score": 51.66
+      },
+      "primary": {
+        "year": 2026,
+        "score": 51.66,
+        "rank": 102,
+        "rankChange": 13,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "PH",
+      "sourceUnit": "Philippines",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 114,
+        "rankChange": 2,
+        "score": 46.79
+      },
+      "primary": {
+        "year": 2026,
+        "score": 46.79,
+        "rank": 114,
+        "rankChange": 2,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "KE",
+      "sourceUnit": "Kenya",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 106,
+        "rankChange": 11,
+        "score": 50.51
+      },
+      "primary": {
+        "year": 2026,
+        "score": 50.51,
+        "rank": 106,
+        "rankChange": 11,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "GQ",
+      "sourceUnit": "Equatorial Guinea",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 94,
+        "rankChange": 24,
+        "score": 52.79
+      },
+      "primary": {
+        "year": 2026,
+        "score": 52.79,
+        "rank": 94,
+        "rankChange": 24,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "ML",
+      "sourceUnit": "Mali",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 121,
+        "rankChange": -2,
+        "score": 45.63
+      },
+      "primary": {
+        "year": 2026,
+        "score": 45.63,
+        "rank": 121,
+        "rankChange": -2,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "MA",
+      "sourceUnit": "Morocco / Western Sahara ",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 105,
+        "rankChange": 15,
+        "score": 50.55
+      },
+      "primary": {
+        "year": 2026,
+        "score": 50.55,
+        "rank": 105,
+        "rankChange": 15,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "TG",
+      "sourceUnit": "Togo",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 97,
+        "rankChange": 24,
+        "score": 52.56
+      },
+      "primary": {
+        "year": 2026,
+        "score": 52.56,
+        "rank": 97,
+        "rankChange": 24,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "NG",
+      "sourceUnit": "Nigeria",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 112,
+        "rankChange": 10,
+        "score": 48.11
+      },
+      "primary": {
+        "year": 2026,
+        "score": 48.11,
+        "rank": 112,
+        "rankChange": 10,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "KR",
+      "sourceUnit": "South Korea",
+      "claim": {
+        "year": 2026,
+        "rating": "Problematic",
+        "rank": 47,
+        "rankChange": 14,
+        "score": 69.12
+      },
+      "primary": {
+        "year": 2026,
+        "score": 69.12,
+        "rank": 47,
+        "rankChange": 14,
+        "rating": "Problematic"
+      },
+      "differences": {}
+    },
+    {
+      "code": "MX",
+      "sourceUnit": "Mexico",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 122,
+        "rankChange": 2,
+        "score": 45.23
+      },
+      "primary": {
+        "year": 2026,
+        "score": 45.23,
+        "rank": 122,
+        "rankChange": 2,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BI",
+      "sourceUnit": "Burundi",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 119,
+        "rankChange": 6,
+        "score": 46.14
+      },
+      "primary": {
+        "year": 2026,
+        "score": 46.14,
+        "rank": 119,
+        "rankChange": 6,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "DZ",
+      "sourceUnit": "Algeria",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 145,
+        "rankChange": -19,
+        "score": 37.38
+      },
+      "primary": {
+        "year": 2026,
+        "score": 37.38,
+        "rank": 145,
+        "rankChange": -19,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "ID",
+      "sourceUnit": "Indonesia",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 129,
+        "rankChange": -2,
+        "score": 43.02
+      },
+      "primary": {
+        "year": 2026,
+        "score": 43.02,
+        "rank": 129,
+        "rankChange": -2,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "RS",
+      "sourceUnit": "Serbia",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 104,
+        "rankChange": -8,
+        "score": 50.79
+      },
+      "primary": {
+        "year": 2026,
+        "score": 50.79,
+        "rank": 104,
+        "rankChange": -8,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "TN",
+      "sourceUnit": "Tunisia",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 137,
+        "rankChange": -8,
+        "score": 40.43
+      },
+      "primary": {
+        "year": 2026,
+        "score": 40.43,
+        "rank": 137,
+        "rankChange": -8,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "PE",
+      "sourceUnit": "Peru",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 144,
+        "rankChange": -14,
+        "score": 37.86
+      },
+      "primary": {
+        "year": 2026,
+        "score": 37.86,
+        "rank": 144,
+        "rankChange": -14,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CM",
+      "sourceUnit": "Cameroon",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 133,
+        "rankChange": -2,
+        "score": 40.88
+      },
+      "primary": {
+        "year": 2026,
+        "score": 40.88,
+        "rank": 133,
+        "rankChange": -2,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "LB",
+      "sourceUnit": "Lebanon",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 115,
+        "rankChange": 17,
+        "score": 46.49
+      },
+      "primary": {
+        "year": 2026,
+        "score": 46.49,
+        "rank": 115,
+        "rankChange": 17,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CD",
+      "sourceUnit": "DR Congo",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 130,
+        "rankChange": 3,
+        "score": 42.16
+      },
+      "primary": {
+        "year": 2026,
+        "score": 42.16,
+        "rank": 130,
+        "rankChange": 3,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BY",
+      "sourceUnit": "Belarus",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 165,
+        "rankChange": 1,
+        "score": 27.72
+      },
+      "primary": {
+        "year": 2026,
+        "score": 27.72,
+        "rank": 165,
+        "rankChange": 1,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SV",
+      "sourceUnit": "El Salvador",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 143,
+        "rankChange": -8,
+        "score": 38.88
+      },
+      "primary": {
+        "year": 2026,
+        "score": 38.88,
+        "rank": 143,
+        "rankChange": -8,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SO",
+      "sourceUnit": "Somalia",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 126,
+        "rankChange": 10,
+        "score": 43.84
+      },
+      "primary": {
+        "year": 2026,
+        "score": 43.84,
+        "rank": 126,
+        "rankChange": 10,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "TJ",
+      "sourceUnit": "Tajikistan",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 155,
+        "rankChange": -2,
+        "score": 32.22
+      },
+      "primary": {
+        "year": 2026,
+        "score": 32.22,
+        "rank": 155,
+        "rankChange": -2,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "GT",
+      "sourceUnit": "Guatemala",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 128,
+        "rankChange": 10,
+        "score": 43.21
+      },
+      "primary": {
+        "year": 2026,
+        "score": 43.21,
+        "rank": 128,
+        "rankChange": 10,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "LK",
+      "sourceUnit": "Sri Lanka",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 134,
+        "rankChange": 5,
+        "score": 40.77
+      },
+      "primary": {
+        "year": 2026,
+        "score": 40.77,
+        "rank": 134,
+        "rankChange": 5,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "TZ",
+      "sourceUnit": "Tanzania",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 117,
+        "rankChange": -22,
+        "score": 46.22
+      },
+      "primary": {
+        "year": 2026,
+        "score": 46.22,
+        "rank": 117,
+        "rankChange": -22,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "HN",
+      "sourceUnit": "Honduras",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 132,
+        "rankChange": 10,
+        "score": 41.02
+      },
+      "primary": {
+        "year": 2026,
+        "score": 41.02,
+        "rank": 132,
+        "rankChange": 10,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "UG",
+      "sourceUnit": "Uganda",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 131,
+        "rankChange": 12,
+        "score": 41.98
+      },
+      "primary": {
+        "year": 2026,
+        "score": 41.98,
+        "rank": 131,
+        "rankChange": 12,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "KG",
+      "sourceUnit": "Kyrgyzstan",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 146,
+        "rankChange": -2,
+        "score": 35.06
+      },
+      "primary": {
+        "year": 2026,
+        "score": 35.06,
+        "rank": 146,
+        "rankChange": -2,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "ET",
+      "sourceUnit": "Ethiopia",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 148,
+        "rankChange": -3,
+        "score": 34.66
+      },
+      "primary": {
+        "year": 2026,
+        "score": 34.66,
+        "rank": 148,
+        "rankChange": -3,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "RW",
+      "sourceUnit": "Rwanda",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 139,
+        "rankChange": 7,
+        "score": 39.58
+      },
+      "primary": {
+        "year": 2026,
+        "score": 39.58,
+        "rank": 139,
+        "rankChange": 7,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "JO",
+      "sourceUnit": "Jordan",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 142,
+        "rankChange": 5,
+        "score": 39.33
+      },
+      "primary": {
+        "year": 2026,
+        "score": 39.33,
+        "rank": 142,
+        "rankChange": 5,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "UZ",
+      "sourceUnit": "Uzbekistan",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 147,
+        "rankChange": 1,
+        "score": 34.95
+      },
+      "primary": {
+        "year": 2026,
+        "score": 34.95,
+        "rank": 147,
+        "rankChange": 1,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BD",
+      "sourceUnit": "Bangladesh",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 152,
+        "rankChange": -3,
+        "score": 33.05
+      },
+      "primary": {
+        "year": 2026,
+        "score": 33.05,
+        "rank": 152,
+        "rankChange": -3,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "AF",
+      "sourceUnit": "Afghanistan",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 175,
+        "rankChange": 0,
+        "score": 19.51
+      },
+      "primary": {
+        "year": 2026,
+        "score": 19.51,
+        "rank": 175,
+        "rankChange": 0,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "IN",
+      "sourceUnit": "India",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 157,
+        "rankChange": -6,
+        "score": 31.96
+      },
+      "primary": {
+        "year": 2026,
+        "score": 31.96,
+        "rank": 157,
+        "rankChange": -6,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BT",
+      "sourceUnit": "Bhutan",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 150,
+        "rankChange": 2,
+        "score": 33.5
+      },
+      "primary": {
+        "year": 2026,
+        "score": 33.5,
+        "rank": 150,
+        "rankChange": 2,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "TH",
+      "sourceUnit": "Thailand",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 92,
+        "rankChange": -7,
+        "score": 53.97
+      },
+      "primary": {
+        "year": 2026,
+        "score": 53.97,
+        "rank": 92,
+        "rankChange": -7,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "YE",
+      "sourceUnit": "Yemen",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 164,
+        "rankChange": -10,
+        "score": 27.89
+      },
+      "primary": {
+        "year": 2026,
+        "score": 27.89,
+        "rank": 164,
+        "rankChange": -10,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "IQ",
+      "sourceUnit": "Iraq",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 162,
+        "rankChange": -7,
+        "score": 28.85
+      },
+      "primary": {
+        "year": 2026,
+        "score": 28.85,
+        "rank": 162,
+        "rankChange": -7,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SD",
+      "sourceUnit": "Sudan",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 161,
+        "rankChange": -5,
+        "score": 29.02
+      },
+      "primary": {
+        "year": 2026,
+        "score": 29.02,
+        "rank": 161,
+        "rankChange": -5,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "BH",
+      "sourceUnit": "Bahrain",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 170,
+        "rankChange": -13,
+        "score": 24.84
+      },
+      "primary": {
+        "year": 2026,
+        "score": 24.84,
+        "rank": 170,
+        "rankChange": -13,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "PK",
+      "sourceUnit": "Pakistan",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 153,
+        "rankChange": 5,
+        "score": 32.61
+      },
+      "primary": {
+        "year": 2026,
+        "score": 32.61,
+        "rank": 153,
+        "rankChange": 5,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "TR",
+      "sourceUnit": "Türkiye",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 163,
+        "rankChange": -4,
+        "score": 27.94
+      },
+      "primary": {
+        "year": 2026,
+        "score": 27.94,
+        "rank": 163,
+        "rankChange": -4,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "VE",
+      "sourceUnit": "Venezuela",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 159,
+        "rankChange": 1,
+        "score": 30.48
+      },
+      "primary": {
+        "year": 2026,
+        "score": 30.48,
+        "rank": 159,
+        "rankChange": 1,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "KH",
+      "sourceUnit": "Cambodia",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 151,
+        "rankChange": 10,
+        "score": 33.28
+      },
+      "primary": {
+        "year": 2026,
+        "score": 33.28,
+        "rank": 151,
+        "rankChange": 10,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SA",
+      "sourceUnit": "Saudi Arabia",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 176,
+        "rankChange": -14,
+        "score": 19.11
+      },
+      "primary": {
+        "year": 2026,
+        "score": 19.11,
+        "rank": 176,
+        "rankChange": -14,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "PS",
+      "sourceUnit": "Palestine",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 156,
+        "rankChange": 7,
+        "score": 32.09
+      },
+      "primary": {
+        "year": 2026,
+        "score": 32.09,
+        "rank": 156,
+        "rankChange": 7,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "AE",
+      "sourceUnit": "United Arab Emirates",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 158,
+        "rankChange": 6,
+        "score": 30.86
+      },
+      "primary": {
+        "year": 2026,
+        "score": 30.86,
+        "rank": 158,
+        "rankChange": 6,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CU",
+      "sourceUnit": "Cuba",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 160,
+        "rankChange": 5,
+        "score": 29.22
+      },
+      "primary": {
+        "year": 2026,
+        "score": 29.22,
+        "rank": 160,
+        "rankChange": 5,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SG",
+      "sourceUnit": "Singapore",
+      "claim": {
+        "year": 2026,
+        "rating": "Difficult",
+        "rank": 123,
+        "rankChange": 0,
+        "score": 44.57
+      },
+      "primary": {
+        "year": 2026,
+        "score": 44.57,
+        "rank": 123,
+        "rankChange": 0,
+        "rating": "Difficult"
+      },
+      "differences": {}
+    },
+    {
+      "code": "AZ",
+      "sourceUnit": "Azerbaijan",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 171,
+        "rankChange": -4,
+        "score": 23.95
+      },
+      "primary": {
+        "year": 2026,
+        "score": 23.95,
+        "rank": 171,
+        "rankChange": -4,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "DJ",
+      "sourceUnit": "Djibouti",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 167,
+        "rankChange": 1,
+        "score": 25.04
+      },
+      "primary": {
+        "year": 2026,
+        "score": 25.04,
+        "rank": 167,
+        "rankChange": 1,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "MM",
+      "sourceUnit": "Myanmar",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 166,
+        "rankChange": 3,
+        "score": 26.38
+      },
+      "primary": {
+        "year": 2026,
+        "score": 26.38,
+        "rank": 166,
+        "rankChange": 3,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "EG",
+      "sourceUnit": "Egypt",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 169,
+        "rankChange": 1,
+        "score": 24.92
+      },
+      "primary": {
+        "year": 2026,
+        "score": 24.92,
+        "rank": 169,
+        "rankChange": 1,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "RU",
+      "sourceUnit": "Russia",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 172,
+        "rankChange": -1,
+        "score": 23.15
+      },
+      "primary": {
+        "year": 2026,
+        "score": 23.15,
+        "rank": 172,
+        "rankChange": -1,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "NI",
+      "sourceUnit": "Nicaragua",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 168,
+        "rankChange": 4,
+        "score": 24.98
+      },
+      "primary": {
+        "year": 2026,
+        "score": 24.98,
+        "rank": 168,
+        "rankChange": 4,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "SY",
+      "sourceUnit": "Syria",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 141,
+        "rankChange": 36,
+        "score": 39.44
+      },
+      "primary": {
+        "year": 2026,
+        "score": 39.44,
+        "rank": 141,
+        "rankChange": 36,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "KZ",
+      "sourceUnit": "Kazakhstan",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 149,
+        "rankChange": -8,
+        "score": 34.41
+      },
+      "primary": {
+        "year": 2026,
+        "score": 34.41,
+        "rank": 149,
+        "rankChange": -8,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "VN",
+      "sourceUnit": "Vietnam",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 174,
+        "rankChange": -1,
+        "score": 21.15
+      },
+      "primary": {
+        "year": 2026,
+        "score": 21.15,
+        "rank": 174,
+        "rankChange": -1,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "IR",
+      "sourceUnit": "Iran",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 177,
+        "rankChange": -1,
+        "score": 17.45
+      },
+      "primary": {
+        "year": 2026,
+        "score": 17.45,
+        "rank": 177,
+        "rankChange": -1,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "TM",
+      "sourceUnit": "Turkmenistan",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 173,
+        "rankChange": 1,
+        "score": 23.06
+      },
+      "primary": {
+        "year": 2026,
+        "score": 23.06,
+        "rank": 173,
+        "rankChange": 1,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "CN",
+      "sourceUnit": "China",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 178,
+        "rankChange": 0,
+        "score": 13.85
+      },
+      "primary": {
+        "year": 2026,
+        "score": 13.85,
+        "rank": 178,
+        "rankChange": 0,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "KP",
+      "sourceUnit": "North Korea",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 179,
+        "rankChange": 0,
+        "score": 12.67
+      },
+      "primary": {
+        "year": 2026,
+        "score": 12.67,
+        "rank": 179,
+        "rankChange": 0,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    },
+    {
+      "code": "ER",
+      "sourceUnit": "Eritrea",
+      "claim": {
+        "year": 2026,
+        "rating": "Very serious",
+        "rank": 180,
+        "rankChange": 0,
+        "score": 10.24
+      },
+      "primary": {
+        "year": 2026,
+        "score": 10.24,
+        "rank": 180,
+        "rankChange": 0,
+        "rating": "Very serious"
+      },
+      "differences": {}
+    }
+  ],
+  "scope": "2026 publication principally assesses January-December 2025, with material pre-publication events allowed. Skipped source units CSS, CTU, XKX, HKG, TWN are not separately scored in the 195-country bundle; do not fabricate individual OECS-member values from a group score.",
+  "attribution": "Reporters Without Borders / RSForg",
+  "limits": "Numerical and category agreement does not independently validate all underlying expert responses. Publisher reuse conditions must remain attached to reproduced source material."
+}
