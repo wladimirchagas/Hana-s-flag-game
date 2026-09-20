@@ -3025,9 +3025,311 @@
   gap: 0.35rem;
 }
 
+.democracy-map-control__divider {
+  border: 0;
+  border-top: 1px solid var(--ink-faint, rgba(31, 41, 55, 0.22));
+  margin: 0.15rem 0 0.05rem;
+}
+
 .world-map__below-node {
   width: 100%;
   margin-top: 0.5rem;
+}
+
+/* ── Democracy Index scatter chart (below world map) ─────────────────────── */
+.democracy-index-chart {
+  width: 100%;
+  /* Match the world map's width/height cap so the chart reads as the same
+     frame size sitting directly under the map. */
+  --learn-map-chrome: calc(8.5rem + env(safe-area-inset-top));
+  max-width: min(100%, calc((100vh - var(--learn-map-chrome)) * 1.92));
+  max-width: min(100%, calc((100dvh - var(--learn-map-chrome)) * 1.92));
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  box-sizing: border-box;
+}
+
+.democracy-index-chart__axes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.75rem;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0.15rem;
+}
+
+.democracy-index-chart__axis-pick {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink, #1f2937);
+}
+
+.democracy-index-chart__axis-pick-label {
+  white-space: nowrap;
+  opacity: 0.75;
+}
+
+.democracy-index-chart__select {
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink, #1f2937);
+  background: var(--paper, #fff);
+  border: 2px solid var(--ink-faint, rgba(31, 41, 55, 0.28));
+  border-radius: 10px;
+  padding: 0.3rem 0.55rem;
+  max-width: min(100%, 16rem);
+}
+
+.democracy-index-chart__select:focus-visible {
+  outline: 2px solid var(--coral-deep, #e05252);
+  outline-offset: 2px;
+}
+
+.democracy-index-chart__frame {
+  position: relative;
+  width: 100%;
+  /* Same 960:500 aspect as the world map SVG viewBox. */
+  aspect-ratio: 960 / 500;
+  max-height: calc(100vh - var(--learn-map-chrome));
+  max-height: calc(100dvh - var(--learn-map-chrome));
+  background: var(--paper, #ffffff);
+  border: 2px solid var(--ink, #1f2937);
+  border-radius: 12px;
+  box-shadow: 0 2px 0 var(--ink, #1f2937);
+  /* Visible so hover tooltips above top-row flags are not clipped. */
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+:root[data-theme="dark"] .democracy-index-chart__frame {
+  background: var(--paper, #1f2937);
+  border-color: var(--atlas-border, #374151);
+  box-shadow: none;
+}
+
+.democracy-index-chart__svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.democracy-index-chart__plot-bg {
+  fill: color-mix(in srgb, var(--cream, #f7f3ea) 55%, transparent);
+}
+
+:root[data-theme="dark"] .democracy-index-chart__plot-bg {
+  fill: color-mix(in srgb, var(--ink, #111) 18%, transparent);
+}
+
+.democracy-index-chart__band {
+  pointer-events: none;
+}
+
+.democracy-index-chart__band--even {
+  fill: color-mix(in srgb, var(--ink, #1f2937) 3.5%, transparent);
+}
+
+.democracy-index-chart__band--odd {
+  fill: transparent;
+}
+
+.democracy-index-chart__band-y {
+  pointer-events: none;
+}
+
+.democracy-index-chart__band-y--even {
+  fill: color-mix(in srgb, var(--coral-deep, #e05252) 4%, transparent);
+}
+
+.democracy-index-chart__band-y--odd {
+  fill: transparent;
+}
+
+.democracy-index-chart__grid {
+  stroke: color-mix(in srgb, var(--ink, #1f2937) 12%, transparent);
+  stroke-width: 1;
+}
+
+.democracy-index-chart__axis {
+  stroke: var(--ink, #1f2937);
+  stroke-width: 1.5;
+}
+
+.democracy-index-chart__tick {
+  fill: var(--ink, #1f2937);
+  font-size: 11px;
+  font-weight: 600;
+  font-family: var(--font-display, system-ui, sans-serif);
+  opacity: 0.75;
+}
+
+.democracy-index-chart__band-label {
+  fill: var(--ink, #1f2937);
+  font-size: 10px;
+  font-weight: 700;
+  font-family: var(--font-display, system-ui, sans-serif);
+  opacity: 0.72;
+  letter-spacing: 0.01em;
+  paint-order: stroke;
+  stroke: var(--paper, #ffffff);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.democracy-index-chart__band-label--y {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.democracy-index-chart__markers {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.democracy-index-chart__marker {
+  position: absolute;
+  width: 1.35rem;
+  height: 1.35rem;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 3px;
+}
+
+.democracy-index-chart__marker:focus-visible {
+  outline: 2px solid var(--coral-deep, #e05252);
+  outline-offset: 2px;
+}
+
+.democracy-index-chart__marker--active .democracy-index-chart__flag,
+.democracy-index-chart__marker--selected .democracy-index-chart__flag {
+  box-shadow:
+    0 0 0 2px var(--paper, #fff),
+    0 0 0 3.5px var(--coral-deep, #e05252);
+}
+
+.democracy-index-chart__flag {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+  background: var(--paper, #fff);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ink, #1f2937) 35%, transparent);
+}
+
+.democracy-index-chart__flag-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #ddd;
+}
+
+.democracy-index-chart__pulse {
+  position: absolute;
+  inset: -0.55rem;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.democracy-index-chart__pulse-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--coral-deep, #e05252);
+  animation: map-ping-ring 1.6s ease-out infinite;
+  opacity: 0.85;
+}
+
+.democracy-index-chart__pulse-ring--2 {
+  animation-delay: 0.8s;
+}
+
+.democracy-index-chart__tooltip {
+  position: absolute;
+  z-index: 5;
+  transform: translate(-50%, calc(-100% - 0.85rem));
+  min-width: 12rem;
+  max-width: min(20rem, 92%);
+  padding: 0.55rem 0.75rem;
+  background: var(--paper, #ffffff);
+  color: var(--ink, #1f2937);
+  border: 2px solid var(--ink, #1f2937);
+  border-radius: 10px;
+  box-shadow: 0 2px 0 var(--ink, #1f2937);
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.92rem;
+  line-height: 1.3;
+  font-family: var(--font-display, system-ui, sans-serif);
+}
+
+.democracy-index-chart__tooltip--below {
+  transform: translate(-50%, 0.85rem);
+}
+
+:root[data-theme="dark"] .democracy-index-chart__tooltip {
+  background: var(--paper, #1f2937);
+  border-color: var(--atlas-border, #374151);
+  box-shadow: none;
+}
+
+.democracy-index-chart__tooltip-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.democracy-index-chart__tooltip-row {
+  font-size: 0.86rem;
+  font-weight: 600;
+  opacity: 0.92;
+}
+
+.democracy-index-chart__tooltip-axis {
+  display: inline-block;
+  min-width: 1.1rem;
+  margin-right: 0.25rem;
+  font-weight: 800;
+  color: var(--coral-deep, #e05252);
+}
+
+@media (max-width: 900px) {
+  .learn-fs__map-col {
+    max-height: none;
+  }
+
+  .democracy-index-chart {
+    max-width: 100%;
+    padding: 0 0.15rem 0.35rem;
+  }
+
+  .democracy-index-chart__frame {
+    max-height: 55vh;
+  }
+
+  .democracy-index-chart__marker {
+    width: 1.15rem;
+    height: 1.15rem;
+  }
+
+  .democracy-index-chart__tooltip {
+    font-size: 0.86rem;
+  }
 }
 
 .democracy-map-legend {
