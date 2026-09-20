@@ -394,7 +394,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "bd-unb",
       "countryCode": "BD",
       "name": "United News of Bangladesh",
@@ -408,7 +407,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Privately owned national wire service; first fully digitised private-sector wire in South Asia; AP news-exchange partner",
       "readership": {"metric":"Correspondents in all 64 districts; serves print and electronic media nationally","source":"UNB About / Banglapedia"},
-      "sources": ["https://www.unb.com.bd/about","https://en.wikipedia.org/wiki/United_News_of_Bangladesh","https://en.banglapedia.org/index.php?title=News_Agencies"],
+      "logo": "newspaper-logos/bd/unb.png",
+      "logoExplainer": "Red field with bold white 'UNB' above a black bar reading 'UNITED NEWS OF BANGLADESH' — United News of Bangladesh masthead.",
+      "licenceNote": "United News of Bangladesh brand mark trademark bundled from the agency's official site brand assets (unb.com.bd) for educational reference in Learn mode.",
+
+      "sources": ["https://www.unb.com.bd/about","https://en.wikipedia.org/wiki/United_News_of_Bangladesh","https://en.banglapedia.org/index.php?title=News_Agencies"]
     }
   ],
   "BE": [
@@ -603,7 +606,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "br-agencia-estado",
       "countryCode": "BR",
       "name": "Agência Estado",
@@ -614,7 +616,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Private national news agency of Grupo Estado; syndicates text, photos and real-time financial/news feeds to media and market clients",
       "readership": {"metric":"Major private Brazilian wire and Broadcast real-time information service","source":"Agência Estado / Grupo Estado"},
-      "sources": ["https://en.wikipedia.org/wiki/Ag%C3%AAncia_Estado","https://pt.wikipedia.org/wiki/Ag%C3%AAncia_Estado","http://www.ae.com.br/institucional/pag_historia.php"],
+      "logo": "newspaper-logos/br/agencia-estado.png",
+      "logoExplainer": "Agência Estado wordmark / emblem as published on Wikimedia Commons — Brazilian national wire brand mark.",
+      "licenceNote": "Agência Estado brand mark trademark bundled from Wikimedia Commons (File:Logo Agência Estado.png) for educational reference in Learn mode.",
+
+      "sources": ["https://en.wikipedia.org/wiki/Ag%C3%AAncia_Estado","https://pt.wikipedia.org/wiki/Ag%C3%AAncia_Estado","http://www.ae.com.br/institucional/pag_historia.php"]
     }
   ],
   "BS": [
@@ -704,7 +710,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "ca-canadian-press",
       "countryCode": "CA",
       "name": "The Canadian Press",
@@ -716,7 +721,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Canada's national news agency; gathers and syndicates text, photos and audio to newspapers, broadcasters and digital publishers across the country",
       "readership": {"metric":"Primary national wire serving Canadian print, broadcast and digital outlets","source":"The Canadian Press / Canadian Encyclopedia"},
-      "sources": ["https://www.thecanadianpress.com","https://en.wikipedia.org/wiki/The_Canadian_Press","https://thecanadianencyclopedia.ca/index.php/en/article/canadian-press"],
+      "logo": "newspaper-logos/ca/canadian-press.svg",
+      "logoExplainer": "The Canadian Press wordmark from thecanadianpress.com — national Canadian newswire brand.",
+      "licenceNote": "The Canadian Press brand mark trademark bundled from the agency's official site brand assets (thecanadianpress.com) for educational reference in Learn mode.",
+
+      "sources": ["https://www.thecanadianpress.com","https://en.wikipedia.org/wiki/The_Canadian_Press","https://thecanadianencyclopedia.ca/index.php/en/article/canadian-press"]
     }
   ],
   "CD": [
@@ -837,7 +846,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "cn-xinhua",
       "countryCode": "CN",
       "name": "Xinhua News Agency",
@@ -851,13 +859,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "state",
       "editorialStance": "Official state news agency of the PRC; gathers and distributes domestic and international wire copy, photos and video to media clients worldwide",
       "readership": {"metric":"Primary official Chinese newswire with global bureaux","source":"Xinhua / Wikipedia"},
-      "sources": ["https://www.xinhuanet.com","https://en.wikipedia.org/wiki/Xinhua_News_Agency"],
+      "logo": "newspaper-logos/cn/xinhua.png",
+      "logoExplainer": "Xinhua News Agency site masthead mark from news.cn — China's state national news agency brand.",
+      "licenceNote": "Xinhua News Agency brand mark trademark bundled from the agency's official site brand assets (news.cn / xinhuanet.com) for educational reference in Learn mode.",
+
+      "sources": ["https://www.xinhuanet.com","https://en.wikipedia.org/wiki/Xinhua_News_Agency"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "cn-cns",
       "countryCode": "CN",
       "name": "China News Service",
@@ -871,7 +882,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "state",
       "editorialStance": "Second major Chinese state news agency; focuses on overseas Chinese and international audiences alongside domestic syndication",
       "readership": {"metric":"Major Chinese newswire alongside Xinhua","source":"China News Service / Wikipedia"},
-      "sources": ["https://www.chinanews.com.cn","https://en.wikipedia.org/wiki/China_News_Service"],
+      "logo": "newspaper-logos/cn/cns.png",
+      "logoExplainer": "Red italic 'Ecns.cn' with flame flourish and grey 中新网 — China News Service English portal brand mark.",
+      "licenceNote": "China News Service / ECNS brand mark trademark bundled from the agency's English portal brand assets (ecns.cn / chinanews.com.cn) for educational reference in Learn mode.",
+
+      "sources": ["https://www.chinanews.com.cn","https://en.wikipedia.org/wiki/China_News_Service"]
     }
   ],
   "CU": [
@@ -927,7 +942,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "de-dpa",
       "countryCode": "DE",
       "name": "dpa (Deutsche Presse-Agentur)",
@@ -939,13 +953,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Germany's principal national and international news agency; independent of government, owned by media shareholders; supplies text, photos and multimedia to print, broadcast and digital clients",
       "readership": {"metric":"Largest German press agency; ~170 media shareholders; worldwide wire","source":"dpa.com / Wikipedia"},
-      "sources": ["https://www.dpa.com","https://en.wikipedia.org/wiki/Deutsche_Presse-Agentur"],
+      "logo": "newspaper-logos/de/dpa.png",
+      "logoExplainer": "dpa Deutsche Presse-Agentur brand mark from the agency's official site.",
+      "licenceNote": "dpa brand mark trademark bundled from the agency's official site brand assets (dpa.com) for educational reference in Learn mode.",
+
+      "sources": ["https://www.dpa.com","https://en.wikipedia.org/wiki/Deutsche_Presse-Agentur"]
     },
     {
       "frequency": "Continuous specialized national newswire",
       "format": "Specialized national church and society news wire",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "de-epd",
       "countryCode": "DE",
       "name": "epd (Evangelischer Pressedienst)",
@@ -957,13 +974,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "independent",
       "editorialStance": "Specialized national German wire of the Protestant press service; syndicates religion, society and culture coverage to media clients",
       "readership": {"metric":"Specialized German national wire used by newspapers and broadcasters","source":"epd / Wikipedia"},
-      "sources": ["https://www.epd.de","https://de.wikipedia.org/wiki/Evangelischer_Pressedienst"],
+      "logo": "newspaper-logos/de/epd.svg",
+      "logoExplainer": "epd Evangelischer Pressedienst wordmark from the Protestant press service site.",
+      "licenceNote": "epd brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
+      "sources": ["https://www.epd.de","https://de.wikipedia.org/wiki/Evangelischer_Pressedienst"]
     },
     {
       "frequency": "Continuous specialized national sports newswire",
       "format": "Specialized national sports news wire",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "de-sid",
       "countryCode": "DE",
       "name": "SID (Sport-Informations-Dienst)",
@@ -975,7 +995,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Specialized national German sports wire; syndicates sports copy and photos to media clients",
       "readership": {"metric":"Principal German sports newswire for print and broadcast clients","source":"SID / Wikipedia"},
-      "sources": ["https://www.sid.de","https://en.wikipedia.org/wiki/Sport-Informations-Dienst"],
+      "logo": "newspaper-logos/de/sid.png",
+      "logoExplainer": "SID Sport-Informations-Dienst brand mark from the German sports wire site.",
+      "licenceNote": "SID brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
+      "sources": ["https://www.sid.de","https://en.wikipedia.org/wiki/Sport-Informations-Dienst"]
     }
   ],
   "DJ": [
@@ -1073,7 +1097,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "es-europa-press",
       "countryCode": "ES",
       "name": "Europa Press",
@@ -1084,13 +1107,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Private Spanish national news agency; syndicates text and multimedia alongside EFE",
       "readership": {"metric":"Major private Spanish national wire","source":"Europa Press / Wikipedia"},
-      "sources": ["https://www.europapress.es","https://en.wikipedia.org/wiki/Europa_Press"],
+      "logo": "newspaper-logos/es/europa-press.svg",
+      "logoExplainer": "Europa Press wordmark from the Spanish national wire's official site.",
+      "licenceNote": "Europa Press brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
+      "sources": ["https://www.europapress.es","https://en.wikipedia.org/wiki/Europa_Press"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "es-acn",
       "countryCode": "ES",
       "name": "Catalan News Agency",
@@ -1104,7 +1130,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "regional",
       "editorialStance": "Public news agency of Catalonia; regional wire syndicating Catalan, Spanish and English copy",
       "readership": {"metric":"Principal Catalan regional newswire","source":"ACN / Wikipedia"},
-      "sources": ["https://www.acn.cat","https://en.wikipedia.org/wiki/Catalan_News_Agency"],
+      "logo": "newspaper-logos/es/acn.svg",
+      "logoExplainer": "Burgundy 'ACN' wordmark — Agència Catalana de Notícies / Catalan News Agency brand from Wikimedia Commons.",
+      "licenceNote": "Agència Catalana de Notícies brand mark trademark bundled from Wikimedia Commons (Catalan News Agency logo.svg) for educational reference in Learn mode.",
+
+      "sources": ["https://www.acn.cat","https://en.wikipedia.org/wiki/Catalan_News_Agency"]
     }
   ],
   "ET": [
@@ -1178,7 +1208,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "gb-pa-media",
       "countryCode": "GB",
       "name": "PA Media",
@@ -1190,7 +1219,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "UK national multimedia news agency; syndicates text, photos, video and data to newspapers, broadcasters and digital publishers",
       "readership": {"metric":"Primary UK domestic newswire alongside Reuters","source":"PA Media / Wikipedia"},
-      "sources": ["https://pa.media","https://en.wikipedia.org/wiki/PA_Media"],
+      "logo": "newspaper-logos/gb/pa-media.svg",
+      "logoExplainer": "PA Media wordmark from the UK national wire's official brand assets.",
+      "licenceNote": "PA Media brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
+      "sources": ["https://pa.media","https://en.wikipedia.org/wiki/PA_Media"]
     }
   ],
   "GE": [
@@ -1244,7 +1277,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "id-antara",
       "countryCode": "ID",
       "name": "Antara",
@@ -1258,13 +1290,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "state",
       "editorialStance": "Official state news agency of Indonesia; gathers and syndicates domestic and international news to media outlets",
       "readership": {"metric":"Primary Indonesian national newswire","source":"Antara / Wikipedia"},
-      "sources": ["https://www.antaranews.com","https://en.wikipedia.org/wiki/Antara_(news_agency)"],
+      "logo": "newspaper-logos/id/antara.webp",
+      "logoExplainer": "Antara brand mark from Indonesia's national news agency site.",
+      "licenceNote": "Antara brand mark trademark bundled from the agency's official site brand assets (antaranews.com) for educational reference in Learn mode.",
+
+      "sources": ["https://www.antaranews.com","https://en.wikipedia.org/wiki/Antara_(news_agency)"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "id-kbr",
       "countryCode": "ID",
       "name": "KBR",
@@ -1276,7 +1311,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Private Indonesian national radio/multimedia news agency; syndicates audio and digital news to partner stations and outlets",
       "readership": {"metric":"National private Indonesian news agency network","source":"KBR / Wikipedia"},
-      "sources": ["https://kbr.id","https://en.wikipedia.org/wiki/KBR_(news_agency)"],
+      "logo": "newspaper-logos/id/kbr.svg",
+      "logoExplainer": "KBR (Kantor Berita Radio) logo from Wikimedia Commons.",
+      "licenceNote": "KBR brand mark trademark bundled from Wikimedia Commons (File:KBR Logo.svg) for educational reference in Learn mode.",
+
+      "sources": ["https://kbr.id","https://en.wikipedia.org/wiki/KBR_(news_agency)"]
     }
   ],
   "IN": [
@@ -1284,7 +1323,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "in-pti",
       "countryCode": "IN",
       "name": "Press Trust of India",
@@ -1296,13 +1334,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "cooperative",
       "editorialStance": "India's largest news agency; not-for-profit cooperative owned by Indian newspapers; syndicates text and photos nationwide",
       "readership": {"metric":"Primary Indian national wire serving hundreds of newspapers and broadcasters","source":"PTI / Wikipedia"},
-      "sources": ["https://www.ptinews.com","https://en.wikipedia.org/wiki/Press_Trust_of_India"],
+      "logo": "newspaper-logos/in/pti.jpg",
+      "logoExplainer": "Press Trust of India brand mark from the agency's official site metadata.",
+      "licenceNote": "Press Trust of India brand mark trademark bundled from the agency's official site brand assets (ptinews.com) for educational reference in Learn mode.",
+
+      "sources": ["https://www.ptinews.com","https://en.wikipedia.org/wiki/Press_Trust_of_India"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "in-uni",
       "countryCode": "IN",
       "name": "United News of India",
@@ -1314,13 +1355,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Major Indian national news agency; multilingual wire serving print and electronic media",
       "readership": {"metric":"Major Indian national wire alongside PTI","source":"UNI / Wikipedia"},
-      "sources": ["https://www.uniindia.com","https://en.wikipedia.org/wiki/United_News_of_India"],
+      "logo": "newspaper-logos/in/uni.svg",
+      "logoExplainer": "United News of India wordmark from the agency's official site.",
+      "licenceNote": "United News of India brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
+      "sources": ["https://www.uniindia.com","https://en.wikipedia.org/wiki/United_News_of_India"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "in-ians",
       "countryCode": "IN",
       "name": "Indo-Asian News Service",
@@ -1332,13 +1376,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Private Indian national and South Asian news agency; text and multimedia syndication",
       "readership": {"metric":"National Indian wire with South Asian focus","source":"IANS / Wikipedia"},
-      "sources": ["https://www.ians.in","https://en.wikipedia.org/wiki/Indo-Asian_News_Service"],
+      "logo": "newspaper-logos/in/ians.png",
+      "logoExplainer": "Sky-blue italic 'IANS' beside green script 'live' — Indo-Asian News Service digital brand mark.",
+      "licenceNote": "Indo-Asian News Service brand mark trademark bundled from the agency's official brand assets (ianslive.in / ians.in) for educational reference in Learn mode.",
+
+      "sources": ["https://www.ians.in","https://en.wikipedia.org/wiki/Indo-Asian_News_Service"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "in-ani",
       "countryCode": "IN",
       "name": "Asian News International",
@@ -1350,7 +1397,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Private Indian multimedia news agency; video, photo and text syndication to domestic and international clients",
       "readership": {"metric":"Major Indian multimedia newswire","source":"ANI / Wikipedia"},
-      "sources": ["https://www.aninews.in","https://en.wikipedia.org/wiki/Asian_News_International"],
+      "logo": "newspaper-logos/in/ani.svg",
+      "logoExplainer": "Asian News International logo from Wikimedia Commons.",
+      "licenceNote": "Asian News International brand mark trademark bundled from Wikimedia Commons (File:Logo Asian News International.svg) for educational reference in Learn mode.",
+
+      "sources": ["https://www.aninews.in","https://en.wikipedia.org/wiki/Asian_News_International"]
     }
   ],
   "IQ": [
@@ -1400,7 +1451,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "ir-fars",
       "countryCode": "IR",
       "name": "Fars News Agency",
@@ -1411,13 +1461,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Major Iranian domestic news agency; text and multimedia wire",
       "readership": {"metric":"Major Iranian national news agency","source":"Fars / Wikipedia"},
-      "sources": ["https://www.farsnews.ir","https://en.wikipedia.org/wiki/Fars_News_Agency"],
+      "logo": "newspaper-logos/ir/fars.jpg",
+      "logoExplainer": "Blue Persian 'فارس' with blue/yellow overlapping diamonds, 'FARSNEWS.ir' and orange slogan — Fars News Agency brand.",
+      "licenceNote": "Fars News Agency brand mark trademark bundled from Wikimedia Commons (File:Fars News Agency New Logo.jpg) / farsnews.ir for educational reference in Learn mode.",
+
+      "sources": ["https://www.farsnews.ir","https://en.wikipedia.org/wiki/Fars_News_Agency"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "ir-tasnim",
       "countryCode": "IR",
       "name": "Tasnim News Agency",
@@ -1428,13 +1481,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Major Iranian domestic news agency; text and multimedia wire",
       "readership": {"metric":"Major Iranian national news agency","source":"Tasnim / Wikipedia"},
-      "sources": ["https://www.tasnimnews.com","https://en.wikipedia.org/wiki/Tasnim_News_Agency"],
+      "logo": "newspaper-logos/ir/tasnim.jpg",
+      "logoExplainer": "Red field with white Persian 'Tasnim' calligraphy, globe and English 'Tasnim News Agency' — Tasnim brand mark.",
+      "licenceNote": "Tasnim News Agency brand mark trademark bundled from Wikimedia Commons (File:Tasnim News Agency logo.jpg) for educational reference in Learn mode.",
+
+      "sources": ["https://www.tasnimnews.com","https://en.wikipedia.org/wiki/Tasnim_News_Agency"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "ir-isna",
       "countryCode": "IR",
       "name": "ISNA",
@@ -1446,13 +1502,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "independent",
       "editorialStance": "Iranian students' news agency; national wire serving media clients",
       "readership": {"metric":"Major Iranian national news agency","source":"ISNA / Wikipedia"},
-      "sources": ["https://www.isna.ir","https://en.wikipedia.org/wiki/Iranian_Students%27_News_Agency"],
+      "logo": "newspaper-logos/ir/isna.jpg",
+      "logoExplainer": "ISNA (Iranian Students' News Agency) logo from Wikimedia Commons.",
+      "licenceNote": "ISNA brand mark trademark bundled from Wikimedia Commons (File:ISNA logo.jpg) for educational reference in Learn mode.",
+
+      "sources": ["https://www.isna.ir","https://en.wikipedia.org/wiki/Iranian_Students%27_News_Agency"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "ir-mehr",
       "countryCode": "IR",
       "name": "Mehr News Agency",
@@ -1463,13 +1522,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "independent",
       "editorialStance": "Major Iranian domestic news agency; text and photo wire",
       "readership": {"metric":"Major Iranian national news agency","source":"Mehr / Wikipedia"},
-      "sources": ["https://www.mehrnews.com","https://en.wikipedia.org/wiki/Mehr_News_Agency"],
+      "logo": "newspaper-logos/ir/mehr.svg",
+      "logoExplainer": "Mehr News Agency wordmark from the agency's official site.",
+      "licenceNote": "Mehr News Agency brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
+      "sources": ["https://www.mehrnews.com","https://en.wikipedia.org/wiki/Mehr_News_Agency"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "ir-ilna",
       "countryCode": "IR",
       "name": "ILNA",
@@ -1481,7 +1543,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "independent",
       "editorialStance": "Iranian labour-focused national news agency; syndicates to media clients",
       "readership": {"metric":"Iranian national news agency","source":"ILNA / Wikipedia"},
-      "sources": ["https://www.ilna.ir","https://en.wikipedia.org/wiki/Iranian_Labour_News_Agency"],
+      "logo": "newspaper-logos/ir/ilna.webp",
+      "logoExplainer": "ILNA (Iranian Labour News Agency) brand mark from the agency's official site.",
+      "licenceNote": "ILNA brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
+      "sources": ["https://www.ilna.ir","https://en.wikipedia.org/wiki/Iranian_Labour_News_Agency"]
     }
   ],
   "IT": [
@@ -1489,7 +1555,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "it-ansa",
       "countryCode": "IT",
       "name": "ANSA",
@@ -1501,13 +1566,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "cooperative",
       "editorialStance": "Italy's principal national news agency; cooperative owned by Italian publishers; syndicates text, photos and video",
       "readership": {"metric":"Primary Italian national newswire","source":"ANSA / Wikipedia"},
-      "sources": ["https://www.ansa.it","https://en.wikipedia.org/wiki/Agenzia_Nazionale_Stampa_Associata"],
+      "logo": "newspaper-logos/it/ansa.png",
+      "logoExplainer": "White serif 'ANSA.it' on black — Agenzia Nazionale Stampa Associata web brand mark.",
+      "licenceNote": "ANSA brand mark trademark bundled from the agency's official site brand assets (ansa.it) for educational reference in Learn mode.",
+
+      "sources": ["https://www.ansa.it","https://en.wikipedia.org/wiki/Agenzia_Nazionale_Stampa_Associata"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "it-agi",
       "countryCode": "IT",
       "name": "AGI",
@@ -1519,13 +1587,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Major Italian national news agency; text and multimedia syndication",
       "readership": {"metric":"Major Italian national wire","source":"AGI / Wikipedia"},
-      "sources": ["https://www.agi.it","https://en.wikipedia.org/wiki/Agenzia_Giornalistica_Italia"],
+      "logo": "newspaper-logos/it/agi.png",
+      "logoExplainer": "AGI (Agenzia Giornalistica Italia) logo 2020 from Wikimedia Commons.",
+      "licenceNote": "AGI brand mark trademark bundled from Wikimedia Commons (File:AGI logo 2020.png) for educational reference in Learn mode.",
+
+      "sources": ["https://www.agi.it","https://en.wikipedia.org/wiki/Agenzia_Giornalistica_Italia"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "it-adnkronos",
       "countryCode": "IT",
       "name": "Adnkronos",
@@ -1536,7 +1607,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Major Italian national news agency; text and multimedia syndication",
       "readership": {"metric":"Major Italian national wire","source":"Adnkronos / Wikipedia"},
-      "sources": ["https://www.adnkronos.com","https://en.wikipedia.org/wiki/Adnkronos"],
+      "logo": "newspaper-logos/it/adnkronos.svg",
+      "logoExplainer": "Adnkronos wordmark from Wikimedia Commons.",
+      "licenceNote": "Adnkronos brand mark trademark bundled from Wikimedia Commons (File:Adnkronos Logo.svg) for educational reference in Learn mode.",
+
+      "sources": ["https://www.adnkronos.com","https://en.wikipedia.org/wiki/Adnkronos"]
     }
   ],
   "JO": [
@@ -1566,7 +1641,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "jp-kyodo",
       "countryCode": "JP",
       "name": "Kyodo News",
@@ -1580,13 +1654,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "cooperative",
       "editorialStance": "One of Japan's two central news agencies; nonprofit cooperative serving Japanese newspapers and broadcasters",
       "readership": {"metric":"Major Japanese national newswire","source":"Kyodo / Wikipedia"},
-      "sources": ["https://www.kyodonews.jp","https://en.wikipedia.org/wiki/Kyodo_News"],
+      "logo": "newspaper-logos/jp/kyodo.png",
+      "logoExplainer": "Maroon circle with bite cutout beside italic grey 'KYODO' on black — Kyodo News brand mark.",
+      "licenceNote": "Kyodo News brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
+      "sources": ["https://www.kyodonews.jp","https://en.wikipedia.org/wiki/Kyodo_News"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "jp-jiji",
       "countryCode": "JP",
       "name": "Jiji Press",
@@ -1600,7 +1677,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "One of Japan's two central news agencies; commercial wire serving media and corporate clients",
       "readership": {"metric":"Major Japanese national newswire","source":"Jiji / Wikipedia"},
-      "sources": ["https://www.jiji.com","https://en.wikipedia.org/wiki/Jiji_Press"],
+      "logo": "newspaper-logos/jp/jiji.svg",
+      "logoExplainer": "Jiji Press logo from Wikimedia Commons — Japanese national wire brand mark.",
+      "licenceNote": "Jiji Press brand mark trademark bundled from Wikimedia Commons (File:Jiji Press logo.svg) for educational reference in Learn mode.",
+
+      "sources": ["https://www.jiji.com","https://en.wikipedia.org/wiki/Jiji_Press"]
     }
   ],
   "KE": [
@@ -1757,7 +1838,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "kr-newsis",
       "countryCode": "KR",
       "name": "Newsis",
@@ -1771,7 +1851,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Major private South Korean news agency alongside Yonhap; syndicates text and photos to media clients",
       "readership": {"metric":"Second major South Korean national news agency","source":"Newsis / Wikipedia"},
-      "sources": ["https://www.newsis.com","https://en.wikipedia.org/wiki/Newsis"],
+      "logo": "newspaper-logos/kr/newsis.png",
+      "logoExplainer": "Newsis brand mark from the South Korean news agency's official site.",
+      "licenceNote": "Newsis brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
+      "sources": ["https://www.newsis.com","https://en.wikipedia.org/wiki/Newsis"]
     }
   ],
   "KW": [
@@ -2445,7 +2529,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "pk-ppi",
       "countryCode": "PK",
       "name": "Pakistan Press International",
@@ -2457,7 +2540,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Private Pakistani national news agency; syndicates alongside the state APP",
       "readership": {"metric":"Major private Pakistani national wire","source":"PPI / Wikipedia"},
-      "sources": ["https://en.wikipedia.org/wiki/Pakistan_Press_International"],
+      "logo": "newspaper-logos/pk/ppi.png",
+      "logoExplainer": "White serif 'PPI' on navy-striped field framed by navy bars — Pakistan Press International brand mark.",
+      "licenceNote": "Pakistan Press International brand mark trademark bundled from the agency's published brand mark (PPI) for educational reference in Learn mode.",
+
+      "sources": ["https://en.wikipedia.org/wiki/Pakistan_Press_International"]
     }
   ],
   "PL": [
@@ -2623,7 +2710,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "ro-mediafax",
       "countryCode": "RO",
       "name": "Mediafax",
@@ -2634,13 +2720,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Private Romanian national news agency; text and multimedia wire",
       "readership": {"metric":"Major private Romanian national wire","source":"Mediafax / Wikipedia"},
-      "sources": ["https://www.mediafax.ro","https://en.wikipedia.org/wiki/Mediafax"],
+      "logo": "newspaper-logos/ro/mediafax.png",
+      "logoExplainer": "Mediafax brand mark from the Romanian national wire's official site.",
+      "licenceNote": "Mediafax brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
+      "sources": ["https://www.mediafax.ro","https://en.wikipedia.org/wiki/Mediafax"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "ro-rador",
       "countryCode": "RO",
       "name": "Rador",
@@ -2652,7 +2741,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "public",
       "editorialStance": "Public radio news agency of Radio Romania; syndicates monitored and original wire copy to media clients",
       "readership": {"metric":"Public Romanian national radio news agency","source":"Rador / Radio Romania"},
-      "sources": ["https://www.rador.ro","https://en.wikipedia.org/wiki/Romanian_Radio_Broadcasting_Company"],
+      "logo": "newspaper-logos/ro/rador.jpg",
+      "logoExplainer": "RADOR (Radio România news agency) brand mark from the agency's official site.",
+      "licenceNote": "RADOR brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
+      "sources": ["https://www.rador.ro","https://en.wikipedia.org/wiki/Romanian_Radio_Broadcasting_Company"]
     }
   ],
   "RS": [
@@ -2704,7 +2797,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "ru-interfax",
       "countryCode": "RU",
       "name": "Interfax",
@@ -2716,13 +2808,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Major private Russian national and international news agency; text and financial wires",
       "readership": {"metric":"One of Russia's three largest national news agencies","source":"Interfax / Wikipedia"},
-      "sources": ["https://www.interfax.ru","https://en.wikipedia.org/wiki/Interfax"],
+      "logo": "newspaper-logos/ru/interfax.png",
+      "logoExplainer": "Interfax brand mark from the Russian national wire's official site.",
+      "licenceNote": "Interfax brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
+      "sources": ["https://www.interfax.ru","https://en.wikipedia.org/wiki/Interfax"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "ru-rossiya-segodnya",
       "countryCode": "RU",
       "name": "Rossiya Segodnya",
@@ -2736,7 +2831,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "state",
       "editorialStance": "State international news agency group (includes RIA Novosti brand); syndicates multimedia news",
       "readership": {"metric":"One of Russia's three largest national news agencies","source":"Rossiya Segodnya / Wikipedia"},
-      "sources": ["https://rossiyasegodnya.com","https://en.wikipedia.org/wiki/Rossiya_Segodnya"],
+      "logo": "newspaper-logos/ru/rossiya-segodnya.svg",
+      "logoExplainer": "Navy Cyrillic 'Россия сегодня' wordmark with red accent — Rossiya Segodnya official brand SVG.",
+      "licenceNote": "Rossiya Segodnya brand mark trademark bundled from the agency's official site brand assets (rossiyasegodnya.com) for educational reference in Learn mode.",
+
+      "sources": ["https://rossiyasegodnya.com","https://en.wikipedia.org/wiki/Rossiya_Segodnya"]
     }
   ],
   "RW": [
@@ -2926,7 +3025,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Daily information agency service",
       "format": "Daily information agency (agenzia di informazione quotidiana)",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
+      "noImageReason": "Wikimedia Commons (no SMNA emblem), San Marino RTV article (only RTV logos), agency registration notice (no brand mark), official SMNA site not found — harvested RTV mark rejected as wrong organisation; listed with no image rather than an invented or misattributed logo.",
       "id": "sm-smna",
       "countryCode": "SM",
       "name": "San Marino News Agency",
@@ -3217,7 +3316,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "tr-dha",
       "countryCode": "TR",
       "name": "Demirören News Agency",
@@ -3229,13 +3327,16 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Major private Turkish national news agency; text, photo and video syndication",
       "readership": {"metric":"Major private Turkish national wire","source":"DHA / Wikipedia"},
-      "sources": ["https://www.dha.com.tr","https://en.wikipedia.org/wiki/Demir%C3%B6ren_News_Agency"],
+      "logo": "newspaper-logos/tr/dha.png",
+      "logoExplainer": "DHA (Demirören Haber Ajansı) brand mark from the agency's official site.",
+      "licenceNote": "DHA brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
+      "sources": ["https://www.dha.com.tr","https://en.wikipedia.org/wiki/Demir%C3%B6ren_News_Agency"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "tr-iha",
       "countryCode": "TR",
       "name": "İhlas News Agency",
@@ -3247,7 +3348,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Major private Turkish national news agency; video-led multimedia wire",
       "readership": {"metric":"Major private Turkish national wire","source":"İHA / Wikipedia"},
-      "sources": ["https://www.iha.com.tr","https://en.wikipedia.org/wiki/%C4%B0hlas_News_Agency"],
+      "logo": "newspaper-logos/tr/iha.svg",
+      "logoExplainer": "İHA (İhlas Haber Ajansı) wordmark from the agency's official site.",
+      "licenceNote": "İHA brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
+      "sources": ["https://www.iha.com.tr","https://en.wikipedia.org/wiki/%C4%B0hlas_News_Agency"]
     }
   ],
   "UA": [
@@ -3298,7 +3403,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "ua-unian",
       "countryCode": "UA",
       "name": "UNIAN",
@@ -3310,13 +3414,17 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Major private Ukrainian national news agency; text and multimedia syndication",
       "readership": {"metric":"Major private Ukrainian national wire","source":"UNIAN / Wikipedia"},
-      "sources": ["https://www.unian.info","https://en.wikipedia.org/wiki/UNIAN"],
+      "logo": "newspaper-logos/ua/unian.png",
+      "logoExplainer": "Compressed charcoal 'UNIAN' wordmark with mic/broadcast mark over the I — Ukrainian Independent Information Agency brand.",
+      "licenceNote": "UNIAN brand mark trademark bundled from the agency's official site schema brand asset (unian.info) for educational reference in Learn mode.",
+
+      "sources": ["https://www.unian.info","https://en.wikipedia.org/wiki/UNIAN"]
     },
     {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
+      "noImageReason": "Wikimedia Commons (no file), ukranews.com (HTTP 403 from this environment), Wayback Machine (503), Wikipedia (no page image), Clearbit (unreachable) — no freely-citable authentic emblem confidently sourced; listed with no image rather than an invented logo.",
       "id": "ua-ukrainian-news",
       "countryCode": "UA",
       "name": "Ukrainian News Agency",
@@ -3373,7 +3481,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Continuous 24/7 national newswire",
       "format": "National news agency wire & multimedia service",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "No freely-citable authentic emblem confidently sourced yet from Wikimedia Commons, the agency's official site, or common brand CDNs — listed with no image rather than an invented logo.",
       "id": "us-upi",
       "countryCode": "US",
       "name": "United Press International",
@@ -3385,7 +3492,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Historic US national and international news agency; continues as a commercial wire alongside AP",
       "readership": {"metric":"US national news agency wire","source":"UPI / Wikipedia"},
-      "sources": ["https://www.upi.com","https://en.wikipedia.org/wiki/United_Press_International"],
+      "logo": "newspaper-logos/us/upi.svg",
+      "logoExplainer": "United Press International wordmark SVG — UPI national wire brand mark.",
+      "licenceNote": "United Press International brand mark trademark bundled from the agency's published brand mark / Wikimedia-sourced UPI logo for educational reference in Learn mode.",
+
+      "sources": ["https://www.upi.com","https://en.wikipedia.org/wiki/United_Press_International"]
     }
   ],
   "UZ": [
