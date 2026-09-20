@@ -14936,7 +14936,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ultima Media Group Profile 2023"
       },
       "revenueModel": "Print sales, event sponsorships, and advertising partnerships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mg/les-nouvelles.png",
+      "logoExplainer": "White stylised 'N' with a gold triangle over 'NEWSMADA' and gold tagline 'INFORMER - DIVERTIR - IMPACTER' on a dark teal field — Newsmada / Les Nouvelles masthead.",
+      "licenceNote": "Newsmada trademark bundled from the publisher's official site brand assets (newsmada.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.newsmada.com"
       ]
@@ -15077,7 +15080,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Association of North Macedonia 2023"
       },
       "revenueModel": "Print copy sales, classified ads, and digital banners",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mk/vecer.svg",
+      "logoExplainer": "Bold black Cyrillic 'Вечер.' wordmark — Večer North Macedonia masthead.",
+      "licenceNote": "Večer trademark bundled from the publisher's official site brand assets (vecer.mk); white fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
+
       "sources": [
         "https://vecer.mk",
         "https://en.wikipedia.org/wiki/Ve%C4%8Der"
@@ -15613,7 +15619,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sahara Media Corporate Analytics 2023"
       },
       "revenueModel": "Commercial advertising, documentary production, and regional broadcast partnerships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mr/sahara-medias.png",
+      "logoExplainer": "Purple-and-gold Arabic wordmark over 'SAHARA MEDIA' beside a gold wireframe globe — Sahara Medias masthead.",
+      "licenceNote": "Sahara Medias trademark bundled from the publisher's official site brand assets (saharamedias.net) for educational reference in Learn mode.",
+
       "sources": [
         "https://saharamedias.net",
         "https://fr.saharamedias.net"
@@ -16986,7 +16995,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "La Prensa Digital Analytics 2023"
       },
       "revenueModel": "Digital paywall subscriptions, reader donations, and international press support grants",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ni/la-prensa.svg",
+      "logoExplainer": "Bold black serif 'LP' monogram — La Prensa Nicaragua masthead mark.",
+      "licenceNote": "La Prensa trademark bundled from the publisher's official site brand assets (laprensani.com); white fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
+
       "sources": [
         "https://www.laprensani.com",
         "https://es.wikipedia.org/wiki/La_Prensa_(Nicaragua)"

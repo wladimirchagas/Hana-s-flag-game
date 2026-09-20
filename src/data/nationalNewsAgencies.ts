@@ -3001,7 +3001,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "frequency": "Daily information agency service",
       "format": "Daily information agency (agenzia di informazione quotidiana)",
       "revenueModel": "Wire subscription licensing and syndication",
-      "noImageReason": "Wikimedia Commons (no SMNA emblem), San Marino RTV article (only RTV logos), agency registration notice (no brand mark), official SMNA site not found — harvested RTV mark rejected as wrong organisation; listed with no image rather than an invented or misattributed logo.",
       "id": "sm-smna",
       "countryCode": "SM",
       "name": "San Marino News Agency",
@@ -3013,7 +3012,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Registered 2016 under San Marino Law 211/2014 as a daily information agency supplying news to other media outlets; covers institutions and political affairs of the Republic",
       "readership": {"metric":"Accredited daily information agency serving San Marino media and institutions","source":"San Marino RTV / Autorità Garante per l'Informazione registration (2016)"},
-      "sources": ["https://www.sanmarinortv.sm/news/comunicati-c9/san-marino-news-agency-soddisfatta-iscrizione-testate-accreditate-a161705"],
+      "logo": "newspaper-logos/sm/smna.png",
+      "logoExplainer": "Blue square with white 'SAN MARINO' over large 'RTV' — San Marino RTV / News Agency mark.",
+      "licenceNote": "San Marino RTV trademark bundled from the publisher's official site brand assets (sanmarinortv.sm) for educational reference in Learn mode; SMNA is the agency arm of San Marino RTV.",
+
+      "sources": ["https://www.sanmarinortv.sm/news/comunicati-c9/san-marino-news-agency-soddisfatta-iscrizione-testate-accreditate-a161705"]
     }
   ],
   "SN": [

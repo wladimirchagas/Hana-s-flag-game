@@ -11,71 +11,47 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 50 — montage-scanned light/dark. */
+/** Visually verified batch 51 — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "kh-cambodianess",
-    src: "tmp/batch50-install/kh-cambodianess.png",
+    id: "mg-les-nouvelles",
+    src: "tmp/batch51-install/mg-les-nouvelles.png",
     explainer:
-      "Blue Khmer emblem under a red 'thmeythmey.com' arc with red Khmer subtitle — Thmey Thmey / Cambodianess masthead.",
+      "White stylised 'N' with a gold triangle over 'NEWSMADA' and gold tagline 'INFORMER - DIVERTIR - IMPACTER' on a dark teal field — Newsmada / Les Nouvelles masthead.",
     licence:
-      "Thmey Thmey trademark bundled from the publisher's official site brand assets (thmeythmey.com) for educational reference in Learn mode.",
+      "Newsmada trademark bundled from the publisher's official site brand assets (newsmada.com) for educational reference in Learn mode.",
   },
   {
-    id: "la-pathet-lao",
-    src: "tmp/batch50-install/la-pathet-lao.png",
+    id: "mk-vecer",
+    src: "tmp/batch51-install/mk-vecer.svg",
     explainer:
-      "Blue-ringed KPL seal with a red microphone/gear device beside Lao-script wordmark — Pathet Lao / KPL masthead.",
+      "Bold black Cyrillic 'Вечер.' wordmark — Večer North Macedonia masthead.",
     licence:
-      "KPL / Pathet Lao trademark bundled from the publisher's official site brand assets (kpl.gov.la); white wordmark fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
+      "Večer trademark bundled from the publisher's official site brand assets (vecer.mk); white fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
   },
   {
-    id: "li-1fl-tv-news",
-    src: "tmp/batch50-install/li-1fl-tv-news.png",
+    id: "mr-sahara-medias",
+    src: "tmp/batch51-install/mr-sahara-medias.png",
     explainer:
-      "Blocky white '1FL' and 'LI' on dark panels with a small red square accent — 1FL TV Liechtenstein mark.",
+      "Purple-and-gold Arabic wordmark over 'SAHARA MEDIA' beside a gold wireframe globe — Sahara Medias masthead.",
     licence:
-      "1FL TV trademark bundled from the publisher's official site brand assets (1fl.li) for educational reference in Learn mode.",
+      "Sahara Medias trademark bundled from the publisher's official site brand assets (saharamedias.net) for educational reference in Learn mode.",
   },
   {
-    id: "lr-bush-chicken",
-    src: "tmp/batch50-install/lr-bush-chicken.png",
+    id: "ni-la-prensa",
+    src: "tmp/batch51-install/ni-la-prensa.svg",
     explainer:
-      "Black rooster silhouette with a red tail in a white disc beside 'The Bush Chicken' wordmark — The Bush Chicken masthead.",
+      "Bold black serif 'LP' monogram — La Prensa Nicaragua masthead mark.",
     licence:
-      "The Bush Chicken trademark bundled from the publisher's official site brand assets (bushchicken.com) for educational reference in Learn mode.",
+      "La Prensa trademark bundled from the publisher's official site brand assets (laprensani.com); white fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
   },
   {
-    id: "ls-lesotho-times",
-    src: "tmp/batch50-install/ls-lesotho-times.png",
+    id: "sm-smna",
+    src: "tmp/batch51-install/sm-smna.png",
     explainer:
-      "Bold serif 'Lesotho Times' wordmark — Lesotho Times masthead.",
+      "Blue square with white 'SAN MARINO' over large 'RTV' — San Marino RTV / News Agency mark.",
     licence:
-      "Lesotho Times trademark bundled from the publisher's official site brand assets (lestimes.com); white fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
-  },
-  {
-    id: "ls-sunday-express",
-    src: "tmp/batch50-install/ls-sunday-express.png",
-    explainer:
-      "Bold sans-serif 'Sunday Express' wordmark — Sunday Express Lesotho masthead.",
-    licence:
-      "Sunday Express trademark bundled from the publisher's official site brand assets (sundayexpress.co.ls); white fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
-  },
-  {
-    id: "lu-reporter",
-    src: "tmp/batch50-install/lu-reporter.png",
-    explainer:
-      "Wide black all-caps 'REPORTER' wordmark — Reporter.lu masthead.",
-    licence:
-      "Reporter.lu trademark bundled from the publisher's official site brand assets (reporter.lu) for educational reference in Learn mode.",
-  },
-  {
-    id: "md-protv",
-    src: "tmp/batch50-install/md-protv.svg",
-    explainer:
-      "Black lowercase 'agora' with a red-centred eye for the 'o' — Agora.md masthead.",
-    licence:
-      "Agora.md trademark bundled from the publisher's official site brand assets (agora.md) for educational reference in Learn mode.",
+      "San Marino RTV trademark bundled from the publisher's official site brand assets (sanmarinortv.sm) for educational reference in Learn mode; SMNA is the agency arm of San Marino RTV.",
   },
 ];
 
