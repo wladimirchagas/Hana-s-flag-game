@@ -11,23 +11,63 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 36 — newspaper mastheads, montage-scanned. */
+/** Visually verified batch 37 — Pacific/Caribbean papers + AMAP agency, montage-scanned. */
 const MANIFEST = [
   {
-    id: "tt-trinidad-express",
-    src: "tmp/batch36-manual/tt-trinidad-express.png",
+    id: "vu-daily-post",
+    src: "tmp/batch37-manual/vu-daily-post.jpg",
     explainer:
-      "White italic 'Trinidad Express Newspapers' beside a white X flanked by red shards — Trinidadian daily masthead.",
+      "Tam-tam drum and boar's tusk with sound waves beside teal 'DAILY' and black 'POST' — Vanuatu Daily Post masthead.",
     licence:
-      "Trinidad Express Newspapers masthead trademark bundled from the publisher's official site brand assets (trinidadexpress.com) for educational reference in Learn mode.",
+      "Vanuatu Daily Post masthead trademark bundled from the publisher's official site brand assets (dailypost.vu) for educational reference in Learn mode.",
   },
   {
-    id: "vc-searchlight",
-    src: "tmp/batch36-manual/vc-searchlight.jpg",
+    id: "ws-samoa-observer",
+    src: "tmp/batch38-commons/Logo_of_Samoa_Observer.svg",
     explainer:
-      "Blue 'SEARCHLIGHT' with a compass-star eye icon and tagline 'Journalism you can trust' — Vincentian weekly masthead.",
+      "Blue 'SAMOA' and red 'OBSERVER' wordmark in a clean sans-serif — Samoa Observer masthead from Wikimedia Commons.",
     licence:
-      "Searchlight masthead trademark bundled from the publisher's official site brand assets (searchlight.vc) for educational reference in Learn mode.",
+      "Samoa Observer masthead from Wikimedia Commons File:Logo of Samoa Observer.svg, bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "sb-solomon-times",
+    src: "tmp/batch38-manual/sb-solomon-times.png",
+    explainer:
+      "Blackletter 'Solomon Times Online' wordmark on white — Solomon Islands digital newspaper masthead.",
+    licence:
+      "Solomon Times Online masthead trademark bundled from the publisher's official site brand assets (solomontimes.com) for educational reference in Learn mode.",
+  },
+  {
+    id: "sr-de-ware-tijd",
+    src: "tmp/batch38-commons/Logo_dwt_bl.png",
+    explainer:
+      "Dark calligraphic 'de Ware Tijd' script wordmark — Surinamese daily masthead from Wikimedia Commons.",
+    licence:
+      "de Ware Tijd masthead from Wikimedia Commons File:Logo dwt bl.png, bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "tt-newsday",
+    src: "tmp/batch38-commons/Newsday_Trinidad_and_Tobago_logo.png",
+    explainer:
+      "White 'TRINIDAD and TOBAGO' over bold serif 'NEWSDAY' on black — Trinidad and Tobago Newsday masthead.",
+    licence:
+      "Newsday Trinidad and Tobago masthead from Wikimedia Commons File:Newsday Trinidad and Tobago logo.png, bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "ws-talamua-media",
+    src: "tmp/batch38-manual/ws-talamua.jpg",
+    explainer:
+      "White 'TALAMUA' on charcoal over white 'ONLINE NEWS' on red — Talamua Media digital masthead.",
+    licence:
+      "Talamua Media masthead trademark bundled from the publisher's official site brand assets (talamua.com) for educational reference in Learn mode.",
+  },
+  {
+    id: "ml-amap",
+    src: "tmp/batch38-manual/ml-amap.webp",
+    explainer:
+      "Yellow/blue AMAP globe on a carved stool beside 'AGENCE MALIENNE DE PRESSE' and the Malian coat of arms.",
+    licence:
+      "AMAP (Agence Malienne de Presse) logo trademark bundled from the agency's official site brand assets (amap.ml) for educational reference in Learn mode.",
   },
 ];
 

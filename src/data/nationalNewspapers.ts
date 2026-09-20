@@ -39,7 +39,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ad/diari-d-andorra.png",
       "logoExplainer": "Blue sans 'Diari d'Andorra' wordmark with a yellow triangular accent on the apostrophe — official masthead from diariandorra.ad.",
       "licenceNote": "Diari d'Andorra masthead from the publisher's official site brand assets; trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.diariandorra.ad",
         "https://en.wikipedia.org/wiki/Diari_d%27Andorra"
@@ -318,7 +317,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/af/tolo-news.jpg",
       "logoExplainer": "White rounded 'TOLO' wordmark on an orange–red field with a Dari/Pashto 'فارسی | پښتو' strap — TOLO News masthead.",
       "licenceNote": "TOLOnews خبرهای تازه.jpg from Wikimedia Commons (Wikidata P154); brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://tolonews.com",
         "https://en.wikipedia.org/wiki/TOLOnews"
@@ -608,7 +606,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/al/gazeta-shqiptare.svg",
       "logoExplainer": "Black serif all-caps 'GAZETA SHQIPTARE' masthead — Albanian daily newspaper wordmark.",
       "licenceNote": "Gazeta Shqiptare.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.balkanweb.com",
         "https://en.wikipedia.org/wiki/Gazeta_Shqiptare"
@@ -911,7 +908,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ao/novo-jornal.svg",
       "logoExplainer": "White lowercase 'novo jornal' sans-serif wordmark — Angolan independent daily masthead.",
       "licenceNote": "Novo Jornal masthead trademark bundled from the publisher's official site brand assets (novojornal.co.ao) for educational reference in Learn mode.",
-
       "sources": [
         "https://novojornal.co.ao",
         "https://pt.wikipedia.org/wiki/Novo_Jornal"
@@ -967,7 +963,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ao/angonoticias.jpg",
       "logoExplainer": "White slab-serif 'ANGO / NOTÍCIAS' on an orange square — Angolan digital news masthead.",
       "licenceNote": "AngoNotícias masthead trademark bundled from the publisher's official site brand assets (angonoticias.com) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.angonoticias.com"
       ]
@@ -1477,7 +1472,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ba/dnevni-avaz.png",
       "logoExplainer": "Black serif 'Dnevni avaz' wordmark with the paper's heraldic dragon emblem at left — masthead from avaz.ba (fill adapted from the site's white SVG for light UI).",
       "licenceNote": "Dnevni avaz masthead from the publisher's official site (avaz.ba/avaz.svg); brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://avaz.ba",
         "https://en.wikipedia.org/wiki/Dnevni_avaz"
@@ -2108,7 +2102,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bg/24-chasa.svg",
       "logoExplainer": "Black '24 часа' wordmark with italic Cyrillic 'часа' and a thick underline — Bulgarian daily 24 Chasa masthead.",
       "licenceNote": "Logo 24 Tschasa.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.24chasa.bg",
         "https://en.wikipedia.org/wiki/24_Chasa"
@@ -2219,7 +2212,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bg/mediapool.svg",
       "logoExplainer": "White 'MEDIAPOOL' wordmark with grey '.BG' suffix and a small square mark on a black bar — Bulgarian digital news outlet.",
       "licenceNote": "Mediapool masthead trademark bundled from the publisher's official site brand assets (mediapool.bg/assets/images/logo-simple.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.mediapool.bg"
       ]
@@ -2443,7 +2435,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bi/jimbere.png",
       "logoExplainer": "Two-tone slab-serif 'Jimbere' wordmark (cyan 'Jim' + orange 'bere') — Jimbere Magazine masthead.",
       "licenceNote": "Jimbere Magazine logo.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.jimbere-mag.org"
       ]
@@ -2551,7 +2542,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bj/le-matinal.png",
       "logoExplainer": "Red 'LE MATINAL' on black with vertical 'QUOTIDIEN BÉNINOIS' and slogan 'Le défi d'une génération' — Beninese daily masthead.",
       "licenceNote": "Le Matinal masthead trademark bundled from the publisher's official site brand assets (lematinal.bj) for educational reference in Learn mode.",
-
       "sources": [
         "https://lespharaons.com",
         "https://fr.wikipedia.org/wiki/Le_Matinal"
@@ -2607,7 +2597,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bj/la-nouvelle-tribune.webp",
       "logoExplainer": "Deep-red serif 'La Nouvelle Tribune' wordmark beside a red globe grid icon — masthead from lanouvelletribune.info.",
       "licenceNote": "La Nouvelle Tribune masthead from the publisher's official site brand assets; trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://lanouvelletribune.info",
         "https://fr.wikipedia.org/wiki/La_Nouvelle_Tribune_(B%C3%A9nin)"
@@ -2635,7 +2624,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bj/banouto.png",
       "logoExplainer": "Brush-stroke red 'BANOUTO' wordmark on a black bar — Beninese digital news masthead.",
       "licenceNote": "Banouto masthead trademark bundled from the publisher's official site brand assets (banouto.bj/logo-bnt.png) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.banouto.bj"
       ]
@@ -2775,7 +2763,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bo/el-deber.png",
       "logoExplainer": "Green lowercase 'eldeber' wordmark with an orange period — El Deber (Bolivia) masthead.",
       "licenceNote": "EL DEBER PERD BOL.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://eldeber.com.bo",
         "https://en.wikipedia.org/wiki/El_Deber"
@@ -2887,7 +2874,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bo/el-diario.jpg",
       "logoExplainer": "Blue 'EL DIARIO' masthead with the Bolivian tricolour between the words and the tagline 'Decano de la Prensa Nacional' — La Paz daily.",
       "licenceNote": "El Diario logo.jpg from Wikimedia Commons (PD-textlogo; Newspaper logos of Bolivia); brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.eldiario.net",
         "https://en.wikipedia.org/wiki/El_Diario_(La_Paz)"
@@ -3269,7 +3255,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bt/bhutan-today.png",
       "logoExplainer": "Black serif 'BHUTAN TODAY' flanking a circular Bhutanese emblem under the tagline 'THE NEW PERSPECTIVE' — English-language Bhutanese daily masthead.",
       "licenceNote": "Bhutan Today masthead trademark bundled from the publisher's official site brand assets (bhutantoday.bt) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.bhutantoday.bt"
       ]
@@ -3377,7 +3362,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bw/botswana-guardian.png",
       "logoExplainer": "Red serif 'BOTSWANA GUARDIAN' nameplate with a paired 'THE MIDWEEK SUN' block — Botswana Guardian masthead.",
       "licenceNote": "Botswana Guardian & The Midweek Sun nameplate from English Wikipedia (fair-use / non-free local file); trademark bundled for educational reference in Learn mode with licenceNote.",
-
       "sources": [
         "https://www.botswanaguardian.co.bw"
       ]
@@ -3861,7 +3845,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/cd/le-potentiel.png",
       "logoExplainer": "Red italic 'Le Potentiel' wordmark with a white outline — Congolese (DRC) daily masthead.",
       "licenceNote": "Logo - Le Potentiel.png from French Wikipedia (marque déposée / logo); trademark bundled for educational reference in Learn mode with licenceNote.",
-
       "sources": [
         "https://lepotentiel.cd",
         "https://fr.wikipedia.org/wiki/Le_Potentiel"
@@ -4244,7 +4227,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ch/tages-anzeiger.svg",
       "logoExplainer": "Black Fraktur 'Tages Anzeiger' with a blue-and-white shield between the words — Swiss daily Tages-Anzeiger masthead.",
       "licenceNote": "Logo Tagesanzeiger.svg from German Wikipedia (logo / non-free local file); trademark bundled for educational reference in Learn mode with licenceNote.",
-
       "sources": [
         "https://www.tagesanzeiger.ch",
         "https://en.wikipedia.org/wiki/Tages-Anzeiger"
@@ -4336,7 +4318,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ci/fraternite-matin.png",
       "logoExplainer": "Green 'Fratmat' + orange '.info' wordmark with orange swooshes and the strap 'l'Actualité en continu…' — Fraternité Matin's digital masthead from fratmat.info.",
       "licenceNote": "Fraternité Matin masthead from the publisher's official site brand assets (fratmat.info); trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.fratmat.info",
         "https://en.wikipedia.org/wiki/Fraternité_Matin"
@@ -4753,7 +4734,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/cn/people-s-daily.svg",
       "logoExplainer": "Red calligraphic masthead 人民日报 (Renmin Ribao) in Mao Zedong's brush style — People's Daily logo from Wikimedia Commons.",
       "licenceNote": "People's Daily logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "http://en.people.cn",
         "https://en.wikipedia.org/wiki/People%27s_Daily"
@@ -5150,7 +5130,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/cr/ameliarueda.jpg",
       "logoExplainer": "Cream 'AR' monogram above blue-yellow-green-red stripes and 'AMELIARUEDA.COM' on charcoal — Costa Rican digital news masthead.",
       "licenceNote": "AmeliaRueda.com masthead trademark bundled from the publisher's official site brand assets (ameliarueda.com) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.ameliarueda.com"
       ]
@@ -5208,7 +5187,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/cu/trabajadores.png",
       "logoExplainer": "Black serif all-caps 'TRABAJADORES' wordmark — Cuban workers' daily newspaper masthead.",
       "licenceNote": "Logotipo del periódico Trabajadores.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.trabajadores.cu",
         "https://es.wikipedia.org/wiki/Trabajadores_(peri%C3%B3dico)"
@@ -5630,7 +5608,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/cz/pravo.svg",
       "logoExplainer": "Tall condensed orange-red 'PRÁVO' wordmark — Czech daily Právo masthead (Commons vector of the design in use since the mid-1990s).",
       "licenceNote": "Pravo-logo ca. 1995.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.novinky.cz",
         "https://en.wikipedia.org/wiki/Pr%C3%A1vo"
@@ -5718,7 +5695,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/cz/blesk.svg",
       "logoExplainer": "White italic all-caps 'BLESK' on a solid red rectangle — Czech tabloid Blesk masthead.",
       "licenceNote": "Blesk Logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.blesk.cz",
         "https://en.wikipedia.org/wiki/Blesk_(newspaper)"
@@ -6360,7 +6336,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/do/hoy.png",
       "logoExplainer": "White slab-serif 'Hoy' wordmark on a cyan field — Dominican Republic daily masthead.",
       "licenceNote": "Hoy masthead trademark bundled from the publisher's official site brand assets (imagenes.hoy.com.do/static/img/hoy.png) for educational reference in Learn mode.",
-
       "sources": [
         "https://hoy.com.do",
         "https://es.wikipedia.org/wiki/Hoy_(Rep%C3%BAblica_Dominicana)"
@@ -6670,7 +6645,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ec/primicias.png",
       "logoExplainer": "Black stacked sans 'PRI / MI / CIAS' with a light-blue bar under the C — Primicias Ecuador masthead.",
       "licenceNote": "Logo primicias.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.primicias.ec"
       ]
@@ -6782,7 +6756,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ee/eesti-paevaleht.svg",
       "logoExplainer": "Three red dots beside black 'Eesti' and red 'Päevaleht' — Estonian daily Eesti Päevaleht masthead.",
       "licenceNote": "Eesti Päevaleht logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://epl.delfi.ee",
         "https://en.wikipedia.org/wiki/Eesti_P%C3%A4evaleht"
@@ -7265,7 +7238,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/et/the-reporter.jpg",
       "logoExplainer": "Red 'THE Reporter' serif masthead with a fountain-pen emblem and tagline 'FREE PRESS. FREE SPEECH. FREE SPIRIT.' — Ethiopian English daily.",
       "licenceNote": "The Reporter Ethiopia masthead trademark bundled from the publisher's official site brand assets (thereporterethiopia.com) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.thereporterethiopia.com",
         "https://am.thereporterethiopia.com"
@@ -7909,7 +7881,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ga/gabon-medias-time.png",
       "logoExplainer": "Teal 'GMT' monogram with a clock face in the G above 'GABON MEDIA TIME' on black — Gabonese digital news masthead.",
       "licenceNote": "Gabon Media Time masthead trademark bundled from the publisher's official site brand assets (gabonmediatime.com) for educational reference in Learn mode.",
-
       "sources": [
         "https://gabonmediatime.com"
       ]
@@ -8250,7 +8221,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ge/civil-ge.png",
       "logoExplainer": "Red concentric-circle 'C' mark beside red sans 'Civil Georgia' — Civil.ge masthead from the site's own brand assets.",
       "licenceNote": "Civil.ge masthead from the publisher's official site brand assets (civil.ge); trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://civil.ge",
         "https://en.wikipedia.org/wiki/Civil_Georgia"
@@ -9035,7 +9005,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/gr/efimerida-ton-syntakton.svg",
       "logoExplainer": "Red triple pen-nib mark beside black 'Η ΕΦΗΜΕΡΙΔΑ' over a red bar 'ΤΩΝ ΣΥΝΤΑΚΤΩΝ' — Efimerida ton Syntakton masthead extracted from efsyn.gr.",
       "licenceNote": "EfSyn site logo SVG from the publisher's official theme assets (efsyn.gr); trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.efsyn.gr",
         "https://en.wikipedia.org/wiki/Efimerida_ton_Syntakton"
@@ -9406,7 +9375,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/gy/demerara-waves.png",
       "logoExplainer": "Lime-and-copper wave crest above lowercase 'demerara waves' with tagline 'RIDING ON THE CREST OF TRUTH' — Guyanese digital news masthead.",
       "licenceNote": "Demerara Waves masthead trademark bundled from the publisher's official site brand assets (demerarawaves.com) for educational reference in Learn mode.",
-
       "sources": [
         "https://demerarawaves.com/",
         "https://guyana.gov.gy/"
@@ -9711,7 +9679,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/hr/novi-list.svg",
       "logoExplainer": "White sans all-caps 'NOVI LIST' on a solid blue bar — Croatian daily Novi list masthead.",
       "licenceNote": "Novi list Logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.novilist.hr",
         "https://en.wikipedia.org/wiki/Novi_list"
@@ -9982,7 +9949,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/hu/telex.png",
       "logoExplainer": "White lowercase serif 'telex' on a navy-to-lime vertical gradient — Hungarian independent news portal wordmark.",
       "licenceNote": "Telex masthead trademark bundled from the publisher's official site brand assets (telex.hu) for educational reference in Learn mode.",
-
       "sources": [
         "https://telex.hu/",
         "https://ipi.media/"
@@ -10733,7 +10699,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ir/tehran-times.svg",
       "logoExplainer": "Red serif 'TEHRANTIMES' wordmark with an 'INTERNATIONAL DAILY' strap — Tehran Times masthead.",
       "licenceNote": "TehranTimes.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.tehrantimes.com",
         "https://en.wikipedia.org/wiki/Tehran_Times"
@@ -10762,7 +10727,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ir/ettelaat.svg",
       "logoExplainer": "Orange Persian calligraphy masthead — Ettela'at newspaper wordmark.",
       "licenceNote": "Ettelaat.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.ettelaat.com",
         "https://en.wikipedia.org/wiki/Ettela%27at"
@@ -10818,7 +10782,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ir/hamshahri.png",
       "logoExplainer": "Dark green geometric Persian calligraphy — Hamshahri newspaper masthead.",
       "licenceNote": "Hamshahri newspaper logo.gif from Wikimedia Commons (rasterised to PNG); brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.hamshahrionline.ir",
         "https://en.wikipedia.org/wiki/Hamshahri"
@@ -12688,7 +12651,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/kz/tengrinews.png",
       "logoExplainer": "Green stylised 'T' mark beside black 'TENGRI NEWS' — Kazakhstan digital news portal masthead.",
       "licenceNote": "Tengrinews-logo.png from Wikimedia Commons (CC0); brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://tengrinews.kz",
         "https://en.wikipedia.org/wiki/Tengrinews.kz"
@@ -12964,7 +12926,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/lb/l-orient-le-jour.svg",
       "logoExplainer": "Black serif 'L'Orient-Le Jour' wordmark with a decorated O — Lebanese French-language daily masthead.",
       "licenceNote": "L'Orient-Le Jour (logo).svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.lorientlejour.com",
         "https://en.wikipedia.org/wiki/L%27Orient-Le_Jour"
@@ -15156,7 +15117,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ml/malijet.png",
       "logoExplainer": "Green 'mali' pill beside a red 'J' and grey 'et', with tagline 'Numéro 1 au Mali' — Malian digital news masthead.",
       "licenceNote": "MaliJet masthead trademark bundled from the publisher's official site brand assets (malijet.com) for educational reference in Learn mode.",
-
       "sources": [
         "https://malijet.com"
       ]
@@ -16533,7 +16493,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/na/die-republikein.png",
       "logoExplainer": "White 'Republikein' wordmark with Afrikaans tagline 'Jou land. Jou mense. Jou nuus.' on black — Namibian Afrikaans daily masthead.",
       "licenceNote": "Die Republikein masthead trademark bundled from the publisher's official site brand assets (republikein.com.na) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.republikein.com.na",
         "https://en.wikipedia.org/wiki/Die_Republikein"
@@ -17364,7 +17323,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/np/the-kathmandu-post.png",
       "logoExplainer": "Black serif 'THE KATHMANDU POST' with a Nepali pagoda emblem above the centre word — English-language Nepali daily masthead.",
       "licenceNote": "The Kathmandu Post masthead trademark bundled from the publisher's official CDN brand assets (kathmandupost.com) for educational reference in Learn mode.",
-
       "sources": [
         "https://kathmandupost.com",
         "https://en.wikipedia.org/wiki/The_Kathmandu_Post"
@@ -20096,7 +20054,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Solomon Times Web Analytics / MASI"
       },
       "revenueModel": "Digital display advertising, sponsored industry features, and syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sb/solomon-times.png",
+      "logoExplainer": "Blackletter 'Solomon Times Online' wordmark on white — Solomon Islands digital newspaper masthead.",
+      "licenceNote": "Solomon Times Online masthead trademark bundled from the publisher's official site brand assets (solomontimes.com) for educational reference in Learn mode.",
       "sources": [
         "https://www.solomontimes.com",
         "https://en.wikipedia.org/wiki/Media_of_the_Solomon_Islands"
@@ -21421,7 +21381,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/so/hiiraan-online.jpg",
       "logoExplainer": "Green palm-tree shield beside dark green 'HIIRAAN ONLINE' — Somali digital news masthead.",
       "licenceNote": "Hiiraan Online masthead trademark bundled from the publisher's official site brand assets (hiiraan.com) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.hiiraan.com",
         "https://en.wikipedia.org/wiki/Hiiraan_Online"
@@ -21530,7 +21489,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/so/caasimada.webp",
       "logoExplainer": "White swirling 'C' mark beside 'Caasimada ONLINE' with a star — Somali digital news masthead.",
       "licenceNote": "Caasimada Online masthead trademark bundled from the publisher's official site brand assets (caasimada.net) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.caasimada.net"
       ]
@@ -21558,7 +21516,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "DWT Media Groep / Surinaamse Journalisten Kring (SJK)"
       },
       "revenueModel": "Print newsstand sales, corporate commercial advertising, and family classified notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sr/de-ware-tijd.png",
+      "logoExplainer": "Dark calligraphic 'de Ware Tijd' script wordmark — Surinamese daily masthead from Wikimedia Commons.",
+      "licenceNote": "de Ware Tijd masthead from Wikimedia Commons File:Logo dwt bl.png, bundled for educational reference in Learn mode.",
       "sources": [
         "https://dwtonline.com",
         "https://en.wikipedia.org/wiki/De_Ware_Tijd"
@@ -22173,7 +22133,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/sz/swaziland-news.png",
       "logoExplainer": "Red-outlined 'SWAZILAND' with a red feather and solid red 'NEWS' on black — Eswatini digital news masthead.",
       "licenceNote": "Swaziland News masthead trademark bundled from the publisher's official site brand assets (swazilandnews.co.za) for educational reference in Learn mode.",
-
       "sources": [
         "https://swazilandnews.co.za"
       ]
@@ -22252,7 +22211,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/td/alwihda-info.png",
       "logoExplainer": "Red Arabic 'الوحدة' above blue Latin 'AL WIHDA' on black — Chadian digital news masthead.",
       "licenceNote": "Alwihda Info masthead trademark bundled from the publisher's official site brand assets (alwihdainfo.com) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.alwihdainfo.com",
         "https://fr.wikipedia.org/wiki/Alwihda_Info"
@@ -22834,7 +22792,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/tl/tatoli.png",
       "logoExplainer": "Green serif 'Tatoli' with a globe replacing the o, Timor-Leste flag-coloured rule, and 'Agência Noticiosa de Timor-Leste' subline.",
       "licenceNote": "Tatoli.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.tatoli.tl"
       ]
@@ -23416,7 +23373,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/tt/trinidad-express.png",
       "logoExplainer": "White italic 'Trinidad Express Newspapers' beside a white X flanked by red shards — Trinidadian daily masthead.",
       "licenceNote": "Trinidad Express Newspapers masthead trademark bundled from the publisher's official site brand assets (trinidadexpress.com) for educational reference in Learn mode.",
-
       "sources": [
         "https://trinidadexpress.com",
         "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Express"
@@ -23441,7 +23397,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "MFO Media Survey Trinidad & Tobago"
       },
       "revenueModel": "Print sales, commercial display advertisements, and digital banners",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tt/newsday.png",
+      "logoExplainer": "White 'TRINIDAD and TOBAGO' over bold serif 'NEWSDAY' on black — Trinidad and Tobago Newsday masthead.",
+      "licenceNote": "Newsday Trinidad and Tobago masthead from Wikimedia Commons File:Newsday Trinidad and Tobago logo.png, bundled for educational reference in Learn mode.",
       "sources": [
         "https://newsday.co.tt",
         "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Newsday"
@@ -23966,7 +23924,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ug/new-vision.svg",
       "logoExplainer": "Black 'NEW' joined to red 'VISION' in rounded sans-serif — Ugandan daily masthead from newvision.co.ug.",
       "licenceNote": "New Vision masthead trademark bundled from the publisher's official site brand assets (newvision.co.ug) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.newvision.co.ug",
         "https://en.wikipedia.org/wiki/New_Vision_(newspaper)"
@@ -23994,7 +23951,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ug/daily-monitor.svg",
       "logoExplainer": "Black serif all-caps 'MONITOR' wordmark with a barred O — Uganda Daily Monitor masthead.",
       "licenceNote": "Daily Monitor logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.monitor.co.ug",
         "https://en.wikipedia.org/wiki/Daily_Monitor"
@@ -24665,7 +24621,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/vc/searchlight.jpg",
       "logoExplainer": "Blue 'SEARCHLIGHT' with a compass-star eye icon and tagline 'Journalism you can trust' — Vincentian weekly masthead.",
       "licenceNote": "Searchlight masthead trademark bundled from the publisher's official site brand assets (searchlight.vc) for educational reference in Learn mode.",
-
       "sources": [
         "https://searchlight.vc",
         "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
@@ -24829,7 +24784,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ve/el-nacional.svg",
       "logoExplainer": "White serif all-caps 'EL NACIONAL' on a solid blue bar — Venezuelan daily El Nacional masthead.",
       "licenceNote": "El-Nacional-Logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.elnacional.com",
         "https://en.wikipedia.org/wiki/El_Nacional_(Venezuela)"
@@ -25077,7 +25031,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Association of Vanuatu (MAV) / Daily Post Media Kit"
       },
       "revenueModel": "Newsstand retail sales, commercial display ads, and classified notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/vu/daily-post.jpg",
+      "logoExplainer": "Tam-tam drum and boar's tusk with sound waves beside teal 'DAILY' and black 'POST' — Vanuatu Daily Post masthead.",
+      "licenceNote": "Vanuatu Daily Post masthead trademark bundled from the publisher's official site brand assets (dailypost.vu) for educational reference in Learn mode.",
       "sources": [
         "https://www.dailypost.vu",
         "https://en.wikipedia.org/wiki/Vanuatu_Daily_Post"
@@ -25211,7 +25167,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Samoa Observer Media Profile 2023"
       },
       "revenueModel": "Print newsstand sales, digital subscriptions, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ws/samoa-observer.svg",
+      "logoExplainer": "Blue 'SAMOA' and red 'OBSERVER' wordmark in a clean sans-serif — Samoa Observer masthead from Wikimedia Commons.",
+      "licenceNote": "Samoa Observer masthead from Wikimedia Commons File:Logo of Samoa Observer.svg, bundled for educational reference in Learn mode.",
       "sources": [
         "https://www.samoaobserver.ws",
         "https://en.wikipedia.org/wiki/Samoa_Observer"
@@ -25238,7 +25196,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Talamua Media Analytics 2023"
       },
       "revenueModel": "Digital advertising, media consulting, and subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ws/talamua-media.jpg",
+      "logoExplainer": "White 'TALAMUA' on charcoal over white 'ONLINE NEWS' on red — Talamua Media digital masthead.",
+      "licenceNote": "Talamua Media masthead trademark bundled from the publisher's official site brand assets (talamua.com) for educational reference in Learn mode.",
       "sources": [
         "https://talamua.com",
         "https://en.wikipedia.org/wiki/Media_of_Samoa"
@@ -25831,7 +25791,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/zw/new-zimbabwe.png",
       "logoExplainer": "Circular Victoria Falls sunset framed in Zimbabwe flag colours with a magenta 'New Zimbabwe.com' banner — Zimbabwean digital news crest.",
       "licenceNote": "New Zimbabwe masthead trademark bundled from the publisher's official site brand assets (newzimbabwe.com) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.newzimbabwe.com",
         "https://en.wikipedia.org/wiki/NewZimbabwe.com"
