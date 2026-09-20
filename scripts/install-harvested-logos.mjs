@@ -11,23 +11,39 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 25 — montage-scanned. */
+/** Visually verified batch 26 — montage-scanned. */
 const MANIFEST = [
   {
-    id: "ge-civil-ge",
-    src: "tmp/batch25-manual/ge/civil-ge-alt.png",
+    id: "af-tolo-news",
+    src: "tmp/batch26-manual/af/tolo-news.jpg",
     explainer:
-      "Red concentric-circle 'C' mark beside red sans 'Civil Georgia' — Civil.ge masthead from the site's own brand assets.",
+      "White rounded 'TOLO' wordmark on an orange–red field with a Dari/Pashto 'فارسی | پښتو' strap — TOLO News masthead.",
     licence:
-      "Civil.ge masthead from the publisher's official site brand assets (civil.ge); trademark bundled for educational reference in Learn mode.",
+      "TOLOnews خبرهای تازه.jpg from Wikimedia Commons (Wikidata P154); brand mark trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "bw-botswana-guardian",
-    src: "tmp/batch25-manual/bw/botswana-guardian.png",
+    id: "ug-daily-monitor",
+    src: "tmp/logo-harvest/ug/daily-monitor.svg",
     explainer:
-      "Red serif 'BOTSWANA GUARDIAN' nameplate with a paired 'THE MIDWEEK SUN' block — Botswana Guardian masthead.",
+      "Black serif all-caps 'MONITOR' wordmark with a barred O — Uganda Daily Monitor masthead.",
     licence:
-      "Botswana Guardian & The Midweek Sun nameplate from English Wikipedia (fair-use / non-free local file); trademark bundled for educational reference in Learn mode with licenceNote.",
+      "Daily Monitor logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "ve-el-nacional",
+    src: "tmp/logo-harvest/ve/el-nacional.svg",
+    explainer:
+      "White serif all-caps 'EL NACIONAL' on a solid blue bar — Venezuelan daily El Nacional masthead.",
+    licence:
+      "El-Nacional-Logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "gr-efimerida-ton-syntakton",
+    src: "tmp/batch26-manual/gr/efimerida-ton-syntakton.svg",
+    explainer:
+      "Red triple pen-nib mark beside black 'Η ΕΦΗΜΕΡΙΔΑ' over a red bar 'ΤΩΝ ΣΥΝΤΑΚΤΩΝ' — Efimerida ton Syntakton masthead extracted from efsyn.gr.",
+    licence:
+      "EfSyn site logo SVG from the publisher's official theme assets (efsyn.gr); trademark bundled for educational reference in Learn mode.",
   },
 ];
 
@@ -96,7 +112,13 @@ function main() {
     const buf = readFileSync(abs);
     const cc = row.id.slice(0, 2);
     const slug = row.id.slice(3);
-    const cleanExt = row.src.endsWith(".svg") ? ".svg" : row.src.endsWith(".webp") ? ".webp" : ".png";
+    const cleanExt = row.src.endsWith(".svg")
+      ? ".svg"
+      : row.src.endsWith(".webp")
+        ? ".webp"
+        : row.src.endsWith(".jpg") || row.src.endsWith(".jpeg")
+          ? ".jpg"
+          : ".png";
     const destRel = `newspaper-logos/${cc}/${slug}${cleanExt}`;
     const destAbs = resolve(ROOT, "public", destRel);
     mkdirSync(dirname(destAbs), { recursive: true });

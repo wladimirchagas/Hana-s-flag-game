@@ -310,7 +310,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Moby Media Group Impact Review 2023"
       },
       "revenueModel": "Commercial advertising, digital display ads, and international content syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/af/tolo-news.jpg",
+      "logoExplainer": "White rounded 'TOLO' wordmark on an orange–red field with a Dari/Pashto 'فارسی | پښتو' strap — TOLO News masthead.",
+      "licenceNote": "TOLOnews خبرهای تازه.jpg from Wikimedia Commons (Wikidata P154); brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://tolonews.com",
         "https://en.wikipedia.org/wiki/TOLOnews"
@@ -8985,7 +8988,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "EFSYN Cooperative Annual Report 2023"
       },
       "revenueModel": "Reader cooperative subscriptions, print sales, and community advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gr/efimerida-ton-syntakton.svg",
+      "logoExplainer": "Red triple pen-nib mark beside black 'Η ΕΦΗΜΕΡΙΔΑ' over a red bar 'ΤΩΝ ΣΥΝΤΑΚΤΩΝ' — Efimerida ton Syntakton masthead extracted from efsyn.gr.",
+      "licenceNote": "EfSyn site logo SVG from the publisher's official theme assets (efsyn.gr); trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.efsyn.gr",
         "https://en.wikipedia.org/wiki/Efimerida_ton_Syntakton"
@@ -23890,7 +23896,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nation Media Group Annual Report 2023 / GeoPoll Uganda"
       },
       "revenueModel": "Single-copy retail sales, corporate advertising, and digital sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ug/daily-monitor.svg",
+      "logoExplainer": "Black serif all-caps 'MONITOR' wordmark with a barred O — Uganda Daily Monitor masthead.",
+      "licenceNote": "Daily Monitor logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.monitor.co.ug",
         "https://en.wikipedia.org/wiki/Daily_Monitor"
@@ -24719,7 +24728,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Nacional Audience Analytics / WAN-IFRA"
       },
       "revenueModel": "Digital subscriptions, programmatic advertising, and independent donor support",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ve/el-nacional.svg",
+      "logoExplainer": "White serif all-caps 'EL NACIONAL' on a solid blue bar — Venezuelan daily El Nacional masthead.",
+      "licenceNote": "El-Nacional-Logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.elnacional.com",
         "https://en.wikipedia.org/wiki/El_Nacional_(Venezuela)"
