@@ -10654,7 +10654,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al-Mada Cultural Foundation 2023"
       },
       "revenueModel": "Print sales, cultural events, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/iq/al-mada.png",
+      "logoExplainer": "Red interlocking calligraphic emblem over black 'ALMADA PAPER' — Al-Mada (Iraq) masthead.",
+      "licenceNote": "Al-Mada trademark bundled from the publisher's official site brand assets (almadapaper.net) for educational reference in Learn mode.",
+
       "sources": [
         "https://almadapaper.net",
         "https://en.wikipedia.org/wiki/Al-Mada"
@@ -14585,7 +14588,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gemius Audience Moldova 2023"
       },
       "revenueModel": "Digital programmatic advertising and classifieds",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/md/point-md.svg",
+      "logoExplainer": "Bold navy 'Point' with an orange disc for the i-dot — Point.md site wordmark.",
+      "licenceNote": "Point.md trademark bundled from the publisher's official site brand assets (point.md) for educational reference in Learn mode.",
+
       "sources": [
         "https://point.md"
       ]
@@ -15328,7 +15334,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "mm-eleven-media",
       "countryCode": "MM",
       "name": "Eleven Media",
@@ -15344,6 +15349,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Leading Myanmar news brand",
         "source": "https://en.wikipedia.org/wiki/Eleven_Media_Group"
       },
+      "logo": "newspaper-logos/mm/eleven-media.png",
+      "logoExplainer": "White 'ELEVEN' with the first E on a red block under an orange disc — Eleven Media Myanmar mark.",
+      "licenceNote": "Eleven Media trademark bundled from the publisher's official site brand assets (elevenmyanmar.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://elevenmyanmar.com",
         "https://en.wikipedia.org/wiki/Eleven_Media_Group"
@@ -16010,7 +16019,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Times Group Audience Metrics 2023"
       },
       "revenueModel": "Print copy sales, classified ads, and multimedia advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mw/the-daily-times.png",
+      "logoExplainer": "White serif 'THE TIMES' over spaced 'GROUP' — Times Group Malawi masthead used by The Daily Times.",
+      "licenceNote": "Times Group Malawi trademark bundled from the publisher's official site brand assets (times.mw) for educational reference in Learn mode.",
+
       "sources": [
         "https://times.mw",
         "https://en.wikipedia.org/wiki/The_Daily_Times_(Malawi)"
@@ -20012,7 +20024,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al Yamamah Press Establishment 2023"
       },
       "revenueModel": "Print subscriptions, government notices, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sa/al-riyadh.png",
+      "logoExplainer": "Bold outlined Arabic الرياض with a green palm-in-blue cradle emblem — Al Riyadh masthead.",
+      "licenceNote": "Al Riyadh trademark bundled from the publisher's official site brand assets (alriyadh.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.alriyadh.com",
         "https://en.wikipedia.org/wiki/Al_Riyadh_(newspaper)"
@@ -23558,7 +23573,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -23577,6 +23591,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Trinidad and Tobago news website",
         "source": "https://www.cnc3.co.tt"
       },
+      "logo": "newspaper-logos/tt/cnc3.png",
+      "logoExplainer": "White 'CNC3' over a dark-red world map inside a red disc — CNC3 Trinidad site mark.",
+      "licenceNote": "CNC3 trademark bundled from the publisher's official site brand assets (cnc3.co.tt) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.cnc3.co.tt"
       ]
@@ -24104,7 +24122,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Vision Group Annual Report / GeoPoll"
       },
       "revenueModel": "Mass retail newspaper sales, local classified advertisements, and multimedia TV ad spots",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ug/bukedde.png",
+      "logoExplainer": "Blue italic 'Bukedde' inside a thin red rounded frame — Bukedde masthead.",
+      "licenceNote": "Bukedde trademark bundled from the publisher's official site brand assets (bukedde.co.ug) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.bukedde.co.ug",
         "https://en.wikipedia.org/wiki/Bukedde"
@@ -24114,7 +24135,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ug-nile-post",
       "countryCode": "UG",
       "name": "Nile Post",
@@ -24130,6 +24150,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Ugandan news website",
         "source": "https://nilepost.co.ug"
       },
+      "logo": "newspaper-logos/ug/nile-post.png",
+      "logoExplainer": "Red 'NP' over cyan 'NilePost' tile beside black 'NilePost / Accurate News Fast' — NilePost mark.",
+      "licenceNote": "NilePost trademark bundled from the publisher's official site brand assets (nilepost.co.ug) for educational reference in Learn mode.",
+
       "sources": [
         "https://nilepost.co.ug"
       ]
@@ -24755,7 +24779,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Vincentian Publishing Co. 2023"
       },
       "revenueModel": "Print sales, public notices, and corporate advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/vc/the-vincentian.png",
+      "logoExplainer": "Silver blackletter 'Vincentian' under 'The National Newspaper of St. Vincent and the Grenadines' with a green island map — The Vincentian masthead.",
+      "licenceNote": "The Vincentian masthead trademark bundled from the publisher's official site brand assets (thevincentian.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://thevincentian.com",
         "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
@@ -24864,7 +24891,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Universal Media Kit / Comscore Venezuela"
       },
       "revenueModel": "Digital subscriptions, programmatic advertising, and commercial classifieds",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ve/el-universal.svg",
+      "logoExplainer": "Heavy black all-caps serif 'EL UNIVERSAL' — El Universal (Venezuela) masthead.",
+      "licenceNote": "El Universal trademark bundled from the publisher's official site brand assets (eluniversal.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.eluniversal.com",
         "https://en.wikipedia.org/wiki/El_Universal_(Caracas)"
@@ -24930,7 +24960,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ve-talcual",
       "countryCode": "VE",
       "name": "Tal Cual",
@@ -24946,6 +24975,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Notable Venezuelan independent daily",
         "source": "https://en.wikipedia.org/wiki/Tal_Cual"
       },
+      "logo": "newspaper-logos/ve/talcual.png",
+      "logoExplainer": "White 'Tal' in a red square beside black 'Cual' with red 'claro y raspao' tagline — TalCual masthead.",
+      "licenceNote": "TalCual trademark bundled from the publisher's official site brand assets (talcualdigital.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://talcualdigital.com",
         "https://en.wikipedia.org/wiki/Tal_Cual"
@@ -25748,7 +25781,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "MISA Zambia Media Awards / Diggers Audience Analytics"
       },
       "revenueModel": "Paid digital subscriptions, print sales, and commercial display advertisements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/zm/diggers-news.png",
+      "logoExplainer": "Vertical red 'News' beside bold 'Diggers!' with a red exclamation and 'Ear to the ground' tagline — News Diggers mark.",
+      "licenceNote": "News Diggers trademark bundled from the publisher's official site brand assets (diggers.news) for educational reference in Learn mode.",
+
       "sources": [
         "https://diggers.news",
         "https://en.wikipedia.org/wiki/Media_of_Zambia"
@@ -25758,7 +25794,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "zm-lusaka-times",
       "countryCode": "ZM",
       "name": "Lusaka Times",
@@ -25774,6 +25809,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Zambian news website",
         "source": "https://www.lusakatimes.com"
       },
+      "logo": "newspaper-logos/zm/lusaka-times.png",
+      "logoExplainer": "White serif 'LT' inside a teal-blue circular badge — Lusaka Times site mark.",
+      "licenceNote": "Lusaka Times trademark bundled from the publisher's official site brand assets (lusakatimes.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.lusakatimes.com"
       ]
