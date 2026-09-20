@@ -11,63 +11,31 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 18 — Commons / en.wikipedia fair-use / official sites. */
+/** Visually verified batch 19 — en.wikipedia fair-use mastheads (montage-scanned). */
 const MANIFEST = [
   {
-    id: "be-het-nieuwsblad",
-    src: "tmp/logo-harvest/manual/be/het-nieuwsblad-b18.png",
+    id: "au-courier-mail",
+    src: "tmp/logo-harvest/manual/au/courier-mail-b19-plate.png",
     explainer:
-      "White 'Het Nieuwsblad' serif wordmark on a solid blue bar — the Belgian daily's masthead.",
+      "Blackletter 'The Courier-Mail' with a red Queensland silhouette and 'We're for you' tagline on white.",
     licence:
-      "Het Nieuwsblad Logo.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "The Courier-Mail Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
   },
   {
-    id: "gb-the-scotsman",
-    src: "tmp/logo-harvest/manual/gb/the-scotsman-b18-plate.png",
+    id: "bd-ittefaq",
+    src: "tmp/logo-harvest/manual/bd/ittefaq-b19-plate.png",
     explainer:
-      "Black thistle crest above 'THE SCOTSMAN' caps on a white plate — The Scotsman masthead.",
+      "Bold Bengali 'দৈনিক ইত্তেফাক' masthead with smaller founder attribution — The Daily Ittefaq crest.",
     licence:
-      "The Scotsman logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+      "The Daily Ittefaq Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
   },
   {
-    id: "ie-irish-independent",
-    src: "tmp/logo-harvest/manual/ie/irish-independent-b18.svg",
+    id: "bd-jugantor",
+    src: "tmp/logo-harvest/manual/bd/jugantor-b19-plate.png",
     explainer:
-      "Dark green 'Irish Independent' serif wordmark with a harp mark — Irish Independent masthead.",
+      "Stylised black Bengali 'যুগান্তর' wordmark on white — Daily Jugantor masthead.",
     licence:
-      "Irish Independent Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "ke-daily-nation",
-    src: "tmp/logo-harvest/manual/ke/daily-nation-b18.jpg",
-    explainer:
-      "Black 'NATION' caps on a solid orange bar — Daily Nation / Nation Media Group masthead.",
-    licence:
-      "Nationlogo.jpg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "pk-app",
-    src: "tmp/logo-harvest/manual/pk/app-b18-plate.png",
-    explainer:
-      "Dotted globe over gradient 'APP' beside 'DIGITAL' and 'Associated Press of Pakistan' — APP crest.",
-    licence:
-      "Associated Press of Pakistan Logo.png from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "id-koran-tempo",
-    src: "tmp/logo-harvest/manual/id/koran-tempo-b18.svg",
-    explainer:
-      "Bold red serif 'TEMPO' wordmark — Koran Tempo / Tempo masthead from tempo.co.",
-    licence:
-      "TEMPO brand mark trademark bundled from the publisher's official site brand assets (tempo.co) for educational reference in Learn mode.",
-  },
-  {
-    id: "lc-gis-saint-lucia",
-    src: "tmp/logo-harvest/manual/lc/gis-b18.png",
-    explainer:
-      "Saint Lucia coat of arms (parrots, Tudor rose, fleur-de-lis, torch crest) — the Government Information Service mark on govt.lc.",
-    licence:
-      "Coat of arms of Saint Lucia trademark bundled from the official government site brand asset (govt.lc) for educational reference in Learn mode.",
+      "Jugantor Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
   },
 ];
 
@@ -134,20 +102,15 @@ function main() {
     const abs = resolve(ROOT, row.src);
     if (!existsSync(abs)) throw new Error(`missing source: ${row.src}`);
     const buf = readFileSync(abs);
-    const ext = extname(row.src).toLowerCase() || ".png";
     const cc = row.id.slice(0, 2);
     const slug = row.id.slice(3);
-    // plate files still use png dest
-    const destExt = ext.includes("plate") ? ".png" : ext === ".png" || ext === ".jpg" || ext === ".jpeg" || ext === ".svg" || ext === ".webp" ? ext : ".png";
-    const destRel = `newspaper-logos/${cc}/${slug}${destExt === ".jpeg" ? ".jpg" : destExt}`;
-    // Fix: plate.png files have .png ext after strip - handle *-plate.png
-    const cleanExt = row.src.endsWith("-plate.png") ? ".png" : destExt === ".jpeg" ? ".jpg" : destExt;
-    const destRel2 = `newspaper-logos/${cc}/${slug}${cleanExt}`;
-    const destAbs = resolve(ROOT, "public", destRel2);
+    const cleanExt = row.src.endsWith(".svg") ? ".svg" : row.src.endsWith(".jpg") || row.src.endsWith(".jpeg") ? ".jpg" : ".png";
+    const destRel = `newspaper-logos/${cc}/${slug}${cleanExt}`;
+    const destAbs = resolve(ROOT, "public", destRel);
     mkdirSync(dirname(destAbs), { recursive: true });
     copyFileSync(abs, destAbs);
-    const fields = { logo: destRel2, explainer: row.explainer, licence: row.licence, sha256: sha256(buf) };
-    console.log(`install ${row.id} → ${destRel2} (${buf.length}b)`);
+    const fields = { logo: destRel, explainer: row.explainer, licence: row.licence, sha256: sha256(buf) };
+    console.log(`install ${row.id} → ${destRel} (${buf.length}b)`);
     const beforeP = papers,
       beforeA = agencies;
     try {
