@@ -11,31 +11,23 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 22 — montage-scanned. */
+/** Visually verified batch 23 — montage-scanned. */
 const MANIFEST = [
   {
-    id: "cn-people-s-daily",
-    src: "tmp/batch22-manual/cn/people-s-daily.svg",
+    id: "al-gazeta-shqiptare",
+    src: "tmp/batch23-manual/al/gazeta-shqiptare.svg",
     explainer:
-      "Red calligraphic masthead 人民日报 (Renmin Ribao) in Mao Zedong's brush style — People's Daily logo from Wikimedia Commons.",
+      "Black serif all-caps 'GAZETA SHQIPTARE' masthead — Albanian daily newspaper wordmark.",
     licence:
-      "People's Daily logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "Gazeta Shqiptare.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "ec-primicias",
-    src: "tmp/batch22-manual/ec/primicias.png",
+    id: "bi-jimbere",
+    src: "tmp/batch23-manual/bi/jimbere.png",
     explainer:
-      "Black stacked sans 'PRI / MI / CIAS' with a light-blue bar under the C — Primicias Ecuador masthead.",
+      "Two-tone slab-serif 'Jimbere' wordmark (cyan 'Jim' + orange 'bere') — Jimbere Magazine masthead.",
     licence:
-      "Logo primicias.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "bo-el-deber",
-    src: "tmp/batch22-manual/bo/el-deber.png",
-    explainer:
-      "Green lowercase 'eldeber' wordmark with an orange period — El Deber (Bolivia) masthead.",
-    licence:
-      "EL DEBER PERD BOL.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "Jimbere Magazine logo.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
 ];
 
@@ -104,13 +96,7 @@ function main() {
     const buf = readFileSync(abs);
     const cc = row.id.slice(0, 2);
     const slug = row.id.slice(3);
-    const cleanExt = row.src.endsWith(".svg")
-      ? ".svg"
-      : row.src.endsWith(".webp")
-        ? ".webp"
-        : row.src.endsWith(".jpg") || row.src.endsWith(".jpeg")
-          ? ".jpg"
-          : ".png";
+    const cleanExt = row.src.endsWith(".svg") ? ".svg" : row.src.endsWith(".webp") ? ".webp" : ".png";
     const destRel = `newspaper-logos/${cc}/${slug}${cleanExt}`;
     const destAbs = resolve(ROOT, "public", destRel);
     mkdirSync(dirname(destAbs), { recursive: true });
