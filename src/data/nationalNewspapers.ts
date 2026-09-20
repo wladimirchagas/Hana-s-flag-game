@@ -4371,7 +4371,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ANP (Autorité Nationale de la Presse) Côte d'Ivoire 2023"
       },
       "revenueModel": "Print newsstand copy sales and local commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ci/soir-info.png",
+      "logoExplainer": "Cartoon megaphone with reaction bubbles beside black 'Soir' and red 'Info' — Soir Info masthead.",
+      "licenceNote": "Soir Info masthead trademark bundled from the publisher's official site brand assets (soirinfo.com) for educational reference in Learn mode.",
       "sources": [
         "https://www.linfodrome.com/soir-info",
         "https://fr.wikipedia.org/wiki/Soir_Info"
@@ -22437,7 +22439,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Presidency of the Republic of Togo Communications Bureau"
       },
       "revenueModel": "State governmental budget funding",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tg/republic-of-togo.svg",
+      "logoExplainer": "White stylized Togolese mask beside stacked white 'TO / GO' — Republic of Togo news portal mark.",
+      "licenceNote": "Republic of Togo news portal logo trademark bundled from the publisher's official site brand assets (republicoftogo.com) for educational reference in Learn mode.",
       "sources": [
         "https://www.republicoftogo.com",
         "https://en.wikipedia.org/wiki/Media_of_Togo"
@@ -25599,7 +25603,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Zambia Daily Mail Ltd Annual Report"
       },
       "revenueModel": "State public notices, corporate commercial advertising, and daily retail sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/zm/zambia-daily-mail.jpg",
+      "logoExplainer": "White 'ZAMBIA DAILY MAIL LIMITED' and flying eagle on cyan, with slogan 'Without fear or favour'.",
+      "licenceNote": "Zambia Daily Mail masthead trademark bundled from the publisher's official site brand assets (daily-mail.co.zm) for educational reference in Learn mode.",
       "sources": [
         "https://www.daily-mail.co.zm",
         "https://en.wikipedia.org/wiki/Zambia_Daily_Mail"
