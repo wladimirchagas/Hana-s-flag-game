@@ -45,6 +45,14 @@ const MANIFEST = [
     licence:
       "AmeliaRueda.com masthead trademark bundled from the publisher's official site brand assets (ameliarueda.com) for educational reference in Learn mode.",
   },
+  {
+    id: "gm-the-point",
+    src: "tmp/batch35-manual/gm-the-point.jpg",
+    explainer:
+      "Red serif 'THE POINT' with a pointing hand bursting through paper beside gothic 'for freedom and Democracy' — Gambian daily masthead.",
+    licence:
+      "The Point masthead trademark bundled from the publisher's official site brand assets (thepoint.gm) for educational reference in Learn mode.",
+  },
 ];
 
 function sha256(buf) {
