@@ -3507,7 +3507,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "by-tut-by-archive",
       "countryCode": "BY",
       "name": "Zerkalo.io (TUT.BY successor)",
@@ -3523,6 +3522,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Principal independent Belarusian news site",
         "source": "https://en.wikipedia.org/wiki/TUT.BY"
       },
+      "logo": "newspaper-logos/by/tut-by-archive.png",
+      "logoExplainer": "Red shield with white 'Z' beside black sans 'ZERKALO' — Zerkalo.io successor mark to TUT.BY.",
+      "licenceNote": "Zerkalo.io wordmark from Wikimedia Commons File:Zerkalo.io.png (fair-use trademark) bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://zerkalo.io",
         "https://en.wikipedia.org/wiki/TUT.BY"
@@ -10842,7 +10845,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Fréttablaðið Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/is/frettablaðið.svg",
+      "logoExplainer": "White serif all-caps 'FRÉTTABLAÐIÐ' on a deep-blue panel with a thin double border — Fréttablaðið masthead.",
+      "licenceNote": "Fréttablaðið masthead from Wikimedia Commons File:Fréttablaðið.svg (fair-use trademark) bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://timarit.is/",
         "https://press.is/"
@@ -11308,7 +11314,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Jordan Press Association 2023"
       },
       "revenueModel": "Print copy sales and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/jo/al-dustour.jpg",
+      "logoExplainer": "Black Arabic calligraphy 'الدستور' over a blue Dome of the Rock outline and red Petra Treasury with founding year ١٩٦٧ — Ad-Dustour masthead.",
+      "licenceNote": "Ad-Dustour masthead from Wikimedia Commons File:الدستور الاردنية.jpg (fair-use trademark) bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.addustour.com",
         "https://en.wikipedia.org/wiki/Addustour"
@@ -17640,11 +17649,14 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "https://en.wikipedia.org/wiki/The_Press"
       },
       "revenueModel": "Subscriptions, print sales, and advertising",
+      "logo": "newspaper-logos/nz/the-press.png",
+      "logoExplainer": "Royal arms (lion and unicorn) over 'DIEU ET MON DROIT' and Latin motto above bold serif 'THE PRESS' — Christchurch The Press masthead.",
+      "licenceNote": "The Press (Christchurch) masthead from Wikimedia Commons File:The Press Christchurch.png (fair-use trademark) bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.thepress.co.nz",
         "https://en.wikipedia.org/wiki/The_Press"
-      ],
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+      ]
     }
   ],
   "OM": [

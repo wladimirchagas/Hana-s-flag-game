@@ -11,31 +11,39 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 41 — Georgia + Iceland mastheads, montage-scanned. */
+/** Visually verified batch 42 — Commons mastheads, montage-scanned. */
 const MANIFEST = [
   {
-    id: "ge-kviris-palitra",
-    src: "tmp/batch41-install/ge-kviris-palitra.png",
+    id: "jo-al-dustour",
+    src: "tmp/batch42-install/jo-al-dustour.jpg",
     explainer:
-      "Blue three-chevron emblem beside Georgian Mkhedruli 'კვირის პალიტრა' on bright yellow — Kviris Palitra masthead.",
+      "Black Arabic calligraphy 'الدستور' over a blue Dome of the Rock outline and red Petra Treasury with founding year ١٩٦٧ — Ad-Dustour masthead.",
     licence:
-      "Kviris Palitra masthead trademark bundled from the publisher's official site brand assets (kvirispalitra.ge) for educational reference in Learn mode.",
+      "Ad-Dustour masthead from Wikimedia Commons File:الدستور الاردنية.jpg (fair-use trademark) bundled for educational reference in Learn mode.",
   },
   {
-    id: "is-visir",
-    src: "tmp/batch41-install/is-visir.svg",
+    id: "is-frettablaðið",
+    src: "tmp/batch42-install/is-frettablaðið.svg",
     explainer:
-      "White italic lowercase 'vísir' with a chevron over the first í on blue — Vísir digital news mark.",
+      "White serif all-caps 'FRÉTTABLAÐIÐ' on a deep-blue panel with a thin double border — Fréttablaðið masthead.",
     licence:
-      "Vísir logo trademark bundled from the publisher's official site brand assets (visir.is) for educational reference in Learn mode.",
+      "Fréttablaðið masthead from Wikimedia Commons File:Fréttablaðið.svg (fair-use trademark) bundled for educational reference in Learn mode.",
   },
   {
-    id: "is-heimildin",
-    src: "tmp/batch41-install/is-heimildin.svg",
+    id: "nz-the-press",
+    src: "tmp/batch42-install/nz-the-press.png",
     explainer:
-      "Black high-contrast serif wordmark 'Heimildin' — Icelandic investigative daily masthead.",
+      "Royal arms (lion and unicorn) over 'DIEU ET MON DROIT' and Latin motto above bold serif 'THE PRESS' — Christchurch The Press masthead.",
     licence:
-      "Heimildin masthead trademark bundled from the publisher's official site brand assets (heimildin.is / cdn.heimildin.is) for educational reference in Learn mode.",
+      "The Press (Christchurch) masthead from Wikimedia Commons File:The Press Christchurch.png (fair-use trademark) bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "by-tut-by-archive",
+    src: "tmp/batch42-install/by-tut-by-archive.png",
+    explainer:
+      "Red shield with white 'Z' beside black sans 'ZERKALO' — Zerkalo.io successor mark to TUT.BY.",
+    licence:
+      "Zerkalo.io wordmark from Wikimedia Commons File:Zerkalo.io.png (fair-use trademark) bundled for educational reference in Learn mode.",
   },
 ];
 
