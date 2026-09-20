@@ -14493,7 +14493,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Weekly newspaper",
       "format": "Print & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "mc-monaco-hebdo",
       "countryCode": "MC",
       "name": "Monaco Hebdo",
@@ -14509,6 +14508,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Principal Monaco weekly",
         "source": "https://www.monaco-hebdo.com"
       },
+      "logo": "newspaper-logos/mc/monaco-hebdo.svg",
+      "logoExplainer": "Black slab-serif 'MONACO' with smaller outlined red 'HEBDO' nested at the lower right — Monaco Hebdo masthead.",
+      "licenceNote": "Monaco Hebdo trademark bundled from the publisher's official site brand assets (monaco-hebdo.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.monaco-hebdo.com"
       ]
@@ -14892,7 +14895,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Midi Madagasikara Media Kit 2023"
       },
       "revenueModel": "Print sales, classifieds, and digital banner advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mg/midi-madagasikara.jpg",
+      "logoExplainer": "Bold lowercase 'midi' in brick-red and 'madagasikara' in black with tagline 'Premier Quotidien National d’Information de Madagascar' — Midi Madagasikara masthead.",
+      "licenceNote": "Midi Madagasikara trademark bundled from the publisher's official site brand assets (midi-madagasikara.mg) for educational reference in Learn mode.",
+
       "sources": [
         "https://midi-madagasikara.mg",
         "https://fr.wikipedia.org/wiki/Midi_Madagasikara"
@@ -15501,7 +15507,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Press Institute of Mongolia / Ikon Audience Metrics 2023"
       },
       "revenueModel": "Digital display advertising, native sponsored content, and data analytics services",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mn/ikon-mn.png",
+      "logoExplainer": "Four-colour square frame mark beside bold dark 'ikon™' wordmark — Ikon.mn masthead.",
+      "licenceNote": "Ikon.mn trademark bundled from the publisher's official site brand assets (ikon.mn) for educational reference in Learn mode.",
+
       "sources": [
         "https://ikon.mn"
       ]
