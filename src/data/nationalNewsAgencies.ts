@@ -746,8 +746,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "readership": {"metric":"Primary news supplier to over 500 radio, television, and print outlets across all 26 provinces of the DRC","source":"ACP Rapport de Gestion et Performance 2023"},
       "annualPublicFunding": {"total":"CDF 4.5 billion (~US$1.65 million) state budget allocation","perCapita":"CDF 45 / person / year (~US$0.016)"},
       "revenueModel": "Direct state budget subsidy and institutional subscriber feeds",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": ["https://acp.cd","https://fr.wikipedia.org/wiki/Agence_congolaise_de_presse"],
+      "logo": "newspaper-logos/cd/acp.jpg",
+      "logoExplainer": "Yellow 'ACP' and 'CONGO' flanking a circular yellow tree emblem on a navy rounded rectangle — Agence Congolaise de Presse wordmark from acpcongo.com.",
+      "licenceNote": "ACP Congo trademark bundled from the agency's official site brand assets (acpcongo.com) for educational reference in Learn mode.",
+
+      "sources": ["https://acp.cd","https://fr.wikipedia.org/wiki/Agence_congolaise_de_presse"]
     }
   ],
   "CF": [
@@ -2434,8 +2437,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Nepal's sole official national news wire agency; founded under the Rastriya Samachar Samiti Act 1962, delivering verified dispatches on federal parliament, provincial governments, mountain disasters, and foreign treaties",
       "readership": {"metric":"Primary wire source feeding over 500 community radio stations, national newspapers, and digital news portals across all 7 provinces","source":"RSS Annual Progress Report 2023"},
       "revenueModel": "Government budgetary grant and wire syndication fees",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": ["https://www.rssnepal.org.np","https://en.wikipedia.org/wiki/Rastriya_Samachar_Samiti"],
+      "logo": "newspaper-logos/np/rss.png",
+      "logoExplainer": "Blue rounded badge with Devanagari 'नेपाल', broadcast arcs and an RSS monogram above a block 'RSS' / 'NEPAL' lockup — Rastriya Samachar Samiti mark.",
+      "licenceNote": "RSS (Rastriya Samachar Samiti) trademark bundled from the agency's official site brand assets (rssnepal.org.np, via Wayback Machine) for educational reference in Learn mode.",
+
+      "sources": ["https://www.rssnepal.org.np","https://en.wikipedia.org/wiki/Rastriya_Samachar_Samiti"]
     }
   ],
   "OM": [
