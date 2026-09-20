@@ -11,79 +11,95 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 16 — official-site logos via browser UA. */
+/** Visually verified batch 17 — official sites, Wayback, Commons (montage-scanned). */
 const MANIFEST = [
   {
-    id: "af-bakhtar",
-    src: "tmp/logo-harvest/manual/af/bakhtar-b16.png",
+    id: "tt-ttt-news",
+    src: "tmp/logo-harvest/manual/tt/ttt-news-b17.png",
     explainer:
-      "Red winged emblem beside light 'BAKHTAR NEWS AGENCY' wordmark on a dark plate — Bakhtar's site masthead.",
+      "Red stylised 'TTT' on a white play-triangle — Trinidad and Tobago Television crest from ttt.live.",
     licence:
-      "Bakhtar News Agency brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "TTT brand mark trademark bundled from the broadcaster's official site brand assets (ttt.live) for educational reference in Learn mode.",
   },
   {
-    id: "bi-abp",
-    src: "tmp/logo-harvest/manual/bi/abp-b16.png",
+    id: "er-shabait",
+    src: "tmp/logo-harvest/manual/er/shabait-b17-plate.png",
     explainer:
-      "Circular map-and-tower seal with red 'Agence Burundaise de Presse' and outlined 'ABP' — Burundi ABP crest.",
+      "Gold camel seal beside 'MINISTRY OF INFORMATION / ERITREA' on a dark plate — Shabait (Eritrea MoI) masthead.",
     licence:
-      "Agence Burundaise de Presse brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "Shabait / Ministry of Information Eritrea brand mark trademark bundled from the agency's official site brand assets (shabait.com) for educational reference in Learn mode.",
   },
   {
-    id: "kh-akp",
-    src: "tmp/logo-harvest/manual/kh/akp-b16.png",
+    id: "mz-aim",
+    src: "tmp/logo-harvest/manual/mz/aim-b17-plate.png",
     explainer:
-      "Circular Angkor Wat and guardian-lion emblem with bold 'AKP' — Agence Kampuchea Presse crest.",
+      "Connected pink-red 'AIM' wordmark on white — Agência de Informação de Moçambique crest from aimnews.org.",
     licence:
-      "AKP brand mark trademark bundled from the agency's official site brand assets (akp.gov.kh) for educational reference in Learn mode.",
+      "AIM brand mark trademark bundled from the agency's official site brand assets (aimnews.org) for educational reference in Learn mode.",
   },
   {
-    id: "cv-inforpress",
-    src: "tmp/logo-harvest/manual/cv/inforpress-b16.svg",
+    id: "zm-zanis",
+    src: "tmp/logo-harvest/manual/zm/zanis-b17.jpg",
     explainer:
-      "Blue stacked 'infor/press' wordmark beside a red squared globe — Cape Verde Inforpress crest.",
+      "Circular green/orange ring around bold 'ZANIS' — Zambia News and Information Services crest.",
     licence:
-      "Inforpress brand mark trademark bundled from the agency's official site brand assets (inforpress.cv/logo.svg) for educational reference in Learn mode.",
+      "ZANIS brand mark trademark bundled from the agency's official site brand assets (zanis.gov.zm) for educational reference in Learn mode.",
   },
   {
-    id: "cg-aci",
-    src: "tmp/logo-harvest/manual/cg/aci-b16.png",
+    id: "bd-bss",
+    src: "tmp/logo-harvest/manual/bd/bss-b17.png",
     explainer:
-      "Red circled 'A' beside 'AGENCE CONGOLAISE D'INFORMATION' and the agency motto — ACI crest.",
+      "Circular Bangladesh seal beside green 'BSS' and red 'NEWS' with the English portal tagline — Bangladesh Sangbad Sangstha crest.",
     licence:
-      "ACI brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "BSS brand mark trademark bundled from the agency's official site brand assets (bssnews.net via Wayback Machine snapshot of the live logo file) for educational reference in Learn mode.",
   },
   {
-    id: "gq-guinea-ecuatorial-press",
-    src: "tmp/logo-harvest/manual/gq/guinea-ecuatorial-press-b16.png",
+    id: "ph-pna",
+    src: "tmp/logo-harvest/manual/ph/pna-b17.svg",
     explainer:
-      "Equatorial Guinea coat of arms (silk-cotton tree, six stars, 'UNIDAD PAZ JUSTICIA') — the state press site's main mark.",
+      "Blue disc with white stylised 'P' mark — Philippine News Agency crest from Wikimedia Commons.",
     licence:
-      "Guinea Ecuatorial Press brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "Philippine News Agency Logo.svg from Wikimedia Commons; government work / brand mark bundled for educational reference in Learn mode.",
   },
   {
-    id: "kg-kabar",
-    src: "tmp/logo-harvest/manual/kg/kabar-b16.svg",
+    id: "bs-bis",
+    src: "tmp/logo-harvest/manual/bs/bis-b17-plate.png",
     explainer:
-      "Bold navy 'KABAR' wordmark — Kyrgyz National News Agency Kabar crest from its site.",
+      "Bahamas coat of arms beside 'The Government of The Bahamas' on a navy plate — the official bahamas.gov.bs header mark used by Bahamas Information Services.",
     licence:
-      "Kabar brand mark trademark bundled from the agency's official site brand assets (kabar.kg) for educational reference in Learn mode.",
+      "Government of The Bahamas crest trademark bundled from the official government CDN brand asset on bahamas.gov.bs for educational reference in Learn mode.",
   },
   {
-    id: "lv-lsm",
-    src: "tmp/logo-harvest/manual/lv/lsm-b16b.svg",
+    id: "jm-jamaica-observer",
+    src: "tmp/logo-harvest/manual/jm/jamaica-observer-b17.png",
     explainer:
-      "Black 'LSM' bar beside 'Latvijas Sabiedriskais medijs' — Latvian Public Media crest.",
+      "Globe emblem beside stacked black 'JAMAICA' over red 'OBSERVER' — Jamaica Observer masthead from jamaicaobserver.com.",
     licence:
-      "LSM brand mark trademark bundled from the publisher's official site brand assets (lsm.lv) for educational reference in Learn mode.",
+      "Jamaica Observer brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "tg-atop",
-    src: "tmp/logo-harvest/manual/tg/atop-b16.svg",
+    id: "bd-prothom-alo",
+    src: "tmp/logo-harvest/manual/bd/prothom-alo-b17-plate.png",
     explainer:
-      "Green 'atop' wordmark with lined globe 'o' and red accent dot over 'Agence Togolaise de Presse'.",
+      "Orange rising-sun mark over the Bengali 'প্রথম আলো' wordmark on white — Prothom Alo masthead from prothomalo.com.",
     licence:
-      "ATOP brand mark trademark bundled from the agency's official site brand assets (atop.tg) for educational reference in Learn mode.",
+      "Prothom Alo brand mark trademark bundled from the publisher's official site brand assets (palo-bangla.svg) for educational reference in Learn mode.",
+  },
+  {
+    id: "do-diario-libre",
+    src: "tmp/logo-harvest/manual/do/diario-libre-b17.png",
+    explainer:
+      "Green square with white 'Diario Libre' and a yellow news-carrier figure — Diario Libre crest from diariolibre.com.",
+    licence:
+      "Diario Libre brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "es-el-periodico",
+    src: "tmp/logo-harvest/manual/es/el-periodico-b17.png",
+    explainer:
+      "White 'elPeriódico' wordmark on a solid red field — El Periódico de Catalunya masthead from elperiodico.com.",
+    licence:
+      "El Periódico brand mark trademark bundled from the publisher's official site brand assets (elperiodico.com) for educational reference in Learn mode.",
   },
 ];
 
