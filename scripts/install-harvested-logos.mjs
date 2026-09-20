@@ -11,55 +11,95 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 45 — montage-scanned light/dark. */
+/** Visually verified batch 46 — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "kn-skn-observer",
-    src: "tmp/batch45-install/kn-skn-observer.png",
+    id: "bz-san-pedro-sun",
+    src: "tmp/batch46-install/bz-san-pedro-sun.png",
     explainer:
-      "Black 'St KITTS & NEVIS' with two stars beside bold red 'OBSERVER', underlined by green and yellow bars — St. Kitts-Nevis Observer masthead.",
+      "Orange rising sun over a teal open-book glyph above black serif 'The San Pedro Sun' — San Pedro Sun masthead.",
     licence:
-      "The St. Kitts-Nevis Observer masthead trademark bundled from the publisher's official site brand assets (thestkittsnevisobserver.com) for educational reference in Learn mode.",
+      "The San Pedro Sun masthead trademark bundled from the publisher's official site brand assets (sanpedrosun.com) for educational reference in Learn mode.",
   },
   {
-    id: "ua-ukrainian-news",
-    src: "tmp/batch45-install/ua-ukrainian-news.png",
+    id: "jo-al-rai",
+    src: "tmp/batch46-install/jo-al-rai.svg",
     explainer:
-      "Cyan connected lowercase 'un' monogram with an orange dot over the n — Ukrainian News Agency (Українські Новини) brand mark.",
+      "Black Arabic الرأي wordmark over a light-blue silhouette map of Jordan — Al-Rai masthead.",
     licence:
-      "Ukrainian News Agency trademark bundled from the agency's official site brand assets (ukranews.com) for educational reference in Learn mode.",
+      "Al-Rai masthead trademark bundled from the publisher's official site brand assets (alrai.com) for educational reference in Learn mode.",
   },
   {
-    id: "gy-news-room-guyana",
-    src: "tmp/batch45-install/gy-news-room-guyana.png",
+    id: "gh-citinewsroom",
+    src: "tmp/batch46-install/gh-citinewsroom.png",
     explainer:
-      "White stacked 'NEWS' / 'ROOM' inside a thin white frame on a navy square — News Room Guyana site mark.",
+      "Magenta striped 'CNR' over solid 'CITI NEWSROOM' — Citi Newsroom Ghana site mark.",
     licence:
-      "News Room Guyana trademark bundled from the publisher's official site brand assets (newsroom.gy) for educational reference in Learn mode.",
+      "Citi Newsroom trademark bundled from the publisher's official site brand assets (citinewsroom.com) for educational reference in Learn mode.",
   },
   {
-    id: "ly-libya-observer",
-    src: "tmp/batch45-install/ly-libya-observer.png",
+    id: "ma-le360",
+    src: "tmp/batch46-install/ma-le360.svg",
     explainer:
-      "Grey serif 'THE LIBYA' over 'OBSERVER' with the O drawn as a red bullseye/eye mark — The Libya Observer masthead.",
+      "Outlined orange 'le' beside solid orange '360' — le360 Morocco wordmark.",
     licence:
-      "The Libya Observer masthead trademark bundled from the publisher's official site brand assets (libyaobserver.ly) for educational reference in Learn mode.",
+      "le360 trademark bundled from the publisher's official site brand assets (le360.ma) for educational reference in Learn mode.",
   },
   {
-    id: "tn-mosaique-info",
-    src: "tmp/batch45-install/tn-mosaique-info.png",
+    id: "np-kantipur",
+    src: "tmp/batch46-install/np-kantipur.svg",
     explainer:
-      "Red italic 'fm' beside bold Arabic موزاييك with a tapering red swoosh — Mosaique FM / Mosaique Info wordmark.",
+      "Black Devanagari कान्तिपुर beside a pagoda silhouette — Kantipur daily masthead.",
     licence:
-      "Mosaique FM trademark bundled from the publisher's official site brand assets (mosaiquefm.net) for educational reference in Learn mode.",
+      "Kantipur trademark bundled from the publisher's official site brand assets (ekantipur.com) for educational reference in Learn mode.",
   },
   {
-    id: "me-cdm",
-    src: "tmp/batch45-install/me-cdm.svg",
+    id: "pa-panama-america",
+    src: "tmp/batch46-install/pa-panama-america.png",
     explainer:
-      "White boxed 'C|D|M' letter marks in three square cells — Cafe del Montenegro (CdM) site wordmark.",
+      "Blue serif 'Panamá América' with a thin gold underline — Panamá América masthead.",
     licence:
-      "CdM (Cafe del Montenegro) trademark bundled from the publisher's official site brand assets (cdm.me) for educational reference in Learn mode.",
+      "Panamá América masthead trademark bundled from the publisher's official site brand assets (panamaamerica.com.pa) for educational reference in Learn mode.",
+  },
+  {
+    id: "uy-montevideo-portal",
+    src: "tmp/batch46-install/uy-montevideo-portal.svg",
+    explainer:
+      "White arched 'm' mark beside stacked 'Montevideo' / 'Portal' — Montevideo Portal wordmark.",
+    licence:
+      "Montevideo Portal trademark bundled from the publisher's official site brand assets (montevideo.com.uy) for educational reference in Learn mode.",
+  },
+  {
+    id: "uz-kun-uz",
+    src: "tmp/batch46-install/uz-kun-uz.svg",
+    explainer:
+      "Bold blue 'KUN.' beside a blue disc with white 'UZ' — Kun.uz site mark.",
+    licence:
+      "Kun.uz trademark bundled from the publisher's official site brand assets (kun.uz) for educational reference in Learn mode.",
+  },
+  {
+    id: "pe-peru-21",
+    src: "tmp/batch46-install/pe-peru-21.png",
+    explainer:
+      "White serif 'Perú' beside bold yellow '21' — Perú21 masthead.",
+    licence:
+      "Perú21 trademark bundled from the publisher's official site brand assets (peru21.pe) for educational reference in Learn mode.",
+  },
+  {
+    id: "om-omandaily",
+    src: "tmp/batch46-install/om-omandaily.png",
+    explainer:
+      "Black Arabic عمان wordmark over a light-blue silhouette map of Oman — Oman Daily (Jaridat Oman) masthead.",
+    licence:
+      "Oman Daily trademark bundled from the publisher's official site brand assets (omandaily.om) for educational reference in Learn mode.",
+  },
+  {
+    id: "za-sunday-times",
+    src: "tmp/batch46-install/za-sunday-times.svg",
+    explainer:
+      "Blackletter 'Sunday Times' gothic wordmark — South Africa Sunday Times masthead.",
+    licence:
+      "Sunday Times (South Africa) trademark bundled from the publisher's official TimesLIVE brand assets (sundaytimes.timeslive.co.za) for educational reference in Learn mode.",
   },
 ];
 
