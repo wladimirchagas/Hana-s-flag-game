@@ -94,9 +94,10 @@ const MANIFEST = [
   },
   {
     id: "id-antara",
-    src: "tmp/logo-harvest/id/antara.webp",
-    explainer: "Antara brand mark from Indonesia's national news agency site.",
-    licence: L("Antara", "the agency's official site brand assets (antaranews.com)"),
+    src: "tmp/logo-fix/antara.png",
+    explainer:
+      "Maroon stylised Antara emblem beside bold 'ANTARA' with grey tagline 'KANTOR BERITA INDONESIA' — official LKBN Antara masthead (rasterised from ANTARA-id.svg).",
+    licence: L("Antara", "the agency's official site brand assets (static.antaranews.com/assets/img/ANTARA-id.svg)"),
   },
   {
     id: "id-kbr",
@@ -138,10 +139,10 @@ const MANIFEST = [
   },
   {
     id: "ir-tasnim",
-    src: "tmp/logo-harvest/ir/tasnim.jpg",
+    src: "tmp/logo-fix/tasnim-square.png",
     explainer:
-      "Red field with white Persian 'Tasnim' calligraphy, globe and English 'Tasnim News Agency' — Tasnim brand mark.",
-    licence: L("Tasnim News Agency", "Wikimedia Commons (File:Tasnim News Agency logo.jpg)"),
+      "White Persian calligraphy and 'Tasnim News Agency' on a rounded red square — compact Tasnim brand mark from Wikimedia Commons.",
+    licence: L("Tasnim News Agency", "Wikimedia Commons (File:Tasnim News Agency logo 2color rounded square.png)"),
   },
   {
     id: "ir-isna",

@@ -1290,9 +1290,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "state",
       "editorialStance": "Official state news agency of Indonesia; gathers and syndicates domestic and international news to media outlets",
       "readership": {"metric":"Primary Indonesian national newswire","source":"Antara / Wikipedia"},
-      "logo": "newspaper-logos/id/antara.webp",
-      "logoExplainer": "Antara brand mark from Indonesia's national news agency site.",
-      "licenceNote": "Antara brand mark trademark bundled from the agency's official site brand assets (antaranews.com) for educational reference in Learn mode.",
+      "logo": "newspaper-logos/id/antara.png",
+      "logoExplainer": "Maroon stylised Antara emblem beside bold 'ANTARA' with grey tagline 'KANTOR BERITA INDONESIA' — official LKBN Antara masthead from antaranews.com.",
+      "licenceNote": "Antara brand mark trademark bundled from the agency's official site brand assets (static.antaranews.com/assets/img/ANTARA-id.svg) for educational reference in Learn mode.",
 
       "sources": ["https://www.antaranews.com","https://en.wikipedia.org/wiki/Antara_(news_agency)"]
     },
@@ -1481,9 +1481,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "ownershipKind": "private",
       "editorialStance": "Major Iranian domestic news agency; text and multimedia wire",
       "readership": {"metric":"Major Iranian national news agency","source":"Tasnim / Wikipedia"},
-      "logo": "newspaper-logos/ir/tasnim.jpg",
-      "logoExplainer": "Red field with white Persian 'Tasnim' calligraphy, globe and English 'Tasnim News Agency' — Tasnim brand mark.",
-      "licenceNote": "Tasnim News Agency brand mark trademark bundled from Wikimedia Commons (File:Tasnim News Agency logo.jpg) for educational reference in Learn mode.",
+      "logo": "newspaper-logos/ir/tasnim.png",
+      "logoExplainer": "White Persian calligraphy and 'Tasnim News Agency' on a rounded red square — compact Tasnim brand mark from Wikimedia Commons.",
+      "licenceNote": "Tasnim News Agency brand mark trademark bundled from Wikimedia Commons (File:Tasnim News Agency logo 2color rounded square.png) for educational reference in Learn mode.",
 
       "sources": ["https://www.tasnimnews.com","https://en.wikipedia.org/wiki/Tasnim_News_Agency"]
     },
