@@ -261,3 +261,32 @@ At `db3ba05`, `ee-eesti-paevaleht` describes three red dots. The inspected artwo
 Still **not universally verified**: all prose and metadata in the seven registries; official identity/currentness for the remaining images; each flag's legal adoption and symbolic interpretation; all arms blazons; passport variants; party leadership/seats/ideology and logos; airline/broadcaster ownership and brands; all population estimates and methods; EIU values and V-Dem presentation/scope metadata; complete tourism/media claims; every historical territorial assignment and polygon boundary. The earlier structural map checks and visual samples cannot be relabelled as claim-level verification. Prior findings F01–F59 remain applicable except where a specific closure was recorded.
 
 For completion, every factual field and distinct prose assertion needs its own verdict with evidence and an applicable date; every image needs both file provenance and identity/variant verification. An unresolved claim is an audit outcome, but it must not be counted as a verified claim. **This report therefore leaves the universal-verification request open.**
+
+
+## New-index complete comparisons — application revision 7dda29d
+
+All bundled values for the three newly added indices were compared against their publishers' downloadable primary data. These are complete comparisons within those specific datasets, not universal completion of the audit.
+
+| Index | Bundled records | Result |
+|---|---:|---|
+| Transparency International CPI 2025 | 179 | All scores, ranks and derived score bands agree; 177 rank changes agree and two have no prior-year comparator. |
+| RSF World Press Freedom Index 2026 | 175 | All scores, ranks, rank changes and categories agree with the 180-unit source CSV. |
+| Nira Democracy Perception Index 2026 | 96 | All displayed scores agree numerically; 95 categories agree, Panama differs; one Congo identity mapping remains unresolved. |
+
+Evidence: [CPI ledger](audit/CPI_CLAIM_VERIFICATION_2026-09-20.json), [RSF ledger](audit/RSF_CLAIM_VERIFICATION_2026-09-20.json), [DPI ledger](audit/DPI_CLAIM_VERIFICATION_2026-09-20.json). Source hashes and per-record comparisons are preserved. The CPI workbook uses Strict OOXML; the source worksheet cells were read directly without modifying it. RSF's Windows-1252 CSV was decoded before comparison with the repository's UTF-8 copy.
+
+### F70 — CPI missing prior-year ranks displayed as unchanged
+
+**Confirmed, medium.** Belize and Brunei have no 2024 rank in the [official CPI 2025 workbook](https://files.transparencycdn.org/images/CPI2025_Results.xlsx), but both are stored with `rankChange: 0`, producing an unchanged indicator. Use a nullable comparator and display “not available” for first/reintroduced coverage. Neither country's 2025 score or rank is wrong.
+
+### F71 — DPI ranks silently change the survey universe; Panama category disagrees
+
+**Confirmed ranking-scope and category discrepancies; Congo unresolved.** The [publisher report](https://146165116.fs1.hubspotusercontent-eu1.net/hubfs/146165116/DPI%202026.pdf) covers 98 units. The app drops Taiwan and Puerto Rico and recalculates competition ranks over 96 countries. All 96 app ranks follow that rule, but 48 differ from a competition ranking of the full 98 published integer scores. The report explicitly describes Kazakhstan as 98th; the app shows 96. Label any reduced-universe rank as app-derived, including its denominator and tie rule. Do not call a calculated rank the publisher's official rank; unrounded survey estimates may distinguish displayed ties.
+
+On report page 29, Panama (-15) is grouped under “Negative”; the app's inclusive -15 threshold produces “Very Negative.” Preserve the published category or obtain evidence explaining rounding at the boundary. The appendix's label “Congo” alone does not substantiate the app's CD (Democratic Republic of the Congo) mapping; this remains unresolved rather than certified correct.
+
+Methodology on report page 57 describes 94,146 respondents and fieldwork from 19 March to 21 April 2026. The publisher landing page gives conflicting January–March wording. Preserve this conflict and cite the pinned report. Label this index as respondents' perceptions, distinct from institutional democracy classifications.
+
+### RSF verified scope and date interpretation
+
+The [primary 2026 CSV](https://rsf.org/sites/default/files/import_classement/2026.csv) supports all 175 bundled records. Its other units are CSS (OECS group), CTU, XKX, HKG and TWN. A regional group score must not be invented into separate member-country scores. Under the [RSF methodology](https://rsf.org/en/methodology-used-compiling-world-press-freedom-index-2026), the publication chiefly assesses 2025, with significant pre-publication events allowed. Store publication year separately from assessment period.
