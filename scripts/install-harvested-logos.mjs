@@ -23,7 +23,7 @@ const MANIFEST = [
   },
   {
     id: "ao-angonoticias",
-    src: "tmp/batch31-manual/angonoticias.png",
+    src: "tmp/batch31-manual/angonoticias.jpg",
     explainer:
       "White slab-serif 'ANGO / NOTÍCIAS' on an orange square — Angolan digital news masthead.",
     licence:

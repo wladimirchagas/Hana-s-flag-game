@@ -956,7 +956,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Angolan news website",
         "source": "https://www.angonoticias.com"
       },
-      "logo": "newspaper-logos/ao/angonoticias.png",
+      "logo": "newspaper-logos/ao/angonoticias.jpg",
       "logoExplainer": "White slab-serif 'ANGO / NOTÍCIAS' on an orange square — Angolan digital news masthead.",
       "licenceNote": "AngoNotícias masthead trademark bundled from the publisher's official site brand assets (angonoticias.com) for educational reference in Learn mode.",
 
