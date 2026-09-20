@@ -246,7 +246,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Pajhwok Afghan News Organization Report 2024"
       },
       "revenueModel": "Newswire subscriptions, photo syndication, and international media partnerships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/af/pajhwok.png",
+      "logoExplainer": "White 'PAJHWOK AFGHAN NEWS' wordmark with calligraphic mark and 'Reflecting the Truth' strap — the agency's official masthead.",
+      "licenceNote": "Pajhwok Afghan News masthead trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://pajhwok.com",
         "https://en.wikipedia.org/wiki/Pajhwok_Afghan_News"
@@ -2437,7 +2440,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "State budget allocation and wire distribution",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/la/kpl.png",
+      "logoExplainer": "Circular KPL Lao News Agency emblem with Lao wordmark — the state news agency crest.",
+      "licenceNote": "KPL Lao News Agency crest trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://kpl.gov.la",
         "https://en.wikipedia.org/wiki/Khaosan_Pathet_Lao"
@@ -4157,7 +4163,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Voice Publishing Company 2023"
       },
       "revenueModel": "Retail print sales, government notices, and advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/lc/the-voice.png",
+      "logoExplainer": "'VP Digital' badge beside outlined 'THE VOICE' wordmark — St Lucia Voice newspaper digital masthead.",
+      "licenceNote": "The Voice (St Lucia) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://thevoiceslu.com",
         "https://en.wikipedia.org/wiki/Saint_Lucia"

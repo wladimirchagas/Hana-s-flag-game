@@ -57,7 +57,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Periòdic Media Kit 2024"
       },
       "revenueModel": "Print circulation and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ad/el-periodic.png",
+      "logoExplainer": "White 'el Periòdic' wordmark with three slanted bars — Andorra's Catalan daily masthead from its own site.",
+      "licenceNote": "El Periòdic d'Andorra masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.elperiodic.ad",
         "https://en.wikipedia.org/wiki/El_Peri%C3%B2dic_d%27Andorra"
@@ -345,7 +348,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -364,6 +366,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Afghan news brand",
         "source": "https://en.wikipedia.org/wiki/Pajhwok_Afghan_News"
       },
+      "logo": "newspaper-logos/af/pajhwok.png",
+      "logoExplainer": "White 'PAJHWOK AFGHAN NEWS' wordmark with calligraphic mark and 'Reflecting the Truth' strap — the agency's official masthead.",
+      "licenceNote": "Pajhwok Afghan News masthead trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://pajhwok.com",
         "https://en.wikipedia.org/wiki/Pajhwok_Afghan_News"
@@ -770,7 +776,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Global Investigative Journalism Network (GIJN)"
       },
       "revenueModel": "Philanthropic grants, non-profit foundations, and reader donations",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/am/hetq.png",
+      "logoExplainer": "Grey 'HETQ' wordmark beside a concentric-oval investigative mark — Armenia's investigative outlet masthead.",
+      "licenceNote": "Hetq masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://hetq.am",
         "https://en.wikipedia.org/wiki/Hetq"
@@ -5291,7 +5300,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Expresso das Ilhas Editorial Review 2023"
       },
       "revenueModel": "Commercial advertising and newspaper circulation",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cv/expressodasilhas.png",
+      "logoExplainer": "White conjoined 'iE' mark — Expresso das Ilhas (Cape Verde) brand emblem from its own site.",
+      "licenceNote": "Expresso das Ilhas masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://expressodasilhas.cv",
         "https://pt.wikipedia.org/wiki/Expresso_das_Ilhas"
@@ -5599,7 +5611,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Economia Media Kit 2024"
       },
       "revenueModel": "Digital paywall subscriptions (HN.cz) and financial sector advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cz/hospodarske-noviny.svg",
+      "logoExplainer": "White small-caps serif 'HOSPODÁŘSKÉ NOVINY' wordmark — the Czech business daily's masthead.",
+      "licenceNote": "Hospodářské noviny masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://hn.cz",
         "https://en.wikipedia.org/wiki/Hospod%C3%A1%C5%99sk%C3%A9_noviny"
@@ -6586,7 +6601,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Granasa Media Kit 2024"
       },
       "revenueModel": "Print circulation, digital paywall, and business advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ec/expreso.png",
+      "logoExplainer": "Blue lowercase 'expreso' wordmark with a thin red underline — Ecuador's Expreso daily masthead.",
+      "licenceNote": "Expreso (Ecuador) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.expreso.ec",
         "https://es.wikipedia.org/wiki/Expreso_(Ecuador)"
@@ -8794,7 +8812,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "gq-guineaecuatorialpress",
       "name": "Guinea Ecuatorial Press",
       "founded": 2010,
@@ -8810,6 +8827,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "National Equatorial Guinea news brand",
         "source": "https://www.guineaecuatorialpress.com"
       },
+      "logo": "newspaper-logos/gq/guineaecuatorialpress.png",
+      "logoExplainer": "Equatorial Guinea coat of arms beside 'GUINEA ECUATORIAL' government press portal wordmark.",
+      "licenceNote": "Guinea Ecuatorial Press portal mark bundled from the official government press site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.guineaecuatorialpress.com"
       ]
@@ -9464,7 +9485,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "La Tribuna Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/hn/la-tribuna.jpg",
+      "logoExplainer": "Blackletter 'LA TRIBUNA' nameplate with 'Decano de la Prensa Nacional' strap — Honduras daily masthead.",
+      "licenceNote": "La Tribuna (Honduras) masthead trademark bundled from Wikimedia Commons (File:Logo La Tribuna.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.latribuna.hn/",
         "https://cph.hn/"
@@ -9660,7 +9684,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Le Nouvelliste Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ht/le-nouvelliste.svg",
+      "logoExplainer": "White blackletter 'Le Nouvelliste' masthead — Haiti's historic daily nameplate from its own site.",
+      "licenceNote": "Le Nouvelliste masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://lenouvelliste.com/",
         "https://rsf.org/"
@@ -10544,7 +10571,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Shafaq Digital Metrics 2024"
       },
       "revenueModel": "Digital display advertising and media licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/iq/shafaq-news.png",
+      "logoExplainer": "White Arabic title with 'NEWS' and red accent bars — Shafaq News masthead from its own site.",
+      "licenceNote": "Shafaq News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://shafaq.com",
         "https://en.wikipedia.org/wiki/Shafaq_News"
@@ -10580,7 +10610,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "iq-rudaw",
       "countryCode": "IQ",
       "name": "Rudaw",
@@ -10596,6 +10625,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Leading Iraqi Kurdish news brand",
         "source": "https://en.wikipedia.org/wiki/Rudaw_Media_Network"
       },
+      "logo": "newspaper-logos/iq/rudaw.svg",
+      "logoExplainer": "White sunburst mark beside bold 'RÛDAW' wordmark — Kurdistan's Rudaw Media Network brand.",
+      "licenceNote": "Rudaw masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.rudaw.net",
         "https://en.wikipedia.org/wiki/Rudaw_Media_Network"
@@ -11802,7 +11835,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Koh Santepheap Media Kit 2023"
       },
       "revenueModel": "Print sales and local commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/kh/koh-santepheap.svg",
+      "logoExplainer": "White Khmer-script masthead for Koh Santepheap Daily from its own site.",
+      "licenceNote": "Koh Santepheap masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://kohsantepheapdaily.com.kh",
         "https://en.wikipedia.org/wiki/Koh_Santepheap_Daily"
@@ -11991,7 +12027,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "perCapita": "KMF 95 / person / year (~US$0.21)"
       },
       "revenueModel": "State operating subsidy, print sales, and official legal notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/km/al-watwan.png",
+      "logoExplainer": "Green italic 'Al-watwan' wordmark — Comoros national daily masthead from Wikimedia Commons.",
+      "licenceNote": "Al-Watwan masthead trademark bundled from Wikimedia Commons (File:Al-Watwan Logo.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://alwatwan.net",
         "https://fr.wikipedia.org/wiki/Al-Watwan"
@@ -12043,7 +12082,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Habari Za Comores Analytics 2024"
       },
       "revenueModel": "Digital banner advertising and diaspora promotions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/km/habari-za-comores.png",
+      "logoExplainer": "Serif 'HABARI ZA COMORES' wordmark with red/blue swoosh — Comorian news portal masthead.",
+      "licenceNote": "Habari Za Comores masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://habarizacomores.com"
       ]
@@ -12068,7 +12110,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Comores Infos Digital Review 2023"
       },
       "revenueModel": "Digital display ads and multimedia sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/km/comores-infos.png",
+      "logoExplainer": "Serif 'Comores-infos' wordmark with four coloured dots — Comorian news portal masthead.",
+      "licenceNote": "Comores-Infos masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.comoresinfos.net"
       ]
@@ -12185,7 +12230,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "kn-ziz-online",
       "countryCode": "KN",
       "name": "ZIZ Online",
@@ -12201,6 +12245,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "National SKN news brand",
         "source": "https://www.zizonline.com"
       },
+      "logo": "newspaper-logos/kn/ziz-online.jpg",
+      "logoExplainer": "Yellow outlined block capitals 'ZIZ' — Saint Kitts and Nevis broadcaster news brand mark.",
+      "licenceNote": "ZIZ Online brand mark trademark bundled from the broadcaster's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.zizonline.com"
       ]
@@ -12466,7 +12514,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al-Rai Media Group Financial Audit 2024"
       },
       "revenueModel": "Print subscriptions, commercial advertising, and broadcast syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/kw/al-rai.svg",
+      "logoExplainer": "White Arabic calligraphic masthead for Kuwait's Al-Rai daily from its own site.",
+      "licenceNote": "Al-Rai (Kuwait) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.alraimedia.com",
         "https://en.wikipedia.org/wiki/Al-Rai_(Kuwaiti_newspaper)"
@@ -12492,7 +12543,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kuwait Journalists Association Audit 2023"
       },
       "revenueModel": "Print subscriptions, corporate advertising, and official notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/kw/al-anba.png",
+      "logoExplainer": "White Arabic calligraphic masthead for Kuwait's Al-Anba daily from its own site.",
+      "licenceNote": "Al-Anba masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.alanba.com.kw",
         "https://en.wikipedia.org/wiki/Al-Anba_(Kuwait)"
@@ -12664,7 +12718,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -12683,6 +12736,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Leading independent Kazakh news brand",
         "source": "https://www.azattyq.org"
       },
+      "logo": "newspaper-logos/kz/azattyq.png",
+      "logoExplainer": "Orange RFE/RL torch with blue Cyrillic 'Азаттық Радиосы' — Azattyq's official brand mark.",
+      "licenceNote": "Azattyq (RFE/RL) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.azattyq.org"
       ]
@@ -12800,7 +12857,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -12819,6 +12875,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Official Lao national news brand",
         "source": "https://kpl.gov.la"
       },
+      "logo": "newspaper-logos/la/kpl.png",
+      "logoExplainer": "Circular KPL Lao News Agency emblem with Lao wordmark — the state news agency crest.",
+      "licenceNote": "KPL Lao News Agency crest trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://kpl.gov.la"
       ]
@@ -12999,7 +13059,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Newspaper & digital",
       "format": "Print & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "lc-the-voice",
       "countryCode": "LC",
       "name": "The Voice St Lucia",
@@ -13015,6 +13074,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Historic St Lucia newspaper",
         "source": "https://en.wikipedia.org/wiki/The_Voice_(Saint_Lucia)"
       },
+      "logo": "newspaper-logos/lc/the-voice.png",
+      "logoExplainer": "'VP Digital' badge beside outlined 'THE VOICE' wordmark — St Lucia Voice newspaper digital masthead.",
+      "licenceNote": "The Voice (St Lucia) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.thevoiceslu.com",
         "https://en.wikipedia.org/wiki/The_Voice_(Saint_Lucia)"
@@ -13319,7 +13382,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Express Newspapers Audit / LMRB"
       },
       "revenueModel": "Print sales, community classified notices, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/lk/virakesari.jpg",
+      "logoExplainer": "Tamil/English 'VIRAKESARI ONLINE' anniversary masthead with trophies — Sri Lanka Tamil daily brand.",
+      "licenceNote": "Virakesari masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.virakesari.lk",
         "https://en.wikipedia.org/wiki/Virakesari"
@@ -13346,7 +13412,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "FrontPageAfrica Analytics / Press Union of Liberia 2024"
       },
       "revenueModel": "Print sales, digital display advertising, and international investigative grants",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/lr/frontpage-africa.png",
+      "logoExplainer": "Orange Africa map with 'FPA' and 'FRONT PAGE AFRICA' wordmark — Liberian daily brand mark.",
+      "licenceNote": "FrontPageAfrica masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://frontpageafricaonline.com",
         "https://en.wikipedia.org/wiki/FrontPageAfrica"
@@ -13371,7 +13440,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Press Union of Liberia Survey 2023"
       },
       "revenueModel": "Print copy sales, classifieds, and corporate advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/lr/daily-observer.png",
+      "logoExplainer": "Black serif 'Daily OBSERVER' nameplate with rule lines — Liberia's Daily Observer masthead.",
+      "licenceNote": "Daily Observer masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.liberianobserver.com",
         "https://en.wikipedia.org/wiki/Daily_Observer_(Liberia)"
@@ -13421,7 +13493,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Press Union of Liberia 2023"
       },
       "revenueModel": "Print sales and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/lr/the-analyst.webp",
+      "logoExplainer": "Blue banner 'The ANALYST' with anniversary seal — Liberia's The Analyst masthead.",
+      "licenceNote": "The Analyst masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://analystliberiaonline.com"
       ]
@@ -13520,7 +13595,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Public Eye Media Group 2023"
       },
       "revenueModel": "Print copy sales and corporate advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ls/public-eye.png",
+      "logoExplainer": "Blue 'Public Eye' wordmark with eye-dot on the i — Lesotho weekly masthead.",
+      "licenceNote": "Public Eye masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://publiceyenews.com",
         "https://en.wikipedia.org/wiki/Media_of_Lesotho"
@@ -13661,7 +13739,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "lt-lrt-news",
       "countryCode": "LT",
       "name": "LRT.lt News",
@@ -13677,6 +13754,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Lithuanian public news website",
         "source": "https://www.lrt.lt"
       },
+      "logo": "newspaper-logos/lt/lrt-news.jpg",
+      "logoExplainer": "Dark blue 'LRT | .lt' wordmark — Lithuanian public broadcaster news portal brand.",
+      "licenceNote": "LRT.lt brand mark trademark bundled from the broadcaster's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.lrt.lt"
       ]
@@ -13685,7 +13766,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "lt-lrytas",
       "countryCode": "LT",
       "name": "Lrytas.lt",
@@ -13701,6 +13781,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Leading Lithuanian news website",
         "source": "https://www.lrytas.lt"
       },
+      "logo": "newspaper-logos/lt/lrytas.jpg",
+      "logoExplainer": "White 'lrytas.lt' serif wordmark on a red rounded rectangle — Lietuvos rytas digital brand.",
+      "licenceNote": "Lrytas.lt masthead trademark bundled from Wikimedia Commons (File:Lrytas.lt logotipas.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.lrytas.lt"
       ]
@@ -13924,7 +14008,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Latvian Newspaper Publishers Association 2024"
       },
       "revenueModel": "Print subscriptions, portal advertising, and book publishing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/lv/latvijas-avize.svg",
+      "logoExplainer": "White 'LA.LV' wordmark — Latvijas Avīze digital masthead from its own site.",
+      "licenceNote": "Latvijas Avīze (LA.LV) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.la.lv",
         "https://en.wikipedia.org/wiki/Latvijas_Avīze"
@@ -13958,7 +14045,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "lv-tvnet",
       "countryCode": "LV",
       "name": "Tvnet.lv",
@@ -13974,6 +14060,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Among Latvia's most-visited news sites",
         "source": "https://www.tvnet.lv"
       },
+      "logo": "newspaper-logos/lv/tvnet.png",
+      "logoExplainer": "Blue/orange 'TVNET' wordmark with star mark — Latvia's Tvnet.lv news portal brand.",
+      "licenceNote": "Tvnet.lv brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.tvnet.lv"
       ]
