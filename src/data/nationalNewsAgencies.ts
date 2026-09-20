@@ -583,7 +583,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "A$0.00 / person"
       },
       "revenueModel": "Commercial subscription fees from member newspapers, broadcasters, and corporate clients",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/at/apa.png",
+      "logoExplainer": "'APA' brand mark — Austria Presse Agentur's agency emblem.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://apa.at",
         "https://en.wikipedia.org/wiki/Austria_Presse_Agentur"
@@ -608,7 +611,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ÖWA (Österreichische Web-Analyse) 2024"
       },
       "revenueModel": "Digital subscriptions, pink paper print sales, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/at/der-standard.svg",
+      "logoExplainer": "'DERSTANDARD' serif with a tall S and underline — the Vienna daily masthead.",
+      "licenceNote": "Trademark bundled from Wikimedia Commons (File:DER STANDARD LOGO schwarz.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.derstandard.at",
         "https://en.wikipedia.org/wiki/Der_Standard"
@@ -956,7 +962,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Belga News Agency Annual Report 2023"
       },
       "revenueModel": "Subscription licensing fees from member Belgian publishers and broadcast networks",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/be/belga.png",
+      "logoExplainer": "'Belga' brand mark — the Belgian news agency emblem.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.belga.be",
         "https://en.wikipedia.org/wiki/Belga_(news_agency)"
@@ -982,7 +991,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "CIM Belgium 2023/2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and corporate advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/be/de-standaard.svg",
+      "logoExplainer": "'De Standaard' masthead — the Flemish daily brand mark.",
+      "licenceNote": "Trademark bundled from Wikimedia Commons (File:De Standaard logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.standaard.be",
         "https://en.wikipedia.org/wiki/De_Standaard"
@@ -1767,7 +1779,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "JNLR Readership Survey 2023–24"
       },
       "revenueModel": "Print sales, digital subscription, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ie/irish-examiner.png",
+      "logoExplainer": "'Irish Examiner' masthead — the Cork-based daily brand mark.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.irishexaminer.com",
         "https://en.wikipedia.org/wiki/Irish_Examiner"
@@ -2069,7 +2084,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State newspaper of record"
       },
       "revenueModel": "State budget appropriation, print subscriptions, book publishing, and advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/eg/al-ahram.png",
+      "logoExplainer": "Arabic 'الأهرام' masthead — Al-Ahram's historic brand mark.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://gate.ahram.org.eg",
         "https://en.wikipedia.org/wiki/Al-Ahram"
@@ -2605,7 +2623,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "KSF Media & Bonnier News 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and cultural foundation support",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/fi/hufvudstadsbladet.svg",
+      "logoExplainer": "Bold black 'HBL' over an orange bar — Hufvudstadsbladet's brand mark.",
+      "licenceNote": "Trademark bundled from Wikimedia Commons (File:HBL wordmark.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.hbl.fi",
         "https://en.wikipedia.org/wiki/Hufvudstadsbladet"
@@ -2723,7 +2744,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Dainik Jagran (दैनिक जागरण) Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/in/dainik-jagran.png",
+      "logoExplainer": "Devanagari 'दैनिक जागरण' masthead — Dainik Jagran's brand mark.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://jplcorp.in/"
       ]
@@ -2747,7 +2771,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Hindustan Times (HT) Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/in/hindustan-times.png",
+      "logoExplainer": "'Hindustan Times' masthead — the New Delhi English daily brand.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.hindustantimes.com/",
         "https://www.htmedia.in/"
@@ -3274,7 +3301,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Yonhap News Agency Annual Report 2023"
       },
       "revenueModel": "B2B wire service subscriptions and government public service contract",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/kr/yonhap.jpg",
+      "logoExplainer": "'Yonhap' / 연합뉴스 agency brand mark.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://en.yna.co.kr",
         "https://www.yna.co.kr",
@@ -3849,7 +3879,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Relatório de Gestão e Contas Lusa 2023"
       },
       "revenueModel": "State public-service contract funding and news licensing fees",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pt/lusa.svg",
+      "logoExplainer": "'LUSA' with a red/green arc and 'Agência de Notícias de Portugal' — the national agency mark.",
+      "licenceNote": "Trademark bundled from Wikimedia Commons (File:Logo LUSA.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.lusa.pt",
         "https://en.wikipedia.org/wiki/Lusa_News_Agency"
@@ -4250,7 +4283,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "SPA Annual Corporate Report 2023"
       },
       "revenueModel": "State government budget allocation",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sa/spa.svg",
+      "logoExplainer": "SPA block with palm-and-swords emblem and bilingual Saudi Press Agency wording.",
+      "licenceNote": "Trademark bundled from Wikimedia Commons (File:Saudi Press Agency Logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.spa.gov.sa",
         "https://en.wikipedia.org/wiki/Saudi_Press_Agency"
@@ -4438,7 +4474,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Mediacorp Corporate Review 2023"
       },
       "revenueModel": "Public service broadcasting funding from the Singapore government and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sg/cna.png",
+      "logoExplainer": "'CNA' brand mark — Channel NewsAsia's news brand emblem.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.channelnewsasia.com",
         "https://en.wikipedia.org/wiki/CNA_(TV_network)"
@@ -4801,7 +4840,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "TT Nyhetsbyrån Årsredovisning 2023"
       },
       "revenueModel": "B2B commercial licensing, syndication contracts, and visual archive sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/se/tt-nyhetsbyran.svg",
+      "logoExplainer": "Staggered 'TT' inside a dark circle — Tidningarnas Telegrambyrå brand mark.",
+      "licenceNote": "Trademark bundled from Wikimedia Commons (File:TTlogo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://tt.se",
         "https://en.wikipedia.org/wiki/Tidningarnas_Telegrambyr%C3%A5"
@@ -4834,7 +4876,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Keystone-SDA Geschäftsbericht 2023"
       },
       "revenueModel": "Federal statutory subvention for linguistic diversity and B2B media licensing contracts",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ch/keystone-sda.svg",
+      "logoExplainer": "'Keystone-SDA' brand mark — Switzerland's national news agency emblem.",
+      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://keystone-sda.ch",
         "https://en.wikipedia.org/wiki/Swiss_News_Agency"
@@ -5063,7 +5108,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Anadolu Ajansı Annual Report 2023"
       },
       "revenueModel": "State treasury subvention and global media licensing subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tr/anadolu-agency.svg",
+      "logoExplainer": "'Anadolu Agency' / Anadolu Ajansı brand mark.",
+      "licenceNote": "Trademark bundled from Wikimedia Commons (File:Anadolu Agency logo 2023.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.aa.com.tr",
         "https://en.wikipedia.org/wiki/Anadolu_Agency"

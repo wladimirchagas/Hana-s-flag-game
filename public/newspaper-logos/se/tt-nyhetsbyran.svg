@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="800"
+   height="800"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <rect
+     width="787.76935"
+     height="787.76935"
+     x="4.9796357"
+     y="4.1908569"
+     id="rect3477"
+     style="fill:#000066;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <text
+     x="258.85159"
+     y="298.28333"
+     id="text2400"
+     xml:space="preserve"
+     style="font-size:36.2075882px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Letter Gothic Std;-inkscape-font-specification:Letter Gothic Std"><tspan
+       x="258.85159"
+       y="298.28333"
+       id="tspan2402" /></text>
+  <g
+     transform="translate(-43.59149,-35.750924)"
+     id="g2393">
+    <path
+       d="M 750.1874,433.82645 C 750.1874,603.78199 612.41134,741.55806 442.4558,741.55806 C 272.50026,741.55806 134.7242,603.78199 134.7242,433.82645 C 134.7242,263.87092 272.50026,126.09485 442.4558,126.09485 C 612.41134,126.09485 750.1874,263.87092 750.1874,433.82645 z"
+       id="path3460"
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:47.9280777;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       d="M 211.90003,360.59196 L 211.90003,394.59095 L 312.3033,394.59095 L 312.3033,650.64584 L 346.30229,650.64584 L 346.30229,394.59095 L 447.23679,394.59095 L 447.23679,360.59196 L 211.90003,360.59196 z"
+       id="path3462"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       d="M 415.85589,275.13923 L 415.85589,309.13822 L 516.25916,309.13822 L 516.25916,565.19312 L 550.25815,565.19312 L 550.25815,309.13822 L 651.19265,309.13822 L 651.19265,275.13923 L 415.85589,275.13923 z"
+       id="path3475"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>
