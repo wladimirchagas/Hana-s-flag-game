@@ -11920,7 +11920,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "kh-cambodianess",
       "countryCode": "KH",
       "name": "Cambodianess / Thmey Thmey",
@@ -11936,6 +11935,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Cambodian news website",
         "source": "https://thmeythmey.com"
       },
+      "logo": "newspaper-logos/kh/cambodianess.png",
+      "logoExplainer": "Blue Khmer emblem under a red 'thmeythmey.com' arc with red Khmer subtitle — Thmey Thmey / Cambodianess masthead.",
+      "licenceNote": "Thmey Thmey trademark bundled from the publisher's official site brand assets (thmeythmey.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://thmeythmey.com"
       ]
@@ -12888,7 +12891,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministry of Information Laos 2023"
       },
       "revenueModel": "State budget subvention and print sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/la/pathet-lao.png",
+      "logoExplainer": "Blue-ringed KPL seal with a red microphone/gear device beside Lao-script wordmark — Pathet Lao / KPL masthead.",
+      "licenceNote": "KPL / Pathet Lao trademark bundled from the publisher's official site brand assets (kpl.gov.la); white wordmark fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
+
       "sources": [
         "https://kpl.gov.la",
         "https://en.wikipedia.org/wiki/Media_of_Laos"
@@ -13313,7 +13319,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "li-1fl-tv-news",
       "name": "1FL News digital",
       "founded": 2008,
@@ -13329,6 +13334,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Liechtenstein news website",
         "source": "https://www.1fl.li"
       },
+      "logo": "newspaper-logos/li/1fl-tv-news.png",
+      "logoExplainer": "Blocky white '1FL' and 'LI' on dark panels with a small red square accent — 1FL TV Liechtenstein mark.",
+      "licenceNote": "1FL TV trademark bundled from the publisher's official site brand assets (1fl.li) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.1fl.li"
       ]
@@ -13589,7 +13598,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "lr-bush-chicken",
       "name": "Bush Chicken",
       "founded": 2013,
@@ -13605,6 +13613,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Liberian news website",
         "source": "https://bushchicken.com"
       },
+      "logo": "newspaper-logos/lr/bush-chicken.png",
+      "logoExplainer": "Black rooster silhouette with a red tail in a white disc beside 'The Bush Chicken' wordmark — The Bush Chicken masthead.",
+      "licenceNote": "The Bush Chicken trademark bundled from the publisher's official site brand assets (bushchicken.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://bushchicken.com"
       ]
@@ -13630,7 +13642,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "African Media Holdings Audit 2024"
       },
       "revenueModel": "Print sales, corporate advertising, and digital promotions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ls/lesotho-times.png",
+      "logoExplainer": "Bold serif 'Lesotho Times' wordmark — Lesotho Times masthead.",
+      "licenceNote": "Lesotho Times trademark bundled from the publisher's official site brand assets (lestimes.com); white fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
+
       "sources": [
         "https://lestimes.com",
         "https://en.wikipedia.org/wiki/Lesotho_Times"
@@ -13655,7 +13670,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Lesotho Press Survey 2023"
       },
       "revenueModel": "Sunday copy sales and commercial display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ls/sunday-express.png",
+      "logoExplainer": "Bold sans-serif 'Sunday Express' wordmark — Sunday Express Lesotho masthead.",
+      "licenceNote": "Sunday Express trademark bundled from the publisher's official site brand assets (sundayexpress.co.ls); white fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
+
       "sources": [
         "https://sundayexpress.co.ls"
       ]
@@ -13995,7 +14013,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "lu-reporter",
       "countryCode": "LU",
       "name": "Reporter.lu",
@@ -14011,6 +14028,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Luxembourg digital news brand",
         "source": "https://www.reporter.lu"
       },
+      "logo": "newspaper-logos/lu/reporter.png",
+      "logoExplainer": "Wide black all-caps 'REPORTER' wordmark — Reporter.lu masthead.",
+      "licenceNote": "Reporter.lu trademark bundled from the publisher's official site brand assets (reporter.lu) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.reporter.lu"
       ]
@@ -14615,7 +14636,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -14634,6 +14654,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Moldova news website",
         "source": "https://agora.md"
       },
+      "logo": "newspaper-logos/md/protv.svg",
+      "logoExplainer": "Black lowercase 'agora' with a red-centred eye for the 'o' — Agora.md masthead.",
+      "licenceNote": "Agora.md trademark bundled from the publisher's official site brand assets (agora.md) for educational reference in Learn mode.",
+
       "sources": [
         "https://agora.md"
       ]

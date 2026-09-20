@@ -11,47 +11,71 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 49 — montage-scanned light/dark. */
+/** Visually verified batch 50 — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "lt-15min",
-    src: "tmp/batch49-install/lt-15min.svg",
+    id: "kh-cambodianess",
+    src: "tmp/batch50-install/kh-cambodianess.png",
     explainer:
-      "Green rounded square with white '15', black 'min', and a green clock-face mark — 15min Lithuania masthead.",
+      "Blue Khmer emblem under a red 'thmeythmey.com' arc with red Khmer subtitle — Thmey Thmey / Cambodianess masthead.",
     licence:
-      "15min trademark from Wikimedia Commons File:15 min.svg (PD-textlogo) for educational reference in Learn mode.",
+      "Thmey Thmey trademark bundled from the publisher's official site brand assets (thmeythmey.com) for educational reference in Learn mode.",
   },
   {
-    id: "md-ziarul-de-garda",
-    src: "tmp/batch49-install/md-ziarul-de-garda.svg",
+    id: "la-pathet-lao",
+    src: "tmp/batch50-install/la-pathet-lao.png",
     explainer:
-      "Black serif 'zdg' under italic 'spune adevărul' with 'ZIARUL de GARDĂ' below — Ziarul de Gardă masthead.",
+      "Blue-ringed KPL seal with a red microphone/gear device beside Lao-script wordmark — Pathet Lao / KPL masthead.",
     licence:
-      "Ziarul de Gardă trademark bundled from the publisher's official site brand assets (zdg.md) for educational reference in Learn mode.",
+      "KPL / Pathet Lao trademark bundled from the publisher's official site brand assets (kpl.gov.la); white wordmark fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
   },
   {
-    id: "pa-la-prensa",
-    src: "tmp/batch49-install/pa-la-prensa.svg",
+    id: "li-1fl-tv-news",
+    src: "tmp/batch50-install/li-1fl-tv-news.png",
     explainer:
-      "Bold black 'La Prensa' with a solid red underline — La Prensa Panamá masthead.",
+      "Blocky white '1FL' and 'LI' on dark panels with a small red square accent — 1FL TV Liechtenstein mark.",
     licence:
-      "La Prensa trademark bundled from the publisher's official Corprensa brand assets (prensa.com / multimedia.corprensa.com) for educational reference in Learn mode.",
+      "1FL TV trademark bundled from the publisher's official site brand assets (1fl.li) for educational reference in Learn mode.",
   },
   {
-    id: "gm-standard",
-    src: "tmp/batch49-install/gm-standard.svg",
+    id: "lr-bush-chicken",
+    src: "tmp/batch50-install/lr-bush-chicken.png",
     explainer:
-      "Blackletter gothic 'The Standard' wordmark — The Standard Newspaper (Gambia) masthead.",
+      "Black rooster silhouette with a red tail in a white disc beside 'The Bush Chicken' wordmark — The Bush Chicken masthead.",
     licence:
-      "The Standard trademark bundled from the publisher's official site brand assets (standard.gm/wp-content/uploads/2020/04/StandardLogo.svg); white fill recolored to near-black for legibility on light Learn-mode cards — letterforms unchanged.",
+      "The Bush Chicken trademark bundled from the publisher's official site brand assets (bushchicken.com) for educational reference in Learn mode.",
   },
   {
-    id: "er-assenna",
-    src: "tmp/batch49-install/er-assenna.png",
+    id: "ls-lesotho-times",
+    src: "tmp/batch50-install/ls-lesotho-times.png",
     explainer:
-      "Grey TV icon with orange bunny-ear antennas and bold orange 'ATV' beside 'Asena Eritrean Satellite Television' — Assenna / Asena TV mark.",
+      "Bold serif 'Lesotho Times' wordmark — Lesotho Times masthead.",
     licence:
-      "Assenna / Asena TV trademark bundled from the publisher's official site brand assets (asenatv.com) for educational reference in Learn mode.",
+      "Lesotho Times trademark bundled from the publisher's official site brand assets (lestimes.com); white fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
+  },
+  {
+    id: "ls-sunday-express",
+    src: "tmp/batch50-install/ls-sunday-express.png",
+    explainer:
+      "Bold sans-serif 'Sunday Express' wordmark — Sunday Express Lesotho masthead.",
+    licence:
+      "Sunday Express trademark bundled from the publisher's official site brand assets (sundayexpress.co.ls); white fill recolored to near-black for light Learn-mode cards — letterforms unchanged.",
+  },
+  {
+    id: "lu-reporter",
+    src: "tmp/batch50-install/lu-reporter.png",
+    explainer:
+      "Wide black all-caps 'REPORTER' wordmark — Reporter.lu masthead.",
+    licence:
+      "Reporter.lu trademark bundled from the publisher's official site brand assets (reporter.lu) for educational reference in Learn mode.",
+  },
+  {
+    id: "md-protv",
+    src: "tmp/batch50-install/md-protv.svg",
+    explainer:
+      "Black lowercase 'agora' with a red-centred eye for the 'o' — Agora.md masthead.",
+    licence:
+      "Agora.md trademark bundled from the publisher's official site brand assets (agora.md) for educational reference in Learn mode.",
   },
 ];
 
