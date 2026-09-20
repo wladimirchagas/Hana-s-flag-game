@@ -13,7 +13,11 @@
     "score": 18,
     "rating": "Not Free",
     "evidence": "Not Free 18 100",
-    "title": "United Arab Emirates: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/united-arab-emirates/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: op"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "AG",
@@ -29,7 +33,11 @@
     "score": 85,
     "rating": "Free",
     "evidence": "Free 85 100",
-    "title": "Antigua and Barbuda: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/antigua-and-barbuda/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "AR",
@@ -45,7 +53,11 @@
     "score": 85,
     "rating": "Free",
     "evidence": "Free 85 100",
-    "title": "Argentina: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/argentina/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "AM",
@@ -61,7 +73,11 @@
     "score": 54,
     "rating": "Partly Free",
     "evidence": "Partly Free 54 100",
-    "title": "Armenia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/armenia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "AD",
@@ -77,7 +93,11 @@
     "score": 93,
     "rating": "Free",
     "evidence": "Free 93 100",
-    "title": "Andorra: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/andorra/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "AF",
@@ -93,7 +113,11 @@
     "score": 6,
     "rating": "Not Free",
     "evidence": "Not Free 6 100",
-    "title": "Afghanistan: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/afghanistan/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"http"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "AL",
@@ -109,7 +133,11 @@
     "score": 68,
     "rating": "Partly Free",
     "evidence": "Partly Free 68 100",
-    "title": "Albania: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/albania/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "AO",
@@ -125,7 +153,11 @@
     "score": 28,
     "rating": "Not Free",
     "evidence": "Not Free 28 100",
-    "title": "Angola: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/angola/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "AU",
@@ -141,7 +173,11 @@
     "score": 95,
     "rating": "Free",
     "evidence": "Free 95 100",
-    "title": "Australia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/australia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "AZ",
@@ -157,7 +193,11 @@
     "score": 7,
     "rating": "Not Free",
     "evidence": "Not Free 7 100",
-    "title": "Azerbaijan: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/azerbaijan/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "AT",
@@ -170,8 +210,16 @@
       "score": 93
     },
     "url": "https://freedomhouse.org/country/austria/freedom-world/2024",
-    "score": null,
-    "title": "Internal Error () [wordlim: 200] Source: open({\"ref_id\":\"https://freedomhouse.org/country/austria/freedom-world/2024\",\"lineno\":0}); Total lines: 1 Failed to fetch https://freedomhouse.org/country/austria/freedom-world/20"
+    "score": 93,
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "rating": "Free",
+    "evidence": "Last Year's Score & Status 93 100 Free",
+    "evidenceUrl": "https://freedomhouse.org/country/austria/freedom-world/2025",
+    "evidenceMode": "2025 primary report explicitly identifies the previous edition score/status",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BF",
@@ -187,7 +235,11 @@
     "score": 27,
     "rating": "Not Free",
     "evidence": "Not Free 27 100",
-    "title": "Burkina Faso: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/burkina-faso/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"ht"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BB",
@@ -203,7 +255,11 @@
     "score": 94,
     "rating": "Free",
     "evidence": "Free 94 100",
-    "title": "Barbados: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/barbados/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BA",
@@ -216,8 +272,16 @@
       "score": 52
     },
     "url": "https://freedomhouse.org/country/bosnia-and-herzegovina/freedom-world/2024",
-    "score": null,
-    "title": "Internal Error () [wordlim: 200] Source: open({\"ref_id\":\"https://freedomhouse.org/country/bosnia-and-herzegovina/freedom-world/2024\",\"lineno\":0}); Total lines: 1 Failed to fetch https://freedomhouse.org/country/bosnia-an"
+    "score": 51,
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "rating": "Partly Free",
+    "evidence": "Last Year's Score & Status 51 100 Partly Free",
+    "evidenceUrl": "https://freedomhouse.org/country/bosnia-and-herzegovina/freedom-world/2025",
+    "evidenceMode": "2025 primary report explicitly identifies the previous edition score/status",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BE",
@@ -230,8 +294,15 @@
       "score": 96
     },
     "url": "https://freedomhouse.org/country/belgium/freedom-world/2024",
-    "score": null,
-    "title": "Internal Error () [wordlim: 200] Source: open({\"ref_id\":\"https://freedomhouse.org/country/belgium/freedom-world/2024\",\"lineno\":0}); Total lines: 1 Failed to fetch https://freedomhouse.org/country/belgium/freedom-world/20"
+    "score": 96,
+    "rating": "Free",
+    "evidence": "Free 96 100",
+    "evidenceMode": "primary-page search extract; full page timed out",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BD",
@@ -247,7 +318,11 @@
     "score": 40,
     "rating": "Partly Free",
     "evidence": "Partly Free 40 100",
-    "title": "Bangladesh: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/bangladesh/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BH",
@@ -263,7 +338,11 @@
     "score": 12,
     "rating": "Not Free",
     "evidence": "Not Free 12 100",
-    "title": "Bahrain: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/bahrain/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BI",
@@ -276,8 +355,16 @@
       "score": 15
     },
     "url": "https://freedomhouse.org/country/burundi/freedom-world/2024",
-    "score": null,
-    "title": "Internal Error () [wordlim: 200] Source: open({\"ref_id\":\"https://freedomhouse.org/country/burundi/freedom-world/2024\",\"lineno\":0}); Total lines: 1 Failed to fetch https://freedomhouse.org/country/burundi/freedom-world/20"
+    "score": 14,
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "rating": "Not Free",
+    "evidence": "Last Year's Score & Status 14 100 Not Free",
+    "evidenceUrl": "https://freedomhouse.org/country/burundi/freedom-world/2025",
+    "evidenceMode": "2025 primary report explicitly identifies the previous edition score/status",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BG",
@@ -293,7 +380,11 @@
     "score": 78,
     "rating": "Free",
     "evidence": "Free 78 100",
-    "title": "Bulgaria: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/bulgaria/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BJ",
@@ -306,8 +397,16 @@
       "score": 60
     },
     "url": "https://freedomhouse.org/country/benin/freedom-world/2024",
-    "score": null,
-    "title": "Internal Error () [wordlim: 200] Source: open({\"ref_id\":\"https://freedomhouse.org/country/benin/freedom-world/2024\",\"lineno\":0}); Total lines: 1 Failed to fetch https://freedomhouse.org/country/benin/freedom-world/2024: "
+    "score": 61,
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "rating": "Partly Free",
+    "evidence": "Last Year's Score & Status 61 100 Partly Free",
+    "evidenceUrl": "https://freedomhouse.org/country/benin/freedom-world/2025",
+    "evidenceMode": "2025 primary report explicitly identifies the previous edition score/status",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BO",
@@ -320,8 +419,15 @@
       "score": 65
     },
     "url": "https://freedomhouse.org/country/bolivia/freedom-world/2024",
-    "score": null,
-    "title": "Internal Error () [wordlim: 200] Source: open({\"ref_id\":\"https://freedomhouse.org/country/bolivia/freedom-world/2024\",\"lineno\":0}); Total lines: 1 Failed to fetch https://freedomhouse.org/country/bolivia/freedom-world/20"
+    "score": 66,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 66 100",
+    "evidenceMode": "primary-page search extract; full page timed out",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BN",
@@ -337,7 +443,11 @@
     "score": 28,
     "rating": "Not Free",
     "evidence": "Not Free 28 100",
-    "title": "Brunei: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/brunei/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BR",
@@ -353,7 +463,11 @@
     "score": 72,
     "rating": "Free",
     "evidence": "Free 72 100",
-    "title": "Brazil: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/brazil/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BS",
@@ -366,8 +480,16 @@
       "score": 90
     },
     "url": "https://freedomhouse.org/country/bahamas/freedom-world/2024",
-    "score": null,
-    "title": "Internal Error () [wordlim: 200] Source: open({\"ref_id\":\"https://freedomhouse.org/country/bahamas/freedom-world/2024\",\"lineno\":0}); Total lines: 1 Failed to fetch https://freedomhouse.org/country/bahamas/freedom-world/20"
+    "score": 91,
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "rating": "Free",
+    "evidence": "Last Year's Score & Status 91 100 Free",
+    "evidenceUrl": "https://freedomhouse.org/country/bahamas/freedom-world/2025",
+    "evidenceMode": "2025 primary report explicitly identifies the previous edition score/status",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CA",
@@ -383,7 +505,11 @@
     "score": 97,
     "rating": "Free",
     "evidence": "Free 97 100",
-    "title": "Canada: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/canada/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BZ",
@@ -399,7 +525,11 @@
     "score": 87,
     "rating": "Free",
     "evidence": "Free 87 100",
-    "title": "Belize: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/belize/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BT",
@@ -415,7 +545,11 @@
     "score": 63,
     "rating": "Partly Free",
     "evidence": "Partly Free 63 100",
-    "title": "Bhutan: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/bhutan/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https://f"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "contradicted_by_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BY",
@@ -431,7 +565,11 @@
     "score": 8,
     "rating": "Not Free",
     "evidence": "Not Free 8 100",
-    "title": "Belarus: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/belarus/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CF",
@@ -444,8 +582,16 @@
       "score": 5
     },
     "url": "https://freedomhouse.org/country/central-african-republic/freedom-world/2024",
-    "score": null,
-    "title": "Internal Error () [wordlim: 200] Source: open({\"ref_id\":\"https://freedomhouse.org/country/central-african-republic/freedom-world/2024\",\"lineno\":0}); Total lines: 1 Failed to fetch https://freedomhouse.org/country/central"
+    "score": 5,
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "rating": "Not Free",
+    "evidence": "Last Year's Score & Status 5 100 Not Free",
+    "evidenceUrl": "https://freedomhouse.org/country/central-african-republic/freedom-world/2025",
+    "evidenceMode": "2025 primary report explicitly identifies the previous edition score/status",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "BW",
@@ -461,7 +607,11 @@
     "score": 72,
     "rating": "Free",
     "evidence": "Free 72 100",
-    "title": "Botswana: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/botswana/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CG",
@@ -477,7 +627,11 @@
     "score": 17,
     "rating": "Not Free",
     "evidence": "Not Free 17 100",
-    "title": "Republic of the Congo: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/republic-congo/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\""
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CD",
@@ -493,7 +647,11 @@
     "score": 19,
     "rating": "Not Free",
     "evidence": "Not Free 19 100",
-    "title": "Democratic Republic of the Congo: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/democratic-republic-congo/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CN",
@@ -509,7 +667,11 @@
     "score": 9,
     "rating": "Not Free",
     "evidence": "Not Free 9 100",
-    "title": "China: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/china/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CR",
@@ -525,7 +687,11 @@
     "score": 91,
     "rating": "Free",
     "evidence": "Free 91 100",
-    "title": "Costa Rica: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/costa-rica/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CL",
@@ -541,11 +707,15 @@
     "score": 94,
     "rating": "Free",
     "evidence": "Free 94 100",
-    "title": "Chile: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/chile/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CI",
-    "name": "Côte d’Ivoire",
+    "name": "C\u00f4te d\u2019Ivoire",
     "bundled": {
       "year": 2024,
       "rating": "Partly Free",
@@ -557,7 +727,11 @@
     "score": 49,
     "rating": "Partly Free",
     "evidence": "Partly Free 49 100",
-    "title": "Côte d'Ivoire: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/cote-divoire/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"h"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CH",
@@ -573,7 +747,11 @@
     "score": 96,
     "rating": "Free",
     "evidence": "Free 96 100",
-    "title": "Switzerland: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/switzerland/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\""
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CU",
@@ -589,7 +767,11 @@
     "score": 12,
     "rating": "Not Free",
     "evidence": "Not Free 12 100",
-    "title": "Cuba: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/cuba/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomhou"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CO",
@@ -605,7 +787,11 @@
     "score": 70,
     "rating": "Free",
     "evidence": "Free 70 100",
-    "title": "Colombia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/colombia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CM",
@@ -621,7 +807,11 @@
     "score": 15,
     "rating": "Not Free",
     "evidence": "Not Free 15 100",
-    "title": "Cameroon: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/cameroon/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "DO",
@@ -637,7 +827,11 @@
     "score": 68,
     "rating": "Partly Free",
     "evidence": "Partly Free 68 100",
-    "title": "Dominican Republic: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/dominican-republic/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: o"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CY",
@@ -653,7 +847,11 @@
     "score": 92,
     "rating": "Free",
     "evidence": "Free 92 100",
-    "title": "Cyprus: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/cyprus/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CZ",
@@ -669,7 +867,11 @@
     "score": 94,
     "rating": "Free",
     "evidence": "Free 94 100",
-    "title": "Czechia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/czechia/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https:/"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "DE",
@@ -685,7 +887,11 @@
     "score": 93,
     "rating": "Free",
     "evidence": "Free 93 100",
-    "title": "Germany: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/germany/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "DJ",
@@ -701,7 +907,11 @@
     "score": 24,
     "rating": "Not Free",
     "evidence": "Not Free 24 100",
-    "title": "Djibouti: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/djibouti/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "DM",
@@ -717,7 +927,11 @@
     "score": 93,
     "rating": "Free",
     "evidence": "Free 93 100",
-    "title": "Dominica: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/dominica/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "CV",
@@ -733,7 +947,11 @@
     "score": 92,
     "rating": "Free",
     "evidence": "Free 92 100",
-    "title": "Cabo Verde: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/cabo-verde/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"h"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "DK",
@@ -749,7 +967,11 @@
     "score": 97,
     "rating": "Free",
     "evidence": "Free 97 100",
-    "title": "Denmark: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/denmark/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "ER",
@@ -765,7 +987,11 @@
     "score": 3,
     "rating": "Not Free",
     "evidence": "Not Free 3 100",
-    "title": "Eritrea: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/eritrea/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "ET",
@@ -781,7 +1007,11 @@
     "score": 20,
     "rating": "Not Free",
     "evidence": "Not Free 20 100",
-    "title": "Ethiopia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/ethiopia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "DZ",
@@ -797,7 +1027,11 @@
     "score": 32,
     "rating": "Not Free",
     "evidence": "Not Free 32 100",
-    "title": "Algeria: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/algeria/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "ES",
@@ -813,7 +1047,11 @@
     "score": 90,
     "rating": "Free",
     "evidence": "Free 90 100",
-    "title": "Spain: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/spain/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "EG",
@@ -829,7 +1067,11 @@
     "score": 18,
     "rating": "Not Free",
     "evidence": "Not Free 18 100",
-    "title": "Egypt: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/egypt/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "EE",
@@ -845,7 +1087,11 @@
     "score": 95,
     "rating": "Free",
     "evidence": "Free 95 100",
-    "title": "Estonia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/estonia/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "EC",
@@ -861,7 +1107,11 @@
     "score": 67,
     "rating": "Partly Free",
     "evidence": "Partly Free 67 100",
-    "title": "Ecuador: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/ecuador/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https:/"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "FI",
@@ -877,7 +1127,11 @@
     "score": 100,
     "rating": "Free",
     "evidence": "Free 100 100",
-    "title": "Finland: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/finland/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "FM",
@@ -893,7 +1147,11 @@
     "score": 92,
     "rating": "Free",
     "evidence": "Free 92 100",
-    "title": "Micronesia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/micronesia/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"h"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "GB",
@@ -909,7 +1167,11 @@
     "score": 91,
     "rating": "Free",
     "evidence": "Free 91 100",
-    "title": "United Kingdom: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/united-kingdom/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\""
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "FJ",
@@ -925,7 +1187,11 @@
     "score": 66,
     "rating": "Partly Free",
     "evidence": "Partly Free 66 100",
-    "title": "Fiji: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/fiji/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "GA",
@@ -941,7 +1207,11 @@
     "score": 20,
     "rating": "Not Free",
     "evidence": "Not Free 20 100",
-    "title": "Gabon: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/gabon/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "GH",
@@ -957,7 +1227,11 @@
     "score": 80,
     "rating": "Free",
     "evidence": "Free 80 100",
-    "title": "Ghana: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/ghana/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "GD",
@@ -973,7 +1247,11 @@
     "score": 89,
     "rating": "Free",
     "evidence": "Free 89 100",
-    "title": "Grenada: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/grenada/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https:/"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "GE",
@@ -989,7 +1267,11 @@
     "score": 58,
     "rating": "Partly Free",
     "evidence": "Partly Free 58 100",
-    "title": "Georgia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/georgia/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "FR",
@@ -1005,7 +1287,11 @@
     "score": 89,
     "rating": "Free",
     "evidence": "Free 89 100",
-    "title": "France: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/france/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "GY",
@@ -1021,7 +1307,11 @@
     "score": 73,
     "rating": "Free",
     "evidence": "Free 73 100",
-    "title": "Guyana: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/guyana/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "GM",
@@ -1037,7 +1327,11 @@
     "score": 50,
     "rating": "Partly Free",
     "evidence": "Partly Free 50 100",
-    "title": "The Gambia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/gambia/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "HN",
@@ -1053,7 +1347,11 @@
     "score": 48,
     "rating": "Partly Free",
     "evidence": "Partly Free 48 100",
-    "title": "Honduras: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/honduras/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "GR",
@@ -1069,7 +1367,11 @@
     "score": 85,
     "rating": "Free",
     "evidence": "Free 85 100",
-    "title": "Greece: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/greece/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "GQ",
@@ -1085,7 +1387,11 @@
     "score": 5,
     "rating": "Not Free",
     "evidence": "Not Free 5 100",
-    "title": "Equatorial Guinea: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/equatorial-guinea/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "GW",
@@ -1101,7 +1407,11 @@
     "score": 43,
     "rating": "Partly Free",
     "evidence": "Partly Free 43 100",
-    "title": "Guinea-Bissau: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/guinea-bissau/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\""
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "GN",
@@ -1117,7 +1427,11 @@
     "score": 30,
     "rating": "Not Free",
     "evidence": "Not Free 30 100",
-    "title": "Guinea: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/guinea/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "GT",
@@ -1133,7 +1447,11 @@
     "score": 46,
     "rating": "Partly Free",
     "evidence": "Partly Free 46 100",
-    "title": "Guatemala: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/guatemala/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"http"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "ID",
@@ -1149,7 +1467,11 @@
     "score": 57,
     "rating": "Partly Free",
     "evidence": "Partly Free 57 100",
-    "title": "Indonesia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/indonesia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "IL",
@@ -1165,7 +1487,11 @@
     "score": 74,
     "rating": "Free",
     "evidence": "Free 74 100",
-    "title": "Israel: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/israel/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "HT",
@@ -1181,7 +1507,11 @@
     "score": 30,
     "rating": "Not Free",
     "evidence": "Not Free 30 100",
-    "title": "Haiti: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/haiti/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "HR",
@@ -1197,7 +1527,11 @@
     "score": 83,
     "rating": "Free",
     "evidence": "Free 83 100",
-    "title": "Croatia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/croatia/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https:/"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "HU",
@@ -1213,7 +1547,11 @@
     "score": 65,
     "rating": "Partly Free",
     "evidence": "Partly Free 65 100",
-    "title": "Hungary: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/hungary/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "IQ",
@@ -1229,7 +1567,11 @@
     "score": 30,
     "rating": "Not Free",
     "evidence": "Not Free 30 100",
-    "title": "Iraq: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/iraq/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomhou"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "IE",
@@ -1245,7 +1587,11 @@
     "score": 97,
     "rating": "Free",
     "evidence": "Free 97 100",
-    "title": "Ireland: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/ireland/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "IN",
@@ -1261,7 +1607,11 @@
     "score": 66,
     "rating": "Partly Free",
     "evidence": "Partly Free 66 100",
-    "title": "India: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/india/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "JM",
@@ -1277,7 +1627,11 @@
     "score": 80,
     "rating": "Free",
     "evidence": "Free 80 100",
-    "title": "Jamaica: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/jamaica/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "IT",
@@ -1293,7 +1647,11 @@
     "score": 90,
     "rating": "Free",
     "evidence": "Free 90 100",
-    "title": "Italy: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/italy/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "JP",
@@ -1309,7 +1667,11 @@
     "score": 96,
     "rating": "Free",
     "evidence": "Free 96 100",
-    "title": "Japan: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/japan/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "IS",
@@ -1325,7 +1687,11 @@
     "score": 94,
     "rating": "Free",
     "evidence": "Free 94 100",
-    "title": "Iceland: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/iceland/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "KG",
@@ -1341,7 +1707,11 @@
     "score": 27,
     "rating": "Not Free",
     "evidence": "Not Free 27 100",
-    "title": "Kyrgyzstan: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/kyrgyzstan/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "IR",
@@ -1357,7 +1727,11 @@
     "score": 11,
     "rating": "Not Free",
     "evidence": "Not Free 11 100",
-    "title": "Iran: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/iran/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomhou"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "JO",
@@ -1373,7 +1747,11 @@
     "score": 33,
     "rating": "Not Free",
     "evidence": "Not Free 33 100",
-    "title": "Jordan: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/jordan/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "contradicted_by_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "KE",
@@ -1389,7 +1767,11 @@
     "score": 52,
     "rating": "Partly Free",
     "evidence": "Partly Free 52 100",
-    "title": "Kenya: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/kenya/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "KM",
@@ -1405,7 +1787,11 @@
     "score": 42,
     "rating": "Partly Free",
     "evidence": "Partly Free 42 100",
-    "title": "Comoros: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/comoros/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "KI",
@@ -1421,7 +1807,11 @@
     "score": 90,
     "rating": "Free",
     "evidence": "Free 90 100",
-    "title": "Kiribati: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/kiribati/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "KZ",
@@ -1437,7 +1827,11 @@
     "score": 23,
     "rating": "Not Free",
     "evidence": "Not Free 23 100",
-    "title": "Kazakhstan: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/kazakhstan/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "KR",
@@ -1453,7 +1847,11 @@
     "score": 83,
     "rating": "Free",
     "evidence": "Free 83 100",
-    "title": "South Korea: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/south-korea/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\""
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "KN",
@@ -1469,7 +1867,11 @@
     "score": 89,
     "rating": "Free",
     "evidence": "Free 89 100",
-    "title": "St. Kitts and Nevis: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/st-kitts-and-nevis/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: "
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "KW",
@@ -1485,7 +1887,11 @@
     "score": 38,
     "rating": "Partly Free",
     "evidence": "Partly Free 38 100",
-    "title": "Kuwait: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/kuwait/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "contradicted_by_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "KP",
@@ -1501,7 +1907,11 @@
     "score": 3,
     "rating": "Not Free",
     "evidence": "Not Free 3 100",
-    "title": "North Korea: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/north-korea/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"http"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "KH",
@@ -1517,7 +1927,11 @@
     "score": 23,
     "rating": "Not Free",
     "evidence": "Not Free 23 100",
-    "title": "Cambodia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/cambodia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "LT",
@@ -1533,7 +1947,11 @@
     "score": 89,
     "rating": "Free",
     "evidence": "Free 89 100",
-    "title": "Lithuania: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/lithuania/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "LA",
@@ -1549,7 +1967,11 @@
     "score": 13,
     "rating": "Not Free",
     "evidence": "Not Free 13 100",
-    "title": "Laos: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/laos/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomhou"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "LB",
@@ -1565,7 +1987,11 @@
     "score": 42,
     "rating": "Partly Free",
     "evidence": "Partly Free 42 100",
-    "title": "Lebanon: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/lebanon/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "LS",
@@ -1581,7 +2007,11 @@
     "score": 66,
     "rating": "Free",
     "evidence": "Free 66 100",
-    "title": "Lesotho: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/lesotho/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "LC",
@@ -1597,7 +2027,11 @@
     "score": 92,
     "rating": "Free",
     "evidence": "Free 92 100",
-    "title": "St. Lucia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/st-lucia/freedom-world/2024) [wordlim: 200] Crawled: 5 days ago; Content type: text/html; Source: open({\"ref_id\":\"http"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "LR",
@@ -1613,7 +2047,11 @@
     "score": 64,
     "rating": "Partly Free",
     "evidence": "Partly Free 64 100",
-    "title": "Liberia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/liberia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "LI",
@@ -1629,7 +2067,11 @@
     "score": 90,
     "rating": "Free",
     "evidence": "Free 90 100",
-    "title": "Liechtenstein: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/liechtenstein/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_i"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "LK",
@@ -1645,7 +2087,11 @@
     "score": 54,
     "rating": "Partly Free",
     "evidence": "Partly Free 54 100",
-    "title": "Sri Lanka: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/sri-lanka/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "LU",
@@ -1661,7 +2107,11 @@
     "score": 97,
     "rating": "Free",
     "evidence": "Free 97 100",
-    "title": "Luxembourg: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/luxembourg/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"h"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "LV",
@@ -1677,7 +2127,11 @@
     "score": 88,
     "rating": "Free",
     "evidence": "Free 88 100",
-    "title": "Latvia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/latvia/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https://f"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "LY",
@@ -1693,7 +2147,11 @@
     "score": 9,
     "rating": "Not Free",
     "evidence": "Not Free 9 100",
-    "title": "Libya: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/libya/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MC",
@@ -1709,7 +2167,11 @@
     "score": 82,
     "rating": "Free",
     "evidence": "Free 82 100",
-    "title": "Monaco: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/monaco/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MA",
@@ -1725,7 +2187,11 @@
     "score": 37,
     "rating": "Partly Free",
     "evidence": "Partly Free 37 100",
-    "title": "Morocco: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/morocco/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MG",
@@ -1741,7 +2207,11 @@
     "score": 58,
     "rating": "Partly Free",
     "evidence": "Partly Free 58 100",
-    "title": "Madagascar: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/madagascar/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MD",
@@ -1757,7 +2227,11 @@
     "score": 61,
     "rating": "Partly Free",
     "evidence": "Partly Free 61 100",
-    "title": "Moldova: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/moldova/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "ME",
@@ -1773,7 +2247,11 @@
     "score": 69,
     "rating": "Partly Free",
     "evidence": "Partly Free 69 100",
-    "title": "Montenegro: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/montenegro/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MM",
@@ -1787,9 +2265,13 @@
     },
     "url": "https://freedomhouse.org/country/myanmar/freedom-world/2024",
     "score": 8,
-    "title": "Myanmar: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/myanmar/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free",
     "rating": "Not Free",
-    "evidence": "Not Free 8 100"
+    "evidence": "Not Free 8 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MR",
@@ -1805,7 +2287,11 @@
     "score": 39,
     "rating": "Partly Free",
     "evidence": "Partly Free 39 100",
-    "title": "Mauritania: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/mauritania/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MH",
@@ -1821,7 +2307,11 @@
     "score": 93,
     "rating": "Free",
     "evidence": "Free 93 100",
-    "title": "Marshall Islands: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/marshall-islands/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MU",
@@ -1837,7 +2327,11 @@
     "score": 85,
     "rating": "Free",
     "evidence": "Free 85 100",
-    "title": "Mauritius: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/mauritius/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"http"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "ML",
@@ -1853,7 +2347,11 @@
     "score": 26,
     "rating": "Not Free",
     "evidence": "Not Free 26 100",
-    "title": "Mali: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/mali/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https://freed"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MT",
@@ -1869,7 +2367,11 @@
     "score": 87,
     "rating": "Free",
     "evidence": "Free 87 100",
-    "title": "Malta: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/malta/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https://fre"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MK",
@@ -1885,7 +2387,11 @@
     "score": 67,
     "rating": "Partly Free",
     "evidence": "Partly Free 67 100",
-    "title": "North Macedonia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/north-macedonia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_i"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MN",
@@ -1901,7 +2407,11 @@
     "score": 84,
     "rating": "Free",
     "evidence": "Free 84 100",
-    "title": "Mongolia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/mongolia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MZ",
@@ -1917,7 +2427,11 @@
     "score": 44,
     "rating": "Partly Free",
     "evidence": "Partly Free 44 100",
-    "title": "Mozambique: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/mozambique/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MV",
@@ -1933,7 +2447,11 @@
     "score": 44,
     "rating": "Partly Free",
     "evidence": "Partly Free 44 100",
-    "title": "Maldives: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/maldives/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "NG",
@@ -1949,7 +2467,11 @@
     "score": 44,
     "rating": "Partly Free",
     "evidence": "Partly Free 44 100",
-    "title": "Nigeria: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/nigeria/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MX",
@@ -1965,7 +2487,11 @@
     "score": 60,
     "rating": "Partly Free",
     "evidence": "Partly Free 60 100",
-    "title": "Mexico: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/mexico/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "NA",
@@ -1981,7 +2507,11 @@
     "score": 77,
     "rating": "Free",
     "evidence": "Free 77 100",
-    "title": "Namibia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/namibia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MY",
@@ -1997,7 +2527,11 @@
     "score": 53,
     "rating": "Partly Free",
     "evidence": "Partly Free 53 100",
-    "title": "Malaysia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/malaysia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "MW",
@@ -2013,7 +2547,11 @@
     "score": 66,
     "rating": "Partly Free",
     "evidence": "Partly Free 66 100",
-    "title": "Malawi: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/malawi/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "NE",
@@ -2029,7 +2567,11 @@
     "score": 33,
     "rating": "Partly Free",
     "evidence": "Partly Free 33 100",
-    "title": "Niger: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/niger/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "contradicted_by_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "NO",
@@ -2045,7 +2587,11 @@
     "score": 98,
     "rating": "Free",
     "evidence": "Free 98 100",
-    "title": "Norway: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/norway/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "NR",
@@ -2061,7 +2607,11 @@
     "score": 77,
     "rating": "Free",
     "evidence": "Free 77 100",
-    "title": "Nauru: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/nauru/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https://fre"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "PA",
@@ -2077,7 +2627,11 @@
     "score": 83,
     "rating": "Free",
     "evidence": "Free 83 100",
-    "title": "Panama: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/panama/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https://f"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "NZ",
@@ -2093,7 +2647,11 @@
     "score": 99,
     "rating": "Free",
     "evidence": "Free 99 100",
-    "title": "New Zealand: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/new-zealand/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"http"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "NL",
@@ -2109,7 +2667,11 @@
     "score": 97,
     "rating": "Free",
     "evidence": "Free 97 100",
-    "title": "Netherlands: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/netherlands/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"http"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "OM",
@@ -2125,7 +2687,11 @@
     "score": 24,
     "rating": "Not Free",
     "evidence": "Not Free 24 100",
-    "title": "Oman: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/oman/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomhou"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "NP",
@@ -2141,7 +2707,11 @@
     "score": 62,
     "rating": "Partly Free",
     "evidence": "Partly Free 62 100",
-    "title": "Nepal: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/nepal/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https://fre"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "NI",
@@ -2157,7 +2727,11 @@
     "score": 16,
     "rating": "Not Free",
     "evidence": "Not Free 16 100",
-    "title": "Nicaragua: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/nicaragua/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "PH",
@@ -2173,7 +2747,11 @@
     "score": 58,
     "rating": "Partly Free",
     "evidence": "Partly Free 58 100",
-    "title": "Philippines: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/philippines/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"http"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "PL",
@@ -2189,7 +2767,11 @@
     "score": 80,
     "rating": "Free",
     "evidence": "Free 80 100",
-    "title": "Poland: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/poland/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "PE",
@@ -2205,7 +2787,11 @@
     "score": 66,
     "rating": "Partly Free",
     "evidence": "Partly Free 66 100",
-    "title": "Peru: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/peru/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomhou"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "PK",
@@ -2221,7 +2807,11 @@
     "score": 35,
     "rating": "Partly Free",
     "evidence": "Partly Free 35 100",
-    "title": "Pakistan: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/pakistan/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "PT",
@@ -2237,7 +2827,11 @@
     "score": 96,
     "rating": "Free",
     "evidence": "Free 96 100",
-    "title": "Portugal: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/portugal/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "PY",
@@ -2253,7 +2847,11 @@
     "score": 63,
     "rating": "Partly Free",
     "evidence": "Partly Free 63 100",
-    "title": "Paraguay: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/paraguay/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "PG",
@@ -2269,7 +2867,11 @@
     "score": 61,
     "rating": "Partly Free",
     "evidence": "Partly Free 61 100",
-    "title": "Papua New Guinea: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/papua-new-guinea/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "PW",
@@ -2285,7 +2887,11 @@
     "score": 92,
     "rating": "Free",
     "evidence": "Free 92 100",
-    "title": "Palau: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/palau/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https://fre"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "RW",
@@ -2301,7 +2907,11 @@
     "score": 23,
     "rating": "Not Free",
     "evidence": "Not Free 23 100",
-    "title": "Rwanda: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/rwanda/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SA",
@@ -2317,7 +2927,11 @@
     "score": 8,
     "rating": "Not Free",
     "evidence": "Not Free 8 100",
-    "title": "Saudi Arabia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/saudi-arabia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"ht"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "QA",
@@ -2333,7 +2947,11 @@
     "score": 25,
     "rating": "Not Free",
     "evidence": "Not Free 25 100",
-    "title": "Qatar: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/qatar/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SC",
@@ -2349,7 +2967,11 @@
     "score": 79,
     "rating": "Free",
     "evidence": "Free 79 100",
-    "title": "Seychelles: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/seychelles/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SB",
@@ -2365,7 +2987,11 @@
     "score": 75,
     "rating": "Free",
     "evidence": "Free 75 100",
-    "title": "Solomon Islands: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/solomon-islands/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_i"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "RU",
@@ -2381,7 +3007,11 @@
     "score": 13,
     "rating": "Not Free",
     "evidence": "Not Free 13 100",
-    "title": "Russia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/russia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "RO",
@@ -2397,7 +3027,11 @@
     "score": 83,
     "rating": "Free",
     "evidence": "Free 83 100",
-    "title": "Romania: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/romania/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "RS",
@@ -2413,7 +3047,11 @@
     "score": 57,
     "rating": "Partly Free",
     "evidence": "Partly Free 57 100",
-    "title": "Serbia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/serbia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SM",
@@ -2429,7 +3067,11 @@
     "score": 97,
     "rating": "Free",
     "evidence": "Free 97 100",
-    "title": "San Marino: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/san-marino/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"h"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SG",
@@ -2445,7 +3087,11 @@
     "score": 48,
     "rating": "Partly Free",
     "evidence": "Partly Free 48 100",
-    "title": "Singapore: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/singapore/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SE",
@@ -2461,7 +3107,11 @@
     "score": 99,
     "rating": "Free",
     "evidence": "Free 99 100",
-    "title": "Sweden: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/sweden/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SN",
@@ -2477,7 +3127,11 @@
     "score": 67,
     "rating": "Partly Free",
     "evidence": "Partly Free 67 100",
-    "title": "Senegal: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/senegal/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "contradicted_by_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SD",
@@ -2493,7 +3147,11 @@
     "score": 6,
     "rating": "Not Free",
     "evidence": "Not Free 6 100",
-    "title": "Sudan: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/sudan/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SK",
@@ -2509,7 +3167,11 @@
     "score": 90,
     "rating": "Free",
     "evidence": "Free 90 100",
-    "title": "Slovakia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/slovakia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SL",
@@ -2525,7 +3187,11 @@
     "score": 60,
     "rating": "Partly Free",
     "evidence": "Partly Free 60 100",
-    "title": "Sierra Leone: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/sierra-leone/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"ht"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SI",
@@ -2541,7 +3207,11 @@
     "score": 96,
     "rating": "Free",
     "evidence": "Free 96 100",
-    "title": "Slovenia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/slovenia/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SV",
@@ -2557,11 +3227,15 @@
     "score": 53,
     "rating": "Partly Free",
     "evidence": "Partly Free 53 100",
-    "title": "El Salvador: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/el-salvador/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"http"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "ST",
-    "name": "São Tomé & Príncipe",
+    "name": "S\u00e3o Tom\u00e9 & Pr\u00edncipe",
     "bundled": {
       "year": 2024,
       "rating": "Free",
@@ -2573,7 +3247,11 @@
     "score": 84,
     "rating": "Free",
     "evidence": "Free 84 100",
-    "title": "São Tomé and Príncipe: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/sao-tome-and-principe/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Sou"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SO",
@@ -2589,7 +3267,11 @@
     "score": 8,
     "rating": "Not Free",
     "evidence": "Not Free 8 100",
-    "title": "Somalia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/somalia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SZ",
@@ -2605,7 +3287,11 @@
     "score": 17,
     "rating": "Not Free",
     "evidence": "Not Free 17 100",
-    "title": "Eswatini: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/eswatini/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SS",
@@ -2621,7 +3307,11 @@
     "score": 1,
     "rating": "Not Free",
     "evidence": "Not Free 1 100",
-    "title": "South Sudan: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/south-sudan/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"http"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SY",
@@ -2637,7 +3327,11 @@
     "score": 1,
     "rating": "Not Free",
     "evidence": "Not Free 1 100",
-    "title": "Syria: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/syria/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "TD",
@@ -2653,7 +3347,11 @@
     "score": 15,
     "rating": "Not Free",
     "evidence": "Not Free 15 100",
-    "title": "Chad: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/chad/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "SR",
@@ -2669,7 +3367,11 @@
     "score": 79,
     "rating": "Free",
     "evidence": "Free 79 100",
-    "title": "Suriname: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/suriname/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "TG",
@@ -2685,7 +3387,11 @@
     "score": 42,
     "rating": "Partly Free",
     "evidence": "Partly Free 42 100",
-    "title": "Togo: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/togo/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomhou"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "TL",
@@ -2701,7 +3407,11 @@
     "score": 72,
     "rating": "Free",
     "evidence": "Free 72 100",
-    "title": "Timor-Leste: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/timor-leste/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\""
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "TH",
@@ -2717,7 +3427,11 @@
     "score": 36,
     "rating": "Partly Free",
     "evidence": "Partly Free 36 100",
-    "title": "Thailand: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/thailand/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "contradicted_by_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "TM",
@@ -2733,7 +3447,11 @@
     "score": 2,
     "rating": "Not Free",
     "evidence": "Not Free 2 100",
-    "title": "Turkmenistan: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/turkmenistan/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"ht"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "TN",
@@ -2749,7 +3467,11 @@
     "score": 51,
     "rating": "Partly Free",
     "evidence": "Partly Free 51 100",
-    "title": "Tunisia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/tunisia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "TO",
@@ -2765,11 +3487,15 @@
     "score": 81,
     "rating": "Free",
     "evidence": "Free 81 100",
-    "title": "Tonga: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/tonga/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "TR",
-    "name": "Türkiye",
+    "name": "T\u00fcrkiye",
     "bundled": {
       "year": 2024,
       "rating": "Not Free",
@@ -2781,7 +3507,11 @@
     "score": 33,
     "rating": "Not Free",
     "evidence": "Not Free 33 100",
-    "title": "Turkey: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/turkey/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "TJ",
@@ -2797,7 +3527,11 @@
     "score": 5,
     "rating": "Not Free",
     "evidence": "Not Free 5 100",
-    "title": "Tajikistan: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/tajikistan/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "UA",
@@ -2813,7 +3547,11 @@
     "score": 49,
     "rating": "Partly Free",
     "evidence": "Partly Free 49 100",
-    "title": "Ukraine: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/ukraine/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "TV",
@@ -2829,7 +3567,11 @@
     "score": 93,
     "rating": "Free",
     "evidence": "Free 93 100",
-    "title": "Tuvalu: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/tuvalu/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https://f"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "TZ",
@@ -2845,7 +3587,11 @@
     "score": 36,
     "rating": "Partly Free",
     "evidence": "Partly Free 36 100",
-    "title": "Tanzania: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/tanzania/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "contradicted_by_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "UG",
@@ -2861,7 +3607,11 @@
     "score": 34,
     "rating": "Not Free",
     "evidence": "Not Free 34 100",
-    "title": "Uganda: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/uganda/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https://f"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "UY",
@@ -2877,7 +3627,11 @@
     "score": 96,
     "rating": "Free",
     "evidence": "Free 96 100",
-    "title": "Uruguay: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/uruguay/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "US",
@@ -2893,7 +3647,11 @@
     "score": 83,
     "rating": "Free",
     "evidence": "Free 83 100",
-    "title": "United States: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/united-states/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\""
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "TT",
@@ -2909,7 +3667,11 @@
     "score": 82,
     "rating": "Free",
     "evidence": "Free 82 100",
-    "title": "Trinidad and Tobago: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/trinidad-and-tobago/freedom-world/2024) [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: "
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "UZ",
@@ -2925,7 +3687,11 @@
     "score": 12,
     "rating": "Not Free",
     "evidence": "Not Free 12 100",
-    "title": "Uzbekistan: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/uzbekistan/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https:"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "ZM",
@@ -2941,7 +3707,11 @@
     "score": 54,
     "rating": "Partly Free",
     "evidence": "Partly Free 54 100",
-    "title": "Zambia: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/zambia/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedo"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "YE",
@@ -2957,7 +3727,11 @@
     "score": 10,
     "rating": "Not Free",
     "evidence": "Not Free 10 100",
-    "title": "Yemen: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/yemen/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://freedomh"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "ZA",
@@ -2973,7 +3747,11 @@
     "score": 79,
     "rating": "Free",
     "evidence": "Free 79 100",
-    "title": "South Africa: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/south-africa/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"ht"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "VC",
@@ -2989,7 +3767,11 @@
     "score": 90,
     "rating": "Free",
     "evidence": "Free 90 100",
-    "title": "St. Vincent and the Grenadines: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/st-vincent-and-grenadines/freedom-world/2024) [wordlim: 200] Crawled: 5 days ago; Content type: t"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "WS",
@@ -3005,7 +3787,11 @@
     "score": 84,
     "rating": "Free",
     "evidence": "Free 84 100",
-    "title": "Samoa: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/samoa/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https://fre"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "VE",
@@ -3021,7 +3807,11 @@
     "score": 15,
     "rating": "Not Free",
     "evidence": "Not Free 15 100",
-    "title": "Venezuela: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/venezuela/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "VN",
@@ -3037,7 +3827,11 @@
     "score": 19,
     "rating": "Not Free",
     "evidence": "Not Free 19 100",
-    "title": "Vietnam: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/vietnam/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://free"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "VU",
@@ -3053,7 +3847,11 @@
     "score": 82,
     "rating": "Free",
     "evidence": "Free 82 100",
-    "title": "Vanuatu: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/vanuatu/freedom-world/2024) [wordlim: 200] Crawled: 2 days ago; Content type: text/html; Source: open({\"ref_id\":\"https:/"
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   },
   {
     "cc": "ZW",
@@ -3069,6 +3867,10 @@
     "score": 27,
     "rating": "Not Free",
     "evidence": "Not Free 27 100",
-    "title": "Zimbabwe: Freedom in the World 2024 Country Report | Freedom House (https://freedomhouse.org/country/zimbabwe/freedom-world/2024) [wordlim: 200] Crawled: today; Content type: text/html; Source: open({\"ref_id\":\"https://fr"
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
   }
 ]
