@@ -16357,7 +16357,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sociedade do Notícias Relatório Anual 2023"
       },
       "revenueModel": "Print sales, state and commercial advertising, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mz/noticias.png",
+      "logoExplainer": "Red rounded block with white 'n' cutout beside red lowercase 'oticias' — Jornal Notícias masthead.",
+      "licenceNote": "Jornal Notícias masthead trademark bundled from the publisher's official site brand assets (noticias.co.mz) for educational reference in Learn mode.",
       "sources": [
         "https://www.jornalnoticias.co.mz",
         "https://pt.wikipedia.org/wiki/Jornal_Not%C3%ADcias"
@@ -16384,7 +16386,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo SOICO Relatório de Gestão 2023"
       },
       "revenueModel": "Print sales, multimedia advertising, and broadcast commercial sponsors",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mz/o-pais.jpg",
+      "logoExplainer": "Heavy slab-serif 'OPais' with an orange bar on the i and a green-white-red triangle on the s.",
+      "licenceNote": "O País (Mozambique) masthead trademark bundled from the publisher's official site brand assets (opais.co.mz) for educational reference in Learn mode.",
       "sources": [
         "https://opais.co.mz",
         "https://pt.wikipedia.org/wiki/O_Pa%C3%ADs_(Mo%C3%A7ambique)"
@@ -16446,7 +16450,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
@@ -16465,6 +16468,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Notable Mozambican newspaper",
         "source": "https://www.verdade.co.mz"
       },
+      "logo": "newspaper-logos/mz/voz.jpg",
+      "logoExplainer": "Red '@Verdade' with an oversized V over a black bar reading 'A verdade em cada palavra'.",
+      "licenceNote": "@Verdade masthead trademark bundled from the publisher's official site brand assets (verdade.co.mz) for educational reference in Learn mode.",
       "sources": [
         "https://www.verdade.co.mz"
       ]
@@ -24719,7 +24725,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "vc-stvincent-times",
       "name": "St Vincent Times",
       "founded": 2015,
@@ -24735,6 +24740,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major St Vincent news website",
         "source": "https://www.stvincenttimes.com"
       },
+      "logo": "newspaper-logos/vc/stvincent-times.webp",
+      "logoExplainer": "Blue/yellow/green 'TS' monogram beside black serif 'St. Vincent TIMES' — St Vincent Times masthead.",
+      "licenceNote": "St Vincent Times masthead trademark bundled from the publisher's official site brand assets (stvincenttimes.com) for educational reference in Learn mode.",
       "sources": [
         "https://www.stvincenttimes.com"
       ]
