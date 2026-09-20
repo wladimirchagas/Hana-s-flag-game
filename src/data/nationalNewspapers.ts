@@ -903,7 +903,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Novo Jornal Media Kit 2024"
       },
       "revenueModel": "Print sales and digital display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ao/novo-jornal.svg",
+      "logoExplainer": "White lowercase 'novo jornal' sans-serif wordmark — Angolan independent daily masthead.",
+      "licenceNote": "Novo Jornal masthead trademark bundled from the publisher's official site brand assets (novojornal.co.ao) for educational reference in Learn mode.",
+
       "sources": [
         "https://novojornal.co.ao",
         "https://pt.wikipedia.org/wiki/Novo_Jornal"
@@ -15133,7 +15136,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Malijet Media Data 2023"
       },
       "revenueModel": "Digital advertising networks and commercial sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ml/malijet.png",
+      "logoExplainer": "Green 'mali' pill beside a red 'J' and grey 'et', with tagline 'Numéro 1 au Mali' — Malian digital news masthead.",
+      "licenceNote": "MaliJet masthead trademark bundled from the publisher's official site brand assets (malijet.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://malijet.com"
       ]
@@ -22223,7 +22229,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Alwihda Info Analytics 2023"
       },
       "revenueModel": "Online banner advertising and media consulting",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/td/alwihda-info.png",
+      "logoExplainer": "Red Arabic 'الوحدة' above blue Latin 'AL WIHDA' on black — Chadian digital news masthead.",
+      "licenceNote": "Alwihda Info masthead trademark bundled from the publisher's official site brand assets (alwihdainfo.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.alwihdainfo.com",
         "https://fr.wikipedia.org/wiki/Alwihda_Info"
@@ -25790,7 +25799,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "New Zimbabwe Web Analytics / Similarweb"
       },
       "revenueModel": "Digital display advertising, sponsored content, and diaspora services promotion",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/zw/new-zimbabwe.png",
+      "logoExplainer": "Circular Victoria Falls sunset framed in Zimbabwe flag colours with a magenta 'New Zimbabwe.com' banner — Zimbabwean digital news crest.",
+      "licenceNote": "New Zimbabwe masthead trademark bundled from the publisher's official site brand assets (newzimbabwe.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.newzimbabwe.com",
         "https://en.wikipedia.org/wiki/NewZimbabwe.com"
