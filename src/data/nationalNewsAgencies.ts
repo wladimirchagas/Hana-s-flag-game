@@ -221,7 +221,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ministry of Information and Culture / BNA Official"
       },
       "revenueModel": "Directly funded through the state budget",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/af/bakhtar.png",
+      "logoExplainer": "Red winged emblem beside light 'BAKHTAR NEWS AGENCY' wordmark on a dark plate — Bakhtar's site masthead.",
+      "licenceNote": "Bakhtar News Agency brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://bakhtarnews.af",
         "https://en.wikipedia.org/wiki/Bakhtar_News_Agency"
@@ -1321,7 +1324,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ABP Annual Report 2023"
       },
       "revenueModel": "Direct state budget funding",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bi/abp.png",
+      "logoExplainer": "Circular map-and-tower seal with red 'Agence Burundaise de Presse' and outlined 'ABP' — Burundi ABP crest.",
+      "licenceNote": "Agence Burundaise de Presse brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://abpinfo.bi",
         "https://fr.wikipedia.org/wiki/Agence_burundaise_de_presse"
@@ -1373,7 +1379,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "AKP Ministry Report 2023"
       },
       "revenueModel": "Direct state budget funding",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/kh/akp.png",
+      "logoExplainer": "Circular Angkor Wat and guardian-lion emblem with bold 'AKP' — Agence Kampuchea Presse crest.",
+      "licenceNote": "AKP brand mark trademark bundled from the agency's official site brand assets (akp.gov.kh) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.akp.gov.kh",
         "https://en.wikipedia.org/wiki/Agence_Kampuchea_Presse"
@@ -1437,7 +1446,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "CVE 190 / person / year (~US$1.85)"
       },
       "revenueModel": "State public service contract and wire subscription syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cv/inforpress.svg",
+      "logoExplainer": "Blue stacked 'infor/press' wordmark beside a red squared globe — Cape Verde Inforpress crest.",
+      "licenceNote": "Inforpress brand mark trademark bundled from the agency's official site brand assets (inforpress.cv/logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://inforpress.cv",
         "https://pt.wikipedia.org/wiki/Inforpress"
@@ -1601,7 +1613,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "XAF 30 / person / year (~US$0.05)"
       },
       "revenueModel": "State budget allocation and wire syndication fees",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cg/aci.png",
+      "logoExplainer": "Red circled 'A' beside 'AGENCE CONGOLAISE D'INFORMATION' and the agency motto — ACI crest.",
+      "licenceNote": "ACI brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.aci.cg",
         "https://fr.wikipedia.org/wiki/Agence_congolaise_d%27information"
@@ -2246,7 +2261,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State information agency"
       },
       "revenueModel": "Direct state budget funding",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gq/guinea-ecuatorial-press.png",
+      "logoExplainer": "Equatorial Guinea coat of arms (silk-cotton tree, six stars, 'UNIDAD PAZ JUSTICIA') — the state press site's main mark.",
+      "licenceNote": "Guinea Ecuatorial Press brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://guineaecuatorialpress.com",
         "https://es.wikipedia.org/wiki/Guinea_Ecuatorial"
@@ -2460,7 +2478,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "State budget subvention and wire subscription licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/kg/kabar.svg",
+      "logoExplainer": "Bold navy 'KABAR' wordmark — Kyrgyz National News Agency Kabar crest from its site.",
+      "licenceNote": "Kabar brand mark trademark bundled from the agency's official site brand assets (kabar.kg) for educational reference in Learn mode.",
+
       "sources": [
         "https://kabar.kg",
         "https://en.wikipedia.org/wiki/Kabar"
@@ -2609,7 +2630,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "€22.30 / person / year"
       },
       "revenueModel": "State budget subvention (100% ad-free public service media)",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/lv/lsm.svg",
+      "logoExplainer": "Black 'LSM' bar beside 'Latvijas Sabiedriskais medijs' — Latvian Public Media crest.",
+      "licenceNote": "LSM brand mark trademark bundled from the publisher's official site brand assets (lsm.lv) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.lsm.lv",
         "https://en.wikipedia.org/wiki/Public_Broadcasting_of_Latvia"
@@ -5281,7 +5305,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "HAAC (Haute Autorité de l'Audiovisuel et de la Communication) Togo"
       },
       "revenueModel": "State ministry subvention and news subscription contracts",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tg/atop.svg",
+      "logoExplainer": "Green 'atop' wordmark with lined globe 'o' and red accent dot over 'Agence Togolaise de Presse'.",
+      "licenceNote": "ATOP brand mark trademark bundled from the agency's official site brand assets (atop.tg) for educational reference in Learn mode.",
+
       "sources": [
         "https://atop.tg",
         "https://en.wikipedia.org/wiki/Media_of_Togo"

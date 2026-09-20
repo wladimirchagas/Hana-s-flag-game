@@ -2,52 +2,88 @@
 /**
  * Install visually-verified newspaper/agency logos into public/ + data files.
  * Only entries listed in MANIFEST are touched. Never invents images.
- *
- * Usage: node scripts/install-harvested-logos.mjs
  */
 import { readFileSync, writeFileSync, copyFileSync, mkdirSync, existsSync } from "node:fs";
-import { dirname, resolve, join, extname, basename } from "node:path";
+import { dirname, resolve, extname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/**
- * Visually verified batch 15 (2026-09). Browser-UA site assets + Wikimedia.
- */
+/** Visually verified batch 16 — official-site logos via browser UA. */
 const MANIFEST = [
   {
-    id: "bj-abp",
-    src: "tmp/logo-harvest/manual/bj/abp-b15.jpg",
+    id: "af-bakhtar",
+    src: "tmp/logo-harvest/manual/af/bakhtar-b16.png",
     explainer:
-      "Green 'ABP' wordmark beside a Benin-coloured dotted globe over 'AGENCE BENIN PRESSE' — Agence Bénin Presse crest.",
+      "Red winged emblem beside light 'BAKHTAR NEWS AGENCY' wordmark on a dark plate — Bakhtar's site masthead.",
     licence:
-      "Agence Bénin Presse brand mark trademark bundled from Wikimedia Commons (File:Logo de l'Agence Bénin Presse.jpg) for educational reference in Learn mode.",
+      "Bakhtar News Agency brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "rs-tanjug",
-    src: "tmp/logo-harvest/manual/rs/tanjug-b15.png",
+    id: "bi-abp",
+    src: "tmp/logo-harvest/manual/bi/abp-b16.png",
     explainer:
-      "Navy plate with white 'Tanjug' wordmark: rounded 'T' badge and red square accent — Tanjug header brand from its site.",
+      "Circular map-and-tower seal with red 'Agence Burundaise de Presse' and outlined 'ABP' — Burundi ABP crest.",
     licence:
-      "Tanjug brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "Agence Burundaise de Presse brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
   },
   {
-    id: "az-azertac",
-    src: "tmp/logo-harvest/manual/az/azertac-b15.svg",
+    id: "kh-akp",
+    src: "tmp/logo-harvest/manual/kh/akp-b16.png",
     explainer:
-      "Navy 'AZƏRTAC' wordmark beside an eight-point star emblem with speech-bubble motifs — Azerbaijan State News Agency crest.",
+      "Circular Angkor Wat and guardian-lion emblem with bold 'AKP' — Agence Kampuchea Presse crest.",
     licence:
-      "AzərTAc brand mark trademark bundled from the agency's official site brand assets (azertag.az/resources/images/logo.svg) for educational reference in Learn mode.",
+      "AKP brand mark trademark bundled from the agency's official site brand assets (akp.gov.kh) for educational reference in Learn mode.",
   },
   {
-    id: "jo-petra",
-    src: "tmp/logo-harvest/manual/jo/petra-b15.png",
+    id: "cv-inforpress",
+    src: "tmp/logo-harvest/manual/cv/inforpress-b16.svg",
     explainer:
-      "Crowned Jordan-flag 'J' with globe and 'Petra' / Arabic titles over 'Jordan News Agency' — Petra's official crest.",
+      "Blue stacked 'infor/press' wordmark beside a red squared globe — Cape Verde Inforpress crest.",
     licence:
-      "Jordan News Agency (Petra) brand mark trademark bundled from the agency's official site brand assets (petra.gov.jo/images/logo.png) for educational reference in Learn mode.",
+      "Inforpress brand mark trademark bundled from the agency's official site brand assets (inforpress.cv/logo.svg) for educational reference in Learn mode.",
+  },
+  {
+    id: "cg-aci",
+    src: "tmp/logo-harvest/manual/cg/aci-b16.png",
+    explainer:
+      "Red circled 'A' beside 'AGENCE CONGOLAISE D'INFORMATION' and the agency motto — ACI crest.",
+    licence:
+      "ACI brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "gq-guinea-ecuatorial-press",
+    src: "tmp/logo-harvest/manual/gq/guinea-ecuatorial-press-b16.png",
+    explainer:
+      "Equatorial Guinea coat of arms (silk-cotton tree, six stars, 'UNIDAD PAZ JUSTICIA') — the state press site's main mark.",
+    licence:
+      "Guinea Ecuatorial Press brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+  },
+  {
+    id: "kg-kabar",
+    src: "tmp/logo-harvest/manual/kg/kabar-b16.svg",
+    explainer:
+      "Bold navy 'KABAR' wordmark — Kyrgyz National News Agency Kabar crest from its site.",
+    licence:
+      "Kabar brand mark trademark bundled from the agency's official site brand assets (kabar.kg) for educational reference in Learn mode.",
+  },
+  {
+    id: "lv-lsm",
+    src: "tmp/logo-harvest/manual/lv/lsm-b16b.svg",
+    explainer:
+      "Black 'LSM' bar beside 'Latvijas Sabiedriskais medijs' — Latvian Public Media crest.",
+    licence:
+      "LSM brand mark trademark bundled from the publisher's official site brand assets (lsm.lv) for educational reference in Learn mode.",
+  },
+  {
+    id: "tg-atop",
+    src: "tmp/logo-harvest/manual/tg/atop-b16.svg",
+    explainer:
+      "Green 'atop' wordmark with lined globe 'o' and red accent dot over 'Agence Togolaise de Presse'.",
+    licence:
+      "ATOP brand mark trademark bundled from the agency's official site brand assets (atop.tg) for educational reference in Learn mode.",
   },
 ];
 
@@ -117,21 +153,14 @@ function main() {
     const ext = extname(row.src).toLowerCase() || ".png";
     const cc = row.id.slice(0, 2);
     const slug = row.id.slice(3);
-    const relDir = `newspaper-logos/${cc}`;
-    const destName = `${slug}${ext}`;
-    const destRel = `${relDir}/${destName}`;
+    const destRel = `newspaper-logos/${cc}/${slug}${ext}`;
     const destAbs = resolve(ROOT, "public", destRel);
     mkdirSync(dirname(destAbs), { recursive: true });
     copyFileSync(abs, destAbs);
-    const fields = {
-      logo: destRel,
-      explainer: row.explainer,
-      licence: row.licence,
-      sha256: sha256(buf),
-    };
+    const fields = { logo: destRel, explainer: row.explainer, licence: row.licence, sha256: sha256(buf) };
     console.log(`install ${row.id} → ${destRel} (${buf.length}b)`);
-    const beforeP = papers;
-    const beforeA = agencies;
+    const beforeP = papers,
+      beforeA = agencies;
     try {
       papers = patchEntry(papers, row.id, fields);
     } catch (e) {
@@ -142,9 +171,7 @@ function main() {
     } catch (e) {
       if (!String(e.message).includes("not found")) throw e;
     }
-    if (papers === beforeP && agencies === beforeA) {
-      throw new Error(`${row.id}: not found in newspapers or agencies`);
-    }
+    if (papers === beforeP && agencies === beforeA) throw new Error(`${row.id}: not found`);
     installed++;
   }
   writeFileSync(resolve(ROOT, "src/data/nationalNewspapers.ts"), papers);
