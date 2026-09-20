@@ -11,55 +11,39 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 31 — montage-scanned. */
+/** Visually verified batch 32 — montage-scanned. */
 const MANIFEST = [
   {
-    id: "ga-gabon-medias-time",
-    src: "tmp/batch31-manual/gabon-medias-time.png",
+    id: "ml-malijet",
+    src: "tmp/batch32-manual/malijet-sm.png",
     explainer:
-      "Teal 'GMT' monogram with a clock face in the G above 'GABON MEDIA TIME' on black — Gabonese digital news masthead.",
+      "Green 'mali' pill beside a red 'J' and grey 'et', with tagline 'Numéro 1 au Mali' — Malian digital news masthead.",
     licence:
-      "Gabon Media Time masthead trademark bundled from the publisher's official site brand assets (gabonmediatime.com) for educational reference in Learn mode.",
+      "MaliJet masthead trademark bundled from the publisher's official site brand assets (malijet.com) for educational reference in Learn mode.",
   },
   {
-    id: "ao-angonoticias",
-    src: "tmp/batch31-manual/angonoticias.jpg",
+    id: "zw-new-zimbabwe",
+    src: "tmp/batch32-manual/new-zimbabwe.png",
     explainer:
-      "White slab-serif 'ANGO / NOTÍCIAS' on an orange square — Angolan digital news masthead.",
+      "Circular Victoria Falls sunset framed in Zimbabwe flag colours with a magenta 'New Zimbabwe.com' banner — Zimbabwean digital news crest.",
     licence:
-      "AngoNotícias masthead trademark bundled from the publisher's official site brand assets (angonoticias.com) for educational reference in Learn mode.",
+      "New Zimbabwe masthead trademark bundled from the publisher's official site brand assets (newzimbabwe.com) for educational reference in Learn mode.",
   },
   {
-    id: "na-die-republikein",
-    src: "tmp/batch31-manual/republikein.png",
+    id: "ao-novo-jornal",
+    src: "tmp/batch32-manual/novo-jornal-lettering.svg",
     explainer:
-      "White 'Republikein' wordmark with Afrikaans tagline 'Jou land. Jou mense. Jou nuus.' on black — Namibian Afrikaans daily masthead.",
+      "White lowercase 'novo jornal' sans-serif wordmark — Angolan independent daily masthead.",
     licence:
-      "Die Republikein masthead trademark bundled from the publisher's official site brand assets (republikein.com.na) for educational reference in Learn mode.",
+      "Novo Jornal masthead trademark bundled from the publisher's official site brand assets (novojornal.co.ao) for educational reference in Learn mode.",
   },
   {
-    id: "so-hiiraan-online",
-    src: "tmp/batch31-manual/hiiraan-light.jpg",
+    id: "td-alwihda-info",
+    src: "tmp/batch32-manual/alwihda.png",
     explainer:
-      "Green palm-tree shield beside dark green 'HIIRAAN ONLINE' — Somali digital news masthead.",
+      "Red Arabic 'الوحدة' above blue Latin 'AL WIHDA' on black — Chadian digital news masthead.",
     licence:
-      "Hiiraan Online masthead trademark bundled from the publisher's official site brand assets (hiiraan.com) for educational reference in Learn mode.",
-  },
-  {
-    id: "so-caasimada",
-    src: "tmp/batch31-manual/caasimada.webp",
-    explainer:
-      "White swirling 'C' mark beside 'Caasimada ONLINE' with a star — Somali digital news masthead.",
-    licence:
-      "Caasimada Online masthead trademark bundled from the publisher's official site brand assets (caasimada.net) for educational reference in Learn mode.",
-  },
-  {
-    id: "sz-swaziland-news",
-    src: "tmp/batch31-manual/swaziland-news.png",
-    explainer:
-      "Red-outlined 'SWAZILAND' with a red feather and solid red 'NEWS' on black — Eswatini digital news masthead.",
-    licence:
-      "Swaziland News masthead trademark bundled from the publisher's official site brand assets (swazilandnews.co.za) for educational reference in Learn mode.",
+      "Alwihda Info masthead trademark bundled from the publisher's official site brand assets (alwihdainfo.com) for educational reference in Learn mode.",
   },
 ];
 
