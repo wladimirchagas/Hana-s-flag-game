@@ -597,7 +597,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Albanian Media Institute Review 2023"
       },
       "revenueModel": "Print retail sales and commercial display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/al/gazeta-shqiptare.svg",
+      "logoExplainer": "Black serif all-caps 'GAZETA SHQIPTARE' masthead — Albanian daily newspaper wordmark.",
+      "licenceNote": "Gazeta Shqiptare.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.balkanweb.com",
         "https://en.wikipedia.org/wiki/Gazeta_Shqiptare"
@@ -2417,7 +2420,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Jimbere Media Kit 2024"
       },
       "revenueModel": "Print sales and corporate sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bi/jimbere.png",
+      "logoExplainer": "Two-tone slab-serif 'Jimbere' wordmark (cyan 'Jim' + orange 'bere') — Jimbere Magazine masthead.",
+      "licenceNote": "Jimbere Magazine logo.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.jimbere-mag.org"
       ]
