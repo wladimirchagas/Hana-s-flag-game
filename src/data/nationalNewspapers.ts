@@ -3641,7 +3641,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The San Pedro Sun Media Kit 2024"
       },
       "revenueModel": "Tourism business advertising and print sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bz/san-pedro-sun.png",
+      "logoExplainer": "Orange rising sun over a teal open-book glyph above black serif 'The San Pedro Sun' — San Pedro Sun masthead.",
+      "licenceNote": "The San Pedro Sun masthead trademark bundled from the publisher's official site brand assets (sanpedrosun.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.sanpedrosun.com"
       ]
@@ -8459,7 +8462,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Omni Media Audience Review 2024"
       },
       "revenueModel": "Digital display advertising, broadcast commercial revenue, and event sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gh/citinewsroom.png",
+      "logoExplainer": "Magenta striped 'CNR' over solid 'CITI NEWSROOM' — Citi Newsroom Ghana site mark.",
+      "licenceNote": "Citi Newsroom trademark bundled from the publisher's official site brand assets (citinewsroom.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://citinewsroom.com"
       ]
@@ -11257,7 +11263,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Jordan Press Foundation Annual Report 2023"
       },
       "revenueModel": "Print copy sales, official government notices, and advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/jo/al-rai.svg",
+      "logoExplainer": "Black Arabic الرأي wordmark over a light-blue silhouette map of Jordan — Al-Rai masthead.",
+      "licenceNote": "Al-Rai masthead trademark bundled from the publisher's official site brand assets (alrai.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://alrai.com",
         "https://en.wikipedia.org/wiki/Al_Rai_(Jordanian_newspaper)"
@@ -14339,7 +14348,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Le360 Media Data 2023"
       },
       "revenueModel": "Digital advertising, video production, and branded events",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ma/le360.svg",
+      "logoExplainer": "Outlined orange 'le' beside solid orange '360' — le360 Morocco wordmark.",
+      "licenceNote": "le360 trademark bundled from the publisher's official site brand assets (le360.ma) for educational reference in Learn mode.",
+
       "sources": [
         "https://fr.le360.ma",
         "https://ar.le360.ma"
@@ -17359,7 +17371,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nepal Press Council Audit 2023"
       },
       "revenueModel": "Print sales, corporate display advertising, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/np/kantipur.svg",
+      "logoExplainer": "Black Devanagari कान्तिपुर beside a pagoda silhouette — Kantipur daily masthead.",
+      "licenceNote": "Kantipur trademark bundled from the publisher's official site brand assets (ekantipur.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://ekantipur.com",
         "https://en.wikipedia.org/wiki/Kantipur_(daily)"
@@ -17717,7 +17732,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Oman Establishment for Press 2023"
       },
       "revenueModel": "Print subscriptions, official gazette advertising, and retail sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/om/omandaily.png",
+      "logoExplainer": "Black Arabic عمان wordmark over a light-blue silhouette map of Oman — Oman Daily (Jaridat Oman) masthead.",
+      "licenceNote": "Oman Daily trademark bundled from the publisher's official site brand assets (omandaily.om) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.omandaily.om"
       ]
@@ -17875,7 +17893,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Epasa Audience Audit 2023"
       },
       "revenueModel": "Print copy sales, classifieds, and digital display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pa/panama-america.png",
+      "logoExplainer": "Blue serif 'Panamá América' with a thin gold underline — Panamá América masthead.",
+      "licenceNote": "Panamá América masthead trademark bundled from the publisher's official site brand assets (panamaamerica.com.pa) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.panamaamerica.com.pa",
         "https://es.wikipedia.org/wiki/El_Panam%C3%A1_Am%C3%A9rica"
@@ -18019,7 +18040,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "pe-peru-21",
       "countryCode": "PE",
       "name": "Perú.21",
@@ -18035,6 +18055,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Peruvian daily",
         "source": "https://en.wikipedia.org/wiki/Perú.21"
       },
+      "logo": "newspaper-logos/pe/peru-21.png",
+      "logoExplainer": "White serif 'Perú' beside bold yellow '21' — Perú21 masthead.",
+      "licenceNote": "Perú21 trademark bundled from the publisher's official site brand assets (peru21.pe) for educational reference in Learn mode.",
+
       "sources": [
         "https://peru21.pe",
         "https://en.wikipedia.org/wiki/Perú.21"
@@ -24382,7 +24406,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Comscore Uruguay / Montevideo COMM"
       },
       "revenueModel": "Digital display advertising, programmatic video campaigns, and sponsored features",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/uy/montevideo-portal.svg",
+      "logoExplainer": "White arched 'm' mark beside stacked 'Montevideo' / 'Portal' — Montevideo Portal wordmark.",
+      "licenceNote": "Montevideo Portal trademark bundled from the publisher's official site brand assets (montevideo.com.uy) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.montevideo.com.uy",
         "https://en.wikipedia.org/wiki/Montevideo_Portal"
@@ -24438,7 +24465,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kun.uz Media Kit / SocialBlade Analytics"
       },
       "revenueModel": "Digital video advertising, native marketing, and commercial banner ads",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/uz/kun-uz.svg",
+      "logoExplainer": "Bold blue 'KUN.' beside a blue disc with white 'UZ' — Kun.uz site mark.",
+      "licenceNote": "Kun.uz trademark bundled from the publisher's official site brand assets (kun.uz) for educational reference in Learn mode.",
+
       "sources": [
         "https://kun.uz",
         "https://en.wikipedia.org/wiki/Media_of_Uzbekistan"
@@ -25520,7 +25550,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ABC South Africa Q4 2023 / Publisher Research Council"
       },
       "revenueModel": "Single-copy retail sales, home delivery subscriptions, and high-volume commercial print advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/za/sunday-times.svg",
+      "logoExplainer": "Blackletter 'Sunday Times' gothic wordmark — South Africa Sunday Times masthead.",
+      "licenceNote": "Sunday Times (South Africa) trademark bundled from the publisher's official TimesLIVE brand assets (sundaytimes.timeslive.co.za) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.timeslive.co.za/sunday-times",
         "https://en.wikipedia.org/wiki/Sunday_Times_(South_Africa)"
