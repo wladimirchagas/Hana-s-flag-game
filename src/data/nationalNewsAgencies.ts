@@ -2,6 +2,12 @@ import type { NewsAgency } from "../types/newsAgency";
 
 /**
  * Curated and sourced dataset of national news agencies for Learn mode.
+ *
+ * A news agency is a wire / newswire service that gathers and syndicates news
+ * to other outlets (e.g. Reuters, AFP, Bernama, TASS). Newspapers, television
+ * broadcasters, radio networks, and consumer news portals do not belong here —
+ * those live in NATIONAL_NEWSPAPERS (or are omitted). Not every country has a
+ * national news agency; missing is honest.
  */
 
 export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
@@ -159,47 +165,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "licenceNote": "Republic of Naoero official coat of arms bundled for educational reference in Learn mode."
     }
   ],
-  "VA": [
-    {
-      "id": "va-vatican-news",
-      "countryCode": "VA",
-      "name": "Vatican News",
-      "officialName": "Dicastero per la Comunicazione",
-      "nativeName": "Dicastero per la Comunicazione",
-      "englishTranslation": "Dicastery for Communication (incorporating Vatican News and L'Osservatore Romano)",
-      "motto": {
-        "original": "Unicuique suum / Non praevalebunt",
-        "translation": "To each his own / They shall not prevail (Matthew 16:18)"
-      },
-      "founded": 2017,
-      "frequency": "Continuous 24/7 global multimedia newswire",
-      "format": "Multilingual digital news portal, Vatican Radio audio stream, print daily (L'Osservatore Romano), and television feed (Vatican Media)",
-      "language": "53 broadcast languages (including Italian, English, Spanish, French, Portuguese, German, Arabic, Polish, Chinese, and Latin)",
-      "headquarters": "Piazza Pia 3, Rome / Vatican City State",
-      "owner": {
-        "name": "Holy See (The Roman Curia / Dicastery for Communication)",
-        "type": "Sovereign state media & pastoral communications organ"
-      },
-      "editorialStance": "Official global communications service of the Holy See, providing universal coverage of the Papacy, the Roman Curia, international diplomacy, and the worldwide Catholic Church",
-      "readership": {
-        "metric": "11.5+ million monthly digital visitors across 53 languages; broadcast syndication to over 1,000 affiliate radio networks and press agencies worldwide",
-        "source": "Dicastero per la Comunicazione Relazione di Bilancio & Vatican Media Analytics 2024"
-      },
-      "annualPublicFunding": {
-        "total": "€38.5 million total annual operating budget for the Dicastery for Communication",
-        "perCapita": "€48,125 / resident / year (across Vatican City's ~800 residents; serves 1.39 billion Catholics globally at €0.03/person)"
-      },
-      "revenueModel": "Funded directly by the Holy See Roman Curia budget (Holy See patrimony and Peter's Pence apostolic collection)",
-      "logo": "newspaper-logos/va/vatican-news.png",
-      "logoExplainer": "The Vatican News identity features the signature red background of papal ceremonial heraldry. On the left, a crisp square frame contains the Keys of Saint Peter crossed in saltire (one gold, one silver) bound by a cordon and surmounted by the papal triple tiara (triregnum), symbolizing papal apostolic authority and spiritual ministry. To the right, 'VATICAN NEWS' is rendered in clean geometric white typography, contrasting tradition with modern global accessibility.",
-      "sources": [
-        "https://www.vaticannews.va/",
-        "https://www.comunicazione.va/",
-        "https://www.vatican.va/roman_curia/secretariat-communication/index.htm"
-      ],
-      "licenceNote": "Holy See Dicastery for Communication trademark bundled for educational reference in Learn mode."
-    }
-  ],
   "AF": [
     {
       "id": "af-bakhtar",
@@ -224,7 +189,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/af/bakhtar.png",
       "logoExplainer": "Red winged emblem beside light 'BAKHTAR NEWS AGENCY' wordmark on a dark plate — Bakhtar's site masthead.",
       "licenceNote": "Bakhtar News Agency brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://bakhtarnews.af",
         "https://en.wikipedia.org/wiki/Bakhtar_News_Agency"
@@ -252,7 +216,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/af/pajhwok.png",
       "logoExplainer": "White 'PAJHWOK AFGHAN NEWS' wordmark with calligraphic mark and 'Reflecting the Truth' strap — the agency's official masthead.",
       "licenceNote": "Pajhwok Afghan News masthead trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://pajhwok.com",
         "https://en.wikipedia.org/wiki/Pajhwok_Afghan_News"
@@ -280,7 +243,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/af/khaama.png",
       "logoExplainer": "Official masthead/brand mark for Khaama Press, sourced from Wikimedia Commons and visually verified.",
       "licenceNote": "Khaama Press brand mark trademark bundled from Wikimedia Commons (File:Khaama-Press-Logo.png) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.khaama.com",
         "https://en.wikipedia.org/wiki/Khaama_Press"
@@ -312,7 +274,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/al/atsh.svg",
       "logoExplainer": "Official masthead/brand mark for Albanian Telegraphic Agency, sourced from Wikimedia Commons and visually verified.",
       "licenceNote": "Albanian Telegraphic Agency brand mark trademark bundled from Wikimedia Commons (File:Agjencia Telegrafike Shqiptare.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://ata.gov.al",
         "https://en.wikipedia.org/wiki/Albanian_Telegrafic_Agency"
@@ -343,39 +304,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/dz/aps.png",
       "logoExplainer": "Official masthead/brand mark for Algérie Presse Service, sourced from the publisher's official site and visually verified.",
       "licenceNote": "Algérie Presse Service brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.aps.dz",
         "https://en.wikipedia.org/wiki/Alg%C3%A9rie_Presse_Service"
-      ]
-    },
-    {
-      "id": "dz-el-khabar",
-      "countryCode": "DZ",
-      "name": "El Khabar",
-      "englishTranslation": "The News",
-      "founded": 1990,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital portal",
-      "language": "Arabic",
-      "headquarters": "Algiers",
-      "owner": {
-        "name": "El Khabar SPA",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Independent Arabic daily; broad political commentary, domestic politics, and social reporting",
-      "readership": {
-        "metric": "One of the most widely read Arabic-language dailies in Algeria (~100,000 daily print circulation)",
-        "source": "OJD Middle East & North Africa"
-      },
-      "revenueModel": "Print retail sales and commercial display advertising",
-      "logo": "newspaper-logos/dz/el-khabar.svg",
-      "logoExplainer": "Arabic 'الخبر' masthead — El Khabar's brand mark.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.elkhabar.com",
-        "https://en.wikipedia.org/wiki/El_Khabar"
       ]
     }
   ],
@@ -403,7 +334,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ad/ana.png",
       "logoExplainer": "Official masthead/brand mark for Agència de Notícies Andorrana, sourced from the publisher's official site and visually verified.",
       "licenceNote": "Agència de Notícies Andorrana brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.ana.ad",
         "https://ca.wikipedia.org/wiki/Ag%C3%A8ncia_de_Not%C3%ADcies_Andorrana"
@@ -434,40 +364,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ao/angop.jpg",
       "logoExplainer": "Orange italic 'ANGOP' with grey signal swooshes over 'Agência Angola Press' — the agency wordmark.",
       "licenceNote": "ANGOP brand mark trademark bundled from Wikimedia Commons (File:Logo Angop.jpg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.angop.ao",
         "https://en.wikipedia.org/wiki/Angola_Press_Agency"
-      ]
-    }
-  ],
-  "AG": [
-    {
-      "id": "ag-pointville",
-      "countryCode": "AG",
-      "name": "Point Express Newspaper",
-      "officialName": "Pointville Publishing",
-      "founded": 2020,
-      "frequency": "Daily publication (Monday–Friday)",
-      "format": "Digital daily e-paper & print publication",
-      "language": "English",
-      "headquarters": "St. John's",
-      "owner": {
-        "name": "Pointville Communications",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Daily news publication; national politics, economics, and community developments",
-      "readership": {
-        "metric": "Popular daily e-paper circulated widely via digital platforms and social channels",
-        "source": "Pointville Publishing Review 2023"
-      },
-      "revenueModel": "Advertising and commercial publishing",
-      "logo": "newspaper-logos/ag/pointville.png",
-      "logoExplainer": "Official masthead/brand mark for Point Express Newspaper, sourced from the publisher's official site and visually verified.",
-      "licenceNote": "Point Express Newspaper brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://pointville.ag"
       ]
     }
   ],
@@ -495,39 +394,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ar/telam.svg",
       "logoExplainer": "Lowercase 'télam' with signal-arc marks — Argentina's national news agency emblem.",
       "licenceNote": "Télam logo trademark bundled from Wikimedia Commons (File:Télam-logo-2021.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.telam.com.ar",
         "https://en.wikipedia.org/wiki/T%C3%A9lam"
-      ]
-    },
-    {
-      "id": "ar-el-cronista",
-      "countryCode": "AR",
-      "name": "El Cronista",
-      "officialName": "El Cronista Comercial",
-      "founded": 1908,
-      "frequency": "Daily (Monday–Friday)",
-      "format": "Tabloid & financial digital portal",
-      "language": "Spanish",
-      "headquarters": "Buenos Aires",
-      "owner": {
-        "name": "Grupo América",
-        "type": "Commercial conglomerate"
-      },
-      "editorialStance": "Financial and business daily; macroeconomic news, markets, and corporate policy",
-      "readership": {
-        "metric": "Leading financial daily in Argentina read by business executives and financial markets",
-        "source": "El Cronista Media Review 2023"
-      },
-      "revenueModel": "Corporate subscriptions, print sales, and financial advertising",
-      "logo": "newspaper-logos/ar/el-cronista.png",
-      "logoExplainer": "Teal 'C' disc beside 'El Cronista' — Argentina's business daily brand mark from its own site.",
-      "licenceNote": "El Cronista masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.cronista.com",
-        "https://es.wikipedia.org/wiki/El_Cronista_(n%C3%BAmero_comercial)"
       ]
     }
   ],
@@ -555,39 +424,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/am/armenpress.svg",
       "logoExplainer": "Official masthead/brand mark for Armenpress, sourced from Wikimedia Commons and visually verified.",
       "licenceNote": "Armenpress brand mark trademark bundled from Wikimedia Commons (File:Armenpress 2 logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://armenpress.am",
         "https://en.wikipedia.org/wiki/Armenpress"
-      ]
-    },
-    {
-      "id": "am-hayastani-hanrapetutyun",
-      "countryCode": "AM",
-      "name": "Hayastani Hanrapetutyun",
-      "englishTranslation": "Republic of Armenia",
-      "founded": 1990,
-      "frequency": "Daily (Tuesday–Saturday)",
-      "format": "Official print daily & digital portal",
-      "language": "Armenian",
-      "headquarters": "Yerevan",
-      "owner": {
-        "name": "National Assembly of Armenia",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Official parliamentary daily newspaper; official legislative acts, laws, and state decrees",
-      "readership": {
-        "metric": "Official legal gazette and daily paper for civil servants and legal professionals in Armenia",
-        "source": "National Assembly Press Division 2023"
-      },
-      "revenueModel": "State parliamentary budget allocation",
-      "logo": "newspaper-logos/am/hayastani-hanrapetutyun.png",
-      "logoExplainer": "Official masthead/brand mark for Hayastani Hanrapetutyun, sourced from the publisher's official site and visually verified.",
-      "licenceNote": "Hayastani Hanrapetutyun brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://hhpress.am",
-        "https://hy.wikipedia.org/wiki/%D5%80%D5%A1%D5%B5%D5%A1%D5%BD%D5%B2%D5%A1%D5%B6%D5%AB_%D5%80%D5%A1%D5%B6%D5%BF%D5%A1%D5%BA%D5%AE%D5%BF%D5%B8%D5%A9%D5%B5%D5%B8%D5%Living"
       ]
     }
   ],
@@ -619,38 +458,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/at/apa.png",
       "logoExplainer": "'APA' brand mark — Austria Presse Agentur's agency emblem.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://apa.at",
         "https://en.wikipedia.org/wiki/Austria_Presse_Agentur"
-      ]
-    },
-    {
-      "id": "at-der-standard",
-      "countryCode": "AT",
-      "name": "Der Standard",
-      "founded": 1988,
-      "frequency": "Daily (Monday–Saturday)",
-      "format": "Broadsheet (pink paper) & digital portal",
-      "language": "German",
-      "headquarters": "Vienna",
-      "owner": {
-        "name": "Oscar Bronner / STANDARD Medien AG",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Liberal-centre quality daily newspaper; international politics, culture, economics, and civil society",
-      "readership": {
-        "metric": "Leading online news portal in Austria (derStandard.at) with over 2.5 million monthly unique visitors",
-        "source": "ÖWA (Österreichische Web-Analyse) 2024"
-      },
-      "revenueModel": "Digital subscriptions, pink paper print sales, and display advertising",
-      "logo": "newspaper-logos/at/der-standard.svg",
-      "logoExplainer": "'DERSTANDARD' serif with a tall S and underline — the Vienna daily masthead.",
-      "licenceNote": "Trademark bundled from Wikimedia Commons (File:DER STANDARD LOGO schwarz.svg) for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.derstandard.at",
-        "https://en.wikipedia.org/wiki/Der_Standard"
       ]
     }
   ],
@@ -678,7 +488,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/az/azertac.svg",
       "logoExplainer": "Navy 'AZƏRTAC' wordmark beside an eight-point star emblem with speech-bubble motifs — Azerbaijan State News Agency crest.",
       "licenceNote": "AzərTAc brand mark trademark bundled from the agency's official site brand assets (azertag.az/resources/images/logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://azertag.az",
         "https://en.wikipedia.org/wiki/Azerbaijan_State_News_Agency"
@@ -707,7 +516,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/az/apa.svg",
       "logoExplainer": "Official masthead/brand mark for APA, sourced from the publisher's official site and visually verified.",
       "licenceNote": "APA brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://apa.az",
         "https://en.wikipedia.org/wiki/Azeri-Press_Agency"
@@ -735,7 +543,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/az/trend.png",
       "logoExplainer": "Official masthead/brand mark for Trend News Agency, sourced from the publisher's official site and visually verified.",
       "licenceNote": "Trend News Agency brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://en.trend.az",
         "https://en.wikipedia.org/wiki/Trend_News_Agency"
@@ -763,7 +570,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/az/report.png",
       "logoExplainer": "Official masthead/brand mark for Report News Agency, sourced from the publisher's official site and visually verified.",
       "licenceNote": "Report News Agency brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://report.az",
         "https://en.wikipedia.org/wiki/Report_News_Agency"
@@ -794,7 +600,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/bs/bis.png",
       "logoExplainer": "Bahamas coat of arms beside 'The Government of The Bahamas' on a navy plate — the official bahamas.gov.bs header mark used by Bahamas Information Services.",
       "licenceNote": "Government of The Bahamas crest trademark bundled from the official government CDN brand asset on bahamas.gov.bs for educational reference in Learn mode.",
-
       "sources": [
         "https://www.bahamas.gov.bs",
         "https://en.wikipedia.org/wiki/Bahamas_Information_Services"
@@ -853,97 +658,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/bd/bss.png",
       "logoExplainer": "Circular Bangladesh seal beside green 'BSS' and red 'NEWS' with the English portal tagline — Bangladesh Sangbad Sangstha crest.",
       "licenceNote": "BSS brand mark trademark bundled from the agency's official site brand assets (bssnews.net via Wayback Machine snapshot of the live logo file) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.bssnews.net",
         "https://en.wikipedia.org/wiki/Bangladesh_Sangbad_Sangstha"
-      ]
-    },
-    {
-      "id": "bd-daily-star",
-      "countryCode": "BD",
-      "name": "The Daily Star",
-      "founded": 1991,
-      "frequency": "Daily (Monday–Sunday)",
-      "format": "Broadsheet & digital portal",
-      "language": "English",
-      "headquarters": "Dhaka",
-      "owner": {
-        "name": "Mediaworld Ltd",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Leading English-language quality daily; independent, liberal stance, civil rights, and economic reporting",
-      "readership": {
-        "metric": "Largest circulation English newspaper in Bangladesh (over 8 million monthly unique web visitors)",
-        "source": "Reuters Institute Digital News Report 2023"
-      },
-      "revenueModel": "Print newsstand sales, display advertising, and digital subscriptions",
-      "logo": "newspaper-logos/bd/daily-star.svg",
-      "logoExplainer": "'The Daily Star' masthead — Bangladesh's English daily.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.thedailystar.net",
-        "https://en.wikipedia.org/wiki/The_Daily_Star_(Bangladesh)"
-      ]
-    },
-    {
-      "id": "bd-bdnews24",
-      "countryCode": "BD",
-      "name": "bdnews24.com",
-      "founded": 2005,
-      "frequency": "Continuous 24/7 digital news",
-      "format": "Bilingual digital news agency portal",
-      "language": "Bengali, English",
-      "headquarters": "Dhaka",
-      "owner": {
-        "name": "Bangladesh News 24 Hours Ltd",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Pioneer online news agency; 24-hour breaking news, political reporting, and multimedia coverage",
-      "readership": {
-        "metric": "First internet-only news agency in Bangladesh with over 10 million monthly digital visits",
-        "source": "SimilarWeb / bdnews24 Media Review 2024"
-      },
-      "revenueModel": "Digital advertising, sponsored sections, and mobile news syndication",
-      "logo": "newspaper-logos/bd/bdnews24.png",
-      "logoExplainer": "'bdnews24' wordmark — Bangladesh's digital news brand.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://bdnews24.com",
-        "https://en.wikipedia.org/wiki/Bdnews24.com"
-      ]
-    }
-  ],
-  "BB": [
-    {
-      "id": "bb-nation-news",
-      "countryCode": "BB",
-      "name": "Nation News",
-      "officialName": "The Nation Newspaper",
-      "founded": 1973,
-      "frequency": "Daily (Monday–Sunday)",
-      "format": "Broadsheet & digital portal",
-      "language": "English",
-      "headquarters": "Fontabelle, St. Michael",
-      "owner": {
-        "name": "One Caribbean Media Ltd (OCM)",
-        "type": "Commercial conglomerate"
-      },
-      "editorialStance": "Leading commercial daily newspaper in Barbados; investigative news, community issues, and CARICOM regional affairs",
-      "readership": {
-        "metric": "Highest circulation newspaper in Barbados (~25,000 daily print, 1M monthly digital visitors)",
-        "source": "One Caribbean Media Annual Report 2023"
-      },
-      "revenueModel": "Print retail sales, digital advertising, and e-paper subscriptions",
-      "logo": "newspaper-logos/bb/nation-news.png",
-      "logoExplainer": "Magenta 'NationNews' wordmark with a star built into the 'a' — Barbados NationNews digital masthead.",
-      "licenceNote": "NationNews Barbados masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.nationnews.com",
-        "https://en.wikipedia.org/wiki/The_Nation_(Barbados)"
       ]
     }
   ],
@@ -971,7 +688,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/by/belta.svg",
       "logoExplainer": "Official masthead/brand mark for BelTA, sourced from Wikimedia Commons and visually verified.",
       "licenceNote": "BelTA brand mark trademark bundled from Wikimedia Commons (File:BonBelta.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.belta.by",
         "https://en.wikipedia.org/wiki/Belarusian_Telegraph_Agency"
@@ -1000,7 +716,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/by/belapan.svg",
       "logoExplainer": "Official masthead/brand mark for BelaPAN, sourced from the publisher's official site and visually verified.",
       "licenceNote": "BelaPAN brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://belapan.by",
         "https://en.wikipedia.org/wiki/BelaPAN"
@@ -1031,39 +746,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/be/belga.png",
       "logoExplainer": "'Belga' brand mark — the Belgian news agency emblem.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.belga.be",
         "https://en.wikipedia.org/wiki/Belga_(news_agency)"
-      ]
-    },
-    {
-      "id": "be-de-standaard",
-      "countryCode": "BE",
-      "name": "De Standaard",
-      "englishTranslation": "The Standard",
-      "founded": 1918,
-      "frequency": "Daily (Monday–Saturday)",
-      "format": "Broadsheet & digital portal",
-      "language": "Dutch",
-      "headquarters": "Groot-Bijgaarden, Dilbeek",
-      "owner": {
-        "name": "Mediahuis NV",
-        "type": "Commercial conglomerate"
-      },
-      "editorialStance": "Leading Flemish quality daily newspaper; Christian-democrat heritage turned independent quality journal; culture, law, and politics",
-      "readership": {
-        "metric": "Leading Flemish quality paper (~90,000 daily print, 3M monthly digital readers)",
-        "source": "CIM Belgium 2023/2024"
-      },
-      "revenueModel": "Digital subscriptions, print sales, and corporate advertising",
-      "logo": "newspaper-logos/be/de-standaard.svg",
-      "logoExplainer": "'De Standaard' masthead — the Flemish daily brand mark.",
-      "licenceNote": "Trademark bundled from Wikimedia Commons (File:De Standaard logo.svg) for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.standaard.be",
-        "https://en.wikipedia.org/wiki/De_Standaard"
       ]
     }
   ],
@@ -1091,7 +776,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/bj/abp.jpg",
       "logoExplainer": "Green 'ABP' wordmark beside a Benin-coloured dotted globe over 'AGENCE BENIN PRESSE' — Agence Bénin Presse crest.",
       "licenceNote": "Agence Bénin Presse brand mark trademark bundled from Wikimedia Commons (File:Logo de l'Agence Bénin Presse.jpg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.abp.bj",
         "https://fr.wikipedia.org/wiki/Agence_B%C3%A9nin_Presse"
@@ -1122,7 +806,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/bo/abi.png",
       "logoExplainer": "Official masthead/brand mark for ABI, sourced from the publisher's official site and visually verified.",
       "licenceNote": "ABI brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://abi.bo",
         "https://es.wikipedia.org/wiki/Agencia_Boliviana_de_Informaci%C3%B3n"
@@ -1153,7 +836,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ba/fena.png",
       "logoExplainer": "Official masthead/brand mark for FENA, sourced from the publisher's official site and visually verified.",
       "licenceNote": "FENA brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://fena.ba",
         "https://bs.wikipedia.org/wiki/Federalna_novinska_agencija"
@@ -1182,7 +864,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ba/srna.svg",
       "logoExplainer": "Official masthead/brand mark for SRNA, sourced from the publisher's official site and visually verified.",
       "licenceNote": "SRNA brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.srna.rs",
         "https://sr.wikipedia.org/wiki/%D0%A1%D0%A0%D0%9D%D0%90"
@@ -1213,37 +894,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/bw/bopa.svg",
       "logoExplainer": "Official masthead/brand mark for BOPA, sourced from Wikimedia Commons and visually verified.",
       "licenceNote": "BOPA brand mark trademark bundled from Wikimedia Commons (File:BOPA logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.dailynews.gov.bw",
         "https://en.wikipedia.org/wiki/Botswana_Press_Agency"
-      ]
-    },
-    {
-      "id": "bw-sunday-standard",
-      "countryCode": "BW",
-      "name": "Sunday Standard",
-      "founded": 2005,
-      "frequency": "Weekly (Sunday)",
-      "format": "Broadsheet & digital portal",
-      "language": "English",
-      "headquarters": "Gaborone",
-      "owner": {
-        "name": "Telegraphic Publishing",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Independent commercial weekly; investigative journalism, business news, and political analysis",
-      "readership": {
-        "metric": "Influential Sunday paper read by policymakers, legal sector, and business leaders in Botswana",
-        "source": "Sunday Standard Review 2023"
-      },
-      "revenueModel": "Print sales and corporate advertising",
-      "logo": "newspaper-logos/bw/sunday-standard.png",
-      "logoExplainer": "Overlapping black and slate 'S' letters — Sunday Standard (Botswana) brand monogram from its site.",
-      "licenceNote": "Sunday Standard brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.sundaystandard.info"
       ]
     }
   ],
@@ -1271,7 +924,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/bg/bta.jpg",
       "logoExplainer": "'BTA' brand mark — the Bulgarian News Agency emblem.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.bta.bg",
         "https://en.wikipedia.org/wiki/Bulgarian_Telegraph_Agency"
@@ -1302,7 +954,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/bf/aib.png",
       "logoExplainer": "Official masthead/brand mark for Agence d'Information du Burkina, sourced from the publisher's official site and visually verified.",
       "licenceNote": "Agence d'Information du Burkina brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.aib.media",
         "https://fr.wikipedia.org/wiki/Agence_d%27information_du_Burkina"
@@ -1333,7 +984,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/bi/abp.png",
       "logoExplainer": "Circular map-and-tower seal with red 'Agence Burundaise de Presse' and outlined 'ABP' — Burundi ABP crest.",
       "licenceNote": "Agence Burundaise de Presse brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://abpinfo.bi",
         "https://fr.wikipedia.org/wiki/Agence_burundaise_de_presse"
@@ -1388,40 +1038,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/kh/akp.png",
       "logoExplainer": "Circular Angkor Wat and guardian-lion emblem with bold 'AKP' — Agence Kampuchea Presse crest.",
       "licenceNote": "AKP brand mark trademark bundled from the agency's official site brand assets (akp.gov.kh) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.akp.gov.kh",
         "https://en.wikipedia.org/wiki/Agence_Kampuchea_Presse"
-      ]
-    }
-  ],
-  "CA": [
-    {
-      "id": "ca-the-toronto-star",
-      "countryCode": "CA",
-      "name": "Toronto Star",
-      "founded": 1892,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital portal",
-      "language": "English",
-      "headquarters": "Toronto, Ontario",
-      "owner": {
-        "name": "NordStar Capital",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Social-democratic / liberal progressive editorial stance guided by the Atkinson Principles, focusing on social justice and civic affairs",
-      "readership": {
-        "metric": "Highest daily print circulation in Canada with 5.0+ million weekly readers",
-        "source": "Torstar Corporate Media Profile 2023"
-      },
-      "revenueModel": "Digital paywall subscriptions, print sales, and display advertising",
-      "logo": "newspaper-logos/ca/toronto-star.svg",
-      "logoExplainer": "Black 'Toronto Star' wordmark — Canada's highest-circulation daily masthead.",
-      "licenceNote": "Toronto Star masthead trademark bundled from Wikimedia Commons (File:Toronto-Star-Logo.svg) for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.thestar.com",
-        "https://en.wikipedia.org/wiki/Toronto_Star"
       ]
     }
   ],
@@ -1455,7 +1074,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/cv/inforpress.svg",
       "logoExplainer": "Blue stacked 'infor/press' wordmark beside a red squared globe — Cape Verde Inforpress crest.",
       "licenceNote": "Inforpress brand mark trademark bundled from the agency's official site brand assets (inforpress.cv/logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://inforpress.cv",
         "https://pt.wikipedia.org/wiki/Inforpress"
@@ -1494,102 +1112,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "https://acap.cf",
         "https://fr.wikipedia.org/wiki/Agence_centrafricaine_de_presse"
       ]
-    },
-    {
-      "id": "cf-le-potentiel-centrafricain",
-      "countryCode": "CF",
-      "name": "Le Potentiel Centrafricain",
-      "englishTranslation": "The Central African Potential",
-      "founded": 2000,
-      "frequency": "Daily newspaper",
-      "format": "Tabloid & digital portal",
-      "language": "French",
-      "headquarters": "Bangui",
-      "owner": {
-        "name": "Groupe Le Potentiel Centrafricain",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Independent commercial daily; national politics, economic reconstruction, and Central African mining/forestry sectors",
-      "readership": {
-        "metric": "Regular daily print circulation in Bangui commercial districts",
-        "source": "Haut Conseil de la Communication RCA 2023"
-      },
-      "revenueModel": "Print sales and public legal notice advertising",
-      "logo": "newspaper-logos/cf/le-potentiel-centrafricain.png",
-      "logoExplainer": "Official masthead/brand mark for Le Potentiel Centrafricain, sourced from the publisher's official site and visually verified.",
-      "licenceNote": "Le Potentiel Centrafricain brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://lepotentielcentrafricain.com",
-        "https://fr.wikipedia.org/wiki/M%C3%A9dias_en_R%C3%A9publique_centrafricaine"
-      ]
-    }
-  ],
-  "CN": [
-    {
-      "id": "cn-china-daily",
-      "countryCode": "CN",
-      "name": "China Daily",
-      "nativeName": "中国日报",
-      "englishTranslation": "China Daily",
-      "founded": 1981,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & international digital portal",
-      "language": "English",
-      "headquarters": "Beijing",
-      "owner": {
-        "name": "State Council Information Office",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "China's premier national English-language daily; international diplomacy, global business, trade, and cultural exchange",
-      "readership": {
-        "metric": "Over 900,000 daily global print distribution and 350+ million digital and social media followers worldwide",
-        "source": "China Daily Global Media Kit 2024"
-      },
-      "annualPublicFunding": {
-        "total": "Direct central state foreign communication appropriation",
-        "perCapita": "National international communication remit"
-      },
-      "revenueModel": "Central state foreign-press budget, global institutional subscriptions, and advertising",
-      "logo": "newspaper-logos/cn/china-daily.png",
-      "logoExplainer": "'China Daily' masthead — China's English-language daily.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.chinadaily.com.cn",
-        "https://en.wikipedia.org/wiki/China_Daily"
-      ]
-    },
-    {
-      "id": "cn-reference-news",
-      "countryCode": "CN",
-      "name": "Reference News",
-      "officialName": "Cankao Xiaoxi",
-      "nativeName": "参考消息",
-      "englishTranslation": "Reference News",
-      "founded": 1931,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet digest",
-      "language": "Chinese",
-      "headquarters": "Beijing",
-      "owner": {
-        "name": "Xinhua News Agency",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Foreign affairs digest published by Xinhua; translating and reprinting international news coverage and commentary for domestic readership",
-      "readership": {
-        "metric": "Over 2.5 million daily print circulation; historically one of China's most widely read daily digests",
-        "source": "Xinhua Media Research 2023"
-      },
-      "revenueModel": "Institutional and retail print subscriptions",
-      "logo": "newspaper-logos/cn/reference-news.png",
-      "logoExplainer": "Chinese '参考消息' / Reference News masthead.",
-      "licenceNote": "Trademark bundled from Wikimedia Commons (File:Logo of Reference News (Black).png) for educational reference in Learn mode.",
-
-      "sources": [
-        "http://www.cankaoxiaoxi.com",
-        "https://en.wikipedia.org/wiki/Reference_News"
-      ]
     }
   ],
   "CG": [
@@ -1622,39 +1144,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/cg/aci.png",
       "logoExplainer": "Red circled 'A' beside 'AGENCE CONGOLAISE D'INFORMATION' and the agency motto — ACI crest.",
       "licenceNote": "ACI brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.aci.cg",
         "https://fr.wikipedia.org/wiki/Agence_congolaise_d%27information"
-      ]
-    },
-    {
-      "id": "cg-la-semaine-africaine",
-      "countryCode": "CG",
-      "name": "La Semaine Africaine",
-      "englishTranslation": "The African Week",
-      "founded": 1952,
-      "frequency": "Bi-weekly publication (Tuesday & Friday)",
-      "format": "Tabloid publication & digital portal",
-      "language": "French",
-      "headquarters": "Brazzaville",
-      "owner": {
-        "name": "Episcopal Conference of the Congo (Catholic Church)",
-        "type": "Independent trust / foundation"
-      },
-      "editorialStance": "Historic independent bi-weekly; social justice, pastoral advocacy, ethical governance, and civil society reflection",
-      "readership": {
-        "metric": "Over 70 years of continuous publishing; highly respected independent moral authority in Congolese media",
-        "source": "La Semaine Africaine Archive 2023"
-      },
-      "revenueModel": "Print circulation, church subscriptions, and civic announcements",
-      "logo": "newspaper-logos/cg/la-semaine-africaine.jpg",
-      "logoExplainer": "Official masthead/brand mark for La Semaine Africaine, sourced from the publisher's official site and visually verified.",
-      "licenceNote": "La Semaine Africaine brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://lasemaineafricaine.info",
-        "https://fr.wikipedia.org/wiki/La_Semaine_africaine"
       ]
     }
   ],
@@ -1692,69 +1184,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "CR": [
-    {
-      "id": "cr-elfaro-cr",
-      "countryCode": "CR",
-      "name": "El Faro Costa Rica",
-      "englishTranslation": "The Lighthouse Costa Rica",
-      "founded": 2018,
-      "frequency": "Continuous digital news magazine",
-      "format": "Investigative digital portal",
-      "language": "Spanish",
-      "headquarters": "San José",
-      "owner": {
-        "name": "Fundación Trípode",
-        "type": "Non-profit independent foundation"
-      },
-      "editorialStance": "In-depth investigative journalism; corruption investigations, judicial independence, and regional Central American democracy",
-      "readership": {
-        "metric": "Leading investigative regional journalism platform relocated to San José for press freedom protection",
-        "source": "Fundación Trípode Annual Report 2023"
-      },
-      "revenueModel": "International journalistic grants and reader crowdfunding",
-      "logo": "newspaper-logos/cr/elfaro-cr.svg",
-      "logoExplainer": "Official masthead/brand mark for El Faro Costa Rica, sourced from the publisher's official site and visually verified.",
-      "licenceNote": "El Faro Costa Rica brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://elfaro.net",
-        "https://en.wikipedia.org/wiki/El_Faro_(digital_newspaper)"
-      ]
-    }
-  ],
   "CU": [
-    {
-      "id": "cu-granma",
-      "countryCode": "CU",
-      "name": "Granma",
-      "officialName": "Granma - Órgano Oficial del Comité Central del Partido Comunista de Cuba",
-      "nativeName": "Granma",
-      "englishTranslation": "Granma (named after the revolutionary yacht)",
-      "founded": 1965,
-      "frequency": "Daily newspaper (Monday–Saturday)",
-      "format": "Official state broadsheet & international portal",
-      "language": "Spanish, with foreign language editions",
-      "headquarters": "Plaza de la Revolución, Havana",
-      "owner": {
-        "name": "Central Committee of the Communist Party of Cuba",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Official newspaper of the Communist Party of Cuba; state decrees, socialist theory, economic reforms, and international anti-imperialist diplomacy",
-      "readership": {
-        "metric": "Largest print circulation in Cuba with 450,000 daily print copies and global digital reach across Granma.cu",
-        "source": "Editora Granma Informe de Gestión 2023"
-      },
-      "revenueModel": "Direct state budget appropriation and institutional subscriptions",
-      "logo": "newspaper-logos/cu/granma.png",
-      "logoExplainer": "Bold italic red 'Granma' wordmark — the Cuban Communist Party newspaper's classic masthead.",
-      "licenceNote": "Granma masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.granma.cu",
-        "https://en.wikipedia.org/wiki/Granma_(newspaper)"
-      ]
-    },
     {
       "id": "cu-prensa-latina",
       "countryCode": "CU",
@@ -1784,7 +1214,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/cu/prensa-latina.png",
       "logoExplainer": "Official masthead/brand mark for Prensa Latina, sourced from Wikimedia Commons and visually verified.",
       "licenceNote": "Prensa Latina brand mark trademark bundled from Wikimedia Commons (File:LOGO PRENSA LATINA.png) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.prensa-latina.cu",
         "https://en.wikipedia.org/wiki/Prensa_Latina"
@@ -1821,7 +1250,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/dj/adi.png",
       "logoExplainer": "ADI mark with globe and green/red letter tiles beside 'AGENCE DJIBOUTIENNE D'INFORMATION'.",
       "licenceNote": "ADI brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.adi.dj",
         "https://fr.wikipedia.org/wiki/Agence_djiboutienne_d%27information"
@@ -1884,71 +1312,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/iq/nina.png",
       "logoExplainer": "Official masthead/brand mark for NINA, sourced from the publisher's official site and visually verified.",
       "licenceNote": "NINA brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://ninanews.com",
         "https://en.wikipedia.org/wiki/National_Iraqi_News_Agency"
-      ]
-    }
-  ],
-  "IE": [
-    {
-      "id": "ie-irish-examiner",
-      "countryCode": "IE",
-      "name": "Irish Examiner",
-      "founded": 1841,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital news portal",
-      "language": "English",
-      "headquarters": "Cork",
-      "owner": {
-        "name": "The Irish Times DAC / Mediahuis",
-        "type": "Commercial media group"
-      },
-      "editorialStance": "Major national daily published in Cork; center-left focus on national politics, agriculture, regional development, and investigative reports",
-      "readership": {
-        "metric": "220,000 daily print and digital readers across Ireland",
-        "source": "JNLR Readership Survey 2023–24"
-      },
-      "revenueModel": "Print sales, digital subscription, and commercial advertising",
-      "logo": "newspaper-logos/ie/irish-examiner.png",
-      "logoExplainer": "'Irish Examiner' masthead — the Cork-based daily brand mark.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.irishexaminer.com",
-        "https://en.wikipedia.org/wiki/Irish_Examiner"
-      ]
-    }
-  ],
-  "IT": [
-    {
-      "id": "it-la-stampa",
-      "countryCode": "IT",
-      "name": "La Stampa",
-      "englishTranslation": "The Press",
-      "founded": 1867,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital portal",
-      "language": "Italian",
-      "headquarters": "Turin",
-      "owner": {
-        "name": "GEDI Gruppo Editoriale",
-        "type": "Commercial media group"
-      },
-      "editorialStance": "Historic daily newspaper based in Turin; centrist stance with strong coverage of Northern Italy industrial economy and national politics",
-      "readership": {
-        "metric": "One of Italy's top 4 national newspapers with ~100,000 daily circulation",
-        "source": "ADS Italy Circulation Data 2024"
-      },
-      "revenueModel": "Print sales, digital subscriptions, and display advertising",
-      "logo": "newspaper-logos/it/la-stampa.png",
-      "logoExplainer": "Bold slab-serif 'LA STAMPA' capitals — the Turin daily's masthead.",
-      "licenceNote": "La Stampa masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.lastampa.it",
-        "https://en.wikipedia.org/wiki/La_Stampa"
       ]
     }
   ],
@@ -1980,68 +1346,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ci/aip.png",
       "logoExplainer": "Official masthead/brand mark for AIP, sourced from Wikimedia Commons and visually verified.",
       "licenceNote": "AIP brand mark trademark bundled from Wikimedia Commons (File:AIP Logo.png) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.aip.ci",
         "https://en.wikipedia.org/wiki/Agence_Ivoirienne_de_Presse"
-      ]
-    }
-  ],
-  "JM": [
-    {
-      "id": "jm-jamaica-star",
-      "countryCode": "JM",
-      "name": "The Jamaica Star",
-      "founded": 1951,
-      "frequency": "Daily afternoon newspaper",
-      "format": "Tabloid print & digital edition",
-      "language": "English, Jamaican Patois",
-      "headquarters": "Kingston",
-      "owner": {
-        "name": "RJRGLEANER Communications Group",
-        "type": "Publicly listed media conglomerate"
-      },
-      "editorialStance": "Popular tabloid focusing on Jamaican pop culture, Dancehall music, human interest stories, and sports",
-      "readership": {
-        "metric": "Widely read tabloid in urban Kingston and Montego Bay among island youth",
-        "source": "RJRGLEANER Communications Group 2023"
-      },
-      "revenueModel": "Print newsstand sales and popular advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://jamaica-star.com",
-        "https://en.wikipedia.org/wiki/The_Jamaica_Star"
-      ]
-    }
-  ],
-  "JP": [
-    {
-      "id": "jp-mainichi-shimbun",
-      "countryCode": "JP",
-      "name": "The Mainichi Shimbun",
-      "englishTranslation": "Daily Newspaper",
-      "founded": 1872,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital news portal",
-      "language": "Japanese, English",
-      "headquarters": "Tokyo",
-      "owner": {
-        "name": "The Mainichi Newspapers Co., Ltd.",
-        "type": "Independent press publisher"
-      },
-      "editorialStance": "Japan's oldest daily newspaper; progressive, social-democrat stance on environment, pacifism, and civil rights",
-      "readership": {
-        "metric": "1.8 million daily print circulation nationwide",
-        "source": "NSK Japan Newspaper Audit 2024"
-      },
-      "revenueModel": "Print subscriptions, digital access, and display advertising",
-      "logo": "newspaper-logos/jp/mainichi-shimbun.svg",
-      "logoExplainer": "Kanji '毎日新聞' flanked by blue star and eye emblems — the Mainichi Shimbun's full brand lockup.",
-      "licenceNote": "Mainichi Shimbun masthead trademark bundled from Wikimedia Commons (File:Mainichi Shimbun logo.svg) for educational reference in Learn mode.",
-
-      "sources": [
-        "https://mainichi.jp",
-        "https://en.wikipedia.org/wiki/Mainichi_Shimbun"
       ]
     }
   ],
@@ -2073,70 +1380,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/jo/petra.png",
       "logoExplainer": "Crowned Jordan-flag 'J' with globe and 'Petra' / Arabic titles over 'Jordan News Agency' — Petra's official crest.",
       "licenceNote": "Jordan News Agency (Petra) brand mark trademark bundled from the agency's official site brand assets (petra.gov.jo/images/logo.png) for educational reference in Learn mode.",
-
       "sources": [
         "https://petra.gov.jo",
         "https://en.wikipedia.org/wiki/Jordan_News_Agency"
-      ]
-    }
-  ],
-  "KZ": [
-    {
-      "id": "kz-egemen-qazaqstan",
-      "countryCode": "KZ",
-      "name": "Egemen Qazaqstan",
-      "englishTranslation": "Independent Kazakhstan",
-      "founded": 1919,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital edition",
-      "language": "Kazakh",
-      "headquarters": "Astana",
-      "owner": {
-        "name": "Kazakh Newspapers LLP / Ministry of Culture and Information",
-        "type": "State-backed publishing group"
-      },
-      "editorialStance": "Kazakhstan's national Kazakh-language newspaper of record; government decisions, state history, culture, and national development",
-      "readership": {
-        "metric": "Largest print circulation Kazakh-language paper (~150,000 copies daily)",
-        "source": "Kazakh Newspapers LLP Audit 2023"
-      },
-      "revenueModel": "State publishing budget, print subscriptions, and official notices",
-      "logo": "newspaper-logos/kz/egemen-qazaqstan.jpg",
-      "logoExplainer": "Official masthead/brand mark for Egemen Qazaqstan, sourced from Wikimedia Commons and visually verified.",
-      "licenceNote": "Egemen Qazaqstan brand mark trademark bundled from Wikimedia Commons (File:Logo Egemen Qazaqstan.jpg) for educational reference in Learn mode.",
-
-      "sources": [
-        "https://egemen.kz",
-        "https://en.wikipedia.org/wiki/Egemen_Qazaqstan"
-      ]
-    },
-    {
-      "id": "kz-kazakhstanskaya-pravda",
-      "countryCode": "KZ",
-      "name": "Kazakhstanskaya Pravda",
-      "englishTranslation": "Kazakhstan Truth",
-      "founded": 1920,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital news portal",
-      "language": "Russian",
-      "headquarters": "Astana",
-      "owner": {
-        "name": "Kazakh Newspapers LLP",
-        "type": "State-backed publishing group"
-      },
-      "editorialStance": "Kazakhstan's primary Russian-language official daily newspaper; legal enactments, political coverage, and bilateral diplomatic affairs",
-      "readership": {
-        "metric": "Widely circulated nationwide daily among government officials, legal professionals, and industry leaders",
-        "source": "Kazakhstanskaya Pravda Media Kit"
-      },
-      "revenueModel": "State publishing subsidies, print subscriptions, and legal advertising",
-      "logo": "newspaper-logos/kz/kazakhstanskaya-pravda.png",
-      "logoExplainer": "Official masthead/brand mark for Kazakhstanskaya Pravda, sourced from the publisher's official site and visually verified.",
-      "licenceNote": "Kazakhstanskaya Pravda brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://kazpravda.kz",
-        "https://en.wikipedia.org/wiki/Kazakhstanskaya_Pravda"
       ]
     }
   ],
@@ -2174,73 +1420,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "EC": [
-    {
-      "id": "ec-lideres",
-      "countryCode": "EC",
-      "name": "Revista Líderes",
-      "englishTranslation": "Leaders Magazine",
-      "founded": 1998,
-      "frequency": "Weekly business publication (Monday)",
-      "format": "Tabloid publication & business portal",
-      "language": "Spanish",
-      "headquarters": "Quito",
-      "owner": {
-        "name": "Grupo El Comercio",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Ecuador's premier specialized business weekly; corporate profiles, entrepreneurship, fintech, and economic competitiveness",
-      "readership": {
-        "metric": "Essential reading for senior executives, entrepreneurs, and finance professionals across Ecuador",
-        "source": "Grupo El Comercio Business Division 2023"
-      },
-      "revenueModel": "Corporate subscriptions and business-to-business advertising",
-      "logo": "newspaper-logos/ec/lideres.png",
-      "logoExplainer": "Official masthead/brand mark for Revista Líderes, sourced from the publisher's official site and visually verified.",
-      "licenceNote": "Revista Líderes brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.revistalideres.ec"
-      ]
-    }
-  ],
-  "EG": [
-    {
-      "id": "eg-al-ahram",
-      "countryCode": "EG",
-      "name": "Al-Ahram",
-      "officialName": "Al-Ahram Establishment",
-      "nativeName": "الأهرام",
-      "englishTranslation": "The Pyramids",
-      "founded": 1875,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & international news network",
-      "language": "Arabic, with English (Al-Ahram Weekly) and French editions",
-      "headquarters": "Al-Galaa Street, Cairo",
-      "owner": {
-        "name": "National Press Authority of Egypt",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Egypt's historic newspaper of record and the most famous newspaper in the Arab world; official government policy, Arab diplomacy, regional security, and cultural literature",
-      "readership": {
-        "metric": "Largest print circulation in the Middle East with over 900,000 daily copies and global digital reach exceeding 20 million across Ahram Online",
-        "source": "Al-Ahram Publishing House Report 2023"
-      },
-      "annualPublicFunding": {
-        "total": "Central state publishing allocation through National Press Authority",
-        "perCapita": "State newspaper of record"
-      },
-      "revenueModel": "State budget appropriation, print subscriptions, book publishing, and advertising",
-      "logo": "newspaper-logos/eg/al-ahram.png",
-      "logoExplainer": "Arabic 'الأهرام' masthead — Al-Ahram's historic brand mark.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://gate.ahram.org.eg",
-        "https://en.wikipedia.org/wiki/Al-Ahram"
-      ]
-    }
-  ],
   "GQ": [
     {
       "id": "gq-guinea-ecuatorial-press",
@@ -2270,7 +1449,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/gq/guinea-ecuatorial-press.png",
       "logoExplainer": "Equatorial Guinea coat of arms (silk-cotton tree, six stars, 'UNIDAD PAZ JUSTICIA') — the state press site's main mark.",
       "licenceNote": "Guinea Ecuatorial Press brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://guineaecuatorialpress.com",
         "https://es.wikipedia.org/wiki/Guinea_Ecuatorial"
@@ -2306,96 +1484,13 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/er/shabait.png",
       "logoExplainer": "Gold camel seal beside 'MINISTRY OF INFORMATION / ERITREA' on a dark plate — Shabait (Eritrea MoI) masthead.",
       "licenceNote": "Shabait / Ministry of Information Eritrea brand mark trademark bundled from the agency's official site brand assets (shabait.com) for educational reference in Learn mode.",
-
       "sources": [
         "https://shabait.com",
         "https://en.wikipedia.org/wiki/Ministry_of_Information_(Eritrea)"
       ]
-    },
-    {
-      "id": "er-assenna",
-      "countryCode": "ER",
-      "name": "Assenna",
-      "englishTranslation": "Assenna (Tigrinya: Foundation / Heritage)",
-      "founded": 2008,
-      "frequency": "Continuous digital news & satellite broadcasting",
-      "format": "Digital news portal & satellite TV",
-      "language": "Tigrinya, English",
-      "headquarters": "London, UK / Diaspora",
-      "owner": {
-        "name": "Assenna Foundation (Amanuel Eyasu)",
-        "type": "Independent trust / foundation"
-      },
-      "editorialStance": "Prominent diaspora human rights and opposition media organization; investigative reporting on human rights conditions, political prisoners, and civic mobilization",
-      "readership": {
-        "metric": "Massive diaspora reach with over 2 million monthly digital video and news consumers across Europe, North America, and the Middle East",
-        "source": "Assenna Foundation Annual Report 2023"
-      },
-      "revenueModel": "Diaspora crowdfunding, foundation grants, and viewer donations",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://assenna.com",
-        "https://en.wikipedia.org/wiki/Assenna"
-      ]
     }
   ],
   "KE": [
-    {
-      "id": "ke-the-standard",
-      "countryCode": "KE",
-      "name": "The Standard",
-      "founded": 1902,
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital news portal",
-      "language": "English",
-      "headquarters": "Nairobi",
-      "owner": {
-        "name": "Standard Group PLC (Moi Family & associates)",
-        "type": "Publicly listed media corporation"
-      },
-      "editorialStance": "Kenya's oldest newspaper; market-oriented, extensive coverage of national political debate, investigative reporting, and regional news",
-      "readership": {
-        "metric": "Second largest print daily in Kenya (~90,000 daily print copies) and major broadcast partner",
-        "source": "Standard Group PLC Media Report 2023–24"
-      },
-      "revenueModel": "Print sales, commercial advertising, and digital subscriptions",
-      "logo": "newspaper-logos/ke/the-standard.png",
-      "logoExplainer": "'The Standard' masthead — the Nairobi daily brand mark.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.standardmedia.co.ke",
-        "https://en.wikipedia.org/wiki/The_Standard_(Kenya)"
-      ]
-    },
-    {
-      "id": "ke-the-star",
-      "countryCode": "KE",
-      "name": "The Star",
-      "founded": 2007,
-      "frequency": "Daily newspaper",
-      "format": "Tabloid & digital news platform",
-      "language": "English",
-      "headquarters": "Nairobi",
-      "owner": {
-        "name": "Radio Africa Group",
-        "type": "Commercial media company"
-      },
-      "editorialStance": "Independent daily newspaper featuring concise political reporting, opinion columns, entertainment, and urban affairs",
-      "readership": {
-        "metric": "Over 6 million monthly digital readers across Kenya and East African diaspora",
-        "source": "Radio Africa Group Digital Analytics 2024"
-      },
-      "revenueModel": "Digital programmatic advertising, print sales, and radio cross-promotion",
-      "logo": "newspaper-logos/ke/the-star.webp",
-      "logoExplainer": "'The Star' masthead — the Nairobi daily brand mark.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.the-star.co.ke",
-        "https://en.wikipedia.org/wiki/The_Star_(Kenya)"
-      ]
-    },
     {
       "id": "ke-kna",
       "countryCode": "KE",
@@ -2423,7 +1518,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ke/kna.svg",
       "logoExplainer": "Official 'KNA' masthead/logo as used by the publisher — sourced from Wikimedia Commons.",
       "licenceNote": "KNA masthead trademark bundled from Wikimedia Commons (File:KNA-Logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.kenyanews.go.ke",
         "https://en.wikipedia.org/wiki/Kenya_News_Agency"
@@ -2490,38 +1584,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/kg/kabar.svg",
       "logoExplainer": "Bold navy 'KABAR' wordmark — Kyrgyz National News Agency Kabar crest from its site.",
       "licenceNote": "Kabar brand mark trademark bundled from the agency's official site brand assets (kabar.kg) for educational reference in Learn mode.",
-
       "sources": [
         "https://kabar.kg",
         "https://en.wikipedia.org/wiki/Kabar"
-      ]
-    },
-    {
-      "id": "kg-24-kg",
-      "countryCode": "KG",
-      "name": "24.kg",
-      "founded": 2006,
-      "frequency": "24/7 digital news agency",
-      "format": "Digital-only news agency portal",
-      "language": "Russian, Kyrgyz, English",
-      "headquarters": "Bishkek",
-      "owner": {
-        "name": "Asel Otorbaeva / 24.kg News Agency",
-        "type": "Independent digital media company"
-      },
-      "editorialStance": "Leading independent digital news agency in Kyrgyzstan; breaking news, political analysis, economic trends, and parliamentary reporting",
-      "readership": {
-        "metric": "4 million monthly digital visitors across Kyrgyzstan and Central Asia",
-        "source": "24.kg Audience Audit 2024"
-      },
-      "revenueModel": "Digital display advertising, sponsored content, and media services",
-      "logo": "newspaper-logos/kg/24-kg.png",
-      "logoExplainer": "Stylised red '24' with stacked navy 'KG' — the 24.kg news portal brand mark.",
-      "licenceNote": "24.kg brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://24.kg",
-        "https://en.wikipedia.org/wiki/24.kg"
       ]
     },
     {
@@ -2546,7 +1611,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/kg/akipress.png",
       "logoExplainer": "Teal diagonal-bar icon beside 'AKИpress' wordmark — AKIPress news agency crest.",
       "licenceNote": "AKIPress brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://akipress.org",
         "https://en.wikipedia.org/wiki/AKIpress_news_agency"
@@ -2581,7 +1645,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/la/kpl.png",
       "logoExplainer": "Circular KPL Lao News Agency emblem with Lao wordmark — the state news agency crest.",
       "licenceNote": "KPL Lao News Agency crest trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://kpl.gov.la",
         "https://en.wikipedia.org/wiki/Khaosan_Pathet_Lao"
@@ -2613,39 +1676,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "sources": [
         "https://www.leta.lv",
         "https://en.wikipedia.org/wiki/LETA"
-      ]
-    },
-    {
-      "id": "lv-lsm",
-      "countryCode": "LV",
-      "name": "LSM.lv",
-      "officialName": "Latvijas Sabiedriskie Mediji",
-      "founded": 2013,
-      "frequency": "24/7 public service digital news",
-      "format": "Public service digital portal & news app",
-      "language": "Latvian, Russian, English",
-      "headquarters": "Riga",
-      "owner": {
-        "name": "Public Electronic Mass Media Council (SEPLP)",
-        "type": "Public statutory media organization"
-      },
-      "editorialStance": "Public broadcaster unified news portal operating under statutory impartiality obligations; in-depth investigative unit",
-      "readership": {
-        "metric": "750,000 monthly unique users across Latvia",
-        "source": "Gemius Audience Audit / SEPLP Annual Report 2023"
-      },
-      "annualPublicFunding": {
-        "total": "€42 million annual public subvention for Latvian Public Media",
-        "perCapita": "€22.30 / person / year"
-      },
-      "revenueModel": "State budget subvention (100% ad-free public service media)",
-      "logo": "newspaper-logos/lv/lsm.svg",
-      "logoExplainer": "Black 'LSM' bar beside 'Latvijas Sabiedriskais medijs' — Latvian Public Media crest.",
-      "licenceNote": "LSM brand mark trademark bundled from the publisher's official site brand assets (lsm.lv) for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.lsm.lv",
-        "https://en.wikipedia.org/wiki/Public_Broadcasting_of_Latvia"
       ]
     }
   ],
@@ -2709,7 +1739,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ls/lena.jpg",
       "logoExplainer": "Official masthead/brand mark for LENA, sourced from the publisher's official site and visually verified.",
       "licenceNote": "LENA brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.lena.gov.ls",
         "https://en.wikipedia.org/wiki/Media_of_Lesotho"
@@ -2776,43 +1805,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ly/lana.png",
       "logoExplainer": "Official masthead/brand mark for LANA, sourced from the publisher's official site and visually verified.",
       "licenceNote": "LANA brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://lana.gov.ly",
         "https://en.wikipedia.org/wiki/Libyan_News_Agency"
-      ]
-    }
-  ],
-  "FI": [
-    {
-      "id": "fi-hufvudstadsbladet",
-      "countryCode": "FI",
-      "name": "Hufvudstadsbladet",
-      "officialName": "HBL",
-      "nativeName": "Hufvudstadsbladet",
-      "englishTranslation": "Capital City Paper",
-      "founded": 1864,
-      "frequency": "Daily newspaper",
-      "format": "Tabloid & digital portal",
-      "language": "Swedish",
-      "headquarters": "Mannerheimintie, Helsinki",
-      "owner": {
-        "name": "Bonnier News (51%) & KSF Media / Konstsamfundet (49%)",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "The flagship Swedish-language daily newspaper in Finland; cultural commentary, Nordic cooperation, minority language rights, and international diplomacy",
-      "readership": {
-        "metric": "Largest Swedish-language daily newspaper in Finland with over 40,000 paid subscribers and 250,000 monthly digital readers on hbl.fi",
-        "source": "KSF Media & Bonnier News 2024"
-      },
-      "revenueModel": "Digital subscriptions, print sales, and cultural foundation support",
-      "logo": "newspaper-logos/fi/hufvudstadsbladet.svg",
-      "logoExplainer": "Bold black 'HBL' over an orange bar — Hufvudstadsbladet's brand mark.",
-      "licenceNote": "Trademark bundled from Wikimedia Commons (File:HBL wordmark.svg) for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.hbl.fi",
-        "https://en.wikipedia.org/wiki/Hufvudstadsbladet"
       ]
     }
   ],
@@ -2846,7 +1841,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ga/agp.png",
       "logoExplainer": "Official masthead/brand mark for AGP, sourced from the publisher's official site and visually verified.",
       "licenceNote": "AGP brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://agpgabon.ga",
         "https://fr.wikipedia.org/wiki/Agence_gabonaise_de_presse"
@@ -2880,119 +1874,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "sources": [
         "https://www.interpressnews.ge",
         "https://en.wikipedia.org/wiki/Interpressnews"
-      ]
-    }
-  ],
-  "GY": [
-    {
-      "id": "gy-stabroek-news",
-      "countryCode": "GY",
-      "name": "Stabroek News",
-      "founded": 1986,
-      "frequency": "Daily newspaper & digital portal",
-      "format": "Broadsheet & digital portal",
-      "language": "English",
-      "headquarters": "Georgetown",
-      "owner": {
-        "name": "Guyana Publications Ltd (David de Caires estate)",
-        "type": "State-owned / statutory corporation"
-      },
-      "editorialStance": "Independent / Center-left",
-      "readership": {
-        "metric": "1,200,000 monthly digital readers",
-        "source": "Stabroek News Audience Review 2024"
-      },
-      "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://www.stabroeknews.com/",
-        "https://guyana.gov.gy/"
-      ]
-    }
-  ],
-  "IN": [
-    {
-      "id": "in-dainik-jagran",
-      "countryCode": "IN",
-      "name": "Dainik Jagran (दैनिक जागरण)",
-      "founded": 1942,
-      "frequency": "Daily newspaper & digital portal",
-      "format": "Broadsheet & digital portal",
-      "language": "Hindi",
-      "headquarters": "Kanpur, Uttar Pradesh",
-      "owner": {
-        "name": "Jagran Prakashan Limited (Gupta Family)",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Right-wing / Conservative",
-      "readership": {
-        "metric": "68,000,000 multiplatform readers",
-        "source": "Dainik Jagran (दैनिक जागरण) Audience Review 2024"
-      },
-      "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/in/dainik-jagran.png",
-      "logoExplainer": "Devanagari 'दैनिक जागरण' masthead — Dainik Jagran's brand mark.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://jplcorp.in/"
-      ]
-    },
-    {
-      "id": "in-hindustan-times",
-      "countryCode": "IN",
-      "name": "Hindustan Times (HT)",
-      "founded": 1924,
-      "frequency": "Daily newspaper & digital portal",
-      "format": "Broadsheet & digital portal",
-      "language": "English",
-      "headquarters": "New Delhi",
-      "owner": {
-        "name": "HT Media Ltd (Birla Family)",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Center-right / Independent",
-      "readership": {
-        "metric": "8,000,000 print & 50,000,000 digital monthly readers",
-        "source": "Hindustan Times (HT) Audience Review 2024"
-      },
-      "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "logo": "newspaper-logos/in/hindustan-times.png",
-      "logoExplainer": "'Hindustan Times' masthead — the New Delhi English daily brand.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.hindustantimes.com/",
-        "https://www.htmedia.in/"
-      ]
-    }
-  ],
-  "LI": [
-    {
-      "id": "li-wirtschaft-regional",
-      "countryCode": "LI",
-      "name": "Wirtschaft regional",
-      "founded": 2000,
-      "frequency": "Weekly financial publication",
-      "format": "Tabloid & business portal",
-      "language": "German",
-      "headquarters": "Vaduz",
-      "owner": {
-        "name": "Vaduzer Medienhaus AG",
-        "type": "Independent commercial publisher"
-      },
-      "editorialStance": "Specialist weekly financial journal covering Liechtenstein's banking sector, wealth management, manufacturing, fintech, and cross-border trade",
-      "readership": {
-        "metric": "Distributed to business leaders, corporate directors, and financial institutions across the Lake Constance Alpine region",
-        "source": "Vaduzer Medienhaus Financial Publishing 2023"
-      },
-      "revenueModel": "Corporate subscriptions and business-to-business advertising",
-      "logo": "newspaper-logos/li/wirtschaft-regional.svg",
-      "logoExplainer": "Official masthead/brand mark for Wirtschaft regional, sourced from the publisher's official site and visually verified.",
-      "licenceNote": "Wirtschaft regional brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.wirtschaftregional.li"
       ]
     }
   ],
@@ -3048,7 +1929,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/mw/mana.png",
       "logoExplainer": "Official masthead/brand mark for Mana Online, sourced from the publisher's official site and visually verified.",
       "licenceNote": "Mana Online masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://manaonline.gov.mw",
         "https://en.wikipedia.org/wiki/Malawi_News_Agency"
@@ -3082,32 +1962,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "https://essor.ml",
         "https://fr.wikipedia.org/wiki/L%27Essor_(Mali)"
       ]
-    },
-    {
-      "id": "ml-le-republicain",
-      "countryCode": "ML",
-      "name": "Le Républicain",
-      "nativeName": "Le Républicain",
-      "englishTranslation": "The Republican",
-      "founded": 1992,
-      "frequency": "Daily newspaper (Monday–Friday)",
-      "format": "Tabloid & web portal",
-      "language": "French",
-      "headquarters": "Hamdallaye ACI 2000, Bamako",
-      "owner": {
-        "name": "Société de Presse Le Républicain",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Founded by prominent pro-democracy activist Tiébilé Dramé following Mali's 1991 democratic transition; steadfast defender of constitutional liberties, rule of law, and peace accords",
-      "readership": {
-        "metric": "Respected national daily with readership concentrated among political leaders, academics, and NGOs",
-        "source": "Association des Éditeurs de Presse Privée (ASSEP) 2023"
-      },
-      "revenueModel": "Print sales, institutional advertising, and subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://fr.wikipedia.org/wiki/Le_R%C3%A9publicain_(Mali)"
-      ]
     }
   ],
   "MR": [
@@ -3135,7 +1989,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/mr/ami.png",
       "logoExplainer": "Official masthead/brand mark for AMI (Agence Mauritanienne d'Information), sourced from the publisher's official site and visually verified.",
       "licenceNote": "AMI (Agence Mauritanienne d'Information) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://ami.mr",
         "https://fr.wikipedia.org/wiki/Agence_mauritanienne_d%27information"
@@ -3167,7 +2020,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/mx/notimex.png",
       "logoExplainer": "Black 'NOTIMEX' capitals with a colourful hummingbird emblem and the motto 'VERDAD, LIBERTAD Y DERECHO A LA INFORMACIÓN'.",
       "licenceNote": "Notimex logo trademark bundled from Wikimedia Commons (File:Logo NOTIMEX.png) for educational reference in Learn mode.",
-
       "sources": [
         "https://es.wikipedia.org/wiki/Notimex",
         "https://www.gob.mx"
@@ -3199,7 +2051,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/md/moldpres.png",
       "logoExplainer": "Official masthead/brand mark for Moldpres, sourced from the publisher's official site and visually verified.",
       "licenceNote": "Moldpres brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.moldpres.md",
         "https://ro.wikipedia.org/wiki/Moldpres"
@@ -3235,7 +2086,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/mn/montsame.png",
       "logoExplainer": "Official masthead/brand mark for Montsame, sourced from Wikimedia Commons and visually verified.",
       "licenceNote": "Montsame masthead trademark bundled from Wikimedia Commons (File:Montsame logo.png) for educational reference in Learn mode.",
-
       "sources": [
         "https://montsame.mn",
         "https://en.wikipedia.org/wiki/Montsame"
@@ -3299,7 +2149,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ma/map.jpg",
       "logoExplainer": "Blue square with Arabic title, white 'MAP' and 'AGENCE MAROCAINE DE PRESSE' — Maghreb Arabe Presse crest.",
       "licenceNote": "MAP / Agence Marocaine de Presse brand mark trademark bundled from Wikimedia Commons (File:MAPmaroc-logo.jpg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.mapnews.ma",
         "https://fr.wikipedia.org/wiki/Maghreb_Arabe_Presse"
@@ -3331,7 +2180,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/mz/aim.png",
       "logoExplainer": "Connected pink-red 'AIM' wordmark on white — Agência de Informação de Moçambique crest from aimnews.org.",
       "licenceNote": "AIM brand mark trademark bundled from the agency's official site brand assets (aimnews.org) for educational reference in Learn mode.",
-
       "sources": [
         "https://aim.org.mz",
         "https://en.wikipedia.org/wiki/Ag%C3%AAncia_de_Informa%C3%A7%C3%A3o_de_Mo%C3%A7ambique"
@@ -3365,36 +2213,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "https://www.moi.gov.mm",
         "https://en.wikipedia.org/wiki/Myanmar_News_Agency"
       ]
-    },
-    {
-      "id": "mm-myanmar-now",
-      "countryCode": "MM",
-      "name": "Myanmar Now",
-      "nativeName": "မြန်မာနောင်း",
-      "englishTranslation": "Myanmar Now",
-      "founded": 2015,
-      "frequency": "Continuous digital investigative news service",
-      "format": "Digital investigative news agency",
-      "language": "Burmese, English",
-      "headquarters": "Yangon (with distributed clandestine desks)",
-      "owner": {
-        "name": "Myanmar Now News Agency",
-        "type": "Independent non-profit investigative media"
-      },
-      "editorialStance": "Award-winning independent investigative news agency; renowned for fearless in-depth investigations into military conglomerate holdings, illicit jade mines, war crimes, and pro-democracy resistance",
-      "readership": {
-        "metric": "Widely cited by the UN, international human rights tribunals, and millions of digital readers inside Myanmar via secure VPNs and social media",
-        "source": "Myanmar Now Editorial Review 2023"
-      },
-      "revenueModel": "International investigative journalism grants, reader contributions, and syndication",
-      "logo": "newspaper-logos/mm/myanmar-now.png",
-      "logoExplainer": "Official masthead/brand mark for Myanmar Now, sourced from Wikimedia Commons and visually verified.",
-      "licenceNote": "Myanmar Now brand mark trademark bundled from Wikimedia Commons (File:Myanmar Now Logo.png) for educational reference in Learn mode.",
-
-      "sources": [
-        "https://myanmar-now.net",
-        "https://en.wikipedia.org/wiki/Myanmar_Now"
-      ]
     }
   ],
   "ET": [
@@ -3426,38 +2244,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/et/ena.png",
       "logoExplainer": "'ENA' brand mark — the Ethiopian News Agency emblem.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.ena.et",
         "https://en.wikipedia.org/wiki/Ethiopian_News_Agency"
-      ]
-    },
-    {
-      "id": "et-addis-standard",
-      "countryCode": "ET",
-      "name": "Addis Standard",
-      "founded": 2011,
-      "frequency": "Continuous digital investigative news service & monthly journal",
-      "format": "Digital news portal & investigative multimedia",
-      "language": "English, Amharic, Afaan Oromoo",
-      "headquarters": "Addis Ababa",
-      "owner": {
-        "name": "JAKENN Publishing Plc",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Progressive, reformist independent publication; recognized internationally for unflinching coverage of civil conflicts, transitional justice, ethnic federalism, and press freedoms",
-      "readership": {
-        "metric": "Over 800,000 monthly unique digital readers, heavily cited by international human rights monitors and foreign correspondents",
-        "source": "JAKENN Publishing Audience Data 2024"
-      },
-      "revenueModel": "Digital advertising, voluntary reader contributions, and international press development grants",
-      "logo": "newspaper-logos/et/addis-standard.png",
-      "logoExplainer": "'Addis Standard' wordmark — the Addis Ababa news magazine brand.",
-      "licenceNote": "Trademark bundled from Wikimedia Commons (File:Addis Standard.png) for educational reference in Learn mode.",
-
-      "sources": [
-        "https://addisstandard.com",
-        "https://en.wikipedia.org/wiki/Addis_Standard"
       ]
     }
   ],
@@ -3520,7 +2309,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/kr/yonhap.jpg",
       "logoExplainer": "'Yonhap' / 연합뉴스 agency brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://en.yna.co.kr",
         "https://www.yna.co.kr",
@@ -3555,38 +2343,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/na/nampa.png",
       "logoExplainer": "Official masthead/brand mark for NAMPA (Namibia Press Agency), sourced from the publisher's official site and visually verified.",
       "licenceNote": "NAMPA (Namibia Press Agency) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.nampa.org",
         "https://en.wikipedia.org/wiki/Namibia_Press_Agency"
-      ]
-    },
-    {
-      "id": "na-the-namibian",
-      "countryCode": "NA",
-      "name": "The Namibian",
-      "founded": 1985,
-      "frequency": "Daily newspaper (Monday–Friday)",
-      "format": "Tabloid & digital news portal",
-      "language": "English, Oshiwambo",
-      "headquarters": "Windhoek",
-      "owner": {
-        "name": "Free Press of Namibia (Pty) Ltd (Trust-owned)",
-        "type": "Independent trust-owned media"
-      },
-      "editorialStance": "Namibia's largest and most famous independent daily newspaper; founded by anti-apartheid champion Gwen Lister, acclaimed for fearless investigative journalism, government accountability, and constitutional protections",
-      "readership": {
-        "metric": "Largest print circulation in Namibia with over 30,000 daily copies and leading national news portal namibian.com.na",
-        "source": "Free Press of Namibia Audited Statement 2023"
-      },
-      "revenueModel": "Print sales, commercial advertising, and digital subscriptions",
-      "logo": "newspaper-logos/na/the-namibian.png",
-      "logoExplainer": "Official masthead/brand mark for The Namibian, sourced from the publisher's official site and visually verified.",
-      "licenceNote": "The Namibian masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.namibian.com.na",
-        "https://en.wikipedia.org/wiki/The_Namibian"
       ]
     }
   ],
@@ -3621,36 +2380,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "https://www.rssnepal.org.np",
         "https://en.wikipedia.org/wiki/Rastriya_Samachar_Samiti"
       ]
-    },
-    {
-      "id": "np-onlinekhabar",
-      "countryCode": "NP",
-      "name": "Onlinekhabar",
-      "nativeName": "अनलाइनखबर",
-      "englishTranslation": "Online News",
-      "founded": 2006,
-      "frequency": "Continuous digital news service",
-      "format": "Pure digital news portal & video channels",
-      "language": "Nepali, English",
-      "headquarters": "New Baneshwor, Kathmandu",
-      "owner": {
-        "name": "Onlinekhabar Network Pvt. Ltd.",
-        "type": "Independent digital media"
-      },
-      "editorialStance": "Nepal's pioneer pure-digital newsroom; fast-breaking national politics, investigative reports on governance, citizen grievances, and lively multimedia storytelling",
-      "readership": {
-        "metric": "Over 6 million monthly unique users and ranked consistently as the most visited online news portal in Nepal",
-        "source": "Similarweb / Onlinekhabar Audience Metrics 2023"
-      },
-      "revenueModel": "Digital programmatic advertising, video sponsorships, and branded content",
-      "logo": "newspaper-logos/np/onlinekhabar.svg",
-      "logoExplainer": "Official masthead/brand mark for Onlinekhabar, sourced from the publisher's official site and visually verified.",
-      "licenceNote": "Onlinekhabar masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.onlinekhabar.com",
-        "https://english.onlinekhabar.com"
-      ]
     }
   ],
   "NL": [
@@ -3678,7 +2407,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/nl/anp.jpg",
       "logoExplainer": "White '.ANP' on a blue field — the Algemeen Nederlands Persbureau agency mark.",
       "licenceNote": "ANP logo trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.anp.nl",
         "https://nl.wikipedia.org/wiki/Algemeen_Nederlands_Persbureau"
@@ -3710,37 +2438,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ne/anp.png",
       "logoExplainer": "Official masthead/brand mark for ANP (Agence Nigérienne de Presse), sourced from the publisher's official site and visually verified.",
       "licenceNote": "ANP (Agence Nigérienne de Presse) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.anp.ne",
         "https://fr.wikipedia.org/wiki/Agence_nig%C3%A9rienne_de_presse"
-      ]
-    },
-    {
-      "id": "ne-le-republicain",
-      "countryCode": "NE",
-      "name": "Le Républicain Niger",
-      "nativeName": "Le Républicain",
-      "englishTranslation": "The Republican",
-      "founded": 1991,
-      "frequency": "Weekly newspaper (Thursdays) & digital portal",
-      "format": "Tabloid & digital news portal",
-      "language": "French",
-      "headquarters": "Niamey",
-      "owner": {
-        "name": "Société Nigérienne de Presse et d'Édition",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Pioneer of Niger's independent private press founded during the 1991 Sovereign National Conference; staunch defender of democratic institutions, rule of law, anti-corruption transparency, and human rights",
-      "readership": {
-        "metric": "Circulates over 5,000 print copies weekly and widely consulted by civil society, lawyers, and university academics",
-        "source": "Maison de la Presse du Niger 2023"
-      },
-      "revenueModel": "Newsstand sales, institutional subscriptions, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://republicain-niger.com",
-        "https://fr.wikipedia.org/wiki/Le_R%C3%A9publicain_(Niger)"
       ]
     }
   ],
@@ -3771,7 +2471,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ng/nan.png",
       "logoExplainer": "Official 'NAN (News Agency of Nigeria)' masthead/logo as used by the publisher — sourced from the outlet's own site.",
       "licenceNote": "NAN (News Agency of Nigeria) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://nannews.ng",
         "https://en.wikipedia.org/wiki/News_Agency_of_Nigeria"
@@ -3807,7 +2506,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/mk/mia.png",
       "logoExplainer": "Official masthead/brand mark for MIA (Media Information Agency), sourced from the publisher's official site and visually verified.",
       "licenceNote": "MIA (Media Information Agency) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://mia.mk",
         "https://en.wikipedia.org/wiki/Media_Information_Agency"
@@ -3839,7 +2537,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/no/ntb.svg",
       "logoExplainer": "Orange geometric letterforms spelling NTB — the Norwegian News Agency brand mark.",
       "licenceNote": "NTB logo trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.ntb.no",
         "https://no.wikipedia.org/wiki/Norsk_Telegrambyr%C3%A5"
@@ -3873,36 +2570,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "https://omannews.gov.om",
         "https://en.wikipedia.org/wiki/Oman_News_Agency"
       ]
-    },
-    {
-      "id": "om-al-shabiba",
-      "countryCode": "OM",
-      "name": "Al Shabiba",
-      "nativeName": "الشبيبة",
-      "englishTranslation": "The Youth",
-      "founded": 1993,
-      "frequency": "Daily newspaper (Monday–Sunday) & digital portal",
-      "format": "Tabloid & digital video portal",
-      "language": "Arabic",
-      "headquarters": "Ruwi, Muscat",
-      "owner": {
-        "name": "Muscat Press & Publishing House (MPPH)",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Leading independent Arabic daily; focuses on youth empowerment, education, job market analytics, local municipal issues, and national sports",
-      "readership": {
-        "metric": "Over 35,000 print daily circulation and strong social video viewership across the Sultanate",
-        "source": "MPPH Audience Metrics 2023"
-      },
-      "revenueModel": "Commercial print and digital advertising",
-      "logo": "newspaper-logos/om/al-shabiba.svg",
-      "logoExplainer": "Arabic 'الشبيبة' masthead — Al Shabiba's brand mark.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.shabiba.com",
-        "https://en.wikipedia.org/wiki/Al-Shabiba"
-      ]
     }
   ],
   "PK": [
@@ -3932,7 +2599,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/pk/app.png",
       "logoExplainer": "Dotted globe over gradient 'APP' beside 'DIGITAL' and 'Associated Press of Pakistan' — APP crest.",
       "licenceNote": "Associated Press of Pakistan Logo.png from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.app.com.pk",
         "https://en.wikipedia.org/wiki/Associated_Press_of_Pakistan"
@@ -3964,7 +2630,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/py/ipparaguay.png",
       "logoExplainer": "Official masthead/brand mark for Agencia IP (Información Pública), sourced from the publisher's official site and visually verified.",
       "licenceNote": "Agencia IP (Información Pública) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.ip.gov.py",
         "https://es.wikipedia.org/wiki/Agencia_IP"
@@ -4000,7 +2665,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/pe/andina.png",
       "logoExplainer": "'ANDINA' brand mark — Peru's national news agency emblem.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://andina.pe",
         "https://es.wikipedia.org/wiki/Andina_(agencia_de_informaci%C3%B3n)"
@@ -4034,38 +2698,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ph/pna.svg",
       "logoExplainer": "Blue disc with white stylised 'P' mark — Philippine News Agency crest from Wikimedia Commons.",
       "licenceNote": "Philippine News Agency Logo.svg from Wikimedia Commons; government work / brand mark bundled for educational reference in Learn mode.",
-
       "sources": [
         "https://www.pna.gov.ph",
         "https://en.wikipedia.org/wiki/Philippine_News_Agency"
-      ]
-    },
-    {
-      "id": "ph-the-philippine-star",
-      "countryCode": "PH",
-      "name": "The Philippine Star",
-      "founded": 1986,
-      "frequency": "Daily morning newspaper (Monday–Sunday) & Philstar.com",
-      "format": "Broadsheet & digital superportal",
-      "language": "English",
-      "headquarters": "Roberto S. Oca St., Port Area, Manila",
-      "owner": {
-        "name": "Philstar Media Group (MediaQuest Holdings)",
-        "type": "Independent commercial media group"
-      },
-      "editorialStance": "Major high-circulation broadsheet daily; balanced center-right editorial tradition, known for comprehensive coverage of business conglomerates, infrastructure megaprojects, lifestyle, and sports",
-      "readership": {
-        "metric": "Over 240,000 daily print copies and philstar.com reaches over 15 million monthly digital readers",
-        "source": "UPMG Audit Statement 2023"
-      },
-      "revenueModel": "Print sales, extensive corporate advertising, and digital sponsorships",
-      "logo": "newspaper-logos/ph/the-philippine-star.svg",
-      "logoExplainer": "'The Philippine Star' masthead — the Manila daily brand mark.",
-      "licenceNote": "Trademark bundled from Wikimedia Commons (File:The Philippine STAR logo.svg) for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.philstar.com",
-        "https://en.wikipedia.org/wiki/The_Philippine_Star"
       ]
     }
   ],
@@ -4098,7 +2733,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/pl/pap.svg",
       "logoExplainer": "Lowercase orange-red 'pap' inside an oval frame — the Polish Press Agency brand mark.",
       "licenceNote": "PAP (Polska Agencja Prasowa) logo trademark bundled from Wikimedia Commons (File:PAP logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.pap.pl",
         "https://en.wikipedia.org/wiki/Polish_Press_Agency"
@@ -4134,7 +2768,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/pt/lusa.svg",
       "logoExplainer": "'LUSA' with a red/green arc and 'Agência de Notícias de Portugal' — the national agency mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Logo LUSA.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.lusa.pt",
         "https://en.wikipedia.org/wiki/Lusa_News_Agency"
@@ -4170,7 +2803,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/qa/qna.png",
       "logoExplainer": "'QNA' brand mark — Qatar News Agency emblem.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.qna.org.qa",
         "https://en.wikipedia.org/wiki/Qatar_News_Agency"
@@ -4206,7 +2838,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ro/agerpres.png",
       "logoExplainer": "'AGERPRES' brand mark — Romania's national news agency emblem.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.agerpres.ro",
         "https://en.wikipedia.org/wiki/Agerpres"
@@ -4242,7 +2873,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ru/tass.svg",
       "logoExplainer": "Navy square with white 'Tass' wordmark — the agency's 2022 Latin brand mark from Wikimedia Commons.",
       "licenceNote": "TASS brand mark trademark bundled from Wikimedia Commons (File:TASS Logo (Latin) 2022.svg; Public domain) for educational reference in Learn mode.",
-
       "sources": [
         "https://tass.ru",
         "https://en.wikipedia.org/wiki/TASS"
@@ -4274,7 +2904,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/rw/rna.png",
       "logoExplainer": "Official masthead/brand mark for Rwanda News Agency (RNA), sourced from the publisher's official site and visually verified.",
       "licenceNote": "Rwanda News Agency (RNA) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.rnanews.com",
         "https://en.wikipedia.org/wiki/Media_of_Rwanda"
@@ -4310,7 +2939,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/kn/sknis.png",
       "logoExplainer": "Official masthead/brand mark for SKNIS (St. Kitts and Nevis Information Service), sourced from the publisher's official site and visually verified.",
       "licenceNote": "SKNIS (St. Kitts and Nevis Information Service) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.sknis.gov.kn",
         "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
@@ -4346,96 +2974,8 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/lc/gis-saint-lucia.png",
       "logoExplainer": "Saint Lucia coat of arms (parrots, Tudor rose, fleur-de-lis, torch crest) — the Government Information Service mark on govt.lc.",
       "licenceNote": "Coat of arms of Saint Lucia trademark bundled from the official government site brand asset (govt.lc) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.govt.lc",
-        "https://en.wikipedia.org/wiki/Saint_Lucia"
-      ]
-    },
-    {
-      "id": "lc-the-voice",
-      "countryCode": "LC",
-      "name": "The Voice of Saint Lucia",
-      "nativeName": "The Voice of Saint Lucia",
-      "englishTranslation": "The Voice of Saint Lucia",
-      "founded": 1885,
-      "frequency": "Tri-weekly newspaper (Tuesday, Thursday, Saturday)",
-      "format": "Compact & digital news portal (thevoiceslu.com)",
-      "language": "English",
-      "headquarters": "Odyssey Building, Choc, Castries",
-      "owner": {
-        "name": "The Voice Publishing Company",
-        "type": "Independent commercial newspaper"
-      },
-      "editorialStance": "Saint Lucia's historic newspaper of record; founded in 1885; the island's oldest surviving publication; renowned for authoritative coverage of constitutional law, political debates, agriculture, literature (honoring Derek Walcott), and national history",
-      "readership": {
-        "metric": "Over 8,000 print copies per issue and over 350,000 monthly digital visits",
-        "source": "Voice Publishing Company 2023"
-      },
-      "revenueModel": "Retail print sales, government notices, and advertising",
-      "logo": "newspaper-logos/lc/the-voice.png",
-      "logoExplainer": "'VP Digital' badge beside outlined 'THE VOICE' wordmark — St Lucia Voice newspaper digital masthead.",
-      "licenceNote": "The Voice (St Lucia) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://thevoiceslu.com",
-        "https://en.wikipedia.org/wiki/Saint_Lucia"
-      ]
-    },
-    {
-      "id": "lc-the-star",
-      "countryCode": "LC",
-      "name": "The Star",
-      "nativeName": "The Star",
-      "englishTranslation": "The Star",
-      "founded": 1987,
-      "frequency": "Weekly national newspaper (Saturday)",
-      "format": "Tabloid & digital portal (stluciastar.com)",
-      "language": "English",
-      "headquarters": "Massade Industrial Estate, Gros Islet",
-      "owner": {
-        "name": "Star Publishing Company (Mae Wayne)",
-        "type": "Independent commercial publisher"
-      },
-      "editorialStance": "Prominent investigative weekly newspaper; known for hard-hitting investigative journalism, political commentary, exposing government irregularities, and championing civic transparency",
-      "readership": {
-        "metric": "Over 6,000 weekly print circulation and more than 250,000 monthly digital readers",
-        "source": "Star Publishing Company 2023"
-      },
-      "revenueModel": "Print sales and commercial advertising",
-      "logo": "newspaper-logos/lc/the-star.png",
-      "logoExplainer": "Official masthead/brand mark for The Star, sourced from the publisher's official site and visually verified.",
-      "licenceNote": "The Star brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://stluciastar.com",
-        "https://en.wikipedia.org/wiki/Saint_Lucia"
-      ]
-    },
-    {
-      "id": "lc-loop-slu",
-      "countryCode": "LC",
-      "name": "Loop News Saint Lucia",
-      "nativeName": "Loop News Saint Lucia",
-      "englishTranslation": "Loop News Saint Lucia",
-      "founded": 2014,
-      "frequency": "Continuous 24/7 mobile and digital news service",
-      "format": "Mobile app & digital news portal (stlucia.loopnews.com)",
-      "language": "English",
-      "headquarters": "Castries",
-      "owner": {
-        "name": "Trend Media (Digicel Group)",
-        "type": "Pan-Caribbean commercial digital news network"
-      },
-      "editorialStance": "Leading Caribbean mobile news network providing real-time breaking news across Saint Lucia; specialized coverage of crime, community sports, cultural festivals (Saint Lucia Jazz & Arts Festival), and entertainment",
-      "readership": {
-        "metric": "Over 1.2 million monthly active readers across mobile application and web portals",
-        "source": "Trend Media Caribbean Analytics 2023"
-      },
-      "revenueModel": "Digital mobile advertising and telecom integration",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://stlucia.loopnews.com",
         "https://en.wikipedia.org/wiki/Saint_Lucia"
       ]
     }
@@ -4502,37 +3042,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/st/stp-press.jpg",
       "logoExplainer": "Official masthead/brand mark for STP-Press, sourced from the publisher's official site and visually verified.",
       "licenceNote": "STP-Press brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.stp-press.st",
         "https://en.wikipedia.org/wiki/STP-Press"
-      ]
-    },
-    {
-      "id": "st-jornal-transparencia",
-      "countryCode": "ST",
-      "name": "Jornal Transparência",
-      "nativeName": "Jornal Transparência",
-      "englishTranslation": "Transparency Newspaper",
-      "founded": 2011,
-      "frequency": "Bi-monthly printed newspaper and digital edition",
-      "format": "Tabloid & digital portal (transparenciastep.com)",
-      "language": "Portuguese",
-      "headquarters": "Bairro do Hospital, São Tomé",
-      "owner": {
-        "name": "Sociedade Editorial Transparência",
-        "type": "Independent commercial newspaper"
-      },
-      "editorialStance": "Prominent independent national newspaper focusing on governance accountability, anti-corruption investigations, judicial system proceedings, and civil society debates",
-      "readership": {
-        "metric": "Over 3,000 print copies per edition circulated throughout São Tomé island and the Autonomous Region of Príncipe",
-        "source": "Jornal Transparência Editorial Review 2023"
-      },
-      "revenueModel": "Retail print sales and institutional public notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://transparenciastep.com",
-        "https://en.wikipedia.org/wiki/Media_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
       ]
     }
   ],
@@ -4565,7 +3077,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/sa/spa.svg",
       "logoExplainer": "SPA block with palm-and-swords emblem and bilingual Saudi Press Agency wording.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Saudi Press Agency Logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.spa.gov.sa",
         "https://en.wikipedia.org/wiki/Saudi_Press_Agency"
@@ -4601,7 +3112,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/sn/aps.png",
       "logoExplainer": "Globe highlighting Senegal beside bold 'APS' over 'Agence de Presse Sénégalaise' — the APS crest.",
       "licenceNote": "APS Sénégal brand mark trademark bundled from Wikimedia Commons (File:APS Sénégal logo.png) for educational reference in Learn mode.",
-
       "sources": [
         "https://aps.sn",
         "https://en.wikipedia.org/wiki/Agence_de_Presse_S%C3%A9n%C3%A9galaise"
@@ -4633,7 +3143,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/rs/tanjug.png",
       "logoExplainer": "Navy plate with white 'Tanjug' wordmark: rounded 'T' badge and red square accent — Tanjug header brand from its site.",
       "licenceNote": "Tanjug brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.tanjug.rs",
         "https://en.wikipedia.org/wiki/Tanjug"
@@ -4669,7 +3178,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/sc/sna.png",
       "logoExplainer": "Official masthead/brand mark for SNA (Seychelles News Agency), sourced from Wikimedia Commons and visually verified.",
       "licenceNote": "SNA (Seychelles News Agency) brand mark trademark bundled from Wikimedia Commons (File:Seychelles News Agency logo.png) for educational reference in Learn mode.",
-
       "sources": [
         "http://www.seychellesnewsagency.com",
         "https://en.wikipedia.org/wiki/Seychelles_News_Agency"
@@ -4705,73 +3213,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/sl/slena.png",
       "logoExplainer": "Official masthead/brand mark for SLENA (Sierra Leone News Agency), sourced from the publisher's official site and visually verified.",
       "licenceNote": "SLENA (Sierra Leone News Agency) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://moice.gov.sl",
         "https://en.wikipedia.org/wiki/Sierra_Leone"
-      ]
-    },
-    {
-      "id": "sl-standard-times",
-      "countryCode": "SL",
-      "name": "Standard Times",
-      "nativeName": "Standard Times",
-      "englishTranslation": "Standard Times",
-      "founded": 1994,
-      "frequency": "Daily newspaper (Monday–Friday)",
-      "format": "Tabloid & digital portal",
-      "language": "English",
-      "headquarters": "Kroo Town Road, Freetown",
-      "owner": {
-        "name": "Standard Times Press (Philip Neville)",
-        "type": "Independent commercial newspaper"
-      },
-      "editorialStance": "Established daily newspaper known for assertive investigative reporting, holding public officials accountable, labor disputes, and healthcare sector monitoring",
-      "readership": {
-        "metric": "Over 5,000 daily print copies circulated in urban Sierra Leone",
-        "source": "SLAJ Annual Review 2023"
-      },
-      "revenueModel": "Print sales and local business advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://www.standardtimespress.org",
-        "https://en.wikipedia.org/wiki/Standard_Times_(Sierra_Leone)"
-      ]
-    }
-  ],
-  "SG": [
-    {
-      "id": "sg-cna",
-      "countryCode": "SG",
-      "name": "CNA (Channel NewsAsia)",
-      "nativeName": "CNA (Mediacorp)",
-      "englishTranslation": "Channel NewsAsia",
-      "founded": 1999,
-      "frequency": "Continuous 24/7 international news channel and digital news agency",
-      "format": "Television, digital multimedia portal & mobile app (cna.asia)",
-      "language": "English",
-      "headquarters": "1 Stars Avenue, Mediacorp Campus, Singapore",
-      "owner": {
-        "name": "Mediacorp (Temasek Holdings / Government of Singapore)",
-        "type": "State-owned national media conglomerate"
-      },
-      "annualPublicFunding": {
-        "total": "SGD 280 million (Mediacorp public service broadcast funding)",
-        "perCapita": "SGD 47.40"
-      },
-      "editorialStance": "Singapore's flagship international television news channel and digital news service; acclaimed for comprehensive, balanced, and insightful Asian perspectives on global geopolitics, business, science, technology, and climate challenges",
-      "readership": {
-        "metric": "Broadcast to over 85 million households in 29 territories across Asia, with over 20 million unique monthly digital visitors across CNA digital platforms",
-        "source": "Mediacorp Corporate Review 2023"
-      },
-      "revenueModel": "Public service broadcasting funding from the Singapore government and commercial advertising",
-      "logo": "newspaper-logos/sg/cna.png",
-      "logoExplainer": "'CNA' brand mark — Channel NewsAsia's news brand emblem.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.channelnewsasia.com",
-        "https://en.wikipedia.org/wiki/CNA_(TV_network)"
       ]
     }
   ],
@@ -4804,7 +3248,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/sk/tasr.png",
       "logoExplainer": "'TASR' brand mark — Slovakia's national news agency emblem.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.tasr.sk",
         "https://en.wikipedia.org/wiki/News_Agency_of_the_Slovak_Republic"
@@ -4840,66 +3283,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/si/sta.jpg",
       "logoExplainer": "Black rounded bar with white 'sta', yellow triangle accent, and Slovenian/English agency names.",
       "licenceNote": "STA brand mark trademark bundled from Wikimedia Commons (File:Sta logotip.jpg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.sta.si",
         "https://en.wikipedia.org/wiki/Slovenian_Press_Agency"
-      ]
-    }
-  ],
-  "SB": [
-    {
-      "id": "sb-solomon-star",
-      "countryCode": "SB",
-      "name": "Solomon Star",
-      "founded": 1982,
-      "frequency": "Daily (Monday to Friday) print & online edition",
-      "format": "Broadsheet newspaper & digital news portal (solomonstarnews.com)",
-      "language": "English",
-      "headquarters": "Kukum Highway, Honiara, Guadalcanal",
-      "owner": {
-        "name": "Solomon Star Limited (Lamani Family)",
-        "type": "Private publishing company"
-      },
-      "editorialStance": "Solomon Islands' oldest and largest daily print newspaper, founded by Father John Lamani in 1982; provides independent coverage of Parliament sessions, provincial affairs across Guadalcanal and Malaita, fisheries, climate change impacts, and regional Pacific politics",
-      "readership": {
-        "metric": "Over 6,000 print circulation daily throughout Honiara and provincial centers, alongside over 150,000 monthly pageviews online",
-        "source": "Media Association of Solomon Islands (MASI) / Solomon Star Media Kit"
-      },
-      "revenueModel": "Print newsstand sales, national commercial advertising, and public notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://www.solomonstarnews.com",
-        "https://en.wikipedia.org/wiki/Solomon_Star"
-      ]
-    },
-    {
-      "id": "sb-sibc",
-      "countryCode": "SB",
-      "name": "SIBC (Solomon Islands Broadcasting Corporation)",
-      "founded": 1952,
-      "frequency": "24/7 radio news bulletins and real-time digital news",
-      "format": "Public service broadcaster & digital news agency (sibconline.com.sb)",
-      "language": "English, Solomon Islands Pijin",
-      "headquarters": "Rove, Honiara, Guadalcanal",
-      "owner": {
-        "name": "Government of Solomon Islands",
-        "type": "Statutory public corporation"
-      },
-      "annualPublicFunding": {
-        "total": "SBD 12 million",
-        "perCapita": "SBD 16.50"
-      },
-      "editorialStance": "Statutory national public service media organization of the Solomon Islands; serves as the vital lifeline of communication linking remote outer islands and atolls with national civic news, disaster warnings, health advisories, and parliamentary broadcasts",
-      "readership": {
-        "metric": "Reaches over 85% of the national population via AM/FM transmitters and shortwave relays, supplemented by over 100,000 monthly digital visits",
-        "source": "SIBC Annual Report / Commonwealth Broadcasting Association"
-      },
-      "revenueModel": "State statutory subvention, broadcast advertising, and government communications",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://www.sibconline.com.sb",
-        "https://en.wikipedia.org/wiki/Solomon_Islands_Broadcasting_Corporation"
       ]
     }
   ],
@@ -4932,67 +3318,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/so/sonna.png",
       "logoExplainer": "Official masthead/brand mark for SONNA (Somali National News Agency), sourced from the publisher's official site and visually verified.",
       "licenceNote": "SONNA (Somali National News Agency) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://sonna.so",
         "https://en.wikipedia.org/wiki/Somali_National_News_Agency"
-      ]
-    },
-    {
-      "id": "so-dalsan",
-      "countryCode": "SO",
-      "name": "Dalsan Media Group",
-      "nativeName": "Kooxda Warbaahinta Dalsan",
-      "englishTranslation": "Dalsan Media Group",
-      "founded": 2012,
-      "frequency": "24/7 news broadcasts and real-time online reporting",
-      "format": "Radio network, digital portal (radiodalsan.com) & video desk",
-      "language": "Somali, English",
-      "headquarters": "KM4, Wadajir District, Mogadishu",
-      "owner": {
-        "name": "Dalsan Media Group",
-        "type": "Independent commercial media enterprise"
-      },
-      "editorialStance": "Prominent independent multimedia news organization based in Mogadishu; delivers fearless investigative journalism, civic interviews, humanitarian reporting, and live updates on parliamentary affairs and regional security",
-      "readership": {
-        "metric": "Broadcast reach of over 2.5 million listeners across southern and central Somalia, plus over 500,000 monthly digital visits",
-        "source": "Dalsan Media Listener Survey / National Union of Somali Journalists (NUSOJ)"
-      },
-      "revenueModel": "Commercial corporate advertising, public service announcements, and sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://www.radiodalsan.com",
-        "https://en.wikipedia.org/wiki/Radio_Dalsan"
-      ]
-    }
-  ],
-  "ZA": [
-    {
-      "id": "za-the-star",
-      "countryCode": "ZA",
-      "name": "The Star",
-      "founded": 1887,
-      "frequency": "Daily (Monday to Friday)",
-      "format": "Broadsheet newspaper & online edition (iol.co.za/the-star)",
-      "language": "English",
-      "headquarters": "Kazerne Street, Johannesburg, Gauteng",
-      "owner": {
-        "name": "Independent Media (Sekunjalo Investment Holdings)",
-        "type": "Private media group"
-      },
-      "editorialStance": "Historic flagship daily newspaper of Johannesburg, founded during the Witwatersrand Gold Rush in 1887; chronicles municipal politics in Gauteng, national labor union developments, crime investigations, and civic affairs",
-      "readership": {
-        "metric": "Print circulation of approximately 45,000 copies daily and wide reach across the Witwatersrand metropolitan region",
-        "source": "ABC South Africa / Independent Media Readership Audit"
-      },
-      "revenueModel": "Print street sales, classifieds, corporate advertising, and digital syndication on IOL",
-      "logo": "newspaper-logos/za/the-star.webp",
-      "logoExplainer": "Red blackletter 'The Star' masthead — the Johannesburg daily's nameplate from its own site.",
-      "licenceNote": "The Star (Johannesburg) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.iol.co.za/the-star",
-        "https://en.wikipedia.org/wiki/The_Star_(South_Africa)"
       ]
     }
   ],
@@ -5052,7 +3380,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/es/agencia-efe.svg",
       "logoExplainer": "Navy 'EFE:' wordmark — Spain's international news agency brand mark.",
       "licenceNote": "Agencia EFE logo trademark bundled from Wikimedia Commons (File:Logotipo Agencia EFE 2022.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://efe.com",
         "https://en.wikipedia.org/wiki/EFE"
@@ -5092,38 +3419,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       ]
     }
   ],
-  "SR": [
-    {
-      "id": "sr-starnieuws",
-      "countryCode": "SR",
-      "name": "StarNieuws",
-      "nativeName": "StarNieuws",
-      "englishTranslation": "Star News",
-      "founded": 2010,
-      "frequency": "Real-time 24/7 digital news service",
-      "format": "Online news portal & mobile app (starnieuws.com)",
-      "language": "Dutch",
-      "headquarters": "Gravenberchstraat 33, Paramaribo",
-      "owner": {
-        "name": "Network Star Suriname N.V.",
-        "type": "Independent digital news enterprise"
-      },
-      "editorialStance": "Suriname's leading digital-native news agency and portal, founded in 2010 by journalist Nita Ramcharan; known for instantaneous breaking news alerts, comprehensive political coverage, judicial updates, and live parliament reports",
-      "readership": {
-        "metric": "Over 1.5 million monthly unique visitors, widely recognized as the most frequently refreshed digital news medium in Suriname",
-        "source": "Google Analytics / StarNieuws Public Metrics"
-      },
-      "revenueModel": "Digital banner advertising, corporate sponsorships, and commercial partnerships",
-      "logo": "newspaper-logos/sr/starnieuws.svg",
-      "logoExplainer": "Official masthead/brand mark for Starnieuws, sourced from the publisher's official site and visually verified.",
-      "licenceNote": "Starnieuws masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.starnieuws.com",
-        "https://en.wikipedia.org/wiki/Media_of_Suriname"
-      ]
-    }
-  ],
   "SE": [
     {
       "id": "se-tt-nyhetsbyran",
@@ -5149,7 +3444,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/se/tt-nyhetsbyran.svg",
       "logoExplainer": "Staggered 'TT' inside a dark circle — Tidningarnas Telegrambyrå brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:TTlogo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://tt.se",
         "https://en.wikipedia.org/wiki/Tidningarnas_Telegrambyr%C3%A5"
@@ -5185,7 +3479,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ch/keystone-sda.svg",
       "logoExplainer": "'Keystone-SDA' brand mark — Switzerland's national news agency emblem.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://keystone-sda.ch",
         "https://en.wikipedia.org/wiki/Swiss_News_Agency"
@@ -5221,7 +3514,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/sy/sana.svg",
       "logoExplainer": "Official masthead/brand mark for SANA (Syrian Arab News Agency), sourced from the publisher's official site and visually verified.",
       "licenceNote": "SANA (Syrian Arab News Agency) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://sana.sy",
         "https://en.wikipedia.org/wiki/Syrian_Arab_News_Agency"
@@ -5257,7 +3549,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/tj/khovar.png",
       "logoExplainer": "Official masthead/brand mark for Khovar (NIAT Khovar), sourced from the publisher's official site and visually verified.",
       "licenceNote": "Khovar (NIAT Khovar) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://khovar.tj",
         "https://en.wikipedia.org/wiki/Khovar"
@@ -5293,7 +3584,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/th/tna.png",
       "logoExplainer": "'TNA' brand mark — Thai News Agency emblem.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://tna.mcot.net",
         "https://en.wikipedia.org/wiki/Thai_News_Agency"
@@ -5329,44 +3619,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/tg/atop.svg",
       "logoExplainer": "Green 'atop' wordmark with lined globe 'o' and red accent dot over 'Agence Togolaise de Presse'.",
       "licenceNote": "ATOP brand mark trademark bundled from the agency's official site brand assets (atop.tg) for educational reference in Learn mode.",
-
       "sources": [
         "https://atop.tg",
         "https://en.wikipedia.org/wiki/Media_of_Togo"
-      ]
-    }
-  ],
-  "TT": [
-    {
-      "id": "tt-ttt-news",
-      "countryCode": "TT",
-      "name": "TTT News (Trinidad and Tobago Television)",
-      "founded": 1962,
-      "frequency": "Daily television newscasts & 24/7 web updates",
-      "format": "Public television network & news agency (ttt.live)",
-      "language": "English",
-      "headquarters": "11A Maraval Road, Port of Spain",
-      "owner": {
-        "name": "Government of the Republic of Trinidad and Tobago",
-        "type": "State-owned public service broadcaster"
-      },
-      "annualPublicFunding": {
-        "total": "TTD 38 million",
-        "perCapita": "TTD 27.00"
-      },
-      "editorialStance": "Historic public service broadcaster of Trinidad and Tobago, founded in 1962 upon national independence; provides non-partisan national news bulletins, live broadcasts of Parliament, state ceremonies, and cultural festivals",
-      "readership": {
-        "metric": "Flagship 7:00 PM news broadcast reaches over 40% of prime-time television viewers nationwide",
-        "source": "TTT Corporate Review / Telecommunications Authority of Trinidad and Tobago (TATT)"
-      },
-      "revenueModel": "State budget subvention and commercial television spot advertising",
-      "logo": "newspaper-logos/tt/ttt-news.png",
-      "logoExplainer": "Red stylised 'TTT' on a white play-triangle — Trinidad and Tobago Television crest from ttt.live.",
-      "licenceNote": "TTT brand mark trademark bundled from the broadcaster's official site brand assets (ttt.live) for educational reference in Learn mode.",
-
-      "sources": [
-        "https://ttt.live",
-        "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Television"
       ]
     }
   ],
@@ -5432,7 +3687,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/tr/anadolu-agency.svg",
       "logoExplainer": "'Anadolu Agency' / Anadolu Ajansı brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Anadolu Agency logo 2023.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.aa.com.tr",
         "https://en.wikipedia.org/wiki/Anadolu_Agency"
@@ -5468,67 +3722,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/tm/tdh.png",
       "logoExplainer": "Official masthead/brand mark for TDH (State News Agency of Turkmenistan), sourced from the publisher's official site and visually verified.",
       "licenceNote": "TDH (State News Agency of Turkmenistan) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://tdh.gov.tm",
         "https://en.wikipedia.org/wiki/State_News_Agency_of_Turkmenistan"
-      ]
-    },
-    {
-      "id": "tm-neytralny-turkmenistan",
-      "countryCode": "TM",
-      "name": "Neytralny Turkmenistan",
-      "nativeName": "Газета «Нейтральный Туркменистан»",
-      "englishTranslation": "Neutral Turkmenistan",
-      "founded": 1924,
-      "frequency": "Daily morning newspaper (six times weekly)",
-      "format": "Broadsheet newspaper & digital PDF edition (metbugat.gov.tm)",
-      "language": "Russian",
-      "headquarters": "Press House (Metbugat Öýi), Atamurat Niyazov Avenue, Ashgabat",
-      "owner": {
-        "name": "Cabinet of Ministers of Turkmenistan",
-        "type": "State-owned daily newspaper of record"
-      },
-      "editorialStance": "Turkmenistan's flagship Russian-language official daily newspaper of record, founded in 1924 (originally as Turkmenskaya Iskra); publishes complete texts of new legislation, presidential decrees, foreign bilateral communiqués, and scientific and cultural achievements",
-      "readership": {
-        "metric": "Circulation of 40,000 copies daily distributed across all five velayats (provinces) and Ashgabat",
-        "source": "Turkmen State Publishing Service"
-      },
-      "revenueModel": "State budget funding and mandatory institutional subscriptions",
-      "logo": "newspaper-logos/tm/neytralny-turkmenistan.png",
-      "logoExplainer": "Official masthead/brand mark for Neytralny Turkmenistan, sourced from the publisher's official site and visually verified.",
-      "licenceNote": "Neytralny Turkmenistan brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://metbugat.gov.tm",
-        "https://en.wikipedia.org/wiki/Neytralny_Turkmenistan"
-      ]
-    },
-    {
-      "id": "tm-turkmenistan-gazeti",
-      "countryCode": "TM",
-      "name": "Turkmenistan Gazeti",
-      "nativeName": "«Türkmenistan» gazeti",
-      "englishTranslation": "Turkmenistan Newspaper",
-      "founded": 1920,
-      "frequency": "Daily morning newspaper (six times weekly)",
-      "format": "Broadsheet newspaper & digital portal (turkmenmetbugat.gov.tm)",
-      "language": "Turkmen",
-      "headquarters": "Press House, Atamurat Niyazov Avenue, Ashgabat",
-      "owner": {
-        "name": "Cabinet of Ministers of Turkmenistan",
-        "type": "State-owned national daily newspaper"
-      },
-      "editorialStance": "Oldest and principal Turkmen-language official national daily newspaper, established in 1920; covers agrarian developments in cotton and wheat harvests, gas pipeline construction (TAPI), national celebrations, poetry, and civic achievements",
-      "readership": {
-        "metric": "Circulation of approximately 50,000 copies daily, distributed to schools, universities, ministries, and collective farms nationwide",
-        "source": "Turkmen State Publishing Service Register"
-      },
-      "revenueModel": "State subsidies and nationwide institutional subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://turkmenmetbugat.gov.tm",
-        "https://tk.wikipedia.org/wiki/T%C3%BCrkmenistan_(gazet)"
       ]
     }
   ],
@@ -5588,40 +3784,9 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ua/ukrinform.svg",
       "logoExplainer": "Official 'Ukrinform (National News Agency of Ukraine)' masthead/logo as used by the publisher — sourced from the outlet's own site.",
       "licenceNote": "Ukrinform (National News Agency of Ukraine) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.ukrinform.ua",
         "https://en.wikipedia.org/wiki/Ukrinform"
-      ]
-    },
-    {
-      "id": "ua-ukrainska-pravda",
-      "countryCode": "UA",
-      "name": "Ukrainska Pravda (UP)",
-      "nativeName": "Українська правда",
-      "englishTranslation": "Ukrainian Truth",
-      "founded": 2000,
-      "frequency": "Real-time 24/7 continuous digital journalism",
-      "format": "Online newspaper & investigative newsroom (pravda.com.ua)",
-      "language": "Ukrainian, English, Russian",
-      "headquarters": "Kyiv",
-      "owner": {
-        "name": "Dragon Capital (Tomas Fiala)",
-        "type": "Independent commercial media holding"
-      },
-      "editorialStance": "Pioneering independent Ukrainian digital newspaper, founded on the day of the 2000 referendum by murdered investigative journalist Georgiy Gongadze; internationally celebrated for hard-hitting anti-corruption investigations, war reporting, and political accountability",
-      "readership": {
-        "metric": "Over 25 million monthly unique visitors, ranking among the most visited independent news portals in Ukraine and Central Europe",
-        "source": "Similarweb Ukraine Media Rankings / Gemius"
-      },
-      "revenueModel": "Digital advertising, reader club memberships (UP Club), and independent grant funding",
-      "logo": "newspaper-logos/ua/ukrainska-pravda.jpg",
-      "logoExplainer": "'Українська правда' / Ukrainska Pravda wordmark.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.pravda.com.ua",
-        "https://en.wikipedia.org/wiki/Ukrainska_Pravda"
       ]
     },
     {
@@ -5648,7 +3813,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ua/interfax-ukraine.svg",
       "logoExplainer": "'Interfax-Ukraine' brand mark — the Kyiv news agency emblem.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://interfax.com.ua",
         "https://en.wikipedia.org/wiki/Interfax-Ukraine"
@@ -5684,7 +3848,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ae/wam.png",
       "logoExplainer": "Bilingual Arabic/English 'WAM' wordmark with a dotted globe — the Emirates News Agency emblem.",
       "licenceNote": "WAM (Emirates News Agency) logo trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://wam.ae",
         "https://en.wikipedia.org/wiki/Emirates_News_Agency"
@@ -5714,7 +3877,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/gb/reuters.svg",
       "logoExplainer": "Official 'Reuters' masthead/logo as used by the publisher — sourced from Wikimedia Commons.",
       "licenceNote": "Reuters masthead trademark bundled from Wikimedia Commons (File:Reuters logo 2024.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.reuters.com",
         "https://en.wikipedia.org/wiki/Reuters"
@@ -5744,7 +3906,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/us/ap.svg",
       "logoExplainer": "Official 'Associated Press (AP)' masthead/logo as used by the publisher — sourced from Wikimedia Commons.",
       "licenceNote": "Associated Press (AP) masthead trademark bundled from Wikimedia Commons (File:Associated Press logo 2012.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://apnews.com",
         "https://en.wikipedia.org/wiki/Associated_Press"
@@ -5780,7 +3941,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/uz/uza.svg",
       "logoExplainer": "Official masthead/brand mark for UzA, sourced from the publisher's official site and visually verified.",
       "licenceNote": "UzA brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://uza.uz",
         "https://en.wikipedia.org/wiki/Uzbekistan_National_News_Agency"
@@ -5788,36 +3948,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
     }
   ],
   "VE": [
-    {
-      "id": "ve-efecto-cocuyo",
-      "countryCode": "VE",
-      "name": "Efecto Cocuyo",
-      "nativeName": "Efecto Cocuyo",
-      "englishTranslation": "Firefly Effect",
-      "founded": 2015,
-      "frequency": "Continuous 24/7 digital journalism & fact-checking",
-      "format": "Digital investigative newsroom (efectococuyo.com)",
-      "language": "Spanish",
-      "headquarters": "Caracas",
-      "owner": {
-        "name": "Efecto Cocuyo C.A. (Luz Mely Reyes & Josefina Ruggiero)",
-        "type": "Independent women-led investigative journalism enterprise"
-      },
-      "editorialStance": "Acclaimed independent Venezuelan digital investigative newsroom, founded in 2015 by journalists Luz Mely Reyes and Josefina Ruggiero; internationally honored with the CPJ International Press Freedom Award for fearless investigations into humanitarian conditions, electoral integrity, public health, and human rights",
-      "readership": {
-        "metric": "Over 1.8 million monthly digital visitors and over 1 million followers on social platforms",
-        "source": "Efecto Cocuyo Transparency Report / CPJ"
-      },
-      "revenueModel": "International investigative journalism grants, reader crowdfunding, and educational training programs",
-      "logo": "newspaper-logos/ve/efecto-cocuyo.jpg",
-      "logoExplainer": "Official masthead/brand mark for Efecto Cocuyo, sourced from the publisher's official site and visually verified.",
-      "licenceNote": "Efecto Cocuyo brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://efectococuyo.com",
-        "https://en.wikipedia.org/wiki/Efecto_Cocuyo"
-      ]
-    },
     {
       "id": "ve-avn",
       "countryCode": "VE",
@@ -5846,7 +3976,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ve/avn.png",
       "logoExplainer": "Official masthead/brand mark for AVN (Agencia Venezolana de Noticias), sourced from the publisher's official site and visually verified.",
       "licenceNote": "AVN (Agencia Venezolana de Noticias) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://avn.info.ve",
         "https://en.wikipedia.org/wiki/Agencia_Venezolana_de_Noticias"
@@ -5882,7 +4011,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/vn/vna.png",
       "logoExplainer": "'VNA' brand mark — Vietnam News Agency emblem.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://vnanet.vn",
         "https://en.wikipedia.org/wiki/Vietnam_News_Agency"
@@ -5918,7 +4046,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ye/saba.png",
       "logoExplainer": "Official masthead/brand mark for SABA (Yemen News Agency), sourced from the publisher's official site and visually verified.",
       "licenceNote": "SABA (Yemen News Agency) brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.sabanew.net",
         "https://en.wikipedia.org/wiki/Saba_News_Agency"
@@ -5952,7 +4079,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/zm/zanis.jpg",
       "logoExplainer": "Circular green/orange ring around bold 'ZANIS' — Zambia News and Information Services crest.",
       "licenceNote": "ZANIS brand mark trademark bundled from the agency's official site brand assets (zanis.gov.zm) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.zanis.com.zm",
         "https://en.wikipedia.org/wiki/Media_of_Zambia"
@@ -5988,7 +4114,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ps/wafa.png",
       "logoExplainer": "Stacked 'WAFA' mark with Arabic title and 'Palestinian News & Info Agency' strap — the official agency crest.",
       "licenceNote": "WAFA brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.wafa.ps",
         "https://en.wikipedia.org/wiki/WAFA"
@@ -6018,7 +4143,6 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "logo": "newspaper-logos/ps/maan-news.jpg",
       "logoExplainer": "Glossy red circular badge with white Arabic 'معاً' calligraphy — Ma'an News Agency emblem.",
       "licenceNote": "Ma'an News Agency brand mark trademark bundled from Wikimedia Commons (File:Ma'an Logo.jpg; CC BY 3.0) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.maannews.net",
         "https://en.wikipedia.org/wiki/Ma%27an_News_Agency"
