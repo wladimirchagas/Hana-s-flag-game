@@ -8556,7 +8556,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Foroyaa Media Profile 2023"
       },
       "revenueModel": "Print sales, subscriptions, and civic society notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gm/foroyaa.png",
+      "logoExplainer": "Bold red serif 'FOROYAA' wordmark on a light field — Foroyaa Newspaper masthead.",
+      "licenceNote": "Foroyaa trademark bundled from the publisher's official site brand assets (foroyaa.net) for educational reference in Learn mode.",
+
       "sources": [
         "https://foroyaa.net",
         "https://en.wikipedia.org/wiki/Foroyaa"
@@ -24956,7 +24959,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "iWitness News Analytics 2023"
       },
       "revenueModel": "Digital subscriptions, reader donations, and ethical local advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/vc/iwitness-news.svg",
+      "logoExplainer": "Black 'iwn' wordmark with broadcast arcs on the dotted i, plus smaller 'iWitness News' — iWitness News (SVG) masthead.",
+      "licenceNote": "iWitness News trademark bundled from the publisher's official CDN brand assets (cdn.iwnsvg.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.iwnsvg.com",
         "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"

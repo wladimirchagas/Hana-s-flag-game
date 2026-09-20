@@ -15,36 +15,20 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "tz-the-citizen",
-    src: "tmp/batch56-final/tz-the-citizen.png",
+    id: "vc-iwitness-news",
+    src: "tmp/batch57-final/vc-iwitness-news.svg",
     explainer:
-      "White serif 'THE CITIZEN' wordmark on a medium-blue field — The Citizen (Tanzania) masthead.",
+      "Black 'iwn' wordmark with broadcast arcs on the dotted i, plus smaller 'iWitness News' — iWitness News (SVG) masthead.",
     licence:
-      "The Citizen trademark bundled from the publisher's official site brand assets (thecitizen.co.tz) for educational reference in Learn mode.",
+      "iWitness News trademark bundled from the publisher's official CDN brand assets (cdn.iwnsvg.com) for educational reference in Learn mode.",
   },
   {
-    id: "km-la-gazette-des-comores",
-    src: "tmp/batch56-final/km-la-gazette-des-comores.png",
+    id: "gm-foroyaa",
+    src: "tmp/batch57-final/gm-foroyaa.png",
     explainer:
-      "Dark-red serif 'La Gazette' over smaller black 'des Comores' — La Gazette des Comores masthead.",
+      "Bold red serif 'FOROYAA' wordmark on a light field — Foroyaa Newspaper masthead.",
     licence:
-      "La Gazette des Comores trademark bundled from the publisher's official site brand assets (lagazettedescomores.com) for educational reference in Learn mode.",
-  },
-  {
-    id: "ps-al-quds",
-    src: "tmp/batch56-final/ps-al-quds.png",
-    explainer:
-      "White geometric Arabic القدس (Al-Quds) calligraphy on a dark field — Al-Quds newspaper masthead.",
-    licence:
-      "Al-Quds trademark bundled from the publisher's official site brand assets (alquds.com) for educational reference in Learn mode.",
-  },
-  {
-    id: "to-kaniva-tonga",
-    src: "tmp/batch56-final/to-kaniva-tonga.png",
-    explainer:
-      "Ornate gold blackletter 'K' on black inside a light-blue ring — Kaniva Tonga News masthead mark.",
-    licence:
-      "Kaniva Tonga trademark bundled from the publisher's official site brand assets (kanivatonga.co.nz) for educational reference in Learn mode.",
+      "Foroyaa trademark bundled from the publisher's official site brand assets (foroyaa.net) for educational reference in Learn mode.",
   },
 ];
 
