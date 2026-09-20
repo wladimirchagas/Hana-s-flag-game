@@ -1696,7 +1696,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Department of Film and Publications (DFP) Bangladesh 2023"
       },
       "revenueModel": "Print sales, digital display advertising, and e-paper subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bd/prothom-alo.png",
+      "logoExplainer": "Orange rising-sun mark over the Bengali 'প্রথম আলো' wordmark on white — Prothom Alo masthead from prothomalo.com.",
+      "licenceNote": "Prothom Alo brand mark trademark bundled from the publisher's official site brand assets (palo-bangla.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.prothomalo.com",
         "https://en.wikipedia.org/wiki/Prothom_Alo"
@@ -6292,7 +6295,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Diario Libre Media Kit 2024"
       },
       "revenueModel": "Commercial print display advertising and digital programmatic revenue",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/do/diario-libre.png",
+      "logoExplainer": "Green square with white 'Diario Libre' and a yellow news-carrier figure — Diario Libre crest from diariolibre.com.",
+      "licenceNote": "Diario Libre brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.diariolibre.com",
         "https://en.wikipedia.org/wiki/Diario_Libre"
@@ -7167,11 +7173,14 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "https://en.wikipedia.org/wiki/El_Periódico_de_Catalunya"
       },
       "revenueModel": "Subscriptions, print sales, and advertising",
+      "logo": "newspaper-logos/es/el-periodico.png",
+      "logoExplainer": "White 'elPeriódico' wordmark on a solid red field — El Periódico de Catalunya masthead from elperiodico.com.",
+      "licenceNote": "El Periódico brand mark trademark bundled from the publisher's official site brand assets (elperiodico.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.elperiodico.com",
         "https://en.wikipedia.org/wiki/El_Periódico_de_Catalunya"
-      ],
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+      ]
     }
   ],
   "ET": [
@@ -11095,7 +11104,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Jamaica Observer Media Kit 2024"
       },
       "revenueModel": "Print sales, commercial advertising, and digital promotions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/jm/jamaica-observer.png",
+      "logoExplainer": "Globe emblem beside stacked black 'JAMAICA' over red 'OBSERVER' — Jamaica Observer masthead from jamaicaobserver.com.",
+      "licenceNote": "Jamaica Observer brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.jamaicaobserver.com",
         "https://en.wikipedia.org/wiki/Jamaica_Observer"

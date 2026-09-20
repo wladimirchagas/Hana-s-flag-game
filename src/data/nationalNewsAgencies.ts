@@ -791,7 +791,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Bahamas Information Services"
       },
       "revenueModel": "Government parliamentary budget",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bs/bis.png",
+      "logoExplainer": "Bahamas coat of arms beside 'The Government of The Bahamas' on a navy plate — the official bahamas.gov.bs header mark used by Bahamas Information Services.",
+      "licenceNote": "Government of The Bahamas crest trademark bundled from the official government CDN brand asset on bahamas.gov.bs for educational reference in Learn mode.",
+
       "sources": [
         "https://www.bahamas.gov.bs",
         "https://en.wikipedia.org/wiki/Bahamas_Information_Services"
@@ -847,7 +850,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "BSS Official Annual Report 2023"
       },
       "revenueModel": "Government parliamentary grant allocation and subscriber licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bd/bss.png",
+      "logoExplainer": "Circular Bangladesh seal beside green 'BSS' and red 'NEWS' with the English portal tagline — Bangladesh Sangbad Sangstha crest.",
+      "licenceNote": "BSS brand mark trademark bundled from the agency's official site brand assets (bssnews.net via Wayback Machine snapshot of the live logo file) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.bssnews.net",
         "https://en.wikipedia.org/wiki/Bangladesh_Sangbad_Sangstha"
@@ -2297,7 +2303,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "State information service"
       },
       "revenueModel": "Direct state budget funding",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/er/shabait.png",
+      "logoExplainer": "Gold camel seal beside 'MINISTRY OF INFORMATION / ERITREA' on a dark plate — Shabait (Eritrea MoI) masthead.",
+      "licenceNote": "Shabait / Ministry of Information Eritrea brand mark trademark bundled from the agency's official site brand assets (shabait.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://shabait.com",
         "https://en.wikipedia.org/wiki/Ministry_of_Information_(Eritrea)"
@@ -3319,7 +3328,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "AIM Relatório de Actividades 2023"
       },
       "revenueModel": "State budgetary subvention and news agency syndication fees",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mz/aim.png",
+      "logoExplainer": "Connected pink-red 'AIM' wordmark on white — Agência de Informação de Moçambique crest from aimnews.org.",
+      "licenceNote": "AIM brand mark trademark bundled from the agency's official site brand assets (aimnews.org) for educational reference in Learn mode.",
+
       "sources": [
         "https://aim.org.mz",
         "https://en.wikipedia.org/wiki/Ag%C3%AAncia_de_Informa%C3%A7%C3%A3o_de_Mo%C3%A7ambique"
@@ -4016,7 +4028,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "PNA Annual Accomplishment Report 2023"
       },
       "revenueModel": "National government budgetary funding",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ph/pna.svg",
+      "logoExplainer": "Blue disc with white stylised 'P' mark — Philippine News Agency crest from Wikimedia Commons.",
+      "licenceNote": "Philippine News Agency Logo.svg from Wikimedia Commons; government work / brand mark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.pna.gov.ph",
         "https://en.wikipedia.org/wiki/Philippine_News_Agency"
@@ -5339,7 +5354,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "TTT Corporate Review / Telecommunications Authority of Trinidad and Tobago (TATT)"
       },
       "revenueModel": "State budget subvention and commercial television spot advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tt/ttt-news.png",
+      "logoExplainer": "Red stylised 'TTT' on a white play-triangle — Trinidad and Tobago Television crest from ttt.live.",
+      "licenceNote": "TTT brand mark trademark bundled from the broadcaster's official site brand assets (ttt.live) for educational reference in Learn mode.",
+
       "sources": [
         "https://ttt.live",
         "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_Television"
@@ -5925,7 +5943,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Ministry of Information and Media Annual Review"
       },
       "revenueModel": "State budget subvention and institutional news licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/zm/zanis.jpg",
+      "logoExplainer": "Circular green/orange ring around bold 'ZANIS' — Zambia News and Information Services crest.",
+      "licenceNote": "ZANIS brand mark trademark bundled from the agency's official site brand assets (zanis.gov.zm) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.zanis.com.zm",
         "https://en.wikipedia.org/wiki/Media_of_Zambia"
