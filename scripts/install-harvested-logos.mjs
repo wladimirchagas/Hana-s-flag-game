@@ -11,39 +11,39 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 38 — Pacific/Caribbean mastheads, montage-scanned. */
+/** Visually verified batch 39 — Caribbean + Mozambique mastheads, montage-scanned. */
 const MANIFEST = [
   {
-    id: "to-matangi-tonga",
-    src: "tmp/batch39-manual/Matangi_Tonga_logo_3.svg",
+    id: "vc-stvincent-times",
+    src: "tmp/batch40-manual/vc-stvincent-times.webp",
     explainer:
-      "Red italic 'Matangi' with grey 'Online' underneath — Matangi Tonga Online masthead from Wikimedia Commons.",
+      "Blue/yellow/green 'TS' monogram beside black serif 'St. Vincent TIMES' — St Vincent Times masthead.",
     licence:
-      "Matangi Tonga Online masthead from Wikimedia Commons File:Matangi Tonga logo 3.svg, bundled for educational reference in Learn mode.",
+      "St Vincent Times masthead trademark bundled from the publisher's official site brand assets (stvincenttimes.com) for educational reference in Learn mode.",
   },
   {
-    id: "pg-wantok-niuspepa",
-    src: "tmp/batch39-manual/pg-wantok-logo.jpg",
+    id: "mz-noticias",
+    src: "tmp/batch40-manual/mz-noticias.png",
     explainer:
-      "Shell-and-sunburst emblem beside red 'Wantok' and Tok Pisin tagline 'NIUSPEPA BILONG YUMI OL PNG STRET'.",
+      "Red rounded block with white 'n' cutout beside red lowercase 'oticias' — Jornal Notícias masthead.",
     licence:
-      "Wantok Niuspepa masthead trademark bundled from the publisher's official site brand assets (wantokniuspepa.com) for educational reference in Learn mode.",
+      "Jornal Notícias masthead trademark bundled from the publisher's official site brand assets (noticias.co.mz) for educational reference in Learn mode.",
   },
   {
-    id: "tt-guardian",
-    src: "tmp/batch39-manual/tt-guardian-white.png",
+    id: "mz-o-pais",
+    src: "tmp/batch40-manual/mz-o-pais.jpg",
     explainer:
-      "White serif 'Trinidad & Tobago Guardian' with a scarlet ibis bearing a golden sword — Guardian masthead.",
+      "Heavy slab-serif 'OPais' with an orange bar on the i and a green-white-red triangle on the s.",
     licence:
-      "Trinidad and Tobago Guardian masthead trademark bundled from the publisher's official site brand assets (guardian.co.tt) for educational reference in Learn mode.",
+      "O País (Mozambique) masthead trademark bundled from the publisher's official site brand assets (opais.co.mz) for educational reference in Learn mode.",
   },
   {
-    id: "gy-stabroek-news",
-    src: "tmp/batch39-manual/gy-stabroek.png",
+    id: "mz-voz",
+    src: "tmp/batch40-manual/mz-verdade.jpg",
     explainer:
-      "Cyan sans-serif 'SN' monogram on black — Stabroek News brand mark from the publisher's site.",
+      "Red '@Verdade' with an oversized V over a black bar reading 'A verdade em cada palavra'.",
     licence:
-      "Stabroek News brand mark trademark bundled from the publisher's official site brand assets (stabroeknews.com) for educational reference in Learn mode.",
+      "@Verdade masthead trademark bundled from the publisher's official site brand assets (verdade.co.mz) for educational reference in Learn mode.",
   },
 ];
 
