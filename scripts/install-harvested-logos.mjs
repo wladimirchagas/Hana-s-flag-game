@@ -25,7 +25,7 @@ const MANIFEST = [
     id: "ag-antigua-observer",
     src: "tmp/batch43-install/ag-antigua-observer.png",
     explainer:
-      "Antigua Observer wordmark from the publisher's Newsco site header — ObserverByNewscoLogo brand asset.",
+      "Black serif 'Observer' with an orange-to-yellow flame inside the O, plus small 'by Newco Ltd.' — Antigua Observer masthead.",
     licence:
       "Antigua Observer masthead trademark bundled from the publisher's official site brand assets (antiguaobserver.com) for educational reference in Learn mode.",
   },
