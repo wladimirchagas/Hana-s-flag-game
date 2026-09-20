@@ -3345,7 +3345,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "CBET Publishing 2023"
       },
       "revenueModel": "Print circulation and commercial display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bw/botswana-guardian.png",
+      "logoExplainer": "Red serif 'BOTSWANA GUARDIAN' nameplate with a paired 'THE MIDWEEK SUN' block — Botswana Guardian masthead.",
+      "licenceNote": "Botswana Guardian & The Midweek Sun nameplate from English Wikipedia (fair-use / non-free local file); trademark bundled for educational reference in Learn mode with licenceNote.",
+
       "sources": [
         "https://www.botswanaguardian.co.bw"
       ]
@@ -8197,7 +8200,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Civil.ge / UNAG Annual Review 2023"
       },
       "revenueModel": "International democratic governance grants and philanthropic donations",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ge/civil-ge.png",
+      "logoExplainer": "Red concentric-circle 'C' mark beside red sans 'Civil Georgia' — Civil.ge masthead from the site's own brand assets.",
+      "licenceNote": "Civil.ge masthead from the publisher's official site brand assets (civil.ge); trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://civil.ge",
         "https://en.wikipedia.org/wiki/Civil_Georgia"
