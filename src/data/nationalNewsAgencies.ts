@@ -672,7 +672,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "AZERTAC Annual Report 2023"
       },
       "revenueModel": "Direct state budget allocation",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/az/azertac.svg",
+      "logoExplainer": "Navy 'AZƏRTAC' wordmark beside an eight-point star emblem with speech-bubble motifs — Azerbaijan State News Agency crest.",
+      "licenceNote": "AzərTAc brand mark trademark bundled from the agency's official site brand assets (azertag.az/resources/images/logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://azertag.az",
         "https://en.wikipedia.org/wiki/Azerbaijan_State_News_Agency"
@@ -1076,7 +1079,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "ABP Annual Report 2023"
       },
       "revenueModel": "Direct state budget funding and subscriber licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bj/abp.jpg",
+      "logoExplainer": "Green 'ABP' wordmark beside a Benin-coloured dotted globe over 'AGENCE BENIN PRESSE' — Agence Bénin Presse crest.",
+      "licenceNote": "Agence Bénin Presse brand mark trademark bundled from Wikimedia Commons (File:Logo de l'Agence Bénin Presse.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.abp.bj",
         "https://fr.wikipedia.org/wiki/Agence_B%C3%A9nin_Presse"
@@ -2043,7 +2049,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "perCapita": "~0.50 JOD / person / year"
       },
       "revenueModel": "Parliamentary state budget appropriation",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/jo/petra.png",
+      "logoExplainer": "Crowned Jordan-flag 'J' with globe and 'Petra' / Arabic titles over 'Jordan News Agency' — Petra's official crest.",
+      "licenceNote": "Jordan News Agency (Petra) brand mark trademark bundled from the agency's official site brand assets (petra.gov.jo/images/logo.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://petra.gov.jo",
         "https://en.wikipedia.org/wiki/Jordan_News_Agency"
@@ -4576,7 +4585,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Tanjug Media Kit 2023"
       },
       "revenueModel": "News wire licensing, broadcast commercial advertising, and multimedia syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/rs/tanjug.png",
+      "logoExplainer": "Navy plate with white 'Tanjug' wordmark: rounded 'T' badge and red square accent — Tanjug header brand from its site.",
+      "licenceNote": "Tanjug brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.tanjug.rs",
         "https://en.wikipedia.org/wiki/Tanjug"
