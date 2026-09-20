@@ -51,7 +51,7 @@ import { MENS_WORLD_CUP_TITLES, WOMENS_WORLD_CUP_TITLES } from "../data/worldCup
 import { allCommercialAirlines } from "../lib/commercialAirlines";
 import { allPublicBroadcasters } from "../lib/publicBroadcasters";
 import { allTourismLogos } from "../lib/tourismLogos";
-import { allNationalNewsAgencies } from "../lib/nationalNewsAgencies";
+import { allNationalNewsAgencies, agencyOwnershipBadge } from "../lib/nationalNewsAgencies";
 import { allNationalNewspapers } from "../lib/nationalNewspapers";
 import {
   allPoliticalParties,
@@ -451,12 +451,15 @@ export function FlagGrid({
       const codeToEntry = new Map(entries.map((e) => [e.id, e]));
       return allNationalNewsAgencies().map((na): FlagListEntry => {
         const parent = codeToEntry.get(na.countryCode);
+        const badge = agencyOwnershipBadge(na);
         return {
           id: na.id,
           name: na.name,
           flag: na.logo ?? null,
           newsAgencyLogo: na.logo ?? null,
           newsAgencyId: na.id,
+          newsAgencyOwnershipKind: badge.kind,
+          newsAgencyOwnershipLabel: badge.label,
           countryName: parent ? parent.name : na.countryCode,
           continent: parent ? parent.continent : "Other",
           subcontinent: parent ? parent.subcontinent : "Other",
@@ -1197,6 +1200,17 @@ export function FlagGrid({
                           </span>
                         );
                       })()}
+                      {effectiveContentType === "newsagency" &&
+                        item.newsAgencyOwnershipLabel &&
+                        item.newsAgencyOwnershipKind && (
+                          <span className="flag-grid__party-badges">
+                            <span
+                              className={`flag-grid__party-badge flag-grid__agency-badge flag-grid__agency-badge--${item.newsAgencyOwnershipKind}`}
+                            >
+                              {item.newsAgencyOwnershipLabel}
+                            </span>
+                          </span>
+                        )}
                     </span>
                   </button>
                 </li>

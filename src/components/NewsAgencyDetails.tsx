@@ -1,4 +1,5 @@
 import { LogoExplainer } from "./LogoExplainer";
+import { agencyOwnershipBadge } from "../lib/nationalNewsAgencies";
 import type { NewsAgency } from "../types/newsAgency";
 
 /**
@@ -23,6 +24,7 @@ export function NewsAgencyDetails({
         ? agency.logo
         : `${baseUrl}${agency.logo}`
     : null;
+  const ownershipBadge = agencyOwnershipBadge(agency);
 
   return (
     <div className="broadcaster-details news-agency-details">
@@ -113,6 +115,13 @@ export function NewsAgencyDetails({
             <strong>{agency.owner.name}</strong>
             <span className="learn-fs__sub-desc" style={{ display: "block", fontSize: "0.85em", color: "var(--text-muted)" }}>
               {agency.owner.type}
+            </span>
+            <span className="flag-grid__party-badges" style={{ justifyContent: "flex-start", marginTop: "0.35em" }}>
+              <span
+                className={`flag-grid__party-badge flag-grid__agency-badge flag-grid__agency-badge--${ownershipBadge.kind}`}
+              >
+                {ownershipBadge.label}
+              </span>
             </span>
           </dd>
         </div>

@@ -92,7 +92,7 @@ export function CountryItemChooser({
                     {item.badges.map((b) => (
                       <span
                         key={`${b.kind}-${b.label}`}
-                        className={`flag-grid__party-badge flag-grid__party-badge--${b.kind}`}
+                        className={`flag-grid__party-badge flag-grid__party-badge--${b.kind} flag-grid__agency-badge flag-grid__agency-badge--${b.kind}`}
                       >
                         {b.label}
                       </span>

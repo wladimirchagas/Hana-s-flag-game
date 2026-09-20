@@ -120,11 +120,13 @@ for (const [countryKey, list] of Object.entries(newspapersByCountry)) {
       failures.push(`${ctx}: missing or incomplete readership (metric and source required)`);
     }
 
-    // 2b. Negative assertions — this dataset is print/digital NEWSPAPERS only.
-    // TV networks, radio stations, public broadcasters and government press offices
-    // belong elsewhere (public broadcasters / news agencies). A print newspaper may
-    // mention an auxiliary cross-media affiliate in format/stance, but the NAME must
-    // still read as a newspaper and the format must lead with a print/digital-press form.
+    // 2b. Negative assertions — this dataset is print/digital NEWSPAPER retailers only.
+    // National news agencies (wholesalers / wire services: AP, Reuters, AFP, …) belong
+    // in nationalNewsAgencies.ts — see CLAUDE.md "National news agencies are wholesalers,
+    // not retailers". TV networks, radio stations, public broadcasters and government
+    // press offices belong elsewhere. A print newspaper may mention an auxiliary
+    // cross-media affiliate in format/stance, but the NAME must still read as a
+    // newspaper and the format must lead with a print/digital-press form.
     {
       const nameBlob = `${paper.name || ""} ${paper.officialName || ""} ${paper.nativeName || ""} ${paper.englishTranslation || ""}`;
       const format = paper.format || "";

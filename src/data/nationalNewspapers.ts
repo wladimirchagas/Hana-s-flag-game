@@ -3,6 +3,11 @@ import type { Newspaper } from "../types/newspaper";
 /**
  * Curated and sourced dataset of top national newspapers for Learn mode.
  *
+ * These are "retailers" of news — titles whose core product is public consumption
+ * (print and/or digital), not wholesaling raw copy to other outlets. National news
+ * agencies / wire services (AP, Reuters, AFP, …) belong in NATIONAL_NEWS_AGENCIES
+ * instead — see CLAUDE.md "National news agencies are wholesalers, not retailers".
+ *
  * Selection rule (owner 2026-09): up to five general-interest titles per country,
  * prioritising largest audience and highest reputation. Business/finance-only
  * papers and mass-market tabloids are excluded when a stronger broad-news

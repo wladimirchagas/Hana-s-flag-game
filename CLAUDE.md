@@ -3656,6 +3656,91 @@ every push. A session that worked on party data without updating
 `docs/POLITICAL_PARTY_AUDIT_2026.md`, or that stopped to ask whether to carry on while countries
 remained unticked, has violated this rule.
 
+## National news agencies are wholesalers, not retailers — hard rule, do not override without approval
+
+**Before classifying a media organisation for Learn mode — especially when a country has no
+agency, several candidates, or a publisher that both wires and publishes — apply this
+operational distinction. It decides which dataset an entry belongs in.**
+
+| Role | What it is | Primary clients | Learn-mode home | Examples |
+|------|------------|-----------------|-----------------|----------|
+| **National news agency (newswire)** | "Wholesaler" of information | Other media outlets (newspapers, broadcasters, digital publishers) | `src/data/nationalNewsAgencies.ts` (`newsagency` Show type) | Associated Press (US), Reuters (UK), Agence France-Presse (France), Bernama (Malaysia), AAP (Australia) |
+| **Other news organisation** | "Retailer" of news | The general public, direct consumption | Newspapers → `nationalNewspapers.ts`; broadcasters → their own registry; consumer portals stay out of the agency list | CNN, the BBC, *The New York Times*, a country's top dailies |
+
+### Why this rule exists
+
+A news agency (wire service) gathers and distributes **licensable** news content — text,
+photographs, video, and data — to media outlets and other customers. Retail news
+organisations produce content intended for the public. The two look similar in a list of
+"important national media", and past curation mixed them: consumer portals and
+broadcasters landed in the newspaper set, and the reverse risk is putting a daily paper
+or a public broadcaster into `nationalNewsAgencies.ts` because it is nationally
+prominent. The distinction is **functional**, not absolute: many agencies also publish
+directly to the public, and many consumer-facing publishers also syndicate content.
+When both are true, classify by the **core business model** — wholesaling raw/syndicated
+copy to other outlets vs public distribution as the product.
+
+### Rules
+
+1. **`nationalNewsAgencies.ts` holds wire / newswire services only** — organisations
+   whose primary clients are other media outlets. Their `format` / `frequency` /
+   `editorialStance` should read as syndication, wire, or multimedia feed service, not as
+   a consumer newspaper or broadcaster.
+2. **Newspapers, television/radio broadcasters, and digital-native consumer sites do NOT
+   belong in the agency dataset** — even when they are nationally famous or maintain large
+   reporting staffs. Put print/digital press titles in `nationalNewspapers.ts`; put
+   public/commercial broadcasters in the broadcaster registry; omit pure consumer portals
+   from the agency list rather than force-fit them.
+3. **The distinction is functional, not absolute.** An agency that also runs a public
+   website or app can still be an agency if wholesaling to other outlets is the core
+   model. A newspaper that licenses a few stories does not become an agency. Prefer the
+   organisation's own description and authoritative sources (about pages, statutes,
+   industry directories) over a name that merely includes "News" or "Press".
+4. **A country with no national news agency is an honest gap** — leave its agency array
+   absent/empty rather than promote a retailer to fill the slot. A country with several
+   genuine wires may list more than one; multiplicity alone does not license adding
+   retailers.
+5. **Never weaken `scripts/check-national-newspapers.mjs` or
+   `scripts/check-national-news-agencies.mjs`** to smuggle a misclassified outlet across
+   datasets. The newspaper check already fails names that read as news agency / wire /
+   press agency; keep that guard, and apply this rule when adding or moving entries.
+
+### Coverage notes — countries without a wire, and countries with several
+
+**Countries without a national news agency (honest gaps — do not invent a retailer to
+fill the slot):**
+
+| Country / group | Why absent |
+|-----------------|------------|
+| Liechtenstein | No dedicated national newswire; relies on foreign media and small local outlets |
+| Monaco | Relies on French agencies and local bureaux; no dedicated national newswire |
+| Vatican City | Official press/communication organs (e.g. Vatican News) exist, but there is no commercial or state newswire in the traditional wholesaler sense |
+| New Zealand | NZPA ceased in 2011; no single primary national wire has replaced it |
+| Pacific microstates (Kiribati, Marshall Islands, FSM, Nauru, Palau, Tuvalu) | No independent domestic newswire; rely on regional networks (e.g. PACNEWS) or foreign agencies. Nauru's Government Information Office / bulletin is **not** a news agency — do not re-add it |
+
+**San Marino** is an edge case that *does* have a registered daily information agency
+(SMNA, 2016, under Law 211/2014) — it belongs in `nationalNewsAgencies.ts`.
+
+**Canada** has a single national agency — The Canadian Press — not zero and not several.
+
+**Countries with more than one national news agency** (state + private pairs, dual
+central wires, or specialized national wires) may list every genuine wholesaler. Do not
+drop a real wire to force a one-per-country rule. Ownership badges (State / Official /
+Private / Public / Cooperative / Regional / Independent / Government) must show on every
+agency card and on the Ownership row of `NewsAgencyDetails` via `agencyOwnershipBadge()`
+(`src/lib/nationalNewsAgencies.ts`). Prefer an explicit `ownershipKind` when the short
+label would otherwise be ambiguous.
+
+### Enforcement
+
+There is no separate automated "wholesaler vs retailer" classifier — that judgement needs
+the organisation's remit. The guard is this rule plus the existing cross-dataset name
+guards in `check-national-newspapers.mjs`. When reviewing any PR that adds or moves a
+media entry, confirm the core business model matches the target dataset before merging.
+`scripts/check-national-news-agencies.mjs` must keep validating schema/logos; badge
+rendering is guarded by `scripts/check-grid-content-types.mjs` referencing
+`agencyOwnershipBadge`.
+
 ## Commercial airline logos: show brand emblems, never route maps or aircraft photos — hard rule, do not override without approval
 
 **The Learn-mode "Commercial airlines" view (`src/data/commercialAirlines.ts`, rendered by `CommercialAirlinesGrid.tsx` / `FlagGrid.tsx`, images bundled locally under `public/airline-logos/{countryCode}/`) displays the commercial airlines of each country. The logo MUST be the airline's official brand logo, wordmark, or aircraft empennage emblem — never an operational route map, destinations chart, fleet diagram, or aircraft livery photograph.**

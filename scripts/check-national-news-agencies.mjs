@@ -2,6 +2,13 @@
 /**
  * Build gate for Learn-mode National News Agencies.
  *
+ * Classification (hard rule in CLAUDE.md): entries here must be news-agency
+ * wholesalers / wire services whose primary clients are other media outlets
+ * (AP, Reuters, AFP, …) — not retailer newspapers, broadcasters, or consumer
+ * portals. This script validates schema and logos; remit classification is a
+ * curation rule enforced at review time and by the reciprocal name guard in
+ * check-national-newspapers.mjs.
+ *
  * Verifies that all national news agency entries in `src/data/nationalNewsAgencies.ts`
  * are well-formed, cited, bundled locally, and genuinely logos.
  *

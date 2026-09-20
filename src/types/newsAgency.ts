@@ -1,7 +1,38 @@
 /**
  * Schema for national news agencies in Learn mode.
  * Sourced definitions live in `src/data/nationalNewsAgencies.ts`.
+ *
+ * A news agency (newswire) is an information "wholesaler": it gathers and
+ * distributes licensable news content to other media outlets. Consumer-facing
+ * retailers (newspapers, broadcasters, digital-native sites) are a different
+ * class — see CLAUDE.md "National news agencies are wholesalers, not retailers".
  */
+
+/**
+ * Short ownership badge shown on agency cards / the detail panel.
+ * Prefer an explicit `ownershipKind` on the entry; otherwise
+ * `agencyOwnershipBadge()` classifies from `owner.type`.
+ */
+export type NewsAgencyOwnershipKind =
+  | "state"
+  | "official"
+  | "private"
+  | "public"
+  | "cooperative"
+  | "regional"
+  | "independent"
+  | "government";
+
+export const NEWS_AGENCY_OWNERSHIP_LABELS: Record<NewsAgencyOwnershipKind, string> = {
+  state: "State",
+  official: "Official",
+  private: "Private",
+  public: "Public",
+  cooperative: "Cooperative",
+  regional: "Regional",
+  independent: "Independent",
+  government: "Government",
+};
 
 export type NewsAgency = {
   /** Stable unique identifier (e.g. "au-aap", "my-bernama") */
@@ -36,6 +67,11 @@ export type NewsAgency = {
     readonly name: string;
     readonly type: string;
   };
+  /**
+   * Short ownership badge kind (State / Official / Private / …).
+   * When omitted, derived from `owner.type` by `agencyOwnershipBadge()`.
+   */
+  readonly ownershipKind?: NewsAgencyOwnershipKind;
   /** Editorial stance and remit */
   readonly editorialStance: string;
   /** Comparable audience and reach metrics */

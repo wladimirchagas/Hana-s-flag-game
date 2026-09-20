@@ -171,6 +171,29 @@ assert.ok(
   "Tourism-logo tiles must not bake the country into the title string — country goes on the grey subtitle line",
 );
 
+const agencyLibSrc = fs.readFileSync(
+  path.join(root, "src/lib/nationalNewsAgencies.ts"),
+  "utf8",
+);
+const agencyDetailsSrc = fs.readFileSync(
+  path.join(root, "src/components/NewsAgencyDetails.tsx"),
+  "utf8",
+);
+assert.ok(
+  /export function agencyOwnershipBadge\(/.test(agencyLibSrc),
+  "nationalNewsAgencies.ts must export agencyOwnershipBadge() for State/Private/… card badges",
+);
+assert.ok(
+  flagGridSrc.includes("agencyOwnershipBadge") &&
+    flagGridSrc.includes("flag-grid__agency-badge"),
+  "FlagGrid news-agency cards must render ownership badges via agencyOwnershipBadge()",
+);
+assert.ok(
+  agencyDetailsSrc.includes("agencyOwnershipBadge") &&
+    agencyDetailsSrc.includes("flag-grid__agency-badge"),
+  "NewsAgencyDetails must show the ownership badge next to the Ownership type",
+);
+
 console.log(
   `PASS: Show dropdown keeps ${order.length} classifications (${order.join(", ")}).`,
 );
