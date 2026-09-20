@@ -208,6 +208,8 @@ export type DemocracyData = {
   cpi?: DemocracyIndex;
   /** Nira Data / Alliance of Democracies Democracy Perception Index */
   perception?: DemocracyIndex;
+  /** Reporters Without Borders World Press Freedom Index */
+  rsfPress?: DemocracyIndex;
 };
 
 export type CountryFacts = {

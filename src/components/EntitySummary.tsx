@@ -215,6 +215,9 @@ export function EntitySummary(props: EntitySummaryProps) {
 
       const dpi = formatPerceptionIndex(c.democracy.perception);
       if (dpi) rows.push({ label: "Democracy Perception Index", value: dpi });
+
+      const rsf = formatDemocracyIndex(c.democracy.rsfPress);
+      if (rsf) rows.push({ label: "RSF Press Freedom", value: rsf });
     }
 
     if (government) rows.push({ label: "Government", value: government });
