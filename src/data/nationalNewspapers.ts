@@ -1944,11 +1944,14 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "https://en.wikipedia.org/wiki/Het_Nieuwsblad"
       },
       "revenueModel": "Subscriptions, print sales, and advertising",
+      "logo": "newspaper-logos/be/het-nieuwsblad.png",
+      "logoExplainer": "White 'Het Nieuwsblad' serif wordmark on a solid blue bar — the Belgian daily's masthead.",
+      "licenceNote": "Het Nieuwsblad Logo.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.nieuwsblad.be",
         "https://en.wikipedia.org/wiki/Het_Nieuwsblad"
-      ],
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+      ]
     }
   ],
   "BF": [
@@ -8044,11 +8047,14 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "https://en.wikipedia.org/wiki/The_Scotsman"
       },
       "revenueModel": "Subscriptions, print sales, and advertising",
+      "logo": "newspaper-logos/gb/the-scotsman.png",
+      "logoExplainer": "Black thistle crest above 'THE SCOTSMAN' caps on a white plate — The Scotsman masthead.",
+      "licenceNote": "The Scotsman logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.scotsman.com",
         "https://en.wikipedia.org/wiki/The_Scotsman"
-      ],
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+      ]
     }
   ],
   "GD": [
@@ -9995,7 +10001,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Koran Tempo Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/id/koran-tempo.svg",
+      "logoExplainer": "Bold red serif 'TEMPO' wordmark — Koran Tempo / Tempo masthead from tempo.co.",
+      "licenceNote": "TEMPO brand mark trademark bundled from the publisher's official site brand assets (tempo.co) for educational reference in Learn mode.",
+
       "sources": [
         "https://corporate.tempo.co/",
         "https://koran.tempo.co/"
@@ -10133,7 +10142,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "JNLR / Mediahuis Audience Report 2024"
       },
       "revenueModel": "Print sales, digital subscriptions (Independent Premium), and advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ie/irish-independent.svg",
+      "logoExplainer": "Dark green 'Irish Independent' serif wordmark with a harp mark — Irish Independent masthead.",
+      "licenceNote": "Irish Independent Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.independent.ie",
         "https://en.wikipedia.org/wiki/Irish_Independent"
@@ -11492,7 +11504,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nation Media Group Annual Audit 2024"
       },
       "revenueModel": "Print copy sales, digital subscriptions (Nation.Africa), and corporate display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ke/daily-nation.jpg",
+      "logoExplainer": "Black 'NATION' caps on a solid orange bar — Daily Nation / Nation Media Group masthead.",
+      "licenceNote": "Nationlogo.jpg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://nation.africa",
         "https://en.wikipedia.org/wiki/Daily_Nation"

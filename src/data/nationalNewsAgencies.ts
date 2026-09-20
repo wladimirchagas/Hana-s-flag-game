@@ -3929,7 +3929,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "APP Annual Review 2023"
       },
       "revenueModel": "Federal government budget subvention and media subscriber licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/pk/app.png",
+      "logoExplainer": "Dotted globe over gradient 'APP' beside 'DIGITAL' and 'Associated Press of Pakistan' — APP crest.",
+      "licenceNote": "Associated Press of Pakistan Logo.png from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.app.com.pk",
         "https://en.wikipedia.org/wiki/Associated_Press_of_Pakistan"
@@ -4340,7 +4343,10 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
         "source": "Saint Lucia Estimates of Revenue and Expenditure 2024"
       },
       "revenueModel": "State government budget allocation",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/lc/gis-saint-lucia.png",
+      "logoExplainer": "Saint Lucia coat of arms (parrots, Tudor rose, fleur-de-lis, torch crest) — the Government Information Service mark on govt.lc.",
+      "licenceNote": "Coat of arms of Saint Lucia trademark bundled from the official government site brand asset (govt.lc) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.govt.lc",
         "https://en.wikipedia.org/wiki/Saint_Lucia"
