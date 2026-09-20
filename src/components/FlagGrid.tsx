@@ -428,13 +428,14 @@ export function FlagGrid({
       return allTourismLogos().map((t): FlagListEntry => {
         const parent = codeToEntry.get(t.countryCode);
         const countryName = parent ? parent.name : t.countryCode;
-        // Grid label: "[tagline] ([Country])" — uses slogan when present,
-        // falls back to the brand name. sortKey ensures the grid sorts
-        // alphabetically by country name, not by the tagline.
+        // Grid title is the tagline (slogan when present, else brand name).
+        // Country is rendered as a separate grey "(Country)" line under the
+        // title — same treatment as newspapers / airlines / parties — so it
+        // is not baked into `name`. sortKey keeps A–Z order by country.
         const tagline = t.slogan ?? t.name;
         return {
           id: t.id,
-          name: `${tagline} (${countryName})`,
+          name: tagline,
           sortKey: countryName,
           flag: t.logo ?? null,
           tourismLogoImage: t.logo ?? null,
@@ -1159,9 +1160,20 @@ export function FlagGrid({
                           Capital: {item.capital}
                         </span>
                       )}
-                      {effectiveContentType === "party" && item.countryName && (
-                        <span className="flag-grid__city-sub">{item.countryName}</span>
-                      )}
+                      {/* Multi-item Show views (newspapers, agencies, tourism,
+                          airlines, broadcasters, parties): country on its own
+                          grey line so a mixed A–Z / continent grid is scannable. */}
+                      {item.countryName &&
+                        (effectiveContentType === "airline" ||
+                          effectiveContentType === "broadcaster" ||
+                          effectiveContentType === "tourismlogo" ||
+                          effectiveContentType === "newsagency" ||
+                          effectiveContentType === "newspaper" ||
+                          effectiveContentType === "party") && (
+                          <span className="flag-grid__country-sub">
+                            ({item.countryName})
+                          </span>
+                        )}
                       {effectiveContentType === "party" && (() => {
                         const badges = party
                           ? partyPowerBadges(party, party.country)
