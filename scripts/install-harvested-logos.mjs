@@ -11,55 +11,47 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 29 — montage-scanned. */
+/** Visually verified batch 30 — montage-scanned. */
 const MANIFEST = [
   {
-    id: "bo-el-diario",
-    src: "tmp/batch29-manual/el-diario.jpg",
+    id: "tn-tap",
+    src: "tmp/batch30-manual/tap.jpg",
     explainer:
-      "Blue 'EL DIARIO' masthead with the Bolivian tricolour between the words and the tagline 'Decano de la Prensa Nacional' — La Paz daily.",
+      "White Arabic 'وكالة تونس إفريقيا للأنباء' and French 'AGENCE TUNIS AFRIQUE PRESSE' on a blue field with a TAP monogram and globe — Tunisia's national wire.",
     licence:
-      "El Diario logo.jpg from Wikimedia Commons (PD-textlogo; Newspaper logos of Bolivia); brand mark trademark bundled for educational reference in Learn mode.",
+      "Tap logo2.jpg from Arabic Wikipedia; brand mark trademark bundled for educational reference in Learn mode with licenceNote.",
   },
   {
-    id: "do-hoy",
-    src: "tmp/batch29-manual/hoy.png",
+    id: "sd-suna",
+    src: "tmp/batch30-manual/suna.png",
     explainer:
-      "White slab-serif 'Hoy' wordmark on a cyan field — Dominican Republic daily masthead.",
+      "Sky-blue 'SUNA' with a red triangle on a blue arc above grey English and Arabic agency names on black — Sudan's national wire.",
     licence:
-      "Hoy masthead trademark bundled from the publisher's official site brand assets (imagenes.hoy.com.do/static/img/hoy.png) for educational reference in Learn mode.",
+      "SUNA Logo.png from Arabic Wikipedia; brand mark trademark bundled for educational reference in Learn mode with licenceNote.",
   },
   {
-    id: "bg-mediapool",
-    src: "tmp/batch29-manual/mediapool-simple.svg",
+    id: "bj-le-matinal",
+    src: "tmp/batch30-manual/le-matinal.png",
     explainer:
-      "White 'MEDIAPOOL' wordmark with grey '.BG' suffix and a small square mark on a black bar — Bulgarian digital news outlet.",
+      "Red 'LE MATINAL' on black with vertical 'QUOTIDIEN BÉNINOIS' and slogan 'Le défi d'une génération' — Beninese daily masthead.",
     licence:
-      "Mediapool masthead trademark bundled from the publisher's official site brand assets (mediapool.bg/assets/images/logo-simple.svg) for educational reference in Learn mode.",
+      "Le Matinal masthead trademark bundled from the publisher's official site brand assets (lematinal.bj) for educational reference in Learn mode.",
   },
   {
-    id: "ge-interpressnews",
-    src: "tmp/batch29-manual/interpressnews.svg",
+    id: "bj-banouto",
+    src: "tmp/batch30-manual/banouto.png",
     explainer:
-      "Blue italic 'ipn' monogram with a red square tittle over Georgian 'ინტერპრესნიუსი' — Georgian news agency crest.",
+      "Brush-stroke red 'BANOUTO' wordmark on a black bar — Beninese digital news masthead.",
     licence:
-      "Interpressnews brand mark trademark bundled from the agency's official site brand assets (interpressnews.ge/static/img/logo.svg) for educational reference in Learn mode.",
+      "Banouto masthead trademark bundled from the publisher's official site brand assets (banouto.bj/logo-bnt.png) for educational reference in Learn mode.",
   },
   {
-    id: "bh-bna",
-    src: "tmp/batch29-manual/bna-logo.png",
+    id: "et-the-reporter",
+    src: "tmp/batch30-manual/the-reporter.jpg",
     explainer:
-      "White dotted shield emblem above Arabic 'وكالة أنباء البحرين' and English 'Bahrain News Agency' on red — Bahrain's national wire.",
+      "Red 'THE Reporter' serif masthead with a fountain-pen emblem and tagline 'FREE PRESS. FREE SPEECH. FREE SPIRIT.' — Ethiopian English daily.",
     licence:
-      "BNA logo (Bna logo.gif) from Arabic Wikipedia; brand mark trademark bundled for educational reference in Learn mode with licenceNote.",
-  },
-  {
-    id: "om-ona",
-    src: "tmp/batch29-manual/ona.png",
-    explainer:
-      "Grey Arabic calligraphy with coral diacritics above coral 'Oman News Agency' — Oman's national wire wordmark.",
-    licence:
-      "Oman News Agency logo (شعار وكالة الأنباء العمانية.png) from Arabic Wikipedia; brand mark trademark bundled for educational reference in Learn mode with licenceNote.",
+      "The Reporter Ethiopia masthead trademark bundled from the publisher's official site brand assets (thereporterethiopia.com) for educational reference in Learn mode.",
   },
 ];
 
@@ -102,7 +94,7 @@ function patchEntry(src, id, fields) {
   let block = src.slice(start, i);
   if (!block.includes("noImageReason") && block.includes('"logo"')) {
     console.log(`  skip ${id} (already has logo)`);
-    return src;
+    return src; // caller treats unchanged src as skip when both files unchanged
   }
   if (!block.includes("noImageReason")) {
     throw new Error(`${id}: expected noImageReason to replace`);
@@ -153,7 +145,11 @@ function main() {
     } catch (e) {
       if (!String(e.message).includes("not found")) throw e;
     }
-    if (papers === beforeP && agencies === beforeA) throw new Error(`${row.id}: not found in data`);
+    if (papers === beforeP && agencies === beforeA) {
+      // Already had a logo (skip path) — file was still copied above.
+      console.log(`  ${row.id}: data unchanged (already had logo)`);
+      continue;
+    }
     installed++;
   }
   writeFileSync(resolve(ROOT, "src/data/nationalNewspapers.ts"), papers);

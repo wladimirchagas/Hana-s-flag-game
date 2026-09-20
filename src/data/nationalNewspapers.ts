@@ -2537,7 +2537,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Groupe Le Matinal Review 2023"
       },
       "revenueModel": "Print retail sales and commercial display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bj/le-matinal.png",
+      "logoExplainer": "Red 'LE MATINAL' on black with vertical 'QUOTIDIEN BÉNINOIS' and slogan 'Le défi d'une génération' — Beninese daily masthead.",
+      "licenceNote": "Le Matinal masthead trademark bundled from the publisher's official site brand assets (lematinal.bj) for educational reference in Learn mode.",
+
       "sources": [
         "https://lespharaons.com",
         "https://fr.wikipedia.org/wiki/Le_Matinal"
@@ -2603,7 +2606,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "bj-banouto",
       "countryCode": "BJ",
       "name": "Banouto",
@@ -2619,6 +2621,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Benin news website",
         "source": "https://www.banouto.bj"
       },
+      "logo": "newspaper-logos/bj/banouto.png",
+      "logoExplainer": "Brush-stroke red 'BANOUTO' wordmark on a black bar — Beninese digital news masthead.",
+      "licenceNote": "Banouto masthead trademark bundled from the publisher's official site brand assets (banouto.bj/logo-bnt.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.banouto.bj"
       ]
@@ -7239,7 +7245,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media and Communications Center Audience Audit 2023"
       },
       "revenueModel": "Print newsstand sales, classifieds, and digital display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/et/the-reporter.jpg",
+      "logoExplainer": "Red 'THE Reporter' serif masthead with a fountain-pen emblem and tagline 'FREE PRESS. FREE SPEECH. FREE SPIRIT.' — Ethiopian English daily.",
+      "licenceNote": "The Reporter Ethiopia masthead trademark bundled from the publisher's official site brand assets (thereporterethiopia.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.thereporterethiopia.com",
         "https://am.thereporterethiopia.com"
