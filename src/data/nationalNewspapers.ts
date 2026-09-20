@@ -12136,7 +12136,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Groupe La Gazette Media Review 2023"
       },
       "revenueModel": "Print sales and local business advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/km/la-gazette-des-comores.png",
+      "logoExplainer": "Dark-red serif 'La Gazette' over smaller black 'des Comores' — La Gazette des Comores masthead.",
+      "licenceNote": "La Gazette des Comores trademark bundled from the publisher's official site brand assets (lagazettedescomores.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://lagazettedescomores.com"
       ]
@@ -18826,7 +18829,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "PJS Audit / Al-Quds Commercial Kit"
       },
       "revenueModel": "Newsstand retail sales, commercial display advertisements, and classifieds",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ps/al-quds.png",
+      "logoExplainer": "White geometric Arabic القدس (Al-Quds) calligraphy on a dark field — Al-Quds newspaper masthead.",
+      "licenceNote": "Al-Quds trademark bundled from the publisher's official site brand assets (alquds.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.alquds.com",
         "https://en.wikipedia.org/wiki/Al-Quds_(newspaper)"
@@ -23393,7 +23399,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kaniva Pacific Audience Review"
       },
       "revenueModel": "Digital banner advertising, community sponsorships, and reader support",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/to/kaniva-tonga.png",
+      "logoExplainer": "Ornate gold blackletter 'K' on black inside a light-blue ring — Kaniva Tonga News masthead mark.",
+      "licenceNote": "Kaniva Tonga trademark bundled from the publisher's official site brand assets (kanivatonga.co.nz) for educational reference in Learn mode.",
+
       "sources": [
         "https://kanivatonga.co.nz",
         "https://en.wikipedia.org/wiki/Media_of_Tonga"
@@ -23895,7 +23904,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nation Media Group Annual Report 2023 / GeoPoll Media Ratings"
       },
       "revenueModel": "Corporate subscriptions, commercial print advertising, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tz/the-citizen.png",
+      "logoExplainer": "White serif 'THE CITIZEN' wordmark on a medium-blue field — The Citizen (Tanzania) masthead.",
+      "licenceNote": "The Citizen trademark bundled from the publisher's official site brand assets (thecitizen.co.tz) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.thecitizen.co.tz",
         "https://en.wikipedia.org/wiki/The_Citizen_(Tanzania)"

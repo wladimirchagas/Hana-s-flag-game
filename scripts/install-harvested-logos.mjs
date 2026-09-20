@@ -15,28 +15,36 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "pg-emt",
-    src: "tmp/batch55-final/pg-emt.jpg",
+    id: "tz-the-citizen",
+    src: "tmp/batch56-final/tz-the-citizen.png",
     explainer:
-      "Yellow Bird of Paradise silhouette on a red-glow circle beside yellow 'EM' and white 'TV' block letters — EMTV Online masthead.",
+      "White serif 'THE CITIZEN' wordmark on a medium-blue field — The Citizen (Tanzania) masthead.",
     licence:
-      "EMTV trademark bundled from the broadcaster's official site brand assets (emtv.com.pg) for educational reference in Learn mode.",
+      "The Citizen trademark bundled from the publisher's official site brand assets (thecitizen.co.tz) for educational reference in Learn mode.",
   },
   {
-    id: "ye-saba-news",
-    src: "tmp/batch55-final/ye-saba-news.jpg",
+    id: "km-la-gazette-des-comores",
+    src: "tmp/batch56-final/km-la-gazette-des-comores.png",
     explainer:
-      "Blue Arabic سبا wordmark over orange 'SABA NET' with grey Arabic agency caption — Yemen News Agency (Saba) masthead.",
+      "Dark-red serif 'La Gazette' over smaller black 'des Comores' — La Gazette des Comores masthead.",
     licence:
-      "Saba Net trademark bundled from the agency's official site brand assets (saba.ye) for educational reference in Learn mode.",
+      "La Gazette des Comores trademark bundled from the publisher's official site brand assets (lagazettedescomores.com) for educational reference in Learn mode.",
   },
   {
-    id: "mr-cridem",
-    src: "tmp/batch55-final/mr-cridem.png",
+    id: "ps-al-quds",
+    src: "tmp/batch56-final/ps-al-quds.png",
     explainer:
-      "Golden upward crescent and radiant sun on a green field — CRIDEM site brand mark.",
+      "White geometric Arabic القدس (Al-Quds) calligraphy on a dark field — Al-Quds newspaper masthead.",
     licence:
-      "CRIDEM trademark bundled from the publisher's official site brand assets (cridem.org) for educational reference in Learn mode.",
+      "Al-Quds trademark bundled from the publisher's official site brand assets (alquds.com) for educational reference in Learn mode.",
+  },
+  {
+    id: "to-kaniva-tonga",
+    src: "tmp/batch56-final/to-kaniva-tonga.png",
+    explainer:
+      "Ornate gold blackletter 'K' on black inside a light-blue ring — Kaniva Tonga News masthead mark.",
+    licence:
+      "Kaniva Tonga trademark bundled from the publisher's official site brand assets (kanivatonga.co.nz) for educational reference in Learn mode.",
   },
 ];
 
@@ -126,10 +134,10 @@ for (const entry of MANIFEST) {
   } else if (agencies.includes(`"id": "${entry.id}"`)) {
     agencies = patchEntry(agencies, entry.id, fields);
   } else {
-    throw new Error(`id not in data: ${entry.id}`);
+    throw new Error(`id not in papers or agencies: ${entry.id}`);
   }
 }
 
 writeFileSync(resolve(ROOT, "src/data/nationalNewspapers.ts"), papers);
 writeFileSync(resolve(ROOT, "src/data/nationalNewsAgencies.ts"), agencies);
-console.log(`Installed ${MANIFEST.length} logos.`);
+console.log("done");
