@@ -941,7 +941,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ao-angonoticias",
       "countryCode": "AO",
       "name": "AngoNotícias",
@@ -957,6 +956,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Angolan news website",
         "source": "https://www.angonoticias.com"
       },
+      "logo": "newspaper-logos/ao/angonoticias.jpg",
+      "logoExplainer": "White slab-serif 'ANGO / NOTÍCIAS' on an orange square — Angolan digital news masthead.",
+      "licenceNote": "AngoNotícias masthead trademark bundled from the publisher's official site brand assets (angonoticias.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.angonoticias.com"
       ]
@@ -7889,7 +7892,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "GMT Audience Review 2024"
       },
       "revenueModel": "Digital programmatic advertising and brand content production",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ga/gabon-medias-time.png",
+      "logoExplainer": "Teal 'GMT' monogram with a clock face in the G above 'GABON MEDIA TIME' on black — Gabonese digital news masthead.",
+      "licenceNote": "Gabon Media Time masthead trademark bundled from the publisher's official site brand assets (gabonmediatime.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://gabonmediatime.com"
       ]
@@ -16501,7 +16507,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Namibia Media Holdings Audit 2023"
       },
       "revenueModel": "Print copy sales, farming classifieds, and corporate advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/na/die-republikein.png",
+      "logoExplainer": "White 'Republikein' wordmark with Afrikaans tagline 'Jou land. Jou mense. Jou nuus.' on black — Namibian Afrikaans daily masthead.",
+      "licenceNote": "Die Republikein masthead trademark bundled from the publisher's official site brand assets (republikein.com.na) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.republikein.com.na",
         "https://en.wikipedia.org/wiki/Die_Republikein"
@@ -21383,7 +21392,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Hiiraan Online Traffic Overview / Alexa Internet Archive"
       },
       "revenueModel": "Digital programmatic advertising, diaspora remittances service notices, and sponsored content",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/so/hiiraan-online.jpg",
+      "logoExplainer": "Green palm-tree shield beside dark green 'HIIRAAN ONLINE' — Somali digital news masthead.",
+      "licenceNote": "Hiiraan Online masthead trademark bundled from the publisher's official site brand assets (hiiraan.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.hiiraan.com",
         "https://en.wikipedia.org/wiki/Hiiraan_Online"
@@ -21471,7 +21483,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
@@ -21490,6 +21501,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Leading Somali news website",
         "source": "https://www.caasimada.net"
       },
+      "logo": "newspaper-logos/so/caasimada.webp",
+      "logoExplainer": "White swirling 'C' mark beside 'Caasimada ONLINE' with a star — Somali digital news masthead.",
+      "licenceNote": "Caasimada Online masthead trademark bundled from the publisher's official site brand assets (caasimada.net) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.caasimada.net"
       ]
@@ -22129,7 +22144,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Swaziland News Analytics 2024"
       },
       "revenueModel": "Digital reader donations and international investigative journalism grants",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sz/swaziland-news.png",
+      "logoExplainer": "Red-outlined 'SWAZILAND' with a red feather and solid red 'NEWS' on black — Eswatini digital news masthead.",
+      "licenceNote": "Swaziland News masthead trademark bundled from the publisher's official site brand assets (swazilandnews.co.za) for educational reference in Learn mode.",
+
       "sources": [
         "https://swazilandnews.co.za"
       ]
