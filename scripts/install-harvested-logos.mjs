@@ -11,111 +11,95 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 47 — montage-scanned light/dark. */
+/** Visually verified batch 48 — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "iq-al-mada",
-    src: "tmp/batch47-install/iq-al-mada.png",
+    id: "cy-haravgi",
+    src: "tmp/batch48-install/cy-haravgi.png",
     explainer:
-      "Red interlocking calligraphic emblem over black 'ALMADA PAPER' — Al-Mada (Iraq) masthead.",
+      "Black Greek ΧΑΡΑΥΓΗ with a small orange sunrise icon — Haravgi Cyprus masthead.",
     licence:
-      "Al-Mada trademark bundled from the publisher's official site brand assets (almadapaper.net) for educational reference in Learn mode.",
+      "Haravgi trademark bundled from the publisher's official site brand assets (dialogos.com.cy/haravgi) for educational reference in Learn mode.",
   },
   {
-    id: "md-point-md",
-    src: "tmp/batch47-install/md-point-md.svg",
+    id: "me-rtcng-news",
+    src: "tmp/batch48-install/me-rtcng-news.svg",
     explainer:
-      "Bold navy 'Point' with an orange disc for the i-dot — Point.md site wordmark.",
+      "Red disc with a white stylised 'a' beside grey serif 'analitika' — Portal Analitika mark.",
     licence:
-      "Point.md trademark bundled from the publisher's official site brand assets (point.md) for educational reference in Learn mode.",
+      "Portal Analitika trademark bundled from the publisher's official site brand assets (portalanalitika.me) for educational reference in Learn mode.",
   },
   {
-    id: "mm-eleven-media",
-    src: "tmp/batch47-install/mm-eleven-media.png",
+    id: "ml-maliweb",
+    src: "tmp/batch48-install/ml-maliweb.png",
     explainer:
-      "White 'ELEVEN' with the first E on a red block under an orange disc — Eleven Media Myanmar mark.",
+      "Red-yellow-green swoosh over 'maliweb.net' inside a white circle — Maliweb site mark.",
     licence:
-      "Eleven Media trademark bundled from the publisher's official site brand assets (elevenmyanmar.com) for educational reference in Learn mode.",
+      "Maliweb trademark bundled from the publisher's official site brand assets (maliweb.net) for educational reference in Learn mode.",
   },
   {
-    id: "mw-the-daily-times",
-    src: "tmp/batch47-install/mw-the-daily-times.png",
+    id: "pa-la-estrella-de-panama",
+    src: "tmp/batch48-install/pa-la-estrella-de-panama.png",
     explainer:
-      "White serif 'THE TIMES' over spaced 'GROUP' — Times Group Malawi masthead used by The Daily Times.",
+      "Black serif 'LA ESTRELLA DE PANAMÁ' with a sun-over-water crest and red '177' — La Estrella de Panamá masthead.",
     licence:
-      "Times Group Malawi trademark bundled from the publisher's official site brand assets (times.mw) for educational reference in Learn mode.",
+      "La Estrella de Panamá trademark bundled from the publisher's official site brand assets (laestrella.com.pa) for educational reference in Learn mode.",
   },
   {
-    id: "sa-al-riyadh",
-    src: "tmp/batch47-install/sa-al-riyadh.png",
+    id: "sr-de-west",
+    src: "tmp/batch48-install/sr-de-west.png",
     explainer:
-      "Bold outlined Arabic الرياض with a green palm-in-blue cradle emblem — Al Riyadh masthead.",
+      "Bold black 'DE WEST' over light-blue italic 'Dagblad uit en voor Suriname' — De West masthead.",
     licence:
-      "Al Riyadh trademark bundled from the publisher's official site brand assets (alriyadh.com) for educational reference in Learn mode.",
+      "De West trademark bundled from the publisher's official site brand assets (dagbladdewest.com) for educational reference in Learn mode.",
   },
   {
-    id: "tt-cnc3",
-    src: "tmp/batch47-install/tt-cnc3.png",
+    id: "sn-wal-fadjri",
+    src: "tmp/batch48-install/sn-wal-fadjri.png",
     explainer:
-      "White 'CNC3' over a dark-red world map inside a red disc — CNC3 Trinidad site mark.",
+      "Italic black 'Walf' beside red 'Quotidien' — Walf Quotidien masthead.",
     licence:
-      "CNC3 trademark bundled from the publisher's official site brand assets (cnc3.co.tt) for educational reference in Learn mode.",
+      "Walf Quotidien trademark bundled from the publisher's official Groupe Walfadjri brand assets (walf-groupe.com) for educational reference in Learn mode.",
   },
   {
-    id: "ug-bukedde",
-    src: "tmp/batch47-install/ug-bukedde.png",
+    id: "tn-kapitalis",
+    src: "tmp/batch48-install/tn-kapitalis.png",
     explainer:
-      "Blue italic 'Bukedde' inside a thin red rounded frame — Bukedde masthead.",
+      "Blue-and-red chevron 'K' beside 'Kapitalis' over a red bar reading \"l'actualité AUTREMENT\" — Kapitalis masthead.",
     licence:
-      "Bukedde trademark bundled from the publisher's official site brand assets (bukedde.co.ug) for educational reference in Learn mode.",
+      "Kapitalis trademark bundled from the publisher's official site brand assets (kapitalis.com) for educational reference in Learn mode.",
   },
   {
-    id: "ug-nile-post",
-    src: "tmp/batch47-install/ug-nile-post.png",
+    id: "uy-busqueda",
+    src: "tmp/batch48-install/uy-busqueda.svg",
     explainer:
-      "Red 'NP' over cyan 'NilePost' tile beside black 'NilePost / Accurate News Fast' — NilePost mark.",
+      "Heavy black all-caps 'BÚSQUEDA' block wordmark — Búsqueda Uruguay masthead.",
     licence:
-      "NilePost trademark bundled from the publisher's official site brand assets (nilepost.co.ug) for educational reference in Learn mode.",
+      "Búsqueda trademark bundled from the publisher's official site brand assets (busqueda.com.uy) for educational reference in Learn mode.",
   },
   {
-    id: "vc-the-vincentian",
-    src: "tmp/batch47-install/vc-the-vincentian.png",
+    id: "vn-lao-dong",
+    src: "tmp/batch48-install/vn-lao-dong.png",
     explainer:
-      "Silver blackletter 'Vincentian' under 'The National Newspaper of St. Vincent and the Grenadines' with a green island map — The Vincentian masthead.",
+      "Bold red 'LAO ĐỘNG' with a starred O in ĐỘNG — Lao Động Vietnam masthead.",
     licence:
-      "The Vincentian masthead trademark bundled from the publisher's official site brand assets (thevincentian.com) for educational reference in Learn mode.",
+      "Lao Động trademark bundled from the publisher's official site brand assets (laodong.vn) for educational reference in Learn mode.",
   },
   {
-    id: "ve-el-universal",
-    src: "tmp/batch47-install/ve-el-universal.svg",
+    id: "ly-al-wasat",
+    src: "tmp/batch48-install/ly-al-wasat.png",
     explainer:
-      "Heavy black all-caps serif 'EL UNIVERSAL' — El Universal (Venezuela) masthead.",
+      "Blocky Arabic الوسط with blue accents and Latin 'AL WASAT' — Al-Wasat Libya masthead.",
     licence:
-      "El Universal trademark bundled from the publisher's official site brand assets (eluniversal.com) for educational reference in Learn mode.",
+      "Al-Wasat trademark bundled from the publisher's official site brand assets (alwasat.ly) for educational reference in Learn mode.",
   },
   {
-    id: "ve-talcual",
-    src: "tmp/batch47-install/ve-talcual.png",
+    id: "tn-la-presse",
+    src: "tmp/batch48-install/tn-la-presse.png",
     explainer:
-      "White 'Tal' in a red square beside black 'Cual' with red 'claro y raspao' tagline — TalCual masthead.",
+      "Black serif 'La Presse' with a gold quill through the P — La Presse de Tunisie masthead.",
     licence:
-      "TalCual trademark bundled from the publisher's official site brand assets (talcualdigital.com) for educational reference in Learn mode.",
-  },
-  {
-    id: "zm-diggers-news",
-    src: "tmp/batch47-install/zm-diggers-news.png",
-    explainer:
-      "Vertical red 'News' beside bold 'Diggers!' with a red exclamation and 'Ear to the ground' tagline — News Diggers mark.",
-    licence:
-      "News Diggers trademark bundled from the publisher's official site brand assets (diggers.news) for educational reference in Learn mode.",
-  },
-  {
-    id: "zm-lusaka-times",
-    src: "tmp/batch47-install/zm-lusaka-times.png",
-    explainer:
-      "White serif 'LT' inside a teal-blue circular badge — Lusaka Times site mark.",
-    licence:
-      "Lusaka Times trademark bundled from the publisher's official site brand assets (lusakatimes.com) for educational reference in Learn mode.",
+      "La Presse trademark bundled from the publisher's official site brand assets (lapresse.tn) for educational reference in Learn mode.",
   },
 ];
 
