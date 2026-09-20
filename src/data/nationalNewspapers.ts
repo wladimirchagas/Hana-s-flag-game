@@ -24382,7 +24382,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -24401,6 +24400,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Official Uzbekistan news brand",
         "source": "https://uza.uz"
       },
+      "logo": "newspaper-logos/uz/uza.svg",
+      "logoExplainer": "Official masthead/brand mark for UzA, sourced from the publisher's official site and visually verified.",
+      "licenceNote": "UzA brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://uza.uz"
       ]
