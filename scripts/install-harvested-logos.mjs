@@ -11,95 +11,63 @@ import { createHash } from "node:crypto";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch 17 — official sites, Wayback, Commons (montage-scanned). */
+/** Visually verified batch 18 — Commons / en.wikipedia fair-use / official sites. */
 const MANIFEST = [
   {
-    id: "tt-ttt-news",
-    src: "tmp/logo-harvest/manual/tt/ttt-news-b17.png",
+    id: "be-het-nieuwsblad",
+    src: "tmp/logo-harvest/manual/be/het-nieuwsblad-b18.png",
     explainer:
-      "Red stylised 'TTT' on a white play-triangle — Trinidad and Tobago Television crest from ttt.live.",
+      "White 'Het Nieuwsblad' serif wordmark on a solid blue bar — the Belgian daily's masthead.",
     licence:
-      "TTT brand mark trademark bundled from the broadcaster's official site brand assets (ttt.live) for educational reference in Learn mode.",
+      "Het Nieuwsblad Logo.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "er-shabait",
-    src: "tmp/logo-harvest/manual/er/shabait-b17-plate.png",
+    id: "gb-the-scotsman",
+    src: "tmp/logo-harvest/manual/gb/the-scotsman-b18-plate.png",
     explainer:
-      "Gold camel seal beside 'MINISTRY OF INFORMATION / ERITREA' on a dark plate — Shabait (Eritrea MoI) masthead.",
+      "Black thistle crest above 'THE SCOTSMAN' caps on a white plate — The Scotsman masthead.",
     licence:
-      "Shabait / Ministry of Information Eritrea brand mark trademark bundled from the agency's official site brand assets (shabait.com) for educational reference in Learn mode.",
+      "The Scotsman logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
   },
   {
-    id: "mz-aim",
-    src: "tmp/logo-harvest/manual/mz/aim-b17-plate.png",
+    id: "ie-irish-independent",
+    src: "tmp/logo-harvest/manual/ie/irish-independent-b18.svg",
     explainer:
-      "Connected pink-red 'AIM' wordmark on white — Agência de Informação de Moçambique crest from aimnews.org.",
+      "Dark green 'Irish Independent' serif wordmark with a harp mark — Irish Independent masthead.",
     licence:
-      "AIM brand mark trademark bundled from the agency's official site brand assets (aimnews.org) for educational reference in Learn mode.",
+      "Irish Independent Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
   },
   {
-    id: "zm-zanis",
-    src: "tmp/logo-harvest/manual/zm/zanis-b17.jpg",
+    id: "ke-daily-nation",
+    src: "tmp/logo-harvest/manual/ke/daily-nation-b18.jpg",
     explainer:
-      "Circular green/orange ring around bold 'ZANIS' — Zambia News and Information Services crest.",
+      "Black 'NATION' caps on a solid orange bar — Daily Nation / Nation Media Group masthead.",
     licence:
-      "ZANIS brand mark trademark bundled from the agency's official site brand assets (zanis.gov.zm) for educational reference in Learn mode.",
+      "Nationlogo.jpg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "bd-bss",
-    src: "tmp/logo-harvest/manual/bd/bss-b17.png",
+    id: "pk-app",
+    src: "tmp/logo-harvest/manual/pk/app-b18-plate.png",
     explainer:
-      "Circular Bangladesh seal beside green 'BSS' and red 'NEWS' with the English portal tagline — Bangladesh Sangbad Sangstha crest.",
+      "Dotted globe over gradient 'APP' beside 'DIGITAL' and 'Associated Press of Pakistan' — APP crest.",
     licence:
-      "BSS brand mark trademark bundled from the agency's official site brand assets (bssnews.net via Wayback Machine snapshot of the live logo file) for educational reference in Learn mode.",
+      "Associated Press of Pakistan Logo.png from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
   },
   {
-    id: "ph-pna",
-    src: "tmp/logo-harvest/manual/ph/pna-b17.svg",
+    id: "id-koran-tempo",
+    src: "tmp/logo-harvest/manual/id/koran-tempo-b18.svg",
     explainer:
-      "Blue disc with white stylised 'P' mark — Philippine News Agency crest from Wikimedia Commons.",
+      "Bold red serif 'TEMPO' wordmark — Koran Tempo / Tempo masthead from tempo.co.",
     licence:
-      "Philippine News Agency Logo.svg from Wikimedia Commons; government work / brand mark bundled for educational reference in Learn mode.",
+      "TEMPO brand mark trademark bundled from the publisher's official site brand assets (tempo.co) for educational reference in Learn mode.",
   },
   {
-    id: "bs-bis",
-    src: "tmp/logo-harvest/manual/bs/bis-b17-plate.png",
+    id: "lc-gis-saint-lucia",
+    src: "tmp/logo-harvest/manual/lc/gis-b18.png",
     explainer:
-      "Bahamas coat of arms beside 'The Government of The Bahamas' on a navy plate — the official bahamas.gov.bs header mark used by Bahamas Information Services.",
+      "Saint Lucia coat of arms (parrots, Tudor rose, fleur-de-lis, torch crest) — the Government Information Service mark on govt.lc.",
     licence:
-      "Government of The Bahamas crest trademark bundled from the official government CDN brand asset on bahamas.gov.bs for educational reference in Learn mode.",
-  },
-  {
-    id: "jm-jamaica-observer",
-    src: "tmp/logo-harvest/manual/jm/jamaica-observer-b17.png",
-    explainer:
-      "Globe emblem beside stacked black 'JAMAICA' over red 'OBSERVER' — Jamaica Observer masthead from jamaicaobserver.com.",
-    licence:
-      "Jamaica Observer brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-  },
-  {
-    id: "bd-prothom-alo",
-    src: "tmp/logo-harvest/manual/bd/prothom-alo-b17-plate.png",
-    explainer:
-      "Orange rising-sun mark over the Bengali 'প্রথম আলো' wordmark on white — Prothom Alo masthead from prothomalo.com.",
-    licence:
-      "Prothom Alo brand mark trademark bundled from the publisher's official site brand assets (palo-bangla.svg) for educational reference in Learn mode.",
-  },
-  {
-    id: "do-diario-libre",
-    src: "tmp/logo-harvest/manual/do/diario-libre-b17.png",
-    explainer:
-      "Green square with white 'Diario Libre' and a yellow news-carrier figure — Diario Libre crest from diariolibre.com.",
-    licence:
-      "Diario Libre brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-  },
-  {
-    id: "es-el-periodico",
-    src: "tmp/logo-harvest/manual/es/el-periodico-b17.png",
-    explainer:
-      "White 'elPeriódico' wordmark on a solid red field — El Periódico de Catalunya masthead from elperiodico.com.",
-    licence:
-      "El Periódico brand mark trademark bundled from the publisher's official site brand assets (elperiodico.com) for educational reference in Learn mode.",
+      "Coat of arms of Saint Lucia trademark bundled from the official government site brand asset (govt.lc) for educational reference in Learn mode.",
   },
 ];
 
@@ -169,12 +137,17 @@ function main() {
     const ext = extname(row.src).toLowerCase() || ".png";
     const cc = row.id.slice(0, 2);
     const slug = row.id.slice(3);
-    const destRel = `newspaper-logos/${cc}/${slug}${ext}`;
-    const destAbs = resolve(ROOT, "public", destRel);
+    // plate files still use png dest
+    const destExt = ext.includes("plate") ? ".png" : ext === ".png" || ext === ".jpg" || ext === ".jpeg" || ext === ".svg" || ext === ".webp" ? ext : ".png";
+    const destRel = `newspaper-logos/${cc}/${slug}${destExt === ".jpeg" ? ".jpg" : destExt}`;
+    // Fix: plate.png files have .png ext after strip - handle *-plate.png
+    const cleanExt = row.src.endsWith("-plate.png") ? ".png" : destExt === ".jpeg" ? ".jpg" : destExt;
+    const destRel2 = `newspaper-logos/${cc}/${slug}${cleanExt}`;
+    const destAbs = resolve(ROOT, "public", destRel2);
     mkdirSync(dirname(destAbs), { recursive: true });
     copyFileSync(abs, destAbs);
-    const fields = { logo: destRel, explainer: row.explainer, licence: row.licence, sha256: sha256(buf) };
-    console.log(`install ${row.id} → ${destRel} (${buf.length}b)`);
+    const fields = { logo: destRel2, explainer: row.explainer, licence: row.licence, sha256: sha256(buf) };
+    console.log(`install ${row.id} → ${destRel2} (${buf.length}b)`);
     const beforeP = papers,
       beforeA = agencies;
     try {
