@@ -113,17 +113,20 @@ for (const [code, expect] of Object.entries(SPOT)) {
   }
 }
 
-// UI wiring must keep reading perception.
+// UI wiring must keep reading perception (or the shared DEMOCRACY_INDEX_KEYS
+// list that includes it — DemocracyMapControl / DemocracyIndexChart iterate
+// that list rather than duplicating each index literal).
 const uiFiles = [
-  "src/lib/democracyColors.ts",
-  "src/components/DemocracyMapControl.tsx",
-  "src/components/EntitySummary.tsx",
-  "src/components/FlagGrid.tsx",
+  ["src/lib/democracyColors.ts", "perception"],
+  ["src/components/DemocracyMapControl.tsx", "DEMOCRACY_INDEX_KEYS"],
+  ["src/components/DemocracyIndexChart.tsx", "DEMOCRACY_INDEX_KEYS"],
+  ["src/components/EntitySummary.tsx", "perception"],
+  ["src/components/FlagGrid.tsx", "perception"],
 ];
-for (const rel of uiFiles) {
+for (const [rel, needle] of uiFiles) {
   const src = readFileSync(resolve(ROOT, rel), "utf8");
-  if (!src.includes("perception")) {
-    fail(`${rel}: must reference perception`);
+  if (!src.includes(needle)) {
+    fail(`${rel}: must reference ${needle}`);
   }
 }
 
