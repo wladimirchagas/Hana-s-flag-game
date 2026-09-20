@@ -2,6 +2,11 @@ import type { Newspaper } from "../types/newspaper";
 
 /**
  * Curated and sourced dataset of top national newspapers for Learn mode.
+ *
+ * Selection rule (owner 2026-09): up to five general-interest titles per country,
+ * prioritising largest audience and highest reputation. Business/finance-only
+ * papers and mass-market tabloids are excluded when a stronger broad-news
+ * alternative exists. Logo XOR noImageReason on every entry.
  */
 
 export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
@@ -107,6 +112,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.bondia.ad"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ad-ara-andorra",
+      "countryCode": "AD",
+      "name": "Ara Andorra",
+      "founded": 2010,
+      "language": "Catalan",
+      "headquarters": "Andorra la Vella",
+      "owner": {
+        "name": "Ara Andorra",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Andorran digital general-interest news portal",
+      "readership": {
+        "metric": "Andorran digital news brand",
+        "source": "https://www.ara.ad"
+      },
+      "sources": [
+        "https://www.ara.ad"
+      ]
     }
   ],
   "AE": [
@@ -132,7 +161,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ae/the-national.svg",
       "logoExplainer": "Two-tone 'TheNational' wordmark with underline — the English-language UAE daily's digital masthead.",
       "licenceNote": "The National (UAE) masthead trademark bundled from Wikimedia Commons (File:Logo The National-svg.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.thenationalnews.com",
         "https://en.wikipedia.org/wiki/The_National_(Abu_Dhabi)"
@@ -160,7 +188,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ae/gulf-news.webp",
       "logoExplainer": "Black circular emblem with a falcon silhouette above stacked 'GULF NEWS' capitals — the Dubai daily's brand mark from its own site.",
       "licenceNote": "Gulf News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://gulfnews.com",
         "https://en.wikipedia.org/wiki/Gulf_News"
@@ -190,7 +217,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ae/al-ittihad.svg",
       "logoExplainer": "Arabic calligraphy title with an 'ALETIHAD NEWS CENTER' English strap — Al-Ittihad's official masthead from its site.",
       "licenceNote": "Al-Ittihad masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.alittihad.ae",
         "https://en.wikipedia.org/wiki/Al_Ittihad_(Emirati_newspaper)"
@@ -220,28 +246,52 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ae/khaleej-times.svg",
       "logoExplainer": "Blackletter 'Khaleej Times' masthead — the Dubai English-language daily's traditional nameplate from its own site.",
       "licenceNote": "Khaleej Times masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.khaleejtimes.com",
         "https://en.wikipedia.org/wiki/Khaleej_Times"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ae-al-khaleej",
+      "countryCode": "AE",
+      "name": "Al Khaleej",
+      "founded": 1970,
+      "language": "Arabic",
+      "headquarters": "Sharjah",
+      "owner": {
+        "name": "Dar Al Khaleej",
+        "type": "Commercial media"
+      },
+      "editorialStance": "UAE Arabic general-interest daily; regional and national news",
+      "readership": {
+        "metric": "Major UAE Arabic daily",
+        "source": "https://en.wikipedia.org/wiki/Al_Khaleej_(newspaper)"
+      },
+      "sources": [
+        "https://www.alkhaleej.ae",
+        "https://en.wikipedia.org/wiki/Al_Khaleej_(newspaper)"
       ]
     }
   ],
   "AF": [
     {
-      "id": "af-tolonews",
+      "id": "af-tolo-news",
       "countryCode": "AF",
-      "name": "TOLOnews",
+      "name": "TOLO News (digital)",
       "founded": 2010,
       "frequency": "Continuous 24/7 news reporting",
       "format": "24-hour news network & digital portal",
       "language": "Dari, Pashto, English",
       "headquarters": "Kabul",
       "owner": {
-        "name": "Moby Media Group",
-        "type": "Independent commercial media"
+        "name": "TOLO News digital newsroom",
+        "type": "Commercial media"
       },
-      "editorialStance": "Commercial news network; continuous breaking news, current affairs, and political interviews",
+      "editorialStance": "Major Afghan digital general-interest newsroom; politics and current affairs",
       "readership": {
         "metric": "Over 5 million regular TV viewers and digital followers nationwide",
         "source": "Moby Media Group Impact Review 2023"
@@ -277,6 +327,79 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://8am.media",
         "https://en.wikipedia.org/wiki/Hasht-e_Subh"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "af-pajhwok",
+      "name": "Pajhwok Afghan News",
+      "founded": 2003,
+      "language": "Dari / Pashto / English",
+      "headquarters": "Kabul / digital",
+      "countryCode": "AF",
+      "owner": {
+        "name": "Pajhwok Afghan News",
+        "type": "Independent media"
+      },
+      "editorialStance": "Leading Afghan independent digital news agency/portal; general news",
+      "readership": {
+        "metric": "Major Afghan news brand",
+        "source": "https://en.wikipedia.org/wiki/Pajhwok_Afghan_News"
+      },
+      "sources": [
+        "https://pajhwok.com",
+        "https://en.wikipedia.org/wiki/Pajhwok_Afghan_News"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "af-eilaat",
+      "name": "Etilaatroz",
+      "founded": 2012,
+      "language": "Dari",
+      "headquarters": "Kabul / exile",
+      "countryCode": "AF",
+      "owner": {
+        "name": "Etilaatroz",
+        "type": "Independent media"
+      },
+      "editorialStance": "Independent Afghan digital newsroom; politics and investigation",
+      "readership": {
+        "metric": "Major Afghan independent news brand",
+        "source": "https://www.etilaatroz.com"
+      },
+      "sources": [
+        "https://www.etilaatroz.com"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "af-ariana-news",
+      "name": "Ariana News",
+      "founded": 2005,
+      "language": "Dari / Pashto / English",
+      "headquarters": "Kabul",
+      "countryCode": "AF",
+      "owner": {
+        "name": "Ariana Television Network digital",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Afghan digital general-interest newsroom",
+      "readership": {
+        "metric": "Major Afghan news website",
+        "source": "https://www.ariananews.af"
+      },
+      "sources": [
+        "https://www.ariananews.af"
       ]
     }
   ],
@@ -352,6 +475,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://antiguatrumpet.com"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ag-antigua-news-room",
+      "countryCode": "AG",
+      "name": "Antigua News Room",
+      "founded": 2015,
+      "language": "English",
+      "headquarters": "St. John's",
+      "owner": {
+        "name": "Antigua News Room",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Antiguan digital general-interest news portal",
+      "readership": {
+        "metric": "Major Antigua news website",
+        "source": "https://antiguanewsroom.com"
+      },
+      "sources": [
+        "https://antiguanewsroom.com"
+      ]
+    },
+    {
+      "id": "ag-antigua-times",
+      "countryCode": "AG",
+      "name": "Antigua Times",
+      "founded": 2012,
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "language": "English",
+      "headquarters": "St. John's",
+      "owner": {
+        "name": "Antigua Times",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Antiguan digital general-interest news portal; politics and current affairs",
+      "readership": {
+        "metric": "Antigua digital news brand",
+        "source": "https://en.wikipedia.org/wiki/Media_of_Antigua_and_Barbuda"
+      },
+      "revenueModel": "Digital advertising",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Media_of_Antigua_and_Barbuda"
       ]
     }
   ],
@@ -458,6 +629,31 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://shekulli.com.al",
         "https://en.wikipedia.org/wiki/Shekulli"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital & print",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "al-tema",
+      "countryCode": "AL",
+      "name": "Gazeta Tema",
+      "founded": 1999,
+      "language": "Albanian",
+      "headquarters": "Tirana",
+      "owner": {
+        "name": "Tema Media",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Influential Albanian general-interest news brand; politics and investigation",
+      "readership": {
+        "metric": "Major Albanian news brand",
+        "source": "https://en.wikipedia.org/wiki/Tema_(newspaper)"
+      },
+      "sources": [
+        "https://www.gazetatema.net",
+        "https://en.wikipedia.org/wiki/Tema_(newspaper)"
+      ]
     }
   ],
   "AM": [
@@ -536,6 +732,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://hetq.am",
         "https://en.wikipedia.org/wiki/Hetq"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "am-azatutyun",
+      "countryCode": "AM",
+      "name": "Azatutyun (RFE/RL Armenian)",
+      "founded": 1950,
+      "language": "Armenian",
+      "headquarters": "Yerevan",
+      "owner": {
+        "name": "RFE/RL",
+        "type": "Public international media"
+      },
+      "editorialStance": "Major Armenian-language digital newsroom; politics and current affairs",
+      "readership": {
+        "metric": "Leading Armenian independent news brand",
+        "source": "https://www.azatutyun.am"
+      },
+      "sources": [
+        "https://www.azatutyun.am"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "am-civilnet",
+      "countryCode": "AM",
+      "name": "CivilNet",
+      "founded": 2011,
+      "language": "Armenian / English",
+      "headquarters": "Yerevan",
+      "owner": {
+        "name": "Civilitas Foundation",
+        "type": "Independent non-profit media"
+      },
+      "editorialStance": "Independent Armenian digital newsroom; politics and investigation",
+      "readership": {
+        "metric": "Major Armenian digital news brand",
+        "source": "https://www.civilnet.am"
+      },
+      "sources": [
+        "https://www.civilnet.am"
       ]
     }
   ],
@@ -643,6 +887,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://jornalf8.net",
         "https://pt.wikipedia.org/wiki/Folha_8"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ao-angonoticias",
+      "countryCode": "AO",
+      "name": "AngoNotícias",
+      "founded": 2003,
+      "language": "Portuguese",
+      "headquarters": "Luanda",
+      "owner": {
+        "name": "AngoNotícias",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Angolan digital general-interest news portal",
+      "readership": {
+        "metric": "Major Angolan news website",
+        "source": "https://www.angonoticias.com"
+      },
+      "sources": [
+        "https://www.angonoticias.com"
+      ]
     }
   ],
   "AR": [
@@ -668,7 +936,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ar/clarin.svg",
       "logoExplainer": "Red 'Clarín' wordmark beside a circular bugle emblem — Argentina's mass-circulation daily masthead.",
       "licenceNote": "Clarín masthead trademark bundled from Wikimedia Commons (File:Clarín logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.clarin.com",
         "https://en.wikipedia.org/wiki/Clar%C3%ADn_(Argentine_newspaper)"
@@ -697,7 +964,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ar/la-nacion.svg",
       "logoExplainer": "Blue serif capitals 'LA NACION' — La Nación's contemporary digital wordmark.",
       "licenceNote": "La Nación masthead trademark bundled from Wikimedia Commons (File:Logo La Nación.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.lanacion.com.ar",
         "https://en.wikipedia.org/wiki/La_Naci%C3%B3n"
@@ -726,11 +992,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ar/pagina-12.svg",
       "logoExplainer": "Serif 'Página|12' masthead with a vertical bar separating the numeral — the Buenos Aires daily's nameplate.",
       "licenceNote": "Página/12 masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.pagina12.com.ar",
         "https://en.wikipedia.org/wiki/P%C3%A1gina/12"
       ]
+    },
+    {
+      "id": "ar-infobae",
+      "countryCode": "AR",
+      "name": "Infobae",
+      "englishTranslation": "Infobae",
+      "founded": 2002,
+      "frequency": "Continuous digital news",
+      "format": "Digital newsroom",
+      "language": "Spanish",
+      "headquarters": "Buenos Aires",
+      "owner": {
+        "name": "Infobae / Daniel Hadad",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Argentina's most-visited digital news brand; politics, general news, and international coverage",
+      "readership": {
+        "metric": "Highest-traffic Argentine digital news site",
+        "source": "https://en.wikipedia.org/wiki/Infobae"
+      },
+      "revenueModel": "Digital advertising and branded content",
+      "sources": [
+        "https://www.infobae.com",
+        "https://en.wikipedia.org/wiki/Infobae"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "ar-perfil",
+      "countryCode": "AR",
+      "name": "Perfil",
+      "englishTranslation": "Profile",
+      "founded": 1998,
+      "frequency": "Weekly print / continuous digital",
+      "format": "News magazine & digital daily",
+      "language": "Spanish",
+      "headquarters": "Buenos Aires",
+      "owner": {
+        "name": "Editorial Perfil",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Independent investigative general-interest news brand; politics and accountability reporting",
+      "readership": {
+        "metric": "Major Argentine investigative news brand",
+        "source": "https://en.wikipedia.org/wiki/Perfil"
+      },
+      "revenueModel": "Subscriptions, print sales, and advertising",
+      "sources": [
+        "https://www.perfil.com",
+        "https://en.wikipedia.org/wiki/Perfil"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "AT": [
@@ -757,7 +1074,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/at/kronen-zeitung.svg",
       "logoExplainer": "Bold 'Kronen Zeitung' masthead — Austria's mass-circulation daily nameplate.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.krone.at",
         "https://en.wikipedia.org/wiki/Kronen_Zeitung"
@@ -786,7 +1102,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/at/die-presse.svg",
       "logoExplainer": "White 'Die Presse' serif on dark blue — the Vienna quality daily masthead.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Die Presse logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.diepresse.com",
         "https://en.wikipedia.org/wiki/Die_Presse"
@@ -815,11 +1130,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/at/kurier.svg",
       "logoExplainer": "White 'KURIER' serif on a red field — the Vienna daily masthead.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:KURIER Logo RGB.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://kurier.at",
         "https://en.wikipedia.org/wiki/Kurier"
       ]
+    },
+    {
+      "id": "at-der-standard",
+      "countryCode": "AT",
+      "name": "Der Standard",
+      "englishTranslation": "The Standard",
+      "founded": 1988,
+      "frequency": "Daily newspaper",
+      "format": "Compact & digital",
+      "language": "German",
+      "headquarters": "Vienna",
+      "owner": {
+        "name": "Standard Verlagsgesellschaft",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Liberal quality daily; politics, economy-as-news, culture, and investigative reporting",
+      "readership": {
+        "metric": "Leading Austrian quality daily by digital reach",
+        "source": "https://en.wikipedia.org/wiki/Der_Standard"
+      },
+      "revenueModel": "Subscriptions and advertising",
+      "sources": [
+        "https://www.derstandard.at",
+        "https://en.wikipedia.org/wiki/Der_Standard"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "at-salzburger-nachrichten",
+      "countryCode": "AT",
+      "name": "Salzburger Nachrichten",
+      "englishTranslation": "Salzburg News",
+      "founded": 1945,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "German",
+      "headquarters": "Salzburg",
+      "owner": {
+        "name": "Salzburger Nachrichten Verlagsgesellschaft",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Independent quality daily; national politics and Salzburg regional news with strong reputation",
+      "readership": {
+        "metric": "Major Austrian quality regional-national daily",
+        "source": "https://en.wikipedia.org/wiki/Salzburger_Nachrichten"
+      },
+      "revenueModel": "Subscriptions and advertising",
+      "sources": [
+        "https://www.sn.at",
+        "https://en.wikipedia.org/wiki/Salzburger_Nachrichten"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "AU": [
@@ -905,58 +1271,56 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "au-afr",
+      "id": "au-guardian-australia",
       "countryCode": "AU",
-      "name": "The Australian Financial Review",
-      "officialName": "The Australian Financial Review",
-      "founded": 1951,
-      "frequency": "Daily business broadsheet (Monday–Friday) & Weekend AFR",
-      "format": "Compact financial print & premium digital portal (afr.com)",
+      "name": "Guardian Australia",
+      "englishTranslation": "Guardian Australia",
+      "founded": 2013,
+      "frequency": "Continuous digital news",
+      "format": "Digital newsroom",
       "language": "English",
-      "headquarters": "Sydney, New South Wales",
+      "headquarters": "Sydney",
       "owner": {
-        "name": "Nine Entertainment",
-        "type": "Publicly traded commercial media company"
+        "name": "Guardian Media Group",
+        "type": "Scott Trust-owned media"
       },
-      "editorialStance": "Pro-market economic commentary, corporate finance, market intelligence, fiscal policy, and institutional analysis",
+      "editorialStance": "Progressive quality journalism; federal politics, climate, Indigenous affairs, and investigative reporting for an Australian audience",
       "readership": {
-        "metric": "Over 3.6 million monthly business, executive, and financial readers",
-        "source": "Roy Morgan / Total News Readership 2024"
+        "metric": "One of Australia's most-visited quality digital news sites",
+        "source": "https://en.wikipedia.org/wiki/Guardian_Australia"
       },
-      "revenueModel": "Premium digital subscriptions, print sales, and corporate advertising",
-      "logo": "newspaper-logos/au/australian-financial-review.svg",
-      "logoExplainer": "Distinctive blue and red serif masthead with the iconic AFR acronym embodying Australian financial journalism.",
+      "revenueModel": "Reader contributions, digital advertising, and philanthropic funding",
       "sources": [
-        "https://www.afr.com",
-        "https://en.wikipedia.org/wiki/The_Australian_Financial_Review"
-      ]
+        "https://www.theguardian.com/australia-news",
+        "https://en.wikipedia.org/wiki/Guardian_Australia"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     },
     {
-      "id": "au-herald-sun",
+      "id": "au-courier-mail",
       "countryCode": "AU",
-      "name": "Herald Sun",
-      "officialName": "Herald Sun",
-      "founded": 1990,
-      "frequency": "Daily morning tabloid (Monday–Sunday)",
-      "format": "Tabloid print & digital portal (heraldsun.com.au)",
+      "name": "The Courier-Mail",
+      "englishTranslation": "The Courier-Mail",
+      "founded": 1933,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
       "language": "English",
-      "headquarters": "Melbourne, Victoria",
+      "headquarters": "Brisbane, Queensland",
       "owner": {
         "name": "News Corp Australia",
-        "type": "Commercial media conglomerate"
+        "type": "Commercial media group"
       },
-      "editorialStance": "Populist centre-right tabloid; breaking news, Victorian politics, sports coverage, and community advocacy",
+      "editorialStance": "Queensland's principal general-interest daily; state and federal politics, news, and sports (mass-market format, broad news remit)",
       "readership": {
-        "metric": "Highest-circulation daily print newspaper in Australia, over 4 million monthly cross-platform readers",
-        "source": "Roy Morgan / Total News Readership 2024"
+        "metric": "Highest-readership daily newspaper in Queensland",
+        "source": "https://en.wikipedia.org/wiki/The_Courier-Mail"
       },
-      "revenueModel": "Print newsstand sales, digital subscriptions, and classified advertising",
-      "logo": "newspaper-logos/au/herald-sun.svg",
-      "logoExplainer": "Bold red and black block masthead reflecting Victoria's mass-circulation morning daily tabloid.",
+      "revenueModel": "Print sales, subscriptions, and advertising",
       "sources": [
-        "https://www.heraldsun.com.au",
-        "https://en.wikipedia.org/wiki/Herald_Sun"
-      ]
+        "https://www.couriermail.com.au",
+        "https://en.wikipedia.org/wiki/The_Courier-Mail"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "AZ": [
@@ -1065,6 +1429,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.nezavisne.com",
         "https://en.wikipedia.org/wiki/Nezavisne_novine"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ba-klix",
+      "countryCode": "BA",
+      "name": "Klix.ba",
+      "founded": 2000,
+      "language": "Bosnian / Croatian / Serbian",
+      "headquarters": "Sarajevo",
+      "owner": {
+        "name": "Klix.ba",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Bosnia and Herzegovina's leading digital general-interest news portal",
+      "readership": {
+        "metric": "Highest-traffic BiH news website",
+        "source": "https://www.klix.ba"
+      },
+      "sources": [
+        "https://www.klix.ba"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ba-radiosarajevo",
+      "countryCode": "BA",
+      "name": "Radiosarajevo.ba",
+      "founded": 2004,
+      "language": "Bosnian",
+      "headquarters": "Sarajevo",
+      "owner": {
+        "name": "Radio Sarajevo digital",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major BiH digital general-interest news portal; politics and current affairs",
+      "readership": {
+        "metric": "Major BiH news website",
+        "source": "https://radiosarajevo.ba"
+      },
+      "sources": [
+        "https://radiosarajevo.ba"
+      ]
     }
   ],
   "BB": [
@@ -1140,6 +1552,31 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://barbados.loopnews.com"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bb-nation-news",
+      "countryCode": "BB",
+      "name": "Nation News",
+      "founded": 1973,
+      "language": "English",
+      "headquarters": "Bridgetown",
+      "owner": {
+        "name": "Nation Publishing / Advocate Media",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Barbados general-interest daily; politics and national news",
+      "readership": {
+        "metric": "Major Barbadian daily",
+        "source": "https://en.wikipedia.org/wiki/Daily_Nation_(Barbados)"
+      },
+      "sources": [
+        "https://www.nationnews.com",
+        "https://en.wikipedia.org/wiki/Daily_Nation_(Barbados)"
+      ]
     }
   ],
   "BD": [
@@ -1194,6 +1631,81 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.ittefaq.com.bd",
         "https://en.wikipedia.org/wiki/The_Daily_Ittefaq"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bd-the-daily-star",
+      "countryCode": "BD",
+      "name": "The Daily Star",
+      "founded": 1991,
+      "language": "English",
+      "headquarters": "Dhaka",
+      "owner": {
+        "name": "Transcom Group",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Bangladesh's leading English daily; politics and general news",
+      "readership": {
+        "metric": "Principal English daily of Bangladesh",
+        "source": "https://en.wikipedia.org/wiki/The_Daily_Star_(Bangladesh)"
+      },
+      "sources": [
+        "https://www.thedailystar.net",
+        "https://en.wikipedia.org/wiki/The_Daily_Star_(Bangladesh)"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bd-jugantor",
+      "countryCode": "BD",
+      "name": "Jugantor",
+      "founded": 2000,
+      "language": "Bengali",
+      "headquarters": "Dhaka",
+      "owner": {
+        "name": "Jamuna Group",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Bengali general-interest daily",
+      "readership": {
+        "metric": "Among Bangladesh's largest Bengali dailies",
+        "source": "https://en.wikipedia.org/wiki/Jugantor"
+      },
+      "sources": [
+        "https://www.jugantor.com",
+        "https://en.wikipedia.org/wiki/Jugantor"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bd-samakal",
+      "countryCode": "BD",
+      "name": "Samakal",
+      "founded": 2005,
+      "language": "Bengali",
+      "headquarters": "Dhaka",
+      "owner": {
+        "name": "Times Media Ltd",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Bengali general-interest daily; politics and national news",
+      "readership": {
+        "metric": "Large Bengali daily",
+        "source": "https://en.wikipedia.org/wiki/Samakal"
+      },
+      "sources": [
+        "https://samakal.com",
+        "https://en.wikipedia.org/wiki/Samakal"
+      ]
     }
   ],
   "BE": [
@@ -1220,7 +1732,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/be/le-soir.svg",
       "logoExplainer": "White 'LE SOIR' slab-serif on a dark blue banner — the Brussels daily masthead.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Logo du journal Le Soir.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.lesoir.be",
         "https://en.wikipedia.org/wiki/Le_Soir"
@@ -1249,7 +1760,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/be/hln.svg",
       "logoExplainer": "White 'HLN' in a red rounded square — Het Laatste Nieuws brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Logo-HLN.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.hln.be",
         "https://en.wikipedia.org/wiki/Het_Laatste_Nieuws"
@@ -1278,11 +1788,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/be/la-libre.svg",
       "logoExplainer": "Classic 'La Libre Belgique' wordmark — the Brussels French-language daily masthead.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:La Libre Belgique logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.lalibre.be",
         "https://en.wikipedia.org/wiki/La_Libre_Belgique"
       ]
+    },
+    {
+      "id": "be-de-standaard",
+      "countryCode": "BE",
+      "name": "De Standaard",
+      "englishTranslation": "The Standard",
+      "founded": 1918,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "Dutch",
+      "headquarters": "Groot-Bijgaarden (near Brussels)",
+      "owner": {
+        "name": "Mediahuis",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Flanders' quality newspaper of record; politics, culture, and investigative reporting",
+      "readership": {
+        "metric": "Leading Flemish quality daily",
+        "source": "https://en.wikipedia.org/wiki/De_Standaard"
+      },
+      "revenueModel": "Subscriptions and advertising",
+      "sources": [
+        "https://www.standaard.be",
+        "https://en.wikipedia.org/wiki/De_Standaard"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "be-het-nieuwsblad",
+      "countryCode": "BE",
+      "name": "Het Nieuwsblad",
+      "englishTranslation": "The Newspaper",
+      "founded": 1929,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "Dutch",
+      "headquarters": "Groot-Bijgaarden",
+      "owner": {
+        "name": "Mediahuis",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Flanders' highest-circulation general-interest daily; news, sports, and politics",
+      "readership": {
+        "metric": "Among Belgium's highest-circulation dailies",
+        "source": "https://en.wikipedia.org/wiki/Het_Nieuwsblad"
+      },
+      "revenueModel": "Subscriptions, print sales, and advertising",
+      "sources": [
+        "https://www.nieuwsblad.be",
+        "https://en.wikipedia.org/wiki/Het_Nieuwsblad"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "BF": [
@@ -1388,6 +1949,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.evenement-bf.net"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bf-burkina24",
+      "countryCode": "BF",
+      "name": "Burkina24",
+      "founded": 2013,
+      "language": "French",
+      "headquarters": "Ouagadougou",
+      "owner": {
+        "name": "Burkina24",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Burkinabè digital general-interest news portal",
+      "readership": {
+        "metric": "Major Burkina Faso news website",
+        "source": "https://www.burkina24.com"
+      },
+      "sources": [
+        "https://www.burkina24.com"
+      ]
     }
   ],
   "BG": [
@@ -1440,7 +2025,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bg/trud.png",
       "logoExplainer": "Bold 'Труд' / Trud masthead — the Sofia daily brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:LogoTrud.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://trud.bg",
         "https://en.wikipedia.org/wiki/Trud_(Bulgarian_newspaper)"
@@ -1469,35 +2053,58 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bg/dnevnik.jpg",
       "logoExplainer": "'Dnevnik' wordmark — the Sofia daily brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Dnevnik logo.jpg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.dnevnik.bg",
         "https://en.wikipedia.org/wiki/Dnevnik_(Bulgarian_newspaper)"
       ]
     },
     {
-      "id": "bg-capital",
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bg-sega",
       "countryCode": "BG",
-      "name": "Capital",
-      "founded": 1993,
-      "frequency": "Weekly (Friday)",
-      "format": "Broadsheet & digital business portal",
+      "name": "Sega",
+      "founded": 1997,
       "language": "Bulgarian",
       "headquarters": "Sofia",
       "owner": {
-        "name": "Economedia AD",
+        "name": "Sega AD",
         "type": "Independent commercial media"
       },
-      "editorialStance": "Premier financial and economic weekly in Bulgaria; corporate business, markets, and policy analysis",
+      "editorialStance": "National general-interest daily; politics and current affairs",
       "readership": {
-        "metric": "Leading weekly paper read by Bulgarian business executives, economists, and legal sector",
-        "source": "Economedia AD Review 2023"
+        "metric": "Established Bulgarian daily",
+        "source": "https://en.wikipedia.org/wiki/Sega_(newspaper)"
       },
-      "revenueModel": "Corporate paywall subscriptions, print sales, and financial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
-        "https://www.capital.bg",
-        "https://en.wikipedia.org/wiki/Capital_(Bulgarian_newspaper)"
+        "https://www.segabg.com",
+        "https://en.wikipedia.org/wiki/Sega_(newspaper)"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bg-mediapool",
+      "countryCode": "BG",
+      "name": "Mediapool",
+      "founded": 2000,
+      "language": "Bulgarian",
+      "headquarters": "Sofia",
+      "owner": {
+        "name": "Mediapool EOOD",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Bulgarian digital news portal; politics and investigation",
+      "readership": {
+        "metric": "Major Bulgarian news website",
+        "source": "https://www.mediapool.bg"
+      },
+      "sources": [
+        "https://www.mediapool.bg"
       ]
     }
   ],
@@ -1525,7 +2132,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bh/al-ayam.png",
       "logoExplainer": "Arabic 'الأيام' masthead — Al-Ayam's brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.alayam.com",
         "https://en.wikipedia.org/wiki/Al_Ayam_(Bahrain)"
@@ -1554,7 +2160,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bh/al-bilad.svg",
       "logoExplainer": "Arabic 'البلاد' masthead — Al-Bilad's brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.albiladpress.com",
         "https://en.wikipedia.org/wiki/Al_Bilad_(Bahraini_newspaper)"
@@ -1583,7 +2188,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bh/akhbar-al-khaleej.png",
       "logoExplainer": "Arabic 'أخبار الخليج' masthead — Akhbar Al Khaleej's brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.akhbar-alkhaleej.com",
         "https://en.wikipedia.org/wiki/Akhbar_Al_Khaleej"
@@ -1612,10 +2216,34 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/bh/daily-tribune.png",
       "logoExplainer": "'Daily Tribune' masthead — Bahrain's English-language daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.newsofbahrain.com",
         "https://en.wikipedia.org/wiki/The_Daily_Tribune_(Bahrain)"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "id": "bh-gulf-daily-news",
+      "name": "Gulf Daily News",
+      "founded": 1978,
+      "language": "English",
+      "headquarters": "Manama",
+      "countryCode": "BH",
+      "owner": {
+        "name": "Al Ayam Publishing",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Bahraini English general-interest daily",
+      "readership": {
+        "metric": "Principal Bahraini English daily",
+        "source": "https://en.wikipedia.org/wiki/Gulf_Daily_News"
+      },
+      "sources": [
+        "https://www.gdnonline.com",
+        "https://en.wikipedia.org/wiki/Gulf_Daily_News"
       ]
     }
   ],
@@ -1694,6 +2322,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.jimbere-mag.org"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bi-bonesha",
+      "countryCode": "BI",
+      "name": "Bonesha FM News digital",
+      "founded": 2000,
+      "language": "Kirundi / French",
+      "headquarters": "Bujumbura",
+      "owner": {
+        "name": "Bonesha digital newsroom",
+        "type": "Independent media"
+      },
+      "editorialStance": "Burundian digital general-interest newsroom",
+      "readership": {
+        "metric": "Major Burundi news brand",
+        "source": "https://www.bonesha.bi"
+      },
+      "sources": [
+        "https://www.bonesha.bi"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bi-yaga",
+      "countryCode": "BI",
+      "name": "Yaga Burundi",
+      "founded": 2012,
+      "language": "French / Kirundi",
+      "headquarters": "Bujumbura",
+      "owner": {
+        "name": "Yaga Burundi",
+        "type": "Independent media"
+      },
+      "editorialStance": "Independent Burundian digital newsroom; politics and society",
+      "readership": {
+        "metric": "Notable Burundi digital news brand",
+        "source": "https://www.yaga-burundi.com"
+      },
+      "sources": [
+        "https://www.yaga-burundi.com"
       ]
     }
   ],
@@ -1800,6 +2476,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://lanouvelletribune.info",
         "https://fr.wikipedia.org/wiki/La_Nouvelle_Tribune_(B%C3%A9nin)"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bj-banouto",
+      "countryCode": "BJ",
+      "name": "Banouto",
+      "founded": 2015,
+      "language": "French",
+      "headquarters": "Cotonou",
+      "owner": {
+        "name": "Banouto",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Beninese digital general-interest news portal",
+      "readership": {
+        "metric": "Major Benin news website",
+        "source": "https://www.banouto.bj"
+      },
+      "sources": [
+        "https://www.banouto.bj"
+      ]
     }
   ],
   "BN": [
@@ -1858,6 +2558,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://en.wikipedia.org/wiki/Media_Permata"
       ],
       "licenceNote": "Media Permata masthead trademark bundled from the newspaper's official branding for educational reference in Learn mode."
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bn-rtb-news",
+      "countryCode": "BN",
+      "name": "RTB News",
+      "founded": 1957,
+      "language": "Malay / English",
+      "headquarters": "Bandar Seri Begawan",
+      "owner": {
+        "name": "Radio Television Brunei digital newsroom",
+        "type": "Public media"
+      },
+      "editorialStance": "Brunei national digital general-interest newsroom",
+      "readership": {
+        "metric": "National Brunei news brand",
+        "source": "https://www.rtb.gov.bn"
+      },
+      "sources": [
+        "https://www.rtbnews.rtb.gov.bn"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bn-bru-direct",
+      "countryCode": "BN",
+      "name": "BruDirect",
+      "founded": 1999,
+      "language": "English",
+      "headquarters": "Bandar Seri Begawan",
+      "owner": {
+        "name": "BruDirect",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Brunei digital general-interest news portal",
+      "readership": {
+        "metric": "Major Brunei news website",
+        "source": "https://www.brudirect.com"
+      },
+      "sources": [
+        "https://www.brudirect.com"
+      ]
     }
   ],
   "BO": [
@@ -1964,6 +2712,31 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.opinion.com.bo",
         "https://es.wikipedia.org/wiki/Opini%C3%B3n_(peri%C3%B3dico_boliviano)"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bo-el-diario",
+      "countryCode": "BO",
+      "name": "El Diario",
+      "founded": 1904,
+      "language": "Spanish",
+      "headquarters": "La Paz",
+      "owner": {
+        "name": "Editorial El Diario",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Historic La Paz general-interest daily; national politics and news",
+      "readership": {
+        "metric": "Long-standing Bolivian daily",
+        "source": "https://en.wikipedia.org/wiki/El_Diario_(La_Paz)"
+      },
+      "sources": [
+        "https://www.eldiario.net",
+        "https://en.wikipedia.org/wiki/El_Diario_(La_Paz)"
+      ]
     }
   ],
   "BR": [
@@ -2049,33 +2822,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "br-valor-economico",
-      "countryCode": "BR",
-      "name": "Valor Econômico",
-      "officialName": "Valor Econômico",
-      "founded": 2000,
-      "frequency": "Daily financial newspaper (Monday–Friday)",
-      "format": "Berliner print & premium financial portal (valor.globo.com)",
-      "language": "Portuguese",
-      "headquarters": "São Paulo",
-      "owner": {
-        "name": "Grupo Globo",
-        "type": "Commercial media conglomerate"
-      },
-      "editorialStance": "Premier Brazilian business and economic daily; financial markets, fiscal regulation, commodities, and corporate strategy",
-      "readership": {
-        "metric": "Over 120,000 paid digital and print subscribers across Brazil's executive and financial sector",
-        "source": "Instituto Verificador de Comunicação (IVC) 2024"
-      },
-      "revenueModel": "Premium subscriptions, print subscriptions, and B2B corporate advertising",
-      "logo": "newspaper-logos/br/valor-economico.svg",
-      "logoExplainer": "Distinctive salmon-pink branded masthead with elegant serif typography reflecting international financial broadsheet tradition.",
-      "sources": [
-        "https://valor.globo.com",
-        "https://en.wikipedia.org/wiki/Valor_Econ%C3%B4mico"
-      ]
-    },
-    {
       "id": "br-zero-hora",
       "countryCode": "BR",
       "name": "Zero Hora",
@@ -2101,6 +2847,32 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://gauchazh.clicrbs.com.br",
         "https://en.wikipedia.org/wiki/Zero_Hora"
       ]
+    },
+    {
+      "id": "br-correio-braziliense",
+      "countryCode": "BR",
+      "name": "Correio Braziliense",
+      "englishTranslation": "Brazilian Mail",
+      "founded": 1960,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "Portuguese",
+      "headquarters": "Brasília",
+      "owner": {
+        "name": "Diários Associados",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Federal-capital newspaper of record; national politics, public administration, and general news from Brasília",
+      "readership": {
+        "metric": "Principal general-interest daily of Brazil's federal capital",
+        "source": "https://en.wikipedia.org/wiki/Correio_Braziliense"
+      },
+      "revenueModel": "Subscriptions, print sales, and advertising",
+      "sources": [
+        "https://www.correiobraziliense.com.br",
+        "https://en.wikipedia.org/wiki/Correio_Braziliense"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "BS": [
@@ -2201,6 +2973,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://ewnews.com"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "bs-bahamas-local",
+      "name": "Bahamas Local News",
+      "founded": 2008,
+      "language": "English",
+      "headquarters": "Nassau",
+      "countryCode": "BS",
+      "owner": {
+        "name": "BahamasLocal",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Major Bahamian digital general-interest news portal",
+      "readership": {
+        "metric": "Leading Bahamian news website",
+        "source": "https://www.bahamaslocal.com"
+      },
+      "sources": [
+        "https://www.bahamaslocal.com"
+      ]
     }
   ],
   "BT": [
@@ -2256,52 +3052,76 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "bt-business-bhutan",
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bt-bhutan-times",
       "countryCode": "BT",
-      "name": "Business Bhutan",
-      "founded": 2009,
-      "frequency": "Weekly publication (Saturday)",
-      "format": "Tabloid & digital portal",
-      "language": "English, Dzongkha",
+      "name": "Bhutan Times",
+      "founded": 2006,
+      "language": "English",
       "headquarters": "Thimphu",
       "owner": {
-        "name": "Business Bhutan Media",
+        "name": "Bhutan Times Ltd",
         "type": "Independent commercial media"
       },
-      "editorialStance": "Financial and business weekly; Himalayan economy, trade, banking, and private sector growth",
+      "editorialStance": "Private English-language weekly/daily news brand; national affairs",
       "readership": {
-        "metric": "Only financial newspaper in Bhutan read by business leaders and policymakers",
-        "source": "Business Bhutan Review 2023"
+        "metric": "Major private Bhutanese newspaper",
+        "source": "https://en.wikipedia.org/wiki/Bhutan_Times"
       },
-      "revenueModel": "Print subscriptions and corporate advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
-        "https://businessbhutan.bt"
+        "https://www.bhutantimes.bt",
+        "https://en.wikipedia.org/wiki/Bhutan_Times"
       ]
     },
     {
-      "id": "bt-jbs",
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bt-bhutan-today",
       "countryCode": "BT",
-      "name": "Journal of Bhutan Studies",
-      "founded": 1999,
-      "frequency": "Bi-annual scholarly journal",
-      "format": "Academic journal & digital repository",
-      "language": "English, Dzongkha",
+      "name": "Bhutan Today",
+      "founded": 2008,
+      "language": "English",
       "headquarters": "Thimphu",
       "owner": {
-        "name": "Centre for Bhutan & GNH Studies (CBS)",
-        "type": "Independent trust / foundation"
+        "name": "Bhutan Today",
+        "type": "Independent commercial media"
       },
-      "editorialStance": "Academic research publication; Gross National Happiness (GNH), culture, history, and public policy",
+      "editorialStance": "Private general-interest newspaper; politics and society",
       "readership": {
-        "metric": "Primary scholarly journal on Bhutanese history, culture, and GNH development economics",
-        "source": "Centre for Bhutan & GNH Studies"
+        "metric": "Private Bhutanese daily/weekly news brand",
+        "source": "https://www.bhutantoday.bt"
       },
-      "revenueModel": "Royal Government research grants and academic subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
-        "https://www.bhutanstudies.org.bt",
-        "https://en.wikipedia.org/wiki/Journal_of_Bhutan_Studies"
+        "https://www.bhutantoday.bt"
+      ]
+    },
+    {
+      "id": "bt-the-journalist",
+      "countryCode": "BT",
+      "name": "The Journalist",
+      "founded": 2011,
+      "frequency": "Weekly newspaper",
+      "format": "Print & digital",
+      "language": "English",
+      "headquarters": "Thimphu",
+      "owner": {
+        "name": "The Journalist",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Private Bhutanese newspaper; current affairs and general news",
+      "readership": {
+        "metric": "Private Bhutanese news title",
+        "source": "https://en.wikipedia.org/wiki/Media_of_Bhutan"
+      },
+      "revenueModel": "Advertising and print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Media_of_Bhutan"
       ]
     }
   ],
@@ -2379,6 +3199,55 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://www.botswanaguardian.co.bw"
+      ]
+    },
+    {
+      "frequency": "Weekly newspaper",
+      "format": "Print & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bw-botswana-gazette",
+      "countryCode": "BW",
+      "name": "The Botswana Gazette",
+      "founded": 1985,
+      "language": "English",
+      "headquarters": "Gaborone",
+      "owner": {
+        "name": "Gazette Media",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Botswana general-interest weekly; politics and investigation",
+      "readership": {
+        "metric": "Leading Botswana weekly",
+        "source": "https://en.wikipedia.org/wiki/The_Botswana_Gazette"
+      },
+      "sources": [
+        "https://www.thegazette.news",
+        "https://en.wikipedia.org/wiki/The_Botswana_Gazette"
+      ]
+    },
+    {
+      "frequency": "Weekly newspaper",
+      "format": "Print & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bw-sunday-standard",
+      "countryCode": "BW",
+      "name": "Sunday Standard",
+      "founded": 2004,
+      "language": "English",
+      "headquarters": "Gaborone",
+      "owner": {
+        "name": "Sunday Standard",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Botswana general-interest weekly; politics and current affairs",
+      "readership": {
+        "metric": "Major Botswana weekly",
+        "source": "https://www.sundaystandard.info"
+      },
+      "sources": [
+        "https://www.sundaystandard.info"
       ]
     }
   ],
@@ -2459,6 +3328,56 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://nashaniva.com",
         "https://en.wikipedia.org/wiki/Nasha_Niva"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "by-tut-by-archive",
+      "countryCode": "BY",
+      "name": "Zerkalo.io (TUT.BY successor)",
+      "founded": 2022,
+      "language": "Russian / Belarusian",
+      "headquarters": "Exile / digital",
+      "owner": {
+        "name": "TUT.BY team in exile",
+        "type": "Independent media"
+      },
+      "editorialStance": "Leading independent Belarusian digital newsroom (successor to TUT.BY); politics and general news",
+      "readership": {
+        "metric": "Principal independent Belarusian news site",
+        "source": "https://en.wikipedia.org/wiki/TUT.BY"
+      },
+      "sources": [
+        "https://zerkalo.io",
+        "https://en.wikipedia.org/wiki/TUT.BY"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "by-belsat",
+      "countryCode": "BY",
+      "name": "Belsat News (digital)",
+      "founded": 2007,
+      "language": "Belarusian / Russian",
+      "headquarters": "Warsaw",
+      "owner": {
+        "name": "Belsat / TVP",
+        "type": "Public international media"
+      },
+      "editorialStance": "Major Belarusian-language digital newsroom; politics and current affairs",
+      "readership": {
+        "metric": "Leading Belarusian exile news brand",
+        "source": "https://en.wikipedia.org/wiki/Belsat_TV"
+      },
+      "sources": [
+        "https://belsat.eu",
+        "https://en.wikipedia.org/wiki/Belsat_TV"
       ]
     }
   ],
@@ -2561,6 +3480,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.breakingbelizenews.com"
       ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "bz-love-fm-news",
+      "name": "Love News Belize",
+      "founded": 2010,
+      "language": "English",
+      "headquarters": "Belize City",
+      "countryCode": "BZ",
+      "owner": {
+        "name": "Love FM digital newsroom",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Belizean digital general-interest newsroom; politics and current affairs",
+      "readership": {
+        "metric": "Major Belize news brand",
+        "source": "https://lovenewsbelize.com"
+      },
+      "sources": [
+        "https://lovenewsbelize.com"
+      ]
     }
   ],
   "CA": [
@@ -2592,32 +3535,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "ca-le-devoir",
+      "id": "ca-toronto-star",
       "countryCode": "CA",
-      "name": "Le Devoir",
-      "englishTranslation": "The Duty",
-      "founded": 1910,
-      "frequency": "Daily newspaper (Monday–Saturday)",
-      "format": "Compact broadsheet & digital portal",
-      "language": "French",
-      "headquarters": "Montreal, Quebec",
+      "name": "Toronto Star",
+      "englishTranslation": "Toronto Star",
+      "founded": 1892,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "English",
+      "headquarters": "Toronto, Ontario",
       "owner": {
-        "name": "Le Devoir Trust",
-        "type": "Non-profit independent trust"
+        "name": "Torstar Corporation",
+        "type": "Commercial media"
       },
-      "editorialStance": "Independent Quebec intellectual daily founded by Henri Bourassa; focus on culture, Quebec politics, and civic debate",
+      "editorialStance": "Canada's highest-circulation daily; progressive general-interest coverage of national and Ontario affairs",
       "readership": {
-        "metric": "Benchmark French-language quality daily reaching over 1.8 million monthly digital visitors",
-        "source": "Le Devoir Trust Annual Report 2023"
+        "metric": "Highest-circulation newspaper in Canada",
+        "source": "https://en.wikipedia.org/wiki/Toronto_Star"
       },
-      "revenueModel": "Reader subscriptions, philanthropic donations, and targeted advertising",
-      "logo": "newspaper-logos/ca/le-devoir.svg",
-      "logoExplainer": "High-contrast black serif capitals spelling 'LE DEVOIR' — the Montreal French-language daily's classic nameplate.",
-      "licenceNote": "Le Devoir masthead trademark bundled from Wikimedia Commons (File:Logo Le Devoir.svg) for educational reference in Learn mode.",
+      "revenueModel": "Subscriptions, print sales, and advertising",
       "sources": [
-        "https://www.ledevoir.com",
-        "https://en.wikipedia.org/wiki/Le_Devoir"
-      ]
+        "https://www.thestar.com",
+        "https://en.wikipedia.org/wiki/Toronto_Star"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     },
     {
       "id": "ca-national-post",
@@ -2670,6 +3611,34 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.lapresse.ca",
         "https://en.wikipedia.org/wiki/La_Presse_(Canadian_newspaper)"
+      ]
+    },
+    {
+      "id": "ca-le-devoir",
+      "countryCode": "CA",
+      "name": "Le Devoir",
+      "englishTranslation": "The Duty",
+      "founded": 1910,
+      "frequency": "Daily newspaper (Monday–Saturday)",
+      "format": "Compact broadsheet & digital portal",
+      "language": "French",
+      "headquarters": "Montreal, Quebec",
+      "owner": {
+        "name": "Le Devoir Trust",
+        "type": "Non-profit independent trust"
+      },
+      "editorialStance": "Independent Quebec intellectual daily founded by Henri Bourassa; focus on culture, Quebec politics, and civic debate",
+      "readership": {
+        "metric": "Benchmark French-language quality daily reaching over 1.8 million monthly digital visitors",
+        "source": "Le Devoir Trust Annual Report 2023"
+      },
+      "revenueModel": "Reader subscriptions, philanthropic donations, and targeted advertising",
+      "logo": "newspaper-logos/ca/le-devoir.svg",
+      "logoExplainer": "High-contrast black serif capitals spelling 'LE DEVOIR' — the Montreal French-language daily's classic nameplate.",
+      "licenceNote": "Le Devoir masthead trademark bundled from Wikimedia Commons (File:Logo Le Devoir.svg) for educational reference in Learn mode.",
+      "sources": [
+        "https://www.ledevoir.com",
+        "https://en.wikipedia.org/wiki/Le_Devoir"
       ]
     }
   ],
@@ -2773,6 +3742,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://laprosperite.online"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "cd-mediacongo",
+      "countryCode": "CD",
+      "name": "Mediacongo.net",
+      "founded": 2005,
+      "language": "French",
+      "headquarters": "Kinshasa",
+      "owner": {
+        "name": "Mediacongo",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Major Congolese digital general-interest news portal",
+      "readership": {
+        "metric": "Leading DRC news website",
+        "source": "https://www.mediacongo.net"
+      },
+      "sources": [
+        "https://www.mediacongo.net"
       ]
     }
   ],
@@ -2931,7 +3924,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ch/nzz.png",
       "logoExplainer": "Serif 'NZZ' / Neue Zürcher Zeitung brand mark from the publisher's own site.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.nzz.ch",
         "https://en.wikipedia.org/wiki/Neue_Z%C3%BCrcher_Zeitung"
@@ -2961,7 +3953,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ch/le-temps.svg",
       "logoExplainer": "Clean 'Le Temps' wordmark — the Geneva daily's digital masthead.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.letemps.ch",
         "https://en.wikipedia.org/wiki/Le_Temps"
@@ -3018,11 +4009,36 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ch/corriere-del-ticino.svg",
       "logoExplainer": "'Corriere del Ticino' masthead — the Italian-language Swiss daily nameplate.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.cdt.ch",
         "https://en.wikipedia.org/wiki/Corriere_del_Ticino"
       ]
+    },
+    {
+      "id": "ch-24-heures",
+      "countryCode": "CH",
+      "name": "24 heures",
+      "englishTranslation": "24 Hours",
+      "founded": 1762,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "French",
+      "headquarters": "Lausanne",
+      "owner": {
+        "name": "Tamedia / TX Group",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Leading French-speaking Swiss general-interest daily for Vaud/Romandie; politics and regional news (chosen over mass tabloid Blick)",
+      "readership": {
+        "metric": "Principal paid daily of French-speaking Vaud",
+        "source": "https://en.wikipedia.org/wiki/24_heures_(Switzerland)"
+      },
+      "revenueModel": "Subscriptions and advertising",
+      "sources": [
+        "https://www.24heures.ch",
+        "https://en.wikipedia.org/wiki/24_heures_(Switzerland)"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "CI": [
@@ -3133,6 +4149,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://nouveaureveil.com",
         "https://fr.wikipedia.org/wiki/Le_Nouveau_R%C3%A9veil"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ci-abidjan-net",
+      "countryCode": "CI",
+      "name": "Abidjan.net News",
+      "founded": 1998,
+      "language": "French",
+      "headquarters": "Abidjan",
+      "owner": {
+        "name": "Abidjan.net",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Ivorian digital general-interest news portal",
+      "readership": {
+        "metric": "Major Côte d'Ivoire news website",
+        "source": "https://news.abidjan.net"
+      },
+      "sources": [
+        "https://news.abidjan.net"
+      ]
     }
   ],
   "CL": [
@@ -3185,39 +4225,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/cl/la-tercera.png",
       "logoExplainer": "'La Tercera' masthead — the Santiago daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.latercera.com",
         "https://en.wikipedia.org/wiki/La_Tercera"
-      ]
-    },
-    {
-      "id": "cl-diario-financiero",
-      "countryCode": "CL",
-      "name": "Diario Financiero",
-      "englishTranslation": "Financial Daily",
-      "founded": 1988,
-      "frequency": "Daily business newspaper (Monday–Friday)",
-      "format": "Salmon broadsheet & digital portal",
-      "language": "Spanish",
-      "headquarters": "Santiago",
-      "owner": {
-        "name": "Grupo Claro",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Specialized financial and economic daily; Santiago Stock Exchange, mining industries, retail markets, and regulatory affairs",
-      "readership": {
-        "metric": "Primary business daily in Chile read by corporate executives and financial institutions (2.5M monthly visits)",
-        "source": "Diario Financiero Media Kit 2024"
-      },
-      "revenueModel": "Corporate subscriptions and financial sector advertising",
-      "logo": "newspaper-logos/cl/diario-financiero.svg",
-      "logoExplainer": "'Diario Financiero' masthead — Chile's business daily.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.df.cl",
-        "https://es.wikipedia.org/wiki/Diario_Financiero"
       ]
     },
     {
@@ -3247,31 +4257,55 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "cl-the-clinic",
+      "id": "cl-el-mostrador",
       "countryCode": "CL",
-      "name": "The Clinic",
-      "founded": 1998,
-      "frequency": "Weekly publication & digital portal",
-      "format": "Satirical journal & digital portal",
+      "name": "El Mostrador",
+      "englishTranslation": "The Display / Showcase",
+      "founded": 2000,
+      "frequency": "Continuous digital news",
+      "format": "Digital newsroom",
       "language": "Spanish",
       "headquarters": "Santiago",
       "owner": {
-        "name": "Ediciones The Clinic (Patricio Fernández)",
+        "name": "La Plaza S.A.",
         "type": "Independent commercial media"
       },
-      "editorialStance": "Left-leaning satirical and political investigative publication founded during Pinochet's London arrest; anti-establishment critique",
+      "editorialStance": "Independent digital daily; politics, investigation, and general Chilean affairs",
       "readership": {
-        "metric": "Cult political publication reaching 1.2 million monthly readers across cultural and academic sectors",
-        "source": "The Clinic Audience Review 2023"
+        "metric": "Leading Chilean independent digital news site",
+        "source": "https://en.wikipedia.org/wiki/El_Mostrador"
       },
-      "revenueModel": "Print sales, digital display advertising, and reader memberships",
-      "logo": "newspaper-logos/cl/the-clinic.png",
-      "logoExplainer": "'The Clinic' wordmark — the Santiago satirical weekly brand.",
-      "licenceNote": "Trademark bundled from Wikimedia Commons (File:The Clinic Logo.png) for educational reference in Learn mode.",
-
+      "revenueModel": "Digital advertising and memberships",
       "sources": [
-        "https://www.theclinic.cl",
-        "https://en.wikipedia.org/wiki/The_Clinic_(newspaper)"
+        "https://www.elmostrador.cl",
+        "https://en.wikipedia.org/wiki/El_Mostrador"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "cl-la-segunda",
+      "countryCode": "CL",
+      "name": "La Segunda",
+      "englishTranslation": "The Second",
+      "founded": 1931,
+      "frequency": "Afternoon daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "Spanish",
+      "headquarters": "Santiago",
+      "owner": {
+        "name": "Empresa El Mercurio SAP",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Santiago afternoon general-interest daily; politics, breaking news, and national affairs",
+      "readership": {
+        "metric": "Historic Santiago afternoon daily with national political audience",
+        "source": "https://en.wikipedia.org/wiki/La_Segunda"
+      },
+      "revenueModel": "Advertising and print/digital sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "sources": [
+        "https://www.lasegunda.com",
+        "https://en.wikipedia.org/wiki/La_Segunda"
       ]
     }
   ],
@@ -3457,7 +4491,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/cn/huanqiu-shibao.svg",
       "logoExplainer": "Chinese '环球时报' / Global Times masthead.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:GlobalTimesLogo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.globaltimes.cn",
         "https://en.wikipedia.org/wiki/Global_Times"
@@ -3490,6 +4523,58 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.nanfangdaily.com.cn",
         "https://en.wikipedia.org/wiki/Nanfang_Daily"
       ]
+    },
+    {
+      "id": "cn-china-daily",
+      "countryCode": "CN",
+      "name": "China Daily",
+      "englishTranslation": "China Daily",
+      "founded": 1981,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "English",
+      "headquarters": "Beijing",
+      "owner": {
+        "name": "China Daily Group (state-owned)",
+        "type": "State media"
+      },
+      "editorialStance": "China's principal English-language national daily; politics, society, and international affairs",
+      "readership": {
+        "metric": "Largest English-language newspaper in China",
+        "source": "https://en.wikipedia.org/wiki/China_Daily"
+      },
+      "revenueModel": "State support, advertising, and subscriptions",
+      "sources": [
+        "https://www.chinadaily.com.cn",
+        "https://en.wikipedia.org/wiki/China_Daily"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "cn-guangming-daily",
+      "countryCode": "CN",
+      "name": "Guangming Daily",
+      "englishTranslation": "Guangming Daily",
+      "founded": 1949,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "Chinese",
+      "headquarters": "Beijing",
+      "owner": {
+        "name": "Chinese Communist Party (propaganda system)",
+        "type": "State / party media"
+      },
+      "editorialStance": "National party daily focused on intellectual, cultural, and educational affairs alongside general political coverage",
+      "readership": {
+        "metric": "Major national party daily",
+        "source": "https://en.wikipedia.org/wiki/Guangming_Daily"
+      },
+      "revenueModel": "State support and advertising",
+      "sources": [
+        "https://www.gmw.cn",
+        "https://en.wikipedia.org/wiki/Guangming_Daily"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "CO": [
@@ -3568,66 +4653,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/co/el-colombiano.svg",
       "logoExplainer": "'El Colombiano' masthead — the Medellín daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.elcolombiano.com",
         "https://en.wikipedia.org/wiki/El_Colombiano"
       ]
     },
     {
-      "id": "co-portafolio",
+      "id": "co-el-heraldo",
       "countryCode": "CO",
-      "name": "Portafolio",
-      "englishTranslation": "Portfolio",
-      "founded": 1993,
-      "frequency": "Daily financial newspaper (Monday–Friday)",
-      "format": "Compact tabloid & financial portal",
+      "name": "El Heraldo",
+      "englishTranslation": "The Herald",
+      "founded": 1933,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
       "language": "Spanish",
-      "headquarters": "Bogotá",
+      "headquarters": "Barranquilla",
       "owner": {
-        "name": "Casa Editorial El Tiempo",
+        "name": "Editorial El Heraldo S.A.",
         "type": "Independent commercial media"
       },
-      "editorialStance": "Premier financial and economic daily; Bogota stock market, macroeconomic indicators, foreign investment, and corporate mergers",
+      "editorialStance": "Caribbean Colombia's leading general-interest daily; national and regional politics and news",
       "readership": {
-        "metric": "Leading specialized financial daily read across Colombian corporate boardrooms and government ministries",
-        "source": "Portafolio Corporate Profile 2023"
+        "metric": "Principal daily of Colombia's Caribbean coast",
+        "source": "https://en.wikipedia.org/wiki/El_Heraldo_(Colombia)"
       },
-      "revenueModel": "Financial corporate subscriptions and business-to-business advertising",
-      "logo": "newspaper-logos/co/portafolio.png",
-      "logoExplainer": "'Portafolio' masthead — Colombia's business daily.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
+      "revenueModel": "Advertising and print/digital sales",
       "sources": [
-        "https://www.portafolio.co",
-        "https://es.wikipedia.org/wiki/Portafolio_(peri%C3%B3dico)"
-      ]
+        "https://www.elheraldo.co",
+        "https://en.wikipedia.org/wiki/El_Heraldo_(Colombia)"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     },
     {
-      "id": "co-la-republica",
+      "id": "co-el-pais-cali",
       "countryCode": "CO",
-      "name": "La República",
-      "englishTranslation": "The Republic",
-      "founded": 1954,
-      "frequency": "Daily financial newspaper (Monday–Saturday)",
-      "format": "Salmon broadsheet & digital portal",
+      "name": "El País (Cali)",
+      "englishTranslation": "The Country (Cali)",
+      "founded": 1950,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
       "language": "Spanish",
-      "headquarters": "Bogotá",
+      "headquarters": "Cali",
       "owner": {
-        "name": "Editorial La República / Grupo Ardila Lülle",
-        "type": "Independent commercial media"
+        "name": "Grupo de Diarios América / local ownership",
+        "type": "Commercial media"
       },
-      "editorialStance": "Historic specialized business and economic newspaper founded by former President Mariano Ospina Pérez; economic policy and market reporting",
+      "editorialStance": "Valle del Cauca's principal general-interest daily; national and regional news",
       "readership": {
-        "metric": "Over 2.8 million monthly digital visitors and widespread institutional print circulation",
-        "source": "Grupo Ardila Lülle Media Review 2023"
+        "metric": "Leading daily of southwestern Colombia",
+        "source": "https://en.wikipedia.org/wiki/El_País_(Cali)"
       },
-      "revenueModel": "Corporate subscriptions and commercial banking advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising and print/digital sales",
       "sources": [
-        "https://www.larepublica.co",
-        "https://es.wikipedia.org/wiki/La_Rep%C3%BAblica_(Colombia)"
-      ]
+        "https://www.elpais.com.co",
+        "https://en.wikipedia.org/wiki/El_País_(Cali)"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "CR": [
@@ -3733,6 +4814,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.crhoy.com",
         "https://es.wikipedia.org/wiki/CRHoy"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "cr-ameliarueda",
+      "countryCode": "CR",
+      "name": "AmeliaRueda.com",
+      "founded": 2012,
+      "language": "Spanish",
+      "headquarters": "San José",
+      "owner": {
+        "name": "Amelia Rueda / private",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Costa Rican digital general-interest newsroom; politics and breaking news",
+      "readership": {
+        "metric": "Major Costa Rican digital news brand",
+        "source": "https://www.ameliarueda.com"
+      },
+      "sources": [
+        "https://www.ameliarueda.com"
+      ]
     }
   ],
   "CU": [
@@ -3811,6 +4916,56 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "http://www.cubadebate.cu",
         "https://en.wikipedia.org/wiki/Cubadebate"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "cu-granma",
+      "countryCode": "CU",
+      "name": "Granma",
+      "founded": 1965,
+      "language": "Spanish",
+      "headquarters": "Havana",
+      "owner": {
+        "name": "Communist Party of Cuba",
+        "type": "State / party media"
+      },
+      "editorialStance": "Official newspaper of the Communist Party of Cuba; national politics and general news",
+      "readership": {
+        "metric": "Cuba's principal national daily",
+        "source": "https://en.wikipedia.org/wiki/Granma_(newspaper)"
+      },
+      "sources": [
+        "https://www.granma.cu",
+        "https://en.wikipedia.org/wiki/Granma_(newspaper)"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "cu-14ymedio",
+      "countryCode": "CU",
+      "name": "14ymedio",
+      "founded": 2014,
+      "language": "Spanish",
+      "headquarters": "Havana / digital",
+      "owner": {
+        "name": "14ymedio / Yoani Sánchez",
+        "type": "Independent media"
+      },
+      "editorialStance": "Independent Cuban digital newsroom; politics and society",
+      "readership": {
+        "metric": "Leading independent Cuban news site",
+        "source": "https://en.wikipedia.org/wiki/14ymedio"
+      },
+      "sources": [
+        "https://www.14ymedio.com",
+        "https://en.wikipedia.org/wiki/14ymedio"
       ]
     }
   ],
@@ -3915,6 +5070,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://santiagomagazine.cv"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "cv-inforpress",
+      "name": "Inforpress",
+      "founded": 1988,
+      "language": "Portuguese",
+      "headquarters": "Praia",
+      "countryCode": "CV",
+      "owner": {
+        "name": "Inforpress",
+        "type": "Public / state news service digital"
+      },
+      "editorialStance": "Cabo Verde national digital news portal; politics and general news",
+      "readership": {
+        "metric": "National Cabo Verde news brand",
+        "source": "https://inforpress.cv"
+      },
+      "sources": [
+        "https://inforpress.cv"
+      ]
     }
   ],
   "CY": [
@@ -3940,7 +5119,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/cy/cyprus-mail.svg",
       "logoExplainer": "'Cyprus Mail' masthead — the Nicosia English-language daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://cyprus-mail.com",
         "https://en.wikipedia.org/wiki/Cyprus_Mail"
@@ -3998,7 +5176,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/cy/politis.webp",
       "logoExplainer": "Greek 'Πολίτης' masthead — Politis brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://politis.com.cy",
         "https://en.wikipedia.org/wiki/Politis_(Cyprus)"
@@ -4055,7 +5232,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/cy/simerini.png",
       "logoExplainer": "Greek 'Σημερινή' masthead — Simerini brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://simerini.sigmalive.com",
         "https://en.wikipedia.org/wiki/Simerini"
@@ -4169,7 +5345,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/cz/lidove-noviny.svg",
       "logoExplainer": "'Lidové noviny' masthead — the Prague daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.lidovky.cz",
         "https://en.wikipedia.org/wiki/Lidov%C3%A9_noviny"
@@ -4294,63 +5469,56 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "de-handelsblatt",
+      "id": "de-taz",
       "countryCode": "DE",
-      "name": "Handelsblatt",
-      "nativeName": "Handelsblatt",
-      "englishTranslation": "Commerce Sheet",
-      "founded": 1946,
-      "frequency": "Daily business newspaper (Monday–Friday)",
-      "format": "Tabloid format broadsheet & financial network",
-      "language": "German",
-      "headquarters": "Toulouser Allee, Düsseldorf, North Rhine-Westphalia",
-      "owner": {
-        "name": "Handelsblatt Media Group (Dieter von Holtzbrinck Medien)",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Germany's preeminent financial and economic daily newspaper; DAX stock exchange analysis, German Mittelstand industrial engineering, automotive transition, and fiscal discipline",
-      "readership": {
-        "metric": "Over 140,000 daily paid circulation including 100,000+ digital subscribers; primary business paper for the German industrial executive suite",
-        "source": "Handelsblatt Media Group Review 2024"
-      },
-      "revenueModel": "Corporate subscriptions, specialized economic research, and B2B financial advertising",
-      "logo": "newspaper-logos/de/handelsblatt.svg",
-      "logoExplainer": "Wordmark for Handelsblatt — Germany's leading business daily title treatment.",
-      "licenceNote": "Handelsblatt masthead trademark bundled from Wikimedia Commons (File:Handelsblatt logo.svg) for educational reference in Learn mode.",
-      "sources": [
-        "https://www.handelsblatt.com",
-        "https://en.wikipedia.org/wiki/Handelsblatt"
-      ]
-    },
-    {
-      "id": "de-bild",
-      "countryCode": "DE",
-      "name": "Bild",
-      "officialName": "Bild-Zeitung",
-      "nativeName": "Bild",
-      "englishTranslation": "Picture",
-      "founded": 1952,
-      "frequency": "Daily newspaper (Monday–Saturday)",
-      "format": "Tabloid publication & digital network",
+      "name": "die tageszeitung (taz)",
+      "englishTranslation": "the daily newspaper",
+      "founded": 1978,
+      "frequency": "Daily newspaper",
+      "format": "Berliner & digital",
       "language": "German",
       "headquarters": "Berlin",
       "owner": {
-        "name": "Axel Springer SE",
-        "type": "Independent commercial media"
+        "name": "taz, die tageszeitung Verlagsgenossenschaft eG",
+        "type": "Reader cooperative"
       },
-      "editorialStance": "Europe's largest circulation daily newspaper; sensationalist populist reporting, celebrity exposés, consumer campaigns, politics, and Bundesliga sports",
+      "editorialStance": "Left-liberal cooperative daily; politics, environment, culture, and investigative reporting with national reach",
       "readership": {
-        "metric": "Over 1.1 million daily print copies and more than 680,000 paid digital subscribers on BILDplus; highest reach daily news brand in Europe",
-        "source": "IVW Deutschland & Axel Springer 2024"
+        "metric": "Major national quality daily alongside FAZ and Süddeutsche Zeitung",
+        "source": "https://en.wikipedia.org/wiki/Die_Tageszeitung"
       },
-      "revenueModel": "Street print sales, BILDplus digital paywall, and high-volume commercial advertising",
-      "logo": "newspaper-logos/de/bild.svg",
-      "logoExplainer": "White condensed sans-serif 'BILD' on a red field — the tabloid's signature cover title.",
-      "licenceNote": "Bild masthead trademark bundled from Wikimedia Commons (File:Bild logo.svg) for educational reference in Learn mode.",
+      "revenueModel": "Cooperative memberships, subscriptions, and advertising",
       "sources": [
-        "https://www.bild.de",
-        "https://en.wikipedia.org/wiki/Bild"
-      ]
+        "https://taz.de",
+        "https://en.wikipedia.org/wiki/Die_Tageszeitung"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "de-tagesspiegel",
+      "countryCode": "DE",
+      "name": "Der Tagesspiegel",
+      "englishTranslation": "The Daily Mirror",
+      "founded": 1945,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "German",
+      "headquarters": "Berlin",
+      "owner": {
+        "name": "Verlag Der Tagesspiegel GmbH (DVH Media)",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Berlin-based liberal quality daily; federal politics, capital affairs, culture, and investigative reporting",
+      "readership": {
+        "metric": "Leading Berlin quality daily with national political influence",
+        "source": "https://en.wikipedia.org/wiki/Der_Tagesspiegel"
+      },
+      "revenueModel": "Subscriptions and advertising",
+      "sources": [
+        "https://www.tagesspiegel.de",
+        "https://en.wikipedia.org/wiki/Der_Tagesspiegel"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "DJ": [
@@ -4458,6 +5626,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "http://www.human-village.org",
         "https://fr.wikipedia.org/wiki/Culture_de_Djibouti"
       ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "dj-adi",
+      "name": "ADI News",
+      "founded": 2015,
+      "language": "French",
+      "headquarters": "Djibouti",
+      "countryCode": "DJ",
+      "owner": {
+        "name": "Agence Djiboutienne d'Information digital",
+        "type": "State media digital"
+      },
+      "editorialStance": "Djiboutian national digital news portal; politics and general news",
+      "readership": {
+        "metric": "National Djibouti news brand",
+        "source": "https://www.adi.dj"
+      },
+      "sources": [
+        "https://www.adi.dj"
+      ]
     }
   ],
   "DK": [
@@ -4486,7 +5678,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/dk/berlingske.svg",
       "logoExplainer": "Historic 'Berlingske' masthead — Denmark's oldest daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.berlingske.dk",
         "https://en.wikipedia.org/wiki/Berlingske"
@@ -4516,7 +5707,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/dk/politiken.svg",
       "logoExplainer": "Black all-caps slab-serif 'POLITIKEN' — the Copenhagen daily masthead.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Politiken-Logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://politiken.dk",
         "https://en.wikipedia.org/wiki/Politiken"
@@ -4547,72 +5737,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/dk/jyllands-posten.png",
       "logoExplainer": "'Jyllands-Posten' wordmark — the Aarhus-based national daily masthead.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://jyllands-posten.dk",
         "https://en.wikipedia.org/wiki/Jyllands-Posten"
       ]
     },
     {
-      "id": "dk-borsen",
+      "id": "dk-information",
       "countryCode": "DK",
-      "name": "Børsen",
-      "officialName": "Dagbladet Børsen",
-      "nativeName": "Børsen",
-      "englishTranslation": "The Exchange",
-      "founded": 1896,
-      "frequency": "Daily business newspaper (Monday–Friday)",
-      "format": "Salmon broadsheet & digital portal",
+      "name": "Information",
+      "englishTranslation": "Information",
+      "founded": 1945,
+      "frequency": "Daily newspaper",
+      "format": "Compact & digital",
       "language": "Danish",
       "headquarters": "Copenhagen",
       "owner": {
-        "name": "Bonnier Group (49.9%) & JP/Politikens Hus (49.9%)",
+        "name": "A/S Information",
         "type": "Independent commercial media"
       },
-      "editorialStance": "Denmark's preeminent financial and business daily; Copenhagen Stock Exchange, maritime shipping (Mærsk), green transition, and macroeconomic policy",
+      "editorialStance": "Left-liberal intellectual daily; politics, culture, and in-depth reporting",
       "readership": {
-        "metric": "Read by 85% of Danish top corporate executives and institutional investors",
-        "source": "Dagbladet Børsen Audience Report 2023"
+        "metric": "Major Danish quality daily",
+        "source": "https://en.wikipedia.org/wiki/Information_(Danish_newspaper)"
       },
-      "revenueModel": "Corporate subscriptions and financial market advertising",
-      "logo": "newspaper-logos/dk/borsen.svg",
-      "logoExplainer": "'Børsen' wordmark — Denmark's business daily masthead.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
+      "revenueModel": "Subscriptions and advertising",
       "sources": [
-        "https://borsen.dk",
-        "https://en.wikipedia.org/wiki/Dagbladet_B%C3%B8rsen"
-      ]
+        "https://www.information.dk",
+        "https://en.wikipedia.org/wiki/Information_(Danish_newspaper)"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     },
     {
-      "id": "dk-ekstra-bladet",
+      "id": "dk-kristeligt-dagblad",
       "countryCode": "DK",
-      "name": "Ekstra Bladet",
-      "nativeName": "Ekstra Bladet",
-      "englishTranslation": "The Extra Sheet",
-      "founded": 1904,
+      "name": "Kristeligt Dagblad",
+      "englishTranslation": "Christian Daily",
+      "founded": 1896,
       "frequency": "Daily newspaper",
-      "format": "Tabloid & multimedia portal",
+      "format": "Compact & digital",
       "language": "Danish",
       "headquarters": "Copenhagen",
       "owner": {
-        "name": "JP/Politikens Hus",
-        "type": "Independent trust / foundation"
+        "name": "Kristeligt Dagblad A/S",
+        "type": "Independent commercial media"
       },
-      "editorialStance": "Iconic Danish investigative tabloid; aggressive political exposés, consumer advocacy, sports, and working-class watchdog journalism",
+      "editorialStance": "Quality general-interest daily with Christian humanist roots; ethics, politics, and culture",
       "readership": {
-        "metric": "Over 3.2 million monthly unique digital visitors on eb.dk, Denmark's most read online news brand",
-        "source": "Dansk Online Index & Kantar 2024"
+        "metric": "Established Danish quality subscription daily",
+        "source": "https://en.wikipedia.org/wiki/Kristeligt_Dagblad"
       },
-      "revenueModel": "Digital subscriptions (+Ekstra), programmatic ads, and street print sales",
-      "logo": "newspaper-logos/dk/ekstra-bladet.svg",
-      "logoExplainer": "'Ekstra Bladet' masthead — the Copenhagen tabloid brand mark.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
+      "revenueModel": "Subscriptions and advertising",
       "sources": [
-        "https://ekstrabladet.dk",
-        "https://en.wikipedia.org/wiki/Ekstra_Bladet"
-      ]
+        "https://www.kristeligt-dagblad.dk",
+        "https://en.wikipedia.org/wiki/Kristeligt_Dagblad"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "DM": [
@@ -4895,7 +6075,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/dz/el-watan.png",
       "logoExplainer": "'El Watan' masthead — the Algiers French-language daily.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:El Watan (Logo).png) for educational reference in Learn mode.",
-
       "sources": [
         "https://elwatan-dz.com",
         "https://en.wikipedia.org/wiki/El_Watan"
@@ -4950,10 +6129,58 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/dz/liberte.svg",
       "logoExplainer": "'Liberté' masthead — the Algiers French-language daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.liberte-algerie.com",
         "https://en.wikipedia.org/wiki/Libert%C3%A9_(Algerian_newspaper)"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "dz-el-khabar",
+      "countryCode": "DZ",
+      "name": "El Khabar",
+      "founded": 1990,
+      "language": "Arabic",
+      "headquarters": "Algiers",
+      "owner": {
+        "name": "El Khabar",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Major Algerian Arabic general-interest daily",
+      "readership": {
+        "metric": "Among Algeria's highest-circulation Arabic dailies",
+        "source": "https://en.wikipedia.org/wiki/El_Khabar"
+      },
+      "sources": [
+        "https://www.elkhabar.com",
+        "https://en.wikipedia.org/wiki/El_Khabar"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "dz-tsa",
+      "countryCode": "DZ",
+      "name": "TSA (Tout sur l'Algérie)",
+      "founded": 2007,
+      "language": "French",
+      "headquarters": "Algiers",
+      "owner": {
+        "name": "TSA",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Algerian French-language digital news portal",
+      "readership": {
+        "metric": "Major Algerian news website",
+        "source": "https://www.tsa-algerie.com"
+      },
+      "sources": [
+        "https://www.tsa-algerie.com"
       ]
     }
   ],
@@ -5060,6 +6287,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.primicias.ec"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ec-gk",
+      "countryCode": "EC",
+      "name": "GK",
+      "founded": 2011,
+      "language": "Spanish",
+      "headquarters": "Quito",
+      "owner": {
+        "name": "GK.city",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Independent Ecuadorian digital newsroom; politics, investigation, and general affairs",
+      "readership": {
+        "metric": "Major Ecuadorian digital news brand",
+        "source": "https://gk.city"
+      },
+      "sources": [
+        "https://gk.city"
+      ]
     }
   ],
   "EE": [
@@ -5087,7 +6338,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ee/postimees.png",
       "logoExplainer": "'Postimees' masthead — Estonia's leading daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.postimees.ee",
         "https://en.wikipedia.org/wiki/Postimees"
@@ -5115,7 +6365,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ee/delfi-ee.svg",
       "logoExplainer": "'Delfi' wordmark — the Estonian digital news brand.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.delfi.ee",
         "https://en.wikipedia.org/wiki/Delfi_(web_portal)"
@@ -5173,7 +6422,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ee/aripaev.svg",
       "logoExplainer": "'Äripäev' masthead — Estonia's business daily.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Äripäev logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.aripaev.ee",
         "https://en.wikipedia.org/wiki/%C3%84rip%C3%A4ev"
@@ -5209,6 +6457,32 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
   ],
   "EG": [
     {
+      "id": "eg-al-ahram",
+      "countryCode": "EG",
+      "name": "Al-Ahram",
+      "englishTranslation": "The Pyramids",
+      "founded": 1875,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "Arabic",
+      "headquarters": "Cairo",
+      "owner": {
+        "name": "Al-Ahram Establishment (state-owned)",
+        "type": "State media"
+      },
+      "editorialStance": "Egypt's historic newspaper of record; national politics and general news",
+      "readership": {
+        "metric": "Egypt's flagship national Arabic daily",
+        "source": "https://en.wikipedia.org/wiki/Al-Ahram"
+      },
+      "revenueModel": "State support, advertising, and print sales",
+      "sources": [
+        "https://www.ahram.org.eg",
+        "https://en.wikipedia.org/wiki/Al-Ahram"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
       "id": "eg-al-masry-al-youm",
       "countryCode": "EG",
       "name": "Al-Masry Al-Youm",
@@ -5232,7 +6506,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/eg/al-masry-al-youm.svg",
       "logoExplainer": "Arabic 'المصري اليوم' masthead — Al-Masry Al-Youm's brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.almasryalyoum.com",
         "https://en.wikipedia.org/wiki/Al-Masry_Al-Youm"
@@ -5263,7 +6536,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/eg/youm7.png",
       "logoExplainer": "Arabic 'اليوم السابع' wordmark — Youm7's digital masthead.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.youm7.com",
         "https://en.wikipedia.org/wiki/Youm7"
@@ -5318,7 +6590,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/eg/egypt-today.png",
       "logoExplainer": "'Egypt Today' English wordmark — the Cairo magazine/news brand.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.egypttoday.com",
         "https://en.wikipedia.org/wiki/Egypt_Today"
@@ -5428,7 +6699,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/es/el-pais.svg",
       "logoExplainer": "Serif 'EL PAÍS' with a blue triangular accent — Spain's leading daily masthead.",
       "licenceNote": "El País masthead trademark bundled from Wikimedia Commons (File:El País logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://elpais.com",
         "https://en.wikipedia.org/wiki/El_Pa%C3%ADs"
@@ -5458,7 +6728,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/es/el-mundo.svg",
       "logoExplainer": "Black 'EL MUNDO' wordmark with an oversized red capital M — the Spanish daily's distinctive masthead.",
       "licenceNote": "El Mundo masthead trademark bundled from Wikimedia Commons (File:Periodico El Mundo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.elmundo.es",
         "https://en.wikipedia.org/wiki/El_Mundo_(Spain)"
@@ -5488,7 +6757,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/es/abc.jpg",
       "logoExplainer": "Classic black serif capitals 'ABC' — the Madrid daily's historic three-letter masthead.",
       "licenceNote": "ABC (Spain) masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.abc.es",
         "https://en.wikipedia.org/wiki/ABC_(Spanish_newspaper)"
@@ -5518,39 +6786,39 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/es/la-vanguardia.svg",
       "logoExplainer": "White serif 'LA VANGUARDIA' on a navy banner — Barcelona's newspaper of record masthead.",
       "licenceNote": "La Vanguardia masthead trademark bundled from Wikimedia Commons (File:La Vanguardia (cabecera).svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.lavanguardia.com",
         "https://en.wikipedia.org/wiki/La_Vanguardia"
       ]
+    },
+    {
+      "id": "es-el-periodico",
+      "countryCode": "ES",
+      "name": "El Periódico de Catalunya",
+      "englishTranslation": "The Newspaper of Catalonia",
+      "founded": 1978,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "Spanish / Catalan",
+      "headquarters": "Barcelona",
+      "owner": {
+        "name": "Prensa Ibérica",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Major Catalonia-based general-interest daily with national editions; politics and society",
+      "readership": {
+        "metric": "Among Spain's leading regional-national dailies",
+        "source": "https://en.wikipedia.org/wiki/El_Periódico_de_Catalunya"
+      },
+      "revenueModel": "Subscriptions, print sales, and advertising",
+      "sources": [
+        "https://www.elperiodico.com",
+        "https://en.wikipedia.org/wiki/El_Periódico_de_Catalunya"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "ET": [
-    {
-      "id": "et-addis-fortune",
-      "countryCode": "ET",
-      "name": "Addis Fortune",
-      "founded": 2000,
-      "frequency": "Weekly newspaper (Sundays) & continuous digital portal",
-      "format": "Tabloid & financial news portal",
-      "language": "English",
-      "headquarters": "Addis Ababa",
-      "owner": {
-        "name": "Independent News & Media Plc (Fortune)",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Ethiopia's premier independent business weekly; in-depth investigative reporting on banking, currency exchange liberalization, trade tariffs, public debt, and corporate developments",
-      "readership": {
-        "metric": "Over 15,000 weekly print circulation, widely read by diplomats, business executives, international finance institutions, and economists",
-        "source": "Addis Fortune Circulation Profile 2023"
-      },
-      "revenueModel": "Print sales, corporate digital paywall subscriptions, and financial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://addisfortune.news",
-        "https://en.wikipedia.org/wiki/Addis_Fortune"
-      ]
-    },
     {
       "id": "et-the-reporter",
       "countryCode": "ET",
@@ -5576,6 +6844,104 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.thereporterethiopia.com",
         "https://am.thereporterethiopia.com"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital magazine / news",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "et-addis-standard",
+      "countryCode": "ET",
+      "name": "Addis Standard",
+      "founded": 2011,
+      "language": "English",
+      "headquarters": "Addis Ababa",
+      "owner": {
+        "name": "Jakenn Publishing",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Independent Ethiopian general-interest news magazine; politics and current affairs",
+      "readership": {
+        "metric": "Leading Ethiopian English news brand",
+        "source": "https://addisstandard.com"
+      },
+      "sources": [
+        "https://addisstandard.com"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "et-ethiopia-insight",
+      "countryCode": "ET",
+      "name": "The Ethiopian Herald",
+      "founded": 1943,
+      "language": "English",
+      "headquarters": "Addis Ababa",
+      "owner": {
+        "name": "Ethiopian Press Agency",
+        "type": "State media"
+      },
+      "editorialStance": "State English-language national daily; politics and general news",
+      "readership": {
+        "metric": "Principal state English daily",
+        "source": "https://en.wikipedia.org/wiki/The_Ethiopian_Herald"
+      },
+      "sources": [
+        "https://press.et",
+        "https://en.wikipedia.org/wiki/The_Ethiopian_Herald"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "et-reporter-amharic",
+      "countryCode": "ET",
+      "name": "Addis Zemen",
+      "founded": 1941,
+      "language": "Amharic",
+      "headquarters": "Addis Ababa",
+      "owner": {
+        "name": "Ethiopian Press Agency",
+        "type": "State media"
+      },
+      "editorialStance": "State Amharic national daily; politics and general news",
+      "readership": {
+        "metric": "Principal state Amharic daily",
+        "source": "https://en.wikipedia.org/wiki/Addis_Zemen"
+      },
+      "sources": [
+        "https://press.et",
+        "https://en.wikipedia.org/wiki/Addis_Zemen"
+      ]
+    },
+    {
+      "id": "et-fana-news",
+      "countryCode": "ET",
+      "name": "Fana News",
+      "founded": 1994,
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "language": "Amharic / English",
+      "headquarters": "Addis Ababa",
+      "owner": {
+        "name": "Fana Broadcasting Corporate digital newsroom",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Ethiopian digital general-interest newsroom; politics and national news",
+      "readership": {
+        "metric": "Major Ethiopian news website",
+        "source": "https://www.fanabc.com"
+      },
+      "revenueModel": "Advertising",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "sources": [
+        "https://www.fanabc.com"
       ]
     }
   ],
@@ -5605,7 +6971,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/fi/helsingin-sanomat.svg",
       "logoExplainer": "'Helsingin Sanomat' masthead — Finland's newspaper of record nameplate.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.hs.fi",
         "https://en.wikipedia.org/wiki/Helsingin_Sanomat"
@@ -5635,7 +7000,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/fi/iltalehti.png",
       "logoExplainer": "'Iltalehti' wordmark — the Finnish evening tabloid masthead.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.iltalehti.fi",
         "https://en.wikipedia.org/wiki/Iltalehti"
@@ -5666,41 +7030,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/fi/ilta-sanomat.svg",
       "logoExplainer": "White italic 'ILTA=SANOMAT' on red — the Finnish evening tabloid masthead.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Ilta-Sanomat wordmark.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.is.fi",
         "https://en.wikipedia.org/wiki/Ilta-Sanomat"
       ]
     },
     {
-      "id": "fi-kauppalehti",
+      "id": "fi-aamulehti",
       "countryCode": "FI",
-      "name": "Kauppalehti",
-      "nativeName": "Kauppalehti",
-      "englishTranslation": "Commerce Paper",
-      "founded": 1898,
-      "frequency": "Daily business newspaper (Monday–Friday)",
-      "format": "Salmon broadsheet & digital financial portal",
+      "name": "Aamulehti",
+      "englishTranslation": "Morning Newspaper",
+      "founded": 1881,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
       "language": "Finnish",
-      "headquarters": "Helsinki",
+      "headquarters": "Tampere",
       "owner": {
-        "name": "Alma Media Corporation",
+        "name": "Sanoma Media Finland",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Finland's second-largest subscription daily; general news, politics, and regional Pirkanmaa coverage with national reach",
+      "readership": {
+        "metric": "Second-largest Finnish daily by circulation after Helsingin Sanomat",
+        "source": "https://en.wikipedia.org/wiki/Aamulehti"
+      },
+      "revenueModel": "Subscriptions and advertising",
+      "sources": [
+        "https://www.aamulehti.fi",
+        "https://en.wikipedia.org/wiki/Aamulehti"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "fi-turun-sanomat",
+      "countryCode": "FI",
+      "name": "Turun Sanomat",
+      "englishTranslation": "Turku News",
+      "founded": 1904,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "Finnish",
+      "headquarters": "Turku",
+      "owner": {
+        "name": "TS-Yhtymä",
         "type": "Independent commercial media"
       },
-      "editorialStance": "Finland's preeminent financial and business daily; Helsinki Stock Exchange (Nasdaq Helsinki), corporate innovations, forestry, clean tech, and macroeconomic policy",
+      "editorialStance": "Southwest Finland's leading daily; national and regional general news",
       "readership": {
-        "metric": "Over 150,000 paid business subscribers; primary information source for Finnish business executives and investors",
-        "source": "Alma Media Corporate Review 2023"
+        "metric": "Major Finnish regional daily with national readership",
+        "source": "https://en.wikipedia.org/wiki/Turun_Sanomat"
       },
-      "revenueModel": "Corporate subscriptions and B2B financial advertising",
-      "logo": "newspaper-logos/fi/kauppalehti.svg",
-      "logoExplainer": "'Kauppalehti' wordmark — Finland's business daily masthead.",
-      "licenceNote": "Trademark bundled from Wikimedia Commons (File:Kauppalehti wordmark.svg) for educational reference in Learn mode.",
-
+      "revenueModel": "Subscriptions and advertising",
       "sources": [
-        "https://www.kauppalehti.fi",
-        "https://en.wikipedia.org/wiki/Kauppalehti"
-      ]
+        "https://www.ts.fi",
+        "https://en.wikipedia.org/wiki/Turun_Sanomat"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "FJ": [
@@ -5758,6 +7143,78 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://en.wikipedia.org/wiki/Fiji_Sun"
       ],
       "licenceNote": "Fiji Sun masthead trademark bundled for educational reference in Learn mode."
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "fj-fiji-village",
+      "countryCode": "FJ",
+      "name": "FijiVillage",
+      "founded": 2000,
+      "language": "English",
+      "headquarters": "Suva",
+      "owner": {
+        "name": "Communications Fiji Ltd",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Fijian digital general-interest news portal",
+      "readership": {
+        "metric": "Leading Fijian news website",
+        "source": "https://www.fijivillage.com"
+      },
+      "sources": [
+        "https://www.fijivillage.com"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "fj-fbcnews",
+      "countryCode": "FJ",
+      "name": "FBCNews.com.fj",
+      "founded": 1998,
+      "language": "English",
+      "headquarters": "Suva",
+      "owner": {
+        "name": "Fiji Broadcasting Corporation digital newsroom",
+        "type": "Public media"
+      },
+      "editorialStance": "National Fijian digital general-interest news portal covering politics and current affairs",
+      "readership": {
+        "metric": "Major Fijian public news website",
+        "source": "https://www.fbcnews.com.fj"
+      },
+      "sources": [
+        "https://www.fbcnews.com.fj"
+      ]
+    },
+    {
+      "id": "fj-fijilive",
+      "countryCode": "FJ",
+      "name": "FijiLive",
+      "founded": 2000,
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "language": "English",
+      "headquarters": "Suva",
+      "owner": {
+        "name": "FijiLive / private",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Fijian digital general-interest news portal; national affairs",
+      "readership": {
+        "metric": "Established Fijian news website",
+        "source": "https://fijilive.com"
+      },
+      "revenueModel": "Digital advertising",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "sources": [
+        "https://fijilive.com"
+      ]
     }
   ],
   "FM": [
@@ -5847,32 +7304,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "fr-les-echos",
-      "countryCode": "FR",
-      "name": "Les Échos",
-      "englishTranslation": "The Echoes",
-      "founded": 1908,
-      "frequency": "Daily business newspaper (Monday–Friday)",
-      "format": "Berliner & digital financial network",
-      "language": "French",
-      "headquarters": "Paris",
-      "owner": {
-        "name": "Groupe Les Échos-Le Parisien (LVMH)",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "France's leading financial and economic daily; CAC 40 market analysis, European Union fiscal policy, industrial innovation, and corporate strategy",
-      "readership": {
-        "metric": "Over 100,000 paid digital subscribers; mandatory daily reading for senior French executives and policymakers",
-        "source": "Groupe Les Échos-Le Parisien 2024"
-      },
-      "revenueModel": "Corporate subscriptions and financial market advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://www.lesechos.fr",
-        "https://en.wikipedia.org/wiki/Les_%C3%89chos_(France)"
-      ]
-    },
-    {
       "id": "fr-liberation",
       "countryCode": "FR",
       "name": "Libération",
@@ -5927,6 +7358,32 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.ouest-france.fr",
         "https://en.wikipedia.org/wiki/Ouest-France"
       ]
+    },
+    {
+      "id": "fr-le-parisien",
+      "countryCode": "FR",
+      "name": "Le Parisien",
+      "englishTranslation": "The Parisian",
+      "founded": 1944,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "French",
+      "headquarters": "Paris",
+      "owner": {
+        "name": "LVMH / Les Échos-Le Parisien group",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Mass-circulation general-interest daily (Île-de-France and national editions); politics, society, sports, and local news — not a finance specialty title",
+      "readership": {
+        "metric": "Among France's highest-circulation paid dailies",
+        "source": "https://en.wikipedia.org/wiki/Le_Parisien"
+      },
+      "revenueModel": "Print sales, subscriptions, and advertising",
+      "sources": [
+        "https://www.leparisien.fr",
+        "https://en.wikipedia.org/wiki/Le_Parisien"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "GA": [
@@ -6007,6 +7464,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://gabonmediatime.com"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ga-gabonactu",
+      "countryCode": "GA",
+      "name": "Gabonactu",
+      "founded": 2010,
+      "language": "French",
+      "headquarters": "Libreville",
+      "owner": {
+        "name": "Gabonactu",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Gabonese digital general-interest news portal",
+      "readership": {
+        "metric": "Major Gabon news website",
+        "source": "https://gabonactu.com"
+      },
+      "sources": [
+        "https://gabonactu.com"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ga-infogabon",
+      "countryCode": "GA",
+      "name": "Info Gabon",
+      "founded": 2015,
+      "language": "French",
+      "headquarters": "Libreville",
+      "owner": {
+        "name": "Info Gabon",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Gabonese digital general-interest news portal",
+      "readership": {
+        "metric": "Gabon news website",
+        "source": "https://www.info-gabon.com"
+      },
+      "sources": [
+        "https://www.info-gabon.com"
       ]
     }
   ],
@@ -6093,31 +7598,56 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "gb-financial-times",
+      "id": "gb-the-independent",
       "countryCode": "GB",
-      "name": "Financial Times (FT)",
-      "founded": 1888,
-      "frequency": "Daily (Monday to Saturday) newspaper & continuous digital service",
-      "format": "Broadsheet newspaper (salmon pink paper) & digital portal (ft.com)",
+      "name": "The Independent",
+      "englishTranslation": "The Independent",
+      "founded": 1986,
+      "frequency": "Daily digital newspaper",
+      "format": "Digital-first national daily",
       "language": "English",
-      "headquarters": "Bracken House, 1 Friday Street, London",
+      "headquarters": "London",
       "owner": {
-        "name": "Nikkei Inc.",
-        "type": "Global commercial financial publishing corporation"
+        "name": "Independent Digital News & Media / Sultan Muhammad Abuljadayel & others",
+        "type": "Independent commercial media"
       },
-      "editorialStance": "World's leading international business, finance, and macroeconomic daily newspaper of record, printed on iconic salmon-pink paper since 1893; provides authoritative global coverage of central banking, capital markets, mergers, European economic policy, and international trade",
+      "editorialStance": "Centrist-liberal national daily; politics, international affairs, and investigative reporting (print edition ended 2016; digital continues)",
       "readership": {
-        "metric": "Over 1.4 million paying readers, including over 1.2 million digital-only subscribers across finance, corporate suites, and governments worldwide",
-        "source": "Nikkei Inc. / Financial Times Annual Review 2023"
+        "metric": "Among the United Kingdom's most-read digital national news brands",
+        "source": "https://en.wikipedia.org/wiki/The_Independent"
       },
-      "revenueModel": "Premium digital enterprise and individual subscriptions, print sales, and financial advertising",
-      "logo": "newspaper-logos/gb/financial-times.svg",
-      "logoExplainer": "Serif capitals spelling 'FINANCIAL TIMES' — the FT wordmark used on the salmon-pink print masthead and digital header.",
-      "licenceNote": "Financial Times masthead trademark bundled from Wikimedia Commons (File:Financial Times masthead.svg) for educational reference in Learn mode.",
+      "revenueModel": "Digital subscriptions, advertising, and memberships",
       "sources": [
-        "https://www.ft.com",
-        "https://en.wikipedia.org/wiki/Financial_Times"
-      ]
+        "https://www.independent.co.uk",
+        "https://en.wikipedia.org/wiki/The_Independent"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "gb-the-scotsman",
+      "countryCode": "GB",
+      "name": "The Scotsman",
+      "englishTranslation": "The Scotsman",
+      "founded": 1817,
+      "frequency": "Daily newspaper",
+      "format": "Compact & digital",
+      "language": "English",
+      "headquarters": "Edinburgh",
+      "owner": {
+        "name": "National World / Scotsman Publications",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Scotland's historic quality daily; Scottish and UK politics and general news",
+      "readership": {
+        "metric": "Leading Scottish quality daily",
+        "source": "https://en.wikipedia.org/wiki/The_Scotsman"
+      },
+      "revenueModel": "Subscriptions, print sales, and advertising",
+      "sources": [
+        "https://www.scotsman.com",
+        "https://en.wikipedia.org/wiki/The_Scotsman"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "GD": [
@@ -6348,6 +7878,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://resonancedaily.com"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ge-netgazeti",
+      "countryCode": "GE",
+      "name": "Netgazeti",
+      "founded": 2010,
+      "language": "Georgian",
+      "headquarters": "Tbilisi",
+      "owner": {
+        "name": "Netgazeti / Liberali",
+        "type": "Independent media"
+      },
+      "editorialStance": "Independent Georgian digital newsroom; politics and investigation",
+      "readership": {
+        "metric": "Major Georgian news website",
+        "source": "https://netgazeti.ge"
+      },
+      "sources": [
+        "https://netgazeti.ge"
+      ]
     }
   ],
   "GH": [
@@ -6398,7 +7952,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/gh/the-ghanaian-times.png",
       "logoExplainer": "'The Ghanaian Times' masthead — the Accra daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://ghanaiantimes.com.gh",
         "https://en.wikipedia.org/wiki/The_Ghanaian_Times"
@@ -6426,7 +7979,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/gh/myjoyonline.png",
       "logoExplainer": "'MyJoyOnline' wordmark — Ghana's digital news brand.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.myjoyonline.com"
       ]
@@ -6477,7 +8029,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/gh/daily-guide.png",
       "logoExplainer": "'Daily Guide' masthead — the Accra daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://dailyguidenetwork.com",
         "https://en.wikipedia.org/wiki/Daily_Guide"
@@ -6584,6 +8135,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://en.wikipedia.org/wiki/Daily_Observer_(The_Gambia)"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "id": "gm-standard",
+      "name": "The Standard (Gambia)",
+      "founded": 2018,
+      "language": "English",
+      "headquarters": "Banjul",
+      "countryCode": "GM",
+      "owner": {
+        "name": "Standard Publishers",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Gambian general-interest newspaper; politics and current affairs",
+      "readership": {
+        "metric": "Gambian national newspaper",
+        "source": "https://standard.gm"
+      },
+      "sources": [
+        "https://standard.gm"
       ]
     }
   ],
@@ -6813,6 +8388,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://diariorombe.es",
         "https://es.wikipedia.org/wiki/Diario_Rombe"
       ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "gq-guineaecuatorialpress",
+      "name": "Guinea Ecuatorial Press",
+      "founded": 2010,
+      "language": "Spanish",
+      "headquarters": "Malabo",
+      "countryCode": "GQ",
+      "owner": {
+        "name": "Guinea Ecuatorial Press",
+        "type": "State media digital"
+      },
+      "editorialStance": "Equatorial Guinean digital news portal; politics and general news",
+      "readership": {
+        "metric": "National Equatorial Guinea news brand",
+        "source": "https://www.guineaecuatorialpress.com"
+      },
+      "sources": [
+        "https://www.guineaecuatorialpress.com"
+      ]
     }
   ],
   "GR": [
@@ -6840,7 +8439,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/gr/kathimerini.jpg",
       "logoExplainer": "Greek 'Καθημερινή' masthead — Kathimerini brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.kathimerini.gr",
         "https://en.wikipedia.org/wiki/Kathimerini"
@@ -6870,7 +8468,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/gr/ta-nea.svg",
       "logoExplainer": "Greek 'ΤΑ ΝΕΑ' masthead — Ta Nea brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.tanea.gr",
         "https://en.wikipedia.org/wiki/Ta_Nea"
@@ -6900,7 +8497,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/gr/to-vima.png",
       "logoExplainer": "Greek 'ΤΟ ΒΗΜΑ' masthead — To Vima brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.tovima.gr",
         "https://en.wikipedia.org/wiki/To_Vima"
@@ -6930,7 +8526,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/gr/naftemporiki.png",
       "logoExplainer": "Greek 'ΝΑΥΤΕΜΠΟΡΙΚΗ' masthead — Naftemporiki brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.naftemporiki.gr",
         "https://en.wikipedia.org/wiki/Naftemporiki"
@@ -7319,6 +8914,31 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://demerarawaves.com/",
         "https://guyana.gov.gy/"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "id": "gy-stabroek-news",
+      "name": "Stabroek News",
+      "founded": 1986,
+      "language": "English",
+      "headquarters": "Georgetown",
+      "countryCode": "GY",
+      "owner": {
+        "name": "Stabroek News",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Guyanese general-interest daily; politics and investigation",
+      "readership": {
+        "metric": "Principal Guyanese independent daily",
+        "source": "https://en.wikipedia.org/wiki/Stabroek_News"
+      },
+      "sources": [
+        "https://www.stabroeknews.com",
+        "https://en.wikipedia.org/wiki/Stabroek_News"
+      ]
     }
   ],
   "HN": [
@@ -7472,7 +9092,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/hr/vecernji-list.svg",
       "logoExplainer": "'Večernji list' masthead — the Zagreb daily brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Večernji list Logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.vecernji.hr",
         "https://en.wikipedia.org/wiki/Ve%C4%8Dernji_list"
@@ -7527,7 +9146,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/hr/24sata.png",
       "logoExplainer": "'24sata' masthead — the Zagreb tabloid brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.24sata.hr",
         "https://en.wikipedia.org/wiki/24sata_(Croatia)"
@@ -7556,7 +9174,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/hr/slobodna-dalmacija.svg",
       "logoExplainer": "'Slobodna Dalmacija' masthead — the Split daily brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Slobodna Dalmacija Logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://slobodnadalmacija.hr",
         "https://en.wikipedia.org/wiki/Slobodna_Dalmacija"
@@ -7739,7 +9356,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/hu/magyar-nemzet.svg",
       "logoExplainer": "'Magyar Nemzet' masthead — the Budapest daily brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Magyar Nemzet logo (2019).svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://magyarnemzet.hu/",
         "https://kesma.hu/"
@@ -7767,7 +9383,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/hu/nepszava.png",
       "logoExplainer": "'Népszava' masthead — the Budapest daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://nepszava.hu/",
         "https://muosz.hu/"
@@ -7795,7 +9410,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/hu/hvg.svg",
       "logoExplainer": "'HVG' brand mark — the Budapest weekly brand.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://hvg.hu/",
         "https://hvg.hu/"
@@ -7823,7 +9437,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/hu/blikk.svg",
       "logoExplainer": "'Blikk' masthead — the Budapest tabloid brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Blikk logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.ringier.hu/",
         "https://www.blikk.hu/"
@@ -7932,31 +9545,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "id-detikcom",
-      "countryCode": "ID",
-      "name": "detikcom",
-      "founded": 1998,
-      "frequency": "Daily newspaper & digital portal",
-      "format": "Broadsheet & digital portal",
-      "language": "Indonesian",
-      "headquarters": "Jakarta",
-      "owner": {
-        "name": "Trans Media (CT Corp / Chairul Tanjung)",
-        "type": "Independent commercial media"
-      },
-      "editorialStance": "Independent / Breaking News",
-      "readership": {
-        "metric": "80,000,000 monthly digital readers",
-        "source": "detikcom Audience Review 2024"
-      },
-      "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://www.detik.com/",
-        "https://www.ctcorporation.com/"
-      ]
-    },
-    {
       "id": "id-the-jakarta-post",
       "countryCode": "ID",
       "name": "The Jakarta Post",
@@ -7978,11 +9566,36 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/id/the-jakarta-post.svg",
       "logoExplainer": "'The Jakarta Post' masthead — Indonesia's English daily.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:The Jakarta Post logo 2016.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.thejakartapost.com/",
         "https://dewanpers.or.id/"
       ]
+    },
+    {
+      "id": "id-media-indonesia",
+      "countryCode": "ID",
+      "name": "Media Indonesia",
+      "englishTranslation": "Indonesian Media",
+      "founded": 1970,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "Indonesian",
+      "headquarters": "Jakarta",
+      "owner": {
+        "name": "Media Group (Surya Paloh)",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "National general-interest daily; politics and current affairs",
+      "readership": {
+        "metric": "Major Jakarta-based national daily",
+        "source": "https://en.wikipedia.org/wiki/Media_Indonesia"
+      },
+      "revenueModel": "Advertising and print/digital sales",
+      "sources": [
+        "https://mediaindonesia.com",
+        "https://en.wikipedia.org/wiki/Media_Indonesia"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "IE": [
@@ -8008,7 +9621,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ie/irish-times.svg",
       "logoExplainer": "'The Irish Times' masthead — Ireland's newspaper of record nameplate.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:The Irish Times logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.irishtimes.com",
         "https://en.wikipedia.org/wiki/The_Irish_Times"
@@ -8040,31 +9652,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "ie-business-post",
-      "countryCode": "IE",
-      "name": "Business Post",
-      "founded": 1989,
-      "frequency": "Weekly Sunday newspaper & digital daily",
-      "format": "Compact format & digital business portal",
-      "language": "English",
-      "headquarters": "Dublin",
-      "owner": {
-        "name": "Kilcullen Kapital Partners / Business Post Media Group",
-        "type": "Independent commercial publisher"
-      },
-      "editorialStance": "Ireland's premier business and political Sunday newspaper; in-depth financial analysis, tech sector, and public policy",
-      "readership": {
-        "metric": "Key Sunday print edition and 45,000 digital subscribers across corporate Ireland",
-        "source": "JNLR Sunday Readership Survey 2024"
-      },
-      "revenueModel": "Digital paywall subscriptions, print sales, and corporate event sponsorship",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://www.businesspost.ie",
-        "https://en.wikipedia.org/wiki/Business_Post"
-      ]
-    },
-    {
       "id": "ie-journal-ie",
       "countryCode": "IE",
       "name": "TheJournal.ie",
@@ -8086,11 +9673,61 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ie/journal-ie.svg",
       "logoExplainer": "Dark blue 'The Journal' sans wordmark — TheJournal.ie's brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:The Journal logo 2022.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.thejournal.ie",
         "https://en.wikipedia.org/wiki/TheJournal.ie"
       ]
+    },
+    {
+      "id": "ie-irish-examiner",
+      "countryCode": "IE",
+      "name": "Irish Examiner",
+      "englishTranslation": "Irish Examiner",
+      "founded": 1841,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "English",
+      "headquarters": "Cork",
+      "owner": {
+        "name": "The Irish Times DAC",
+        "type": "Commercial media"
+      },
+      "editorialStance": "National daily from Cork; politics, general news, and Munster affairs",
+      "readership": {
+        "metric": "One of Ireland's four national daily broadsheets",
+        "source": "https://en.wikipedia.org/wiki/Irish_Examiner"
+      },
+      "revenueModel": "Subscriptions, print sales, and advertising",
+      "sources": [
+        "https://www.irishexaminer.com",
+        "https://en.wikipedia.org/wiki/Irish_Examiner"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "ie-breakingnews-ie",
+      "countryCode": "IE",
+      "name": "BreakingNews.ie",
+      "englishTranslation": "BreakingNews.ie",
+      "founded": 2001,
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "language": "English",
+      "headquarters": "Cork",
+      "owner": {
+        "name": "Landmark Media / Irish Examiner group",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Irish digital general-interest news portal; politics and breaking news",
+      "readership": {
+        "metric": "Among Ireland's most-visited news websites",
+        "source": "https://www.breakingnews.ie"
+      },
+      "revenueModel": "Digital advertising",
+      "sources": [
+        "https://www.breakingnews.ie"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "IL": [
@@ -8168,35 +9805,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/il/the-jerusalem-post.png",
       "logoExplainer": "'The Jerusalem Post' masthead — Israel's English daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.jpost.com",
         "https://en.wikipedia.org/wiki/The_Jerusalem_Post"
-      ]
-    },
-    {
-      "id": "il-globes",
-      "countryCode": "IL",
-      "name": "Globes",
-      "founded": 1983,
-      "frequency": "Daily financial newspaper",
-      "format": "Broadsheet & digital financial portal",
-      "language": "Hebrew, English",
-      "headquarters": "Rishon LeZion",
-      "owner": {
-        "name": "Alona Bar-On / Globes Publisher Ltd",
-        "type": "Independent business publishing group"
-      },
-      "editorialStance": "Israel's leading daily financial newspaper; coverage of high-tech sector, Tel Aviv Stock Exchange, macroeconomics, and commercial law",
-      "readership": {
-        "metric": "Primary business paper read by Israeli C-suite executives, investors, and tech entrepreneurs",
-        "source": "Globes Financial Media Group 2023"
-      },
-      "revenueModel": "Paid digital paywall subscriptions, print subscriptions, and corporate advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": [
-        "https://www.globes.co.il",
-        "https://en.wikipedia.org/wiki/Globes"
       ]
     },
     {
@@ -8222,11 +9833,36 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/il/israel-hayom.svg",
       "logoExplainer": "Hebrew 'ישראל היום' / Israel Hayom masthead.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Israel Hayom.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.israelhayom.co.il",
         "https://en.wikipedia.org/wiki/Israel_Hayom"
       ]
+    },
+    {
+      "id": "il-maariv",
+      "countryCode": "IL",
+      "name": "Maariv",
+      "englishTranslation": "Evening",
+      "founded": 1948,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "Hebrew",
+      "headquarters": "Tel Aviv",
+      "owner": {
+        "name": "The Jerusalem Post Group / Eli Azur",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Historic Hebrew general-interest daily; politics and national news",
+      "readership": {
+        "metric": "Among Israel's historic major Hebrew dailies",
+        "source": "https://en.wikipedia.org/wiki/Maariv_(newspaper)"
+      },
+      "revenueModel": "Print sales, subscriptions, and advertising",
+      "sources": [
+        "https://www.maariv.co.il",
+        "https://en.wikipedia.org/wiki/Maariv_(newspaper)"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "IN": [
@@ -8252,7 +9888,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/in/the-times-of-india.png",
       "logoExplainer": "'The Times of India' masthead — India's largest English daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://timesofindia.indiatimes.com/",
         "http://www.auditbureau.org/"
@@ -8280,7 +9915,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/in/the-hindu.svg",
       "logoExplainer": "'The Hindu' masthead — the Chennai-based national daily nameplate.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.thehindu.com/",
         "http://www.auditbureau.org/"
@@ -8308,11 +9942,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/in/the-indian-express.svg",
       "logoExplainer": "'The Indian Express' masthead — the national English daily brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:The Indian Express logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://indianexpress.com/",
         "http://www.auditbureau.org/"
       ]
+    },
+    {
+      "id": "in-hindustan-times",
+      "countryCode": "IN",
+      "name": "Hindustan Times",
+      "englishTranslation": "Hindustan Times",
+      "founded": 1924,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "English",
+      "headquarters": "New Delhi",
+      "owner": {
+        "name": "HT Media (Birla family)",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Major English-language national daily; politics, national affairs, and general news centred on North India and Delhi",
+      "readership": {
+        "metric": "Among India's largest English-language dailies by readership",
+        "source": "https://en.wikipedia.org/wiki/Hindustan_Times"
+      },
+      "revenueModel": "Advertising, subscriptions, and print sales",
+      "sources": [
+        "https://www.hindustantimes.com",
+        "https://en.wikipedia.org/wiki/Hindustan_Times"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "in-dainik-bhaskar",
+      "countryCode": "IN",
+      "name": "Dainik Bhaskar",
+      "englishTranslation": "Daily Sun",
+      "founded": 1958,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "Hindi",
+      "headquarters": "Bhopal, Madhya Pradesh",
+      "owner": {
+        "name": "DB Corp Ltd",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "India's largest Hindi-language general-interest daily group; politics, local and national news across multiple state editions",
+      "readership": {
+        "metric": "Highest-readership Hindi newspaper group in India (IRS / publisher figures)",
+        "source": "https://en.wikipedia.org/wiki/Dainik_Bhaskar"
+      },
+      "revenueModel": "Advertising and print sales",
+      "sources": [
+        "https://www.bhaskar.com",
+        "https://en.wikipedia.org/wiki/Dainik_Bhaskar"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "IQ": [
@@ -8423,6 +10108,31 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://almadapaper.net",
         "https://en.wikipedia.org/wiki/Al-Mada"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "iq-rudaw",
+      "countryCode": "IQ",
+      "name": "Rudaw",
+      "founded": 2013,
+      "language": "Kurdish / English / Arabic",
+      "headquarters": "Erbil",
+      "owner": {
+        "name": "Rudaw Media Network",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Iraqi Kurdish digital newsroom with national/regional general news",
+      "readership": {
+        "metric": "Leading Iraqi Kurdish news brand",
+        "source": "https://en.wikipedia.org/wiki/Rudaw_Media_Network"
+      },
+      "sources": [
+        "https://www.rudaw.net",
+        "https://en.wikipedia.org/wiki/Rudaw_Media_Network"
+      ]
     }
   ],
   "IR": [
@@ -8528,6 +10238,31 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.sharghdaily.com",
         "https://en.wikipedia.org/wiki/Shargh"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ir-hamshahri",
+      "countryCode": "IR",
+      "name": "Hamshahri",
+      "founded": 1992,
+      "language": "Persian",
+      "headquarters": "Tehran",
+      "owner": {
+        "name": "Municipality of Tehran / Hamshahri Institute",
+        "type": "Municipal media"
+      },
+      "editorialStance": "Major Iranian general-interest daily; municipal and national news",
+      "readership": {
+        "metric": "Among Iran's highest-circulation dailies",
+        "source": "https://en.wikipedia.org/wiki/Hamshahri"
+      },
+      "sources": [
+        "https://www.hamshahrionline.ir",
+        "https://en.wikipedia.org/wiki/Hamshahri"
+      ]
     }
   ],
   "IS": [
@@ -8553,7 +10288,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/is/morgunblaðið.svg",
       "logoExplainer": "'Morgunblaðið' masthead — Iceland's historic daily brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Morgunblaðið Logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.mbl.is/",
         "https://www.mbl.is/mm/morgunbladid/"
@@ -8684,7 +10418,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/it/corriere-della-sera.svg",
       "logoExplainer": "Italic serif 'CORRIERE DELLA SERA' — Milan's historic daily masthead from its own site.",
       "licenceNote": "Corriere della Sera masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.corriere.it",
         "https://en.wikipedia.org/wiki/Corriere_della_Sera"
@@ -8713,39 +10446,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/it/la-repubblica.png",
       "logoExplainer": "Black serif 'la Repubblica' wordmark — the Rome daily's familiar lowercase-plus-capital masthead.",
       "licenceNote": "la Repubblica masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.repubblica.it",
         "https://en.wikipedia.org/wiki/La_Repubblica"
-      ]
-    },
-    {
-      "id": "it-il-sole-24-ore",
-      "countryCode": "IT",
-      "name": "Il Sole 24 Ore",
-      "englishTranslation": "The Sun 24 Hours",
-      "founded": 1865,
-      "frequency": "Daily financial newspaper",
-      "format": "Broadsheet (printed on salmon paper) & digital portal",
-      "language": "Italian",
-      "headquarters": "Milan",
-      "owner": {
-        "name": "Confindustria (General Confederation of Italian Industry)",
-        "type": "Industrial federation publishing group"
-      },
-      "editorialStance": "Italy's primary financial daily; business news, economic policy, tax legislation, and financial markets",
-      "readership": {
-        "metric": "Top financial daily in Italy with 140,000 daily print and digital subscribers",
-        "source": "ADS Italy / Confindustria Report 2024"
-      },
-      "revenueModel": "Digital subscriptions, print sales, professional databases, and financial advertising",
-      "logo": "newspaper-logos/it/il-sole-24-ore.svg",
-      "logoExplainer": "'Il Sole' beside a shadowed white '24 ORE' block — Italy's financial daily masthead.",
-      "licenceNote": "Il Sole 24 Ore masthead trademark bundled from Wikimedia Commons (File:Il Sole 24 Ore.svg) for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.ilsole24ore.com",
-        "https://en.wikipedia.org/wiki/Il_Sole_24_Ore"
       ]
     },
     {
@@ -8771,11 +10474,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/it/il-messaggero.svg",
       "logoExplainer": "Blackletter 'Il Messaggero' masthead — the Rome daily's traditional nameplate.",
       "licenceNote": "Il Messaggero masthead trademark bundled from Wikimedia Commons (File:Il Messaggero.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.ilmessaggero.it",
         "https://en.wikipedia.org/wiki/Il_Messaggero"
       ]
+    },
+    {
+      "id": "it-la-stampa",
+      "countryCode": "IT",
+      "name": "La Stampa",
+      "englishTranslation": "The Press",
+      "founded": 1867,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "Italian",
+      "headquarters": "Turin",
+      "owner": {
+        "name": "GEDI Gruppo Editoriale",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Historic national quality daily from Turin; politics, culture, and international affairs",
+      "readership": {
+        "metric": "Among Italy's leading national general-interest dailies",
+        "source": "https://en.wikipedia.org/wiki/La_Stampa"
+      },
+      "revenueModel": "Subscriptions, print sales, and advertising",
+      "sources": [
+        "https://www.lastampa.it",
+        "https://en.wikipedia.org/wiki/La_Stampa"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "it-il-fatto-quotidiano",
+      "countryCode": "IT",
+      "name": "Il Fatto Quotidiano",
+      "englishTranslation": "The Daily Fact",
+      "founded": 2009,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "Italian",
+      "headquarters": "Rome",
+      "owner": {
+        "name": "Editoriale Il Fatto S.p.A.",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Independent investigative daily; politics, justice, and accountability reporting with national reach",
+      "readership": {
+        "metric": "Major national daily by paid circulation and digital audience",
+        "source": "https://en.wikipedia.org/wiki/Il_Fatto_Quotidiano"
+      },
+      "revenueModel": "Subscriptions, print sales, and crowdfunding-style memberships",
+      "sources": [
+        "https://www.ilfattoquotidiano.it",
+        "https://en.wikipedia.org/wiki/Il_Fatto_Quotidiano"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "JM": [
@@ -8877,6 +10631,31 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://jamaica.loopnews.com",
         "https://www.trendmediagroup.com"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "jm-jamaica-star",
+      "countryCode": "JM",
+      "name": "Jamaica Star",
+      "founded": 1951,
+      "language": "English",
+      "headquarters": "Kingston",
+      "owner": {
+        "name": "The Gleaner Company",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Popular Jamaican general-interest daily; news and current affairs",
+      "readership": {
+        "metric": "Major Jamaican daily",
+        "source": "https://en.wikipedia.org/wiki/Jamaica_Star"
+      },
+      "sources": [
+        "http://jamaica-star.com",
+        "https://en.wikipedia.org/wiki/Jamaica_Star"
+      ]
     }
   ],
   "JO": [
@@ -8928,7 +10707,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/jo/jordan-times.svg",
       "logoExplainer": "'Jordan Times' masthead — the Amman English-language daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.jordantimes.com",
         "https://en.wikipedia.org/wiki/The_Jordan_Times"
@@ -8985,6 +10763,31 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.addustour.com",
         "https://en.wikipedia.org/wiki/Addustour"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "jo-ammon",
+      "countryCode": "JO",
+      "name": "Ammon News",
+      "founded": 2006,
+      "language": "Arabic",
+      "headquarters": "Amman",
+      "owner": {
+        "name": "Ammon News",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Jordanian digital general-interest news portal",
+      "readership": {
+        "metric": "Major Jordanian news website",
+        "source": "https://en.wikipedia.org/wiki/Ammon_News"
+      },
+      "sources": [
+        "https://www.ammonnews.net",
+        "https://en.wikipedia.org/wiki/Ammon_News"
+      ]
     }
   ],
   "JP": [
@@ -9011,7 +10814,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/jp/yomiuri-shimbun.png",
       "logoExplainer": "Kanji '讀賣新聞' with a YOL Online lockup — the Yomiuri Shimbun's brand mark from its own site.",
       "licenceNote": "Yomiuri Shimbun masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.yomiuri.co.jp",
         "https://en.wikipedia.org/wiki/Yomiuri_Shimbun"
@@ -9040,41 +10842,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/jp/asahi-shimbun.svg",
       "logoExplainer": "Mincho-style kanji '朝日新聞' wordmark — the Asahi Shimbun's classic masthead from its own site.",
       "licenceNote": "Asahi Shimbun masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.asahi.com",
         "https://en.wikipedia.org/wiki/Asahi_Shimbun"
       ]
     },
     {
-      "id": "jp-nikkei",
+      "id": "jp-mainichi-shimbun",
       "countryCode": "JP",
-      "name": "Nikkei",
-      "officialName": "Nihon Keizai Shimbun",
-      "englishTranslation": "Japan Economics Newspaper",
-      "founded": 1876,
-      "frequency": "Daily morning & evening financial edition",
-      "format": "Broadsheet, digital portal & publisher of Nikkei 225 index",
-      "language": "Japanese, English (Nikkei Asia)",
+      "name": "The Mainichi Shimbun",
+      "englishTranslation": "Daily Newspaper",
+      "founded": 1872,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "Japanese",
       "headquarters": "Tokyo",
       "owner": {
-        "name": "Nikkei Inc. (Owner of Financial Times Group)",
-        "type": "Independent employee-owned media company"
+        "name": "The Mainichi Newspapers Co., Ltd.",
+        "type": "Independent commercial media"
       },
-      "editorialStance": "Japan's premier financial daily newspaper; market-oriented, economic deregulation, global trade, and technology focus",
+      "editorialStance": "One of Japan's three major national dailies; centrist general news, politics, and international affairs",
       "readership": {
-        "metric": "2.4 million daily print circulation and 850,000 paid digital subscribers (Nikkei Digital)",
-        "source": "Nikkei Inc. Corporate Report 2024"
+        "metric": "Among Japan's largest national general-interest dailies by circulation",
+        "source": "https://en.wikipedia.org/wiki/Mainichi_Shimbun"
       },
-      "revenueModel": "Paid digital subscriptions, print subscriptions, index licensing, and corporate advertising",
-      "logo": "newspaper-logos/jp/nikkei.png",
-      "logoExplainer": "Brush-style kanji '日本經濟新聞' masthead — the Nikkei's traditional calligraphic nameplate.",
-      "licenceNote": "Nikkei masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
+      "revenueModel": "Subscriptions, print sales, and advertising",
       "sources": [
-        "https://www.nikkei.com",
-        "https://en.wikipedia.org/wiki/Nihon_Keizai_Shimbun"
-      ]
+        "https://mainichi.jp",
+        "https://en.wikipedia.org/wiki/Mainichi_Shimbun"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "jp-sankei-shimbun",
+      "countryCode": "JP",
+      "name": "The Sankei Shimbun",
+      "englishTranslation": "Industrial and Economic Newspaper",
+      "founded": 1933,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "Japanese",
+      "headquarters": "Tokyo",
+      "owner": {
+        "name": "Sankei Shimbun Co., Ltd. (Fuji Sankei Communications Group)",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "National conservative general-interest daily; politics, society, and international affairs (despite historic name, not a finance-only paper)",
+      "readership": {
+        "metric": "One of Japan's five major national dailies",
+        "source": "https://en.wikipedia.org/wiki/Sankei_Shimbun"
+      },
+      "revenueModel": "Subscriptions, print sales, and advertising",
+      "sources": [
+        "https://www.sankei.com",
+        "https://en.wikipedia.org/wiki/Sankei_Shimbun"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     },
     {
       "id": "jp-japan-times",
@@ -9098,7 +10921,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/jp/japan-times.svg",
       "logoExplainer": "Lowercase 'the japan times' with a red dotted j — the English-language Tokyo daily's wordmark.",
       "licenceNote": "The Japan Times masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.japantimes.co.jp",
         "https://en.wikipedia.org/wiki/The_Japan_Times"
@@ -9132,31 +10954,103 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "ke-business-daily",
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ke-the-standard",
       "countryCode": "KE",
-      "name": "Business Daily Africa",
-      "founded": 2006,
-      "frequency": "Daily financial newspaper",
-      "format": "Compact print & digital business portal",
+      "name": "The Standard",
+      "founded": 1902,
       "language": "English",
       "headquarters": "Nairobi",
       "owner": {
-        "name": "Nation Media Group",
-        "type": "Publicly listed media conglomerate"
+        "name": "Standard Group",
+        "type": "Commercial media group"
       },
-      "editorialStance": "East Africa's premier daily business newspaper; coverage of Nairobi Securities Exchange, macroeconomics, tech start-ups, and corporate law",
+      "editorialStance": "Kenya's oldest newspaper; national politics and general news",
       "readership": {
-        "metric": "Primary business paper read by East African executives, investors, and economic analysts",
-        "source": "Nation Media Group Financial Media Division 2024"
+        "metric": "Major Kenyan national daily",
+        "source": "https://en.wikipedia.org/wiki/The_Standard_(Kenya)"
       },
-      "revenueModel": "Print newsstand sales, corporate subscriptions, and financial advertising",
-      "logo": "newspaper-logos/ke/business-daily.png",
-      "logoExplainer": "'Business Daily' masthead — the Nairobi business daily.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
-        "https://www.businessdailyafrica.com",
-        "https://en.wikipedia.org/wiki/Business_Daily_Africa"
+        "https://www.standardmedia.co.ke",
+        "https://en.wikipedia.org/wiki/The_Standard_(Kenya)"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ke-the-star",
+      "countryCode": "KE",
+      "name": "The Star",
+      "founded": 2007,
+      "language": "English",
+      "headquarters": "Nairobi",
+      "owner": {
+        "name": "Radio Africa Group",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "National general-interest daily; politics and current affairs",
+      "readership": {
+        "metric": "Major Kenyan daily",
+        "source": "https://en.wikipedia.org/wiki/The_Star_(Kenya)"
+      },
+      "sources": [
+        "https://www.the-star.co.ke",
+        "https://en.wikipedia.org/wiki/The_Star_(Kenya)"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ke-people-daily",
+      "countryCode": "KE",
+      "name": "People Daily",
+      "founded": 1998,
+      "language": "English",
+      "headquarters": "Nairobi",
+      "owner": {
+        "name": "Mediamax Network",
+        "type": "Commercial media"
+      },
+      "editorialStance": "National free-to-reader general-interest daily; politics and popular news",
+      "readership": {
+        "metric": "Widely distributed Kenyan daily",
+        "source": "https://en.wikipedia.org/wiki/People_Daily_(Kenya)"
+      },
+      "sources": [
+        "https://www.pd.co.ke",
+        "https://en.wikipedia.org/wiki/People_Daily_(Kenya)"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ke-taifa-leo",
+      "countryCode": "KE",
+      "name": "Taifa Leo",
+      "founded": 1958,
+      "language": "Swahili",
+      "headquarters": "Nairobi",
+      "owner": {
+        "name": "Nation Media Group",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Leading Swahili-language national daily; politics and general news",
+      "readership": {
+        "metric": "Principal Swahili daily in Kenya",
+        "source": "https://en.wikipedia.org/wiki/Taifa_Leo"
+      },
+      "sources": [
+        "https://taifaleo.nation.africa",
+        "https://en.wikipedia.org/wiki/Taifa_Leo"
       ]
     }
   ],
@@ -9209,6 +11103,78 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://kaktus.media"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "kg-24-kg",
+      "name": "24.kg",
+      "founded": 2000,
+      "language": "Russian / Kyrgyz",
+      "headquarters": "Bishkek",
+      "countryCode": "KG",
+      "owner": {
+        "name": "24.kg",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Kyrgyz digital general-interest news portal",
+      "readership": {
+        "metric": "Major Kyrgyzstan news website",
+        "source": "https://24.kg"
+      },
+      "sources": [
+        "https://24.kg"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "kg-azattyk",
+      "name": "Azattyk (RFE/RL Kyrgyz)",
+      "founded": 1953,
+      "language": "Kyrgyz / Russian",
+      "headquarters": "Prague / Bishkek",
+      "countryCode": "KG",
+      "owner": {
+        "name": "RFE/RL",
+        "type": "Public international media"
+      },
+      "editorialStance": "Major Kyrgyz-language digital newsroom",
+      "readership": {
+        "metric": "Leading independent Kyrgyz news brand",
+        "source": "https://www.azattyk.org"
+      },
+      "sources": [
+        "https://www.azattyk.org"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "kg-akipress",
+      "name": "AKIPress",
+      "founded": 2000,
+      "language": "Russian / Kyrgyz / English",
+      "headquarters": "Bishkek",
+      "countryCode": "KG",
+      "owner": {
+        "name": "AKIPress",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Major Kyrgyz digital news agency/portal; general news",
+      "readership": {
+        "metric": "Major Kyrgyzstan news brand",
+        "source": "https://akipress.com"
+      },
+      "sources": [
+        "https://akipress.com"
       ]
     }
   ],
@@ -9313,6 +11279,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://kohsantepheapdaily.com.kh",
         "https://en.wikipedia.org/wiki/Koh_Santepheap_Daily"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "kh-cambodianess",
+      "countryCode": "KH",
+      "name": "Cambodianess / Thmey Thmey",
+      "founded": 2012,
+      "language": "Khmer / English",
+      "headquarters": "Phnom Penh",
+      "owner": {
+        "name": "Thmey Thmey",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Cambodian digital general-interest news portal",
+      "readership": {
+        "metric": "Major Cambodian news website",
+        "source": "https://thmeythmey.com"
+      },
+      "sources": [
+        "https://thmeythmey.com"
       ]
     }
   ],
@@ -9663,6 +11653,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.sknvibes.com",
         "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
       ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "kn-ziz-online",
+      "countryCode": "KN",
+      "name": "ZIZ Online",
+      "founded": 1980,
+      "language": "English",
+      "headquarters": "Basseterre",
+      "owner": {
+        "name": "ZIZ Broadcasting digital newsroom",
+        "type": "Public media"
+      },
+      "editorialStance": "Saint Kitts and Nevis public digital general-interest newsroom",
+      "readership": {
+        "metric": "National SKN news brand",
+        "source": "https://www.zizonline.com"
+      },
+      "sources": [
+        "https://www.zizonline.com"
+      ]
     }
   ],
   "KP": [
@@ -9752,7 +11766,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/kr/chosun-ilbo.svg",
       "logoExplainer": "Calligraphic Hanja masthead 朝鮮日報 — the Chosun Ilbo brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Chosun IIbo Logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.chosun.com",
         "https://en.wikipedia.org/wiki/The_Chosun_Ilbo"
@@ -9782,7 +11795,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/kr/joongang-ilbo.png",
       "logoExplainer": "Hangul '중앙일보' masthead — the JoongAng Ilbo brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.joongang.co.kr",
         "https://koreajoongangdaily.joins.com",
@@ -9813,7 +11825,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/kr/donga-ilbo.svg",
       "logoExplainer": "Hangul '동아일보' masthead — the Dong-a Ilbo brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Dong-a Ilbo logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.donga.com",
         "https://en.wikipedia.org/wiki/The_Dong-a_Ilbo"
@@ -9843,12 +11854,37 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/kr/hankyoreh.svg",
       "logoExplainer": "Hangul '한겨레' masthead — The Hankyoreh brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Hankyoreh.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.hani.co.kr",
         "https://english.hani.co.kr",
         "https://en.wikipedia.org/wiki/The_Hankyoreh"
       ]
+    },
+    {
+      "id": "kr-kyunghyang",
+      "countryCode": "KR",
+      "name": "The Kyunghyang Shinmun",
+      "englishTranslation": "Kyunghyang Newspaper",
+      "founded": 1946,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "Korean",
+      "headquarters": "Seoul",
+      "owner": {
+        "name": "Kyunghyang Shinmun Co.",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Centrist-to-progressive national daily; politics and general news",
+      "readership": {
+        "metric": "Major national general-interest daily",
+        "source": "https://en.wikipedia.org/wiki/Kyunghyang_Shinmun"
+      },
+      "revenueModel": "Subscriptions and advertising",
+      "sources": [
+        "https://www.khan.co.kr",
+        "https://en.wikipedia.org/wiki/Kyunghyang_Shinmun"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "KW": [
@@ -9875,7 +11911,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/kw/al-qabas.png",
       "logoExplainer": "Arabic 'القبس' masthead — Al-Qabas brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.alqabas.com",
         "https://en.wikipedia.org/wiki/Al-Qabas"
@@ -9955,10 +11990,34 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/kw/kuwait-times.png",
       "logoExplainer": "'Kuwait Times' masthead — the Kuwait City English daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.kuwaittimes.com",
         "https://en.wikipedia.org/wiki/Kuwait_Times"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "kw-arab-times",
+      "countryCode": "KW",
+      "name": "Arab Times",
+      "founded": 1977,
+      "language": "English",
+      "headquarters": "Kuwait City",
+      "owner": {
+        "name": "Arab Times",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Kuwaiti English-language general-interest daily",
+      "readership": {
+        "metric": "Major Kuwaiti English daily",
+        "source": "https://en.wikipedia.org/wiki/Arab_Times_(Kuwait)"
+      },
+      "sources": [
+        "https://www.arabtimesonline.com",
+        "https://en.wikipedia.org/wiki/Arab_Times_(Kuwait)"
       ]
     }
   ],
@@ -10036,6 +12095,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://vlast.kz",
         "https://en.wikipedia.org/wiki/Vlast_(magazine)"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "kz-zakon",
+      "name": "Zakon.kz",
+      "founded": 2002,
+      "language": "Russian / Kazakh",
+      "headquarters": "Almaty",
+      "countryCode": "KZ",
+      "owner": {
+        "name": "Zakon.kz",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Leading Kazakh digital general-interest news portal",
+      "readership": {
+        "metric": "Major Kazakhstan news website",
+        "source": "https://www.zakon.kz"
+      },
+      "sources": [
+        "https://www.zakon.kz"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "kz-azattyq",
+      "name": "Azattyq (RFE/RL Kazakh)",
+      "founded": 1953,
+      "language": "Kazakh / Russian",
+      "headquarters": "Prague / Almaty",
+      "countryCode": "KZ",
+      "owner": {
+        "name": "RFE/RL",
+        "type": "Public international media"
+      },
+      "editorialStance": "Major Kazakh-language digital newsroom; politics and current affairs",
+      "readership": {
+        "metric": "Leading independent Kazakh news brand",
+        "source": "https://www.azattyq.org"
+      },
+      "sources": [
+        "https://www.azattyq.org"
       ]
     }
   ],
@@ -10146,6 +12253,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.lerenovateur.org.la",
         "https://en.wikipedia.org/wiki/Media_of_Laos"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "la-kpl",
+      "name": "KPL Lao News",
+      "founded": 1968,
+      "language": "Lao / English",
+      "headquarters": "Vientiane",
+      "countryCode": "LA",
+      "owner": {
+        "name": "Khaosan Pathet Lao",
+        "type": "State news service digital"
+      },
+      "editorialStance": "Lao national digital news portal; politics and general news",
+      "readership": {
+        "metric": "Official Lao national news brand",
+        "source": "https://kpl.gov.la"
+      },
+      "sources": [
+        "https://kpl.gov.la"
+      ]
     }
   ],
   "LB": [
@@ -10224,7 +12355,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/lb/al-joumhouria.png",
       "logoExplainer": "Arabic 'الجمهورية' masthead — Al-Joumhouria brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Newaljoumhouria.png) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.aljoumhouria.com",
         "https://en.wikipedia.org/wiki/Al-Joumhouria"
@@ -10252,10 +12382,34 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/lb/naharnet.png",
       "logoExplainer": "'Naharnet' wordmark — Lebanon's digital news brand.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.naharnet.com",
         "https://en.wikipedia.org/wiki/Naharnet"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "lb-al-akhbar",
+      "countryCode": "LB",
+      "name": "Al-Akhbar",
+      "founded": 2006,
+      "language": "Arabic",
+      "headquarters": "Beirut",
+      "owner": {
+        "name": "Al-Akhbar",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Lebanese general-interest daily; politics and current affairs",
+      "readership": {
+        "metric": "Major Lebanese Arabic daily",
+        "source": "https://en.wikipedia.org/wiki/Al-Akhbar_(Lebanon)"
+      },
+      "sources": [
+        "https://al-akhbar.com",
+        "https://en.wikipedia.org/wiki/Al-Akhbar_(Lebanon)"
       ]
     }
   ],
@@ -10285,6 +12439,79 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://stluciatimes.com",
         "https://en.wikipedia.org/wiki/Saint_Lucia"
+      ]
+    },
+    {
+      "frequency": "Newspaper & digital",
+      "format": "Print & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "lc-the-voice",
+      "countryCode": "LC",
+      "name": "The Voice St Lucia",
+      "founded": 1885,
+      "language": "English",
+      "headquarters": "Castries",
+      "owner": {
+        "name": "The Voice Publishing",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Historic Saint Lucian general-interest newspaper",
+      "readership": {
+        "metric": "Historic St Lucia newspaper",
+        "source": "https://en.wikipedia.org/wiki/The_Voice_(Saint_Lucia)"
+      },
+      "sources": [
+        "https://www.thevoiceslu.com",
+        "https://en.wikipedia.org/wiki/The_Voice_(Saint_Lucia)"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "lc-stlucia-news-online",
+      "countryCode": "LC",
+      "name": "St Lucia News Online",
+      "founded": 2010,
+      "language": "English",
+      "headquarters": "Castries",
+      "owner": {
+        "name": "St Lucia News Online",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Saint Lucian digital general-interest news portal",
+      "readership": {
+        "metric": "Major St Lucia news website",
+        "source": "https://www.stlucianewsonline.com"
+      },
+      "sources": [
+        "https://www.stlucianewsonline.com"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "lc-loop",
+      "countryCode": "LC",
+      "name": "Loop St Lucia",
+      "founded": 2015,
+      "language": "English",
+      "headquarters": "Castries",
+      "owner": {
+        "name": "Loop Caribbean",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Saint Lucian digital general-interest news portal",
+      "readership": {
+        "metric": "Major St Lucia news website",
+        "source": "https://stlucia.loopnews.com"
+      },
+      "sources": [
+        "https://stlucia.loopnews.com"
       ]
     }
   ],
@@ -10346,6 +12573,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://commons.wikimedia.org/wiki/File:Liechtensteiner_Volksblatt_Logo_2015.svg"
       ],
       "licenceNote": "Historical Liechtensteiner Volksblatt masthead bundled for educational reference in Learn mode."
+    },
+    {
+      "frequency": "Weekly newspaper",
+      "format": "Print & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "li-liezeit",
+      "countryCode": "LI",
+      "name": "Lie:Zeit",
+      "founded": 2010,
+      "language": "German",
+      "headquarters": "Vaduz",
+      "owner": {
+        "name": "Lie:Zeit",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Liechtenstein general-interest weekly; politics and society",
+      "readership": {
+        "metric": "Liechtenstein weekly newspaper",
+        "source": "https://www.lie-zeit.li"
+      },
+      "sources": [
+        "https://www.lie-zeit.li"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "li-1fl-tv-news",
+      "name": "1FL News digital",
+      "founded": 2008,
+      "language": "German",
+      "headquarters": "Schaan",
+      "countryCode": "LI",
+      "owner": {
+        "name": "1FL digital newsroom",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Liechtenstein digital general-interest news portal",
+      "readership": {
+        "metric": "Liechtenstein news website",
+        "source": "https://www.1fl.li"
+      },
+      "sources": [
+        "https://www.1fl.li"
+      ]
     }
   ],
   "LK": [
@@ -10371,7 +12646,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/lk/daily-mirror.png",
       "logoExplainer": "'Daily Mirror' masthead — Sri Lanka's English daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.dailymirror.lk",
         "https://en.wikipedia.org/wiki/Daily_Mirror_(Sri_Lanka)"
@@ -10430,7 +12704,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/lk/lankadeepa.jpg",
       "logoExplainer": "Sinhala 'ලංකාදීප' / Lankadeepa masthead.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.lankadeepa.lk",
         "https://en.wikipedia.org/wiki/Lankadeepa_(newspaper)"
@@ -10460,7 +12733,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/lk/ada-derana.png",
       "logoExplainer": "'Ada Derana' wordmark — Sri Lanka's news brand.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.adaderana.lk",
         "https://en.wikipedia.org/wiki/Ada_Derana"
@@ -10593,6 +12865,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://analystliberiaonline.com"
       ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "lr-bush-chicken",
+      "name": "Bush Chicken",
+      "founded": 2013,
+      "language": "English",
+      "headquarters": "Monrovia",
+      "countryCode": "LR",
+      "owner": {
+        "name": "Bush Chicken",
+        "type": "Independent media"
+      },
+      "editorialStance": "Liberian digital general-interest news portal; politics and current affairs",
+      "readership": {
+        "metric": "Major Liberian news website",
+        "source": "https://bushchicken.com"
+      },
+      "sources": [
+        "https://bushchicken.com"
+      ]
     }
   ],
   "LS": [
@@ -10693,6 +12989,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.thepost.co.ls"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "ls-informative",
+      "name": "Informative",
+      "founded": 2010,
+      "language": "English",
+      "headquarters": "Maseru",
+      "countryCode": "LS",
+      "owner": {
+        "name": "Informative",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Lesotho digital general-interest news portal",
+      "readership": {
+        "metric": "Lesotho news website",
+        "source": "https://www.theinformative.co.ls"
+      },
+      "sources": [
+        "https://www.lenareporter.com"
+      ]
     }
   ],
   "LT": [
@@ -10743,7 +13063,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/lt/delfi.svg",
       "logoExplainer": "'Delfi' wordmark — the Lithuanian digital news brand.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.delfi.lt",
         "https://en.wikipedia.org/wiki/Delfi_(web_portal)"
@@ -10773,10 +13092,57 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/lt/lietuvos-rytas.svg",
       "logoExplainer": "'Lietuvos rytas' masthead — the Vilnius daily brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:LietuvosRytas.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.lrytas.lt",
         "https://lt.wikipedia.org/wiki/Lietuvos_rytas"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "lt-lrt-news",
+      "countryCode": "LT",
+      "name": "LRT.lt News",
+      "founded": 1926,
+      "language": "Lithuanian",
+      "headquarters": "Vilnius",
+      "owner": {
+        "name": "Lithuanian National Radio and Television",
+        "type": "Public media"
+      },
+      "editorialStance": "National public digital newsroom; politics and general news",
+      "readership": {
+        "metric": "Major Lithuanian public news website",
+        "source": "https://www.lrt.lt"
+      },
+      "sources": [
+        "https://www.lrt.lt"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "lt-lrytas",
+      "countryCode": "LT",
+      "name": "Lrytas.lt",
+      "founded": 2005,
+      "language": "Lithuanian",
+      "headquarters": "Vilnius",
+      "owner": {
+        "name": "Lietuvos rytas group",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Lithuanian digital general-interest news portal",
+      "readership": {
+        "metric": "Leading Lithuanian news website",
+        "source": "https://www.lrytas.lt"
+      },
+      "sources": [
+        "https://www.lrytas.lt"
       ]
     }
   ],
@@ -10805,7 +13171,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/lu/luxemburger-wort.svg",
       "logoExplainer": "'Luxemburger Wort' masthead — Luxembourg's leading daily.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Luxemburger Wort (logo).svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.wort.lu",
         "https://en.wikipedia.org/wiki/Luxemburger_Wort"
@@ -10835,7 +13200,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/lu/tageblatt.svg",
       "logoExplainer": "'Tageblatt' masthead — the Luxembourg German-language daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.tageblatt.lu",
         "https://en.wikipedia.org/wiki/Tageblatt"
@@ -10865,7 +13229,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/lu/l-essentiel.svg",
       "logoExplainer": "Bold 'L'essentiel' wordmark — Luxembourg's free daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.lessentiel.lu",
         "https://fr.wikipedia.org/wiki/L%27essentiel_(Luxembourg)"
@@ -10895,10 +13258,33 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/lu/le-quotidien.svg",
       "logoExplainer": "'Le Quotidien' masthead — the Luxembourg French-language daily.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Le Quotidien logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://lequotidien.lu",
         "https://fr.wikipedia.org/wiki/Le_Quotidien_(Luxembourg)"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "lu-reporter",
+      "countryCode": "LU",
+      "name": "Reporter.lu",
+      "founded": 2012,
+      "language": "German / French / English",
+      "headquarters": "Luxembourg City",
+      "owner": {
+        "name": "Reporter.lu",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Independent Luxembourgish digital newsroom; politics and investigation",
+      "readership": {
+        "metric": "Major Luxembourg digital news brand",
+        "source": "https://www.reporter.lu"
+      },
+      "sources": [
+        "https://www.reporter.lu"
       ]
     }
   ],
@@ -10926,7 +13312,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/lv/diena.svg",
       "logoExplainer": "'Diena' masthead — Latvia's national daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.diena.lv",
         "https://en.wikipedia.org/wiki/Diena"
@@ -10954,7 +13339,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/lv/delfi.svg",
       "logoExplainer": "'Delfi' wordmark — the Baltic digital news brand (Latvia).",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.delfi.lv",
         "https://en.wikipedia.org/wiki/Delfi_(web_portal)"
@@ -10984,6 +13368,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.la.lv",
         "https://en.wikipedia.org/wiki/Latvijas_Avīze"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "lv-lsm",
+      "countryCode": "LV",
+      "name": "LSM.lv",
+      "founded": 2013,
+      "language": "Latvian / Russian / English",
+      "headquarters": "Riga",
+      "owner": {
+        "name": "Latvian Public Media",
+        "type": "Public media"
+      },
+      "editorialStance": "National public digital newsroom; politics and general news",
+      "readership": {
+        "metric": "Major Latvian public news website",
+        "source": "https://www.lsm.lv"
+      },
+      "sources": [
+        "https://www.lsm.lv"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "lv-tvnet",
+      "countryCode": "LV",
+      "name": "Tvnet.lv",
+      "founded": 1999,
+      "language": "Latvian / Russian",
+      "headquarters": "Riga",
+      "owner": {
+        "name": "Ekspress Grupp",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Leading Latvian digital general-interest news portal",
+      "readership": {
+        "metric": "Among Latvia's most-visited news sites",
+        "source": "https://www.tvnet.lv"
+      },
+      "sources": [
+        "https://www.tvnet.lv"
       ]
     }
   ],
@@ -11088,6 +13520,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://febrayer.ly"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "ly-lanews",
+      "name": "Libya Al-Ahrar News digital",
+      "founded": 2011,
+      "language": "Arabic",
+      "headquarters": "Doha / Tripoli",
+      "countryCode": "LY",
+      "owner": {
+        "name": "Libya Al-Ahrar",
+        "type": "Independent media"
+      },
+      "editorialStance": "Major Libyan digital general-interest newsroom",
+      "readership": {
+        "metric": "Major Libyan news brand",
+        "source": "https://www.libyaalahrar.tv"
+      },
+      "sources": [
+        "https://www.libyaalahrar.tv"
+      ]
     }
   ],
   "MA": [
@@ -11115,7 +13571,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ma/hespress.jpg",
       "logoExplainer": "'Hespress' wordmark — Morocco's leading digital news brand.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.hespress.com",
         "https://fr.wikipedia.org/wiki/Hespress"
@@ -11145,7 +13600,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ma/le-matin.png",
       "logoExplainer": "'Le Matin' masthead — the Casablanca French-language daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://lematin.ma",
         "https://fr.wikipedia.org/wiki/Le_Matin_(Maroc)"
@@ -11174,6 +13628,55 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://fr.le360.ma",
         "https://ar.le360.ma"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ma-medias24",
+      "countryCode": "MA",
+      "name": "Médias24",
+      "founded": 2013,
+      "language": "French",
+      "headquarters": "Casablanca",
+      "owner": {
+        "name": "Médias24",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Moroccan digital newsroom with broad politics and economy-as-news coverage (general portal, not a finance-only paper)",
+      "readership": {
+        "metric": "Major Moroccan French-language news site",
+        "source": "https://medias24.com"
+      },
+      "sources": [
+        "https://medias24.com"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ma-assabah",
+      "countryCode": "MA",
+      "name": "Assabah",
+      "founded": 2000,
+      "language": "Arabic",
+      "headquarters": "Casablanca",
+      "owner": {
+        "name": "Groupe Eco-Médias",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Moroccan Arabic general-interest daily",
+      "readership": {
+        "metric": "Leading Moroccan Arabic daily",
+        "source": "https://en.wikipedia.org/wiki/Assabah"
+      },
+      "sources": [
+        "https://assabah.ma",
+        "https://en.wikipedia.org/wiki/Assabah"
       ]
     }
   ],
@@ -11205,6 +13708,103 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://commons.wikimedia.org/wiki/File:Logo_Monaco-Matin.svg"
       ],
       "licenceNote": "Monaco-Matin masthead trademark bundled from Groupe Nice-Matin brand assets for educational reference in Learn mode."
+    },
+    {
+      "frequency": "Weekly newspaper",
+      "format": "Print & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "mc-monaco-hebdo",
+      "countryCode": "MC",
+      "name": "Monaco Hebdo",
+      "founded": 1987,
+      "language": "French",
+      "headquarters": "Monaco",
+      "owner": {
+        "name": "Monaco Hebdo",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Monegasque general-interest weekly; politics and society",
+      "readership": {
+        "metric": "Principal Monaco weekly",
+        "source": "https://www.monaco-hebdo.com"
+      },
+      "sources": [
+        "https://www.monaco-hebdo.com"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "mc-nice-matin-monaco",
+      "countryCode": "MC",
+      "name": "Nice-Matin (Monaco coverage)",
+      "founded": 1944,
+      "language": "French",
+      "headquarters": "Nice / Monaco desk",
+      "owner": {
+        "name": "Nice-Matin Group",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Regional daily providing principal daily press coverage for Monaco",
+      "readership": {
+        "metric": "Leading regional daily serving Monaco",
+        "source": "https://en.wikipedia.org/wiki/Nice-Matin"
+      },
+      "sources": [
+        "https://www.nicematin.com",
+        "https://en.wikipedia.org/wiki/Nice-Matin"
+      ]
+    },
+    {
+      "frequency": "Monthly / digital",
+      "format": "Print & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "mc-observateur-monaco",
+      "countryCode": "MC",
+      "name": "L'Observateur de Monaco",
+      "founded": 2005,
+      "language": "French",
+      "headquarters": "Monaco",
+      "owner": {
+        "name": "L'Observateur de Monaco",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Monegasque general-interest magazine/news title; politics and society",
+      "readership": {
+        "metric": "Established Monaco news title",
+        "source": "https://www.lobservateurdemonaco.mc"
+      },
+      "sources": [
+        "https://www.lobservateurdemonaco.mc"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "mc-monacolive",
+      "countryCode": "MC",
+      "name": "Monaco Live",
+      "founded": 2015,
+      "language": "French",
+      "headquarters": "Monaco",
+      "owner": {
+        "name": "Monaco Live",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Monegasque digital general-interest news portal",
+      "readership": {
+        "metric": "Monaco digital news brand",
+        "source": "https://www.monacolive.mc"
+      },
+      "sources": [
+        "https://www.monacolive.mc"
+      ]
     }
   ],
   "MD": [
@@ -11257,6 +13857,78 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://point.md"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "md-protv",
+      "name": "Agora.md",
+      "founded": 2010,
+      "language": "Romanian",
+      "headquarters": "Chișinău",
+      "countryCode": "MD",
+      "owner": {
+        "name": "Agora.md",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Moldovan digital general-interest news portal",
+      "readership": {
+        "metric": "Major Moldova news website",
+        "source": "https://agora.md"
+      },
+      "sources": [
+        "https://agora.md"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "md-newsmaker",
+      "name": "NewsMaker",
+      "founded": 2014,
+      "language": "Russian / Romanian",
+      "headquarters": "Chișinău",
+      "countryCode": "MD",
+      "owner": {
+        "name": "NewsMaker",
+        "type": "Independent media"
+      },
+      "editorialStance": "Independent Moldovan digital newsroom; politics and investigation",
+      "readership": {
+        "metric": "Major Moldovan independent news brand",
+        "source": "https://newsmaker.md"
+      },
+      "sources": [
+        "https://newsmaker.md"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "md-tv8",
+      "name": "TV8.md News",
+      "founded": 2011,
+      "language": "Romanian",
+      "headquarters": "Chișinău",
+      "countryCode": "MD",
+      "owner": {
+        "name": "TV8",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Moldovan digital general-interest newsroom",
+      "readership": {
+        "metric": "Major Moldova news website",
+        "source": "https://tv8.md"
+      },
+      "sources": [
+        "https://tv8.md"
       ]
     }
   ],
@@ -11340,6 +14012,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.dan.co.me",
         "https://en.wikipedia.org/wiki/Dan_(newspaper)"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "me-cdm",
+      "countryCode": "ME",
+      "name": "CdM (Cafe del Montenegro)",
+      "founded": 2010,
+      "language": "Montenegrin",
+      "headquarters": "Podgorica",
+      "owner": {
+        "name": "CdM",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Montenegrin digital general-interest news portal",
+      "readership": {
+        "metric": "Major Montenegrin news website",
+        "source": "https://www.cdm.me"
+      },
+      "sources": [
+        "https://www.cdm.me"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "me-rtcng-news",
+      "countryCode": "ME",
+      "name": "Portal Analitika",
+      "founded": 2010,
+      "language": "Montenegrin",
+      "headquarters": "Podgorica",
+      "owner": {
+        "name": "Analitika",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Montenegrin digital news portal; politics and current affairs",
+      "readership": {
+        "metric": "Established Montenegrin news website",
+        "source": "https://www.analitika.me"
+      },
+      "sources": [
+        "https://www.analitika.me"
       ]
     }
   ],
@@ -11449,6 +14169,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.madagascar-tribune.com",
         "https://fr.wikipedia.org/wiki/Madagascar_Tribune"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "mg-newsmada",
+      "name": "NewsMada",
+      "founded": 2010,
+      "language": "French",
+      "headquarters": "Antananarivo",
+      "countryCode": "MG",
+      "owner": {
+        "name": "NewsMada",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Malagasy digital general-interest news portal",
+      "readership": {
+        "metric": "Major Madagascar news website",
+        "source": "https://www.newsmada.com"
+      },
+      "sources": [
+        "https://www.newsmada.com"
       ]
     }
   ],
@@ -11561,6 +14305,55 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.koha.mk"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "mk-sloboden-pecat",
+      "countryCode": "MK",
+      "name": "Sloboden Pečat",
+      "founded": 2013,
+      "language": "Macedonian",
+      "headquarters": "Skopje",
+      "owner": {
+        "name": "Sloboden Pečat",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Major Macedonian general-interest daily",
+      "readership": {
+        "metric": "Leading Macedonian daily",
+        "source": "https://en.wikipedia.org/wiki/Sloboden_Pečat"
+      },
+      "sources": [
+        "https://www.slobodenpecat.mk",
+        "https://en.wikipedia.org/wiki/Sloboden_Pečat"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "mk-sakam-da-kazam",
+      "countryCode": "MK",
+      "name": "Sakam da kažam (SDK.mk)",
+      "founded": 2014,
+      "language": "Macedonian",
+      "headquarters": "Skopje",
+      "owner": {
+        "name": "SDK",
+        "type": "Independent media"
+      },
+      "editorialStance": "Leading Macedonian digital news portal; politics and investigation",
+      "readership": {
+        "metric": "Major Macedonian news website",
+        "source": "https://sdk.mk"
+      },
+      "sources": [
+        "https://sdk.mk"
+      ]
     }
   ],
   "ML": [
@@ -11636,6 +14429,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://malijet.com"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ml-studio-tamani",
+      "countryCode": "ML",
+      "name": "Studio Tamani",
+      "founded": 2013,
+      "language": "French / Bambara",
+      "headquarters": "Bamako",
+      "owner": {
+        "name": "Fondation Hirondelle / Studio Tamani",
+        "type": "Independent media"
+      },
+      "editorialStance": "Malian digital general-interest newsroom; politics and current affairs",
+      "readership": {
+        "metric": "Major Malian news brand",
+        "source": "https://www.studiotamani.org"
+      },
+      "sources": [
+        "https://www.studiotamani.org"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ml-aBamako",
+      "countryCode": "ML",
+      "name": "aBamako.com",
+      "founded": 2005,
+      "language": "French",
+      "headquarters": "Bamako",
+      "owner": {
+        "name": "aBamako",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Malian digital general-interest news portal",
+      "readership": {
+        "metric": "Major Mali news website",
+        "source": "https://news.abamako.com"
+      },
+      "sources": [
+        "https://news.abamako.com"
       ]
     }
   ],
@@ -11720,6 +14561,56 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.mizzima.com",
         "https://en.wikipedia.org/wiki/Mizzima_News"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "mm-eleven-media",
+      "countryCode": "MM",
+      "name": "Eleven Media",
+      "founded": 2000,
+      "language": "Burmese / English",
+      "headquarters": "Yangon",
+      "owner": {
+        "name": "Eleven Media Group",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Major Myanmar digital newsroom; politics and general news",
+      "readership": {
+        "metric": "Leading Myanmar news brand",
+        "source": "https://en.wikipedia.org/wiki/Eleven_Media_Group"
+      },
+      "sources": [
+        "https://elevenmyanmar.com",
+        "https://en.wikipedia.org/wiki/Eleven_Media_Group"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "mm-democratic-voice",
+      "countryCode": "MM",
+      "name": "Democratic Voice of Burma (DVB)",
+      "founded": 1992,
+      "language": "Burmese / English",
+      "headquarters": "Oslo / digital",
+      "owner": {
+        "name": "DVB",
+        "type": "Independent media"
+      },
+      "editorialStance": "Independent Myanmar digital newsroom; politics and current affairs",
+      "readership": {
+        "metric": "Major Myanmar exile/independent news brand",
+        "source": "https://en.wikipedia.org/wiki/Democratic_Voice_of_Burma"
+      },
+      "sources": [
+        "https://www.dvb.no",
+        "https://en.wikipedia.org/wiki/Democratic_Voice_of_Burma"
+      ]
     }
   ],
   "MN": [
@@ -11796,6 +14687,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://gogo.mn"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "mn-montsame",
+      "name": "Montsame",
+      "founded": 1921,
+      "language": "Mongolian / English",
+      "headquarters": "Ulaanbaatar",
+      "countryCode": "MN",
+      "owner": {
+        "name": "Montsame National News Agency",
+        "type": "State news service digital"
+      },
+      "editorialStance": "Official Mongolian national digital news portal",
+      "readership": {
+        "metric": "Official Mongolia news brand",
+        "source": "https://www.montsame.mn"
+      },
+      "sources": [
+        "https://www.montsame.mn"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "mn-news-mn",
+      "name": "News.mn",
+      "founded": 2005,
+      "language": "Mongolian",
+      "headquarters": "Ulaanbaatar",
+      "countryCode": "MN",
+      "owner": {
+        "name": "News.mn",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Mongolian digital general-interest news portal",
+      "readership": {
+        "metric": "Leading Mongolian news website",
+        "source": "https://news.mn"
+      },
+      "sources": [
+        "https://news.mn"
       ]
     }
   ],
@@ -11983,6 +14922,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://talk.mt",
         "https://en.wikipedia.org/wiki/L-Orizzont"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "mt-newsbook",
+      "countryCode": "MT",
+      "name": "Newsbook",
+      "founded": 2011,
+      "language": "English / Maltese",
+      "headquarters": "Blata l-Bajda",
+      "owner": {
+        "name": "Media.link Communications / Church media",
+        "type": "Independent media"
+      },
+      "editorialStance": "Maltese digital general-interest news portal",
+      "readership": {
+        "metric": "Major Maltese news website",
+        "source": "https://newsbook.com.mt"
+      },
+      "sources": [
+        "https://newsbook.com.mt"
+      ]
     }
   ],
   "MU": [
@@ -12082,6 +15045,31 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
         "https://ionnews.mu"
+      ]
+    },
+    {
+      "frequency": "Weekly newspaper",
+      "format": "Print & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "mu-mauritius-times",
+      "name": "Mauritius Times",
+      "founded": 1954,
+      "language": "English",
+      "headquarters": "Port Louis",
+      "countryCode": "MU",
+      "owner": {
+        "name": "Mauritius Times",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Historic Mauritian general-interest weekly; politics and society",
+      "readership": {
+        "metric": "Established Mauritian weekly",
+        "source": "https://en.wikipedia.org/wiki/Mauritius_Times"
+      },
+      "sources": [
+        "https://www.mauritiustimes.com",
+        "https://en.wikipedia.org/wiki/Mauritius_Times"
       ]
     }
   ],
@@ -12188,6 +15176,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://edition.mv"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "mv-psm-news",
+      "name": "PSM News",
+      "founded": 2015,
+      "language": "Dhivehi / English",
+      "headquarters": "Malé",
+      "countryCode": "MV",
+      "owner": {
+        "name": "Public Service Media",
+        "type": "Public media"
+      },
+      "editorialStance": "Maldivian public digital newsroom; politics and general news",
+      "readership": {
+        "metric": "Major Maldivian public news website",
+        "source": "https://psmnews.mv"
+      },
+      "sources": [
+        "https://psmnews.mv"
+      ]
     }
   ],
   "MW": [
@@ -12289,6 +15301,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.nyasatimes.com",
         "https://en.wikipedia.org/wiki/Nyasa_Times"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "mw-mana",
+      "name": "Mana Online",
+      "founded": 2010,
+      "language": "English",
+      "headquarters": "Lilongwe",
+      "countryCode": "MW",
+      "owner": {
+        "name": "Malawi News Agency digital",
+        "type": "State news service digital"
+      },
+      "editorialStance": "Malawi national digital news portal",
+      "readership": {
+        "metric": "National Malawi news brand",
+        "source": "https://www.manaonline.gov.mw"
+      },
+      "sources": [
+        "https://www.manaonline.gov.mw"
+      ]
     }
   ],
   "MX": [
@@ -12314,7 +15350,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/mx/el-universal.svg",
       "logoExplainer": "Burgundy serif 'EL UNIVERSAL' — Mexico City's historic daily masthead.",
       "licenceNote": "El Universal masthead trademark bundled from Wikimedia Commons (File:Logo El Universal 2021.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.eluniversal.com.mx",
         "https://es.wikipedia.org/wiki/El_Universal_(M%C3%A9xico)"
@@ -12342,7 +15377,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/mx/reforma.png",
       "logoExplainer": "White slab-serif 'REFORMA' on a green bar — the Mexico City daily's brand masthead.",
       "licenceNote": "Reforma masthead trademark bundled from Wikimedia Commons (File:Logo REFORMA (México).png) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.reforma.com",
         "https://en.wikipedia.org/wiki/Reforma_(newspaper)"
@@ -12370,39 +15404,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/mx/la-jornada.webp",
       "logoExplainer": "Joined 'LaJornada' wordmark — Mexico City's left-leaning daily masthead from its own site.",
       "licenceNote": "La Jornada masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.jornada.com.mx",
         "https://es.wikipedia.org/wiki/La_Jornada"
       ]
     },
     {
-      "id": "mx-el-financiero",
+      "id": "mx-milenio",
       "countryCode": "MX",
-      "name": "El Financiero",
-      "founded": 1981,
-      "frequency": "Daily financial newspaper & television channel",
-      "format": "Broadsheet, digital portal & cable TV (Bloomberg tie-up)",
+      "name": "Milenio",
+      "englishTranslation": "Millennium",
+      "founded": 2000,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
       "language": "Spanish",
       "headquarters": "Mexico City",
       "owner": {
-        "name": "Grupo Multimedia Lauman",
-        "type": "Independent commercial financial media"
+        "name": "Grupo Multimedios",
+        "type": "Commercial media group"
       },
-      "editorialStance": "Mexico's premier financial and economic daily; in partnership with Bloomberg, delivering market analytics, macroeconomic forecasts, corporate mergers, and trade policy",
+      "editorialStance": "National general-interest daily; politics, security, and investigative reporting",
       "readership": {
-        "metric": "Over 65,000 daily print copies read by corporate executives, banking officials, and investors nationwide",
-        "source": "El Financiero Bloomberg Media Kit 2023"
+        "metric": "Among Mexico's leading national dailies by circulation and digital reach",
+        "source": "https://en.wikipedia.org/wiki/Milenio"
       },
-      "revenueModel": "Corporate print/digital subscriptions, financial advertising, and television broadcast",
-      "logo": "newspaper-logos/mx/el-financiero.svg",
-      "logoExplainer": "Dark-blue 'EL FINANCIERO' with a globe device — Mexico's financial daily masthead.",
-      "licenceNote": "El Financiero masthead trademark bundled from Wikimedia Commons (File:El Financiero Logo.svg) for educational reference in Learn mode.",
-
+      "revenueModel": "Advertising, print sales, and digital subscriptions",
       "sources": [
-        "https://www.elfinanciero.com.mx",
-        "https://es.wikipedia.org/wiki/El_Financiero"
-      ]
+        "https://www.milenio.com",
+        "https://en.wikipedia.org/wiki/Milenio"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "mx-excelsior",
+      "countryCode": "MX",
+      "name": "Excélsior",
+      "englishTranslation": "Excelsior",
+      "founded": 1917,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "Spanish",
+      "headquarters": "Mexico City",
+      "owner": {
+        "name": "Grupo Imagen",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Historic Mexican newspaper of record; national politics and general news",
+      "readership": {
+        "metric": "Long-standing national general-interest daily",
+        "source": "https://en.wikipedia.org/wiki/Excélsior"
+      },
+      "revenueModel": "Advertising and print/digital sales",
+      "sources": [
+        "https://www.excelsior.com.mx",
+        "https://en.wikipedia.org/wiki/Excélsior"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "MY": [
@@ -12518,32 +15575,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "my-harian-metro",
+      "id": "my-utusan-malaysia",
       "countryCode": "MY",
-      "name": "Harian Metro",
-      "officialName": "Harian Metro",
-      "englishTranslation": "Metro Daily",
-      "founded": 1991,
-      "frequency": "Daily afternoon tabloid (Monday–Sunday)",
-      "format": "Tabloid print & high-traffic digital portal (hmetro.com.my)",
+      "name": "Utusan Malaysia",
+      "englishTranslation": "Malaysian Courier",
+      "founded": 1939,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
       "language": "Malay",
       "headquarters": "Kuala Lumpur",
       "owner": {
-        "name": "Media Prima Berhad",
-        "type": "Commercial media conglomerate"
+        "name": "Media Mulia / revived Utusan group",
+        "type": "Commercial media"
       },
-      "editorialStance": "Popular mass-market Malay tabloid; breaking local news, crime, human interest, sports, and viral stories",
+      "editorialStance": "Historic Malay-language national daily; politics and general news (revived after 2019 suspension)",
       "readership": {
-        "metric": "Over 5 million monthly unique digital visitors, making it one of Malaysia's highest-traffic news websites",
-        "source": "Comscore / Media Prima 2024"
+        "metric": "Historic Malay national daily brand",
+        "source": "https://en.wikipedia.org/wiki/Utusan_Malaysia"
       },
-      "revenueModel": "Mass print distribution, mobile apps, and programmatic digital advertising",
-      "logo": "newspaper-logos/my/harian-metro.png",
-      "logoExplainer": "Vibrant yellow and red typography with the signature 'HM' badge representing fast-paced urban daily journalism.",
+      "revenueModel": "Advertising and print/digital sales",
       "sources": [
-        "https://www.hmetro.com.my",
-        "https://en.wikipedia.org/wiki/Harian_Metro"
-      ]
+        "https://www.utusan.com.my",
+        "https://en.wikipedia.org/wiki/Utusan_Malaysia"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "MZ": [
@@ -12627,6 +15682,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://canal.co.mz",
         "https://pt.wikipedia.org/wiki/Canal_de_Mo%C3%A7ambique"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "mz-carta",
+      "name": "Carta de Moçambique",
+      "founded": 2017,
+      "language": "Portuguese",
+      "headquarters": "Maputo",
+      "countryCode": "MZ",
+      "owner": {
+        "name": "Carta de Moçambique",
+        "type": "Independent media"
+      },
+      "editorialStance": "Independent Mozambican digital newsroom; politics and investigation",
+      "readership": {
+        "metric": "Major Mozambican independent news brand",
+        "source": "https://cartamz.com"
+      },
+      "sources": [
+        "https://cartamz.com"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "id": "mz-voz",
+      "name": "A Verdade",
+      "founded": 2008,
+      "language": "Portuguese",
+      "headquarters": "Maputo",
+      "countryCode": "MZ",
+      "owner": {
+        "name": "A Verdade",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Mozambican general-interest newspaper; politics and society",
+      "readership": {
+        "metric": "Notable Mozambican newspaper",
+        "source": "https://www.verdade.co.mz"
+      },
+      "sources": [
+        "https://www.verdade.co.mz"
+      ]
     }
   ],
   "NA": [
@@ -12680,6 +15783,81 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://neweralive.na",
         "https://en.wikipedia.org/wiki/New_Era_(Namibia)"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "id": "na-the-namibian",
+      "name": "The Namibian",
+      "founded": 1985,
+      "language": "English",
+      "headquarters": "Windhoek",
+      "countryCode": "NA",
+      "owner": {
+        "name": "Free Press of Namibia",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Namibia's leading independent general-interest daily",
+      "readership": {
+        "metric": "Principal Namibian independent daily",
+        "source": "https://en.wikipedia.org/wiki/The_Namibian"
+      },
+      "sources": [
+        "https://www.namibian.com.na",
+        "https://en.wikipedia.org/wiki/The_Namibian"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "id": "na-namibian-sun",
+      "name": "Namibian Sun",
+      "founded": 2007,
+      "language": "English",
+      "headquarters": "Windhoek",
+      "countryCode": "NA",
+      "owner": {
+        "name": "Namibia Media Holdings",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Namibian general-interest daily; politics and news",
+      "readership": {
+        "metric": "Major Namibian daily",
+        "source": "https://en.wikipedia.org/wiki/Namibian_Sun"
+      },
+      "sources": [
+        "https://www.namibiansun.com",
+        "https://en.wikipedia.org/wiki/Namibian_Sun"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "id": "na-observer",
+      "name": "Windhoek Observer",
+      "founded": 1978,
+      "language": "English",
+      "headquarters": "Windhoek",
+      "countryCode": "NA",
+      "owner": {
+        "name": "Paragon Investment Holdings",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Historic Namibian general-interest newspaper",
+      "readership": {
+        "metric": "Established Namibian newspaper",
+        "source": "https://en.wikipedia.org/wiki/Windhoek_Observer"
+      },
+      "sources": [
+        "https://www.observer.com.na",
+        "https://en.wikipedia.org/wiki/Windhoek_Observer"
       ]
     }
   ],
@@ -12785,7 +15963,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ng/premium-times.jpg",
       "logoExplainer": "'Premium Times' wordmark — Nigeria's investigative news brand.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.premiumtimesng.com",
         "https://en.wikipedia.org/wiki/Premium_Times"
@@ -12813,7 +15990,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ng/the-guardian.webp",
       "logoExplainer": "'The Guardian' masthead — the Lagos daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://guardian.ng",
         "https://en.wikipedia.org/wiki/The_Guardian_(Nigeria)"
@@ -12841,11 +16017,36 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ng/vanguard.jpg",
       "logoExplainer": "'Vanguard' masthead — the Lagos daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.vanguardngr.com",
         "https://en.wikipedia.org/wiki/Vanguard_(Nigeria)"
       ]
+    },
+    {
+      "id": "ng-thisday",
+      "countryCode": "NG",
+      "name": "THISDAY",
+      "englishTranslation": "THISDAY",
+      "founded": 1995,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "English",
+      "headquarters": "Lagos",
+      "owner": {
+        "name": "Leaders & Company Ltd (Nduka Obaigbena)",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "National general-interest daily; politics, business-as-news, and society",
+      "readership": {
+        "metric": "Major Nigerian national daily",
+        "source": "https://en.wikipedia.org/wiki/Thisday"
+      },
+      "revenueModel": "Advertising and print/digital sales",
+      "sources": [
+        "https://www.thisdaylive.com",
+        "https://en.wikipedia.org/wiki/Thisday"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "NI": [
@@ -12946,6 +16147,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.articulo66.com"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "ni-100noticias",
+      "name": "100% Noticias",
+      "founded": 2000,
+      "language": "Spanish",
+      "headquarters": "Managua",
+      "countryCode": "NI",
+      "owner": {
+        "name": "100% Noticias",
+        "type": "Independent media"
+      },
+      "editorialStance": "Independent Nicaraguan digital newsroom; politics and current affairs",
+      "readership": {
+        "metric": "Major Nicaraguan independent news brand",
+        "source": "https://100noticias.com.ni"
+      },
+      "sources": [
+        "https://100noticias.com.ni"
+      ]
     }
   ],
   "NL": [
@@ -12971,7 +16196,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/nl/de-telegraaf.svg",
       "logoExplainer": "Blackletter 'De Telegraaf' masthead — the Amsterdam mass-circulation daily's traditional nameplate.",
       "licenceNote": "De Telegraaf masthead trademark bundled from Wikimedia Commons (File:Telegraaf.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.telegraaf.nl",
         "https://en.wikipedia.org/wiki/De_Telegraaf"
@@ -13001,7 +16225,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/nl/de-volkskrant.svg",
       "logoExplainer": "Black serif 'deVolkskrant' joined wordmark — the Amsterdam quality daily's masthead.",
       "licenceNote": "De Volkskrant masthead trademark bundled from Wikimedia Commons (File:Volkskrant.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.volkskrant.nl",
         "https://en.wikipedia.org/wiki/De_Volkskrant"
@@ -13031,11 +16254,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/nl/nrc.svg",
       "logoExplainer": "Bold lowercase 'nrc' with a red chevron and 'handelsblad' strap — NRC's brand lockup.",
       "licenceNote": "NRC Handelsblad masthead trademark bundled from Wikimedia Commons (File:NRC Handelsblad logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.nrc.nl",
         "https://en.wikipedia.org/wiki/NRC_Handelsblad"
       ]
+    },
+    {
+      "id": "nl-algemeen-dagblad",
+      "countryCode": "NL",
+      "name": "Algemeen Dagblad",
+      "englishTranslation": "General Daily Newspaper",
+      "founded": 1946,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "Dutch",
+      "headquarters": "Rotterdam",
+      "owner": {
+        "name": "DPG Media",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "National popular general-interest daily; news, sports, and politics",
+      "readership": {
+        "metric": "Among the Netherlands' highest-circulation dailies",
+        "source": "https://en.wikipedia.org/wiki/Algemeen_Dagblad"
+      },
+      "revenueModel": "Subscriptions, print sales, and advertising",
+      "sources": [
+        "https://www.ad.nl",
+        "https://en.wikipedia.org/wiki/Algemeen_Dagblad"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "nl-trouw",
+      "countryCode": "NL",
+      "name": "Trouw",
+      "englishTranslation": "Fidelity / Loyalty",
+      "founded": 1943,
+      "frequency": "Daily newspaper",
+      "format": "Compact & digital",
+      "language": "Dutch",
+      "headquarters": "Amsterdam",
+      "owner": {
+        "name": "DPG Media",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Quality daily with Protestant roots; in-depth politics, ethics, and general news",
+      "readership": {
+        "metric": "Major Dutch quality subscription daily",
+        "source": "https://en.wikipedia.org/wiki/Trouw"
+      },
+      "revenueModel": "Subscriptions and advertising",
+      "sources": [
+        "https://www.trouw.nl",
+        "https://en.wikipedia.org/wiki/Trouw"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "NO": [
@@ -13063,7 +16337,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/no/aftenposten.svg",
       "logoExplainer": "Blackletter 'Aftenposten' masthead — Oslo's newspaper of record nameplate.",
       "licenceNote": "Aftenposten masthead trademark bundled from Wikimedia Commons (File:Aftenposten logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.aftenposten.no",
         "https://en.wikipedia.org/wiki/Aftenposten"
@@ -13093,7 +16366,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/no/dagbladet.svg",
       "logoExplainer": "White 'Dagbladet' on a red bar — the Oslo tabloid's brand masthead.",
       "licenceNote": "Dagbladet masthead trademark bundled from Wikimedia Commons (File:Dagbladet logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.dagbladet.no",
         "https://en.wikipedia.org/wiki/Dagbladet"
@@ -13123,11 +16395,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/no/vg.png",
       "logoExplainer": "White 'VG' capitals on a red block — Verdens Gang's iconic two-letter brand mark.",
       "licenceNote": "VG masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.vg.no",
         "https://en.wikipedia.org/wiki/Verdens_Gang"
       ]
+    },
+    {
+      "id": "no-bergens-tidende",
+      "countryCode": "NO",
+      "name": "Bergens Tidende",
+      "englishTranslation": "Bergen Times",
+      "founded": 1868,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "Norwegian (Bokmål)",
+      "headquarters": "Bergen",
+      "owner": {
+        "name": "Schibsted",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Western Norway's leading quality daily; national and regional news",
+      "readership": {
+        "metric": "Largest newspaper in western Norway",
+        "source": "https://en.wikipedia.org/wiki/Bergens_Tidende"
+      },
+      "revenueModel": "Subscriptions and advertising",
+      "sources": [
+        "https://www.bt.no",
+        "https://en.wikipedia.org/wiki/Bergens_Tidende"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "no-adresseavisen",
+      "countryCode": "NO",
+      "name": "Adresseavisen",
+      "englishTranslation": "Address Newspaper",
+      "founded": 1767,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "Norwegian (Bokmål)",
+      "headquarters": "Trondheim",
+      "owner": {
+        "name": "Polaris Media",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Mid-Norway's principal daily; national and Trøndelag news",
+      "readership": {
+        "metric": "Leading daily of Trondheim and Trøndelag",
+        "source": "https://en.wikipedia.org/wiki/Adresseavisen"
+      },
+      "revenueModel": "Subscriptions and advertising",
+      "sources": [
+        "https://www.adressa.no",
+        "https://en.wikipedia.org/wiki/Adresseavisen"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "NP": [
@@ -13208,6 +16531,55 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://kathmandupost.com",
         "https://en.wikipedia.org/wiki/The_Kathmandu_Post"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "np-nagarik",
+      "countryCode": "NP",
+      "name": "Nagarik",
+      "founded": 2009,
+      "language": "Nepali",
+      "headquarters": "Kathmandu",
+      "owner": {
+        "name": "Nepal Republic Media",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Nepali general-interest daily",
+      "readership": {
+        "metric": "Leading Nepali daily",
+        "source": "https://en.wikipedia.org/wiki/Nagarik"
+      },
+      "sources": [
+        "https://nagariknews.nagariknetwork.com",
+        "https://en.wikipedia.org/wiki/Nagarik"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "np-onlinekhabar",
+      "countryCode": "NP",
+      "name": "Onlinekhabar",
+      "founded": 2008,
+      "language": "Nepali",
+      "headquarters": "Kathmandu",
+      "owner": {
+        "name": "Onlinekhabar",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Nepal's leading digital general-interest news portal",
+      "readership": {
+        "metric": "Highest-traffic Nepali news website",
+        "source": "https://www.onlinekhabar.com"
+      },
+      "sources": [
+        "https://www.onlinekhabar.com"
       ]
     }
   ],
@@ -13343,7 +16715,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/nz/the-new-zealand-herald.svg",
       "logoExplainer": "Ornate blackletter 'H' lettermark — the New Zealand Herald's historic monogram masthead.",
       "licenceNote": "The New Zealand Herald masthead trademark bundled from Wikimedia Commons (File:The New Zealand Herald logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.nzherald.co.nz",
         "https://en.wikipedia.org/wiki/The_New_Zealand_Herald"
@@ -13371,7 +16742,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/nz/stuff.svg",
       "logoExplainer": "Lowercase 'stuff' wordmark with a multicolour underline — Stuff.co.nz's digital brand mark.",
       "licenceNote": "Stuff.co.nz masthead trademark bundled from Wikimedia Commons (File:Stuff.co.nz logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.stuff.co.nz",
         "https://en.wikipedia.org/wiki/Stuff_(website)"
@@ -13399,39 +16769,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/nz/otago-daily-times.png",
       "logoExplainer": "White 'ODT' initials over '.co.nz' on a navy square — the Otago Daily Times digital brand mark.",
       "licenceNote": "Otago Daily Times masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.odt.co.nz",
         "https://en.wikipedia.org/wiki/Otago_Daily_Times"
       ]
     },
     {
-      "id": "nz-1news",
+      "id": "nz-the-post",
       "countryCode": "NZ",
-      "name": "1News (TVNZ)",
-      "founded": 1969,
-      "frequency": "Continuous multimedia broadcast news",
-      "format": "Television (TVNZ 1), digital streaming (TVNZ+) & mobile app",
-      "language": "English, Māori",
-      "headquarters": "Victoria Street West, Auckland",
+      "name": "The Post",
+      "englishTranslation": "The Post",
+      "founded": 1865,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "English",
+      "headquarters": "Wellington",
       "owner": {
-        "name": "Television New Zealand Ltd (Crown-owned company)",
-        "type": "Commercial state-owned broadcaster"
+        "name": "Stuff Ltd",
+        "type": "Commercial media"
       },
-      "editorialStance": "Flagship national television news brand; dominates prime-time 6:00 PM news broadcasting with authoritative coverage of national politics, weather alerts, investigative features (Sunday), and international news",
+      "editorialStance": "Wellington's newspaper of record (formerly The Dominion Post); national politics and general news — replaces the TVNZ 1News broadcaster entry",
       "readership": {
-        "metric": "Flagship 6pm bulletin watched by over 800,000 viewers daily, representing New Zealand's largest single news audience",
-        "source": "Nielsen Television Audience Measurement 2023"
+        "metric": "Capital-city daily with national political audience",
+        "source": "https://en.wikipedia.org/wiki/The_Post_(New_Zealand_newspaper)"
       },
-      "revenueModel": "Commercial broadcast advertising and digital sponsorships",
-      "logo": "newspaper-logos/nz/1news.svg",
-      "logoExplainer": "Red '1 NEWS' wordmark — TVNZ's national news brand mark from the official 1News site.",
-      "licenceNote": "1News masthead trademark bundled from the publisher's official site brand assets (1-newsPrimaryLogo.svg) for educational reference in Learn mode.",
-
+      "revenueModel": "Subscriptions, print sales, and advertising",
       "sources": [
-        "https://www.1news.co.nz",
-        "https://en.wikipedia.org/wiki/1_News"
-      ]
+        "https://www.thepost.co.nz",
+        "https://en.wikipedia.org/wiki/The_Post_(New_Zealand_newspaper)"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "nz-the-press",
+      "countryCode": "NZ",
+      "name": "The Press",
+      "englishTranslation": "The Press",
+      "founded": 1861,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "English",
+      "headquarters": "Christchurch",
+      "owner": {
+        "name": "Stuff Ltd",
+        "type": "Commercial media"
+      },
+      "editorialStance": "South Island's leading general-interest daily; national and Canterbury news",
+      "readership": {
+        "metric": "Principal daily newspaper of Christchurch and Canterbury",
+        "source": "https://en.wikipedia.org/wiki/The_Press"
+      },
+      "revenueModel": "Subscriptions, print sales, and advertising",
+      "sources": [
+        "https://www.thepress.co.nz",
+        "https://en.wikipedia.org/wiki/The_Press"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "OM": [
@@ -13483,7 +16876,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/om/times-of-oman.svg",
       "logoExplainer": "'Times of Oman' masthead — the Muscat English-language daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://timesofoman.com",
         "https://en.wikipedia.org/wiki/Times_of_Oman"
@@ -13512,6 +16904,55 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.omanobserver.om",
         "https://en.wikipedia.org/wiki/Oman_Daily_Observer"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "id": "om-muscat-daily",
+      "name": "Muscat Daily",
+      "founded": 2009,
+      "language": "English",
+      "headquarters": "Muscat",
+      "countryCode": "OM",
+      "owner": {
+        "name": "Oman Apex / Apex Press",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Omani English general-interest daily",
+      "readership": {
+        "metric": "Major Omani English daily",
+        "source": "https://en.wikipedia.org/wiki/Muscat_Daily"
+      },
+      "sources": [
+        "https://www.muscatdaily.com",
+        "https://en.wikipedia.org/wiki/Muscat_Daily"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "om-shabiba",
+      "name": "Shabiba",
+      "founded": 2000,
+      "language": "Arabic",
+      "headquarters": "Muscat",
+      "countryCode": "OM",
+      "owner": {
+        "name": "Oman Establishment for Press",
+        "type": "Commercial / state-linked media"
+      },
+      "editorialStance": "Omani Arabic general-interest daily",
+      "readership": {
+        "metric": "Major Omani Arabic daily",
+        "source": "https://www.shabiba.com"
+      },
+      "sources": [
+        "https://www.shabiba.com"
       ]
     }
   ],
@@ -13590,6 +17031,55 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.prensa.com",
         "https://es.wikipedia.org/wiki/La_Prensa_(Panam%C3%A1)"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "pa-critica",
+      "countryCode": "PA",
+      "name": "Crítica",
+      "founded": 1958,
+      "language": "Spanish",
+      "headquarters": "Panama City",
+      "owner": {
+        "name": "Editorial El Panama America / related",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Popular Panamanian general-interest daily",
+      "readership": {
+        "metric": "Major Panamanian daily",
+        "source": "https://en.wikipedia.org/wiki/Crítica_(Panama)"
+      },
+      "sources": [
+        "https://www.critica.com.pa",
+        "https://en.wikipedia.org/wiki/Media_of_Panama"
+      ]
+    },
+    {
+      "id": "pa-midiario",
+      "countryCode": "PA",
+      "name": "Mi Diario",
+      "founded": 2004,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "Spanish",
+      "headquarters": "Panama City",
+      "owner": {
+        "name": "Grupo Epasa",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Popular Panamanian general-interest daily",
+      "readership": {
+        "metric": "Major Panamanian daily",
+        "source": "https://www.midiario.com"
+      },
+      "revenueModel": "Advertising and print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "sources": [
+        "https://www.midiario.com"
+      ]
     }
   ],
   "PE": [
@@ -13615,7 +17105,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/pe/el-comercio.png",
       "logoExplainer": "'El Comercio' masthead — Lima's newspaper of record nameplate.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://elcomercio.pe",
         "https://es.wikipedia.org/wiki/El_Comercio_(Per%C3%BA)"
@@ -13643,35 +17132,83 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/pe/la-republica.jpg",
       "logoExplainer": "'La República' masthead — the Lima daily brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:La República logo.jpg) for educational reference in Learn mode.",
-
       "sources": [
         "https://larepublica.pe",
         "https://es.wikipedia.org/wiki/La_Rep%C3%BAblica_(Per%C3%BA)"
       ]
     },
     {
-      "id": "pe-gestion",
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "pe-peru-21",
       "countryCode": "PE",
-      "name": "Gestión",
-      "founded": 1990,
-      "frequency": "Daily financial newspaper (Monday–Friday)",
-      "format": "Broadsheet & financial digital portal",
+      "name": "Perú.21",
+      "founded": 2002,
       "language": "Spanish",
       "headquarters": "Lima",
       "owner": {
-        "name": "Empresa Editora El Comercio S.A.",
-        "type": "Independent commercial media"
+        "name": "Empresa Editora El Comercio",
+        "type": "Commercial media group"
       },
-      "editorialStance": "Peru's leading financial and business daily newspaper; comprehensive coverage of the Lima Stock Exchange (BVL), copper and gold mining markets, foreign direct investment, taxation, and corporate mergers",
+      "editorialStance": "National general-interest daily; politics and current affairs",
       "readership": {
-        "metric": "Over 30,000 daily print readership, essential morning reading for corporate executives, bankers, and government economic ministers",
-        "source": "Grupo El Comercio Financial Publishing 2023"
+        "metric": "Major Peruvian daily",
+        "source": "https://en.wikipedia.org/wiki/Perú.21"
       },
-      "revenueModel": "Paid enterprise subscriptions, financial market advertising, and corporate events",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
-        "https://gestion.pe",
-        "https://es.wikipedia.org/wiki/Gesti%C3%B3n_(diario)"
+        "https://peru21.pe",
+        "https://en.wikipedia.org/wiki/Perú.21"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "pe-correo",
+      "countryCode": "PE",
+      "name": "Correo",
+      "founded": 1962,
+      "language": "Spanish",
+      "headquarters": "Lima",
+      "owner": {
+        "name": "Empresa Periodística Nacional (EPENSA) / El Comercio group",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "National and regional general-interest daily network",
+      "readership": {
+        "metric": "Large multi-city Peruvian daily",
+        "source": "https://en.wikipedia.org/wiki/Diario_Correo"
+      },
+      "sources": [
+        "https://diariocorreo.pe",
+        "https://en.wikipedia.org/wiki/Diario_Correo"
+      ]
+    },
+    {
+      "id": "pe-wayka",
+      "countryCode": "PE",
+      "name": "Wayka",
+      "founded": 2015,
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "language": "Spanish",
+      "headquarters": "Lima",
+      "owner": {
+        "name": "Wayka",
+        "type": "Independent media"
+      },
+      "editorialStance": "Independent Peruvian digital newsroom; politics, investigation, and general affairs",
+      "readership": {
+        "metric": "Notable Peruvian independent news site",
+        "source": "https://wayka.pe"
+      },
+      "revenueModel": "Memberships and digital advertising",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "sources": [
+        "https://wayka.pe"
       ]
     }
   ],
@@ -13751,6 +17288,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.thenational.com.pg",
         "https://en.wikipedia.org/wiki/The_National_(Papua_New_Guinea)"
       ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "pg-loop-png",
+      "countryCode": "PG",
+      "name": "Loop PNG",
+      "founded": 2015,
+      "language": "English",
+      "headquarters": "Port Moresby",
+      "owner": {
+        "name": "Loop Pacific",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Papua New Guinean digital general-interest news portal",
+      "readership": {
+        "metric": "Major PNG news website",
+        "source": "https://www.looppng.com"
+      },
+      "sources": [
+        "https://www.looppng.com"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "pg-emt",
+      "countryCode": "PG",
+      "name": "EMTV News (digital)",
+      "founded": 1987,
+      "language": "English",
+      "headquarters": "Port Moresby",
+      "owner": {
+        "name": "EMTV digital newsroom",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Papua New Guinean digital general-interest newsroom",
+      "readership": {
+        "metric": "Major PNG news brand",
+        "source": "https://emtv.com.pg"
+      },
+      "sources": [
+        "https://emtv.com.pg"
+      ]
     }
   ],
   "PH": [
@@ -13776,7 +17361,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ph/manila-bulletin.jpg",
       "logoExplainer": "'Manila Bulletin' masthead — the Manila daily brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Manila-Bulletin.jpg) for educational reference in Learn mode.",
-
       "sources": [
         "https://mb.com.ph",
         "https://en.wikipedia.org/wiki/Manila_Bulletin"
@@ -13829,11 +17413,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ph/rappler.svg",
       "logoExplainer": "'Rappler' wordmark — the Manila digital news brand.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.rappler.com",
         "https://en.wikipedia.org/wiki/Rappler"
       ]
+    },
+    {
+      "id": "ph-philippine-star",
+      "countryCode": "PH",
+      "name": "The Philippine Star",
+      "englishTranslation": "The Philippine Star",
+      "founded": 1986,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "English",
+      "headquarters": "Manila",
+      "owner": {
+        "name": "PhilStar Daily Inc. (MediaQuest)",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Major English-language national daily; politics and general news",
+      "readership": {
+        "metric": "Among the Philippines' leading English broadsheets",
+        "source": "https://en.wikipedia.org/wiki/The_Philippine_Star"
+      },
+      "revenueModel": "Advertising and print/digital sales",
+      "sources": [
+        "https://www.philstar.com",
+        "https://en.wikipedia.org/wiki/The_Philippine_Star"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "ph-manila-times",
+      "countryCode": "PH",
+      "name": "The Manila Times",
+      "englishTranslation": "The Manila Times",
+      "founded": 1898,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "English",
+      "headquarters": "Manila",
+      "owner": {
+        "name": "Dante Ang / Manila Times Publishing",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Philippines' oldest existing English-language daily; politics and general news",
+      "readership": {
+        "metric": "Historic national English broadsheet",
+        "source": "https://en.wikipedia.org/wiki/The_Manila_Times"
+      },
+      "revenueModel": "Advertising and print/digital sales",
+      "sources": [
+        "https://www.manilatimes.net",
+        "https://en.wikipedia.org/wiki/The_Manila_Times"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "PK": [
@@ -13861,7 +17496,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/pk/daily-jang.jpg",
       "logoExplainer": "Urdu 'جنگ' / Daily Jang masthead — Pakistan's mass-circulation daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://jang.com.pk",
         "https://en.wikipedia.org/wiki/Daily_Jang"
@@ -13889,7 +17523,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/pk/dawn.svg",
       "logoExplainer": "'DAWN' masthead — Pakistan's English newspaper of record.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Dawn logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.dawn.com",
         "https://en.wikipedia.org/wiki/Dawn_(newspaper)"
@@ -13917,7 +17550,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/pk/the-news-international.svg",
       "logoExplainer": "'The News International' masthead — the Karachi English daily.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:The News International logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.thenews.com.pk",
         "https://en.wikipedia.org/wiki/The_News_International"
@@ -13945,10 +17577,34 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/pk/the-express-tribune.webp",
       "logoExplainer": "'The Express Tribune' masthead — the Karachi English daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://tribune.com.pk",
         "https://en.wikipedia.org/wiki/The_Express_Tribune"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "pk-nawaiwaqt",
+      "countryCode": "PK",
+      "name": "Nawaiwaqt",
+      "founded": 1940,
+      "language": "Urdu",
+      "headquarters": "Lahore",
+      "owner": {
+        "name": "Nawaiwaqt Group",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Urdu general-interest daily; politics and national news",
+      "readership": {
+        "metric": "Among Pakistan's leading Urdu dailies",
+        "source": "https://en.wikipedia.org/wiki/Nawaiwaqt"
+      },
+      "sources": [
+        "https://www.nawaiwaqt.com.pk",
+        "https://en.wikipedia.org/wiki/Nawaiwaqt"
       ]
     }
   ],
@@ -13977,7 +17633,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/pl/wyborcza.svg",
       "logoExplainer": "'wyborcza.pl' wordmark — Gazeta Wyborcza's digital masthead from its own site.",
       "licenceNote": "Gazeta Wyborcza masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://wyborcza.pl",
         "https://en.wikipedia.org/wiki/Gazeta_Wyborcza"
@@ -14007,71 +17662,88 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/pl/rzeczpospolita.svg",
       "logoExplainer": "Polish eagle emblem beside 'RZECZPOSPOLITA' capitals — the Warsaw daily's masthead.",
       "licenceNote": "Rzeczpospolita masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.rp.pl",
         "https://en.wikipedia.org/wiki/Rzeczpospolita_(newspaper)"
       ]
     },
     {
-      "id": "pl-dgp",
+      "id": "pl-gazeta-polska-codziennie",
       "countryCode": "PL",
-      "name": "Dziennik Gazeta Prawna (DGP)",
-      "nativeName": "Dziennik Gazeta Prawna",
-      "englishTranslation": "Legal Daily Newspaper",
-      "founded": 2009,
-      "frequency": "Daily business and legal newspaper (Monday–Friday)",
-      "format": "Berliner format & digital news portal (gazetaprawna.pl)",
+      "name": "Gazeta Polska Codziennie",
+      "englishTranslation": "Polish Gazette Daily",
+      "founded": 2011,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
       "language": "Polish",
-      "headquarters": "ul. Okopowa 58/72, Warsaw",
+      "headquarters": "Warsaw",
       "owner": {
-        "name": "Infor PL S.A.",
-        "type": "Commercial legal & financial publisher"
+        "name": "Forum S.A. / related Gazeta Polska group",
+        "type": "Independent commercial media"
       },
-      "editorialStance": "Poland's leading daily newspaper dedicated to business taxation, labor law, accounting, public procurement, and economic regulation; essential reading for Polish CFOs, accountants, and public administrative bodies",
+      "editorialStance": "National conservative general-interest daily; politics and current affairs",
       "readership": {
-        "metric": "Over 35,000 daily print and digital corporate subscriptions nationwide with 4 million monthly visits on gazetaprawna.pl",
-        "source": "Infor PL 2023 Annual Report"
+        "metric": "National paid daily with significant political readership",
+        "source": "https://en.wikipedia.org/wiki/Gazeta_Polska_Codziennie"
       },
-      "revenueModel": "Professional corporate subscriptions and advertising",
-      "logo": "newspaper-logos/pl/dgp.jpg",
-      "logoExplainer": "'DZIENNIK GAZETA PRAWNA' with a blue globe device — Poland's legal/business daily masthead.",
-      "licenceNote": "Dziennik Gazeta Prawna masthead trademark bundled from Wikimedia Commons (File:Dziennik Gazeta Prawna.jpg) for educational reference in Learn mode.",
-
+      "revenueModel": "Print sales, subscriptions, and advertising",
       "sources": [
-        "https://www.gazetaprawna.pl",
-        "https://en.wikipedia.org/wiki/Dziennik_Gazeta_Prawna"
-      ]
+        "https://gpcodziennie.pl",
+        "https://en.wikipedia.org/wiki/Gazeta_Polska_Codziennie"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     },
     {
-      "id": "pl-fakt",
+      "id": "pl-polska-times",
       "countryCode": "PL",
-      "name": "Fakt",
-      "nativeName": "Fakt Gazeta Codzienna",
-      "englishTranslation": "Fact Daily Newspaper",
-      "founded": 2003,
-      "frequency": "Daily national tabloid newspaper (Monday–Saturday)",
-      "format": "Tabloid & digital news portal (fakt.pl)",
+      "name": "Polska Times",
+      "englishTranslation": "Poland Times",
+      "founded": 2007,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
       "language": "Polish",
-      "headquarters": "ul. Domaniewska 49, Warsaw",
+      "headquarters": "Warsaw",
+      "owner": {
+        "name": "Polska Press",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "National/regional general-interest daily network under Polska Press; politics, local and national news",
+      "readership": {
+        "metric": "Large combined regional daily network under Polska Press",
+        "source": "https://en.wikipedia.org/wiki/Polska_Times"
+      },
+      "revenueModel": "Print sales and advertising",
+      "sources": [
+        "https://polskatimes.pl",
+        "https://en.wikipedia.org/wiki/Polska_Times"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "pl-onet-wiadomosci",
+      "countryCode": "PL",
+      "name": "Onet Wiadomości",
+      "englishTranslation": "Onet News",
+      "founded": 1996,
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "language": "Polish",
+      "headquarters": "Kraków / Warsaw",
       "owner": {
         "name": "Ringier Axel Springer Polska",
-        "type": "Commercial joint-venture publishing company"
+        "type": "Commercial media group"
       },
-      "editorialStance": "Poland's largest circulation daily tabloid newspaper; focuses on popular consumer advocacy, social welfare, domestic politics, celebrity news, and sensational headlines in an accessible, dynamic tabloid format",
+      "editorialStance": "Poland's largest digital general-interest news portal; politics and breaking news",
       "readership": {
-        "metric": "Over 120,000 daily print copies sold and more than 10 million monthly active unique users on fakt.pl",
-        "source": "Polskie Badania Czytelnictwa 2023"
+        "metric": "Among Poland's most-visited news websites",
+        "source": "https://en.wikipedia.org/wiki/Onet.pl"
       },
-      "revenueModel": "High-volume retail print sales and programmatic digital advertising",
-      "logo": "newspaper-logos/pl/fakt.svg",
-      "logoExplainer": "White 'Fakt' wordmark on a red field — Poland's mass-circulation tabloid masthead.",
-      "licenceNote": "Fakt masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
+      "revenueModel": "Digital advertising",
       "sources": [
-        "https://www.fakt.pl",
-        "https://en.wikipedia.org/wiki/Fakt"
-      ]
+        "https://www.onet.pl",
+        "https://en.wikipedia.org/wiki/Onet.pl"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "PS": [
@@ -14159,6 +17831,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.alhayat-j.com",
         "https://en.wikipedia.org/wiki/Al-Hayat_al-Jadida"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "id": "ps-wattan",
+      "countryCode": "PS",
+      "name": "Wattan News",
+      "founded": 1996,
+      "language": "Arabic",
+      "headquarters": "Ramallah",
+      "owner": {
+        "name": "Wattan Media Network digital newsroom",
+        "type": "Independent media"
+      },
+      "editorialStance": "Major Palestinian digital general-interest newsroom; politics and current affairs",
+      "readership": {
+        "metric": "Major Palestinian news website",
+        "source": "https://www.wattan.net"
+      },
+      "sources": [
+        "https://www.wattan.net"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ps-al-hadath",
+      "name": "Al-Hadath",
+      "founded": 2010,
+      "language": "Arabic",
+      "headquarters": "Ramallah",
+      "countryCode": "PS",
+      "owner": {
+        "name": "Al-Hadath",
+        "type": "Independent media"
+      },
+      "editorialStance": "Palestinian digital general-interest news portal",
+      "readership": {
+        "metric": "Palestinian news website",
+        "source": "https://www.alhadath.ps"
+      },
+      "sources": [
+        "https://www.alhadath.ps"
+      ]
     }
   ],
   "PT": [
@@ -14186,7 +17906,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/pt/publico.svg",
       "logoExplainer": "Red serif 'P' with vertical 'Público' — the Lisbon daily's distinctive masthead.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Logo publico.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.publico.pt",
         "https://en.wikipedia.org/wiki/P%C3%BAblico_(Portugal)"
@@ -14216,7 +17935,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/pt/diario-de-noticias.svg",
       "logoExplainer": "'Diário de Notícias' masthead — the Lisbon daily nameplate.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Diário de Notícias.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.dn.pt",
         "https://en.wikipedia.org/wiki/Di%C3%A1rio_de_Not%C3%ADcias_(Portugal)"
@@ -14246,7 +17964,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/pt/jornal-de-noticias.jpg",
       "logoExplainer": "White 'Jornal de Notícias' on blue with a red base stripe — the Porto daily masthead.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Logo jn.jpg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.jn.pt",
         "https://en.wikipedia.org/wiki/Jornal_de_Not%C3%ADcias"
@@ -14276,11 +17993,36 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/pt/correio-da-manha.jpg",
       "logoExplainer": "White 'CORREIO da manhã' on red — the Lisbon tabloid masthead.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Correio da Manhã logo.jpg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.cmjornal.pt",
         "https://en.wikipedia.org/wiki/Correio_da_Manh%C3%A3"
       ]
+    },
+    {
+      "id": "pt-expresso",
+      "countryCode": "PT",
+      "name": "Expresso",
+      "englishTranslation": "Express",
+      "founded": 1973,
+      "frequency": "Weekly newspaper",
+      "format": "Broadsheet & digital",
+      "language": "Portuguese",
+      "headquarters": "Lisbon",
+      "owner": {
+        "name": "Impresa",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Portugal's leading quality weekly; politics, investigation, and general affairs with daily digital newsroom",
+      "readership": {
+        "metric": "Highest-circulation Portuguese quality weekly",
+        "source": "https://en.wikipedia.org/wiki/Expresso_(newspaper)"
+      },
+      "revenueModel": "Subscriptions, print sales, and advertising",
+      "sources": [
+        "https://expresso.pt",
+        "https://en.wikipedia.org/wiki/Expresso_(newspaper)"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "PW": [
@@ -14386,6 +18128,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://islandtimes.org",
         "https://en.wikipedia.org/wiki/Island_Times"
       ]
+    },
+    {
+      "id": "pw-island-times-digital",
+      "countryCode": "PW",
+      "name": "Palau Wave Weekly",
+      "founded": 2010,
+      "frequency": "Weekly newspaper",
+      "format": "Print & digital",
+      "language": "English",
+      "headquarters": "Koror",
+      "owner": {
+        "name": "Palau Wave",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Palauan general-interest weekly; local and national news",
+      "readership": {
+        "metric": "Palau weekly news title",
+        "source": "https://en.wikipedia.org/wiki/Media_of_Palau"
+      },
+      "revenueModel": "Advertising and print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Media_of_Palau"
+      ]
     }
   ],
   "PY": [
@@ -14463,43 +18229,57 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.lanacion.com.py",
         "https://es.wikipedia.org/wiki/La_Naci%C3%B3n_(Paraguay)"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "py-extra",
+      "countryCode": "PY",
+      "name": "Diario Extra",
+      "founded": 1992,
+      "language": "Spanish",
+      "headquarters": "Asunción",
+      "owner": {
+        "name": "Editorial Extra",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Mass-circulation Paraguayan general-interest daily",
+      "readership": {
+        "metric": "Among Paraguay's highest-circulation dailies",
+        "source": "https://en.wikipedia.org/wiki/Media_of_Paraguay"
+      },
+      "sources": [
+        "https://www.extra.com.py"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "py-hoy",
+      "countryCode": "PY",
+      "name": "Hoy",
+      "founded": 2004,
+      "language": "Spanish",
+      "headquarters": "Asunción",
+      "owner": {
+        "name": "Grupo Nación de Comunicaciones",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Paraguayan general-interest daily; politics and news",
+      "readership": {
+        "metric": "Major Asunción daily",
+        "source": "https://www.hoy.com.py"
+      },
+      "sources": [
+        "https://www.hoy.com.py"
+      ]
     }
   ],
   "QA": [
-    {
-      "id": "qa-aljazeera",
-      "countryCode": "QA",
-      "name": "Al Jazeera Media Network",
-      "nativeName": "شبكة الجزيرة الإعلامية",
-      "englishTranslation": "The Peninsula Media Network",
-      "founded": 1996,
-      "frequency": "Continuous 24/7 international multimedia news broadcaster",
-      "format": "Television, digital news network & investigative bureau",
-      "language": "Arabic, English, French, Bosnian, Turkish",
-      "headquarters": "Wadi Al Sail West, Doha",
-      "owner": {
-        "name": "Government of Qatar (Public benefit corporation / Emiri endowment)",
-        "type": "State-funded international broadcaster"
-      },
-      "annualPublicFunding": {
-        "total": "QAR 1.80 billion",
-        "perCapita": "QAR 640.00"
-      },
-      "editorialStance": "Pioneering international news organization founded by Emiri decree in 1996; renowned for breaking ground in Arab-world journalism, covering the Global South, investigative documentaries, and breaking Middle Eastern conflicts",
-      "readership": {
-        "metric": "Broadcast to over 430 million households in 150 countries with over 50 million unique digital monthly visitors worldwide",
-        "source": "Al Jazeera Media Network Global Reach 2023"
-      },
-      "revenueModel": "State funding grant, commercial advertising, and digital syndication",
-      "logo": "newspaper-logos/qa/aljazeera.png",
-      "logoExplainer": "'Al Jazeera' brand mark — the Doha-based news network emblem.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.aljazeera.com",
-        "https://en.wikipedia.org/wiki/Al_Jazeera_Media_Network"
-      ]
-    },
     {
       "id": "qa-al-raya",
       "countryCode": "QA",
@@ -14524,7 +18304,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/qa/al-raya.png",
       "logoExplainer": "Arabic 'الراية' masthead — Al Raya's brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.raya.com",
         "https://en.wikipedia.org/wiki/Al_Raya_(newspaper)"
@@ -14554,7 +18333,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/qa/al-sharq.svg",
       "logoExplainer": "Arabic 'الشرق' masthead — Al Sharq's brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://al-sharq.com",
         "https://en.wikipedia.org/wiki/Al_Sharq_(newspaper)"
@@ -14584,10 +18362,59 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/qa/gulf-times.svg",
       "logoExplainer": "'Gulf Times' masthead — the Doha English-language daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.gulf-times.com",
         "https://en.wikipedia.org/wiki/Gulf_Times"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "qa-the-peninsula",
+      "countryCode": "QA",
+      "name": "The Peninsula",
+      "founded": 1996,
+      "language": "English",
+      "headquarters": "Doha",
+      "owner": {
+        "name": "Dar Al Sharq",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Qatari English-language general-interest daily",
+      "readership": {
+        "metric": "Major Qatari English daily",
+        "source": "https://en.wikipedia.org/wiki/The_Peninsula_(newspaper)"
+      },
+      "sources": [
+        "https://thepeninsulaqatar.com",
+        "https://en.wikipedia.org/wiki/The_Peninsula_(newspaper)"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "qa-qatar-tribune",
+      "countryCode": "QA",
+      "name": "Qatar Tribune",
+      "founded": 2006,
+      "language": "English",
+      "headquarters": "Doha",
+      "owner": {
+        "name": "Qatar Tribune / local publishers",
+        "type": "Commercial media"
+      },
+      "editorialStance": "English-language general-interest daily; local and regional news",
+      "readership": {
+        "metric": "Qatari English daily",
+        "source": "https://en.wikipedia.org/wiki/Qatar_Tribune"
+      },
+      "sources": [
+        "https://www.qatar-tribune.com",
+        "https://en.wikipedia.org/wiki/Qatar_Tribune"
       ]
     }
   ],
@@ -14616,7 +18443,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ro/adevarul.svg",
       "logoExplainer": "'Adevărul' masthead — the Bucharest daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://adevarul.ro",
         "https://en.wikipedia.org/wiki/Adev%C4%83rul"
@@ -14677,33 +18503,53 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "ro-ziarul-financiar",
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ro-libertatea",
       "countryCode": "RO",
-      "name": "Ziarul Financiar (ZF)",
-      "nativeName": "Ziarul Financiar",
-      "englishTranslation": "Financial Newspaper",
-      "founded": 1998,
-      "frequency": "Daily business and financial newspaper (Monday–Friday)",
-      "format": "Berliner & digital portal (zf.ro)",
+      "name": "Libertatea",
+      "founded": 1989,
       "language": "Romanian",
-      "headquarters": "Piața Presei Libere 1, Bucharest",
+      "headquarters": "Bucharest",
       "owner": {
-        "name": "Mediafax Group",
-        "type": "Independent business publisher"
+        "name": "Ringier Romania",
+        "type": "Commercial media group"
       },
-      "editorialStance": "Romania's premier economic and financial daily broadsheet; the definitive source for Bucharest Stock Exchange (BVB) trends, corporate mergers, macroeconomic forecasts, and banking news",
+      "editorialStance": "Highest-circulation Romanian general-interest daily; politics and popular news",
       "readership": {
-        "metric": "Over 20,000 daily print and corporate digital subscribers, with over 3 million monthly page views on zf.ro",
-        "source": "BRAT & Mediafax Group 2023"
+        "metric": "Romania's highest-circulation daily",
+        "source": "https://en.wikipedia.org/wiki/Libertatea"
       },
-      "revenueModel": "Corporate premium paywalls, print subscriptions, and financial advertising",
-      "logo": "newspaper-logos/ro/ziarul-financiar.png",
-      "logoExplainer": "'Ziarul Financiar' masthead — Romania's business daily.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
-        "https://www.zf.ro",
-        "https://en.wikipedia.org/wiki/Ziarul_Financiar"
+        "https://www.libertatea.ro",
+        "https://en.wikipedia.org/wiki/Libertatea"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ro-hotnews",
+      "countryCode": "RO",
+      "name": "HotNews.ro",
+      "founded": 1999,
+      "language": "Romanian",
+      "headquarters": "Bucharest",
+      "owner": {
+        "name": "HotNews Media",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Romanian digital general-interest news portal; politics and investigation",
+      "readership": {
+        "metric": "Major Romanian news website",
+        "source": "https://en.wikipedia.org/wiki/HotNews.ro"
+      },
+      "sources": [
+        "https://www.hotnews.ro",
+        "https://en.wikipedia.org/wiki/HotNews.ro"
       ]
     }
   ],
@@ -14732,7 +18578,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/rs/politika.svg",
       "logoExplainer": "'Politika' masthead — Serbia's historic daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.politika.rs",
         "https://en.wikipedia.org/wiki/Politika"
@@ -14789,7 +18634,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/rs/danas.png",
       "logoExplainer": "'Danas' masthead — the Belgrade daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.danas.rs",
         "https://en.wikipedia.org/wiki/Danas_(newspaper)"
@@ -14819,10 +18663,33 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/rs/blic.jpg",
       "logoExplainer": "'Blic' masthead — the Belgrade tabloid brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.blic.rs",
         "https://en.wikipedia.org/wiki/Blic"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "rs-nova-rs",
+      "countryCode": "RS",
+      "name": "Nova.rs",
+      "founded": 2019,
+      "language": "Serbian",
+      "headquarters": "Belgrade",
+      "owner": {
+        "name": "United Group",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Serbian digital general-interest news portal",
+      "readership": {
+        "metric": "Leading Serbian digital news brand",
+        "source": "https://nova.rs"
+      },
+      "sources": [
+        "https://nova.rs"
       ]
     }
   ],
@@ -14851,7 +18718,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ru/kommersant.png",
       "logoExplainer": "'Коммерсантъ' / Kommersant masthead — the Moscow business daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.kommersant.ru",
         "https://en.wikipedia.org/wiki/Kommersant"
@@ -14912,10 +18778,59 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/ru/izvestia.svg",
       "logoExplainer": "'Известия' / Izvestia masthead — the Moscow daily brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Izvestia.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://iz.ru",
         "https://en.wikipedia.org/wiki/Izvestia"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ru-novaya-gazeta",
+      "countryCode": "RU",
+      "name": "Novaya Gazeta",
+      "founded": 1993,
+      "language": "Russian",
+      "headquarters": "Moscow",
+      "owner": {
+        "name": "Novaya Gazeta publishing",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Independent investigative newspaper; politics and human rights (Europe edition continues after wartime restrictions)",
+      "readership": {
+        "metric": "Russia's best-known independent investigative paper",
+        "source": "https://en.wikipedia.org/wiki/Novaya_Gazeta"
+      },
+      "sources": [
+        "https://novayagazeta.eu",
+        "https://en.wikipedia.org/wiki/Novaya_Gazeta"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ru-moskovsky-komsomolets",
+      "countryCode": "RU",
+      "name": "Moskovsky Komsomolets",
+      "founded": 1919,
+      "language": "Russian",
+      "headquarters": "Moscow",
+      "owner": {
+        "name": "MK Publishing House",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Moscow general-interest daily with national distribution",
+      "readership": {
+        "metric": "Among Russia's highest-circulation dailies",
+        "source": "https://en.wikipedia.org/wiki/Moskovskij_Komsomolets"
+      },
+      "sources": [
+        "https://www.mk.ru",
+        "https://en.wikipedia.org/wiki/Moskovskij_Komsomolets"
       ]
     }
   ],
@@ -15031,6 +18946,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.ktpress.rw",
         "https://en.wikipedia.org/wiki/Media_of_Rwanda"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "rw-great-lakes",
+      "name": "Great Lakes Voice",
+      "founded": 2015,
+      "language": "English",
+      "headquarters": "Kigali",
+      "countryCode": "RW",
+      "owner": {
+        "name": "Great Lakes Voice",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Rwandan digital general-interest news portal",
+      "readership": {
+        "metric": "Rwandan news website",
+        "source": "https://greatlakesvoice.com"
+      },
+      "sources": [
+        "https://greatlakesvoice.com"
+      ]
     }
   ],
   "SA": [
@@ -15058,7 +18997,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/sa/asharq-al-awsat.svg",
       "logoExplainer": "Arabic 'الشرق الأوسط' masthead — Asharq Al-Awsat's brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://aawsat.com",
         "https://en.wikipedia.org/wiki/Asharq_Al-Awsat"
@@ -15088,7 +19026,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/sa/arab-news.png",
       "logoExplainer": "'Arab News' English wordmark — the Jeddah daily masthead.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.arabnews.com",
         "https://en.wikipedia.org/wiki/Arab_News"
@@ -15145,10 +19082,34 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/sa/okaz.png",
       "logoExplainer": "Arabic 'عكاظ' masthead — Okaz's brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.okaz.com.sa",
         "https://en.wikipedia.org/wiki/Okaz"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "sa-al-watan",
+      "countryCode": "SA",
+      "name": "Al-Watan",
+      "founded": 2000,
+      "language": "Arabic",
+      "headquarters": "Abha / Riyadh",
+      "owner": {
+        "name": "Al-Watan Publishing",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Saudi general-interest daily; national and regional news",
+      "readership": {
+        "metric": "Major Saudi daily",
+        "source": "https://en.wikipedia.org/wiki/Al-Watan_(Saudi_Arabia)"
+      },
+      "sources": [
+        "https://www.alwatan.com.sa",
+        "https://en.wikipedia.org/wiki/Al-Watan_(Saudi_Arabia)"
       ]
     }
   ],
@@ -15341,6 +19302,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.nation.sc",
         "https://en.wikipedia.org/wiki/Media_of_Seychelles"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Weekly newspaper",
+      "format": "Print & digital",
+      "id": "sc-seychelles-weekly",
+      "countryCode": "SC",
+      "name": "Seychelles Weekly",
+      "founded": 2010,
+      "language": "English",
+      "headquarters": "Victoria",
+      "owner": {
+        "name": "Seychelles Weekly",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Seychellois general-interest weekly; politics and society",
+      "readership": {
+        "metric": "Seychelles weekly newspaper",
+        "source": "https://en.wikipedia.org/wiki/Media_of_Seychelles"
+      },
+      "sources": [
+        "https://en.wikipedia.org/wiki/Media_of_Seychelles"
+      ]
     }
   ],
   "SD": [
@@ -15422,6 +19407,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://sudantribune.com",
         "https://en.wikipedia.org/wiki/Sudan_Tribune"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "id": "sd-sudanile",
+      "countryCode": "SD",
+      "name": "Sudanile",
+      "founded": 2005,
+      "language": "Arabic",
+      "headquarters": "Digital / Khartoum",
+      "owner": {
+        "name": "Sudanile",
+        "type": "Independent media"
+      },
+      "editorialStance": "Sudanese digital general-interest newsroom; politics and current affairs",
+      "readership": {
+        "metric": "Major Sudanese digital news brand",
+        "source": "https://www.sudanile.com"
+      },
+      "sources": [
+        "https://www.sudanile.com"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "sd-ayin",
+      "name": "Ayin Network",
+      "founded": 2018,
+      "language": "Arabic / English",
+      "headquarters": "Digital",
+      "countryCode": "SD",
+      "owner": {
+        "name": "Ayin Network",
+        "type": "Independent media"
+      },
+      "editorialStance": "Independent Sudanese digital newsroom; politics and investigation",
+      "readership": {
+        "metric": "Major Sudanese independent news brand",
+        "source": "https://3ayin.com"
+      },
+      "sources": [
+        "https://3ayin.com"
+      ]
     }
   ],
   "SE": [
@@ -15449,7 +19482,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/se/dagens-nyheter.jpg",
       "logoExplainer": "'Dagens Nyheter' masthead — Sweden's leading morning daily nameplate.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.dn.se",
         "https://en.wikipedia.org/wiki/Dagens_Nyheter"
@@ -15479,71 +19511,88 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/se/svenska-dagbladet.png",
       "logoExplainer": "'Svenska Dagbladet' masthead — the Stockholm daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.svd.se",
         "https://en.wikipedia.org/wiki/Svenska_Dagbladet"
       ]
     },
     {
-      "id": "se-aftonbladet",
+      "id": "se-goteborgs-posten",
       "countryCode": "SE",
-      "name": "Aftonbladet",
-      "nativeName": "Aftonbladet",
-      "englishTranslation": "The Evening Paper",
-      "founded": 1830,
-      "frequency": "Daily evening newspaper & continuous digital portal",
-      "format": "Tabloid newspaper & digital platform (aftonbladet.se)",
+      "name": "Göteborgs-Posten",
+      "englishTranslation": "Gothenburg Post",
+      "founded": 1813,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
       "language": "Swedish",
-      "headquarters": "Västra Järnvägsgatan 21, Stockholm",
+      "headquarters": "Gothenburg",
       "owner": {
-        "name": "Schibsted Media (91%) & Swedish Trade Union Confederation (LO, 9%)",
-        "type": "Commercial media group with trade union partnership"
+        "name": "Stampen Media",
+        "type": "Commercial media group"
       },
-      "editorialStance": "Sweden's largest news website and historic evening daily, founded in 1830 by Lars Johan Hierta; independent social democratic in editorial stance, pioneering digital journalism with vast coverage of breaking news, sports, entertainment, and social debate",
+      "editorialStance": "West Sweden's leading quality daily; national politics and general news with Gothenburg focus",
       "readership": {
-        "metric": "Over 3.5 million daily online readers and over 260,000 paid subscribers to Aftonbladet Plus",
-        "source": "Kantar Sifo Web Audit / Schibsted 2023"
+        "metric": "Among Sweden's largest subscription morning papers",
+        "source": "https://en.wikipedia.org/wiki/Göteborgs-Posten"
       },
-      "revenueModel": "Digital subscription service (Plus), digital advertising, and retail tabloid newsstand sales",
-      "logo": "newspaper-logos/se/aftonbladet.svg",
-      "logoExplainer": "'Aftonbladet' masthead — Sweden's mass-circulation evening daily.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
+      "revenueModel": "Subscriptions and advertising",
       "sources": [
-        "https://www.aftonbladet.se",
-        "https://en.wikipedia.org/wiki/Aftonbladet"
-      ]
+        "https://www.gp.se",
+        "https://en.wikipedia.org/wiki/Göteborgs-Posten"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     },
     {
-      "id": "se-expressen",
+      "id": "se-sydsvenskan",
       "countryCode": "SE",
-      "name": "Expressen",
-      "nativeName": "Expressen",
-      "englishTranslation": "The Express",
-      "founded": 1944,
-      "frequency": "Daily evening newspaper & digital portal",
-      "format": "Tabloid newspaper & news website (expressen.se)",
+      "name": "Sydsvenskan",
+      "englishTranslation": "South Swedish",
+      "founded": 1870,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
       "language": "Swedish",
-      "headquarters": "Gjörwellsgatan 30, Stockholm",
+      "headquarters": "Malmö",
       "owner": {
-        "name": "Bonnier News (Bonnier Group)",
-        "type": "Private media corporation"
+        "name": "Bonnier News Local",
+        "type": "Commercial media group"
       },
-      "editorialStance": "Major Swedish national evening tabloid newspaper, founded in 1944 by Ivar Harrie; liberal in political stance, renowned for breaking news, undercover investigations, political debates, and cultural exposés",
+      "editorialStance": "Southern Sweden's principal quality daily; national and Öresund-region news",
       "readership": {
-        "metric": "Over 2.8 million daily digital readers and more than 150,000 paid Expressen Premium subscribers",
-        "source": "Kantar Sifo / Bonnier News"
+        "metric": "Leading Skåne morning daily",
+        "source": "https://en.wikipedia.org/wiki/Sydsvenskan"
       },
-      "revenueModel": "Digital subscriptions (Premium), digital programmatic advertising, and single-copy newsstand sales",
-      "logo": "newspaper-logos/se/expressen.png",
-      "logoExplainer": "'Expressen' masthead with bee emblem — the Stockholm evening tabloid brand.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
+      "revenueModel": "Subscriptions and advertising",
       "sources": [
-        "https://www.expressen.se",
-        "https://en.wikipedia.org/wiki/Expressen"
-      ]
+        "https://www.sydsvenskan.se",
+        "https://en.wikipedia.org/wiki/Sydsvenskan"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "se-upsala-nya-tidning",
+      "countryCode": "SE",
+      "name": "Upsala Nya Tidning",
+      "englishTranslation": "Upsala New Newspaper",
+      "founded": 1890,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "Swedish",
+      "headquarters": "Uppsala",
+      "owner": {
+        "name": "NWT Media / local",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Major Swedish regional quality daily; national and Uppsala news",
+      "readership": {
+        "metric": "Leading daily of the Uppsala region",
+        "source": "https://en.wikipedia.org/wiki/Upsala_Nya_Tidning"
+      },
+      "revenueModel": "Subscriptions and advertising",
+      "sources": [
+        "https://www.unt.se",
+        "https://en.wikipedia.org/wiki/Upsala_Nya_Tidning"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "SG": [
@@ -15575,7 +19624,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/sg/the-straits-times.svg",
       "logoExplainer": "Navy serif 'THE STRAITS TIMES' — Singapore's newspaper of record masthead.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:The Straits Times Logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.straitstimes.com",
         "https://en.wikipedia.org/wiki/The_Straits_Times"
@@ -15605,7 +19653,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/sg/lianhe-zaobao.webp",
       "logoExplainer": "Chinese '联合早报' masthead — Lianhe Zaobao's brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.zaobao.com.sg",
         "https://en.wikipedia.org/wiki/Lianhe_Zaobao"
@@ -15635,7 +19682,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/sg/berita-harian-sg.svg",
       "logoExplainer": "'SINGAPURA' over blue 'BeritaHarian' — Singapore's Malay-language daily masthead.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Berita Harian SG logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.beritaharian.sg",
         "https://en.wikipedia.org/wiki/Berita_Harian_(Singapore)"
@@ -15665,11 +19711,36 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/sg/today-sg.svg",
       "logoExplainer": "MediaCorp red 'M' circle beside lowercase 'today' — TODAY Singapore's brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Today SG 2023.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.todayonline.com",
         "https://en.wikipedia.org/wiki/Today_(Singapore_newspaper)"
       ]
+    },
+    {
+      "id": "sg-the-new-paper",
+      "countryCode": "SG",
+      "name": "The New Paper",
+      "englishTranslation": "The New Paper",
+      "founded": 1988,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "English",
+      "headquarters": "Singapore",
+      "owner": {
+        "name": "SPH Media",
+        "type": "National media group"
+      },
+      "editorialStance": "English-language general-interest daily (compact); news, sports, and entertainment with broad reach",
+      "readership": {
+        "metric": "Major SPH English daily alongside The Straits Times",
+        "source": "https://en.wikipedia.org/wiki/The_New_Paper"
+      },
+      "revenueModel": "Advertising and print/digital sales",
+      "sources": [
+        "https://tnp.straitstimes.com",
+        "https://en.wikipedia.org/wiki/The_New_Paper"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "SI": [
@@ -15755,30 +19826,52 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "si-finance",
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "si-slovenske-novice",
       "countryCode": "SI",
-      "name": "Finance (Časnik Finance)",
-      "nativeName": "Časnik Finance",
-      "englishTranslation": "Finance Newspaper",
-      "founded": 1992,
-      "frequency": "Daily business and financial newspaper (Monday–Friday)",
-      "format": "Berliner & digital business portal (finance.si)",
+      "name": "Slovenske novice",
+      "founded": 1991,
       "language": "Slovene",
-      "headquarters": "Bleiweisova cesta 30, Ljubljana",
+      "headquarters": "Ljubljana",
       "owner": {
-        "name": "Časnik Finance d.o.o. (Bonnier Business Press)",
-        "type": "International business publishing group"
+        "name": "Delo d.o.o.",
+        "type": "Commercial media"
       },
-      "editorialStance": "Slovenia's premier economic and business daily newspaper; part of the Scandinavian Bonnier Group; the definitive national authority on the Ljubljana Stock Exchange (LJSE), corporate finance, taxes, real estate, and EU recovery funds",
+      "editorialStance": "Slovenia's highest-circulation general-interest daily; news and current affairs",
       "readership": {
-        "metric": "Over 14,000 daily corporate print and digital subscribers, with high executive penetration across Slovenian enterprises",
-        "source": "Bonnier Business Press Annual Report 2023"
+        "metric": "Highest-circulation Slovene daily",
+        "source": "https://en.wikipedia.org/wiki/Slovenske_novice"
       },
-      "revenueModel": "High-value corporate digital subscriptions and business advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
-        "https://www.finance.si",
-        "https://en.wikipedia.org/wiki/Finance_(newspaper)"
+        "https://www.slovenskenovice.si",
+        "https://en.wikipedia.org/wiki/Slovenske_novice"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "si-necenzurirano",
+      "countryCode": "SI",
+      "name": "Necenzurirano.si / N1 Slovenija news",
+      "founded": 2021,
+      "language": "Slovene",
+      "headquarters": "Ljubljana",
+      "owner": {
+        "name": "United Media / N1",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Digital general-interest newsroom; national politics and investigation",
+      "readership": {
+        "metric": "Major Slovene digital news brand",
+        "source": "https://n1info.si"
+      },
+      "sources": [
+        "https://n1info.si"
       ]
     }
   ],
@@ -15807,7 +19900,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/sk/sme.png",
       "logoExplainer": "'SME' masthead — Slovakia's leading daily brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:SME logo.png) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.sme.sk",
         "https://en.wikipedia.org/wiki/SME_(newspaper)"
@@ -15837,7 +19929,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/sk/dennik-n.svg",
       "logoExplainer": "'Denník N' masthead — the Bratislava daily brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Denník N (2020-01-16).svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://dennikn.sk",
         "https://en.wikipedia.org/wiki/Denn%C3%ADk_N"
@@ -15867,40 +19958,59 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/sk/pravda-sk.svg",
       "logoExplainer": "'Pravda' masthead — the Slovak daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.pravda.sk",
         "https://en.wikipedia.org/wiki/Pravda_(Slovakia)"
       ]
     },
     {
-      "id": "sk-hospodarske-noviny",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "sk-aktuality",
       "countryCode": "SK",
-      "name": "Hospodárske noviny (HN)",
-      "nativeName": "Hospodárske noviny",
-      "englishTranslation": "Economic News",
-      "founded": 1993,
-      "frequency": "Daily financial and economic newspaper (Monday–Friday)",
-      "format": "Berliner & digital portal (hnonline.sk)",
+      "name": "Aktuality.sk",
+      "founded": 2005,
       "language": "Slovak",
-      "headquarters": "Krasovského 14, Bratislava",
+      "headquarters": "Bratislava",
       "owner": {
-        "name": "MAFRA Slovakia a.s. (Kaprain Group)",
-        "type": "Commercial business publisher"
+        "name": "Ringier Slovakia",
+        "type": "Commercial media group"
       },
-      "editorialStance": "Slovakia's premier economic and business daily broadsheet; the definitive source for corporate mergers, automotive manufacturing trends, macroeconomic policy, real estate, and tax regulation",
+      "editorialStance": "Slovakia's most-visited general-interest news portal; politics and breaking news",
       "readership": {
-        "metric": "Over 12,000 daily corporate print circulation and over 1.2 million monthly unique users on hnonline.sk",
-        "source": "ABC SR & MAFRA Slovakia 2023"
+        "metric": "Highest-traffic Slovak news website",
+        "source": "https://en.wikipedia.org/wiki/Aktuality.sk"
       },
-      "revenueModel": "Corporate subscriptions, print sales, and business-to-business advertising",
-      "logo": "newspaper-logos/sk/hospodarske-noviny.svg",
-      "logoExplainer": "'Hospodárske noviny' masthead — Slovakia's business daily.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
-        "https://hnonline.sk",
-        "https://en.wikipedia.org/wiki/Hospod%C3%A1rske_noviny"
+        "https://www.aktuality.sk",
+        "https://en.wikipedia.org/wiki/Aktuality.sk"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "sk-plus-jeden-den",
+      "countryCode": "SK",
+      "name": "Plus jeden deň",
+      "founded": 2006,
+      "language": "Slovak",
+      "headquarters": "Bratislava",
+      "owner": {
+        "name": "News and Media Holding",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Mass-circulation Slovak general-interest daily",
+      "readership": {
+        "metric": "Major Slovak daily by circulation",
+        "source": "https://en.wikipedia.org/wiki/Plus_jeden_deň"
+      },
+      "sources": [
+        "https://www1.pluska.sk",
+        "https://en.wikipedia.org/wiki/Plus_jeden_deň"
       ]
     }
   ],
@@ -15984,6 +20094,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.thesierraleonetelegraph.com",
         "https://en.wikipedia.org/wiki/Media_of_Sierra_Leone"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "sl-swit-salone",
+      "name": "SwitSalone",
+      "founded": 2012,
+      "language": "English",
+      "headquarters": "Freetown",
+      "countryCode": "SL",
+      "owner": {
+        "name": "SwitSalone",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Sierra Leonean digital general-interest news portal",
+      "readership": {
+        "metric": "Major Sierra Leone news website",
+        "source": "https://www.switsalone.com"
+      },
+      "sources": [
+        "https://www.switsalone.com"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "sl-politico",
+      "name": "Politico SL",
+      "founded": 2015,
+      "language": "English",
+      "headquarters": "Freetown",
+      "countryCode": "SL",
+      "owner": {
+        "name": "Politico SL",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Sierra Leonean digital general-interest news portal; politics and current affairs",
+      "readership": {
+        "metric": "Major Sierra Leone news website",
+        "source": "https://www.politicosl.com"
+      },
+      "sources": [
+        "https://www.politicosl.com"
       ]
     }
   ],
@@ -16240,6 +20398,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.walf-groupe.com",
         "https://en.wikipedia.org/wiki/Wal_Fadjri"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "sn-seneweb",
+      "countryCode": "SN",
+      "name": "Seneweb",
+      "founded": 2001,
+      "language": "French",
+      "headquarters": "Dakar",
+      "owner": {
+        "name": "Seneweb",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Senegal's leading digital general-interest news portal",
+      "readership": {
+        "metric": "Highest-traffic Senegalese news website",
+        "source": "https://www.seneweb.com"
+      },
+      "sources": [
+        "https://www.seneweb.com"
+      ]
     }
   ],
   "SO": [
@@ -16295,6 +20477,78 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.garoweonline.com",
         "https://en.wikipedia.org/wiki/Garowe_Online"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "so-horseed",
+      "name": "Horseed Media",
+      "founded": 2008,
+      "language": "Somali / English",
+      "headquarters": "Mogadishu / digital",
+      "countryCode": "SO",
+      "owner": {
+        "name": "Horseed Media",
+        "type": "Independent media"
+      },
+      "editorialStance": "Somali digital general-interest news portal",
+      "readership": {
+        "metric": "Major Somali news website",
+        "source": "https://horseedmedia.net"
+      },
+      "sources": [
+        "https://horseedmedia.net"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "so-goobjoog",
+      "name": "Goobjoog News",
+      "founded": 2011,
+      "language": "Somali / English",
+      "headquarters": "Mogadishu",
+      "countryCode": "SO",
+      "owner": {
+        "name": "Goobjoog",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Somali digital general-interest news portal",
+      "readership": {
+        "metric": "Major Somali news website",
+        "source": "https://goobjoog.com"
+      },
+      "sources": [
+        "https://goobjoog.com"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "id": "so-caasimada",
+      "countryCode": "SO",
+      "name": "Caasimada Online",
+      "founded": 2010,
+      "language": "Somali",
+      "headquarters": "Mogadishu / digital",
+      "owner": {
+        "name": "Caasimada Online",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Major Somali digital general-interest news portal",
+      "readership": {
+        "metric": "Leading Somali news website",
+        "source": "https://www.caasimada.net"
+      },
+      "sources": [
+        "https://www.caasimada.net"
       ]
     }
   ],
@@ -16378,6 +20632,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.dbsuriname.com",
         "https://en.wikipedia.org/wiki/Media_of_Suriname"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "sr-starnieuws",
+      "name": "Starnieuws",
+      "founded": 2010,
+      "language": "Dutch",
+      "headquarters": "Paramaribo",
+      "countryCode": "SR",
+      "owner": {
+        "name": "Starnieuws",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Surinamese digital general-interest news portal",
+      "readership": {
+        "metric": "Major Suriname news website",
+        "source": "https://www.starnieuws.com"
+      },
+      "sources": [
+        "https://www.starnieuws.com"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "sr-dwtonline",
+      "name": "DwT Online",
+      "founded": 2010,
+      "language": "Dutch",
+      "headquarters": "Paramaribo",
+      "countryCode": "SR",
+      "owner": {
+        "name": "De Ware Tijd digital",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Surinamese digital general-interest news portal linked to De Ware Tijd tradition",
+      "readership": {
+        "metric": "Major Suriname news website",
+        "source": "https://www.dwtonline.com"
+      },
+      "sources": [
+        "https://www.dwtonline.com"
       ]
     }
   ],
@@ -16731,6 +21033,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.enabbaladi.net",
         "https://en.wikipedia.org/wiki/Enab_Baladi"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "sy-syria-direct",
+      "name": "Syria Direct",
+      "founded": 2013,
+      "language": "Arabic / English",
+      "headquarters": "Amman / digital",
+      "countryCode": "SY",
+      "owner": {
+        "name": "Syria Direct",
+        "type": "Independent media"
+      },
+      "editorialStance": "Independent Syrian digital newsroom; politics and current affairs",
+      "readership": {
+        "metric": "Major Syrian independent news brand",
+        "source": "https://syriadirect.org"
+      },
+      "sources": [
+        "https://syriadirect.org"
+      ]
     }
   ],
   "SZ": [
@@ -16961,6 +21287,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://fr.wikipedia.org/wiki/N%27Djam%C3%A9na_Hebdo"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "td-tchadinfos",
+      "name": "Tchadinfos",
+      "founded": 2010,
+      "language": "French",
+      "headquarters": "N'Djamena",
+      "countryCode": "TD",
+      "owner": {
+        "name": "Tchadinfos",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Chadian digital general-interest news portal",
+      "readership": {
+        "metric": "Major Chad news website",
+        "source": "https://tchadinfos.com"
+      },
+      "sources": [
+        "https://tchadinfos.com"
+      ]
     }
   ],
   "TG": [
@@ -17079,6 +21429,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.republicoftogo.com",
         "https://en.wikipedia.org/wiki/Media_of_Togo"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "tg-ici-lome",
+      "name": "Ici Lomé",
+      "founded": 2015,
+      "language": "French",
+      "headquarters": "Lomé",
+      "countryCode": "TG",
+      "owner": {
+        "name": "Ici Lomé",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Togolese digital general-interest news portal",
+      "readership": {
+        "metric": "Major Togo news website",
+        "source": "https://icilome.com"
+      },
+      "sources": [
+        "https://icilome.com"
+      ]
     }
   ],
   "TH": [
@@ -17104,7 +21478,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/th/bangkok-post.svg",
       "logoExplainer": "'Bangkok Post' masthead — Thailand's English newspaper of record.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:BangkokPost.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.bangkokpost.com",
         "https://en.wikipedia.org/wiki/Bangkok_Post"
@@ -17161,7 +21534,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/th/matichon.svg",
       "logoExplainer": "Thai 'มติชน' masthead — Matichon's brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Matichon Logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.matichon.co.th",
         "https://en.wikipedia.org/wiki/Matichon"
@@ -17191,11 +21563,36 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/th/daily-news.png",
       "logoExplainer": "Thai 'เดลินิวส์' / Daily News masthead.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Daily News (Thai newspaper - logo).gif) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.dailynews.co.th",
         "https://en.wikipedia.org/wiki/Daily_News_(Thailand)"
       ]
+    },
+    {
+      "id": "th-khao-sod",
+      "countryCode": "TH",
+      "name": "Khao Sod",
+      "englishTranslation": "Fresh News",
+      "founded": 1991,
+      "frequency": "Daily newspaper",
+      "format": "Tabloid & digital",
+      "language": "Thai",
+      "headquarters": "Bangkok",
+      "owner": {
+        "name": "Matichon Publishing Group",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Mass-circulation Thai general-interest daily; politics and popular news",
+      "readership": {
+        "metric": "Among Thailand's highest-circulation Thai-language dailies",
+        "source": "https://en.wikipedia.org/wiki/Khao_Sod"
+      },
+      "revenueModel": "Print sales and advertising",
+      "sources": [
+        "https://www.khaosod.co.th",
+        "https://en.wikipedia.org/wiki/Khao_Sod"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "TJ": [
@@ -17365,6 +21762,54 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://independente.tl"
       ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "tl-tatoli",
+      "countryCode": "TL",
+      "name": "Tatoli",
+      "founded": 2016,
+      "language": "Tetum / Portuguese / English",
+      "headquarters": "Dili",
+      "owner": {
+        "name": "Tatoli National News digital",
+        "type": "State media digital"
+      },
+      "editorialStance": "Timor-Leste national digital news portal; politics and general news",
+      "readership": {
+        "metric": "Official Timor-Leste news brand",
+        "source": "https://www.tatoli.tl"
+      },
+      "sources": [
+        "https://www.tatoli.tl"
+      ]
+    },
+    {
+      "id": "tl-independente-already-check",
+      "countryCode": "TL",
+      "name": "Diário Nacional",
+      "founded": 2015,
+      "frequency": "Daily newspaper",
+      "format": "Print & digital",
+      "language": "Portuguese / Tetum",
+      "headquarters": "Dili",
+      "owner": {
+        "name": "Diário Nacional",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Timor-Leste general-interest daily; politics and current affairs",
+      "readership": {
+        "metric": "Timor-Leste daily newspaper",
+        "source": "https://en.wikipedia.org/wiki/Media_of_East_Timor"
+      },
+      "revenueModel": "Advertising and print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Media_of_East_Timor"
+      ]
     }
   ],
   "TM": [
@@ -17506,35 +21951,57 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/tn/assabah.jpg",
       "logoExplainer": "Arabic 'الصباح' masthead — Assabah's brand mark.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Assabah-logo.jpg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.assabah.com.tn",
         "https://en.wikipedia.org/wiki/Assabah_(newspaper)"
       ]
     },
     {
-      "id": "tn-business-news",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "tn-mosaique-info",
       "countryCode": "TN",
-      "name": "Business News Tunisia",
-      "founded": 2008,
-      "frequency": "Real-time 24/7 continuous news updates",
-      "format": "Digital news portal (businessnews.com.tn)",
-      "language": "French, Arabic",
-      "headquarters": "Les Berges du Lac II, Tunis",
+      "name": "Mosaique Info",
+      "founded": 2003,
+      "language": "Arabic / French",
+      "headquarters": "Tunis",
       "owner": {
-        "name": "Business News SARL (Nizar Bahloul)",
-        "type": "Independent digital media company"
+        "name": "Mosaique FM / private",
+        "type": "Commercial media"
       },
-      "editorialStance": "Leading independent political and economic online news agency in Tunisia, founded in 2008; acclaimed for fast breaking news, in-depth macroeconomic analysis, monetary policy coverage of the Central Bank of Tunisia, and political interviews",
+      "editorialStance": "Leading Tunisian digital general-interest news portal; politics and breaking news",
       "readership": {
-        "metric": "Over 2.5 million monthly unique visitors across Tunisia, France, and North Africa",
-        "source": "Google Analytics / Business News Media Pack"
+        "metric": "Among Tunisia's most-consumed news brands",
+        "source": "https://www.mosaiquefm.net"
       },
-      "revenueModel": "Digital display advertising, sponsored corporate analysis, and business directory services",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
       "sources": [
-        "https://www.businessnews.com.tn",
-        "https://en.wikipedia.org/wiki/Media_of_Tunisia"
+        "https://www.mosaiquefm.net"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "tn-kapitalis",
+      "countryCode": "TN",
+      "name": "Kapitalis",
+      "founded": 2009,
+      "language": "French / Arabic",
+      "headquarters": "Tunis",
+      "owner": {
+        "name": "Kapitalis",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Independent Tunisian digital news site; politics and society (general interest, not finance-only)",
+      "readership": {
+        "metric": "Established Tunisian digital news brand",
+        "source": "https://kapitalis.com"
+      },
+      "sources": [
+        "https://kapitalis.com"
       ]
     }
   ],
@@ -17646,6 +22113,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://kanivatonga.co.nz",
         "https://en.wikipedia.org/wiki/Media_of_Tonga"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "to-loop-tonga",
+      "name": "Loop Tonga",
+      "founded": 2015,
+      "language": "English",
+      "headquarters": "Nukuʻalofa",
+      "countryCode": "TO",
+      "owner": {
+        "name": "Loop Pacific",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Tongan digital general-interest news portal",
+      "readership": {
+        "metric": "Major Tonga news website",
+        "source": "https://www.looptonga.com"
+      },
+      "sources": [
+        "https://www.looptonga.com"
+      ]
     }
   ],
   "TR": [
@@ -17673,7 +22164,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/tr/hurriyet.svg",
       "logoExplainer": "Turkish 'Hürriyet' masthead — the Istanbul daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.hurriyet.com.tr",
         "https://en.wikipedia.org/wiki/H%C3%BCrriyet"
@@ -17703,7 +22193,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/tr/cumhuriyet.svg",
       "logoExplainer": "Turkish 'Cumhuriyet' masthead — the Istanbul daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.cumhuriyet.com.tr",
         "https://en.wikipedia.org/wiki/Cumhuriyet"
@@ -17762,6 +22251,32 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.sozcu.com.tr",
         "https://en.wikipedia.org/wiki/S%C3%B6zc%C3%BC"
       ]
+    },
+    {
+      "id": "tr-milliyet",
+      "countryCode": "TR",
+      "name": "Milliyet",
+      "englishTranslation": "Nationality",
+      "founded": 1950,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "Turkish",
+      "headquarters": "Istanbul",
+      "owner": {
+        "name": "Demirören Holding",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Historic mainstream national daily; politics and general news",
+      "readership": {
+        "metric": "Long-standing major Turkish daily",
+        "source": "https://en.wikipedia.org/wiki/Milliyet"
+      },
+      "revenueModel": "Advertising and print/digital sales",
+      "sources": [
+        "https://www.milliyet.com.tr",
+        "https://en.wikipedia.org/wiki/Milliyet"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "TT": [
@@ -17863,6 +22378,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://tt.loopnews.com",
         "https://en.wikipedia.org/wiki/Loop_News"
+      ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "tt-cnc3",
+      "name": "CNC3 News digital",
+      "founded": 2005,
+      "language": "English",
+      "headquarters": "Port of Spain",
+      "countryCode": "TT",
+      "owner": {
+        "name": "CNC3 / Guardian Media",
+        "type": "Commercial media"
+      },
+      "editorialStance": "Trinidad and Tobago digital general-interest newsroom",
+      "readership": {
+        "metric": "Major Trinidad and Tobago news website",
+        "source": "https://www.cnc3.co.tt"
+      },
+      "sources": [
+        "https://www.cnc3.co.tt"
       ]
     }
   ],
@@ -18032,7 +22571,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/tz/daily-news.png",
       "logoExplainer": "'Daily News' masthead — Tanzania's English-language daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://dailynews.co.tz",
         "https://en.wikipedia.org/wiki/Daily_News_(Tanzania)"
@@ -18118,7 +22656,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/tz/habarileo.png",
       "logoExplainer": "'Habari Leo' masthead — the Dar es Salaam Swahili daily.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://habarileo.co.tz",
         "https://en.wikipedia.org/wiki/HabariLeo"
@@ -18199,6 +22736,81 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://kyivindependent.com",
         "https://en.wikipedia.org/wiki/The_Kyiv_Independent"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ua-ukrainska-pravda",
+      "countryCode": "UA",
+      "name": "Ukrainska Pravda",
+      "founded": 2000,
+      "language": "Ukrainian / English",
+      "headquarters": "Kyiv",
+      "owner": {
+        "name": "Dragon Capital / private",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Ukraine's leading independent digital newspaper; politics and investigation",
+      "readership": {
+        "metric": "Among Ukraine's most-read news sites",
+        "source": "https://en.wikipedia.org/wiki/Ukrayinska_Pravda"
+      },
+      "sources": [
+        "https://www.pravda.com.ua",
+        "https://en.wikipedia.org/wiki/Ukrayinska_Pravda"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ua-lb-ua",
+      "countryCode": "UA",
+      "name": "LB.ua",
+      "founded": 2009,
+      "language": "Ukrainian / Russian",
+      "headquarters": "Kyiv",
+      "owner": {
+        "name": "Committee of Voters / private",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Major Ukrainian digital news outlet; politics and current affairs",
+      "readership": {
+        "metric": "Major Ukrainian news website",
+        "source": "https://en.wikipedia.org/wiki/LB.ua"
+      },
+      "sources": [
+        "https://lb.ua",
+        "https://en.wikipedia.org/wiki/LB.ua"
+      ]
+    },
+    {
+      "frequency": "Weekly newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ua-dzerkalo-tyzhnya",
+      "countryCode": "UA",
+      "name": "Dzerkalo Tyzhnia",
+      "founded": 1994,
+      "language": "Ukrainian / English",
+      "headquarters": "Kyiv",
+      "owner": {
+        "name": "Dzerkalo Tyzhnia",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Influential Ukrainian quality weekly; politics, analysis, and investigation",
+      "readership": {
+        "metric": "Leading Ukrainian analytical weekly",
+        "source": "https://en.wikipedia.org/wiki/Dzerkalo_Tyzhnia"
+      },
+      "sources": [
+        "https://zn.ua",
+        "https://en.wikipedia.org/wiki/Dzerkalo_Tyzhnia"
       ]
     }
   ],
@@ -18308,6 +22920,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.bukedde.co.ug",
         "https://en.wikipedia.org/wiki/Bukedde"
       ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ug-nile-post",
+      "countryCode": "UG",
+      "name": "Nile Post",
+      "founded": 2018,
+      "language": "English",
+      "headquarters": "Kampala",
+      "owner": {
+        "name": "Nile Post",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Ugandan digital general-interest news portal; politics and current affairs",
+      "readership": {
+        "metric": "Major Ugandan news website",
+        "source": "https://nilepost.co.ug"
+      },
+      "sources": [
+        "https://nilepost.co.ug"
+      ]
     }
   ],
   "US": [
@@ -18366,33 +23002,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "us-wsj",
-      "countryCode": "US",
-      "name": "The Wall Street Journal (WSJ)",
-      "founded": 1889,
-      "frequency": "Daily (Monday to Saturday) newspaper",
-      "format": "Broadsheet newspaper & digital subscription service (wsj.com)",
-      "language": "English, Japanese, Chinese",
-      "headquarters": "1211 Avenue of the Americas, Manhattan, New York City, New York",
-      "owner": {
-        "name": "Dow Jones & Company (News Corp)",
-        "type": "Commercial multinational media publishing corporation"
-      },
-      "editorialStance": "America's premier business, financial, and economic daily newspaper of record, founded in 1889 by Charles Dow, Edward Jones, and Charles Bergstresser; holder of 39 Pulitzer Prizes; delivers authoritative news on corporate finance, Federal Reserve policy, capital markets, international trade, and conservative editorial page commentary",
-      "readership": {
-        "metric": "Over 4 million total paying subscribers, including more than 3.5 million digital-only subscribers, making it one of the largest paid circulation newspapers in the US",
-        "source": "News Corp Fiscal Year 2023 Earnings / AAM"
-      },
-      "revenueModel": "Digital subscriptions, print delivery subscriptions, and high-value corporate financial advertising",
-      "logo": "newspaper-logos/us/wsj.svg",
-      "logoExplainer": "Classic serif capitals spelling 'THE WALL STREET JOURNAL.' (with the trailing period) — the nameplate used on the print front page.",
-      "licenceNote": "The Wall Street Journal masthead is a trademark of Dow Jones & Company, bundled from Wikimedia Commons (File:The Wall Street Journal Logo.svg) for educational reference in Learn mode.",
-      "sources": [
-        "https://www.wsj.com",
-        "https://en.wikipedia.org/wiki/The_Wall_Street_Journal"
-      ]
-    },
-    {
       "id": "us-usa-today",
       "countryCode": "US",
       "name": "USA Today",
@@ -18418,6 +23027,58 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.usatoday.com",
         "https://en.wikipedia.org/wiki/USA_Today"
       ]
+    },
+    {
+      "id": "us-los-angeles-times",
+      "countryCode": "US",
+      "name": "Los Angeles Times",
+      "englishTranslation": "Los Angeles Times",
+      "founded": 1881,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "English",
+      "headquarters": "El Segundo, California",
+      "owner": {
+        "name": "Nant Capital / Patrick Soon-Shiong",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Major West Coast newspaper of record; national politics, California affairs, investigative reporting, and cultural coverage",
+      "readership": {
+        "metric": "One of the largest-circulation metropolitan dailies in the United States",
+        "source": "https://en.wikipedia.org/wiki/Los_Angeles_Times"
+      },
+      "revenueModel": "Subscriptions, digital advertising, and print retail sales",
+      "sources": [
+        "https://www.latimes.com",
+        "https://en.wikipedia.org/wiki/Los_Angeles_Times"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "us-chicago-tribune",
+      "countryCode": "US",
+      "name": "Chicago Tribune",
+      "englishTranslation": "Chicago Tribune",
+      "founded": 1847,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "English",
+      "headquarters": "Chicago, Illinois",
+      "owner": {
+        "name": "Tribune Publishing (Alden Global Capital)",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Historic Midwest newspaper of record; national and Chicago politics, investigative journalism, and regional affairs",
+      "readership": {
+        "metric": "Leading Midwest metropolitan daily by long-run audience and institutional reputation",
+        "source": "https://en.wikipedia.org/wiki/Chicago_Tribune"
+      },
+      "revenueModel": "Subscriptions, advertising, and digital memberships",
+      "sources": [
+        "https://www.chicagotribune.com",
+        "https://en.wikipedia.org/wiki/Chicago_Tribune"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "UY": [
@@ -18472,7 +23133,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/uy/el-observador.png",
       "logoExplainer": "'El Observador' masthead — the Montevideo daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://www.elobservador.com.uy",
         "https://en.wikipedia.org/wiki/El_Observador_(Uruguay)"
@@ -18502,7 +23162,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/uy/la-diaria.png",
       "logoExplainer": "'la diaria' wordmark — the Montevideo daily brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://ladiaria.com.uy",
         "https://en.wikipedia.org/wiki/La_Diaria"
@@ -18673,6 +23332,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://xs.uz",
         "https://uz.wikipedia.org/wiki/Xalq_so%CA%BBzi"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "uz-uza",
+      "name": "UzA",
+      "founded": 1918,
+      "language": "Uzbek / Russian / English",
+      "headquarters": "Tashkent",
+      "countryCode": "UZ",
+      "owner": {
+        "name": "National News Agency of Uzbekistan",
+        "type": "State news service digital"
+      },
+      "editorialStance": "Official Uzbek national digital news portal; politics and general news",
+      "readership": {
+        "metric": "Official Uzbekistan news brand",
+        "source": "https://uza.uz"
+      },
+      "sources": [
+        "https://uza.uz"
+      ]
     }
   ],
   "VA": [
@@ -18705,61 +23388,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "va-vatican-news",
-      "countryCode": "VA",
-      "name": "Vatican News",
-      "officialName": "Vatican News",
-      "founded": 2015,
-      "frequency": "Continuous 24/7 multimedia news service",
-      "format": "Multilingual multimedia portal & web radio (vaticannews.va)",
-      "language": "Multilingual (published in over 35 languages)",
-      "headquarters": "Vatican City",
-      "owner": {
-        "name": "Dicastery for Communication (Holy See)",
-        "type": "Official Catholic Church governance entity"
-      },
-      "editorialStance": "Global Catholic and international news, pastoral activities of the Pope, peace diplomacy, and humanitarian missions",
-      "readership": {
-        "metric": "Over 35 million annual unique web visitors and millions of international broadcast listeners",
-        "source": "Dicastery for Communication Holy See Annual Report 2023"
-      },
-      "revenueModel": "Public funding from the Holy See (Peter's Pence and Curial appropriations)",
-      "logo": "newspaper-logos/va/vatican-news.png",
-      "logoExplainer": "Modern red circular emblem displaying the papal keys of Saint Peter with clean sans-serif Vatican News typography.",
-      "sources": [
-        "https://www.vaticannews.va",
-        "https://en.wikipedia.org/wiki/Vatican_News"
-      ]
-    },
-    {
-      "id": "va-acta-apostolicae-sedis",
-      "countryCode": "VA",
-      "name": "Acta Apostolicae Sedis",
-      "officialName": "Acta Apostolicae Sedis (Commentarium Officiale)",
-      "englishTranslation": "Acts of the Apostolic See",
-      "founded": 1909,
-      "frequency": "Monthly official gazette of the Holy See",
-      "format": "Official gazette & public legislative bulletin",
-      "language": "Latin, Italian",
-      "headquarters": "Vatican City",
-      "owner": {
-        "name": "Holy See (Libreria Editrice Vaticana)",
-        "type": "Official state publisher"
-      },
-      "editorialStance": "Statutory gazette of the Catholic Church; official promulgation of papal encyclicals, apostolic constitutions, and dicasterial decrees",
-      "readership": {
-        "metric": "Official gazette distributed to all Catholic dioceses, episcopal conferences, and canon law faculties globally",
-        "source": "Secretariat of State of the Holy See"
-      },
-      "revenueModel": "Holy See public budget and library institutional subscriptions",
-      "logo": "newspaper-logos/va/acta-apostolicae-sedis.svg",
-      "logoExplainer": "Papal tiara and crossed keys of Saint Peter set within traditional Roman monumental typography.",
-      "sources": [
-        "https://www.vatican.va/archive/aas/index_en.htm",
-        "https://en.wikipedia.org/wiki/Acta_Apostolicae_Sedis"
-      ]
-    },
-    {
       "id": "va-donne-chiesa-mondo",
       "countryCode": "VA",
       "name": "Donne Chiesa Mondo",
@@ -18784,6 +23412,55 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://www.osservatoreromano.va/it/donne-chiesa-mondo.html",
         "https://en.wikipedia.org/wiki/L%27Osservatore_Romano"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "va-asianews",
+      "countryCode": "VA",
+      "name": "AsiaNews",
+      "founded": 2003,
+      "language": "Italian / English / Chinese",
+      "headquarters": "Rome (Pontifical Institute for Foreign Missions)",
+      "owner": {
+        "name": "PIME / AsiaNews",
+        "type": "Catholic missionary media"
+      },
+      "editorialStance": "Catholic general-interest news service closely covering Holy See and Asia; politics and church affairs",
+      "readership": {
+        "metric": "Major Catholic digital news brand",
+        "source": "https://www.asianews.it"
+      },
+      "sources": [
+        "https://www.asianews.it"
+      ]
+    },
+    {
+      "frequency": "Newspaper & digital",
+      "format": "Newspaper & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "va-ncregister",
+      "countryCode": "VA",
+      "name": "National Catholic Register",
+      "founded": 1927,
+      "language": "English",
+      "headquarters": "Irondale (EWTN) with Rome bureau",
+      "owner": {
+        "name": "EWTN News",
+        "type": "Catholic media"
+      },
+      "editorialStance": "Catholic general-interest newspaper with major Holy See coverage",
+      "readership": {
+        "metric": "Leading English-language Catholic newspaper",
+        "source": "https://en.wikipedia.org/wiki/National_Catholic_Register"
+      },
+      "sources": [
+        "https://www.ncregister.com",
+        "https://en.wikipedia.org/wiki/National_Catholic_Register"
       ]
     }
   ],
@@ -18895,6 +23572,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://www.iwnsvg.com",
         "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
       ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "vc-stvincent-times",
+      "name": "St Vincent Times",
+      "founded": 2015,
+      "language": "English",
+      "headquarters": "Kingstown",
+      "countryCode": "VC",
+      "owner": {
+        "name": "St Vincent Times",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Vincentian digital general-interest news portal",
+      "readership": {
+        "metric": "Major St Vincent news website",
+        "source": "https://www.stvincenttimes.com"
+      },
+      "sources": [
+        "https://www.stvincenttimes.com"
+      ]
     }
   ],
   "VE": [
@@ -18977,6 +23678,55 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://ultimasnoticias.com.ve",
         "https://en.wikipedia.org/wiki/%C3%9Altimas_Noticias"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ve-talcual",
+      "countryCode": "VE",
+      "name": "Tal Cual",
+      "founded": 2000,
+      "language": "Spanish",
+      "headquarters": "Caracas",
+      "owner": {
+        "name": "Tal Cual",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Independent Venezuelan general-interest newspaper; politics and investigation",
+      "readership": {
+        "metric": "Notable Venezuelan independent daily",
+        "source": "https://en.wikipedia.org/wiki/Tal_Cual"
+      },
+      "sources": [
+        "https://talcualdigital.com",
+        "https://en.wikipedia.org/wiki/Tal_Cual"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "ve-efectococuyo",
+      "countryCode": "VE",
+      "name": "Efecto Cocuyo",
+      "founded": 2015,
+      "language": "Spanish",
+      "headquarters": "Caracas",
+      "owner": {
+        "name": "Efecto Cocuyo",
+        "type": "Independent media"
+      },
+      "editorialStance": "Independent Venezuelan digital newsroom; politics and investigation",
+      "readership": {
+        "metric": "Major Venezuelan digital news brand",
+        "source": "https://efectococuyo.com"
+      },
+      "sources": [
+        "https://efectococuyo.com"
       ]
     }
   ],
@@ -19063,7 +23813,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/vn/nhan-dan.png",
       "logoExplainer": "Vietnamese 'Nhân Dân' masthead — the Communist Party daily.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:Nhân Dân онлайн logo (2021).png) for educational reference in Learn mode.",
-
       "sources": [
         "https://nhandan.vn",
         "https://en.wikipedia.org/wiki/Nh%C3%A2n_D%C3%A2n"
@@ -19092,6 +23841,31 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://vnexpress.net",
         "https://en.wikipedia.org/wiki/VnExpress"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "vn-lao-dong",
+      "countryCode": "VN",
+      "name": "Lao Động",
+      "founded": 1951,
+      "language": "Vietnamese",
+      "headquarters": "Hanoi",
+      "owner": {
+        "name": "Vietnam General Confederation of Labour",
+        "type": "State / labour media"
+      },
+      "editorialStance": "National general-interest daily; politics, labour, and society",
+      "readership": {
+        "metric": "Major Vietnamese national daily",
+        "source": "https://en.wikipedia.org/wiki/Lao_Động"
+      },
+      "sources": [
+        "https://laodong.vn",
+        "https://en.wikipedia.org/wiki/Lao_Động"
       ]
     }
   ],
@@ -19169,6 +23943,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://en.wikipedia.org/wiki/Media_of_Vanuatu",
         "https://pina.com.fj"
+      ]
+    },
+    {
+      "frequency": "Continuous digital news",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "vu-vbct",
+      "countryCode": "VU",
+      "name": "VBTC News",
+      "founded": 1990,
+      "language": "English / Bislama / French",
+      "headquarters": "Port Vila",
+      "owner": {
+        "name": "Vanuatu Broadcasting & Television Corporation digital",
+        "type": "Public media"
+      },
+      "editorialStance": "Vanuatu public digital general-interest newsroom",
+      "readership": {
+        "metric": "National Vanuatu news brand",
+        "source": "https://www.vbtc.vu"
+      },
+      "sources": [
+        "https://www.vbtc.vu"
       ]
     }
   ],
@@ -19421,6 +24219,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://almashhad-alyemeni.com",
         "https://en.wikipedia.org/wiki/Media_of_Yemen"
       ]
+    },
+    {
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "id": "ye-saba-news",
+      "name": "Saba News",
+      "founded": 1990,
+      "language": "Arabic / English",
+      "headquarters": "Sana'a",
+      "countryCode": "YE",
+      "owner": {
+        "name": "Saba News Agency",
+        "type": "State news service digital"
+      },
+      "editorialStance": "Yemeni national digital news portal; politics and general news",
+      "readership": {
+        "metric": "Official Yemen news brand",
+        "source": "https://www.saba.ye"
+      },
+      "sources": [
+        "https://www.saba.ye"
+      ]
     }
   ],
   "ZA": [
@@ -19446,7 +24268,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/za/mail-and-guardian.webp",
       "logoExplainer": "'Mail & Guardian' wordmark — the Johannesburg weekly's brand mark.",
       "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
       "sources": [
         "https://mg.co.za",
         "https://en.wikipedia.org/wiki/Mail_%26_Guardian"
@@ -19478,34 +24299,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "za-business-day",
-      "countryCode": "ZA",
-      "name": "Business Day",
-      "founded": 1985,
-      "frequency": "Daily (Monday to Friday)",
-      "format": "Broadsheet financial newspaper & digital portal (businesslive.co.za)",
-      "language": "English",
-      "headquarters": "16 Empire Road, Parktown, Johannesburg",
-      "owner": {
-        "name": "Arena Holdings (Pty) Ltd",
-        "type": "Commercial business publisher"
-      },
-      "editorialStance": "South Africa's premier national business, financial, and political daily newspaper; delivers authoritative analysis of the Johannesburg Stock Exchange (JSE), macroeconomic monetary policy by the South African Reserve Bank, fiscal budgets, and international markets",
-      "readership": {
-        "metric": "Over 20,000 daily executive print circulation and 1.2 million monthly views across BusinessLIVE digital platforms",
-        "source": "ABC South Africa / BusinessLIVE Media Pack"
-      },
-      "revenueModel": "Corporate subscriptions, financial notices, market ads, and premium digital paywall",
-      "logo": "newspaper-logos/za/business-day.svg",
-      "logoExplainer": "'Business Day' wordmark — South Africa's business daily masthead.",
-      "licenceNote": "Trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
-
-      "sources": [
-        "https://www.businesslive.co.za/bd",
-        "https://en.wikipedia.org/wiki/Business_Day_(South_Africa)"
-      ]
-    },
-    {
       "id": "za-news24",
       "countryCode": "ZA",
       "name": "News24",
@@ -19527,11 +24320,62 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "logo": "newspaper-logos/za/news24.svg",
       "logoExplainer": "Blue 'news' plus red '24' with 'Trusted News. First' strap — News24 South Africa.",
       "licenceNote": "Trademark bundled from Wikimedia Commons (File:News24 (website) logo.svg) for educational reference in Learn mode.",
-
       "sources": [
         "https://www.news24.com",
         "https://en.wikipedia.org/wiki/News24"
       ]
+    },
+    {
+      "id": "za-daily-maverick",
+      "countryCode": "ZA",
+      "name": "Daily Maverick",
+      "englishTranslation": "Daily Maverick",
+      "founded": 2009,
+      "frequency": "Continuous digital news",
+      "format": "Digital newsroom",
+      "language": "English",
+      "headquarters": "Cape Town",
+      "owner": {
+        "name": "Style Magazine South Africa / Independent",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Independent investigative and analytical newsroom; national politics, accountability, and general South African affairs",
+      "readership": {
+        "metric": "Among South Africa's most-read independent digital news brands",
+        "source": "https://en.wikipedia.org/wiki/Daily_Maverick"
+      },
+      "revenueModel": "Memberships, donations, and digital advertising",
+      "sources": [
+        "https://www.dailymaverick.co.za",
+        "https://en.wikipedia.org/wiki/Daily_Maverick"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+    },
+    {
+      "id": "za-the-star",
+      "countryCode": "ZA",
+      "name": "The Star",
+      "englishTranslation": "The Star",
+      "founded": 1887,
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "language": "English",
+      "headquarters": "Johannesburg",
+      "owner": {
+        "name": "Independent Media (South Africa)",
+        "type": "Commercial media group"
+      },
+      "editorialStance": "Johannesburg's historic general-interest daily; national and Gauteng news",
+      "readership": {
+        "metric": "Major Gauteng metropolitan daily",
+        "source": "https://en.wikipedia.org/wiki/The_Star_(South_Africa)"
+      },
+      "revenueModel": "Print sales and advertising",
+      "sources": [
+        "https://www.iol.co.za/the-star",
+        "https://en.wikipedia.org/wiki/The_Star_(South_Africa)"
+      ],
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
     }
   ],
   "ZM": [
@@ -19641,6 +24485,30 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "sources": [
         "https://diggers.news",
         "https://en.wikipedia.org/wiki/Media_of_Zambia"
+      ]
+    },
+    {
+      "frequency": "Daily newspaper",
+      "format": "Digital news portal",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
+      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "id": "zm-lusaka-times",
+      "countryCode": "ZM",
+      "name": "Lusaka Times",
+      "founded": 2007,
+      "language": "English",
+      "headquarters": "Lusaka",
+      "owner": {
+        "name": "Lusaka Times",
+        "type": "Independent commercial media"
+      },
+      "editorialStance": "Leading Zambian digital general-interest news portal",
+      "readership": {
+        "metric": "Major Zambian news website",
+        "source": "https://www.lusakatimes.com"
+      },
+      "sources": [
+        "https://www.lusakatimes.com"
       ]
     }
   ],
@@ -19774,5 +24642,5 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "https://en.wikipedia.org/wiki/NewZimbabwe.com"
       ]
     }
-  ],
+  ]
 };
