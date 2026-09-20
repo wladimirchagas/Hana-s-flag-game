@@ -1,0 +1,2569 @@
+{
+  "applicationRevision": "db3ba0559016b20bfd0243ef13b1d16413979b33",
+  "checkedAt": "2026-09-20",
+  "scope": "All 74 newly added images and all 75 registry references visually screened with their captions. All 40 identifiable file-page references (39 pages) attempted; 38 pages retrieved. No blanket official/currentness certification. Exact primary-source asset role remains distinct from file-page identity support.",
+  "rows": [
+    {
+      "id": "ad-diari-d-andorra",
+      "registry": "nationalNewspapers",
+      "country": "AD",
+      "logo": "newspaper-logos/ad/diari-d-andorra.png",
+      "description": "Blue sans 'Diari d'Andorra' wordmark with a yellow triangular accent on the apostrophe — official masthead from diariandorra.ad.",
+      "licence": "Diari d'Andorra masthead from the publisher's official site brand assets; trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.diariandorra.ad",
+        "https://en.wikipedia.org/wiki/Diari_d%27Andorra"
+      ],
+      "repositoryPath": "public/newspaper-logos/ad/diari-d-andorra.png",
+      "gitBlob": "731628b4d2bb5f1cffdaba9e70f06706bbad451f",
+      "sha256": "57ec2249432846eefb805c4fd410558618eb387695f7ff6d05533a357586754c",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "af-tolo-news",
+      "registry": "nationalNewspapers",
+      "country": "AF",
+      "logo": "newspaper-logos/af/tolo-news.jpg",
+      "description": "White rounded 'TOLO' wordmark on an orange–red field with a Dari/Pashto 'فارسی | پښتو' strap — TOLO News masthead.",
+      "licence": "TOLOnews خبرهای تازه.jpg from Wikimedia Commons (Wikidata P154); brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://tolonews.com",
+        "https://en.wikipedia.org/wiki/TOLOnews"
+      ],
+      "repositoryPath": "public/newspaper-logos/af/tolo-news.jpg",
+      "gitBlob": "45b05b38f576080b0d7c2b2eccb7dae4c59dfe9d",
+      "sha256": "367bb7ac5d12e549d49ead067dd855d756dde9e154faae74f5e5b43ba1452e7a",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_identifies_TOLOnews_but_Tolo_vs_TOLOnews_variant_unresolved",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:TOLOnews_%D8%AE%D8%A8%D8%B1%D9%87%D8%A7%DB%8C_%D8%AA%D8%A7%D8%B2%D9%87.jpg",
+        "status": "retrieved",
+        "title": "File:TOLOnews خبرهای تازه.jpg",
+        "sha256": "35ea17f08b00ca5d6be619102abec79a6673acbf323333940352d95282c9d902",
+        "licenceLinks": [
+          "//creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      },
+      "finding": "Visible mark says TOLO; source file self-description and Wikidata assignment alone do not resolve channel/variant/date."
+    },
+    {
+      "id": "al-gazeta-shqiptare",
+      "registry": "nationalNewspapers",
+      "country": "AL",
+      "logo": "newspaper-logos/al/gazeta-shqiptare.svg",
+      "description": "Black serif all-caps 'GAZETA SHQIPTARE' masthead — Albanian daily newspaper wordmark.",
+      "licence": "Gazeta Shqiptare.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.balkanweb.com",
+        "https://en.wikipedia.org/wiki/Gazeta_Shqiptare"
+      ],
+      "repositoryPath": "public/newspaper-logos/al/gazeta-shqiptare.svg",
+      "gitBlob": "0354f95b04f431f136a7979795f58b315387b330",
+      "sha256": "d29fc0298ae83a076f21102feb1573f62bf18db390b0fb918bbdaad2b89301ac",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Gazeta_Shqiptare.svg",
+        "status": "retrieved",
+        "title": "File:Gazeta Shqiptare.svg",
+        "sha256": "36181d6edec92770deb5bb99343c9bb32bb9fa7f49413b2001ee72d27c26ddbe",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "au-courier-mail",
+      "registry": "nationalNewspapers",
+      "country": "AU",
+      "logo": "newspaper-logos/au/courier-mail.png",
+      "description": "Blackletter 'The Courier-Mail' with a red Queensland silhouette and 'We're for you' tagline on white.",
+      "licence": "The Courier-Mail Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.couriermail.com.au",
+        "https://en.wikipedia.org/wiki/The_Courier-Mail"
+      ],
+      "repositoryPath": "public/newspaper-logos/au/courier-mail.png",
+      "gitBlob": "f4b52e36303df5b2360d6abd5496cd61c48c6cd1",
+      "sha256": "03af2ce216b9cc639681dcc2bf3a40d1de8ebe227bfc3ff262fb6805829469df",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://en.wikipedia.org/wiki/File:The_Courier-Mail_Logo.svg",
+        "status": "retrieved",
+        "title": "File:The Courier-Mail Logo.svg",
+        "sha256": "87ae776756415e46f9627942c57f311f8d76f126b9457bed3d0f834442e3e25e",
+        "licenceLinks": []
+      }
+    },
+    {
+      "id": "ba-dnevni-avaz",
+      "registry": "nationalNewspapers",
+      "country": "BA",
+      "logo": "newspaper-logos/ba/dnevni-avaz.png",
+      "description": "Black serif 'Dnevni avaz' wordmark with the paper's heraldic dragon emblem at left — masthead from avaz.ba (fill adapted from the site's white SVG for light UI).",
+      "licence": "Dnevni avaz masthead from the publisher's official site (avaz.ba/avaz.svg); brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://avaz.ba",
+        "https://en.wikipedia.org/wiki/Dnevni_avaz"
+      ],
+      "repositoryPath": "public/newspaper-logos/ba/dnevni-avaz.png",
+      "gitBlob": "3b5e7836057bf319564332c42dc039cfd55e0cad",
+      "sha256": "c83850250a2e915e0f8c76e2488149afa17ae0c413dec9e0aa64140f0dc2e79f",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "bd-prothom-alo",
+      "registry": "nationalNewspapers",
+      "country": "BD",
+      "logo": "newspaper-logos/bd/prothom-alo.png",
+      "description": "Orange rising-sun mark over the Bengali 'প্রথম আলো' wordmark on white — Prothom Alo masthead from prothomalo.com.",
+      "licence": "Prothom Alo brand mark trademark bundled from the publisher's official site brand assets (palo-bangla.svg) for educational reference in Learn mode.",
+      "sources": [
+        "https://www.prothomalo.com",
+        "https://en.wikipedia.org/wiki/Prothom_Alo"
+      ],
+      "repositoryPath": "public/newspaper-logos/bd/prothom-alo.png",
+      "gitBlob": "e1c8416bace17b80bd247e018d2636989fefff72",
+      "sha256": "abf354e18b1bd116a973ce28903736a31e551905208f7b709e937019c60ce007",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "bd-ittefaq",
+      "registry": "nationalNewspapers",
+      "country": "BD",
+      "logo": "newspaper-logos/bd/ittefaq.png",
+      "description": "Bold Bengali 'দৈনিক ইত্তেফাক' masthead with smaller founder attribution — The Daily Ittefaq crest.",
+      "licence": "The Daily Ittefaq Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.ittefaq.com.bd",
+        "https://en.wikipedia.org/wiki/The_Daily_Ittefaq"
+      ],
+      "repositoryPath": "public/newspaper-logos/bd/ittefaq.png",
+      "gitBlob": "f051eaee3351377da4b8af3d95795f0ee44e7f55",
+      "sha256": "39df1ec54aeb5a4db46446774082c2e6f065bac2afc893bdae50ed90e42738d6",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://en.wikipedia.org/wiki/File:The_Daily_Ittefaq_Logo.svg",
+        "status": "retrieved",
+        "title": "File:The Daily Ittefaq Logo.svg",
+        "sha256": "937f07c43e207f596c26d5c99bed8981e3ad3839598f8b508657f9a1c3e88500",
+        "licenceLinks": []
+      }
+    },
+    {
+      "id": "bd-jugantor",
+      "registry": "nationalNewspapers",
+      "country": "BD",
+      "logo": "newspaper-logos/bd/jugantor.png",
+      "description": "Stylised black Bengali 'যুগান্তর' wordmark on white — Daily Jugantor masthead.",
+      "licence": "Jugantor Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.jugantor.com",
+        "https://en.wikipedia.org/wiki/Jugantor"
+      ],
+      "repositoryPath": "public/newspaper-logos/bd/jugantor.png",
+      "gitBlob": "4d0359d70363fc59060521d1d7bee501fe9b425c",
+      "sha256": "b360aba783492f2f4a348c348cdb2ba39549e66381e7661a7d17b95132363d61",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://en.wikipedia.org/wiki/File:Jugantor_Logo.svg",
+        "status": "retrieved",
+        "title": "File:Jugantor Logo.svg",
+        "sha256": "db7f94df30575c3195ea40c9fccdaf97ac9fcf6b141dc56f484e17be40968fa7",
+        "licenceLinks": []
+      }
+    },
+    {
+      "id": "be-het-nieuwsblad",
+      "registry": "nationalNewspapers",
+      "country": "BE",
+      "logo": "newspaper-logos/be/het-nieuwsblad.png",
+      "description": "White 'Het Nieuwsblad' serif wordmark on a solid blue bar — the Belgian daily's masthead.",
+      "licence": "Het Nieuwsblad Logo.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.nieuwsblad.be",
+        "https://en.wikipedia.org/wiki/Het_Nieuwsblad"
+      ],
+      "repositoryPath": "public/newspaper-logos/be/het-nieuwsblad.png",
+      "gitBlob": "882f00585619ec31cf04267d84c867f9a57ef687",
+      "sha256": "9796e0fe222a9c09fa0d5f1f049a01241a8405b26d455adce2dae7394091a1f4",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Het_Nieuwsblad_Logo.png",
+        "status": "retrieved",
+        "title": "File:Het Nieuwsblad Logo.png",
+        "sha256": "91572621591e3c2a7f6abab8a77ac6ba1d9306e06f6ce24d73c7c15f1eb9c59a",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "bg-24-chasa",
+      "registry": "nationalNewspapers",
+      "country": "BG",
+      "logo": "newspaper-logos/bg/24-chasa.svg",
+      "description": "Black '24 часа' wordmark with italic Cyrillic 'часа' and a thick underline — Bulgarian daily 24 Chasa masthead.",
+      "licence": "Logo 24 Tschasa.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.24chasa.bg",
+        "https://en.wikipedia.org/wiki/24_Chasa"
+      ],
+      "repositoryPath": "public/newspaper-logos/bg/24-chasa.svg",
+      "gitBlob": "5d105526bf7fade678a9493221bc378114246eae",
+      "sha256": "70baa0f5a50aac635c44cac24e4e70ceefe0c6ad8538faff04b51f0a7a566778",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Logo_24_Tschasa.svg",
+        "status": "retrieved",
+        "title": "File:Logo 24 Tschasa.svg",
+        "sha256": "3b54a0f59a3a7a1b5b5dacb5823606e504f17292585640624f2b691ef5cec8b8",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "bg-mediapool",
+      "registry": "nationalNewspapers",
+      "country": "BG",
+      "logo": "newspaper-logos/bg/mediapool.svg",
+      "description": "White 'MEDIAPOOL' wordmark with grey '.BG' suffix and a small square mark on a black bar — Bulgarian digital news outlet.",
+      "licence": "Mediapool masthead trademark bundled from the publisher's official site brand assets (mediapool.bg/assets/images/logo-simple.svg) for educational reference in Learn mode.",
+      "sources": [
+        "https://www.mediapool.bg"
+      ],
+      "repositoryPath": "public/newspaper-logos/bg/mediapool.svg",
+      "gitBlob": "60f9697d0889919705264859b4e5ace0dbdd3a96",
+      "sha256": "0b24544eaf06c3b4c91bbc4a5059911be3eeff7d82818afb2fc12a050abca98c",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified",
+      "finding": "Description mentions a black bar, while the standalone SVG appears transparent on the contact sheet. UI-background presentation must be distinguished from intrinsic artwork."
+    },
+    {
+      "id": "bi-jimbere",
+      "registry": "nationalNewspapers",
+      "country": "BI",
+      "logo": "newspaper-logos/bi/jimbere.png",
+      "description": "Two-tone slab-serif 'Jimbere' wordmark (cyan 'Jim' + orange 'bere') — Jimbere Magazine masthead.",
+      "licence": "Jimbere Magazine logo.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.jimbere-mag.org"
+      ],
+      "repositoryPath": "public/newspaper-logos/bi/jimbere.png",
+      "gitBlob": "fde9fb2fa48f47ddef46c968c4130f87a6c6858a",
+      "sha256": "d17e519723c56fc0d3175e0787f9a3b040747c93e165ce8306b19c9d9a41eaa4",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Jimbere_Magazine_logo.png",
+        "status": "retrieved",
+        "title": "File:Jimbere Magazine logo.png",
+        "sha256": "230e92372b92f7cd68ae3c96b871265fa171fc99697fb3fc49fe4df948fcaead",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "bj-la-nouvelle-tribune",
+      "registry": "nationalNewspapers",
+      "country": "BJ",
+      "logo": "newspaper-logos/bj/la-nouvelle-tribune.webp",
+      "description": "Deep-red serif 'La Nouvelle Tribune' wordmark beside a red globe grid icon — masthead from lanouvelletribune.info.",
+      "licence": "La Nouvelle Tribune masthead from the publisher's official site brand assets; trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://lanouvelletribune.info",
+        "https://fr.wikipedia.org/wiki/La_Nouvelle_Tribune_(B%C3%A9nin)"
+      ],
+      "repositoryPath": "public/newspaper-logos/bj/la-nouvelle-tribune.webp",
+      "gitBlob": "1f09f3b33fcc75519f319a9ba3dfaac647777370",
+      "sha256": "eed9023623236f3f50ddcb04c5ffaed42dcfb1b66b7d660b9d901f6ed6260191",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "bo-el-deber",
+      "registry": "nationalNewspapers",
+      "country": "BO",
+      "logo": "newspaper-logos/bo/el-deber.png",
+      "description": "Green lowercase 'eldeber' wordmark with an orange period — El Deber (Bolivia) masthead.",
+      "licence": "EL DEBER PERD BOL.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://eldeber.com.bo",
+        "https://en.wikipedia.org/wiki/El_Deber"
+      ],
+      "repositoryPath": "public/newspaper-logos/bo/el-deber.png",
+      "gitBlob": "0a3e271dae89358fa6fd245ab1f1b85824265d5c",
+      "sha256": "f9e7eb488afbad244bd3d699b40d3f0149ca064df0fb77211d1b3b48686450cb",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:EL_DEBER_PERD_BOL.png",
+        "status": "retrieved",
+        "title": "File:EL DEBER PERD BOL.png",
+        "sha256": "ae6569d1da492727736343ea6b5ad27db3c237d145483eb78413bb8d96b386a9",
+        "licenceLinks": [
+          "//creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "bo-el-diario",
+      "registry": "nationalNewspapers",
+      "country": "BO",
+      "logo": "newspaper-logos/bo/el-diario.jpg",
+      "description": "Blue 'EL DIARIO' masthead with the Bolivian tricolour between the words and the tagline 'Decano de la Prensa Nacional' — La Paz daily.",
+      "licence": "El Diario logo.jpg from Wikimedia Commons (PD-textlogo; Newspaper logos of Bolivia); brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.eldiario.net",
+        "https://en.wikipedia.org/wiki/El_Diario_(La_Paz)"
+      ],
+      "repositoryPath": "public/newspaper-logos/bo/el-diario.jpg",
+      "gitBlob": "d9bf32515d6cb6cabdd8ab27124490864b358edb",
+      "sha256": "7c8ba692633aa24b66f89c6bcc3dc5ff9c09970a5c8c8ec52f79dc8660c12abc",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:El_Diario_logo.jpg",
+        "status": "retrieved",
+        "title": "File:El Diario logo.jpg",
+        "sha256": "720e6057801176a67fe9d47e8ccfe246d6c442b3827a799f204ab29665d19b28",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/mark/1.0/deed.en",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "bw-botswana-guardian",
+      "registry": "nationalNewspapers",
+      "country": "BW",
+      "logo": "newspaper-logos/bw/botswana-guardian.png",
+      "description": "Red serif 'BOTSWANA GUARDIAN' nameplate with a paired 'THE MIDWEEK SUN' block — Botswana Guardian masthead.",
+      "licence": "Botswana Guardian & The Midweek Sun nameplate from English Wikipedia (fair-use / non-free local file); trademark bundled for educational reference in Learn mode with licenceNote.",
+      "sources": [
+        "https://www.botswanaguardian.co.bw"
+      ],
+      "repositoryPath": "public/newspaper-logos/bw/botswana-guardian.png",
+      "gitBlob": "e8ae4926a70eec6e26fe3a86b8ba6402632322e8",
+      "sha256": "a4d0c54e9bb98fbcdc70204447d7ae9d98bd7a7731150a7d373cd4503f06d862",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified",
+      "provenanceCaveat": "Record identifies English Wikipedia without an exact file title. A guessed title was not accepted as cited evidence."
+    },
+    {
+      "id": "cd-le-potentiel",
+      "registry": "nationalNewspapers",
+      "country": "CD",
+      "logo": "newspaper-logos/cd/le-potentiel.png",
+      "description": "Red italic 'Le Potentiel' wordmark with a white outline — Congolese (DRC) daily masthead.",
+      "licence": "Logo - Le Potentiel.png from French Wikipedia (marque déposée / logo); trademark bundled for educational reference in Learn mode with licenceNote.",
+      "sources": [
+        "https://lepotentiel.cd",
+        "https://fr.wikipedia.org/wiki/Le_Potentiel"
+      ],
+      "repositoryPath": "public/newspaper-logos/cd/le-potentiel.png",
+      "gitBlob": "49195aa1a86574a37cb647647c639a6789506b2e",
+      "sha256": "3ba66153729913f2aca2bc1e801b20ad2449dfaa6d87336c4066d74b0482e533",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://fr.wikipedia.org/wiki/Fichier:Logo_-_Le_Potentiel.png",
+        "status": "retrieved",
+        "title": "Fichier:Logo - Le Potentiel.png",
+        "sha256": "b734a375bf97887bd9ec96914800ff72fa16e5700eb884c1ae21d45078e1b921",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+        ]
+      }
+    },
+    {
+      "id": "ch-tages-anzeiger",
+      "registry": "nationalNewspapers",
+      "country": "CH",
+      "logo": "newspaper-logos/ch/tages-anzeiger.svg",
+      "description": "Black Fraktur 'Tages Anzeiger' with a blue-and-white shield between the words — Swiss daily Tages-Anzeiger masthead.",
+      "licence": "Logo Tagesanzeiger.svg from German Wikipedia (logo / non-free local file); trademark bundled for educational reference in Learn mode with licenceNote.",
+      "sources": [
+        "https://www.tagesanzeiger.ch",
+        "https://en.wikipedia.org/wiki/Tages-Anzeiger"
+      ],
+      "repositoryPath": "public/newspaper-logos/ch/tages-anzeiger.svg",
+      "gitBlob": "f58c0e128dbe7e7ae5ce92abc1c83a52c03eb956",
+      "sha256": "9f3cc34132c1e5a2944835bf1c9acefbb79482d867de1847cf5339ad5c44b91a",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://de.wikipedia.org/wiki/Datei:Logo_Tagesanzeiger.svg",
+        "status": "retrieved",
+        "title": "Datei:Logo Tagesanzeiger.svg",
+        "sha256": "4d77dce31e6b89503a77098fc81858f8e955f198d1c63eb21f872e7e7930b375",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/deed.de"
+        ]
+      }
+    },
+    {
+      "id": "ci-fraternite-matin",
+      "registry": "nationalNewspapers",
+      "country": "CI",
+      "logo": "newspaper-logos/ci/fraternite-matin.png",
+      "description": "Green 'Fratmat' + orange '.info' wordmark with orange swooshes and the strap 'l'Actualité en continu…' — Fraternité Matin's digital masthead from fratmat.info.",
+      "licence": "Fraternité Matin masthead from the publisher's official site brand assets (fratmat.info); trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.fratmat.info",
+        "https://en.wikipedia.org/wiki/Fraternité_Matin"
+      ],
+      "repositoryPath": "public/newspaper-logos/ci/fraternite-matin.png",
+      "gitBlob": "9375f4f7f30127dcb67415b5d1216bbaef2e879f",
+      "sha256": "0895b3b56424330274f0a65f87bed0351b7c960b4c65acdf4f37a0ed71fc97cb",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "cl-las-ultimas-noticias",
+      "registry": "nationalNewspapers",
+      "country": "CL",
+      "logo": "newspaper-logos/cl/las-ultimas-noticias.svg",
+      "description": "White 'Las Últimas Noticias' sans wordmark on a navy bar topped by a thin red stripe — LUN masthead.",
+      "licence": "Las Últimas Noticias logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.lun.com",
+        "https://en.wikipedia.org/wiki/Las_%C3%9Altimas_Noticias"
+      ],
+      "repositoryPath": "public/newspaper-logos/cl/las-ultimas-noticias.svg",
+      "gitBlob": "a23b61ffdbbe77966cbd2912e359730f31fb8f02",
+      "sha256": "419f2eea42ccf1d3ed328b1b2f43aa5aa187d3242481c589ecb48da0bc50c103",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Las_%C3%9Altimas_Noticias_logo.svg",
+        "status": "retrieved",
+        "title": "File:Las Últimas Noticias logo.svg",
+        "sha256": "99a6062a261421ad6b64b2bb695b3dbbb3597eaa45b033031bea395a1c282b7d",
+        "licenceLinks": [
+          "//creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "cn-people-s-daily",
+      "registry": "nationalNewspapers",
+      "country": "CN",
+      "logo": "newspaper-logos/cn/people-s-daily.svg",
+      "description": "Red calligraphic masthead 人民日报 (Renmin Ribao) in Mao Zedong's brush style — People's Daily logo from Wikimedia Commons.",
+      "licence": "People's Daily logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "http://en.people.cn",
+        "https://en.wikipedia.org/wiki/People%27s_Daily"
+      ],
+      "repositoryPath": "public/newspaper-logos/cn/people-s-daily.svg",
+      "gitBlob": "9996404dbf61835f68e5feee6f14ea633ec79f00",
+      "sha256": "97d1b7feaf4da886cd53553e228e2768cea4fdb9287bf4e6a6c978dd16a8b6e3",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:People%27s_Daily_logo.svg",
+        "status": "retrieved",
+        "title": "File:People's Daily logo.svg",
+        "sha256": "1012fdef66d7f22c21e5dd680cc24bb29d6c8c494e9252a19d7415a9916f986f",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "co-el-pais-cali",
+      "registry": "nationalNewspapers",
+      "country": "CO",
+      "logo": "newspaper-logos/co/el-pais-cali.png",
+      "description": "Black serif 'El País' with a light-blue wedge accent on the í — El País Cali masthead on white.",
+      "licence": "El País (Colombia) Logotype.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.elpais.com.co",
+        "https://en.wikipedia.org/wiki/El_País_(Cali)"
+      ],
+      "repositoryPath": "public/newspaper-logos/co/el-pais-cali.png",
+      "gitBlob": "ade66c68dd68f5adb37dc040700f48fd5c18c438",
+      "sha256": "40961692f9409ec809b792d5ec61d79b094c7b92f3e0f8aa28e373cb39d33716",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:El_Pa%C3%ADs_%28Colombia%29_Logotype.svg",
+        "status": "retrieved",
+        "title": "File:El País (Colombia) Logotype.svg",
+        "sha256": "27fd557339630d4f0f9dad9ae23400581b7145d372595af2a64af9e6e98b9771",
+        "licenceLinks": [
+          "//creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "cu-trabajadores",
+      "registry": "nationalNewspapers",
+      "country": "CU",
+      "logo": "newspaper-logos/cu/trabajadores.png",
+      "description": "Black serif all-caps 'TRABAJADORES' wordmark — Cuban workers' daily newspaper masthead.",
+      "licence": "Logotipo del periódico Trabajadores.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.trabajadores.cu",
+        "https://es.wikipedia.org/wiki/Trabajadores_(peri%C3%B3dico)"
+      ],
+      "repositoryPath": "public/newspaper-logos/cu/trabajadores.png",
+      "gitBlob": "88e61814c0698ae363d50d6a67eccba42c8c0664",
+      "sha256": "c40a971a4f22b8c918e0808e14503d678054319e28684cbc36b0106b406ee8c5",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Logotipo_del_peri%C3%B3dico_Trabajadores.png",
+        "status": "retrieved",
+        "title": "File:Logotipo del periódico Trabajadores.png",
+        "sha256": "24c9ad85af5fc2a0c3369f6f55ff48b9e5b3e384a95d83e98be3af98eaa102ad",
+        "licenceLinks": [
+          "//creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "cv-inforpress",
+      "registry": "nationalNewspapers",
+      "country": "CV",
+      "logo": "newspaper-logos/cv/inforpress.svg",
+      "description": "Blue stacked 'infor/press' wordmark beside a red squared globe — Cape Verde Inforpress crest.",
+      "licence": "Inforpress brand mark trademark bundled from the agency's official site brand assets (inforpress.cv/logo.svg) for educational reference in Learn mode.",
+      "sources": [
+        "https://inforpress.cv"
+      ],
+      "repositoryPath": "public/newspaper-logos/cv/inforpress.svg",
+      "gitBlob": "007401c38fbb56751feb6319732d4afd7ccdc2eb",
+      "sha256": "67a3c666e19e782e0fe365a683cc891e49e6246d5628d95bbda85daf9a242048",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "cz-pravo",
+      "registry": "nationalNewspapers",
+      "country": "CZ",
+      "logo": "newspaper-logos/cz/pravo.svg",
+      "description": "Tall condensed orange-red 'PRÁVO' wordmark — Czech daily Právo masthead (Commons vector of the design in use since the mid-1990s).",
+      "licence": "Pravo-logo ca. 1995.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.novinky.cz",
+        "https://en.wikipedia.org/wiki/Pr%C3%A1vo"
+      ],
+      "repositoryPath": "public/newspaper-logos/cz/pravo.svg",
+      "gitBlob": "5cce912dae1a2a72e4dcfb4820d70f8267316e14",
+      "sha256": "5956d9dce325a168152da6669036c6fdb7eb1d8d0fcf4d23d27cde150f54fe91",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Pravo-logo_ca._1995.svg",
+        "status": "retrieved",
+        "title": "File:Pravo-logo ca. 1995.svg",
+        "sha256": "c8e90f96bf5500d60859d46a672e5b0ed7ffe7509d63f7bc13933598646a6e08",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "cz-blesk",
+      "registry": "nationalNewspapers",
+      "country": "CZ",
+      "logo": "newspaper-logos/cz/blesk.svg",
+      "description": "White italic all-caps 'BLESK' on a solid red rectangle — Czech tabloid Blesk masthead.",
+      "licence": "Blesk Logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.blesk.cz",
+        "https://en.wikipedia.org/wiki/Blesk_(newspaper)"
+      ],
+      "repositoryPath": "public/newspaper-logos/cz/blesk.svg",
+      "gitBlob": "35b2aeb76788955af77435f638a5ecbf7b993395",
+      "sha256": "8ca34bad882ae5d6b57113d5df281762560cb2dfd56ed26899fab02a90f3ef92",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Blesk_Logo.svg",
+        "status": "retrieved",
+        "title": "File:Blesk Logo.svg",
+        "sha256": "0a67643f28d0303784fe0a0b78c87e3df44f035a0bba47e9999fa24a878cac26",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "do-diario-libre",
+      "registry": "nationalNewspapers",
+      "country": "DO",
+      "logo": "newspaper-logos/do/diario-libre.png",
+      "description": "Green square with white 'Diario Libre' and a yellow news-carrier figure — Diario Libre crest from diariolibre.com.",
+      "licence": "Diario Libre brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "sources": [
+        "https://www.diariolibre.com",
+        "https://en.wikipedia.org/wiki/Diario_Libre"
+      ],
+      "repositoryPath": "public/newspaper-logos/do/diario-libre.png",
+      "gitBlob": "39f4a50b1a95104a4c4f92cd368ac9aba32553ba",
+      "sha256": "11665acd70ef6d11bea98731c0906de89f61d0f697ccc93d30e9325cf1a86508",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "do-hoy",
+      "registry": "nationalNewspapers",
+      "country": "DO",
+      "logo": "newspaper-logos/do/hoy.png",
+      "description": "White slab-serif 'Hoy' wordmark on a cyan field — Dominican Republic daily masthead.",
+      "licence": "Hoy masthead trademark bundled from the publisher's official site brand assets (imagenes.hoy.com.do/static/img/hoy.png) for educational reference in Learn mode.",
+      "sources": [
+        "https://hoy.com.do",
+        "https://es.wikipedia.org/wiki/Hoy_(Rep%C3%BAblica_Dominicana)"
+      ],
+      "repositoryPath": "public/newspaper-logos/do/hoy.png",
+      "gitBlob": "4a5ac145f73ed3638bc2b57b0891d79ded83c4d7",
+      "sha256": "a3cebdc05b5d1704978ee2864e62e6a343c141aa5229c0a061d66818198fc7ac",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "ec-primicias",
+      "registry": "nationalNewspapers",
+      "country": "EC",
+      "logo": "newspaper-logos/ec/primicias.png",
+      "description": "Black stacked sans 'PRI / MI / CIAS' with a light-blue bar under the C — Primicias Ecuador masthead.",
+      "licence": "Logo primicias.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.primicias.ec"
+      ],
+      "repositoryPath": "public/newspaper-logos/ec/primicias.png",
+      "gitBlob": "fe1ec1e35a0709437b04f388764e4f67950a86b7",
+      "sha256": "95710773da389a78bd824eb806969a8d2768852988d2d4aca1a780f09e312379",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Logo_primicias.png",
+        "status": "retrieved",
+        "title": "File:Logo primicias.png",
+        "sha256": "5e6b2e85511b9c4b3af3dcdcbbfde44cb8e6980ce9b5d64f760bad7be126683f",
+        "licenceLinks": [
+          "//creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "ee-eesti-paevaleht",
+      "registry": "nationalNewspapers",
+      "country": "EE",
+      "logo": "newspaper-logos/ee/eesti-paevaleht.svg",
+      "description": "Three red dots beside black 'Eesti' and red 'Päevaleht' — Estonian daily Eesti Päevaleht masthead.",
+      "licence": "Eesti Päevaleht logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://epl.delfi.ee",
+        "https://en.wikipedia.org/wiki/Eesti_P%C3%A4evaleht"
+      ],
+      "repositoryPath": "public/newspaper-logos/ee/eesti-paevaleht.svg",
+      "gitBlob": "20a8890251f672cc37a4a8dd37c50a92c65ae4f6",
+      "sha256": "a220f02ec7d1c5bb5b5e84a48fbc74a9d0ac0e702a93a777aef653bb393bb484",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "incorrect_colour_count",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Eesti_P%C3%A4evaleht_logo.svg",
+        "status": "retrieved",
+        "title": "File:Eesti Päevaleht logo.svg",
+        "sha256": "219ea63d761382a06c3f19bc9619b847692103a75af7617feb7978da11f5045c",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      },
+      "finding": "Caption says three red dots; the bundled SVG visibly has one dark dot and two red dots."
+    },
+    {
+      "id": "es-el-periodico",
+      "registry": "nationalNewspapers",
+      "country": "ES",
+      "logo": "newspaper-logos/es/el-periodico.png",
+      "description": "White 'elPeriódico' wordmark on a solid red field — El Periódico de Catalunya masthead from elperiodico.com.",
+      "licence": "El Periódico brand mark trademark bundled from the publisher's official site brand assets (elperiodico.com) for educational reference in Learn mode.",
+      "sources": [
+        "https://www.elperiodico.com",
+        "https://en.wikipedia.org/wiki/El_Periódico_de_Catalunya"
+      ],
+      "repositoryPath": "public/newspaper-logos/es/el-periodico.png",
+      "gitBlob": "b3b487a1bcf9e303f36b935926f7d733bc2c11af",
+      "sha256": "f574ff8c0f1de6e46ec690bdea3204cb64ebe634a5c5c6acb12080010a2a1310",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "gb-the-scotsman",
+      "registry": "nationalNewspapers",
+      "country": "GB",
+      "logo": "newspaper-logos/gb/the-scotsman.png",
+      "description": "Black thistle crest above 'THE SCOTSMAN' caps on a white plate — The Scotsman masthead.",
+      "licence": "The Scotsman logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.scotsman.com",
+        "https://en.wikipedia.org/wiki/The_Scotsman"
+      ],
+      "repositoryPath": "public/newspaper-logos/gb/the-scotsman.png",
+      "gitBlob": "528692368e3ba7340e7371696727e2dad365daba",
+      "sha256": "f04946cdc4ac7c13de3471ed75098c455f236c3d98c3f15beec8c45aea23af55",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://en.wikipedia.org/wiki/File:The_Scotsman_logo.svg",
+        "status": "retrieved",
+        "title": "File:The Scotsman logo.svg",
+        "sha256": "8ceb0edbf630c3b33a0a5e78c12bbe9b713ca3f04706908b83b942609fa414f0",
+        "licenceLinks": []
+      }
+    },
+    {
+      "id": "ge-civil-ge",
+      "registry": "nationalNewspapers",
+      "country": "GE",
+      "logo": "newspaper-logos/ge/civil-ge.png",
+      "description": "Red concentric-circle 'C' mark beside red sans 'Civil Georgia' — Civil.ge masthead from the site's own brand assets.",
+      "licence": "Civil.ge masthead from the publisher's official site brand assets (civil.ge); trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://civil.ge",
+        "https://en.wikipedia.org/wiki/Civil_Georgia"
+      ],
+      "repositoryPath": "public/newspaper-logos/ge/civil-ge.png",
+      "gitBlob": "a6a04e690360106d94ca44dae4169890e3754167",
+      "sha256": "e59220eaf61ce06d38a48509bd1711cbd8263d26fe9165592819e0699955e17f",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "gr-efimerida-ton-syntakton",
+      "registry": "nationalNewspapers",
+      "country": "GR",
+      "logo": "newspaper-logos/gr/efimerida-ton-syntakton.svg",
+      "description": "Red triple pen-nib mark beside black 'Η ΕΦΗΜΕΡΙΔΑ' over a red bar 'ΤΩΝ ΣΥΝΤΑΚΤΩΝ' — Efimerida ton Syntakton masthead extracted from efsyn.gr.",
+      "licence": "EfSyn site logo SVG from the publisher's official theme assets (efsyn.gr); trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.efsyn.gr",
+        "https://en.wikipedia.org/wiki/Efimerida_ton_Syntakton"
+      ],
+      "repositoryPath": "public/newspaper-logos/gr/efimerida-ton-syntakton.svg",
+      "gitBlob": "59baec74a958aa0f5aa906063cf98b0710dc0a0a",
+      "sha256": "3d8c8cbd2dc1f3450622d9842e71bddf71a4adc34b9b66e86119f59ac2289a59",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "hr-novi-list",
+      "registry": "nationalNewspapers",
+      "country": "HR",
+      "logo": "newspaper-logos/hr/novi-list.svg",
+      "description": "White sans all-caps 'NOVI LIST' on a solid blue bar — Croatian daily Novi list masthead.",
+      "licence": "Novi list Logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.novilist.hr",
+        "https://en.wikipedia.org/wiki/Novi_list"
+      ],
+      "repositoryPath": "public/newspaper-logos/hr/novi-list.svg",
+      "gitBlob": "83e29e787a807370745c4db2030e823be29806dc",
+      "sha256": "0eb3381de1e7aad5f0c3902f9b3b976d8e0b3c5bde787b0b43fee7860d649982",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Novi_list_Logo.svg",
+        "status": "retrieved",
+        "title": "File:Novi list Logo.svg",
+        "sha256": "2bb38b4600ab0dddf931fa8babe7e30439636e59ec69fa0faba1556cd044157a",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "id-koran-tempo",
+      "registry": "nationalNewspapers",
+      "country": "ID",
+      "logo": "newspaper-logos/id/koran-tempo.svg",
+      "description": "Bold red serif 'TEMPO' wordmark — Koran Tempo / Tempo masthead from tempo.co.",
+      "licence": "TEMPO brand mark trademark bundled from the publisher's official site brand assets (tempo.co) for educational reference in Learn mode.",
+      "sources": [
+        "https://corporate.tempo.co/",
+        "https://koran.tempo.co/"
+      ],
+      "repositoryPath": "public/newspaper-logos/id/koran-tempo.svg",
+      "gitBlob": "064a38528197f2b5247335b8643fcb214bb33b81",
+      "sha256": "2b6616bea50de620d3ddee2f3abdf45701663db264521ee762adcadecec39fcd",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "ie-irish-independent",
+      "registry": "nationalNewspapers",
+      "country": "IE",
+      "logo": "newspaper-logos/ie/irish-independent.svg",
+      "description": "Dark green 'Irish Independent' serif wordmark with a harp mark — Irish Independent masthead.",
+      "licence": "Irish Independent Logo.svg from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.independent.ie",
+        "https://en.wikipedia.org/wiki/Irish_Independent"
+      ],
+      "repositoryPath": "public/newspaper-logos/ie/irish-independent.svg",
+      "gitBlob": "b1517bb9b77cb5a836f726ea6f26ef265d5ba5f9",
+      "sha256": "36dd6272cb8937701dd54c6bebf8da91256ffa9fc3f57032492f060c92b9eaeb",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://en.wikipedia.org/wiki/File:Irish_Independent_Logo.svg",
+        "status": "retrieved",
+        "title": "File:Irish Independent Logo.svg",
+        "sha256": "85d879075355eb5223bc991846742c7be866aaac8b2a73c0fc0b0041fa78b2c5",
+        "licenceLinks": []
+      }
+    },
+    {
+      "id": "ir-tehran-times",
+      "registry": "nationalNewspapers",
+      "country": "IR",
+      "logo": "newspaper-logos/ir/tehran-times.svg",
+      "description": "Red serif 'TEHRANTIMES' wordmark with an 'INTERNATIONAL DAILY' strap — Tehran Times masthead.",
+      "licence": "TehranTimes.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.tehrantimes.com",
+        "https://en.wikipedia.org/wiki/Tehran_Times"
+      ],
+      "repositoryPath": "public/newspaper-logos/ir/tehran-times.svg",
+      "gitBlob": "b5ee09a73daec9d5bf948c7414457e12d3864a14",
+      "sha256": "1f94d79d688560cfe39436b02e965460a334aa3e43981186e82562ef38e8c83a",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:TehranTimes.svg",
+        "status": "retrieved",
+        "title": "File:TehranTimes.svg",
+        "sha256": "f844535a484e665fedf0f6d35a7813ce58a9f3a3b233d2a320460fa07334476a",
+        "licenceLinks": [
+          "//creativecommons.org/licenses/by/4.0/deed.en",
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "ir-ettelaat",
+      "registry": "nationalNewspapers",
+      "country": "IR",
+      "logo": "newspaper-logos/ir/ettelaat.svg",
+      "description": "Orange Persian calligraphy masthead — Ettela'at newspaper wordmark.",
+      "licence": "Ettelaat.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.ettelaat.com",
+        "https://en.wikipedia.org/wiki/Ettela%27at"
+      ],
+      "repositoryPath": "public/newspaper-logos/ir/ettelaat.svg",
+      "gitBlob": "f80776b9675574d8e4a4bb613c30d90485b03c7d",
+      "sha256": "612d2648c3e70a49efb8eda8c183dd571c400ba96971872261d37eabcf02c782",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Ettelaat.svg",
+        "status": "retrieved",
+        "title": "File:Ettelaat.svg",
+        "sha256": "47b94b3dd9dbb8cc9c7c2009e8c8b20bf219eac5c6ebfed8131e6ea69d8c65ff",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "ir-hamshahri",
+      "registry": "nationalNewspapers",
+      "country": "IR",
+      "logo": "newspaper-logos/ir/hamshahri.png",
+      "description": "Dark green geometric Persian calligraphy — Hamshahri newspaper masthead.",
+      "licence": "Hamshahri newspaper logo.gif from Wikimedia Commons (rasterised to PNG); brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.hamshahrionline.ir",
+        "https://en.wikipedia.org/wiki/Hamshahri"
+      ],
+      "repositoryPath": "public/newspaper-logos/ir/hamshahri.png",
+      "gitBlob": "28fedf6cb911f840b623ad0b5cd900ac36c39de7",
+      "sha256": "252406ab7fdbc21178078bf37f6e0ca215ac28d2ba8c55a161d993286a476493",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Hamshahri_newspaper_logo.gif",
+        "status": "retrieved",
+        "title": "File:Hamshahri newspaper logo.gif",
+        "sha256": "9537b4a868db18c22826de26a6cdfb9f703a9958de5dfed33d1e759a4890d870",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "jm-jamaica-observer",
+      "registry": "nationalNewspapers",
+      "country": "JM",
+      "logo": "newspaper-logos/jm/jamaica-observer.png",
+      "description": "Globe emblem beside stacked black 'JAMAICA' over red 'OBSERVER' — Jamaica Observer masthead from jamaicaobserver.com.",
+      "licence": "Jamaica Observer brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "sources": [
+        "https://www.jamaicaobserver.com",
+        "https://en.wikipedia.org/wiki/Jamaica_Observer"
+      ],
+      "repositoryPath": "public/newspaper-logos/jm/jamaica-observer.png",
+      "gitBlob": "a19c1f74fa989c1db682b6606d10042d092b5bbe",
+      "sha256": "55406559d9d33a1a4c77b92282542999ce72fd957ced250be97d370c787f9046",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "ke-daily-nation",
+      "registry": "nationalNewspapers",
+      "country": "KE",
+      "logo": "newspaper-logos/ke/daily-nation.jpg",
+      "description": "Black 'NATION' caps on a solid orange bar — Daily Nation / Nation Media Group masthead.",
+      "licence": "Nationlogo.jpg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://nation.africa",
+        "https://en.wikipedia.org/wiki/Daily_Nation"
+      ],
+      "repositoryPath": "public/newspaper-logos/ke/daily-nation.jpg",
+      "gitBlob": "c6f33daa53c565faa9bf851c440584a6bd992209",
+      "sha256": "d5527e16db4e18f1098f0b9e91c75b2f592591423fe3772d6b8c77af27e54d9f",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Nationlogo.jpg",
+        "status": "retrieved",
+        "title": "File:Nationlogo.jpg",
+        "sha256": "c2b41a3abdc4866df4ad2444551b5b76ea7bb600e73b29feffb928cde77a2d9e",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "kz-tengrinews",
+      "registry": "nationalNewspapers",
+      "country": "KZ",
+      "logo": "newspaper-logos/kz/tengrinews.png",
+      "description": "Green stylised 'T' mark beside black 'TENGRI NEWS' — Kazakhstan digital news portal masthead.",
+      "licence": "Tengrinews-logo.png from Wikimedia Commons (CC0); brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://tengrinews.kz",
+        "https://en.wikipedia.org/wiki/Tengrinews.kz"
+      ],
+      "repositoryPath": "public/newspaper-logos/kz/tengrinews.png",
+      "gitBlob": "3075c73055c2470ee6dee1be6856932b88c56d70",
+      "sha256": "374d832d6f48f1a983e437a1dd8bb9de8a56f997f8ff3d1df4d81f986b558bc2",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Tengrinews-logo.png",
+        "status": "retrieved",
+        "title": "File:Tengrinews-logo.png",
+        "sha256": "eb3dbfd7fa91095930db94cfc2e78ad28be9fd0853079d8f4cbf1a056ce113c2",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        ]
+      }
+    },
+    {
+      "id": "lb-l-orient-le-jour",
+      "registry": "nationalNewspapers",
+      "country": "LB",
+      "logo": "newspaper-logos/lb/l-orient-le-jour.svg",
+      "description": "Black serif 'L'Orient-Le Jour' wordmark with a decorated O — Lebanese French-language daily masthead.",
+      "licence": "L'Orient-Le Jour (logo).svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.lorientlejour.com",
+        "https://en.wikipedia.org/wiki/L%27Orient-Le_Jour"
+      ],
+      "repositoryPath": "public/newspaper-logos/lb/l-orient-le-jour.svg",
+      "gitBlob": "41ce93a4dd22f56181b29d4c3a6309e0d235b5e3",
+      "sha256": "fdded3375822c075949ae9c50f483bf8689bff93931c5b8b90b0533c6067fd5a",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:L%27Orient-Le_Jour_%28logo%29.svg",
+        "status": "retrieved",
+        "title": "File:L'Orient-Le Jour (logo).svg",
+        "sha256": "a55eccd8221505103ef17d32a69e8c2b3e5ca14bd1b52a67c62aee8235dda926",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "lv-lsm",
+      "registry": "nationalNewspapers",
+      "country": "LV",
+      "logo": "newspaper-logos/lv/lsm.svg",
+      "description": "Black 'LSM' bar beside 'Latvijas Sabiedriskais medijs' — Latvian Public Media crest.",
+      "licence": "LSM brand mark trademark bundled from the publisher's official site brand assets (lsm.lv) for educational reference in Learn mode.",
+      "sources": [
+        "https://www.lsm.lv"
+      ],
+      "repositoryPath": "public/newspaper-logos/lv/lsm.svg",
+      "gitBlob": "4cb5412170f76dc5380ba0fed80240f4e61da679",
+      "sha256": "a13950c8d8d12b7022eff23fb1d6f02c2c612048c78e9039967720ff0e1723e6",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "tl-tatoli",
+      "registry": "nationalNewspapers",
+      "country": "TL",
+      "logo": "newspaper-logos/tl/tatoli.png",
+      "description": "Green serif 'Tatoli' with a globe replacing the o, Timor-Leste flag-coloured rule, and 'Agência Noticiosa de Timor-Leste' subline.",
+      "licence": "Tatoli.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.tatoli.tl"
+      ],
+      "repositoryPath": "public/newspaper-logos/tl/tatoli.png",
+      "gitBlob": "f4013f1858026224687961dcfa797261af25cda3",
+      "sha256": "7303f98a0225949b13398e02268b38634c6c1d79cf24d980496ad01bdacd00a3",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Tatoli.png",
+        "status": "retrieved",
+        "title": "File:Tatoli.png",
+        "sha256": "503119a68f766b37404b8ec05c413aba83a5088d080ab103de4639415532386f",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "ug-daily-monitor",
+      "registry": "nationalNewspapers",
+      "country": "UG",
+      "logo": "newspaper-logos/ug/daily-monitor.svg",
+      "description": "Black serif all-caps 'MONITOR' wordmark with a barred O — Uganda Daily Monitor masthead.",
+      "licence": "Daily Monitor logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.monitor.co.ug",
+        "https://en.wikipedia.org/wiki/Daily_Monitor"
+      ],
+      "repositoryPath": "public/newspaper-logos/ug/daily-monitor.svg",
+      "gitBlob": "70dac67c2650b6ee3ec59238f4588ea9c0d89615",
+      "sha256": "3e6f9e2b69d1ceb45bacaee7780b5ae4506f78ae790b1e52ecb57384c204e020",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Daily_Monitor_logo.svg",
+        "status": "retrieved",
+        "title": "File:Daily Monitor logo.svg",
+        "sha256": "c0b943dbc0e12d3807919529330894407b8dafe6dcf233061e75e763a44624aa",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "ve-el-nacional",
+      "registry": "nationalNewspapers",
+      "country": "VE",
+      "logo": "newspaper-logos/ve/el-nacional.svg",
+      "description": "White serif all-caps 'EL NACIONAL' on a solid blue bar — Venezuelan daily El Nacional masthead.",
+      "licence": "El-Nacional-Logo.svg from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.elnacional.com",
+        "https://en.wikipedia.org/wiki/El_Nacional_(Venezuela)"
+      ],
+      "repositoryPath": "public/newspaper-logos/ve/el-nacional.svg",
+      "gitBlob": "5ce5c2baff7e22a8301adfd11baeb481f0aa591c",
+      "sha256": "d2ecd33e591748c5b9bc9c94d983c9992fbdeb97b630b2014c684dc4e3674ebc",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:El-Nacional-Logo.svg",
+        "status": "retrieved",
+        "title": "File:El-Nacional-Logo.svg",
+        "sha256": "6c9ada6275f7baf9068af9c14469b65ca05cb0893839d94751eb202496837d70",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "af-bakhtar",
+      "registry": "nationalNewsAgencies",
+      "country": "AF",
+      "logo": "newspaper-logos/af/bakhtar.png",
+      "description": "Red winged emblem beside light 'BAKHTAR NEWS AGENCY' wordmark on a dark plate — Bakhtar's site masthead.",
+      "licence": "Bakhtar News Agency brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "sources": [
+        "https://bakhtarnews.af",
+        "https://en.wikipedia.org/wiki/Bakhtar_News_Agency"
+      ],
+      "repositoryPath": "public/newspaper-logos/af/bakhtar.png",
+      "gitBlob": "668a251c63a4a3230596f85b2b8059febaace759",
+      "sha256": "801bcdcdaedf37ef14349ce8a4008c40ce882aa849205f23dd226f71b78aba6e",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "az-azertac",
+      "registry": "nationalNewsAgencies",
+      "country": "AZ",
+      "logo": "newspaper-logos/az/azertac.svg",
+      "description": "Navy 'AZƏRTAC' wordmark beside an eight-point star emblem with speech-bubble motifs — Azerbaijan State News Agency crest.",
+      "licence": "AzərTAc brand mark trademark bundled from the agency's official site brand assets (azertag.az/resources/images/logo.svg) for educational reference in Learn mode.",
+      "sources": [
+        "https://azertag.az",
+        "https://en.wikipedia.org/wiki/Azerbaijan_State_News_Agency"
+      ],
+      "repositoryPath": "public/newspaper-logos/az/azertac.svg",
+      "gitBlob": "99b096b266a78213137381446be6b2b82a5b3e3d",
+      "sha256": "1e58fd014ccf8489557089bc5440fb62314b731d25da99c4bcc27edd11a3a27f",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "bs-bis",
+      "registry": "nationalNewsAgencies",
+      "country": "BS",
+      "logo": "newspaper-logos/bs/bis.png",
+      "description": "Bahamas coat of arms beside 'The Government of The Bahamas' on a navy plate — the official bahamas.gov.bs header mark used by Bahamas Information Services.",
+      "licence": "Government of The Bahamas crest trademark bundled from the official government CDN brand asset on bahamas.gov.bs for educational reference in Learn mode.",
+      "sources": [
+        "https://www.bahamas.gov.bs",
+        "https://en.wikipedia.org/wiki/Bahamas_Information_Services"
+      ],
+      "repositoryPath": "public/newspaper-logos/bs/bis.png",
+      "gitBlob": "9611a97fca5142d19306fe5441b4d82a4292d23f",
+      "sha256": "ef0b424d64ea3fb4a0161ed69e451891f76eebea2c7bc9747ed084867cb3d634",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "bh-bna",
+      "registry": "nationalNewsAgencies",
+      "country": "BH",
+      "logo": "newspaper-logos/bh/bna.png",
+      "description": "White dotted shield emblem above Arabic 'وكالة أنباء البحرين' and English 'Bahrain News Agency' on red — Bahrain's national wire.",
+      "licence": "BNA logo (Bna logo.gif) from Arabic Wikipedia; brand mark trademark bundled for educational reference in Learn mode with licenceNote.",
+      "sources": [
+        "https://www.bna.bh",
+        "https://en.wikipedia.org/wiki/Bahrain_News_Agency"
+      ],
+      "repositoryPath": "public/newspaper-logos/bh/bna.png",
+      "gitBlob": "7ad271887471cf531edac073bc36fbbb67c4fb54",
+      "sha256": "e113ed584b9ec3995bc673386d5471734ed3e3c38df5751c8de3d6ea0fb77982",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://ar.wikipedia.org/wiki/%D9%85%D9%84%D9%81:Bna_logo.gif",
+        "status": "retrieved",
+        "title": "ملف:Bna logo.gif",
+        "sha256": "018d802bcaef14d51a9cde46d586381d5bdda22ac57b6e475b10a1c60c9ba41d",
+        "licenceLinks": []
+      }
+    },
+    {
+      "id": "bd-bss",
+      "registry": "nationalNewsAgencies",
+      "country": "BD",
+      "logo": "newspaper-logos/bd/bss.png",
+      "description": "Circular Bangladesh seal beside green 'BSS' and red 'NEWS' with the English portal tagline — Bangladesh Sangbad Sangstha crest.",
+      "licence": "BSS brand mark trademark bundled from the agency's official site brand assets (bssnews.net via Wayback Machine snapshot of the live logo file) for educational reference in Learn mode.",
+      "sources": [
+        "https://www.bssnews.net",
+        "https://en.wikipedia.org/wiki/Bangladesh_Sangbad_Sangstha"
+      ],
+      "repositoryPath": "public/newspaper-logos/bd/bss.png",
+      "gitBlob": "699174499a309940800adbf68952ee3c2a903f75",
+      "sha256": "f200d781340936bcdbc38ef97c58d48fa391d25046e2d9ee5ad37f223646ba91",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "bj-abp",
+      "registry": "nationalNewsAgencies",
+      "country": "BJ",
+      "logo": "newspaper-logos/bj/abp.jpg",
+      "description": "Green 'ABP' wordmark beside a Benin-coloured dotted globe over 'AGENCE BENIN PRESSE' — Agence Bénin Presse crest.",
+      "licence": "Agence Bénin Presse brand mark trademark bundled from Wikimedia Commons (File:Logo de l'Agence Bénin Presse.jpg) for educational reference in Learn mode.",
+      "sources": [
+        "https://www.abp.bj",
+        "https://fr.wikipedia.org/wiki/Agence_B%C3%A9nin_Presse"
+      ],
+      "repositoryPath": "public/newspaper-logos/bj/abp.jpg",
+      "gitBlob": "b1f94db868478c7755585c8bc70d041268b75c7a",
+      "sha256": "be0fc664bc8e49b1637e7066a5fdc0cb8f7cc29d454c1fe0c01122e2c8b337a2",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Logo_de_l%27Agence_B%C3%A9nin_Presse.jpg",
+        "status": "unresolved",
+        "title": "File:Logo de l'Agence Bénin Presse.jpg",
+        "error": "HTTP Error 404: Not Found"
+      }
+    },
+    {
+      "id": "bi-abp",
+      "registry": "nationalNewsAgencies",
+      "country": "BI",
+      "logo": "newspaper-logos/bi/abp.png",
+      "description": "Circular map-and-tower seal with red 'Agence Burundaise de Presse' and outlined 'ABP' — Burundi ABP crest.",
+      "licence": "Agence Burundaise de Presse brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "sources": [
+        "https://abpinfo.bi",
+        "https://fr.wikipedia.org/wiki/Agence_burundaise_de_presse"
+      ],
+      "repositoryPath": "public/newspaper-logos/bi/abp.png",
+      "gitBlob": "3fe014da91a7597a842e3fc61ed811e267bf451c",
+      "sha256": "ce873669dd6a1ef3250579e1659b14382e5402671d1ec16fe0f40e477ca0ca9f",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "kh-akp",
+      "registry": "nationalNewsAgencies",
+      "country": "KH",
+      "logo": "newspaper-logos/kh/akp.png",
+      "description": "Circular Angkor Wat and guardian-lion emblem with bold 'AKP' — Agence Kampuchea Presse crest.",
+      "licence": "AKP brand mark trademark bundled from the agency's official site brand assets (akp.gov.kh) for educational reference in Learn mode.",
+      "sources": [
+        "https://www.akp.gov.kh",
+        "https://en.wikipedia.org/wiki/Agence_Kampuchea_Presse"
+      ],
+      "repositoryPath": "public/newspaper-logos/kh/akp.png",
+      "gitBlob": "395c028a6e7162ae3793658aa87bd314ed2e40f1",
+      "sha256": "689da1ef084aab53bfcb6999cc4302b08dc84f6f7605c2092774442466821994",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "cv-inforpress",
+      "registry": "nationalNewsAgencies",
+      "country": "CV",
+      "logo": "newspaper-logos/cv/inforpress.svg",
+      "description": "Blue stacked 'infor/press' wordmark beside a red squared globe — Cape Verde Inforpress crest.",
+      "licence": "Inforpress brand mark trademark bundled from the agency's official site brand assets (inforpress.cv/logo.svg) for educational reference in Learn mode.",
+      "sources": [
+        "https://inforpress.cv",
+        "https://pt.wikipedia.org/wiki/Inforpress"
+      ],
+      "repositoryPath": "public/newspaper-logos/cv/inforpress.svg",
+      "gitBlob": "007401c38fbb56751feb6319732d4afd7ccdc2eb",
+      "sha256": "67a3c666e19e782e0fe365a683cc891e49e6246d5628d95bbda85daf9a242048",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "cg-aci",
+      "registry": "nationalNewsAgencies",
+      "country": "CG",
+      "logo": "newspaper-logos/cg/aci.png",
+      "description": "Red circled 'A' beside 'AGENCE CONGOLAISE D'INFORMATION' and the agency motto — ACI crest.",
+      "licence": "ACI brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "sources": [
+        "https://www.aci.cg",
+        "https://fr.wikipedia.org/wiki/Agence_congolaise_d%27information"
+      ],
+      "repositoryPath": "public/newspaper-logos/cg/aci.png",
+      "gitBlob": "8514da89325ddeec910d16f248fb8e21bffd10fa",
+      "sha256": "bfb4db501ae6744f402b34ca8452bd3ede95b84ad551a5c6a847e83e6763c912",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "ir-irna",
+      "registry": "nationalNewsAgencies",
+      "country": "IR",
+      "logo": "newspaper-logos/ir/irna.svg",
+      "description": "Blue barred mark beside bold 'IRNA' with '1934' in the A — Islamic Republic News Agency logo.",
+      "licence": "Islamic Republic News Agency logo.svg from English Wikipedia (fair-use / non-free); trademark bundled for educational reference in Learn mode with licenceNote.",
+      "sources": [
+        "https://www.irna.ir",
+        "https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency"
+      ],
+      "repositoryPath": "public/newspaper-logos/ir/irna.svg",
+      "gitBlob": "58eaf9cdec92522b88e9044dcabe87d61023a6ae",
+      "sha256": "06d3ed61c0e11d13eca4d45ddaf73ec73c59b86f17d1df54e55d7b5fe016d8cc",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://en.wikipedia.org/wiki/File:Islamic_Republic_News_Agency_logo.svg",
+        "status": "retrieved",
+        "title": "File:Islamic Republic News Agency logo.svg",
+        "sha256": "f9460f388e0c9b0e91b68fcad46247c86687d9e6918371ce166af5f187447bc8",
+        "licenceLinks": []
+      }
+    },
+    {
+      "id": "jo-petra",
+      "registry": "nationalNewsAgencies",
+      "country": "JO",
+      "logo": "newspaper-logos/jo/petra.png",
+      "description": "Crowned Jordan-flag 'J' with globe and 'Petra' / Arabic titles over 'Jordan News Agency' — Petra's official crest.",
+      "licence": "Jordan News Agency (Petra) brand mark trademark bundled from the agency's official site brand assets (petra.gov.jo/images/logo.png) for educational reference in Learn mode.",
+      "sources": [
+        "https://petra.gov.jo",
+        "https://en.wikipedia.org/wiki/Jordan_News_Agency"
+      ],
+      "repositoryPath": "public/newspaper-logos/jo/petra.png",
+      "gitBlob": "16a65ba1f0199ffd1cb2ed83d19ccab73a964b86",
+      "sha256": "be9a9b23dce27bb82f68a1f5fd4469bd06efd86de552749e298ca459d87233fe",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "tl-tatoli",
+      "registry": "nationalNewsAgencies",
+      "country": "TL",
+      "logo": "newspaper-logos/tl/tatoli.png",
+      "description": "Green serif 'Tatoli' with a globe replacing the o, Timor-Leste flag-coloured rule, and 'Agência Noticiosa de Timor-Leste' subline.",
+      "licence": "Tatoli.png from Wikimedia Commons; brand mark trademark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://tatoli.tl",
+        "https://pt.wikipedia.org/wiki/Tatoli"
+      ],
+      "repositoryPath": "public/newspaper-logos/tl/tatoli.png",
+      "gitBlob": "f4013f1858026224687961dcfa797261af25cda3",
+      "sha256": "7303f98a0225949b13398e02268b38634c6c1d79cf24d980496ad01bdacd00a3",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Tatoli.png",
+        "status": "retrieved",
+        "title": "File:Tatoli.png",
+        "sha256": "503119a68f766b37404b8ec05c413aba83a5088d080ab103de4639415532386f",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "gq-guinea-ecuatorial-press",
+      "registry": "nationalNewsAgencies",
+      "country": "GQ",
+      "logo": "newspaper-logos/gq/guinea-ecuatorial-press.png",
+      "description": "Equatorial Guinea coat of arms (silk-cotton tree, six stars, 'UNIDAD PAZ JUSTICIA') — the state press site's main mark.",
+      "licence": "Guinea Ecuatorial Press brand mark trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+      "sources": [
+        "https://guineaecuatorialpress.com",
+        "https://es.wikipedia.org/wiki/Guinea_Ecuatorial"
+      ],
+      "repositoryPath": "public/newspaper-logos/gq/guinea-ecuatorial-press.png",
+      "gitBlob": "8574d8a25b2931b419275daeb7972e79f82fb8c4",
+      "sha256": "0b2b888ce34fe482f3172f4a444b69f979a650ab54ccb481c5e050bcd85cfa38",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "er-shabait",
+      "registry": "nationalNewsAgencies",
+      "country": "ER",
+      "logo": "newspaper-logos/er/shabait.png",
+      "description": "Gold camel seal beside 'MINISTRY OF INFORMATION / ERITREA' on a dark plate — Shabait (Eritrea MoI) masthead.",
+      "licence": "Shabait / Ministry of Information Eritrea brand mark trademark bundled from the agency's official site brand assets (shabait.com) for educational reference in Learn mode.",
+      "sources": [
+        "https://shabait.com",
+        "https://en.wikipedia.org/wiki/Ministry_of_Information_(Eritrea)"
+      ],
+      "repositoryPath": "public/newspaper-logos/er/shabait.png",
+      "gitBlob": "a389ae4d32c6d81356e886ad5da8b6b3428ef4ca",
+      "sha256": "97caa7cd05db140448984a580bfb98255e250e380fa12b63cc57b3ca8283538d",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "kw-kuna",
+      "registry": "nationalNewsAgencies",
+      "country": "KW",
+      "logo": "newspaper-logos/kw/kuna.png",
+      "description": "Blue circular emblem beside bilingual 'KUNA' / Arabic title and 'Kuwait News Agency' strap — KUNA wire logo.",
+      "licence": "KUNA-logo.png from English Wikipedia (fair-use / non-free); trademark bundled for educational reference in Learn mode with licenceNote.",
+      "sources": [
+        "https://www.kuna.net.kw",
+        "https://en.wikipedia.org/wiki/Kuwait_News_Agency"
+      ],
+      "repositoryPath": "public/newspaper-logos/kw/kuna.png",
+      "gitBlob": "42e0a02d9bb925bdd2861b2baf5edaf4c67ef19e",
+      "sha256": "8156e83ff1929726053792206393be14408ef70863f863bef8853649ee804e73",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://en.wikipedia.org/wiki/File:KUNA-logo.png",
+        "status": "retrieved",
+        "title": "File:KUNA-logo.png",
+        "sha256": "b56de1d4b5cae694317209bd1cef7be269a9b93888de7f80931168f1285dc170",
+        "licenceLinks": []
+      }
+    },
+    {
+      "id": "kg-kabar",
+      "registry": "nationalNewsAgencies",
+      "country": "KG",
+      "logo": "newspaper-logos/kg/kabar.svg",
+      "description": "Bold navy 'KABAR' wordmark — Kyrgyz National News Agency Kabar crest from its site.",
+      "licence": "Kabar brand mark trademark bundled from the agency's official site brand assets (kabar.kg) for educational reference in Learn mode.",
+      "sources": [
+        "https://kabar.kg",
+        "https://en.wikipedia.org/wiki/Kabar"
+      ],
+      "repositoryPath": "public/newspaper-logos/kg/kabar.svg",
+      "gitBlob": "d5d2a59d084e68c7bda1311435343a3c88fd7d4d",
+      "sha256": "ca53ddfb865a70f51ec60e4a00197de1f910ce1de7d48783ff58d3361a817f9b",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "ge-interpressnews",
+      "registry": "nationalNewsAgencies",
+      "country": "GE",
+      "logo": "newspaper-logos/ge/interpressnews.svg",
+      "description": "Blue italic 'ipn' monogram with a red square tittle over Georgian 'ინტერპრესნიუსი' — Georgian news agency crest.",
+      "licence": "Interpressnews brand mark trademark bundled from the agency's official site brand assets (interpressnews.ge/static/img/logo.svg) for educational reference in Learn mode.",
+      "sources": [
+        "https://www.interpressnews.ge",
+        "https://en.wikipedia.org/wiki/Interpressnews"
+      ],
+      "repositoryPath": "public/newspaper-logos/ge/interpressnews.svg",
+      "gitBlob": "ecfa8d8c0357e57b8d40fa1fc0b860fb4829b19c",
+      "sha256": "b406ee7d246706483df58db3bbdf1f07d8f462eba0ac5744b96e6567e4ab3047",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "mz-aim",
+      "registry": "nationalNewsAgencies",
+      "country": "MZ",
+      "logo": "newspaper-logos/mz/aim.png",
+      "description": "Connected pink-red 'AIM' wordmark on white — Agência de Informação de Moçambique crest from aimnews.org.",
+      "licence": "AIM brand mark trademark bundled from the agency's official site brand assets (aimnews.org) for educational reference in Learn mode.",
+      "sources": [
+        "https://aim.org.mz",
+        "https://en.wikipedia.org/wiki/Ag%C3%AAncia_de_Informa%C3%A7%C3%A3o_de_Mo%C3%A7ambique"
+      ],
+      "repositoryPath": "public/newspaper-logos/mz/aim.png",
+      "gitBlob": "b67cdf89e14055139447f3a1451c4382d79a80a1",
+      "sha256": "8a7533da46bbd0f578956edec9274880ff409f6673ec9da824cb3289b619e0a3",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "publisher_homepage_identifies_AIM_brand_asset",
+      "primarySource": {
+        "page": "https://aimnews.org",
+        "asset": "https://aimnews.org/wp-content/uploads/2022/12/AIM-logo-base.png",
+        "observedAlt": "Logótipo da AIM"
+      }
+    },
+    {
+      "id": "om-ona",
+      "registry": "nationalNewsAgencies",
+      "country": "OM",
+      "logo": "newspaper-logos/om/ona.png",
+      "description": "Grey Arabic calligraphy with coral diacritics above coral 'Oman News Agency' — Oman's national wire wordmark.",
+      "licence": "Oman News Agency logo (شعار وكالة الأنباء العمانية.png) from Arabic Wikipedia; brand mark trademark bundled for educational reference in Learn mode with licenceNote.",
+      "sources": [
+        "https://omannews.gov.om",
+        "https://en.wikipedia.org/wiki/Oman_News_Agency"
+      ],
+      "repositoryPath": "public/newspaper-logos/om/ona.png",
+      "gitBlob": "c62091345669b462c4f23bde64974ed63a4d052b",
+      "sha256": "34e1f32aaa6c9f362ff29891280c880690eca605b997967e551e98583adbd409",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://ar.wikipedia.org/wiki/%D9%85%D9%84%D9%81:%D8%B4%D8%B9%D8%A7%D8%B1_%D9%88%D9%83%D8%A7%D9%84%D8%A9_%D8%A7%D9%84%D8%A3%D9%86%D8%A8%D8%A7%D8%A1_%D8%A7%D9%84%D8%B9%D9%85%D8%A7%D9%86%D9%8A%D8%A9.png",
+        "status": "retrieved",
+        "title": "ملف:شعار وكالة الأنباء العمانية.png",
+        "sha256": "d99854f71eef3cce6af5ed96759db7e6448bf672b370d711a42c981877b84042",
+        "licenceLinks": []
+      }
+    },
+    {
+      "id": "pk-app",
+      "registry": "nationalNewsAgencies",
+      "country": "PK",
+      "logo": "newspaper-logos/pk/app.png",
+      "description": "Dotted globe over gradient 'APP' beside 'DIGITAL' and 'Associated Press of Pakistan' — APP crest.",
+      "licence": "Associated Press of Pakistan Logo.png from English Wikipedia (fair-use brand mark) bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.app.com.pk",
+        "https://en.wikipedia.org/wiki/Associated_Press_of_Pakistan"
+      ],
+      "repositoryPath": "public/newspaper-logos/pk/app.png",
+      "gitBlob": "717e467fba62ca6bb763ee1d378f3eec34371fbc",
+      "sha256": "525940130ff4fd67de6ae50e10da59710823b5b7df41e1dffde852afb71b1cbc",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://en.wikipedia.org/wiki/File:Associated_Press_of_Pakistan_Logo.png",
+        "status": "retrieved",
+        "title": "File:Associated Press of Pakistan Logo.png",
+        "sha256": "8a96eb8c7a3e0eb896f8a2fc4001ae6eede3349acd59a2de5aa5416252135a67",
+        "licenceLinks": []
+      }
+    },
+    {
+      "id": "ph-pna",
+      "registry": "nationalNewsAgencies",
+      "country": "PH",
+      "logo": "newspaper-logos/ph/pna.svg",
+      "description": "Blue disc with white stylised 'P' mark — Philippine News Agency crest from Wikimedia Commons.",
+      "licence": "Philippine News Agency Logo.svg from Wikimedia Commons; government work / brand mark bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.pna.gov.ph",
+        "https://en.wikipedia.org/wiki/Philippine_News_Agency"
+      ],
+      "repositoryPath": "public/newspaper-logos/ph/pna.svg",
+      "gitBlob": "6159d13dd11fbed192567bdba2f13faf14ce1cda",
+      "sha256": "07fb727794687caa7a590fc067b6ae0add7a5110194322f8e0b53ccda50b7a8c",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "cited_file_metadata_supports_named_entity_currentness_not_certified",
+      "filePage": {
+        "url": "https://commons.wikimedia.org/wiki/File:Philippine_News_Agency_Logo.svg",
+        "status": "retrieved",
+        "title": "File:Philippine News Agency Logo.svg",
+        "sha256": "364bf45e139d159d3f2db536535428df65da33e17e31a743fced595cb124c7cf",
+        "licenceLinks": [
+          "https://creativecommons.org/licenses/by-sa/4.0/",
+          "https://creativecommons.org/publicdomain/zero/1.0/"
+        ]
+      }
+    },
+    {
+      "id": "lc-gis-saint-lucia",
+      "registry": "nationalNewsAgencies",
+      "country": "LC",
+      "logo": "newspaper-logos/lc/gis-saint-lucia.png",
+      "description": "Saint Lucia coat of arms (parrots, Tudor rose, fleur-de-lis, torch crest) — the Government Information Service mark on govt.lc.",
+      "licence": "Coat of arms of Saint Lucia trademark bundled from the official government site brand asset (govt.lc) for educational reference in Learn mode.",
+      "sources": [
+        "https://www.govt.lc",
+        "https://en.wikipedia.org/wiki/Saint_Lucia"
+      ],
+      "repositoryPath": "public/newspaper-logos/lc/gis-saint-lucia.png",
+      "gitBlob": "4731845d44213b14cb36da681276d8087b5245c0",
+      "sha256": "5af04f61c20d371a091c37e39917246ae721ae29e7b81354c12e131f63df7d04",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "vc-api-svg",
+      "registry": "nationalNewsAgencies",
+      "country": "VC",
+      "logo": "newspaper-logos/vc/api-svg.png",
+      "description": "Coat of arms of Saint Vincent and the Grenadines (Pax et Justitia) — used as the Agency for Public Information's official mark on gov.vc.",
+      "licence": "National coat of arms from the Government of Saint Vincent and the Grenadines official site; bundled for educational reference in Learn mode.",
+      "sources": [
+        "https://www.gov.vc",
+        "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
+      ],
+      "repositoryPath": "public/newspaper-logos/vc/api-svg.png",
+      "gitBlob": "c4cfe813498c8717a9ccc60106bf1b21a9106263",
+      "sha256": "2f62662a6d2a1bc77d5e62a2ca5a809235d089f48e3ee27c0a33fff4f7e28457",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "rs-tanjug",
+      "registry": "nationalNewsAgencies",
+      "country": "RS",
+      "logo": "newspaper-logos/rs/tanjug.png",
+      "description": "Navy plate with white 'Tanjug' wordmark: rounded 'T' badge and red square accent — Tanjug header brand from its site.",
+      "licence": "Tanjug brand mark trademark bundled from the agency's official site brand assets for educational reference in Learn mode.",
+      "sources": [
+        "https://www.tanjug.rs",
+        "https://en.wikipedia.org/wiki/Tanjug"
+      ],
+      "repositoryPath": "public/newspaper-logos/rs/tanjug.png",
+      "gitBlob": "e82fb3772e665114f6ae914c279345bc5493978f",
+      "sha256": "4bd82445d50bb46719a0156433ee346c14e138fae5f84beb0504c7caf0fa2d77",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "tg-atop",
+      "registry": "nationalNewsAgencies",
+      "country": "TG",
+      "logo": "newspaper-logos/tg/atop.svg",
+      "description": "Green 'atop' wordmark with lined globe 'o' and red accent dot over 'Agence Togolaise de Presse'.",
+      "licence": "ATOP brand mark trademark bundled from the agency's official site brand assets (atop.tg) for educational reference in Learn mode.",
+      "sources": [
+        "https://atop.tg",
+        "https://en.wikipedia.org/wiki/Media_of_Togo"
+      ],
+      "repositoryPath": "public/newspaper-logos/tg/atop.svg",
+      "gitBlob": "1b80ab1da4066ffd554cf1990a9becc916bbafea",
+      "sha256": "687833d6acdff5bf299bda504c89f1c52e7872d17a41298f14b236a61ff37714",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    },
+    {
+      "id": "zm-zanis",
+      "registry": "nationalNewsAgencies",
+      "country": "ZM",
+      "logo": "newspaper-logos/zm/zanis.jpg",
+      "description": "Circular green/orange ring around bold 'ZANIS' — Zambia News and Information Services crest.",
+      "licence": "ZANIS brand mark trademark bundled from the agency's official site brand assets (zanis.gov.zm) for educational reference in Learn mode.",
+      "sources": [
+        "https://www.zanis.com.zm",
+        "https://en.wikipedia.org/wiki/Media_of_Zambia"
+      ],
+      "repositoryPath": "public/newspaper-logos/zm/zanis.jpg",
+      "gitBlob": "ff2f01839e357bd5899751c3cd31d1ca08e02e75",
+      "sha256": "607bd223daec4138a882e78171a799332dcccfeae1da714d386607f12958df91",
+      "visualReview": "entire_asset_and_description_reviewed",
+      "fileStatus": "exact_pinned_blob_decoded",
+      "descriptionVerdict": "no_obvious_visual_conflict_found",
+      "identityVerdict": "official_identity_variant_and_currentness_not_independently_certified"
+    }
+  ],
+  "registryDelta": {
+    "nationalNewspapers": {
+      "added": [
+        "cf-le-potentiel-centrafricain",
+        "cg-la-semaine-africaine",
+        "er-assenna",
+        "lc-the-star",
+        "ne-le-republicain",
+        "sb-solomon-star",
+        "st-jornal-transparencia",
+        "tm-neytralny-turkmenistan",
+        "tm-turkmenistan-gazeti",
+        "va-vatican-news"
+      ],
+      "removed": [],
+      "changed": [
+        {
+          "id": "ad-diari-d-andorra",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "af-tolo-news",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "al-gazeta-shqiptare",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "au-courier-mail",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "ba-dnevni-avaz",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "bd-ittefaq",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "bd-jugantor",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "bd-prothom-alo",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "be-het-nieuwsblad",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "bg-24-chasa",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "bg-mediapool",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "bi-jimbere",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "bj-la-nouvelle-tribune",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "bo-el-deber",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "bo-el-diario",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "bw-botswana-guardian",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "cd-le-potentiel",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "ch-tages-anzeiger",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "ci-fraternite-matin",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "cl-las-ultimas-noticias",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "cn-people-s-daily",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "co-el-pais-cali",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "cu-trabajadores",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "cv-inforpress",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "cz-blesk",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "cz-pravo",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "do-diario-libre",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "do-hoy",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "ec-primicias",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "ee-eesti-paevaleht",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "es-el-periodico",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "gb-the-scotsman",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "ge-civil-ge",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "gr-efimerida-ton-syntakton",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "hr-novi-list",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "id-koran-tempo",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "ie-irish-independent",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "ir-ettelaat",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "ir-hamshahri",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "ir-tehran-times",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "jm-jamaica-observer",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "ke-daily-nation",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "kz-tengrinews",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "lb-l-orient-le-jour",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "lv-lsm",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "tl-tatoli",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "ug-daily-monitor",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "ve-el-nacional",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        }
+      ]
+    },
+    "nationalNewsAgencies": {
+      "added": [],
+      "removed": [
+        "ag-pointville",
+        "am-hayastani-hanrapetutyun",
+        "ar-el-cronista",
+        "at-der-standard",
+        "bb-nation-news",
+        "bd-bdnews24",
+        "bd-daily-star",
+        "be-de-standaard",
+        "bw-sunday-standard",
+        "ca-the-toronto-star",
+        "cf-le-potentiel-centrafricain",
+        "cg-la-semaine-africaine",
+        "cn-china-daily",
+        "cn-reference-news",
+        "cr-elfaro-cr",
+        "cu-granma",
+        "dz-el-khabar",
+        "ec-lideres",
+        "eg-al-ahram",
+        "er-assenna",
+        "et-addis-standard",
+        "fi-hufvudstadsbladet",
+        "gy-stabroek-news",
+        "ie-irish-examiner",
+        "in-dainik-jagran",
+        "in-hindustan-times",
+        "it-la-stampa",
+        "jm-jamaica-star",
+        "jp-mainichi-shimbun",
+        "ke-the-standard",
+        "ke-the-star",
+        "kg-24-kg",
+        "kz-egemen-qazaqstan",
+        "kz-kazakhstanskaya-pravda",
+        "lc-loop-slu",
+        "lc-the-star",
+        "lc-the-voice",
+        "li-wirtschaft-regional",
+        "lv-lsm",
+        "ml-le-republicain",
+        "mm-myanmar-now",
+        "na-the-namibian",
+        "ne-le-republicain",
+        "np-onlinekhabar",
+        "om-al-shabiba",
+        "ph-the-philippine-star",
+        "sb-sibc",
+        "sb-solomon-star",
+        "sg-cna",
+        "sl-standard-times",
+        "so-dalsan",
+        "sr-starnieuws",
+        "st-jornal-transparencia",
+        "tm-neytralny-turkmenistan",
+        "tm-turkmenistan-gazeti",
+        "tt-ttt-news",
+        "ua-ukrainska-pravda",
+        "va-vatican-news",
+        "ve-efecto-cocuyo",
+        "za-the-star"
+      ],
+      "changed": [
+        {
+          "id": "af-bakhtar",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "az-azertac",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "bd-bss",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "bh-bna",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "bi-abp",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "bj-abp",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "bs-bis",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "cg-aci",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "cv-inforpress",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "er-shabait",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "ge-interpressnews",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "gq-guinea-ecuatorial-press",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "ir-irna",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "jo-petra",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "kg-kabar",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "kh-akp",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "kw-kuna",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "lc-gis-saint-lucia",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "mz-aim",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "om-ona",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "ph-pna",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "pk-app",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "rs-tanjug",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "tg-atop",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "tl-tatoli",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        },
+        {
+          "id": "vc-api-svg",
+          "fields": [
+            "logoExplainer",
+            "noImageReason",
+            "licenceNote",
+            "logo"
+          ]
+        },
+        {
+          "id": "zm-zanis",
+          "fields": [
+            "logoExplainer",
+            "licenceNote",
+            "noImageReason",
+            "logo"
+          ]
+        }
+      ]
+    }
+  },
+  "previousWrongEntityFindings": "All five F60 and 25 F64 entries remain, using the same asset paths. Agency cleanup removes 60 records and adds ten newspaper records, but does not fix these 30 image errors."
+}
