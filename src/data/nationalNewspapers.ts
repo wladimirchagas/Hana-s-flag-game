@@ -3251,7 +3251,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "bt-bhutan-today",
       "countryCode": "BT",
       "name": "Bhutan Today",
@@ -3267,6 +3266,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Private Bhutanese daily/weekly news brand",
         "source": "https://www.bhutantoday.bt"
       },
+      "logo": "newspaper-logos/bt/bhutan-today.png",
+      "logoExplainer": "Black serif 'BHUTAN TODAY' flanking a circular Bhutanese emblem under the tagline 'THE NEW PERSPECTIVE' — English-language Bhutanese daily masthead.",
+      "licenceNote": "Bhutan Today masthead trademark bundled from the publisher's official site brand assets (bhutantoday.bt) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.bhutantoday.bt"
       ]
@@ -5129,7 +5132,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "cr-ameliarueda",
       "countryCode": "CR",
       "name": "AmeliaRueda.com",
@@ -5145,6 +5147,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Costa Rican digital news brand",
         "source": "https://www.ameliarueda.com"
       },
+      "logo": "newspaper-logos/cr/ameliarueda.jpg",
+      "logoExplainer": "Cream 'AR' monogram above blue-yellow-green-red stripes and 'AMELIARUEDA.COM' on charcoal — Costa Rican digital news masthead.",
+      "licenceNote": "AmeliaRueda.com masthead trademark bundled from the publisher's official site brand assets (ameliarueda.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.ameliarueda.com"
       ]
