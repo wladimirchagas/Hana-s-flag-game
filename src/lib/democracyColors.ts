@@ -5,6 +5,7 @@ export type DemocracyMapMode =
   | "v-dem"
   | "economist"
   | "cpi"
+  | "perception"
   | null;
 
 export type DemocracyLegendItem = {
@@ -61,11 +62,29 @@ export const CPI_BAND_ORDER: readonly string[] = [
   "0–9",
 ];
 
+/** Democracy Perception Index 2026 tiers (±5 / ±15 on Index Score). */
+export const PERCEPTION_MAP_COLORS: Record<string, string> = {
+  "Very Positive": "#1b5e20",
+  Positive: "#4caf50",
+  Neutral: "#9e9e9e",
+  Negative: "#ff9800",
+  "Very Negative": "#b71c1c",
+};
+
+export const PERCEPTION_TIER_ORDER: readonly string[] = [
+  "Very Positive",
+  "Positive",
+  "Neutral",
+  "Negative",
+  "Very Negative",
+];
+
 export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
   if (mode === "freedom-house") return "Freedom House";
   if (mode === "v-dem") return "V-Dem Regime Type";
   if (mode === "economist") return "The Economist Index";
   if (mode === "cpi") return "Corruption Perceptions Index";
+  if (mode === "perception") return "Democracy Perception Index";
   return "";
 }
 
@@ -99,6 +118,12 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
       color: CPI_MAP_COLORS[label],
     }));
   }
+  if (mode === "perception") {
+    return PERCEPTION_TIER_ORDER.map((label) => ({
+      label,
+      color: PERCEPTION_MAP_COLORS[label],
+    }));
+  }
   return [];
 }
 
@@ -119,9 +144,12 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
     } else if (mode === "economist") {
       rating = demo.economist?.rating;
       colorMap = ECONOMIST_MAP_COLORS;
-    } else {
+    } else if (mode === "cpi") {
       rating = demo.cpi?.rating;
       colorMap = CPI_MAP_COLORS;
+    } else {
+      rating = demo.perception?.rating;
+      colorMap = PERCEPTION_MAP_COLORS;
     }
     if (rating && colorMap[rating]) {
       overlay.set(code, colorMap[rating]);

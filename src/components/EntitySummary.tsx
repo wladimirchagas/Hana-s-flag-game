@@ -141,6 +141,20 @@ function formatCpiIndex(idx?: {
   return `Rank ${idx.rank}${changeStr} · Score ${idx.score} (${idx.year})`;
 }
 
+/** DPI shows tier + Index Score (net % positive − % negative). */
+function formatPerceptionIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  const scoreStr = idx.score > 0 ? `+${idx.score}` : `${idx.score}`;
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${scoreStr} (${idx.year})`;
+}
+
 export function EntitySummary(props: EntitySummaryProps) {
   if (props.kind === "modern") {
     const c = props.country;
@@ -198,6 +212,9 @@ export function EntitySummary(props: EntitySummaryProps) {
 
       const cpi = formatCpiIndex(c.democracy.cpi);
       if (cpi) rows.push({ label: "Corruption Perceptions Index", value: cpi });
+
+      const dpi = formatPerceptionIndex(c.democracy.perception);
+      if (dpi) rows.push({ label: "Democracy Perception Index", value: dpi });
     }
 
     if (government) rows.push({ label: "Government", value: government });
