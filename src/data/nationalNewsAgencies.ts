@@ -3,11 +3,19 @@ import type { NewsAgency } from "../types/newsAgency";
 /**
  * Curated and sourced dataset of national news agencies for Learn mode.
  *
- * A news agency is a wire / newswire service that gathers and syndicates news
- * to other outlets (e.g. Reuters, AFP, Bernama, TASS). Newspapers, television
- * broadcasters, radio networks, and consumer news portals do not belong here —
- * those live in NATIONAL_NEWSPAPERS (or are omitted). Not every country has a
- * national news agency; missing is honest.
+ * HARD RULE (see CLAUDE.md — "National news agencies are wholesalers, not retailers"):
+ * National news agencies are the "wholesalers" of information. Their primary clients
+ * are other media outlets (newspapers, broadcasters, digital publishers). They gather
+ * news, photographs, and video and license/syndicate them out — wire / newswire
+ * services such as AP, Reuters, AFP, Bernama, AAP, TASS.
+ *
+ * Other news organisations are "retailers": broadcasters, newspapers, and
+ * digital-native sites (CNN, the BBC, The New York Times) produce content for direct
+ * public consumption. Those do NOT belong here — newspapers live in
+ * NATIONAL_NEWSPAPERS; broadcasters in their own registry; consumer portals are
+ * omitted rather than force-fit. The distinction is functional, not absolute (many
+ * agencies also publish to the public; many retailers also syndicate) — classify by
+ * core business model. Not every country has a national news agency; missing is honest.
  */
 
 export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {

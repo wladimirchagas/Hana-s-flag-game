@@ -1,6 +1,11 @@
 /**
  * Schema for national news agencies in Learn mode.
  * Sourced definitions live in `src/data/nationalNewsAgencies.ts`.
+ *
+ * A news agency (newswire) is an information "wholesaler": it gathers and
+ * distributes licensable news content to other media outlets. Consumer-facing
+ * retailers (newspapers, broadcasters, digital-native sites) are a different
+ * class — see CLAUDE.md "National news agencies are wholesalers, not retailers".
  */
 
 export type NewsAgency = {
