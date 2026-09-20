@@ -128,6 +128,19 @@ function formatDemocracyIndex(idx?: { year: number; rating: string; rank: number
   return `Rank ${idx.rank}${changeStr} · ${idx.rating} (${idx.year})`;
 }
 
+/** CPI shows the 0–100 score (the index’s primary figure), not the map score-band. */
+function formatCpiIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score} (${idx.year})`;
+}
+
 export function EntitySummary(props: EntitySummaryProps) {
   if (props.kind === "modern") {
     const c = props.country;
@@ -182,6 +195,9 @@ export function EntitySummary(props: EntitySummaryProps) {
 
       const econ = formatDemocracyIndex(c.democracy.economist);
       if (econ) rows.push({ label: "The Economist", value: econ });
+
+      const cpi = formatCpiIndex(c.democracy.cpi);
+      if (cpi) rows.push({ label: "Corruption Perceptions Index", value: cpi });
     }
 
     if (government) rows.push({ label: "Government", value: government });

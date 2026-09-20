@@ -149,6 +149,7 @@ type GroupMode =
   | "freedom-house"
   | "v-dem"
   | "economist"
+  | "cpi"
   | "party-ideology";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
@@ -168,6 +169,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   "freedom-house": "Freedom House rating",
   "v-dem": "V-Dem regime type",
   economist: "The Economist Democracy Index",
+  cpi: "Corruption Perceptions Index",
   // Political-parties-view only — buckets along the sourced ideology spectrum.
   "party-ideology": "By ideology",
   // Passports-view only — buckets by the passport cover's colour family.
@@ -229,6 +231,7 @@ const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
   "freedom-house",
   "v-dem",
   "economist",
+  "cpi",
 ]);
 
 /** Whether a grouping mode is offered for the given view. The flag-appearance
@@ -281,6 +284,21 @@ const ECONOMIST_ORDER: Record<string, number> = {
   "Hybrid regime": 3,
   "Authoritarian": 4,
   "Not rated": 5,
+};
+
+/** TI CPI map score bands — cleanest first. */
+const CPI_ORDER: Record<string, number> = {
+  "90–100": 1,
+  "80–89": 2,
+  "70–79": 3,
+  "60–69": 4,
+  "50–59": 5,
+  "40–49": 6,
+  "30–39": 7,
+  "20–29": 8,
+  "10–19": 9,
+  "0–9": 10,
+  "Not rated": 11,
 };
 
 /** Heading for a World-Cup-titles bucket: "5 World Cup titles" / "1 World Cup
@@ -766,9 +784,20 @@ export function FlagGrid({
         const rating = COUNTRY_FACTS[code]?.democracy?.economist?.rating ?? "Not rated";
         push(rating, e);
       }
+    } else if (groupMode === "cpi") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.cpi?.rating ?? "Not rated";
+        push(rating, e);
+      }
     }
 
-    if (groupMode === "freedom-house" || groupMode === "v-dem" || groupMode === "economist") {
+    if (
+      groupMode === "freedom-house" ||
+      groupMode === "v-dem" ||
+      groupMode === "economist" ||
+      groupMode === "cpi"
+    ) {
       for (const [, items] of buckets) {
         items.sort((a, b) => {
           const codeA = (a.selectId || a.id || a.worldMapCode || "").toUpperCase();
@@ -780,13 +809,17 @@ export function FlagGrid({
               ? factsA?.freedomHouse
               : groupMode === "v-dem"
               ? factsA?.vDem
-              : factsA?.economist;
+              : groupMode === "economist"
+              ? factsA?.economist
+              : factsA?.cpi;
           const indexB =
             groupMode === "freedom-house"
               ? factsB?.freedomHouse
               : groupMode === "v-dem"
               ? factsB?.vDem
-              : factsB?.economist;
+              : groupMode === "economist"
+              ? factsB?.economist
+              : factsB?.cpi;
           const rankA = indexA?.rank ?? Infinity;
           const rankB = indexB?.rank ?? Infinity;
           if (rankA !== rankB) return rankA - rankB;
@@ -862,6 +895,11 @@ export function FlagGrid({
       if (groupMode === "economist") {
         const oa = ECONOMIST_ORDER[a] ?? 99;
         const ob = ECONOMIST_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "cpi") {
+        const oa = CPI_ORDER[a] ?? 99;
+        const ob = CPI_ORDER[b] ?? 99;
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "party-ideology") {

@@ -90,6 +90,13 @@ export function DemocracyMapControl({ mode, onChange }: DemocracyMapControlProps
             >
               The Economist Index
             </button>
+            <button
+              type="button"
+              className={`map-view-control__preset${mode === "cpi" ? " map-view-control__preset--active" : ""}`}
+              onClick={() => selectMode("cpi")}
+            >
+              Corruption Perceptions Index
+            </button>
           </div>
         </div>
       )}

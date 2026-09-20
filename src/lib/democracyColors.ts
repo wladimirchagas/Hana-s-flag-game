@@ -1,6 +1,11 @@
 import { COUNTRY_FACTS } from "../data/countryFacts";
 
-export type DemocracyMapMode = "freedom-house" | "v-dem" | "economist" | null;
+export type DemocracyMapMode =
+  | "freedom-house"
+  | "v-dem"
+  | "economist"
+  | "cpi"
+  | null;
 
 export type DemocracyLegendItem = {
   label: string;
@@ -27,10 +32,40 @@ export const ECONOMIST_MAP_COLORS: Record<string, string> = {
   "Authoritarian": "#b71c1c",
 };
 
+/** Transparency International CPI map score bands (official CPI map legend).
+ *  Higher score = less perceived public-sector corruption. Colours run
+ *  clean→corrupt (green→yellow→red), matching TI’s published map scale. */
+export const CPI_MAP_COLORS: Record<string, string> = {
+  "90–100": "#004d1a",
+  "80–89": "#1b5e20",
+  "70–79": "#43a047",
+  "60–69": "#9ccc65",
+  "50–59": "#fdd835",
+  "40–49": "#fb8c00",
+  "30–39": "#f4511e",
+  "20–29": "#e53935",
+  "10–19": "#c62828",
+  "0–9": "#7f0000",
+};
+
+export const CPI_BAND_ORDER: readonly string[] = [
+  "90–100",
+  "80–89",
+  "70–79",
+  "60–69",
+  "50–59",
+  "40–49",
+  "30–39",
+  "20–29",
+  "10–19",
+  "0–9",
+];
+
 export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
   if (mode === "freedom-house") return "Freedom House";
   if (mode === "v-dem") return "V-Dem Regime Type";
   if (mode === "economist") return "The Economist Index";
+  if (mode === "cpi") return "Corruption Perceptions Index";
   return "";
 }
 
@@ -58,6 +93,12 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
       { label: "Authoritarian", color: ECONOMIST_MAP_COLORS["Authoritarian"] },
     ];
   }
+  if (mode === "cpi") {
+    return CPI_BAND_ORDER.map((label) => ({
+      label,
+      color: CPI_MAP_COLORS[label],
+    }));
+  }
   return [];
 }
 
@@ -75,9 +116,12 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
     } else if (mode === "v-dem") {
       rating = demo.vDem?.rating;
       colorMap = V_DEM_MAP_COLORS;
-    } else {
+    } else if (mode === "economist") {
       rating = demo.economist?.rating;
       colorMap = ECONOMIST_MAP_COLORS;
+    } else {
+      rating = demo.cpi?.rating;
+      colorMap = CPI_MAP_COLORS;
     }
     if (rating && colorMap[rating]) {
       overlay.set(code, colorMap[rating]);
