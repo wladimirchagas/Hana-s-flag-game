@@ -12,7 +12,9 @@ Two further deltas were inspected: `43cfd13` → `d130b10` (409 additional image
 
 At `db3ba05`, newspapers contain **937 records, 612 with images**; agencies contain **128 records, 113 with images**. **340 no-image records** remain across these two registries. The latest cleanup removes 60 agency entries and adds ten newspaper entries. Removal closes that entry’s agency-category problem, but does not verify the migrated facts or image. All five earlier F60 wrong-entity logos and all 25 further F64 wrong-entity logos remain referenced, unchanged.
 
-The previous deployed UI check established `63adaf3`. Repository reconciliation alone does not establish which newer revision is publicly deployed. No application data or artwork was changed by this audit.
+The subsequent live UI check displayed build **`26a2f2d`**, an audit-document commit after `db3ba05`. On the live Klix.ba detail card, the masthead visibly reads **TELUS Digital**, with image URL `/newspaper-logos/ba/klix.jpg`; the card labels the outlet both a digital news portal and a daily newspaper. Bosnia and Herzegovina's national panel displays population **3.16 million** without an observation year. These are direct public-UI observations, not deployment inferred solely from repository content. No application data or artwork was changed by this audit.
+
+A newer application head, **`7dda29d2444d237c6dde9dc3aabbec08408bd03b`**, was subsequently detected. Its delta is being reconciled separately; findings above are pinned to `db3ba05` until explicitly rechecked. The informal progress estimate requested by the user is approximately **10% complete / 90% remaining** against universal independent verification. This is a rough workload estimate, not a measured percentage of an exhaustively enumerated claim denominator.
 
 ## Earlier reconciliation — revision 43cfd13
 
@@ -219,7 +221,33 @@ F67 concerns presentation: `year: 2026` is the **release year**, whereas these a
 
 Sources: [publisher dataset page](https://www.v-dem.net/data/the-v-dem-dataset/), [v16 codebook §5.1.1](https://www.v-dem.net/documents/70/codebook_v16.pdf), [pinned dataset](https://github.com/vdeminstitute/vdemdata/blob/f4dd26922e658442524dfd954bf14f7ebe622d5d/data/vdem.RData), [2026 report Table A2](https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf). Dataset attribution: Coppedge et al. (2026), V-Dem Country-Year Dataset v16, DOI `10.23696/vdemds26`; source data licence CC BY-SA 4.0.
 
+## F05 expanded and F68 — population dates and incorrectly labelled census methods (P1/P2)
+
+At the `db3ba05` snapshot, the national population request explicitly selects 2024. The World Bank `SP.POP.TOTL` response contains both 2024 and 2025 observations for **194 of the 195 bundled countries**; Vatican City is absent and its fallback remains unverified. Thus every country covered by this API has a newer 2025 observation available. The live Bosnia and Herzegovina panel's 3.16 million is consistent with the 2024 observation of 3,164,253, whereas the source's 2025 observation is 3,140,095. This is a vintage/presentation defect, not proof the 2024 observation was fabricated. [World Bank series](https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&date=2021:2025&per_page=20000).
+
+All **5,281 subdivision rows** and **201 national reference denominators** have now been inventoried in the population ledger. Primary-source comparisons completed so far are:
+
+| Set | Rows compared | Numerical result | Method/year result |
+|---|---:|---|---|
+| Brazil: all 26 states and Federal District | 27 | All exactly match IBGE 2022 | All 27 incorrectly say `estimate`; these are census results |
+| Mainland China: all 31 provincial units | 31 | All exactly match NBS 2020 table | All 31 incorrectly say `estimate`; these are preliminary census results |
+| Mexico: all 32 federal entities plus the legacy Mexico City alias | 33 | All exactly match INEGI 2020 | Census/year labels agree; the alias is not a 33rd entity |
+| US: 49 states, DC, Puerto Rico, Guam, US Virgin Islands, American Samoa | 54 | All exactly match Census Bureau 2020 | Census/year labels agree |
+
+Sources: [IBGE values](https://servicodados.ibge.gov.br/api/v3/agregados/4714/periodos/2022/variaveis/93?localidades=N3[all]) and [survey metadata](https://servicodados.ibge.gov.br/api/v3/agregados/4714/metadados); [NBS communiqué, table 3-1](https://www.stats.gov.cn/english/PressRelease/202105/t20210510_1817188.html); [INEGI report, PDF page 5](https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2021/EstSociodemo/ResultCenso2020_Nal.pdf); [US resident-population table](https://www2.census.gov/programs-surveys/decennial/2020/data/apportionment/apportionment-2020-table02.pdf), with separate official island-area releases linked per row.
+
+The China table excludes Hong Kong, Macao and Taiwan and lists servicemen separately; its numerical agreement does not resolve any territorial-status question. Maryland has a 2021 estimate in the app, so it was not wrongly compared as a 2020-census claim. Northern Mariana Islands and US Minor Outlying Islands also remain unverified here. The other **5,136 subdivision rows remain unverified against primary demographic sources in this ledger**. Historical census accuracy does not establish freshness relative to subsequent official estimates.
+
+F68 supplies concrete, whole-set counterexamples to F06's generator defect: **58 accurate census counts receive false method labels**. Preserve `census`, `estimate`, `projection`, `register` and `unknown` separately, with full reference dates and source identifiers. Do not infer `estimate` merely because a Wikidata method qualifier is absent. Every national reference denominator also lacks an observation date and method; numerical matches to World Bank observations alone cannot repair that missing metadata.
+
+## F69 — latest image caption count mismatch (P2)
+
+At `db3ba05`, `ee-eesti-paevaleht` describes three red dots. The inspected artwork has **one dark dot and two red dots**. Correct the caption to the actual selected variant and record its date. This is a direct description/image mismatch; it does not establish that the publisher identity itself is wrong. The per-record observation is preserved in the DB3 image ledger.
+
 ## Evidence files and remaining work
+
+- [Population claim ledger](audit/POPULATION_CLAIM_VERIFICATION_2026-09-20.json): national API coverage/freshness for 195 countries, all 201 undated reference denominators, 145 primary census comparisons and an explicit list of the other 5,136 subdivision records as unverified.
+- [Latest media ledger through db3](audit/MEDIA_DB3_CLAIM_VERIFICATION_2026-09-20.json): 74 image assets, 75 record references, individual caption/source outcomes and agency cleanup.
 
 - [V-Dem claim ledger](audit/VDEM_CLAIM_VERIFICATION_2026-09-20.json): all 173 entries, report/dataset comparisons, ranks and scope.
 - [World Bank source snapshot](audit/WORLD_BANK_SOURCE_SNAPSHOT_2026-09-20.json): dated source observations behind the GDP comparisons.
