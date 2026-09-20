@@ -14172,7 +14172,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -14191,6 +14190,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Libyan news brand",
         "source": "https://www.libyaalahrar.tv"
       },
+      "logo": "newspaper-logos/ly/lanews.png",
+      "logoExplainer": "Light-blue Arabic wordmark with a globe mark — Libya Al-Ahrar News digital masthead from its own site.",
+      "licenceNote": "Libya Al-Ahrar News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.libyaalahrar.tv"
       ]
@@ -16434,7 +16437,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "MISA Moçambique Media Freedom Report 2023"
       },
       "revenueModel": "Newsstand sales, individual subscriptions, and limited independent ads",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mz/canal-de-mocambique.png",
+      "logoExplainer": "Dark-blue 'Canal' script over orange 'de Moçambique' — Canal de Moçambique newspaper masthead.",
+      "licenceNote": "Canal de Moçambique masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://canal.co.mz",
         "https://pt.wikipedia.org/wiki/Canal_de_Mo%C3%A7ambique"
@@ -18131,7 +18137,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "pg-loop-png",
       "countryCode": "PG",
       "name": "Loop PNG",
@@ -18147,6 +18152,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major PNG news website",
         "source": "https://www.looppng.com"
       },
+      "logo": "newspaper-logos/pg/loop-png.png",
+      "logoExplainer": "Yellow disc with black overlapping-loop play mark — Loop PNG's digital news brand emblem.",
+      "licenceNote": "Loop PNG brand mark trademark bundled from Wikimedia Commons (File:Loops logo.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.looppng.com"
       ]
