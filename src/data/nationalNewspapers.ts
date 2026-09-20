@@ -5866,7 +5866,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministère de la Communication de Djibouti 2023"
       },
       "revenueModel": "State budget funding and public notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/dj/al-qarn.png",
+      "logoExplainer": "Official 'Al-Qarn' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "Al-Qarn masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.alqarn.dj"
       ]
@@ -8509,7 +8512,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Gambia Press Union Historical Archive 2023"
       },
       "revenueModel": "Print sales and historical archives licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gm/daily-observer-gambia.jpg",
+      "logoExplainer": "Official 'Daily Observer' masthead/logo as used by the publisher — sourced from Wikimedia Commons.",
+      "licenceNote": "Daily Observer masthead trademark bundled from Wikimedia Commons (File:The Daily Observer.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://en.wikipedia.org/wiki/Daily_Observer_(The_Gambia)"
       ]
@@ -8720,7 +8726,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Real EG Media Kit 2023"
       },
       "revenueModel": "Corporate partnerships and digital branding campaigns",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gq/real-equatorial-guinea.png",
+      "logoExplainer": "Official 'Real Equatorial Guinea' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "Real Equatorial Guinea masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://realequatorialguinea.com"
       ]
@@ -8769,7 +8778,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Diario Rombe Audience Report 2023"
       },
       "revenueModel": "Reader donations and investigative journalism grants",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gq/diario-rombe.png",
+      "logoExplainer": "Official 'Diario Rombe' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "Diario Rombe masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://diariorombe.es",
         "https://es.wikipedia.org/wiki/Diario_Rombe"
@@ -8966,7 +8978,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Prensa Libre Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gt/prensa-libre.jpg",
+      "logoExplainer": "Official 'Prensa Libre' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "Prensa Libre masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.prensalibre.com/",
         "https://guatemala.mom-gmr.org/"
@@ -9016,7 +9031,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Diario de Centro América Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gt/diario-de-centro-america.png",
+      "logoExplainer": "Official 'Diario de Centro América' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "Diario de Centro América masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://dca.gob.gt/",
         "https://guatemala.gob.gt/"
@@ -9041,7 +9059,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Soy502 Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gt/soy502.svg",
+      "logoExplainer": "Official 'Soy502' masthead/logo as used by the publisher — sourced from Wikimedia Commons.",
+      "licenceNote": "Soy502 masthead trademark bundled from Wikimedia Commons (File:Soy502.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.soy502.com/",
         "https://guatemala.mom-gmr.org/"
@@ -9066,7 +9087,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Plaza Pública Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gt/plaza-publica.svg",
+      "logoExplainer": "Official 'Plaza Pública' masthead/logo as used by the publisher — sourced from Wikimedia Commons.",
+      "licenceNote": "Plaza Pública masthead trademark bundled from Wikimedia Commons (File:Logo de Plaza Publica.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.plazapublica.com.gt/",
         "https://url.edu.gt/"
@@ -9118,7 +9142,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "O Democrata Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gw/jornal-o-democrata.png",
+      "logoExplainer": "Official 'O Democrata' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "O Democrata masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.odemocratagb.com/",
         "https://rsf.org/"
@@ -9220,7 +9247,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kaieteur News Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gy/kaieteur-news.png",
+      "logoExplainer": "Official 'Kaieteur News' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "Kaieteur News masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.kaieteurnewsonline.com/",
         "https://guyana.gov.gy/"
@@ -9347,7 +9377,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "La Prensa Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/hn/la-prensa.png",
+      "logoExplainer": "Official 'La Prensa' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "La Prensa masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.laprensa.hn/",
         "https://www.grupoopsa.com/"
@@ -9372,7 +9405,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "El Heraldo Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/hn/el-heraldo.png",
+      "logoExplainer": "Official 'El Heraldo' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "El Heraldo masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.elheraldo.hn/",
         "https://www.grupoopsa.com/"
@@ -9397,7 +9433,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Diario Tiempo Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/hn/diario-tiempo.png",
+      "logoExplainer": "Official 'Diario Tiempo' masthead/logo as used by the publisher — sourced from Wikimedia Commons.",
+      "licenceNote": "Diario Tiempo masthead trademark bundled from Wikimedia Commons (File:Logo Diario El Tiempo.png) for educational reference in Learn mode.",
+
       "sources": [
         "https://tiempo.hn/",
         "https://honduras.mom-gmr.org/"
@@ -9447,7 +9486,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Criterio.hn Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/hn/criterio-hn.png",
+      "logoExplainer": "Official 'Criterio.hn' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "Criterio.hn masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://criterio.hn/",
         "https://cph.hn/"
@@ -9503,7 +9545,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Hanza Media Audience Report 2024"
       },
       "revenueModel": "Digital paywall subscriptions, print sales, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/hr/jutarnji-list.png",
+      "logoExplainer": "Official 'Jutarnji list' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "Jutarnji list masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.jutarnji.hr",
         "https://en.wikipedia.org/wiki/Jutarnji_list"
@@ -9637,7 +9682,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "HaitiLibre Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ht/haitilibre.jpg",
+      "logoExplainer": "Official 'HaitiLibre' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "HaitiLibre masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://www.haitilibre.com/",
         "https://rsf.org/"
@@ -9687,7 +9735,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Haiti 24 Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ht/haiti-24.png",
+      "logoExplainer": "Official 'Haiti 24' masthead/logo as used by the publisher — sourced from the outlet's own site.",
+      "licenceNote": "Haiti 24 masthead trademark bundled from the publisher's official site brand assets for educational reference in Learn mode.",
+
       "sources": [
         "https://haiti24.net/",
         "https://rsf.org/"
