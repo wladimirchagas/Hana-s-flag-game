@@ -162,14 +162,15 @@ export const HDI_BAND_ORDER: readonly string[] = [
   "Low",
 ];
 
-/** Global Peace Index State of Peace bands (IEP map legend). Lower score =
- *  more peaceful. Colours follow the official Vision of Humanity / IEP map. */
+/** Global Peace Index State of Peace bands. Lower score = more peaceful.
+ *  Colours match the shared Learn-mode green→yellow→red scale used by HDI,
+ *  ETR, V-Dem and the other democracy-index maps (not the IEP site palette). */
 export const GPI_MAP_COLORS: Record<string, string> = {
-  "Very High": "#00847f",
-  High: "#54c0a9",
-  Medium: "#fae28a",
-  Low: "#f9ab68",
-  "Very Low": "#ed1b24",
+  "Very High": "#1b5e20",
+  High: "#4caf50",
+  Medium: "#fdd835",
+  Low: "#fb8c00",
+  "Very Low": "#b71c1c",
 };
 
 export const GPI_BAND_ORDER: readonly string[] = [
