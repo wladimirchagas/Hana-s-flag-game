@@ -44,7 +44,7 @@ export function NewsAgencyDetails({
             <div className="learn-fs__flag learn-fs__flag--empty" aria-label="No free agency logo">
               <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
               <p className="learn-fs__sub-desc" style={{ margin: "0.5rem 0 0", fontSize: "0.85em" }}>
-                {agency.noImageReason ?? "No freely-citable logo is bundled for this news agency."}
+                {agency.noImageReason ?? "No logo image is shown for this news agency yet."}
               </p>
             </div>
           )}

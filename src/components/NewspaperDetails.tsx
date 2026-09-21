@@ -42,7 +42,7 @@ export function NewspaperDetails({
             <div className="learn-fs__flag learn-fs__flag--empty" aria-label="No free masthead image">
               <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
               <p className="learn-fs__sub-desc" style={{ margin: "0.5rem 0 0", fontSize: "0.85em" }}>
-                {newspaper.noImageReason ?? "No freely-citable masthead is bundled for this newspaper."}
+                {newspaper.noImageReason ?? "No masthead image is shown for this newspaper yet."}
               </p>
             </div>
           )}

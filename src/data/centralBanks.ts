@@ -23,7 +23,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "AD",
       "name": "Andorran Financial Authority",
       "website": "https://www.afa.ad/",
-      "noImageReason": "Wikidata item Q11926724 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.afa.ad/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q11926724",
         "https://www.afa.ad/"
@@ -36,7 +36,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "AE",
       "name": "Central Bank of the United Arab Emirates",
       "website": "https://www.centralbank.ae/en",
-      "noImageReason": "Wikidata item Q2982584 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.centralbank.ae/en) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/ae/the-united-arab-emirates.png",
+      "logoExplainer": "Central Bank of the UAE bilingual lockup: a golden falcon with the UAE flag shield and Arabic scroll beside the Arabic name and \"CENTRAL BANK OF THE U.A.E.\" — the bank's official brand mark.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2982584",
         "https://www.centralbank.ae/en"
@@ -66,7 +68,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Eastern Caribbean Central Bank",
       "website": "http://www.eccb-centralbank.org",
       "currencyUnion": "East Caribbean dollar — shared central bank: Eastern Caribbean Central Bank (ECCB)",
-      "noImageReason": "Wikidata item Q1210260 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.eccb-centralbank.org) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1210260",
         "http://www.eccb-centralbank.org"
@@ -95,7 +97,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "AM",
       "name": "Central Bank of Armenia",
       "website": "https://cba.am",
-      "noImageReason": "Wikidata item Q190223 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://cba.am) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/am/armenia.jpg",
+      "logoExplainer": "Official brand mark of the Central Bank of Armenia as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q190223",
         "https://cba.am",
@@ -109,7 +113,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "AO",
       "name": "National Bank of Angola",
       "website": "http://www.bna.ao/",
-      "noImageReason": "Wikidata item Q31211 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bna.ao/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q31211",
         "http://www.bna.ao/"
@@ -154,9 +158,14 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "id": "au-rba",
       "countryCode": "AU",
       "name": "Reserve Bank of Australia",
+      "shortName": "RBA",
       "website": "https://www.rba.gov.au/",
-      "noImageReason": "Wikidata item Q1506724 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.rba.gov.au/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/au/rba.svg",
+      "logoExplainer": "The Reserve Bank of Australia mark: a stylised Commonwealth/Federation star device above the serif lockup \"RESERVE BANK / OF AUSTRALIA\" in black. The three-pointed star echoes the Commonwealth Star on Australia's flag and arms; the formal wordmark is the bank's institutional identity used on RBA publications — not a currency-note vignette.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
+        "https://en.wikipedia.org/wiki/File:Reserve_Bank_of_Australia_logo.svg",
+        "https://www.rba.gov.au/media/logos.html",
         "https://www.wikidata.org/wiki/Q1506724",
         "https://www.rba.gov.au/"
       ]
@@ -168,7 +177,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "AZ",
       "name": "Central Bank of Azerbaijan",
       "website": "http://www.cbar.az/",
-      "noImageReason": "Wikidata item Q190230 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.cbar.az/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q190230",
         "http://www.cbar.az/",
@@ -182,7 +191,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "BA",
       "name": "Central Bank of Bosnia and Herzegovina",
       "website": "https://www.cbbh.ba/",
-      "noImageReason": "Wikidata item Q1184535 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.cbbh.ba/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1184535",
         "https://www.cbbh.ba/"
@@ -195,7 +204,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "BB",
       "name": "Central Bank of Barbados",
       "website": "http://www.centralbank.org.bb",
-      "noImageReason": "Wikidata item Q2600777 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.centralbank.org.bb) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2600777",
         "http://www.centralbank.org.bb"
@@ -258,7 +267,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "BG",
       "name": "Bulgarian National Bank",
       "website": "http://www.bnb.bg/",
-      "noImageReason": "Wikidata item Q74687 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bnb.bg/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q74687",
         "http://www.bnb.bg/"
@@ -271,7 +280,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "BH",
       "name": "Central Bank of Bahrain",
       "website": "http://www.cbb.gov.bh",
-      "noImageReason": "Wikidata item Q571182 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.cbb.gov.bh) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q571182",
         "http://www.cbb.gov.bh"
@@ -284,7 +293,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "BI",
       "name": "Bank of the Republic of Burundi",
       "website": "http://www.brb.bi/",
-      "noImageReason": "Wikidata item Q806937 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.brb.bi/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q806937",
         "http://www.brb.bi/"
@@ -314,7 +323,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "BN",
       "name": "Brunei Darussalam Central Bank",
       "website": "http://www.ambd.gov.bn",
-      "noImageReason": "Wikidata item Q2604419 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.ambd.gov.bn) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/bn/brunei-darussalam-central-bank.jpg",
+      "logoExplainer": "Official brand mark of the Brunei Darussalam Central Bank as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2604419",
         "http://www.ambd.gov.bn",
@@ -360,7 +371,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "BS",
       "name": "Central Bank of The Bahamas",
       "website": "http://www.centralbankbahamas.com/",
-      "noImageReason": "Wikidata item Q4504270 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.centralbankbahamas.com/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q4504270",
         "http://www.centralbankbahamas.com/"
@@ -373,7 +384,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "BT",
       "name": "Royal Monetary Authority of Bhutan",
       "website": "http://www.rma.org.bt",
-      "noImageReason": "Wikidata item Q1144649 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.rma.org.bt) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1144649",
         "http://www.rma.org.bt"
@@ -386,7 +397,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "BW",
       "name": "Bank of Botswana",
       "website": "http://www.bankofbotswana.bw/",
-      "noImageReason": "Wikidata item Q859830 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bankofbotswana.bw/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q859830",
         "http://www.bankofbotswana.bw/"
@@ -399,7 +410,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "BY",
       "name": "National Bank of the Republic of Belarus",
       "website": "http://www.nbrb.by/",
-      "noImageReason": "Wikidata item Q431491 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.nbrb.by/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q431491",
         "http://www.nbrb.by/"
@@ -412,7 +423,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "BZ",
       "name": "Central Bank of Belize",
       "website": "http://www.centralbank.org.bz",
-      "noImageReason": "Wikidata item Q643949 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.centralbank.org.bz) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q643949",
         "http://www.centralbank.org.bz"
@@ -425,7 +436,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "CA",
       "name": "Bank of Canada",
       "website": "https://www.bankofcanada.ca/",
-      "noImageReason": "Wikidata item Q806703 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.bankofcanada.ca/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/ca/boc.svg",
+      "logoExplainer": "Bank of Canada / Banque du Canada bilingual wordmark: a teal silhouette of the Ottawa head-office colonnade beside the stacked English and French names in a clean sans-serif. Institutional brand mark, not the Canadian coat of arms.",
+      "licenceNote": "Non-free logo. French Wikipedia hosts this file under a fair-use rationale as the Bank of Canada / Banque du Canada official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository.",
       "sources": [
         "https://www.wikidata.org/wiki/Q806703",
         "https://www.bankofcanada.ca/"
@@ -438,7 +451,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "CD",
       "name": "Central Bank of Congo",
       "website": "http://www.bcc.cd",
-      "noImageReason": "Wikidata item Q2882989 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bcc.cd) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2882989",
         "http://www.bcc.cd"
@@ -452,7 +465,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Bank of Central African States",
       "website": "https://www.beac.int",
       "currencyUnion": "CEMAC CFA franc — shared central bank: Bank of Central African States (BEAC)",
-      "noImageReason": "Wikidata item Q189972 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.beac.int) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q189972",
         "https://www.beac.int"
@@ -466,7 +479,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Bank of Central African States",
       "website": "https://www.beac.int",
       "currencyUnion": "CEMAC CFA franc — shared central bank: Bank of Central African States (BEAC)",
-      "noImageReason": "Wikidata item Q189972 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.beac.int) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q189972",
         "https://www.beac.int"
@@ -529,7 +542,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Bank of Central African States",
       "website": "https://www.beac.int",
       "currencyUnion": "CEMAC CFA franc — shared central bank: Bank of Central African States (BEAC)",
-      "noImageReason": "Wikidata item Q189972 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.beac.int) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q189972",
         "https://www.beac.int"
@@ -542,7 +555,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "CN",
       "name": "People's Bank of China",
       "website": "http://www.pbc.gov.cn/",
-      "noImageReason": "Wikidata item Q249203 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.pbc.gov.cn/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/cn/pboc.png",
+      "logoExplainer": "People's Bank of China mark: a red three-pronged device (often read as stylised ancient spade money or interlocking 人 forms) above 中国人民银行 and the English line \"THE PEOPLE'S BANK OF CHINA\". Official institutional lockup — not the PRC national emblem alone.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q249203",
         "http://www.pbc.gov.cn/"
@@ -571,7 +586,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "CR",
       "name": "Central Bank of Costa Rica",
       "website": "http://www.bccr.fi.cr/",
-      "noImageReason": "Wikidata item Q4504273 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bccr.fi.cr/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q4504273",
         "http://www.bccr.fi.cr/"
@@ -584,7 +599,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "CU",
       "name": "Central Bank of Cuba",
       "website": "http://www.bc.gob.cu/",
-      "noImageReason": "Wikidata item Q2607787 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bc.gob.cu/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/cu/cuba.jpg",
+      "logoExplainer": "Official brand mark of the Central Bank of Cuba as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2607787",
         "http://www.bc.gob.cu/",
@@ -598,7 +615,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "CV",
       "name": "Bank of Cape Verde",
       "website": "http://www.bcv.cv/",
-      "noImageReason": "Wikidata item Q4077341 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bcv.cv/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q4077341",
         "http://www.bcv.cv/"
@@ -612,7 +629,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Central Bank of Cyprus",
       "website": "http://www.centralbank.cy",
       "currencyUnion": "Eurosystem — monetary policy set by the European Central Bank (ECB)",
-      "noImageReason": "Wikidata item Q74693 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.centralbank.cy) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q74693",
         "http://www.centralbank.cy"
@@ -659,7 +676,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "DJ",
       "name": "Central Bank of Djibouti",
       "website": "http://www.banque-centrale.dj",
-      "noImageReason": "Wikidata item Q4504271 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.banque-centrale.dj) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q4504271",
         "http://www.banque-centrale.dj"
@@ -672,7 +689,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "DK",
       "name": "Danmarks Nationalbank",
       "website": "https://www.nationalbanken.dk/da",
-      "noImageReason": "Wikidata item Q683252 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.nationalbanken.dk/da) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/dk/nationalbanken.png",
+      "logoExplainer": "Danmarks Nationalbank wordmark / institutional lockup as used on Nationalbanken publications — Denmark's central-bank brand.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q683252",
         "https://www.nationalbanken.dk/da"
@@ -686,7 +705,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Eastern Caribbean Central Bank",
       "website": "http://www.eccb-centralbank.org",
       "currencyUnion": "East Caribbean dollar — shared central bank: Eastern Caribbean Central Bank (ECCB)",
-      "noImageReason": "Wikidata item Q1210260 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.eccb-centralbank.org) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1210260",
         "http://www.eccb-centralbank.org"
@@ -699,7 +718,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "DO",
       "name": "Central Bank of the Dominican Republic",
       "website": "https://www.bancentral.gov.do/",
-      "noImageReason": "Wikidata item Q1800406 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.bancentral.gov.do/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1800406",
         "https://www.bancentral.gov.do/"
@@ -712,7 +731,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "DZ",
       "name": "Bank of Algeria",
       "website": "http://www.bank-of-algeria.dz/",
-      "noImageReason": "Wikidata item Q1774622 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bank-of-algeria.dz/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/dz/algeria.png",
+      "logoExplainer": "Official brand mark of the Bank of Algeria as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1774622",
         "http://www.bank-of-algeria.dz/",
@@ -743,7 +764,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Bank of Estonia",
       "website": "https://www.eestipank.ee/",
       "currencyUnion": "Eurosystem — monetary policy set by the European Central Bank (ECB)",
-      "noImageReason": "Wikidata item Q366960 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.eestipank.ee/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q366960",
         "https://www.eestipank.ee/"
@@ -772,7 +793,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "ER",
       "name": "Bank of Eritrea",
       "website": "http://www.boe.gov.er/",
-      "noImageReason": "Wikidata item Q806163 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.boe.gov.er/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q806163",
         "http://www.boe.gov.er/"
@@ -802,7 +823,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "ET",
       "name": "National Bank of Ethiopia",
       "website": "https://nbe.gov.et/",
-      "noImageReason": "Wikidata item Q1967889 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://nbe.gov.et/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/et/ethiopia.png",
+      "logoExplainer": "Official brand mark of the National Bank of Ethiopia as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1967889",
         "https://nbe.gov.et/",
@@ -833,7 +856,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "FJ",
       "name": "Reserve Bank of Fiji",
       "website": "http://www.rbf.gov.fj/",
-      "noImageReason": "Wikidata item Q1776552 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.rbf.gov.fj/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1776552",
         "http://www.rbf.gov.fj/"
@@ -876,7 +899,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Bank of Central African States",
       "website": "https://www.beac.int",
       "currencyUnion": "CEMAC CFA franc — shared central bank: Bank of Central African States (BEAC)",
-      "noImageReason": "Wikidata item Q189972 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.beac.int) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q189972",
         "https://www.beac.int"
@@ -889,7 +912,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "GB",
       "name": "Bank of England",
       "website": "https://www.bankofengland.co.uk/",
-      "noImageReason": "Wikidata item Q183231 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.bankofengland.co.uk/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/gb/boe.svg",
+      "logoExplainer": "The Bank of England's circular Britannia mark: a white classical figure of Britannia seated with spear, olive branch and a Union Flag shield, set on a navy disc. This is the bank's familiar institutional emblem used on BoE publications — not the UK coat of arms alone.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q183231",
         "https://www.bankofengland.co.uk/"
@@ -903,7 +928,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Eastern Caribbean Central Bank",
       "website": "http://www.eccb-centralbank.org",
       "currencyUnion": "East Caribbean dollar — shared central bank: Eastern Caribbean Central Bank (ECCB)",
-      "noImageReason": "Wikidata item Q1210260 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.eccb-centralbank.org) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1210260",
         "http://www.eccb-centralbank.org"
@@ -916,7 +941,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "GE",
       "name": "National Bank of Georgia",
       "website": "https://nbg.gov.ge/",
-      "noImageReason": "Wikidata item Q2667495 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://nbg.gov.ge/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2667495",
         "https://nbg.gov.ge/",
@@ -930,7 +955,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "GH",
       "name": "Bank of Ghana",
       "website": "http://www.bog.gov.gh/",
-      "noImageReason": "Wikidata item Q669484 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bog.gov.gh/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q669484",
         "http://www.bog.gov.gh/"
@@ -943,7 +968,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "GM",
       "name": "Central Bank of The Gambia",
       "website": "http://www.cbg.gm/",
-      "noImageReason": "Wikidata item Q495091 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.cbg.gm/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q495091",
         "http://www.cbg.gm/"
@@ -956,7 +981,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "GN",
       "name": "Central Bank of the Republic of Guinea",
       "website": "https://www.bcrg-guinee.org/",
-      "noImageReason": "Wikidata item Q2882980 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.bcrg-guinee.org/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2882980",
         "https://www.bcrg-guinee.org/"
@@ -970,7 +995,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Bank of Central African States",
       "website": "https://www.beac.int",
       "currencyUnion": "CEMAC CFA franc — shared central bank: Bank of Central African States (BEAC)",
-      "noImageReason": "Wikidata item Q189972 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.beac.int) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q189972",
         "https://www.beac.int"
@@ -984,7 +1009,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Bank of Greece",
       "website": "https://www.bankofgreece.gr",
       "currencyUnion": "Eurosystem — monetary policy set by the European Central Bank (ECB)",
-      "noImageReason": "Wikidata item Q806700 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.bankofgreece.gr) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/gr/bog.png",
+      "logoExplainer": "Bank of Greece contemporary institutional logo used on Bank of Greece publications — Greece's Eurosystem national central-bank brand.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q806700",
         "https://www.bankofgreece.gr"
@@ -997,13 +1024,14 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "GT",
       "name": "Bank of Guatemala",
       "website": "http://www.banguat.gob.gt",
-      "logo": "/central-bank-logos/gt/guatemala.jpg",
-      "logoExplainer": "Official brand mark of the Bank of Guatemala: Autoridades de BANGUAT realizan reunión de transición 20231023. Sourced from Wikimedia Commons and visually checked to be the bank mark.",
+      "logo": "/central-bank-logos/gt/guatemala.png",
+      "logoExplainer": "Bank of Guatemala circular seal: a Resplendent Quetzal perched on a Mayan temple (Temple I at Tikal) with green sprigs, ringed by BANCO DE GUATEMALA lettering — the bank's institutional cognisance, not a photograph of its headquarters.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
+        "https://commons.wikimedia.org/wiki/File:Bank_of_Guatemala_logo.png",
+        "https://www.banguat.gob.gt/",
         "https://www.wikidata.org/wiki/Q3359424",
-        "http://www.banguat.gob.gt",
-        "https://commons.wikimedia.org/wiki/File:Autoridades_de_BANGUAT_realizan_reuni%C3%B3n_de_transici%C3%B3n_20231023_(cropped).jpg"
+        "http://www.banguat.gob.gt"
       ]
     }
   ],
@@ -1030,7 +1058,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "GY",
       "name": "Bank of Guyana",
       "website": "http://www.bankofguyana.org.gy/",
-      "noImageReason": "Wikidata item Q1812564 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bankofguyana.org.gy/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1812564",
         "http://www.bankofguyana.org.gy/"
@@ -1043,7 +1071,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "HN",
       "name": "Central Bank of Honduras",
       "website": "http://www.bch.hn/",
-      "noImageReason": "Wikidata item Q2920146 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bch.hn/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2920146",
         "http://www.bch.hn/"
@@ -1073,7 +1101,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "HT",
       "name": "Bank of the Republic of Haiti",
       "website": "https://www.brh.ht/",
-      "noImageReason": "Wikidata item Q2883379 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.brh.ht/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2883379",
         "https://www.brh.ht/"
@@ -1119,7 +1147,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Central Bank of Ireland",
       "website": "https://www.centralbank.ie/",
       "currencyUnion": "Eurosystem — monetary policy set by the European Central Bank (ECB)",
-      "noImageReason": "Wikidata item Q283785 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.centralbank.ie/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/ie/cbi.svg",
+      "logoExplainer": "Central Bank of Ireland bilingual mark: a gold Celtic-knot roundel beside \"Banc Ceannais na hÉireann / Central Bank of Ireland\" with \"Eurosystem\" under a gold rule — Ireland's Eurosystem NCB brand.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q283785",
         "https://www.centralbank.ie/"
@@ -1132,7 +1162,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "IL",
       "name": "Bank of Israel",
       "website": "https://www.boi.org.il/",
-      "noImageReason": "Wikidata item Q244411 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.boi.org.il/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/il/israel.svg",
+      "logoExplainer": "Bank of Israel seal / institutional emblem as used to identify the bank — the institution's own cognisance rather than a municipal or national flag.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q244411",
         "https://www.boi.org.il/"
@@ -1161,7 +1193,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "IQ",
       "name": "Central Bank of Iraq",
       "website": "http://www.cbi.iq",
-      "noImageReason": "Wikidata item Q1778674 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.cbi.iq) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1778674",
         "http://www.cbi.iq"
@@ -1190,7 +1222,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "IS",
       "name": "Central Bank of Iceland",
       "website": "http://cb.is/",
-      "noImageReason": "Wikidata item Q1195916 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://cb.is/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1195916",
         "http://cb.is/"
@@ -1204,7 +1236,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Bank of Italy",
       "website": "https://www.bancaditalia.it",
       "currencyUnion": "Eurosystem — monetary policy set by the European Central Bank (ECB)",
-      "noImageReason": "Wikidata item Q806176 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.bancaditalia.it) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/it/banca-ditalia.svg",
+      "logoExplainer": "Banca d'Italia wordmark: an ornate blue BI monogram crest beside \"BANCA D'ITALIA\" in serif caps with \"EUROSISTEMA\" beneath — Italy's Eurosystem national central-bank brand.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q806176",
         "https://www.bancaditalia.it"
@@ -1217,7 +1251,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "JM",
       "name": "Bank of Jamaica",
       "website": "http://www.boj.org.jm",
-      "noImageReason": "Wikidata item Q3374585 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.boj.org.jm) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q3374585",
         "http://www.boj.org.jm"
@@ -1230,7 +1264,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "JO",
       "name": "Central Bank of Jordan",
       "website": "http://www.cbj.gov.jo/",
-      "noImageReason": "Wikidata item Q2607421 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.cbj.gov.jo/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2607421",
         "http://www.cbj.gov.jo/"
@@ -1259,7 +1293,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "KE",
       "name": "Central Bank of Kenya",
       "website": "https://www.centralbank.go.ke/",
-      "noImageReason": "Wikidata item Q2510227 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.centralbank.go.ke/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2510227",
         "https://www.centralbank.go.ke/"
@@ -1288,7 +1322,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "KH",
       "name": "National Bank of Cambodia",
       "website": "http://nbc.org.kh",
-      "noImageReason": "Wikidata item Q284843 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://nbc.org.kh) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q284843",
         "http://nbc.org.kh"
@@ -1300,7 +1334,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "id": "ki-kiribati",
       "countryCode": "KI",
       "name": "Bank of Kiribati",
-      "noImageReason": "Wikidata item Q98058686 has no P154 logo, Commons was checked for a bank brand mark, and no official website on Wikidata — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q98058686"
       ]
@@ -1312,7 +1346,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "KM",
       "name": "Central Bank of the Comoros",
       "website": "http://www.banque-comores.km/",
-      "noImageReason": "Wikidata item Q2604274 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.banque-comores.km/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2604274",
         "http://www.banque-comores.km/"
@@ -1326,7 +1360,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Eastern Caribbean Central Bank",
       "website": "http://www.eccb-centralbank.org",
       "currencyUnion": "East Caribbean dollar — shared central bank: Eastern Caribbean Central Bank (ECCB)",
-      "noImageReason": "Wikidata item Q1210260 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.eccb-centralbank.org) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1210260",
         "http://www.eccb-centralbank.org"
@@ -1369,7 +1403,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "KW",
       "name": "Central Bank of Kuwait",
       "website": "http://www.cbk.gov.kw/",
-      "noImageReason": "Wikidata item Q2944396 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.cbk.gov.kw/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2944396",
         "http://www.cbk.gov.kw/"
@@ -1398,7 +1432,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "LA",
       "name": "Bank of the Lao P.D.R.",
       "website": "http://www.bol.gov.la/",
-      "noImageReason": "Wikidata item Q4077339 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bol.gov.la/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q4077339",
         "http://www.bol.gov.la/"
@@ -1411,7 +1445,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "LB",
       "name": "Banque du Liban",
       "website": "http://www.bdl.gov.lb/",
-      "noImageReason": "Wikidata item Q1776564 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bdl.gov.lb/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1776564",
         "http://www.bdl.gov.lb/"
@@ -1425,7 +1459,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Eastern Caribbean Central Bank",
       "website": "http://www.eccb-centralbank.org",
       "currencyUnion": "East Caribbean dollar — shared central bank: Eastern Caribbean Central Bank (ECCB)",
-      "noImageReason": "Wikidata item Q1210260 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.eccb-centralbank.org) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1210260",
         "http://www.eccb-centralbank.org"
@@ -1450,7 +1484,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "LK",
       "name": "Central Bank of Sri Lanka",
       "website": "https://www.cbsl.gov.lk/",
-      "noImageReason": "Wikidata item Q2640939 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.cbsl.gov.lk/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2640939",
         "https://www.cbsl.gov.lk/"
@@ -1463,7 +1497,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "LR",
       "name": "Central Bank of Liberia",
       "website": "http://www.cbl.org.lr/index.php",
-      "noImageReason": "Wikidata item Q2899684 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.cbl.org.lr/index.php) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2899684",
         "http://www.cbl.org.lr/index.php"
@@ -1476,7 +1510,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "LS",
       "name": "Central Bank of Lesotho",
       "website": "http://www.centralbank.org.ls/",
-      "noImageReason": "Wikidata item Q2608033 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.centralbank.org.ls/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2608033",
         "http://www.centralbank.org.ls/"
@@ -1555,7 +1589,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "id": "ma-d-etat-du-maroc",
       "countryCode": "MA",
       "name": "Banque d'Etat du Maroc",
-      "noImageReason": "Wikidata item Q16531279 has no P154 logo, Commons was checked for a bank brand mark, and no official website on Wikidata — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/ma/d-etat-du-maroc.svg",
+      "logoExplainer": "Bank Al-Maghrib mark: a purple diamond with a gold calligraphic mim device above Arabic بنك المغرب and the Latin line BANK AL-MAGHRIB — Morocco's central-bank brand.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q16531279"
       ]
@@ -1579,7 +1615,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "MD",
       "name": "National Bank of Moldova",
       "website": "http://www.bnm.md/",
-      "noImageReason": "Wikidata item Q2636071 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bnm.md/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2636071",
         "http://www.bnm.md/"
@@ -1608,7 +1644,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "MG",
       "name": "Central Bank of Madagascar",
       "website": "http://www.banque-centrale.mg/",
-      "noImageReason": "Wikidata item Q3433330 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.banque-centrale.mg/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q3433330",
         "http://www.banque-centrale.mg/"
@@ -1633,7 +1669,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "MK",
       "name": "National Bank of North Macedonia",
       "website": "http://www.nbrm.mk",
-      "noImageReason": "Wikidata item Q2598067 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.nbrm.mk) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2598067",
         "http://www.nbrm.mk"
@@ -1663,7 +1699,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "MM",
       "name": "Central Bank of Myanmar",
       "website": "https://www.cbm.gov.mm/",
-      "noImageReason": "Wikidata item Q1944374 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.cbm.gov.mm/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/mm/myanmar.png",
+      "logoExplainer": "Official brand mark of the Central Bank of Myanmar as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1944374",
         "https://www.cbm.gov.mm/",
@@ -1677,7 +1715,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "MN",
       "name": "Bank of Mongolia",
       "website": "https://www.mongolbank.mn/",
-      "noImageReason": "Wikidata item Q1320131 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.mongolbank.mn/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/mn/mongolia.png",
+      "logoExplainer": "Official brand mark of the Bank of Mongolia as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1320131",
         "https://www.mongolbank.mn/",
@@ -1691,7 +1731,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "MR",
       "name": "Central Bank of Mauritania",
       "website": "https://www.bcm.mr/",
-      "noImageReason": "Wikidata item Q2528877 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.bcm.mr/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2528877",
         "https://www.bcm.mr/"
@@ -1705,7 +1745,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Central Bank of Malta",
       "website": "https://www.centralbankmalta.org",
       "currencyUnion": "Eurosystem — monetary policy set by the European Central Bank (ECB)",
-      "noImageReason": "Wikidata item Q74690 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.centralbankmalta.org) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q74690",
         "https://www.centralbankmalta.org"
@@ -1718,7 +1758,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "MU",
       "name": "Bank of Mauritius",
       "website": "https://www.bom.mu/",
-      "noImageReason": "Wikidata item Q2743652 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.bom.mu/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2743652",
         "https://www.bom.mu/"
@@ -1747,7 +1787,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "MW",
       "name": "Reserve Bank of Malawi",
       "website": "http://www.rbm.mw/",
-      "noImageReason": "Wikidata item Q2397584 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.rbm.mw/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2397584",
         "http://www.rbm.mw/"
@@ -1776,7 +1816,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "MY",
       "name": "Bank Negara Malaysia",
       "website": "http://www.bnm.gov.my/",
-      "noImageReason": "Wikidata item Q806646 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bnm.gov.my/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/my/bnm.svg",
+      "logoExplainer": "Bank Negara Malaysia mark: a blue shield with a white kijang (barking deer), crescent and star beside \"BANK NEGARA MALAYSIA / CENTRAL BANK OF MALAYSIA\" in blue sans-serif — the bank's familiar institutional brand.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q806646",
         "http://www.bnm.gov.my/"
@@ -1789,7 +1831,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "MZ",
       "name": "Bank of Mozambique",
       "website": "http://www.bancomoc.mz/Default_en.aspx",
-      "noImageReason": "Wikidata item Q3363703 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bancomoc.mz/Default_en.aspx) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/mz/mozambique.png",
+      "logoExplainer": "Official brand mark of the Bank of Mozambique as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q3363703",
         "http://www.bancomoc.mz/Default_en.aspx",
@@ -1836,7 +1880,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "NG",
       "name": "Central Bank of Nigeria",
       "website": "http://www.cbn.gov.ng/",
-      "noImageReason": "Wikidata item Q1627120 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.cbn.gov.ng/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/ng/nigeria.svg",
+      "logoExplainer": "Central Bank of Nigeria crest: a green eagle above interlocking gold rings cradling a blue Y-device, supported by green hands, on a banner reading CENTRAL BANK OF NIGERIA — CBN's official institutional mark.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1627120",
         "http://www.cbn.gov.ng/"
@@ -1849,7 +1895,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "NI",
       "name": "Central Bank of Nicaragua",
       "website": "https://www.bcn.gob.ni/",
-      "noImageReason": "Wikidata item Q4504274 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.bcn.gob.ni/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/ni/nicaragua.png",
+      "logoExplainer": "Official brand mark of the Central Bank of Nicaragua as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q4504274",
         "https://www.bcn.gob.ni/",
@@ -1896,7 +1944,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "NP",
       "name": "Nepal Rastra Bank",
       "website": "http://www.nrb.org.np/",
-      "noImageReason": "Wikidata item Q1318435 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.nrb.org.np/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1318435",
         "http://www.nrb.org.np/"
@@ -1908,7 +1956,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "id": "nr-nauru",
       "countryCode": "NR",
       "name": "Bank of Nauru",
-      "noImageReason": "Wikidata item Q806683 has no P154 logo, Commons was checked for a bank brand mark, and no official website on Wikidata — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q806683"
       ]
@@ -1920,7 +1968,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "NZ",
       "name": "Reserve Bank of New Zealand",
       "website": "https://www.rbnz.govt.nz/",
-      "noImageReason": "Wikidata item Q1494550 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.rbnz.govt.nz/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/nz/rbnz.svg",
+      "logoExplainer": "Reserve Bank of New Zealand / Te Pūtea Matua mark: a black woven triangular kete-inspired device beside \"Reserve Bank of New Zealand\" in black and the Māori name in magenta. Contemporary bilingual brand used on RBNZ publications.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1494550",
         "https://www.rbnz.govt.nz/"
@@ -1933,7 +1983,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "OM",
       "name": "Central Bank of Oman",
       "website": "https://www.cbo.gov.om/",
-      "noImageReason": "Wikidata item Q3488501 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.cbo.gov.om/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/om/oman.png",
+      "logoExplainer": "Official brand mark of the Central Bank of Oman as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q3488501",
         "https://www.cbo.gov.om/",
@@ -1963,7 +2015,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "PE",
       "name": "Central Reserve Bank of Peru",
       "website": "https://www.bcrp.gob.pe",
-      "noImageReason": "Wikidata item Q932146 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.bcrp.gob.pe) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q932146",
         "https://www.bcrp.gob.pe",
@@ -1977,7 +2029,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "PG",
       "name": "Bank of Papua New Guinea",
       "website": "http://www.bankpng.gov.pg/",
-      "noImageReason": "Wikidata item Q3364697 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bankpng.gov.pg/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q3364697",
         "http://www.bankpng.gov.pg/"
@@ -1991,7 +2043,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Bangko Sentral ng Pilipinas",
       "website": "https://www.bsp.gov.ph",
       "logo": "/central-bank-logos/ph/bsp.webp",
-      "logoExplainer": "Bangko Sentral ng Pilipinas seal (2020/21 redesign): a circular navy field with a gold rim, a gold Philippine eagle with wings raised, three gold stars above the eagle (Luzon, Visayas, Mindanao), and BANGKO SENTRAL NG PILIPINAS lettering along the lower arc. Navy signals stability; gold excellence — the BSP brand, not the national coat of arms.",
+      "logoExplainer": "Bangko Sentral ng Pilipinas (BSP) institutional emblem as used on BSP publications — the Philippine central bank's own brand mark.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1853468",
@@ -2006,7 +2058,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "PK",
       "name": "State Bank of Pakistan",
       "website": "http://www.sbp.org.pk/",
-      "noImageReason": "Wikidata item Q1323248 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.sbp.org.pk/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/pk/state-bank-of-pakistan.svg",
+      "logoExplainer": "State Bank of Pakistan seal: a green circular device with crescent and star above wheat stalks and bilingual English/Urdu lettering — SBP's official institutional emblem.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1323248",
         "http://www.sbp.org.pk/"
@@ -2035,7 +2089,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "PS",
       "name": "Palestine Monetary Authority",
       "website": "https://www.pma.ps/",
-      "noImageReason": "Wikidata item Q7127309 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.pma.ps/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q7127309",
         "https://www.pma.ps/"
@@ -2049,7 +2103,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Banco de Portugal",
       "website": "https://www.bportugal.pt",
       "currencyUnion": "Eurosystem — monetary policy set by the European Central Bank (ECB)",
-      "noImageReason": "Wikidata item Q378372 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.bportugal.pt) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/pt/bdp.svg",
+      "logoExplainer": "Banco de Portugal contemporary institutional logo used on BdP publications — the bank's own brand mark within the Eurosystem.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q378372",
         "https://www.bportugal.pt"
@@ -2074,7 +2130,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "PY",
       "name": "Central Bank of Paraguay",
       "website": "https://www.bcp.gov.py/",
-      "noImageReason": "Wikidata item Q4504275 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.bcp.gov.py/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q4504275",
         "https://www.bcp.gov.py/"
@@ -2087,7 +2143,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "QA",
       "name": "Qatar Central Bank",
       "website": "http://www.qcb.gov.qa",
-      "noImageReason": "Wikidata item Q3365778 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.qcb.gov.qa) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q3365778",
         "http://www.qcb.gov.qa"
@@ -2116,7 +2172,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "RS",
       "name": "National Bank of Serbia",
       "website": "http://www.nbs.rs/",
-      "noImageReason": "Wikidata item Q1194664 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.nbs.rs/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1194664",
         "http://www.nbs.rs/"
@@ -2145,7 +2201,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "RW",
       "name": "National Bank of Rwanda",
       "website": "http://www.bnr.rw/",
-      "noImageReason": "Wikidata item Q4314980 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bnr.rw/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q4314980",
         "http://www.bnr.rw/"
@@ -2174,7 +2230,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "SB",
       "name": "Central Bank of Solomon Islands",
       "website": "http://www.cbsi.com.sb/",
-      "noImageReason": "Wikidata item Q1777295 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.cbsi.com.sb/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1777295",
         "http://www.cbsi.com.sb/"
@@ -2187,7 +2243,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "SC",
       "name": "Central Bank of Seychelles",
       "website": "http://www.cbs.sc/",
-      "noImageReason": "Wikidata item Q4504280 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.cbs.sc/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/sc/seychelles.png",
+      "logoExplainer": "Official brand mark of the Central Bank of Seychelles as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q4504280",
         "http://www.cbs.sc/",
@@ -2201,7 +2259,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "SD",
       "name": "Bank of Sudan",
       "website": "http://www.cbos.gov.sd/en",
-      "noImageReason": "Wikidata item Q190236 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.cbos.gov.sd/en) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q190236",
         "http://www.cbos.gov.sd/en"
@@ -2214,13 +2272,14 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "SE",
       "name": "Sveriges Riksbank",
       "website": "https://riksbank.se",
-      "logo": "/central-bank-logos/se/riksbank.jpg",
-      "logoExplainer": "Sveriges Riksbank wordmark in a formal typeface — Scandinavia's oldest central bank, using a minimal institutional identity.",
-      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
+      "logo": "/central-bank-logos/se/riksbank.svg",
+      "logoExplainer": "Sveriges Riksbank mark: three crowns above crossed cornucopias with the Latin motto HINC ROBUR ET SECURITAS, above the stacked wordmark SVERIGES RIKSBANK — the bank's heraldic institutional identity.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
+        "https://en.wikipedia.org/wiki/File:Riksbanken_Logo.svg",
+        "https://www.riksbank.se/",
         "https://www.wikidata.org/wiki/Q564652",
-        "https://riksbank.se",
-        "https://commons.wikimedia.org/wiki/File:Riksbanken_skylt.jpg"
+        "https://riksbank.se"
       ]
     }
   ],
@@ -2264,7 +2323,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "National Bank of Slovakia",
       "website": "http://www.nbs.sk",
       "currencyUnion": "Eurosystem — monetary policy set by the European Central Bank (ECB)",
-      "noImageReason": "Wikidata item Q1481791 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.nbs.sk) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1481791",
         "http://www.nbs.sk"
@@ -2277,7 +2336,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "SL",
       "name": "Bank of Sierra Leone",
       "website": "http://www.bsl.gov.sl/",
-      "noImageReason": "Wikidata item Q806691 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bsl.gov.sl/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q806691",
         "http://www.bsl.gov.sl/"
@@ -2319,7 +2378,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "SO",
       "name": "Central Bank of Somalia",
       "website": "https://centralbank.gov.so/",
-      "noImageReason": "Wikidata item Q2299534 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://centralbank.gov.so/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2299534",
         "https://centralbank.gov.so/"
@@ -2332,7 +2391,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "SR",
       "name": "Centrale Bank van Suriname",
       "website": "https://www.cbvs.sr/",
-      "noImageReason": "Wikidata item Q2981941 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.cbvs.sr/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/sr/centrale-bank-van-suriname.png",
+      "logoExplainer": "Official brand mark of the Centrale Bank van Suriname as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2981941",
         "https://www.cbvs.sr/",
@@ -2346,7 +2407,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "SS",
       "name": "Bank of South Sudan",
       "website": "https://boss.gov.ss",
-      "noImageReason": "Wikidata item Q3359554 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://boss.gov.ss) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q3359554",
         "https://boss.gov.ss"
@@ -2359,7 +2420,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "ST",
       "name": "Central Bank of São Tomé and Príncipe",
       "website": "http://www.bcstp.st/",
-      "noImageReason": "Wikidata item Q2679982 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bcstp.st/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2679982",
         "http://www.bcstp.st/"
@@ -2388,7 +2449,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "SY",
       "name": "Central Bank of Syria",
       "website": "https://cb.gov.sy/",
-      "noImageReason": "Wikidata item Q806932 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://cb.gov.sy/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/sy/syria.png",
+      "logoExplainer": "Official brand mark of the Central Bank of Syria as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q806932",
         "https://cb.gov.sy/",
@@ -2402,7 +2465,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "SZ",
       "name": "Central Bank of Eswatini",
       "website": "http://www.centralbank.org.sz",
-      "noImageReason": "Wikidata item Q3430466 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.centralbank.org.sz) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q3430466",
         "http://www.centralbank.org.sz"
@@ -2416,7 +2479,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Bank of Central African States",
       "website": "https://www.beac.int",
       "currencyUnion": "CEMAC CFA franc — shared central bank: Bank of Central African States (BEAC)",
-      "noImageReason": "Wikidata item Q189972 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.beac.int) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q189972",
         "https://www.beac.int"
@@ -2462,7 +2525,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "TJ",
       "name": "National Bank of Tajikistan",
       "website": "http://www.nbt.tj",
-      "noImageReason": "Wikidata item Q4314981 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.nbt.tj) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q4314981",
         "http://www.nbt.tj"
@@ -2475,7 +2538,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "TL",
       "name": "Banco Central de Timor-Leste",
       "website": "https://www.bancocentral.tl/en",
-      "noImageReason": "Wikidata item Q4504282 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.bancocentral.tl/en) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q4504282",
         "https://www.bancocentral.tl/en"
@@ -2488,7 +2551,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "TM",
       "name": "Central Bank of Turkmenistan",
       "website": "http://www.cbt.tm",
-      "noImageReason": "Wikidata item Q4504283 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.cbt.tm) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q4504283",
         "http://www.cbt.tm"
@@ -2501,7 +2564,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "TN",
       "name": "Central Bank of Tunisia",
       "website": "http://www.bct.gov.tn/",
-      "noImageReason": "Wikidata item Q600137 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bct.gov.tn/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q600137",
         "http://www.bct.gov.tn/"
@@ -2514,7 +2577,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "TO",
       "name": "National Reserve Bank of Tonga",
       "website": "http://www.reservebank.to",
-      "noImageReason": "Wikidata item Q2604318 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.reservebank.to) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2604318",
         "http://www.reservebank.to"
@@ -2558,7 +2621,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "id": "tv-tuvalu",
       "countryCode": "TV",
       "name": "National Bank of Tuvalu",
-      "noImageReason": "Wikidata item Q16740215 has no P154 logo, Commons was checked for a bank brand mark, and no official website on Wikidata — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q16740215"
       ]
@@ -2570,7 +2633,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "TZ",
       "name": "Bank of Tanzania",
       "website": "http://www.bot-tz.org/",
-      "noImageReason": "Wikidata item Q2670842 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bot-tz.org/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2670842",
         "http://www.bot-tz.org/"
@@ -2599,7 +2662,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "UG",
       "name": "Bank of Uganda",
       "website": "http://www.bou.or.ug/",
-      "noImageReason": "Wikidata item Q487300 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.bou.or.ug/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q487300",
         "http://www.bou.or.ug/"
@@ -2612,7 +2675,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "US",
       "name": "Federal Reserve System",
       "website": "https://www.federalreserve.gov/",
-      "noImageReason": "Wikidata item Q53536 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.federalreserve.gov/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/us/fed.svg",
+      "logoExplainer": "Seal of the United States Federal Reserve System: a circular black-and-white device with an eagle above a striped shield, olive branch and arrows, ringed by the legend \"UNITED STATES · FEDERAL RESERVE SYSTEM\". This is the System's official cognisance — not a Federal Reserve Note plate seal.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q53536",
         "https://www.federalreserve.gov/"
@@ -2657,7 +2722,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "VA",
       "name": "Administration of the Patrimony of the Apostolic See",
       "website": "http://www.vatican.va/roman_curia/uffici/apsa/index_it.htm",
-      "noImageReason": "Wikidata item Q1562250 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.vatican.va/roman_curia/uffici/apsa/index_it.htm) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1562250",
         "http://www.vatican.va/roman_curia/uffici/apsa/index_it.htm"
@@ -2671,7 +2736,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "name": "Eastern Caribbean Central Bank",
       "website": "http://www.eccb-centralbank.org",
       "currencyUnion": "East Caribbean dollar — shared central bank: Eastern Caribbean Central Bank (ECCB)",
-      "noImageReason": "Wikidata item Q1210260 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.eccb-centralbank.org) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1210260",
         "http://www.eccb-centralbank.org"
@@ -2700,7 +2765,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "VN",
       "name": "State Bank of Vietnam",
       "website": "https://www.sbv.gov.vn",
-      "noImageReason": "Wikidata item Q2234553 has no P154 logo, Commons was checked for a bank brand mark, and official site (https://www.sbv.gov.vn) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2234553",
         "https://www.sbv.gov.vn"
@@ -2713,7 +2778,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "VU",
       "name": "Reserve Bank of Vanuatu",
       "website": "http://www.rbv.gov.vu/",
-      "noImageReason": "Wikidata item Q2601309 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.rbv.gov.vu/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2601309",
         "http://www.rbv.gov.vu/"
@@ -2726,7 +2791,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "WS",
       "name": "Central Bank of Samoa",
       "website": "http://www.cbs.gov.ws",
-      "noImageReason": "Wikidata item Q2632072 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.cbs.gov.ws) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q2632072",
         "http://www.cbs.gov.ws"
@@ -2739,7 +2804,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "YE",
       "name": "Central Bank of Yemen",
       "website": "http://www.centralbank.gov.ye",
-      "noImageReason": "Wikidata item Q1797039 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.centralbank.gov.ye) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q1797039",
         "http://www.centralbank.gov.ye"
@@ -2752,7 +2817,9 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "ZA",
       "name": "South African Reserve Bank",
       "website": "http://www.reservebank.co.za/",
-      "noImageReason": "Wikidata item Q912920 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.reservebank.co.za/) — no freely citable logo file has been bundled yet after this pass.",
+      "logo": "/central-bank-logos/za/sarb.svg",
+      "logoExplainer": "South African Reserve Bank institutional mark as used on SARB publications — the bank's own brand cognisance rather than the national coat of arms alone.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
         "https://www.wikidata.org/wiki/Q912920",
         "http://www.reservebank.co.za/"
@@ -2765,7 +2832,7 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "ZM",
       "name": "Bank of Zambia",
       "website": "http://www.boz.zm/",
-      "noImageReason": "Wikidata item Q806694 has no P154 logo, Commons was checked for a bank brand mark, and official site (http://www.boz.zm/) — no freely citable logo file has been bundled yet after this pass.",
+      "noImageReason": "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.",
       "sources": [
         "https://www.wikidata.org/wiki/Q806694",
         "http://www.boz.zm/"
@@ -2778,13 +2845,13 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "ZW",
       "name": "Reserve Bank of Zimbabwe",
       "website": "https://www.rbz.co.zw/",
-      "logo": "/central-bank-logos/zw/zimbabwe.jpg",
-      "logoExplainer": "Official brand mark of the Reserve Bank of Zimbabwe: This is the obverse of a paper banknote of the Zimbabwe Dollar. Sourced from Wikimedia Commons and visually checked to be the bank mark.",
-      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
+      "logo": "/central-bank-logos/zw/zimbabwe.png",
+      "logoExplainer": "Reserve Bank of Zimbabwe circular seal: the Chiremba Balancing Rocks in gold on a blue disc, ringed by RESERVE BANK OF ZIMBABWE lettering — the bank's institutional emblem, not a currency-note vignette.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
-        "https://www.wikidata.org/wiki/Q1025119",
+        "https://en.wikipedia.org/wiki/File:RESERVE_BANK_OF_ZIMBABWE_LOGO.png",
         "https://www.rbz.co.zw/",
-        "https://commons.wikimedia.org/wiki/File:Zimbabwe_%2425m_2008_Obverse_(cropped).jpg"
+        "https://www.wikidata.org/wiki/Q1025119"
       ]
     }
   ]

@@ -36,6 +36,7 @@ import { readFileSync, existsSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { dirname, resolve, extname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { findUserFacingLeaks } from "./lib/userFacingCopy.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(__dirname, "..", "src", "data", "politicalParties.ts");
@@ -266,12 +267,18 @@ for (const [country, parties] of Object.entries(partiesByCountry)) {
       if (reason.length < MIN_NO_IMAGE_REASON_CHARS) {
         fail(id, `noImageReason is only ${reason.length} characters — it must record what was searched (min ${MIN_NO_IMAGE_REASON_CHARS})`);
       }
+      for (const leak of findUserFacingLeaks(reason)) {
+        fail(
+          id,
+          `noImageReason leaks ${leak.label} (matched ${JSON.stringify(leak.match)}) — write plain-language gap copy; put Q/P codes and URLs in sources[]`,
+        );
+      }
       const matched = NO_IMAGE_SOURCE_FAMILIES.filter((f) => f.re.test(reason));
       if (matched.length < MIN_NO_IMAGE_SOURCES) {
         fail(
           id,
           `noImageReason names ${matched.length} searched source(s); at least ${MIN_NO_IMAGE_SOURCES} are required. ` +
-            `Sweep and then name them, e.g.: ${NO_IMAGE_SOURCE_FAMILIES.map((f) => f.name).join("; ")}`,
+            `Sweep and then name them in plain language (e.g. "Wikidata", not "P154"), e.g.: ${NO_IMAGE_SOURCE_FAMILIES.map((f) => f.name).join("; ")}`,
         );
       }
     }
