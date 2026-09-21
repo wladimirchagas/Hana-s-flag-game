@@ -1581,9 +1581,10 @@ structured fact visible without cluttering the badge row.
    If it fires, the metadata or the tooltip wiring is wrong — fix the data /
    component, not the check.
 6. **Verify in the running app** (the mandatory visual-verification rule
-   applies): open Brazil, hover/tap **Mercosur**, confirm the tip reads
-   `Southern Common Market (Mercosur)` and states Brazil is a founding member
-   created in 1991; open Finland, confirm **NATO** states membership from 2023.
+   applies): open Brazil's **Politics** tab, hover/tap **Mercosur**, confirm
+   the tip reads `Southern Common Market (Mercosur)` and states Brazil is a
+   founding member created in 1991; open Finland, confirm **NATO** states
+   membership from 2023.
 
 ### Enforcement
 
