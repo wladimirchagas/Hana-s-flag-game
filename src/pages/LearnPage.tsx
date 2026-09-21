@@ -2178,17 +2178,6 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
 
       <div className="learn-fs__panel-wrap">
         <aside className="learn-fs__panel" aria-live="polite">
-          {(selected != null || (subdivisionMode && subdivisionCountry != null)) && (
-            <button
-              type="button"
-              className="learn-fs__unselect"
-              onClick={clearPanelSelection}
-              aria-label="Unselect"
-              title="Unselect"
-            >
-              <UiIcon name="close" />
-            </button>
-          )}
           <div className="learn-fs__detail">
             {isModernEra && (
               <div className="learn-fs__widget-search">
@@ -2231,8 +2220,32 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     ? renderHanaCorner(subdivisionCountry.code, subdivisionCountry.name)
                     : display?.kind === "modern" &&
                       renderHanaCorner(display.country.code, display.country.name)}
+                  {(selected != null || (subdivisionMode && subdivisionCountry != null)) && (
+                    <button
+                      type="button"
+                      className="learn-fs__unselect"
+                      onClick={clearPanelSelection}
+                      aria-label="Unselect"
+                      title="Unselect"
+                    >
+                      <UiIcon name="close" />
+                    </button>
+                  )}
                 </div>
               </div>
+            )}
+            {/* Historical eras have no country search row — put Unselect on the
+                polity title instead. */}
+            {!isModernEra && selected != null && (
+              <button
+                type="button"
+                className="learn-fs__unselect learn-fs__unselect--corner"
+                onClick={clearPanelSelection}
+                aria-label="Unselect"
+                title="Unselect"
+              >
+                <UiIcon name="close" />
+              </button>
             )}
             {display ? (
               <>
@@ -2597,20 +2610,6 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         {subdivisionMode && subdivisionCountry && (
           <>
           <aside className="learn-fs__panel" aria-live="polite">
-            {(selectedSubdivision != null || selectedCapital != null) && (
-              <button
-                type="button"
-                className="learn-fs__unselect"
-                onClick={() => {
-                  setSelectedSubdivision(null);
-                  setSelectedCapital(null);
-                }}
-                aria-label="Unselect division"
-                title="Unselect"
-              >
-                <UiIcon name="close" />
-              </button>
-            )}
             <div className="learn-fs__detail">
               <div className="learn-fs__widget-search">
                 <span className="learn-fs__search-label" aria-hidden="true">
@@ -2625,6 +2624,20 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     label="Choose a division"
                     countryCode={subdivisionCountry.code}
                   />
+                  {(selectedSubdivision != null || selectedCapital != null) && (
+                    <button
+                      type="button"
+                      className="learn-fs__unselect"
+                      onClick={() => {
+                        setSelectedSubdivision(null);
+                        setSelectedCapital(null);
+                      }}
+                      aria-label="Unselect division"
+                      title="Unselect"
+                    >
+                      <UiIcon name="close" />
+                    </button>
+                  )}
                 </div>
               </div>
               {selectedSubdivision ? (() => {
