@@ -299,7 +299,7 @@ for (const [label, src, needle] of [
   ["FlagGrid.tsx", gridSrc, '"wjp-rule-of-law"'],
   ["FlagGrid.tsx", gridSrc, "wjpRuleOfLaw"],
   ["EntitySummary.tsx", summarySrc, "wjpRuleOfLaw"],
-  ["EntitySummary.tsx", summarySrc, "WJP Rule of Law Index"],
+  ["EntitySummary.tsx", summarySrc, 'getDemocracyIndexLabel("wjp-rule-of-law")'],
 ]) {
   if (!src.includes(needle)) fail(`${label} no longer references ${needle}`);
 }
