@@ -3310,14 +3310,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "https://en.wikipedia.org/wiki/Media_of_Bhutan"
       },
       "revenueModel": "Advertising and print sales",
-<<<<<<< HEAD
-      "noImageReason": "No masthead image is shown for this newspaper yet. The publisher's official site and Wikimedia Commons were checked; listed without an image rather than an invented logo.",
-=======
       "logo": "newspaper-logos/bt/the-journalist.jpg",
       "logoExplainer": "Solid red masthead block with a large white serif 'J' over stacked 'The Journalist' — The Journalist (Bhutan) print brand mark.",
       "licenceNote": "The Journalist masthead mark cropped from the newspaper's own header asset (bhutanjournalist.com/wp-content/uploads/2014/09/headercopy2.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
 
->>>>>>> origin/main
       "sources": [
         "https://en.wikipedia.org/wiki/Media_of_Bhutan"
       ]
@@ -7407,10 +7403,7 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-<<<<<<< HEAD
       "noImageReason": "No masthead image is shown for this newspaper yet. The publisher's official site and Wikimedia Commons were checked; listed without an image rather than an invented logo.",
-=======
->>>>>>> origin/main
       "id": "et-reporter-amharic",
       "countryCode": "ET",
       "name": "Addis Zemen",
@@ -19363,14 +19356,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Palau Conservation Society Annual Review 2023"
       },
       "revenueModel": "Civic conservation grants, educational subscriptions, and donor support",
-<<<<<<< HEAD
-      "noImageReason": "No authentic masthead is shown yet. A placeholder graphic was removed. Wikimedia Commons, the newspaper's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
-=======
       "logo": "newspaper-logos/pw/eco-palau-news.png",
       "logoExplainer": "Palau Fruit Dove on a nest branch with egg and foliage beside teal 'Palau Conservation Society' and the strap 'protecting our natural heritage' — Eco Palau News / PCS brand mark.",
       "licenceNote": "Palau Conservation Society logo from the society's official site (palauconservation.org/wp-content/uploads/2016/12/pcslogo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode. Eco Palau News is published by PCS.",
 
->>>>>>> origin/main
       "sources": [
         "https://palauconservation.org"
       ]
