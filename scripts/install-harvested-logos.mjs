@@ -15,36 +15,60 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "ly-libya-herald",
-    src: "tmp/batch58-final/ly-libya-herald.png",
+    id: "ua-lb-ua",
+    src: "tmp/batch59-final/ua-lb-ua.png",
     explainer:
-      "White stacked serif 'Libya / Herald' with smaller Arabic ليبيا هيرلد on a blue field — Libya Herald masthead.",
+      "White serif 'LB' with blue '.ua' over a thin rule and Ukrainian tagline ДОРОСЛИЙ ПОГЛЯД НА СВІТ — LB.ua masthead.",
     licence:
-      "Libya Herald trademark bundled from the publisher's official site brand assets (libyaherald.com) for educational reference in Learn mode.",
+      "LB.ua trademark bundled from the publisher's official site brand assets (lb.ua) for educational reference in Learn mode.",
   },
   {
-    id: "uz-gazeta-uz",
-    src: "tmp/batch58-final/uz-gazeta-uz.png",
+    id: "ro-evenimentul-zilei",
+    src: "tmp/batch59-final/ro-evenimentul-zilei.png",
     explainer:
-      "Blue-over-green bars beside lowercase black 'gazeta' — Gazeta.uz masthead.",
+      "Maroon lowercase 'evz.ro' with a globe in the domain dot and tagline CEL MAI BUN PORTAL DE STIRI — Evenimentul Zilei digital masthead.",
     licence:
-      "Gazeta.uz trademark bundled from the publisher's official site brand assets (gazeta.uz) for educational reference in Learn mode.",
+      "Evenimentul Zilei / EVZ trademark bundled from the publisher's official site brand assets (evz.ro) for educational reference in Learn mode.",
   },
   {
-    id: "si-dnevnik-si",
-    src: "tmp/batch58-final/si-dnevnik-si.png",
+    id: "si-vecer",
+    src: "tmp/batch59-final/si-vecer.svg",
     explainer:
-      "Bold orange-red slab-serif 'DNEVNIK' wordmark — Dnevnik (Slovenia) masthead.",
+      "Bold black slab-serif 'VEČER' wordmark — Večer (Slovenia) masthead.",
     licence:
-      "Dnevnik trademark bundled from the publisher's official site brand assets (dnevnik.si) for educational reference in Learn mode.",
+      "Večer trademark bundled from the publisher's official site brand assets (vecer.com) for educational reference in Learn mode.",
   },
   {
-    id: "gh-daily-graphic",
-    src: "tmp/batch58-final/gh-daily-graphic.png",
+    id: "uy-el-pais-uy",
+    src: "tmp/batch59-final/uy-el-pais-uy.svg",
     explainer:
-      "Bold black sans 'GRAPHIC ONLINE' wordmark — Daily Graphic's digital masthead on graphic.com.gh.",
+      "Bold blue slab-serif 'EL PAIS' wordmark — El País (Uruguay) masthead.",
     licence:
-      "Graphic Online / Daily Graphic trademark bundled from the publisher's official site brand assets (graphic.com.gh) for educational reference in Learn mode.",
+      "El País (Uruguay) trademark from Wikimedia Commons File:El Pais Uruguay.svg, bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "ps-al-ayyam",
+    src: "tmp/batch59-final/ps-al-ayyam.svg",
+    explainer:
+      "Geometric Arabic الأيام with a green eight-pointed star above — Al-Ayyam (Palestine) masthead.",
+    licence:
+      "Al-Ayyam (Palestine) masthead from Wikimedia Commons File:Al-Ayyam, Palestine (2025-07-30).svg (public domain), bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "ru-rossiyskaya-gazeta",
+    src: "tmp/batch59-final/ru-rossiyskaya-gazeta.svg",
+    explainer:
+      "Blue double-headed eagle crest beside serif Cyrillic 'Российская Газета' — Rossiyskaya Gazeta masthead.",
+    licence:
+      "Rossiyskaya Gazeta trademark from Wikimedia Commons File:Ross g logo.svg, bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "ma-medias24",
+    src: "tmp/batch59-final/ma-medias24.png",
+    explainer:
+      "White '24' numerals breaking a dark-red circle — Médias24 (Morocco) brand mark.",
+    licence:
+      "Médias24 trademark from Wikimedia Commons File:Medias24-logo.jpg, bundled for educational reference in Learn mode.",
   },
 ];
 
