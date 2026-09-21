@@ -25,6 +25,14 @@ const MANIFEST = [
     licence:
       "LETA brand mark from the agency's official Facebook page profile picture (letanews); trademark bundled for educational reference in Learn mode.",
   },
+  {
+    id: "ci-nouveau-reveil",
+    src: "tmp/batch79-install/ci-nouveau-reveil.png",
+    explainer:
+      "Dark green serif 'Réveil' with black 'LE NOUVEAU' above and slogan 'LE JOURNAL DE CHOC DES IVOIRIENS' — Le Nouveau Réveil (Côte d'Ivoire) masthead.",
+    licence:
+      "Nouveaureveil.gif from French Wikipedia (marque déposée / logo); trademark bundled for educational reference in Learn mode with licenceNote.",
+  },
 ];
 
 function findObjectSpan(src, id) {

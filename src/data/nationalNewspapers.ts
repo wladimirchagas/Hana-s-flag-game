@@ -4444,7 +4444,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ANP Press Audit 2023"
       },
       "revenueModel": "Print newsstand sales and political advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ci/nouveau-reveil.png",
+      "logoExplainer": "Dark green serif 'Réveil' with black 'LE NOUVEAU' above and slogan 'LE JOURNAL DE CHOC DES IVOIRIENS' — Le Nouveau Réveil (Côte d'Ivoire) masthead.",
+      "licenceNote": "Nouveaureveil.gif from French Wikipedia (marque déposée / logo); trademark bundled for educational reference in Learn mode with licenceNote.",
+
       "sources": [
         "https://nouveaureveil.com",
         "https://fr.wikipedia.org/wiki/Le_Nouveau_R%C3%A9veil"
