@@ -15,124 +15,60 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "bz-bbn",
-    src: "tmp/batch72-install/bz-bbn.png",
+    id: "bb-loop-barbados",
+    src: "tmp/batch73-install/bb-loop-barbados.jpg",
     explainer:
-      "Grey 'BBN' with teal 'BREAKING BELIZE NEWS' strap — Breaking Belize News brand mark.",
+      "Teal brush-stroke ring with a red splash — Loop News Barbados brand mark.",
     licence:
-      "Breaking Belize News brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Loop News Barbados brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "bz-love-fm-news",
-    src: "tmp/batch72-install/bz-love-fm-news.jpg",
+    id: "cg-le-patriote",
+    src: "tmp/batch73-install/cg-le-patriote.jpg",
     explainer:
-      "Red cursive 'Love' with blue 'FM' in the e-loop — Love FM / Love News Belize brand mark.",
+      "Orange house outline beside white 'Le Patriote' and yellow 'CONGOLAIS' on navy — Le Patriote brand mark.",
     licence:
-      "Love FM brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Le Patriote brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "bz-reporter",
-    src: "tmp/batch72-install/bz-reporter.png",
+    id: "ec-gk",
+    src: "tmp/batch73-install/ec-gk.jpg",
     explainer:
-      "Black torch with orange flame on a radial orange ground — The Reporter (Belize) emblem.",
+      "White bold 'GK' on blue — GK (Ecuador) brand initials.",
     licence:
-      "The Reporter brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "GK brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "dm-dominica-vibes",
-    src: "tmp/batch72-install/dm-dominica-vibes.jpg",
+    id: "mc-observateur-monaco",
+    src: "tmp/batch73-install/mc-observateur-monaco.jpg",
     explainer:
-      "Green gradient 'DA VIBES' with sun arc and dominicavibes.com banner — Dominica Vibes brand mark.",
+      "Red 'L'OBSERVATEUR DE' over black 'MONACO' — L'Observateur de Monaco masthead.",
     licence:
-      "Dominica Vibes brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "L'Observateur de Monaco masthead from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "fj-fijilive",
-    src: "tmp/batch72-install/fj-fijilive.jpg",
+    id: "mt-l-orizzont",
+    src: "tmp/batch73-install/mt-l-orizzont.jpg",
     explainer:
-      "White lowercase 'fijilive' on a bright blue field — FijiLive brand mark.",
+      "Red lowercase 'l-orizzont' wordmark — L-Orizzont masthead.",
     licence:
-      "FijiLive brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "L-Orizzont brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "kn-the-labour-spokesman",
-    src: "tmp/batch72-install/kn-the-labour-spokesman.jpg",
+    id: "td-n-djamena-hebdo",
+    src: "tmp/batch73-install/td-n-djamena-hebdo.jpg",
     explainer:
-      "White serif 'The Labour Spokesman' in a circle with 'EST. 1957' on maroon — Labour Spokesman masthead.",
+      "Blue 'N'DJAMÉNA HEBDO' over a '30 ANS' anniversary crest with quill — N'Djaména Hebdo masthead.",
     licence:
-      "The Labour Spokesman brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "N'Djaména Hebdo brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "ml-aBamako",
-    src: "tmp/batch72-install/ml-aBamako.jpg",
+    id: "tt-loop-tt",
+    src: "tmp/batch73-install/tt-loop-tt.png",
     explainer:
-      "Yellow speech-bubble 'a' beside green 'Bamako.com' — aBamako.com brand mark.",
+      "Lowercase 'loop' wordmark fading purple-to-magenta — Loop News Trinidad and Tobago brand mark.",
     licence:
-      "aBamako.com brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "ps-al-hadath",
-    src: "tmp/batch72-install/ps-al-hadath.png",
-    explainer:
-      "Red-and-black Arabic wordmark with red accent mark — Al-Hadath masthead.",
-    licence:
-      "Al-Hadath brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "ro-romania-libera",
-    src: "tmp/batch72-install/ro-romania-libera.png",
-    explainer:
-      "Purple 'RL' initials over magenta script 'România liberă' — România Liberă brand mark.",
-    licence:
-      "România Liberă brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "sb-solomon-star",
-    src: "tmp/batch72-install/sb-solomon-star.jpg",
-    explainer:
-      "Red five-point star between arched 'Solomon' and 'Star' — Solomon Star masthead.",
-    licence:
-      "Solomon Star brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "sb-sunday-isles",
-    src: "tmp/batch72-install/sb-sunday-isles.jpg",
-    explainer:
-      "Camera line-art above red/black 'Sunday Isles' on yellow — Sunday Isles brand mark.",
-    licence:
-      "Sunday Isles brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "sc-the-people",
-    src: "tmp/batch72-install/sc-the-people.jpg",
-    explainer:
-      "Red 3D block 'THE PEOPLE' with white outline — The People (Seychelles) masthead.",
-    licence:
-      "The People brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "sl-concord-times",
-    src: "tmp/batch72-install/sl-concord-times.jpg",
-    explainer:
-      "Blue globe tile above 'CONCORD TIMES' and strap 'Excellence & Objectivity' — Concord Times masthead.",
-    licence:
-      "Concord Times brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "td-tchadinfos",
-    src: "tmp/batch72-install/td-tchadinfos.jpg",
-    explainer:
-      "White lowercase 'Tchadinfos' letter-grid on dark blue — Tchadinfos brand mark.",
-    licence:
-      "Tchadinfos brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "to-taimi-o-tonga",
-    src: "tmp/batch72-install/to-taimi-o-tonga.jpg",
-    explainer:
-      "White serif 'Taimi' over 'TÓNGA' on a red masthead bar — Taimi 'o Tonga masthead.",
-    licence:
-      "Taimi 'o Tonga masthead from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Loop News Trinidad and Tobago brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
