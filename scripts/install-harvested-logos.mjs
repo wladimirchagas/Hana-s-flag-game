@@ -17,28 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "pw-eco-palau-news",
-    src: "tmp/batch105-install/pw-eco-palau-news.png",
+    id: "sy-tishreen",
+    src: "tmp/batch106-install/sy-tishreen.png",
     explainer:
-      "Palau Fruit Dove on a nest branch with egg and foliage beside teal 'Palau Conservation Society' and the strap 'protecting our natural heritage' — Eco Palau News / PCS brand mark.",
+      "Cyan Arabic calligraphy masthead 'تشرين' (Tishreen) with a small Pan-Arab-colours emblem above and the black strap 'حرية العرب في قوتهم' — Tishreen newspaper brand mark.",
     licence:
-      "Palau Conservation Society logo from the society's official site (palauconservation.org/wp-content/uploads/2016/12/pcslogo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode. Eco Palau News is published by PCS.",
-  },
-  {
-    id: "et-reporter-amharic",
-    src: "tmp/batch105-install/et-reporter-amharic.png",
-    explainer:
-      "Circular Ethiopian Press Agency seal — quill on a light-blue field, Amharic arc above and English 'Ethiopian Press Agency' below — the Addis Zemen publisher brand mark from press.et.",
-    licence:
-      "Ethiopian Press Agency seal from the agency's official site (press.et/.../cropped-press-logo-300x65-1-270x270.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode. Addis Zemen is published by the EPA.",
-  },
-  {
-    id: "bt-the-journalist",
-    src: "tmp/batch105-install/bt-the-journalist.jpg",
-    explainer:
-      "Solid red masthead block with a large white serif 'J' over stacked 'The Journalist' — The Journalist (Bhutan) print brand mark.",
-    licence:
-      "The Journalist masthead mark cropped from the newspaper's own header asset (bhutanjournalist.com/wp-content/uploads/2014/09/headercopy2.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Tishreen masthead from the newspaper's own site (tishreen.news.sy/wp-content/uploads/2018/07/Tishreen_log.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
