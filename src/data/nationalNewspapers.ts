@@ -26251,7 +26251,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Institute of Southern Africa (MISA) Zambia"
       },
       "revenueModel": "Single-copy retail print sales, independent subscriptions, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/zm/the-mast.jpg",
+      "logoExplainer": "White serif 'THE MAST' between double horizontal rules on a deep purple crowd-photo banner — The Mast Online masthead.",
+      "licenceNote": "The Mast masthead from the publisher's official site brand assets (themastonline.com/wp-content/uploads/2017/03/The-mast-logo.jpeg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://themastonline.com",
         "https://en.wikipedia.org/wiki/Media_of_Zambia"
