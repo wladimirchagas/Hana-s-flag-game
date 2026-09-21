@@ -194,6 +194,20 @@ function formatGpiIndex(idx?: {
   return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)} (${idx.year})`;
 }
 
+
+/** WHR shows the Cantril ladder score (0–10), the index’s primary figure. */
+function formatHappinessIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(3)} (${idx.year})`;
+}
+
 export function EntitySummary(props: EntitySummaryProps) {
   if (props.kind === "modern") {
     const c = props.country;
@@ -266,6 +280,9 @@ export function EntitySummary(props: EntitySummaryProps) {
 
       const gpi = formatGpiIndex(c.democracy.gpi);
       if (gpi) rows.push({ label: "Global Peace Index", value: gpi });
+
+      const whr = formatHappinessIndex(c.democracy.happiness);
+      if (whr) rows.push({ label: "World Happiness Report", value: whr });
     }
 
     if (government) rows.push({ label: "Government", value: government });

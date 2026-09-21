@@ -1566,6 +1566,12 @@ The widget shows, for a modern country, these rows (each rendered only when its 
 | V-Dem | `country.democracy.vDem` |
 | The Economist | `country.democracy.economist` |
 | Corruption Perceptions Index | `country.democracy.cpi` |
+| Democracy Perception Index | `country.democracy.perception` |
+| RSF Press Freedom | `country.democracy.rsfPress` |
+| Human Development Index | `country.democracy.hdi` |
+| Global Gender Gap Index | `country.democracy.genderGap` |
+| Global Peace Index | `country.democracy.gpi` |
+| World Happiness Report | `country.democracy.happiness` |
 | Government | `GOVERNMENT_TYPES[code]` (curated local map) |
 
 ### Why this rule exists
