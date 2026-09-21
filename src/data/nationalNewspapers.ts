@@ -20568,7 +20568,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sudan Tribune Analytics Overview"
       },
       "revenueModel": "Digital programmatic advertising and independent foundation grants",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sd/sudan-tribune.png",
+      "logoExplainer": "Black serif 'Sudan' beside blackletter 'Tribune' — Sudan Tribune masthead.",
+      "licenceNote": "Sudan Tribune masthead (English Wikipedia File:St logo 250.png, public domain text logo; credited to sudantribune.com) bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://sudantribune.com",
         "https://en.wikipedia.org/wiki/Sudan_Tribune"
@@ -21966,7 +21969,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sudan Tribune Readership Metrics"
       },
       "revenueModel": "Digital banner advertising and philanthropic foundation grants",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ss/sudan-tribune-ss.png",
+      "logoExplainer": "Black serif 'Sudan' beside blackletter 'Tribune' — Sudan Tribune (South Sudan Desk) masthead.",
+      "licenceNote": "Sudan Tribune masthead (English Wikipedia File:St logo 250.png, public domain text logo; credited to sudantribune.com) bundled for educational reference in Learn mode — same brand as the Sudan desk.",
+
       "sources": [
         "https://sudantribune.com",
         "https://en.wikipedia.org/wiki/Sudan_Tribune"
