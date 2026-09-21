@@ -21731,7 +21731,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sud Communication Review 2023"
       },
       "revenueModel": "Print sales, corporate subscriptions, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sn/sud-quotidien.jpg",
+      "logoExplainer": "Bold red lowercase 'sud' with black cursive 'Quotidien' overlaid on the lower letters — Sud Quotidien masthead.",
+      "licenceNote": "Sud Quotidien masthead from the publisher's official site brand assets (sudquotidien.sn), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.sudquotidien.sn",
         "https://en.wikipedia.org/wiki/Media_of_Senegal"
@@ -22439,7 +22442,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Syrian Journalists Union Reports"
       },
       "revenueModel": "Party institutional subsidies and official public notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sy/al-baath.png",
+      "logoExplainer": "Black Arabic 'البعث' wordmark with a red circular media mark holding green 'ميديا' — Al-Ba'ath Media brand mark.",
+      "licenceNote": "Al-Ba'ath masthead from the publisher's official site brand assets (albaathmedia.sy), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://albaathmedia.sy",
         "https://en.wikipedia.org/wiki/Al-Ba%27ath_(newspaper)"
