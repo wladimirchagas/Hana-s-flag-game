@@ -1761,9 +1761,10 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
               {panelSymbol.stats && panelSymbol.stats.length > 0 && (
                 // Same generic stats list NationalFlagDetails renders in the
                 // "National symbols" tab — kept identical here so a symbol's
-                // comparable facts (an Olympic Committee's Games/medal/athlete
-                // rows) read the same whether reached from the world map or
-                // from drilling into the country's own tab.
+                // comparable facts (an Olympic Committee's Games/medal rows, a
+                // football association's World Cup participations/titles) read
+                // the same whether reached from the world map or from drilling
+                // into the country's own tab.
                 <dl className="entity-summary">
                   {panelSymbol.stats.map((stat) => (
                     <div className="entity-summary__row" key={stat.label}>
