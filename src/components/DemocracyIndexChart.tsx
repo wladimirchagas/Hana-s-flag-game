@@ -699,7 +699,7 @@ export function DemocracyIndexChart({
                   top: `${(p.cy / VIEW_H) * 100}%`,
                   zIndex: isActive || isSelected ? 3 : dimmed ? 0 : 2,
                 }}
-                aria-label={`${p.country.name}: X ${formatDemocracyAxisValue(xKey, p.xIndex)}, Y ${formatDemocracyAxisValue(yKey, p.yIndex)}`}
+                aria-label={`${p.country.name}: X ${p.xLabel}, Y ${p.yLabel}`}
                 aria-pressed={isSelected}
                 onClick={() => onSelect(p.code)}
                 onMouseEnter={() => {
