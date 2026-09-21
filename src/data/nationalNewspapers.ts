@@ -6231,7 +6231,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sun Publishing Review 2023"
       },
       "revenueModel": "Print sales and local business advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/dm/the-sun-dominica.png",
+      "logoExplainer": "Golden inline-serif 'THE SUN' on a deep-red bar — The Sun (Dominica) masthead.",
+      "licenceNote": "The Sun (Dominica) trademark bundled from the publisher's official site brand assets (sundominica.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://sundominica.com"
       ]
@@ -19900,7 +19903,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ru-moskovsky-komsomolets",
       "countryCode": "RU",
       "name": "Moskovsky Komsomolets",
@@ -19916,6 +19918,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Among Russia's highest-circulation dailies",
         "source": "https://en.wikipedia.org/wiki/Moskovskij_Komsomolets"
       },
+      "logo": "newspaper-logos/ru/moskovsky-komsomolets.svg",
+      "logoExplainer": "Italic blue Cyrillic 'МОСКОВСКИЙ КОМСОМОЛЕЦ' wordmark — Moskovsky Komsomolets masthead.",
+      "licenceNote": "Moskovsky Komsomolets trademark from Wikimedia Commons File:Text logo of Moskovskij Komsomolets (Cyrillic).svg, bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.mk.ru",
         "https://en.wikipedia.org/wiki/Moskovskij_Komsomolets"
@@ -25165,7 +25171,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ve-efectococuyo",
       "countryCode": "VE",
       "name": "Efecto Cocuyo",
@@ -25181,6 +25186,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Venezuelan digital news brand",
         "source": "https://efectococuyo.com"
       },
+      "logo": "newspaper-logos/ve/efectococuyo.png",
+      "logoExplainer": "Bold black 'EFECTO · · COCUYO' with two lime firefly dots and tagline PERIODISMO QUE ILUMINA — Efecto Cocuyo masthead.",
+      "licenceNote": "Efecto Cocuyo trademark from Wikimedia Commons File:Logo Efecto Cocuyo (Venezuela) 2025.png, bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://efectococuyo.com"
       ]

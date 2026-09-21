@@ -15,36 +15,28 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "sm-informazione",
-    src: "tmp/batch61-final/sm-informazione.png",
+    id: "dm-the-sun-dominica",
+    src: "tmp/batch62-final/dm-the-sun-dominica.png",
     explainer:
-      "Red arched-bridge mark with a blue disc above lowercase black 'libertas' and tagline INFORMAZIONE PER PASSIONE — Libertas / L'Informazione di San Marino masthead.",
+      "Golden inline-serif 'THE SUN' on a deep-red bar — The Sun (Dominica) masthead.",
     licence:
-      "Libertas trademark bundled from the publisher's official site brand assets (libertas.sm) for educational reference in Learn mode.",
+      "The Sun (Dominica) trademark bundled from the publisher's official site brand assets (sundominica.com) for educational reference in Learn mode.",
   },
   {
-    id: "tg-togo-presse",
-    src: "tmp/batch61-final/tg-togo-presse.jpg",
+    id: "ve-efectococuyo",
+    src: "tmp/batch62-final/ve-efectococuyo.png",
     explainer:
-      "White blackletter 'Togo-Presse' on a red field with cyan border and tagline GRAND QUOTIDIEN NATIONAL D'INFORMATION — Togo-Presse masthead.",
+      "Bold black 'EFECTO · · COCUYO' with two lime firefly dots and tagline PERIODISMO QUE ILUMINA — Efecto Cocuyo masthead.",
     licence:
-      "Togo-Presse trademark bundled from the publisher's official site brand assets (togopresse.tg) for educational reference in Learn mode.",
+      "Efecto Cocuyo trademark from Wikimedia Commons File:Logo Efecto Cocuyo (Venezuela) 2025.png, bundled for educational reference in Learn mode.",
   },
   {
-    id: "ye-al-thawra",
-    src: "tmp/batch61-final/ye-al-thawra.png",
+    id: "ru-moskovsky-komsomolets",
+    src: "tmp/batch62-final/ru-moskovsky-komsomolets.svg",
     explainer:
-      "Arabic الثورة with a red torch/rose and English ALTHAWRAH — Al-Thawra (Yemen) masthead.",
+      "Italic blue Cyrillic 'МОСКОВСКИЙ КОМСОМОЛЕЦ' wordmark — Moskovsky Komsomolets masthead.",
     licence:
-      "Al-Thawra trademark bundled from the publisher's official site brand assets (althawrah.ye) for educational reference in Learn mode.",
-  },
-  {
-    id: "tm-turkmenportal",
-    src: "tmp/batch61-final/tm-turkmenportal.svg",
-    explainer:
-      "Red circle with white TP monogram beside uppercase TURKMENPORTAL — Turkmenportal masthead.",
-    licence:
-      "Turkmenportal trademark bundled from the publisher's official site brand assets (turkmenportal.com) for educational reference in Learn mode.",
+      "Moskovsky Komsomolets trademark from Wikimedia Commons File:Text logo of Moskovskij Komsomolets (Cyrillic).svg, bundled for educational reference in Learn mode.",
   },
 ];
 
