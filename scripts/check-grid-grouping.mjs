@@ -7,6 +7,8 @@
 //   3. Incomplete subcontinent/continent metadata for airlines or public broadcasters.
 //
 // Run: node scripts/check-grid-grouping.mjs
+// Needs Node 22.18+ — imports democracyColors.ts for the index Group-by labels
+// FlagGrid builds via DEMOCRACY_INDEX_KEYS / getDemocracyIndexLabel.
 
 import assert from "node:assert/strict";
 import fs from "node:fs";
@@ -17,6 +19,13 @@ import ts from "typescript";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
+
+// GROUP_MODE_LABELS spreads DEMOCRACY_INDEX_KEYS through getDemocracyIndexLabel —
+// inject the real helpers into the VM so the extracted FlagGrid helpers evaluate.
+const {
+  DEMOCRACY_INDEX_KEYS,
+  getDemocracyIndexLabel,
+} = await import("../src/lib/democracyColors.ts");
 
 // 1. Check FlagGrid.tsx source directly to ensure no hardcoded groupMode bypass exists
 const flagGridSource = fs.readFileSync(path.join(root, "src/components/FlagGrid.tsx"), "utf8");
@@ -71,11 +80,22 @@ const compiledHelpers = ts.transpileModule(
 ).outputText;
 
 const moduleExports = { exports: {} };
-vm.runInNewContext(compiledHelpers, { module: moduleExports, exports: moduleExports.exports, Set });
+vm.runInNewContext(compiledHelpers, {
+  module: moduleExports,
+  exports: moduleExports.exports,
+  Set,
+  DEMOCRACY_INDEX_KEYS,
+  getDemocracyIndexLabel,
+});
 const {
   GROUP_MODE_LABELS,
   groupModeAvailableFor,
 } = moduleExports.exports;
+
+assert.ok(
+  DEMOCRACY_INDEX_KEYS.every((k) => k in GROUP_MODE_LABELS),
+  "GROUP_MODE_LABELS must include a label for every DEMOCRACY_INDEX_KEYS entry",
+);
 
 const ALL_GROUP_MODES = Object.keys(GROUP_MODE_LABELS);
 const ALL_CONTENT_TYPES = [
