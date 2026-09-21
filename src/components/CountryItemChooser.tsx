@@ -14,6 +14,7 @@ import type {
   MultiItemGridContentType,
 } from "../lib/countryItemChooser";
 import { chooserHeading } from "../lib/countryItemChooser";
+import { applyLogoBackdropTone } from "../lib/logoBackdrop";
 
 export function CountryItemChooser({
   type,
@@ -62,7 +63,7 @@ export function CountryItemChooser({
                 onClick={() => onSelect(item.id)}
                 aria-label={`Select ${item.name}`}
               >
-                <span className="flag-grid__thumb">
+                <span className="flag-grid__thumb flag-grid__thumb--logo" data-logo-surface="">
                   {url ? (
                     <Fragment key={url}>
                       <GridImage
@@ -70,6 +71,7 @@ export function CountryItemChooser({
                         alt=""
                         draggable={false}
                         className="flag-grid__thumb-img"
+                        onLoad={(e) => applyLogoBackdropTone(e.currentTarget)}
                         onError={(e) => {
                           const img = e.currentTarget;
                           img.hidden = true;

@@ -1,4 +1,5 @@
 import { LogoExplainer } from "./LogoExplainer";
+import { EnlargeableLogo } from "./EnlargeableLogo";
 import type { Newspaper } from "../types/newspaper";
 
 /**
@@ -30,22 +31,13 @@ export function NewspaperDetails({
         <div className="learn-fs__flag-head">
           <span className="entity-summary__label learn-fs__flag-label">Newspaper masthead / logo</span>
           {logoUrl ? (
-            <button
-              type="button"
-              className="learn-fs__flag"
-              onClick={() => onEnlarge(logoUrl)}
-              aria-label={`Enlarge ${newspaper.name} logo`}
-            >
-              <img
-                key={logoUrl}
-                src={logoUrl}
-                alt={`${newspaper.name} masthead`}
-                className="learn-fs__flag-img"
-                draggable={false}
-                style={{ objectFit: "contain", maxHeight: "110px", padding: "6px" }}
-              />
-              <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-            </button>
+            <EnlargeableLogo
+              src={logoUrl}
+              alt={`${newspaper.name} masthead`}
+              ariaLabel={`Enlarge ${newspaper.name} logo`}
+              onEnlarge={onEnlarge}
+              hint="⤢ Click to enlarge"
+            />
           ) : (
             <div className="learn-fs__flag learn-fs__flag--empty" aria-label="No free masthead image">
               <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>

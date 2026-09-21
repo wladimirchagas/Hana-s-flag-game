@@ -898,6 +898,23 @@
   outline: none;
 }
 
+/* Brand logos in the detail panel — same adaptive neutral plate as the grid. */
+.learn-fs__flag--logo {
+  box-sizing: border-box;
+  padding: 0.65rem 0.85rem;
+  background: var(--logo-plate-light);
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+}
+
+.learn-fs__flag--logo[data-logo-tone="dark"] {
+  background: var(--logo-plate-dark);
+  border-color: color-mix(in srgb, #fff 14%, transparent);
+}
+
+.learn-fs__flag--logo .learn-fs__flag-img {
+  filter: none;
+}
+
 /* The explainer fills the widget box (drop its standalone centring/max-width).
    Its toggle keeps the default cream fill, which now reads as distinct against
    the widget's paper background. */
@@ -2004,6 +2021,28 @@
   border: 0;
   border-radius: 0;
   overflow: visible;
+}
+
+/* Brand-logo tiles (newspapers, agencies, airlines, …): a neutral plate
+   picked from the logo's own luminance. Defaults to the light plate until
+   onLoad paints data-logo-tone — that is the common dark-masthead case. */
+.flag-grid__thumb--logo {
+  box-sizing: border-box;
+  padding: 0.4rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--logo-plate-light);
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+}
+
+.flag-grid__thumb--logo[data-logo-tone="dark"] {
+  background: var(--logo-plate-dark);
+  border-color: color-mix(in srgb, #fff 14%, transparent);
+}
+
+.flag-grid__thumb--logo .flag-grid__thumb-img {
+  /* The plate already provides contrast; the flag drop-shadow muddies logos. */
+  filter: none;
 }
 
 .flag-grid__thumb-img {

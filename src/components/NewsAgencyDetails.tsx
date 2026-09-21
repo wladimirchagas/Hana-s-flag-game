@@ -1,4 +1,5 @@
 import { LogoExplainer } from "./LogoExplainer";
+import { EnlargeableLogo } from "./EnlargeableLogo";
 import { agencyOwnershipBadge } from "../lib/nationalNewsAgencies";
 import type { NewsAgency } from "../types/newsAgency";
 
@@ -32,22 +33,13 @@ export function NewsAgencyDetails({
         <div className="learn-fs__flag-head">
           <span className="entity-summary__label learn-fs__flag-label">Agency logo / emblem</span>
           {logoUrl ? (
-            <button
-              type="button"
-              className="learn-fs__flag"
-              onClick={() => onEnlarge(logoUrl)}
-              aria-label={`Enlarge ${agency.name} logo`}
-            >
-              <img
-                key={logoUrl}
-                src={logoUrl}
-                alt={`${agency.name} logo`}
-                className="learn-fs__flag-img"
-                draggable={false}
-                style={{ objectFit: "contain", maxHeight: "110px", padding: "6px" }}
-              />
-              <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-            </button>
+            <EnlargeableLogo
+              src={logoUrl}
+              alt={`${agency.name} logo`}
+              ariaLabel={`Enlarge ${agency.name} logo`}
+              onEnlarge={onEnlarge}
+              hint="⤢ Click to enlarge"
+            />
           ) : (
             <div className="learn-fs__flag learn-fs__flag--empty" aria-label="No free agency logo">
               <span className="flag-grid__thumb-empty" aria-hidden="true">—</span>
