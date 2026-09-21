@@ -157,6 +157,7 @@ type GroupMode =
   | "gpi"
   | "happiness"
   | "gdi"
+  | "wjp-rule-of-law"
   | "party-ideology";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
@@ -184,6 +185,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   gpi: "Global Peace Index",
   happiness: "World Happiness Report",
   gdi: "Global Diplomacy Index",
+  "wjp-rule-of-law": "WJP Rule of Law Index",
   // Political-parties-view only — buckets along the sourced ideology spectrum.
   "party-ideology": "By ideology",
   // Passports-view only — buckets by the passport cover's colour family.
@@ -253,6 +255,7 @@ const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
   "gpi",
   "happiness",
   "gdi",
+  "wjp-rule-of-law",
 ]);
 
 /** Whether a grouping mode is offered for the given view. The flag-appearance
@@ -339,6 +342,19 @@ const RSF_PRESS_ORDER: Record<string, number> = {
   Difficult: 4,
   "Very serious": 5,
   "Not rated": 6,
+};
+
+/** WJP Rule of Law Index map score bands — strongest adherence first. */
+const WJP_ORDER: Record<string, number> = {
+  "0.80–1.00": 1,
+  "0.70–0.79": 2,
+  "0.60–0.69": 3,
+  "0.50–0.59": 4,
+  "0.40–0.49": 5,
+  "0.30–0.39": 6,
+  "0.20–0.29": 7,
+  "0.00–0.19": 8,
+  "Not rated": 9,
 };
 
 const HDI_ORDER: Record<string, number> = {
@@ -931,6 +947,12 @@ export function FlagGrid({
         const rating = COUNTRY_FACTS[code]?.democracy?.gdi?.rating ?? "Not rated";
         push(rating, e);
       }
+    } else if (groupMode === "wjp-rule-of-law") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.wjpRuleOfLaw?.rating ?? "Not rated";
+        push(rating, e);
+      }
     }
 
     if (
@@ -944,7 +966,8 @@ export function FlagGrid({
       groupMode === "gender-gap" ||
       groupMode === "gpi" ||
       groupMode === "happiness" ||
-      groupMode === "gdi"
+      groupMode === "gdi" ||
+      groupMode === "wjp-rule-of-law"
     ) {
       for (const [, items] of buckets) {
         items.sort((a, b) => {
@@ -973,7 +996,9 @@ export function FlagGrid({
               ? factsA?.gpi
               : groupMode === "happiness"
               ? factsA?.happiness
-              : factsA?.gdi;
+              : groupMode === "gdi"
+              ? factsA?.gdi
+              : factsA?.wjpRuleOfLaw;
           const indexB =
             groupMode === "freedom-house"
               ? factsB?.freedomHouse
@@ -995,7 +1020,9 @@ export function FlagGrid({
               ? factsB?.gpi
               : groupMode === "happiness"
               ? factsB?.happiness
-              : factsB?.gdi;
+              : groupMode === "gdi"
+              ? factsB?.gdi
+              : factsB?.wjpRuleOfLaw;
           const rankA = indexA?.rank ?? Infinity;
           const rankB = indexB?.rank ?? Infinity;
           if (rankA !== rankB) return rankA - rankB;
@@ -1086,6 +1113,11 @@ export function FlagGrid({
       if (groupMode === "rsf-press") {
         const oa = RSF_PRESS_ORDER[a] ?? 99;
         const ob = RSF_PRESS_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "wjp-rule-of-law") {
+        const oa = WJP_ORDER[a] ?? 99;
+        const ob = WJP_ORDER[b] ?? 99;
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "hdi") {
