@@ -15,52 +15,20 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "mu-mauritius-times",
-    src: "tmp/batch68-install/mu-mauritius-times.png",
+    id: "sd-sudan-tribune",
+    src: "tmp/batch69-install/sd-sudan-tribune.png",
     explainer:
-      "White serif 'MAURITIUS' stacked over 'TIMES' on a black rectangle — Mauritius Times masthead.",
+      "Black serif 'Sudan' beside blackletter 'Tribune' — Sudan Tribune masthead.",
     licence:
-      "Mauritius Times masthead trademark bundled from the publisher's official site brand assets (mauritiustimes.com MT-Logo.jpg) for educational reference in Learn mode.",
+      "Sudan Tribune masthead (English Wikipedia File:St logo 250.png, public domain text logo; credited to sudantribune.com) bundled for educational reference in Learn mode.",
   },
   {
-    id: "tl-timor-post",
-    src: "tmp/batch68-install/tl-timor-post.png",
+    id: "ss-sudan-tribune-ss",
+    src: "tmp/batch69-install/ss-sudan-tribune-ss.png",
     explainer:
-      "Navy 'Timor Post' with Timor island map inside the 'o' and Tetum tagline 'Harii Unidade, Justisa no Demokrasia' — Timor Post masthead.",
+      "Black serif 'Sudan' beside blackletter 'Tribune' — Sudan Tribune (South Sudan Desk) masthead.",
     licence:
-      "Timor Post masthead trademark bundled from the publisher's official site brand assets (timorpost.com) for educational reference in Learn mode.",
-  },
-  {
-    id: "si-necenzurirano",
-    src: "tmp/batch68-install/si-necenzurirano.svg",
-    explainer:
-      "Blue sans-serif 'N1' wordmark — N1 Slovenija (Necenzurirano.si) masthead.",
-    licence:
-      "N1 masthead trademark bundled from the publisher's official site brand assets (n1info.si/static/images/n1.svg) for educational reference in Learn mode.",
-  },
-  {
-    id: "mt-times-of-malta",
-    src: "tmp/batch68-install/mt-times-of-malta.png",
-    explainer:
-      "Black serif 'THE TIMES' flanking a crowned shield with the George Cross — Times of Malta masthead.",
-    licence:
-      "Times of Malta masthead (English Wikipedia File:TimesMTheader.png, fair use) trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "bd-samakal",
-    src: "tmp/batch68-install/bd-samakal.svg",
-    explainer:
-      "Black Bengali calligraphic 'সমকাল' (Samakal) wordmark — Daily Samakal masthead.",
-    licence:
-      "Daily Samakal masthead (English Wikipedia File:Daily Samakal.svg, fair use) trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "ve-ultimas-noticias",
-    src: "tmp/batch68-install/ve-ultimas-noticias.png",
-    explainer:
-      "White italic serif 'Últimas' joined to bold sans 'Noticias' on a blue field — Últimas Noticias masthead.",
-    licence:
-      "Últimas Noticias masthead (English Wikipedia File:Últimas Noticias logo 2.png, fair use; credited to ultimasnoticias.com.ve) trademark bundled for educational reference in Learn mode.",
+      "Sudan Tribune masthead (English Wikipedia File:St logo 250.png, public domain text logo; credited to sudantribune.com) bundled for educational reference in Learn mode — same brand as the Sudan desk.",
   },
 ];
 
