@@ -13835,7 +13835,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Post Media Audit 2024"
       },
       "revenueModel": "Print sales, classifieds, and digital display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ls/the-post.png",
+      "logoExplainer": "Red 'the' + white 'post' wordmark with a Lesotho-map badge holding a Basotho hat (mokorotlo) — The Post (Lesotho) masthead.",
+      "licenceNote": "The Post (Lesotho) masthead from the publisher's official site brand assets (thepost.co.ls), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.thepost.co.ls"
       ]
@@ -26286,7 +26289,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Zimbabwe All Media Products Survey (ZAMPS) / Zimpapers Annual Report 2023"
       },
       "revenueModel": "Commercial print advertising, government public notices, and retail newsstand distribution",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/zw/the-herald.png",
+      "logoExplainer": "Blue gear-and-quill Zimpapers mark beside red serif 'The Herald' — Zimbabwe Herald masthead from the publisher's site theme.",
+      "licenceNote": "The Herald (Zimbabwe) masthead from the publisher's official site theme assets (herald.co.zw), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.herald.co.zw",
         "https://en.wikipedia.org/wiki/The_Herald_(Zimbabwe)"
@@ -26339,7 +26345,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ZAMPS / Zimpapers Bulawayo Branch Review"
       },
       "revenueModel": "Government notices, local commercial ads, and print sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/zw/the-chronicle.png",
+      "logoExplainer": "Blue gear-and-quill mark beside cyan serif 'Chronicle' — Bulawayo Chronicle masthead from the publisher's site theme.",
+      "licenceNote": "The Chronicle (Zimbabwe) masthead from the publisher's official site theme assets (chronicle.co.zw), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.chronicle.co.zw",
         "https://en.wikipedia.org/wiki/The_Chronicle_(Zimbabwe)"
