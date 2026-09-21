@@ -7400,10 +7400,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "frequency": "Daily newspaper",
-      "format": "Broadsheet & digital",
-      "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "No masthead image is shown for this newspaper yet. The publisher's official site and Wikimedia Commons were checked; listed without an image rather than an invented logo.",
       "id": "et-reporter-amharic",
       "countryCode": "ET",
       "name": "Addis Zemen",
