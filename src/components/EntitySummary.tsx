@@ -5,6 +5,7 @@ import { COUNTRY_ENDONYMS } from "../data/countryEndonyms";
 import { membershipsForCountry } from "../data/countryBlocks";
 import type { Country } from "../api/countries";
 import { getDemocracyIndexLabel } from "../lib/democracyColors";
+import { MembershipBadge } from "./MembershipBadge";
 
 /**
  * Structured "fact-sheet" view of an entity for the Learn-mode panel.
@@ -368,6 +369,7 @@ function buildPoliticsRows(c: Country): { label: string; value: React.ReactNode 
   const government = GOVERNMENT_TYPES[c.code];
   if (government) rows.push({ label: "Government", value: government });
 
+  // Each badge reveals full name (abbr) + sourced explainer on hover/tap.
   const memberships = membershipsForCountry(c.code);
   if (memberships.length > 0) {
     rows.push({
@@ -375,9 +377,12 @@ function buildPoliticsRows(c: Country): { label: string; value: React.ReactNode 
       value: (
         <ul className="entity-summary__membership">
           {memberships.map((m) => (
-            <li key={m.id} className="entity-summary__membership-item">
-              {m.label}
-            </li>
+            <MembershipBadge
+              key={m.id}
+              block={m}
+              countryCode={c.code}
+              countryName={c.name}
+            />
           ))}
         </ul>
       ),
