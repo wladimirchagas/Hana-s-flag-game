@@ -163,6 +163,9 @@ jobs:
       - name: Verify RSF World Press Freedom Index 2026 data matches the official CSV
         run: node scripts/check-rsf-press-freedom.mjs
 
+      - name: Verify UNDP Human Development Index 2023 data matches the official extract
+        run: node scripts/check-hdi-data.mjs
+
       - name: Verify every flags:check gate actually runs in CI
         run: node scripts/check-ci-coverage.mjs
 
