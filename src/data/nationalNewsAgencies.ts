@@ -1982,8 +1982,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Latvia's national news agency; non-partisan, objective newswire providing continuous reporting for domestic media and state institutions",
       "readership": {"metric":"Primary news dispatch provider for all Latvian newspapers, TV networks, radio stations, and corporate subscribers","source":"LETA Information Agency Profile 2024"},
       "revenueModel": "B2B wire licensing and business intelligence subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": ["https://www.leta.lv","https://en.wikipedia.org/wiki/LETA"],
+      "logo": "newspaper-logos/lv/leta.jpg",
+      "logoExplainer": "Two-tone green circular mark beside bold black 'LETA' with subtitle 'nacionālā informācijas aģentūra' — Latvian national news agency wordmark.",
+      "licenceNote": "LETA brand mark from the agency's official Facebook page profile picture (letanews); trademark bundled for educational reference in Learn mode.",
+
+      "sources": ["https://www.leta.lv","https://en.wikipedia.org/wiki/LETA"]
     }
   ],
   "LY": [
