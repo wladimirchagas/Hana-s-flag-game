@@ -4,7 +4,9 @@ import {
   DEMOCRACY_INDEX_KEYS,
   type DemocracyIndexKey,
   clipDemocracyAxisBands,
+  clipTrendToDomain,
   democracyChartPoints,
+  democracyOlsTrend,
   fitDemocracyAxisDomain,
   formatDemocracyAxisValue,
   getDemocracyAxisBands,
@@ -117,6 +119,21 @@ export function DemocracyIndexChart({
     });
   }, [rawPoints, byCode, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
 
+  const trend = useMemo(() => democracyOlsTrend(rawPoints), [rawPoints]);
+  const trendSegment = useMemo(() => {
+    if (!trend) return null;
+    const clipped = clipTrendToDomain(trend, xDomain, yDomain);
+    if (!clipped) return null;
+    return {
+      x1: scaleLinear(clipped.x0, xDomain, { min: plot.x0, max: plot.x1 }),
+      y1: scaleLinear(clipped.y0, yDomain, { min: plot.y1, max: plot.y0 }),
+      x2: scaleLinear(clipped.x1, xDomain, { min: plot.x0, max: plot.x1 }),
+      y2: scaleLinear(clipped.y1, yDomain, { min: plot.y1, max: plot.y0 }),
+      r2: trend.r2,
+      n: trend.n,
+    };
+  }, [trend, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
+
   const xTicks = useMemo(() => {
     return Array.from({ length: TICK_COUNT + 1 }, (_, i) => {
       const v = xDomain.min + ((xDomain.max - xDomain.min) * i) / TICK_COUNT;
@@ -196,6 +213,11 @@ export function DemocracyIndexChart({
             ))}
           </select>
         </label>
+        {trendSegment && (
+          <p className="democracy-index-chart__trend-note" title="Ordinary least squares linear fit of Y on X across plotted countries">
+            Trend: linear (OLS) · R² = {trendSegment.r2.toFixed(2)} · n = {trendSegment.n}
+          </p>
+        )}
       </div>
 
       <div className="democracy-index-chart__frame" ref={frameRef}>
@@ -369,6 +391,18 @@ export function DemocracyIndexChart({
           >
             {getDemocracyIndexLabel(yKey)}
           </text>
+
+          {/* OLS linear trend — under flags, above bands/grid */}
+          {trendSegment && (
+            <line
+              x1={trendSegment.x1}
+              y1={trendSegment.y1}
+              x2={trendSegment.x2}
+              y2={trendSegment.y2}
+              className="democracy-index-chart__trend"
+              pointerEvents="none"
+            />
+          )}
         </svg>
 
         {/* Flag markers — HTML so real flag images paint at correct aspect */}
