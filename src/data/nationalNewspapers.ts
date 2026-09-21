@@ -8958,9 +8958,12 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministerio de Información, Prensa y Radio 2023"
       },
       "revenueModel": "State publishing subsidy",
-      "noImageReason": "No authentic masthead is shown yet. A placeholder graphic was removed. Wikimedia Commons, the newspaper's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
+      "logo": "newspaper-logos/gq/ebano.png",
+      "logoExplainer": "Circular gold-rimmed emblem with a green 'E' over a light-blue silhouette of Equatorial Guinea, beside black script 'BANO' and the tricolour subtitle 'ÓRGANO INFORMATIVO NACIONAL' — official masthead from periodicoebano.com.",
+      "licenceNote": "Ébano trademark bundled from the publisher's official site brand assets (periodicoebano.com/images/logo.png) for educational reference in Learn mode.",
       "sources": [
-        "https://es.wikipedia.org/wiki/%C3%89bano_(peri%C3%B3dico)"
+        "https://es.wikipedia.org/wiki/%C3%89bano_(peri%C3%B3dico)",
+        "https://www.periodicoebano.com/"
       ]
     },
     {
