@@ -168,8 +168,8 @@ for (const [code, rank, score, rating] of spots) {
 
 const uiFiles = [
   ["src/lib/democracyColors.ts", "soft-power"],
-  ["src/components/DemocracyMapControl.tsx", "DEMOCRACY_INDEX_KEYS"],
-  ["src/components/DemocracyIndexChart.tsx", "DEMOCRACY_INDEX_KEYS"],
+  ["src/components/DemocracyMapControl.tsx", "getDemocracyIndexMenuGroups"],
+  ["src/components/DemocracyIndexChart.tsx", "getDemocracyIndexMenuGroups"],
   ["src/components/EntitySummary.tsx", "softPower"],
   ["src/components/FlagGrid.tsx", "soft-power"],
 ];

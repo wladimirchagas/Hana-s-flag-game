@@ -246,8 +246,8 @@ if (expected.size !== 192) {
 
 const uiFiles = [
   ["src/lib/democracyColors.ts", "hdi"],
-  ["src/components/DemocracyMapControl.tsx", "DEMOCRACY_INDEX_KEYS"],
-  ["src/components/DemocracyIndexChart.tsx", "DEMOCRACY_INDEX_KEYS"],
+  ["src/components/DemocracyMapControl.tsx", "getDemocracyIndexMenuGroups"],
+  ["src/components/DemocracyIndexChart.tsx", "getDemocracyIndexMenuGroups"],
   ["src/components/EntitySummary.tsx", "formatHdiIndex"],
   ["src/components/FlagGrid.tsx", '"hdi"'],
 ];

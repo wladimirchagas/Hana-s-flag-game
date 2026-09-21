@@ -182,8 +182,8 @@ for (const [code, rank, score, rating, change] of spots) {
 
 const uiFiles = [
   ["src/lib/democracyColors.ts", "gender-gap"],
-  ["src/components/DemocracyMapControl.tsx", "DEMOCRACY_INDEX_KEYS"],
-  ["src/components/DemocracyIndexChart.tsx", "DEMOCRACY_INDEX_KEYS"],
+  ["src/components/DemocracyMapControl.tsx", "getDemocracyIndexMenuGroups"],
+  ["src/components/DemocracyIndexChart.tsx", "getDemocracyIndexMenuGroups"],
   ["src/components/EntitySummary.tsx", "genderGap"],
   ["src/components/FlagGrid.tsx", "gender-gap"],
 ];

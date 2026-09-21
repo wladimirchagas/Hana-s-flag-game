@@ -177,10 +177,10 @@ if (expected.size !== 175) {
 
 const uiFiles = [
   ["src/lib/democracyColors.ts", "rsf-press"],
-  // Menu options come from DEMOCRACY_INDEX_KEYS (which includes rsf-press in
-  // democracyColors.ts) — require that shared list, not a duplicated literal.
-  ["src/components/DemocracyMapControl.tsx", "DEMOCRACY_INDEX_KEYS"],
-  ["src/components/DemocracyIndexChart.tsx", "DEMOCRACY_INDEX_KEYS"],
+  // Menu options come from getDemocracyIndexMenuGroups() (which covers every
+  // DEMOCRACY_INDEX_KEYS entry via DEMOCRACY_INDEX_META) — require that helper.
+  ["src/components/DemocracyMapControl.tsx", "getDemocracyIndexMenuGroups"],
+  ["src/components/DemocracyIndexChart.tsx", "getDemocracyIndexMenuGroups"],
   ["src/components/EntitySummary.tsx", "rsfPress"],
   ["src/components/FlagGrid.tsx", "rsf-press"],
 ];
