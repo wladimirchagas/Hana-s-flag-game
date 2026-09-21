@@ -15,28 +15,12 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "la-lao-pdr-daily",
-    src: "tmp/batch74-install/la-lao-pdr-daily.jpg",
+    id: "dm-ebean-news",
+    src: "tmp/batch75-install/dm-ebean-news.png",
     explainer:
-      "White serif 'Le Rénovateur' on red — Le Rénovateur masthead.",
+      "Black serif 'Emonews' wordmark — EmoNews (Dominica) site title as published on emonewsdm.com.",
     licence:
-      "Le Rénovateur brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "ge-sakartvelos-respublika",
-    src: "tmp/batch74-install/ge-sakartvelos-respublika.jpg",
-    explainer:
-      "White 'RES PUBLIKA' on black, with small rotated 'RES' — Sakartvelos Respublika brand mark.",
-    licence:
-      "Sakartvelos Respublika brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "sc-today-in-seychelles",
-    src: "tmp/batch74-install/sc-today-in-seychelles.jpg",
-    explainer:
-      "White 'TODAY' over 'in Seychelles' on sky blue — Today in Seychelles masthead.",
-    licence:
-      "Today in Seychelles brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "EmoNews wordmark cropped from the publisher's own site title on emonewsdm.com; trademark bundled for educational reference in Learn mode.",
   },
 ];
 

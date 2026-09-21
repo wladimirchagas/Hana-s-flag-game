@@ -6312,7 +6312,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "EmoNews Media Analytics 2024"
       },
       "revenueModel": "Social media monetization, local sponsorships, and live stream advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/dm/ebean-news.png",
+      "logoExplainer": "Black serif 'Emonews' wordmark — EmoNews (Dominica) site title as published on emonewsdm.com.",
+      "licenceNote": "EmoNews wordmark cropped from the publisher's own site title on emonewsdm.com; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://emonewsdm.com"
       ]
