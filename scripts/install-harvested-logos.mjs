@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "sy-tishreen",
-    src: "tmp/batch106-install/sy-tishreen.png",
+    id: "cd-l-avenir",
+    src: "tmp/batch107-install/cd-l-avenir.png",
     explainer:
-      "Cyan Arabic calligraphy masthead 'تشرين' (Tishreen) with a small Pan-Arab-colours emblem above and the black strap 'حرية العرب في قوتهم' — Tishreen newspaper brand mark.",
+      "Blue rounded 'GA' app-icon with white 'GROUPE L'AVENIR' under the monogram, beside the strap 'Le portail numérique des médias du Groupe L'avenir' — L'Avenir (DRC) publisher brand mark.",
     licence:
-      "Tishreen masthead from the newspaper's own site (tishreen.news.sy/wp-content/uploads/2018/07/Tishreen_log.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Groupe L'Avenir logo from the group's own site (groupelavenir.org/images/logo14.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode. L'Avenir is published by Groupe L'Avenir.",
   },
 ];
 
