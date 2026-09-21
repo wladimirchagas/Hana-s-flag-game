@@ -17,36 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "ni-articulo-66",
-    src: "tmp/batch82-install/ni-articulo-66.png",
+    id: "ht-alterpresse",
+    src: "tmp/batch83-install/ht-alterpresse.png",
     explainer:
-      "Cyan stylised triangle 'A' leading dark-blue 'RTÍCULO 66' with a cyan quote-mark disc — Artículo 66 masthead.",
+      "Green serif 'Alter' and 'resse' flanking a large italic blue gradient 'P' on black — AlterPresse masthead without anniversary overlays.",
     licence:
-      "Artículo 66 masthead from the publisher's official site theme assets (articulo66.com), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "ug-the-observer",
-    src: "tmp/batch82-install/ug-the-observer.png",
-    explainer:
-      "White bold sans-serif 'The Observer' wordmark on a dark blue bar — The Observer (Uganda) site masthead.",
-    licence:
-      "The Observer (Uganda) masthead from the publisher's official site brand assets (observer.ug), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "mu-ion-news",
-    src: "tmp/batch82-install/mu-ion-news.png",
-    explainer:
-      "Black serif all-caps 'ION NEWS' wordmark with a yellow accent in the I stem — ION News Mauritius masthead.",
-    licence:
-      "ION News masthead from the publisher's official site brand assets (ionnews.mu), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "by-sb-segodnya",
-    src: "tmp/batch82-install/by-sb-segodnya.svg",
-    explainer:
-      "White condensed 'SB.BY' with a red/green four-square mark and Cyrillic 'БЕЛАРУСЬ СЕГОДНЯ' on black — SB. Belarus Segodnya masthead.",
-    licence:
-      "SB. Belarus Segodnya masthead from the publisher's official site brand assets (sb.by), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "AlterPresse masthead from the publisher's official site brand assets (alterpresse.org /img/Logo_alterpresse.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
