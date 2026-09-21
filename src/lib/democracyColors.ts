@@ -17,7 +17,8 @@ export type DemocracyIndexKey =
   | "happiness"
   | "gdi"
   | "wjp-rule-of-law"
-  | "imd-competitiveness";
+  | "imd-competitiveness"
+  | "etr";
 
 export type DemocracyMapMode = DemocracyIndexKey | null;
 
@@ -38,6 +39,7 @@ export const DEMOCRACY_INDEX_KEYS: readonly DemocracyIndexKey[] = [
   "gdi",
   "wjp-rule-of-law",
   "imd-competitiveness",
+  "etr",
 ] as const;
 
 export type DemocracyAxisBand = {
@@ -170,6 +172,26 @@ export const GPI_BAND_ORDER: readonly string[] = [
   "Medium",
   "Low",
   "Very Low",
+];
+
+/** IEP Ecological Threat Index (ETR) map bands — Appendix A methodology
+ *  (Very Low <1.6 … Very High >3.8 on the 1–5 scale). Higher threat → redder.
+ *  Note: ETR “Very High” means greatest threat (opposite of GPI “Very High”
+ *  peacefulness). */
+export const ETR_MAP_COLORS: Record<string, string> = {
+  "Very Low": "#1b5e20",
+  Low: "#4caf50",
+  Medium: "#fdd835",
+  High: "#fb8c00",
+  "Very High": "#b71c1c",
+};
+
+export const ETR_BAND_ORDER: readonly string[] = [
+  "Very Low",
+  "Low",
+  "Medium",
+  "High",
+  "Very High",
 ];
 
 /** World Happiness Report Cantril-ladder score bands (happiest → least).
@@ -313,6 +335,7 @@ export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
   if (mode === "gdi") return "Global Diplomacy Index";
   if (mode === "wjp-rule-of-law") return "WJP Rule of Law Index";
   if (mode === "imd-competitiveness") return "IMD World Competitiveness Ranking";
+  if (mode === "etr") return "Ecological Threat Index";
   return "";
 }
 
@@ -403,6 +426,12 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
       color: IMD_COMPETITIVENESS_MAP_COLORS[label],
     }));
   }
+  if (mode === "etr") {
+    return ETR_BAND_ORDER.map((label) => ({
+      label,
+      color: ETR_MAP_COLORS[label],
+    }));
+  }
   return [];
 }
 
@@ -453,6 +482,9 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
     } else if (mode === "imd-competitiveness") {
       rating = demo.imdCompetitiveness?.rating;
       colorMap = IMD_COMPETITIVENESS_MAP_COLORS;
+    } else if (mode === "etr") {
+      rating = demo.etr?.rating;
+      colorMap = ETR_MAP_COLORS;
     } else {
       continue;
     }
@@ -477,7 +509,9 @@ export function getDemocracyIndexLabel(key: DemocracyIndexKey): string {
   if (key === "happiness") return "World Happiness Report";
   if (key === "gdi") return "Global Diplomacy Index";
   if (key === "wjp-rule-of-law") return "WJP Rule of Law Index";
-  return "IMD World Competitiveness Ranking";
+  if (key === "imd-competitiveness") return "IMD World Competitiveness Ranking";
+  if (key === "etr") return "Ecological Threat Index";
+  return "";
 }
 
 /** Pull the index row for a country from bundled facts. */
@@ -498,7 +532,9 @@ export function getDemocracyIndexFor(
   if (key === "happiness") return democracy.happiness;
   if (key === "gdi") return democracy.gdi;
   if (key === "wjp-rule-of-law") return democracy.wjpRuleOfLaw;
-  return democracy.imdCompetitiveness;
+  if (key === "imd-competitiveness") return democracy.imdCompetitiveness;
+  if (key === "etr") return democracy.etr;
+  return undefined;
 }
 
 /**
@@ -510,7 +546,7 @@ export function getDemocracyAxisDomain(key: DemocracyIndexKey): { min: number; m
   if (key === "v-dem" || key === "hdi" || key === "gender-gap" || key === "wjp-rule-of-law") return { min: 0, max: 1 };
   if (key === "economist" || key === "happiness") return { min: 0, max: 10 };
   if (key === "perception") return { min: -40, max: 40 };
-  if (key === "gpi") return { min: 1, max: 5 };
+  if (key === "gpi" || key === "etr") return { min: 1, max: 5 };
   if (key === "gdi") return { min: 0, max: 280 };
   // Freedom House, CPI, RSF — 0–100 scores.
   return { min: 0, max: 100 };
@@ -689,6 +725,16 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
       { label: "Very Low", min: 2.882, max: 5 },
     ];
   }
+  if (key === "etr") {
+    // IEP Ecological Threat Report 2025 Appendix A bands (higher = greater threat).
+    return [
+      { label: "Very Low", min: 1, max: 1.6 },
+      { label: "Low", min: 1.6, max: 2.2 },
+      { label: "Medium", min: 2.2, max: 3 },
+      { label: "High", min: 3, max: 3.8 },
+      { label: "Very High", min: 3.8, max: 5 },
+    ];
+  }
   if (key === "happiness") {
     return HAPPINESS_BAND_ORDER.map((label) => {
       if (label === "9.0–10") return { label, min: 9, max: 10 };
@@ -749,6 +795,7 @@ export function formatDemocracyAxisValue(
   if (key === "gdi") return `${idx.rating} · ${score} posts`;
   if (key === "wjp-rule-of-law") return `${idx.rating} · ${score.toFixed(2)}`;
   if (key === "imd-competitiveness") return `${idx.rating} · score ${score.toFixed(2)}`;
+  if (key === "etr") return `${idx.rating} · ${score.toFixed(3)}`;
   return `${idx.rating} · ${score}`;
 }
 
