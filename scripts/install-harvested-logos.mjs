@@ -17,12 +17,13 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "mv-sun-online",
-    src: "tmp/batch78-install/mv-sun-online.jpg",
+    id: "lv-leta",
+    dataset: "agency",
+    src: "tmp/batch79-install/lv-leta.jpg",
     explainer:
-      "Magenta Thaana 'ސަން' (Sun) in a white circle on a blue-to-red gradient — Sun Online (Maldives) brand mark.",
+      "Two-tone green circular mark beside bold black 'LETA' with subtitle 'nacionālā informācijas aģentūra' — Latvian national news agency wordmark.",
     licence:
-      "Sun Online brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "LETA brand mark from the agency's official Facebook page profile picture (letanews); trademark bundled for educational reference in Learn mode.",
   },
 ];
 
