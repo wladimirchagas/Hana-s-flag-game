@@ -17,28 +17,20 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "dm-the-chronicle",
-    src: "tmp/batch96-install/dm-the-chronicle.jpg",
+    id: "st-jornal-transparencia",
+    src: "tmp/batch97-install/st-jornal-transparencia.jpg",
     explainer:
-      "Blackletter gothic 'The Chronicle' wordmark on white — Dominica Chronicle masthead.",
+      "Green-blue script 'JT' beside green 'JORNAL TRANSPARÊNCIA' on a yellow swoosh, with São Tomé and Príncipe flag oval and coat of arms — Jornal Transparência masthead.",
     licence:
-      "The Chronicle masthead from the newspaper's official site brand assets (dominicachronicle.com/wp-content/uploads/2014/02/The_Chronicle.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Jornal Transparência masthead from the newspaper's official site brand assets (transparencia.st/logotipotransparencia.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "bi-le-renouveau",
-    src: "tmp/batch96-install/bi-le-renouveau.png",
+    id: "sm-tribuna-sammarinese",
+    src: "tmp/batch97-install/sm-tribuna-sammarinese.png",
     explainer:
-      "Green circular emblem beside yellow 'Le Renouveau' over red 'du Burundi' — Le Renouveau du Burundi masthead.",
+      "Red-and-grey gear with a red lightning bolt over red 'La Tribuna Sammarinese' — La Tribuna Sammarinese brand mark.",
     licence:
-      "Le Renouveau du Burundi masthead from the newspaper's official site custom-logo asset (lerenouveau.bi/wp-content/uploads/2025/05/21_AVRIL-removebg-preview.png); trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "tz-ipp-media",
-    src: "tmp/batch96-install/tz-ipp-media.png",
-    explainer:
-      "Black italic 'The' over bold navy 'Guardian', with small 'www.ippmedia.com' at top right — The Guardian (Tanzania) / IPP Media masthead.",
-    licence:
-      "The Guardian (Tanzania) masthead from the publisher's official site brand assets (guardian.co.tz/sites/default/files/theguardian.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "La Tribuna Sammarinese brand mark from the newspaper's official site logo asset (latribuna.sm/wp-content/uploads/2024/10/La-Tribuna-Sammarinese-logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 

@@ -21633,7 +21633,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Consulta per l'Informazione San Marino 2023"
       },
       "revenueModel": "Retail newspaper sales and business advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sm/tribuna-sammarinese.png",
+      "logoExplainer": "Red-and-grey gear with a red lightning bolt over red 'La Tribuna Sammarinese' — La Tribuna Sammarinese brand mark.",
+      "licenceNote": "La Tribuna Sammarinese brand mark from the newspaper's official site logo asset (latribuna.sm/wp-content/uploads/2024/10/La-Tribuna-Sammarinese-logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.libertas.sm",
         "https://en.wikipedia.org/wiki/San_Marino"
@@ -22237,7 +22240,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Jornal Transparência Editorial Review 2023"
       },
       "revenueModel": "Retail print sales and institutional public notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/st/jornal-transparencia.jpg",
+      "logoExplainer": "Green-blue script 'JT' beside green 'JORNAL TRANSPARÊNCIA' on a yellow swoosh, with São Tomé and Príncipe flag oval and coat of arms — Jornal Transparência masthead.",
+      "licenceNote": "Jornal Transparência masthead from the newspaper's official site brand assets (transparencia.st/logotipotransparencia.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://transparenciastep.com",
         "https://en.wikipedia.org/wiki/Media_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
