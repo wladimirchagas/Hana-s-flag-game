@@ -85,17 +85,12 @@
     "soft-power:check": "node scripts/check-soft-power-data.mjs",
     "flags:check:soft-power": "node scripts/check-soft-power-data.mjs",
     "dnr:check": "node scripts/check-dnr-trust.mjs",
-<<<<<<< HEAD
-"flags:check:dnr": "node scripts/check-dnr-trust.mjs",
-    "blocks:check": "node scripts/check-country-blocks.mjs",
-    "flags:check:blocks": "node scripts/check-country-blocks.mjs"
-},
-=======
     "flags:check:dnr": "node scripts/check-dnr-trust.mjs",
+    "blocks:check": "node scripts/check-country-blocks.mjs",
+    "flags:check:blocks": "node scripts/check-country-blocks.mjs",
     "index-colors:check": "node scripts/check-index-map-colors.mjs",
     "flags:check:index-colors": "node scripts/check-index-map-colors.mjs"
   },
->>>>>>> origin/main
   "dependencies": {
     "d3-geo": "^3.1.1",
     "firebase": "^12.13.0",
