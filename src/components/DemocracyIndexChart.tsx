@@ -25,6 +25,7 @@ import {
   democracyOlsTrend,
   getDemocracyIndexLabel,
 } from "../lib/democracyColors";
+import { normalizeForSearch } from "../lib/searchNormalize";
 import { GridImage } from "./GridImage";
 
 export type DemocracyIndexChartProps = {
@@ -121,30 +122,53 @@ function ChartFilterMenu({
 }: FilterMenuProps) {
   const open = openKind === kind;
   const ref = useRef<HTMLDivElement>(null);
+  const searchRef = useRef<HTMLInputElement>(null);
+  const [query, setQuery] = useState("");
   const count = selected.size;
   const active = count > 0;
 
   useEffect(() => {
-    if (!open) return;
+    if (!open) {
+      setQuery("");
+      return;
+    }
+    const focusTimer = window.setTimeout(() => searchRef.current?.focus(), 0);
     const onDown = (e: MouseEvent) => {
       if (ref.current && !ref.current.contains(e.target as Node)) onOpen(null);
     };
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onOpen(null);
+      if (e.key !== "Escape") return;
+      // Clear the search first; a second Escape closes the menu.
+      if (searchRef.current && searchRef.current.value) {
+        setQuery("");
+        return;
+      }
+      onOpen(null);
     };
     window.addEventListener("mousedown", onDown);
     window.addEventListener("keydown", onKey);
     return () => {
+      window.clearTimeout(focusTimer);
       window.removeEventListener("mousedown", onDown);
       window.removeEventListener("keydown", onKey);
     };
   }, [open, onOpen]);
 
+  const visibleOptions = useMemo(() => {
+    const q = normalizeForSearch(query.trim());
+    if (!q) return options;
+    return options.filter(
+      (opt) =>
+        normalizeForSearch(opt.label).includes(q) ||
+        (opt.group != null && normalizeForSearch(opt.group).includes(q)),
+    );
+  }, [options, query]);
+
   const grouped = useMemo(() => {
     type Opt = FilterOption;
     const groups: { title: string | null; items: Opt[] }[] = [];
     let current: (typeof groups)[number] | null = null;
-    for (const opt of options) {
+    for (const opt of visibleOptions) {
       const title = opt.group ?? null;
       if (!current || current.title !== title) {
         current = { title, items: [] };
@@ -153,10 +177,10 @@ function ChartFilterMenu({
       current.items.push(opt);
     }
     return groups;
-  }, [options]);
+  }, [visibleOptions]);
 
   return (
-    <div className="democracy-index-chart__filter" ref={ref}>
+    <div className={`democracy-index-chart__filter democracy-index-chart__filter--${kind}`} ref={ref}>
       <button
         type="button"
         className={
@@ -168,8 +192,13 @@ function ChartFilterMenu({
         aria-haspopup="dialog"
         onClick={() => onOpen(open ? null : kind)}
       >
-        {label}
-        {active ? ` · ${count}` : ""}
+        <span className="democracy-index-chart__filter-btn-label">
+          {label}
+          {active ? ` · ${count}` : ""}
+        </span>
+        <span className="democracy-index-chart__filter-btn-chev" aria-hidden="true">
+          {open ? "▴" : "▾"}
+        </span>
       </button>
       {open && (
         <div
@@ -189,37 +218,54 @@ function ChartFilterMenu({
               </button>
             )}
           </div>
+          <div className="democracy-index-chart__filter-search">
+            <input
+              ref={searchRef}
+              type="search"
+              className="democracy-index-chart__filter-search-input"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder={`Search ${label.toLowerCase()}…`}
+              aria-label={`Search ${label}`}
+              autoComplete="off"
+              spellCheck={false}
+            />
+          </div>
           <div className="democracy-index-chart__filter-list">
-            {grouped.map((g) => (
-              <div key={g.title ?? "_"} className="democracy-index-chart__filter-group">
-                {g.title && (
-                  <p className="democracy-index-chart__filter-group-title">{g.title}</p>
-                )}
-                {g.items.map((opt) => {
-                  const checked = selected.has(opt.id);
-                  return (
-                    <label
-                      key={opt.id}
-                      className={
-                        "democracy-index-chart__filter-option" +
-                        (opt.nested ? " democracy-index-chart__filter-option--nested" : "") +
-                        (opt.continentLevel
-                          ? " democracy-index-chart__filter-option--continent"
-                          : "") +
-                        (checked ? " democracy-index-chart__filter-option--on" : "")
-                      }
-                    >
-                      <input
-                        type="checkbox"
-                        checked={checked}
-                        onChange={() => onToggle(opt.id)}
-                      />
-                      <span>{opt.label}</span>
-                    </label>
-                  );
-                })}
-              </div>
-            ))}
+            {grouped.length === 0 ? (
+              <p className="democracy-index-chart__filter-empty">No matches</p>
+            ) : (
+              grouped.map((g) => (
+                <div key={g.title ?? "_"} className="democracy-index-chart__filter-group">
+                  {g.title && (
+                    <p className="democracy-index-chart__filter-group-title">{g.title}</p>
+                  )}
+                  {g.items.map((opt) => {
+                    const checked = selected.has(opt.id);
+                    return (
+                      <label
+                        key={opt.id}
+                        className={
+                          "democracy-index-chart__filter-option" +
+                          (opt.nested ? " democracy-index-chart__filter-option--nested" : "") +
+                          (opt.continentLevel
+                            ? " democracy-index-chart__filter-option--continent"
+                            : "") +
+                          (checked ? " democracy-index-chart__filter-option--on" : "")
+                        }
+                      >
+                        <input
+                          type="checkbox"
+                          checked={checked}
+                          onChange={() => onToggle(opt.id)}
+                        />
+                        <span>{opt.label}</span>
+                      </label>
+                    );
+                  })}
+                </div>
+              ))
+            )}
           </div>
         </div>
       )}
@@ -610,7 +656,7 @@ export function DemocracyIndexChart({
             <button
               key={`${pill.kind}:${pill.id}`}
               type="button"
-              className="democracy-index-chart__active-filter"
+              className={`democracy-index-chart__active-filter democracy-index-chart__active-filter--${pill.kind}`}
               onClick={() => removeFilterPill(pill.kind, pill.id)}
               aria-label={`Remove filter ${pill.label}`}
               title={`Remove ${pill.label}`}
