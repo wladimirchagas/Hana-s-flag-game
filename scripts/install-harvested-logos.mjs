@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "tj-farazh",
-    src: "tmp/batch89-install/tj-farazh.jpg",
+    id: "sd-al-intibaha",
+    src: "tmp/batch90-install/sd-al-intibaha.jpg",
     explainer:
-      "White Cyrillic 'Фарах' (Faraj) in a bold serif on a solid sky-blue field with a double white underline — Farazh/Faraj newspaper masthead from the outlet's Facebook brand mark.",
+      "Circular globe-grid emblem with blue Sudan map, red Arabic 'الانتباهة' over English 'Alintibaha', and curved slogan 'صوت الأغلبية الصامتة' — Al-Intibaha newspaper brand mark.",
     licence:
-      "Farazh (Faraj / Фарах) masthead from the newspaper's official Facebook page brand assets; trademark bundled for educational reference in Learn mode.",
+      "Al-Intibaha masthead from the newspaper's official Facebook page brand assets; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
