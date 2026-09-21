@@ -9938,7 +9938,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "AlterPresse Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ht/alterpresse.png",
+      "logoExplainer": "Green serif 'Alter' and 'resse' flanking a large italic blue gradient 'P' on black — AlterPresse masthead without anniversary overlays.",
+      "licenceNote": "AlterPresse masthead from the publisher's official site brand assets (alterpresse.org /img/Logo_alterpresse.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.alterpresse.org/",
         "https://www.alterpresse.org/"
