@@ -10,7 +10,8 @@ export type DemocracyIndexKey =
   | "economist"
   | "cpi"
   | "perception"
-  | "rsf-press";
+  | "rsf-press"
+  | "hdi";
 
 export type DemocracyMapMode = DemocracyIndexKey | null;
 
@@ -24,6 +25,7 @@ export const DEMOCRACY_INDEX_KEYS: readonly DemocracyIndexKey[] = [
   "cpi",
   "perception",
   "rsf-press",
+  "hdi",
 ] as const;
 
 export type DemocracyAxisBand = {
@@ -99,6 +101,22 @@ export const RSF_PRESS_MAP_COLORS: Record<string, string> = {
   "Very serious": "#b71c1c",
 };
 
+/** UNDP Human Development Index map colours follow the official hdicode bands
+ *  (Very High / High / Medium / Low). Higher development → greener. */
+export const HDI_MAP_COLORS: Record<string, string> = {
+  "Very High": "#1b5e20",
+  High: "#4caf50",
+  Medium: "#ff9800",
+  Low: "#b71c1c",
+};
+
+export const HDI_BAND_ORDER: readonly string[] = [
+  "Very High",
+  "High",
+  "Medium",
+  "Low",
+];
+
 /** Democracy Perception Index 2026 tiers (±5 / ±15 on Index Score). */
 export const PERCEPTION_MAP_COLORS: Record<string, string> = {
   "Very Positive": "#1b5e20",
@@ -123,6 +141,7 @@ export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
   if (mode === "cpi") return "Corruption Perceptions Index";
   if (mode === "perception") return "Democracy Perception Index";
   if (mode === "rsf-press") return "RSF Press Freedom";
+  if (mode === "hdi") return "Human Development Index";
   return "";
 }
 
@@ -171,6 +190,12 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
       { label: "Very serious", color: RSF_PRESS_MAP_COLORS["Very serious"] },
     ];
   }
+  if (mode === "hdi") {
+    return HDI_BAND_ORDER.map((label) => ({
+      label,
+      color: HDI_MAP_COLORS[label],
+    }));
+  }
   return [];
 }
 
@@ -197,9 +222,12 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
     } else if (mode === "perception") {
       rating = demo.perception?.rating;
       colorMap = PERCEPTION_MAP_COLORS;
-    } else {
+    } else if (mode === "rsf-press") {
       rating = demo.rsfPress?.rating;
       colorMap = RSF_PRESS_MAP_COLORS;
+    } else {
+      rating = demo.hdi?.rating;
+      colorMap = HDI_MAP_COLORS;
     }
     if (rating && colorMap[rating]) {
       overlay.set(code, colorMap[rating]);
@@ -215,7 +243,8 @@ export function getDemocracyIndexLabel(key: DemocracyIndexKey): string {
   if (key === "economist") return "The Economist Index";
   if (key === "cpi") return "Corruption Perceptions Index";
   if (key === "perception") return "Democracy Perception Index";
-  return "RSF Press Freedom Index";
+  if (key === "rsf-press") return "RSF Press Freedom Index";
+  return "Human Development Index";
 }
 
 /** Pull the index row for a country from bundled facts. */
@@ -229,7 +258,8 @@ export function getDemocracyIndexFor(
   if (key === "economist") return democracy.economist;
   if (key === "cpi") return democracy.cpi;
   if (key === "perception") return democracy.perception;
-  return democracy.rsfPress;
+  if (key === "rsf-press") return democracy.rsfPress;
+  return democracy.hdi;
 }
 
 /**
@@ -238,7 +268,7 @@ export function getDemocracyIndexFor(
  * the chart.
  */
 export function getDemocracyAxisDomain(key: DemocracyIndexKey): { min: number; max: number } {
-  if (key === "v-dem") return { min: 0, max: 1 };
+  if (key === "v-dem" || key === "hdi") return { min: 0, max: 1 };
   if (key === "economist") return { min: 0, max: 10 };
   if (key === "perception") return { min: -40, max: 40 };
   // Freedom House, CPI, RSF — 0–100 scores.
@@ -292,13 +322,21 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
       { label: "Very Positive", min: 15, max: 40 },
     ];
   }
-  // rsf-press
+  if (key === "rsf-press") {
+    return [
+      { label: "Very serious", min: 0, max: 40 },
+      { label: "Difficult", min: 40, max: 55 },
+      { label: "Problematic", min: 55, max: 70 },
+      { label: "Satisfactory", min: 70, max: 85 },
+      { label: "Good", min: 85, max: 100 },
+    ];
+  }
+  // hdi — UNDP cut-offs (Very High ≥0.800, High ≥0.700, Medium ≥0.550).
   return [
-    { label: "Very serious", min: 0, max: 40 },
-    { label: "Difficult", min: 40, max: 55 },
-    { label: "Problematic", min: 55, max: 70 },
-    { label: "Satisfactory", min: 70, max: 85 },
-    { label: "Good", min: 85, max: 100 },
+    { label: "Low", min: 0, max: 0.55 },
+    { label: "Medium", min: 0.55, max: 0.7 },
+    { label: "High", min: 0.7, max: 0.8 },
+    { label: "Very High", min: 0.8, max: 1 },
   ];
 }
 
@@ -317,6 +355,7 @@ export function formatDemocracyAxisValue(
   if (key === "v-dem") return `${idx.rating} · ${score.toFixed(2)}`;
   if (key === "economist") return `${idx.rating} · ${score.toFixed(2)}`;
   if (key === "rsf-press") return `${idx.rating} · ${score.toFixed(1)}`;
+  if (key === "hdi") return `${idx.rating} · ${score.toFixed(3)}`;
   return `${idx.rating} · ${score}`;
 }
 
