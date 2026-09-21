@@ -17,12 +17,20 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "ps-al-hayat-al-jadida",
-    src: "tmp/batch84-install/ps-al-hayat-al-jadida.png",
+    id: "sn-sud-quotidien",
+    src: "tmp/batch85-install/sn-sud-quotidien.jpg",
     explainer:
-      "Large red Arabic 'الحياة' wordmark with smaller grey 'الجديدة' and a red bar — Al-Hayat Al-Jadida masthead.",
+      "Bold red lowercase 'sud' with black cursive 'Quotidien' overlaid on the lower letters — Sud Quotidien masthead.",
     licence:
-      "Al-Hayat Al-Jadida masthead from the publisher's official site brand assets (alhayat-j.com/images/logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Sud Quotidien masthead from the publisher's official site brand assets (sudquotidien.sn), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "sy-al-baath",
+    src: "tmp/batch85-install/sy-al-baath.png",
+    explainer:
+      "Black Arabic 'البعث' wordmark with a red circular media mark holding green 'ميديا' — Al-Ba'ath Media brand mark.",
+    licence:
+      "Al-Ba'ath masthead from the publisher's official site brand assets (albaathmedia.sy), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
