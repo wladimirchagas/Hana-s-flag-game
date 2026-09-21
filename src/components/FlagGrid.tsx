@@ -156,6 +156,7 @@ type GroupMode =
   | "gender-gap"
   | "gpi"
   | "happiness"
+  | "soft-power"
   | "gdi"
   | "wjp-rule-of-law"
   | "imd-competitiveness"
@@ -186,6 +187,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   "gender-gap": "Global Gender Gap Index",
   gpi: "Global Peace Index",
   happiness: "World Happiness Report",
+  "soft-power": "Global Soft Power Index",
   gdi: "Global Diplomacy Index",
   "wjp-rule-of-law": "WJP Rule of Law Index",
   "imd-competitiveness": "IMD World Competitiveness Ranking",
@@ -258,6 +260,7 @@ const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
   "gender-gap",
   "gpi",
   "happiness",
+  "soft-power",
   "gdi",
   "wjp-rule-of-law",
   "imd-competitiveness",
@@ -408,6 +411,21 @@ const HAPPINESS_ORDER: Record<string, number> = {
   "2.0–2.9": 8,
   "1.0–1.9": 9,
   "0.0–0.9": 10,
+  "Not rated": 11,
+};
+
+/** Brand Finance Global Soft Power Index score bands — strongest first. */
+const SOFT_POWER_ORDER: Record<string, number> = {
+  "90–100": 1,
+  "80–89": 2,
+  "70–79": 3,
+  "60–69": 4,
+  "50–59": 5,
+  "40–49": 6,
+  "30–39": 7,
+  "20–29": 8,
+  "10–19": 9,
+  "0–9": 10,
   "Not rated": 11,
 };
 
@@ -972,6 +990,12 @@ export function FlagGrid({
         const rating = COUNTRY_FACTS[code]?.democracy?.happiness?.rating ?? "Not rated";
         push(rating, e);
       }
+    } else if (groupMode === "soft-power") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.softPower?.rating ?? "Not rated";
+        push(rating, e);
+      }
     } else if (groupMode === "gdi") {
       for (const e of sorted) {
         const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
@@ -1009,6 +1033,7 @@ export function FlagGrid({
       groupMode === "gender-gap" ||
       groupMode === "gpi" ||
       groupMode === "happiness" ||
+      groupMode === "soft-power" ||
       groupMode === "gdi" ||
       groupMode === "wjp-rule-of-law" ||
       groupMode === "imd-competitiveness" ||
@@ -1041,6 +1066,8 @@ export function FlagGrid({
               ? factsA?.gpi
               : groupMode === "happiness"
               ? factsA?.happiness
+              : groupMode === "soft-power"
+              ? factsA?.softPower
               : groupMode === "gdi"
               ? factsA?.gdi
               : groupMode === "wjp-rule-of-law"
@@ -1069,6 +1096,8 @@ export function FlagGrid({
               ? factsB?.gpi
               : groupMode === "happiness"
               ? factsB?.happiness
+              : groupMode === "soft-power"
+              ? factsB?.softPower
               : groupMode === "gdi"
               ? factsB?.gdi
               : groupMode === "wjp-rule-of-law"
@@ -1191,6 +1220,11 @@ export function FlagGrid({
       if (groupMode === "happiness") {
         const oa = HAPPINESS_ORDER[a] ?? 99;
         const ob = HAPPINESS_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "soft-power") {
+        const oa = SOFT_POWER_ORDER[a] ?? 99;
+        const ob = SOFT_POWER_ORDER[b] ?? 99;
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "gdi") {

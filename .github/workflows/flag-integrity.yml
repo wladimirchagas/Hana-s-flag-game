@@ -74,6 +74,9 @@ on:
       - "scripts/data/wjp-rule-of-law-2024.csv"
       - "scripts/data/wjp2025Data.mjs"
       - "scripts/check-imd-wcr.mjs"
+      - "scripts/check-soft-power-data.mjs"
+      - "scripts/data/soft-power-2026.csv"
+      - "scripts/data/softPower2026Data.mjs"
       - "scripts/data/imd-wcr-2025.csv"
       - "scripts/data/imdWcr2025Data.mjs"
       - "scripts/data/democracyData.mjs"
@@ -210,6 +213,9 @@ jobs:
 
       - name: Verify IEP Ecological Threat Index 2024 data matches the official extract
         run: node scripts/check-etr-data.mjs
+
+      - name: Verify Brand Finance Global Soft Power Index 2026 data matches the official extract
+        run: node scripts/check-soft-power-data.mjs
 
       - name: Verify every flags:check gate actually runs in CI
         run: node scripts/check-ci-coverage.mjs

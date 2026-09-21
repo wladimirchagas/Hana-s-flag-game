@@ -221,6 +221,19 @@ function formatHappinessIndex(idx?: {
   return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(3)} (${idx.year})`;
 }
 
+/** Brand Finance Global Soft Power Index — score out of 100. */
+function formatSoftPowerIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(1)} (${idx.year})`;
+}
+
 /** Lowy Global Diplomacy Index — total diplomatic posts abroad. */
 function formatGdiIndex(idx?: {
   year: number;
@@ -338,6 +351,9 @@ export function EntitySummary(props: EntitySummaryProps) {
 
       const whr = formatHappinessIndex(c.democracy.happiness);
       if (whr) rows.push({ label: "World Happiness Report", value: whr });
+
+      const soft = formatSoftPowerIndex(c.democracy.softPower);
+      if (soft) rows.push({ label: "Global Soft Power Index", value: soft });
 
       const gdi = formatGdiIndex(c.democracy.gdi);
       if (gdi) rows.push({ label: "Global Diplomacy Index", value: gdi });

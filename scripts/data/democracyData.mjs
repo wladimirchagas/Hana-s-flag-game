@@ -1,9 +1,9 @@
 // Authoritative democracy / governance / press-freedom / development / gender-gap /
-// peace / happiness / diplomacy / rule-of-law / competitiveness rankings and ratings for Freedom
+// peace / happiness / soft-power / diplomacy / rule-of-law / competitiveness rankings and ratings for Freedom
 // House, V-Dem, EIU Economist, Transparency International’s Corruption Perceptions
 // Index, the Nira Data / Alliance of Democracies Democracy Perception Index, RSF
 // World Press Freedom Index, the UNDP Human Development Index, the WEF Global Gender
-// Gap Index, the IEP Global Peace Index, the World Happiness Report, the Lowy
+// Gap Index, the IEP Global Peace Index, the World Happiness Report, Brand Finance’s Global Soft Power Index, the Lowy
 // Institute Global Diplomacy Index, the World Justice Project Rule of Law
 // Index, and the IMD World Competitiveness Ranking.
 // Covers UN member states and permanent observers. Sourced from official publications:
@@ -30,6 +30,11 @@
 //   (https://files.worldhappiness.report/WHR26_Data_Figure_2.1.xlsx)
 //   CSV extract: scripts/data/whr-happiness-2026.csv
 //   Year=2025 rows = Gallup World Poll 2023–2025 life-evaluation average (0–10).
+// - Brand Finance: Global Soft Power Index 2026
+//   Official PDF: https://static.brandirectory.com/reports/brand-finance-soft-power-index-2026-digital.pdf
+//   CSV extract: scripts/data/soft-power-2026.csv / scripts/data/softPower2026Data.mjs
+//   Score out of 100; all 193 UN member states. Rating bands = 10-point score bands
+//   for the map / Group-by (Brand Finance publishes rank + score only).
 // - Lowy Institute: Global Diplomacy Index 2024
 //   Official extract: scripts/data/gdi-2024-rankings.json / scripts/data/gdi2024Data.mjs
 //   (https://globaldiplomacyindex.lowyinstitute.org/data/2023/get_country_data.json)
@@ -54,6 +59,7 @@
  *   genderGap?: { year: number, rating: string, rank: number, rankChange?: number, score?: number },
  *   gpi?: { year: number, rating: string, rank: number, rankChange?: number, score?: number },
  *   happiness?: { year: number, rating: string, rank: number, rankChange?: number, score?: number },
+ *   softPower?: { year: number, rating: string, rank: number, rankChange?: number, score?: number },
  *   gdi?: { year: number, rating: string, rank: number, rankChange?: number, score?: number },
  *   wjpRuleOfLaw?: { year: number, rating: string, rank: number, rankChange?: number, score?: number },
  *   imdCompetitiveness?: { year: number, rating: string, rank: number, rankChange?: number, score?: number },
@@ -64,7 +70,8 @@ export const DEMOCRACY_DATA = {
   "AD": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":24,"rankChange":0,"score":93},
     "rsfPress": {"year":2026,"rating":"Problematic","rank":60,"rankChange":5,"score":63.91},
-    "hdi": {"year":2023,"rating":"Very High","rank":32,"rankChange":5,"score":0.913}
+    "hdi": {"year":2023,"rating":"Very High","rank":32,"rankChange":5,"score":0.913},
+    "softPower": {"year":2026,"rating":"30–39","rank":135,"rankChange":-21,"score":30.4}
   },
   "AE": {
     "freedomHouse": {"year":2024,"rating":"Not Free","rank":159,"rankChange":0,"score":18},
@@ -76,6 +83,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":91,"rankChange":-22,"score":0.702},
     "gpi": {"year":2026,"rating":"Medium","rank":73,"rankChange":0,"score":1.927},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":21,"rankChange":0,"score":6.821},
+    "softPower": {"year":2026,"rating":"50–59","rank":10,"rankChange":0,"score":59.4},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":37,"score":0.64,"rankChange":2},
     "imdCompetitiveness": {"year":2025,"rating":"90–100","rank":5,"score":96.09,"rankChange":2},
     "etr": {"year":2024,"rating":"Medium","rank":67,"score":2.414}
@@ -89,12 +97,14 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Low","rank":181,"rankChange":-1,"score":0.496},
     "gpi": {"year":2026,"rating":"Very Low","rank":157,"rankChange":0,"score":3.106},
     "happiness": {"year":2026,"rating":"1.0–1.9","rank":147,"rankChange":0,"score":1.446},
+    "softPower": {"year":2026,"rating":"20–29","rank":151,"score":28.3},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":142,"score":0.31,"rankChange":-1},
     "etr": {"year":2024,"rating":"Very High","rank":170,"score":4.228}
   },
   "AG": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":57,"rankChange":0,"score":83},
     "hdi": {"year":2023,"rating":"Very High","rank":53,"rankChange":-2,"score":0.851},
+    "softPower": {"year":2026,"rating":"20–29","rank":176,"rankChange":-2,"score":24.8},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":38,"score":0.64,"rankChange":-1}
   },
   "AL": {
@@ -107,8 +117,9 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":25,"rankChange":11,"score":0.775},
     "gpi": {"year":2026,"rating":"High","rank":36,"rankChange":7,"score":1.725},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":86,"rankChange":3,"score":5.662},
+    "softPower": {"year":2026,"rating":"30–39","rank":102,"rankChange":-2,"score":33.7},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":87,"score":0.49,"rankChange":3},
-    "etr": {"year":2024,"rating":"Low","rank":50,"score":2.100}
+    "etr": {"year":2024,"rating":"Low","rank":50,"score":2.1}
   },
   "AM": {
     "freedomHouse": {"year":2024,"rating":"Partly Free","rank":110,"rankChange":0,"score":54},
@@ -120,6 +131,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":58,"rankChange":1,"score":0.731},
     "gpi": {"year":2026,"rating":"High","rank":51,"rankChange":21,"score":1.825},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":89,"rankChange":-2,"score":5.584},
+    "softPower": {"year":2026,"rating":"30–39","rank":90,"rankChange":3,"score":34.9},
     "etr": {"year":2024,"rating":"Low","rank":48,"score":2.076}
   },
   "AO": {
@@ -132,6 +144,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Medium","rank":148,"rankChange":-2,"score":0.616},
     "genderGap": {"year":2026,"rating":"70–79","rank":87,"rankChange":30,"score":0.705},
     "gpi": {"year":2026,"rating":"Medium","rank":78,"rankChange":11,"score":1.955},
+    "softPower": {"year":2026,"rating":"30–39","rank":116,"rankChange":12,"score":32},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":113,"score":0.42,"rankChange":3},
     "etr": {"year":2024,"rating":"High","rank":142,"score":3.727}
   },
@@ -146,6 +159,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":45,"rankChange":-8,"score":0.751},
     "gpi": {"year":2026,"rating":"Medium","rank":72,"rankChange":-20,"score":1.922},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":44,"rankChange":-2,"score":6.43},
+    "softPower": {"year":2026,"rating":"40–49","rank":37,"rankChange":5,"score":45.2},
     "gdi": {"year":2024,"rating":"150–199","rank":16,"score":150},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":65,"score":0.54,"rankChange":-1},
     "imdCompetitiveness": {"year":2025,"rating":"40–49","rank":62,"score":42.84,"rankChange":4},
@@ -162,6 +176,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":40,"rankChange":16,"score":0.753},
     "gpi": {"year":2026,"rating":"Very High","rank":6,"rankChange":-1,"score":1.421},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":19,"rankChange":-2,"score":6.845},
+    "softPower": {"year":2026,"rating":"50–59","rank":24,"rankChange":0,"score":53.3},
     "gdi": {"year":2024,"rating":"100–149","rank":36,"score":104},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.70–0.79","rank":12,"score":0.79,"rankChange":1},
     "imdCompetitiveness": {"year":2025,"rating":"70–79","rank":26,"score":73.55,"rankChange":0},
@@ -178,6 +193,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"80–89","rank":8,"rankChange":5,"score":0.819},
     "gpi": {"year":2026,"rating":"High","rank":20,"rankChange":4,"score":1.602},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":15,"rankChange":-4,"score":6.916},
+    "softPower": {"year":2026,"rating":"50–59","rank":16,"rankChange":-2,"score":57.5},
     "gdi": {"year":2024,"rating":"100–149","rank":26,"score":124},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.80–1.00","rank":11,"score":0.8,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"70–79","rank":18,"score":78.36,"rankChange":-5},
@@ -193,6 +209,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":98,"rankChange":2,"score":0.697},
     "gpi": {"year":2026,"rating":"Medium","rank":110,"rankChange":-8,"score":2.142},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":102,"rankChange":4,"score":4.993},
+    "softPower": {"year":2026,"rating":"30–39","rank":85,"rankChange":-4,"score":35.4},
     "etr": {"year":2024,"rating":"Medium","rank":76,"score":2.568}
   },
   "BA": {
@@ -205,6 +222,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":62,"rankChange":11,"score":0.723},
     "gpi": {"year":2026,"rating":"High","rank":48,"rankChange":9,"score":1.81},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":47,"rankChange":9,"score":6.381},
+    "softPower": {"year":2026,"rating":"30–39","rank":109,"rankChange":3,"score":32.9},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":70,"score":0.52,"rankChange":2},
     "etr": {"year":2024,"rating":"Low","rank":42,"score":1.954}
   },
@@ -214,6 +232,7 @@ export const DEMOCRACY_DATA = {
     "cpi": {"year":2025,"rating":"60–69","rank":24,"rankChange":-1,"score":68},
     "hdi": {"year":2023,"rating":"Very High","rank":69,"rankChange":0,"score":0.811},
     "genderGap": {"year":2026,"rating":"70–79","rank":13,"rankChange":2,"score":0.794},
+    "softPower": {"year":2026,"rating":"20–29","rank":145,"rankChange":-10,"score":29.7},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":33,"score":0.66,"rankChange":2}
   },
   "BD": {
@@ -227,6 +246,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":79,"rankChange":-55,"score":0.712},
     "gpi": {"year":2026,"rating":"Medium","rank":117,"rankChange":3,"score":2.226},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":127,"rankChange":7,"score":4.319},
+    "softPower": {"year":2026,"rating":"30–39","rank":101,"rankChange":3,"score":33.7},
     "gdi": {"year":2024,"rating":"50–99","rank":46,"score":80},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":125,"score":0.39,"rankChange":3},
     "etr": {"year":2024,"rating":"High","rank":114,"score":3.203}
@@ -242,6 +262,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":33,"rankChange":-6,"score":0.762},
     "gpi": {"year":2026,"rating":"High","rank":21,"rankChange":-5,"score":1.608},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":14,"rankChange":0,"score":6.926},
+    "softPower": {"year":2026,"rating":"50–59","rank":22,"rankChange":-3,"score":54.5},
     "gdi": {"year":2024,"rating":"100–149","rank":32,"score":113},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.70–0.79","rank":17,"score":0.78,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"70–79","rank":24,"score":74.57,"rankChange":-6},
@@ -257,6 +278,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":115,"rankChange":5,"score":0.676},
     "gpi": {"year":2026,"rating":"Low","rank":149,"rankChange":3,"score":2.882},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":123,"rankChange":-3,"score":4.455},
+    "softPower": {"year":2026,"rating":"20–29","rank":143,"rankChange":23,"score":29.7},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":101,"score":0.45,"rankChange":-2},
     "etr": {"year":2024,"rating":"Very High","rank":157,"score":4.066}
   },
@@ -270,6 +292,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":80,"rankChange":3,"score":0.71},
     "gpi": {"year":2026,"rating":"High","rank":26,"rankChange":-4,"score":1.628},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":84,"rankChange":1,"score":5.703},
+    "softPower": {"year":2026,"rating":"30–39","rank":68,"rankChange":0,"score":38},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":61,"score":0.55,"rankChange":-1},
     "imdCompetitiveness": {"year":2025,"rating":"40–49","rank":57,"score":47.96,"rankChange":1},
     "etr": {"year":2024,"rating":"Low","rank":27,"score":1.728}
@@ -284,6 +307,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":105,"rankChange":-1,"score":0.689},
     "gpi": {"year":2026,"rating":"Medium","rank":108,"rankChange":0,"score":2.131},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":55,"rankChange":4,"score":6.254},
+    "softPower": {"year":2026,"rating":"40–49","rank":49,"rankChange":2,"score":40.8},
     "imdCompetitiveness": {"year":2025,"rating":"70–79","rank":22,"score":76.56,"rankChange":-1},
     "etr": {"year":2024,"rating":"Medium","rank":103,"score":2.985}
   },
@@ -296,6 +320,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Low","rank":187,"rankChange":0,"score":0.439},
     "genderGap": {"year":2026,"rating":"70–79","rank":26,"rankChange":18,"score":0.771},
     "gpi": {"year":2026,"rating":"Low","rank":129,"rankChange":6,"score":2.417},
+    "softPower": {"year":2026,"rating":"20–29","rank":163,"rankChange":10,"score":26.7},
     "etr": {"year":2024,"rating":"Very High","rank":171,"score":4.271}
   },
   "BJ": {
@@ -308,6 +333,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":112,"rankChange":1,"score":0.681},
     "gpi": {"year":2026,"rating":"Medium","rank":122,"rankChange":-1,"score":2.293},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":124,"rankChange":-3,"score":4.393},
+    "softPower": {"year":2026,"rating":"20–29","rank":162,"rankChange":1,"score":26.7},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":94,"score":0.47,"rankChange":0},
     "etr": {"year":2024,"rating":"Very High","rank":150,"score":3.894}
   },
@@ -317,6 +343,7 @@ export const DEMOCRACY_DATA = {
     "rsfPress": {"year":2026,"rating":"Difficult","rank":96,"rankChange":1,"score":52.58},
     "hdi": {"year":2023,"rating":"Very High","rank":60,"rankChange":3,"score":0.837},
     "genderGap": {"year":2026,"rating":"60–69","rank":111,"rankChange":-4,"score":0.681},
+    "softPower": {"year":2026,"rating":"30–39","rank":120,"rankChange":-2,"score":31.8},
     "gdi": {"year":2024,"rating":"Below 50","rank":60,"score":42},
     "etr": {"year":2024,"rating":"Low","rank":54,"score":2.127}
   },
@@ -331,6 +358,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":36,"rankChange":12,"score":0.758},
     "gpi": {"year":2026,"rating":"Medium","rank":92,"rankChange":-2,"score":2.054},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":78,"rankChange":-4,"score":5.835},
+    "softPower": {"year":2026,"rating":"30–39","rank":103,"rankChange":0,"score":33.6},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":131,"score":0.37,"rankChange":1},
     "etr": {"year":2024,"rating":"High","rank":110,"score":3.126}
   },
@@ -345,6 +373,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":72,"rankChange":0,"score":0.715},
     "gpi": {"year":2026,"rating":"Medium","rank":124,"rankChange":1,"score":2.333},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":32,"rankChange":4,"score":6.634},
+    "softPower": {"year":2026,"rating":"40–49","rank":29,"rankChange":2,"score":49.2},
     "gdi": {"year":2024,"rating":"200–249","rank":10,"score":205},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":78,"score":0.5,"rankChange":3},
     "imdCompetitiveness": {"year":2025,"rating":"40–49","rank":58,"score":46.41,"rankChange":4},
@@ -354,6 +383,7 @@ export const DEMOCRACY_DATA = {
     "freedomHouse": {"year":2024,"rating":"Free","rank":36,"rankChange":0,"score":90},
     "cpi": {"year":2025,"rating":"60–69","rank":29,"rankChange":-1,"score":64},
     "hdi": {"year":2023,"rating":"Very High","rank":66,"rankChange":0,"score":0.82},
+    "softPower": {"year":2026,"rating":"30–39","rank":86,"rankChange":-12,"score":35.4},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":51,"score":0.58,"rankChange":0},
     "etr": {"year":2024,"rating":"Low","rank":46,"score":2.022}
   },
@@ -366,6 +396,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Medium","rank":125,"rankChange":1,"score":0.698},
     "genderGap": {"year":2026,"rating":"60–69","rank":121,"rankChange":-2,"score":0.663},
     "gpi": {"year":2026,"rating":"High","rank":16,"rankChange":2,"score":1.546},
+    "softPower": {"year":2026,"rating":"30–39","rank":119,"rankChange":-2,"score":31.8},
     "gdi": {"year":2024,"rating":"Below 50","rank":66,"score":10},
     "etr": {"year":2024,"rating":"Medium","rank":84,"score":2.669}
   },
@@ -379,6 +410,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":63,"rankChange":-3,"score":0.722},
     "gpi": {"year":2026,"rating":"High","rank":50,"rankChange":-4,"score":1.823},
     "happiness": {"year":2026,"rating":"3.0–3.9","rank":143,"rankChange":-1,"score":3.464},
+    "softPower": {"year":2026,"rating":"20–29","rank":147,"rankChange":-8,"score":28.8},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":50,"score":0.6,"rankChange":2},
     "imdCompetitiveness": {"year":2025,"rating":"40–49","rank":59,"score":46.12,"rankChange":-4},
     "etr": {"year":2024,"rating":"Medium","rank":80,"score":2.602}
@@ -393,6 +425,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Very High","rank":65,"rankChange":-1,"score":0.824},
     "genderGap": {"year":2026,"rating":"70–79","rank":52,"rankChange":2,"score":0.74},
     "gpi": {"year":2026,"rating":"Medium","rank":115,"rankChange":1,"score":2.216},
+    "softPower": {"year":2026,"rating":"30–39","rank":81,"rankChange":-1,"score":36},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":105,"score":0.44,"rankChange":1},
     "etr": {"year":2024,"rating":"Low","rank":37,"score":1.907}
   },
@@ -403,6 +436,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"High","rank":115,"rankChange":3,"score":0.721},
     "genderGap": {"year":2026,"rating":"70–79","rank":92,"rankChange":-3,"score":0.701},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":27,"rankChange":-2,"score":6.711},
+    "softPower": {"year":2026,"rating":"20–29","rank":168,"rankChange":0,"score":26.1},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":82,"score":0.5,"rankChange":1},
     "etr": {"year":2024,"rating":"Medium","rank":88,"score":2.694}
   },
@@ -417,6 +451,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":24,"rankChange":8,"score":0.777},
     "gpi": {"year":2026,"rating":"High","rank":14,"rankChange":1,"score":1.525},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":25,"rankChange":-7,"score":6.741},
+    "softPower": {"year":2026,"rating":"60–69","rank":8,"rankChange":-1,"score":63.2},
     "gdi": {"year":2024,"rating":"150–199","rank":15,"score":157},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.70–0.79","rank":13,"score":0.79,"rankChange":-1},
     "imdCompetitiveness": {"year":2025,"rating":"80–89","rank":11,"score":88.73,"rankChange":8},
@@ -433,6 +468,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"50–59","rank":142,"rankChange":1,"score":0.595},
     "gpi": {"year":2026,"rating":"Very Low","rank":161,"rankChange":0,"score":3.189},
     "happiness": {"year":2026,"rating":"3.0–3.9","rank":140,"rankChange":1,"score":3.761},
+    "softPower": {"year":2026,"rating":"30–39","rank":113,"rankChange":11,"score":32.3},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":136,"score":0.34,"rankChange":1},
     "etr": {"year":2024,"rating":"Very High","rank":168,"score":4.211}
   },
@@ -444,6 +480,7 @@ export const DEMOCRACY_DATA = {
     "rsfPress": {"year":2026,"rating":"Problematic","rank":81,"rankChange":-9,"score":56.73},
     "hdi": {"year":2023,"rating":"Low","rank":191,"score":0.414},
     "gpi": {"year":2026,"rating":"Very Low","rank":150,"rankChange":1,"score":2.906},
+    "softPower": {"year":2026,"rating":"30–39","rank":112,"rankChange":4,"score":32.4},
     "etr": {"year":2024,"rating":"Very High","rank":146,"score":3.848}
   },
   "CG": {
@@ -455,6 +492,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Medium","rank":138,"rankChange":0,"score":0.649},
     "gpi": {"year":2026,"rating":"Medium","rank":120,"rankChange":-15,"score":2.256},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":122,"rankChange":-22,"score":4.456},
+    "softPower": {"year":2026,"rating":"30–39","rank":139,"rankChange":-1,"score":30.1},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":123,"score":0.4,"rankChange":-1},
     "etr": {"year":2024,"rating":"High","rank":137,"score":3.662}
   },
@@ -469,6 +507,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":27,"rankChange":-10,"score":0.771},
     "gpi": {"year":2026,"rating":"Very High","rank":3,"rankChange":-1,"score":1.363},
     "happiness": {"year":2026,"rating":"7.0–7.9","rank":10,"rankChange":3,"score":7.018},
+    "softPower": {"year":2026,"rating":"60–69","rank":7,"rankChange":1,"score":63.2},
     "gdi": {"year":2024,"rating":"100–149","rank":19,"score":141},
     "imdCompetitiveness": {"year":2025,"rating":"90–100","rank":1,"score":100,"rankChange":1},
     "etr": {"year":2024,"rating":"Very Low","rank":6,"score":1.439}
@@ -484,8 +523,9 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":122,"rankChange":5,"score":0.66},
     "gpi": {"year":2026,"rating":"Medium","rank":93,"rankChange":-9,"score":2.061},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":98,"rankChange":0,"score":5.148},
+    "softPower": {"year":2026,"rating":"30–39","rank":104,"rankChange":-10,"score":33.3},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":106,"score":0.44,"rankChange":-1},
-    "etr": {"year":2024,"rating":"High","rank":140,"score":3.690}
+    "etr": {"year":2024,"rating":"High","rank":140,"score":3.69}
   },
   "CL": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":18,"rankChange":0,"score":95},
@@ -498,6 +538,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":29,"rankChange":-7,"score":0.769},
     "gpi": {"year":2026,"rating":"High","rank":52,"rankChange":8,"score":1.826},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":50,"rankChange":-5,"score":6.302},
+    "softPower": {"year":2026,"rating":"30–39","rank":56,"rankChange":-2,"score":39.4},
     "gdi": {"year":2024,"rating":"100–149","rank":27,"score":121},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":35,"score":0.66,"rankChange":1},
     "imdCompetitiveness": {"year":2025,"rating":"60–69","rank":42,"score":62.52,"rankChange":2},
@@ -514,6 +555,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":90,"rankChange":3,"score":0.703},
     "gpi": {"year":2026,"rating":"Low","rank":137,"rankChange":5,"score":2.634},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":100,"rankChange":4,"score":5.083},
+    "softPower": {"year":2026,"rating":"30–39","rank":108,"rankChange":2,"score":32.9},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":134,"score":0.36,"rankChange":0},
     "etr": {"year":2024,"rating":"High","rank":135,"score":3.631}
   },
@@ -528,6 +570,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":96,"rankChange":7,"score":0.699},
     "gpi": {"year":2026,"rating":"Medium","rank":118,"rankChange":-11,"score":2.231},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":65,"rankChange":3,"score":6.074},
+    "softPower": {"year":2026,"rating":"70–79","rank":2,"rankChange":0,"score":73.5},
     "gdi": {"year":2024,"rating":"250+","rank":1,"score":274},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":92,"score":0.48,"rankChange":4},
     "imdCompetitiveness": {"year":2025,"rating":"80–89","rank":16,"score":82.13,"rankChange":-2},
@@ -544,6 +587,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":34,"rankChange":7,"score":0.761},
     "gpi": {"year":2026,"rating":"Low","rank":141,"rankChange":-4,"score":2.735},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":68,"rankChange":-7,"score":6.04},
+    "softPower": {"year":2026,"rating":"30–39","rank":66,"rankChange":-5,"score":38.3},
     "gdi": {"year":2024,"rating":"100–149","rank":30,"score":117},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":95,"score":0.47,"rankChange":-3},
     "imdCompetitiveness": {"year":2025,"rating":"40–49","rank":54,"score":49.66,"rankChange":3},
@@ -560,6 +604,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":21,"rankChange":-5,"score":0.779},
     "gpi": {"year":2026,"rating":"High","rank":62,"rankChange":-14,"score":1.86},
     "happiness": {"year":2026,"rating":"7.0–7.9","rank":4,"rankChange":2,"score":7.439},
+    "softPower": {"year":2026,"rating":"30–39","rank":73,"rankChange":-2,"score":37.1},
     "gdi": {"year":2024,"rating":"50–99","rank":51,"score":52},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":28,"score":0.68,"rankChange":1},
     "etr": {"year":2024,"rating":"Low","rank":51,"score":2.105}
@@ -572,6 +617,7 @@ export const DEMOCRACY_DATA = {
     "rsfPress": {"year":2026,"rating":"Very serious","rank":160,"rankChange":5,"score":29.22},
     "hdi": {"year":2023,"rating":"High","rank":97,"rankChange":-6,"score":0.762},
     "gpi": {"year":2026,"rating":"Medium","rank":109,"rankChange":-11,"score":2.139},
+    "softPower": {"year":2026,"rating":"30–39","rank":83,"rankChange":-10,"score":35.8},
     "etr": {"year":2024,"rating":"Medium","rank":72,"score":2.493}
   },
   "CV": {
@@ -581,7 +627,8 @@ export const DEMOCRACY_DATA = {
     "cpi": {"year":2025,"rating":"60–69","rank":35,"rankChange":0,"score":62},
     "rsfPress": {"year":2026,"rating":"Satisfactory","rank":40,"rankChange":-10,"score":71.98},
     "hdi": {"year":2023,"rating":"Medium","rank":135,"rankChange":0,"score":0.668},
-    "genderGap": {"year":2026,"rating":"70–79","rank":69,"rankChange":-39,"score":0.721}
+    "genderGap": {"year":2026,"rating":"70–79","rank":69,"rankChange":-39,"score":0.721},
+    "softPower": {"year":2026,"rating":"20–29","rank":157,"rankChange":-2,"score":27.6}
   },
   "CY": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":33,"rankChange":0,"score":91},
@@ -593,6 +640,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":78,"rankChange":4,"score":0.712},
     "gpi": {"year":2026,"rating":"Medium","rank":80,"rankChange":-9,"score":1.967},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":62,"rankChange":5,"score":6.126},
+    "softPower": {"year":2026,"rating":"30–39","rank":60,"rankChange":3,"score":39},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":30,"score":0.67,"rankChange":1},
     "imdCompetitiveness": {"year":2025,"rating":"60–69","rank":44,"score":61.8,"rankChange":-1},
     "etr": {"year":2024,"rating":"Low","rank":43,"score":1.969}
@@ -607,6 +655,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":77,"rankChange":25,"score":0.712},
     "gpi": {"year":2026,"rating":"High","rank":13,"rankChange":-1,"score":1.517},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":20,"rankChange":0,"score":6.821},
+    "softPower": {"year":2026,"rating":"40–49","rank":44,"rankChange":0,"score":43.6},
     "gdi": {"year":2024,"rating":"100–149","rank":29,"score":120},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.70–0.79","rank":20,"score":0.74,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"70–79","rank":25,"score":73.66,"rankChange":4},
@@ -623,6 +672,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"80–89","rank":9,"rankChange":0,"score":0.817},
     "gpi": {"year":2026,"rating":"High","rank":28,"rankChange":-5,"score":1.657},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":17,"rankChange":5,"score":6.882},
+    "softPower": {"year":2026,"rating":"60–69","rank":5,"rankChange":0,"score":67.7},
     "gdi": {"year":2024,"rating":"200–249","rank":8,"score":217},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.80–1.00","rank":6,"score":0.83,"rankChange":-1},
     "imdCompetitiveness": {"year":2025,"rating":"70–79","rank":19,"score":78.24,"rankChange":5},
@@ -636,6 +686,7 @@ export const DEMOCRACY_DATA = {
     "rsfPress": {"year":2026,"rating":"Very serious","rank":167,"rankChange":1,"score":25.04},
     "hdi": {"year":2023,"rating":"Low","rank":175,"rankChange":1,"score":0.513},
     "gpi": {"year":2026,"rating":"Medium","rank":105,"rankChange":6,"score":2.098},
+    "softPower": {"year":2026,"rating":"20–29","rank":180,"score":24.1},
     "etr": {"year":2024,"rating":"High","rank":129,"score":3.485}
   },
   "DK": {
@@ -649,6 +700,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"80–89","rank":11,"rankChange":3,"score":0.81},
     "gpi": {"year":2026,"rating":"High","rank":11,"rankChange":-2,"score":1.504},
     "happiness": {"year":2026,"rating":"7.0–7.9","rank":3,"rankChange":-1,"score":7.539},
+    "softPower": {"year":2026,"rating":"50–59","rank":18,"rankChange":0,"score":55.6},
     "gdi": {"year":2024,"rating":"50–99","rank":43,"score":90},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.80–1.00","rank":1,"score":0.9,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"90–100","rank":4,"score":97.51,"rankChange":-1},
@@ -658,6 +710,7 @@ export const DEMOCRACY_DATA = {
     "freedomHouse": {"year":2024,"rating":"Free","rank":28,"rankChange":0,"score":92},
     "cpi": {"year":2025,"rating":"60–69","rank":37,"rankChange":-1,"score":60},
     "hdi": {"year":2023,"rating":"High","rank":98,"rankChange":0,"score":0.761},
+    "softPower": {"year":2026,"rating":"30–39","rank":136,"rankChange":4,"score":30.3},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":54,"score":0.58,"rankChange":0}
   },
   "DO": {
@@ -671,6 +724,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":67,"rankChange":-6,"score":0.721},
     "gpi": {"year":2026,"rating":"Medium","rank":89,"rankChange":-10,"score":2.038},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":64,"rankChange":12,"score":6.093},
+    "softPower": {"year":2026,"rating":"30–39","rank":80,"rankChange":3,"score":36.3},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":76,"score":0.5,"rankChange":11},
     "etr": {"year":2024,"rating":"Medium","rank":98,"score":2.817}
   },
@@ -685,6 +739,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":141,"rankChange":0,"score":0.618},
     "gpi": {"year":2026,"rating":"Medium","rank":91,"rankChange":-5,"score":2.053},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":83,"rankChange":1,"score":5.714},
+    "softPower": {"year":2026,"rating":"30–39","rank":74,"rankChange":4,"score":36.8},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":88,"score":0.49,"rankChange":-3},
     "etr": {"year":2024,"rating":"Medium","rank":86,"score":2.677}
   },
@@ -699,6 +754,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":16,"rankChange":9,"score":0.79},
     "gpi": {"year":2026,"rating":"Low","rank":135,"rankChange":-3,"score":2.539},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":59,"rankChange":3,"score":6.144},
+    "softPower": {"year":2026,"rating":"30–39","rank":93,"rankChange":-4,"score":34.4},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":99,"score":0.46,"rankChange":-1},
     "etr": {"year":2024,"rating":"Medium","rank":101,"score":2.896}
   },
@@ -712,6 +768,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":19,"rankChange":-8,"score":0.782},
     "gpi": {"year":2026,"rating":"High","rank":25,"rankChange":-5,"score":1.623},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":46,"rankChange":-7,"score":6.41},
+    "softPower": {"year":2026,"rating":"30–39","rank":67,"rankChange":-2,"score":38.1},
     "gdi": {"year":2024,"rating":"Below 50","rank":54,"score":46},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.80–1.00","rank":10,"score":0.82,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"60–69","rank":33,"score":69.65,"rankChange":0},
@@ -728,6 +785,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":138,"rankChange":1,"score":0.632},
     "gpi": {"year":2026,"rating":"Medium","rank":113,"rankChange":2,"score":2.186},
     "happiness": {"year":2026,"rating":"3.0–3.9","rank":139,"rankChange":-4,"score":3.862},
+    "softPower": {"year":2026,"rating":"40–49","rank":40,"rankChange":-2,"score":44.8},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":135,"score":0.35,"rankChange":1},
     "etr": {"year":2024,"rating":"Medium","rank":83,"score":2.649}
   },
@@ -739,7 +797,8 @@ export const DEMOCRACY_DATA = {
     "rsfPress": {"year":2026,"rating":"Very serious","rank":180,"rankChange":0,"score":10.24},
     "hdi": {"year":2023,"rating":"Low","rank":178,"rankChange":0,"score":0.503},
     "gpi": {"year":2026,"rating":"Low","rank":128,"rankChange":3,"score":2.412},
-    "etr": {"year":2024,"rating":"Very High","rank":149,"score":3.880}
+    "softPower": {"year":2026,"rating":"20–29","rank":179,"score":24.1},
+    "etr": {"year":2024,"rating":"Very High","rank":149,"score":3.88}
   },
   "ES": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":36,"rankChange":0,"score":90},
@@ -752,6 +811,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":12,"rankChange":0,"score":0.796},
     "gpi": {"year":2026,"rating":"High","rank":27,"rankChange":4,"score":1.654},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":41,"rankChange":-3,"score":6.54},
+    "softPower": {"year":2026,"rating":"50–59","rank":12,"rankChange":1,"score":58.9},
     "gdi": {"year":2024,"rating":"150–199","rank":12,"score":190},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.70–0.79","rank":25,"score":0.71,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"60–69","rank":39,"score":65.8,"rankChange":1},
@@ -767,6 +827,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Low","rank":180,"rankChange":1,"score":0.497},
     "gpi": {"year":2026,"rating":"Low","rank":138,"rankChange":1,"score":2.648},
     "happiness": {"year":2026,"rating":"3.0–3.9","rank":135,"rankChange":-3,"score":3.985},
+    "softPower": {"year":2026,"rating":"30–39","rank":110,"rankChange":1,"score":32.8},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":132,"score":0.36,"rankChange":-1},
     "etr": {"year":2024,"rating":"Very High","rank":167,"score":4.194}
   },
@@ -781,10 +842,11 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"80–89","rank":2,"rankChange":0,"score":0.872},
     "gpi": {"year":2026,"rating":"High","rank":9,"rankChange":1,"score":1.478},
     "happiness": {"year":2026,"rating":"7.0–7.9","rank":1,"rankChange":0,"score":7.764},
+    "softPower": {"year":2026,"rating":"50–59","rank":23,"rankChange":0,"score":53.5},
     "gdi": {"year":2024,"rating":"50–99","rank":43,"score":90},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.80–1.00","rank":3,"score":0.87,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"80–89","rank":14,"score":83.83,"rankChange":1},
-    "etr": {"year":2024,"rating":"Very Low","rank":7,"score":1.450}
+    "etr": {"year":2024,"rating":"Very Low","rank":7,"score":1.45}
   },
   "FJ": {
     "freedomHouse": {"year":2024,"rating":"Partly Free","rank":82,"rankChange":0,"score":69},
@@ -794,11 +856,13 @@ export const DEMOCRACY_DATA = {
     "rsfPress": {"year":2026,"rating":"Satisfactory","rank":24,"rankChange":16,"score":76.76},
     "hdi": {"year":2023,"rating":"High","rank":111,"rankChange":3,"score":0.731},
     "genderGap": {"year":2026,"rating":"60–69","rank":130,"rankChange":-4,"score":0.646},
+    "softPower": {"year":2026,"rating":"30–39","rank":133,"rankChange":-1,"score":30.7},
     "etr": {"year":2024,"rating":"Medium","rank":68,"score":2.449}
   },
   "FM": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":28,"rankChange":0,"score":92},
-    "hdi": {"year":2023,"rating":"Medium","rank":149,"rankChange":-2,"score":0.615}
+    "hdi": {"year":2023,"rating":"Medium","rank":149,"rankChange":-2,"score":0.615},
+    "softPower": {"year":2026,"rating":"20–29","rank":188,"score":22.3}
   },
   "FR": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":40,"rankChange":0,"score":89},
@@ -811,6 +875,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":22,"rankChange":13,"score":0.779},
     "gpi": {"year":2026,"rating":"Medium","rank":99,"rankChange":3,"score":2.083},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":35,"rankChange":-2,"score":6.586},
+    "softPower": {"year":2026,"rating":"60–69","rank":6,"rankChange":0,"score":65.8},
     "gdi": {"year":2024,"rating":"200–249","rank":5,"score":249},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.70–0.79","rank":22,"score":0.72,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"60–69","rank":32,"score":69.93,"rankChange":-1},
@@ -826,6 +891,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":68,"rankChange":23,"score":0.721},
     "gpi": {"year":2026,"rating":"Medium","rank":100,"rankChange":17,"score":2.086},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":96,"rankChange":1,"score":5.167},
+    "softPower": {"year":2026,"rating":"20–29","rank":169,"rankChange":-5,"score":25.9},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":122,"score":0.4,"rankChange":1},
     "etr": {"year":2024,"rating":"High","rank":116,"score":3.221}
   },
@@ -840,6 +906,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"80–89","rank":5,"rankChange":-1,"score":0.842},
     "gpi": {"year":2026,"rating":"High","rank":39,"rankChange":-7,"score":1.73},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":29,"rankChange":-6,"score":6.694},
+    "softPower": {"year":2026,"rating":"60–69","rank":4,"rankChange":-1,"score":69.2},
     "gdi": {"year":2024,"rating":"200–249","rank":7,"score":225},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.70–0.79","rank":14,"score":0.78,"rankChange":1},
     "imdCompetitiveness": {"year":2025,"rating":"70–79","rank":29,"score":71.95,"rankChange":-1},
@@ -849,6 +916,7 @@ export const DEMOCRACY_DATA = {
     "freedomHouse": {"year":2024,"rating":"Free","rank":40,"rankChange":0,"score":89},
     "cpi": {"year":2025,"rating":"50–59","rank":46,"rankChange":0,"score":56},
     "hdi": {"year":2023,"rating":"High","rank":80,"rankChange":0,"score":0.791},
+    "softPower": {"year":2026,"rating":"20–29","rank":171,"rankChange":-11,"score":25.6},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":49,"score":0.6,"rankChange":0}
   },
   "GE": {
@@ -862,6 +930,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":60,"rankChange":3,"score":0.727},
     "gpi": {"year":2026,"rating":"Medium","rank":94,"rankChange":1,"score":2.066},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":91,"rankChange":0,"score":5.517},
+    "softPower": {"year":2026,"rating":"30–39","rank":61,"rankChange":-2,"score":39},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":52,"score":0.58,"rankChange":-2},
     "etr": {"year":2024,"rating":"Medium","rank":58,"score":2.271}
   },
@@ -876,6 +945,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":56,"rankChange":32,"score":0.732},
     "gpi": {"year":2026,"rating":"Medium","rank":76,"rankChange":-2,"score":1.943},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":115,"rankChange":10,"score":4.554},
+    "softPower": {"year":2026,"rating":"30–39","rank":95,"rankChange":-5,"score":34.1},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":63,"score":0.54,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"40–49","rank":61,"score":44.25,"rankChange":4},
     "etr": {"year":2024,"rating":"High","rank":138,"score":3.677}
@@ -890,6 +960,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":123,"rankChange":-9,"score":0.66},
     "gpi": {"year":2026,"rating":"High","rank":56,"rankChange":5,"score":1.837},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":128,"rankChange":-11,"score":4.306},
+    "softPower": {"year":2026,"rating":"20–29","rank":152,"rankChange":4,"score":28.3},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":89,"score":0.49,"rankChange":-1},
     "etr": {"year":2024,"rating":"Very High","rank":154,"score":3.985}
   },
@@ -902,6 +973,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Low","rank":179,"rankChange":0,"score":0.5},
     "gpi": {"year":2026,"rating":"Medium","rank":116,"rankChange":2,"score":2.22},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":113,"rankChange":-11,"score":4.609},
+    "softPower": {"year":2026,"rating":"20–29","rank":144,"rankChange":1,"score":29.7},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":117,"score":0.41,"rankChange":3},
     "etr": {"year":2024,"rating":"Very High","rank":148,"score":3.865}
   },
@@ -913,6 +985,7 @@ export const DEMOCRACY_DATA = {
     "rsfPress": {"year":2026,"rating":"Difficult","rank":94,"rankChange":24,"score":52.79},
     "hdi": {"year":2023,"rating":"Medium","rank":133,"rankChange":-1,"score":0.674},
     "gpi": {"year":2026,"rating":"High","rank":38,"rankChange":20,"score":1.729},
+    "softPower": {"year":2026,"rating":"20–29","rank":149,"rankChange":12,"score":28.8},
     "etr": {"year":2024,"rating":"High","rank":132,"score":3.553}
   },
   "GR": {
@@ -926,6 +999,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":75,"rankChange":2,"score":0.714},
     "gpi": {"year":2026,"rating":"High","rank":53,"rankChange":2,"score":1.828},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":85,"rankChange":-4,"score":5.697},
+    "softPower": {"year":2026,"rating":"40–49","rank":33,"rankChange":1,"score":46.7},
     "gdi": {"year":2024,"rating":"100–149","rank":22,"score":134},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":48,"score":0.6,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"50–59","rank":50,"score":55.33,"rankChange":-3},
@@ -942,6 +1016,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":50,"rankChange":31,"score":0.74},
     "gpi": {"year":2026,"rating":"Medium","rank":88,"rankChange":-6,"score":2.025},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":42,"rankChange":2,"score":6.533},
+    "softPower": {"year":2026,"rating":"30–39","rank":126,"rankChange":-4,"score":31.1},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":110,"score":0.44,"rankChange":-2},
     "etr": {"year":2024,"rating":"Medium","rank":102,"score":2.965}
   },
@@ -953,6 +1028,7 @@ export const DEMOCRACY_DATA = {
     "rsfPress": {"year":2026,"rating":"Difficult","rank":100,"rankChange":10,"score":51.99},
     "hdi": {"year":2023,"rating":"Low","rank":174,"rankChange":1,"score":0.514},
     "gpi": {"year":2026,"rating":"Medium","rank":85,"rankChange":7,"score":2.012},
+    "softPower": {"year":2026,"rating":"20–29","rank":167,"rankChange":-5,"score":26.1},
     "etr": {"year":2024,"rating":"Very High","rank":152,"score":3.912}
   },
   "GY": {
@@ -964,6 +1040,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"High","rank":89,"rankChange":6,"score":0.776},
     "genderGap": {"year":2026,"rating":"70–79","rank":35,"rankChange":-4,"score":0.759},
     "gpi": {"year":2026,"rating":"Medium","rank":103,"rankChange":-12,"score":2.093},
+    "softPower": {"year":2026,"rating":"20–29","rank":160,"rankChange":-3,"score":27.1},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":80,"score":0.5,"rankChange":-2},
     "etr": {"year":2024,"rating":"Medium","rank":65,"score":2.371}
   },
@@ -978,6 +1055,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":51,"rankChange":16,"score":0.74},
     "gpi": {"year":2026,"rating":"Medium","rank":96,"rankChange":13,"score":2.075},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":63,"rankChange":0,"score":6.096},
+    "softPower": {"year":2026,"rating":"30–39","rank":131,"rankChange":0,"score":30.8},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":116,"score":0.41,"rankChange":1},
     "etr": {"year":2024,"rating":"High","rank":107,"score":3.104}
   },
@@ -991,6 +1069,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":48,"rankChange":16,"score":0.744},
     "gpi": {"year":2026,"rating":"High","rank":23,"rankChange":2,"score":1.619},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":70,"rankChange":2,"score":6.009},
+    "softPower": {"year":2026,"rating":"40–49","rank":46,"rankChange":2,"score":41.6},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":46,"score":0.61,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"50–59","rank":53,"score":51.19,"rankChange":-2},
     "etr": {"year":2024,"rating":"Very Low","rank":15,"score":1.574}
@@ -1003,6 +1082,7 @@ export const DEMOCRACY_DATA = {
     "rsfPress": {"year":2026,"rating":"Difficult","rank":107,"rankChange":4,"score":50.32},
     "hdi": {"year":2023,"rating":"Medium","rank":166,"rankChange":0,"score":0.554},
     "gpi": {"year":2026,"rating":"Low","rank":142,"rankChange":-1,"score":2.755},
+    "softPower": {"year":2026,"rating":"20–29","rank":170,"rankChange":0,"score":25.9},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":140,"score":0.32,"rankChange":0},
     "etr": {"year":2024,"rating":"Very High","rank":156,"score":4.021}
   },
@@ -1017,6 +1097,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":85,"rankChange":20,"score":0.707},
     "gpi": {"year":2026,"rating":"High","rank":15,"rankChange":-1,"score":1.538},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":74,"rankChange":-5,"score":5.937},
+    "softPower": {"year":2026,"rating":"40–49","rank":48,"rankChange":-1,"score":41.3},
     "gdi": {"year":2024,"rating":"100–149","rank":20,"score":140},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":79,"score":0.5,"rankChange":-5},
     "imdCompetitiveness": {"year":2025,"rating":"50–59","rank":48,"score":56.71,"rankChange":6},
@@ -1033,6 +1114,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":106,"rankChange":-9,"score":0.687},
     "gpi": {"year":2026,"rating":"Medium","rank":69,"rankChange":-3,"score":1.918},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":87,"rankChange":-4,"score":5.617},
+    "softPower": {"year":2026,"rating":"40–49","rank":45,"rankChange":0,"score":42},
     "gdi": {"year":2024,"rating":"100–149","rank":23,"score":130},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":69,"score":0.52,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"60–69","rank":40,"score":64.32,"rankChange":-13},
@@ -1049,6 +1131,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"80–89","rank":10,"rankChange":0,"score":0.814},
     "gpi": {"year":2026,"rating":"Very High","rank":5,"rankChange":-1,"score":1.371},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":13,"rankChange":2,"score":6.928},
+    "softPower": {"year":2026,"rating":"40–49","rank":28,"rankChange":0,"score":49.6},
     "gdi": {"year":2024,"rating":"50–99","rank":38,"score":98},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.80–1.00","rank":8,"score":0.82,"rankChange":1},
     "imdCompetitiveness": {"year":2025,"rating":"90–100","rank":7,"score":91.31,"rankChange":-3},
@@ -1065,6 +1148,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":71,"rankChange":5,"score":0.717},
     "gpi": {"year":2026,"rating":"Very Low","rank":159,"rankChange":1,"score":3.124},
     "happiness": {"year":2026,"rating":"7.0–7.9","rank":8,"rankChange":0,"score":7.187},
+    "softPower": {"year":2026,"rating":"40–49","rank":39,"rankChange":-6,"score":44.8},
     "gdi": {"year":2024,"rating":"100–149","rank":34,"score":107},
     "etr": {"year":2024,"rating":"Medium","rank":63,"score":2.349}
   },
@@ -1079,6 +1163,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":131,"rankChange":0,"score":0.645},
     "gpi": {"year":2026,"rating":"Low","rank":127,"rankChange":-3,"score":2.409},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":116,"rankChange":2,"score":4.536},
+    "softPower": {"year":2026,"rating":"40–49","rank":32,"rankChange":-2,"score":48},
     "gdi": {"year":2024,"rating":"150–199","rank":11,"score":194},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":86,"score":0.49,"rankChange":-6},
     "imdCompetitiveness": {"year":2025,"rating":"60–69","rank":41,"score":64.19,"rankChange":-2},
@@ -1094,6 +1179,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Medium","rank":126,"rankChange":0,"score":0.695},
     "gpi": {"year":2026,"rating":"Low","rank":140,"rankChange":0,"score":2.662},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":95,"rankChange":6,"score":5.212},
+    "softPower": {"year":2026,"rating":"30–39","rank":98,"rankChange":0,"score":33.9},
     "etr": {"year":2024,"rating":"High","rank":128,"score":3.463}
   },
   "IR": {
@@ -1106,6 +1192,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"50–59","rank":144,"rankChange":1,"score":0.585},
     "gpi": {"year":2026,"rating":"Low","rank":144,"rankChange":-6,"score":2.759},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":97,"rankChange":2,"score":5.151},
+    "softPower": {"year":2026,"rating":"30–39","rank":58,"rankChange":4,"score":39.3},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":128,"score":0.38,"rankChange":1},
     "etr": {"year":2024,"rating":"Medium","rank":77,"score":2.579}
   },
@@ -1119,6 +1206,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"90–100","rank":1,"rankChange":0,"score":0.93},
     "gpi": {"year":2026,"rating":"Very High","rank":1,"rankChange":0,"score":1.161},
     "happiness": {"year":2026,"rating":"7.0–7.9","rank":2,"rankChange":1,"score":7.54},
+    "softPower": {"year":2026,"rating":"40–49","rank":34,"rankChange":1,"score":45.9},
     "gdi": {"year":2024,"rating":"Below 50","rank":64,"score":26},
     "imdCompetitiveness": {"year":2025,"rating":"80–89","rank":15,"score":83.49,"rankChange":2},
     "etr": {"year":2024,"rating":"Low","rank":38,"score":1.917}
@@ -1134,6 +1222,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":83,"rankChange":2,"score":0.708},
     "gpi": {"year":2026,"rating":"High","rank":35,"rankChange":0,"score":1.712},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":38,"rankChange":2,"score":6.574},
+    "softPower": {"year":2026,"rating":"60–69","rank":9,"rankChange":0,"score":61.6},
     "gdi": {"year":2024,"rating":"200–249","rank":9,"score":206},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":34,"score":0.66,"rankChange":-2},
     "imdCompetitiveness": {"year":2025,"rating":"60–69","rank":43,"score":62.5,"rankChange":-1},
@@ -1150,6 +1239,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":37,"rankChange":1,"score":0.757},
     "gpi": {"year":2026,"rating":"Medium","rank":70,"rankChange":-1,"score":1.919},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":49,"rankChange":24,"score":6.305},
+    "softPower": {"year":2026,"rating":"30–39","rank":87,"rankChange":-1,"score":35.1},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":57,"score":0.57,"rankChange":-2},
     "etr": {"year":2024,"rating":"Medium","rank":95,"score":2.788}
   },
@@ -1164,6 +1254,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":127,"rankChange":-5,"score":0.649},
     "gpi": {"year":2026,"rating":"Medium","rank":68,"rankChange":9,"score":1.913},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":119,"rankChange":9,"score":4.478},
+    "softPower": {"year":2026,"rating":"30–39","rank":62,"rankChange":-4,"score":38.9},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":62,"score":0.55,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"50–59","rank":47,"score":57.79,"rankChange":1},
     "etr": {"year":2024,"rating":"Medium","rank":99,"score":2.822}
@@ -1179,6 +1270,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":117,"rankChange":1,"score":0.67},
     "gpi": {"year":2026,"rating":"High","rank":10,"rankChange":3,"score":1.489},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":61,"rankChange":-6,"score":6.13},
+    "softPower": {"year":2026,"rating":"70–79","rank":3,"rankChange":1,"score":70.6},
     "gdi": {"year":2024,"rating":"250+","rank":4,"score":251},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.70–0.79","rank":15,"score":0.78,"rankChange":-1},
     "imdCompetitiveness": {"year":2025,"rating":"60–69","rank":35,"score":68.74,"rankChange":3},
@@ -1195,6 +1287,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":65,"rankChange":33,"score":0.721},
     "gpi": {"year":2026,"rating":"Low","rank":132,"rankChange":1,"score":2.447},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":110,"rankChange":5,"score":4.674},
+    "softPower": {"year":2026,"rating":"30–39","rank":88,"rankChange":4,"score":35},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":102,"score":0.45,"rankChange":1},
     "imdCompetitiveness": {"year":2025,"rating":"40–49","rank":56,"score":48.29},
     "etr": {"year":2024,"rating":"High","rank":136,"score":3.648}
@@ -1210,6 +1303,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":88,"rankChange":7,"score":0.704},
     "gpi": {"year":2026,"rating":"High","rank":61,"rankChange":8,"score":1.853},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":66,"rankChange":9,"score":6.049},
+    "softPower": {"year":2026,"rating":"20–29","rank":142,"rankChange":4,"score":29.8},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":104,"score":0.45,"rankChange":-2},
     "etr": {"year":2024,"rating":"Medium","rank":91,"score":2.762}
   },
@@ -1223,13 +1317,15 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":113,"rankChange":-7,"score":0.68},
     "gpi": {"year":2026,"rating":"Medium","rank":96,"rankChange":-8,"score":2.075},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":121,"rankChange":3,"score":4.462},
+    "softPower": {"year":2026,"rating":"30–39","rank":115,"rankChange":-2,"score":32.1},
     "gdi": {"year":2024,"rating":"Below 50","rank":58,"score":43},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":141,"score":0.31,"rankChange":1},
     "etr": {"year":2024,"rating":"High","rank":120,"score":3.262}
   },
   "KI": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":40,"rankChange":0,"score":89},
-    "hdi": {"year":2023,"rating":"Medium","rank":140,"rankChange":0,"score":0.644}
+    "hdi": {"year":2023,"rating":"Medium","rank":140,"rankChange":0,"score":0.644},
+    "softPower": {"year":2026,"rating":"10–19","rank":193,"score":19.7}
   },
   "KM": {
     "freedomHouse": {"year":2024,"rating":"Partly Free","rank":126,"rankChange":0,"score":42},
@@ -1240,11 +1336,13 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Medium","rank":152,"rankChange":-1,"score":0.603},
     "genderGap": {"year":2026,"rating":"60–69","rank":103,"rankChange":12,"score":0.689},
     "happiness": {"year":2026,"rating":"3.0–3.9","rank":136,"rankChange":3,"score":3.925},
+    "softPower": {"year":2026,"rating":"20–29","rank":173,"rankChange":-6,"score":25.2},
     "etr": {"year":2024,"rating":"High","rank":122,"score":3.296}
   },
   "KN": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":40,"rankChange":0,"score":89},
     "hdi": {"year":2023,"rating":"Very High","rank":58,"rankChange":2,"score":0.84},
+    "softPower": {"year":2026,"rating":"20–29","rank":189,"score":21.5},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":40,"score":0.63,"rankChange":-2}
   },
   "KP": {
@@ -1254,6 +1352,7 @@ export const DEMOCRACY_DATA = {
     "cpi": {"year":2025,"rating":"10–19","rank":172,"rankChange":-2,"score":15},
     "rsfPress": {"year":2026,"rating":"Very serious","rank":179,"rankChange":0,"score":12.67},
     "gpi": {"year":2026,"rating":"Low","rank":147,"rankChange":0,"score":2.845},
+    "softPower": {"year":2026,"rating":"30–39","rank":63,"rankChange":12,"score":38.9},
     "gdi": {"year":2024,"rating":"Below 50","rank":58,"score":43},
     "etr": {"year":2024,"rating":"Medium","rank":71,"score":2.481}
   },
@@ -1268,6 +1367,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":101,"rankChange":0,"score":0.693},
     "gpi": {"year":2026,"rating":"High","rank":57,"rankChange":-6,"score":1.839},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":67,"rankChange":-9,"score":6.04},
+    "softPower": {"year":2026,"rating":"50–59","rank":11,"rankChange":1,"score":59.2},
     "gdi": {"year":2024,"rating":"150–199","rank":13,"score":187},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.70–0.79","rank":19,"score":0.74,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"70–79","rank":27,"score":73.39,"rankChange":-7},
@@ -1284,6 +1384,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":133,"rankChange":-5,"score":0.641},
     "gpi": {"year":2026,"rating":"High","rank":49,"rankChange":-13,"score":1.813},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":40,"rankChange":-10,"score":6.543},
+    "softPower": {"year":2026,"rating":"40–49","rank":41,"rankChange":-1,"score":44.8},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":53,"score":0.58,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"60–69","rank":36,"score":68.69,"rankChange":1},
     "etr": {"year":2024,"rating":"Medium","rank":78,"score":2.581}
@@ -1299,6 +1400,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":95,"rankChange":-3,"score":0.7},
     "gpi": {"year":2026,"rating":"High","rank":44,"rankChange":5,"score":1.771},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":33,"rankChange":10,"score":6.633},
+    "softPower": {"year":2026,"rating":"30–39","rank":82,"rankChange":5,"score":35.9},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":66,"score":0.54,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"60–69","rank":34,"score":68.99,"rankChange":1},
     "etr": {"year":2024,"rating":"Medium","rank":64,"score":2.364}
@@ -1313,6 +1415,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":89,"rankChange":7,"score":0.703},
     "gpi": {"year":2026,"rating":"High","rank":58,"rankChange":0,"score":1.846},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":92,"rankChange":1,"score":5.515},
+    "softPower": {"year":2026,"rating":"20–29","rank":148,"rankChange":-5,"score":28.8},
     "gdi": {"year":2024,"rating":"Below 50","rank":61,"score":40},
     "etr": {"year":2024,"rating":"High","rank":112,"score":3.158}
   },
@@ -1327,6 +1430,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":128,"rankChange":8,"score":0.648},
     "gpi": {"year":2026,"rating":"Low","rank":131,"rankChange":3,"score":2.435},
     "happiness": {"year":2026,"rating":"3.0–3.9","rank":141,"rankChange":4,"score":3.723},
+    "softPower": {"year":2026,"rating":"30–39","rank":89,"rankChange":2,"score":35},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":107,"score":0.44,"rankChange":2},
     "etr": {"year":2024,"rating":"Low","rank":55,"score":2.184}
   },
@@ -1334,12 +1438,14 @@ export const DEMOCRACY_DATA = {
     "freedomHouse": {"year":2024,"rating":"Free","rank":33,"rankChange":0,"score":91},
     "cpi": {"year":2025,"rating":"50–59","rank":39,"rankChange":-1,"score":59},
     "hdi": {"year":2023,"rating":"High","rank":103,"rankChange":-1,"score":0.748},
+    "softPower": {"year":2026,"rating":"20–29","rank":178,"score":24.5},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":43,"score":0.62,"rankChange":0}
   },
   "LI": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":36,"rankChange":0,"score":90},
     "rsfPress": {"year":2026,"rating":"Satisfactory","rank":13,"rankChange":-1,"score":82.62},
-    "hdi": {"year":2023,"rating":"Very High","rank":17,"rankChange":-2,"score":0.938}
+    "hdi": {"year":2023,"rating":"Very High","rank":17,"rankChange":-2,"score":0.938},
+    "softPower": {"year":2026,"rating":"30–39","rank":91,"rankChange":-6,"score":34.6}
   },
   "LK": {
     "freedomHouse": {"year":2024,"rating":"Partly Free","rank":104,"rankChange":0,"score":58},
@@ -1352,6 +1458,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":129,"rankChange":1,"score":0.646},
     "gpi": {"year":2026,"rating":"Medium","rank":67,"rankChange":14,"score":1.91},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":134,"rankChange":-1,"score":4.013},
+    "softPower": {"year":2026,"rating":"30–39","rank":100,"rankChange":-3,"score":33.8},
     "gdi": {"year":2024,"rating":"50–99","rank":49,"score":60},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":74,"score":0.51,"rankChange":2},
     "etr": {"year":2024,"rating":"Medium","rank":94,"score":2.783}
@@ -1366,6 +1473,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":43,"rankChange":-3,"score":0.751},
     "gpi": {"year":2026,"rating":"Medium","rank":87,"rankChange":17,"score":2.024},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":130,"rankChange":-1,"score":4.28},
+    "softPower": {"year":2026,"rating":"30–39","rank":134,"rankChange":2,"score":30.4},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":108,"score":0.44,"rankChange":2},
     "etr": {"year":2024,"rating":"Very High","rank":164,"score":4.129}
   },
@@ -1379,6 +1487,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":100,"rankChange":-1,"score":0.693},
     "gpi": {"year":2026,"rating":"Medium","rank":86,"rankChange":27,"score":2.016},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":126,"rankChange":12,"score":4.375},
+    "softPower": {"year":2026,"rating":"20–29","rank":185,"score":23.4},
     "etr": {"year":2024,"rating":"High","rank":117,"score":3.223}
   },
   "LT": {
@@ -1392,6 +1501,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":14,"rankChange":5,"score":0.791},
     "gpi": {"year":2026,"rating":"High","rank":24,"rankChange":3,"score":1.62},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":28,"rankChange":-12,"score":6.704},
+    "softPower": {"year":2026,"rating":"30–39","rank":79,"rankChange":-9,"score":36.4},
     "gdi": {"year":2024,"rating":"50–99","rank":48,"score":62},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.70–0.79","rank":18,"score":0.77,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"70–79","rank":21,"score":77.68,"rankChange":9},
@@ -1406,6 +1516,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Very High","rank":25,"rankChange":-3,"score":0.922},
     "genderGap": {"year":2026,"rating":"70–79","rank":42,"rankChange":8,"score":0.752},
     "happiness": {"year":2026,"rating":"7.0–7.9","rank":9,"rankChange":0,"score":7.063},
+    "softPower": {"year":2026,"rating":"40–49","rank":30,"rankChange":-1,"score":49.1},
     "gdi": {"year":2024,"rating":"Below 50","rank":54,"score":46},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.80–1.00","rank":7,"score":0.83,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"70–79","rank":20,"score":78.17,"rankChange":3},
@@ -1421,6 +1532,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":17,"rankChange":4,"score":0.788},
     "gpi": {"year":2026,"rating":"High","rank":19,"rankChange":0,"score":1.589},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":48,"rankChange":3,"score":6.365},
+    "softPower": {"year":2026,"rating":"30–39","rank":70,"rankChange":6,"score":37.4},
     "gdi": {"year":2024,"rating":"Below 50","rank":54,"score":46},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.70–0.79","rank":21,"score":0.73,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"60–69","rank":38,"score":67.03,"rankChange":7},
@@ -1436,6 +1548,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"High","rank":115,"rankChange":-9,"score":0.721},
     "gpi": {"year":2026,"rating":"Low","rank":125,"rankChange":3,"score":2.361},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":81,"rankChange":-2,"score":5.731},
+    "softPower": {"year":2026,"rating":"30–39","rank":127,"rankChange":6,"score":31.1},
     "etr": {"year":2024,"rating":"Medium","rank":75,"score":2.559}
   },
   "MA": {
@@ -1449,11 +1562,13 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":139,"rankChange":-2,"score":0.632},
     "gpi": {"year":2026,"rating":"High","rank":65,"rankChange":3,"score":1.887},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":112,"rankChange":0,"score":4.646},
+    "softPower": {"year":2026,"rating":"40–49","rank":50,"rankChange":0,"score":40.6},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":91,"score":0.48,"rankChange":2},
     "etr": {"year":2024,"rating":"High","rank":123,"score":3.308}
   },
   "MC": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":59,"rankChange":0,"score":82}
+    "freedomHouse": {"year":2024,"rating":"Free","rank":59,"rankChange":0,"score":82},
+    "softPower": {"year":2026,"rating":"40–49","rank":36,"rankChange":1,"score":45.5}
   },
   "MD": {
     "freedomHouse": {"year":2024,"rating":"Partly Free","rank":100,"rankChange":0,"score":60},
@@ -1466,6 +1581,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":15,"rankChange":-8,"score":0.791},
     "gpi": {"year":2026,"rating":"High","rank":55,"rankChange":1,"score":1.836},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":77,"rankChange":3,"score":5.851},
+    "softPower": {"year":2026,"rating":"30–39","rank":128,"rankChange":-2,"score":31},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":68,"score":0.53,"rankChange":-3},
     "etr": {"year":2024,"rating":"Medium","rank":82,"score":2.629}
   },
@@ -1479,6 +1595,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":74,"rankChange":10,"score":0.715},
     "gpi": {"year":2026,"rating":"High","rank":30,"rankChange":-2,"score":1.672},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":60,"rankChange":11,"score":6.139},
+    "softPower": {"year":2026,"rating":"30–39","rank":111,"rankChange":-4,"score":32.6},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":55,"score":0.57,"rankChange":2},
     "etr": {"year":2024,"rating":"Very Low","rank":14,"score":1.559}
   },
@@ -1492,12 +1609,14 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":81,"rankChange":-23,"score":0.709},
     "gpi": {"year":2026,"rating":"High","rank":59,"rankChange":4,"score":1.849},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":132,"rankChange":-2,"score":4.174},
+    "softPower": {"year":2026,"rating":"30–39","rank":107,"rankChange":-1,"score":33},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":112,"score":0.43,"rankChange":1},
     "etr": {"year":2024,"rating":"Very High","rank":159,"score":4.085}
   },
   "MH": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":24,"rankChange":0,"score":93},
-    "hdi": {"year":2023,"rating":"High","rank":108,"rankChange":2,"score":0.733}
+    "hdi": {"year":2023,"rating":"High","rank":108,"rankChange":2,"score":0.733},
+    "softPower": {"year":2026,"rating":"20–29","rank":181,"score":24}
   },
   "MK": {
     "freedomHouse": {"year":2024,"rating":"Partly Free","rank":88,"rankChange":0,"score":67},
@@ -1509,6 +1628,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":82,"rankChange":8,"score":0.709},
     "gpi": {"year":2026,"rating":"High","rank":46,"rankChange":3,"score":1.792},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":82,"rankChange":4,"score":5.719},
+    "softPower": {"year":2026,"rating":"30–39","rank":130,"rankChange":-11,"score":30.9},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":64,"score":0.54,"rankChange":4},
     "etr": {"year":2024,"rating":"Low","rank":44,"score":2.008}
   },
@@ -1522,6 +1642,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":140,"rankChange":0,"score":0.619},
     "gpi": {"year":2026,"rating":"Very Low","rank":154,"rankChange":0,"score":2.996},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":114,"rankChange":9,"score":4.588},
+    "softPower": {"year":2026,"rating":"30–39","rank":123,"rankChange":7,"score":31.6},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":126,"score":0.39,"rankChange":-1},
     "etr": {"year":2024,"rating":"Very High","rank":165,"score":4.143}
   },
@@ -1534,6 +1655,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Medium","rank":150,"rankChange":-1,"score":0.609},
     "gpi": {"year":2026,"rating":"Very Low","rank":151,"rankChange":2,"score":2.911},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":129,"rankChange":-3,"score":4.287},
+    "softPower": {"year":2026,"rating":"20–29","rank":154,"rankChange":-2,"score":27.8},
     "gdi": {"year":2024,"rating":"Below 50","rank":54,"score":46},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":138,"score":0.34,"rankChange":1},
     "etr": {"year":2024,"rating":"High","rank":125,"score":3.346}
@@ -1548,6 +1670,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":70,"rankChange":-5,"score":0.719},
     "gpi": {"year":2026,"rating":"High","rank":34,"rankChange":4,"score":1.692},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":75,"rankChange":2,"score":5.936},
+    "softPower": {"year":2026,"rating":"30–39","rank":105,"rankChange":3,"score":33.2},
     "gdi": {"year":2024,"rating":"50–99","rank":52,"score":50},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":67,"score":0.53,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"40–49","rank":65,"score":40.91,"rankChange":-4},
@@ -1562,6 +1685,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Medium","rank":163,"rankChange":0,"score":0.563},
     "gpi": {"year":2026,"rating":"Medium","rank":112,"rankChange":2,"score":2.184},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":120,"rankChange":-6,"score":4.473},
+    "softPower": {"year":2026,"rating":"20–29","rank":158,"rankChange":-8,"score":27.3},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":133,"score":0.36,"rankChange":0},
     "etr": {"year":2024,"rating":"High","rank":139,"score":3.688}
   },
@@ -1574,6 +1698,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Very High","rank":24,"rankChange":2,"score":0.924},
     "genderGap": {"year":2026,"rating":"70–79","rank":73,"rankChange":-5,"score":0.715},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":43,"rankChange":5,"score":6.436},
+    "softPower": {"year":2026,"rating":"30–39","rank":69,"rankChange":-3,"score":37.4},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":31,"score":0.67,"rankChange":-1}
   },
   "MU": {
@@ -1586,6 +1711,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":102,"rankChange":9,"score":0.691},
     "gpi": {"year":2026,"rating":"High","rank":18,"rankChange":11,"score":1.586},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":73,"rankChange":5,"score":5.939},
+    "softPower": {"year":2026,"rating":"30–39","rank":96,"rankChange":9,"score":34.1},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":47,"score":0.6,"rankChange":0},
     "etr": {"year":2024,"rating":"Medium","rank":100,"score":2.844}
   },
@@ -1595,7 +1721,8 @@ export const DEMOCRACY_DATA = {
     "cpi": {"year":2025,"rating":"30–39","rank":91,"rankChange":5,"score":39},
     "rsfPress": {"year":2026,"rating":"Difficult","rank":108,"rankChange":-4,"score":49.23},
     "hdi": {"year":2023,"rating":"High","rank":93,"rankChange":-2,"score":0.766},
-    "genderGap": {"year":2026,"rating":"60–69","rank":119,"rankChange":19,"score":0.669}
+    "genderGap": {"year":2026,"rating":"60–69","rank":119,"rankChange":19,"score":0.669},
+    "softPower": {"year":2026,"rating":"30–39","rank":59,"rankChange":-2,"score":39.2}
   },
   "MW": {
     "freedomHouse": {"year":2024,"rating":"Partly Free","rank":91,"rankChange":0,"score":65},
@@ -1607,6 +1734,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":99,"score":0.695},
     "gpi": {"year":2026,"rating":"Medium","rank":83,"rankChange":-18,"score":1.994},
     "happiness": {"year":2026,"rating":"3.0–3.9","rank":145,"rankChange":-1,"score":3.284},
+    "softPower": {"year":2026,"rating":"20–29","rank":155,"rankChange":3,"score":27.7},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":71,"score":0.52,"rankChange":0},
     "etr": {"year":2024,"rating":"Very High","rank":160,"score":4.089}
   },
@@ -1621,6 +1749,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":18,"rankChange":5,"score":0.787},
     "gpi": {"year":2026,"rating":"Low","rank":139,"rankChange":4,"score":2.65},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":12,"rankChange":-2,"score":6.972},
+    "softPower": {"year":2026,"rating":"40–49","rank":42,"rankChange":1,"score":44.3},
     "gdi": {"year":2024,"rating":"150–199","rank":14,"score":161},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":121,"score":0.4,"rankChange":-2},
     "imdCompetitiveness": {"year":2025,"rating":"40–49","rank":55,"score":48.84,"rankChange":1},
@@ -1637,6 +1766,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":104,"rankChange":4,"score":0.689},
     "gpi": {"year":2026,"rating":"High","rank":12,"rankChange":-1,"score":1.513},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":71,"rankChange":-7,"score":6.005},
+    "softPower": {"year":2026,"rating":"40–49","rank":35,"rankChange":1,"score":45.8},
     "gdi": {"year":2024,"rating":"100–149","rank":35,"score":106},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":56,"score":0.57,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"70–79","rank":23,"score":74.81,"rankChange":11},
@@ -1652,6 +1782,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":59,"rankChange":-6,"score":0.728},
     "gpi": {"year":2026,"rating":"Low","rank":126,"rankChange":1,"score":2.383},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":93,"rankChange":3,"score":5.336},
+    "softPower": {"year":2026,"rating":"20–29","rank":140,"rankChange":-3,"score":29.9},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":129,"score":0.37,"rankChange":-3},
     "etr": {"year":2024,"rating":"Very High","rank":145,"score":3.805}
   },
@@ -1666,6 +1797,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"80–89","rank":4,"rankChange":4,"score":0.845},
     "gpi": {"year":2026,"rating":"High","rank":63,"rankChange":-1,"score":1.872},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":108,"rankChange":-5,"score":4.781},
+    "softPower": {"year":2026,"rating":"30–39","rank":124,"rankChange":-1,"score":31.5},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":45,"score":0.61,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"30–39","rank":68,"score":37.48},
     "etr": {"year":2024,"rating":"High","rank":119,"score":3.261}
@@ -1680,8 +1812,9 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":124,"rankChange":18,"score":0.655},
     "gpi": {"year":2026,"rating":"Low","rank":146,"rankChange":-1,"score":2.832},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":103,"rankChange":7,"score":4.94},
+    "softPower": {"year":2026,"rating":"20–29","rank":141,"rankChange":3,"score":29.9},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":115,"score":0.42,"rankChange":0},
-    "etr": {"year":2024,"rating":"Very High","rank":172,"score":4.420}
+    "etr": {"year":2024,"rating":"Very High","rank":172,"score":4.42}
   },
   "NG": {
     "freedomHouse": {"year":2024,"rating":"Partly Free","rank":123,"rankChange":0,"score":44},
@@ -1694,6 +1827,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":114,"rankChange":10,"score":0.676},
     "gpi": {"year":2026,"rating":"Low","rank":142,"rankChange":6,"score":2.755},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":106,"rankChange":-1,"score":4.788},
+    "softPower": {"year":2026,"rating":"30–39","rank":71,"rankChange":6,"score":37.4},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":120,"score":0.41,"rankChange":1},
     "imdCompetitiveness": {"year":2025,"rating":"30–39","rank":67,"score":39.73,"rankChange":-3},
     "etr": {"year":2024,"rating":"Very High","rank":163,"score":4.112}
@@ -1708,6 +1842,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"High","rank":123,"rankChange":1,"score":0.706},
     "gpi": {"year":2026,"rating":"Medium","rank":106,"rankChange":-9,"score":2.107},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":51,"rankChange":-4,"score":6.301},
+    "softPower": {"year":2026,"rating":"20–29","rank":153,"rankChange":-5,"score":27.8},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":139,"score":0.33,"rankChange":-1},
     "etr": {"year":2024,"rating":"High","rank":124,"score":3.309}
   },
@@ -1722,6 +1857,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":46,"rankChange":-3,"score":0.75},
     "gpi": {"year":2026,"rating":"High","rank":17,"rankChange":0,"score":1.566},
     "happiness": {"year":2026,"rating":"7.0–7.9","rank":7,"rankChange":-2,"score":7.223},
+    "softPower": {"year":2026,"rating":"50–59","rank":15,"rankChange":0,"score":57.8},
     "gdi": {"year":2024,"rating":"100–149","rank":17,"score":149},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.80–1.00","rank":9,"score":0.82,"rankChange":-1},
     "imdCompetitiveness": {"year":2025,"rating":"80–89","rank":10,"score":89.75,"rankChange":-1},
@@ -1738,6 +1874,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"80–89","rank":3,"rankChange":0,"score":0.857},
     "gpi": {"year":2026,"rating":"High","rank":33,"rankChange":0,"score":1.688},
     "happiness": {"year":2026,"rating":"7.0–7.9","rank":6,"rankChange":1,"score":7.242},
+    "softPower": {"year":2026,"rating":"50–59","rank":19,"rankChange":-2,"score":55.4},
     "gdi": {"year":2024,"rating":"50–99","rank":42,"score":91},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.80–1.00","rank":2,"score":0.89,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"80–89","rank":12,"score":86.17,"rankChange":-2},
@@ -1753,13 +1890,15 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":120,"rankChange":5,"score":0.669},
     "gpi": {"year":2026,"rating":"Medium","rank":111,"rankChange":-26,"score":2.143},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":99,"rankChange":-7,"score":5.147},
+    "softPower": {"year":2026,"rating":"30–39","rank":99,"rankChange":2,"score":33.8},
     "gdi": {"year":2024,"rating":"Below 50","rank":61,"score":40},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":72,"score":0.52,"rankChange":-2},
     "etr": {"year":2024,"rating":"High","rank":121,"score":3.266}
   },
   "NR": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":73,"rankChange":0,"score":75},
-    "hdi": {"year":2023,"rating":"High","rank":124,"rankChange":1,"score":0.703}
+    "hdi": {"year":2023,"rating":"High","rank":124,"rankChange":1,"score":0.703},
+    "softPower": {"year":2026,"rating":"20–29","rank":192,"score":20.7}
   },
   "NZ": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":2,"rankChange":0,"score":99},
@@ -1772,6 +1911,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"80–89","rank":6,"rankChange":-1,"score":0.828},
     "gpi": {"year":2026,"rating":"Very High","rank":2,"rankChange":1,"score":1.343},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":11,"rankChange":1,"score":6.995},
+    "softPower": {"year":2026,"rating":"50–59","rank":26,"rankChange":-1,"score":51.6},
     "gdi": {"year":2024,"rating":"50–99","rank":47,"score":68},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.80–1.00","rank":5,"score":0.83,"rankChange":1},
     "imdCompetitiveness": {"year":2025,"rating":"70–79","rank":31,"score":70.23,"rankChange":1},
@@ -1788,6 +1928,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":134,"rankChange":0,"score":0.639},
     "gpi": {"year":2026,"rating":"High","rank":60,"rankChange":-26,"score":1.85},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":58,"rankChange":-6,"score":6.197},
+    "softPower": {"year":2026,"rating":"40–49","rank":51,"rankChange":-2,"score":40.5},
     "imdCompetitiveness": {"year":2025,"rating":"70–79","rank":28,"score":72.86},
     "etr": {"year":2024,"rating":"Medium","rank":72,"score":2.493}
   },
@@ -1802,8 +1943,9 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":41,"rankChange":10,"score":0.753},
     "gpi": {"year":2026,"rating":"Medium","rank":81,"rankChange":-6,"score":1.976},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":39,"rankChange":2,"score":6.547},
+    "softPower": {"year":2026,"rating":"30–39","rank":65,"rankChange":-1,"score":38.6},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":73,"score":0.52,"rankChange":0},
-    "etr": {"year":2024,"rating":"Medium","rank":85,"score":2.670}
+    "etr": {"year":2024,"rating":"Medium","rank":85,"score":2.67}
   },
   "PE": {
     "freedomHouse": {"year":2024,"rating":"Partly Free","rank":88,"rankChange":0,"score":67},
@@ -1816,6 +1958,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":94,"rankChange":-37,"score":0.7},
     "gpi": {"year":2026,"rating":"Medium","rank":107,"rankChange":-1,"score":2.12},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":72,"rankChange":-7,"score":5.974},
+    "softPower": {"year":2026,"rating":"30–39","rank":77,"rankChange":-5,"score":36.6},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":93,"score":0.48,"rankChange":-2},
     "imdCompetitiveness": {"year":2025,"rating":"40–49","rank":60,"score":45.89,"rankChange":3},
     "etr": {"year":2024,"rating":"High","rank":106,"score":3.075}
@@ -1829,6 +1972,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Medium","rank":160,"rankChange":-2,"score":0.576},
     "genderGap": {"year":2026,"rating":"60–69","rank":132,"rankChange":1,"score":0.642},
     "gpi": {"year":2026,"rating":"Medium","rank":84,"rankChange":17,"score":2.002},
+    "softPower": {"year":2026,"rating":"20–29","rank":156,"rankChange":3,"score":27.7},
     "gdi": {"year":2024,"rating":"Below 50","rank":65,"score":21},
     "etr": {"year":2024,"rating":"High","rank":134,"score":3.601}
   },
@@ -1843,6 +1987,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":20,"rankChange":0,"score":0.78},
     "gpi": {"year":2026,"rating":"Medium","rank":102,"rankChange":-3,"score":2.092},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":56,"rankChange":1,"score":6.206},
+    "softPower": {"year":2026,"rating":"40–49","rank":54,"rankChange":-1,"score":40},
     "gdi": {"year":2024,"rating":"50–99","rank":40,"score":94},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":97,"score":0.46,"rankChange":3},
     "imdCompetitiveness": {"year":2025,"rating":"50–59","rank":51,"score":54.88,"rankChange":1},
@@ -1859,9 +2004,10 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"50–59","rank":143,"rankChange":5,"score":0.595},
     "gpi": {"year":2026,"rating":"Very Low","rank":152,"rankChange":-6,"score":2.919},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":104,"rankChange":5,"score":4.868},
+    "softPower": {"year":2026,"rating":"30–39","rank":84,"rankChange":4,"score":35.7},
     "gdi": {"year":2024,"rating":"100–149","rank":27,"score":121},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":130,"score":0.37,"rankChange":0},
-    "etr": {"year":2024,"rating":"High","rank":133,"score":3.570}
+    "etr": {"year":2024,"rating":"High","rank":133,"score":3.57}
   },
   "PL": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":59,"rankChange":0,"score":82},
@@ -1874,6 +2020,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":44,"rankChange":1,"score":0.751},
     "gpi": {"year":2026,"rating":"High","rank":22,"rankChange":23,"score":1.615},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":24,"rankChange":2,"score":6.768},
+    "softPower": {"year":2026,"rating":"40–49","rank":31,"rankChange":1,"score":48.9},
     "gdi": {"year":2024,"rating":"100–149","rank":21,"score":135},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":32,"score":0.66,"rankChange":1},
     "imdCompetitiveness": {"year":2025,"rating":"50–59","rank":52,"score":53.91,"rankChange":-11},
@@ -1899,6 +2046,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":32,"rankChange":2,"score":0.763},
     "gpi": {"year":2026,"rating":"Very High","rank":7,"rankChange":1,"score":1.427},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":69,"rankChange":-9,"score":6.029},
+    "softPower": {"year":2026,"rating":"50–59","rank":27,"rankChange":0,"score":50.4},
     "gdi": {"year":2024,"rating":"100–149","rank":25,"score":127},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":29,"score":0.67,"rankChange":-1},
     "imdCompetitiveness": {"year":2025,"rating":"60–69","rank":37,"score":67.84,"rankChange":-1},
@@ -1906,7 +2054,8 @@ export const DEMOCRACY_DATA = {
   },
   "PW": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":28,"rankChange":0,"score":92},
-    "hdi": {"year":2023,"rating":"High","rank":84,"rankChange":-3,"score":0.786}
+    "hdi": {"year":2023,"rating":"High","rank":84,"rankChange":-3,"score":0.786},
+    "softPower": {"year":2026,"rating":"20–29","rank":184,"score":23.6}
   },
   "PY": {
     "freedomHouse": {"year":2024,"rating":"Partly Free","rank":96,"rankChange":0,"score":63},
@@ -1919,6 +2068,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":86,"rankChange":1,"score":0.706},
     "gpi": {"year":2026,"rating":"High","rank":64,"rankChange":5,"score":1.882},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":57,"rankChange":-3,"score":6.198},
+    "softPower": {"year":2026,"rating":"30–39","rank":78,"rankChange":6,"score":36.4},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":100,"score":0.45,"rankChange":1},
     "etr": {"year":2024,"rating":"Medium","rank":70,"score":2.472}
   },
@@ -1931,6 +2081,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Very High","rank":43,"rankChange":-2,"score":0.886},
     "genderGap": {"year":2026,"rating":"60–69","rank":135,"score":0.638},
     "gpi": {"year":2026,"rating":"High","rank":31,"rankChange":-10,"score":1.676},
+    "softPower": {"year":2026,"rating":"50–59","rank":20,"rankChange":2,"score":54.9},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":41,"score":0.62},
     "imdCompetitiveness": {"year":2025,"rating":"80–89","rank":9,"score":89.93,"rankChange":2},
     "etr": {"year":2024,"rating":"Medium","rank":62,"score":2.309}
@@ -1946,6 +2097,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":97,"rankChange":-3,"score":0.698},
     "gpi": {"year":2026,"rating":"High","rank":45,"rankChange":-1,"score":1.788},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":34,"rankChange":1,"score":6.629},
+    "softPower": {"year":2026,"rating":"40–49","rank":53,"rankChange":2,"score":40.3},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":44,"score":0.61,"rankChange":-2},
     "imdCompetitiveness": {"year":2025,"rating":"50–59","rank":49,"score":56.64,"rankChange":1},
     "etr": {"year":2024,"rating":"Low","rank":23,"score":1.674}
@@ -1961,8 +2113,9 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":39,"rankChange":-13,"score":0.754},
     "gpi": {"year":2026,"rating":"Medium","rank":70,"rankChange":5,"score":1.919},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":30,"rankChange":1,"score":6.691},
+    "softPower": {"year":2026,"rating":"30–39","rank":72,"rankChange":-3,"score":37.3},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":96,"score":0.47,"rankChange":-1},
-    "etr": {"year":2024,"rating":"Low","rank":40,"score":1.920}
+    "etr": {"year":2024,"rating":"Low","rank":40,"score":1.92}
   },
   "RU": {
     "freedomHouse": {"year":2024,"rating":"Not Free","rank":171,"rankChange":0,"score":12},
@@ -1974,6 +2127,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Very High","rank":64,"rankChange":-3,"score":0.832},
     "gpi": {"year":2026,"rating":"Very Low","rank":163,"rankChange":0,"score":3.367},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":79,"rankChange":-13,"score":5.834},
+    "softPower": {"year":2026,"rating":"50–59","rank":14,"rankChange":2,"score":58.7},
     "gdi": {"year":2024,"rating":"200–249","rank":6,"score":230},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":119,"score":0.41,"rankChange":-5},
     "etr": {"year":2024,"rating":"Low","rank":52,"score":2.121}
@@ -1987,8 +2141,9 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Medium","rank":159,"rankChange":1,"score":0.578},
     "genderGap": {"year":2026,"rating":"70–79","rank":28,"rankChange":11,"score":0.769},
     "gpi": {"year":2026,"rating":"Medium","rank":114,"rankChange":-2,"score":2.2},
+    "softPower": {"year":2026,"rating":"30–39","rank":122,"rankChange":-13,"score":31.7},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":39,"score":0.63,"rankChange":1},
-    "etr": {"year":2024,"rating":"Very High","rank":161,"score":4.100}
+    "etr": {"year":2024,"rating":"Very High","rank":161,"score":4.1}
   },
   "SA": {
     "freedomHouse": {"year":2024,"rating":"Not Free","rank":178,"rankChange":0,"score":9},
@@ -2001,6 +2156,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":137,"rankChange":-5,"score":0.633},
     "gpi": {"year":2026,"rating":"Medium","rank":95,"rankChange":-2,"score":2.067},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":22,"rankChange":10,"score":6.817},
+    "softPower": {"year":2026,"rating":"50–59","rank":17,"rankChange":3,"score":55.9},
     "gdi": {"year":2024,"rating":"100–149","rank":24,"score":128},
     "imdCompetitiveness": {"year":2025,"rating":"80–89","rank":17,"score":82.09,"rankChange":-1},
     "etr": {"year":2024,"rating":"Medium","rank":74,"score":2.556}
@@ -2010,6 +2166,7 @@ export const DEMOCRACY_DATA = {
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":55,"rankChange":-1,"score":0.54},
     "cpi": {"year":2025,"rating":"40–49","rank":73,"rankChange":3,"score":44},
     "hdi": {"year":2023,"rating":"Medium","rank":156,"rankChange":-1,"score":0.584},
+    "softPower": {"year":2026,"rating":"20–29","rank":166,"rankChange":13,"score":26.2},
     "etr": {"year":2024,"rating":"High","rank":127,"score":3.426}
   },
   "SC": {
@@ -2017,7 +2174,8 @@ export const DEMOCRACY_DATA = {
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":31,"rankChange":6,"score":0.68},
     "cpi": {"year":2025,"rating":"60–69","rank":24,"rankChange":-6,"score":68},
     "rsfPress": {"year":2026,"rating":"Satisfactory","rank":35,"rankChange":10,"score":73.04},
-    "hdi": {"year":2023,"rating":"Very High","rank":54,"rankChange":2,"score":0.848}
+    "hdi": {"year":2023,"rating":"Very High","rank":54,"rankChange":2,"score":0.848},
+    "softPower": {"year":2026,"rating":"20–29","rank":150,"rankChange":-3,"score":28.7}
   },
   "SD": {
     "freedomHouse": {"year":2024,"rating":"Not Free","rank":191,"rankChange":0,"score":2},
@@ -2027,6 +2185,7 @@ export const DEMOCRACY_DATA = {
     "rsfPress": {"year":2026,"rating":"Very serious","rank":161,"rankChange":-5,"score":29.02},
     "hdi": {"year":2023,"rating":"Low","rank":176,"rankChange":-5,"score":0.511},
     "gpi": {"year":2026,"rating":"Very Low","rank":162,"rankChange":-3,"score":3.195},
+    "softPower": {"year":2026,"rating":"30–39","rank":137,"rankChange":5,"score":30.2},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":137,"score":0.34,"rankChange":-2},
     "etr": {"year":2024,"rating":"High","rank":141,"score":3.724}
   },
@@ -2041,6 +2200,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"80–89","rank":7,"rankChange":-1,"score":0.823},
     "gpi": {"year":2026,"rating":"High","rank":40,"rankChange":-1,"score":1.732},
     "happiness": {"year":2026,"rating":"7.0–7.9","rank":5,"rankChange":-1,"score":7.255},
+    "softPower": {"year":2026,"rating":"50–59","rank":13,"rankChange":-2,"score":58.8},
     "gdi": {"year":2024,"rating":"100–149","rank":37,"score":102},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.80–1.00","rank":4,"score":0.85,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"90–100","rank":8,"score":90.2,"rankChange":-2},
@@ -2057,10 +2217,11 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":31,"rankChange":16,"score":0.764},
     "gpi": {"year":2026,"rating":"Very High","rank":8,"rankChange":-1,"score":1.435},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":36,"rankChange":-2,"score":6.585},
+    "softPower": {"year":2026,"rating":"50–59","rank":21,"rankChange":0,"score":54.5},
     "gdi": {"year":2024,"rating":"50–99","rank":52,"score":50},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.70–0.79","rank":16,"score":0.78,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"90–100","rank":2,"score":99.44,"rankChange":-1},
-    "etr": {"year":2024,"rating":"Low","rank":45,"score":2.010}
+    "etr": {"year":2024,"rating":"Low","rank":45,"score":2.01}
   },
   "SI": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":11,"rankChange":0,"score":96},
@@ -2072,6 +2233,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":23,"rankChange":6,"score":0.778},
     "gpi": {"year":2026,"rating":"Very High","rank":4,"rankChange":2,"score":1.369},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":18,"rankChange":1,"score":6.868},
+    "softPower": {"year":2026,"rating":"30–39","rank":57,"rankChange":-1,"score":39.4},
     "gdi": {"year":2024,"rating":"50–99","rank":50,"score":58},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":26,"score":0.68,"rankChange":1},
     "imdCompetitiveness": {"year":2025,"rating":"50–59","rank":46,"score":59.14,"rankChange":0},
@@ -2087,6 +2249,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":64,"rankChange":6,"score":0.721},
     "gpi": {"year":2026,"rating":"High","rank":29,"rankChange":-3,"score":1.661},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":54,"rankChange":-4,"score":6.255},
+    "softPower": {"year":2026,"rating":"30–39","rank":55,"rankChange":5,"score":39.7},
     "gdi": {"year":2024,"rating":"50–99","rank":45,"score":82},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":36,"score":0.64,"rankChange":-2},
     "imdCompetitiveness": {"year":2025,"rating":"40–49","rank":63,"score":42.79,"rankChange":-4},
@@ -2102,12 +2265,14 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":109,"rankChange":3,"score":0.683},
     "gpi": {"year":2026,"rating":"Medium","rank":74,"rankChange":9,"score":1.937},
     "happiness": {"year":2026,"rating":"3.0–3.9","rank":146,"rankChange":0,"score":3.251},
+    "softPower": {"year":2026,"rating":"20–29","rank":172,"score":25.3},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":109,"score":0.44,"rankChange":2},
     "etr": {"year":2024,"rating":"Very High","rank":162,"score":4.105}
   },
   "SM": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":5,"rankChange":0,"score":97},
-    "hdi": {"year":2023,"rating":"Very High","rank":29,"rankChange":1,"score":0.915}
+    "hdi": {"year":2023,"rating":"Very High","rank":29,"rankChange":1,"score":0.915},
+    "softPower": {"year":2026,"rating":"30–39","rank":132,"rankChange":-3,"score":30.8}
   },
   "SN": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":82,"rankChange":0,"score":69},
@@ -2120,6 +2285,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":118,"rankChange":-2,"score":0.67},
     "gpi": {"year":2026,"rating":"Medium","rank":75,"rankChange":12,"score":1.939},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":107,"rankChange":0,"score":4.787},
+    "softPower": {"year":2026,"rating":"30–39","rank":106,"rankChange":-4,"score":33.1},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":58,"score":0.56,"rankChange":3},
     "etr": {"year":2024,"rating":"High","rank":144,"score":3.771}
   },
@@ -2131,7 +2297,8 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Low","rank":192,"rankChange":0,"score":0.404},
     "gpi": {"year":2026,"rating":"Very Low","rank":153,"rankChange":-4,"score":2.973},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":117,"rankChange":5,"score":4.508},
-    "etr": {"year":2024,"rating":"Very High","rank":166,"score":4.160}
+    "softPower": {"year":2026,"rating":"20–29","rank":177,"score":24.6},
+    "etr": {"year":2024,"rating":"Very High","rank":166,"score":4.16}
   },
   "SR": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":67,"rankChange":0,"score":80},
@@ -2141,6 +2308,7 @@ export const DEMOCRACY_DATA = {
     "rsfPress": {"year":2026,"rating":"Satisfactory","rank":34,"rankChange":-2,"score":73.2},
     "hdi": {"year":2023,"rating":"High","rank":114,"rankChange":2,"score":0.722},
     "genderGap": {"year":2026,"rating":"70–79","rank":57,"rankChange":-5,"score":0.732},
+    "softPower": {"year":2026,"rating":"20–29","rank":182,"score":23.8},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":84,"score":0.49,"rankChange":2},
     "etr": {"year":2024,"rating":"Medium","rank":97,"score":2.795}
   },
@@ -2151,13 +2319,15 @@ export const DEMOCRACY_DATA = {
     "rsfPress": {"year":2026,"rating":"Difficult","rank":118,"rankChange":-9,"score":46.16},
     "hdi": {"year":2023,"rating":"Low","rank":193,"rankChange":-2,"score":0.388},
     "gpi": {"year":2026,"rating":"Very Low","rank":158,"rankChange":-2,"score":3.116},
+    "softPower": {"year":2026,"rating":"20–29","rank":146,"rankChange":3,"score":28.8},
     "etr": {"year":2024,"rating":"Very High","rank":155,"score":3.998}
   },
   "ST": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":53,"rankChange":0,"score":84},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":61,"rankChange":-4,"score":0.52},
     "cpi": {"year":2025,"rating":"40–49","rank":70,"rankChange":-1,"score":45},
-    "hdi": {"year":2023,"rating":"Medium","rank":141,"rankChange":0,"score":0.637}
+    "hdi": {"year":2023,"rating":"Medium","rank":141,"rankChange":0,"score":0.637},
+    "softPower": {"year":2026,"rating":"20–29","rank":175,"rankChange":-3,"score":25}
   },
   "SV": {
     "freedomHouse": {"year":2024,"rating":"Partly Free","rank":121,"rankChange":0,"score":47},
@@ -2170,8 +2340,9 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":61,"rankChange":17,"score":0.724},
     "gpi": {"year":2026,"rating":"Medium","rank":121,"rankChange":1,"score":2.264},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":37,"rankChange":0,"score":6.578},
+    "softPower": {"year":2026,"rating":"30–39","rank":76,"rankChange":6,"score":36.6},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":114,"score":0.42,"rankChange":-2},
-    "etr": {"year":2024,"rating":"Medium","rank":93,"score":2.780}
+    "etr": {"year":2024,"rating":"Medium","rank":93,"score":2.78}
   },
   "SY": {
     "freedomHouse": {"year":2024,"rating":"Not Free","rank":185,"rankChange":0,"score":5},
@@ -2182,6 +2353,7 @@ export const DEMOCRACY_DATA = {
     "rsfPress": {"year":2026,"rating":"Very serious","rank":141,"rankChange":36,"score":39.44},
     "hdi": {"year":2023,"rating":"Medium","rank":162,"rankChange":-3,"score":0.564},
     "gpi": {"year":2026,"rating":"Very Low","rank":155,"rankChange":0,"score":3.067},
+    "softPower": {"year":2026,"rating":"30–39","rank":125,"rankChange":2,"score":31.2},
     "etr": {"year":2024,"rating":"High","rank":118,"score":3.229}
   },
   "SZ": {
@@ -2194,6 +2366,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":76,"rankChange":-30,"score":0.714},
     "gpi": {"year":2026,"rating":"Medium","rank":104,"rankChange":6,"score":2.095},
     "happiness": {"year":2026,"rating":"3.0–3.9","rank":137,"rankChange":0,"score":3.909},
+    "softPower": {"year":2026,"rating":"20–29","rank":159,"rankChange":-5,"score":27.2},
     "etr": {"year":2024,"rating":"High","rank":104,"score":3.046}
   },
   "TD": {
@@ -2206,7 +2379,8 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"50–59","rank":145,"rankChange":1,"score":0.578},
     "gpi": {"year":2026,"rating":"Low","rank":145,"rankChange":-9,"score":2.769},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":125,"rankChange":-6,"score":4.385},
-    "etr": {"year":2024,"rating":"Very High","rank":147,"score":3.850}
+    "softPower": {"year":2026,"rating":"20–29","rank":165,"rankChange":11,"score":26.3},
+    "etr": {"year":2024,"rating":"Very High","rank":147,"score":3.85}
   },
   "TG": {
     "freedomHouse": {"year":2024,"rating":"Partly Free","rank":127,"rankChange":0,"score":41},
@@ -2218,6 +2392,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":116,"rankChange":5,"score":0.675},
     "gpi": {"year":2026,"rating":"Medium","rank":119,"rankChange":7,"score":2.251},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":131,"rankChange":-4,"score":4.277},
+    "softPower": {"year":2026,"rating":"20–29","rank":164,"rankChange":1,"score":26.7},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":111,"score":0.43,"rankChange":-4},
     "etr": {"year":2024,"rating":"Very High","rank":153,"score":3.946}
   },
@@ -2232,6 +2407,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":55,"rankChange":11,"score":0.735},
     "gpi": {"year":2026,"rating":"Medium","rank":101,"rankChange":-7,"score":2.089},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":52,"rankChange":-3,"score":6.296},
+    "softPower": {"year":2026,"rating":"40–49","rank":38,"rankChange":1,"score":45},
     "gdi": {"year":2024,"rating":"50–99","rank":39,"score":97},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":77,"score":0.5,"rankChange":2},
     "imdCompetitiveness": {"year":2025,"rating":"70–79","rank":30,"score":71.32,"rankChange":-5},
@@ -2247,6 +2423,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":136,"rankChange":-7,"score":0.638},
     "gpi": {"year":2026,"rating":"High","rank":47,"rankChange":-6,"score":1.799},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":88,"rankChange":2,"score":5.591},
+    "softPower": {"year":2026,"rating":"30–39","rank":129,"rankChange":12,"score":31},
     "etr": {"year":2024,"rating":"High","rank":126,"score":3.376}
   },
   "TL": {
@@ -2258,6 +2435,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Medium","rank":142,"rankChange":0,"score":0.634},
     "genderGap": {"year":2026,"rating":"70–79","rank":93,"rankChange":-7,"score":0.701},
     "gpi": {"year":2026,"rating":"High","rank":32,"rankChange":-2,"score":1.681},
+    "softPower": {"year":2026,"rating":"20–29","rank":183,"score":23.6},
     "gdi": {"year":2024,"rating":"Below 50","rank":63,"score":31},
     "etr": {"year":2024,"rating":"High","rank":131,"score":3.539}
   },
@@ -2269,6 +2447,7 @@ export const DEMOCRACY_DATA = {
     "rsfPress": {"year":2026,"rating":"Very serious","rank":173,"rankChange":1,"score":23.06},
     "hdi": {"year":2023,"rating":"High","rank":95,"rankChange":1,"score":0.764},
     "gpi": {"year":2026,"rating":"High","rank":66,"rankChange":-2,"score":1.903},
+    "softPower": {"year":2026,"rating":"30–39","rank":138,"rankChange":-4,"score":30.2},
     "etr": {"year":2024,"rating":"Medium","rank":61,"score":2.305}
   },
   "TN": {
@@ -2282,13 +2461,15 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":125,"rankChange":-2,"score":0.65},
     "gpi": {"year":2026,"rating":"Medium","rank":77,"rankChange":19,"score":1.947},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":105,"rankChange":8,"score":4.798},
+    "softPower": {"year":2026,"rating":"30–39","rank":75,"rankChange":4,"score":36.7},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":85,"score":0.49,"rankChange":-8},
     "etr": {"year":2024,"rating":"Medium","rank":81,"score":2.604}
   },
   "TO": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":67,"rankChange":0,"score":80},
     "rsfPress": {"year":2026,"rating":"Problematic","rank":51,"rankChange":-5,"score":66.62},
-    "hdi": {"year":2023,"rating":"High","rank":92,"rankChange":-1,"score":0.769}
+    "hdi": {"year":2023,"rating":"High","rank":92,"rankChange":-1,"score":0.769},
+    "softPower": {"year":2026,"rating":"20–29","rank":187,"score":22.7}
   },
   "TR": {
     "freedomHouse": {"year":2024,"rating":"Not Free","rank":137,"rankChange":0,"score":33},
@@ -2301,6 +2482,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":126,"rankChange":9,"score":0.649},
     "gpi": {"year":2026,"rating":"Low","rank":136,"rankChange":8,"score":2.605},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":94,"rankChange":0,"score":5.3},
+    "softPower": {"year":2026,"rating":"50–59","rank":25,"rankChange":1,"score":52.4},
     "gdi": {"year":2024,"rating":"250+","rank":3,"score":252},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":118,"score":0.41,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"40–49","rank":66,"score":40.41,"rankChange":-13},
@@ -2316,12 +2498,14 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":38,"rankChange":-10,"score":0.757},
     "gpi": {"year":2026,"rating":"Medium","rank":79,"rankChange":-12,"score":1.959},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":76,"rankChange":-6,"score":5.905},
+    "softPower": {"year":2026,"rating":"20–29","rank":161,"rankChange":-10,"score":27},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":75,"score":0.51,"rankChange":0},
     "etr": {"year":2024,"rating":"Medium","rank":57,"score":2.232}
   },
   "TV": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":24,"rankChange":0,"score":93},
-    "hdi": {"year":2023,"rating":"Medium","rank":129,"rankChange":1,"score":0.689}
+    "hdi": {"year":2023,"rating":"Medium","rank":129,"rankChange":1,"score":0.689},
+    "softPower": {"year":2026,"rating":"20–29","rank":190,"score":21.5}
   },
   "TZ": {
     "freedomHouse": {"year":2024,"rating":"Not Free","rank":133,"rankChange":0,"score":35},
@@ -2334,6 +2518,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":54,"rankChange":1,"score":0.736},
     "gpi": {"year":2026,"rating":"Medium","rank":98,"rankChange":-20,"score":2.08},
     "happiness": {"year":2026,"rating":"3.0–3.9","rank":138,"rankChange":-2,"score":3.902},
+    "softPower": {"year":2026,"rating":"30–39","rank":94,"rankChange":1,"score":34.3},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":98,"score":0.46,"rankChange":-1},
     "etr": {"year":2024,"rating":"Very High","rank":151,"score":3.898}
   },
@@ -2348,6 +2533,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":66,"rankChange":-4,"score":0.721},
     "gpi": {"year":2026,"rating":"Very Low","rank":160,"rankChange":2,"score":3.184},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":111,"rankChange":0,"score":4.658},
+    "softPower": {"year":2026,"rating":"40–49","rank":47,"rankChange":-1,"score":41.4},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":90,"score":0.48,"rankChange":-1},
     "etr": {"year":2024,"rating":"Medium","rank":59,"score":2.281}
   },
@@ -2361,6 +2547,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Medium","rank":157,"rankChange":0,"score":0.582},
     "gpi": {"year":2026,"rating":"Low","rank":130,"rankChange":-7,"score":2.42},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":118,"rankChange":-2,"score":4.491},
+    "softPower": {"year":2026,"rating":"30–39","rank":118,"rankChange":3,"score":31.9},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":127,"score":0.38,"rankChange":0},
     "etr": {"year":2024,"rating":"Very High","rank":169,"score":4.225}
   },
@@ -2375,6 +2562,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":47,"rankChange":-5,"score":0.749},
     "gpi": {"year":2026,"rating":"Low","rank":134,"rankChange":-4,"score":2.535},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":23,"rankChange":1,"score":6.816},
+    "softPower": {"year":2026,"rating":"70–79","rank":1,"rankChange":0,"score":74.9},
     "gdi": {"year":2024,"rating":"250+","rank":2,"score":271},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":27,"score":0.68,"rankChange":-1},
     "imdCompetitiveness": {"year":2025,"rating":"80–89","rank":13,"score":84.27,"rankChange":-1},
@@ -2391,6 +2579,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":53,"rankChange":18,"score":0.74},
     "gpi": {"year":2026,"rating":"High","rank":43,"rankChange":-1,"score":1.754},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":31,"rankChange":-3,"score":6.635},
+    "softPower": {"year":2026,"rating":"30–39","rank":64,"rankChange":3,"score":38.7},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.70–0.79","rank":23,"score":0.72,"rankChange":1},
     "etr": {"year":2024,"rating":"Low","rank":31,"score":1.806}
   },
@@ -2405,6 +2594,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":110,"rankChange":0,"score":0.682},
     "gpi": {"year":2026,"rating":"High","rank":37,"rankChange":10,"score":1.726},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":53,"rankChange":0,"score":6.283},
+    "softPower": {"year":2026,"rating":"30–39","rank":92,"rankChange":7,"score":34.5},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":81,"score":0.5,"rankChange":3},
     "etr": {"year":2024,"rating":"Medium","rank":79,"score":2.593}
   },
@@ -2412,6 +2602,7 @@ export const DEMOCRACY_DATA = {
     "freedomHouse": {"year":2024,"rating":"Free","rank":36,"rankChange":0,"score":90},
     "cpi": {"year":2025,"rating":"60–69","rank":31,"rankChange":1,"score":63},
     "hdi": {"year":2023,"rating":"High","rank":76,"rankChange":-1,"score":0.798},
+    "softPower": {"year":2026,"rating":"20–29","rank":186,"score":22.9},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":42,"score":0.62,"rankChange":2}
   },
   "VE": {
@@ -2424,6 +2615,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"High","rank":121,"rankChange":0,"score":0.709},
     "gpi": {"year":2026,"rating":"Low","rank":133,"rankChange":-4,"score":2.516},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":80,"rankChange":2,"score":5.756},
+    "softPower": {"year":2026,"rating":"30–39","rank":97,"rankChange":-1,"score":34},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.20–0.29","rank":143,"score":0.26,"rankChange":0},
     "imdCompetitiveness": {"year":2025,"rating":"20–29","rank":69,"score":25.47,"rankChange":-2},
     "etr": {"year":2024,"rating":"High","rank":115,"score":3.207}
@@ -2439,6 +2631,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":84,"rankChange":-10,"score":0.707},
     "gpi": {"year":2026,"rating":"High","rank":41,"rankChange":-1,"score":1.738},
     "happiness": {"year":2026,"rating":"6.0–6.9","rank":45,"rankChange":1,"score":6.428},
+    "softPower": {"year":2026,"rating":"40–49","rank":52,"rankChange":0,"score":40.4},
     "gdi": {"year":2024,"rating":"50–99","rank":40,"score":94},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":83,"score":0.5,"rankChange":-1},
     "etr": {"year":2024,"rating":"Medium","rank":89,"score":2.708}
@@ -2449,12 +2642,14 @@ export const DEMOCRACY_DATA = {
     "cpi": {"year":2025,"rating":"40–49","rank":63,"rankChange":-6,"score":47},
     "hdi": {"year":2023,"rating":"Medium","rank":146,"rankChange":-1,"score":0.621},
     "genderGap": {"year":2026,"rating":"60–69","rank":107,"rankChange":2,"score":0.686},
+    "softPower": {"year":2026,"rating":"20–29","rank":191,"score":21.4},
     "etr": {"year":2024,"rating":"High","rank":105,"score":3.056}
   },
   "WS": {
     "freedomHouse": {"year":2024,"rating":"Free","rank":53,"rankChange":0,"score":84},
     "rsfPress": {"year":2026,"rating":"Problematic","rank":59,"rankChange":-15,"score":64.53},
-    "hdi": {"year":2023,"rating":"High","rank":122,"rankChange":1,"score":0.708}
+    "hdi": {"year":2023,"rating":"High","rank":122,"rankChange":1,"score":0.708},
+    "softPower": {"year":2026,"rating":"20–29","rank":174,"rankChange":-3,"score":25.1}
   },
   "YE": {
     "freedomHouse": {"year":2024,"rating":"Not Free","rank":175,"rankChange":0,"score":10},
@@ -2466,6 +2661,7 @@ export const DEMOCRACY_DATA = {
     "hdi": {"year":2023,"rating":"Low","rank":184,"rankChange":0,"score":0.47},
     "gpi": {"year":2026,"rating":"Very Low","rank":156,"rankChange":2,"score":3.081},
     "happiness": {"year":2026,"rating":"3.0–3.9","rank":142,"rankChange":-2,"score":3.532},
+    "softPower": {"year":2026,"rating":"30–39","rank":121,"rankChange":1,"score":31.7},
     "etr": {"year":2024,"rating":"Very High","rank":158,"score":4.075}
   },
   "ZA": {
@@ -2479,6 +2675,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":30,"rankChange":3,"score":0.766},
     "gpi": {"year":2026,"rating":"Medium","rank":123,"rankChange":-4,"score":2.308},
     "happiness": {"year":2026,"rating":"5.0–5.9","rank":101,"rankChange":-6,"score":5.009},
+    "softPower": {"year":2026,"rating":"40–49","rank":43,"rankChange":-2,"score":44.2},
     "gdi": {"year":2024,"rating":"100–149","rank":31,"score":114},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":60,"score":0.56,"rankChange":-2},
     "imdCompetitiveness": {"year":2025,"rating":"40–49","rank":64,"score":41.98,"rankChange":-4},
@@ -2495,6 +2692,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"60–69","rank":108,"rankChange":-29,"score":0.684},
     "gpi": {"year":2026,"rating":"Medium","rank":82,"rankChange":-2,"score":1.992},
     "happiness": {"year":2026,"rating":"4.0–4.9","rank":133,"rankChange":-2,"score":4.106},
+    "softPower": {"year":2026,"rating":"30–39","rank":114,"rankChange":1,"score":32.1},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.40–0.49","rank":103,"score":0.45,"rankChange":1},
     "etr": {"year":2024,"rating":"High","rank":143,"score":3.765}
   },
@@ -2509,6 +2707,7 @@ export const DEMOCRACY_DATA = {
     "genderGap": {"year":2026,"rating":"70–79","rank":49,"rankChange":0,"score":0.743},
     "gpi": {"year":2026,"rating":"Medium","rank":90,"rankChange":10,"score":2.051},
     "happiness": {"year":2026,"rating":"3.0–3.9","rank":144,"rankChange":-1,"score":3.346},
+    "softPower": {"year":2026,"rating":"30–39","rank":117,"rankChange":8,"score":31.9},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.30–0.39","rank":124,"score":0.39,"rankChange":0},
     "etr": {"year":2024,"rating":"High","rank":130,"score":3.528}
   }
