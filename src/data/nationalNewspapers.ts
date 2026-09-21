@@ -21192,7 +21192,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sierra Leone Association of Journalists (SLAJ) 2023"
       },
       "revenueModel": "Print sales, commercial display advertising, and corporate sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sl/awoko.png",
+      "logoExplainer": "Red cursive 'Awoko' with a bird in the first O, yellow field, and 'Proudly Sierra Leonean Est. Aug. 1998' — Awoko Newspaper masthead.",
+      "licenceNote": "Awoko Newspaper trademark bundled from the publisher's official site brand assets (awoko.org) for educational reference in Learn mode.",
+
       "sources": [
         "https://awokonewspaper.sl",
         "https://en.wikipedia.org/wiki/Awoko_(newspaper)"
@@ -24675,7 +24678,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Daryo Analytics / Google Play Store"
       },
       "revenueModel": "Digital advertising, mobile app promotional placements, and corporate partnerships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/uz/daryo-uz.svg",
+      "logoExplainer": "Blue rounded 'D' with a speech-bubble cutout beside bold black 'DARYO' — Daryo.uz masthead.",
+      "licenceNote": "Daryo.uz trademark bundled from the publisher's official site brand assets (daryo.uz/logo.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://daryo.uz",
         "https://en.wikipedia.org/wiki/Media_of_Uzbekistan"
@@ -24706,7 +24712,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Agency of Information and Mass Communications of Uzbekistan"
       },
       "revenueModel": "State budget allocations, mandatory civil service subscriptions, and legal announcements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/uz/xalq-sozi.png",
+      "logoExplainer": "Bold blue Cyrillic 'Халқ сўзи' wordmark — Xalq So'zi (People's Word) masthead.",
+      "licenceNote": "Xalq So'zi trademark bundled from the publisher's official site brand assets (xs.uz) for educational reference in Learn mode.",
+
       "sources": [
         "https://xs.uz",
         "https://uz.wikipedia.org/wiki/Xalq_so%CA%BBzi"
