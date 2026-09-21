@@ -1786,7 +1786,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "bd-samakal",
       "countryCode": "BD",
       "name": "Samakal",
@@ -1802,6 +1801,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Large Bengali daily",
         "source": "https://en.wikipedia.org/wiki/Samakal"
       },
+      "logo": "newspaper-logos/bd/samakal.svg",
+      "logoExplainer": "Black Bengali calligraphic 'সমকাল' (Samakal) wordmark — Daily Samakal masthead.",
+      "licenceNote": "Daily Samakal masthead (English Wikipedia File:Daily Samakal.svg, fair use) trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://samakal.com",
         "https://en.wikipedia.org/wiki/Samakal"
@@ -15735,7 +15738,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Broadcasting Authority / Allied Group Annual Audit 2023"
       },
       "revenueModel": "Print sales, digital premium subscriptions (Times of Malta Premium), and advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mt/times-of-malta.png",
+      "logoExplainer": "Black serif 'THE TIMES' flanking a crowned shield with the George Cross — Times of Malta masthead.",
+      "licenceNote": "Times of Malta masthead (English Wikipedia File:TimesMTheader.png, fair use) trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://timesofmalta.com",
         "https://en.wikipedia.org/wiki/Times_of_Malta"
@@ -15954,7 +15960,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Weekly newspaper",
       "format": "Print & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "mu-mauritius-times",
       "name": "Mauritius Times",
       "founded": 1954,
@@ -15970,6 +15975,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Established Mauritian weekly",
         "source": "https://en.wikipedia.org/wiki/Mauritius_Times"
       },
+      "logo": "newspaper-logos/mu/mauritius-times.png",
+      "logoExplainer": "White serif 'MAURITIUS' stacked over 'TIMES' on a black rectangle — Mauritius Times masthead.",
+      "licenceNote": "Mauritius Times masthead trademark bundled from the publisher's official site brand assets (mauritiustimes.com MT-Logo.jpg) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.mauritiustimes.com",
         "https://en.wikipedia.org/wiki/Mauritius_Times"
@@ -21033,7 +21042,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "si-necenzurirano",
       "countryCode": "SI",
       "name": "Necenzurirano.si / N1 Slovenija news",
@@ -21049,6 +21057,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Slovene digital news brand",
         "source": "https://n1info.si"
       },
+      "logo": "newspaper-logos/si/necenzurirano.svg",
+      "logoExplainer": "Blue sans-serif 'N1' wordmark — N1 Slovenija (Necenzurirano.si) masthead.",
+      "licenceNote": "N1 masthead trademark bundled from the publisher's official site brand assets (n1info.si/static/images/n1.svg) for educational reference in Learn mode.",
+
       "sources": [
         "https://n1info.si"
       ]
@@ -23044,7 +23056,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Timor Post Corporate Kit 2024"
       },
       "revenueModel": "Print newspaper circulation, institutional advertising, and web banners",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tl/timor-post.png",
+      "logoExplainer": "Navy 'Timor Post' with Timor island map inside the 'o' and Tetum tagline 'Harii Unidade, Justisa no Demokrasia' — Timor Post masthead.",
+      "licenceNote": "Timor Post masthead trademark bundled from the publisher's official site brand assets (timorpost.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://diariutimorpost.com",
         "https://en.wikipedia.org/wiki/Timor_Post"
@@ -25190,7 +25205,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grupo Últimas Noticias Commercial Dossier"
       },
       "revenueModel": "Mass print sales, commercial display advertising, and digital banners",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ve/ultimas-noticias.png",
+      "logoExplainer": "White italic serif 'Últimas' joined to bold sans 'Noticias' on a blue field — Últimas Noticias masthead.",
+      "licenceNote": "Últimas Noticias masthead (English Wikipedia File:Últimas Noticias logo 2.png, fair use; credited to ultimasnoticias.com.ve) trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://ultimasnoticias.com.ve",
         "https://en.wikipedia.org/wiki/%C3%9Altimas_Noticias"
