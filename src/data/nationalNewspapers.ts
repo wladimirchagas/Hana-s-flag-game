@@ -1644,7 +1644,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Trend Media Group 2024"
       },
       "revenueModel": "Digital mobile advertising and branded partnerships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bb/loop-barbados.jpg",
+      "logoExplainer": "Teal brush-stroke ring with a red splash — Loop News Barbados brand mark.",
+      "licenceNote": "Loop News Barbados brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://barbados.loopnews.com"
       ]
@@ -4146,7 +4149,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Conseil Supérieur de la Liberté de Communication 2023"
       },
       "revenueModel": "Print retail sales and local advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cg/le-patriote.jpg",
+      "logoExplainer": "Orange house outline beside white 'Le Patriote' and yellow 'CONGOLAIS' on navy — Le Patriote brand mark.",
+      "licenceNote": "Le Patriote brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://fr.wikipedia.org/wiki/M%C3%A9dias_en_R%C3%A9publique_du_Congo"
       ]
@@ -6709,7 +6715,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ec-gk",
       "countryCode": "EC",
       "name": "GK",
@@ -6725,6 +6730,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Ecuadorian digital news brand",
         "source": "https://gk.city"
       },
+      "logo": "newspaper-logos/ec/gk.jpg",
+      "logoExplainer": "White bold 'GK' on blue — GK (Ecuador) brand initials.",
+      "licenceNote": "GK brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://gk.city"
       ]
@@ -14622,7 +14631,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Monthly / digital",
       "format": "Print & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "mc-observateur-monaco",
       "countryCode": "MC",
       "name": "L'Observateur de Monaco",
@@ -14638,6 +14646,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Established Monaco news title",
         "source": "https://www.lobservateurdemonaco.mc"
       },
+      "logo": "newspaper-logos/mc/observateur-monaco.jpg",
+      "logoExplainer": "Red 'L'OBSERVATEUR DE' over black 'MONACO' — L'Observateur de Monaco masthead.",
+      "licenceNote": "L'Observateur de Monaco masthead from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.lobservateurdemonaco.mc"
       ]
@@ -15875,7 +15887,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "General Workers' Union Media Report 2023"
       },
       "revenueModel": "Print sales, union backing, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mt/l-orizzont.jpg",
+      "logoExplainer": "Red lowercase 'l-orizzont' wordmark — L-Orizzont masthead.",
+      "licenceNote": "L-Orizzont brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://talk.mt",
         "https://en.wikipedia.org/wiki/L-Orizzont"
@@ -22673,7 +22688,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Reporters Without Borders & HAMA Chad 2023"
       },
       "revenueModel": "Print retail sales and classified advertisements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/td/n-djamena-hebdo.jpg",
+      "logoExplainer": "Blue 'N'DJAMÉNA HEBDO' over a '30 ANS' anniversary crest with quill — N'Djaména Hebdo masthead.",
+      "licenceNote": "N'Djaména Hebdo brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://fr.wikipedia.org/wiki/N%27Djam%C3%A9na_Hebdo"
       ]
@@ -23890,7 +23908,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Trend Media Digital Measurement / Google Analytics"
       },
       "revenueModel": "Digital video advertising, native mobile campaigns, and brand partnerships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tt/loop-tt.png",
+      "logoExplainer": "Lowercase 'loop' wordmark fading purple-to-magenta — Loop News Trinidad and Tobago brand mark.",
+      "licenceNote": "Loop News Trinidad and Tobago brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://tt.loopnews.com",
         "https://en.wikipedia.org/wiki/Loop_News"
