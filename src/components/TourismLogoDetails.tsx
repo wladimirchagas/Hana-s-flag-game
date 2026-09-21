@@ -13,17 +13,21 @@ import type { TourismLogo } from "../types/tourismLogo";
  * - (a) Explainer of the logo's design and symbolism
  * - (b) Agency / board name (and slogan, when the country has one)
  * - (c) Year the brand was adopted
- * - (d) Comparable annual-visitors figure, with the exact metric it counts —
- *   or a note explaining why none could be sourced
+ * - (d) Optional annual-visitors figure (omitted when the Travel tab already
+ *   shows the country-level figure above its Airlines / Tourism sub-tabs)
  */
 export function TourismLogoDetails({
   logo,
   baseUrl = "",
   onEnlarge,
+  /** When false, omit Annual visitors — the Travel tab shows them above the
+   *  Airlines/Tourism sub-tabs because the figure is country-level, not brand. */
+  includeVisitors = true,
 }: {
   logo: TourismLogo;
   baseUrl?: string;
   onEnlarge: (url: string) => void;
+  includeVisitors?: boolean;
 }) {
   const logoUrl = logo.logo
     ? logo.logo.startsWith("http") || logo.logo.startsWith("data:")
@@ -89,7 +93,7 @@ export function TourismLogoDetails({
             <dd className="entity-summary__value">{logo.launched}</dd>
           </div>
         )}
-        {logo.visitors ? (
+        {includeVisitors && logo.visitors ? (
           <div className="entity-summary__row">
             <dt className="entity-summary__label">Annual visitors</dt>
             <dd className="entity-summary__value">
@@ -99,7 +103,7 @@ export function TourismLogoDetails({
               </span>
             </dd>
           </div>
-        ) : logo.visitorsNote ? (
+        ) : includeVisitors && logo.visitorsNote ? (
           <div className="entity-summary__row">
             <dt className="entity-summary__label">Annual visitors</dt>
             <dd className="entity-summary__value">{logo.visitorsNote}</dd>

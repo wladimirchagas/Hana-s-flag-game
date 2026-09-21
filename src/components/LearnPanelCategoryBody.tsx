@@ -5,6 +5,7 @@
  * so the panel no longer depends on the world-map Show dropdown to browse
  * newspapers, agencies, broadcasters, airlines, tourism logos or parties.
  */
+import type { ReactNode } from "react";
 import { CountryItemChooser } from "./CountryItemChooser";
 import { AirlineDetails } from "./AirlineDetails";
 import { BroadcasterDetails } from "./BroadcasterDetails";
@@ -104,6 +105,7 @@ export function LearnPanelCategoryBody({
   resolveImage,
   baseUrl,
   onEnlarge,
+  preamble,
 }: {
   sections: readonly PanelCategorySection[];
   activeSection: MultiItemGridContentType;
@@ -116,6 +118,8 @@ export function LearnPanelCategoryBody({
   resolveImage: (raw: string) => string;
   baseUrl: string;
   onEnlarge: (url: string) => void;
+  /** Optional block above the section tabs (e.g. country-level visitor stats). */
+  preamble?: ReactNode;
 }) {
   const items = chooserItemsForCountry(activeSection, countryCode, countryName);
   const active = resolveActiveItem(activeSection, countryCode, pickedId);
@@ -128,6 +132,8 @@ export function LearnPanelCategoryBody({
 
   return (
     <div className="learn-panel-category">
+      {preamble}
+
       {sections.length > 1 && (
         <div
           className="learn-panel-category__sections"
@@ -195,6 +201,7 @@ export function LearnPanelCategoryBody({
           logo={active.item}
           baseUrl={baseUrl}
           onEnlarge={onEnlarge}
+          includeVisitors={false}
         />
       )}
       {showDetails && active?.kind === "newsagency" && (
