@@ -2400,7 +2400,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "PPB Burundi 2023"
       },
       "revenueModel": "State subsidy and official government announcements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bi/le-renouveau.png",
+      "logoExplainer": "Green circular emblem beside yellow 'Le Renouveau' over red 'du Burundi' — Le Renouveau du Burundi masthead.",
+      "licenceNote": "Le Renouveau du Burundi masthead from the newspaper's official site custom-logo asset (lerenouveau.bi/wp-content/uploads/2025/05/21_AVRIL-removebg-preview.png); trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://renouveau.bi"
       ]
@@ -6217,7 +6220,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Dominica Chronicle Media Profile 2023"
       },
       "revenueModel": "Print sales, legal notices, and commercial display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/dm/the-chronicle.jpg",
+      "logoExplainer": "Blackletter gothic 'The Chronicle' wordmark on white — Dominica Chronicle masthead.",
+      "licenceNote": "The Chronicle masthead from the newspaper's official site brand assets (dominicachronicle.com/wp-content/uploads/2014/02/The_Chronicle.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://thechronicle.dm",
         "https://en.wikipedia.org/wiki/The_Chronicle_(Dominica)"
@@ -24307,7 +24313,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "IPP Media Commercial Profile / GeoPoll"
       },
       "revenueModel": "Print advertising, private sector corporate partnerships, and multimedia commercial packages",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tz/ipp-media.png",
+      "logoExplainer": "Black italic 'The' over bold navy 'Guardian', with small 'www.ippmedia.com' at top right — The Guardian (Tanzania) / IPP Media masthead.",
+      "licenceNote": "The Guardian (Tanzania) masthead from the publisher's official site brand assets (guardian.co.tz/sites/default/files/theguardian.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.ippmedia.com",
         "https://en.wikipedia.org/wiki/IPP_Media"

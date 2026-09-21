@@ -17,20 +17,28 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "sn-lobservateur",
-    src: "tmp/batch95-install/sn-lobservateur.jpg",
+    id: "dm-the-chronicle",
+    src: "tmp/batch96-install/dm-the-chronicle.jpg",
     explainer:
-      "Black italic 'L'OBS' with a red outline, the word 'OBSERVATEUR' in white caps across a red bar through the O — L'Observateur (GFM) brand mark.",
+      "Blackletter gothic 'The Chronicle' wordmark on white — Dominica Chronicle masthead.",
     licence:
-      "L'Observateur brand mark from the publisher group site brand assets (gfm.sn/wp-content/uploads/2018/10/obs-1.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "The Chronicle masthead from the newspaper's official site brand assets (dominicachronicle.com/wp-content/uploads/2014/02/The_Chronicle.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "ni-100noticias",
-    src: "tmp/batch95-install/ni-100noticias.svg",
+    id: "bi-le-renouveau",
+    src: "tmp/batch96-install/bi-le-renouveau.png",
     explainer:
-      "Stacked red serif '100%' over navy serif 'NOTICIAS' — 100% Noticias Nicaragua masthead wordmark.",
+      "Green circular emblem beside yellow 'Le Renouveau' over red 'du Burundi' — Le Renouveau du Burundi masthead.",
     licence:
-      "100% Noticias masthead wordmark from the outlet's official site icon sprite (100noticias.com.ni/static/images/icons/icon_list.svg, symbol logo-color), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Le Renouveau du Burundi masthead from the newspaper's official site custom-logo asset (lerenouveau.bi/wp-content/uploads/2025/05/21_AVRIL-removebg-preview.png); trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "tz-ipp-media",
+    src: "tmp/batch96-install/tz-ipp-media.png",
+    explainer:
+      "Black italic 'The' over bold navy 'Guardian', with small 'www.ippmedia.com' at top right — The Guardian (Tanzania) / IPP Media masthead.",
+    licence:
+      "The Guardian (Tanzania) masthead from the publisher's official site brand assets (guardian.co.tz/sites/default/files/theguardian.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
