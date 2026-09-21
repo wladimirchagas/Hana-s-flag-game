@@ -17,20 +17,36 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "mm-mizzima",
-    src: "tmp/batch81-install/mm-mizzima.png",
+    id: "ni-articulo-66",
+    src: "tmp/batch82-install/ni-articulo-66.png",
     explainer:
-      "Green peacock feather beside blue lowercase 'mizzima' with 'NEWS FROM MYANMAR' tagline — Mizzima News English masthead.",
+      "Cyan stylised triangle 'A' leading dark-blue 'RTÍCULO 66' with a cyan quote-mark disc — Artículo 66 masthead.",
     licence:
-      "Mizzima News masthead from the publisher's official English site brand assets (eng.mizzima.com), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Artículo 66 masthead from the publisher's official site theme assets (articulo66.com), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "pl-polska-times",
-    src: "tmp/batch81-install/pl-polska-times.png",
+    id: "ug-the-observer",
+    src: "tmp/batch82-install/ug-the-observer.png",
     explainer:
-      "Black serif all-caps 'POLSKA TIMES' wordmark — Polska Times masthead without temporary campaign overlays.",
+      "White bold sans-serif 'The Observer' wordmark on a dark blue bar — The Observer (Uganda) site masthead.",
     licence:
-      "Polska Times masthead from the publisher's official site brand assets (polskatimes.pl / Polska Press), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "The Observer (Uganda) masthead from the publisher's official site brand assets (observer.ug), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "mu-ion-news",
+    src: "tmp/batch82-install/mu-ion-news.png",
+    explainer:
+      "Black serif all-caps 'ION NEWS' wordmark with a yellow accent in the I stem — ION News Mauritius masthead.",
+    licence:
+      "ION News masthead from the publisher's official site brand assets (ionnews.mu), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "by-sb-segodnya",
+    src: "tmp/batch82-install/by-sb-segodnya.svg",
+    explainer:
+      "White condensed 'SB.BY' with a red/green four-square mark and Cyrillic 'БЕЛАРУСЬ СЕГОДНЯ' on black — SB. Belarus Segodnya masthead.",
+    licence:
+      "SB. Belarus Segodnya masthead from the publisher's official site brand assets (sb.by), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 

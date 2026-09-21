@@ -3462,7 +3462,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministry of Information of the Republic of Belarus 2023"
       },
       "revenueModel": "State budget subsidy, print retail sales, and mandatory public institution subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/by/sb-segodnya.svg",
+      "logoExplainer": "White condensed 'SB.BY' with a red/green four-square mark and Cyrillic 'БЕЛАРУСЬ СЕГОДНЯ' on black — SB. Belarus Segodnya masthead.",
+      "licenceNote": "SB. Belarus Segodnya masthead from the publisher's official site brand assets (sb.by), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.sb.by",
         "https://en.wikipedia.org/wiki/Sovetskaya_Belorussiya_%E2%80%93_Belarus_Segodnya"
@@ -16053,7 +16056,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ION Media Analytics 2024"
       },
       "revenueModel": "Digital programmatic advertising, video production, and sponsored roundtables",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mu/ion-news.png",
+      "logoExplainer": "Black serif all-caps 'ION NEWS' wordmark with a yellow accent in the I stem — ION News Mauritius masthead.",
+      "licenceNote": "ION News masthead from the publisher's official site brand assets (ionnews.mu), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://ionnews.mu"
       ]
@@ -17248,7 +17254,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Artículo 66 Digital Metrics 2023"
       },
       "revenueModel": "Citizen donations, independent digital advertising, and press defense grants",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ni/articulo-66.png",
+      "logoExplainer": "Cyan stylised triangle 'A' leading dark-blue 'RTÍCULO 66' with a cyan quote-mark disc — Artículo 66 masthead.",
+      "licenceNote": "Artículo 66 masthead from the publisher's official site theme assets (articulo66.com), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.articulo66.com"
       ]
@@ -24488,7 +24497,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Uganda Journalists Association (UJA) Audit"
       },
       "revenueModel": "Print sales, corporate display ads, and online banner advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ug/the-observer.png",
+      "logoExplainer": "White bold sans-serif 'The Observer' wordmark on a dark blue bar — The Observer (Uganda) site masthead.",
+      "licenceNote": "The Observer (Uganda) masthead from the publisher's official site brand assets (observer.ug), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://observer.ug",
         "https://en.wikipedia.org/wiki/The_Observer_(Uganda)"
