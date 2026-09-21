@@ -2956,10 +2956,12 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Digital subscriptions (Globo), print circulation, and multimedia advertising",
       "logo": "newspaper-logos/br/o-globo.svg",
-      "logoExplainer": "Classic deep blue serif masthead synonymous with Brazil's largest communications and news organisation.",
+      "logoExplainer": "Bold geometric sans-serif 'O GLOBO' wordmark in the paper's bright brand blue (#2258fb) — the current digital masthead.",
+      "licenceNote": "O Globo masthead trademark bundled from Wikimedia Commons (File:O Globo 2025.svg; Public domain) for educational reference in Learn mode.",
       "sources": [
         "https://oglobo.globo.com",
-        "https://en.wikipedia.org/wiki/O_Globo"
+        "https://en.wikipedia.org/wiki/O_Globo",
+        "https://commons.wikimedia.org/wiki/File:O_Globo_2025.svg"
       ]
     },
     {
