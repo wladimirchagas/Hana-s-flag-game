@@ -155,6 +155,19 @@ function formatPerceptionIndex(idx?: {
   return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${scoreStr} (${idx.year})`;
 }
 
+/** HDI shows the 0–1 score (the index’s primary figure) plus the UNDP category. */
+function formatHdiIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)} (${idx.year})`;
+}
+
 export function EntitySummary(props: EntitySummaryProps) {
   if (props.kind === "modern") {
     const c = props.country;
@@ -218,6 +231,9 @@ export function EntitySummary(props: EntitySummaryProps) {
 
       const rsf = formatDemocracyIndex(c.democracy.rsfPress);
       if (rsf) rows.push({ label: "RSF Press Freedom", value: rsf });
+
+      const hdi = formatHdiIndex(c.democracy.hdi);
+      if (hdi) rows.push({ label: "Human Development Index", value: hdi });
     }
 
     if (government) rows.push({ label: "Government", value: government });
