@@ -342,7 +342,9 @@ function fitLogDomain(
 export function formatChartAxisTick(key: ChartAxisKey, rawValue: number): string {
   if (isDemocracyAxisKey(key)) {
     if (key === "v-dem") return rawValue.toFixed(1);
-    if (key === "hdi" || key === "gender-gap" || key === "gpi") return rawValue.toFixed(2);
+    if (key === "hdi" || key === "gender-gap" || key === "gpi" || key === "etr" || key === "gti") {
+      return rawValue.toFixed(2);
+    }
     if (key === "economist" || key === "happiness") return rawValue.toFixed(1);
     if (key === "perception") return rawValue > 0 ? `+${rawValue}` : `${rawValue}`;
     return `${Math.round(rawValue)}`;
