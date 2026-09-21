@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "gd-the-barnacle",
-    src: "tmp/batch119-install/gd-the-barnacle.png",
+    id: "sc-seychelles-weekly",
+    src: "tmp/batch120-install/sc-seychelles-weekly.png",
     explainer:
-      "Black uppercase 'BARNACLE' wordmark with a red 'FREE' badge overlaid on the centre letters — official site masthead from thebarnaclenews.com (Wayback Machine, Jan 2018).",
+      "Banner masthead reading 'Le Nouveau SEYCHELLES WEEKLY' over an island seascape, with the tagline 'Putting Seychelles First-' — official site banner from seychellesweekly.com (Wayback Machine, July 2006).",
     licence:
-      "The Barnacle trademark bundled from the publisher's official site brand assets (thebarnaclenews.com masthead, archived via the Wayback Machine) for educational reference in Learn mode.",
+      "Seychelles Weekly trademark bundled from the publisher's official site brand assets (seychellesweekly.com banner, archived via the Wayback Machine) for educational reference in Learn mode.",
   },
 ];
 

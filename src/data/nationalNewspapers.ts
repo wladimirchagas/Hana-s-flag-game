@@ -20692,7 +20692,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "No masthead image is shown for this newspaper yet. The publisher's official site and Wikimedia Commons were checked; listed without an image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Weekly newspaper",
       "format": "Print & digital",
@@ -20711,8 +20710,12 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Seychelles weekly newspaper",
         "source": "https://en.wikipedia.org/wiki/Media_of_Seychelles"
       },
+      "logo": "newspaper-logos/sc/seychelles-weekly.png",
+      "logoExplainer": "Banner masthead reading 'Le Nouveau SEYCHELLES WEEKLY' over an island seascape, with the tagline 'Putting Seychelles First-' — official site banner from seychellesweekly.com (Wayback Machine, July 2006).",
+      "licenceNote": "Seychelles Weekly trademark bundled from the publisher's official site brand assets (seychellesweekly.com banner, archived via the Wayback Machine) for educational reference in Learn mode.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Media_of_Seychelles"
+        "https://en.wikipedia.org/wiki/Media_of_Seychelles",
+        "https://web.archive.org/web/20060721065352/http://www.seychellesweekly.com/"
       ]
     }
   ],
