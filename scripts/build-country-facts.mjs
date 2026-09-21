@@ -222,6 +222,8 @@ export type DemocracyData = {
   gdi?: DemocracyIndex;
   /** World Justice Project Rule of Law Index */
   wjpRuleOfLaw?: DemocracyIndex;
+  /** IMD World Competitiveness Ranking (overall score) */
+  imdCompetitiveness?: DemocracyIndex;
 };
 
 export type CountryFacts = {
