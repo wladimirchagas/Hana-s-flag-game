@@ -44,17 +44,12 @@ export type DemocracyIndexChartProps = {
   onHover: (code: string | null) => void;
 };
 
-/** Deterministic −0.5…0.5 jitter so one-axis strip markers do not stack exactly. */
-function stripJitter(code: string): number {
-  let h = 0;
-  for (let i = 0; i < code.length; i++) h = (h * 31 + code.charCodeAt(i)) | 0;
-  return (((h >>> 0) % 1000) / 999) - 0.5;
-}
-
 const PAD = { top: 16, right: 18, bottom: 82, left: 74 };
 const VIEW_W = 960;
 const VIEW_H = 500;
 const TICK_COUNT = 5;
+/** Centre-to-centre gap for stacked flags in one-axis column/bar mode (viewBox units). */
+const FLAG_STACK = 30;
 
 type FilterKind = "continents" | "membership" | "indexes" | null;
 
@@ -409,44 +404,110 @@ export function DemocracyIndexChart({
   }, [activeYKey, yDomain]);
 
   const points = useMemo(() => {
-    const midX = (plot.x0 + plot.x1) / 2;
-    const midY = (plot.y0 + plot.y1) / 2;
-    // One-axis strips: use most of the free dimension so flags do not stack.
-    const jitterXSpan = (plot.x1 - plot.x0) * 0.88;
-    const jitterYSpan = (plot.y1 - plot.y0) * 0.88;
-    return rawPoints.map((p) => {
-      const country = byCode.get(p.code)!;
-      let cx: number;
-      let cy: number;
-      if (!activeXKey && activeYKey) {
-        // Vertical strip: score on Y, jitter on X.
-        cx = midX + stripJitter(p.code) * jitterXSpan;
-        cy = scaleLinear(chartAxisScaleValue(activeYKey, p.y), yDomain, {
-          min: plot.y1,
-          max: plot.y0,
-        });
-      } else if (!activeYKey && activeXKey) {
-        // Horizontal strip: score on X, jitter on Y.
-        cx = scaleLinear(chartAxisScaleValue(activeXKey, p.x), xDomain, {
+    type LaidOut = {
+      code: string;
+      x: number;
+      y: number;
+      xLabel: string;
+      yLabel: string;
+      country: Country;
+      cx: number;
+      cy: number;
+    };
+
+    if (activeXKey && activeYKey) {
+      return rawPoints.map((p) => {
+        const country = byCode.get(p.code)!;
+        return {
+          ...p,
+          country,
+          cx: scaleLinear(chartAxisScaleValue(activeXKey, p.x), xDomain, {
+            min: plot.x0,
+            max: plot.x1,
+          }),
+          cy: scaleLinear(chartAxisScaleValue(activeYKey, p.y), yDomain, {
+            min: plot.y1,
+            max: plot.y0,
+          }),
+        };
+      });
+    }
+
+    // One-axis mode: column chart (X only) or bar chart (Y only).
+    // Same scored value → one column/bar; flags stack from the unused-axis
+    // baseline — up for columns, right for bars.
+    const out: LaidOut[] = [];
+    if (activeXKey && !activeYKey) {
+      type Staged = (typeof rawPoints)[number] & { cx: number };
+      const byScore = new Map<number, Staged[]>();
+      for (const p of rawPoints) {
+        const cx = scaleLinear(chartAxisScaleValue(activeXKey, p.x), xDomain, {
           min: plot.x0,
           max: plot.x1,
         });
-        cy = midY + stripJitter(p.code) * jitterYSpan;
-      } else if (activeXKey && activeYKey) {
-        cx = scaleLinear(chartAxisScaleValue(activeXKey, p.x), xDomain, {
-          min: plot.x0,
-          max: plot.x1,
-        });
-        cy = scaleLinear(chartAxisScaleValue(activeYKey, p.y), yDomain, {
-          min: plot.y1,
-          max: plot.y0,
-        });
-      } else {
-        cx = midX;
-        cy = midY;
+        const list = byScore.get(p.x);
+        const staged = { ...p, cx };
+        if (list) list.push(staged);
+        else byScore.set(p.x, [staged]);
       }
-      return { ...p, country, cx, cy };
-    });
+      const maxH = plot.y1 - plot.y0 - FLAG_STACK;
+      for (const group of byScore.values()) {
+        group.sort((a, b) => a.code.localeCompare(b.code));
+        const cx = group[0]!.cx;
+        const step = Math.min(FLAG_STACK, maxH / Math.max(group.length, 1));
+        group.forEach((p, i) => {
+          out.push({
+            code: p.code,
+            x: p.x,
+            y: p.y,
+            xLabel: p.xLabel,
+            yLabel: p.yLabel,
+            country: byCode.get(p.code)!,
+            cx,
+            // Stack upward from the X-axis baseline (column chart).
+            cy: plot.y1 - FLAG_STACK * 0.55 - i * step,
+          });
+        });
+      }
+      return out;
+    }
+
+    if (activeYKey && !activeXKey) {
+      type Staged = (typeof rawPoints)[number] & { cy: number };
+      const byScore = new Map<number, Staged[]>();
+      for (const p of rawPoints) {
+        const cy = scaleLinear(chartAxisScaleValue(activeYKey, p.y), yDomain, {
+          min: plot.y1,
+          max: plot.y0,
+        });
+        const list = byScore.get(p.y);
+        const staged = { ...p, cy };
+        if (list) list.push(staged);
+        else byScore.set(p.y, [staged]);
+      }
+      const maxW = plot.x1 - plot.x0 - FLAG_STACK;
+      for (const group of byScore.values()) {
+        group.sort((a, b) => a.code.localeCompare(b.code));
+        const cy = group[0]!.cy;
+        const step = Math.min(FLAG_STACK, maxW / Math.max(group.length, 1));
+        group.forEach((p, i) => {
+          out.push({
+            code: p.code,
+            x: p.x,
+            y: p.y,
+            xLabel: p.xLabel,
+            yLabel: p.yLabel,
+            country: byCode.get(p.code)!,
+            // Stack rightward from the Y-axis baseline (bar chart).
+            cx: plot.x0 + FLAG_STACK * 0.55 + i * step,
+            cy,
+          });
+        });
+      }
+      return out;
+    }
+
+    return out;
   }, [rawPoints, byCode, activeXKey, activeYKey, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
 
   const filtersActive =
