@@ -58,15 +58,20 @@ import { EntitySummary } from "../components/EntitySummary";
 import { FlagMeaning } from "../components/FlagMeaning";
 import { LearnInfoTabs } from "../components/LearnInfoTabs";
 import { LearnPanelCategoryBody } from "../components/LearnPanelCategoryBody";
+import { LearnPanelSymbolBody } from "../components/LearnPanelSymbolBody";
+import { OverviewIdentity, type OverviewIdentityKind } from "../components/OverviewIdentity";
 import { TravelVisitorStats } from "../components/TravelVisitorStats";
 import {
   LEARN_PANEL_MEDIA_SECTIONS,
+  LEARN_PANEL_SPORTS_SECTIONS,
   LEARN_PANEL_SUBDIVISION_TABS,
   LEARN_PANEL_TRAVEL_SECTIONS,
   mediaSectionForGridContent,
   panelTabForGridContent,
+  sportsSectionForGridContent,
   travelSectionForGridContent,
   type LearnPanelMediaSection,
+  type LearnPanelSportsSection,
   type LearnPanelTabId,
   type LearnPanelTravelSection,
 } from "../lib/learnPanelTabs";
@@ -428,6 +433,12 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [travelSection, setTravelSection] = useState<LearnPanelTravelSection>(
     () => travelSectionForGridContent(loadGridContentType()) ?? "airline",
   );
+  const [sportsSection, setSportsSection] = useState<LearnPanelSportsSection>(
+    () => sportsSectionForGridContent(loadGridContentType()) ?? "footballcrest",
+  );
+  // Overview leading image: Flag vs Coat of arms pills.
+  const [overviewIdentity, setOverviewIdentity] =
+    useState<OverviewIdentityKind>("flag");
   // Large-screen information panel drawer. Collapsed until a firm selection
   // exists; Hide dismisses it while keeping the selection; picking another
   // (or the same again after clear) opens it. Ignored on ≤900px.
@@ -456,6 +467,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     // pick opens the drawer again. Clearing leaves the panel collapsed because
     // there is nothing to show.
     setPanelDismissed(false);
+    setOverviewIdentity("flag");
   }, [panelSelectionKey]);
   const panelCollapsed =
     isWideLayout && (panelSelectionKey == null || panelDismissed);
@@ -481,6 +493,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [gridTourismLogoId, setGridTourismLogoId] = useState<string | null>(null);
   // A tourism logo picked in the "National symbols" tab of subdivision view.
   const [selectedSubdivisionTourismLogo, setSelectedSubdivisionTourismLogo] = useState<TourismLogo | null>(null);
+  // Passport cover picked in the Travel tab (or Show → Passports).
+  const [gridPassportId, setGridPassportId] = useState<string | null>(null);
   // The specific national news agency clicked in the grid.
   const [gridNewsAgencyId, setGridNewsAgencyId] = useState<string | null>(null);
   // The specific top national newspaper clicked in the grid.
@@ -499,6 +513,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     setGridAirlineId(null);
     setGridBroadcasterId(null);
     setGridTourismLogoId(null);
+    setGridPassportId(null);
     setGridNewsAgencyId(null);
     setGridNewspaperId(null);
     setGridPartyId(null);
@@ -510,6 +525,10 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     if (media) setMediaSection(media);
     const travel = travelSectionForGridContent(type);
     if (travel) setTravelSection(travel);
+    const sports = sportsSectionForGridContent(type);
+    if (sports) setSportsSection(sports);
+    if (type === "coatofarms") setOverviewIdentity("coatofarms");
+    if (type === "flag") setOverviewIdentity("flag");
   }, []);
 
   const chooseGridContentType = (type: GridContentType) => {
@@ -1912,26 +1931,48 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  // Pick / clear helpers for the Media · Travel · Politics panel tabs.
+  // Pick / clear helpers for the Media · Travel · Sports · Politics panel tabs.
   const pickPanelCategoryItem = useCallback(
-    (type: LearnPanelMediaSection | LearnPanelTravelSection | "party", id: string) => {
+    (
+      type:
+        | LearnPanelMediaSection
+        | LearnPanelTravelSection
+        | LearnPanelSportsSection
+        | "party",
+      id: string,
+      countryCode?: string,
+    ) => {
       if (type === "airline") setGridAirlineId(id);
       else if (type === "broadcaster") setGridBroadcasterId(id);
       else if (type === "tourismlogo") setGridTourismLogoId(id);
+      else if (type === "passport") setGridPassportId(id);
       else if (type === "newsagency") setGridNewsAgencyId(id);
       else if (type === "newspaper") setGridNewspaperId(id);
-      else setGridPartyId(id);
+      else if (type === "footballcrest") {
+        setGridCrest({ id, parent: countryCode ?? "" });
+      } else if (type === "olympiccommittee") {
+        setGridOlympicCommittee({ id, parent: countryCode ?? "" });
+      } else setGridPartyId(id);
     },
     [],
   );
 
   const clearPanelCategoryPick = useCallback(
-    (type: LearnPanelMediaSection | LearnPanelTravelSection | "party") => {
+    (
+      type:
+        | LearnPanelMediaSection
+        | LearnPanelTravelSection
+        | LearnPanelSportsSection
+        | "party",
+    ) => {
       if (type === "airline") setGridAirlineId(null);
       else if (type === "broadcaster") setGridBroadcasterId(null);
       else if (type === "tourismlogo") setGridTourismLogoId(null);
+      else if (type === "passport") setGridPassportId(null);
       else if (type === "newsagency") setGridNewsAgencyId(null);
       else if (type === "newspaper") setGridNewspaperId(null);
+      else if (type === "footballcrest") setGridCrest(null);
+      else if (type === "olympiccommittee") setGridOlympicCommittee(null);
       else setGridPartyId(null);
     },
     [],
@@ -2314,12 +2355,25 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                           : "facts"
                         : panelTab) === "facts" && (
                         <>
-                          {/* Identity image (flag / coat of arms / passport / crest /
-                              Olympic logo) leads Overview. Multi-item Show types
-                              (airlines, newspapers, …) fall back to the national
-                              flag here — their own widgets live in Media/Travel/
-                              Politics. */}
-                          {panelFlagBox}
+                          {/* Flag / coat of arms lead Overview via pills.
+                              Passports, crests and Olympic logos live on
+                              Travel / Sports instead. */}
+                          {!flagLoadFailed && (
+                            <OverviewIdentity
+                              country={display.country}
+                              active={overviewIdentity}
+                              onChange={setOverviewIdentity}
+                              flagUrl={flagUrl}
+                              flagPngFallback={
+                                !FLAGCDN_FALLBACK_EXCLUDED.has(display.country.code)
+                                  ? `https://flagcdn.com/${display.country.code.toLowerCase()}.png`
+                                  : null
+                              }
+                              baseUrl={baseUrl}
+                              onEnlarge={setZoomedFlagUrl}
+                              onFlagError={() => setFlagLoadFailed(true)}
+                            />
+                          )}
                           <EntitySummary
                             kind="modern"
                             country={display.country}
@@ -2402,34 +2456,125 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                       )}
                       {!subdivisionMode && panelTab === "travel" && (
                         modernCountrySelected ? (
-                          <LearnPanelCategoryBody
-                            sections={LEARN_PANEL_TRAVEL_SECTIONS}
-                            activeSection={travelSection}
+                          <div className="learn-panel-category">
+                            <TravelVisitorStats
+                              countryCode={display.country.code}
+                            />
+                            <div
+                              className="learn-panel-category__sections"
+                              role="tablist"
+                              aria-label="Travel"
+                            >
+                              {LEARN_PANEL_TRAVEL_SECTIONS.map((s) => {
+                                const selected = s.id === travelSection;
+                                return (
+                                  <button
+                                    key={s.id}
+                                    type="button"
+                                    role="tab"
+                                    aria-selected={selected}
+                                    className={`learn-panel-category__section${
+                                      selected
+                                        ? " learn-panel-category__section--active"
+                                        : ""
+                                    }`}
+                                    onClick={() => setTravelSection(s.id)}
+                                  >
+                                    {s.label}
+                                  </button>
+                                );
+                              })}
+                            </div>
+                            {travelSection === "passport" ? (
+                              <LearnPanelSymbolBody
+                                sections={[
+                                  { id: "passport", label: "Passports" },
+                                ]}
+                                activeSection="passport"
+                                onSectionChange={() => {}}
+                                countryCode={display.country.code}
+                                countryName={display.country.name}
+                                pickedId={gridPassportId}
+                                onPick={(id) =>
+                                  pickPanelCategoryItem("passport", id)
+                                }
+                                onClearPick={() =>
+                                  clearPanelCategoryPick("passport")
+                                }
+                                baseUrl={baseUrl}
+                                onEnlarge={setZoomedFlagUrl}
+                              />
+                            ) : (
+                              <LearnPanelCategoryBody
+                                sections={[
+                                  {
+                                    id: travelSection,
+                                    label:
+                                      travelSection === "airline"
+                                        ? "Airlines"
+                                        : "Tourism",
+                                  },
+                                ]}
+                                activeSection={travelSection}
+                                onSectionChange={() => {}}
+                                countryCode={display.country.code}
+                                countryName={display.country.name}
+                                pickedId={
+                                  travelSection === "airline"
+                                    ? gridAirlineId
+                                    : gridTourismLogoId
+                                }
+                                onPick={(id) =>
+                                  pickPanelCategoryItem(travelSection, id)
+                                }
+                                onClearPick={() =>
+                                  clearPanelCategoryPick(travelSection)
+                                }
+                                resolveImage={resolveFlag}
+                                baseUrl={baseUrl}
+                                onEnlarge={setZoomedFlagUrl}
+                              />
+                            )}
+                          </div>
+                        ) : (
+                          <p className="learn-panel-tabs__empty">
+                            Select {display.country.name} to browse its airlines,
+                            tourism logos and passports.
+                          </p>
+                        )
+                      )}
+                      {!subdivisionMode && panelTab === "sports" && (
+                        modernCountrySelected ? (
+                          <LearnPanelSymbolBody
+                            sections={LEARN_PANEL_SPORTS_SECTIONS}
+                            activeSection={sportsSection}
                             onSectionChange={(id) =>
-                              setTravelSection(id as LearnPanelTravelSection)
+                              setSportsSection(id as LearnPanelSportsSection)
                             }
                             countryCode={display.country.code}
                             countryName={display.country.name}
                             pickedId={
-                              travelSection === "airline"
-                                ? gridAirlineId
-                                : gridTourismLogoId
+                              sportsSection === "footballcrest"
+                                ? gridCrest?.id ?? null
+                                : gridOlympicCommittee?.id ?? null
                             }
-                            onPick={(id) => pickPanelCategoryItem(travelSection, id)}
-                            onClearPick={() => clearPanelCategoryPick(travelSection)}
-                            resolveImage={resolveFlag}
+                            onPick={(id) =>
+                              pickPanelCategoryItem(
+                                sportsSection,
+                                id,
+                                display.country.code,
+                              )
+                            }
+                            onClearPick={() =>
+                              clearPanelCategoryPick(sportsSection)
+                            }
                             baseUrl={baseUrl}
                             onEnlarge={setZoomedFlagUrl}
-                            preamble={
-                              <TravelVisitorStats
-                                countryCode={display.country.code}
-                              />
-                            }
                           />
                         ) : (
                           <p className="learn-panel-tabs__empty">
-                            Select {display.country.name} to browse its airlines and
-                            tourism logos.
+                            Select {display.country.name} to browse its football
+                            associations and Olympic committees.
                           </p>
                         )
                       )}

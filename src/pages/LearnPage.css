@@ -2144,6 +2144,15 @@
   color: var(--ink-soft);
 }
 
+.overview-identity__pills {
+  margin: 0 0 0.75rem;
+}
+
+/* Nested SymbolBody under Travel's own pills — no extra top gap. */
+.learn-panel-category > .learn-panel-category {
+  margin-top: 0;
+}
+
 /* Government + Membership above the party chooser on Politics. */
 .learn-panel-tabs__panel > .entity-summary + .learn-panel-category {
   margin-top: 0.85rem;
