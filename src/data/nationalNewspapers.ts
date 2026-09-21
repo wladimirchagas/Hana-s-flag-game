@@ -19354,10 +19354,11 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tia Belau Circulation Profile 2023"
       },
       "revenueModel": "Print copy sales, political notices, and local display ads",
-      "noImageReason": "No authentic masthead is shown yet. A placeholder graphic was removed. Wikimedia Commons, the newspaper's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Tia_Belau"
-      ]
+      "logo": "newspaper-logos/pw/tia-belau.png",
+      "logoExplainer": "Yellow masthead with blue 3D 'TIA BELAU' lettering, a traditional Palauan bai as the 'A', a spear-bearing warrior, and the constitutional open-government quotation — official brand banner from tiabelaunews.com.",
+      "licenceNote": "Tia Belau trademark bundled from the publisher's official site brand assets (tiabelaunews.com masthead, archived via the Wayback Machine) for educational reference in Learn mode.",
+
+      "sources": ["https://www.tiabelaunews.com", "https://en.wikipedia.org/wiki/Tia_Belau"]
     },
     {
       "id": "pw-eco-palau-news",
@@ -22934,11 +22935,11 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Observatoire des Médias du Togo (OTM)"
       },
       "revenueModel": "Newsstand retail sales, independent subscriptions, and commercial advertising",
-      "noImageReason": "No authentic masthead is shown yet. A placeholder graphic was removed. Wikimedia Commons, the newspaper's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Media_of_Togo",
-        "https://rsf.org/en/country/togo"
-      ]
+      "logo": "newspaper-logos/tg/liberte-togo.png",
+      "logoExplainer": "Red header with yellow megaphone, white bubble-letter 'LIBERTÉ', and the slogan 'Le peuple peut enfin parler !' over a curved white strip naming the Togolese daily — official site banner from libertetogo.tg.",
+      "licenceNote": "Liberté (Togo) trademark bundled from the publisher's official site brand assets (libertetogo.tg header banner, archived via the Wayback Machine) for educational reference in Learn mode.",
+
+      "sources": ["https://libertetogo.tg", "https://fr.wikipedia.org/wiki/Libert%C3%A9_(journal)"]
     },
     {
       "id": "tg-togo-matin",
