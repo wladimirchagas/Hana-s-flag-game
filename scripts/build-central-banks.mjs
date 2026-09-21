@@ -148,13 +148,13 @@ for (const [cc, h] of Object.entries(harvest.countries).sort(([a], [b]) =>
     entry.noImageReason =
       ov.noImageReason ||
       h.noImageReason ||
-      "No brand logo is bundled for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.";
+      "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.";
     withoutLogo++;
   } else {
     // Honest gap — researched against the harvest sources so far
     entry.noImageReason =
       ov.noImageReason ||
-      "No brand logo is bundled for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.";
+      "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.";
     withoutLogo++;
   }
 

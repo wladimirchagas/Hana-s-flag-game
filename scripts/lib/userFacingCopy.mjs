@@ -32,14 +32,14 @@ export const USER_FACING_LEAK_PATTERNS = [
     re: /\b(?:after )?this pass\b/i,
   },
   {
-    id: "bundled_yet_jargon",
-    label: 'pipeline jargon ("bundled yet" / "has been bundled")',
-    re: /\b(?:has been |could be )?bundled yet\b/i,
+    id: "bundled_jargon",
+    label: 'pipeline jargon ("bundled" — say "shown" / "available in the app")',
+    re: /\bbundled\b/i,
   },
   {
-    id: "freely_citable_file_jargon",
-    label: 'pipeline jargon ("freely citable logo file")',
-    re: /\bfreely citable logo file\b/i,
+    id: "freely_citable_jargon",
+    label: 'pipeline jargon ("freely citable" / "freely-citable")',
+    re: /\bfreely[\s-]?citable\b/i,
   },
   {
     id: "wikidata_item_qid",

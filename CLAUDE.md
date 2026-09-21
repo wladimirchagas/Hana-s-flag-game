@@ -2813,11 +2813,11 @@ by name. Research is still mandatory — name the **families** in plain language
    Name what was searched in ordinary words. Do not paste generator output, SPARQL
    diagnostics, or file-fetch logs into them.
 2. **Forbidden in those fields (present and future):** Wikidata Q-ids (`Q1506724`),
-   Wikidata property codes (`P154`, `P17`, …), raw `http(s)://` URLs, and agent jargon
-   (`this pass`, `bundled yet`, `freely citable logo file`). Put identifiers and URLs in
-   `sources[]` (or the Website row) instead — the AU RBA entry keeps
-   `https://www.wikidata.org/wiki/Q1506724` in `sources[]` and a plain gap sentence in
-   `noImageReason`.
+   Wikidata property codes (`P154`, `P17`, …), raw `http(s)://` URLs, and pipeline /
+   agent jargon (`this pass`, `bundled`, `freely citable` / `freely-citable`). Put
+   identifiers and URLs in `sources[]` (or the Website row) instead — the AU RBA entry
+   keeps `https://www.wikidata.org/wiki/Q1506724` in `sources[]` and a plain gap sentence
+   in `noImageReason`. Say "shown" / "available in the app", never "bundled".
 3. **Research gates must not REQUIRE the forbidden tokens.** A check may still demand that
    the reason name source *families* (Wikidata, Commons, official site, Elects, …). It must
    never demand the literal string `P154` (or a Q-id) as proof of research — that is what

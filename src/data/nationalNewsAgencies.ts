@@ -1944,7 +1944,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "readership": {"metric":"Deploys correspondents across all 15 counties of Liberia, feeding wire dispatches to all domestic radio and print outlets","source":"MICAT Liberia Annual Report 2023"},
       "annualPublicFunding": {"total":"Parliamentary state budget appropriation","perCapita":"State funded"},
       "revenueModel": "Parliamentary state budget funding and agency licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "noImageReason": "No authentic emblem is shown yet. A placeholder graphic was removed. Wikimedia Commons, the agency's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
       "sources": ["https://liberianewsagency.com","https://en.wikipedia.org/wiki/Liberia_News_Agency"],
     }
   ],
@@ -2098,7 +2098,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Official national news agency of Madagascar; provides institutional dispatches, government communiqués, and regional reporting from all 23 regions of the island",
       "readership": {"metric":"Syndicated to all major print, broadcast, and community radio stations throughout Madagascar","source":"Ministère de la Communication et de la Culture Rapport Annuel 2023"},
       "revenueModel": "State budget allocation and wire distribution subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "noImageReason": "No authentic emblem is shown yet. A placeholder graphic was removed. Wikimedia Commons, the agency's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
       "sources": ["https://taratra.mg","https://anta.mg"],
     }
   ],
@@ -2163,7 +2163,7 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Official national state news agency of Myanmar; distributes official government notifications, administrative orders, diplomatic receptions, state economic projects, and military communiqués",
       "readership": {"metric":"Primary official wire distributor feeding all state broadcast television, radio, and state-owned newspapers nationwide","source":"Ministry of Information Myanmar Annual Report 2023"},
       "revenueModel": "State government budget allocation and newspaper sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "noImageReason": "No authentic emblem is shown yet. A placeholder graphic was removed. Wikimedia Commons, the agency's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
       "sources": ["https://www.moi.gov.mm","https://en.wikipedia.org/wiki/Myanmar_News_Agency"],
     }
   ],

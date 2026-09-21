@@ -115,6 +115,35 @@ for (const rel of UI_MUST_REFERENCE) {
   }
 }
 
+// Hardcoded fallbacks in details components must also stay clean.
+const UI_FALLBACK_FILES = [
+  "src/components/NewspaperDetails.tsx",
+  "src/components/NewsAgencyDetails.tsx",
+  "src/components/CentralBankDetails.tsx",
+  "src/components/PoliticalPartyDetails.tsx",
+  "src/components/TourismLogoDetails.tsx",
+  "src/components/NationalFlagDetails.tsx",
+];
+for (const rel of UI_FALLBACK_FILES) {
+  const abs = resolve(ROOT, rel);
+  try {
+    const body = readFileSync(abs, "utf8");
+    for (const m of body.matchAll(/"([^"\\]*(?:\\.[^"\\]*)*)"|'([^'\\]*(?:\\.[^'\\]*)*)'/g)) {
+      const lit = (m[1] ?? m[2] ?? "").replace(/\\"/g, '"');
+      if (!/(no (?:logo|image|masthead|flag)|not (?:shown|available)|missing)/i.test(lit)) continue;
+      if (lit.length < 40) continue;
+      const leaks = findUserFacingLeaks(lit);
+      for (const leak of leaks) {
+        failures.push(
+          `${rel} fallback string leaks ${leak.label} (matched ${JSON.stringify(leak.match)}): ${JSON.stringify(lit.slice(0, 120))}`,
+        );
+      }
+    }
+  } catch {
+    // optional
+  }
+}
+
 if (failures.length > 0) {
   console.error(`✗ user-facing copy check FAILED (${failures.length} leak(s) across ${scanned} gap string(s))\n`);
   for (const f of failures) console.error(`  • ${f}`);

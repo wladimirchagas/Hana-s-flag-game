@@ -1048,7 +1048,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "BZ",
       "shortName": "VIA",
       "name": "Vision Inspired by Action",
-      "noImageReason": "Searched for a Vision Inspired by Action emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Vision Inspired by Action emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Centrism",
         "Anti-corruption"
@@ -1329,7 +1329,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "BJ",
       "shortName": "DRP",
       "name": "Democratic Renewal Party",
-      "noImageReason": "Searched for a Democratic Renewal Party emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Democratic Renewal Party emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Conservatism",
         "Christian democracy"
@@ -1391,7 +1391,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PD",
       "name": "Partit de la Democràcia",
       "nameEn": "Democratic Party of Andorra",
-      "noImageReason": "Searched for a Democratic Party of Andorra emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Democratic Party of Andorra emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Liberalism",
         "Centre-right politics"
@@ -1421,7 +1421,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "UC",
       "name": "Unió Ciutadana",
       "nameEn": "Citizens' Union",
-      "noImageReason": "Searched for a Citizens' Union emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Citizens' Union emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Liberalism",
         "Progressivism"
@@ -1518,7 +1518,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "LN",
       "name": "Lëvizja për Ndryshim",
       "nameEn": "Movement for Change",
-      "noImageReason": "Searched for a Movement for Change emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Movement for Change emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Centrism",
         "Liberalism"
@@ -1751,7 +1751,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "AG",
       "shortName": "DMC",
       "name": "Democratic Movement for Change",
-      "noImageReason": "Searched for a Democratic Movement for Change emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Democratic Movement for Change emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Centrism",
         "Social liberalism"
@@ -2082,7 +2082,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "DİP",
       "name": "Demokratik İslahatlar Partiyası",
       "nameEn": "Democratic Reforms Party",
-      "noImageReason": "Searched for a Democratic Reforms Party emblem and found none that can be bundled: Wikimedia Commons holds no logo file for it, Wikidata records no logo image on its item for Azerbaijan, and its English Wikipedia article's infobox carries no logo parameter at all. No usable file was reachable from the party's own website or the Elects network either. Listed without an emblem rather than dropped.",
+      "noImageReason": "Searched for a Democratic Reforms Party emblem and found none that can be shown here: Wikimedia Commons holds no logo file for it, Wikidata records no logo image on its item for Azerbaijan, and its English Wikipedia article's infobox carries no logo parameter at all. No usable file was reachable from the party's own website or the Elects network either. Listed without an emblem rather than dropped.",
       "ideology": [
         "Reformism"
       ],
@@ -2111,7 +2111,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "BAP",
       "name": "Böyük Azərbaycan Partiyası",
       "nameEn": "Great Azerbaijan Party",
-      "noImageReason": "Searched for a Great Azerbaijan Party emblem and found none that can be bundled: Wikimedia Commons holds no logo file for it, Wikidata records no logo image on its item for Azerbaijan, and it has no English Wikipedia article at all — only a row in the List of political parties in Azerbaijan, which carries no emblem. No usable file was reachable from the party's own website or the Elects network either. Listed without an emblem rather than dropped.",
+      "noImageReason": "Searched for a Great Azerbaijan Party emblem and found none that can be shown here: Wikimedia Commons holds no logo file for it, Wikidata records no logo image on its item for Azerbaijan, and it has no English Wikipedia article at all — only a row in the List of political parties in Azerbaijan, which carries no emblem. No usable file was reachable from the party's own website or the Elects network either. Listed without an emblem rather than dropped.",
       "ideology": [],
       "ideologyPosition": "other",
       "leader": "Elşad Musayev",
@@ -3757,7 +3757,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Lega",
       "name": "Lega dei Ticinesi",
       "nameEn": "Ticino League",
-      "noImageReason": "Searched for a Lega dei Ticinesi emblem and found none that can be bundled: Wikimedia Commons holds no logo file for the party (a namespace-6 search returns only seating diagrams), its English Wikipedia article's infobox carries no logo parameter at all, and Wikidata records no logo image on its item for Switzerland. No usable file was reachable from the party's own site or the Elects network either. Listed without an emblem rather than dropped, and rather than shown a canton flag it does not own.",
+      "noImageReason": "Searched for a Lega dei Ticinesi emblem and found none that can be shown here: Wikimedia Commons holds no logo file for the party (a namespace-6 search returns only seating diagrams), its English Wikipedia article's infobox carries no logo parameter at all, and Wikidata records no logo image on its item for Switzerland. No usable file was reachable from the party's own site or the Elects network either. Listed without an emblem rather than dropped, and rather than shown a canton flag it does not own.",
       "ideology": [
         "Regionalism",
         "Right-wing populism"
@@ -10075,7 +10075,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "NG",
       "shortName": "SDP",
       "name": "Social Democratic Party",
-      "noImageReason": "No freely-licensed or fair-use SDP (Nigeria) logo file exists on English Wikipedia or Wikimedia Commons as of this writing; searches of both (including Special:Search in the File namespace and Commons MediaSearch for 'Social Democratic Party Nigeria logo') returned no results.",
+      "noImageReason": "No usable or fair-use SDP (Nigeria) logo file exists on English Wikipedia or Wikimedia Commons as of this writing; searches of both (including Special:Search in the File namespace and Commons MediaSearch for 'Social Democratic Party Nigeria logo') returned no results.",
       "ideology": [
         "Social democracy"
       ],
@@ -13897,7 +13897,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "BKM",
       "name": "বাংলাদেশ খেলাফত মজলিস",
       "nameEn": "Bangladesh Khelafat Majlis",
-      "noImageReason": "Searched for a Bangladesh Khelafat Majlis emblem and found none that can be bundled: Wikimedia Commons holds only photographs and a lapel-pin image, no logo file; the party has no English Wikipedia article, so no infobox logo exists; and Wikidata records no logo image for Bangladesh. No usable file was reachable from the party's own website or the Elects network either. The file that previously sat in this repository for it was hand-drawn SVG primitives and has been deleted.",
+      "noImageReason": "Searched for a Bangladesh Khelafat Majlis emblem and found none that can be shown here: Wikimedia Commons holds only photographs and a lapel-pin image, no logo file; the party has no English Wikipedia article, so no infobox logo exists; and Wikidata records no logo image for Bangladesh. No usable file was reachable from the party's own website or the Elects network either. The file that previously sat in this repository for it was hand-drawn SVG primitives and has been deleted.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -29068,7 +29068,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PS",
       "name": "Parti Socialiste",
       "nameEn": "Socialist Party",
-      "noImageReason": "Searched for a Socialist Party emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Socialist Party emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Socialism",
         "Left-wing"
@@ -29131,7 +29131,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "BI",
       "shortName": "FRODEBU",
       "name": "Front for Democracy in Burundi",
-      "noImageReason": "Searched for a Front for Democracy in Burundi emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Front for Democracy in Burundi emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Social democracy",
         "Tutsi political representation"
@@ -29160,7 +29160,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "BI",
       "shortName": "UPRONA",
       "name": "Union for National Progress",
-      "noImageReason": "Searched for a Union for National Progress emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Union for National Progress emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Conservatism",
         "Tutsi nationalism"
@@ -29612,7 +29612,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "UPC",
       "name": "Union des Populations du Cameroun",
       "nameEn": "Union of the Peoples of Cameroon",
-      "noImageReason": "Searched for a Union of the Peoples of Cameroon emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Union of the Peoples of Cameroon emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Socialism",
         "Centrism"
