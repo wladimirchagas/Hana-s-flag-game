@@ -20690,7 +20690,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sudanese Journalists Syndicate (SJS) Reports"
       },
       "revenueModel": "Print sales, commercial notices, and digital advertisements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sd/al-intibaha.jpg",
+      "logoExplainer": "Circular globe-grid emblem with blue Sudan map, red Arabic 'الانتباهة' over English 'Alintibaha', and curved slogan 'صوت الأغلبية الصامتة' — Al-Intibaha newspaper brand mark.",
+      "licenceNote": "Al-Intibaha masthead from the newspaper's official Facebook page brand assets; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://alintibaha.net",
         "https://en.wikipedia.org/wiki/Al-Intibaha"
