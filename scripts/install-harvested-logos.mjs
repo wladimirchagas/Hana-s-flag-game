@@ -17,12 +17,20 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "ne-le-republicain",
-    src: "tmp/batch112-install/ne-le-republicain.png",
+    id: "gn-horoya",
+    src: "tmp/batch113-install/gn-horoya.png",
     explainer:
-      "Black 'Le Républicain' over italic 'Niger' on an orange rounded rectangle — historic masthead from the paper's own site (republicain-niger.com), archived 2008.",
+      "White 'HOROYA' over 'Quotidien National' inside a red oval, with red tagline 'La référence de l’information Juste' beneath — official masthead from horoya.net.",
     licence:
-      "Le Républicain (Niger) trademark bundled from the publisher's official site brand assets via Wayback Machine (republicain-niger.com/images/LogoRepublicain.gif, 2008-03-12) for educational reference in Learn mode.",
+      "Horoya trademark bundled from the publisher's official site brand assets (horoya.net/wp-content/uploads/2025/03/horoya-logo.png) for educational reference in Learn mode.",
+  },
+  {
+    id: "tl-diario-nacional",
+    src: "tmp/batch113-install/tl-diario-nacional.png",
+    explainer:
+      "Timor-Leste flag beside red 'Jornal Nacional' over black 'Diário' with a sun-ray stylised 'i' — masthead from the publisher's jndiario.tl brand assets.",
+    licence:
+      "Jornal Nacional Diário / Grupo de Média Nacional trademark bundled from the publisher's official site brand assets (jndiario.tl/media/vizitor/gmn.png) for educational reference in Learn mode.",
   },
 ];
 
