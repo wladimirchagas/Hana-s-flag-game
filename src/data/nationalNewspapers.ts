@@ -8241,9 +8241,12 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Barnacle Media Review 2023"
       },
       "revenueModel": "Print advertising and local business listings",
-      "noImageReason": "No authentic masthead is shown yet. A placeholder graphic was removed. Wikimedia Commons, the newspaper's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
+      "logo": "newspaper-logos/gd/the-barnacle.png",
+      "logoExplainer": "Black uppercase 'BARNACLE' wordmark with a red 'FREE' badge overlaid on the centre letters — official site masthead from thebarnaclenews.com (Wayback Machine, Jan 2018).",
+      "licenceNote": "The Barnacle trademark bundled from the publisher's official site brand assets (thebarnaclenews.com masthead, archived via the Wayback Machine) for educational reference in Learn mode.",
       "sources": [
-        "https://thebarnaclenews.com"
+        "https://thebarnaclenews.com",
+        "https://web.archive.org/web/20180107231930/https://www.thebarnaclenews.com/"
       ]
     },
     {
