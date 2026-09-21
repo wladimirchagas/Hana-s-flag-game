@@ -17,13 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "cf-acap",
-    dataset: "agency",
-    src: "tmp/batch93-install/cf-acap.jpg",
+    id: "zm-the-mast",
+    src: "tmp/batch94-install/zm-the-mast.jpg",
     explainer:
-      "Forest-green Central African Republic map silhouette with a white satellite icon and bold white 'ACAP', above 'Agence Centrafrique Presse' and the slogan 'L\'Agence de l\'Unité Nationale'.",
+      "White serif 'THE MAST' between double horizontal rules on a deep purple crowd-photo banner — The Mast Online masthead.",
     licence:
-      "ACAP (Agence Centrafricaine de Presse) brand mark from the agency's official Facebook page (AgenceCentrafricaineDePresse); trademark bundled for educational reference in Learn mode.",
+      "The Mast masthead from the publisher's official site brand assets (themastonline.com/wp-content/uploads/2017/03/The-mast-logo.jpeg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
