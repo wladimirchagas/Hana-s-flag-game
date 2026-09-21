@@ -70,6 +70,9 @@ on:
       - "scripts/data/wjp-rule-of-law-2025.csv"
       - "scripts/data/wjp-rule-of-law-2024.csv"
       - "scripts/data/wjp2025Data.mjs"
+      - "scripts/check-imd-wcr.mjs"
+      - "scripts/data/imd-wcr-2025.csv"
+      - "scripts/data/imdWcr2025Data.mjs"
       - "scripts/data/democracyData.mjs"
       - "scripts/check-whr-happiness.mjs"
       - "scripts/check-gdi-data.mjs"
@@ -198,6 +201,9 @@ jobs:
 
       - name: Verify WJP Rule of Law Index 2025 data matches the official CSVs
         run: node scripts/check-wjp-rule-of-law.mjs
+
+      - name: Verify IMD World Competitiveness Ranking 2025 data matches the official extract
+        run: node scripts/check-imd-wcr.mjs
 
       - name: Verify every flags:check gate actually runs in CI
         run: node scripts/check-ci-coverage.mjs

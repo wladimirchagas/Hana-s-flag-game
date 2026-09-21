@@ -16,7 +16,8 @@ export type DemocracyIndexKey =
   | "gpi"
   | "happiness"
   | "gdi"
-  | "wjp-rule-of-law";
+  | "wjp-rule-of-law"
+  | "imd-competitiveness";
 
 export type DemocracyMapMode = DemocracyIndexKey | null;
 
@@ -36,6 +37,7 @@ export const DEMOCRACY_INDEX_KEYS: readonly DemocracyIndexKey[] = [
   "happiness",
   "gdi",
   "wjp-rule-of-law",
+  "imd-competitiveness",
 ] as const;
 
 export type DemocracyAxisBand = {
@@ -222,6 +224,35 @@ export const GDI_BAND_ORDER: readonly string[] = [
   "Below 50",
 ];
 
+/** IMD World Competitiveness Ranking score bands (0–100 chart index).
+ *  Decade bands for the map / Group-by; IMD itself publishes ranks + scores,
+ *  not categorical tiers. Higher score → greener (more competitive). */
+export const IMD_COMPETITIVENESS_MAP_COLORS: Record<string, string> = {
+  "90–100": "#004d1a",
+  "80–89": "#1b5e20",
+  "70–79": "#43a047",
+  "60–69": "#9ccc65",
+  "50–59": "#fdd835",
+  "40–49": "#fb8c00",
+  "30–39": "#f4511e",
+  "20–29": "#e53935",
+  "10–19": "#c62828",
+  "0–9": "#7f0000",
+};
+
+export const IMD_COMPETITIVENESS_BAND_ORDER: readonly string[] = [
+  "90–100",
+  "80–89",
+  "70–79",
+  "60–69",
+  "50–59",
+  "40–49",
+  "30–39",
+  "20–29",
+  "10–19",
+  "0–9",
+];
+
 /** WEF Global Gender Gap Index map bands — decade of percentage closed
  *  (score×100). Higher = closer to parity. Colours run parity→gap
  *  (green→yellow→red), matching the CPI clean→corrupt convention. */
@@ -281,6 +312,7 @@ export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
   if (mode === "happiness") return "World Happiness Report";
   if (mode === "gdi") return "Global Diplomacy Index";
   if (mode === "wjp-rule-of-law") return "WJP Rule of Law Index";
+  if (mode === "imd-competitiveness") return "IMD World Competitiveness Ranking";
   return "";
 }
 
@@ -365,6 +397,12 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
       color: WJP_MAP_COLORS[label],
     }));
   }
+  if (mode === "imd-competitiveness") {
+    return IMD_COMPETITIVENESS_BAND_ORDER.map((label) => ({
+      label,
+      color: IMD_COMPETITIVENESS_MAP_COLORS[label],
+    }));
+  }
   return [];
 }
 
@@ -412,6 +450,9 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
     } else if (mode === "wjp-rule-of-law") {
       rating = demo.wjpRuleOfLaw?.rating;
       colorMap = WJP_MAP_COLORS;
+    } else if (mode === "imd-competitiveness") {
+      rating = demo.imdCompetitiveness?.rating;
+      colorMap = IMD_COMPETITIVENESS_MAP_COLORS;
     } else {
       continue;
     }
@@ -435,7 +476,8 @@ export function getDemocracyIndexLabel(key: DemocracyIndexKey): string {
   if (key === "gpi") return "Global Peace Index";
   if (key === "happiness") return "World Happiness Report";
   if (key === "gdi") return "Global Diplomacy Index";
-  return "WJP Rule of Law Index";
+  if (key === "wjp-rule-of-law") return "WJP Rule of Law Index";
+  return "IMD World Competitiveness Ranking";
 }
 
 /** Pull the index row for a country from bundled facts. */
@@ -455,7 +497,8 @@ export function getDemocracyIndexFor(
   if (key === "gpi") return democracy.gpi;
   if (key === "happiness") return democracy.happiness;
   if (key === "gdi") return democracy.gdi;
-  return democracy.wjpRuleOfLaw;
+  if (key === "wjp-rule-of-law") return democracy.wjpRuleOfLaw;
+  return democracy.imdCompetitiveness;
 }
 
 /**
@@ -669,6 +712,12 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
       return { label, min: lo, max: hi };
     }).reverse(); // low→high for the axis
   }
+  if (key === "imd-competitiveness") {
+    return IMD_COMPETITIVENESS_BAND_ORDER.map((label) => {
+      const [lo, hi] = label.split("–").map(Number);
+      return { label, min: lo, max: hi };
+    }).reverse(); // low→high for the axis
+  }
   // hdi — UNDP cut-offs (Very High ≥0.800, High ≥0.700, Medium ≥0.550).
   return [
     { label: "Low", min: 0, max: 0.55 },
@@ -699,6 +748,7 @@ export function formatDemocracyAxisValue(
   if (key === "happiness") return `${idx.rating} · ${score.toFixed(3)}`;
   if (key === "gdi") return `${idx.rating} · ${score} posts`;
   if (key === "wjp-rule-of-law") return `${idx.rating} · ${score.toFixed(2)}`;
+  if (key === "imd-competitiveness") return `${idx.rating} · score ${score.toFixed(2)}`;
   return `${idx.rating} · ${score}`;
 }
 
