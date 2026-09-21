@@ -729,3 +729,117 @@ export function democracyChartPoints(
   }
   return out;
 }
+
+export type DemocracyOlsTrend = {
+  /** Predicted Y at X: intercept + slope * x */
+  slope: number;
+  intercept: number;
+  /** Coefficient of determination in [0, 1]. */
+  r2: number;
+  n: number;
+};
+
+/**
+ * Ordinary least squares (OLS) linear fit of Y on X for the democracy chart.
+ *
+ * Chosen over LOESS/LOWESS for this view: country-index scatters are
+ * cross-sectional association plots, and a single global linear fit is the
+ * standard, interpretable summary of direction and strength (same default as
+ * Plotly `trendline="ols"`). LOESS can follow local wiggles but needs a
+ * bandwidth parameter and does not answer "overall, do these indexes move
+ * together?" as clearly. Requires at least two distinct X values.
+ */
+export function democracyOlsTrend(
+  points: readonly { x: number; y: number }[],
+): DemocracyOlsTrend | null {
+  const n = points.length;
+  if (n < 2) return null;
+
+  let sumX = 0;
+  let sumY = 0;
+  let sumXX = 0;
+  let sumYY = 0;
+  let sumXY = 0;
+  for (const p of points) {
+    sumX += p.x;
+    sumY += p.y;
+    sumXX += p.x * p.x;
+    sumYY += p.y * p.y;
+    sumXY += p.x * p.y;
+  }
+
+  const denom = n * sumXX - sumX * sumX;
+  if (!Number.isFinite(denom) || Math.abs(denom) < 1e-12) return null;
+
+  const slope = (n * sumXY - sumX * sumY) / denom;
+  const intercept = (sumY - slope * sumX) / n;
+
+  const ssTot = sumYY - (sumY * sumY) / n;
+  const ssRes = points.reduce((acc, p) => {
+    const err = p.y - (intercept + slope * p.x);
+    return acc + err * err;
+  }, 0);
+  const r2 = ssTot <= 1e-12 ? 1 : Math.max(0, Math.min(1, 1 - ssRes / ssTot));
+
+  if (!Number.isFinite(slope) || !Number.isFinite(intercept) || !Number.isFinite(r2)) {
+    return null;
+  }
+  return { slope, intercept, r2, n };
+}
+
+/**
+ * Clip the OLS line y = intercept + slope·x to a rectangular data domain,
+ * returning the two endpoints still inside the box (or null if none).
+ */
+export function clipTrendToDomain(
+  trend: DemocracyOlsTrend,
+  xDomain: { min: number; max: number },
+  yDomain: { min: number; max: number },
+): { x0: number; y0: number; x1: number; y1: number } | null {
+  const yAt = (x: number) => trend.intercept + trend.slope * x;
+  const xAt = (y: number) =>
+    Math.abs(trend.slope) < 1e-12 ? NaN : (y - trend.intercept) / trend.slope;
+
+  type Pt = { x: number; y: number };
+  const candidates: Pt[] = [];
+  const pushIfIn = (x: number, y: number) => {
+    if (!Number.isFinite(x) || !Number.isFinite(y)) return;
+    const eps = 1e-9;
+    if (
+      x >= xDomain.min - eps &&
+      x <= xDomain.max + eps &&
+      y >= yDomain.min - eps &&
+      y <= yDomain.max + eps
+    ) {
+      candidates.push({
+        x: Math.min(xDomain.max, Math.max(xDomain.min, x)),
+        y: Math.min(yDomain.max, Math.max(yDomain.min, y)),
+      });
+    }
+  };
+
+  // Intersections with the four domain edges.
+  pushIfIn(xDomain.min, yAt(xDomain.min));
+  pushIfIn(xDomain.max, yAt(xDomain.max));
+  pushIfIn(xAt(yDomain.min), yDomain.min);
+  pushIfIn(xAt(yDomain.max), yDomain.max);
+
+  // Deduplicate near-identical edge hits (corners).
+  const uniq: Pt[] = [];
+  for (const p of candidates) {
+    if (uniq.some((q) => Math.hypot(q.x - p.x, q.y - p.y) < 1e-6)) continue;
+    uniq.push(p);
+  }
+  if (uniq.length < 2) return null;
+  // Furthest pair spans the visible segment.
+  let best = { i: 0, j: 1, d: -1 };
+  for (let i = 0; i < uniq.length; i++) {
+    for (let j = i + 1; j < uniq.length; j++) {
+      const d = Math.hypot(uniq[i].x - uniq[j].x, uniq[i].y - uniq[j].y);
+      if (d > best.d) best = { i, j, d };
+    }
+  }
+  const a = uniq[best.i];
+  const b = uniq[best.j];
+  return { x0: a.x, y0: a.y, x1: b.x, y1: b.y };
+}

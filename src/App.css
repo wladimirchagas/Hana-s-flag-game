@@ -3074,6 +3074,15 @@
   opacity: 0.75;
 }
 
+.democracy-index-chart__trend-note {
+  margin: 0;
+  margin-left: auto;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink-soft, #4b5563);
+  white-space: nowrap;
+}
+
 .democracy-index-chart__select {
   font: inherit;
   font-size: 0.82rem;
@@ -3173,6 +3182,15 @@
 
 .democracy-index-chart__axis-title--y {
   font-size: 12px;
+}
+
+.democracy-index-chart__trend {
+  stroke: var(--coral-deep, #e05252);
+  stroke-width: 2.25;
+  stroke-dasharray: 7 5;
+  stroke-linecap: round;
+  fill: none;
+  opacity: 0.9;
 }
 
 .democracy-index-chart__tick {
@@ -3328,6 +3346,11 @@
   .democracy-index-chart {
     max-width: 100%;
     padding: 0 0.15rem 0.35rem;
+  }
+
+  .democracy-index-chart__trend-note {
+    margin-left: 0;
+    width: 100%;
   }
 
   .democracy-index-chart__frame {
