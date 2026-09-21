@@ -3459,6 +3459,18 @@
   box-sizing: border-box;
 }
 
+.democracy-index-chart__empty {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  min-height: 12rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--ink-soft, #6b7280);
+  font-size: 0.95rem;
+}
+
 :root[data-theme="dark"] .democracy-index-chart__frame {
   background: var(--paper, #1f2937);
   border-color: var(--atlas-border, #374151);

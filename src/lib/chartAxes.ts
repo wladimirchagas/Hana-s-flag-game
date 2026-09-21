@@ -44,6 +44,17 @@ export type ChartMetricKey =
 
 export type ChartAxisKey = DemocracyIndexKey | ChartMetricKey;
 
+/** Axis picker value — a real metric, or `"none"` for a one-axis chart. */
+export type ChartAxisSelection = ChartAxisKey | "none";
+
+export const CHART_AXIS_NONE = "none" as const;
+
+export function isChartAxisNone(
+  key: ChartAxisSelection,
+): key is typeof CHART_AXIS_NONE {
+  return key === CHART_AXIS_NONE;
+}
+
 export const CHART_METRIC_KEYS: readonly ChartMetricKey[] = [
   "population",
   "gdp",
@@ -366,14 +377,22 @@ export type ChartPoint = {
   yLabel: string;
 };
 
-/** Every country that has a scored value for both chart axes. */
+/**
+ * Every country with a scored value on the active axis/axes.
+ * `"none"` on one axis yields a one-axis strip (the unused score is 0);
+ * both `"none"` yields no points.
+ */
 export function chartAxisPoints(
-  xKey: ChartAxisKey,
-  yKey: ChartAxisKey,
+  xKey: ChartAxisSelection,
+  yKey: ChartAxisSelection,
   countries: readonly Country[],
 ): ChartPoint[] {
+  const xNone = isChartAxisNone(xKey);
+  const yNone = isChartAxisNone(yKey);
+  if (xNone && yNone) return [];
+
   // Fast path: both democracy indexes — reuse the existing facts scan.
-  if (isDemocracyAxisKey(xKey) && isDemocracyAxisKey(yKey)) {
+  if (!xNone && !yNone && isDemocracyAxisKey(xKey) && isDemocracyAxisKey(yKey)) {
     return democracyChartPoints(xKey, yKey).map((p) => ({
       code: p.code,
       x: p.x,
@@ -393,16 +412,27 @@ export function chartAxisPoints(
   ]);
   for (const code of codes) {
     const country = byCode.get(code);
-    const xv = getChartAxisValue(code, xKey, country);
-    const yv = getChartAxisValue(code, yKey, country);
-    if (!xv || !yv) continue;
-    out.push({
-      code,
-      x: xv.score,
-      y: yv.score,
-      xLabel: xv.label,
-      yLabel: yv.label,
-    });
+    const xv = xNone ? null : getChartAxisValue(code, xKey, country);
+    const yv = yNone ? null : getChartAxisValue(code, yKey, country);
+    // Two-axis: both required. One-axis: only the active metric.
+    if (!xNone && !yNone) {
+      if (!xv || !yv) continue;
+      out.push({
+        code,
+        x: xv.score,
+        y: yv.score,
+        xLabel: xv.label,
+        yLabel: yv.label,
+      });
+      continue;
+    }
+    if (!xNone) {
+      if (!xv) continue;
+      out.push({ code, x: xv.score, y: 0, xLabel: xv.label, yLabel: "" });
+      continue;
+    }
+    if (!yv) continue;
+    out.push({ code, x: 0, y: yv.score, xLabel: "", yLabel: yv.label });
   }
   return out;
 }

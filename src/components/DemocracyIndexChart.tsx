@@ -6,14 +6,16 @@ import {
   countryMatchesBlocks,
 } from "../data/countryBlocks";
 import {
+  CHART_AXIS_NONE,
   CHART_METRIC_KEYS,
-  type ChartAxisKey,
+  type ChartAxisSelection,
   chartAxisPoints,
   chartAxisScaleValue,
   fitChartAxisDomain,
   formatChartAxisTick,
   getChartAxisBands,
   getChartAxisLabel,
+  isChartAxisNone,
 } from "../lib/chartAxes";
 import { CONTINENT_ORDER, SUBREGION_GROUPS } from "../lib/continentGroups";
 import {
@@ -30,10 +32,10 @@ import { GridImage } from "./GridImage";
 
 export type DemocracyIndexChartProps = {
   countries: readonly Country[];
-  xKey: ChartAxisKey;
-  yKey: ChartAxisKey;
-  onXKeyChange: (key: ChartAxisKey) => void;
-  onYKeyChange: (key: ChartAxisKey) => void;
+  xKey: ChartAxisSelection;
+  yKey: ChartAxisSelection;
+  onXKeyChange: (key: ChartAxisSelection) => void;
+  onYKeyChange: (key: ChartAxisSelection) => void;
   /** Selected country code (map / dropdown / grid) — blinks on the chart. */
   selectedCode: string | null;
   /** Transient hover from the chart; parent mirrors map hover. */
@@ -41,6 +43,13 @@ export type DemocracyIndexChartProps = {
   onSelect: (code: string) => void;
   onHover: (code: string | null) => void;
 };
+
+/** Deterministic −0.5…0.5 jitter so one-axis strip markers do not stack exactly. */
+function stripJitter(code: string): number {
+  let h = 0;
+  for (let i = 0; i < code.length; i++) h = (h * 31 + code.charCodeAt(i)) | 0;
+  return (((h >>> 0) % 1000) / 999) - 0.5;
+}
 
 const PAD = { top: 16, right: 18, bottom: 82, left: 74 };
 const VIEW_W = 960;
@@ -361,53 +370,83 @@ export function DemocracyIndexChart({
 
   // Raw scored pairs first — domains fit THESE values, not the full published
   // scale (so a Gender Gap cluster above 0.5 does not leave half the chart empty).
+  const xNone = isChartAxisNone(xKey);
+  const yNone = isChartAxisNone(yKey);
+  const bothAxes = !xNone && !yNone;
+  const noAxes = xNone && yNone;
+  const activeXKey = xNone ? null : xKey;
+  const activeYKey = yNone ? null : yKey;
+
   const rawPoints = useMemo(
     () => chartAxisPoints(xKey, yKey, countries).filter((p) => byCode.has(p.code)),
     [xKey, yKey, countries, byCode],
   );
 
-  const xDomain = useMemo(
-    () =>
-      fitChartAxisDomain(
-        rawPoints.map((p) => chartAxisScaleValue(xKey, p.x)),
-        xKey,
-        TICK_COUNT,
-      ),
-    [rawPoints, xKey],
-  );
-  const yDomain = useMemo(
-    () =>
-      fitChartAxisDomain(
-        rawPoints.map((p) => chartAxisScaleValue(yKey, p.y)),
-        yKey,
-        TICK_COUNT,
-      ),
-    [rawPoints, yKey],
-  );
+  const xDomain = useMemo(() => {
+    if (!activeXKey) return { min: 0, max: 1 };
+    return fitChartAxisDomain(
+      rawPoints.map((p) => chartAxisScaleValue(activeXKey, p.x)),
+      activeXKey,
+      TICK_COUNT,
+    );
+  }, [rawPoints, activeXKey]);
+  const yDomain = useMemo(() => {
+    if (!activeYKey) return { min: 0, max: 1 };
+    return fitChartAxisDomain(
+      rawPoints.map((p) => chartAxisScaleValue(activeYKey, p.y)),
+      activeYKey,
+      TICK_COUNT,
+    );
+  }, [rawPoints, activeYKey]);
 
-  const xBands = useMemo(
-    () => clipDemocracyAxisBands(getChartAxisBands(xKey), xDomain),
-    [xKey, xDomain],
-  );
-  const yBands = useMemo(
-    () => clipDemocracyAxisBands(getChartAxisBands(yKey), yDomain),
-    [yKey, yDomain],
-  );
+  const xBands = useMemo(() => {
+    if (!activeXKey) return [];
+    return clipDemocracyAxisBands(getChartAxisBands(activeXKey), xDomain);
+  }, [activeXKey, xDomain]);
+  const yBands = useMemo(() => {
+    if (!activeYKey) return [];
+    return clipDemocracyAxisBands(getChartAxisBands(activeYKey), yDomain);
+  }, [activeYKey, yDomain]);
 
   const points = useMemo(() => {
+    const midX = (plot.x0 + plot.x1) / 2;
+    const midY = (plot.y0 + plot.y1) / 2;
+    const jitterXSpan = (plot.x1 - plot.x0) * 0.36;
+    const jitterYSpan = (plot.y1 - plot.y0) * 0.36;
     return rawPoints.map((p) => {
       const country = byCode.get(p.code)!;
-      const cx = scaleLinear(chartAxisScaleValue(xKey, p.x), xDomain, {
-        min: plot.x0,
-        max: plot.x1,
-      });
-      const cy = scaleLinear(chartAxisScaleValue(yKey, p.y), yDomain, {
-        min: plot.y1,
-        max: plot.y0,
-      });
+      let cx: number;
+      let cy: number;
+      if (!activeXKey && activeYKey) {
+        // Vertical strip: score on Y, jitter on X.
+        cx = midX + stripJitter(p.code) * jitterXSpan;
+        cy = scaleLinear(chartAxisScaleValue(activeYKey, p.y), yDomain, {
+          min: plot.y1,
+          max: plot.y0,
+        });
+      } else if (!activeYKey && activeXKey) {
+        // Horizontal strip: score on X, jitter on Y.
+        cx = scaleLinear(chartAxisScaleValue(activeXKey, p.x), xDomain, {
+          min: plot.x0,
+          max: plot.x1,
+        });
+        cy = midY + stripJitter(p.code) * jitterYSpan;
+      } else if (activeXKey && activeYKey) {
+        cx = scaleLinear(chartAxisScaleValue(activeXKey, p.x), xDomain, {
+          min: plot.x0,
+          max: plot.x1,
+        });
+        cy = scaleLinear(chartAxisScaleValue(activeYKey, p.y), yDomain, {
+          min: plot.y1,
+          max: plot.y0,
+        });
+      } else {
+        cx = midX;
+        cy = midY;
+      }
       return { ...p, country, cx, cy };
     });
-  }, [rawPoints, byCode, xKey, yKey, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
+  }, [rawPoints, byCode, activeXKey, activeYKey, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
 
   const filtersActive =
     continentFilter.size > 0 || membershipFilter.size > 0 || indexFilter.size > 0;
@@ -480,14 +519,16 @@ export function DemocracyIndexChart({
   }, [filtersActive, points, continentFilter, membershipFilter, indexFilter]);
 
   const trend = useMemo(() => {
+    // OLS needs two scored axes; skip on one-axis strips.
+    if (!activeXKey || !activeYKey) return null;
     // OLS on the same scale the markers use (log for population/GDP/…).
     return democracyOlsTrend(
       rawPoints.map((p) => ({
-        x: chartAxisScaleValue(xKey, p.x),
-        y: chartAxisScaleValue(yKey, p.y),
+        x: chartAxisScaleValue(activeXKey, p.x),
+        y: chartAxisScaleValue(activeYKey, p.y),
       })),
     );
-  }, [rawPoints, xKey, yKey]);
+  }, [rawPoints, activeXKey, activeYKey]);
   const trendSegment = useMemo(() => {
     if (!trend) return null;
     const clipped = clipTrendToDomain(trend, xDomain, yDomain);
@@ -503,6 +544,7 @@ export function DemocracyIndexChart({
   }, [trend, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
 
   const xTicks = useMemo(() => {
+    if (!activeXKey) return [];
     const ticks: { value: number; x: number }[] = [];
     const span = xDomain.max - xDomain.min;
     for (let i = 0; i <= TICK_COUNT; i++) {
@@ -513,9 +555,10 @@ export function DemocracyIndexChart({
       });
     }
     return ticks;
-  }, [xDomain, plot.x0, plot.x1]);
+  }, [xDomain, plot.x0, plot.x1, activeXKey]);
 
   const yTicks = useMemo(() => {
+    if (!activeYKey) return [];
     const ticks: { value: number; y: number }[] = [];
     const span = yDomain.max - yDomain.min;
     for (let i = 0; i <= TICK_COUNT; i++) {
@@ -526,7 +569,15 @@ export function DemocracyIndexChart({
       });
     }
     return ticks;
-  }, [yDomain, plot.y0, plot.y1]);
+  }, [yDomain, plot.y0, plot.y1, activeYKey]);
+
+  const chartAriaLabel = noAxes
+    ? "Democracy index chart — no axis selected"
+    : bothAxes && activeXKey && activeYKey
+      ? `${getChartAxisLabel(activeYKey)} versus ${getChartAxisLabel(activeXKey)}`
+      : activeYKey
+        ? getChartAxisLabel(activeYKey)
+        : getChartAxisLabel(activeXKey!);
 
   const activeCode = hoveredCode ?? selectedCode;
 
@@ -562,9 +613,10 @@ export function DemocracyIndexChart({
           <select
             className="democracy-index-chart__select"
             value={xKey}
-            onChange={(e) => onXKeyChange(e.target.value as ChartAxisKey)}
+            onChange={(e) => onXKeyChange(e.target.value as ChartAxisSelection)}
             aria-label="Chart X axis"
           >
+            <option value={CHART_AXIS_NONE}>None</option>
             {getDemocracyIndexMenuGroups().map((group) => (
               <optgroup key={`x-${group.theme.id}`} label={group.theme.label}>
                 {group.indexes.map((meta) => (
@@ -588,9 +640,10 @@ export function DemocracyIndexChart({
           <select
             className="democracy-index-chart__select"
             value={yKey}
-            onChange={(e) => onYKeyChange(e.target.value as ChartAxisKey)}
+            onChange={(e) => onYKeyChange(e.target.value as ChartAxisSelection)}
             aria-label="Chart Y axis"
           >
+            <option value={CHART_AXIS_NONE}>None</option>
             {getDemocracyIndexMenuGroups().map((group) => (
               <optgroup key={`y-${group.theme.id}`} label={group.theme.label}>
                 {group.indexes.map((meta) => (
@@ -686,11 +739,17 @@ export function DemocracyIndexChart({
       )}
 
       <div className="democracy-index-chart__frame" ref={frameRef}>
+        {noAxes ? (
+          <p className="democracy-index-chart__empty" role="status">
+            Choose at least one axis to plot countries.
+          </p>
+        ) : (
+        <>
         <svg
           className="democracy-index-chart__svg"
           viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
           role="img"
-          aria-label={`${getChartAxisLabel(yKey)} versus ${getChartAxisLabel(xKey)}`}
+          aria-label={chartAriaLabel}
         >
           {/* Plot background */}
           <rect
@@ -757,7 +816,7 @@ export function DemocracyIndexChart({
                 textAnchor="middle"
                 className="democracy-index-chart__tick"
               >
-                {formatChartAxisTick(xKey, t.value)}
+                {formatChartAxisTick(activeXKey!, t.value)}
               </text>
             </g>
           ))}
@@ -776,7 +835,7 @@ export function DemocracyIndexChart({
                 textAnchor="end"
                 className="democracy-index-chart__tick"
               >
-                {formatChartAxisTick(yKey, t.value)}
+                {formatChartAxisTick(activeYKey!, t.value)}
               </text>
             </g>
           ))}
@@ -821,41 +880,49 @@ export function DemocracyIndexChart({
             );
           })}
 
-          {/* Axes */}
-          <line
-            x1={plot.x0}
-            y1={plot.y1}
-            x2={plot.x1}
-            y2={plot.y1}
-            className="democracy-index-chart__axis"
-          />
-          <line
-            x1={plot.x0}
-            y1={plot.y0}
-            x2={plot.x0}
-            y2={plot.y1}
-            className="democracy-index-chart__axis"
-          />
+          {/* Axes — draw only the active edge(s). */}
+          {activeXKey && (
+            <line
+              x1={plot.x0}
+              y1={plot.y1}
+              x2={plot.x1}
+              y2={plot.y1}
+              className="democracy-index-chart__axis"
+            />
+          )}
+          {activeYKey && (
+            <line
+              x1={plot.x0}
+              y1={plot.y0}
+              x2={plot.x0}
+              y2={plot.y1}
+              className="democracy-index-chart__axis"
+            />
+          )}
 
           {/* Axis titles — always visible next to the axes so the dropdowns
               are not the only cue for what X and Y represent. */}
-          <text
-            x={(plot.x0 + plot.x1) / 2}
-            y={VIEW_H - 14}
-            textAnchor="middle"
-            className="democracy-index-chart__axis-title"
-          >
-            {getChartAxisLabel(xKey)}
-          </text>
-          <text
-            x={16}
-            y={(plot.y0 + plot.y1) / 2}
-            textAnchor="middle"
-            transform={`rotate(-90 16 ${(plot.y0 + plot.y1) / 2})`}
-            className="democracy-index-chart__axis-title democracy-index-chart__axis-title--y"
-          >
-            {getChartAxisLabel(yKey)}
-          </text>
+          {activeXKey && (
+            <text
+              x={(plot.x0 + plot.x1) / 2}
+              y={VIEW_H - 14}
+              textAnchor="middle"
+              className="democracy-index-chart__axis-title"
+            >
+              {getChartAxisLabel(activeXKey)}
+            </text>
+          )}
+          {activeYKey && (
+            <text
+              x={16}
+              y={(plot.y0 + plot.y1) / 2}
+              textAnchor="middle"
+              transform={`rotate(-90 16 ${(plot.y0 + plot.y1) / 2})`}
+              className="democracy-index-chart__axis-title democracy-index-chart__axis-title--y"
+            >
+              {getChartAxisLabel(activeYKey)}
+            </text>
+          )}
 
           {/* OLS linear trend — under flags, above bands/grid */}
           {trendSegment && (
@@ -880,6 +947,11 @@ export function DemocracyIndexChart({
               !highlightedCodes.has(p.code) &&
               !isSelected &&
               !isActive;
+            const markerAria = bothAxes
+              ? `${p.country.name}: X ${p.xLabel}, Y ${p.yLabel}`
+              : activeXKey
+                ? `${p.country.name}: ${p.xLabel}`
+                : `${p.country.name}: ${p.yLabel}`;
             return (
               <button
                 key={p.code}
@@ -895,7 +967,7 @@ export function DemocracyIndexChart({
                   top: `${(p.cy / VIEW_H) * 100}%`,
                   zIndex: isActive || isSelected ? 3 : dimmed ? 0 : 2,
                 }}
-                aria-label={`${p.country.name}: X ${p.xLabel}, Y ${p.yLabel}`}
+                aria-label={markerAria}
                 aria-pressed={isSelected}
                 onClick={() => onSelect(p.code)}
                 onMouseEnter={() => {
@@ -947,15 +1019,25 @@ export function DemocracyIndexChart({
             role="tooltip"
           >
             <strong className="democracy-index-chart__tooltip-name">{tooltip.name}</strong>
-            <span className="democracy-index-chart__tooltip-row">
-              <span className="democracy-index-chart__tooltip-axis">X</span>
-              {getChartAxisLabel(xKey)}: {tooltip.xLabel}
-            </span>
-            <span className="democracy-index-chart__tooltip-row">
-              <span className="democracy-index-chart__tooltip-axis">Y</span>
-              {getChartAxisLabel(yKey)}: {tooltip.yLabel}
-            </span>
+            {activeXKey && (
+              <span className="democracy-index-chart__tooltip-row">
+                {bothAxes && (
+                  <span className="democracy-index-chart__tooltip-axis">X</span>
+                )}
+                {getChartAxisLabel(activeXKey)}: {tooltip.xLabel}
+              </span>
+            )}
+            {activeYKey && (
+              <span className="democracy-index-chart__tooltip-row">
+                {bothAxes && (
+                  <span className="democracy-index-chart__tooltip-axis">Y</span>
+                )}
+                {getChartAxisLabel(activeYKey)}: {tooltip.yLabel}
+              </span>
+            )}
           </div>
+        )}
+        </>
         )}
       </div>
     </section>
