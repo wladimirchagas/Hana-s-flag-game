@@ -758,6 +758,25 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     setSubdivisionCountry(null);
   }
 
+  /** Clear whatever the information panel is showing — country/polity selection,
+   *  hover preview, subdivision drill-in, and any Show-grid item pick — so the
+   *  panel returns to the empty "Learn your flags" prompt. */
+  const clearPanelSelection = useCallback(() => {
+    setSelected(null);
+    setHovered(null);
+    clearGridItemSelection();
+    setSelectedNationalFlag(null);
+    setSelectedGroupMeaning(null);
+    setSelectedParty(null);
+    setSelectedCapital(null);
+    setSelectedSubdivisionAirline(null);
+    setSelectedSubdivisionBroadcaster(null);
+    setSelectedSubdivisionTourismLogo(null);
+    setSelectedSubdivisionNewsAgency(null);
+    setSelectedSubdivisionNewspaper(null);
+    exitSubdivisionMode();
+  }, [clearGridItemSelection]);
+
 
 
   const handleEnterSubdivisionMode = useCallback(async () => {
@@ -2201,8 +2220,32 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     ? renderHanaCorner(subdivisionCountry.code, subdivisionCountry.name)
                     : display?.kind === "modern" &&
                       renderHanaCorner(display.country.code, display.country.name)}
+                  {(selected != null || (subdivisionMode && subdivisionCountry != null)) && (
+                    <button
+                      type="button"
+                      className="learn-fs__unselect"
+                      onClick={clearPanelSelection}
+                      aria-label="Unselect"
+                      title="Unselect"
+                    >
+                      <UiIcon name="close" />
+                    </button>
+                  )}
                 </div>
               </div>
+            )}
+            {/* Historical eras have no country search row — put Unselect on the
+                polity title instead. */}
+            {!isModernEra && selected != null && (
+              <button
+                type="button"
+                className="learn-fs__unselect learn-fs__unselect--corner"
+                onClick={clearPanelSelection}
+                aria-label="Unselect"
+                title="Unselect"
+              >
+                <UiIcon name="close" />
+              </button>
             )}
             {display ? (
               <>
@@ -2581,6 +2624,20 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     label="Choose a division"
                     countryCode={subdivisionCountry.code}
                   />
+                  {(selectedSubdivision != null || selectedCapital != null) && (
+                    <button
+                      type="button"
+                      className="learn-fs__unselect"
+                      onClick={() => {
+                        setSelectedSubdivision(null);
+                        setSelectedCapital(null);
+                      }}
+                      aria-label="Unselect division"
+                      title="Unselect"
+                    >
+                      <UiIcon name="close" />
+                    </button>
+                  )}
                 </div>
               </div>
               {selectedSubdivision ? (() => {
