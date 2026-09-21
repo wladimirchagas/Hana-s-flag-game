@@ -11,6 +11,7 @@
 import { readFileSync, existsSync, statSync } from "node:fs";
 import { dirname, resolve, extname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { findUserFacingLeaks } from "./lib/userFacingCopy.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(__dirname, "..", "src", "data", "centralBanks.ts");
@@ -134,11 +135,15 @@ for (const [countryKey, list] of Object.entries(banksByCountry)) {
       failures.push(`${ctx}: logo requires logoExplainer (>= 25 chars)`);
     } else if (!hasLogo && hasReason) {
       withoutImage++;
+      const leaks = findUserFacingLeaks(entry.noImageReason);
+      for (const leak of leaks) {
+        failures.push(`${ctx}: noImageReason leaks ${leak.label} (matched ${JSON.stringify(leak.match)})`);
+      }
       const families = NO_IMAGE_SOURCE_FAMILIES.filter((f) => f.re.test(entry.noImageReason));
       if (families.length < 1) {
-        // Allow a long honest gap that at least names Wikidata or Commons or "no P154"
-        if (!/wikidata|commons|P154|no central bank|monetary/i.test(entry.noImageReason)) {
-          failures.push(`${ctx}: noImageReason must name researched sources`);
+        // Allow a long honest gap that names Wikidata / Commons / no-own-CB in plain language
+        if (!/wikidata|commons|no central bank|monetary/i.test(entry.noImageReason)) {
+          failures.push(`${ctx}: noImageReason must name researched sources (plain language — no Q/P codes)`);
         }
       }
     } else {

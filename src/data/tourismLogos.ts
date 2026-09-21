@@ -3257,7 +3257,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Venezuela)",
       },
       noImageReason:
-        "Searched Wikidata (Q16607782) and Wikimedia Commons for a MINTUR consumer tourism-brand logo — the only linked image, \"Política de Venezuela.png\", is confirmed on its own Commons file page to be a GENERIC Venezuelan government seal reused across many unrelated ministries (Education, Foreign Affairs, Culture, Planning, Communication), not MINTUR's own or any consumer-facing tourism mark, so it was not used as a substitute per this repo's consumer-brand-not-institutional-seal standard.",
+        "Searched Wikidata (the organisation's Wikidata item) and Wikimedia Commons for a MINTUR consumer tourism-brand logo — the only linked image, \"Política de Venezuela.png\", is confirmed on its own Commons file page to be a GENERIC Venezuelan government seal reused across many unrelated ministries (Education, Foreign Affairs, Culture, Planning, Communication), not MINTUR's own or any consumer-facing tourism mark, so it was not used as a substitute per this repo's consumer-brand-not-institutional-seal standard.",
       sources: [
         "https://www.wikidata.org/wiki/Q16607782",
         "https://commons.wikimedia.org/wiki/File:Pol%C3%ADtica_de_Venezuela.png",

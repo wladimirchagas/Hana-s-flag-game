@@ -143,17 +143,18 @@ for (const [cc, h] of Object.entries(harvest.countries).sort(([a], [b]) =>
     }
     withLogo++;
   } else if (ov.noImageReason || h.noImageReason || h.noOwnCentralBank) {
+    // User-facing gap copy only — never put QIDs, P-codes, or raw URLs here
+    // (see check-user-facing-copy.mjs / CLAUDE.md hard rule). QIDs stay in sources[].
     entry.noImageReason =
       ov.noImageReason ||
       h.noImageReason ||
-      `Wikidata (${h.qid || "no P154"}), Wikimedia Commons (no usable logo file), and the bank's own site were checked; no citable brand mark could be bundled yet.`;
+      "No brand logo is bundled for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.";
     withoutLogo++;
   } else {
     // Honest gap — researched against the harvest sources so far
-    const site = h.website ? `official site (${h.website})` : "no official website on Wikidata";
     entry.noImageReason =
       ov.noImageReason ||
-      `Wikidata item ${h.qid || "(none)"} has no P154 logo, Commons was checked for a bank brand mark, and ${site} — no freely citable logo file has been bundled yet after this pass.`;
+      "No brand logo is bundled for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.";
     withoutLogo++;
   }
 

@@ -165,6 +165,8 @@ on:
       # live one (which keeps painting the previous picture and inherits the
       # imperative onError state that blanks a tile).
       - "scripts/check-image-element-keys.mjs"
+      - "scripts/check-user-facing-copy.mjs"
+      - "scripts/lib/userFacingCopy.mjs"
       - "src/components/**"
       - "src/pages/**"
 
@@ -202,6 +204,9 @@ jobs:
 
       - name: Verify every <img> is keyed by its src (no stale/blanked images)
         run: node scripts/check-image-element-keys.mjs
+
+      - name: Verify noImageReason never leaks Wikidata codes / URLs / agent jargon
+        run: node scripts/check-user-facing-copy.mjs
 
       - name: Verify RSF World Press Freedom Index 2026 data matches the official CSV
         run: node scripts/check-rsf-press-freedom.mjs
