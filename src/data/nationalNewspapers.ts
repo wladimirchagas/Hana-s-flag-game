@@ -11678,7 +11678,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ke-taifa-leo",
       "countryCode": "KE",
       "name": "Taifa Leo",
@@ -11694,6 +11693,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Principal Swahili daily in Kenya",
         "source": "https://en.wikipedia.org/wiki/Taifa_Leo"
       },
+      "logo": "newspaper-logos/ke/taifa-leo.jpg",
+      "logoExplainer": "White serif 'TAIFA LEO' on red with Swahili strap 'Lugha yetu, gazeti letu' — Taifa Leo brand mark.",
+      "licenceNote": "Taifa Leo brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://taifaleo.nation.africa",
         "https://en.wikipedia.org/wiki/Taifa_Leo"
@@ -15172,7 +15175,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Daily newspaper",
       "format": "Broadsheet & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "mk-sloboden-pecat",
       "countryCode": "MK",
       "name": "Sloboden Pečat",
@@ -15188,6 +15190,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Leading Macedonian daily",
         "source": "https://en.wikipedia.org/wiki/Sloboden_Pečat"
       },
+      "logo": "newspaper-logos/mk/sloboden-pecat.jpg",
+      "logoExplainer": "White Cyrillic 'СП.' on black — Sloboden Pečat brand initials.",
+      "licenceNote": "Sloboden Pečat brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.slobodenpecat.mk",
         "https://en.wikipedia.org/wiki/Sloboden_Pečat"
@@ -15402,7 +15408,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Irrawaddy Publishing Group Audience Report 2023"
       },
       "revenueModel": "Reader donations, international philanthropic press grants, and digital ads",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mm/the-irrawaddy.jpg",
+      "logoExplainer": "Red circle with yellow motifs and blue pen nib above red serif 'The Irrawaddy' — Irrawaddy magazine emblem.",
+      "licenceNote": "The Irrawaddy brand mark from the magazine's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.irrawaddy.com",
         "https://en.wikipedia.org/wiki/The_Irrawaddy"
@@ -15766,7 +15775,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Malta Broadcasting Authority Press Study 2023"
       },
       "revenueModel": "Print sales, corporate display advertising, and web advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mt/the-malta-independent.jpg",
+      "logoExplainer": "Orange serif 'I' in a white circle on blue — The Malta Independent brand mark.",
+      "licenceNote": "The Malta Independent brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.independent.com.mt",
         "https://en.wikipedia.org/wiki/The_Malta_Independent"
@@ -15791,7 +15803,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "MediaToday Market Research 2023"
       },
       "revenueModel": "Print sales, digital advertising, commercial survey services, and events",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mt/maltatoday.jpg",
+      "logoExplainer": "White lowercase slab-serif 'mt' on red square — MaltaToday brand mark.",
+      "licenceNote": "MaltaToday brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.maltatoday.com.mt",
         "https://en.wikipedia.org/wiki/MaltaToday"
@@ -17116,7 +17131,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Consejo de Comunicación y Ciudadanía 2023"
       },
       "revenueModel": "State government operational budget",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ni/el-19-digital.jpg",
+      "logoExplainer": "Blue script 'el' beside magenta '19' with strap 'POR MÁS VICTORIAS!' — El 19 Digital brand mark.",
+      "licenceNote": "El 19 Digital brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.el19digital.com"
       ]
@@ -21492,7 +21510,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ANIS Relazione Annuale 2023"
       },
       "revenueModel": "Corporate subscriptions and business-to-business financial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sm/san-marino-fixing.jpg",
+      "logoExplainer": "Blue 'SAN MARINO FIXING' on yellow-striped field with chart-arrow graphic — San Marino Fixing masthead.",
+      "licenceNote": "San Marino Fixing masthead from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.sanmarinofixing.com",
         "https://en.wikipedia.org/wiki/San_Marino"
@@ -24898,7 +24919,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "va-asianews",
       "countryCode": "VA",
       "name": "AsiaNews",
@@ -24914,6 +24934,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Catholic digital news brand",
         "source": "https://www.asianews.it"
       },
+      "logo": "newspaper-logos/va/asianews.jpg",
+      "logoExplainer": "Orange 'AsiaNews.it' wordmark with PIME figure icon on blue — AsiaNews brand mark.",
+      "licenceNote": "AsiaNews brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.asianews.it"
       ]
@@ -25641,7 +25665,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Samoa Global News Web Traffic 2023"
       },
       "revenueModel": "Digital advertising, live stream sponsorships, and corporate partnerships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ws/samoa-global-news.png",
+      "logoExplainer": "Circular globe with Samoa island silhouettes and 'SAMOA GLOBAL NEWS' — Samoa Global News emblem.",
+      "licenceNote": "Samoa Global News emblem from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://samoaglobalnews.com",
         "https://en.wikipedia.org/wiki/Media_of_Samoa"
@@ -25757,7 +25784,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Google Analytics / Al-Masdar Press Briefing"
       },
       "revenueModel": "Digital banner advertising, research syndication, and reader contributions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ye/al-masdar.svg",
+      "logoExplainer": "Red Arabic 'المصدر' over grey 'ALMASDAR Online' — Al-Masdar Online masthead.",
+      "licenceNote": "Al-Masdar Online masthead (Wikimedia Commons File:Al-Masdar Online.svg) trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://almasdaronline.com",
         "https://en.wikipedia.org/wiki/Al-Masdar_(Yemen)"
