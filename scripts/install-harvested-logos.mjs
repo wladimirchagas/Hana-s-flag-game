@@ -15,30 +15,22 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "dm-the-sun-dominica",
-    src: "tmp/batch62-final/dm-the-sun-dominica.png",
+    id: "lk-daily-news",
+    src: "tmp/batch63-final/lk-daily-news.png",
     explainer:
-      "Golden inline-serif 'THE SUN' on a deep-red bar — The Sun (Dominica) masthead.",
+      "Blackletter 'Daily News' with tagline 'Sri Lanka's National Newspaper since 1918' — Daily News (Sri Lanka) masthead.",
     licence:
-      "The Sun (Dominica) trademark bundled from the publisher's official site brand assets (sundominica.com) for educational reference in Learn mode.",
+      "Daily News (Sri Lanka) trademark from Wikimedia Commons File:Daily News Sri Lanka logo.gif (public domain), bundled for educational reference in Learn mode.",
   },
   {
-    id: "ve-efectococuyo",
-    src: "tmp/batch62-final/ve-efectococuyo.png",
+    id: "is-kjarninn",
+    src: "tmp/batch63-final/is-kjarninn.png",
     explainer:
-      "Bold black 'EFECTO · · COCUYO' with two lime firefly dots and tagline PERIODISMO QUE ILUMINA — Efecto Cocuyo masthead.",
+      "Orange circle with white lowercase 'k' above slab-serif 'kjarninn' — Kjarninn masthead.",
     licence:
-      "Efecto Cocuyo trademark from Wikimedia Commons File:Logo Efecto Cocuyo (Venezuela) 2025.png, bundled for educational reference in Learn mode.",
+      "Kjarninn trademark from Wikimedia Commons File:Kjarninn-logo.png (public domain), bundled for educational reference in Learn mode.",
   },
-  {
-    id: "ru-moskovsky-komsomolets",
-    src: "tmp/batch62-final/ru-moskovsky-komsomolets.svg",
-    explainer:
-      "Italic blue Cyrillic 'МОСКОВСКИЙ КОМСОМОЛЕЦ' wordmark — Moskovsky Komsomolets masthead.",
-    licence:
-      "Moskovsky Komsomolets trademark from Wikimedia Commons File:Text logo of Moskovskij Komsomolets (Cyrillic).svg, bundled for educational reference in Learn mode.",
-  },
-];
+]
 
 function findObjectSpan(src, id) {
   const idRe = new RegExp(`"id":\\s*"${id}"`);
