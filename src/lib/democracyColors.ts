@@ -19,7 +19,8 @@ export type DemocracyIndexKey =
   | "gdi"
   | "wjp-rule-of-law"
   | "imd-competitiveness"
-  | "etr";
+  | "etr"
+  | "digital-news";
 
 export type DemocracyMapMode = DemocracyIndexKey | null;
 
@@ -42,6 +43,7 @@ export const DEMOCRACY_INDEX_KEYS: readonly DemocracyIndexKey[] = [
   "wjp-rule-of-law",
   "imd-competitiveness",
   "etr",
+  "digital-news",
 ] as const;
 
 export type DemocracyAxisBand = {
@@ -174,6 +176,35 @@ export const GPI_BAND_ORDER: readonly string[] = [
   "Medium",
   "Low",
   "Very Low",
+];
+
+/** Reuters Institute Digital News Report trust-in-news % bands (higher = greener).
+ *  DNR publishes no categorical tiers — decade bands exist for the map / Group-by
+ *  only, matching the CPI score-band pattern. */
+export const DIGITAL_NEWS_MAP_COLORS: Record<string, string> = {
+  "90–100%": "#004d1a",
+  "80–89%": "#1b5e20",
+  "70–79%": "#43a047",
+  "60–69%": "#9ccc65",
+  "50–59%": "#fdd835",
+  "40–49%": "#fb8c00",
+  "30–39%": "#f4511e",
+  "20–29%": "#e53935",
+  "10–19%": "#c62828",
+  "0–9%": "#7f0000",
+};
+
+export const DIGITAL_NEWS_BAND_ORDER: readonly string[] = [
+  "90–100%",
+  "80–89%",
+  "70–79%",
+  "60–69%",
+  "50–59%",
+  "40–49%",
+  "30–39%",
+  "20–29%",
+  "10–19%",
+  "0–9%",
 ];
 
 /** IEP Ecological Threat Index (ETR) map bands — Appendix A methodology
@@ -368,6 +399,7 @@ export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
   if (mode === "wjp-rule-of-law") return "WJP Rule of Law Index";
   if (mode === "imd-competitiveness") return "IMD World Competitiveness Ranking";
   if (mode === "etr") return "Ecological Threat Index";
+  if (mode === "digital-news") return "Digital News Report Index";
   return "";
 }
 
@@ -470,6 +502,12 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
       color: ETR_MAP_COLORS[label],
     }));
   }
+  if (mode === "digital-news") {
+    return DIGITAL_NEWS_BAND_ORDER.map((label) => ({
+      label,
+      color: DIGITAL_NEWS_MAP_COLORS[label],
+    }));
+  }
   return [];
 }
 
@@ -526,6 +564,9 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
     } else if (mode === "etr") {
       rating = demo.etr?.rating;
       colorMap = ETR_MAP_COLORS;
+    } else if (mode === "digital-news") {
+      rating = demo.digitalNews?.rating;
+      colorMap = DIGITAL_NEWS_MAP_COLORS;
     } else {
       continue;
     }
@@ -553,7 +594,7 @@ export function getDemocracyIndexLabel(key: DemocracyIndexKey): string {
   if (key === "wjp-rule-of-law") return "WJP Rule of Law Index";
   if (key === "imd-competitiveness") return "IMD World Competitiveness Ranking";
   if (key === "etr") return "Ecological Threat Index";
-  return "";
+  return "Digital News Report Index";
 }
 
 /** Pull the index row for a country from bundled facts. */
@@ -577,7 +618,7 @@ export function getDemocracyIndexFor(
   if (key === "wjp-rule-of-law") return democracy.wjpRuleOfLaw;
   if (key === "imd-competitiveness") return democracy.imdCompetitiveness;
   if (key === "etr") return democracy.etr;
-  return undefined;
+  return democracy.digitalNews;
 }
 
 /**
@@ -778,6 +819,13 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
       { label: "Very High", min: 3.8, max: 5 },
     ];
   }
+  if (key === "digital-news") {
+    return DIGITAL_NEWS_BAND_ORDER.map((label) => {
+      if (label === "90–100%") return { label, min: 90, max: 100 };
+      const lo = Number(label.split("–")[0]);
+      return { label, min: lo, max: lo + 9 };
+    }).reverse(); // low→high for the axis
+  }
   if (key === "happiness") {
     return HAPPINESS_BAND_ORDER.map((label) => {
       if (label === "9.0–10") return { label, min: 9, max: 10 };
@@ -840,6 +888,7 @@ export function formatDemocracyAxisValue(
   if (key === "wjp-rule-of-law") return `${idx.rating} · ${score.toFixed(2)}`;
   if (key === "imd-competitiveness") return `${idx.rating} · score ${score.toFixed(2)}`;
   if (key === "etr") return `${idx.rating} · ${score.toFixed(3)}`;
+  if (key === "digital-news") return `${idx.rating} · ${score}%`;
   return `${idx.rating} · ${score}`;
 }
 

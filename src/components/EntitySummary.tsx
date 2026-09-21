@@ -261,6 +261,19 @@ function formatImdCompetitivenessIndex(idx?: {
 }
 
 /** ETR shows threat band + overall score (higher = greater ecological threat). */
+/** Digital News Report — trust in news overall (% agreeing most news is trustworthy). */
+function formatDigitalNewsIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · ${idx.score}% trust (${idx.year})`;
+}
+
 function formatEtrIndex(idx?: {
   year: number;
   rating: string;
@@ -363,6 +376,9 @@ export function EntitySummary(props: EntitySummaryProps) {
 
       const etr = formatEtrIndex(c.democracy.etr);
       if (etr) rows.push({ label: "Ecological Threat Index", value: etr });
+
+      const dnr = formatDigitalNewsIndex(c.democracy.digitalNews);
+      if (dnr) rows.push({ label: "Digital News Report Index", value: dnr });
     }
 
     if (government) rows.push({ label: "Government", value: government });

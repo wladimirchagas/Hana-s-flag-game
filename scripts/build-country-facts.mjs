@@ -228,6 +228,8 @@ export type DemocracyData = {
   imdCompetitiveness?: DemocracyIndex;
   /** Institute for Economics & Peace Ecological Threat Index (ETR) */
   etr?: DemocracyIndex;
+  /** Reuters Institute Digital News Report — trust in news overall (%) */
+  digitalNews?: DemocracyIndex;
 };
 
 export type CountryFacts = {
