@@ -23236,7 +23236,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "STL Media Group Overview 2023"
       },
       "revenueModel": "Print sales, official advertisements, and commercial broadcast sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tl/suara-timor-lorosae.png",
+      "logoExplainer": "Yellow 'SuaraTimorLorosae.com' on blue beside a yellow ST-stars CORP badge reading 'Suara Timor Lorosae Corporation' — Suara Timor Lorosae brand banner.",
+      "licenceNote": "Suara Timor Lorosae brand banner from the newspaper's official site asset (suara-timor-lorosae.com/wp-content/uploads/2013/06/banner-atas1sedang.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://suara-timor-lorosae.com",
         "https://en.wikipedia.org/wiki/Suara_Timor_Lorosae"

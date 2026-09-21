@@ -17,20 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "bf-levenement",
-    src: "tmp/batch98-install/bf-levenement.jpg",
+    id: "tl-suara-timor-lorosae",
+    src: "tmp/batch99-install/tl-suara-timor-lorosae.png",
     explainer:
-      "Cream serif 'L'Événement' on a deep-red banner with Burkina Faso outline and yellow 'L'INFORMATION EST UN DROIT' starburst — L'Événement masthead.",
+      "Yellow 'SuaraTimorLorosae.com' on blue beside a yellow ST-stars CORP badge reading 'Suara Timor Lorosae Corporation' — Suara Timor Lorosae brand banner.",
     licence:
-      "L'Événement masthead from the newspaper's official site banner asset (evenement-bf.net/squelettes/img/bandeau.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "kh-rasmei-kampuchea",
-    src: "tmp/batch98-install/kh-rasmei-kampuchea.jpg",
-    explainer:
-      "Cyan Khmer title in a pink frame above blue 'RASMEI KAMPUCHEA DAILY NEWSPAPER' and rasmeinews.com — Rasmei Kampuchea Daily masthead.",
-    licence:
-      "Rasmei Kampuchea Daily masthead from the newspaper's official site logo asset (rasmeinews.com/wp-content/uploads/2023/03/rsm-logo.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Suara Timor Lorosae brand banner from the newspaper's official site asset (suara-timor-lorosae.com/wp-content/uploads/2013/06/banner-atas1sedang.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
