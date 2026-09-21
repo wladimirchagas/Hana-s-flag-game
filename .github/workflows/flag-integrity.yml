@@ -68,6 +68,9 @@ on:
       - "scripts/data/gpi2026Data.mjs"
       - "scripts/data/democracyData.mjs"
       - "scripts/check-whr-happiness.mjs"
+      - "scripts/check-gdi-data.mjs"
+      - "scripts/data/gdi-2024-rankings.json"
+      - "scripts/data/gdi2024Data.mjs"
       - "scripts/data/whr-happiness-2026.csv"
       - "scripts/data/whr2026-figure-2.1.xlsx"
       - "scripts/data/whr2026Data.mjs"
@@ -185,6 +188,9 @@ jobs:
 
       - name: Verify World Happiness Report 2026 data matches the official extract
         run: node scripts/check-whr-happiness.mjs
+
+      - name: Check Lowy Global Diplomacy Index data
+        run: node scripts/check-gdi-data.mjs
 
       - name: Verify every flags:check gate actually runs in CI
         run: node scripts/check-ci-coverage.mjs
