@@ -1,28 +1,33 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Country } from "../api/countries";
+import {
+  CHART_METRIC_KEYS,
+  type ChartAxisKey,
+  chartAxisPoints,
+  chartAxisScaleValue,
+  fitChartAxisDomain,
+  formatChartAxisTick,
+  getChartAxisBands,
+  getChartAxisLabel,
+} from "../lib/chartAxes";
 import { CONTINENT_ORDER, SUBREGION_GROUPS } from "../lib/continentGroups";
 import {
   DEMOCRACY_INDEX_KEYS,
-  type DemocracyIndexKey,
   clipDemocracyAxisBands,
   clipTrendToDomain,
   countryMatchesIndexRatings,
-  democracyChartPoints,
   democracyIndexRatingOptions,
   democracyOlsTrend,
-  fitDemocracyAxisDomain,
-  formatDemocracyAxisValue,
-  getDemocracyAxisBands,
   getDemocracyIndexLabel,
 } from "../lib/democracyColors";
 import { GridImage } from "./GridImage";
 
 export type DemocracyIndexChartProps = {
   countries: readonly Country[];
-  xKey: DemocracyIndexKey;
-  yKey: DemocracyIndexKey;
-  onXKeyChange: (key: DemocracyIndexKey) => void;
-  onYKeyChange: (key: DemocracyIndexKey) => void;
+  xKey: ChartAxisKey;
+  yKey: ChartAxisKey;
+  onXKeyChange: (key: ChartAxisKey) => void;
+  onYKeyChange: (key: ChartAxisKey) => void;
   /** Selected country code (map / dropdown / grid) — blinks on the chart. */
   selectedCode: string | null;
   /** Transient hover from the chart; parent mirrors map hover. */
@@ -45,14 +50,6 @@ function scaleLinear(
 ): number {
   const t = (value - domain.min) / (domain.max - domain.min || 1);
   return range.min + t * (range.max - range.min);
-}
-
-function formatTick(key: DemocracyIndexKey, value: number): string {
-  if (key === "v-dem") return value.toFixed(1);
-  if (key === "hdi" || key === "gender-gap" || key === "gpi") return value.toFixed(2);
-  if (key === "economist" || key === "happiness") return value.toFixed(1);
-  if (key === "perception") return value > 0 ? `+${value}` : `${value}`;
-  return `${Math.round(value)}`;
 }
 
 function toggleInSet(prev: ReadonlySet<string>, value: string): Set<string> {
@@ -255,36 +252,52 @@ export function DemocracyIndexChart({
   // Raw scored pairs first — domains fit THESE values, not the full published
   // scale (so a Gender Gap cluster above 0.5 does not leave half the chart empty).
   const rawPoints = useMemo(
-    () => democracyChartPoints(xKey, yKey).filter((p) => byCode.has(p.code)),
-    [xKey, yKey, byCode],
+    () => chartAxisPoints(xKey, yKey, countries).filter((p) => byCode.has(p.code)),
+    [xKey, yKey, countries, byCode],
   );
 
   const xDomain = useMemo(
-    () => fitDemocracyAxisDomain(rawPoints.map((p) => p.x), xKey, TICK_COUNT),
+    () =>
+      fitChartAxisDomain(
+        rawPoints.map((p) => chartAxisScaleValue(xKey, p.x)),
+        xKey,
+        TICK_COUNT,
+      ),
     [rawPoints, xKey],
   );
   const yDomain = useMemo(
-    () => fitDemocracyAxisDomain(rawPoints.map((p) => p.y), yKey, TICK_COUNT),
+    () =>
+      fitChartAxisDomain(
+        rawPoints.map((p) => chartAxisScaleValue(yKey, p.y)),
+        yKey,
+        TICK_COUNT,
+      ),
     [rawPoints, yKey],
   );
 
   const xBands = useMemo(
-    () => clipDemocracyAxisBands(getDemocracyAxisBands(xKey), xDomain),
+    () => clipDemocracyAxisBands(getChartAxisBands(xKey), xDomain),
     [xKey, xDomain],
   );
   const yBands = useMemo(
-    () => clipDemocracyAxisBands(getDemocracyAxisBands(yKey), yDomain),
+    () => clipDemocracyAxisBands(getChartAxisBands(yKey), yDomain),
     [yKey, yDomain],
   );
 
   const points = useMemo(() => {
     return rawPoints.map((p) => {
       const country = byCode.get(p.code)!;
-      const cx = scaleLinear(p.x, xDomain, { min: plot.x0, max: plot.x1 });
-      const cy = scaleLinear(p.y, yDomain, { min: plot.y1, max: plot.y0 });
+      const cx = scaleLinear(chartAxisScaleValue(xKey, p.x), xDomain, {
+        min: plot.x0,
+        max: plot.x1,
+      });
+      const cy = scaleLinear(chartAxisScaleValue(yKey, p.y), yDomain, {
+        min: plot.y1,
+        max: plot.y0,
+      });
       return { ...p, country, cx, cy };
     });
-  }, [rawPoints, byCode, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
+  }, [rawPoints, byCode, xKey, yKey, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
 
   const filtersActive =
     continentFilter.size > 0 ||
@@ -309,7 +322,15 @@ export function DemocracyIndexChart({
     return set;
   }, [filtersActive, points, continentFilter, subcontinentFilter, indexFilter]);
 
-  const trend = useMemo(() => democracyOlsTrend(rawPoints), [rawPoints]);
+  const trend = useMemo(() => {
+    // OLS on the same scale the markers use (log for population/GDP/…).
+    return democracyOlsTrend(
+      rawPoints.map((p) => ({
+        x: chartAxisScaleValue(xKey, p.x),
+        y: chartAxisScaleValue(yKey, p.y),
+      })),
+    );
+  }, [rawPoints, xKey, yKey]);
   const trendSegment = useMemo(() => {
     if (!trend) return null;
     const clipped = clipTrendToDomain(trend, xDomain, yDomain);
@@ -362,8 +383,8 @@ export function DemocracyIndexChart({
     setTooltip({
       code,
       name: country.name,
-      xLabel: formatDemocracyAxisValue(xKey, pt.xIndex),
-      yLabel: formatDemocracyAxisValue(yKey, pt.yIndex),
+      xLabel: pt.xLabel,
+      yLabel: pt.yLabel,
       left,
       top,
       // Top-third markers flip the tip below so it stays legible.
@@ -384,14 +405,23 @@ export function DemocracyIndexChart({
           <select
             className="democracy-index-chart__select"
             value={xKey}
-            onChange={(e) => onXKeyChange(e.target.value as DemocracyIndexKey)}
-            aria-label="Chart X axis index"
+            onChange={(e) => onXKeyChange(e.target.value as ChartAxisKey)}
+            aria-label="Chart X axis"
           >
-            {DEMOCRACY_INDEX_KEYS.map((key) => (
-              <option key={key} value={key}>
-                {getDemocracyIndexLabel(key)}
-              </option>
-            ))}
+            <optgroup label="Indexes">
+              {DEMOCRACY_INDEX_KEYS.map((key) => (
+                <option key={key} value={key}>
+                  {getChartAxisLabel(key)}
+                </option>
+              ))}
+            </optgroup>
+            <optgroup label="Country metrics">
+              {CHART_METRIC_KEYS.map((key) => (
+                <option key={key} value={key}>
+                  {getChartAxisLabel(key)}
+                </option>
+              ))}
+            </optgroup>
           </select>
         </label>
         <label className="democracy-index-chart__axis-pick">
@@ -399,14 +429,23 @@ export function DemocracyIndexChart({
           <select
             className="democracy-index-chart__select"
             value={yKey}
-            onChange={(e) => onYKeyChange(e.target.value as DemocracyIndexKey)}
-            aria-label="Chart Y axis index"
+            onChange={(e) => onYKeyChange(e.target.value as ChartAxisKey)}
+            aria-label="Chart Y axis"
           >
-            {DEMOCRACY_INDEX_KEYS.map((key) => (
-              <option key={key} value={key}>
-                {getDemocracyIndexLabel(key)}
-              </option>
-            ))}
+            <optgroup label="Indexes">
+              {DEMOCRACY_INDEX_KEYS.map((key) => (
+                <option key={key} value={key}>
+                  {getChartAxisLabel(key)}
+                </option>
+              ))}
+            </optgroup>
+            <optgroup label="Country metrics">
+              {CHART_METRIC_KEYS.map((key) => (
+                <option key={key} value={key}>
+                  {getChartAxisLabel(key)}
+                </option>
+              ))}
+            </optgroup>
           </select>
         </label>
 
@@ -455,7 +494,7 @@ export function DemocracyIndexChart({
           className="democracy-index-chart__svg"
           viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
           role="img"
-          aria-label={`${getDemocracyIndexLabel(yKey)} versus ${getDemocracyIndexLabel(xKey)}`}
+          aria-label={`${getChartAxisLabel(yKey)} versus ${getChartAxisLabel(xKey)}`}
         >
           {/* Plot background */}
           <rect
@@ -522,7 +561,7 @@ export function DemocracyIndexChart({
                 textAnchor="middle"
                 className="democracy-index-chart__tick"
               >
-                {formatTick(xKey, t.value)}
+                {formatChartAxisTick(xKey, t.value)}
               </text>
             </g>
           ))}
@@ -541,7 +580,7 @@ export function DemocracyIndexChart({
                 textAnchor="end"
                 className="democracy-index-chart__tick"
               >
-                {formatTick(yKey, t.value)}
+                {formatChartAxisTick(yKey, t.value)}
               </text>
             </g>
           ))}
@@ -610,7 +649,7 @@ export function DemocracyIndexChart({
             textAnchor="middle"
             className="democracy-index-chart__axis-title"
           >
-            {getDemocracyIndexLabel(xKey)}
+            {getChartAxisLabel(xKey)}
           </text>
           <text
             x={16}
@@ -619,7 +658,7 @@ export function DemocracyIndexChart({
             transform={`rotate(-90 16 ${(plot.y0 + plot.y1) / 2})`}
             className="democracy-index-chart__axis-title democracy-index-chart__axis-title--y"
           >
-            {getDemocracyIndexLabel(yKey)}
+            {getChartAxisLabel(yKey)}
           </text>
 
           {/* OLS linear trend — under flags, above bands/grid */}
@@ -714,11 +753,11 @@ export function DemocracyIndexChart({
             <strong className="democracy-index-chart__tooltip-name">{tooltip.name}</strong>
             <span className="democracy-index-chart__tooltip-row">
               <span className="democracy-index-chart__tooltip-axis">X</span>
-              {getDemocracyIndexLabel(xKey)}: {tooltip.xLabel}
+              {getChartAxisLabel(xKey)}: {tooltip.xLabel}
             </span>
             <span className="democracy-index-chart__tooltip-row">
               <span className="democracy-index-chart__tooltip-axis">Y</span>
-              {getDemocracyIndexLabel(yKey)}: {tooltip.yLabel}
+              {getChartAxisLabel(yKey)}: {tooltip.yLabel}
             </span>
           </div>
         )}
