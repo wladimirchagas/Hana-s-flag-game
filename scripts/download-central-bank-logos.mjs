@@ -27,7 +27,14 @@ const force = args.includes("--force");
 const only = new Set(args.filter((a) => /^[A-Z]{2}$/.test(a)));
 
 const BAD_NAME =
-  /\b(flag of|emblem of|coat of arms|seal of the united states|federal reserve note seal|emirate|national emblem)\b/i;
+  /\b(flag of|emblem of|coat of arms|seal of the united states|federal reserve note seal|emirate|national emblem|regionalbus)\b/i;
+
+/** Commons filenames that collide with unrelated orgs (never bank brands). */
+const BAD_COMMONS_FILES = new Set([
+  // German bus operator Regionalbus Augsburg — NOT the Reserve Bank of Australia
+  "Logo_RBA.svg",
+  "Logo RBA.svg",
+]);
 
 function commonsUrl(filename) {
   const name = filename.replace(/ /g, "_");
@@ -79,7 +86,7 @@ let fail = 0;
 for (const entry of entries) {
   if (only.size && !only.has(entry.countryCode)) continue;
   const filename = entry.commonsLogo;
-  if (BAD_NAME.test(filename)) {
+  if (BAD_COMMONS_FILES.has(filename) || BAD_NAME.test(filename)) {
     console.log(`✗ ${entry.id}: skip bad Commons name "${filename}"`);
     skip++;
     continue;

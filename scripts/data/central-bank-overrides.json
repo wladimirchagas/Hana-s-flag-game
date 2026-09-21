@@ -1,10 +1,8 @@
 {
   "banks": {
-    "DE": {
-      "logoExplainer": "The Deutsche Bundesbank wordmark: a vertical blue bar beside a column of gold five-pointed stars, followed by the blue \"Deutsche Bundesbank\" lettering stacked on two lines. The blue (#0068A5) and gold (#FDBB32) echo the euro's palette; the stars nod to the European constellation while the bar is a spare modernist mark for Germany's Eurosystem national central bank.",
-      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
-      "name": "Deutsche Bundesbank",
-      "shortName": "Bundesbank"
+    "AE": {
+      "logoExplainer": "Central Bank of the UAE bilingual lockup: a golden falcon with the UAE flag shield and Arabic scroll beside the Arabic name and \"CENTRAL BANK OF THE U.A.E.\" — the bank's official brand mark.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
     },
     "AF": {
       "logoExplainer": "Official brand mark of the Da Afghanistan Bank as used on the institution's own publications. Primary artwork colours include #1f1a17, #fbfbfb, #232323. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
@@ -14,6 +12,10 @@
       "logoExplainer": "Official brand mark of the Bank of Albania as used on the institution's own publications. Primary artwork colours include #d91f22, #222222, #bababa. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
+    "AM": {
+      "logoExplainer": "Official brand mark of the Central Bank of Armenia as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
     "AR": {
       "logoExplainer": "Banco Central de la República Argentina (BCRA) institutional mark with BCRA / Banco Central lettering in corporate colours.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
@@ -21,6 +23,17 @@
     "AT": {
       "logoExplainer": "Oesterreichische Nationalbank (OeNB) institutional wordmark with Oesterreichische Nationalbank lettering, often with a geometric or eagle-derived device in corporate blue/black.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
+    "AU": {
+      "name": "Reserve Bank of Australia",
+      "shortName": "RBA",
+      "logoExplainer": "The Reserve Bank of Australia mark: a stylised Commonwealth/Federation star device above the serif lockup \"RESERVE BANK / OF AUSTRALIA\" in black. The three-pointed star echoes the Commonwealth Star on Australia's flag and arms; the formal wordmark is the bank's institutional identity used on RBA publications — not a currency-note vignette.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/File:Reserve_Bank_of_Australia_logo.svg",
+        "https://www.rba.gov.au/media/logos.html",
+        "https://www.wikidata.org/wiki/Q1506724"
+      ]
     },
     "BD": {
       "logoExplainer": "Bangladesh Bank institutional emblem with Bengali/English Bangladesh Bank lettering.",
@@ -38,6 +51,10 @@
       "logoExplainer": "Official brand mark of the Central Bank of West African States as used on the institution's own publications. Primary artwork colours include #4d2005. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
+    "BN": {
+      "logoExplainer": "Official brand mark of the Brunei Darussalam Central Bank as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
     "BO": {
       "logoExplainer": "Official brand mark of the Central Bank of Bolivia as used on the institution's own publications. Primary artwork colours include #b4902e. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
@@ -45,6 +62,10 @@
     "BR": {
       "logoExplainer": "The Banco Central do Brasil mark: a green stylised institutional lockup in the bank's corporate green. Geometric contemporary letterforms used on BCB publications — not Brazil's national coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
+    "CA": {
+      "logoExplainer": "Bank of Canada / Banque du Canada bilingual wordmark: a teal silhouette of the Ottawa head-office colonnade beside the stacked English and French names in a clean sans-serif. Institutional brand mark, not the Canadian coat of arms.",
+      "licenceNote": "Non-free logo. French Wikipedia hosts this file under a fair-use rationale as the Bank of Canada / Banque du Canada official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository."
     },
     "CH": {
       "logoExplainer": "Swiss National Bank multilingual wordmark (Schweizerische Nationalbank / Banque nationale suisse / Banca nazionale svizzera) in a formal typeface — institutional, not the full federal coat of arms.",
@@ -58,12 +79,34 @@
       "logoExplainer": "Official brand mark of the Central Bank of Chile: Tras 96 años el Banco Central de Chile cambió su logo institucional. Sourced from Wikimedia Commons and visually checked to be the bank mark.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
+    "CN": {
+      "logoExplainer": "People's Bank of China mark: a red three-pronged device (often read as stylised ancient spade money or interlocking 人 forms) above 中国人民银行 and the English line \"THE PEOPLE'S BANK OF CHINA\". Official institutional lockup — not the PRC national emblem alone.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
+    },
     "CO": {
       "logoExplainer": "Banco de la República emblem with Banco de la República lettering — Colombia's central-bank brand.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
+    "CU": {
+      "logoExplainer": "Official brand mark of the Central Bank of Cuba as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
     "CZ": {
       "logoExplainer": "Czech National Bank (ČNB) circular emblem with heraldic device and ČESKÁ NÁRODNÍ BANKA lettering.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
+    "DE": {
+      "logoExplainer": "The Deutsche Bundesbank wordmark: a vertical blue bar beside a column of gold five-pointed stars, followed by the blue \"Deutsche Bundesbank\" lettering stacked on two lines. The blue (#0068A5) and gold (#FDBB32) echo the euro's palette; the stars nod to the European constellation while the bar is a spare modernist mark for Germany's Eurosystem national central bank.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
+      "name": "Deutsche Bundesbank",
+      "shortName": "Bundesbank"
+    },
+    "DK": {
+      "logoExplainer": "Danmarks Nationalbank wordmark / institutional lockup as used on Nationalbanken publications — Denmark's central-bank brand.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
+    },
+    "DZ": {
+      "logoExplainer": "Official brand mark of the Bank of Algeria as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
     "EC": {
@@ -78,6 +121,10 @@
       "logoExplainer": "Banco de España institutional emblem with Banco de España lettering — the bank's own cognisance rather than the full national arms alone.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
+    "ET": {
+      "logoExplainer": "Official brand mark of the National Bank of Ethiopia as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
     "FI": {
       "logoExplainer": "Bank of Finland (Suomen Pankki) institutional mark with Suomen Pankki / Finlands Bank lettering.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
@@ -85,6 +132,14 @@
     "FR": {
       "logoExplainer": "Banque de France's 2022 brand mark: a deep-blue wordmark \"Banque de France\" set with a distinctive geometric device of interlocking blue bars suggesting a vault lattice. Clean corporate typography replaces the older figurative seal.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
+    "GB": {
+      "logoExplainer": "The Bank of England's circular Britannia mark: a white classical figure of Britannia seated with spear, olive branch and a Union Flag shield, set on a navy disc. This is the bank's familiar institutional emblem used on BoE publications — not the UK coat of arms alone.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
+    },
+    "GR": {
+      "logoExplainer": "Bank of Greece contemporary institutional logo used on Bank of Greece publications — Greece's Eurosystem national central-bank brand.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
     },
     "GT": {
       "logoExplainer": "Official brand mark of the Bank of Guatemala: Autoridades de BANGUAT realizan reunión de transición 20231023. Sourced from Wikimedia Commons and visually checked to be the bank mark.",
@@ -106,6 +161,14 @@
       "logoExplainer": "Bank Indonesia circular blue emblem with a centre device and BANK INDONESIA lettering — the issuer's brand on BI publications.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
+    "IE": {
+      "logoExplainer": "Central Bank of Ireland bilingual mark: a gold Celtic-knot roundel beside \"Banc Ceannais na hÉireann / Central Bank of Ireland\" with \"Eurosystem\" under a gold rule — Ireland's Eurosystem NCB brand.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
+    },
+    "IL": {
+      "logoExplainer": "Bank of Israel seal / institutional emblem as used to identify the bank — the institution's own cognisance rather than a municipal or national flag.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
+    },
     "IN": {
       "logoExplainer": "The Reserve Bank of India emblem: a circular device with a tiger walking under a palm tree — the historic RBI cognisance — often paired with RESERVE BANK OF INDIA lettering. Distinct from the Ashoka Lion Capital.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
@@ -113,6 +176,10 @@
     "IR": {
       "logoExplainer": "Official brand mark of the Central Bank of Iran as used on the institution's own publications. Primary artwork colours include #001b49. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
+    "IT": {
+      "logoExplainer": "Banca d'Italia wordmark: an ornate blue BI monogram crest beside \"BANCA D'ITALIA\" in serif caps with \"EUROSISTEMA\" beneath — Italy's Eurosystem national central-bank brand.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
     },
     "JP": {
       "logoExplainer": "The Bank of Japan wordmark: the Japanese characters 日本銀行 (Nippon Ginkō) in a formal black logotype. No figurative emblem — the institutional name itself is the mark used on BOJ publications.",
@@ -158,12 +225,28 @@
       "logoExplainer": "Official brand mark of the Central Bank of West African States as used on the institution's own publications. Primary artwork colours include #4d2005. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
+    "MM": {
+      "logoExplainer": "Official brand mark of the Central Bank of Myanmar as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
+    "MN": {
+      "logoExplainer": "Official brand mark of the Bank of Mongolia as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
     "MV": {
       "logoExplainer": "Official brand mark of the Maldives Monetary Authority as used on the institution's own publications. Primary artwork colours include #9c9c9c, #fdfdfd, #fefefe. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
     "MX": {
       "logoExplainer": "Banco de México's institutional mark with Banco de México / Banxico lettering in the bank's corporate colours — distinct from the full national coat of arms on the flag.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
+    "MY": {
+      "logoExplainer": "Bank Negara Malaysia mark: a blue shield with a white kijang (barking deer), crescent and star beside \"BANK NEGARA MALAYSIA / CENTRAL BANK OF MALAYSIA\" in blue sans-serif — the bank's familiar institutional brand.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
+    },
+    "MZ": {
+      "logoExplainer": "Official brand mark of the Bank of Mozambique as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
     "NA": {
@@ -174,6 +257,10 @@
       "logoExplainer": "Official brand mark of the Central Bank of West African States as used on the institution's own publications. Primary artwork colours include #4d2005. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
+    "NI": {
+      "logoExplainer": "Official brand mark of the Central Bank of Nicaragua as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
     "NL": {
       "logoExplainer": "De Nederlandsche Bank wordmark: a spare corporate lockup of De Nederlandsche Bank (DNB) in a dark institutional colour — no figurative Dutch lion from the national arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
@@ -182,18 +269,30 @@
       "logoExplainer": "Norges Bank's mark: a clean wordmark \"Norges Bank\" in a dark institutional typeface — minimal Scandinavian corporate identity.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
+    "NZ": {
+      "logoExplainer": "Reserve Bank of New Zealand / Te Pūtea Matua mark: a black woven triangular kete-inspired device beside \"Reserve Bank of New Zealand\" in black and the Māori name in magenta. Contemporary bilingual brand used on RBNZ publications.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
+    },
+    "OM": {
+      "logoExplainer": "Official brand mark of the Central Bank of Oman as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
     "PA": {
       "logoExplainer": "Official brand mark of the National Bank of Panama as used on the institution's own publications. Primary artwork colours include #003e7e. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
     "PH": {
-      "logoExplainer": "Bangko Sentral ng Pilipinas seal (2020/21 redesign): a circular navy field with a gold rim, a gold Philippine eagle with wings raised, three gold stars above the eagle (Luzon, Visayas, Mindanao), and BANGKO SENTRAL NG PILIPINAS lettering along the lower arc. Navy signals stability; gold excellence — the BSP brand, not the national coat of arms.",
+      "logoExplainer": "Bangko Sentral ng Pilipinas (BSP) institutional emblem as used on BSP publications — the Philippine central bank's own brand mark.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "logo": "/central-bank-logos/ph/bsp.webp"
     },
     "PL": {
       "logoExplainer": "Narodowy Bank Polski mark: an eagle device from Polish heraldic tradition paired with NBP / Narodowy Bank Polski lettering in a circular or shield lockup.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
+    "PT": {
+      "logoExplainer": "Banco de Portugal contemporary institutional logo used on BdP publications — the bank's own brand mark within the Eurosystem.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
     },
     "RO": {
       "logoExplainer": "National Bank of Romania emblem with BNR / Banca Națională a României lettering.",
@@ -205,6 +304,10 @@
     },
     "SA": {
       "logoExplainer": "Saudi Central Bank (SAMA) green institutional emblem with Arabic and English Saudi Central Bank / SAMA lettering.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
+    "SC": {
+      "logoExplainer": "Official brand mark of the Central Bank of Seychelles as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
     "SE": {
@@ -223,8 +326,16 @@
       "logoExplainer": "Official brand mark of the Central Bank of West African States as used on the institution's own publications. Primary artwork colours include #4d2005. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
+    "SR": {
+      "logoExplainer": "Official brand mark of the Centrale Bank van Suriname as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
     "SV": {
       "logoExplainer": "Official brand mark of the Central Reserve Bank of El Salvador as used on the institution's own publications. Primary artwork colours include #323a44, #cd8f42. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
+    "SY": {
+      "logoExplainer": "Official brand mark of the Central Bank of Syria as used on the institution's publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
     "TG": {
@@ -247,6 +358,10 @@
       "logoExplainer": "National Bank of Ukraine mark with a tryzub-inspired institutional device and Ukrainian lettering.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
+    "US": {
+      "logoExplainer": "Seal of the United States Federal Reserve System: a circular black-and-white device with an eagle above a striped shield, olive branch and arrows, ringed by the legend \"UNITED STATES · FEDERAL RESERVE SYSTEM\". This is the System's official cognisance — not a Federal Reserve Note plate seal.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
     "UY": {
       "logoExplainer": "Official brand mark of the Central Bank of Uruguay as used on the institution's own publications. Primary artwork colours include #d29235, #2a397d. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
@@ -259,9 +374,25 @@
       "logoExplainer": "Official brand mark of the Central Bank of Venezuela as used on the institution's own publications. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
+    "ZA": {
+      "logoExplainer": "South African Reserve Bank institutional mark as used on SARB publications — the bank's own brand cognisance rather than the national coat of arms alone.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
+    },
     "ZW": {
       "logoExplainer": "Official brand mark of the Reserve Bank of Zimbabwe: This is the obverse of a paper banknote of the Zimbabwe Dollar. Sourced from Wikimedia Commons and visually checked to be the bank mark.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+    },
+    "PK": {
+      "logoExplainer": "State Bank of Pakistan seal: a green circular device with crescent and star above wheat stalks and bilingual English/Urdu lettering — SBP's official institutional emblem.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
+    },
+    "NG": {
+      "logoExplainer": "Central Bank of Nigeria crest: a green eagle above interlocking gold rings cradling a blue Y-device, supported by green hands, on a banner reading CENTRAL BANK OF NIGERIA — CBN's official institutional mark.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
+    },
+    "MA": {
+      "logoExplainer": "Bank Al-Maghrib mark: a purple diamond with a gold calligraphic mim device above Arabic بنك المغرب and the Latin line BANK AL-MAGHRIB — Morocco's central-bank brand.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
     }
   }
 }
