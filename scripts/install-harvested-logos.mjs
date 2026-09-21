@@ -15,60 +15,28 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "bb-loop-barbados",
-    src: "tmp/batch73-install/bb-loop-barbados.jpg",
+    id: "la-lao-pdr-daily",
+    src: "tmp/batch74-install/la-lao-pdr-daily.jpg",
     explainer:
-      "Teal brush-stroke ring with a red splash — Loop News Barbados brand mark.",
+      "White serif 'Le Rénovateur' on red — Le Rénovateur masthead.",
     licence:
-      "Loop News Barbados brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Le Rénovateur brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "cg-le-patriote",
-    src: "tmp/batch73-install/cg-le-patriote.jpg",
+    id: "ge-sakartvelos-respublika",
+    src: "tmp/batch74-install/ge-sakartvelos-respublika.jpg",
     explainer:
-      "Orange house outline beside white 'Le Patriote' and yellow 'CONGOLAIS' on navy — Le Patriote brand mark.",
+      "White 'RES PUBLIKA' on black, with small rotated 'RES' — Sakartvelos Respublika brand mark.",
     licence:
-      "Le Patriote brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Sakartvelos Respublika brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "ec-gk",
-    src: "tmp/batch73-install/ec-gk.jpg",
+    id: "sc-today-in-seychelles",
+    src: "tmp/batch74-install/sc-today-in-seychelles.jpg",
     explainer:
-      "White bold 'GK' on blue — GK (Ecuador) brand initials.",
+      "White 'TODAY' over 'in Seychelles' on sky blue — Today in Seychelles masthead.",
     licence:
-      "GK brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "mc-observateur-monaco",
-    src: "tmp/batch73-install/mc-observateur-monaco.jpg",
-    explainer:
-      "Red 'L'OBSERVATEUR DE' over black 'MONACO' — L'Observateur de Monaco masthead.",
-    licence:
-      "L'Observateur de Monaco masthead from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "mt-l-orizzont",
-    src: "tmp/batch73-install/mt-l-orizzont.jpg",
-    explainer:
-      "Red lowercase 'l-orizzont' wordmark — L-Orizzont masthead.",
-    licence:
-      "L-Orizzont brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "td-n-djamena-hebdo",
-    src: "tmp/batch73-install/td-n-djamena-hebdo.jpg",
-    explainer:
-      "Blue 'N'DJAMÉNA HEBDO' over a '30 ANS' anniversary crest with quill — N'Djaména Hebdo masthead.",
-    licence:
-      "N'Djaména Hebdo brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "tt-loop-tt",
-    src: "tmp/batch73-install/tt-loop-tt.png",
-    explainer:
-      "Lowercase 'loop' wordmark fading purple-to-magenta — Loop News Trinidad and Tobago brand mark.",
-    licence:
-      "Loop News Trinidad and Tobago brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Today in Seychelles brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
 ];
 

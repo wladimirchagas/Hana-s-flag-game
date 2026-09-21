@@ -8324,7 +8324,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Georgian National Parliamentary Library 2023"
       },
       "revenueModel": "Print subscriptions, retail sales, and official announcements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ge/sakartvelos-respublika.jpg",
+      "logoExplainer": "White 'RES PUBLIKA' on black, with small rotated 'RES' — Sakartvelos Respublika brand mark.",
+      "licenceNote": "Sakartvelos Respublika brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://sakresh.ge",
         "https://ka.wikipedia.org/wiki/%E1%83%A1%E1%83%90%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%95%E1%83%94%E1%83%9A%E1%83%9D%E1%83%A1_%E1%83%A0%E1%83%94%E1%83%A1%E1%83%A0%E1%83%A3%E1%83%91%E1%83%9A%E1%83%98%E1%83%99%E1%83%90_(%E1%83%92%E1%83%90%E1%83%96%E1%83%94%E1%83%97%E1%83%98)"
@@ -13004,7 +13007,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Lao Press Foreign Language Division"
       },
       "revenueModel": "State budget support and subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/la/lao-pdr-daily.jpg",
+      "logoExplainer": "White serif 'Le Rénovateur' on red — Le Rénovateur masthead.",
+      "licenceNote": "Le Rénovateur brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.lerenovateur.org.la",
         "https://en.wikipedia.org/wiki/Media_of_Laos"
@@ -20494,7 +20500,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Today Publishers Media Kit 2023"
       },
       "revenueModel": "Print circulation sales and corporate advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sc/today-in-seychelles.jpg",
+      "logoExplainer": "White 'TODAY' over 'in Seychelles' on sky blue — Today in Seychelles masthead.",
+      "licenceNote": "Today in Seychelles brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.facebook.com/todayinsey",
         "https://en.wikipedia.org/wiki/Media_of_Seychelles"
