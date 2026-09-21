@@ -920,6 +920,85 @@ export function democracyChartPoints(
   return out;
 }
 
+/** Stable id for an index·rating filter chip (`v-dem::Liberal Democracy`). */
+export function democracyIndexRatingId(key: DemocracyIndexKey, rating: string): string {
+  return `${key}::${rating}`;
+}
+
+export type DemocracyIndexRatingOption = {
+  id: string;
+  key: DemocracyIndexKey;
+  rating: string;
+  /** e.g. "V-Dem regime type · Liberal Democracy" */
+  label: string;
+};
+
+/**
+ * Every distinct (index, rating) pair present in bundled country facts, for the
+ * chart's Indexes filter. Ordered by `DEMOCRACY_INDEX_KEYS`, then by each
+ * index's axis-band order when known, then alphabetically.
+ */
+export function democracyIndexRatingOptions(): DemocracyIndexRatingOption[] {
+  const byKey = new Map<DemocracyIndexKey, Set<string>>();
+  for (const facts of Object.values(COUNTRY_FACTS)) {
+    if (!facts.democracy) continue;
+    for (const key of DEMOCRACY_INDEX_KEYS) {
+      const idx = getDemocracyIndexFor(facts.democracy, key);
+      if (!idx?.rating) continue;
+      let set = byKey.get(key);
+      if (!set) {
+        set = new Set();
+        byKey.set(key, set);
+      }
+      set.add(idx.rating);
+    }
+  }
+
+  const out: DemocracyIndexRatingOption[] = [];
+  for (const key of DEMOCRACY_INDEX_KEYS) {
+    const ratings = byKey.get(key);
+    if (!ratings || ratings.size === 0) continue;
+    const bandOrder = getDemocracyAxisBands(key).map((b) => b.label);
+    const ordered = [...ratings].sort((a, b) => {
+      const ia = bandOrder.indexOf(a);
+      const ib = bandOrder.indexOf(b);
+      if (ia >= 0 && ib >= 0) return ia - ib;
+      if (ia >= 0) return -1;
+      if (ib >= 0) return 1;
+      return a.localeCompare(b, "en");
+    });
+    const indexLabel = getDemocracyIndexLabel(key);
+    for (const rating of ordered) {
+      out.push({
+        id: democracyIndexRatingId(key, rating),
+        key,
+        rating,
+        label: `${indexLabel} · ${rating}`,
+      });
+    }
+  }
+  return out;
+}
+
+/** True when the country matches at least one selected index·rating definition. */
+export function countryMatchesIndexRatings(
+  code: string,
+  selectedIds: ReadonlySet<string>,
+): boolean {
+  if (selectedIds.size === 0) return true;
+  const facts = COUNTRY_FACTS[code];
+  if (!facts?.democracy) return false;
+  for (const id of selectedIds) {
+    const sep = id.indexOf("::");
+    if (sep < 0) continue;
+    const key = id.slice(0, sep) as DemocracyIndexKey;
+    const rating = id.slice(sep + 2);
+    const idx = getDemocracyIndexFor(facts.democracy, key);
+    if (idx?.rating === rating) return true;
+  }
+  return false;
+}
+
 export type DemocracyOlsTrend = {
   /** Predicted Y at X: intercept + slope * x */
   slope: number;

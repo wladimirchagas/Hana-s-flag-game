@@ -1,11 +1,14 @@
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Country } from "../api/countries";
+import { CONTINENT_ORDER, SUBREGION_GROUPS } from "../lib/continentGroups";
 import {
   DEMOCRACY_INDEX_KEYS,
   type DemocracyIndexKey,
   clipDemocracyAxisBands,
   clipTrendToDomain,
+  countryMatchesIndexRatings,
   democracyChartPoints,
+  democracyIndexRatingOptions,
   democracyOlsTrend,
   fitDemocracyAxisDomain,
   formatDemocracyAxisValue,
@@ -33,6 +36,8 @@ const VIEW_W = 960;
 const VIEW_H = 500;
 const TICK_COUNT = 5;
 
+type FilterKind = "continents" | "subcontinents" | "indexes" | null;
+
 function scaleLinear(
   value: number,
   domain: { min: number; max: number },
@@ -44,10 +49,141 @@ function scaleLinear(
 
 function formatTick(key: DemocracyIndexKey, value: number): string {
   if (key === "v-dem") return value.toFixed(1);
-  if (key === "hdi" || key === "gender-gap" || key === "gpi" || key === "etr") return value.toFixed(2);
+  if (key === "hdi" || key === "gender-gap" || key === "gpi") return value.toFixed(2);
   if (key === "economist" || key === "happiness") return value.toFixed(1);
   if (key === "perception") return value > 0 ? `+${value}` : `${value}`;
   return `${Math.round(value)}`;
+}
+
+function toggleInSet(prev: ReadonlySet<string>, value: string): Set<string> {
+  const next = new Set(prev);
+  if (next.has(value)) next.delete(value);
+  else next.add(value);
+  return next;
+}
+
+type FilterMenuProps = {
+  label: string;
+  kind: Exclude<FilterKind, null>;
+  openKind: FilterKind;
+  onOpen: (kind: FilterKind) => void;
+  selected: ReadonlySet<string>;
+  options: readonly { id: string; label: string; group?: string }[];
+  onToggle: (id: string) => void;
+  onClear: () => void;
+};
+
+function ChartFilterMenu({
+  label,
+  kind,
+  openKind,
+  onOpen,
+  selected,
+  options,
+  onToggle,
+  onClear,
+}: FilterMenuProps) {
+  const open = openKind === kind;
+  const ref = useRef<HTMLDivElement>(null);
+  const count = selected.size;
+  const active = count > 0;
+
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) onOpen(null);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onOpen(null);
+    };
+    window.addEventListener("mousedown", onDown);
+    window.addEventListener("keydown", onKey);
+    return () => {
+      window.removeEventListener("mousedown", onDown);
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [open, onOpen]);
+
+  const grouped = useMemo(() => {
+    const groups: { title: string | null; items: typeof options }[] = [];
+    let current: (typeof groups)[number] | null = null;
+    for (const opt of options) {
+      const title = opt.group ?? null;
+      if (!current || current.title !== title) {
+        current = { title, items: [] };
+        groups.push(current);
+      }
+      current.items.push(opt);
+    }
+    return groups;
+  }, [options]);
+
+  return (
+    <div className="democracy-index-chart__filter" ref={ref}>
+      <button
+        type="button"
+        className={
+          "democracy-index-chart__filter-btn" +
+          (active ? " democracy-index-chart__filter-btn--active" : "") +
+          (open ? " democracy-index-chart__filter-btn--open" : "")
+        }
+        aria-expanded={open}
+        aria-haspopup="dialog"
+        onClick={() => onOpen(open ? null : kind)}
+      >
+        {label}
+        {active ? ` · ${count}` : ""}
+      </button>
+      {open && (
+        <div
+          className="democracy-index-chart__filter-popover"
+          role="dialog"
+          aria-label={`Filter by ${label}`}
+        >
+          <div className="democracy-index-chart__filter-popover-head">
+            <span>Show countries in</span>
+            {active && (
+              <button
+                type="button"
+                className="democracy-index-chart__filter-clear"
+                onClick={onClear}
+              >
+                Clear
+              </button>
+            )}
+          </div>
+          <div className="democracy-index-chart__filter-list">
+            {grouped.map((g) => (
+              <div key={g.title ?? "_"} className="democracy-index-chart__filter-group">
+                {g.title && (
+                  <p className="democracy-index-chart__filter-group-title">{g.title}</p>
+                )}
+                {g.items.map((opt) => {
+                  const checked = selected.has(opt.id);
+                  return (
+                    <label
+                      key={opt.id}
+                      className={
+                        "democracy-index-chart__filter-option" +
+                        (checked ? " democracy-index-chart__filter-option--on" : "")
+                      }
+                    >
+                      <input
+                        type="checkbox"
+                        checked={checked}
+                        onChange={() => onToggle(opt.id)}
+                      />
+                      <span>{opt.label}</span>
+                    </label>
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
 
 export function DemocracyIndexChart({
@@ -72,11 +208,42 @@ export function DemocracyIndexChart({
     below: boolean;
   } | null>(null);
 
+  const [openFilter, setOpenFilter] = useState<FilterKind>(null);
+  const [continentFilter, setContinentFilter] = useState<ReadonlySet<string>>(
+    () => new Set(),
+  );
+  const [subcontinentFilter, setSubcontinentFilter] = useState<ReadonlySet<string>>(
+    () => new Set(),
+  );
+  const [indexFilter, setIndexFilter] = useState<ReadonlySet<string>>(() => new Set());
+
   const byCode = useMemo(() => {
     const m = new Map<string, Country>();
     for (const c of countries) m.set(c.code, c);
     return m;
   }, [countries]);
+
+  const continentOptions = useMemo(
+    () => CONTINENT_ORDER.map((c) => ({ id: c, label: c })),
+    [],
+  );
+  const subcontinentOptions = useMemo(
+    () =>
+      SUBREGION_GROUPS.map((g) => ({
+        id: g.label,
+        label: g.label,
+        group: g.continent,
+      })),
+    [],
+  );
+  const indexOptions = useMemo(() => {
+    const opts = democracyIndexRatingOptions();
+    return opts.map((o) => ({
+      id: o.id,
+      label: o.rating,
+      group: getDemocracyIndexLabel(o.key),
+    }));
+  }, []);
 
   const plot = {
     x0: PAD.left,
@@ -119,6 +286,29 @@ export function DemocracyIndexChart({
     });
   }, [rawPoints, byCode, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
 
+  const filtersActive =
+    continentFilter.size > 0 ||
+    subcontinentFilter.size > 0 ||
+    indexFilter.size > 0;
+
+  const highlightedCodes = useMemo(() => {
+    if (!filtersActive) return null;
+    const set = new Set<string>();
+    for (const p of points) {
+      const c = p.country;
+      if (continentFilter.size > 0 && !continentFilter.has(c.continent)) continue;
+      if (
+        subcontinentFilter.size > 0 &&
+        !(c.subregion && subcontinentFilter.has(c.subregion))
+      ) {
+        continue;
+      }
+      if (!countryMatchesIndexRatings(p.code, indexFilter)) continue;
+      set.add(p.code);
+    }
+    return set;
+  }, [filtersActive, points, continentFilter, subcontinentFilter, indexFilter]);
+
   const trend = useMemo(() => democracyOlsTrend(rawPoints), [rawPoints]);
   const trendSegment = useMemo(() => {
     if (!trend) return null;
@@ -135,23 +325,29 @@ export function DemocracyIndexChart({
   }, [trend, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
 
   const xTicks = useMemo(() => {
-    return Array.from({ length: TICK_COUNT + 1 }, (_, i) => {
-      const v = xDomain.min + ((xDomain.max - xDomain.min) * i) / TICK_COUNT;
-      return {
-        value: v,
-        x: scaleLinear(v, xDomain, { min: plot.x0, max: plot.x1 }),
-      };
-    });
+    const ticks: { value: number; x: number }[] = [];
+    const span = xDomain.max - xDomain.min;
+    for (let i = 0; i <= TICK_COUNT; i++) {
+      const value = xDomain.min + (span * i) / TICK_COUNT;
+      ticks.push({
+        value,
+        x: scaleLinear(value, xDomain, { min: plot.x0, max: plot.x1 }),
+      });
+    }
+    return ticks;
   }, [xDomain, plot.x0, plot.x1]);
 
   const yTicks = useMemo(() => {
-    return Array.from({ length: TICK_COUNT + 1 }, (_, i) => {
-      const v = yDomain.min + ((yDomain.max - yDomain.min) * i) / TICK_COUNT;
-      return {
-        value: v,
-        y: scaleLinear(v, yDomain, { min: plot.y1, max: plot.y0 }),
-      };
-    });
+    const ticks: { value: number; y: number }[] = [];
+    const span = yDomain.max - yDomain.min;
+    for (let i = 0; i <= TICK_COUNT; i++) {
+      const value = yDomain.min + (span * i) / TICK_COUNT;
+      ticks.push({
+        value,
+        y: scaleLinear(value, yDomain, { min: plot.y1, max: plot.y0 }),
+      });
+    }
+    return ticks;
   }, [yDomain, plot.y0, plot.y1]);
 
   const activeCode = hoveredCode ?? selectedCode;
@@ -213,6 +409,40 @@ export function DemocracyIndexChart({
             ))}
           </select>
         </label>
+
+        <div className="democracy-index-chart__filters" role="group" aria-label="Highlight countries">
+          <ChartFilterMenu
+            label="Continents"
+            kind="continents"
+            openKind={openFilter}
+            onOpen={setOpenFilter}
+            selected={continentFilter}
+            options={continentOptions}
+            onToggle={(id) => setContinentFilter((prev) => toggleInSet(prev, id))}
+            onClear={() => setContinentFilter(new Set())}
+          />
+          <ChartFilterMenu
+            label="Sub-continents"
+            kind="subcontinents"
+            openKind={openFilter}
+            onOpen={setOpenFilter}
+            selected={subcontinentFilter}
+            options={subcontinentOptions}
+            onToggle={(id) => setSubcontinentFilter((prev) => toggleInSet(prev, id))}
+            onClear={() => setSubcontinentFilter(new Set())}
+          />
+          <ChartFilterMenu
+            label="Indexes"
+            kind="indexes"
+            openKind={openFilter}
+            onOpen={setOpenFilter}
+            selected={indexFilter}
+            options={indexOptions}
+            onToggle={(id) => setIndexFilter((prev) => toggleInSet(prev, id))}
+            onClear={() => setIndexFilter(new Set())}
+          />
+        </div>
+
         {trendSegment && (
           <p className="democracy-index-chart__trend-note" title="Ordinary least squares linear fit of Y on X across plotted countries">
             Trend: linear (OLS) · R² = {trendSegment.r2.toFixed(2)} · n = {trendSegment.n}
@@ -410,6 +640,11 @@ export function DemocracyIndexChart({
           {points.map((p) => {
             const isSelected = selectedCode === p.code;
             const isActive = activeCode === p.code;
+            const dimmed =
+              highlightedCodes !== null &&
+              !highlightedCodes.has(p.code) &&
+              !isSelected &&
+              !isActive;
             return (
               <button
                 key={p.code}
@@ -417,12 +652,13 @@ export function DemocracyIndexChart({
                 className={
                   "democracy-index-chart__marker" +
                   (isSelected ? " democracy-index-chart__marker--selected" : "") +
-                  (isActive ? " democracy-index-chart__marker--active" : "")
+                  (isActive ? " democracy-index-chart__marker--active" : "") +
+                  (dimmed ? " democracy-index-chart__marker--dimmed" : "")
                 }
                 style={{
                   left: `${(p.cx / VIEW_W) * 100}%`,
                   top: `${(p.cy / VIEW_H) * 100}%`,
-                  zIndex: isActive || isSelected ? 3 : 1,
+                  zIndex: isActive || isSelected ? 3 : dimmed ? 0 : 2,
                 }}
                 aria-label={`${p.country.name}: X ${formatDemocracyAxisValue(xKey, p.xIndex)}, Y ${formatDemocracyAxisValue(yKey, p.yIndex)}`}
                 aria-pressed={isSelected}
