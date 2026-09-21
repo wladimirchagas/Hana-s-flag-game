@@ -162,6 +162,7 @@ type GroupMode =
   | "imd-competitiveness"
   | "etr"
   | "digital-news"
+  | "gti"
   | "party-ideology";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
@@ -194,6 +195,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   "imd-competitiveness": "IMD World Competitiveness Ranking",
   etr: "Ecological Threat Index",
   "digital-news": "Digital News Report Index",
+  gti: "Global Terrorism Index",
   // Political-parties-view only — buckets along the sourced ideology spectrum.
   "party-ideology": "By ideology",
   // Passports-view only — buckets by the passport cover's colour family.
@@ -268,6 +270,7 @@ const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
   "imd-competitiveness",
   "etr",
   "digital-news",
+  "gti",
 ]);
 
 /** Whether a grouping mode is offered for the given view. The flag-appearance
@@ -465,6 +468,17 @@ const DIGITAL_NEWS_ORDER: Record<string, number> = {
   "10–19%": 9,
   "0–9%": 10,
   "Not rated": 11,
+};
+
+/** Global Terrorism Index impact bands — most impacted first. */
+const GTI_ORDER: Record<string, number> = {
+  "Very High": 1,
+  High: 2,
+  Medium: 3,
+  Low: 4,
+  "Very Low": 5,
+  "No Impact": 6,
+  "Not rated": 7,
 };
 
 
@@ -1045,6 +1059,12 @@ export function FlagGrid({
         const rating = COUNTRY_FACTS[code]?.democracy?.digitalNews?.rating ?? "Not rated";
         push(rating, e);
       }
+    } else if (groupMode === "gti") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.gti?.rating ?? "Not rated";
+        push(rating, e);
+      }
     }
 
     if (
@@ -1063,7 +1083,8 @@ export function FlagGrid({
       groupMode === "wjp-rule-of-law" ||
       groupMode === "imd-competitiveness" ||
       groupMode === "etr" ||
-      groupMode === "digital-news"
+      groupMode === "digital-news" ||
+      groupMode === "gti"
     ) {
       for (const [, items] of buckets) {
         items.sort((a, b) => {
@@ -1275,6 +1296,11 @@ export function FlagGrid({
       if (groupMode === "digital-news") {
         const oa = DIGITAL_NEWS_ORDER[a] ?? 99;
         const ob = DIGITAL_NEWS_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "gti") {
+        const oa = GTI_ORDER[a] ?? 99;
+        const ob = GTI_ORDER[b] ?? 99;
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "party-ideology") {

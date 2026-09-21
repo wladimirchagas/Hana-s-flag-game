@@ -274,6 +274,20 @@ function formatDigitalNewsIndex(idx?: {
   return `Rank ${idx.rank}${changeStr} · ${idx.score}% trust (${idx.year})`;
 }
 
+
+/** GTI shows impact band + overall score (higher = greater terrorism impact). */
+function formatGtiIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)} (${idx.year})`;
+}
+
 function formatEtrIndex(idx?: {
   year: number;
   rating: string;
@@ -379,6 +393,9 @@ export function EntitySummary(props: EntitySummaryProps) {
 
       const dnr = formatDigitalNewsIndex(c.democracy.digitalNews);
       if (dnr) rows.push({ label: "Digital News Report Index", value: dnr });
+
+      const gti = formatGtiIndex(c.democracy.gti);
+      if (gti) rows.push({ label: "Global Terrorism Index", value: gti });
     }
 
     if (government) rows.push({ label: "Government", value: government });

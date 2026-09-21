@@ -20,7 +20,8 @@ export type DemocracyIndexKey =
   | "wjp-rule-of-law"
   | "imd-competitiveness"
   | "etr"
-  | "digital-news";
+  | "digital-news"
+  | "gti";
 
 export type DemocracyMapMode = DemocracyIndexKey | null;
 
@@ -44,6 +45,7 @@ export const DEMOCRACY_INDEX_KEYS: readonly DemocracyIndexKey[] = [
   "imd-competitiveness",
   "etr",
   "digital-news",
+  "gti",
 ] as const;
 
 export type DemocracyAxisBand = {
@@ -205,6 +207,26 @@ export const DIGITAL_NEWS_BAND_ORDER: readonly string[] = [
   "20–29%",
   "10–19%",
   "0–9%",
+];
+
+/** Global Terrorism Index impact bands (IEP map legend). Higher score =
+ *  greater impact of terrorism. Colours run high-impact→none (red→green). */
+export const GTI_MAP_COLORS: Record<string, string> = {
+  "Very High": "#7f0000",
+  High: "#c62828",
+  Medium: "#fb8c00",
+  Low: "#fdd835",
+  "Very Low": "#9ccc65",
+  "No Impact": "#1b5e20",
+};
+
+export const GTI_BAND_ORDER: readonly string[] = [
+  "Very High",
+  "High",
+  "Medium",
+  "Low",
+  "Very Low",
+  "No Impact",
 ];
 
 /** IEP Ecological Threat Index (ETR) map bands — Appendix A methodology
@@ -400,6 +422,7 @@ export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
   if (mode === "imd-competitiveness") return "IMD World Competitiveness Ranking";
   if (mode === "etr") return "Ecological Threat Index";
   if (mode === "digital-news") return "Digital News Report Index";
+  if (mode === "gti") return "Global Terrorism Index";
   return "";
 }
 
@@ -508,6 +531,12 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
       color: DIGITAL_NEWS_MAP_COLORS[label],
     }));
   }
+  if (mode === "gti") {
+    return GTI_BAND_ORDER.map((label) => ({
+      label,
+      color: GTI_MAP_COLORS[label],
+    }));
+  }
   return [];
 }
 
@@ -567,6 +596,9 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
     } else if (mode === "digital-news") {
       rating = demo.digitalNews?.rating;
       colorMap = DIGITAL_NEWS_MAP_COLORS;
+    } else if (mode === "gti") {
+      rating = demo.gti?.rating;
+      colorMap = GTI_MAP_COLORS;
     } else {
       continue;
     }
@@ -594,7 +626,8 @@ export function getDemocracyIndexLabel(key: DemocracyIndexKey): string {
   if (key === "wjp-rule-of-law") return "WJP Rule of Law Index";
   if (key === "imd-competitiveness") return "IMD World Competitiveness Ranking";
   if (key === "etr") return "Ecological Threat Index";
-  return "Digital News Report Index";
+  if (key === "digital-news") return "Digital News Report Index";
+  return "Global Terrorism Index";
 }
 
 /** Pull the index row for a country from bundled facts. */
@@ -618,7 +651,8 @@ export function getDemocracyIndexFor(
   if (key === "wjp-rule-of-law") return democracy.wjpRuleOfLaw;
   if (key === "imd-competitiveness") return democracy.imdCompetitiveness;
   if (key === "etr") return democracy.etr;
-  return democracy.digitalNews;
+  if (key === "digital-news") return democracy.digitalNews;
+  return democracy.gti;
 }
 
 /**
@@ -628,7 +662,7 @@ export function getDemocracyIndexFor(
  */
 export function getDemocracyAxisDomain(key: DemocracyIndexKey): { min: number; max: number } {
   if (key === "v-dem" || key === "hdi" || key === "gender-gap" || key === "wjp-rule-of-law") return { min: 0, max: 1 };
-  if (key === "economist" || key === "happiness") return { min: 0, max: 10 };
+  if (key === "economist" || key === "happiness" || key === "gti") return { min: 0, max: 10 };
   if (key === "perception") return { min: -40, max: 40 };
   if (key === "gpi" || key === "etr") return { min: 1, max: 5 };
   if (key === "gdi") return { min: 0, max: 280 };
@@ -819,6 +853,15 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
       { label: "Very High", min: 3.8, max: 5 },
     ];
   }
+  if (key === "gti") {
+    return [
+      { label: "Very Low", min: 0, max: 2 },
+      { label: "Low", min: 2, max: 4 },
+      { label: "Medium", min: 4, max: 6 },
+      { label: "High", min: 6, max: 8 },
+      { label: "Very High", min: 8, max: 10 },
+    ];
+  }
   if (key === "digital-news") {
     return DIGITAL_NEWS_BAND_ORDER.map((label) => {
       if (label === "90–100%") return { label, min: 90, max: 100 };
@@ -889,6 +932,7 @@ export function formatDemocracyAxisValue(
   if (key === "imd-competitiveness") return `${idx.rating} · score ${score.toFixed(2)}`;
   if (key === "etr") return `${idx.rating} · ${score.toFixed(3)}`;
   if (key === "digital-news") return `${idx.rating} · ${score}%`;
+  if (key === "gti") return `${idx.rating} · ${score.toFixed(3)}`;
   return `${idx.rating} · ${score}`;
 }
 

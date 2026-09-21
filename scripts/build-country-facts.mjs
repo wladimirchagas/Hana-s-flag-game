@@ -230,6 +230,8 @@ export type DemocracyData = {
   etr?: DemocracyIndex;
   /** Reuters Institute Digital News Report — trust in news overall (%) */
   digitalNews?: DemocracyIndex;
+  /** Institute for Economics & Peace Global Terrorism Index */
+  gti?: DemocracyIndex;
 };
 
 export type CountryFacts = {
