@@ -102,7 +102,8 @@ function ChartFilterMenu({
   }, [open, onOpen]);
 
   const grouped = useMemo(() => {
-    const groups: { title: string | null; items: typeof options }[] = [];
+    type Opt = FilterMenuProps["options"][number];
+    const groups: { title: string | null; items: Opt[] }[] = [];
     let current: (typeof groups)[number] | null = null;
     for (const opt of options) {
       const title = opt.group ?? null;
