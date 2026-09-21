@@ -58,6 +58,7 @@ import { EntitySummary } from "../components/EntitySummary";
 import { FlagMeaning } from "../components/FlagMeaning";
 import { LearnInfoTabs } from "../components/LearnInfoTabs";
 import { LearnPanelCategoryBody } from "../components/LearnPanelCategoryBody";
+import { TravelVisitorStats } from "../components/TravelVisitorStats";
 import {
   LEARN_PANEL_MEDIA_SECTIONS,
   LEARN_PANEL_SUBDIVISION_TABS,
@@ -415,7 +416,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [gridContentType, setGridContentType] = useState<GridContentType>(
     loadGridContentType,
   );
-  // Information-panel tabs organise the country fact-sheet (Facts / Indices) and
+  // Information-panel tabs organise the country fact-sheet (Overview / Indices) and
   // the Media / Travel / Politics browsers. Synced from the world-map Show
   // dropdown so picking "Top newspapers" lands on Media, etc.
   const [panelTab, setPanelTab] = useState<LearnPanelTabId>(() =>
@@ -2314,7 +2315,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                         : panelTab) === "facts" && (
                         <>
                           {/* Identity image (flag / coat of arms / passport / crest /
-                              Olympic logo) leads Facts. Multi-item Show types
+                              Olympic logo) leads Overview. Multi-item Show types
                               (airlines, newspapers, …) fall back to the national
                               flag here — their own widgets live in Media/Travel/
                               Politics. */}
@@ -2419,6 +2420,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                             resolveImage={resolveFlag}
                             baseUrl={baseUrl}
                             onEnlarge={setZoomedFlagUrl}
+                            preamble={
+                              <TravelVisitorStats
+                                countryCode={display.country.code}
+                              />
+                            }
                           />
                         ) : (
                           <p className="learn-panel-tabs__empty">
@@ -2429,19 +2435,26 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                       )}
                       {!subdivisionMode && panelTab === "politics" && (
                         modernCountrySelected ? (
-                          <LearnPanelCategoryBody
-                            sections={[{ id: "party", label: "Political parties" }]}
-                            activeSection="party"
-                            onSectionChange={() => {}}
-                            countryCode={display.country.code}
-                            countryName={display.country.name}
-                            pickedId={gridPartyId}
-                            onPick={(id) => pickPanelCategoryItem("party", id)}
-                            onClearPick={() => clearPanelCategoryPick("party")}
-                            resolveImage={resolveFlag}
-                            baseUrl={baseUrl}
-                            onEnlarge={setZoomedFlagUrl}
-                          />
+                          <>
+                            <EntitySummary
+                              kind="modern"
+                              country={display.country}
+                              section="politics"
+                            />
+                            <LearnPanelCategoryBody
+                              sections={[{ id: "party", label: "Political parties" }]}
+                              activeSection="party"
+                              onSectionChange={() => {}}
+                              countryCode={display.country.code}
+                              countryName={display.country.name}
+                              pickedId={gridPartyId}
+                              onPick={(id) => pickPanelCategoryItem("party", id)}
+                              onClearPick={() => clearPanelCategoryPick("party")}
+                              resolveImage={resolveFlag}
+                              baseUrl={baseUrl}
+                              onEnlarge={setZoomedFlagUrl}
+                            />
+                          </>
                         ) : (
                           <p className="learn-panel-tabs__empty">
                             Select {display.country.name} to browse its political
@@ -2477,7 +2490,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     {/* A historical polity keeps its flag BELOW the fact-sheet, where the
                         ruler caption above and the dated no-flag explanations below belong
                         with it. A modern country leads with its flag instead — rendered
-                        on the Facts tab. */}
+                        on the Overview tab. */}
                     {panelFlagBox}
                     {!panelFlagBox ? (
                       display.noFlagReason ? (

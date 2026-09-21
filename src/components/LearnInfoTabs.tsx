@@ -16,7 +16,7 @@ export function LearnInfoTabs({
 }: {
   active: LearnPanelTabId;
   onChange: (tab: LearnPanelTabId) => void;
-  /** Defaults to every panel tab; subdivision drill-in passes Facts + Indices. */
+  /** Defaults to every panel tab; subdivision drill-in passes Overview + Indices. */
   tabs?: readonly LearnPanelTabId[];
 }) {
   return (

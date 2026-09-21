@@ -19,7 +19,9 @@ export const LEARN_PANEL_TAB_IDS = [
 export type LearnPanelTabId = (typeof LEARN_PANEL_TAB_IDS)[number];
 
 export const LEARN_PANEL_TAB_LABELS: Record<LearnPanelTabId, string> = {
-  facts: "Facts",
+  // "Overview" — identity + core country rows. Id stays `facts` so Show sync
+  // and subdivision drill-in keep a stable key.
+  facts: "Overview",
   indices: "Indices",
   media: "Media",
   travel: "Travel",
@@ -48,7 +50,7 @@ export function panelTabForGridContent(
     case "party":
       return "politics";
     // Flags, coats of arms, passports, crests and Olympic logos remain the
-    // leading identity image on Facts (and in subdivision drill-in).
+    // leading identity image on Overview (and in subdivision drill-in).
     case "flag":
     case "coatofarms":
     case "passport":

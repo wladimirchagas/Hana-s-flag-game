@@ -29,6 +29,32 @@ export function tourismLogoById(id: string | null | undefined): TourismLogo | nu
   return tourismLogoByIdMap.get(id) ?? null;
 }
 
+/** Country-level annual visitors (or a sourced note why none exists).
+ *  Taken from the first tourism-logo entry that carries either field — the
+ *  figure describes the country, not a brand, so Travel shows it above the
+ *  Airlines / Tourism sub-tabs. */
+export function annualVisitorStatsForCountry(
+  countryCode: string,
+):
+  | { kind: "visitors"; count: number; year: number; metric: string }
+  | { kind: "note"; note: string }
+  | null {
+  for (const entry of tourismLogosForCountry(countryCode)) {
+    if (typeof entry.visitors?.count === "number" && entry.visitors.count >= 0) {
+      return {
+        kind: "visitors",
+        count: entry.visitors.count,
+        year: entry.visitors.year,
+        metric: entry.visitors.metric,
+      };
+    }
+    if (entry.visitorsNote) {
+      return { kind: "note", note: entry.visitorsNote };
+    }
+  }
+  return null;
+}
+
 export function allTourismLogos(): readonly TourismLogo[] {
   const out: TourismLogo[] = [];
   for (const list of Object.values(TOURISM_LOGOS)) {

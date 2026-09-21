@@ -22,8 +22,9 @@ import { getDemocracyIndexLabel } from "../lib/democracyColors";
  */
 
 /** Which rows a modern-country fact-sheet renders. "all" is the legacy
- *  single-list mode; the Learn panel tabs pass "facts" or "indices". */
-export type EntitySummarySection = "all" | "facts" | "indices";
+ *  single-list mode; the Learn panel tabs pass "facts" (Overview),
+ *  "indices", or "politics". */
+export type EntitySummarySection = "all" | "facts" | "indices" | "politics";
 
 export type ModernSummaryProps = {
   kind: "modern";
@@ -353,16 +354,20 @@ function buildFactsRows(c: Country): { label: string; value: React.ReactNode }[]
   return rows;
 }
 
-function buildGeoGovRows(c: Country): { label: string; value: React.ReactNode }[] {
-  const government = GOVERNMENT_TYPES[c.code];
+/** Continent / region — geographic context for Overview. */
+function buildGeoRows(c: Country): { label: string; value: React.ReactNode }[] {
   const rows: { label: string; value: React.ReactNode }[] = [];
-  if (government) rows.push({ label: "Government", value: government });
-  // Continent + Region shown last (the country name now lives in the search
-  // bar at the top of the widget, and its continent/region moved here).
   if (c.continent) rows.push({ label: "Continent", value: c.continent });
   if (c.subregion) rows.push({ label: "Region", value: c.subregion });
+  return rows;
+}
 
-  // International organisation membership — above the Anthem footer.
+/** Government type + organisation membership — Politics tab. */
+function buildPoliticsRows(c: Country): { label: string; value: React.ReactNode }[] {
+  const rows: { label: string; value: React.ReactNode }[] = [];
+  const government = GOVERNMENT_TYPES[c.code];
+  if (government) rows.push({ label: "Government", value: government });
+
   const memberships = membershipsForCountry(c.code);
   if (memberships.length > 0) {
     rows.push({
@@ -381,11 +386,16 @@ function buildGeoGovRows(c: Country): { label: string; value: React.ReactNode }[
   return rows;
 }
 
-/** Legacy single-list order: identity/economy → indices → government/geo. */
+/** Legacy single-list order: identity/economy → indices → politics → geo. */
 function interleaveFactsAndIndices(
   c: Country,
 ): { label: string; value: React.ReactNode }[] {
-  return [...buildFactsRows(c), ...buildIndicesRows(c), ...buildGeoGovRows(c)];
+  return [
+    ...buildFactsRows(c),
+    ...buildIndicesRows(c),
+    ...buildPoliticsRows(c),
+    ...buildGeoRows(c),
+  ];
 }
 
 function buildIndicesRows(c: Country): { label: string; value: React.ReactNode }[] {
@@ -454,15 +464,21 @@ export function EntitySummary(props: EntitySummaryProps) {
       section === "all"
         ? interleaveFactsAndIndices(c)
         : section === "facts"
-          ? [...buildFactsRows(c), ...buildGeoGovRows(c)]
-          : buildIndicesRows(c);
-    const footer = section === "indices" ? undefined : props.footer;
+          ? [...buildFactsRows(c), ...buildGeoRows(c)]
+          : section === "politics"
+            ? buildPoliticsRows(c)
+            : buildIndicesRows(c);
+    const footer =
+      section === "indices" || section === "politics" ? undefined : props.footer;
     if (section === "indices" && rows.length === 0) {
       return (
         <p className="learn-panel-tabs__empty">
           No governance or ratings indices sourced for this country yet.
         </p>
       );
+    }
+    if (section === "politics" && rows.length === 0) {
+      return null;
     }
     return <SummaryList rows={rows} footer={footer} />;
   }

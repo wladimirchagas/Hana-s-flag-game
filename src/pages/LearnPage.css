@@ -2134,6 +2134,25 @@
   line-height: 1.4;
 }
 
+.travel-visitor-stats {
+  margin: 0 0 0.85rem;
+}
+
+.travel-visitor-stats__metric {
+  display: block;
+  font-size: 0.85em;
+  color: var(--ink-soft);
+}
+
+/* Government + Membership above the party chooser on Politics. */
+.learn-panel-tabs__panel > .entity-summary + .learn-panel-category {
+  margin-top: 0.85rem;
+}
+
+.learn-panel-category {
+  min-width: 0;
+}
+
 .learn-panel-category__sections {
   display: flex;
   flex-wrap: wrap;
