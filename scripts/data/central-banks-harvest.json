@@ -1,0 +1,4011 @@
+{
+  "fetchedAt": "2026-09-21",
+  "source": "Wikidata SPARQL: instance of (or subclass of) central bank (Q66344), country (P17), ISO 3166-1 alpha-2 (P297); optional logo (P154), website (P856), inception (P571).",
+  "countries": {
+    "AD": {
+      "id": "ad-andorran-financial-authority",
+      "countryCode": "AD",
+      "name": "Andorran Financial Authority",
+      "qid": "Q11926724",
+      "website": "https://www.afa.ad/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q11926724",
+        "https://www.afa.ad/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q11926724",
+          "name": "Andorran Financial Authority",
+          "hasLogo": false
+        }
+      ]
+    },
+    "AE": {
+      "id": "ae-the-united-arab-emirates",
+      "countryCode": "AE",
+      "name": "Central Bank of the United Arab Emirates",
+      "qid": "Q2982584",
+      "website": "https://www.centralbank.ae/en",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2982584",
+        "https://www.centralbank.ae/en"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2982584",
+          "name": "Central Bank of the United Arab Emirates",
+          "hasLogo": false
+        }
+      ]
+    },
+    "AF": {
+      "id": "af-da-afghanistan-bank",
+      "countryCode": "AF",
+      "name": "Da Afghanistan Bank",
+      "qid": "Q1156372",
+      "website": "http://dab.gov.af/en",
+      "commonsLogo": "Da Afghanistan Bank Logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1156372",
+        "http://dab.gov.af/en",
+        "https://commons.wikimedia.org/wiki/File:Da_Afghanistan_Bank_Logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1156372",
+          "name": "Da Afghanistan Bank",
+          "hasLogo": true
+        }
+      ]
+    },
+    "AG": {
+      "id": "ag-eastern-caribbean-central-bank",
+      "countryCode": "AG",
+      "name": "Eastern Caribbean Central Bank",
+      "qid": "Q1210260",
+      "website": "http://www.eccb-centralbank.org",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1210260",
+        "http://www.eccb-centralbank.org"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1210260",
+          "name": "Eastern Caribbean Central Bank",
+          "hasLogo": false
+        }
+      ]
+    },
+    "AL": {
+      "id": "al-albania",
+      "countryCode": "AL",
+      "name": "Bank of Albania",
+      "qid": "Q806714",
+      "website": "http://www.bankofalbania.org/",
+      "commonsLogo": "Banka e Shqipërisë Logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806714",
+        "http://www.bankofalbania.org/",
+        "https://commons.wikimedia.org/wiki/File:Banka_e_Shqip%C3%ABris%C3%AB_Logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806714",
+          "name": "Bank of Albania",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q806714",
+          "name": "Bank of Albania",
+          "hasLogo": true
+        }
+      ]
+    },
+    "AM": {
+      "id": "am-armenia",
+      "countryCode": "AM",
+      "name": "Central Bank of Armenia",
+      "qid": "Q190223",
+      "website": "https://cba.am",
+      "commonsLogo": "Central Bank of Armenia logo.jpg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q190223",
+        "https://cba.am",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Armenia_logo.jpg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q190223",
+          "name": "Central Bank of Armenia",
+          "hasLogo": true
+        }
+      ]
+    },
+    "AO": {
+      "id": "ao-angola",
+      "countryCode": "AO",
+      "name": "National Bank of Angola",
+      "qid": "Q31211",
+      "website": "http://www.bna.ao/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q31211",
+        "http://www.bna.ao/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q31211",
+          "name": "National Bank of Angola",
+          "hasLogo": false
+        }
+      ]
+    },
+    "AR": {
+      "id": "ar-argentina",
+      "countryCode": "AR",
+      "name": "Central Bank of Argentina",
+      "qid": "Q642444",
+      "website": "https://www.bcra.gob.ar/",
+      "commonsLogo": "BCRA logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q642444",
+        "https://www.bcra.gob.ar/",
+        "https://commons.wikimedia.org/wiki/File:BCRA_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q642444",
+          "name": "Central Bank of Argentina",
+          "hasLogo": true
+        }
+      ]
+    },
+    "AT": {
+      "id": "at-oenb",
+      "countryCode": "AT",
+      "name": "Austrian National Bank",
+      "qid": "Q670723",
+      "website": "https://www.oenb.at/",
+      "commonsLogo": "Oesterreichische Nationalbank Logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q670723",
+        "https://www.oenb.at/",
+        "https://commons.wikimedia.org/wiki/File:Oesterreichische_Nationalbank_Logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q670723",
+          "name": "Austrian National Bank",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q670723",
+          "name": "Austrian National Bank",
+          "hasLogo": true
+        }
+      ]
+    },
+    "AU": {
+      "id": "au-rba",
+      "countryCode": "AU",
+      "name": "Reserve Bank of Australia",
+      "qid": "Q1506724",
+      "website": "https://www.rba.gov.au/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1506724",
+        "https://www.rba.gov.au/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1506724",
+          "name": "Reserve Bank of Australia",
+          "hasLogo": false
+        }
+      ]
+    },
+    "AZ": {
+      "id": "az-azerbaijan",
+      "countryCode": "AZ",
+      "name": "Central Bank of Azerbaijan",
+      "qid": "Q190230",
+      "website": "http://www.cbar.az/",
+      "commonsLogo": "Emblem of Azerbaijan.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q190230",
+        "http://www.cbar.az/",
+        "https://commons.wikimedia.org/wiki/File:Emblem_of_Azerbaijan.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q190230",
+          "name": "Central Bank of Azerbaijan",
+          "hasLogo": true
+        }
+      ]
+    },
+    "BA": {
+      "id": "ba-bosnia-and-herzegovina",
+      "countryCode": "BA",
+      "name": "Central Bank of Bosnia and Herzegovina",
+      "qid": "Q1184535",
+      "website": "https://www.cbbh.ba/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1184535",
+        "https://www.cbbh.ba/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1184535",
+          "name": "Central Bank of Bosnia and Herzegovina",
+          "hasLogo": false
+        }
+      ]
+    },
+    "BB": {
+      "id": "bb-barbados",
+      "countryCode": "BB",
+      "name": "Central Bank of Barbados",
+      "qid": "Q2600777",
+      "website": "http://www.centralbank.org.bb",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2600777",
+        "http://www.centralbank.org.bb"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2600777",
+          "name": "Central Bank of Barbados",
+          "hasLogo": false
+        }
+      ]
+    },
+    "BD": {
+      "id": "bd-bangladesh-bank",
+      "countryCode": "BD",
+      "name": "Bangladesh Bank",
+      "qid": "Q806532",
+      "website": "http://www.bangladesh-bank.org",
+      "commonsLogo": "বাংলাদেশ ব্যাংকের প্রতীক.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806532",
+        "http://www.bangladesh-bank.org",
+        "https://commons.wikimedia.org/wiki/File:%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6_%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%82%E0%A6%95%E0%A7%87%E0%A6%B0_%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A7%80%E0%A6%95.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806532",
+          "name": "Bangladesh Bank",
+          "hasLogo": true
+        }
+      ]
+    },
+    "BE": {
+      "id": "be-nbb",
+      "countryCode": "BE",
+      "name": "National Bank of Belgium",
+      "qid": "Q685918",
+      "website": "https://www.nbb.be",
+      "commonsLogo": "National Bank of Belgium EN logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q685918",
+        "https://www.nbb.be",
+        "https://commons.wikimedia.org/wiki/File:National_Bank_of_Belgium_EN_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q685918",
+          "name": "National Bank of Belgium",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q105968386",
+          "name": "Emissiebank",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q107359743",
+          "name": "Banque du Congo Belge",
+          "hasLogo": false
+        }
+      ]
+    },
+    "BF": {
+      "id": "bf-west-african-states",
+      "countryCode": "BF",
+      "name": "Central Bank of West African States",
+      "qid": "Q620942",
+      "website": "http://www.bceao.int/",
+      "commonsLogo": "Central Bank of West African States wordmark.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q620942",
+        "http://www.bceao.int/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_West_African_States_wordmark.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q620942",
+          "name": "Central Bank of West African States",
+          "hasLogo": true
+        }
+      ]
+    },
+    "BG": {
+      "id": "bg-bulgarian-national-bank",
+      "countryCode": "BG",
+      "name": "Bulgarian National Bank",
+      "qid": "Q74687",
+      "website": "http://www.bnb.bg/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q74687",
+        "http://www.bnb.bg/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q74687",
+          "name": "Bulgarian National Bank",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q74687",
+          "name": "Bulgarian National Bank",
+          "hasLogo": false
+        }
+      ]
+    },
+    "BH": {
+      "id": "bh-bahrain",
+      "countryCode": "BH",
+      "name": "Central Bank of Bahrain",
+      "qid": "Q571182",
+      "website": "http://www.cbb.gov.bh",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q571182",
+        "http://www.cbb.gov.bh"
+      ],
+      "candidates": [
+        {
+          "qid": "Q571182",
+          "name": "Central Bank of Bahrain",
+          "hasLogo": false
+        }
+      ]
+    },
+    "BI": {
+      "id": "bi-the-republic-of-burundi",
+      "countryCode": "BI",
+      "name": "Bank of the Republic of Burundi",
+      "qid": "Q806937",
+      "website": "http://www.brb.bi/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806937",
+        "http://www.brb.bi/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806937",
+          "name": "Bank of the Republic of Burundi",
+          "hasLogo": false
+        }
+      ]
+    },
+    "BJ": {
+      "id": "bj-west-african-states",
+      "countryCode": "BJ",
+      "name": "Central Bank of West African States",
+      "qid": "Q620942",
+      "website": "http://www.bceao.int/",
+      "commonsLogo": "Central Bank of West African States wordmark.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q620942",
+        "http://www.bceao.int/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_West_African_States_wordmark.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q620942",
+          "name": "Central Bank of West African States",
+          "hasLogo": true
+        }
+      ]
+    },
+    "BN": {
+      "id": "bn-brunei-darussalam-central-bank",
+      "countryCode": "BN",
+      "name": "Brunei Darussalam Central Bank",
+      "qid": "Q2604419",
+      "website": "http://www.ambd.gov.bn",
+      "commonsLogo": "Ambd-logo.jpg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2604419",
+        "http://www.ambd.gov.bn",
+        "https://commons.wikimedia.org/wiki/File:Ambd-logo.jpg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2604419",
+          "name": "Brunei Darussalam Central Bank",
+          "hasLogo": true
+        }
+      ]
+    },
+    "BO": {
+      "id": "bo-bolivia",
+      "countryCode": "BO",
+      "name": "Central Bank of Bolivia",
+      "qid": "Q806180",
+      "website": "http://www.bcb.gob.bo",
+      "commonsLogo": "Banco Central de Bolivia.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806180",
+        "http://www.bcb.gob.bo",
+        "https://commons.wikimedia.org/wiki/File:Banco_Central_de_Bolivia.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806180",
+          "name": "Central Bank of Bolivia",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q806180",
+          "name": "Central Bank of Bolivia",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q806180",
+          "name": "Central Bank of Bolivia",
+          "hasLogo": true
+        }
+      ]
+    },
+    "BR": {
+      "id": "br-bcb",
+      "countryCode": "BR",
+      "name": "Central Bank of Brazil",
+      "qid": "Q806186",
+      "website": "http://www.bcb.gov.br",
+      "commonsLogo": "Logotipo do Banco Central do Brasil.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806186",
+        "http://www.bcb.gov.br",
+        "https://commons.wikimedia.org/wiki/File:Logotipo_do_Banco_Central_do_Brasil.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806186",
+          "name": "Central Bank of Brazil",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q806186",
+          "name": "Central Bank of Brazil",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q806186",
+          "name": "Central Bank of Brazil",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q806186",
+          "name": "Central Bank of Brazil",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q136416763",
+          "name": "Banco Central do Brasil (Fortaleza)",
+          "hasLogo": false
+        }
+      ]
+    },
+    "BS": {
+      "id": "bs-the-bahamas",
+      "countryCode": "BS",
+      "name": "Central Bank of The Bahamas",
+      "qid": "Q4504270",
+      "website": "http://www.centralbankbahamas.com/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4504270",
+        "http://www.centralbankbahamas.com/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4504270",
+          "name": "Central Bank of The Bahamas",
+          "hasLogo": false
+        }
+      ]
+    },
+    "BT": {
+      "id": "bt-royal-monetary-authority-of-bhutan",
+      "countryCode": "BT",
+      "name": "Royal Monetary Authority of Bhutan",
+      "qid": "Q1144649",
+      "website": "http://www.rma.org.bt",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1144649",
+        "http://www.rma.org.bt"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1144649",
+          "name": "Royal Monetary Authority of Bhutan",
+          "hasLogo": false
+        }
+      ]
+    },
+    "BW": {
+      "id": "bw-botswana",
+      "countryCode": "BW",
+      "name": "Bank of Botswana",
+      "qid": "Q859830",
+      "website": "http://www.bankofbotswana.bw/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q859830",
+        "http://www.bankofbotswana.bw/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q859830",
+          "name": "Bank of Botswana",
+          "hasLogo": false
+        }
+      ]
+    },
+    "BY": {
+      "id": "by-the-republic-of-belarus",
+      "countryCode": "BY",
+      "name": "National Bank of the Republic of Belarus",
+      "qid": "Q431491",
+      "website": "http://www.nbrb.by/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q431491",
+        "http://www.nbrb.by/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q431491",
+          "name": "National Bank of the Republic of Belarus",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q431491",
+          "name": "National Bank of the Republic of Belarus",
+          "hasLogo": false
+        }
+      ]
+    },
+    "BZ": {
+      "id": "bz-belize",
+      "countryCode": "BZ",
+      "name": "Central Bank of Belize",
+      "qid": "Q643949",
+      "website": "http://www.centralbank.org.bz",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q643949",
+        "http://www.centralbank.org.bz"
+      ],
+      "candidates": [
+        {
+          "qid": "Q643949",
+          "name": "Central Bank of Belize",
+          "hasLogo": false
+        }
+      ]
+    },
+    "CA": {
+      "id": "ca-boc",
+      "countryCode": "CA",
+      "name": "Bank of Canada",
+      "qid": "Q806703",
+      "website": "https://www.bankofcanada.ca/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806703",
+        "https://www.bankofcanada.ca/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806693",
+          "name": "Bank of Montreal",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q806703",
+          "name": "Bank of Canada",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q806703",
+          "name": "Bank of Canada",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q806703",
+          "name": "Bank of Canada",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q806703",
+          "name": "Bank of Canada",
+          "hasLogo": false
+        }
+      ]
+    },
+    "CD": {
+      "id": "cd-congo",
+      "countryCode": "CD",
+      "name": "Central Bank of Congo",
+      "qid": "Q2882989",
+      "website": "http://www.bcc.cd",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2882989",
+        "http://www.bcc.cd"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2882989",
+          "name": "Central Bank of Congo",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q107359743",
+          "name": "Banque du Congo Belge",
+          "hasLogo": false
+        }
+      ]
+    },
+    "CF": {
+      "id": "cf-central-african-states",
+      "countryCode": "CF",
+      "name": "Bank of Central African States",
+      "qid": "Q189972",
+      "website": "https://www.beac.int",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q189972",
+        "https://www.beac.int"
+      ],
+      "candidates": [
+        {
+          "qid": "Q189972",
+          "name": "Bank of Central African States",
+          "hasLogo": false
+        }
+      ]
+    },
+    "CG": {
+      "id": "cg-central-african-states",
+      "countryCode": "CG",
+      "name": "Bank of Central African States",
+      "qid": "Q189972",
+      "website": "https://www.beac.int",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q189972",
+        "https://www.beac.int"
+      ],
+      "candidates": [
+        {
+          "qid": "Q189972",
+          "name": "Bank of Central African States",
+          "hasLogo": false
+        }
+      ]
+    },
+    "CH": {
+      "id": "ch-snb",
+      "countryCode": "CH",
+      "name": "Swiss National Bank",
+      "qid": "Q597394",
+      "website": "https://www.snb.ch/",
+      "commonsLogo": "SNB-Logo-positiv-blau.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q597394",
+        "https://www.snb.ch/",
+        "https://commons.wikimedia.org/wiki/File:SNB-Logo-positiv-blau.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q597394",
+          "name": "Swiss National Bank",
+          "hasLogo": true
+        }
+      ]
+    },
+    "CI": {
+      "id": "ci-west-african-states",
+      "countryCode": "CI",
+      "name": "Central Bank of West African States",
+      "qid": "Q620942",
+      "website": "http://www.bceao.int/",
+      "commonsLogo": "Central Bank of West African States wordmark.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q620942",
+        "http://www.bceao.int/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_West_African_States_wordmark.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q620942",
+          "name": "Central Bank of West African States",
+          "hasLogo": true
+        }
+      ]
+    },
+    "CL": {
+      "id": "cl-chile",
+      "countryCode": "CL",
+      "name": "Central Bank of Chile",
+      "qid": "Q2631674",
+      "website": "http://www.bcentral.cl/",
+      "commonsLogo": "Banco Central de Chile 2021.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2631674",
+        "http://www.bcentral.cl/",
+        "https://commons.wikimedia.org/wiki/File:Banco_Central_de_Chile_2021.png"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2631674",
+          "name": "Central Bank of Chile",
+          "hasLogo": true
+        }
+      ]
+    },
+    "CM": {
+      "id": "cm-central-african-states",
+      "countryCode": "CM",
+      "name": "Bank of Central African States",
+      "qid": "Q189972",
+      "website": "https://www.beac.int",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q189972",
+        "https://www.beac.int"
+      ],
+      "candidates": [
+        {
+          "qid": "Q189972",
+          "name": "Bank of Central African States",
+          "hasLogo": false
+        }
+      ]
+    },
+    "CN": {
+      "id": "cn-pboc",
+      "countryCode": "CN",
+      "name": "People's Bank of China",
+      "qid": "Q249203",
+      "website": "http://www.pbc.gov.cn/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q249203",
+        "http://www.pbc.gov.cn/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1595286",
+          "name": "Hong Kong Monetary Authority",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q249203",
+          "name": "People's Bank of China",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q986615",
+          "name": "Monetary Authority of Macao",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q986615",
+          "name": "Monetary Authority of Macao",
+          "hasLogo": true
+        }
+      ]
+    },
+    "CO": {
+      "id": "co-banrep",
+      "countryCode": "CO",
+      "name": "Banco de la República",
+      "qid": "Q686329",
+      "website": "https://www.banrep.gov.co",
+      "commonsLogo": "Colombia Banrep.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q686329",
+        "https://www.banrep.gov.co",
+        "https://commons.wikimedia.org/wiki/File:Colombia_Banrep.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q686329",
+          "name": "Banco de la República",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q686329",
+          "name": "Banco de la República",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q104707199",
+          "name": "Central Bank of Colombia",
+          "hasLogo": false
+        }
+      ]
+    },
+    "CR": {
+      "id": "cr-costa-rica",
+      "countryCode": "CR",
+      "name": "Central Bank of Costa Rica",
+      "qid": "Q4504273",
+      "website": "http://www.bccr.fi.cr/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4504273",
+        "http://www.bccr.fi.cr/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4504273",
+          "name": "Central Bank of Costa Rica",
+          "hasLogo": false
+        }
+      ]
+    },
+    "CU": {
+      "id": "cu-cuba",
+      "countryCode": "CU",
+      "name": "Central Bank of Cuba",
+      "qid": "Q2607787",
+      "website": "http://www.bc.gob.cu/",
+      "commonsLogo": "Bancocentral-cuba.jpg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2607787",
+        "http://www.bc.gob.cu/",
+        "https://commons.wikimedia.org/wiki/File:Bancocentral-cuba.jpg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2607787",
+          "name": "Central Bank of Cuba",
+          "hasLogo": true
+        }
+      ]
+    },
+    "CV": {
+      "id": "cv-cape-verde",
+      "countryCode": "CV",
+      "name": "Bank of Cape Verde",
+      "qid": "Q4077341",
+      "website": "http://www.bcv.cv/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4077341",
+        "http://www.bcv.cv/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4077341",
+          "name": "Bank of Cape Verde",
+          "hasLogo": false
+        }
+      ]
+    },
+    "CY": {
+      "id": "cy-cyprus",
+      "countryCode": "CY",
+      "name": "Central Bank of Cyprus",
+      "qid": "Q74693",
+      "website": "http://www.centralbank.cy",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q74693",
+        "http://www.centralbank.cy"
+      ],
+      "candidates": [
+        {
+          "qid": "Q74693",
+          "name": "Central Bank of Cyprus",
+          "hasLogo": false
+        }
+      ]
+    },
+    "CZ": {
+      "id": "cz-cnb",
+      "countryCode": "CZ",
+      "name": "Czech National Bank",
+      "qid": "Q251062",
+      "website": "https://www.cnb.cz/",
+      "commonsLogo": "Česká národní banka logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q251062",
+        "https://www.cnb.cz/",
+        "https://commons.wikimedia.org/wiki/File:%C4%8Cesk%C3%A1_n%C3%A1rodn%C3%AD_banka_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q251062",
+          "name": "Czech National Bank",
+          "hasLogo": true
+        }
+      ]
+    },
+    "DE": {
+      "id": "de-bundesbank",
+      "countryCode": "DE",
+      "name": "German Federal Bank",
+      "qid": "Q162222",
+      "website": "https://www.bundesbank.de/",
+      "commonsLogo": "Deutsche Bundesbank logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q162222",
+        "https://www.bundesbank.de/",
+        "https://commons.wikimedia.org/wiki/File:Deutsche_Bundesbank_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2109176",
+          "name": "Preussische Bank",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q8901",
+          "name": "European Central Bank",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q162222",
+          "name": "German Federal Bank",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q560183",
+          "name": "Reichsbank",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q120064571",
+          "name": "Landeszentralbank Hamburg",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q120064571",
+          "name": "Landeszentralbank Hamburg",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q120064571",
+          "name": "Landeszentralbank Hamburg",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q137177360",
+          "name": "Darlehnskasse Ost",
+          "hasLogo": false
+        }
+      ]
+    },
+    "DJ": {
+      "id": "dj-djibouti",
+      "countryCode": "DJ",
+      "name": "Central Bank of Djibouti",
+      "qid": "Q4504271",
+      "website": "http://www.banque-centrale.dj",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4504271",
+        "http://www.banque-centrale.dj"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4504271",
+          "name": "Central Bank of Djibouti",
+          "hasLogo": false
+        }
+      ]
+    },
+    "DK": {
+      "id": "dk-nationalbanken",
+      "countryCode": "DK",
+      "name": "Danmarks Nationalbank",
+      "qid": "Q683252",
+      "website": "https://www.nationalbanken.dk/da",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q683252",
+        "https://www.nationalbanken.dk/da"
+      ],
+      "candidates": [
+        {
+          "qid": "Q683252",
+          "name": "Danmarks Nationalbank",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q683252",
+          "name": "Danmarks Nationalbank",
+          "hasLogo": false
+        }
+      ]
+    },
+    "DM": {
+      "id": "dm-eastern-caribbean-central-bank",
+      "countryCode": "DM",
+      "name": "Eastern Caribbean Central Bank",
+      "qid": "Q1210260",
+      "website": "http://www.eccb-centralbank.org",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1210260",
+        "http://www.eccb-centralbank.org"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1210260",
+          "name": "Eastern Caribbean Central Bank",
+          "hasLogo": false
+        }
+      ]
+    },
+    "DO": {
+      "id": "do-the-dominican-republic",
+      "countryCode": "DO",
+      "name": "Central Bank of the Dominican Republic",
+      "qid": "Q1800406",
+      "website": "https://www.bancentral.gov.do/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1800406",
+        "https://www.bancentral.gov.do/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1800406",
+          "name": "Central Bank of the Dominican Republic",
+          "hasLogo": false
+        }
+      ]
+    },
+    "DZ": {
+      "id": "dz-algeria",
+      "countryCode": "DZ",
+      "name": "Bank of Algeria",
+      "qid": "Q1774622",
+      "website": "http://www.bank-of-algeria.dz/",
+      "commonsLogo": "Logo of the Bank of Algeria.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1774622",
+        "http://www.bank-of-algeria.dz/",
+        "https://commons.wikimedia.org/wiki/File:Logo_of_the_Bank_of_Algeria.png"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1774622",
+          "name": "Bank of Algeria",
+          "hasLogo": true
+        }
+      ]
+    },
+    "EC": {
+      "id": "ec-ecuador",
+      "countryCode": "EC",
+      "name": "Central Bank of Ecuador",
+      "qid": "Q1797646",
+      "website": "https://www.bce.ec",
+      "commonsLogo": "Logotipo del Banco Central del Ecuador.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1797646",
+        "https://www.bce.ec",
+        "https://commons.wikimedia.org/wiki/File:Logotipo_del_Banco_Central_del_Ecuador.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1797646",
+          "name": "Central Bank of Ecuador",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q1797646",
+          "name": "Central Bank of Ecuador",
+          "hasLogo": true
+        }
+      ]
+    },
+    "EE": {
+      "id": "ee-estonia",
+      "countryCode": "EE",
+      "name": "Bank of Estonia",
+      "qid": "Q366960",
+      "website": "https://www.eestipank.ee/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q366960",
+        "https://www.eestipank.ee/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q366960",
+          "name": "Bank of Estonia",
+          "hasLogo": false
+        }
+      ]
+    },
+    "EG": {
+      "id": "eg-egypt",
+      "countryCode": "EG",
+      "name": "Central Bank of Egypt",
+      "qid": "Q920699",
+      "website": "https://www.cbe.org.eg/",
+      "commonsLogo": "Central Bank of Egypt Logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q920699",
+        "https://www.cbe.org.eg/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Egypt_Logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q920699",
+          "name": "Central Bank of Egypt",
+          "hasLogo": true
+        }
+      ]
+    },
+    "ER": {
+      "id": "er-eritrea",
+      "countryCode": "ER",
+      "name": "Bank of Eritrea",
+      "qid": "Q806163",
+      "website": "http://www.boe.gov.er/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806163",
+        "http://www.boe.gov.er/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806163",
+          "name": "Bank of Eritrea",
+          "hasLogo": false
+        }
+      ]
+    },
+    "ES": {
+      "id": "es-bde",
+      "countryCode": "ES",
+      "name": "Bank of Spain",
+      "qid": "Q789966",
+      "website": "https://www.bde.es/",
+      "commonsLogo": "Logo Banco de España.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q789966",
+        "https://www.bde.es/",
+        "https://commons.wikimedia.org/wiki/File:Logo_Banco_de_Espa%C3%B1a.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q789966",
+          "name": "Bank of Spain",
+          "hasLogo": true
+        }
+      ]
+    },
+    "ET": {
+      "id": "et-ethiopia",
+      "countryCode": "ET",
+      "name": "National Bank of Ethiopia",
+      "qid": "Q1967889",
+      "website": "https://nbe.gov.et/",
+      "commonsLogo": "National Bank of Ethiopia logo.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1967889",
+        "https://nbe.gov.et/",
+        "https://commons.wikimedia.org/wiki/File:National_Bank_of_Ethiopia_logo.png"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1967889",
+          "name": "National Bank of Ethiopia",
+          "hasLogo": true
+        }
+      ]
+    },
+    "FI": {
+      "id": "fi-bof",
+      "countryCode": "FI",
+      "name": "Bank of Finland",
+      "qid": "Q194060",
+      "website": "https://www.suomenpankki.fi/",
+      "commonsLogo": "Logo-bof.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q194060",
+        "https://www.suomenpankki.fi/",
+        "https://commons.wikimedia.org/wiki/File:Logo-bof.png"
+      ],
+      "candidates": [
+        {
+          "qid": "Q3374413",
+          "name": "Säästöpankkien Keskus-Osake-Pankki",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q3374413",
+          "name": "Säästöpankkien Keskus-Osake-Pankki",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q194060",
+          "name": "Bank of Finland",
+          "hasLogo": true
+        }
+      ]
+    },
+    "FJ": {
+      "id": "fj-fiji",
+      "countryCode": "FJ",
+      "name": "Reserve Bank of Fiji",
+      "qid": "Q1776552",
+      "website": "http://www.rbf.gov.fj/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1776552",
+        "http://www.rbf.gov.fj/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1776552",
+          "name": "Reserve Bank of Fiji",
+          "hasLogo": false
+        }
+      ]
+    },
+    "FM": {
+      "id": "fm-none",
+      "countryCode": "FM",
+      "name": "No national central bank — United States dollar",
+      "noOwnCentralBank": true,
+      "noImageReason": "The Federated States of Micronesia has no central bank; the US dollar is legal tender under Compact of Free Association arrangements.",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q66344",
+        "https://en.wikipedia.org/wiki/Federated_States_of_Micronesia"
+      ],
+      "candidates": []
+    },
+    "FR": {
+      "id": "fr-banque-de-france",
+      "countryCode": "FR",
+      "name": "Bank of France",
+      "qid": "Q806950",
+      "website": "http://www.banque-france.fr/",
+      "commonsLogo": "Banque de France 2022 logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806950",
+        "http://www.banque-france.fr/",
+        "https://commons.wikimedia.org/wiki/File:Banque_de_France_2022_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q3151944",
+          "name": "Institut d'émission d'outre-mer",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q7719950",
+          "name": "Banque de l'Indochine",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q21426958",
+          "name": "Banque de l'Algérie",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q806950",
+          "name": "Bank of France",
+          "hasLogo": true
+        }
+      ]
+    },
+    "GA": {
+      "id": "ga-central-african-states",
+      "countryCode": "GA",
+      "name": "Bank of Central African States",
+      "qid": "Q189972",
+      "website": "https://www.beac.int",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q189972",
+        "https://www.beac.int"
+      ],
+      "candidates": [
+        {
+          "qid": "Q189972",
+          "name": "Bank of Central African States",
+          "hasLogo": false
+        }
+      ]
+    },
+    "GB": {
+      "id": "gb-boe",
+      "countryCode": "GB",
+      "name": "Bank of England",
+      "qid": "Q183231",
+      "website": "https://www.bankofengland.co.uk/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q183231",
+        "https://www.bankofengland.co.uk/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q183231",
+          "name": "Bank of England",
+          "hasLogo": false
+        }
+      ]
+    },
+    "GD": {
+      "id": "gd-eastern-caribbean-central-bank",
+      "countryCode": "GD",
+      "name": "Eastern Caribbean Central Bank",
+      "qid": "Q1210260",
+      "website": "http://www.eccb-centralbank.org",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1210260",
+        "http://www.eccb-centralbank.org"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1210260",
+          "name": "Eastern Caribbean Central Bank",
+          "hasLogo": false
+        }
+      ]
+    },
+    "GE": {
+      "id": "ge-georgia",
+      "countryCode": "GE",
+      "name": "National Bank of Georgia",
+      "qid": "Q2667495",
+      "website": "https://nbg.gov.ge/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2667495",
+        "https://nbg.gov.ge/",
+        "https://en.wikipedia.org/wiki/National_Bank_of_Georgia"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2001669",
+          "name": "National Bank of the Republic of Abkhazia",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q2667495",
+          "name": "National Bank of Georgia",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q2667495",
+          "name": "National Bank of Georgia",
+          "hasLogo": false
+        }
+      ]
+    },
+    "GH": {
+      "id": "gh-ghana",
+      "countryCode": "GH",
+      "name": "Bank of Ghana",
+      "qid": "Q669484",
+      "website": "http://www.bog.gov.gh/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q669484",
+        "http://www.bog.gov.gh/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q669484",
+          "name": "Bank of Ghana",
+          "hasLogo": false
+        }
+      ]
+    },
+    "GM": {
+      "id": "gm-the-gambia",
+      "countryCode": "GM",
+      "name": "Central Bank of The Gambia",
+      "qid": "Q495091",
+      "website": "http://www.cbg.gm/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q495091",
+        "http://www.cbg.gm/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q495091",
+          "name": "Central Bank of The Gambia",
+          "hasLogo": false
+        }
+      ]
+    },
+    "GN": {
+      "id": "gn-the-republic-of-guinea",
+      "countryCode": "GN",
+      "name": "Central Bank of the Republic of Guinea",
+      "qid": "Q2882980",
+      "website": "https://www.bcrg-guinee.org/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2882980",
+        "https://www.bcrg-guinee.org/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2882980",
+          "name": "Central Bank of the Republic of Guinea",
+          "hasLogo": false
+        }
+      ]
+    },
+    "GQ": {
+      "id": "gq-central-african-states",
+      "countryCode": "GQ",
+      "name": "Bank of Central African States",
+      "qid": "Q189972",
+      "website": "https://www.beac.int",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q189972",
+        "https://www.beac.int"
+      ],
+      "candidates": [
+        {
+          "qid": "Q189972",
+          "name": "Bank of Central African States",
+          "hasLogo": false
+        }
+      ]
+    },
+    "GR": {
+      "id": "gr-bog",
+      "countryCode": "GR",
+      "name": "Bank of Greece",
+      "qid": "Q806700",
+      "website": "https://www.bankofgreece.gr",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806700",
+        "https://www.bankofgreece.gr"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806700",
+          "name": "Bank of Greece",
+          "hasLogo": false
+        }
+      ]
+    },
+    "GT": {
+      "id": "gt-guatemala",
+      "countryCode": "GT",
+      "name": "Bank of Guatemala",
+      "qid": "Q3359424",
+      "website": "http://www.banguat.gob.gt",
+      "commonsLogo": "Autoridades de BANGUAT realizan reunión de transición 20231023 (cropped).jpg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3359424",
+        "http://www.banguat.gob.gt",
+        "https://commons.wikimedia.org/wiki/File:Autoridades_de_BANGUAT_realizan_reuni%C3%B3n_de_transici%C3%B3n_20231023_(cropped).jpg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q3359424",
+          "name": "Bank of Guatemala",
+          "hasLogo": true
+        }
+      ]
+    },
+    "GW": {
+      "id": "gw-west-african-states",
+      "countryCode": "GW",
+      "name": "Central Bank of West African States",
+      "qid": "Q620942",
+      "website": "http://www.bceao.int/",
+      "commonsLogo": "Central Bank of West African States wordmark.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q620942",
+        "http://www.bceao.int/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_West_African_States_wordmark.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q620942",
+          "name": "Central Bank of West African States",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q121046382",
+          "name": "National Bank of Guinea-Bissau",
+          "hasLogo": false
+        }
+      ]
+    },
+    "GY": {
+      "id": "gy-guyana",
+      "countryCode": "GY",
+      "name": "Bank of Guyana",
+      "qid": "Q1812564",
+      "website": "http://www.bankofguyana.org.gy/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1812564",
+        "http://www.bankofguyana.org.gy/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1812564",
+          "name": "Bank of Guyana",
+          "hasLogo": false
+        }
+      ]
+    },
+    "HN": {
+      "id": "hn-honduras",
+      "countryCode": "HN",
+      "name": "Central Bank of Honduras",
+      "qid": "Q2920146",
+      "website": "http://www.bch.hn/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2920146",
+        "http://www.bch.hn/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2920146",
+          "name": "Central Bank of Honduras",
+          "hasLogo": false
+        }
+      ]
+    },
+    "HR": {
+      "id": "hr-hnb",
+      "countryCode": "HR",
+      "name": "Croatian National Bank",
+      "qid": "Q1143457",
+      "website": "https://www.hnb.hr",
+      "commonsLogo": "Croatian National Bank logo.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1143457",
+        "https://www.hnb.hr",
+        "https://commons.wikimedia.org/wiki/File:Croatian_National_Bank_logo.png"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1143457",
+          "name": "Croatian National Bank",
+          "hasLogo": true
+        }
+      ]
+    },
+    "HT": {
+      "id": "ht-the-republic-of-haiti",
+      "countryCode": "HT",
+      "name": "Bank of the Republic of Haiti",
+      "qid": "Q2883379",
+      "website": "https://www.brh.ht/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2883379",
+        "https://www.brh.ht/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2883379",
+          "name": "Bank of the Republic of Haiti",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q2883379",
+          "name": "Bank of the Republic of Haiti",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q112252176",
+          "name": "National Bank of Haiti",
+          "hasLogo": false
+        }
+      ]
+    },
+    "HU": {
+      "id": "hu-mnb",
+      "countryCode": "HU",
+      "name": "Hungarian National Bank",
+      "qid": "Q774636",
+      "website": "https://www.mnb.hu/",
+      "commonsLogo": "Logo of the Hungarian National Bank.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q774636",
+        "https://www.mnb.hu/",
+        "https://commons.wikimedia.org/wiki/File:Logo_of_the_Hungarian_National_Bank.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q774636",
+          "name": "Hungarian National Bank",
+          "hasLogo": true
+        }
+      ]
+    },
+    "ID": {
+      "id": "id-bi",
+      "countryCode": "ID",
+      "name": "Bank Indonesia",
+      "qid": "Q1906161",
+      "website": "http://www.bi.go.id/",
+      "commonsLogo": "Bankindonesialogo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1906161",
+        "http://www.bi.go.id/",
+        "https://commons.wikimedia.org/wiki/File:Bankindonesialogo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1906161",
+          "name": "Bank Indonesia",
+          "hasLogo": true
+        }
+      ]
+    },
+    "IE": {
+      "id": "ie-cbi",
+      "countryCode": "IE",
+      "name": "Central Bank of Ireland",
+      "qid": "Q283785",
+      "website": "https://www.centralbank.ie/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q283785",
+        "https://www.centralbank.ie/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q283785",
+          "name": "Central Bank of Ireland",
+          "hasLogo": false
+        }
+      ]
+    },
+    "IL": {
+      "id": "il-israel",
+      "countryCode": "IL",
+      "name": "Bank of Israel",
+      "qid": "Q244411",
+      "website": "https://www.boi.org.il/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q244411",
+        "https://www.boi.org.il/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q244411",
+          "name": "Bank of Israel",
+          "hasLogo": false
+        }
+      ]
+    },
+    "IN": {
+      "id": "in-rbi",
+      "countryCode": "IN",
+      "name": "Reserve Bank of India",
+      "qid": "Q944085",
+      "website": "https://website.rbi.org.in/web/rbi",
+      "commonsLogo": "Reserve Bank of India logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q944085",
+        "https://website.rbi.org.in/web/rbi",
+        "https://commons.wikimedia.org/wiki/File:Reserve_Bank_of_India_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2018840",
+          "name": "Allahabad Bank",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q944085",
+          "name": "Reserve Bank of India",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q944085",
+          "name": "Reserve Bank of India",
+          "hasLogo": true
+        }
+      ]
+    },
+    "IQ": {
+      "id": "iq-iraq",
+      "countryCode": "IQ",
+      "name": "Central Bank of Iraq",
+      "qid": "Q1778674",
+      "website": "http://www.cbi.iq",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1778674",
+        "http://www.cbi.iq"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1778674",
+          "name": "Central Bank of Iraq",
+          "hasLogo": false
+        }
+      ]
+    },
+    "IR": {
+      "id": "ir-iran",
+      "countryCode": "IR",
+      "name": "Central Bank of Iran",
+      "qid": "Q1261157",
+      "website": "https://cbi.ir",
+      "commonsLogo": "Logo central iran bank.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1261157",
+        "https://cbi.ir",
+        "https://commons.wikimedia.org/wiki/File:Logo_central_iran_bank.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1261157",
+          "name": "Central Bank of Iran",
+          "hasLogo": true
+        }
+      ]
+    },
+    "IS": {
+      "id": "is-iceland",
+      "countryCode": "IS",
+      "name": "Central Bank of Iceland",
+      "qid": "Q1195916",
+      "website": "http://cb.is/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1195916",
+        "http://cb.is/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1195916",
+          "name": "Central Bank of Iceland",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q1195916",
+          "name": "Central Bank of Iceland",
+          "hasLogo": false
+        }
+      ]
+    },
+    "IT": {
+      "id": "it-banca-ditalia",
+      "countryCode": "IT",
+      "name": "Bank of Italy",
+      "qid": "Q806176",
+      "website": "https://www.bancaditalia.it",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806176",
+        "https://www.bancaditalia.it"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806176",
+          "name": "Bank of Italy",
+          "hasLogo": false
+        }
+      ]
+    },
+    "JM": {
+      "id": "jm-jamaica",
+      "countryCode": "JM",
+      "name": "Bank of Jamaica",
+      "qid": "Q3374585",
+      "website": "http://www.boj.org.jm",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3374585",
+        "http://www.boj.org.jm"
+      ],
+      "candidates": [
+        {
+          "qid": "Q3374585",
+          "name": "Bank of Jamaica",
+          "hasLogo": false
+        }
+      ]
+    },
+    "JO": {
+      "id": "jo-jordan",
+      "countryCode": "JO",
+      "name": "Central Bank of Jordan",
+      "qid": "Q2607421",
+      "website": "http://www.cbj.gov.jo/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2607421",
+        "http://www.cbj.gov.jo/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2607421",
+          "name": "Central Bank of Jordan",
+          "hasLogo": false
+        }
+      ]
+    },
+    "JP": {
+      "id": "jp-boj",
+      "countryCode": "JP",
+      "name": "Bank of Japan",
+      "qid": "Q333101",
+      "website": "https://www.boj.or.jp/",
+      "commonsLogo": "日本銀行ロゴ.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q333101",
+        "https://www.boj.or.jp/",
+        "https://commons.wikimedia.org/wiki/File:%E6%97%A5%E6%9C%AC%E9%8A%80%E8%A1%8C%E3%83%AD%E3%82%B4.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q333101",
+          "name": "Bank of Japan",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q333101",
+          "name": "Bank of Japan",
+          "hasLogo": true
+        }
+      ]
+    },
+    "KE": {
+      "id": "ke-kenya",
+      "countryCode": "KE",
+      "name": "Central Bank of Kenya",
+      "qid": "Q2510227",
+      "website": "https://www.centralbank.go.ke/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2510227",
+        "https://www.centralbank.go.ke/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2510227",
+          "name": "Central Bank of Kenya",
+          "hasLogo": false
+        }
+      ]
+    },
+    "KG": {
+      "id": "kg-the-kyrgyz-republic",
+      "countryCode": "KG",
+      "name": "National Bank of the Kyrgyz Republic",
+      "qid": "Q3430475",
+      "website": "http://www.nbkr.kg",
+      "commonsLogo": "National Bank of the Kyrgyz Republic logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3430475",
+        "http://www.nbkr.kg",
+        "https://commons.wikimedia.org/wiki/File:National_Bank_of_the_Kyrgyz_Republic_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q3430475",
+          "name": "National Bank of the Kyrgyz Republic",
+          "hasLogo": true
+        }
+      ]
+    },
+    "KH": {
+      "id": "kh-cambodia",
+      "countryCode": "KH",
+      "name": "National Bank of Cambodia",
+      "qid": "Q284843",
+      "website": "http://nbc.org.kh",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q284843",
+        "http://nbc.org.kh"
+      ],
+      "candidates": [
+        {
+          "qid": "Q284843",
+          "name": "National Bank of Cambodia",
+          "hasLogo": false
+        }
+      ]
+    },
+    "KI": {
+      "id": "ki-kiribati",
+      "countryCode": "KI",
+      "name": "Bank of Kiribati",
+      "qid": "Q98058686",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q98058686"
+      ],
+      "candidates": [
+        {
+          "qid": "Q98058686",
+          "name": "Bank of Kiribati",
+          "hasLogo": false
+        }
+      ]
+    },
+    "KM": {
+      "id": "km-the-comoros",
+      "countryCode": "KM",
+      "name": "Central Bank of the Comoros",
+      "qid": "Q2604274",
+      "website": "http://www.banque-comores.km/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2604274",
+        "http://www.banque-comores.km/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2604274",
+          "name": "Central Bank of the Comoros",
+          "hasLogo": false
+        }
+      ]
+    },
+    "KN": {
+      "id": "kn-eastern-caribbean-central-bank",
+      "countryCode": "KN",
+      "name": "Eastern Caribbean Central Bank",
+      "qid": "Q1210260",
+      "website": "http://www.eccb-centralbank.org",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1210260",
+        "http://www.eccb-centralbank.org"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1210260",
+          "name": "Eastern Caribbean Central Bank",
+          "hasLogo": false
+        }
+      ]
+    },
+    "KP": {
+      "id": "kp-the-democratic-people-s-republic-of-kore",
+      "countryCode": "KP",
+      "name": "Central Bank of the Democratic People's Republic of Korea",
+      "qid": "Q1141425",
+      "commonsLogo": "Central Bank of DPRK.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1141425",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_DPRK.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1141425",
+          "name": "Central Bank of the Democratic People's Republic of Korea",
+          "hasLogo": true
+        }
+      ]
+    },
+    "KR": {
+      "id": "kr-bok",
+      "countryCode": "KR",
+      "name": "Bank of Korea",
+      "qid": "Q485531",
+      "website": "http://www.bok.or.kr/",
+      "commonsLogo": "Bank of Korea Logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q485531",
+        "http://www.bok.or.kr/",
+        "https://commons.wikimedia.org/wiki/File:Bank_of_Korea_Logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q485531",
+          "name": "Bank of Korea",
+          "hasLogo": true
+        }
+      ]
+    },
+    "KW": {
+      "id": "kw-kuwait",
+      "countryCode": "KW",
+      "name": "Central Bank of Kuwait",
+      "qid": "Q2944396",
+      "website": "http://www.cbk.gov.kw/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2944396",
+        "http://www.cbk.gov.kw/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2944396",
+          "name": "Central Bank of Kuwait",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q2944396",
+          "name": "Central Bank of Kuwait",
+          "hasLogo": false
+        }
+      ]
+    },
+    "KZ": {
+      "id": "kz-kazakhstan",
+      "countryCode": "KZ",
+      "name": "National Bank of Kazakhstan",
+      "qid": "Q2472280",
+      "website": "http://www.nationalbank.kz",
+      "commonsLogo": "National Bank of Kazakhstan logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2472280",
+        "http://www.nationalbank.kz",
+        "https://commons.wikimedia.org/wiki/File:National_Bank_of_Kazakhstan_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2472280",
+          "name": "National Bank of Kazakhstan",
+          "hasLogo": true
+        }
+      ]
+    },
+    "LA": {
+      "id": "la-the-lao-p-d-r",
+      "countryCode": "LA",
+      "name": "Bank of the Lao P.D.R.",
+      "qid": "Q4077339",
+      "website": "http://www.bol.gov.la/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4077339",
+        "http://www.bol.gov.la/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4077339",
+          "name": "Bank of the Lao P.D.R.",
+          "hasLogo": false
+        }
+      ]
+    },
+    "LB": {
+      "id": "lb-liban",
+      "countryCode": "LB",
+      "name": "Banque du Liban",
+      "qid": "Q1776564",
+      "website": "http://www.bdl.gov.lb/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1776564",
+        "http://www.bdl.gov.lb/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1776564",
+          "name": "Banque du Liban",
+          "hasLogo": false
+        }
+      ]
+    },
+    "LC": {
+      "id": "lc-eastern-caribbean-central-bank",
+      "countryCode": "LC",
+      "name": "Eastern Caribbean Central Bank",
+      "qid": "Q1210260",
+      "website": "http://www.eccb-centralbank.org",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1210260",
+        "http://www.eccb-centralbank.org"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1210260",
+          "name": "Eastern Caribbean Central Bank",
+          "hasLogo": false
+        }
+      ]
+    },
+    "LI": {
+      "id": "li-none",
+      "countryCode": "LI",
+      "name": "No national central bank — Swiss franc via monetary union with Switzerland",
+      "noOwnCentralBank": true,
+      "noImageReason": "Liechtenstein has no central bank of its own; it uses the Swiss franc under its customs and monetary union with Switzerland (Swiss National Bank sets policy).",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q66344",
+        "https://en.wikipedia.org/wiki/Liechtenstein"
+      ],
+      "candidates": []
+    },
+    "LK": {
+      "id": "lk-sri-lanka",
+      "countryCode": "LK",
+      "name": "Central Bank of Sri Lanka",
+      "qid": "Q2640939",
+      "website": "https://www.cbsl.gov.lk/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2640939",
+        "https://www.cbsl.gov.lk/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2640939",
+          "name": "Central Bank of Sri Lanka",
+          "hasLogo": false
+        }
+      ]
+    },
+    "LR": {
+      "id": "lr-liberia",
+      "countryCode": "LR",
+      "name": "Central Bank of Liberia",
+      "qid": "Q2899684",
+      "website": "http://www.cbl.org.lr/index.php",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2899684",
+        "http://www.cbl.org.lr/index.php"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2899684",
+          "name": "Central Bank of Liberia",
+          "hasLogo": false
+        }
+      ]
+    },
+    "LS": {
+      "id": "ls-lesotho",
+      "countryCode": "LS",
+      "name": "Central Bank of Lesotho",
+      "qid": "Q2608033",
+      "website": "http://www.centralbank.org.ls/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2608033",
+        "http://www.centralbank.org.ls/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2608033",
+          "name": "Central Bank of Lesotho",
+          "hasLogo": false
+        }
+      ]
+    },
+    "LT": {
+      "id": "lt-lithuania",
+      "countryCode": "LT",
+      "name": "Bank of Lithuania",
+      "qid": "Q616849",
+      "website": "http://www.lb.lt",
+      "commonsLogo": "Lietuvos bankas.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q616849",
+        "http://www.lb.lt",
+        "https://commons.wikimedia.org/wiki/File:Lietuvos_bankas.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q616849",
+          "name": "Bank of Lithuania",
+          "hasLogo": true
+        }
+      ]
+    },
+    "LU": {
+      "id": "lu-luxembourg",
+      "countryCode": "LU",
+      "name": "Central Bank of Luxembourg",
+      "qid": "Q190234",
+      "website": "http://www.bcl.lu",
+      "commonsLogo": "Banque centrale du Luxembourg FR logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q190234",
+        "http://www.bcl.lu",
+        "https://commons.wikimedia.org/wiki/File:Banque_centrale_du_Luxembourg_FR_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q190234",
+          "name": "Central Bank of Luxembourg",
+          "hasLogo": true
+        }
+      ]
+    },
+    "LV": {
+      "id": "lv-latvia",
+      "countryCode": "LV",
+      "name": "Bank of Latvia",
+      "qid": "Q687709",
+      "website": "https://www.bank.lv/",
+      "commonsLogo": "Latvijas Banka logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q687709",
+        "https://www.bank.lv/",
+        "https://commons.wikimedia.org/wiki/File:Latvijas_Banka_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q687709",
+          "name": "Bank of Latvia",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q122384271",
+          "name": "Q122384271",
+          "hasLogo": false
+        }
+      ]
+    },
+    "LY": {
+      "id": "ly-libya",
+      "countryCode": "LY",
+      "name": "Central Bank of Libya",
+      "qid": "Q58234",
+      "website": "http://cbl.gov.ly",
+      "commonsLogo": "LogoCBL.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q58234",
+        "http://cbl.gov.ly",
+        "https://commons.wikimedia.org/wiki/File:LogoCBL.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q58234",
+          "name": "Central Bank of Libya",
+          "hasLogo": true
+        }
+      ]
+    },
+    "MA": {
+      "id": "ma-d-etat-du-maroc",
+      "countryCode": "MA",
+      "name": "Banque d'Etat du Maroc",
+      "qid": "Q16531279",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q16531279"
+      ],
+      "candidates": [
+        {
+          "qid": "Q328198",
+          "name": "Bank Al-Maghrib",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q16531279",
+          "name": "Banque d'Etat du Maroc",
+          "hasLogo": false
+        }
+      ]
+    },
+    "MC": {
+      "id": "mc-none",
+      "countryCode": "MC",
+      "name": "No national central bank — euro via France / Eurosystem arrangements",
+      "noOwnCentralBank": true,
+      "noImageReason": "Monaco has no central bank of its own; it uses the euro under its monetary agreement with France / the EU.",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q66344",
+        "https://en.wikipedia.org/wiki/Monaco"
+      ],
+      "candidates": []
+    },
+    "MD": {
+      "id": "md-moldova",
+      "countryCode": "MD",
+      "name": "National Bank of Moldova",
+      "qid": "Q2636071",
+      "website": "http://www.bnm.md/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2636071",
+        "http://www.bnm.md/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2636071",
+          "name": "National Bank of Moldova",
+          "hasLogo": false
+        }
+      ]
+    },
+    "ME": {
+      "id": "me-montenegro",
+      "countryCode": "ME",
+      "name": "Central Bank of Montenegro",
+      "qid": "Q4504284",
+      "website": "http://www.cb-mn.org",
+      "commonsLogo": "Central Bank of Montenegro logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4504284",
+        "http://www.cb-mn.org",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Montenegro_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4504284",
+          "name": "Central Bank of Montenegro",
+          "hasLogo": true
+        }
+      ]
+    },
+    "MG": {
+      "id": "mg-madagascar",
+      "countryCode": "MG",
+      "name": "Central Bank of Madagascar",
+      "qid": "Q3433330",
+      "website": "http://www.banque-centrale.mg/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3433330",
+        "http://www.banque-centrale.mg/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q3433330",
+          "name": "Central Bank of Madagascar",
+          "hasLogo": false
+        }
+      ]
+    },
+    "MH": {
+      "id": "mh-none",
+      "countryCode": "MH",
+      "name": "No national central bank — United States dollar",
+      "noOwnCentralBank": true,
+      "noImageReason": "The Marshall Islands has no central bank; the US dollar is legal tender under Compact of Free Association arrangements.",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q66344",
+        "https://en.wikipedia.org/wiki/Marshall_Islands"
+      ],
+      "candidates": []
+    },
+    "MK": {
+      "id": "mk-north-macedonia",
+      "countryCode": "MK",
+      "name": "National Bank of North Macedonia",
+      "qid": "Q2598067",
+      "website": "http://www.nbrm.mk",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2598067",
+        "http://www.nbrm.mk"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2598067",
+          "name": "National Bank of North Macedonia",
+          "hasLogo": false
+        }
+      ]
+    },
+    "ML": {
+      "id": "ml-west-african-states",
+      "countryCode": "ML",
+      "name": "Central Bank of West African States",
+      "qid": "Q620942",
+      "website": "http://www.bceao.int/",
+      "commonsLogo": "Central Bank of West African States wordmark.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q620942",
+        "http://www.bceao.int/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_West_African_States_wordmark.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q620942",
+          "name": "Central Bank of West African States",
+          "hasLogo": true
+        }
+      ]
+    },
+    "MM": {
+      "id": "mm-myanmar",
+      "countryCode": "MM",
+      "name": "Central Bank of Myanmar",
+      "qid": "Q1944374",
+      "website": "https://www.cbm.gov.mm/",
+      "commonsLogo": "Central Bank of Myanmar seal.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1944374",
+        "https://www.cbm.gov.mm/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Myanmar_seal.png"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1944374",
+          "name": "Central Bank of Myanmar",
+          "hasLogo": true
+        }
+      ]
+    },
+    "MN": {
+      "id": "mn-mongolia",
+      "countryCode": "MN",
+      "name": "Bank of Mongolia",
+      "qid": "Q1320131",
+      "website": "https://www.mongolbank.mn/",
+      "commonsLogo": "Mongolbank logo eng.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1320131",
+        "https://www.mongolbank.mn/",
+        "https://commons.wikimedia.org/wiki/File:Mongolbank_logo_eng.png"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1320131",
+          "name": "Bank of Mongolia",
+          "hasLogo": true
+        }
+      ]
+    },
+    "MR": {
+      "id": "mr-mauritania",
+      "countryCode": "MR",
+      "name": "Central Bank of Mauritania",
+      "qid": "Q2528877",
+      "website": "https://www.bcm.mr/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2528877",
+        "https://www.bcm.mr/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2528877",
+          "name": "Central Bank of Mauritania",
+          "hasLogo": false
+        }
+      ]
+    },
+    "MT": {
+      "id": "mt-malta",
+      "countryCode": "MT",
+      "name": "Central Bank of Malta",
+      "qid": "Q74690",
+      "website": "https://www.centralbankmalta.org",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q74690",
+        "https://www.centralbankmalta.org"
+      ],
+      "candidates": [
+        {
+          "qid": "Q74690",
+          "name": "Central Bank of Malta",
+          "hasLogo": false
+        }
+      ]
+    },
+    "MU": {
+      "id": "mu-mauritius",
+      "countryCode": "MU",
+      "name": "Bank of Mauritius",
+      "qid": "Q2743652",
+      "website": "https://www.bom.mu/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2743652",
+        "https://www.bom.mu/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2743652",
+          "name": "Bank of Mauritius",
+          "hasLogo": false
+        }
+      ]
+    },
+    "MV": {
+      "id": "mv-maldives-monetary-authority",
+      "countryCode": "MV",
+      "name": "Maldives Monetary Authority",
+      "qid": "Q1188022",
+      "website": "http://mma.gov.mv",
+      "commonsLogo": "Maldives Monetary Authority Logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1188022",
+        "http://mma.gov.mv",
+        "https://commons.wikimedia.org/wiki/File:Maldives_Monetary_Authority_Logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1188022",
+          "name": "Maldives Monetary Authority",
+          "hasLogo": true
+        }
+      ]
+    },
+    "MW": {
+      "id": "mw-malawi",
+      "countryCode": "MW",
+      "name": "Reserve Bank of Malawi",
+      "qid": "Q2397584",
+      "website": "http://www.rbm.mw/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2397584",
+        "http://www.rbm.mw/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2397584",
+          "name": "Reserve Bank of Malawi",
+          "hasLogo": false
+        }
+      ]
+    },
+    "MX": {
+      "id": "mx-banxico",
+      "countryCode": "MX",
+      "name": "Bank of Mexico",
+      "qid": "Q806208",
+      "website": "http://www.banxico.org.mx/",
+      "commonsLogo": "Logobm.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806208",
+        "http://www.banxico.org.mx/",
+        "https://commons.wikimedia.org/wiki/File:Logobm.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2646652",
+          "name": "Banco Nacional de México",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q806208",
+          "name": "Bank of Mexico",
+          "hasLogo": true
+        }
+      ]
+    },
+    "MY": {
+      "id": "my-bnm",
+      "countryCode": "MY",
+      "name": "Bank Negara Malaysia",
+      "qid": "Q806646",
+      "website": "http://www.bnm.gov.my/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806646",
+        "http://www.bnm.gov.my/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806646",
+          "name": "Bank Negara Malaysia",
+          "hasLogo": false
+        }
+      ]
+    },
+    "MZ": {
+      "id": "mz-mozambique",
+      "countryCode": "MZ",
+      "name": "Bank of Mozambique",
+      "qid": "Q3363703",
+      "website": "http://www.bancomoc.mz/Default_en.aspx",
+      "commonsLogo": "Logotipo-Banco-de-Moçambique-01-995x1024.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3363703",
+        "http://www.bancomoc.mz/Default_en.aspx",
+        "https://commons.wikimedia.org/wiki/File:Logotipo-Banco-de-Mo%C3%A7ambique-01-995x1024.png"
+      ],
+      "candidates": [
+        {
+          "qid": "Q3363703",
+          "name": "Bank of Mozambique",
+          "hasLogo": true
+        }
+      ]
+    },
+    "NA": {
+      "id": "na-namibia",
+      "countryCode": "NA",
+      "name": "Bank of Namibia",
+      "qid": "Q806684",
+      "website": "https://www.bon.com.na/",
+      "commonsLogo": "Logo der Bank von Namibia.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806684",
+        "https://www.bon.com.na/",
+        "https://commons.wikimedia.org/wiki/File:Logo_der_Bank_von_Namibia.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806684",
+          "name": "Bank of Namibia",
+          "hasLogo": true
+        }
+      ]
+    },
+    "NE": {
+      "id": "ne-west-african-states",
+      "countryCode": "NE",
+      "name": "Central Bank of West African States",
+      "qid": "Q620942",
+      "website": "http://www.bceao.int/",
+      "commonsLogo": "Central Bank of West African States wordmark.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q620942",
+        "http://www.bceao.int/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_West_African_States_wordmark.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q620942",
+          "name": "Central Bank of West African States",
+          "hasLogo": true
+        }
+      ]
+    },
+    "NG": {
+      "id": "ng-nigeria",
+      "countryCode": "NG",
+      "name": "Central Bank of Nigeria",
+      "qid": "Q1627120",
+      "website": "http://www.cbn.gov.ng/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1627120",
+        "http://www.cbn.gov.ng/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1627120",
+          "name": "Central Bank of Nigeria",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q1627120",
+          "name": "Central Bank of Nigeria",
+          "hasLogo": false
+        }
+      ]
+    },
+    "NI": {
+      "id": "ni-nicaragua",
+      "countryCode": "NI",
+      "name": "Central Bank of Nicaragua",
+      "qid": "Q4504274",
+      "website": "https://www.bcn.gob.ni/",
+      "commonsLogo": "Central Bank of Nicaragua logo.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4504274",
+        "https://www.bcn.gob.ni/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Nicaragua_logo.png"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4504274",
+          "name": "Central Bank of Nicaragua",
+          "hasLogo": true
+        }
+      ]
+    },
+    "NL": {
+      "id": "nl-dnb",
+      "countryCode": "NL",
+      "name": "De Nederlandsche Bank",
+      "qid": "Q1180205",
+      "website": "https://www.dnb.nl/",
+      "commonsLogo": "De Nederlandsche Bank logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1180205",
+        "https://www.dnb.nl/",
+        "https://commons.wikimedia.org/wiki/File:De_Nederlandsche_Bank_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1180205",
+          "name": "De Nederlandsche Bank",
+          "hasLogo": true
+        }
+      ]
+    },
+    "NO": {
+      "id": "no-norges-bank",
+      "countryCode": "NO",
+      "name": "Norges Bank",
+      "qid": "Q970769",
+      "website": "http://www.norges-bank.no/",
+      "commonsLogo": "Norges Bank logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q970769",
+        "http://www.norges-bank.no/",
+        "https://commons.wikimedia.org/wiki/File:Norges_Bank_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q11963362",
+          "name": "Centralbanken for Norge",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q970769",
+          "name": "Norges Bank",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q970769",
+          "name": "Norges Bank",
+          "hasLogo": true
+        }
+      ]
+    },
+    "NP": {
+      "id": "np-nepal-rastra-bank",
+      "countryCode": "NP",
+      "name": "Nepal Rastra Bank",
+      "qid": "Q1318435",
+      "website": "http://www.nrb.org.np/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1318435",
+        "http://www.nrb.org.np/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1318435",
+          "name": "Nepal Rastra Bank",
+          "hasLogo": false
+        }
+      ]
+    },
+    "NR": {
+      "id": "nr-nauru",
+      "countryCode": "NR",
+      "name": "Bank of Nauru",
+      "qid": "Q806683",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806683"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806683",
+          "name": "Bank of Nauru",
+          "hasLogo": false
+        }
+      ]
+    },
+    "NZ": {
+      "id": "nz-rbnz",
+      "countryCode": "NZ",
+      "name": "Reserve Bank of New Zealand",
+      "qid": "Q1494550",
+      "website": "https://www.rbnz.govt.nz/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1494550",
+        "https://www.rbnz.govt.nz/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1494550",
+          "name": "Reserve Bank of New Zealand",
+          "hasLogo": false
+        }
+      ]
+    },
+    "OM": {
+      "id": "om-oman",
+      "countryCode": "OM",
+      "name": "Central Bank of Oman",
+      "qid": "Q3488501",
+      "website": "https://www.cbo.gov.om/",
+      "commonsLogo": "Central Bank of Oman logo.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3488501",
+        "https://www.cbo.gov.om/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Oman_logo.png"
+      ],
+      "candidates": [
+        {
+          "qid": "Q3488501",
+          "name": "Central Bank of Oman",
+          "hasLogo": true
+        }
+      ]
+    },
+    "PA": {
+      "id": "pa-panama",
+      "countryCode": "PA",
+      "name": "National Bank of Panama",
+      "qid": "Q429235",
+      "website": "https://www.banconal.com.pa",
+      "commonsLogo": "National Bank of Panama logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q429235",
+        "https://www.banconal.com.pa",
+        "https://commons.wikimedia.org/wiki/File:National_Bank_of_Panama_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q429235",
+          "name": "National Bank of Panama",
+          "hasLogo": true
+        }
+      ]
+    },
+    "PE": {
+      "id": "pe-central-reserve-bank-of-peru",
+      "countryCode": "PE",
+      "name": "Central Reserve Bank of Peru",
+      "qid": "Q932146",
+      "website": "https://www.bcrp.gob.pe",
+      "commonsLogo": "BCRP.gif",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q932146",
+        "https://www.bcrp.gob.pe",
+        "https://commons.wikimedia.org/wiki/File:BCRP.gif"
+      ],
+      "candidates": [
+        {
+          "qid": "Q932146",
+          "name": "Central Reserve Bank of Peru",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q932146",
+          "name": "Central Reserve Bank of Peru",
+          "hasLogo": true
+        }
+      ]
+    },
+    "PG": {
+      "id": "pg-papua-new-guinea",
+      "countryCode": "PG",
+      "name": "Bank of Papua New Guinea",
+      "qid": "Q3364697",
+      "website": "http://www.bankpng.gov.pg/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3364697",
+        "http://www.bankpng.gov.pg/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q3364697",
+          "name": "Bank of Papua New Guinea",
+          "hasLogo": false
+        }
+      ]
+    },
+    "PH": {
+      "id": "ph-bsp",
+      "countryCode": "PH",
+      "name": "Bangko Sentral ng Pilipinas",
+      "qid": "Q1853468",
+      "website": "https://www.bsp.gov.ph",
+      "commonsLogo": "Bangko Sentral ng Pilipinas 2020 logo.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1853468",
+        "https://www.bsp.gov.ph",
+        "https://commons.wikimedia.org/wiki/File:Bangko_Sentral_ng_Pilipinas_2020_logo.png"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1853468",
+          "name": "Bangko Sentral ng Pilipinas",
+          "hasLogo": true
+        }
+      ]
+    },
+    "PK": {
+      "id": "pk-state-bank-of-pakistan",
+      "countryCode": "PK",
+      "name": "State Bank of Pakistan",
+      "qid": "Q1323248",
+      "website": "http://www.sbp.org.pk/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1323248",
+        "http://www.sbp.org.pk/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1323248",
+          "name": "State Bank of Pakistan",
+          "hasLogo": false
+        }
+      ]
+    },
+    "PL": {
+      "id": "pl-nbp",
+      "countryCode": "PL",
+      "name": "Narodowy Bank Polski",
+      "qid": "Q168844",
+      "website": "https://www.nbp.pl/",
+      "commonsLogo": "Narodowy Bank Polski logo and wordmark (2021) v2.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q168844",
+        "https://www.nbp.pl/",
+        "https://commons.wikimedia.org/wiki/File:Narodowy_Bank_Polski_logo_and_wordmark_(2021)_v2.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q168844",
+          "name": "Narodowy Bank Polski",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q9340957",
+          "name": "Q9340957",
+          "hasLogo": false
+        }
+      ]
+    },
+    "PS": {
+      "id": "ps-palestine-monetary-authority",
+      "countryCode": "PS",
+      "name": "Palestine Monetary Authority",
+      "qid": "Q7127309",
+      "website": "https://www.pma.ps/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q7127309",
+        "https://www.pma.ps/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q7127309",
+          "name": "Palestine Monetary Authority",
+          "hasLogo": false
+        }
+      ]
+    },
+    "PT": {
+      "id": "pt-bdp",
+      "countryCode": "PT",
+      "name": "Banco de Portugal",
+      "qid": "Q378372",
+      "website": "https://www.bportugal.pt",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q378372",
+        "https://www.bportugal.pt"
+      ],
+      "candidates": [
+        {
+          "qid": "Q378372",
+          "name": "Banco de Portugal",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q16496474",
+          "name": "Banco de Lisboa",
+          "hasLogo": false
+        }
+      ]
+    },
+    "PW": {
+      "id": "pw-none",
+      "countryCode": "PW",
+      "name": "No national central bank — United States dollar",
+      "noOwnCentralBank": true,
+      "noImageReason": "Palau has no central bank; the US dollar is legal tender under Compact of Free Association arrangements.",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q66344",
+        "https://en.wikipedia.org/wiki/Palau"
+      ],
+      "candidates": []
+    },
+    "PY": {
+      "id": "py-paraguay",
+      "countryCode": "PY",
+      "name": "Central Bank of Paraguay",
+      "qid": "Q4504275",
+      "website": "https://www.bcp.gov.py/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4504275",
+        "https://www.bcp.gov.py/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4504275",
+          "name": "Central Bank of Paraguay",
+          "hasLogo": false
+        }
+      ]
+    },
+    "QA": {
+      "id": "qa-qatar-central-bank",
+      "countryCode": "QA",
+      "name": "Qatar Central Bank",
+      "qid": "Q3365778",
+      "website": "http://www.qcb.gov.qa",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3365778",
+        "http://www.qcb.gov.qa"
+      ],
+      "candidates": [
+        {
+          "qid": "Q3365778",
+          "name": "Qatar Central Bank",
+          "hasLogo": false
+        }
+      ]
+    },
+    "RO": {
+      "id": "ro-romania",
+      "countryCode": "RO",
+      "name": "National Bank of Romania",
+      "qid": "Q967861",
+      "website": "http://www.bnr.ro/",
+      "commonsLogo": "National Bank of Romania Logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q967861",
+        "http://www.bnr.ro/",
+        "https://commons.wikimedia.org/wiki/File:National_Bank_of_Romania_Logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q967861",
+          "name": "National Bank of Romania",
+          "hasLogo": true
+        }
+      ]
+    },
+    "RS": {
+      "id": "rs-serbia",
+      "countryCode": "RS",
+      "name": "National Bank of Serbia",
+      "qid": "Q1194664",
+      "website": "http://www.nbs.rs/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1194664",
+        "http://www.nbs.rs/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1194664",
+          "name": "National Bank of Serbia",
+          "hasLogo": false
+        }
+      ]
+    },
+    "RU": {
+      "id": "ru-russia",
+      "countryCode": "RU",
+      "name": "Central Bank of Russia",
+      "qid": "Q806651",
+      "website": "https://cbr.ru/",
+      "commonsLogo": "CBRF logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806651",
+        "https://cbr.ru/",
+        "https://commons.wikimedia.org/wiki/File:CBRF_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806651",
+          "name": "Central Bank of Russia",
+          "hasLogo": true
+        }
+      ]
+    },
+    "RW": {
+      "id": "rw-rwanda",
+      "countryCode": "RW",
+      "name": "National Bank of Rwanda",
+      "qid": "Q4314980",
+      "website": "http://www.bnr.rw/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4314980",
+        "http://www.bnr.rw/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4314980",
+          "name": "National Bank of Rwanda",
+          "hasLogo": false
+        }
+      ]
+    },
+    "SA": {
+      "id": "sa-sama",
+      "countryCode": "SA",
+      "name": "Saudi Central Bank",
+      "qid": "Q2605574",
+      "website": "http://www.sama.gov.sa",
+      "commonsLogo": "Logo Saudi Arabian Monetary Authority.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2605574",
+        "http://www.sama.gov.sa",
+        "https://commons.wikimedia.org/wiki/File:Logo_Saudi_Arabian_Monetary_Authority.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2605574",
+          "name": "Saudi Central Bank",
+          "hasLogo": true
+        }
+      ]
+    },
+    "SB": {
+      "id": "sb-solomon-islands",
+      "countryCode": "SB",
+      "name": "Central Bank of Solomon Islands",
+      "qid": "Q1777295",
+      "website": "http://www.cbsi.com.sb/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1777295",
+        "http://www.cbsi.com.sb/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1777295",
+          "name": "Central Bank of Solomon Islands",
+          "hasLogo": false
+        }
+      ]
+    },
+    "SC": {
+      "id": "sc-seychelles",
+      "countryCode": "SC",
+      "name": "Central Bank of Seychelles",
+      "qid": "Q4504280",
+      "website": "http://www.cbs.sc/",
+      "commonsLogo": "Central Bank of Seychelles logo.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4504280",
+        "http://www.cbs.sc/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Seychelles_logo.png"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4504280",
+          "name": "Central Bank of Seychelles",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q4504280",
+          "name": "Central Bank of Seychelles",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q139806736",
+          "name": "Seychelles Monetary Authority",
+          "hasLogo": false
+        }
+      ]
+    },
+    "SD": {
+      "id": "sd-sudan",
+      "countryCode": "SD",
+      "name": "Bank of Sudan",
+      "qid": "Q190236",
+      "website": "http://www.cbos.gov.sd/en",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q190236",
+        "http://www.cbos.gov.sd/en"
+      ],
+      "candidates": [
+        {
+          "qid": "Q190236",
+          "name": "Bank of Sudan",
+          "hasLogo": false
+        }
+      ]
+    },
+    "SE": {
+      "id": "se-riksbank",
+      "countryCode": "SE",
+      "name": "Sveriges Riksbank",
+      "qid": "Q564652",
+      "website": "https://riksbank.se",
+      "commonsLogo": "Riksbanken skylt.jpg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q564652",
+        "https://riksbank.se",
+        "https://commons.wikimedia.org/wiki/File:Riksbanken_skylt.jpg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q564652",
+          "name": "Sveriges Riksbank",
+          "hasLogo": true
+        }
+      ]
+    },
+    "SG": {
+      "id": "sg-mas",
+      "countryCode": "SG",
+      "name": "Monetary Authority of Singapore",
+      "qid": "Q2661296",
+      "website": "http://www.mas.gov.sg/",
+      "commonsLogo": "Monetary Authority of Singapore.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2661296",
+        "http://www.mas.gov.sg/",
+        "https://commons.wikimedia.org/wiki/File:Monetary_Authority_of_Singapore.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2661296",
+          "name": "Monetary Authority of Singapore",
+          "hasLogo": true
+        }
+      ]
+    },
+    "SI": {
+      "id": "si-slovenia",
+      "countryCode": "SI",
+      "name": "Bank of Slovenia",
+      "qid": "Q26662",
+      "website": "http://www.bsi.si/",
+      "commonsLogo": "Logo Banka Slovenije 2020.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q26662",
+        "http://www.bsi.si/",
+        "https://commons.wikimedia.org/wiki/File:Logo_Banka_Slovenije_2020.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q26662",
+          "name": "Bank of Slovenia",
+          "hasLogo": true
+        }
+      ]
+    },
+    "SK": {
+      "id": "sk-slovakia",
+      "countryCode": "SK",
+      "name": "National Bank of Slovakia",
+      "qid": "Q1481791",
+      "website": "http://www.nbs.sk",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1481791",
+        "http://www.nbs.sk"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1481791",
+          "name": "National Bank of Slovakia",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q1481791",
+          "name": "National Bank of Slovakia",
+          "hasLogo": false
+        }
+      ]
+    },
+    "SL": {
+      "id": "sl-sierra-leone",
+      "countryCode": "SL",
+      "name": "Bank of Sierra Leone",
+      "qid": "Q806691",
+      "website": "http://www.bsl.gov.sl/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806691",
+        "http://www.bsl.gov.sl/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806691",
+          "name": "Bank of Sierra Leone",
+          "hasLogo": false
+        }
+      ]
+    },
+    "SM": {
+      "id": "sm-none",
+      "countryCode": "SM",
+      "name": "No national central bank — euro via Italy / Eurosystem arrangements",
+      "noOwnCentralBank": true,
+      "noImageReason": "San Marino has no central bank of its own; it uses the euro under its monetary agreement with Italy / the EU.",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q66344",
+        "https://en.wikipedia.org/wiki/San_Marino"
+      ],
+      "candidates": []
+    },
+    "SN": {
+      "id": "sn-west-african-states",
+      "countryCode": "SN",
+      "name": "Central Bank of West African States",
+      "qid": "Q620942",
+      "website": "http://www.bceao.int/",
+      "commonsLogo": "Central Bank of West African States wordmark.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q620942",
+        "http://www.bceao.int/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_West_African_States_wordmark.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q620942",
+          "name": "Central Bank of West African States",
+          "hasLogo": true
+        }
+      ]
+    },
+    "SO": {
+      "id": "so-somalia",
+      "countryCode": "SO",
+      "name": "Central Bank of Somalia",
+      "qid": "Q2299534",
+      "website": "https://centralbank.gov.so/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2299534",
+        "https://centralbank.gov.so/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2299534",
+          "name": "Central Bank of Somalia",
+          "hasLogo": false
+        }
+      ]
+    },
+    "SR": {
+      "id": "sr-centrale-bank-van-suriname",
+      "countryCode": "SR",
+      "name": "Centrale Bank van Suriname",
+      "qid": "Q2981941",
+      "website": "https://www.cbvs.sr/",
+      "commonsLogo": "Central Bank of Suriname logo.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2981941",
+        "https://www.cbvs.sr/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Suriname_logo.png"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2981941",
+          "name": "Centrale Bank van Suriname",
+          "hasLogo": true
+        }
+      ]
+    },
+    "SS": {
+      "id": "ss-south-sudan",
+      "countryCode": "SS",
+      "name": "Bank of South Sudan",
+      "qid": "Q3359554",
+      "website": "https://boss.gov.ss",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3359554",
+        "https://boss.gov.ss"
+      ],
+      "candidates": [
+        {
+          "qid": "Q3359554",
+          "name": "Bank of South Sudan",
+          "hasLogo": false
+        }
+      ]
+    },
+    "ST": {
+      "id": "st-sao-tome-and-principe",
+      "countryCode": "ST",
+      "name": "Central Bank of São Tomé and Príncipe",
+      "qid": "Q2679982",
+      "website": "http://www.bcstp.st/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2679982",
+        "http://www.bcstp.st/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2679982",
+          "name": "Central Bank of São Tomé and Príncipe",
+          "hasLogo": false
+        }
+      ]
+    },
+    "SV": {
+      "id": "sv-central-reserve-bank-of-el-salvador",
+      "countryCode": "SV",
+      "name": "Central Reserve Bank of El Salvador",
+      "qid": "Q1801435",
+      "website": "http://www.bcr.gob.sv/",
+      "commonsLogo": "Logo Central Reserve Bank of El Salvador.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1801435",
+        "http://www.bcr.gob.sv/",
+        "https://commons.wikimedia.org/wiki/File:Logo_Central_Reserve_Bank_of_El_Salvador.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1801435",
+          "name": "Central Reserve Bank of El Salvador",
+          "hasLogo": true
+        }
+      ]
+    },
+    "SY": {
+      "id": "sy-syria",
+      "countryCode": "SY",
+      "name": "Central Bank of Syria",
+      "qid": "Q806932",
+      "website": "https://cb.gov.sy/",
+      "commonsLogo": "Central Bank of Syria logo (2025).png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806932",
+        "https://cb.gov.sy/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Syria_logo_(2025).png"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806932",
+          "name": "Central Bank of Syria",
+          "hasLogo": true
+        }
+      ]
+    },
+    "SZ": {
+      "id": "sz-eswatini",
+      "countryCode": "SZ",
+      "name": "Central Bank of Eswatini",
+      "qid": "Q3430466",
+      "website": "http://www.centralbank.org.sz",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q3430466",
+        "http://www.centralbank.org.sz"
+      ],
+      "candidates": [
+        {
+          "qid": "Q3430466",
+          "name": "Central Bank of Eswatini",
+          "hasLogo": false
+        }
+      ]
+    },
+    "TD": {
+      "id": "td-central-african-states",
+      "countryCode": "TD",
+      "name": "Bank of Central African States",
+      "qid": "Q189972",
+      "website": "https://www.beac.int",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q189972",
+        "https://www.beac.int"
+      ],
+      "candidates": [
+        {
+          "qid": "Q189972",
+          "name": "Bank of Central African States",
+          "hasLogo": false
+        }
+      ]
+    },
+    "TG": {
+      "id": "tg-west-african-states",
+      "countryCode": "TG",
+      "name": "Central Bank of West African States",
+      "qid": "Q620942",
+      "website": "http://www.bceao.int/",
+      "commonsLogo": "Central Bank of West African States wordmark.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q620942",
+        "http://www.bceao.int/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_West_African_States_wordmark.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q620942",
+          "name": "Central Bank of West African States",
+          "hasLogo": true
+        }
+      ]
+    },
+    "TH": {
+      "id": "th-bot",
+      "countryCode": "TH",
+      "name": "Bank of Thailand",
+      "qid": "Q806706",
+      "website": "http://www.bot.or.th",
+      "commonsLogo": "Logo of the Bank of Thailand (2012).svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806706",
+        "http://www.bot.or.th",
+        "https://commons.wikimedia.org/wiki/File:Logo_of_the_Bank_of_Thailand_(2012).svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806706",
+          "name": "Bank of Thailand",
+          "hasLogo": true
+        }
+      ]
+    },
+    "TJ": {
+      "id": "tj-tajikistan",
+      "countryCode": "TJ",
+      "name": "National Bank of Tajikistan",
+      "qid": "Q4314981",
+      "website": "http://www.nbt.tj",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4314981",
+        "http://www.nbt.tj"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4314981",
+          "name": "National Bank of Tajikistan",
+          "hasLogo": false
+        }
+      ]
+    },
+    "TL": {
+      "id": "tl-timor-leste",
+      "countryCode": "TL",
+      "name": "Banco Central de Timor-Leste",
+      "qid": "Q4504282",
+      "website": "https://www.bancocentral.tl/en",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4504282",
+        "https://www.bancocentral.tl/en"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4504282",
+          "name": "Banco Central de Timor-Leste",
+          "hasLogo": false
+        }
+      ]
+    },
+    "TM": {
+      "id": "tm-turkmenistan",
+      "countryCode": "TM",
+      "name": "Central Bank of Turkmenistan",
+      "qid": "Q4504283",
+      "website": "http://www.cbt.tm",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4504283",
+        "http://www.cbt.tm"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4504283",
+          "name": "Central Bank of Turkmenistan",
+          "hasLogo": false
+        }
+      ]
+    },
+    "TN": {
+      "id": "tn-tunisia",
+      "countryCode": "TN",
+      "name": "Central Bank of Tunisia",
+      "qid": "Q600137",
+      "website": "http://www.bct.gov.tn/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q600137",
+        "http://www.bct.gov.tn/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q600137",
+          "name": "Central Bank of Tunisia",
+          "hasLogo": false
+        }
+      ]
+    },
+    "TO": {
+      "id": "to-national-reserve-bank-of-tonga",
+      "countryCode": "TO",
+      "name": "National Reserve Bank of Tonga",
+      "qid": "Q2604318",
+      "website": "http://www.reservebank.to",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2604318",
+        "http://www.reservebank.to"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2604318",
+          "name": "National Reserve Bank of Tonga",
+          "hasLogo": false
+        }
+      ]
+    },
+    "TR": {
+      "id": "tr-the-republic-of-turkey",
+      "countryCode": "TR",
+      "name": "Central Bank of the Republic of Turkey",
+      "qid": "Q580829",
+      "website": "http://www.tcmb.gov.tr",
+      "commonsLogo": "TCMB logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q580829",
+        "http://www.tcmb.gov.tr",
+        "https://commons.wikimedia.org/wiki/File:TCMB_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2041453",
+          "name": "Ottoman Bank",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q580829",
+          "name": "Central Bank of the Republic of Turkey",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q580829",
+          "name": "Central Bank of the Republic of Turkey",
+          "hasLogo": true
+        }
+      ]
+    },
+    "TT": {
+      "id": "tt-trinidad-and-tobago",
+      "countryCode": "TT",
+      "name": "Central Bank of Trinidad and Tobago",
+      "qid": "Q4504281",
+      "website": "https://www.central-bank.org.tt/",
+      "commonsLogo": "Central Bank of Trinidad and Tobago logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4504281",
+        "https://www.central-bank.org.tt/",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Trinidad_and_Tobago_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4504281",
+          "name": "Central Bank of Trinidad and Tobago",
+          "hasLogo": true
+        }
+      ]
+    },
+    "TV": {
+      "id": "tv-tuvalu",
+      "countryCode": "TV",
+      "name": "National Bank of Tuvalu",
+      "qid": "Q16740215",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q16740215"
+      ],
+      "candidates": [
+        {
+          "qid": "Q16740215",
+          "name": "National Bank of Tuvalu",
+          "hasLogo": false
+        }
+      ]
+    },
+    "TZ": {
+      "id": "tz-tanzania",
+      "countryCode": "TZ",
+      "name": "Bank of Tanzania",
+      "qid": "Q2670842",
+      "website": "http://www.bot-tz.org/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2670842",
+        "http://www.bot-tz.org/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2670842",
+          "name": "Bank of Tanzania",
+          "hasLogo": false
+        }
+      ]
+    },
+    "UA": {
+      "id": "ua-ukraine",
+      "countryCode": "UA",
+      "name": "National Bank of Ukraine",
+      "qid": "Q1070388",
+      "website": "https://bank.gov.ua/",
+      "commonsLogo": "NBU logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1070388",
+        "https://bank.gov.ua/",
+        "https://commons.wikimedia.org/wiki/File:NBU_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1070388",
+          "name": "National Bank of Ukraine",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q1070388",
+          "name": "National Bank of Ukraine",
+          "hasLogo": true
+        }
+      ]
+    },
+    "UG": {
+      "id": "ug-uganda",
+      "countryCode": "UG",
+      "name": "Bank of Uganda",
+      "qid": "Q487300",
+      "website": "http://www.bou.or.ug/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q487300",
+        "http://www.bou.or.ug/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q487300",
+          "name": "Bank of Uganda",
+          "hasLogo": false
+        }
+      ]
+    },
+    "US": {
+      "id": "us-fed",
+      "countryCode": "US",
+      "name": "Federal Reserve System",
+      "qid": "Q53536",
+      "website": "https://www.federalreserve.gov/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q53536",
+        "https://www.federalreserve.gov/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q53536",
+          "name": "Federal Reserve System",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q806690",
+          "name": "Bank of North America",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q115860",
+          "name": "Federal Reserve Bank of New York",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q115860",
+          "name": "Federal Reserve Bank of New York",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q965251",
+          "name": "Federal Reserve Bank of Chicago",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q2166296",
+          "name": "Federal Reserve Bank of Kansas City",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q2503528",
+          "name": "Federal Reserve Bank of Minneapolis",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q2657981",
+          "name": "Federal Reserve Bank of San Francisco",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q3267626",
+          "name": "Federal Reserve Bank of Philadelphia",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q3267952",
+          "name": "Federal Reserve Bank of Atlanta",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q3268621",
+          "name": "Federal Reserve Bank of Dallas",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q4383722",
+          "name": "Federal Reserve Bank of Richmond",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q4383730",
+          "name": "Federal Reserve Bank of St. Louis",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q4384538",
+          "name": "Federal Reserve Bank of Cleveland",
+          "hasLogo": false
+        },
+        {
+          "qid": "Q4384803",
+          "name": "Federal Reserve Bank of Boston",
+          "hasLogo": true
+        },
+        {
+          "qid": "Q7258814",
+          "name": "Puerto Rico fiscal agent and financing",
+          "hasLogo": false
+        }
+      ]
+    },
+    "UY": {
+      "id": "uy-uruguay",
+      "countryCode": "UY",
+      "name": "Central Bank of Uruguay",
+      "qid": "Q4504285",
+      "website": "https://www.bcu.gub.uy",
+      "commonsLogo": "Central Bank of Uruguay logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4504285",
+        "https://www.bcu.gub.uy",
+        "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Uruguay_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4504285",
+          "name": "Central Bank of Uruguay",
+          "hasLogo": true
+        }
+      ]
+    },
+    "UZ": {
+      "id": "uz-uzbekistan",
+      "countryCode": "UZ",
+      "name": "Central Bank of Uzbekistan",
+      "qid": "Q4504278",
+      "website": "http://www.cbu.uz/uz",
+      "commonsLogo": "CBU Logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4504278",
+        "http://www.cbu.uz/uz",
+        "https://commons.wikimedia.org/wiki/File:CBU_Logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q4504278",
+          "name": "Central Bank of Uzbekistan",
+          "hasLogo": true
+        }
+      ]
+    },
+    "VA": {
+      "id": "va-administration-of-the-patrimony-of-the-a",
+      "countryCode": "VA",
+      "name": "Administration of the Patrimony of the Apostolic See",
+      "qid": "Q1562250",
+      "website": "http://www.vatican.va/roman_curia/uffici/apsa/index_it.htm",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1562250",
+        "http://www.vatican.va/roman_curia/uffici/apsa/index_it.htm"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1562250",
+          "name": "Administration of the Patrimony of the Apostolic See",
+          "hasLogo": false
+        }
+      ]
+    },
+    "VC": {
+      "id": "vc-eastern-caribbean-central-bank",
+      "countryCode": "VC",
+      "name": "Eastern Caribbean Central Bank",
+      "qid": "Q1210260",
+      "website": "http://www.eccb-centralbank.org",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1210260",
+        "http://www.eccb-centralbank.org"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1210260",
+          "name": "Eastern Caribbean Central Bank",
+          "hasLogo": false
+        }
+      ]
+    },
+    "VE": {
+      "id": "ve-venezuela",
+      "countryCode": "VE",
+      "name": "Central Bank of Venezuela",
+      "qid": "Q2570775",
+      "website": "http://www.bcv.org.ve",
+      "commonsLogo": "Banco Central de Venezuela logo.svg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2570775",
+        "http://www.bcv.org.ve",
+        "https://commons.wikimedia.org/wiki/File:Banco_Central_de_Venezuela_logo.svg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2570775",
+          "name": "Central Bank of Venezuela",
+          "hasLogo": true
+        }
+      ]
+    },
+    "VN": {
+      "id": "vn-state-bank-of-vietnam",
+      "countryCode": "VN",
+      "name": "State Bank of Vietnam",
+      "qid": "Q2234553",
+      "website": "https://www.sbv.gov.vn",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2234553",
+        "https://www.sbv.gov.vn"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2234553",
+          "name": "State Bank of Vietnam",
+          "hasLogo": false
+        }
+      ]
+    },
+    "VU": {
+      "id": "vu-vanuatu",
+      "countryCode": "VU",
+      "name": "Reserve Bank of Vanuatu",
+      "qid": "Q2601309",
+      "website": "http://www.rbv.gov.vu/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2601309",
+        "http://www.rbv.gov.vu/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2601309",
+          "name": "Reserve Bank of Vanuatu",
+          "hasLogo": false
+        }
+      ]
+    },
+    "WS": {
+      "id": "ws-samoa",
+      "countryCode": "WS",
+      "name": "Central Bank of Samoa",
+      "qid": "Q2632072",
+      "website": "http://www.cbs.gov.ws",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2632072",
+        "http://www.cbs.gov.ws"
+      ],
+      "candidates": [
+        {
+          "qid": "Q2632072",
+          "name": "Central Bank of Samoa",
+          "hasLogo": false
+        }
+      ]
+    },
+    "YE": {
+      "id": "ye-yemen",
+      "countryCode": "YE",
+      "name": "Central Bank of Yemen",
+      "qid": "Q1797039",
+      "website": "http://www.centralbank.gov.ye",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1797039",
+        "http://www.centralbank.gov.ye"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1797039",
+          "name": "Central Bank of Yemen",
+          "hasLogo": false
+        }
+      ]
+    },
+    "ZA": {
+      "id": "za-sarb",
+      "countryCode": "ZA",
+      "name": "South African Reserve Bank",
+      "qid": "Q912920",
+      "website": "http://www.reservebank.co.za/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q912920",
+        "http://www.reservebank.co.za/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q912920",
+          "name": "South African Reserve Bank",
+          "hasLogo": false
+        }
+      ]
+    },
+    "ZM": {
+      "id": "zm-zambia",
+      "countryCode": "ZM",
+      "name": "Bank of Zambia",
+      "qid": "Q806694",
+      "website": "http://www.boz.zm/",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q806694",
+        "http://www.boz.zm/"
+      ],
+      "candidates": [
+        {
+          "qid": "Q806694",
+          "name": "Bank of Zambia",
+          "hasLogo": false
+        }
+      ]
+    },
+    "ZW": {
+      "id": "zw-zimbabwe",
+      "countryCode": "ZW",
+      "name": "Reserve Bank of Zimbabwe",
+      "qid": "Q1025119",
+      "website": "https://www.rbz.co.zw/",
+      "commonsLogo": "Zimbabwe $25m 2008 Obverse (cropped).jpg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1025119",
+        "https://www.rbz.co.zw/",
+        "https://commons.wikimedia.org/wiki/File:Zimbabwe_%2425m_2008_Obverse_(cropped).jpg"
+      ],
+      "candidates": [
+        {
+          "qid": "Q1025119",
+          "name": "Reserve Bank of Zimbabwe",
+          "hasLogo": true
+        }
+      ]
+    }
+  }
+}

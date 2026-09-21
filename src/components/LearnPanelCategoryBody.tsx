@@ -13,6 +13,7 @@ import { TourismLogoDetails } from "./TourismLogoDetails";
 import { NewsAgencyDetails } from "./NewsAgencyDetails";
 import { NewspaperDetails } from "./NewspaperDetails";
 import { PoliticalPartyDetails } from "./PoliticalPartyDetails";
+import { CentralBankDetails } from "./CentralBankDetails";
 import {
   chooserBackLabel,
   chooserItemsForCountry,
@@ -24,12 +25,14 @@ import type { TourismLogo } from "../types/tourismLogo";
 import type { NewsAgency } from "../types/newsAgency";
 import type { Newspaper } from "../types/newspaper";
 import type { PoliticalParty } from "../data/politicalParties";
+import type { CentralBank } from "../types/centralBank";
 import { airlineById } from "../lib/commercialAirlines";
 import { broadcasterById } from "../lib/publicBroadcasters";
 import { tourismLogoById } from "../lib/tourismLogos";
 import { newsAgencyById } from "../lib/nationalNewsAgencies";
 import { newspaperById } from "../lib/nationalNewspapers";
 import { partyById } from "../lib/politicalParties";
+import { centralBankById } from "../lib/centralBanks";
 
 export type PanelCategorySection = {
   id: MultiItemGridContentType;
@@ -47,6 +50,7 @@ function resolveActiveItem(
   | { kind: "newsagency"; item: NewsAgency }
   | { kind: "newspaper"; item: Newspaper }
   | { kind: "party"; item: PoliticalParty }
+  | { kind: "centralbank"; item: CentralBank }
   | null {
   const items = chooserItemsForCountry(type, countryCode);
   const effectiveId =
@@ -88,6 +92,12 @@ function resolveActiveItem(
       const item = partyById(effectiveId);
       return item && item.country === countryCode
         ? { kind: "party", item }
+        : null;
+    }
+    case "centralbank": {
+      const item = centralBankById(effectiveId);
+      return item && item.countryCode === countryCode
+        ? { kind: "centralbank", item }
         : null;
     }
   }
@@ -221,6 +231,13 @@ export function LearnPanelCategoryBody({
       {showDetails && active?.kind === "party" && (
         <PoliticalPartyDetails
           party={active.item}
+          baseUrl={baseUrl}
+          onEnlarge={onEnlarge}
+        />
+      )}
+      {showDetails && active?.kind === "centralbank" && (
+        <CentralBankDetails
+          bank={active.item}
           baseUrl={baseUrl}
           onEnlarge={onEnlarge}
         />

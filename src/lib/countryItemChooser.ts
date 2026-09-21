@@ -19,6 +19,7 @@ import {
   partyCardName,
   partyPowerBadges,
 } from "./politicalParties";
+import { centralBanksForCountry } from "./centralBanks";
 
 /** Show modes where one country routinely contributes more than one grid card. */
 export const MULTI_ITEM_GRID_CONTENT_TYPES = [
@@ -28,6 +29,7 @@ export const MULTI_ITEM_GRID_CONTENT_TYPES = [
   "newsagency",
   "newspaper",
   "party",
+  "centralbank",
 ] as const satisfies readonly GridContentType[];
 
 export type MultiItemGridContentType =
@@ -112,6 +114,12 @@ export function chooserItemsForCountry(
         };
       });
     }
+    case "centralbank":
+      return centralBanksForCountry(countryCode).map((b) => ({
+        id: b.id,
+        name: b.name,
+        image: b.logo ?? null,
+      }));
   }
 }
 

@@ -31,6 +31,7 @@ const REQUIRED_TYPES = [
   "newsagency",
   "newspaper",
   "party",
+  "centralbank",
 ];
 
 const contentTypeSrc = fs.readFileSync(
@@ -231,4 +232,19 @@ assert.ok(
 
 console.log(
   `PASS: Show dropdown keeps ${order.length} classifications (${order.join(", ")}).`,
+);
+
+assert.ok(
+  /centralbank:\s*"Central banks"/.test(contentTypeSrc),
+  'GRID_CONTENT_TYPE_LABELS must map centralbank → "Central banks"',
+);
+assert.ok(
+  flagGridSrc.includes('effectiveContentType === "centralbank"') &&
+    learnPageSrc.includes("gridCentralBankId") &&
+    learnPageSrc.includes('panelTab === "finance"'),
+  "FlagGrid/LearnPage must wire Central banks Show → Finance tab",
+);
+assert.ok(
+  tabsSrc.includes('case "centralbank":') && tabsSrc.includes('return "finance"'),
+  "learnPanelTabs must route centralbank → Finance",
 );
