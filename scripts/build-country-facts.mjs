@@ -218,6 +218,8 @@ export type DemocracyData = {
   gpi?: DemocracyIndex;
   /** World Happiness Report life-evaluation (Cantril ladder) ranking */
   happiness?: DemocracyIndex;
+  /** Lowy Institute Global Diplomacy Index (diplomatic posts abroad) */
+  gdi?: DemocracyIndex;
 };
 
 export type CountryFacts = {

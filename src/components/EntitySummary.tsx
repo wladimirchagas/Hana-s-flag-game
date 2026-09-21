@@ -208,6 +208,19 @@ function formatHappinessIndex(idx?: {
   return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(3)} (${idx.year})`;
 }
 
+/** Lowy Global Diplomacy Index — total diplomatic posts abroad. */
+function formatGdiIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · ${idx.score} posts (${idx.year})`;
+}
+
 export function EntitySummary(props: EntitySummaryProps) {
   if (props.kind === "modern") {
     const c = props.country;
@@ -283,6 +296,9 @@ export function EntitySummary(props: EntitySummaryProps) {
 
       const whr = formatHappinessIndex(c.democracy.happiness);
       if (whr) rows.push({ label: "World Happiness Report", value: whr });
+
+      const gdi = formatGdiIndex(c.democracy.gdi);
+      if (gdi) rows.push({ label: "Global Diplomacy Index", value: gdi });
     }
 
     if (government) rows.push({ label: "Government", value: government });
