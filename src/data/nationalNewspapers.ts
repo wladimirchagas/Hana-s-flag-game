@@ -16129,7 +16129,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Sun Media Analytics 2023"
       },
       "revenueModel": "Digital display advertising, sponsored features, and video production",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mv/sun-online.jpg",
+      "logoExplainer": "Magenta Thaana 'ސަން' (Sun) in a white circle on a blue-to-red gradient — Sun Online (Maldives) brand mark.",
+      "licenceNote": "Sun Online brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://sun.mv"
       ]

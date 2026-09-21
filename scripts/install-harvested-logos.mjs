@@ -17,30 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "lb-nna",
-    dataset: "agency",
-    src: "tmp/batch77-install/lb-nna.jpg",
+    id: "mv-sun-online",
+    src: "tmp/batch78-install/mv-sun-online.jpg",
     explainer:
-      "Blue 3D 'NNA' with Lebanese cedar on an orbiting ring over a red map field — National News Agency (Lebanon) brand mark.",
+      "Magenta Thaana 'ސަން' (Sun) in a white circle on a blue-to-red gradient — Sun Online (Maldives) brand mark.",
     licence:
-      "NNA brand mark from the agency's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "ss-ssna",
-    dataset: "agency",
-    src: "tmp/batch77-install/ss-ssna.jpg",
-    explainer:
-      "Circular seal with South Sudan map and white 'SSNA' ringed by 'SOUTH SUDAN NEWS AGENCY' — SSNA brand mark.",
-    licence:
-      "SSNA brand mark from the agency's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "cm-mutations",
-    src: "tmp/batch77-install/cm-mutations.jpg",
-    explainer:
-      "White 'Mutations' on red with globe 'o' and black 'QUOTIDIEN' bar — Mutations (Cameroon) masthead.",
-    licence:
-      "Mutations masthead cropped from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Sun Online brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
