@@ -15,44 +15,52 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "sz-swazi-bridge",
-    src: "tmp/batch65-final/sz-swazi-bridge.jpg",
+    id: "ye-al-ayyam",
+    src: "tmp/batch66-install/ye-al-ayyam.png",
     explainer:
-      "Bold black 'THE BRIDGE' with ladder-cut B, blue-yellow-red vertical bar, and red tagline 'Impartial | Credible | Fearless' — Swazi Bridge masthead.",
+      "Black Arabic 'الأيام' over twin wireframe globes with white outline glow and italic 'AL-AYYAM' — Al-Ayyam (Aden) masthead.",
     licence:
-      "Swazi Bridge / The Bridge trademark bundled from the publisher's official site brand assets (swazibridge.com) for educational reference in Learn mode.",
+      "Al-Ayyam (Aden) masthead trademark bundled from the publisher's official site brand assets (alayyam.info) for educational reference in Learn mode.",
   },
   {
-    id: "tg-ici-lome",
-    src: "tmp/batch65-final/tg-ici-lome.png",
+    id: "tj-sadoi-mardum",
+    src: "tmp/batch66-install/tj-sadoi-mardum.png",
     explainer:
-      "Cartoon child mascot beside blue 'iciLome.com' and cursive tagline 'Le portail togolais par excellence!' — Ici Lomé masthead.",
+      "Parliament building illustration with Tajik flag beside bold Cyrillic 'Садои мардум' and Supreme Assembly subtitle — Sadoi Mardum masthead.",
     licence:
-      "Ici Lomé trademark bundled from the publisher's official site brand assets (icilome.com) for educational reference in Learn mode.",
+      "Sadoi Mardum masthead trademark bundled from the publisher's official site brand assets (sadoimardum.tj) for educational reference in Learn mode.",
   },
   {
-    id: "tg-togo-matin",
-    src: "tmp/batch65-final/tg-togo-matin.png",
+    id: "iq-al-sabaah",
+    src: "tmp/batch66-install/iq-al-sabaah.jpg",
     explainer:
-      "Sky-blue lowercase 'tm' ligature beside uppercase 'TOGOMATIN' wordmark — Togo Matin masthead.",
+      "Orange rising-sun icon with white 'Assabah' beside Arabic 'الصباح' on blue, tagged 'ASSABAH NEWSPAPER' — Al-Sabaah masthead.",
     licence:
-      "Togo Matin trademark bundled from the publisher's official site brand assets (togomatin.tg) for educational reference in Learn mode.",
+      "Al-Sabaah (Iraq) masthead from Wikimedia Commons File:شعار جريدة الصباح العراقية.jpg (Public domain) for educational reference in Learn mode.",
   },
   {
-    id: "tj-jumhuriyat",
-    src: "tmp/batch65-final/tj-jumhuriyat.png",
+    id: "ye-al-mashhad",
+    src: "tmp/batch66-install/ye-al-mashhad.png",
     explainer:
-      "Blue Cyrillic 'ҶУМҲУРИЯТ' between Tajik flag and state emblem, with official-publication subtitle — Jumhuriyat masthead.",
+      "White Arabic 'المشهد' beside grey 'نيوز' panel cut by a red diagonal on black — Al-Mashhad Al-Yemeni site masthead.",
     licence:
-      "Jumhuriyat trademark bundled from the publisher's official site brand assets (jumhuriyat.tj) for educational reference in Learn mode.",
+      "Al-Mashhad Al-Yemeni masthead trademark bundled from the publisher's official site brand assets (almashhad-alyemeni.com / almashhad.news CDN) for educational reference in Learn mode.",
   },
   {
-    id: "tl-jornal-independente",
-    src: "tmp/batch65-final/tl-jornal-independente.jpg",
+    id: "sl-sl-telegraph",
+    src: "tmp/batch66-install/sl-sl-telegraph.png",
     explainer:
-      "Black serif 'INDEPENDENTE' with eye icon and Tetum tagline 'Imi Nia Lian. Imi Nia Liberdade' — Jornal Independente masthead.",
+      "Navy stacked 'THE SIERRA LEONE / TELEGRAPH' with 'SIERRA LEONE NEWS' tagline on grey — Sierra Leone Telegraph masthead.",
     licence:
-      "Jornal Independente trademark bundled from the publisher's official site brand assets (independente.tl) for educational reference in Learn mode.",
+      "The Sierra Leone Telegraph masthead trademark bundled from the publisher's official site brand assets (thesierraleonetelegraph.com) for educational reference in Learn mode.",
+  },
+  {
+    id: "tn-essahafa",
+    src: "tmp/batch66-install/tn-essahafa.png",
+    explainer:
+      "Bold red Arabic 'الصحافة' over smaller 'اليوم' — Essahafa / Assahafa Al-Youm masthead.",
+    licence:
+      "Essahafa masthead trademark bundled from the publisher's official site brand assets (essahafa.tn) for educational reference in Learn mode.",
   },
 ];
 
@@ -118,34 +126,26 @@ if (MANIFEST.length === 0) {
 }
 
 let papers = readFileSync(resolve(ROOT, "src/data/nationalNewspapers.ts"), "utf8");
-let agencies = readFileSync(resolve(ROOT, "src/data/nationalNewsAgencies.ts"), "utf8");
 
 for (const entry of MANIFEST) {
-  const abs = resolve(ROOT, entry.src);
-  if (!existsSync(abs)) throw new Error(`missing src ${entry.src}`);
-  const ext = entry.src.split(".").pop().toLowerCase();
-  const [cc, ...rest] = entry.id.split("-");
-  const slug = rest.join("-");
-  const relPath = `newspaper-logos/${cc}/${slug}.${ext}`;
-  const dest = resolve(ROOT, "public", relPath);
-  mkdirSync(dirname(dest), { recursive: true });
-  copyFileSync(abs, dest);
-  console.log(`install ${entry.id} → ${relPath}`);
-
-  const fields = {
-    logo: relPath,
+  const srcPath = resolve(ROOT, entry.src);
+  if (!existsSync(srcPath)) throw new Error(`missing src: ${entry.src}`);
+  const cc = entry.id.split("-")[0];
+  const base = entry.id.replace(new RegExp(`^${cc}-`), "");
+  const ext = entry.src.split(".").pop();
+  const rel = `newspaper-logos/${cc}/${base}.${ext}`;
+  const destDir = resolve(ROOT, "public", "newspaper-logos", cc);
+  mkdirSync(destDir, { recursive: true });
+  const dest = resolve(ROOT, "public", rel);
+  copyFileSync(srcPath, dest);
+  console.log(`copied ${rel}`);
+  papers = patchEntry(papers, entry.id, {
+    logo: rel,
     explainer: entry.explainer,
     licence: entry.licence,
-  };
-  if (papers.includes(`"id": "${entry.id}"`)) {
-    papers = patchEntry(papers, entry.id, fields);
-  } else if (agencies.includes(`"id": "${entry.id}"`)) {
-    agencies = patchEntry(agencies, entry.id, fields);
-  } else {
-    throw new Error(`id not in papers or agencies: ${entry.id}`);
-  }
+  });
+  console.log(`patched ${entry.id}`);
 }
 
 writeFileSync(resolve(ROOT, "src/data/nationalNewspapers.ts"), papers);
-writeFileSync(resolve(ROOT, "src/data/nationalNewsAgencies.ts"), agencies);
-console.log("done");
+console.log("done", MANIFEST.length);
