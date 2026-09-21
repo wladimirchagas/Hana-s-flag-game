@@ -17,12 +17,28 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "gm-the-chronicle-gambia",
-    src: "tmp/batch101-install/gm-the-chronicle-gambia.png",
+    id: "bi-bonesha",
+    src: "tmp/batch102-install/bi-bonesha.jpg",
     explainer:
-      "Blackletter 'The Chronicle' masthead in a blue-framed box over the slogan 'Safeguarding Liberty through Journalism' — The Chronicle (Gambia) brand mark.",
+      "Circular RSF Bonesha FM emblem — orange arc, handshake before a microphone over red-yellow-green stripes, radio tower with frequency ring (96.8 / 102.4 / 87.7 MHz) — the Bonesha FM News digital brand mark.",
     licence:
-      "The Chronicle (Gambia) masthead from the newspaper's official site logo asset (chronicle.gm/wp-content/uploads/2018/03/2x-logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Bonesha FM logo from the station's official site (bonesha.bi/images/logo.jpg), archived via the Wayback Machine (2013 capture); trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "ss-juba-monitor",
+    src: "tmp/batch102-install/ss-juba-monitor.png",
+    explainer:
+      "White masthead banner with red 'JUBA' and blue 'MONITOR' outlined capitals, magenta 'QUALITY INFORMATION' strap between globe-Q marks, and red publisher line — The Juba Monitor brand mark.",
+    licence:
+      "The Juba Monitor masthead from the newspaper's official site (jubamonitor.com/wp-content/uploads/2016/07/front.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "gt-el-periodico",
+    src: "tmp/batch102-install/gt-el-periodico.png",
+    explainer:
+      "Black sans 'elPeriódico' wordmark with a short red bar over the first 'o' — elPeriódico (Guatemala) digital masthead.",
+    licence:
+      "elPeriódico masthead from the newspaper's own theme asset (elperiodico.com.gt/wp-content/themes/elperiodico/images/logoep.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
