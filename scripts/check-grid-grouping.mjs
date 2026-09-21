@@ -71,7 +71,38 @@ const compiledHelpers = ts.transpileModule(
 ).outputText;
 
 const moduleExports = { exports: {} };
-vm.runInNewContext(compiledHelpers, { module: moduleExports, exports: moduleExports.exports, Set });
+// GROUP_MODE_LABELS now builds index labels from DEMOCRACY_INDEX_KEYS /
+// getDemocracyIndexLabel (src/lib/democracyColors.ts). The extracted helper
+// slice does not include those imports, so supply them in the VM sandbox.
+const DEMOCRACY_INDEX_KEYS = [
+  "freedom-house",
+  "v-dem",
+  "economist",
+  "cpi",
+  "perception",
+  "rsf-press",
+  "hdi",
+  "gender-gap",
+  "gpi",
+  "happiness",
+  "soft-power",
+  "gdi",
+  "wjp-rule-of-law",
+  "imd-competitiveness",
+  "etr",
+  "digital-news",
+  "gti",
+];
+function getDemocracyIndexLabel(key) {
+  return String(key);
+}
+vm.runInNewContext(compiledHelpers, {
+  module: moduleExports,
+  exports: moduleExports.exports,
+  Set,
+  DEMOCRACY_INDEX_KEYS,
+  getDemocracyIndexLabel,
+});
 const {
   GROUP_MODE_LABELS,
   groupModeAvailableFor,
