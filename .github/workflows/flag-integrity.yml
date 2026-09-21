@@ -60,9 +60,9 @@ on:
       - "scripts/check-hdi-data.mjs"
       - "scripts/data/hdi2023Data.mjs"
       - "scripts/data/hdr25-hdi-2023.csv"
-      - "scripts/check-gggi-data.mjs"
-      - "scripts/data/gggi-2025.csv"
-      - "scripts/data/gggi2025Data.mjs"
+      - "scripts/check-gggr-data.mjs"
+      - "scripts/data/gggr-2026.csv"
+      - "scripts/data/gggr2026Data.mjs"
       - "scripts/data/democracyData.mjs"
       - "src/data/countryFacts.ts"
       - "src/lib/democracyColors.ts"
@@ -169,8 +169,8 @@ jobs:
       - name: Verify UNDP Human Development Index 2023 data matches the official extract
         run: node scripts/check-hdi-data.mjs
 
-      - name: Verify WEF Global Gender Gap Index 2025 data matches the sourced extract
-        run: node scripts/check-gggi-data.mjs
+      - name: Verify WEF Global Gender Gap Index 2026 data matches the official extract
+        run: node scripts/check-gggr-data.mjs
 
       - name: Verify every flags:check gate actually runs in CI
         run: node scripts/check-ci-coverage.mjs
