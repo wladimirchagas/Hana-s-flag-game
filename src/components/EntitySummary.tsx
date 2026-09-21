@@ -247,6 +247,19 @@ function formatImdCompetitivenessIndex(idx?: {
   return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(2)} (${idx.year})`;
 }
 
+/** ETR shows threat band + overall score (higher = greater ecological threat). */
+function formatEtrIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)} (${idx.year})`;
+}
+
 export function EntitySummary(props: EntitySummaryProps) {
   if (props.kind === "modern") {
     const c = props.country;
@@ -331,6 +344,9 @@ export function EntitySummary(props: EntitySummaryProps) {
 
       const imd = formatImdCompetitivenessIndex(c.democracy.imdCompetitiveness);
       if (imd) rows.push({ label: "IMD World Competitiveness Ranking", value: imd });
+
+      const etr = formatEtrIndex(c.democracy.etr);
+      if (etr) rows.push({ label: "Ecological Threat Index", value: etr });
     }
 
     if (government) rows.push({ label: "Government", value: government });

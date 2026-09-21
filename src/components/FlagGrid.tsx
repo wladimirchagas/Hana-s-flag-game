@@ -159,6 +159,7 @@ type GroupMode =
   | "gdi"
   | "wjp-rule-of-law"
   | "imd-competitiveness"
+  | "etr"
   | "party-ideology";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
@@ -188,6 +189,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   gdi: "Global Diplomacy Index",
   "wjp-rule-of-law": "WJP Rule of Law Index",
   "imd-competitiveness": "IMD World Competitiveness Ranking",
+  etr: "Ecological Threat Index",
   // Political-parties-view only — buckets along the sourced ideology spectrum.
   "party-ideology": "By ideology",
   // Passports-view only — buckets by the passport cover's colour family.
@@ -259,6 +261,7 @@ const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
   "gdi",
   "wjp-rule-of-law",
   "imd-competitiveness",
+  "etr",
 ]);
 
 /** Whether a grouping mode is offered for the given view. The flag-appearance
@@ -418,6 +421,16 @@ const GDI_ORDER: Record<string, number> = {
   "Below 50": 6,
   "Not rated": 7,
 };
+/** Ecological Threat Index bands — least threat first. */
+const ETR_ORDER: Record<string, number> = {
+  "Very Low": 1,
+  Low: 2,
+  Medium: 3,
+  High: 4,
+  "Very High": 5,
+  "Not rated": 6,
+};
+
 
 /** IMD World Competitiveness Ranking score bands — most competitive first. */
 const IMD_COMPETITIVENESS_ORDER: Record<string, number> = {
@@ -977,6 +990,12 @@ export function FlagGrid({
         const rating = COUNTRY_FACTS[code]?.democracy?.imdCompetitiveness?.rating ?? "Not rated";
         push(rating, e);
       }
+    } else if (groupMode === "etr") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.etr?.rating ?? "Not rated";
+        push(rating, e);
+      }
     }
 
     if (
@@ -992,7 +1011,8 @@ export function FlagGrid({
       groupMode === "happiness" ||
       groupMode === "gdi" ||
       groupMode === "wjp-rule-of-law" ||
-      groupMode === "imd-competitiveness"
+      groupMode === "imd-competitiveness" ||
+      groupMode === "etr"
     ) {
       for (const [, items] of buckets) {
         items.sort((a, b) => {
@@ -1025,7 +1045,9 @@ export function FlagGrid({
               ? factsA?.gdi
               : groupMode === "wjp-rule-of-law"
               ? factsA?.wjpRuleOfLaw
-              : factsA?.imdCompetitiveness;
+              : groupMode === "imd-competitiveness"
+              ? factsA?.imdCompetitiveness
+              : factsA?.etr;
           const indexB =
             groupMode === "freedom-house"
               ? factsB?.freedomHouse
@@ -1051,7 +1073,9 @@ export function FlagGrid({
               ? factsB?.gdi
               : groupMode === "wjp-rule-of-law"
               ? factsB?.wjpRuleOfLaw
-              : factsB?.imdCompetitiveness;
+              : groupMode === "imd-competitiveness"
+              ? factsB?.imdCompetitiveness
+              : factsB?.etr;
           const rankA = indexA?.rank ?? Infinity;
           const rankB = indexB?.rank ?? Infinity;
           if (rankA !== rankB) return rankA - rankB;
@@ -1177,6 +1201,11 @@ export function FlagGrid({
       if (groupMode === "imd-competitiveness") {
         const oa = IMD_COMPETITIVENESS_ORDER[a] ?? 99;
         const ob = IMD_COMPETITIVENESS_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "etr") {
+        const oa = ETR_ORDER[a] ?? 99;
+        const ob = ETR_ORDER[b] ?? 99;
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "party-ideology") {

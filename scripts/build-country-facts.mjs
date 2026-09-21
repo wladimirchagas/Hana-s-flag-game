@@ -224,6 +224,8 @@ export type DemocracyData = {
   wjpRuleOfLaw?: DemocracyIndex;
   /** IMD World Competitiveness Ranking (overall score) */
   imdCompetitiveness?: DemocracyIndex;
+  /** Institute for Economics & Peace Ecological Threat Index (ETR) */
+  etr?: DemocracyIndex;
 };
 
 export type CountryFacts = {

@@ -64,6 +64,9 @@ on:
       - "scripts/data/gggr-2026.csv"
       - "scripts/data/gggr2026Data.mjs"
       - "scripts/check-gpi-data.mjs"
+      - "scripts/check-etr-data.mjs"
+      - "scripts/data/etr-2024.csv"
+      - "scripts/data/etr2024Data.mjs"
       - "scripts/data/gpi-2026.csv"
       - "scripts/data/gpi2026Data.mjs"
       - "scripts/check-wjp-rule-of-law.mjs"
@@ -204,6 +207,9 @@ jobs:
 
       - name: Verify IMD World Competitiveness Ranking 2025 data matches the official extract
         run: node scripts/check-imd-wcr.mjs
+
+      - name: Verify IEP Ecological Threat Index 2024 data matches the official extract
+        run: node scripts/check-etr-data.mjs
 
       - name: Verify every flags:check gate actually runs in CI
         run: node scripts/check-ci-coverage.mjs

@@ -44,7 +44,7 @@ function scaleLinear(
 
 function formatTick(key: DemocracyIndexKey, value: number): string {
   if (key === "v-dem") return value.toFixed(1);
-  if (key === "hdi" || key === "gender-gap" || key === "gpi") return value.toFixed(2);
+  if (key === "hdi" || key === "gender-gap" || key === "gpi" || key === "etr") return value.toFixed(2);
   if (key === "economist" || key === "happiness") return value.toFixed(1);
   if (key === "perception") return value > 0 ? `+${value}` : `${value}`;
   return `${Math.round(value)}`;
