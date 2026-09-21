@@ -161,6 +161,7 @@ type GroupMode =
   | "wjp-rule-of-law"
   | "imd-competitiveness"
   | "etr"
+  | "digital-news"
   | "party-ideology";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
@@ -192,6 +193,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   "wjp-rule-of-law": "WJP Rule of Law Index",
   "imd-competitiveness": "IMD World Competitiveness Ranking",
   etr: "Ecological Threat Index",
+  "digital-news": "Digital News Report Index",
   // Political-parties-view only — buckets along the sourced ideology spectrum.
   "party-ideology": "By ideology",
   // Passports-view only — buckets by the passport cover's colour family.
@@ -265,6 +267,7 @@ const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
   "wjp-rule-of-law",
   "imd-competitiveness",
   "etr",
+  "digital-news",
 ]);
 
 /** Whether a grouping mode is offered for the given view. The flag-appearance
@@ -448,6 +451,22 @@ const ETR_ORDER: Record<string, number> = {
   "Very High": 5,
   "Not rated": 6,
 };
+
+/** Reuters Digital News Report trust % bands — highest trust first. */
+const DIGITAL_NEWS_ORDER: Record<string, number> = {
+  "90–100%": 1,
+  "80–89%": 2,
+  "70–79%": 3,
+  "60–69%": 4,
+  "50–59%": 5,
+  "40–49%": 6,
+  "30–39%": 7,
+  "20–29%": 8,
+  "10–19%": 9,
+  "0–9%": 10,
+  "Not rated": 11,
+};
+
 
 
 /** IMD World Competitiveness Ranking score bands — most competitive first. */
@@ -1020,6 +1039,12 @@ export function FlagGrid({
         const rating = COUNTRY_FACTS[code]?.democracy?.etr?.rating ?? "Not rated";
         push(rating, e);
       }
+    } else if (groupMode === "digital-news") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.digitalNews?.rating ?? "Not rated";
+        push(rating, e);
+      }
     }
 
     if (
@@ -1037,7 +1062,8 @@ export function FlagGrid({
       groupMode === "gdi" ||
       groupMode === "wjp-rule-of-law" ||
       groupMode === "imd-competitiveness" ||
-      groupMode === "etr"
+      groupMode === "etr" ||
+      groupMode === "digital-news"
     ) {
       for (const [, items] of buckets) {
         items.sort((a, b) => {
@@ -1074,7 +1100,9 @@ export function FlagGrid({
               ? factsA?.wjpRuleOfLaw
               : groupMode === "imd-competitiveness"
               ? factsA?.imdCompetitiveness
-              : factsA?.etr;
+              : groupMode === "etr"
+              ? factsA?.etr
+              : factsA?.digitalNews;
           const indexB =
             groupMode === "freedom-house"
               ? factsB?.freedomHouse
@@ -1104,7 +1132,9 @@ export function FlagGrid({
               ? factsB?.wjpRuleOfLaw
               : groupMode === "imd-competitiveness"
               ? factsB?.imdCompetitiveness
-              : factsB?.etr;
+              : groupMode === "etr"
+              ? factsB?.etr
+              : factsB?.digitalNews;
           const rankA = indexA?.rank ?? Infinity;
           const rankB = indexB?.rank ?? Infinity;
           if (rankA !== rankB) return rankA - rankB;
@@ -1240,6 +1270,11 @@ export function FlagGrid({
       if (groupMode === "etr") {
         const oa = ETR_ORDER[a] ?? 99;
         const ob = ETR_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "digital-news") {
+        const oa = DIGITAL_NEWS_ORDER[a] ?? 99;
+        const ob = DIGITAL_NEWS_ORDER[b] ?? 99;
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "party-ideology") {
