@@ -2962,13 +2962,13 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Instituto Verificador de Comunicação (IVC) 2024"
       },
       "revenueModel": "Digital subscriptions (Globo), print circulation, and multimedia advertising",
-      "logo": "newspaper-logos/br/o-globo.svg",
-      "logoExplainer": "Bright blue geometric sans-serif O GLOBO wordmark on a transparent field — the publisher's July 2025 centenary masthead (Commons File:O Globo 2025.svg), readable on both light and dark UI plates without a solid colour bar.",
-      "licenceNote": "O Globo masthead trademark bundled from Wikimedia Commons (File:O Globo 2025.svg, public domain textlogo) for educational reference in Learn mode.",
+      "logo": "newspaper-logos/br/o-globo.png",
+      "logoExplainer": "White geometric sans-serif O GLOBO wordmark on a solid #1e4c9a blue field — the publisher's current site header mark (logo-oglobo-azul.svg from oglobo.globo.com), rasterised edge-to-edge so it stays readable on light and dark Learn-mode plates without a white letterbox.",
+      "licenceNote": "O Globo masthead trademark bundled from the publisher's official site brand asset (s3.glbimg.com public_assets/logo-oglobo-azul.svg) for educational reference in Learn mode.",
       "sources": [
         "https://oglobo.globo.com",
         "https://en.wikipedia.org/wiki/O_Globo",
-        "https://commons.wikimedia.org/wiki/File:O_Globo_2025.svg"
+        "https://s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/public_assets/logo-oglobo-azul.svg"
       ]
     },
     {
