@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "ht-alterpresse",
-    src: "tmp/batch83-install/ht-alterpresse.png",
+    id: "ps-al-hayat-al-jadida",
+    src: "tmp/batch84-install/ps-al-hayat-al-jadida.png",
     explainer:
-      "Green serif 'Alter' and 'resse' flanking a large italic blue gradient 'P' on black — AlterPresse masthead without anniversary overlays.",
+      "Large red Arabic 'الحياة' wordmark with smaller grey 'الجديدة' and a red bar — Al-Hayat Al-Jadida masthead.",
     licence:
-      "AlterPresse masthead from the publisher's official site brand assets (alterpresse.org /img/Logo_alterpresse.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Al-Hayat Al-Jadida masthead from the publisher's official site brand assets (alhayat-j.com/images/logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
