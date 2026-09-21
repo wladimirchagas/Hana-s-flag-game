@@ -7400,6 +7400,9 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
+      "frequency": "Daily newspaper",
+      "format": "Broadsheet & digital",
+      "revenueModel": "Advertising, subscriptions, and/or print sales",
       "id": "et-reporter-amharic",
       "countryCode": "ET",
       "name": "Addis Zemen",
