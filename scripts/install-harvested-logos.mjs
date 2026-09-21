@@ -17,20 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "lr-the-inquirer",
-    src: "tmp/batch100-install/lr-the-inquirer.png",
+    id: "gm-the-chronicle-gambia",
+    src: "tmp/batch101-install/gm-the-chronicle-gambia.png",
     explainer:
-      "Vertical black masthead with white italic 'The' over stacked bold white 'INQUIRER' — The Inquirer (Liberia) brand mark.",
+      "Blackletter 'The Chronicle' masthead in a blue-framed box over the slogan 'Safeguarding Liberty through Journalism' — The Chronicle (Gambia) brand mark.",
     licence:
-      "The Inquirer masthead from the newspaper's official site logo asset (inquirernewspaper.com/wp-content/uploads/2019/07/inquirer-logo1.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "vc-news784",
-    src: "tmp/batch100-install/vc-news784.png",
-    explainer:
-      "Blue-yellow-green signal-tower 'N' with SVG map beside grey 'NEWS' and flag-coloured '784', tagline \"St. Vincent's #1 News Source\" — News784 brand mark.",
-    licence:
-      "News784 brand mark from the outlet's official site logo asset (news784.com/wp-content/uploads/2018/07/logo_580x150.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "The Chronicle (Gambia) masthead from the newspaper's official site logo asset (chronicle.gm/wp-content/uploads/2018/03/2x-logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
