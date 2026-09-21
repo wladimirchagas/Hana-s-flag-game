@@ -17,13 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "lr-lina",
-    dataset: "agency",
-    src: "tmp/batch108-install/lr-lina.png",
+    id: "ws-newsline-samoa",
+    src: "tmp/batch109-install/ws-newsline-samoa.jpg",
     explainer:
-      "Dark-blue serif 'LINA' over a red bar reading 'LIBERIA NEWS AGENCY', with a red wireframe globe and orbital arcs — Liberia News Agency site masthead.",
+      "Red uppercase 'NEWSLINE' stacked over navy 'SAMOA' on white — Newsline Samoa site icon from newslinesamoa.com.",
     licence:
-      "LINA logo from the agency's official site (lina.micat.gov.lr/wp-content/uploads/2026/04/cropped-lin-logo-1536x654.png); trademark bundled for educational reference in Learn mode.",
+      "Newsline Samoa logo from the newspaper's official site (newslinesamoa.com/wp-content/uploads/2025/09/7fbffa1b-8a50-4dd9-b99d-7e4fa0148c78.jpg); trademark bundled for educational reference in Learn mode.",
   },
 ];
 
