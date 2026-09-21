@@ -10,7 +10,8 @@ export type DemocracyIndexKey =
   | "economist"
   | "cpi"
   | "perception"
-  | "rsf-press";
+  | "rsf-press"
+  | "gpi";
 
 export type DemocracyMapMode = DemocracyIndexKey | null;
 
@@ -24,6 +25,7 @@ export const DEMOCRACY_INDEX_KEYS: readonly DemocracyIndexKey[] = [
   "cpi",
   "perception",
   "rsf-press",
+  "gpi",
 ] as const;
 
 export type DemocracyAxisBand = {
@@ -99,6 +101,24 @@ export const RSF_PRESS_MAP_COLORS: Record<string, string> = {
   "Very serious": "#b71c1c",
 };
 
+/** Global Peace Index State of Peace bands (IEP map legend). Lower score =
+ *  more peaceful. Colours follow the official Vision of Humanity / IEP map. */
+export const GPI_MAP_COLORS: Record<string, string> = {
+  "Very High": "#00847f",
+  High: "#54c0a9",
+  Medium: "#fae28a",
+  Low: "#f9ab68",
+  "Very Low": "#ed1b24",
+};
+
+export const GPI_BAND_ORDER: readonly string[] = [
+  "Very High",
+  "High",
+  "Medium",
+  "Low",
+  "Very Low",
+];
+
 /** Democracy Perception Index 2026 tiers (±5 / ±15 on Index Score). */
 export const PERCEPTION_MAP_COLORS: Record<string, string> = {
   "Very Positive": "#1b5e20",
@@ -123,6 +143,7 @@ export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
   if (mode === "cpi") return "Corruption Perceptions Index";
   if (mode === "perception") return "Democracy Perception Index";
   if (mode === "rsf-press") return "RSF Press Freedom";
+  if (mode === "gpi") return "Global Peace Index";
   return "";
 }
 
@@ -171,6 +192,12 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
       { label: "Very serious", color: RSF_PRESS_MAP_COLORS["Very serious"] },
     ];
   }
+  if (mode === "gpi") {
+    return GPI_BAND_ORDER.map((label) => ({
+      label,
+      color: GPI_MAP_COLORS[label],
+    }));
+  }
   return [];
 }
 
@@ -197,9 +224,12 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
     } else if (mode === "perception") {
       rating = demo.perception?.rating;
       colorMap = PERCEPTION_MAP_COLORS;
-    } else {
+    } else if (mode === "rsf-press") {
       rating = demo.rsfPress?.rating;
       colorMap = RSF_PRESS_MAP_COLORS;
+    } else {
+      rating = demo.gpi?.rating;
+      colorMap = GPI_MAP_COLORS;
     }
     if (rating && colorMap[rating]) {
       overlay.set(code, colorMap[rating]);
@@ -215,7 +245,8 @@ export function getDemocracyIndexLabel(key: DemocracyIndexKey): string {
   if (key === "economist") return "The Economist Index";
   if (key === "cpi") return "Corruption Perceptions Index";
   if (key === "perception") return "Democracy Perception Index";
-  return "RSF Press Freedom Index";
+  if (key === "rsf-press") return "RSF Press Freedom Index";
+  return "Global Peace Index";
 }
 
 /** Pull the index row for a country from bundled facts. */
@@ -229,7 +260,8 @@ export function getDemocracyIndexFor(
   if (key === "economist") return democracy.economist;
   if (key === "cpi") return democracy.cpi;
   if (key === "perception") return democracy.perception;
-  return democracy.rsfPress;
+  if (key === "rsf-press") return democracy.rsfPress;
+  return democracy.gpi;
 }
 
 /**
@@ -241,6 +273,8 @@ export function getDemocracyAxisDomain(key: DemocracyIndexKey): { min: number; m
   if (key === "v-dem") return { min: 0, max: 1 };
   if (key === "economist") return { min: 0, max: 10 };
   if (key === "perception") return { min: -40, max: 40 };
+  // GPI overall score — 1 (most peaceful) to 5 (least peaceful).
+  if (key === "gpi") return { min: 1, max: 5 };
   // Freedom House, CPI, RSF — 0–100 scores.
   return { min: 0, max: 100 };
 }
@@ -248,10 +282,11 @@ export function getDemocracyAxisDomain(key: DemocracyIndexKey): { min: number; m
 /**
  * Classification bands drawn as labelled regions on a chart axis.
  * Boundaries follow each index's published methodology (EIU score cut-offs,
- * TI CPI map bands, DPI ±5/±15 tiers, RSF score bands, FH Free / Partly Free /
- * Not Free thresholds). V-Dem regimes are not a pure EDI cut, so bands use
- * the approximate EDI ranges that separate the four regime types in the
- * bundled data — labels describe the classification, scores place the point.
+ * TI CPI map bands, DPI ±5/±15 tiers, RSF score bands, GPI State of Peace
+ * bands, FH Free / Partly Free / Not Free thresholds). V-Dem regimes are not
+ * a pure EDI cut, so bands use the approximate EDI ranges that separate the
+ * four regime types in the bundled data — labels describe the classification,
+ * scores place the point.
  */
 export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand[] {
   if (key === "freedom-house") {
@@ -292,13 +327,22 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
       { label: "Very Positive", min: 15, max: 40 },
     ];
   }
-  // rsf-press
+  if (key === "rsf-press") {
+    return [
+      { label: "Very serious", min: 0, max: 40 },
+      { label: "Difficult", min: 40, max: 55 },
+      { label: "Problematic", min: 55, max: 70 },
+      { label: "Satisfactory", min: 70, max: 85 },
+      { label: "Good", min: 85, max: 100 },
+    ];
+  }
+  // gpi — IEP 2026 State of Peace cutoffs (lower score = more peaceful).
   return [
-    { label: "Very serious", min: 0, max: 40 },
-    { label: "Difficult", min: 40, max: 55 },
-    { label: "Problematic", min: 55, max: 70 },
-    { label: "Satisfactory", min: 70, max: 85 },
-    { label: "Good", min: 85, max: 100 },
+    { label: "Very High", min: 1, max: 1.435 },
+    { label: "High", min: 1.435, max: 1.903 },
+    { label: "Medium", min: 1.903, max: 2.333 },
+    { label: "Low", min: 2.333, max: 2.882 },
+    { label: "Very Low", min: 2.882, max: 5 },
   ];
 }
 
@@ -317,6 +361,7 @@ export function formatDemocracyAxisValue(
   if (key === "v-dem") return `${idx.rating} · ${score.toFixed(2)}`;
   if (key === "economist") return `${idx.rating} · ${score.toFixed(2)}`;
   if (key === "rsf-press") return `${idx.rating} · ${score.toFixed(1)}`;
+  if (key === "gpi") return `${idx.rating} · ${score.toFixed(3)}`;
   return `${idx.rating} · ${score}`;
 }
 

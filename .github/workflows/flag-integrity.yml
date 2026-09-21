@@ -57,6 +57,9 @@ on:
       - "scripts/check-quiz-symbol-decks.mjs"
       - "scripts/check-rsf-press-freedom.mjs"
       - "scripts/data/rsf-press-freedom-2026.csv"
+      - "scripts/check-gpi-data.mjs"
+      - "scripts/data/gpi-2026.csv"
+      - "scripts/data/gpi2026Data.mjs"
       - "scripts/data/democracyData.mjs"
       - "src/data/countryFacts.ts"
       - "src/lib/democracyColors.ts"
@@ -159,6 +162,9 @@ jobs:
 
       - name: Verify RSF World Press Freedom Index 2026 data matches the official CSV
         run: node scripts/check-rsf-press-freedom.mjs
+
+      - name: Verify Global Peace Index 2026 data matches the official extract
+        run: node scripts/check-gpi-data.mjs
 
       - name: Verify every flags:check gate actually runs in CI
         run: node scripts/check-ci-coverage.mjs
