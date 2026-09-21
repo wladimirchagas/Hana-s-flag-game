@@ -17,12 +17,13 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "td-le-progres",
-    src: "tmp/batch115-install/td-le-progres.png",
+    id: "mg-taratra",
+    dataset: "agency",
+    src: "tmp/batch116-install/mg-taratra.png",
     explainer:
-      "Red italic serif 'Le Progrès' above black 'Quotidien', with a curved underline dipping under the 'g' — official masthead from the publisher's leprogrestd.com brand assets.",
+      "Red stylized 'D' with play-button counter beside white slab-serif 'DEPECHE', over green 'INFORMATIVE' and white 'TARATRA' on a dark field — official Dépêche Informative Taratra (state news agency, formerly ANTA) masthead from depeche-taratra.mg.",
     licence:
-      "Le Progrès (Chad) trademark bundled from the publisher's official site brand assets (leprogrestd.com/logo.png) for educational reference in Learn mode.",
+      "Dépêche Informative Taratra (Madagascar state news agency) trademark bundled from the agency's official site brand assets (depeche-taratra.mg masthead, archived via the Wayback Machine) for educational reference in Learn mode.",
   },
 ];
 
