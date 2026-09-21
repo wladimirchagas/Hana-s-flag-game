@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "zw-the-zimbabwe-independent",
-    src: "tmp/batch88-install/zw-the-zimbabwe-independent.png",
+    id: "tj-farazh",
+    src: "tmp/batch89-install/tj-farazh.jpg",
     explainer:
-      "Maroon newspaper-icon mark beside black serif 'Zimbabwe Independent' with grey uppercase tagline 'AUTHORITATIVE · INDEPENDENT · ZIMBABWEAN' — the site masthead as shown on zimbabwe-independent.com.",
+      "White Cyrillic 'Фарах' (Faraj) in a bold serif on a solid sky-blue field with a double white underline — Farazh/Faraj newspaper masthead from the outlet's Facebook brand mark.",
     licence:
-      "Zimbabwe Independent masthead cropped from a publisher-hosted site screenshot in the outlet's own WordPress media library (zimbabwe-independent.com); trademark bundled for educational reference in Learn mode.",
+      "Farazh (Faraj / Фарах) masthead from the newspaper's official Facebook page brand assets; trademark bundled for educational reference in Learn mode.",
   },
 ];
 

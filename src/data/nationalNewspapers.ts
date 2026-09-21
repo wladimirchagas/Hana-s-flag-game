@@ -23170,7 +23170,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tajik National Association of Independent Mass Media (NANSMIT)"
       },
       "revenueModel": "Print sales, classifieds, and independent civil society research grants",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tj/farazh.jpg",
+      "logoExplainer": "White Cyrillic 'Фарах' (Faraj) in a bold serif on a solid sky-blue field with a double white underline — Farazh/Faraj newspaper masthead from the outlet's Facebook brand mark.",
+      "licenceNote": "Farazh (Faraj / Фарах) masthead from the newspaper's official Facebook page brand assets; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://faraj.tj",
         "https://tg.wikipedia.org/wiki/%D0%A4%D0%B0%D1%80%D0%B0%D0%B6_(%D2%B3%D0%B0%D1%84%D1%82%D0%B0%D0%BD%D0%BE%D0%BC%D0%B0)"
