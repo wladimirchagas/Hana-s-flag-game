@@ -1895,8 +1895,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "readership": {"metric":"Primary wire service providing news dispatches to all Lebanese TV, radio, and print outlets","source":"Ministry of Information Lebanon 2024"},
       "annualPublicFunding": {"total":"Ministry of Information budgetary subvention","perCapita":"State funded"},
       "revenueModel": "Parliamentary state budget appropriation",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": ["https://nna-leb.gov.lb","https://en.wikipedia.org/wiki/National_News_Agency_(Lebanon)"],
+      "logo": "newspaper-logos/lb/nna.jpg",
+      "logoExplainer": "Blue 3D 'NNA' with Lebanese cedar on an orbiting ring over a red map field — National News Agency (Lebanon) brand mark.",
+      "licenceNote": "NNA brand mark from the agency's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
+      "sources": ["https://nna-leb.gov.lb","https://en.wikipedia.org/wiki/National_News_Agency_(Lebanon)"]
     }
   ],
   "LC": [
@@ -3082,8 +3085,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Independent news wire and commentary platform founded in 2010 prior to the referendum for self-determination; provides in-depth commentary on governance, transitional security arrangements, and socio-economic developments",
       "readership": {"metric":"Over 250,000 monthly pageviews and broad circulation among South Sudanese scholars, civil society organizations, and international diplomats","source":"SSNA Editorial Web Analytics"},
       "revenueModel": "Digital advertising, independent contributions, and content licensing",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": ["https://southsudannewsagency.org","https://en.wikipedia.org/wiki/Media_of_South_Sudan"],
+      "logo": "newspaper-logos/ss/ssna.jpg",
+      "logoExplainer": "Circular seal with South Sudan map and white 'SSNA' ringed by 'SOUTH SUDAN NEWS AGENCY' — SSNA brand mark.",
+      "licenceNote": "SSNA brand mark from the agency's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
+      "sources": ["https://southsudannewsagency.org","https://en.wikipedia.org/wiki/Media_of_South_Sudan"]
     }
   ],
   "ST": [

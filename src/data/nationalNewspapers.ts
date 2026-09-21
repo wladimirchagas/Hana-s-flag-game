@@ -4694,7 +4694,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "South Media Corporation 2023"
       },
       "revenueModel": "Print sales and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cm/mutations.jpg",
+      "logoExplainer": "White 'Mutations' on red with globe 'o' and black 'QUOTIDIEN' bar — Mutations (Cameroon) masthead.",
+      "licenceNote": "Mutations masthead cropped from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.mutations-online.com",
         "https://fr.wikipedia.org/wiki/Mutations_(journal)"
