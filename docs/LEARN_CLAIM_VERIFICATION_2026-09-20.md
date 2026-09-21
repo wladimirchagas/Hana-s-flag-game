@@ -290,3 +290,43 @@ Methodology on report page 57 describes 94,146 respondents and fieldwork from 19
 ### RSF verified scope and date interpretation
 
 The [primary 2026 CSV](https://rsf.org/sites/default/files/import_classement/2026.csv) supports all 175 bundled records. Its other units are CSS (OECS group), CTU, XKX, HKG and TWN. A regional group score must not be invented into separate member-country scores. Under the [RSF methodology](https://rsf.org/en/methodology-used-compiling-world-press-freedom-index-2026), the publication chiefly assesses 2025, with significant pre-publication events allowed. Store publication year separately from assessment period.
+
+
+## Continuation checkpoint — 21 September 2026
+
+The next application snapshot is **11e30bb569b2e599a82ea5d51998a9998ed78acb**, 44 commits after 7dda29d (including audit-document commits). Its comparison lists 164 changed paths, including further logos and eleven additional index datasets. This newer delta is being fetched and is **not yet fully audited**. Findings below are pinned to 7dda29d unless stated otherwise. The rough universal-work estimate remains about **10% complete / 90% remaining**, not a measured percentage of atomic claims.
+
+The 7dda29d image delta is now recorded in [the 164-image / 163-record ledger](audit/MEDIA_7DDA_CLAIM_VERIFICATION_2026-09-21.json). All files were hash-checked, decoded and visually screened, and every caption read. Only specifically identified primary comparisons constitute identity verification; the other 159 identity verdicts remain unverified. This ledger also enumerates the fields of all 39 newly added agencies, preserving their unresolved status rather than treating the entire record as verified.
+
+Newspapers at 7dda29d total 937 records, 729 with images; news agencies total 166 records, 158 with images. All **30 previously confirmed wrong-entity images (F60/F64) remain referenced with unchanged assets**. The extra UNIAN PNG has no reference in these current registries; the SVG is used. Four misleading old filenames refer to renamed records (Agora, Portal Analitika, A Verdade and Cambodianess / Thmey Thmey); filename mismatch alone is not an image error.
+
+### F72 — Europa Press displays its PortalTIC section mark
+
+**Confirmed, medium.** `es-europa-press` uses an SVG visibly reading PortalTIC while its caption calls it the Europa Press wordmark. The [publisher identifies PortalTIC](https://www.europapress.es/portaltic/) as its technology portal. This is the wrong asset role within the publisher, not evidence of an unrelated organisation. Use the agency wordmark and preserve the exact asset URL. The newly entered founding year 1953 still requires primary-source verification and is not certified by this image check.
+
+### F73 — SMNA founding date and RTV relationship are unsupported
+
+**Confirmed date conflation; identity relationship unsupported, high.** `sm-smna` has `founded: 2016`, an RTV image and a licence note asserting SMNA is an RTV agency arm. The cited [Italian press release, 6 June 2016](https://www.sanmarinortv.sm/news/comunicati-c9/san-marino-news-agency-soddisfatta-iscrizione-testate-accreditate-a161705) describes registration notified in May 2016, effective 21 December 2015, after approximately ten years of operation. It does not establish that organisational relationship. Do not infer ownership from the website hosting a press release or replace the date with an exact 2006 without evidence.
+
+The repository itself is contradictory: `scripts/install-new-agency-logos.mjs` says the RTV mark was rejected as the wrong organisation and writes an SMNA no-image explanation, while the shipped registry supplies that mark and the unsupported relationship. Reconcile the generator and dataset only after identifying the actual agency's artwork.
+
+### F74 — RADOR's present newsroom inherits an unqualified historical date
+
+**Confirmed, medium.** `ro-rador` says founded 1921. [RADOR's Romanian institutional page](https://www.rador.ro/about/) expressly dates the present Radio România newsroom to **1990**. Store predecessor/history dates separately from the present organisation's establishment. Similarly, epd's 1910 is supported as the founding of its predecessor press association; its [own German account](https://www.epd.de/) says agency operations began after World War I. Do not silently equate those events.
+
+### F75 — New agency defaults still create unsupported facts
+
+**Confirmed implementation risk, medium.** `scripts/patch-news-agency-coverage.mjs` injects a 24/7 frequency, national multimedia format and subscription/syndication revenue model through `agency(partial)`. All 39 added records carry the default revenue wording. These values are not independently established by a homepage URL. Require evidence for each field or leave it absent. A field-level pending inventory is included in the new media ledger.
+
+### F76 — Primary-source validation can fail while the checker reports success
+
+**Reproduced, high for audit assurance.** Running `scripts/check-cpi-data.mjs` with the downloaded official workbook in the isolated 7dda29d mirror failed on missing Python `pycountry`; the catch block printed “xlsx cross-check skipped,” followed by “CPI validation OK,” and returned exit code 0. This demonstrates a fail-open path, not an incorrect CPI score (all scores independently matched in this audit). A requested primary-source comparison must fail or report a distinct inconclusive result if dependencies, parsing or source retrieval fail.
+
+The DPI checker independently demonstrates a related limit: it enforces app-derived ranks, the unresolved CD mapping and Panama's disputed category as hard-coded expected values. Such tests prove internal consistency, not publisher agreement. Keep integrity checks, but add separately pinned source comparisons and provenance-aware expectations.
+
+### Additional visual results
+
+- iKon.mn: publisher CSS points to the matching iKon / “next horizon” design. The app crops the right-hand tagline into fragments. Correct the crop; do not classify it as a wrong-company logo. Primary artwork: [publisher SVG](https://content.ikon.mn/raw/2024/6/14/16763/ikon-logo.svg).
+- Net Press: the [publisher site](https://www.netpress.online/) supplies the unusual “rugamba.Net Press” header and identifies the agency in its adjacent banner. The apparent identity concern is cleared.
+- MINA, Mediafax and La Estrella use commemorative variants. Captions acknowledge the anniversary text; add validity/variant dates before presenting them as timeless branding.
+- Soir Info: its citation and claimed asset-origin domains differ; identity remains unresolved after unsuccessful source retrieval. Retrieval failure is not evidence that the logo is false.
