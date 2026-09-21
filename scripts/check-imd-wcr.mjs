@@ -273,8 +273,8 @@ if (expected.size !== 66) {
 
 const uiFiles = [
   ["src/lib/democracyColors.ts", "imd-competitiveness"],
-  ["src/components/DemocracyMapControl.tsx", "DEMOCRACY_INDEX_KEYS"],
-  ["src/components/DemocracyIndexChart.tsx", "DEMOCRACY_INDEX_KEYS"],
+  ["src/components/DemocracyMapControl.tsx", "getDemocracyIndexMenuGroups"],
+  ["src/components/DemocracyIndexChart.tsx", "getDemocracyIndexMenuGroups"],
   ["src/components/EntitySummary.tsx", "imdCompetitiveness"],
   ["src/components/FlagGrid.tsx", '"imd-competitiveness"'],
 ];

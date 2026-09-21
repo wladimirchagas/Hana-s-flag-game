@@ -345,12 +345,15 @@ if (!colorsSrc.includes('"happiness"')) {
   fail('democracyColors.ts must list "happiness" in DEMOCRACY_INDEX_KEYS');
 }
 const gridSrc = readFileSync(resolve(__dirname, "../src/components/FlagGrid.tsx"), "utf8");
-if (!gridSrc.includes('"happiness"') || !gridSrc.includes("World Happiness Report")) {
-  fail("FlagGrid.tsx must offer World Happiness Report group mode");
+if (!gridSrc.includes('"happiness"') || !gridSrc.includes("getDemocracyIndexLabel")) {
+  fail('FlagGrid.tsx must offer happiness group mode via getDemocracyIndexLabel()');
 }
 const summarySrc = readFileSync(resolve(__dirname, "../src/components/EntitySummary.tsx"), "utf8");
-if (!summarySrc.includes("World Happiness Report") || !summarySrc.includes("happiness")) {
-  fail("EntitySummary.tsx must render World Happiness Report");
+if (
+  !summarySrc.includes('getDemocracyIndexLabel("happiness")') ||
+  !summarySrc.includes("happiness")
+) {
+  fail('EntitySummary.tsx must render happiness via getDemocracyIndexLabel("happiness")');
 }
 
 if (failures) {

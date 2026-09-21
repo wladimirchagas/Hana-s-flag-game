@@ -4,6 +4,7 @@ import { NATIONAL_REFERENCE_POPULATION } from "../data/subdivisionPopulation";
 import { COUNTRY_ENDONYMS } from "../data/countryEndonyms";
 import { membershipsForCountry } from "../data/countryBlocks";
 import type { Country } from "../api/countries";
+import { getDemocracyIndexLabel } from "../lib/democracyColors";
 
 /**
  * Structured "fact-sheet" view of an entity for the Learn-mode panel.
@@ -132,7 +133,7 @@ function formatRankChange(rc?: number): string {
 function formatDemocracyIndex(idx?: { year: number; rating: string; rank: number; rankChange?: number }): string | null {
   if (!idx) return null;
   const changeStr = formatRankChange(idx.rankChange);
-  return `Rank ${idx.rank}${changeStr} · ${idx.rating} (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating}`;
 }
 
 /** CPI shows the 0–100 score (the index’s primary figure), not the map score-band. */
@@ -145,7 +146,7 @@ function formatCpiIndex(idx?: {
 }): string | null {
   if (!idx || typeof idx.score !== "number") return null;
   const changeStr = formatRankChange(idx.rankChange);
-  return `Rank ${idx.rank}${changeStr} · Score ${idx.score} (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score}`;
 }
 
 /** DPI shows tier + Index Score (net % positive − % negative). */
@@ -159,7 +160,7 @@ function formatPerceptionIndex(idx?: {
   if (!idx || typeof idx.score !== "number") return null;
   const changeStr = formatRankChange(idx.rankChange);
   const scoreStr = idx.score > 0 ? `+${idx.score}` : `${idx.score}`;
-  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${scoreStr} (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${scoreStr}`;
 }
 
 /** WJP shows the 0–1 overall score (the index’s primary figure), not the map band. */
@@ -172,7 +173,7 @@ function formatWjpIndex(idx?: {
 }): string | null {
   if (!idx || typeof idx.score !== "number") return null;
   const changeStr = formatRankChange(idx.rankChange);
-  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(2)} (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(2)}`;
 }
 
 /** HDI shows the 0–1 score (the index’s primary figure) plus the UNDP category. */
@@ -185,7 +186,7 @@ function formatHdiIndex(idx?: {
 }): string | null {
   if (!idx || typeof idx.score !== "number") return null;
   const changeStr = formatRankChange(idx.rankChange);
-  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)} (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)}`;
 }
 
 /** WEF Global Gender Gap Index — published 0–1 parity score. */
@@ -198,7 +199,7 @@ function formatGenderGapIndex(idx?: {
 }): string | null {
   if (!idx || typeof idx.score !== "number") return null;
   const changeStr = formatRankChange(idx.rankChange);
-  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(3)} (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(3)}`;
 }
 
 /** GPI shows State of Peace band + overall score (lower = more peaceful). */
@@ -211,7 +212,7 @@ function formatGpiIndex(idx?: {
 }): string | null {
   if (!idx || typeof idx.score !== "number") return null;
   const changeStr = formatRankChange(idx.rankChange);
-  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)} (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)}`;
 }
 
 
@@ -225,7 +226,7 @@ function formatHappinessIndex(idx?: {
 }): string | null {
   if (!idx || typeof idx.score !== "number") return null;
   const changeStr = formatRankChange(idx.rankChange);
-  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(3)} (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(3)}`;
 }
 
 /** Brand Finance Global Soft Power Index — score out of 100. */
@@ -238,7 +239,7 @@ function formatSoftPowerIndex(idx?: {
 }): string | null {
   if (!idx || typeof idx.score !== "number") return null;
   const changeStr = formatRankChange(idx.rankChange);
-  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(1)} (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(1)}`;
 }
 
 /** Lowy Global Diplomacy Index — total diplomatic posts abroad. */
@@ -251,7 +252,7 @@ function formatGdiIndex(idx?: {
 }): string | null {
   if (!idx || typeof idx.score !== "number") return null;
   const changeStr = formatRankChange(idx.rankChange);
-  return `Rank ${idx.rank}${changeStr} · ${idx.score} posts (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · ${idx.score} posts`;
 }
 
 /** IMD World Competitiveness Ranking — 0–100 overall score. */
@@ -264,7 +265,7 @@ function formatImdCompetitivenessIndex(idx?: {
 }): string | null {
   if (!idx || typeof idx.score !== "number") return null;
   const changeStr = formatRankChange(idx.rankChange);
-  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(2)} (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(2)}`;
 }
 
 /** ETR shows threat band + overall score (higher = greater ecological threat). */
@@ -278,7 +279,7 @@ function formatDigitalNewsIndex(idx?: {
 }): string | null {
   if (!idx || typeof idx.score !== "number") return null;
   const changeStr = formatRankChange(idx.rankChange);
-  return `Rank ${idx.rank}${changeStr} · ${idx.score}% trust (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · ${idx.score}% trust`;
 }
 
 
@@ -292,7 +293,7 @@ function formatGtiIndex(idx?: {
 }): string | null {
   if (!idx || typeof idx.score !== "number") return null;
   const changeStr = formatRankChange(idx.rankChange);
-  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)} (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)}`;
 }
 
 function formatEtrIndex(idx?: {
@@ -304,7 +305,7 @@ function formatEtrIndex(idx?: {
 }): string | null {
   if (!idx || typeof idx.score !== "number") return null;
   const changeStr = formatRankChange(idx.rankChange);
-  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)} (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)}`;
 }
 
 function buildFactsRows(c: Country): { label: string; value: React.ReactNode }[] {
@@ -392,55 +393,55 @@ function buildIndicesRows(c: Country): { label: string; value: React.ReactNode }
   if (!c.democracy) return rows;
 
   const fh = formatDemocracyIndex(c.democracy.freedomHouse);
-  if (fh) rows.push({ label: "Freedom House", value: fh });
+  if (fh) rows.push({ label: getDemocracyIndexLabel("freedom-house"), value: fh });
 
   const vdem = formatDemocracyIndex(c.democracy.vDem);
-  if (vdem) rows.push({ label: "V-Dem", value: vdem });
+  if (vdem) rows.push({ label: getDemocracyIndexLabel("v-dem"), value: vdem });
 
   const econ = formatDemocracyIndex(c.democracy.economist);
-  if (econ) rows.push({ label: "The Economist", value: econ });
+  if (econ) rows.push({ label: getDemocracyIndexLabel("economist"), value: econ });
 
   const cpi = formatCpiIndex(c.democracy.cpi);
-  if (cpi) rows.push({ label: "Corruption Perceptions Index", value: cpi });
+  if (cpi) rows.push({ label: getDemocracyIndexLabel("cpi"), value: cpi });
 
   const dpi = formatPerceptionIndex(c.democracy.perception);
-  if (dpi) rows.push({ label: "Democracy Perception Index", value: dpi });
+  if (dpi) rows.push({ label: getDemocracyIndexLabel("perception"), value: dpi });
 
   const rsf = formatDemocracyIndex(c.democracy.rsfPress);
-  if (rsf) rows.push({ label: "RSF Press Freedom", value: rsf });
+  if (rsf) rows.push({ label: getDemocracyIndexLabel("rsf-press"), value: rsf });
 
   const wjp = formatWjpIndex(c.democracy.wjpRuleOfLaw);
-  if (wjp) rows.push({ label: "WJP Rule of Law Index", value: wjp });
+  if (wjp) rows.push({ label: getDemocracyIndexLabel("wjp-rule-of-law"), value: wjp });
 
   const hdi = formatHdiIndex(c.democracy.hdi);
-  if (hdi) rows.push({ label: "Human Development Index", value: hdi });
+  if (hdi) rows.push({ label: getDemocracyIndexLabel("hdi"), value: hdi });
 
   const gggi = formatGenderGapIndex(c.democracy.genderGap);
-  if (gggi) rows.push({ label: "Global Gender Gap Index", value: gggi });
+  if (gggi) rows.push({ label: getDemocracyIndexLabel("gender-gap"), value: gggi });
 
   const gpi = formatGpiIndex(c.democracy.gpi);
-  if (gpi) rows.push({ label: "Global Peace Index", value: gpi });
+  if (gpi) rows.push({ label: getDemocracyIndexLabel("gpi"), value: gpi });
 
   const whr = formatHappinessIndex(c.democracy.happiness);
-  if (whr) rows.push({ label: "World Happiness Report", value: whr });
+  if (whr) rows.push({ label: getDemocracyIndexLabel("happiness"), value: whr });
 
   const soft = formatSoftPowerIndex(c.democracy.softPower);
-  if (soft) rows.push({ label: "Global Soft Power Index", value: soft });
+  if (soft) rows.push({ label: getDemocracyIndexLabel("soft-power"), value: soft });
 
   const gdi = formatGdiIndex(c.democracy.gdi);
-  if (gdi) rows.push({ label: "Global Diplomacy Index", value: gdi });
+  if (gdi) rows.push({ label: getDemocracyIndexLabel("gdi"), value: gdi });
 
   const imd = formatImdCompetitivenessIndex(c.democracy.imdCompetitiveness);
-  if (imd) rows.push({ label: "IMD World Competitiveness Ranking", value: imd });
+  if (imd) rows.push({ label: getDemocracyIndexLabel("imd-competitiveness"), value: imd });
 
   const etr = formatEtrIndex(c.democracy.etr);
-  if (etr) rows.push({ label: "Ecological Threat Index", value: etr });
+  if (etr) rows.push({ label: getDemocracyIndexLabel("etr"), value: etr });
 
   const dnr = formatDigitalNewsIndex(c.democracy.digitalNews);
-  if (dnr) rows.push({ label: "Digital News Report Index", value: dnr });
+  if (dnr) rows.push({ label: getDemocracyIndexLabel("digital-news"), value: dnr });
 
   const gti = formatGtiIndex(c.democracy.gti);
-  if (gti) rows.push({ label: "Global Terrorism Index", value: gti });
+  if (gti) rows.push({ label: getDemocracyIndexLabel("gti"), value: gti });
 
   return rows;
 }

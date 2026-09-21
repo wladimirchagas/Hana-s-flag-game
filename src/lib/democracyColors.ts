@@ -27,7 +27,9 @@ export type DemocracyMapMode = DemocracyIndexKey | null;
 
 /** Ordered list of every democracy / governance index the map and chart can use.
  *  New indexes land here so the chart axis pickers and map colour modes stay in
- *  sync without a second hand-maintained menu. */
+ *  sync without a second hand-maintained menu. Display order for menus is
+ *  `DEMOCRACY_INDEX_MENU_GROUPS` (thematic groups, A–Z within each) — this
+ *  array is the coverage set, not a display order. */
 export const DEMOCRACY_INDEX_KEYS: readonly DemocracyIndexKey[] = [
   "freedom-house",
   "v-dem",
@@ -47,6 +49,203 @@ export const DEMOCRACY_INDEX_KEYS: readonly DemocracyIndexKey[] = [
   "digital-news",
   "gti",
 ] as const;
+
+/**
+ * Thematic group id for Learn-mode index menus. Group order is fixed in
+ * `DEMOCRACY_INDEX_THEME_GROUPS`; indexes within a group sort alphabetically
+ * by display name. Adding an index means assigning it a group here.
+ */
+export type DemocracyIndexThemeId =
+  | "state-of-democracy"
+  | "governance"
+  | "press-media"
+  | "human-development"
+  | "peace-security"
+  | "soft-power-diplomacy";
+
+export type DemocracyIndexThemeGroup = {
+  id: DemocracyIndexThemeId;
+  /** Short heading shown above the group's options (map control / optgroups). */
+  label: string;
+};
+
+/** Theme groups in menu order — separators sit between these. */
+export const DEMOCRACY_INDEX_THEME_GROUPS: readonly DemocracyIndexThemeGroup[] = [
+  { id: "state-of-democracy", label: "State of democracy" },
+  { id: "governance", label: "Governance & integrity" },
+  { id: "press-media", label: "Press & media" },
+  { id: "human-development", label: "Human development" },
+  { id: "peace-security", label: "Peace & security" },
+  { id: "soft-power-diplomacy", label: "Soft power & diplomacy" },
+] as const;
+
+/**
+ * Canonical per-index display metadata. EVERY Learn-mode index label in the
+ * app (map dropdown, chart axes, Group-by, country widget, legend) MUST come
+ * from `getDemocracyIndexLabel()` / this registry — never a hand-written
+ * string. Rules (enforced by `scripts/check-index-labels.mjs`):
+ *   - `name` never contains "Global" (coverage is already global)
+ *   - label format is always `{name}, {year} ({publisher})`
+ *   - `year` matches the bundled COUNTRY_FACTS edition for that index
+ *   - every DEMOCRACY_INDEX_KEYS entry has a row, and vice versa
+ */
+export type DemocracyIndexMeta = {
+  key: DemocracyIndexKey;
+  /** Short index name — no "Global", no publisher acronym prefix. */
+  name: string;
+  /** Edition / data year shown after the name. */
+  year: number;
+  /** Organisation responsible for the index. */
+  publisher: string;
+  theme: DemocracyIndexThemeId;
+};
+
+export const DEMOCRACY_INDEX_META: Readonly<
+  Record<DemocracyIndexKey, DemocracyIndexMeta>
+> = {
+  "freedom-house": {
+    key: "freedom-house",
+    name: "Freedom in the World",
+    year: 2024,
+    publisher: "Freedom House",
+    theme: "state-of-democracy",
+  },
+  "v-dem": {
+    key: "v-dem",
+    name: "V-Dem Regime Type",
+    year: 2026,
+    publisher: "V-Dem Institute",
+    theme: "state-of-democracy",
+  },
+  economist: {
+    key: "economist",
+    name: "Democracy Index",
+    year: 2025,
+    publisher: "Economist Intelligence Unit",
+    theme: "state-of-democracy",
+  },
+  perception: {
+    key: "perception",
+    name: "Democracy Perception Index",
+    year: 2026,
+    publisher: "Alliance of Democracies",
+    theme: "state-of-democracy",
+  },
+  cpi: {
+    key: "cpi",
+    name: "Corruption Perceptions Index",
+    year: 2025,
+    publisher: "Transparency International",
+    theme: "governance",
+  },
+  "wjp-rule-of-law": {
+    key: "wjp-rule-of-law",
+    name: "Rule of Law Index",
+    year: 2025,
+    publisher: "World Justice Project",
+    theme: "governance",
+  },
+  "imd-competitiveness": {
+    key: "imd-competitiveness",
+    name: "World Competitiveness Ranking",
+    year: 2025,
+    publisher: "IMD",
+    theme: "governance",
+  },
+  "rsf-press": {
+    key: "rsf-press",
+    name: "Press Freedom Index",
+    year: 2026,
+    publisher: "Reporters Without Borders",
+    theme: "press-media",
+  },
+  "digital-news": {
+    key: "digital-news",
+    name: "Digital News Report",
+    year: 2026,
+    publisher: "Reuters Institute",
+    theme: "press-media",
+  },
+  hdi: {
+    key: "hdi",
+    name: "Human Development Index",
+    year: 2023,
+    publisher: "UNDP",
+    theme: "human-development",
+  },
+  "gender-gap": {
+    key: "gender-gap",
+    name: "Gender Gap Index",
+    year: 2026,
+    publisher: "World Economic Forum",
+    theme: "human-development",
+  },
+  happiness: {
+    key: "happiness",
+    name: "World Happiness Report",
+    year: 2026,
+    publisher: "Wellbeing Research Centre",
+    theme: "human-development",
+  },
+  gpi: {
+    key: "gpi",
+    name: "Peace Index",
+    year: 2026,
+    publisher: "Institute for Economics & Peace",
+    theme: "peace-security",
+  },
+  gti: {
+    key: "gti",
+    name: "Terrorism Index",
+    year: 2026,
+    publisher: "Institute for Economics & Peace",
+    theme: "peace-security",
+  },
+  etr: {
+    key: "etr",
+    name: "Ecological Threat Index",
+    year: 2024,
+    publisher: "Institute for Economics & Peace",
+    theme: "peace-security",
+  },
+  "soft-power": {
+    key: "soft-power",
+    name: "Soft Power Index",
+    year: 2026,
+    publisher: "Brand Finance",
+    theme: "soft-power-diplomacy",
+  },
+  gdi: {
+    key: "gdi",
+    name: "Diplomacy Index",
+    year: 2024,
+    publisher: "Lowy Institute",
+    theme: "soft-power-diplomacy",
+  },
+};
+
+/** Build the canonical label: `{name}, {year} ({publisher})`. */
+export function formatDemocracyIndexLabel(meta: Pick<DemocracyIndexMeta, "name" | "year" | "publisher">): string {
+  return `${meta.name}, ${meta.year} (${meta.publisher})`;
+}
+
+/**
+ * Menu groups for the map control / chart / Group-by: themes in
+ * `DEMOCRACY_INDEX_THEME_GROUPS` order, indexes A–Z by `name` within each.
+ */
+export type DemocracyIndexMenuGroup = {
+  theme: DemocracyIndexThemeGroup;
+  indexes: readonly DemocracyIndexMeta[];
+};
+
+export function getDemocracyIndexMenuGroups(): DemocracyIndexMenuGroup[] {
+  return DEMOCRACY_INDEX_THEME_GROUPS.map((theme) => {
+    const indexes = DEMOCRACY_INDEX_KEYS.map((k) => DEMOCRACY_INDEX_META[k])
+      .filter((m) => m.theme === theme.id)
+      .sort((a, b) => a.name.localeCompare(b.name, "en"));
+    return { theme, indexes };
+  }).filter((g) => g.indexes.length > 0);
+}
 
 export type DemocracyAxisBand = {
   /** Classification label shown on the axis (e.g. "Flawed democracy"). */
@@ -464,24 +663,8 @@ export const INDEX_MAP_COLOR_REGISTRY: readonly {
 ];
 
 export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
-  if (mode === "freedom-house") return "Freedom House";
-  if (mode === "v-dem") return "V-Dem Regime Type";
-  if (mode === "economist") return "The Economist Index";
-  if (mode === "cpi") return "Corruption Perceptions Index";
-  if (mode === "perception") return "Democracy Perception Index";
-  if (mode === "rsf-press") return "RSF Press Freedom";
-  if (mode === "hdi") return "Human Development Index";
-  if (mode === "gender-gap") return "Global Gender Gap Index";
-  if (mode === "gpi") return "Global Peace Index";
-  if (mode === "happiness") return "World Happiness Report";
-  if (mode === "soft-power") return "Global Soft Power Index";
-  if (mode === "gdi") return "Global Diplomacy Index";
-  if (mode === "wjp-rule-of-law") return "WJP Rule of Law Index";
-  if (mode === "imd-competitiveness") return "IMD World Competitiveness Ranking";
-  if (mode === "etr") return "Ecological Threat Index";
-  if (mode === "digital-news") return "Digital News Report Index";
-  if (mode === "gti") return "Global Terrorism Index";
-  return "";
+  if (!mode) return "";
+  return getDemocracyIndexLabel(mode);
 }
 
 export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegendItem[] {
@@ -667,25 +850,13 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
   return overlay;
 }
 
-/** Short menu / axis label for an index key. */
+/**
+ * Canonical Learn-mode index label — `{name}, {year} ({publisher})`.
+ * Sole source for every user-facing index name (map dropdown, chart axes,
+ * Group-by, country widget, legend). Never hand-write an index title.
+ */
 export function getDemocracyIndexLabel(key: DemocracyIndexKey): string {
-  if (key === "freedom-house") return "Freedom House rating";
-  if (key === "v-dem") return "V-Dem regime type";
-  if (key === "economist") return "The Economist Index";
-  if (key === "cpi") return "Corruption Perceptions Index";
-  if (key === "perception") return "Democracy Perception Index";
-  if (key === "rsf-press") return "RSF Press Freedom Index";
-  if (key === "hdi") return "Human Development Index";
-  if (key === "gender-gap") return "Global Gender Gap Index";
-  if (key === "gpi") return "Global Peace Index";
-  if (key === "happiness") return "World Happiness Report";
-  if (key === "soft-power") return "Global Soft Power Index";
-  if (key === "gdi") return "Global Diplomacy Index";
-  if (key === "wjp-rule-of-law") return "WJP Rule of Law Index";
-  if (key === "imd-competitiveness") return "IMD World Competitiveness Ranking";
-  if (key === "etr") return "Ecological Threat Index";
-  if (key === "digital-news") return "Digital News Report Index";
-  return "Global Terrorism Index";
+  return formatDemocracyIndexLabel(DEMOCRACY_INDEX_META[key]);
 }
 
 /** Pull the index row for a country from bundled facts. */

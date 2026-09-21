@@ -176,8 +176,8 @@ for (const code of ["TW", "XK", "PS"]) {
 
 const uiFiles = [
   ["src/lib/democracyColors.ts", "gpi"],
-  ["src/components/DemocracyMapControl.tsx", "DEMOCRACY_INDEX_KEYS"],
-  ["src/components/DemocracyIndexChart.tsx", "DEMOCRACY_INDEX_KEYS"],
+  ["src/components/DemocracyMapControl.tsx", "getDemocracyIndexMenuGroups"],
+  ["src/components/DemocracyIndexChart.tsx", "getDemocracyIndexMenuGroups"],
   ["src/components/EntitySummary.tsx", "gpi"],
   ["src/components/FlagGrid.tsx", '"gpi"'],
 ];

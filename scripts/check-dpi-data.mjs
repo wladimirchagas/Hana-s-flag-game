@@ -118,8 +118,8 @@ for (const [code, expect] of Object.entries(SPOT)) {
 // that list rather than duplicating each index literal).
 const uiFiles = [
   ["src/lib/democracyColors.ts", "perception"],
-  ["src/components/DemocracyMapControl.tsx", "DEMOCRACY_INDEX_KEYS"],
-  ["src/components/DemocracyIndexChart.tsx", "DEMOCRACY_INDEX_KEYS"],
+  ["src/components/DemocracyMapControl.tsx", "getDemocracyIndexMenuGroups"],
+  ["src/components/DemocracyIndexChart.tsx", "getDemocracyIndexMenuGroups"],
   ["src/components/EntitySummary.tsx", "perception"],
   ["src/components/FlagGrid.tsx", "perception"],
 ];

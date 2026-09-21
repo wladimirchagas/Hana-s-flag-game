@@ -3016,13 +3016,43 @@
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.75rem;
-  min-width: 210px;
+  min-width: 280px;
+  max-width: min(22rem, calc(100vw - 2rem));
 }
 
 .democracy-map-control__options {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
+}
+
+.democracy-map-control__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.democracy-map-control__group-label {
+  margin: 0;
+  padding: 0.1rem 0.55rem 0;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft, #6b7280);
+}
+
+.democracy-map-control__divider {
+  border: 0;
+  border-top: 1px solid var(--ink-faint, rgba(31, 41, 55, 0.22));
+  margin: 0.15rem 0 0.05rem;
+}
+
+.democracy-map-control__preset,
+.democracy-map-control .map-view-control__preset {
+  text-align: left;
+  white-space: normal;
+  line-height: 1.25;
 }
 
 .world-map__below-node {

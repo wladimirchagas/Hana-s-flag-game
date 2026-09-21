@@ -184,8 +184,8 @@ if (!expected.has("PS") || !GTI_2026_DATA.PS) {
 
 const uiFiles = [
   ["src/lib/democracyColors.ts", "gti"],
-  ["src/components/DemocracyMapControl.tsx", "DEMOCRACY_INDEX_KEYS"],
-  ["src/components/DemocracyIndexChart.tsx", "DEMOCRACY_INDEX_KEYS"],
+  ["src/components/DemocracyMapControl.tsx", "getDemocracyIndexMenuGroups"],
+  ["src/components/DemocracyIndexChart.tsx", "getDemocracyIndexMenuGroups"],
   ["src/components/EntitySummary.tsx", "gti"],
   ["src/components/FlagGrid.tsx", '"gti"'],
 ];
