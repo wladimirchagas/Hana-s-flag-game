@@ -25942,8 +25942,12 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Newsline Media Profile 2023"
       },
       "revenueModel": "Retail print sales and classified advertising",
-      "noImageReason": "No authentic masthead is shown yet. A placeholder graphic was removed. Wikimedia Commons, the newspaper's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
+      "logo": "newspaper-logos/ws/newsline-samoa.jpg",
+      "logoExplainer": "Red uppercase 'NEWSLINE' stacked over navy 'SAMOA' on white — Newsline Samoa site icon from newslinesamoa.com.",
+      "licenceNote": "Newsline Samoa logo from the newspaper's official site (newslinesamoa.com/wp-content/uploads/2025/09/7fbffa1b-8a50-4dd9-b99d-7e4fa0148c78.jpg); trademark bundled for educational reference in Learn mode.",
+
       "sources": [
+        "https://newslinesamoa.com/",
         "https://www.facebook.com/newslinesamoa",
         "https://en.wikipedia.org/wiki/Media_of_Samoa"
       ]
