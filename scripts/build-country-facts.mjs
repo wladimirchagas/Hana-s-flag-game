@@ -212,6 +212,8 @@ export type DemocracyData = {
   rsfPress?: DemocracyIndex;
   /** UNDP Human Development Report — Human Development Index */
   hdi?: DemocracyIndex;
+  /** World Economic Forum Global Gender Gap Index */
+  genderGap?: DemocracyIndex;
 };
 
 export type CountryFacts = {

@@ -120,7 +120,7 @@ assert.equal(
 
 // Verify democracy group modes are available for all modern content types
 for (const ct of ALL_CONTENT_TYPES) {
-  for (const demoMode of ["freedom-house", "v-dem", "economist", "cpi", "perception", "rsf-press", "hdi"]) {
+  for (const demoMode of ["freedom-house", "v-dem", "economist", "cpi", "perception", "rsf-press", "hdi", "gender-gap"]) {
     assert.equal(
       groupModeAvailableFor(demoMode, ct, true),
       true,
