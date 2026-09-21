@@ -3209,8 +3209,8 @@
 
 .democracy-index-chart__marker {
   position: absolute;
-  width: 1.35rem;
-  height: 1.35rem;
+  width: 2.025rem;
+  height: 2.025rem;
   transform: translate(-50%, -50%);
   padding: 0;
   border: 0;
@@ -3237,9 +3237,8 @@
   width: 100%;
   height: 100%;
   border-radius: 2px;
-  overflow: hidden;
-  background: var(--paper, #fff);
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ink, #1f2937) 35%, transparent);
+  overflow: visible;
+  background: transparent;
 }
 
 .democracy-index-chart__flag-img {
@@ -3247,7 +3246,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background: #ddd;
+  background: transparent;
 }
 
 .democracy-index-chart__pulse {
@@ -3336,8 +3335,8 @@
   }
 
   .democracy-index-chart__marker {
-    width: 1.15rem;
-    height: 1.15rem;
+    width: 1.725rem;
+    height: 1.725rem;
   }
 
   .democracy-index-chart__tooltip {
