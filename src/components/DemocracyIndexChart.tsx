@@ -26,7 +26,7 @@ export type DemocracyIndexChartProps = {
   onHover: (code: string | null) => void;
 };
 
-const PAD = { top: 16, right: 18, bottom: 64, left: 52 };
+const PAD = { top: 16, right: 18, bottom: 82, left: 74 };
 const VIEW_W = 960;
 const VIEW_H = 500;
 const TICK_COUNT = 5;
@@ -349,6 +349,26 @@ export function DemocracyIndexChart({
             y2={plot.y1}
             className="democracy-index-chart__axis"
           />
+
+          {/* Axis titles — always visible next to the axes so the dropdowns
+              are not the only cue for what X and Y represent. */}
+          <text
+            x={(plot.x0 + plot.x1) / 2}
+            y={VIEW_H - 14}
+            textAnchor="middle"
+            className="democracy-index-chart__axis-title"
+          >
+            {getDemocracyIndexLabel(xKey)}
+          </text>
+          <text
+            x={16}
+            y={(plot.y0 + plot.y1) / 2}
+            textAnchor="middle"
+            transform={`rotate(-90 16 ${(plot.y0 + plot.y1) / 2})`}
+            className="democracy-index-chart__axis-title democracy-index-chart__axis-title--y"
+          >
+            {getDemocracyIndexLabel(yKey)}
+          </text>
         </svg>
 
         {/* Flag markers — HTML so real flag images paint at correct aspect */}

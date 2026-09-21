@@ -3162,6 +3162,19 @@
   stroke-width: 1.5;
 }
 
+.democracy-index-chart__axis-title {
+  fill: var(--ink, #1f2937);
+  font-size: 13px;
+  font-weight: 800;
+  font-family: var(--font-display, system-ui, sans-serif);
+  letter-spacing: 0.01em;
+  opacity: 0.9;
+}
+
+.democracy-index-chart__axis-title--y {
+  font-size: 12px;
+}
+
 .democracy-index-chart__tick {
   fill: var(--ink, #1f2937);
   font-size: 11px;
