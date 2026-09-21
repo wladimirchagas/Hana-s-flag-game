@@ -17,12 +17,13 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "cd-l-avenir",
-    src: "tmp/batch107-install/cd-l-avenir.png",
+    id: "lr-lina",
+    dataset: "agency",
+    src: "tmp/batch108-install/lr-lina.png",
     explainer:
-      "Blue rounded 'GA' app-icon with white 'GROUPE L'AVENIR' under the monogram, beside the strap 'Le portail numérique des médias du Groupe L'avenir' — L'Avenir (DRC) publisher brand mark.",
+      "Dark-blue serif 'LINA' over a red bar reading 'LIBERIA NEWS AGENCY', with a red wireframe globe and orbital arcs — Liberia News Agency site masthead.",
     licence:
-      "Groupe L'Avenir logo from the group's own site (groupelavenir.org/images/logo14.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode. L'Avenir is published by Groupe L'Avenir.",
+      "LINA logo from the agency's official site (lina.micat.gov.lr/wp-content/uploads/2026/04/cropped-lin-logo-1536x654.png); trademark bundled for educational reference in Learn mode.",
   },
 ];
 
