@@ -4,8 +4,8 @@ import { UiIcon } from "./UiIcon";
 
 /**
  * Detail-panel logo thumbnail: neutral adaptive plate + click-to-enlarge.
- * Shared by newspaper / agency / airline / broadcaster / tourism / party
- * widgets so they cannot drift on the logo-readability treatment.
+ * Shared by newspaper / agency / airline / broadcaster / tourism / party /
+ * central-bank widgets so they cannot drift on the logo-readability treatment.
  */
 export function EnlargeableLogo({
   src,

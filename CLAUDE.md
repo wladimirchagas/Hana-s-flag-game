@@ -2785,6 +2785,65 @@ silently falls back to the raw ISO code (`parentName = parent ?? ""`). The only 
 catch this is the visual verification step — there is no automated check. Add the
 visual check to every PR that touches `disputedSubdivisions.ts` or `unofficialSubdivFlags.ts`.
 
+## No technical / research leakage in Learn-mode user-facing copy — hard rule, do not override without approval
+
+**Any string Learn mode paints for a missing image — `noImageReason`, `noFlagReason`, and
+any future sibling — is LEARNER copy, not a research notebook.** It must read as a short
+plain-language explanation of why there is no picture. Wikidata Q-ids, property codes
+(`P154`, `P17`, …), raw `https://` URLs, and agent/pipeline jargon ("after this pass",
+"bundled yet", "freely citable logo file") belong in `sources[]`, `licenceNote`, generator
+comments, or a non-rendered research note — **never** in the gap paragraph the panel shows.
+
+### Why this rule exists
+
+Reported by the owner (2026-09) on Australia's Finance → Central bank panel: the gap read
+
+> *Wikidata item Q1506724 has no P154 logo, Commons was checked … official site
+> (https://www.rba.gov.au/) — no freely citable logo file has been bundled yet after this pass.*
+
+That is an internal harvest diagnostic. Learners should never see item ids, property codes,
+or "this pass" language. The same class had already shipped into political-party
+`noImageReason` strings (`P154` / `P17`) because the research gate required those tokens
+by name. Research is still mandatory — name the **families** in plain language
+("Wikidata", "Wikimedia Commons", "the bank's official website"), not the machine ids.
+
+### Rules
+
+1. **`noImageReason` / `noFlagReason` are user-facing.** Write them for a curious reader.
+   Name what was searched in ordinary words. Do not paste generator output, SPARQL
+   diagnostics, or file-fetch logs into them.
+2. **Forbidden in those fields (present and future):** Wikidata Q-ids (`Q1506724`),
+   Wikidata property codes (`P154`, `P17`, …), raw `http(s)://` URLs, and pipeline /
+   agent jargon (`this pass`, `bundled`, `freely citable` / `freely-citable`). Put
+   identifiers and URLs in `sources[]` (or the Website row) instead — the AU RBA entry
+   keeps `https://www.wikidata.org/wiki/Q1506724` in `sources[]` and a plain gap sentence
+   in `noImageReason`. Say "shown" / "available in the app", never "bundled".
+3. **Research gates must not REQUIRE the forbidden tokens.** A check may still demand that
+   the reason name source *families* (Wikidata, Commons, official site, Elects, …). It must
+   never demand the literal string `P154` (or a Q-id) as proof of research — that is what
+   forced the leak.
+4. **Generators must emit safe defaults.** `build-central-banks.mjs` (and any future
+   harvest→build pipeline) must write a plain-language gap template, never interpolate
+   `h.qid` / `P154` / a website URL into `noImageReason`.
+5. **This applies to every category** that can show a missing-image gap — national
+   symbols, political parties, central banks, tourism logos, newspapers, news agencies,
+   and any future Show / panel type. Adding a new gap field means adding its name to
+   `USER_FACING_GAP_FIELDS` in `scripts/lib/userFacingCopy.mjs` in the same change.
+6. **Verify in the running app** (the mandatory visual-verification rule applies): open a
+   country with a central-bank gap (e.g. Australia → Finance), confirm the panel says a
+   plain sentence with **no** Q-id, **no** `P154`, and **no** raw URL inside the gap text
+   (the Website row may still link the bank's site).
+
+### Enforcement
+
+`scripts/check-user-facing-copy.mjs` (`npm run flags:check:user-facing-copy`, in
+`npm run flags:check` and the `check-proportions` CI job) scans every
+`noImageReason` / `noFlagReason` under `src/data/` and **fails the build** on any match
+of the shared leak patterns in `scripts/lib/userFacingCopy.mjs`. Per-category checks
+(`check-central-banks.mjs`, `check-political-parties.mjs`) also call
+`findUserFacingLeaks()` so a category cannot regress locally. Never weaken the patterns
+to silence a real leak — rewrite the copy.
+
 ## Sub-national flags menu must match the game exactly — hard rule, do not override without approval
 
 **The Flag Master "Sub-national flags" picker must only offer countries that have at least one
@@ -3600,10 +3659,12 @@ without one — `PoliticalPartyFacts` omits the row rather than rendering `undef
 
 3. **If a logo cannot be found after exhaustive research, ADD THE PARTY ANYWAY, with
    `noImageReason`.** Never drop a seated party because its picture is missing. Document EXACTLY what
-   was searched — the check requires the reason to name **at least two** of the source families in
-   rule 2, and to be at least 60 characters:
-   - ✓ Example: `"Wikidata (no P154 logo), Commons (no file), English Wikipedia (no infobox), Portuguese Wikipedia (no infobox), party website (no logo found), EuropeElects (no emblem), FOTW (not in index)"`
-   - ✗ Never: `"No logo found"`, `"Image not available"`, or `"Wikimedia Commons access blocked"`
+   was searched — in **plain language** a learner can read (the panel shows this string). The check
+   requires the reason to name **at least two** of the source families in rule 2, and to be at least
+   60 characters; it **fails** if the reason contains a Wikidata Q-id, a property code (`P154`…), a
+   raw URL, or agent jargon (see the "No technical / research leakage" hard rule):
+   - ✓ Example: `"Wikidata (no logo image), Commons (no file), English Wikipedia (no infobox), Portuguese Wikipedia (no infobox), party website (no logo found), EuropeElects (no emblem), FOTW (not in index)"`
+   - ✗ Never: `"No logo found"`, `"Image not available"`, `"Wikimedia Commons access blocked"`, or `"Wikidata item Q123 has no P154…"`
 
 3a. **Every logo must be VISUALLY VERIFIED before it ships — montage-scan the batch.** Provenance
    proves where bytes came from; only rendering proves what they are. The 2026-09-12 backfill
@@ -3928,6 +3989,48 @@ media entry, confirm the core business model matches the target dataset before m
 `scripts/check-national-news-agencies.mjs` must keep validating schema/logos; badge
 rendering is guarded by `scripts/check-grid-content-types.mjs` referencing
 `agencyOwnershipBadge`.
+
+## Central-bank logos: brand marks only — never HQ photos, street signs, or banknotes — hard rule, do not override without approval
+
+**The Learn-mode "Central banks" Show view and Finance-tab logo slot must show the institution's
+official brand mark (seal, wordmark, crest) — never a photograph of its headquarters, a street
+sign, a meeting/event photo, or a currency-note vignette. Wikidata `P154` is frequently wrong for
+central banks; a Commons filename is not evidence the file is a logo.**
+
+### Why this rule exists
+
+Reported by the owner (2026-09) on Guatemala's Finance → Central bank panel: the slot titled
+"Central bank logo" showed a photograph of the Bank of Guatemala building (Commons
+`Autoridades de BANGUAT realizan reunión de transición 20231023 (cropped).jpg`) because Wikidata
+`P154` pointed at that file and the pipeline trusted it. The same class of failure had also
+shipped Sweden's `Riksbanken skylt.jpg` (a physical sign photo) and Zimbabwe's
+`$25m 2008 Obverse (cropped).jpg` (a banknote crop). A building photo in a logo slot is the
+central-bank sibling of the Vueling route-map bug.
+
+### Rules
+
+1. **The image is the bank's brand mark** — seal, wordmark, crest, or lockup used on the bank's
+   own publications. Never a HQ exterior, plaza, flagpole, meeting photo, street sign (`skylt`),
+   or banknote obverse/reverse.
+2. **Reject photo-like Commons / Wikipedia filenames at every stage** — harvest, download, build,
+   and `check-central-banks.mjs` all share `scripts/lib/centralBankLogoQuality.mjs`
+   (`isRejectedLogoFilename` / `isRejectedLogoSource` / `isRejectedLogoExplainer`). Known bad
+   files stay in `BAD_COMMONS_LOGO_FILES`; the regex catches the class (reunión, cropped building,
+   skylt, banknote, obverse, headquarters, …).
+3. **When Wikidata `P154` is a photo, source the real mark elsewhere** (Commons under a correct
+   logo filename, or an en.wikipedia fair-use file with `licenceNote`) — or ship `noImageReason`.
+   Never leave the photo wired.
+4. **Never weaken `scripts/check-central-banks.mjs`** to force a photo through. If it fires, the
+   image or its source/explainer is wrong — fix the asset, not the check.
+5. **Verify in the running app** (mandatory visual-verification rule): open Guatemala → Finance and
+   confirm the circular Banco de Guatemala seal (quetzal on a Mayan temple), not the concrete HQ.
+
+### Enforcement
+
+`scripts/check-central-banks.mjs` (`npm run flags:check:central-banks`, in `npm run flags:check`)
+fails the build when a logo path, source URL, or explainer matches the photo/banknote patterns.
+`scripts/download-central-bank-logos.mjs` and `scripts/harvest-central-banks.mjs` refuse those
+filenames so a regen cannot reintroduce them.
 
 ## Commercial airline logos: show brand emblems, never route maps or aircraft photos — hard rule, do not override without approval
 

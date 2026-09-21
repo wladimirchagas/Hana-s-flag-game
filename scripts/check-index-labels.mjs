@@ -185,7 +185,7 @@ const UI_REQUIRE = [
   ["src/components/DemocracyMapControl.tsx", ["getDemocracyIndexLabel", "getDemocracyIndexMenuGroups"]],
   ["src/components/DemocracyIndexChart.tsx", ["getDemocracyIndexLabel", "getDemocracyIndexMenuGroups"]],
   ["src/components/DemocracyMapLegend.tsx", ["getDemocracyLegendTitle"]],
-  ["src/components/EntitySummary.tsx", ["getDemocracyIndexLabel"]],
+  ["src/components/EntitySummary.tsx", ["getDemocracyIndexLabel", "getDemocracyIndexMenuGroups"]],
   ["src/components/FlagGrid.tsx", ["getDemocracyIndexLabel", "getDemocracyIndexMenuGroups"]],
   ["src/lib/chartAxes.ts", ["getDemocracyIndexLabel"]],
 ];

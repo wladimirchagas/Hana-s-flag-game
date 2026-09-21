@@ -15,6 +15,11 @@ import { readFileSync, writeFileSync, existsSync, readdirSync } from "node:fs";
 import { dirname, resolve, extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
+import {
+  isRejectedLogoFilename,
+  isRejectedLogoSource,
+  isRejectedLogoExplainer,
+} from "./lib/centralBankLogoQuality.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
@@ -99,10 +104,6 @@ if (!harvest) {
 }
 const overrides = loadJson(OVERRIDES, { banks: {} });
 
-/** Reject Commons files that are clearly not the bank's brand mark. */
-const BAD_LOGO_NAME =
-  /\b(flag of|emblem of|coat of arms|seal of the united states|federal reserve note seal)\b/i;
-
 const byCountry = {};
 let withLogo = 0;
 let withoutLogo = 0;
@@ -126,41 +127,49 @@ for (const [cc, h] of Object.entries(harvest.countries).sort(([a], [b]) =>
     entry.currencyUnion = ov.currencyUnion || CURRENCY_UNION[cc];
   }
 
-  const bundled =
-    ov.logo ||
-    (h.commonsLogo && !BAD_LOGO_NAME.test(h.commonsLogo)
-      ? findBundledLogo(cc, id)
-      : findBundledLogo(cc, id));
+  // Prefer a curated override path; otherwise any bundled file for this bank.
+  // Photo-like harvest Commons names are never a reason to *require* a logo —
+  // the check rejects photo sources; bad files must be deleted before rebuild.
+  const bundled = ov.logo || findBundledLogo(cc, id);
 
   const explainer = ov.logoExplainer;
-  if (bundled && explainer && explainer.length >= 25) {
+  if (
+    bundled &&
+    explainer &&
+    explainer.length >= 25 &&
+    !isRejectedLogoExplainer(explainer) &&
+    !isRejectedLogoFilename(bundled.split("/").pop())
+  ) {
     entry.logo = bundled;
     entry.logoExplainer = explainer;
     if (ov.licenceNote) entry.licenceNote = ov.licenceNote;
-    else if (h.commonsLogo) {
+    else if (h.commonsLogo && !isRejectedLogoFilename(h.commonsLogo)) {
       entry.licenceNote =
         "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.";
     }
     withLogo++;
   } else if (ov.noImageReason || h.noImageReason || h.noOwnCentralBank) {
+    // User-facing gap copy only — never put QIDs, P-codes, or raw URLs here
+    // (see check-user-facing-copy.mjs / CLAUDE.md hard rule). QIDs stay in sources[].
     entry.noImageReason =
       ov.noImageReason ||
       h.noImageReason ||
-      `Wikidata (${h.qid || "no P154"}), Wikimedia Commons (no usable logo file), and the bank's own site were checked; no citable brand mark could be bundled yet.`;
+      "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.";
     withoutLogo++;
   } else {
     // Honest gap — researched against the harvest sources so far
-    const site = h.website ? `official site (${h.website})` : "no official website on Wikidata";
     entry.noImageReason =
       ov.noImageReason ||
-      `Wikidata item ${h.qid || "(none)"} has no P154 logo, Commons was checked for a bank brand mark, and ${site} — no freely citable logo file has been bundled yet after this pass.`;
+      "No brand logo is shown for this central bank yet. Wikidata, Wikimedia Commons, and the bank's official website were checked; listed without an image rather than an unverified mark.";
     withoutLogo++;
   }
 
   const sources = [
     ...(ov.sources || []),
     ...(h.sources || []),
-  ].filter(Boolean);
+  ].filter(Boolean)
+    // Drop photo/banknote Commons links that Wikidata wrongly attached as P154
+    .filter((s) => !isRejectedLogoSource(s));
   // de-dupe
   entry.sources = [...new Set(sources)];
   if (entry.sources.length === 0) {

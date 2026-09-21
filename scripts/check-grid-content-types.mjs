@@ -248,3 +248,23 @@ assert.ok(
   tabsSrc.includes('case "centralbank":') && tabsSrc.includes('return "finance"'),
   "learnPanelTabs must route centralbank → Finance",
 );
+
+// Logo detail widgets must use EnlargeableLogo (adaptive cream/dark plate).
+// CentralBankDetails shipped a raw <img> on the panel chrome — Bank of Japan's
+// black wordmark vanished in dark mode (owner report 2026-09).
+const LOGO_DETAIL_WIDGETS = [
+  "AirlineDetails.tsx",
+  "BroadcasterDetails.tsx",
+  "TourismLogoDetails.tsx",
+  "NewsAgencyDetails.tsx",
+  "NewspaperDetails.tsx",
+  "PoliticalPartyDetails.tsx",
+  "CentralBankDetails.tsx",
+];
+for (const file of LOGO_DETAIL_WIDGETS) {
+  const src = fs.readFileSync(path.join(root, "src/components", file), "utf8");
+  assert.ok(
+    src.includes('from "./EnlargeableLogo"') && src.includes("<EnlargeableLogo"),
+    `${file} must render logos through EnlargeableLogo (adaptive plate) — never a bare <img> on the panel background`,
+  );
+}

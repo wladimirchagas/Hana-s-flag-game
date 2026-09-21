@@ -14,6 +14,7 @@
 import { writeFileSync, readFileSync, mkdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { isRejectedLogoFilename } from "./lib/centralBankLogoQuality.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
@@ -203,7 +204,10 @@ function commonsFilename(logoUrl) {
   if (!logoUrl) return null;
   try {
     const raw = decodeURIComponent(logoUrl.split("/").pop());
-    return raw || null;
+    if (!raw) return null;
+    // Wikidata P154 is often a HQ photo / banknote / meeting shot — never treat those as logos
+    if (isRejectedLogoFilename(raw)) return null;
+    return raw;
   } catch {
     return null;
   }

@@ -8,12 +8,15 @@ import {
 import {
   CHART_AXIS_NONE,
   CHART_METRIC_KEYS,
+  type ChartAxisKey,
   type ChartAxisSelection,
   chartAxisPoints,
   chartAxisScaleValue,
+  chartAxisUsesLogScale,
   fitChartAxisDomain,
   formatChartAxisTick,
   getChartAxisBands,
+  getChartAxisDomain,
   getChartAxisLabel,
   isChartAxisNone,
 } from "../lib/chartAxes";
@@ -48,8 +51,24 @@ const PAD = { top: 16, right: 18, bottom: 82, left: 74 };
 const VIEW_W = 960;
 const VIEW_H = 500;
 const TICK_COUNT = 5;
-/** Centre-to-centre gap for stacked flags in one-axis column/bar mode (viewBox units). */
-const FLAG_STACK = 30;
+/** Gap between categorical bars as a fraction of each slot. */
+const BAR_GAP_FRAC = 0.22;
+
+/**
+ * Value-axis domain for one-axis bar/column charts: grow from the published
+ * floor (usually 0) up to the data, so bar length reads as the real score.
+ */
+function oneAxisValueDomain(
+  key: ChartAxisKey,
+  scaledValues: readonly number[],
+): { min: number; max: number } {
+  const fitted = fitChartAxisDomain(scaledValues, key, TICK_COUNT);
+  if (scaledValues.length === 0) return fitted;
+  if (chartAxisUsesLogScale(key)) return fitted;
+  const full = getChartAxisDomain(key);
+  const floor = chartAxisScaleValue(key, full.min <= 0 ? 0 : full.min);
+  return { min: Math.min(floor, fitted.min), max: fitted.max };
+}
 
 type FilterKind = "continents" | "membership" | "indexes" | null;
 
@@ -378,32 +397,49 @@ export function DemocracyIndexChart({
   );
 
   const xDomain = useMemo(() => {
+    // Y-only column chart: X is categorical (countries), no metric domain.
     if (!activeXKey) return { min: 0, max: 1 };
-    return fitChartAxisDomain(
-      rawPoints.map((p) => chartAxisScaleValue(activeXKey, p.x)),
-      activeXKey,
-      TICK_COUNT,
-    );
-  }, [rawPoints, activeXKey]);
+    const scaled = rawPoints.map((p) => chartAxisScaleValue(activeXKey, p.x));
+    // X-only bar chart: value domain from floor → data.
+    if (!activeYKey) return oneAxisValueDomain(activeXKey, scaled);
+    return fitChartAxisDomain(scaled, activeXKey, TICK_COUNT);
+  }, [rawPoints, activeXKey, activeYKey]);
   const yDomain = useMemo(() => {
+    // X-only bar chart: Y is categorical (countries), no metric domain.
     if (!activeYKey) return { min: 0, max: 1 };
-    return fitChartAxisDomain(
-      rawPoints.map((p) => chartAxisScaleValue(activeYKey, p.y)),
-      activeYKey,
-      TICK_COUNT,
-    );
-  }, [rawPoints, activeYKey]);
+    const scaled = rawPoints.map((p) => chartAxisScaleValue(activeYKey, p.y));
+    // Y-only column chart: value domain from floor → data.
+    if (!activeXKey) return oneAxisValueDomain(activeYKey, scaled);
+    return fitChartAxisDomain(scaled, activeYKey, TICK_COUNT);
+  }, [rawPoints, activeXKey, activeYKey]);
 
+  // Classification bands only on the scatter (two-axis) view.
   const xBands = useMemo(() => {
-    if (!activeXKey) return [];
+    if (!activeXKey || !activeYKey) return [];
     return clipDemocracyAxisBands(getChartAxisBands(activeXKey), xDomain);
-  }, [activeXKey, xDomain]);
+  }, [activeXKey, activeYKey, xDomain]);
   const yBands = useMemo(() => {
-    if (!activeYKey) return [];
+    if (!activeXKey || !activeYKey) return [];
     return clipDemocracyAxisBands(getChartAxisBands(activeYKey), yDomain);
-  }, [activeYKey, yDomain]);
+  }, [activeXKey, activeYKey, yDomain]);
 
-  const points = useMemo(() => {
+  /** X=None → vertical columns (value on Y). Y=None → horizontal bars (value on X). */
+  const columnMode = Boolean(activeYKey && !activeXKey);
+  const barMode = Boolean(activeXKey && !activeYKey);
+  const oneAxisMode = columnMode || barMode;
+
+  const points = useMemo((): {
+    code: string;
+    x: number;
+    y: number;
+    xLabel: string;
+    yLabel: string;
+    country: Country;
+    cx: number;
+    cy: number;
+    bar?: { x: number; y: number; width: number; height: number };
+  }[] => {
+    type BarGeom = { x: number; y: number; width: number; height: number };
     type LaidOut = {
       code: string;
       x: number;
@@ -413,10 +449,11 @@ export function DemocracyIndexChart({
       country: Country;
       cx: number;
       cy: number;
+      bar?: BarGeom;
     };
 
     if (activeXKey && activeYKey) {
-      return rawPoints.map((p) => {
+      return rawPoints.map((p): LaidOut => {
         const country = byCode.get(p.code)!;
         return {
           ...p,
@@ -433,82 +470,90 @@ export function DemocracyIndexChart({
       });
     }
 
-    // One-axis mode: column chart (X only) or bar chart (Y only).
-    // Same scored value → one column/bar; flags stack from the unused-axis
-    // baseline — up for columns, right for bars.
+    // One-axis: categorical bar/column chart — bar length = metric value,
+    // countries are ordered slots on the unused axis (sorted high → low).
     const out: LaidOut[] = [];
-    if (activeXKey && !activeYKey) {
-      type Staged = (typeof rawPoints)[number] & { cx: number };
-      const byScore = new Map<number, Staged[]>();
-      for (const p of rawPoints) {
-        const cx = scaleLinear(chartAxisScaleValue(activeXKey, p.x), xDomain, {
-          min: plot.x0,
-          max: plot.x1,
-        });
-        const list = byScore.get(p.x);
-        const staged = { ...p, cx };
-        if (list) list.push(staged);
-        else byScore.set(p.x, [staged]);
-      }
-      const maxH = plot.y1 - plot.y0 - FLAG_STACK;
-      for (const group of byScore.values()) {
-        group.sort((a, b) => a.code.localeCompare(b.code));
-        const cx = group[0]!.cx;
-        const step = Math.min(FLAG_STACK, maxH / Math.max(group.length, 1));
-        group.forEach((p, i) => {
-          out.push({
-            code: p.code,
-            x: p.x,
-            y: p.y,
-            xLabel: p.xLabel,
-            yLabel: p.yLabel,
-            country: byCode.get(p.code)!,
-            cx,
-            // Stack upward from the X-axis baseline (column chart).
-            cy: plot.y1 - FLAG_STACK * 0.55 - i * step,
-          });
-        });
-      }
-      return out;
-    }
-
-    if (activeYKey && !activeXKey) {
-      type Staged = (typeof rawPoints)[number] & { cy: number };
-      const byScore = new Map<number, Staged[]>();
-      for (const p of rawPoints) {
-        const cy = scaleLinear(chartAxisScaleValue(activeYKey, p.y), yDomain, {
+    if (columnMode && activeYKey) {
+      const sorted = [...rawPoints].sort((a, b) => b.y - a.y || a.code.localeCompare(b.code));
+      const n = sorted.length;
+      const slot = n > 0 ? (plot.x1 - plot.x0) / n : 0;
+      const gap = slot * BAR_GAP_FRAC;
+      const barW = Math.max(1, slot - gap);
+      const baseline = scaleLinear(yDomain.min, yDomain, {
+        min: plot.y1,
+        max: plot.y0,
+      });
+      sorted.forEach((p, i) => {
+        const tip = scaleLinear(chartAxisScaleValue(activeYKey, p.y), yDomain, {
           min: plot.y1,
           max: plot.y0,
         });
-        const list = byScore.get(p.y);
-        const staged = { ...p, cy };
-        if (list) list.push(staged);
-        else byScore.set(p.y, [staged]);
-      }
-      const maxW = plot.x1 - plot.x0 - FLAG_STACK;
-      for (const group of byScore.values()) {
-        group.sort((a, b) => a.code.localeCompare(b.code));
-        const cy = group[0]!.cy;
-        const step = Math.min(FLAG_STACK, maxW / Math.max(group.length, 1));
-        group.forEach((p, i) => {
-          out.push({
-            code: p.code,
-            x: p.x,
-            y: p.y,
-            xLabel: p.xLabel,
-            yLabel: p.yLabel,
-            country: byCode.get(p.code)!,
-            // Stack rightward from the Y-axis baseline (bar chart).
-            cx: plot.x0 + FLAG_STACK * 0.55 + i * step,
-            cy,
-          });
+        const x = plot.x0 + i * slot + gap / 2;
+        const y = Math.min(tip, baseline);
+        const height = Math.abs(baseline - tip);
+        out.push({
+          code: p.code,
+          x: p.x,
+          y: p.y,
+          xLabel: p.xLabel,
+          yLabel: p.yLabel,
+          country: byCode.get(p.code)!,
+          cx: x + barW / 2,
+          cy: tip,
+          bar: { x, y, width: barW, height },
         });
-      }
+      });
+      return out;
+    }
+
+    if (barMode && activeXKey) {
+      const sorted = [...rawPoints].sort((a, b) => b.x - a.x || a.code.localeCompare(b.code));
+      const n = sorted.length;
+      const slot = n > 0 ? (plot.y1 - plot.y0) / n : 0;
+      const gap = slot * BAR_GAP_FRAC;
+      const barH = Math.max(1, slot - gap);
+      const baseline = scaleLinear(xDomain.min, xDomain, {
+        min: plot.x0,
+        max: plot.x1,
+      });
+      sorted.forEach((p, i) => {
+        const tip = scaleLinear(chartAxisScaleValue(activeXKey, p.x), xDomain, {
+          min: plot.x0,
+          max: plot.x1,
+        });
+        const y = plot.y0 + i * slot + gap / 2;
+        const x = Math.min(tip, baseline);
+        const width = Math.abs(tip - baseline);
+        out.push({
+          code: p.code,
+          x: p.x,
+          y: p.y,
+          xLabel: p.xLabel,
+          yLabel: p.yLabel,
+          country: byCode.get(p.code)!,
+          cx: tip,
+          cy: y + barH / 2,
+          bar: { x, y, width, height: barH },
+        });
+      });
       return out;
     }
 
     return out;
-  }, [rawPoints, byCode, activeXKey, activeYKey, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
+  }, [
+    rawPoints,
+    byCode,
+    activeXKey,
+    activeYKey,
+    columnMode,
+    barMode,
+    xDomain,
+    yDomain,
+    plot.x0,
+    plot.x1,
+    plot.y0,
+    plot.y1,
+  ]);
 
   const filtersActive =
     continentFilter.size > 0 || membershipFilter.size > 0 || indexFilter.size > 0;
@@ -666,7 +711,12 @@ export function DemocracyIndexChart({
 
   return (
     <section
-      className="democracy-index-chart"
+      className={
+        "democracy-index-chart" +
+        (oneAxisMode ? " democracy-index-chart--one-axis" : "") +
+        (columnMode ? " democracy-index-chart--columns" : "") +
+        (barMode ? " democracy-index-chart--bars" : "")
+      }
       aria-label="Democracy index chart"
     >
       <div className="democracy-index-chart__axes">
@@ -942,8 +992,37 @@ export function DemocracyIndexChart({
             );
           })}
 
-          {/* Axes — draw only the active edge(s). */}
-          {activeXKey && (
+          {/* Value bars — one-axis column/bar charts only */}
+          {oneAxisMode &&
+            points.map((p) => {
+              if (!p.bar) return null;
+              const isSelected = selectedCode === p.code;
+              const isActive = activeCode === p.code;
+              const dimmed =
+                highlightedCodes !== null &&
+                !highlightedCodes.has(p.code) &&
+                !isSelected &&
+                !isActive;
+              return (
+                <rect
+                  key={`bar-${p.code}`}
+                  x={p.bar.x}
+                  y={p.bar.y}
+                  width={p.bar.width}
+                  height={p.bar.height}
+                  className={
+                    "democracy-index-chart__bar" +
+                    (isSelected ? " democracy-index-chart__bar--selected" : "") +
+                    (isActive ? " democracy-index-chart__bar--active" : "") +
+                    (dimmed ? " democracy-index-chart__bar--dimmed" : "")
+                  }
+                  pointerEvents="none"
+                />
+              );
+            })}
+
+          {/* Axes — value axis always; category baseline for one-axis charts. */}
+          {(activeXKey || columnMode) && (
             <line
               x1={plot.x0}
               y1={plot.y1}
@@ -952,7 +1031,7 @@ export function DemocracyIndexChart({
               className="democracy-index-chart__axis"
             />
           )}
-          {activeYKey && (
+          {(activeYKey || barMode) && (
             <line
               x1={plot.x0}
               y1={plot.y0}
@@ -962,8 +1041,7 @@ export function DemocracyIndexChart({
             />
           )}
 
-          {/* Axis titles — always visible next to the axes so the dropdowns
-              are not the only cue for what X and Y represent. */}
+          {/* Axis titles — value axis only in one-axis mode. */}
           {activeXKey && (
             <text
               x={(plot.x0 + plot.x1) / 2}
@@ -999,7 +1077,7 @@ export function DemocracyIndexChart({
           )}
         </svg>
 
-        {/* Flag markers — HTML so real flag images paint at correct aspect */}
+        {/* Flag markers — tip of each bar in one-axis mode; scatter otherwise */}
         <div className="democracy-index-chart__markers" aria-hidden={false}>
           {points.map((p) => {
             const isSelected = selectedCode === p.code;
@@ -1020,6 +1098,7 @@ export function DemocracyIndexChart({
                 type="button"
                 className={
                   "democracy-index-chart__marker" +
+                  (oneAxisMode ? " democracy-index-chart__marker--bar-tip" : "") +
                   (isSelected ? " democracy-index-chart__marker--selected" : "") +
                   (isActive ? " democracy-index-chart__marker--active" : "") +
                   (dimmed ? " democracy-index-chart__marker--dimmed" : "")

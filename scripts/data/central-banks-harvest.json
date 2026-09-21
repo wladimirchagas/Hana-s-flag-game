@@ -1471,11 +1471,11 @@
       "name": "Bank of Guatemala",
       "qid": "Q3359424",
       "website": "http://www.banguat.gob.gt",
-      "commonsLogo": "Autoridades de BANGUAT realizan reunión de transición 20231023 (cropped).jpg",
+      "commonsLogo": "Bank of Guatemala logo.png",
       "sources": [
         "https://www.wikidata.org/wiki/Q3359424",
         "http://www.banguat.gob.gt",
-        "https://commons.wikimedia.org/wiki/File:Autoridades_de_BANGUAT_realizan_reuni%C3%B3n_de_transici%C3%B3n_20231023_(cropped).jpg"
+        "https://commons.wikimedia.org/wiki/File:Bank_of_Guatemala_logo.png"
       ],
       "candidates": [
         {
@@ -3156,11 +3156,10 @@
       "name": "Sveriges Riksbank",
       "qid": "Q564652",
       "website": "https://riksbank.se",
-      "commonsLogo": "Riksbanken skylt.jpg",
       "sources": [
         "https://www.wikidata.org/wiki/Q564652",
         "https://riksbank.se",
-        "https://commons.wikimedia.org/wiki/File:Riksbanken_skylt.jpg"
+        "https://en.wikipedia.org/wiki/File:Riksbanken_Logo.svg"
       ],
       "candidates": [
         {
@@ -3993,11 +3992,10 @@
       "name": "Reserve Bank of Zimbabwe",
       "qid": "Q1025119",
       "website": "https://www.rbz.co.zw/",
-      "commonsLogo": "Zimbabwe $25m 2008 Obverse (cropped).jpg",
       "sources": [
         "https://www.wikidata.org/wiki/Q1025119",
         "https://www.rbz.co.zw/",
-        "https://commons.wikimedia.org/wiki/File:Zimbabwe_%2425m_2008_Obverse_(cropped).jpg"
+        "https://en.wikipedia.org/wiki/File:RESERVE_BANK_OF_ZIMBABWE_LOGO.png"
       ],
       "candidates": [
         {

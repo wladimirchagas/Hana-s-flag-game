@@ -350,10 +350,14 @@ if (!gridSrc.includes('"happiness"') || !gridSrc.includes("getDemocracyIndexLabe
 }
 const summarySrc = readFileSync(resolve(__dirname, "../src/components/EntitySummary.tsx"), "utf8");
 if (
-  !summarySrc.includes('getDemocracyIndexLabel("happiness")') ||
-  !summarySrc.includes("happiness")
+  !summarySrc.includes('case "happiness"') ||
+  !summarySrc.includes("formatHappinessIndex") ||
+  !summarySrc.includes("getDemocracyIndexLabel") ||
+  !summarySrc.includes("getDemocracyIndexMenuGroups")
 ) {
-  fail('EntitySummary.tsx must render happiness via getDemocracyIndexLabel("happiness")');
+  fail(
+    "EntitySummary.tsx must render happiness via formatIndexValue + getDemocracyIndexMenuGroups / getDemocracyIndexLabel",
+  );
 }
 
 if (failures) {

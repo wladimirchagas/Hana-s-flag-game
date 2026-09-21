@@ -5,14 +5,20 @@
  * vanish on cream. The plate is chosen from the logo's own pixels — not from
  * the app theme — so contrast stays correct in both themes.
  *
- * Two logo shapes need different rules (owner screenshots, 2026-09):
+ * Gold standard (owner, Malaysia party grid 2026-09): the light cream plate
+ * used for Amanah / DAP — consistent across the grid, the detail panel and
+ * fullscreen. Dark plates are the exception, not a second default.
  *
- *   1. Transparent ink (The Australian, China Southern, People's Daily) —
- *      pick the plate OPPOSITE the ink: dark ink → light plate.
- *   2. Solid baked-in field (NZZ / Courier-Mail white canvas; Dagens Nyheter
- *      black square; China Daily white-backed wordmark) — MATCH the field so
- *      we do not paint a contrasting frame around an already-opaque rectangle
- *      ("box-in-a-box"). Edge pixels tell us the field colour.
+ * Rules:
+ *   1. Transparent ink (The Australian, China Southern, DAP, Amanah) —
+ *      opposite of the ink: dark/colourful ink → light plate; pale ink → dark.
+ *   2. Solid white/light canvas (NZZ, Courier-Mail, China Daily) — light plate
+ *      that matches the canvas (no dark frame / box-in-a-box).
+ *   3. Solid near-black tile (Dagens Nyheter) — dark plate that matches the
+ *      tile (only true black fields; not chromatic full-bleed marks).
+ *   4. Solid chromatic full-bleed (PKR's red/blue flag mark) — light plate,
+ *      same gold-standard cream as Amanah. Matching "dark" from mid-tone
+ *      edges made PKR charcoal while its neighbours stayed cream.
  *
  * Flags and passport covers are excluded: they are full-bleed rectangles and
  * already carry their own field colours (see CLAUDE.md flag-thumb chrome).
@@ -39,11 +45,20 @@ const SAMPLE = 64;
 const ALPHA_MIN = 24;
 /**
  * Opaque coverage at or above this → the asset carries its own rectangular
- * field (white canvas or black tile). Match that field instead of contrasting.
+ * field (white canvas, black tile, or full-bleed chromatic mark).
  */
 const SOLID_OPAQUE_RATIO = 0.85;
-/** Edge-ring average luminance midpoint for solid-backed assets. */
-const EDGE_FIELD_CUTOFF = 140;
+/**
+ * Edge luminance at or above this → solid light/white canvas → light plate.
+ * (NZZ, Courier-Mail, China Daily.)
+ */
+const SOLID_LIGHT_EDGE = 180;
+/**
+ * Edge luminance at or below this → solid near-black tile → dark plate.
+ * (Dagens Nyheter.) Chromatic full-bleed marks (PKR) sit above this and
+ * take the gold-standard light plate instead.
+ */
+const SOLID_BLACK_EDGE = 45;
 /**
  * Content-luminance midpoint for transparent logos (0–255). At or below →
  * light plate (dark ink); above → dark plate (light ink).
@@ -52,7 +67,11 @@ const INK_LUMINANCE_CUTOFF = 155;
 
 type Analysis = {
   tone: LogoBackdropTone;
-  /** Asset already has an opaque rectangular field — plate should match it. */
+  /**
+   * Asset's own field matches the plate (white canvas or black tile) — tighten
+   * padding so we don't draw a second frame. Chromatic full-bleed marks that
+   * still use the gold-standard light plate leave this false.
+   */
   solid: boolean;
 };
 
@@ -64,8 +83,7 @@ function luminance(r: number, g: number, b: number): number {
 
 /**
  * Sample the image and decide plate tone + whether the asset is solid-backed.
- * Failures default to a light plate (the common dark-masthead-on-transparent
- * case that started this feature).
+ * Failures default to a light plate (the gold-standard cream).
  */
 export function analyzeLogoBackdrop(img: HTMLImageElement): Analysis {
   const key = img.currentSrc || img.src;
@@ -126,13 +144,17 @@ export function analyzeLogoBackdrop(img: HTMLImageElement): Analysis {
     const edgeAvg = edgeN > 0 ? edgeY / edgeN : contentAvg;
 
     if (opaqueRatio >= SOLID_OPAQUE_RATIO && edgeN > 0) {
-      // Solid baked-in field — match it so we never frame a white canvas with
-      // a dark plate (NZZ, Courier-Mail, China Daily) or a black tile with a
-      // light plate (Dagens Nyheter).
-      result = {
-        tone: edgeAvg >= EDGE_FIELD_CUTOFF ? "light" : "dark",
-        solid: true,
-      };
+      if (edgeAvg >= SOLID_LIGHT_EDGE) {
+        // White/light canvas — match it.
+        result = { tone: "light", solid: true };
+      } else if (edgeAvg <= SOLID_BLACK_EDGE) {
+        // Near-black tile only — match it. Do NOT treat mid-tone chromatic
+        // edges (PKR) as black fields.
+        result = { tone: "dark", solid: true };
+      } else {
+        // Full-bleed chromatic mark — gold-standard light cream, normal pad.
+        result = { tone: "light", solid: false };
+      }
     } else if (weight >= 1) {
       // Transparent ink on clear — contrast against the ink.
       result = {

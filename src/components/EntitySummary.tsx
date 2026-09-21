@@ -4,7 +4,11 @@ import { NATIONAL_REFERENCE_POPULATION } from "../data/subdivisionPopulation";
 import { COUNTRY_ENDONYMS } from "../data/countryEndonyms";
 import { membershipsForCountry } from "../data/countryBlocks";
 import type { Country } from "../api/countries";
-import { getDemocracyIndexLabel } from "../lib/democracyColors";
+import {
+  getDemocracyIndexLabel,
+  getDemocracyIndexMenuGroups,
+  type DemocracyIndexKey,
+} from "../lib/democracyColors";
 import { MembershipBadge } from "./MembershipBadge";
 
 /**
@@ -413,68 +417,118 @@ function interleaveFactsAndIndices(
   ];
 }
 
+/** Format one index value for the Rankings / legacy fact-sheet rows. */
+function formatIndexValue(c: Country, key: DemocracyIndexKey): string | null {
+  const d = c.democracy;
+  if (!d) return null;
+  switch (key) {
+    case "freedom-house":
+      return formatDemocracyIndex(d.freedomHouse);
+    case "v-dem":
+      return formatDemocracyIndex(d.vDem);
+    case "economist":
+      return formatDemocracyIndex(d.economist);
+    case "cpi":
+      return formatCpiIndex(d.cpi);
+    case "perception":
+      return formatPerceptionIndex(d.perception);
+    case "rsf-press":
+      return formatDemocracyIndex(d.rsfPress);
+    case "wjp-rule-of-law":
+      return formatWjpIndex(d.wjpRuleOfLaw);
+    case "hdi":
+      return formatHdiIndex(d.hdi);
+    case "gender-gap":
+      return formatGenderGapIndex(d.genderGap);
+    case "gpi":
+      return formatGpiIndex(d.gpi);
+    case "happiness":
+      return formatHappinessIndex(d.happiness);
+    case "soft-power":
+      return formatSoftPowerIndex(d.softPower);
+    case "gdi":
+      return formatGdiIndex(d.gdi);
+    case "imd-competitiveness":
+      return formatImdCompetitivenessIndex(d.imdCompetitiveness);
+    case "etr":
+      return formatEtrIndex(d.etr);
+    case "digital-news":
+      return formatDigitalNewsIndex(d.digitalNews);
+    case "gti":
+      return formatGtiIndex(d.gti);
+    default: {
+      const _exhaustive: never = key;
+      return _exhaustive;
+    }
+  }
+}
+
+type IndicesGroup = {
+  id: string;
+  label: string;
+  rows: { label: string; value: React.ReactNode }[];
+};
+
+/**
+ * Rankings rows grouped by the same theme order as the map control / Group-by
+ * menus (`getDemocracyIndexMenuGroups`). Empty groups are dropped so a country
+ * with sparse coverage still shows only the themes it has data for.
+ */
+function buildIndicesGroups(c: Country): IndicesGroup[] {
+  if (!c.democracy) return [];
+  return getDemocracyIndexMenuGroups()
+    .map((group) => ({
+      id: group.theme.id,
+      label: group.theme.label,
+      rows: group.indexes
+        .map((meta) => {
+          const value = formatIndexValue(c, meta.key);
+          return value
+            ? { label: getDemocracyIndexLabel(meta.key), value }
+            : null;
+        })
+        .filter((r): r is { label: string; value: string } => r != null),
+    }))
+    .filter((g) => g.rows.length > 0);
+}
+
+/** Flat list for the legacy "all" fact-sheet — same theme order as Rankings. */
 function buildIndicesRows(c: Country): { label: string; value: React.ReactNode }[] {
-  const rows: { label: string; value: React.ReactNode }[] = [];
-  if (!c.democracy) return rows;
-
-  const fh = formatDemocracyIndex(c.democracy.freedomHouse);
-  if (fh) rows.push({ label: getDemocracyIndexLabel("freedom-house"), value: fh });
-
-  const vdem = formatDemocracyIndex(c.democracy.vDem);
-  if (vdem) rows.push({ label: getDemocracyIndexLabel("v-dem"), value: vdem });
-
-  const econ = formatDemocracyIndex(c.democracy.economist);
-  if (econ) rows.push({ label: getDemocracyIndexLabel("economist"), value: econ });
-
-  const cpi = formatCpiIndex(c.democracy.cpi);
-  if (cpi) rows.push({ label: getDemocracyIndexLabel("cpi"), value: cpi });
-
-  const dpi = formatPerceptionIndex(c.democracy.perception);
-  if (dpi) rows.push({ label: getDemocracyIndexLabel("perception"), value: dpi });
-
-  const rsf = formatDemocracyIndex(c.democracy.rsfPress);
-  if (rsf) rows.push({ label: getDemocracyIndexLabel("rsf-press"), value: rsf });
-
-  const wjp = formatWjpIndex(c.democracy.wjpRuleOfLaw);
-  if (wjp) rows.push({ label: getDemocracyIndexLabel("wjp-rule-of-law"), value: wjp });
-
-  const hdi = formatHdiIndex(c.democracy.hdi);
-  if (hdi) rows.push({ label: getDemocracyIndexLabel("hdi"), value: hdi });
-
-  const gggi = formatGenderGapIndex(c.democracy.genderGap);
-  if (gggi) rows.push({ label: getDemocracyIndexLabel("gender-gap"), value: gggi });
-
-  const gpi = formatGpiIndex(c.democracy.gpi);
-  if (gpi) rows.push({ label: getDemocracyIndexLabel("gpi"), value: gpi });
-
-  const whr = formatHappinessIndex(c.democracy.happiness);
-  if (whr) rows.push({ label: getDemocracyIndexLabel("happiness"), value: whr });
-
-  const soft = formatSoftPowerIndex(c.democracy.softPower);
-  if (soft) rows.push({ label: getDemocracyIndexLabel("soft-power"), value: soft });
-
-  const gdi = formatGdiIndex(c.democracy.gdi);
-  if (gdi) rows.push({ label: getDemocracyIndexLabel("gdi"), value: gdi });
-
-  const imd = formatImdCompetitivenessIndex(c.democracy.imdCompetitiveness);
-  if (imd) rows.push({ label: getDemocracyIndexLabel("imd-competitiveness"), value: imd });
-
-  const etr = formatEtrIndex(c.democracy.etr);
-  if (etr) rows.push({ label: getDemocracyIndexLabel("etr"), value: etr });
-
-  const dnr = formatDigitalNewsIndex(c.democracy.digitalNews);
-  if (dnr) rows.push({ label: getDemocracyIndexLabel("digital-news"), value: dnr });
-
-  const gti = formatGtiIndex(c.democracy.gti);
-  if (gti) rows.push({ label: getDemocracyIndexLabel("gti"), value: gti });
-
-  return rows;
+  return buildIndicesGroups(c).flatMap((g) => g.rows);
 }
 
 export function EntitySummary(props: EntitySummaryProps) {
   if (props.kind === "modern") {
     const c = props.country;
     const section = props.section ?? "all";
+    const footer =
+      section === "indices" ||
+      section === "politics" ||
+      section === "finance"
+        ? undefined
+        : props.footer;
+
+    if (section === "indices") {
+      const groups = buildIndicesGroups(c);
+      if (groups.length === 0) {
+        return (
+          <p className="learn-panel-tabs__empty">
+            No governance or ratings indices sourced for this country yet.
+          </p>
+        );
+      }
+      return (
+        <div className="entity-summary__groups">
+          {groups.map((group) => (
+            <section key={group.id} className="entity-summary__group">
+              <h3 className="entity-summary__group-label">{group.label}</h3>
+              <SummaryList rows={group.rows} />
+            </section>
+          ))}
+        </div>
+      );
+    }
+
     const rows =
       section === "all"
         ? interleaveFactsAndIndices(c)
@@ -485,19 +539,6 @@ export function EntitySummary(props: EntitySummaryProps) {
             : section === "politics"
               ? buildPoliticsRows(c)
               : buildIndicesRows(c);
-    const footer =
-      section === "indices" ||
-      section === "politics" ||
-      section === "finance"
-        ? undefined
-        : props.footer;
-    if (section === "indices" && rows.length === 0) {
-      return (
-        <p className="learn-panel-tabs__empty">
-          No governance or ratings indices sourced for this country yet.
-        </p>
-      );
-    }
     if (section === "finance" && rows.length === 0) {
       return (
         <p className="learn-panel-tabs__empty">
