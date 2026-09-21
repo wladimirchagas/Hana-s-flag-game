@@ -1285,11 +1285,29 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // ruled it in the era before — an anachronistic flag, which the era rules forbid.
   const handleHistoricalSelect = useCallback(
     (name: string | null) => {
+      if (!name) {
+        setSelected(null);
+        setHovered(null);
+        return;
+      }
+      // Clicking the already-selected polity (or another polygon grouped with
+      // it, e.g. Iberian Union Spain/Portugal) clears the selection — same
+      // toggle as the Unselect button / modern map / flag grid.
+      if (selected?.kind === "historical") {
+        const already =
+          selected.name === name ||
+          polityDisplayName(selected.name, eraId) === polityDisplayName(name, eraId);
+        if (already) {
+          setSelected(null);
+          setHovered(null);
+          return;
+        }
+      }
       setSelected(selectionFromPolityName(name));
       setHovered(null);
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [eraId, countryByName, polityRulers, derivedBoundaryNames],
+    [eraId, countryByName, polityRulers, derivedBoundaryNames, selected],
   );
   const handleHistoricalHover = useCallback(
     (name: string | null) => {
@@ -1687,6 +1705,32 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         ? display.name
         : null;
 
+  /** Select a modern country from the map or democracy chart — or clear the
+   *  panel when the click is on the country that is already selected. */
+  const handleModernMapOrChartSelect = useCallback(
+    (code: string) => {
+      const c = codeToCountry.get(code);
+      if (!c) return;
+      if (hoverClearTimer.current) {
+        clearTimeout(hoverClearTimer.current);
+        hoverClearTimer.current = null;
+      }
+      if (selected?.kind === "modern" && selected.country.code === c.code) {
+        clearPanelSelection();
+        return;
+      }
+      setSelected({ kind: "modern", country: c });
+      setHovered(null);
+      // Selecting a different country directly on the map/chart must not leave a
+      // previous country's airline/broadcaster/crest/olympic-committee grid pick
+      // behind — the map and the grid always describe the same entity (see
+      // handleGridSelect). Multi-item Show categories open the country chooser
+      // until the user picks a specific item.
+      clearGridItemSelection();
+    },
+    [codeToCountry, selected, clearPanelSelection, clearGridItemSelection],
+  );
+
   function handleGridSelect(
     id: string,
     crestId?: string,
@@ -1713,6 +1757,38 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       // change on the map. Always keeping map = panel = grid in sync fixes both.
       const c = codeToCountry.get(id);
       if (!c) return;
+
+      // Re-clicking the already-active grid card clears the selection — same
+      // toggle as the Unselect button and clicking the selected country on the
+      // map/chart. Match on the specific Show-item id when the tile carries one
+      // (airline, party, home-nation crest, …); otherwise on the country itself.
+      const countryAlreadySelected =
+        selected?.kind === "modern" && selected.country.code === c.code;
+      if (countryAlreadySelected) {
+        const reclickSameItem =
+          crestId != null
+            ? gridCrest?.id === crestId
+            : olympicCommitteeId != null
+              ? gridOlympicCommittee?.id === olympicCommitteeId
+              : airlineId != null
+                ? gridAirlineId === airlineId
+                : broadcasterId != null
+                  ? gridBroadcasterId === broadcasterId
+                  : tourismLogoId != null
+                    ? gridTourismLogoId === tourismLogoId
+                    : newsAgencyId != null
+                      ? gridNewsAgencyId === newsAgencyId
+                      : newspaperId != null
+                        ? gridNewspaperId === newspaperId
+                        : partyId != null
+                          ? gridPartyId === partyId
+                          : true;
+        if (reclickSameItem) {
+          clearPanelSelection();
+          return;
+        }
+      }
+
       setSelected({ kind: "modern", country: c });
       setHovered(null);
       // Exactly one of crestId/airlineId/broadcasterId is ever passed for a given
@@ -1743,6 +1819,16 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       if (newspaperId) setGridContentType("newspaper");
       if (partyId) setGridContentType("party");
     } else {
+      // Historical flag-grid tile: same toggle — re-clicking the open polity clears it.
+      if (selected?.kind === "historical") {
+        const already =
+          selected.name === id ||
+          polityDisplayName(selected.name, eraId) === polityDisplayName(id, eraId);
+        if (already) {
+          clearPanelSelection();
+          return;
+        }
+      }
       const sel = selectionFromPolityName(id);
       if (!sel) return;
       setSelected(sel);
@@ -1811,12 +1897,15 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
 
   const pickChooserItem = useCallback(
     (type: MultiItemGridContentType, id: string) => {
-      if (type === "airline") setGridAirlineId(id);
-      else if (type === "broadcaster") setGridBroadcasterId(id);
-      else if (type === "tourismlogo") setGridTourismLogoId(id);
-      else if (type === "newsagency") setGridNewsAgencyId(id);
-      else if (type === "newspaper") setGridNewspaperId(id);
-      else setGridPartyId(id);
+      // Re-clicking the open chooser item clears just that pick (country stays
+      // selected so the chooser reappears) — same toggle pattern as a subdivision
+      // symbol card. Full country clear is the grid/map/chart's job.
+      if (type === "airline") setGridAirlineId((cur) => (cur === id ? null : id));
+      else if (type === "broadcaster") setGridBroadcasterId((cur) => (cur === id ? null : id));
+      else if (type === "tourismlogo") setGridTourismLogoId((cur) => (cur === id ? null : id));
+      else if (type === "newsagency") setGridNewsAgencyId((cur) => (cur === id ? null : id));
+      else if (type === "newspaper") setGridNewspaperId((cur) => (cur === id ? null : id));
+      else setGridPartyId((cur) => (cur === id ? null : id));
     },
     [],
   );
@@ -2016,6 +2105,12 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             selectedCode={selectedSubdivision?.code ?? null}
             countryCode={subdivisionCountry?.code}
             onSelect={(code) => {
+              // Re-clicking the open division clears it.
+              if (selectedSubdivision?.code === code) {
+                setSelectedSubdivision(null);
+                setSelectedCapital(null);
+                return;
+              }
               const countryMeta = subdivisionCountry ? SUBDIVISION_META[subdivisionCountry.code] : null;
               let meta = countryMeta?.divisions.find((d) => d.code === code);
               if (!meta && subdivisionGeo) {
@@ -2053,23 +2148,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
               // WorldProgressMap resolves territory codes to parent country
               // codes before calling onSelect/onHover, so these handlers
               // always receive a sovereign-country code.
-              onSelect: (code) => {
-                const c = codeToCountry.get(code);
-                if (c) {
-                  if (hoverClearTimer.current) {
-                    clearTimeout(hoverClearTimer.current);
-                    hoverClearTimer.current = null;
-                  }
-                  setSelected({ kind: "modern", country: c });
-                  setHovered(null);
-                  // Selecting a different country directly on the map must not leave a
-                  // previous country's airline/broadcaster/crest/olympic-committee grid
-                  // pick behind — the map and the grid always describe the same entity
-                  // (see handleGridSelect above). Multi-item Show categories open the
-                  // country chooser until the user picks a specific item.
-                  clearGridItemSelection();
-                }
-              },
+              onSelect: handleModernMapOrChartSelect,
               onHover: (code) => {
                 if (!code) {
                   // Debounce: give the mouse 200ms to reach the side panel
@@ -2146,17 +2225,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           hoveredCode={
             hovered?.kind === "modern" ? hovered.country.code : null
           }
-          onSelect={(code) => {
-            const c = codeToCountry.get(code);
-            if (!c) return;
-            if (hoverClearTimer.current) {
-              clearTimeout(hoverClearTimer.current);
-              hoverClearTimer.current = null;
-            }
-            setSelected({ kind: "modern", country: c });
-            setHovered(null);
-            clearGridItemSelection();
-          }}
+          onSelect={handleModernMapOrChartSelect}
           onHover={(code) => {
             if (!code) {
               hoverClearTimer.current = setTimeout(() => {
@@ -3034,6 +3103,13 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         const meta = SUBDIVISION_META[subdivisionCountry.code];
         const divisions = meta?.divisions ?? [];
         const selectSubdivision = (code: string) => {
+          // Re-clicking the open division card clears it — same toggle as the
+          // subdivision map and the national flag grid.
+          if (selectedSubdivision?.code === code) {
+            setSelectedSubdivision(null);
+            setSelectedCapital(null);
+            return;
+          }
           const div = divisions.find((d) => d.code === code);
           if (div) {
             setSelectedSubdivision(div);
