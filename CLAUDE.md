@@ -1542,6 +1542,60 @@ country or gains an implausible year, or if a curated `modernName` points at a c
 no adoption year (which would silently refuse the flag the author intended). It also prints
 every borrow the gate refused, so the curation stays visible. Never weaken it; fix the data.
 
+## Membership badges: full name, abbreviation, sourced explainer — hard rule, do not override without approval
+
+**Every Learn-mode country-widget Membership badge (`EntitySummary` →
+`MembershipBadge`, data `COUNTRY_BLOCKS` in `src/data/countryBlocks.ts`) MUST
+reveal, on hover or tap/focus, a tooltip whose title is
+`{fullName} ({abbreviation})` (e.g. `North Atlantic Treaty Organization (NATO)`)
+and whose body is a short sourced explainer covering (1) what the organisation
+is, (2) when it was created, and (3) when THIS country joined — or that it is a
+founding member. A bare badge label with no tooltip is forbidden.**
+
+### Why this rule exists
+
+Membership pills used to show only the short label (`NATO`, `Mercosur`). Users
+could not tell what the organisation was, when it began, or what the country's
+relationship to it was — Brazil looks the same as a late joiner until you know
+it is a Mercosur founder (Treaty of Asunción, 1991). The tooltip makes that
+structured fact visible without cluttering the badge row.
+
+### Rules
+
+1. **Every `CountryBlock` carries `fullName`, `abbreviation`, `founded`,
+   `summary`, and a `joined` map covering every code in `codes`.** Adding a
+   membership (or a member) means filling those fields in the same change —
+   never ship a badge that cannot explain itself.
+2. **Tooltip title is always `membershipDisplayName(block)`** —
+   `{fullName} ({abbreviation})`. Never hand-write a parallel title string in
+   the component.
+3. **Tooltip body is always `membershipExplainer(block, code, countryName)`** —
+   summary + `Created in {founded}.` + either `{country} is a founding member.`
+   (when `joined[code] === founded`) or `{country} became a member in {year}.`.
+   Never invent a join year; if a year cannot be sourced, omit the membership
+   from `codes` rather than guess.
+4. **Hover AND tap/focus must reveal the tip** (`:hover` and `:focus-within` on
+   the badge item; the control is a focusable `<button>`). Desktop-only `title=`
+   tooltips are not enough — touch users must get the same explainer.
+5. **Never weaken `scripts/check-country-blocks.mjs`** to force a block through.
+   If it fires, the metadata or the tooltip wiring is wrong — fix the data /
+   component, not the check.
+6. **Verify in the running app** (the mandatory visual-verification rule
+   applies): open Brazil's **Politics** tab, hover/tap **Mercosur**, confirm
+   the tip reads `Southern Common Market (Mercosur)` and states Brazil is a
+   founding member created in 1991; open Finland, confirm **NATO** states
+   membership from 2023.
+
+### Enforcement
+
+`scripts/check-country-blocks.mjs` (`npm run blocks:check`, in `npm run test:ui`
+/ `flags:check` and the `flag-integrity` workflow) **fails the build** when a
+block lacks `fullName` / `abbreviation` / `founded` / `summary` / per-code
+`joined`, when a join year precedes `founded`, when `EntitySummary` stops
+rendering `MembershipBadge`, when the badge loses `membershipDisplayName` /
+`membershipExplainer` / `role="tooltip"`, or when the CSS hover/focus-within tip
+rules disappear. Never weaken it; fix the membership data or the tooltip.
+
 ## Index labels: thematic groups, year + publisher, never "Global" — hard rule, do not override without approval
 
 **Every Learn-mode democracy / governance / ratings index label — map colour dropdown,
