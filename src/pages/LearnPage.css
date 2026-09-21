@@ -2216,15 +2216,30 @@
 }
 
 .learn-panel-tabs__more {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
   flex: 0 0 auto;
-  align-self: center;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
   line-height: 1;
-  color: var(--ink-soft);
-  padding: 0 0.15rem;
+  color: var(--ink);
+  background: var(--paper);
+  padding: 0.15rem 0.2rem;
+  border-radius: 0.25rem;
   pointer-events: none;
   user-select: none;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ink) 12%, transparent);
+}
+
+.learn-panel-tabs__more--start {
+  left: 0;
+}
+
+.learn-panel-tabs__more--end {
+  right: 0;
 }
 
 .learn-panel-tabs {
