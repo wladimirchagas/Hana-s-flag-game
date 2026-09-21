@@ -3444,8 +3444,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Uganda's principal independent national news agency, founded in 2005; operates a network of over 100 correspondents across all 135 districts of Uganda, delivering verified news wire stories and broadcast audio clips to radio stations and print newsrooms",
       "readership": {"metric":"Syndicated to over 85 commercial and community radio stations nationwide, reaching over 15 million listeners daily","source":"Uganda Communications Commission (UCC) Media Assessment"},
       "revenueModel": "Media subscription syndication fees and donor journalism project grants",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": ["https://ugandaradionetwork.net","https://en.wikipedia.org/wiki/Media_of_Uganda"],
+      "logo": "newspaper-logos/ug/urn.png",
+      "logoExplainer": "Yellow oval 'UGANDA' beside red 'RADIONETWORK™' with 'Truth on time' slogan bar and site URL — Uganda Radio Network masthead.",
+      "licenceNote": "Uganda Radio Network masthead from the agency's official site brand assets (ugandaradionetwork.com), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
+      "sources": ["https://ugandaradionetwork.net","https://en.wikipedia.org/wiki/Media_of_Uganda"]
     }
   ],
   "US": [

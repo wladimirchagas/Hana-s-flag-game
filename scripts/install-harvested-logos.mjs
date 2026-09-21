@@ -17,20 +17,13 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "sn-sud-quotidien",
-    src: "tmp/batch85-install/sn-sud-quotidien.jpg",
+    id: "ug-urn",
+    src: "tmp/batch86-install/ug-urn.png",
     explainer:
-      "Bold red lowercase 'sud' with black cursive 'Quotidien' overlaid on the lower letters — Sud Quotidien masthead.",
+      "Yellow oval 'UGANDA' beside red 'RADIONETWORK™' with 'Truth on time' slogan bar and site URL — Uganda Radio Network masthead.",
     licence:
-      "Sud Quotidien masthead from the publisher's official site brand assets (sudquotidien.sn), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "sy-al-baath",
-    src: "tmp/batch85-install/sy-al-baath.png",
-    explainer:
-      "Black Arabic 'البعث' wordmark with a red circular media mark holding green 'ميديا' — Al-Ba'ath Media brand mark.",
-    licence:
-      "Al-Ba'ath masthead from the publisher's official site brand assets (albaathmedia.sy), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Uganda Radio Network masthead from the agency's official site brand assets (ugandaradionetwork.com), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+    dataset: "agency",
   },
 ];
 
