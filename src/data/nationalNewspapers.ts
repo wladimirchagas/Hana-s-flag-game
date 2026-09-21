@@ -17272,7 +17272,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -17291,6 +17290,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Nicaraguan independent news brand",
         "source": "https://100noticias.com.ni"
       },
+      "logo": "newspaper-logos/ni/100noticias.svg",
+      "logoExplainer": "Stacked red serif '100%' over navy serif 'NOTICIAS' — 100% Noticias Nicaragua masthead wordmark.",
+      "licenceNote": "100% Noticias masthead wordmark from the outlet's official site icon sprite (100noticias.com.ni/static/images/icons/icon_list.svg, symbol logo-color), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://100noticias.com.ni"
       ]
@@ -21716,7 +21719,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Groupe Futurs Médias Audit 2023"
       },
       "revenueModel": "High-volume retail print sales and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sn/lobservateur.jpg",
+      "logoExplainer": "Black italic 'L'OBS' with a red outline, the word 'OBSERVATEUR' in white caps across a red bar through the O — L'Observateur (GFM) brand mark.",
+      "licenceNote": "L'Observateur brand mark from the publisher group site brand assets (gfm.sn/wp-content/uploads/2018/10/obs-1.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://gfm.sn",
         "https://en.wikipedia.org/wiki/Media_of_Senegal"
