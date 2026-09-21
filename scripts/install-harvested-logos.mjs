@@ -12,47 +12,35 @@ import { fileURLToPath } from "node:url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-/** Visually verified batch — montage-scanned light/dark. */
+/** Visually verified batch — montage-scanned light/dark.
+ * Set `dataset: "agency"` to patch nationalNewsAgencies.ts instead of newspapers.
+ */
 const MANIFEST = [
   {
-    id: "gd-grenada-informer",
-    src: "tmp/batch76-install/gd-grenada-informer.jpg",
+    id: "lb-nna",
+    dataset: "agency",
+    src: "tmp/batch77-install/lb-nna.jpg",
     explainer:
-      "Red INFORMER wordmark on green with Grenada-flag ribbon and NON PARTISAN / FEARLESS WEEKLY slogans — The Grenada Informer masthead.",
+      "Blue 3D 'NNA' with Lebanese cedar on an orbiting ring over a red map field — National News Agency (Lebanon) brand mark.",
     licence:
-      "The Grenada Informer masthead from the publisher's own site brand assets (thegrenadainformer.com); trademark bundled for educational reference in Learn mode.",
+      "NNA brand mark from the agency's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "tz-mwananchi",
-    src: "tmp/batch76-install/tz-mwananchi.png",
+    id: "ss-ssna",
+    dataset: "agency",
+    src: "tmp/batch77-install/ss-ssna.jpg",
     explainer:
-      "Black serif 'MWANANCHI' wordmark — Mwananchi (Tanzania) masthead as published on mwananchi.co.tz.",
+      "Circular seal with South Sudan map and white 'SSNA' ringed by 'SOUTH SUDAN NEWS AGENCY' — SSNA brand mark.",
     licence:
-      "Mwananchi wordmark cropped from the publisher's own site header on mwananchi.co.tz; trademark bundled for educational reference in Learn mode.",
+      "SSNA brand mark from the agency's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "ly-febrayer",
-    src: "tmp/batch76-install/ly-febrayer.jpg",
+    id: "cm-mutations",
+    src: "tmp/batch77-install/cm-mutations.jpg",
     explainer:
-      "White Arabic 'فبراير' (Febrayer) with 'الحقيقة.. كما هي' slogan on red — Febrayer brand mark.",
+      "White 'Mutations' on red with globe 'o' and black 'QUOTIDIEN' bar — Mutations (Cameroon) masthead.",
     licence:
-      "Febrayer brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "cd-la-prosperite",
-    src: "tmp/batch76-install/cd-la-prosperite.jpg",
-    explainer:
-      "Orange bullseye-and-arrow above black 'LAPROSPERITE' and orange '.CD' — La Prospérité brand mark.",
-    licence:
-      "La Prospérité brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "ws-savali",
-    src: "tmp/batch76-install/ws-savali.jpg",
-    explainer:
-      "Circular seal with Samoa coat of arms ringed by 'SAVALI NEWSPAPER & PRODUCTIONS' — Savali brand mark.",
-    licence:
-      "Savali brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Mutations masthead cropped from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
@@ -118,6 +106,9 @@ if (MANIFEST.length === 0) {
 }
 
 let papers = readFileSync(resolve(ROOT, "src/data/nationalNewspapers.ts"), "utf8");
+let agencies = readFileSync(resolve(ROOT, "src/data/nationalNewsAgencies.ts"), "utf8");
+let papersTouched = false;
+let agenciesTouched = false;
 
 for (const entry of MANIFEST) {
   const srcPath = resolve(ROOT, entry.src);
@@ -131,13 +122,21 @@ for (const entry of MANIFEST) {
   const dest = resolve(ROOT, "public", rel);
   copyFileSync(srcPath, dest);
   console.log(`copied ${rel}`);
-  papers = patchEntry(papers, entry.id, {
+  const fields = {
     logo: rel,
     explainer: entry.explainer,
     licence: entry.licence,
-  });
-  console.log(`patched ${entry.id}`);
+  };
+  if (entry.dataset === "agency") {
+    agencies = patchEntry(agencies, entry.id, fields);
+    agenciesTouched = true;
+  } else {
+    papers = patchEntry(papers, entry.id, fields);
+    papersTouched = true;
+  }
+  console.log(`patched ${entry.id}${entry.dataset === "agency" ? " (agency)" : ""}`);
 }
 
-writeFileSync(resolve(ROOT, "src/data/nationalNewspapers.ts"), papers);
+if (papersTouched) writeFileSync(resolve(ROOT, "src/data/nationalNewspapers.ts"), papers);
+if (agenciesTouched) writeFileSync(resolve(ROOT, "src/data/nationalNewsAgencies.ts"), agencies);
 console.log("done", MANIFEST.length);
