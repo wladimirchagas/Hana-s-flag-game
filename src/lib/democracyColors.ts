@@ -139,23 +139,33 @@ export const GPI_BAND_ORDER: readonly string[] = [
   "Very Low",
 ];
 
-/** WEF Global Gender Gap Index map bands — % of the gender gap closed (higher = greener). */
+/** WEF Global Gender Gap Index map bands — decade of percentage closed
+ *  (score×100). Higher = closer to parity. Colours run parity→gap
+ *  (green→yellow→red), matching the CPI clean→corrupt convention. */
 export const GENDER_GAP_MAP_COLORS: Record<string, string> = {
-  "90–100%": "#004d1a",
-  "80–89%": "#1b5e20",
-  "70–79%": "#43a047",
-  "60–69%": "#fdd835",
-  "50–59%": "#fb8c00",
-  "Below 50%": "#b71c1c",
+  "90–100": "#004d1a",
+  "80–89": "#1b5e20",
+  "70–79": "#43a047",
+  "60–69": "#9ccc65",
+  "50–59": "#fdd835",
+  "40–49": "#fb8c00",
+  "30–39": "#f4511e",
+  "20–29": "#e53935",
+  "10–19": "#c62828",
+  "0–9": "#7f0000",
 };
 
 export const GENDER_GAP_BAND_ORDER: readonly string[] = [
-  "90–100%",
-  "80–89%",
-  "70–79%",
-  "60–69%",
-  "50–59%",
-  "Below 50%",
+  "90–100",
+  "80–89",
+  "70–79",
+  "60–69",
+  "50–59",
+  "40–49",
+  "30–39",
+  "20–29",
+  "10–19",
+  "0–9",
 ];
 
 /** Democracy Perception Index 2026 tiers (±5 / ±15 on Index Score). */
@@ -400,23 +410,12 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
     ];
   }
   if (key === "gender-gap") {
-    return [
-      { label: "Below 50%", min: 0, max: 0.5 },
-      { label: "50–59%", min: 0.5, max: 0.6 },
-      { label: "60–69%", min: 0.6, max: 0.7 },
-      { label: "70–79%", min: 0.7, max: 0.8 },
-      { label: "80–89%", min: 0.8, max: 0.9 },
-      { label: "90–100%", min: 0.9, max: 1 },
-    ];
+    // Decade bands on the 0–1 parity scale (score×100).
+    return GENDER_GAP_BAND_ORDER.map((label) => {
+      const [lo, hi] = label.split("–").map(Number);
+      return { label, min: lo / 100, max: hi / 100 };
+    }).reverse(); // low→high for the axis
   }
-  // hdi — UNDP cut-offs (Very High ≥0.800, High ≥0.700, Medium ≥0.550).
-  return [
-    { label: "Low", min: 0, max: 0.55 },
-    { label: "Medium", min: 0.55, max: 0.7 },
-    { label: "High", min: 0.7, max: 0.8 },
-    { label: "Very High", min: 0.8, max: 1 },
-  ];
-
   if (key === "gpi") {
     // IEP 2026 State of Peace cutoffs (lower score = more peaceful).
     return [
@@ -427,7 +426,13 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
       { label: "Very Low", min: 2.882, max: 5 },
     ];
   }
-
+  // hdi — UNDP cut-offs (Very High ≥0.800, High ≥0.700, Medium ≥0.550).
+  return [
+    { label: "Low", min: 0, max: 0.55 },
+    { label: "Medium", min: 0.55, max: 0.7 },
+    { label: "High", min: 0.7, max: 0.8 },
+    { label: "Very High", min: 0.8, max: 1 },
+  ];
 }
 
 /** Format a country's value on one axis for tooltips (classification + score). */

@@ -10598,7 +10598,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "perCapita": "State funded"
       },
       "revenueModel": "Parliamentary state budget allocation and legal notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/iq/al-sabaah.jpg",
+      "logoExplainer": "Orange rising-sun icon with white 'Assabah' beside Arabic 'الصباح' on blue, tagged 'ASSABAH NEWSPAPER' — Al-Sabaah masthead.",
+      "licenceNote": "Al-Sabaah (Iraq) masthead from Wikimedia Commons File:شعار جريدة الصباح العراقية.jpg (Public domain) for educational reference in Learn mode.",
+
       "sources": [
         "https://alsabaah.iq",
         "https://en.wikipedia.org/wiki/Al-Sabaah"
@@ -21264,7 +21267,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Sierra Leone Telegraph Analytics 2023"
       },
       "revenueModel": "Digital display advertising, reader donations, and syndicated analyses",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sl/sl-telegraph.png",
+      "logoExplainer": "Navy stacked 'THE SIERRA LEONE / TELEGRAPH' with 'SIERRA LEONE NEWS' tagline on grey — Sierra Leone Telegraph masthead.",
+      "licenceNote": "The Sierra Leone Telegraph masthead trademark bundled from the publisher's official site brand assets (thesierraleonetelegraph.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.thesierraleonetelegraph.com",
         "https://en.wikipedia.org/wiki/Media_of_Sierra_Leone"
@@ -22939,7 +22945,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Majlisi Oli Press Office Annual Summary"
       },
       "revenueModel": "Parliamentary budget appropriations and public sector subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tj/sadoi-mardum.png",
+      "logoExplainer": "Parliament building illustration with Tajik flag beside bold Cyrillic 'Садои мардум' and Supreme Assembly subtitle — Sadoi Mardum masthead.",
+      "licenceNote": "Sadoi Mardum masthead trademark bundled from the publisher's official site brand assets (sadoimardum.tj) for educational reference in Learn mode.",
+
       "sources": [
         "https://sadoimardum.tj",
         "https://tg.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B4%D0%BE%D0%B8_%D0%BC%D0%B0%D1%80%D0%B4%D1%83%D0%BC"
@@ -23279,7 +23288,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SNIPE Press Distribution Audit"
       },
       "revenueModel": "State public notices, commercial advertisements, and retail sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tn/essahafa.png",
+      "logoExplainer": "Bold red Arabic 'الصحافة' over smaller 'اليوم' — Essahafa / Assahafa Al-Youm masthead.",
+      "licenceNote": "Essahafa masthead trademark bundled from the publisher's official site brand assets (essahafa.tn) for educational reference in Learn mode.",
+
       "sources": [
         "https://essahafa.tn",
         "https://en.wikipedia.org/wiki/Media_of_Tunisia"
@@ -25673,7 +25685,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "YPS Audit / Al-Ayyam Media Profile"
       },
       "revenueModel": "Print newsstand sales, corporate commercial advertising, and digital ads",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ye/al-ayyam.png",
+      "logoExplainer": "Black Arabic 'الأيام' over twin wireframe globes with white outline glow and italic 'AL-AYYAM' — Al-Ayyam (Aden) masthead.",
+      "licenceNote": "Al-Ayyam (Aden) masthead trademark bundled from the publisher's official site brand assets (alayyam.info) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.alayyam.info",
         "https://en.wikipedia.org/wiki/Al-Ayyam_(Yemen)"
@@ -25727,7 +25742,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Similarweb Yemen Media Rankings / Alexa Archive"
       },
       "revenueModel": "Digital programmatic advertising and sponsored commercial features",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ye/al-mashhad.png",
+      "logoExplainer": "White Arabic 'المشهد' beside grey 'نيوز' panel cut by a red diagonal on black — Al-Mashhad Al-Yemeni site masthead.",
+      "licenceNote": "Al-Mashhad Al-Yemeni masthead trademark bundled from the publisher's official site brand assets (almashhad-alyemeni.com / almashhad.news CDN) for educational reference in Learn mode.",
+
       "sources": [
         "https://almashhad-alyemeni.com",
         "https://en.wikipedia.org/wiki/Media_of_Yemen"
