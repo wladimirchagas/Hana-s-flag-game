@@ -380,19 +380,14 @@ const HDI_ORDER: Record<string, number> = {
   "Not rated": 5,
 };
 
-/** WEF Global Gender Gap Index — decade bands, closest to parity first. */
+/** WEF Global Gender Gap Index — occupied decade bands, closest to parity first. */
 const GENDER_GAP_ORDER: Record<string, number> = {
   "90–100": 1,
   "80–89": 2,
   "70–79": 3,
   "60–69": 4,
   "50–59": 5,
-  "40–49": 6,
-  "30–39": 7,
-  "20–29": 8,
-  "10–19": 9,
-  "0–9": 10,
-  "Not rated": 11,
+  "Not rated": 6,
 };
 
 /** Global Peace Index State of Peace bands — most peaceful first. */

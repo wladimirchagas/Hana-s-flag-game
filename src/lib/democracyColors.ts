@@ -299,10 +299,20 @@ export const IMD_COMPETITIVENESS_BAND_ORDER: readonly string[] = DECADE_SCORE_BA
 
 export const IMD_COMPETITIVENESS_MAP_COLORS = indexBandColors(DECADE_SCORE_BAND_ORDER);
 
-/** WEF Global Gender Gap Index — decade of percentage closed (score×100). */
-export const GENDER_GAP_BAND_ORDER: readonly string[] = DECADE_SCORE_BAND_ORDER;
+/** WEF Global Gender Gap Index — decade of percentage closed (score×100).
+ *  Only bands that appear in the bundled extract (GGGR 2026: 50–59 … 90–100).
+ *  Empty decades (0–9 … 40–49) are omitted so the shared palette stretches
+ *  across the real range: best green → worst deep red on the lowest-ranked
+ *  economies. Recompute from the extract when a future edition fills a new decade. */
+export const GENDER_GAP_BAND_ORDER = [
+  "90–100",
+  "80–89",
+  "70–79",
+  "60–69",
+  "50–59",
+] as const;
 
-export const GENDER_GAP_MAP_COLORS = indexBandColors(DECADE_SCORE_BAND_ORDER);
+export const GENDER_GAP_MAP_COLORS = indexBandColors(GENDER_GAP_BAND_ORDER);
 
 /** Democracy Perception Index tiers (±5 / ±15 on Index Score). */
 export const PERCEPTION_TIER_ORDER = [
@@ -443,7 +453,7 @@ export const INDEX_MAP_COLOR_REGISTRY: readonly {
     key: "gender-gap",
     name: "GENDER_GAP_MAP_COLORS",
     colors: GENDER_GAP_MAP_COLORS,
-    labelsBestFirst: DECADE_SCORE_BAND_ORDER,
+    labelsBestFirst: GENDER_GAP_BAND_ORDER,
   },
   {
     key: "perception",
