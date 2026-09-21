@@ -17,12 +17,20 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "zm-the-mast",
-    src: "tmp/batch94-install/zm-the-mast.jpg",
+    id: "sn-lobservateur",
+    src: "tmp/batch95-install/sn-lobservateur.jpg",
     explainer:
-      "White serif 'THE MAST' between double horizontal rules on a deep purple crowd-photo banner — The Mast Online masthead.",
+      "Black italic 'L'OBS' with a red outline, the word 'OBSERVATEUR' in white caps across a red bar through the O — L'Observateur (GFM) brand mark.",
     licence:
-      "The Mast masthead from the publisher's official site brand assets (themastonline.com/wp-content/uploads/2017/03/The-mast-logo.jpeg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "L'Observateur brand mark from the publisher group site brand assets (gfm.sn/wp-content/uploads/2018/10/obs-1.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "ni-100noticias",
+    src: "tmp/batch95-install/ni-100noticias.svg",
+    explainer:
+      "Stacked red serif '100%' over navy serif 'NOTICIAS' — 100% Noticias Nicaragua masthead wordmark.",
+    licence:
+      "100% Noticias masthead wordmark from the outlet's official site icon sprite (100noticias.com.ni/static/images/icons/icon_list.svg, symbol logo-color), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
