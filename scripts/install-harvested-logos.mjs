@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "gq-ebano",
-    src: "tmp/batch118-install/gq-ebano.png",
+    id: "gd-the-barnacle",
+    src: "tmp/batch119-install/gd-the-barnacle.png",
     explainer:
-      "Circular gold-rimmed emblem with a green 'E' over a light-blue silhouette of Equatorial Guinea, beside black script 'BANO' and the tricolour subtitle 'ÓRGANO INFORMATIVO NACIONAL' — official masthead from periodicoebano.com.",
+      "Black uppercase 'BARNACLE' wordmark with a red 'FREE' badge overlaid on the centre letters — official site masthead from thebarnaclenews.com (Wayback Machine, Jan 2018).",
     licence:
-      "Ébano trademark bundled from the publisher's official site brand assets (periodicoebano.com/images/logo.png) for educational reference in Learn mode.",
+      "The Barnacle trademark bundled from the publisher's official site brand assets (thebarnaclenews.com masthead, archived via the Wayback Machine) for educational reference in Learn mode.",
   },
 ];
 
