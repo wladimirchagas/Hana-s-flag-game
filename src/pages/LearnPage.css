@@ -652,6 +652,11 @@
     display: inline-flex;
   }
 
+  /* No firm selection yet — keep the map clean; Info only returns after Hide. */
+  .learn-fs--panel-collapsed .learn-fs__panel-drawer-btn--show:disabled {
+    display: none;
+  }
+
   .learn-fs:not(.learn-fs--panel-collapsed) .learn-fs__panel-drawer-btn--show {
     display: none;
   }

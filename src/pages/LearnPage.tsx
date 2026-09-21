@@ -70,8 +70,7 @@ import {
   type LearnPanelTravelSection,
 } from "../lib/learnPanelTabs";
 import {
-  loadLearnPanelOpen,
-  saveLearnPanelOpen,
+  selectionKeyForPanel,
 } from "../lib/learnPanelDrawer";
 import { worldCityMarkers, subdivisionCityMarkers, subdivisionCapital } from "../lib/cityRoles";
 import { SubdivisionPopulation } from "../components/SubdivisionPopulation";
@@ -428,9 +427,10 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [travelSection, setTravelSection] = useState<LearnPanelTravelSection>(
     () => travelSectionForGridContent(loadGridContentType()) ?? "airline",
   );
-  // Large-screen information panel drawer: open = today's two-column layout;
-  // closed = map/chart fills the row. Ignored on ≤900px (stacked layout).
-  const [panelOpen, setPanelOpen] = useState(loadLearnPanelOpen);
+  // Large-screen information panel drawer. Collapsed until a firm selection
+  // exists; Hide dismisses it while keeping the selection; picking another
+  // (or the same again after clear) opens it. Ignored on ≤900px.
+  const [panelDismissed, setPanelDismissed] = useState(false);
   const [isWideLayout, setIsWideLayout] = useState(() => {
     if (typeof window === "undefined" || !window.matchMedia) return true;
     return window.matchMedia("(min-width: 901px)").matches;
@@ -443,11 +443,21 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     mq.addEventListener("change", onChange);
     return () => mq.removeEventListener("change", onChange);
   }, []);
-  const panelCollapsed = isWideLayout && !panelOpen;
-  const setPanelOpenAndPersist = useCallback((open: boolean) => {
-    setPanelOpen(open);
-    saveLearnPanelOpen(open);
-  }, []);
+  const panelSelectionKey = selectionKeyForPanel(
+    selected,
+    subdivisionMode && subdivisionCountry ? subdivisionCountry.code : null,
+  );
+  const prevPanelSelectionKey = useRef(panelSelectionKey);
+  useEffect(() => {
+    if (panelSelectionKey === prevPanelSelectionKey.current) return;
+    prevPanelSelectionKey.current = panelSelectionKey;
+    // A new firm selection (or a clear) resets the Hide dismissal so the next
+    // pick opens the drawer again. Clearing leaves the panel collapsed because
+    // there is nothing to show.
+    setPanelDismissed(false);
+  }, [panelSelectionKey]);
+  const panelCollapsed =
+    isWideLayout && (panelSelectionKey == null || panelDismissed);
   // The specific football crest clicked in the grid, when it is a card that is
   // NOT a plain country — a UK home nation, or a FIFA-member entity. Keyed with
   // its parent country so the panel shows that crest only while the parent stays
@@ -2193,7 +2203,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         <button
           type="button"
           className="learn-fs__panel-drawer-btn learn-fs__panel-drawer-btn--hide"
-          onClick={() => setPanelOpenAndPersist(false)}
+          onClick={() => setPanelDismissed(true)}
           aria-label="Hide information panel"
           title="Hide information panel"
         >
@@ -3045,11 +3055,12 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       <button
         type="button"
         className="learn-fs__panel-drawer-btn learn-fs__panel-drawer-btn--show"
-        onClick={() => setPanelOpenAndPersist(true)}
+        onClick={() => setPanelDismissed(false)}
         aria-label="Show information panel"
         title="Show information panel"
         aria-hidden={!panelCollapsed ? true : undefined}
         tabIndex={!panelCollapsed ? -1 : undefined}
+        disabled={panelSelectionKey == null}
       >
         <UiIcon name="previous" />
         <span className="learn-fs__panel-drawer-label">Info</span>
