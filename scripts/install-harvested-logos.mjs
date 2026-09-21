@@ -17,20 +17,20 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "st-jornal-transparencia",
-    src: "tmp/batch97-install/st-jornal-transparencia.jpg",
+    id: "bf-levenement",
+    src: "tmp/batch98-install/bf-levenement.jpg",
     explainer:
-      "Green-blue script 'JT' beside green 'JORNAL TRANSPARÊNCIA' on a yellow swoosh, with São Tomé and Príncipe flag oval and coat of arms — Jornal Transparência masthead.",
+      "Cream serif 'L'Événement' on a deep-red banner with Burkina Faso outline and yellow 'L'INFORMATION EST UN DROIT' starburst — L'Événement masthead.",
     licence:
-      "Jornal Transparência masthead from the newspaper's official site brand assets (transparencia.st/logotipotransparencia.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "L'Événement masthead from the newspaper's official site banner asset (evenement-bf.net/squelettes/img/bandeau.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "sm-tribuna-sammarinese",
-    src: "tmp/batch97-install/sm-tribuna-sammarinese.png",
+    id: "kh-rasmei-kampuchea",
+    src: "tmp/batch98-install/kh-rasmei-kampuchea.jpg",
     explainer:
-      "Red-and-grey gear with a red lightning bolt over red 'La Tribuna Sammarinese' — La Tribuna Sammarinese brand mark.",
+      "Cyan Khmer title in a pink frame above blue 'RASMEI KAMPUCHEA DAILY NEWSPAPER' and rasmeinews.com — Rasmei Kampuchea Daily masthead.",
     licence:
-      "La Tribuna Sammarinese brand mark from the newspaper's official site logo asset (latribuna.sm/wp-content/uploads/2024/10/La-Tribuna-Sammarinese-logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Rasmei Kampuchea Daily masthead from the newspaper's official site logo asset (rasmeinews.com/wp-content/uploads/2023/03/rsm-logo.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 

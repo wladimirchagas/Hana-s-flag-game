@@ -2067,7 +2067,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "L'Événement Archive"
       },
       "revenueModel": "Print sales and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bf/levenement.jpg",
+      "logoExplainer": "Cream serif 'L'Événement' on a deep-red banner with Burkina Faso outline and yellow 'L'INFORMATION EST UN DROIT' starburst — L'Événement masthead.",
+      "licenceNote": "L'Événement masthead from the newspaper's official site banner asset (evenement-bf.net/squelettes/img/bandeau.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.evenement-bf.net"
       ]
@@ -11933,7 +11936,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Rasmei Kampuchea Publishing Review 2023"
       },
       "revenueModel": "Print retail sales and commercial display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/kh/rasmei-kampuchea.jpg",
+      "logoExplainer": "Cyan Khmer title in a pink frame above blue 'RASMEI KAMPUCHEA DAILY NEWSPAPER' and rasmeinews.com — Rasmei Kampuchea Daily masthead.",
+      "licenceNote": "Rasmei Kampuchea Daily masthead from the newspaper's official site logo asset (rasmeinews.com/wp-content/uploads/2023/03/rsm-logo.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.rasmeinews.com",
         "https://en.wikipedia.org/wiki/Rasmei_Kampuchea_Daily"
