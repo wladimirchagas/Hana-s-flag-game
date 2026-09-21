@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "gw-ang-agencia-noticiosa-da-guine",
-    src: "tmp/batch111-install/gw-ang-agencia-noticiosa-da-guine.jpg",
+    id: "ne-le-republicain",
+    src: "tmp/batch112-install/ne-le-republicain.png",
     explainer:
-      "Red italic 'ANG' under a five-pointed star ringed by concentric signal ellipses, with curved 'Agência de Notícias da Guiné' below — official ANG site masthead.",
+      "Black 'Le Républicain' over italic 'Niger' on an orange rounded rectangle — historic masthead from the paper's own site (republicain-niger.com), archived 2008.",
     licence:
-      "ANG (Agência de Notícias da Guiné) logo from the agency's official site (ang.gw/wp-content/uploads/2023/01/LOGO-ANG-scaled.jpg); trademark bundled for educational reference in Learn mode.",
+      "Le Républicain (Niger) trademark bundled from the publisher's official site brand assets via Wayback Machine (republicain-niger.com/images/LogoRepublicain.gif, 2008-03-12) for educational reference in Learn mode.",
   },
 ];
 
