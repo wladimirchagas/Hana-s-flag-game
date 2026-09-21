@@ -17,20 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "gn-horoya",
-    src: "tmp/batch113-install/gn-horoya.png",
+    id: "bs-punch",
+    src: "tmp/batch114-install/bs-punch.png",
     explainer:
-      "White 'HOROYA' over 'Quotidien National' inside a red oval, with red tagline 'La référence de l’information Juste' beneath — official masthead from horoya.net.",
+      "White stylised 'THE PUNCH' wordmark (tall P and H flanking stacked THE / UNC) on a solid magenta field — official masthead from the publisher's nassaupunch.com brand assets (Wayback).",
     licence:
-      "Horoya trademark bundled from the publisher's official site brand assets (horoya.net/wp-content/uploads/2025/03/horoya-logo.png) for educational reference in Learn mode.",
-  },
-  {
-    id: "tl-diario-nacional",
-    src: "tmp/batch113-install/tl-diario-nacional.png",
-    explainer:
-      "Timor-Leste flag beside red 'Jornal Nacional' over black 'Diário' with a sun-ray stylised 'i' — masthead from the publisher's jndiario.tl brand assets.",
-    licence:
-      "Jornal Nacional Diário / Grupo de Média Nacional trademark bundled from the publisher's official site brand assets (jndiario.tl/media/vizitor/gmn.png) for educational reference in Learn mode.",
+      "The Punch (Bahamas) trademark bundled from the publisher's official site brand assets (nassaupunch.com/wp-content/uploads/2014/03/cropped-abcd-e1394813641440.png via Wayback Machine) for educational reference in Learn mode.",
   },
 ];
 

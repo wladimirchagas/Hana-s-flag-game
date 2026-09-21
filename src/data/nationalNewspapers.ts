@@ -3128,9 +3128,12 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Punch Publishing Group"
       },
       "revenueModel": "Newsstand retail sales and local advertising",
-      "noImageReason": "No authentic masthead is shown yet. A placeholder graphic was removed. Wikimedia Commons, the newspaper's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
+      "logo": "newspaper-logos/bs/punch.png",
+      "logoExplainer": "White stylised 'THE PUNCH' wordmark (tall P and H flanking stacked THE / UNC) on a solid magenta field — official masthead from the publisher's nassaupunch.com brand assets (Wayback).",
+      "licenceNote": "The Punch (Bahamas) trademark bundled from the publisher's official site brand assets (nassaupunch.com/wp-content/uploads/2014/03/cropped-abcd-e1394813641440.png via Wayback Machine) for educational reference in Learn mode.",
       "sources": [
-        "https://en.wikipedia.org/wiki/The_Punch_(Bahamas)"
+        "https://web.archive.org/web/20210116211421/http://nassaupunch.com/wp-content/uploads/2014/03/cropped-abcd-e1394813641440.png",
+        "https://www.bahamaslocal.com/showlisting/12423/The_Punch.html"
       ]
     },
     {
