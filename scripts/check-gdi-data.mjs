@@ -238,8 +238,12 @@ for (const [rel, needle] of uiFiles) {
   if (rel.endsWith("democracyColors.ts") && !src.includes('"gdi"')) {
     errors.push(`${rel}: DemocracyIndexKey must include "gdi"`);
   }
-  if (rel.endsWith("EntitySummary.tsx") && !src.includes('getDemocracyIndexLabel("gdi")')) {
-    errors.push(`${rel}: must label gdi via getDemocracyIndexLabel("gdi")`);
+  if (rel.endsWith("EntitySummary.tsx")) {
+    if (!src.includes('case "gdi"') || !src.includes("getDemocracyIndexMenuGroups")) {
+      errors.push(
+        `${rel}: must render gdi via formatIndexValue + getDemocracyIndexMenuGroups`,
+      );
+    }
   }
   if (rel.endsWith("FlagGrid.tsx") && !src.includes("getDemocracyIndexLabel")) {
     errors.push(`${rel}: Group-by must use getDemocracyIndexLabel()`);
