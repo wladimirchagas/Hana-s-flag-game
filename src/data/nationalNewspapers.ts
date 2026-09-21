@@ -504,8 +504,12 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Antigua Trumpet Media Kit"
       },
       "revenueModel": "Advertising and private sponsorships",
-      "noImageReason": "No authentic masthead is shown yet. A placeholder graphic was removed. Wikimedia Commons, the newspaper's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
+      "logo": "newspaper-logos/ag/antigua-trumpet.png",
+      "logoExplainer": "Dark-blue 'Trumpet' joined to grey 'News', with the tagline 'ANTIGUA | WE MEAN BUSINESS' under a thin rule — Antiguan Trumpet site masthead.",
+      "licenceNote": "Antiguan Trumpet logo from the newspaper's official site (antiguantrumpet.com/wp-content/uploads/2020/07/ATMainLogo272x90.png); trademark bundled for educational reference in Learn mode.",
+
       "sources": [
+        "https://antiguantrumpet.com/",
         "https://antiguatrumpet.com"
       ]
     },
