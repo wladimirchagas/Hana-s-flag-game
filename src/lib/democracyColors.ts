@@ -13,7 +13,8 @@ export type DemocracyIndexKey =
   | "rsf-press"
   | "hdi"
   | "gender-gap"
-  | "gpi";
+  | "gpi"
+  | "happiness";
 
 export type DemocracyMapMode = DemocracyIndexKey | null;
 
@@ -30,6 +31,7 @@ export const DEMOCRACY_INDEX_KEYS: readonly DemocracyIndexKey[] = [
   "hdi",
   "gender-gap",
   "gpi",
+  "happiness",
 ] as const;
 
 export type DemocracyAxisBand = {
@@ -139,6 +141,37 @@ export const GPI_BAND_ORDER: readonly string[] = [
   "Very Low",
 ];
 
+/** World Happiness Report Cantril-ladder score bands (happiest → least).
+ *  Bands are 1-point intervals on the published 0–10 life-evaluation scale;
+ *  WHR itself does not publish categorical tiers — these exist for the map
+ *  and Group-by, matching the CPI score-band pattern. */
+export const HAPPINESS_MAP_COLORS: Record<string, string> = {
+  "9.0–10": "#004d1a",
+  "8.0–8.9": "#1b5e20",
+  "7.0–7.9": "#2e7d32",
+  "6.0–6.9": "#66bb6a",
+  "5.0–5.9": "#c0ca33",
+  "4.0–4.9": "#fdd835",
+  "3.0–3.9": "#fb8c00",
+  "2.0–2.9": "#f4511e",
+  "1.0–1.9": "#c62828",
+  "0.0–0.9": "#7f0000",
+};
+
+export const HAPPINESS_BAND_ORDER: readonly string[] = [
+  "9.0–10",
+  "8.0–8.9",
+  "7.0–7.9",
+  "6.0–6.9",
+  "5.0–5.9",
+  "4.0–4.9",
+  "3.0–3.9",
+  "2.0–2.9",
+  "1.0–1.9",
+  "0.0–0.9",
+];
+
+
 /** WEF Global Gender Gap Index map bands — decade of percentage closed
  *  (score×100). Higher = closer to parity. Colours run parity→gap
  *  (green→yellow→red), matching the CPI clean→corrupt convention. */
@@ -195,6 +228,7 @@ export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
   if (mode === "hdi") return "Human Development Index";
   if (mode === "gender-gap") return "Global Gender Gap Index";
   if (mode === "gpi") return "Global Peace Index";
+  if (mode === "happiness") return "World Happiness Report";
   return "";
 }
 
@@ -261,6 +295,12 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
       color: GPI_MAP_COLORS[label],
     }));
   }
+  if (mode === "happiness") {
+    return HAPPINESS_BAND_ORDER.map((label) => ({
+      label,
+      color: HAPPINESS_MAP_COLORS[label],
+    }));
+  }
   return [];
 }
 
@@ -299,6 +339,9 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
     } else if (mode === "gpi") {
       rating = demo.gpi?.rating;
       colorMap = GPI_MAP_COLORS;
+    } else if (mode === "happiness") {
+      rating = demo.happiness?.rating;
+      colorMap = HAPPINESS_MAP_COLORS;
     } else {
       continue;
     }
@@ -319,7 +362,8 @@ export function getDemocracyIndexLabel(key: DemocracyIndexKey): string {
   if (key === "rsf-press") return "RSF Press Freedom Index";
   if (key === "hdi") return "Human Development Index";
   if (key === "gender-gap") return "Global Gender Gap Index";
-  return "Global Peace Index";
+  if (key === "gpi") return "Global Peace Index";
+  return "World Happiness Report";
 }
 
 /** Pull the index row for a country from bundled facts. */
@@ -336,7 +380,8 @@ export function getDemocracyIndexFor(
   if (key === "rsf-press") return democracy.rsfPress;
   if (key === "hdi") return democracy.hdi;
   if (key === "gender-gap") return democracy.genderGap;
-  return democracy.gpi;
+  if (key === "gpi") return democracy.gpi;
+  return democracy.happiness;
 }
 
 /**
@@ -346,7 +391,7 @@ export function getDemocracyIndexFor(
  */
 export function getDemocracyAxisDomain(key: DemocracyIndexKey): { min: number; max: number } {
   if (key === "v-dem" || key === "hdi" || key === "gender-gap") return { min: 0, max: 1 };
-  if (key === "economist") return { min: 0, max: 10 };
+  if (key === "economist" || key === "happiness") return { min: 0, max: 10 };
   if (key === "perception") return { min: -40, max: 40 };
   if (key === "gpi") return { min: 1, max: 5 };
   // Freedom House, CPI, RSF — 0–100 scores.
@@ -426,6 +471,13 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
       { label: "Very Low", min: 2.882, max: 5 },
     ];
   }
+  if (key === "happiness") {
+    return HAPPINESS_BAND_ORDER.map((label) => {
+      if (label === "9.0–10") return { label, min: 9, max: 10 };
+      const [lo] = label.split("–").map(Number);
+      return { label, min: lo, max: lo + 0.9 };
+    }).reverse(); // low→high for the axis
+  }
   // hdi — UNDP cut-offs (Very High ≥0.800, High ≥0.700, Medium ≥0.550).
   return [
     { label: "Low", min: 0, max: 0.55 },
@@ -453,6 +505,7 @@ export function formatDemocracyAxisValue(
   if (key === "hdi") return `${idx.rating} · ${score.toFixed(3)}`;
   if (key === "gender-gap") return `${idx.rating} · ${score.toFixed(3)}`;
   if (key === "gpi") return `${idx.rating} · ${score.toFixed(3)}`;
+  if (key === "happiness") return `${idx.rating} · ${score.toFixed(3)}`;
   return `${idx.rating} · ${score}`;
 }
 

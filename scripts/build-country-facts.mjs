@@ -216,6 +216,8 @@ export type DemocracyData = {
   genderGap?: DemocracyIndex;
   /** Institute for Economics & Peace Global Peace Index */
   gpi?: DemocracyIndex;
+  /** World Happiness Report life-evaluation (Cantril ladder) ranking */
+  happiness?: DemocracyIndex;
 };
 
 export type CountryFacts = {

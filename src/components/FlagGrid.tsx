@@ -155,6 +155,7 @@ type GroupMode =
   | "hdi"
   | "gender-gap"
   | "gpi"
+  | "happiness"
   | "party-ideology";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
@@ -180,6 +181,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   hdi: "Human Development Index",
   "gender-gap": "Global Gender Gap Index",
   gpi: "Global Peace Index",
+  happiness: "World Happiness Report",
   // Political-parties-view only — buckets along the sourced ideology spectrum.
   "party-ideology": "By ideology",
   // Passports-view only — buckets by the passport cover's colour family.
@@ -247,6 +249,7 @@ const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
   "hdi",
   "gender-gap",
   "gpi",
+  "happiness",
 ]);
 
 /** Whether a grouping mode is offered for the given view. The flag-appearance
@@ -367,6 +370,22 @@ const GPI_ORDER: Record<string, number> = {
   "Very Low": 5,
   "Not rated": 6,
 };
+
+/** World Happiness Report Cantril score bands — happiest first. */
+const HAPPINESS_ORDER: Record<string, number> = {
+  "9.0–10": 1,
+  "8.0–8.9": 2,
+  "7.0–7.9": 3,
+  "6.0–6.9": 4,
+  "5.0–5.9": 5,
+  "4.0–4.9": 6,
+  "3.0–3.9": 7,
+  "2.0–2.9": 8,
+  "1.0–1.9": 9,
+  "0.0–0.9": 10,
+  "Not rated": 11,
+};
+
 
 /** Heading for a World-Cup-titles bucket: "5 World Cup titles" / "1 World Cup
  *  title", or the catch-all "No World Cup title" for associations that have
@@ -887,6 +906,12 @@ export function FlagGrid({
         const rating = COUNTRY_FACTS[code]?.democracy?.gpi?.rating ?? "Not rated";
         push(rating, e);
       }
+    } else if (groupMode === "happiness") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.happiness?.rating ?? "Not rated";
+        push(rating, e);
+      }
     }
 
     if (
@@ -898,7 +923,8 @@ export function FlagGrid({
       groupMode === "rsf-press" ||
       groupMode === "hdi" ||
       groupMode === "gender-gap" ||
-      groupMode === "gpi"
+      groupMode === "gpi" ||
+      groupMode === "happiness"
     ) {
       for (const [, items] of buckets) {
         items.sort((a, b) => {
@@ -923,7 +949,9 @@ export function FlagGrid({
               ? factsA?.hdi
               : groupMode === "gender-gap"
               ? factsA?.genderGap
-              : factsA?.gpi;
+              : groupMode === "gpi"
+              ? factsA?.gpi
+              : factsA?.happiness;
           const indexB =
             groupMode === "freedom-house"
               ? factsB?.freedomHouse
@@ -941,7 +969,9 @@ export function FlagGrid({
               ? factsB?.hdi
               : groupMode === "gender-gap"
               ? factsB?.genderGap
-              : factsB?.gpi;
+              : groupMode === "gpi"
+              ? factsB?.gpi
+              : factsB?.happiness;
           const rankA = indexA?.rank ?? Infinity;
           const rankB = indexB?.rank ?? Infinity;
           if (rankA !== rankB) return rankA - rankB;
@@ -1047,6 +1077,11 @@ export function FlagGrid({
       if (groupMode === "gpi") {
         const oa = GPI_ORDER[a] ?? 99;
         const ob = GPI_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "happiness") {
+        const oa = HAPPINESS_ORDER[a] ?? 99;
+        const ob = HAPPINESS_ORDER[b] ?? 99;
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "party-ideology") {
