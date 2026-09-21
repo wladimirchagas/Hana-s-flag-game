@@ -3097,6 +3097,9 @@
 
 /* Match the X/Y axis `<select>` chrome — same radius, weight, border. */
 .democracy-index-chart__filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   font: inherit;
   font-size: 0.82rem;
   font-weight: 600;
@@ -3104,10 +3107,16 @@
   background: var(--paper, #fff);
   border: 2px solid var(--ink-faint, rgba(31, 41, 55, 0.28));
   border-radius: 10px;
-  padding: 0.3rem 0.55rem;
+  padding: 0.3rem 0.45rem 0.3rem 0.55rem;
   cursor: pointer;
   white-space: nowrap;
   box-shadow: none;
+}
+
+.democracy-index-chart__filter-btn-chev {
+  font-size: 0.65rem;
+  opacity: 0.55;
+  line-height: 1;
 }
 
 .democracy-index-chart__filter-btn:hover,
@@ -3122,14 +3131,19 @@
 
 .democracy-index-chart__filter-btn--active,
 .democracy-index-chart__filter-btn--open {
+  /* Stay select-like: white fill, category accent only on border + left bar. */
   border-color: var(--chart-filter-accent);
-  background: color-mix(
-    in srgb,
-    var(--chart-filter-accent) 14%,
-    var(--paper, #fff)
-  );
+  background: var(--paper, #fff);
   color: var(--ink, #1f2937);
   box-shadow: inset 3px 0 0 var(--chart-filter-accent);
+}
+
+.democracy-index-chart__filter-btn--open {
+  background: color-mix(
+    in srgb,
+    var(--chart-filter-accent) 8%,
+    var(--paper, #fff)
+  );
 }
 
 .democracy-index-chart__filter-popover {

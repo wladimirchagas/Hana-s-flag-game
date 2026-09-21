@@ -192,8 +192,13 @@ function ChartFilterMenu({
         aria-haspopup="dialog"
         onClick={() => onOpen(open ? null : kind)}
       >
-        {label}
-        {active ? ` · ${count}` : ""}
+        <span className="democracy-index-chart__filter-btn-label">
+          {label}
+          {active ? ` · ${count}` : ""}
+        </span>
+        <span className="democracy-index-chart__filter-btn-chev" aria-hidden="true">
+          {open ? "▴" : "▾"}
+        </span>
       </button>
       {open && (
         <div
