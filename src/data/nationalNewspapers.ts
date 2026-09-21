@@ -2963,12 +2963,12 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       },
       "revenueModel": "Digital subscriptions (Globo), print circulation, and multimedia advertising",
       "logo": "newspaper-logos/br/o-globo.png",
-      "logoExplainer": "White geometric sans-serif O GLOBO on a solid blue field — the classic newspaper masthead lockup that stays readable on light and dark UI plates.",
-      "licenceNote": "O Globo masthead trademark bundled from Wikimedia Commons (File:Logotipo do jornal \"O Globo\" 02.png; Public domain) for educational reference in Learn mode.",
+      "logoExplainer": "White geometric sans-serif O GLOBO wordmark on a solid #1e4c9a blue field — the publisher's current site masthead (logo-oglobo-azul.svg), rasterised edge-to-edge with no white letterboxing so it stays readable on light and dark UI plates.",
+      "licenceNote": "O Globo masthead trademark bundled from the publisher's official site brand asset (s3.glbimg.com/.../public_assets/logo-oglobo-azul.svg) for educational reference in Learn mode.",
       "sources": [
         "https://oglobo.globo.com",
         "https://en.wikipedia.org/wiki/O_Globo",
-        "https://commons.wikimedia.org/wiki/File:Logotipo_do_jornal_%22O_Globo%22_02.png"
+        "https://s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/public_assets/logo-oglobo-azul.svg"
       ]
     },
     {
