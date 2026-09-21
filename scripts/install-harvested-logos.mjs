@@ -15,52 +15,52 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "td-journal-le-pays",
-    src: "tmp/batch67-install/td-journal-le-pays.png",
+    id: "mu-mauritius-times",
+    src: "tmp/batch68-install/mu-mauritius-times.png",
     explainer:
-      "White italic 'LE PAYS' on blue with yellow Chad map and slogan bar 'Raconter le Tchad au Monde…' — Le Pays masthead.",
+      "White serif 'MAURITIUS' stacked over 'TIMES' on a black rectangle — Mauritius Times masthead.",
     licence:
-      "Le Pays (Chad) masthead trademark bundled from the publisher's official site brand assets (lepaystchad.com) for educational reference in Learn mode.",
+      "Mauritius Times masthead trademark bundled from the publisher's official site brand assets (mauritiustimes.com MT-Logo.jpg) for educational reference in Learn mode.",
   },
   {
-    id: "mn-news-mn",
-    src: "tmp/batch67-install/mn-news-mn.png",
+    id: "tl-timor-post",
+    src: "tmp/batch68-install/tl-timor-post.png",
     explainer:
-      "Red circle with black serif 'N' beside red 'news' and navy '.mn' — News.mn masthead.",
+      "Navy 'Timor Post' with Timor island map inside the 'o' and Tetum tagline 'Harii Unidade, Justisa no Demokrasia' — Timor Post masthead.",
     licence:
-      "News.mn masthead trademark bundled from the publisher's official site brand assets (news.mn) for educational reference in Learn mode.",
+      "Timor Post masthead trademark bundled from the publisher's official site brand assets (timorpost.com) for educational reference in Learn mode.",
   },
   {
-    id: "rw-imvaho-nshya",
-    src: "tmp/batch67-install/rw-imvaho-nshya.svg",
+    id: "si-necenzurirano",
+    src: "tmp/batch68-install/si-necenzurirano.svg",
     explainer:
-      "Green sans-serif 'Imvaho Nshya' with Kinyarwanda tagline 'Soma Usobanukirwe Buri Munsi' — Imvaho Nshya masthead.",
+      "Blue sans-serif 'N1' wordmark — N1 Slovenija (Necenzurirano.si) masthead.",
     licence:
-      "Imvaho Nshya masthead trademark bundled from the publisher's official site brand assets (imvahonshya.co.rw) for educational reference in Learn mode.",
+      "N1 masthead trademark bundled from the publisher's official site brand assets (n1info.si/static/images/n1.svg) for educational reference in Learn mode.",
   },
   {
-    id: "vu-vbct",
-    src: "tmp/batch67-install/vu-vbct.webp",
+    id: "mt-times-of-malta",
+    src: "tmp/batch68-install/mt-times-of-malta.png",
     explainer:
-      "Gold 'VBTC' with equaliser bars and Bislama tagline 'blong yumi evriwan' — VBTC News masthead.",
+      "Black serif 'THE TIMES' flanking a crowned shield with the George Cross — Times of Malta masthead.",
     licence:
-      "VBTC masthead trademark bundled from the publisher's official site brand assets (vbtc.vu) for educational reference in Learn mode.",
+      "Times of Malta masthead (English Wikipedia File:TimesMTheader.png, fair use) trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "va-ncregister",
-    src: "tmp/batch67-install/va-ncregister.svg",
+    id: "bd-samakal",
+    src: "tmp/batch68-install/bd-samakal.svg",
     explainer:
-      "Serif 'NATIONAL CATHOLIC' over large 'REGISTER' with papal tiara and crossed-keys crest — National Catholic Register masthead.",
+      "Black Bengali calligraphic 'সমকাল' (Samakal) wordmark — Daily Samakal masthead.",
     licence:
-      "National Catholic Register masthead trademark bundled from the publisher's official site brand assets (ncregister.com) for educational reference in Learn mode.",
+      "Daily Samakal masthead (English Wikipedia File:Daily Samakal.svg, fair use) trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "cn-nanfang-ribao",
-    src: "tmp/batch67-install/cn-nanfang-ribao.png",
+    id: "ve-ultimas-noticias",
+    src: "tmp/batch68-install/ve-ultimas-noticias.png",
     explainer:
-      "Red calligraphic '南方日报' (Nanfang Daily) wordmark — Nanfang Daily masthead.",
+      "White italic serif 'Últimas' joined to bold sans 'Noticias' on a blue field — Últimas Noticias masthead.",
     licence:
-      "Nanfang Daily masthead trademark bundled from the publisher's official epaper brand assets (epaper.southcn.com) for educational reference in Learn mode.",
+      "Últimas Noticias masthead (English Wikipedia File:Últimas Noticias logo 2.png, fair use; credited to ultimasnoticias.com.ve) trademark bundled for educational reference in Learn mode.",
   },
 ];
 
