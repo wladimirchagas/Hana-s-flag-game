@@ -3961,7 +3961,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "CSAC RDC Media Registry 2023"
       },
       "revenueModel": "Print sales and official legal publication notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cd/la-prosperite.jpg",
+      "logoExplainer": "Orange bullseye-and-arrow above black 'LAPROSPERITE' and orange '.CD' — La Prospérité brand mark.",
+      "licenceNote": "La Prospérité brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://laprosperite.online"
       ]
@@ -8223,7 +8226,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Grenada Informer Publishing 2023"
       },
       "revenueModel": "Print sales, legal notices, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gd/grenada-informer.jpg",
+      "logoExplainer": "Red INFORMER wordmark on green with Grenada-flag ribbon and NON PARTISAN / FEARLESS WEEKLY slogans — The Grenada Informer masthead.",
+      "licenceNote": "The Grenada Informer masthead from the publisher's own site brand assets (thegrenadainformer.com); trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://thegrenadainformer.com"
       ]
@@ -14379,7 +14385,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Febrayer Media Network 2023"
       },
       "revenueModel": "Commercial advertising and broadcast syndication",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ly/febrayer.jpg",
+      "logoExplainer": "White Arabic 'فبراير' (Febrayer) with 'الحقيقة.. كما هي' slogan on red — Febrayer brand mark.",
+      "licenceNote": "Febrayer brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://febrayer.ly"
       ]
@@ -24177,7 +24186,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "GeoPoll Tanzania Media Measurement / Mwananchi Media Pack"
       },
       "revenueModel": "Mass retail newspaper sales, nationwide commercial ads, and digital advertisements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tz/mwananchi.png",
+      "logoExplainer": "Black serif 'MWANANCHI' wordmark — Mwananchi (Tanzania) masthead as published on mwananchi.co.tz.",
+      "licenceNote": "Mwananchi wordmark cropped from the publisher's own site header on mwananchi.co.tz; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.mwananchi.co.tz",
         "https://en.wikipedia.org/wiki/Mwananchi"
@@ -25682,7 +25694,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministry of Prime Minister & Cabinet Samoa 2023"
       },
       "revenueModel": "State government budget subsidy and official government notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ws/savali.jpg",
+      "logoExplainer": "Circular seal with Samoa coat of arms ringed by 'SAVALI NEWSPAPER & PRODUCTIONS' — Savali brand mark.",
+      "licenceNote": "Savali brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://savalinews.com",
         "https://en.wikipedia.org/wiki/Savali"
