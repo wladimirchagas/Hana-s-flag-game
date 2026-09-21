@@ -2,6 +2,7 @@ import { GOVERNMENT_TYPES } from "../lib/governmentTypes";
 import { formatPopulation } from "../lib/formatPopulation";
 import { NATIONAL_REFERENCE_POPULATION } from "../data/subdivisionPopulation";
 import { COUNTRY_ENDONYMS } from "../data/countryEndonyms";
+import { membershipsForCountry } from "../data/countryBlocks";
 import type { Country } from "../api/countries";
 
 /**
@@ -403,6 +404,24 @@ export function EntitySummary(props: EntitySummaryProps) {
     // bar at the top of the widget, and its continent/region moved here).
     if (c.continent) rows.push({ label: "Continent", value: c.continent });
     if (c.subregion) rows.push({ label: "Region", value: c.subregion });
+
+    // International organisation membership — above the Anthem footer.
+    const memberships = membershipsForCountry(c.code);
+    if (memberships.length > 0) {
+      rows.push({
+        label: "Membership",
+        value: (
+          <ul className="entity-summary__membership">
+            {memberships.map((m) => (
+              <li key={m.id} className="entity-summary__membership-item">
+                {m.label}
+              </li>
+            ))}
+          </ul>
+        ),
+      });
+    }
+
     return <SummaryList rows={rows} footer={props.footer} />;
   }
 

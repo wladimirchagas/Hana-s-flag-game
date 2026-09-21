@@ -46,7 +46,7 @@ const VIEW_W = 960;
 const VIEW_H = 500;
 const TICK_COUNT = 5;
 
-type FilterKind = "continents" | "blocks" | "indexes" | null;
+type FilterKind = "continents" | "membership" | "indexes" | null;
 
 /** Continent / sub-continent ids in the nested Continents menu. */
 const CONTINENT_ID_PREFIX = "c:";
@@ -254,7 +254,9 @@ export function DemocracyIndexChart({
   const [continentFilter, setContinentFilter] = useState<ReadonlySet<string>>(
     () => new Set(),
   );
-  const [blockFilter, setBlockFilter] = useState<ReadonlySet<string>>(() => new Set());
+  const [membershipFilter, setMembershipFilter] = useState<ReadonlySet<string>>(
+    () => new Set(),
+  );
   const [indexFilter, setIndexFilter] = useState<ReadonlySet<string>>(() => new Set());
 
   const byCode = useMemo(() => {
@@ -284,7 +286,7 @@ export function DemocracyIndexChart({
     return opts;
   }, []);
 
-  const blockOptions = useMemo(() => {
+  const membershipOptions = useMemo(() => {
     const opts: FilterOption[] = [];
     for (const group of COUNTRY_BLOCK_GROUP_ORDER) {
       for (const b of COUNTRY_BLOCKS) {
@@ -362,7 +364,7 @@ export function DemocracyIndexChart({
   }, [rawPoints, byCode, xKey, yKey, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
 
   const filtersActive =
-    continentFilter.size > 0 || blockFilter.size > 0 || indexFilter.size > 0;
+    continentFilter.size > 0 || membershipFilter.size > 0 || indexFilter.size > 0;
 
   /**
    * Filters are additive (OR) across menus and within each menu.
@@ -375,13 +377,13 @@ export function DemocracyIndexChart({
     for (const p of points) {
       const c = p.country;
       const matchContinent = countryMatchesContinentFilter(c, continentFilter);
-      const matchBlock = countryMatchesBlocks(p.code, blockFilter);
+      const matchMembership = countryMatchesBlocks(p.code, membershipFilter);
       const matchIndex =
         indexFilter.size > 0 && countryMatchesIndexRatings(p.code, indexFilter);
-      if (matchContinent || matchBlock || matchIndex) set.add(p.code);
+      if (matchContinent || matchMembership || matchIndex) set.add(p.code);
     }
     return set;
-  }, [filtersActive, points, continentFilter, blockFilter, indexFilter]);
+  }, [filtersActive, points, continentFilter, membershipFilter, indexFilter]);
 
   const trend = useMemo(() => {
     // OLS on the same scale the markers use (log for population/GDP/…).
@@ -522,14 +524,14 @@ export function DemocracyIndexChart({
             onClear={() => setContinentFilter(new Set())}
           />
           <ChartFilterMenu
-            label="Blocks"
-            kind="blocks"
+            label="Membership"
+            kind="membership"
             openKind={openFilter}
             onOpen={setOpenFilter}
-            selected={blockFilter}
-            options={blockOptions}
-            onToggle={(id) => setBlockFilter((prev) => toggleInSet(prev, id))}
-            onClear={() => setBlockFilter(new Set())}
+            selected={membershipFilter}
+            options={membershipOptions}
+            onToggle={(id) => setMembershipFilter((prev) => toggleInSet(prev, id))}
+            onClear={() => setMembershipFilter(new Set())}
           />
           <ChartFilterMenu
             label="Indexes"

@@ -1,7 +1,8 @@
 /**
- * International blocs / alliances for the Learn-mode democracy chart's
- * Blocks filter. Membership is UN-member (+ observer) ISO 3166-1 alpha-2
- * codes only — the chart plots those countries.
+ * International organisation membership for the Learn-mode democracy chart's
+ * Membership filter, and for the country fact-sheet Membership row.
+ * Membership is UN-member (+ observer) ISO 3166-1 alpha-2 codes only —
+ * the chart plots those countries.
  *
  * SOURCED, never from memory. Each block cites the page used to confirm
  * full members as of the dated note. Suspended / associate / partner /
@@ -17,7 +18,7 @@ export type CountryBlockGroup =
 export type CountryBlock = {
   /** Stable id used as the filter checkbox value. */
   readonly id: string;
-  /** Short label shown in the Blocks menu. */
+  /** Short label shown in the Membership menu and on the country card. */
   readonly label: string;
   readonly group: CountryBlockGroup;
   /** Full UN-member (+ observer) ISO codes. */
@@ -374,7 +375,7 @@ export const COUNTRY_BLOCK_MEMBERS: Readonly<Record<string, ReadonlySet<string>>
     COUNTRY_BLOCKS.map((b) => [b.id, new Set(b.codes)]),
   );
 
-/** True when `code` belongs to any of the selected block ids. */
+/** True when `code` belongs to any of the selected membership ids. */
 export function countryMatchesBlocks(
   code: string,
   selectedBlockIds: ReadonlySet<string>,
@@ -385,4 +386,12 @@ export function countryMatchesBlocks(
     if (members?.has(code)) return true;
   }
   return false;
+}
+
+/**
+ * Organisations this country is a full member of, in display order
+ * (group order, then block order within `COUNTRY_BLOCKS`).
+ */
+export function membershipsForCountry(code: string): readonly CountryBlock[] {
+  return COUNTRY_BLOCKS.filter((b) => COUNTRY_BLOCK_MEMBERS[b.id]?.has(code));
 }

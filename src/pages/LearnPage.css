@@ -1388,6 +1388,28 @@
   overflow-wrap: anywhere;
 }
 
+.entity-summary__membership {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.35rem;
+}
+
+.entity-summary__membership-item {
+  margin: 0;
+  padding: 0.12rem 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 650;
+  line-height: 1.25;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--cream, #f7f3ea) 85%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ink, #1f2937) 14%, transparent);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
 /* Shown when a historical polity has no flag image (rare for ancient
    cultures and tribal confederations). */
 .learn-fs__no-flag {

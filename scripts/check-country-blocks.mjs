@@ -4,7 +4,8 @@
  * - every block has id/label/group/source/note/codes
  * - every code is a UN member (or permanent observer) in this game
  * - no duplicate block ids
- * - DemocracyIndexChart nests Continents, adds Blocks, and ORs filters
+ * - DemocracyIndexChart nests Continents, adds Membership, and ORs filters
+ * - EntitySummary surfaces membership above the Anthem footer
  *
  * Run: node scripts/check-country-blocks.mjs
  */
@@ -117,10 +118,10 @@ const chartSrc = readFileSync(
 );
 for (const needle of [
   'label="Continents"',
-  'label="Blocks"',
+  'label="Membership"',
   "countryMatchesBlocks",
   "countryMatchesContinentFilter",
-  "matchContinent || matchBlock || matchIndex",
+  "matchContinent || matchMembership || matchIndex",
   "Highlight any of",
   "CONTINENT_ID_PREFIX",
   "SUBCONTINENT_ID_PREFIX",
@@ -134,12 +135,33 @@ if (chartSrc.includes('label="Sub-continents"')) {
     "DemocracyIndexChart.tsx still has a separate Sub-continents filter — nest under Continents",
   );
 }
+if (chartSrc.includes('label="Blocks"')) {
+  fail('DemocracyIndexChart.tsx still labels the filter "Blocks" — rename to Membership');
+}
 // Old AND filter shape must not return.
 if (
   chartSrc.includes("continentFilter.size > 0 && !continentFilter.has") ||
   chartSrc.includes("subcontinentFilter.size > 0 &&")
 ) {
   fail("DemocracyIndexChart.tsx still uses AND filter semantics");
+}
+
+const summarySrc = readFileSync(
+  join(root, "src/components/EntitySummary.tsx"),
+  "utf8",
+);
+for (const needle of [
+  "membershipsForCountry",
+  'label: "Membership"',
+  "entity-summary__membership",
+]) {
+  if (!summarySrc.includes(needle)) {
+    fail(`EntitySummary.tsx missing expected Membership row wiring: ${needle}`);
+  }
+}
+// Membership must sit in the rows list (above footer/Anthem), not only in a comment.
+if (!/membershipsForCountry[\s\S]*SummaryList/.test(summarySrc)) {
+  fail("EntitySummary.tsx must push Membership into rows before SummaryList/footer");
 }
 
 if (failures.length) {
