@@ -770,8 +770,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "readership": {"metric":"Primary news supplier to Bangui national radio, television, and private print titles","source":"ACAP Bangui Annual Review 2023"},
       "annualPublicFunding": {"total":"XAF 120 million (~US$200,000) state budget operating grant","perCapita":"XAF 22 / person / year (~US$0.04)"},
       "revenueModel": "Direct state budget subsidy and subscription bulletin sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
-      "sources": ["https://acap.cf","https://fr.wikipedia.org/wiki/Agence_centrafricaine_de_presse"],
+      "logo": "newspaper-logos/cf/acap.jpg",
+      "logoExplainer": "Forest-green Central African Republic map silhouette with a white satellite icon and bold white 'ACAP', above 'Agence Centrafrique Presse' and the slogan 'L'Agence de l'Unité Nationale'.",
+      "licenceNote": "ACAP (Agence Centrafricaine de Presse) brand mark from the agency's official Facebook page (AgenceCentrafricaineDePresse); trademark bundled for educational reference in Learn mode.",
+
+      "sources": ["https://acap.cf","https://fr.wikipedia.org/wiki/Agence_centrafricaine_de_presse"]
     }
   ],
   "CG": [

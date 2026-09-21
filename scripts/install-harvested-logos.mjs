@@ -17,20 +17,13 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "mm-myanma-alinn",
-    src: "tmp/batch92-install/mm-myanma-alinn.png",
+    id: "cf-acap",
+    dataset: "agency",
+    src: "tmp/batch93-install/cf-acap.jpg",
     explainer:
-      "Dark navy Burmese script 'မြန်မာ့အလင်း' (Myanma Alinn) with a thin royal-blue outline — the state daily's masthead wordmark.",
+      "Forest-green Central African Republic map silhouette with a white satellite icon and bold white 'ACAP', above 'Agence Centrafrique Presse' and the slogan 'L\'Agence de l\'Unité Nationale'.",
     licence:
-      "Myanma Alinn masthead from Wikimedia Commons File:Myanmar Alin - logo.png (Public domain), bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "rw-igihe",
-    src: "tmp/batch92-install/rw-igihe.png",
-    explainer:
-      "Blue uppercase 'IGIHE' between two matching blue wave marks on a soft white cloud — Igihe's site masthead (arton151116.png).",
-    licence:
-      "Igihe masthead from the publisher's official site brand assets (igihe.com), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "ACAP (Agence Centrafricaine de Presse) brand mark from the agency's official Facebook page (AgenceCentrafricaineDePresse); trademark bundled for educational reference in Learn mode.",
   },
 ];
 
