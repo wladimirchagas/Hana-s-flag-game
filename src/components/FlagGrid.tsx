@@ -587,7 +587,8 @@ export function FlagGrid({
         effectiveContentType === "tourismlogo" ||
         effectiveContentType === "newsagency" ||
         effectiveContentType === "newspaper" ||
-        effectiveContentType === "party";
+        effectiveContentType === "party" ||
+        effectiveContentType === "centralbank";
       setGroupMode(isCountryGrouped ? "by-country" : "none");
     }
   }, [groupMode, effectiveContentType, isModernEra]);
