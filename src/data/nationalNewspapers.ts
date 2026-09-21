@@ -21363,7 +21363,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Consulta per l'Informazione San Marino 2023"
       },
       "revenueModel": "Newsstand retail print sales and commercial display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sm/informazione.png",
+      "logoExplainer": "Red arched-bridge mark with a blue disc above lowercase black 'libertas' and tagline INFORMAZIONE PER PASSIONE — Libertas / L'Informazione di San Marino masthead.",
+      "licenceNote": "Libertas trademark bundled from the publisher's official site brand assets (libertas.sm) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.libertas.sm",
         "https://en.wikipedia.org/wiki/San_Marino"
@@ -22585,7 +22588,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "EDITOGO Rapport d'Activité / Ministère de la Communication"
       },
       "revenueModel": "Official state announcements, legal notices, and newsstand sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tg/togo-presse.jpg",
+      "logoExplainer": "White blackletter 'Togo-Presse' on a red field with cyan border and tagline GRAND QUOTIDIEN NATIONAL D'INFORMATION — Togo-Presse masthead.",
+      "licenceNote": "Togo-Presse trademark bundled from the publisher's official site brand assets (togopresse.tg) for educational reference in Learn mode.",
+
       "sources": [
         "https://togopresse.tg",
         "https://en.wikipedia.org/wiki/Media_of_Togo"
@@ -23088,7 +23094,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Turkmenportal Web Analytics / Alexa Archive"
       },
       "revenueModel": "Commercial digital banner advertising, corporate sponsorships, and business directory services",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tm/turkmenportal.svg",
+      "logoExplainer": "Red circle with white TP monogram beside uppercase TURKMENPORTAL — Turkmenportal masthead.",
+      "licenceNote": "Turkmenportal trademark bundled from the publisher's official site brand assets (turkmenportal.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://turkmenportal.com",
         "https://en.wikipedia.org/wiki/Turkmenportal"
@@ -25595,7 +25604,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Yemen Press Syndicate (YPS) Archive"
       },
       "revenueModel": "State operational subsidies, public notices, and newsstand distribution",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ye/al-thawra.png",
+      "logoExplainer": "Arabic الثورة with a red torch/rose and English ALTHAWRAH — Al-Thawra (Yemen) masthead.",
+      "licenceNote": "Al-Thawra trademark bundled from the publisher's official site brand assets (althawrah.ye) for educational reference in Learn mode.",
+
       "sources": [
         "https://althawrah.ye",
         "https://en.wikipedia.org/wiki/Al-Thawra_(Yemen)"

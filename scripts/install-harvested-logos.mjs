@@ -15,28 +15,36 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "sl-awoko",
-    src: "tmp/batch60-final/sl-awoko.png",
+    id: "sm-informazione",
+    src: "tmp/batch61-final/sm-informazione.png",
     explainer:
-      "Red cursive 'Awoko' with a bird in the first O, yellow field, and 'Proudly Sierra Leonean Est. Aug. 1998' — Awoko Newspaper masthead.",
+      "Red arched-bridge mark with a blue disc above lowercase black 'libertas' and tagline INFORMAZIONE PER PASSIONE — Libertas / L'Informazione di San Marino masthead.",
     licence:
-      "Awoko Newspaper trademark bundled from the publisher's official site brand assets (awoko.org) for educational reference in Learn mode.",
+      "Libertas trademark bundled from the publisher's official site brand assets (libertas.sm) for educational reference in Learn mode.",
   },
   {
-    id: "uz-daryo-uz",
-    src: "tmp/batch60-final/uz-daryo-uz.svg",
+    id: "tg-togo-presse",
+    src: "tmp/batch61-final/tg-togo-presse.jpg",
     explainer:
-      "Blue rounded 'D' with a speech-bubble cutout beside bold black 'DARYO' — Daryo.uz masthead.",
+      "White blackletter 'Togo-Presse' on a red field with cyan border and tagline GRAND QUOTIDIEN NATIONAL D'INFORMATION — Togo-Presse masthead.",
     licence:
-      "Daryo.uz trademark bundled from the publisher's official site brand assets (daryo.uz/logo.svg) for educational reference in Learn mode.",
+      "Togo-Presse trademark bundled from the publisher's official site brand assets (togopresse.tg) for educational reference in Learn mode.",
   },
   {
-    id: "uz-xalq-sozi",
-    src: "tmp/batch60-final/uz-xalq-sozi.png",
+    id: "ye-al-thawra",
+    src: "tmp/batch61-final/ye-al-thawra.png",
     explainer:
-      "Bold blue Cyrillic 'Халқ сўзи' wordmark — Xalq So'zi (People's Word) masthead.",
+      "Arabic الثورة with a red torch/rose and English ALTHAWRAH — Al-Thawra (Yemen) masthead.",
     licence:
-      "Xalq So'zi trademark bundled from the publisher's official site brand assets (xs.uz) for educational reference in Learn mode.",
+      "Al-Thawra trademark bundled from the publisher's official site brand assets (althawrah.ye) for educational reference in Learn mode.",
+  },
+  {
+    id: "tm-turkmenportal",
+    src: "tmp/batch61-final/tm-turkmenportal.svg",
+    explainer:
+      "Red circle with white TP monogram beside uppercase TURKMENPORTAL — Turkmenportal masthead.",
+    licence:
+      "Turkmenportal trademark bundled from the publisher's official site brand assets (turkmenportal.com) for educational reference in Learn mode.",
   },
 ];
 
