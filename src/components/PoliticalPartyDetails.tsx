@@ -1,5 +1,5 @@
-import { UiIcon } from "./UiIcon";
 import { FlagMeaning } from "./FlagMeaning";
+import { EnlargeableLogo } from "./EnlargeableLogo";
 import type { PoliticalParty } from "../data/politicalParties";
 import { PoliticalPartyFacts } from "./PoliticalPartyFacts";
 
@@ -35,24 +35,15 @@ export function PoliticalPartyDetails({
           <p className="learn-fs__no-image">
             <strong>No logo image shown.</strong> {party.noImageReason}
           </p>
-        ) : (
-          <button
-            type="button"
-            className="learn-fs__flag"
-            onClick={() => url && onEnlarge(url)}
-            aria-label={`Enlarge ${party.shortName} logo`}
-          >
-            <img
-              key={url ?? "no-image"}
-              src={url ?? undefined}
-              alt=""
-              className="learn-fs__flag-img"
-              draggable={false}
-              onError={(e) => { e.currentTarget.closest("button")?.remove(); }}
-            />
-            <span className="learn-fs__flag-hint" aria-hidden="true"><UiIcon name="expand" /> Click to enlarge</span>
-          </button>
-        )}
+        ) : url ? (
+          <EnlargeableLogo
+            src={url}
+            alt=""
+            ariaLabel={`Enlarge ${party.name} logo`}
+            onEnlarge={onEnlarge}
+            onImgError={(e) => { e.currentTarget.closest("button")?.remove(); }}
+          />
+        ) : null}
         <FlagMeaning
           code={party.id}
           meanings={party.logoMeaning ? { [party.id]: party.logoMeaning } : {}}

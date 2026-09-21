@@ -36,6 +36,7 @@ import { readFileSync, existsSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { dirname, resolve, extname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { findUserFacingLeaks } from "./lib/userFacingCopy.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(__dirname, "..", "src", "data", "politicalParties.ts");
@@ -89,6 +90,8 @@ function imageKind(buf) {
 const src = readFileSync(DATA_PATH, "utf8");
 const coalitions = loadConst(src, "export const POLITICAL_COALITIONS");
 const partiesByCountry = loadConst(src, "export const POLITICAL_PARTIES");
+const LEG_PATH = resolve(__dirname, "..", "src", "data", "partyLegislatures.ts");
+const legislatures = loadConst(readFileSync(LEG_PATH, "utf8"), "export const PARTY_LEGISLATURES");
 
 // A party SHOULD have a bundled logo, but a logo is not a hard requirement for
 // the entry to exist (owner direction, 2026-09-12). The rule that was here
@@ -208,6 +211,44 @@ for (const [country, parties] of Object.entries(partiesByCountry)) {
     if (p.inExecutive !== undefined && typeof p.inExecutive !== "boolean") {
       fail(id, "inExecutive must be a boolean when present");
     }
+    if (p.headOfGovernment !== undefined && typeof p.headOfGovernment !== "boolean") {
+      fail(id, "headOfGovernment must be a boolean when present");
+    }
+    if (p.chambers !== undefined) {
+      if (!Array.isArray(p.chambers) || p.chambers.length === 0) {
+        fail(id, "chambers must be a non-empty array when present");
+      } else {
+        const names = new Set();
+        for (const c of p.chambers) {
+          if (!nonEmpty(c.name)) fail(id, "chambers entry missing name");
+          if (names.has(c.name)) fail(id, `duplicate chambers name ${JSON.stringify(c.name)}`);
+          names.add(c.name);
+          if (!Number.isInteger(c.seats) || c.seats < 0) fail(id, `invalid chambers.seats for ${c.name}`);
+          if (!Number.isInteger(c.seatsTotal) || c.seatsTotal <= 0) fail(id, `invalid chambers.seatsTotal for ${c.name}`);
+          if (c.seats > c.seatsTotal) fail(id, `chambers ${c.name}: seats exceed seatsTotal`);
+          if (c.majority !== undefined && typeof c.majority !== "boolean") {
+            fail(id, `chambers ${c.name}: majority must be a boolean when present`);
+          }
+          if (c.majority === true && 2 * c.seats <= c.seatsTotal) {
+            fail(id, `chambers ${c.name}: majority is true but ${c.seats}/${c.seatsTotal} is not more than half the seats`);
+          }
+          if (c.name === p.chamberName && (c.seats !== p.seats || c.seatsTotal !== p.seatsTotal)) {
+            fail(id, `chambers entry for ${c.name} must repeat the party's seats/seatsTotal`);
+          }
+          const leg = legislatures[p.country];
+          if (leg) {
+            const body = (leg.bodies ?? []).find((b) => b.name === c.name);
+            if (!body) fail(id, `chambers ${JSON.stringify(c.name)} is not a body in PARTY_LEGISLATURES.${p.country}`);
+            else if (body.seatsTotal !== c.seatsTotal) {
+              fail(id, `chambers ${c.name} seatsTotal ${c.seatsTotal} != catalog ${body.seatsTotal}`);
+            }
+          }
+        }
+        if (!names.has(p.chamberName)) {
+          fail(id, `chambers must include the primary chamber ${JSON.stringify(p.chamberName)}`);
+        }
+      }
+    }
 
     // B. sources
     checkSources(id, p.sources, "party");
@@ -226,12 +267,18 @@ for (const [country, parties] of Object.entries(partiesByCountry)) {
       if (reason.length < MIN_NO_IMAGE_REASON_CHARS) {
         fail(id, `noImageReason is only ${reason.length} characters — it must record what was searched (min ${MIN_NO_IMAGE_REASON_CHARS})`);
       }
+      for (const leak of findUserFacingLeaks(reason)) {
+        fail(
+          id,
+          `noImageReason leaks ${leak.label} (matched ${JSON.stringify(leak.match)}) — write plain-language gap copy; put Q/P codes and URLs in sources[]`,
+        );
+      }
       const matched = NO_IMAGE_SOURCE_FAMILIES.filter((f) => f.re.test(reason));
       if (matched.length < MIN_NO_IMAGE_SOURCES) {
         fail(
           id,
           `noImageReason names ${matched.length} searched source(s); at least ${MIN_NO_IMAGE_SOURCES} are required. ` +
-            `Sweep and then name them, e.g.: ${NO_IMAGE_SOURCE_FAMILIES.map((f) => f.name).join("; ")}`,
+            `Sweep and then name them in plain language (e.g. "Wikidata", not "P154"), e.g.: ${NO_IMAGE_SOURCE_FAMILIES.map((f) => f.name).join("; ")}`,
         );
       }
     }
@@ -288,6 +335,45 @@ for (const [country, parties] of Object.entries(partiesByCountry)) {
   }
 }
 
+for (const [country, list] of Object.entries(partiesByCountry)) {
+  const hogs = list.filter((p) => p.headOfGovernment === true).map((p) => p.id);
+  if (hogs.length > 1) {
+    fail(country, `headOfGovernment is true on ${hogs.length} parties (${hogs.join(", ")}); at most one party may supply the head of government`);
+  }
+  const majorityByChamber = new Map();
+  for (const p of list) {
+    for (const c of p.chambers ?? []) {
+      if (c.majority !== true) continue;
+      const key = c.name;
+      const prev = majorityByChamber.get(key);
+      if (prev) {
+        fail(country, `majority in ${JSON.stringify(key)} is set on both ${prev} and ${p.id} — at most one party per chamber`);
+      }
+      majorityByChamber.set(key, p.id);
+    }
+  }
+}
+
+for (const [cc, leg] of Object.entries(legislatures)) {
+  if (!nonEmpty(leg.confidenceHouse)) fail(cc, "PARTY_LEGISLATURES.confidenceHouse missing");
+  if (!Array.isArray(leg.bodies) || leg.bodies.length < 2) {
+    fail(cc, "PARTY_LEGISLATURES.bodies must list at least two chambers");
+  }
+  if (!nonEmpty(leg.note) || leg.note.length < 40) {
+    fail(cc, "PARTY_LEGISLATURES.note must explain how the houses relate (min 40 chars)");
+  }
+  if (!nonEmpty(leg.source?.title) || !/^https?:\/\//.test(leg.source?.url ?? "")) {
+    fail(cc, "PARTY_LEGISLATURES.source must have a title and http(s) url");
+  }
+  const shorts = new Set();
+  for (const b of leg.bodies ?? []) {
+    if (!nonEmpty(b.name) || !nonEmpty(b.shortName)) fail(cc, "legislature body missing name/shortName");
+    if (!Number.isInteger(b.seatsTotal) || b.seatsTotal <= 0) fail(cc, `invalid seatsTotal on ${b.name}`);
+    if (shorts.has(b.shortName)) fail(cc, `duplicate legislature shortName ${b.shortName}`);
+    shorts.add(b.shortName);
+  }
+}
+
 for (const [cid, c] of Object.entries(coalitions)) {
   if (!nonEmpty(c.name)) fail(cid, "coalition has an empty/missing name");
   if (!Array.isArray(c.memberPartyIds) || c.memberPartyIds.length === 0) {
@@ -298,6 +384,48 @@ for (const [cid, c] of Object.entries(coalitions)) {
     }
   }
   checkSources(cid, [c.source].filter(Boolean), "coalition");
+}
+
+// Grid cards must never use a chamber abbreviation as the main name (Canada's
+// Liberals are "Liberal Party of Canada", not "LIB"). Mirrors partyCardName()
+// in src/lib/politicalParties.ts — keep the two in lockstep.
+function isPartyNameAbbreviation(label) {
+  const trimmed = (label ?? "").trim();
+  if (!trimmed) return true;
+  if (/\s/u.test(trimmed) && /\p{Ll}/u.test(trimmed)) return false;
+  const letters = [...trimmed].filter((ch) => /\p{L}/u.test(ch));
+  if (letters.length === 0) return true;
+  const lower = letters.filter((ch) => /\p{Ll}/u.test(ch)).length;
+  const upper = letters.filter((ch) => /\p{Lu}/u.test(ch)).length;
+  if (lower === 0) return true;
+  if (letters.length <= 5 && upper >= lower) return true;
+  return false;
+}
+
+function partyCardName(p) {
+  const native = String(p.name ?? "").trim();
+  const en = (p.nameEn && String(p.nameEn).trim()) || "";
+  if (native && en && en !== native) return `${native} (${en})`;
+  return native || en || String(p.shortName ?? "").trim();
+}
+
+for (const list of Object.values(partiesByCountry)) {
+  for (const p of list) {
+    const card = partyCardName(p);
+    const official = String(p.name ?? "").trim();
+    // Fail when a readable official name exists and the card still shows
+    // an abbreviation (LIB instead of Liberal Party of Canada).
+    if (isPartyNameAbbreviation(card) && !isPartyNameAbbreviation(official)) {
+      fail(p.id, `grid card name ${JSON.stringify(card)} is still an abbreviation; shortName=${JSON.stringify(p.shortName)} name=${JSON.stringify(p.name)} nameEn=${JSON.stringify(p.nameEn)}`);
+    }
+  }
+}
+
+const liberal = (partiesByCountry.CA ?? []).find((p) => p.id === "CA-LIB");
+if (!liberal) {
+  fail("CA-LIB", "Canada's Liberal Party is missing from the dataset");
+} else if (partyCardName(liberal) !== "Liberal Party of Canada") {
+  fail("CA-LIB", `grid card name must be the official local name "Liberal Party of Canada", got ${JSON.stringify(partyCardName(liberal))}`);
 }
 
 if (problems.length > 0) {

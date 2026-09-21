@@ -6,6 +6,9 @@
 // allowed to keep a per-country party grid, but the world-map Show menu must
 // still list "Political parties" and FlagGrid/LearnPage must still render it.
 //
+// It also locks PR #1478: party tiles use partyCardName() (Liberal, not LIB)
+// and the ungrouped / A–Z views sort alphabetically, not by ideology.
+//
 // Run: node scripts/check-grid-content-types.mjs
 
 import assert from "node:assert/strict";
@@ -28,6 +31,7 @@ const REQUIRED_TYPES = [
   "newsagency",
   "newspaper",
   "party",
+  "centralbank",
 ];
 
 const contentTypeSrc = fs.readFileSync(
@@ -77,15 +81,190 @@ assert.ok(
 );
 
 assert.ok(
-  learnPageSrc.includes('effectiveGridContentType === "party"'),
-  "LearnPage must swap the world-map panel to PoliticalPartyDetails in the party Show view",
+  learnPageSrc.includes('panelTab === "politics"') &&
+    learnPageSrc.includes("LearnPanelCategoryBody") &&
+    learnPageSrc.includes("syncPanelTabsFromShow"),
+  "LearnPage must route the party Show view through the Politics information-panel tab",
 );
 
 assert.ok(
-  learnPageSrc.includes("<PoliticalPartyDetails"),
-  "LearnPage must still mount PoliticalPartyDetails for the world-map party view",
+  learnPageSrc.includes('panelTab === "sports"') &&
+    learnPageSrc.includes("LearnPanelSymbolBody") &&
+    learnPageSrc.includes("LEARN_PANEL_SPORTS_SECTIONS"),
+  "LearnPage must expose a Sports tab with Football + Olympics symbol choosers",
+);
+
+assert.ok(
+  learnPageSrc.includes("OverviewIdentity") &&
+    learnPageSrc.includes("gridPassportId"),
+  "Overview must offer Flag/Coat of arms pills; Travel must host passports",
+);
+
+const tabsSrc = fs.readFileSync(
+  path.join(root, "src/lib/learnPanelTabs.ts"),
+  "utf8",
+);
+assert.ok(
+  /sports:\s*"Sports"/.test(tabsSrc) &&
+    /indices:\s*"Rankings"/.test(tabsSrc) &&
+    /finance:\s*"Finance"/.test(tabsSrc) &&
+    tabsSrc.includes('case "passport":') &&
+    tabsSrc.includes('return "travel"') &&
+    tabsSrc.includes('return "sports"'),
+  "learnPanelTabs must label Sports/Rankings/Finance and route passport→Travel, crests/NOCs→Sports",
+);
+
+assert.ok(
+  learnPageSrc.includes("<PoliticalPartyDetails") ||
+    fs
+      .readFileSync(
+        path.join(root, "src/components/LearnPanelCategoryBody.tsx"),
+        "utf8",
+      )
+      .includes("<PoliticalPartyDetails"),
+  "LearnPage (or its panel category body) must still mount PoliticalPartyDetails for the world-map party view",
+);
+
+const partyLibSrc = fs.readFileSync(
+  path.join(root, "src/lib/politicalParties.ts"),
+  "utf8",
+);
+assert.ok(
+  /export function partyCardName\(/.test(partyLibSrc) &&
+    /export function isPartyNameAbbreviation\(/.test(partyLibSrc),
+  "src/lib/politicalParties.ts must export partyCardName() and isPartyNameAbbreviation()",
+);
+
+assert.ok(
+  flagGridSrc.includes("partyCardName("),
+  "FlagGrid party cards must use partyCardName(), never a chamber abbreviation like LIB as the tile title",
+);
+assert.ok(
+  /groupMode !== "none"/.test(flagGridSrc) &&
+    /groupMode !== "alpha"/.test(flagGridSrc) &&
+    flagGridSrc.includes('effectiveContentType === "party"'),
+  "FlagGrid must not ideology-sort the party view when Group by is No grouping or A–Z",
+);
+
+const partyGridSrc = fs.readFileSync(
+  path.join(root, "src/components/PoliticalPartyGrid.tsx"),
+  "utf8",
+);
+assert.ok(
+  flagGridSrc.includes("PartyCardName") &&
+    partyGridSrc.includes("PartyCardName") &&
+    fs.readFileSync(path.join(root, "src/pages/LearnPage.css"), "utf8").includes("flag-grid__name-translation"),
+  "Both party grids must render PartyCardName so the English gloss is a grey span, not the same ink as the official name",
+);
+assert.ok(
+  partyGridSrc.includes('none: "No grouping"') &&
+    /sortMode === "none"/.test(partyGridSrc) &&
+    partyGridSrc.includes("byCardName"),
+  'PoliticalPartyGrid must offer a "No grouping" mode that lists parties alphabetically by partyCardName()',
+);
+
+assert.ok(
+  partyLibSrc.includes('label: "Exec power"') &&
+    partyLibSrc.includes('label: "Leg power"') &&
+    partyLibSrc.includes('label: "In-power"'),
+  'partyPowerBadges must label presidential/semi-presidential offices "Exec power" / "Leg power", and keep "In-power" for Westminster fusion',
+);
+assert.ok(
+  /party\.headOfGovernment/.test(partyLibSrc) &&
+    !/if \(party\.inExecutive\)/.test(partyLibSrc),
+  'Exec power must key off headOfGovernment (the HoG party), never inExecutive (cabinet partners)',
+);
+assert.ok(
+  partyLibSrc.includes("PARTY_LEGISLATURES") &&
+    partyLibSrc.includes("splitLegislature") &&
+    partyLibSrc.includes("chamberMajorityBadges") &&
+    partyLibSrc.includes("countryHasChamberMajority"),
+  "Leg power uses per-chamber majority when a party holds a house, and falls back to inPower when none does",
+);
+assert.ok(
+  partyLibSrc.includes("export function partyCardNameParts") &&
+    /const native = party\.name\.trim\(\)/.test(partyLibSrc) &&
+    partyLibSrc.includes("party.nameEn") &&
+    partyLibSrc.includes("(${translation})"),
+  "partyCardName must show the official local name, with nameEn in parentheses when it differs",
+);
+assert.ok(
+  !partyLibSrc.includes("Hold executive power") &&
+    !partyLibSrc.includes("Hold legislative power"),
+  'partyPowerBadges must not use the long "Hold executive/legislative power" labels on grid cards',
+);
+
+assert.ok(
+  flagGridSrc.includes("flag-grid__country-sub") &&
+    flagGridSrc.includes("({item.countryName})") &&
+    fs.readFileSync(path.join(root, "src/pages/LearnPage.css"), "utf8").includes(
+      "flag-grid__country-sub",
+    ),
+  "FlagGrid multi-item Show cards (newspapers / agencies / tourism / airlines / broadcasters / parties) must show the country as a separate grey \"(Country)\" line under the title",
+);
+assert.ok(
+  !/name:\s*`\$\{tagline\} \(\$\{countryName\}\)`/.test(flagGridSrc),
+  "Tourism-logo tiles must not bake the country into the title string — country goes on the grey subtitle line",
+);
+
+const agencyLibSrc = fs.readFileSync(
+  path.join(root, "src/lib/nationalNewsAgencies.ts"),
+  "utf8",
+);
+const agencyDetailsSrc = fs.readFileSync(
+  path.join(root, "src/components/NewsAgencyDetails.tsx"),
+  "utf8",
+);
+assert.ok(
+  /export function agencyOwnershipBadge\(/.test(agencyLibSrc),
+  "nationalNewsAgencies.ts must export agencyOwnershipBadge() for State/Private/… card badges",
+);
+assert.ok(
+  flagGridSrc.includes("agencyOwnershipBadge") &&
+    flagGridSrc.includes("flag-grid__agency-badge"),
+  "FlagGrid news-agency cards must render ownership badges via agencyOwnershipBadge()",
+);
+assert.ok(
+  agencyDetailsSrc.includes("agencyOwnershipBadge") &&
+    agencyDetailsSrc.includes("flag-grid__agency-badge"),
+  "NewsAgencyDetails must show the ownership badge next to the Ownership type",
 );
 
 console.log(
   `PASS: Show dropdown keeps ${order.length} classifications (${order.join(", ")}).`,
 );
+
+assert.ok(
+  /centralbank:\s*"Central banks"/.test(contentTypeSrc),
+  'GRID_CONTENT_TYPE_LABELS must map centralbank → "Central banks"',
+);
+assert.ok(
+  flagGridSrc.includes('effectiveContentType === "centralbank"') &&
+    learnPageSrc.includes("gridCentralBankId") &&
+    learnPageSrc.includes('panelTab === "finance"'),
+  "FlagGrid/LearnPage must wire Central banks Show → Finance tab",
+);
+assert.ok(
+  tabsSrc.includes('case "centralbank":') && tabsSrc.includes('return "finance"'),
+  "learnPanelTabs must route centralbank → Finance",
+);
+
+// Logo detail widgets must use EnlargeableLogo (adaptive cream/dark plate).
+// CentralBankDetails shipped a raw <img> on the panel chrome — Bank of Japan's
+// black wordmark vanished in dark mode (owner report 2026-09).
+const LOGO_DETAIL_WIDGETS = [
+  "AirlineDetails.tsx",
+  "BroadcasterDetails.tsx",
+  "TourismLogoDetails.tsx",
+  "NewsAgencyDetails.tsx",
+  "NewspaperDetails.tsx",
+  "PoliticalPartyDetails.tsx",
+  "CentralBankDetails.tsx",
+];
+for (const file of LOGO_DETAIL_WIDGETS) {
+  const src = fs.readFileSync(path.join(root, "src/components", file), "utf8");
+  assert.ok(
+    src.includes('from "./EnlargeableLogo"') && src.includes("<EnlargeableLogo"),
+    `${file} must render logos through EnlargeableLogo (adaptive plate) — never a bare <img> on the panel background`,
+  );
+}

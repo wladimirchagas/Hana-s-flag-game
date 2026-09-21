@@ -79,6 +79,10 @@ export type FlagListEntry = {
   newsAgencyLogo?: string | null;
   /** Unique news agency ID (e.g. "au-aap") when this card represents a news agency. */
   newsAgencyId?: string;
+  /** Ownership badge kind for news-agency cards (State / Private / …). */
+  newsAgencyOwnershipKind?: string;
+  /** Ownership badge label for news-agency cards. */
+  newsAgencyOwnershipLabel?: string;
   /** Resolved top national newspaper logo URL for the grid's "Top newspapers" view. */
   newspaperLogo?: string | null;
   /** Unique newspaper ID (e.g. "au-smh") when this card represents a newspaper. */

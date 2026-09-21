@@ -240,6 +240,90 @@
   padding: 0.25rem 0.25rem 0;
 }
 
+/* Map column: sticky map on top, optional democracy chart accordion beneath
+   it (same width as the map, above the flag grid). The sticky wrapper wraps
+   ONLY the map so the sticky map unpins before the chart — otherwise it would
+   float over the chart while scrolling the column. */
+.learn-fs__map-col {
+  grid-area: map;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.65rem;
+  min-width: 0;
+}
+
+.learn-fs__map-stick {
+  /* Isolates sticky containment to the map frame alone. */
+  display: block;
+  width: 100%;
+}
+
+.learn-fs__map-col .learn-fs__map {
+  grid-area: unset;
+}
+
+/* Full-width "See chart" accordion under the world map — same max-width as
+   `.learn-fs__map .world-map` so the toggle and chart align with the map on
+   both tall and wide viewports. */
+.learn-fs__chart-accordion {
+  --learn-map-chrome: calc(8.5rem + env(safe-area-inset-top));
+  width: 100%;
+  max-width: min(100%, calc((100vh - var(--learn-map-chrome)) * 1.92));
+  max-width: min(100%, calc((100dvh - var(--learn-map-chrome)) * 1.92));
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  box-sizing: border-box;
+}
+
+.learn-fs__chart-accordion-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.55rem 0.85rem;
+  background: var(--cream);
+  border: 2px solid var(--ink-faint);
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.learn-fs__chart-accordion-toggle:hover,
+.learn-fs__chart-accordion-toggle:focus-visible {
+  outline: none;
+  border-color: var(--ink);
+  background: var(--paper, #fff);
+  color: var(--ink);
+}
+
+.learn-fs__chart-accordion-toggle[aria-expanded="true"] {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.learn-fs__chart-accordion-label {
+  flex: 1;
+  text-align: left;
+}
+
+.learn-fs__chart-accordion-chev {
+  color: var(--ink-muted, #888);
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.learn-fs__chart-accordion-panel {
+  width: 100%;
+  min-width: 0;
+}
+
 /* === Sticky map (both world-map and drill-down modes) =============
    In BOTH the world-map (non-drilldown) view and the drilled-into-a-country
    view, the map + its controls stay pinned to the top as the user scrolls
@@ -494,6 +578,146 @@
   gap: 0.85rem;
 }
 
+/* === Information panel drawer (large screens only) =================
+   Above 900px the panel can tuck away so the map/chart uses the full
+   row width. Below 900px the stacked layout is unchanged and these
+   controls stay hidden. */
+.learn-fs__panel-drawer-btn {
+  display: none;
+}
+
+@media (min-width: 901px) {
+  .learn-fs__panel-drawer-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--ink);
+    background: var(--paper);
+    border: 3px solid var(--ink);
+    border-radius: 999px;
+    box-shadow: 0 2px 0 var(--ink);
+    cursor: pointer;
+    padding: 0.35rem 0.7rem;
+    min-height: 2rem;
+    line-height: 1;
+  }
+
+  .learn-fs__panel-drawer-btn:hover,
+  .learn-fs__panel-drawer-btn:focus-visible {
+    background: var(--cream, var(--paper));
+  }
+
+  .learn-fs__panel-drawer-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 0 var(--ink);
+  }
+
+  .learn-fs__panel-drawer-btn .ui-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .learn-fs__panel-drawer-btn--hide {
+    align-self: flex-end;
+    margin: 0 0 0.35rem;
+  }
+
+  .learn-fs__panel-drawer-btn--show {
+    /* Only visible while the panel is collapsed — sits on the map's
+       right edge so the user can bring the drawer back. */
+    display: none;
+    position: absolute;
+    top: 0.85rem;
+    right: 0.75rem;
+    z-index: 8;
+  }
+
+  .learn-fs--panel-collapsed {
+    grid-template-columns: 1fr;
+    grid-template-areas: "map";
+    column-gap: 0;
+  }
+
+  .learn-fs--panel-collapsed .learn-fs__panel-wrap {
+    /* Keep in the DOM for a11y toggles / state, but take no grid space. */
+    display: none;
+  }
+
+  .learn-fs--panel-collapsed .learn-fs__panel-drawer-btn--show {
+    display: inline-flex;
+  }
+
+  /* No firm selection yet — keep the map clean; Info only returns after Hide. */
+  .learn-fs--panel-collapsed .learn-fs__panel-drawer-btn--show:disabled {
+    display: none;
+  }
+
+  .learn-fs:not(.learn-fs--panel-collapsed) .learn-fs__panel-drawer-btn--show {
+    display: none;
+  }
+}
+
+/* Clear the panel selection. In the modern era it sits at the right end of
+   the country/division search row (after the +/✓ Hana button). In historical
+   eras (--corner) it is absolutely positioned at the panel's top-right. */
+.learn-fs__unselect {
+  flex: 0 0 auto;
+  align-self: center;
+  box-sizing: border-box;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-soft);
+  background: var(--cream, var(--paper));
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 0 2px 0 var(--ink);
+  cursor: pointer;
+  line-height: 1;
+  transition: transform 120ms ease, background 120ms ease, color 120ms ease,
+    box-shadow 120ms ease;
+}
+
+.learn-fs__unselect:hover,
+.learn-fs__unselect:focus-visible {
+  outline: none;
+  color: #fff;
+  background: var(--coral);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0 var(--ink);
+}
+
+.learn-fs__unselect:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 var(--ink);
+}
+
+.learn-fs__unselect .ui-icon {
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
+}
+
+.learn-fs__unselect--corner {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.55rem;
+  z-index: 2;
+}
+
+.learn-fs__panel:has(.learn-fs__unselect--corner) .learn-fs__name {
+  padding-right: 2.25rem;
+}
+
 /* "Add to my list" as a compact +/✓ button in the widget's top-right corner
    (replaces the old full-width Hana's-Game row). */
 .learn-fs__hana-corner {
@@ -674,6 +898,27 @@
   outline: none;
 }
 
+/* Brand logos in the detail panel — same adaptive neutral plate as the grid. */
+.learn-fs__flag--logo {
+  box-sizing: border-box;
+  padding: 0.65rem 0.85rem;
+  background: var(--logo-plate-light);
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+}
+
+.learn-fs__flag--logo[data-logo-tone="dark"] {
+  background: var(--logo-plate-dark);
+  border-color: color-mix(in srgb, #fff 14%, transparent);
+}
+
+.learn-fs__flag--logo[data-logo-backing="solid"] {
+  padding: 0.35rem 0.45rem;
+}
+
+.learn-fs__flag--logo .learn-fs__flag-img {
+  filter: none;
+}
+
 /* The explainer fills the widget box (drop its standalone centring/max-width).
    Its toggle keeps the default cream fill, which now reads as distinct against
    the widget's paper background. */
@@ -753,6 +998,72 @@
 .learn-breadcrumb__here {
   font-weight: 800;
   color: var(--ink);
+}
+
+/* Country-scoped mini-grid for multi-item Show categories (airlines,
+   parties, newspapers…). Replaces the detail widget until the user picks
+   one item; cards reuse `.flag-grid__*` chrome. */
+.country-chooser {
+  margin: 0.35rem 0 0.75rem;
+}
+
+.country-chooser__title {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.country-chooser__count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  letter-spacing: 0;
+}
+
+.country-chooser__hint {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.country-chooser__empty {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.country-chooser__list {
+  /* Tighter than the full world grid — the panel is narrow. */
+  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+  gap: 0.85rem 0.65rem;
+}
+
+.country-chooser__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--coral-deep);
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid var(--coral-deep);
+  cursor: pointer;
+}
+
+.country-chooser__back:hover,
+.country-chooser__back:focus-visible {
+  outline: none;
+  color: var(--coral);
+  border-bottom-color: var(--coral);
 }
 
 /* Empty state — no country selected/hovered yet. */
@@ -1243,6 +1554,121 @@
   overflow-wrap: anywhere;
 }
 
+/* Rankings tab — same thematic groups as the map control / Group-by menus. */
+.entity-summary__groups {
+  width: 100%;
+  margin: 0.4rem 0 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  text-align: left;
+}
+
+.entity-summary__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.entity-summary__group + .entity-summary__group {
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--ink-faint, rgba(31, 41, 55, 0.18));
+}
+
+.entity-summary__group-label {
+  margin: 0;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.entity-summary__group .entity-summary {
+  margin: 0;
+}
+
+.entity-summary__membership {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.35rem;
+}
+
+.entity-summary__membership-item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entity-summary__membership-btn {
+  margin: 0;
+  padding: 0.12rem 0.45rem;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 650;
+  line-height: 1.25;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--cream, #f7f3ea) 85%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ink, #1f2937) 14%, transparent);
+  border-radius: 999px;
+  white-space: nowrap;
+  cursor: help;
+}
+
+.entity-summary__membership-btn:hover,
+.entity-summary__membership-btn:focus-visible {
+  border-color: color-mix(in srgb, var(--ink, #1f2937) 28%, transparent);
+  outline: none;
+}
+
+.entity-summary__membership-tip {
+  display: none;
+  position: absolute;
+  z-index: 40;
+  left: 0;
+  bottom: calc(100% + 0.35rem);
+  width: min(18.5rem, 70vw);
+  padding: 0.55rem 0.65rem;
+  text-align: left;
+  white-space: normal;
+  color: var(--ink);
+  background: var(--cream, #f7f3ea);
+  border: 1px solid color-mix(in srgb, var(--ink, #1f2937) 18%, transparent);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--ink, #1f2937) 14%, transparent);
+  pointer-events: none;
+}
+
+.entity-summary__membership-item:hover .entity-summary__membership-tip,
+.entity-summary__membership-item:focus-within .entity-summary__membership-tip {
+  display: block;
+}
+
+.entity-summary__membership-tip-title {
+  display: block;
+  margin: 0 0 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.entity-summary__membership-tip-body {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 450;
+  line-height: 1.4;
+  color: var(--ink-soft, #4b5563);
+}
+
+:root[data-theme="dark"] .entity-summary__membership-tip {
+  background: var(--panel, #1c1f26);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
 /* Shown when a historical polity has no flag image (rare for ancient
    cultures and tribal confederations). */
 .learn-fs__no-flag {
@@ -1635,6 +2061,34 @@
   overflow: visible;
 }
 
+/* Brand-logo tiles (newspapers, agencies, airlines, …): a neutral plate
+   picked from the logo's own pixels. Defaults to the light plate until
+   onLoad paints data-logo-tone — that is the common dark-masthead case. */
+.flag-grid__thumb--logo {
+  box-sizing: border-box;
+  padding: 0.4rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--logo-plate-light);
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+}
+
+.flag-grid__thumb--logo[data-logo-tone="dark"] {
+  background: var(--logo-plate-dark);
+  border-color: color-mix(in srgb, #fff 14%, transparent);
+}
+
+/* Solid-backed assets (white canvas / black tile) — match the field and
+   tighten padding so we don't draw a second frame around the rectangle. */
+.flag-grid__thumb--logo[data-logo-backing="solid"] {
+  padding: 0.15rem;
+}
+
+.flag-grid__thumb--logo .flag-grid__thumb-img {
+  /* The plate already provides contrast; the flag drop-shadow muddies logos. */
+  filter: none;
+}
+
 .flag-grid__thumb-img {
   width: 100%;
   height: 100%;
@@ -1702,6 +2156,18 @@
   overflow-wrap: normal;
   word-break: normal;
   hyphens: none;
+}
+
+/* English translation on a party card — grey so it reads as a gloss, not
+   as a second official name. Stays grey on the selected tile too, where
+   the parent name colour is forced to --ink-fixed. */
+.flag-grid__name-translation {
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+.flag-grid__card--active .flag-grid__name-translation {
+  color: var(--ink-soft);
 }
 
 .flag-grid__card--active .flag-grid__name {
@@ -1783,6 +2249,194 @@
 .flag-tabs__tab--active .flag-tabs__count {
   color: #fff;
   background: var(--ink-fixed);
+}
+
+/* === Learn information-panel tabs (Overview / Politics / Finance / …) = */
+
+/* MUST stretch to the panel width. `.learn-fs__detail` centres its children
+   (`align-items: center`), so without an explicit stretch a nowrap tab strip
+   grows to the sum of its tabs and overflows the panel — the tabs then paint
+   over the map to the left of the drawer (owner report, 2026-09). Stretch +
+   min-width:0 keeps them inside the bordered panel and lets overflow-x scroll. */
+.learn-panel-tabs-wrap {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  align-self: stretch;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  margin: 0.35rem 0 0.85rem;
+}
+
+.learn-panel-tabs-wrap--more-start .learn-panel-tabs {
+  mask-image: linear-gradient(to right, transparent 0, #000 1.25rem, #000 100%);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 1.25rem,
+    #000 100%
+  );
+}
+
+.learn-panel-tabs-wrap--more-end .learn-panel-tabs {
+  mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 1.25rem), transparent 100%);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    #000 0,
+    #000 calc(100% - 1.25rem),
+    transparent 100%
+  );
+}
+
+.learn-panel-tabs-wrap--more-start.learn-panel-tabs-wrap--more-end .learn-panel-tabs {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 1.25rem,
+    #000 calc(100% - 1.25rem),
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 1.25rem,
+    #000 calc(100% - 1.25rem),
+    transparent 100%
+  );
+}
+
+.learn-panel-tabs__more {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  flex: 0 0 auto;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  color: var(--ink);
+  background: var(--paper);
+  padding: 0.15rem 0.2rem;
+  border-radius: 0.25rem;
+  pointer-events: none;
+  user-select: none;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ink) 12%, transparent);
+}
+
+.learn-panel-tabs__more--start {
+  left: 0;
+}
+
+.learn-panel-tabs__more--end {
+  right: 0;
+}
+
+.learn-panel-tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.35rem;
+  margin: 0;
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+
+.learn-panel-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.learn-panel-tabs .flag-tabs__tab {
+  flex: 0 0 auto;
+  font-size: 0.78rem;
+  padding: 0.35rem 0.65rem;
+  min-height: 2rem;
+  white-space: nowrap;
+}
+
+.learn-panel-tabs__panel {
+  margin-top: 0.15rem;
+  align-self: stretch;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.learn-panel-tabs__empty {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+
+.travel-visitor-stats {
+  margin: 0 0 0.85rem;
+}
+
+.travel-visitor-stats__metric {
+  display: block;
+  font-size: 0.85em;
+  color: var(--ink-soft);
+}
+
+.overview-identity__pills {
+  margin: 0 0 0.75rem;
+}
+
+/* Nested SymbolBody under Travel's own pills — no extra top gap. */
+.learn-panel-category > .learn-panel-category {
+  margin-top: 0;
+}
+
+/* Government + Membership above the party chooser on Politics. */
+.learn-panel-tabs__panel > .entity-summary + .learn-panel-category {
+  margin-top: 0.85rem;
+}
+
+.learn-panel-category {
+  min-width: 0;
+}
+
+.learn-panel-category__sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0 0 0.85rem;
+}
+
+.learn-panel-category__section {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  min-height: 2rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.learn-panel-category__section:hover,
+.learn-panel-category__section:focus-visible {
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--ink) 35%, transparent);
+}
+
+.learn-panel-category__section--active {
+  color: var(--ink-fixed);
+  background: color-mix(in srgb, var(--accent, #2a6) 22%, transparent);
+  border-color: color-mix(in srgb, var(--accent, #2a6) 45%, transparent);
 }
 
 /* A controls row (group-by / filter) that sits inside a tab panel rather than
@@ -1906,7 +2560,23 @@
   color: var(--ink-fixed);
 }
 
-/* "In power" / coalition-name badges on a Political-parties grid card. */
+/* Country under a multi-item Show card (newspaper / agency / tourism /
+   airline / broadcaster / party). Separate line, grey parentheses — stays
+   soft even on the selected tile so it never competes with the title. */
+.flag-grid__country-sub {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  margin-top: 0.12em;
+}
+
+.flag-grid__card--active .flag-grid__country-sub {
+  color: var(--ink-soft);
+}
+
+/* "In-power" / "Exec power" / "Leg power" / coalition-name badges on a
+   Political-parties grid card. */
 .flag-grid__party-badges {
   display: flex;
   flex-wrap: wrap;
@@ -1944,6 +2614,48 @@
   border-color: #2563eb;
   background: #eff6ff;
   color: #1e40af;
+}
+
+/* Ownership badges on national news-agency cards (State / Private / …). */
+.flag-grid__agency-badge--state {
+  border-color: #b45309;
+  background: #fff7ed;
+  color: #9a3412;
+}
+.flag-grid__agency-badge--official {
+  border-color: #a16207;
+  background: #fefce8;
+  color: #854d0e;
+}
+.flag-grid__agency-badge--private {
+  border-color: #475569;
+  background: #f1f5f9;
+  color: #334155;
+}
+.flag-grid__agency-badge--public {
+  border-color: #0369a1;
+  background: #f0f9ff;
+  color: #075985;
+}
+.flag-grid__agency-badge--cooperative {
+  border-color: #7c3aed;
+  background: #f5f3ff;
+  color: #5b21b6;
+}
+.flag-grid__agency-badge--regional {
+  border-color: #0f766e;
+  background: #f0fdfa;
+  color: #115e59;
+}
+.flag-grid__agency-badge--independent {
+  border-color: #4f46e5;
+  background: #eef2ff;
+  color: #3730a3;
+}
+.flag-grid__agency-badge--government {
+  border-color: #be123c;
+  background: #fff1f2;
+  color: #9f1239;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100">
-
-  <rect width="320" height="100" fill="#672d93" rx="8"/>
-  <circle cx="56" cy="50" r="22" fill="#ffffff"/>
-  <text x="56" y="58" fill="#672d93" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="900" text-anchor="middle">∞</text>
-  <text x="96" y="58" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="34" font-weight="900">LOOP</text>
-  <text x="98" y="76" fill="#ffffff" opacity="0.85" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" font-weight="700" letter-spacing="1">NEWS SAINT LUCIA</text>
-
-</svg>

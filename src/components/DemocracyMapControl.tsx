@@ -1,17 +1,25 @@
 import { UiIcon } from "./UiIcon";
 import { usePopoverBounds } from "../hooks/usePopoverBounds";
 import { useEffect, useRef, useState } from "react";
-import type { DemocracyMapMode } from "../lib/democracyColors";
+import {
+  getDemocracyIndexLabel,
+  getDemocracyIndexMenuGroups,
+  type DemocracyMapMode,
+} from "../lib/democracyColors";
 
 export type DemocracyMapControlProps = {
   mode: DemocracyMapMode;
   onChange: (next: DemocracyMapMode) => void;
 };
 
-export function DemocracyMapControl({ mode, onChange }: DemocracyMapControlProps) {
+export function DemocracyMapControl({
+  mode,
+  onChange,
+}: DemocracyMapControlProps) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-  const popoverStyle = usePopoverBounds(open, ref, 256);
+  const popoverStyle = usePopoverBounds(open, ref, 360);
+  const menuGroups = getDemocracyIndexMenuGroups();
 
   useEffect(() => {
     if (!open) return;
@@ -45,8 +53,8 @@ export function DemocracyMapControl({ mode, onChange }: DemocracyMapControlProps
         className={`world-map__zoom-btn world-map__zoom-btn--layer${isActive ? " world-map__zoom-btn--active" : ""}`}
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
-        aria-label="Colour countries by Democracy Index"
-        title="Colour countries by Democracy Index"
+        aria-label="Colour countries by index or ranking"
+        title="Colour countries by index or ranking"
       >
         <span className="world-map__zoom-icon" aria-hidden="true">
           <UiIcon name="democracy" />
@@ -58,9 +66,9 @@ export function DemocracyMapControl({ mode, onChange }: DemocracyMapControlProps
           className="map-view-control__popover democracy-map-control__popover"
           style={popoverStyle}
           role="dialog"
-          aria-label="Democracy Index map view"
+          aria-label="Index and ranking map view"
         >
-          <p className="map-view-control__heading">Democracy Index</p>
+          <p className="map-view-control__heading">Indexes & rankings</p>
           <div className="democracy-map-control__options">
             <button
               type="button"
@@ -69,27 +77,22 @@ export function DemocracyMapControl({ mode, onChange }: DemocracyMapControlProps
             >
               Off (Default map)
             </button>
-            <button
-              type="button"
-              className={`map-view-control__preset${mode === "freedom-house" ? " map-view-control__preset--active" : ""}`}
-              onClick={() => selectMode("freedom-house")}
-            >
-              Freedom House rating
-            </button>
-            <button
-              type="button"
-              className={`map-view-control__preset${mode === "v-dem" ? " map-view-control__preset--active" : ""}`}
-              onClick={() => selectMode("v-dem")}
-            >
-              V-Dem regime type
-            </button>
-            <button
-              type="button"
-              className={`map-view-control__preset${mode === "economist" ? " map-view-control__preset--active" : ""}`}
-              onClick={() => selectMode("economist")}
-            >
-              The Economist Index
-            </button>
+            {menuGroups.map((group) => (
+              <div key={group.theme.id} className="democracy-map-control__group">
+                <hr className="democracy-map-control__divider" aria-hidden="true" />
+                <p className="democracy-map-control__group-label">{group.theme.label}</p>
+                {group.indexes.map((meta) => (
+                  <button
+                    key={meta.key}
+                    type="button"
+                    className={`map-view-control__preset${mode === meta.key ? " map-view-control__preset--active" : ""}`}
+                    onClick={() => selectMode(meta.key)}
+                  >
+                    {getDemocracyIndexLabel(meta.key)}
+                  </button>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
       )}

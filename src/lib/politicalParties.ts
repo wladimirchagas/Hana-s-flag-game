@@ -4,6 +4,7 @@ import {
   type PoliticalParty,
   type PoliticalCoalition,
 } from "../data/politicalParties";
+import { PARTY_LEGISLATURES, type CountryLegislature } from "../data/partyLegislatures";
 import { GOVERNMENT_TYPES } from "./governmentTypes";
 
 /**
@@ -66,6 +67,44 @@ export function allPoliticalParties(): readonly PoliticalParty[] {
   return out;
 }
 
+/**
+ * True when `label` is an abbreviation (LIB, NDP, UxP), not a readable
+ * party name. Grid cards must never show one of these as the main name.
+ */
+export function isPartyNameAbbreviation(label: string): boolean {
+  const trimmed = label.trim();
+  if (!trimmed) return true;
+  if (/\s/u.test(trimmed) && /\p{Ll}/u.test(trimmed)) return false;
+  const letters = [...trimmed].filter((ch) => /\p{L}/u.test(ch));
+  if (letters.length === 0) return true;
+  const lower = letters.filter((ch) => /\p{Ll}/u.test(ch)).length;
+  const upper = letters.filter((ch) => /\p{Lu}/u.test(ch)).length;
+  if (lower === 0) return true;
+  if (letters.length <= 5 && upper >= lower) return true;
+  return false;
+}
+
+/**
+ * Official local name, plus the sourced English translation when it
+ * differs. Never the chamber abbreviation (`shortName` "LIB").
+ * `partyCardName` is the plain-text form (sort, tooltip); the grid paints
+ * the translation in grey via `PartyCardName`.
+ */
+export function partyCardNameParts(party: PoliticalParty): {
+  native: string;
+  translation: string | null;
+} {
+  const native = party.name.trim();
+  const en = party.nameEn?.trim();
+  const translation = native && en && en !== native ? en : null;
+  return { native: native || en || party.shortName.trim(), translation };
+}
+
+export function partyCardName(party: PoliticalParty, _countryName?: string): string {
+  const { native, translation } = partyCardNameParts(party);
+  return translation ? `${native} (${translation})` : native;
+}
+
 /** How many parties (across every covered country) the grid will show for the
  *  current "Political parties" view. */
 export function totalPartyCount(): number {
@@ -87,35 +126,66 @@ export interface PartyBadgeItem {
   readonly kind: "power" | "executive" | "legislative";
 }
 
+export function legislatureForCountry(code: string): CountryLegislature | null {
+  return PARTY_LEGISLATURES[code] ?? null;
+}
+
+function chamberShortName(countryCode: string, chamberName: string): string {
+  const body = legislatureForCountry(countryCode)?.bodies.find((b) => b.name === chamberName);
+  return body?.shortName ?? chamberName;
+}
+
+function chamberMajorityBadges(party: PoliticalParty, countryCode: string): PartyBadgeItem[] {
+  const legislature = legislatureForCountry(countryCode);
+  if (!legislature) return [];
+  const cat = getGovernmentCategory(countryCode);
+  const out: PartyBadgeItem[] = [];
+  for (const c of party.chambers ?? []) {
+    if (!c.majority) continue;
+    // Westminster already labels the confidence house as "In-power".
+    if (cat !== "presidential" && cat !== "semi-presidential" && c.name === legislature.confidenceHouse) {
+      continue;
+    }
+    out.push({ label: chamberShortName(countryCode, c.name), kind: "legislative" });
+  }
+  return out;
+}
+
+function countryHasChamberMajority(countryCode: string): boolean {
+  return partiesForCountry(countryCode).some((p) =>
+    (p.chambers ?? []).some((c) => c.majority === true),
+  );
+}
+
 export function partyPowerBadges(party: PoliticalParty, countryCode: string): PartyBadgeItem[] {
   const cat = getGovernmentCategory(countryCode);
   const badges: PartyBadgeItem[] = [];
+  const splitLegislature = legislatureForCountry(countryCode) != null;
+  const chamberMajorities = countryHasChamberMajority(countryCode);
 
-  if (cat === "presidential") {
-    if (party.inExecutive) {
-      badges.push({ label: "Hold executive power", kind: "executive" });
+  // Presidential / semi-presidential: split the two offices.
+  // "Exec power" is the party of the HEAD OF GOVERNMENT only.
+  // "Leg power" is the governing coalition when no single party holds a
+  // chamber majority. Where a party does hold more than half a chamber,
+  // that house is labelled by name (House / Senate) instead of a generic
+  // Leg badge — so a split Congress can disagree without looking empty.
+  // Parliamentary / Westminster systems fuse executive and the confidence
+  // house into "In-power", and may still show an upper-house majority.
+  if (cat === "presidential" || cat === "semi-presidential") {
+    if (party.headOfGovernment) {
+      badges.push({ label: "Exec power", kind: "executive" });
     }
-    if (party.inPower && !party.inExecutive) {
-      badges.push({ label: "Hold legislative power", kind: "legislative" });
-    } else if (party.inPower && party.inExecutive) {
-      badges.push({ label: "Hold legislative power", kind: "legislative" });
-    }
-  } else if (cat === "semi-presidential") {
-    if (party.inExecutive && party.inPower) {
-      badges.push({ label: "Hold executive power", kind: "executive" });
-      badges.push({ label: "Hold legislative power", kind: "legislative" });
-    } else if (party.inExecutive) {
-      badges.push({ label: "Hold executive power", kind: "executive" });
+    if (splitLegislature && chamberMajorities) {
+      badges.push(...chamberMajorityBadges(party, countryCode));
     } else if (party.inPower) {
-      badges.push({ label: "Hold legislative power", kind: "legislative" });
-    }
-  } else if (cat === "parliamentary") {
-    if (party.inPower) {
-      badges.push({ label: "In-power", kind: "power" });
+      badges.push({ label: "Leg power", kind: "legislative" });
     }
   } else {
     if (party.inPower) {
       badges.push({ label: "In-power", kind: "power" });
+    }
+    if (splitLegislature) {
+      badges.push(...chamberMajorityBadges(party, countryCode));
     }
   }
 

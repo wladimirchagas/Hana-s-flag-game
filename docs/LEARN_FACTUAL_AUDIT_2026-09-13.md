@@ -1,5 +1,7 @@
 # Learn factual audit — evidence and remediation register
 
+> Latest continuation: [Learn factual audit, updated 20 September 2026](LEARN_FACTUAL_AUDIT_2026-09-19.md), with [revision and coverage evidence](LEARN_AUDIT_DELTA_2026-09-20.json). This document remains the original baseline report; consult the continuation for fixes and later findings.
+
 Last updated: 2026-09-14. **Finalized evidence report for the baseline below; not a certification of universal or 100% accuracy.** Confirmed defects below are actionable; unverified leads are explicitly separated. No application data, artwork, or hard rules have been changed by this audit.
 
 ## Scope, baseline and reproducibility

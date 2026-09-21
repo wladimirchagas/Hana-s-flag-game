@@ -1,4 +1,5 @@
 import { LogoExplainer } from "./LogoExplainer";
+import { EnlargeableLogo } from "./EnlargeableLogo";
 import type { PublicBroadcaster } from "../types/broadcaster";
 
 /**
@@ -40,22 +41,13 @@ export function BroadcasterDetails({
       <div className="learn-fs__flag-box">
         <div className="learn-fs__flag-head">
           <span className="entity-summary__label learn-fs__flag-label">Broadcaster logo</span>
-          <button
-            type="button"
-            className="learn-fs__flag"
-            onClick={() => onEnlarge(logoUrl)}
-            aria-label={`Enlarge ${broadcaster.name} logo`}
-          >
-            <img
-              key={logoUrl}
-              src={logoUrl}
-              alt={`${broadcaster.name} logo`}
-              className="learn-fs__flag-img"
-              draggable={false}
-              style={{ objectFit: "contain", maxHeight: "110px", padding: "6px" }}
-            />
-            <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-          </button>
+          <EnlargeableLogo
+            src={logoUrl}
+            alt={`${broadcaster.name} logo`}
+            ariaLabel={`Enlarge ${broadcaster.name} logo`}
+            onEnlarge={onEnlarge}
+            hint="⤢ Click to enlarge"
+          />
         </div>
         <LogoExplainer description={broadcaster.logoExplainer} label="What this logo means" />
       </div>

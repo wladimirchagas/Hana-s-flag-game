@@ -1,7 +1,0 @@
-<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="120" fill="#ffffff"/>
-  <rect x="25" y="24" width="70" height="72" rx="4" fill="#c62828"/>
-  <text x="60" y="72" font-family="'Arial Black', sans-serif" font-size="34" font-weight="900" fill="#ffffff" text-anchor="middle">УП</text>
-  <text x="108" y="62" font-family="'Times New Roman', 'Georgia', serif" font-size="32" font-weight="bold" fill="#1b1b1b">Українська правда</text>
-  <text x="110" y="86" font-family="'Arial', sans-serif" font-size="11" font-weight="700" fill="#c62828" letter-spacing="1.5">INDEPENDENT ONLINE JOURNALISM • EST. 2000</text>
-</svg>

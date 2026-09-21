@@ -36,6 +36,8 @@ survey, each to be closed as its country comes up in the queue:
 | B4 | Chamber coverage under 60% | 22 countries, incl. single-party entries for `DE`, `FR`, `GB`, `ES`, `CA`, `PL`, `UY` |
 | B5 | No logo | 69 parties, against a 23-entry grandfather allowlist |
 | B6 | `inPower` true but no `inExecutive` party | 59 of 90 countries |
+| B6a | **Exec-power badge must be the HoG party only** (owner, 2026-09-19) | `headOfGovernment`; cabinet partners stay on `inExecutive` / Leg power |
+| B6b | **Leg power is a chamber majority, not the coalition flag** (owner, 2026-09-19) | `PARTY_LEGISLATURES` + `chambers[]`; US/AU/BR seeded |
 | B7 | Single-source concentration | 664 of ~750 citations are English Wikipedia |
 | B8 | **No date field in the schema** — staleness is undetectable by construction | whole dataset |
 
@@ -48,6 +50,10 @@ forgotten; it is tracked here.
 ## Progress
 
 **Countries audited: 77 / 195; plus a cross-country rule change and logo backfill (2026-09-12) — Southeast Asia, South America and Phase 4 (UK / US / Canada) complete; Europe part-done. Per the owner's 2026-09-12 priority update, the sweep now continues with Asian countries outside Southeast Asia before the remaining Europe queue.**
+
+**2026-09-19 — Exec-power badge = head of government.** Owner direction: cabinet coalitions are irrelevant to "Exec power"; the badge is the party that supplies the HoG (president where that office is HoG; prime minister otherwise), never the head of state merely for being HoS. Field: `headOfGovernment` (at most one per country). Sourced HoG parties set in the same change: BR-PT (Lula), CL-REP (Kast, aligned with the Republican Party he founded), ID-GERINDRA (Prabowo), FR-RE (PM Lecornu / Renaissance), TL-CNRT (PM Gusmão), plus the presidential systems that already had a single `inExecutive` party (AR, KR, PH, US, TR, PE, UY, EC, PY, SR, VE).
+
+**2026-09-19 — Leg power is per-chamber majority, with a coalition fallback.** Owner follow-up: bicameral bodies (BR, AU, US) can have different parties in each house. Where a party holds more than half a chamber, the badge is House/Senate. Where none does (Brazil), `inPower` still yields **Leg power** so the governing coalition is not invisible. US Republicans House 218/435 + Senate 53/100; Australia Labor In-power (House) with a hung Senate; Brazil Workers' Exec+Leg and other government parties Leg. A second owner follow-up the same day: card titles are the official **local** name, with `nameEn` in parentheses.
 
 | Country | Merged | Parties before → after | Chamber coverage | Verdict before |
 |---|---|---|---|---|

@@ -22,10 +22,13 @@ on:
       - "src/data/commercialAirlines.ts"
       - "public/airline-logos/**"
       - "scripts/check-tourism-logos.mjs"
+      - "scripts/check-central-banks.mjs"
       - "src/data/tourismLogos.ts"
       - "public/tourism-logos/**"
       - "scripts/check-national-news-agencies.mjs"
       - "src/data/nationalNewsAgencies.ts"
+      - "scripts/check-national-newspapers.mjs"
+      - "src/data/nationalNewspapers.ts"
       - "public/newspaper-logos/**"
       - "src/api/subdivisions.ts"
       - "src/lib/subdivisionMeta.ts"
@@ -39,6 +42,10 @@ on:
       - "scripts/download-national-flags.mjs"
       - "scripts/build-national-flags.mjs"
       - "scripts/check-national-flags.mjs"
+      - "scripts/check-football-crest-stats.mjs"
+      - "src/data/worldCupRecords.ts"
+      - "src/data/worldCupTitles.ts"
+      - "src/lib/footballCrestStats.ts"
       - "scripts/seed-national-symbols.mjs"
       - "scripts/harvest-national-symbols.mjs"
       - "src/data/nationalFlags.ts"
@@ -53,6 +60,52 @@ on:
       # Flag Master's symbol packs — the decks are derived from the national-symbols
       # data above, so a change to either the data or the builders must re-run the gate.
       - "scripts/check-quiz-symbol-decks.mjs"
+      - "scripts/check-rsf-press-freedom.mjs"
+      - "scripts/data/rsf-press-freedom-2026.csv"
+      - "scripts/check-hdi-data.mjs"
+      - "scripts/data/hdi2023Data.mjs"
+      - "scripts/data/hdr25-hdi-2023.csv"
+      - "scripts/check-gggr-data.mjs"
+      - "scripts/data/gggr-2026.csv"
+      - "scripts/data/gggr2026Data.mjs"
+      - "scripts/check-gpi-data.mjs"
+      - "scripts/check-index-map-colors.mjs"
+      - "scripts/check-index-labels.mjs"
+      - "src/lib/democracyColors.ts"
+      - "scripts/check-etr-data.mjs"
+      - "scripts/data/etr-2024.csv"
+      - "scripts/data/etr2024Data.mjs"
+      - "scripts/data/gpi-2026.csv"
+      - "scripts/data/gpi2026Data.mjs"
+      - "scripts/check-gti-data.mjs"
+      - "scripts/data/gti-2026.csv"
+      - "scripts/data/gti2026Data.mjs"
+      - "scripts/check-wjp-rule-of-law.mjs"
+      - "scripts/data/wjp-rule-of-law-2025.csv"
+      - "scripts/data/wjp-rule-of-law-2024.csv"
+      - "scripts/data/wjp2025Data.mjs"
+      - "scripts/check-imd-wcr.mjs"
+      - "scripts/check-soft-power-data.mjs"
+      - "scripts/check-dnr-trust.mjs"
+      - "scripts/check-country-blocks.mjs"
+      - "src/data/countryBlocks.ts"
+      - "src/components/DemocracyIndexChart.tsx"
+      - "scripts/data/soft-power-2026.csv"
+      - "scripts/data/softPower2026Data.mjs"
+      - "scripts/data/dnr-trust-2026.csv"
+      - "scripts/data/dnr2026Data.mjs"
+      - "scripts/data/imd-wcr-2025.csv"
+      - "scripts/data/imdWcr2025Data.mjs"
+      - "scripts/data/democracyData.mjs"
+      - "scripts/check-whr-happiness.mjs"
+      - "scripts/check-gdi-data.mjs"
+      - "scripts/data/gdi-2024-rankings.json"
+      - "scripts/data/gdi2024Data.mjs"
+      - "scripts/data/whr-happiness-2026.csv"
+      - "scripts/data/whr2026-figure-2.1.xlsx"
+      - "scripts/data/whr2026Data.mjs"
+      - "src/data/countryFacts.ts"
+      - "src/lib/democracyColors.ts"
       - "src/lib/quizSymbols.ts"
       - "src/lib/historicalQuiz.ts"
       - "src/hooks/useGame.ts"
@@ -112,6 +165,8 @@ on:
       # live one (which keeps painting the previous picture and inherits the
       # imperative onError state that blanks a tile).
       - "scripts/check-image-element-keys.mjs"
+      - "scripts/check-user-facing-copy.mjs"
+      - "scripts/lib/userFacingCopy.mjs"
       - "src/components/**"
       - "src/pages/**"
 
@@ -149,6 +204,48 @@ jobs:
 
       - name: Verify every <img> is keyed by its src (no stale/blanked images)
         run: node scripts/check-image-element-keys.mjs
+
+      - name: Verify noImageReason never leaks Wikidata codes / URLs / agent jargon
+        run: node scripts/check-user-facing-copy.mjs
+
+      - name: Verify RSF World Press Freedom Index 2026 data matches the official CSV
+        run: node scripts/check-rsf-press-freedom.mjs
+
+      - name: Verify UNDP Human Development Index 2023 data matches the official extract
+        run: node scripts/check-hdi-data.mjs
+
+      - name: Verify WEF Global Gender Gap Index 2026 data matches the official extract
+        run: node scripts/check-gggr-data.mjs
+
+      - name: Verify IEP Global Peace Index 2026 data matches the official extract
+        run: node scripts/check-gpi-data.mjs
+
+      - name: Verify IEP Global Terrorism Index 2026 data matches the official extract
+        run: node scripts/check-gti-data.mjs
+
+      - name: Verify World Happiness Report 2026 data matches the official extract
+        run: node scripts/check-whr-happiness.mjs
+
+      - name: Check Lowy Global Diplomacy Index data
+        run: node scripts/check-gdi-data.mjs
+
+      - name: Verify WJP Rule of Law Index 2025 data matches the official CSVs
+        run: node scripts/check-wjp-rule-of-law.mjs
+
+      - name: Verify IMD World Competitiveness Ranking 2025 data matches the official extract
+        run: node scripts/check-imd-wcr.mjs
+
+      - name: Verify IEP Ecological Threat Index 2024 data matches the official extract
+        run: node scripts/check-etr-data.mjs
+
+      - name: Verify Brand Finance Global Soft Power Index 2026 data matches the official extract
+        run: node scripts/check-soft-power-data.mjs
+
+      - name: Verify Reuters Digital News Report 2026 trust index matches the official extract
+        run: node scripts/check-dnr-trust.mjs
+
+      - name: Verify chart country-blocks filter data and OR wiring
+        run: node scripts/check-country-blocks.mjs
 
       - name: Verify every flags:check gate actually runs in CI
         run: node scripts/check-ci-coverage.mjs
@@ -245,6 +342,13 @@ jobs:
       - name: Verify the national-flags tab is sourced, bundled and agrees with the eras
         run: node scripts/check-national-flags.mjs
 
+      # Football-association crests always show sourced World Cup appearance +
+      # title rows in the Learn panel. This fails if a crest loses its record,
+      # if titles drift from worldCupTitles.ts, or if LearnPage /
+      # NationalFlagDetails stop calling withFootballCrestStats.
+      - name: Verify football-crest World Cup records stay on the panel
+        run: node scripts/check-football-crest-stats.mjs
+
       # Measures each polity's own polygons against the bundled basemap, so it needs the
       # same Node 24 that can load historicalEras.ts directly.
       - name: Verify every polity is filed on a continent its own land is on
@@ -259,6 +363,17 @@ jobs:
       # into the game.
       - name: Verify every quiz symbol deck has one answer per question
         run: node scripts/check-quiz-symbol-decks.mjs
+
+      # Shared green→red index map palette. Imports democracyColors.ts, so it
+      # belongs in this Node 24 job. Fails if any index invents its own colours
+      # or drifts from indexBandColors(INDEX_MAP_PALETTE).
+      - name: Verify every index map samples the shared INDEX_MAP_PALETTE
+        run: node scripts/check-index-map-colors.mjs
+
+      # Universal index labelling: thematic groups, no "Global", always
+      # "{name}, {year} ({publisher})". Imports democracyColors.ts + countryFacts.
+      - name: Verify every index label uses DEMOCRACY_INDEX_META
+        run: node scripts/check-index-labels.mjs
 
   check-flag-meanings:
     runs-on: ubuntu-latest
@@ -284,6 +399,12 @@ jobs:
       - name: Verify every tourism logo is sourced, bundled and well-formed
         run: node scripts/check-tourism-logos.mjs
 
+      - name: Check central bank logos
+        run: node scripts/check-central-banks.mjs
+
       - name: Verify every national news agency is sourced, bundled and well-formed
         run: node scripts/check-national-news-agencies.mjs
+
+      - name: Verify every national newspaper is sourced, bundled and well-formed
+        run: node scripts/check-national-newspapers.mjs
 

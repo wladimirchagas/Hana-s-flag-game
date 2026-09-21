@@ -1,5 +1,5 @@
 import { UiIcon } from "../components/UiIcon";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link, useLocation, useSearchParams } from "react-router-dom";
 import { bundledCountries, fetchCountries, type Country } from "../api/countries";
@@ -17,6 +17,8 @@ import { useZoomPan } from "../hooks/useZoomPan";
 import { MapViewControl } from "../components/MapViewControl";
 import { DemocracyMapControl } from "../components/DemocracyMapControl";
 import { DemocracyMapLegend } from "../components/DemocracyMapLegend";
+import { DemocracyIndexChart } from "../components/DemocracyIndexChart";
+import type { ChartAxisSelection } from "../lib/chartAxes";
 import {
   type DemocracyMapMode,
   getDemocracyColorOverlay,
@@ -41,11 +43,16 @@ import {
 import { NATIONAL_FLAG_MEANINGS } from "../data/nationalFlags";
 import { PASSPORT_COLORS } from "../data/passportColors";
 import { meaningLabel, symbolNoun } from "../lib/nationalFlags";
+import { withFootballCrestStats } from "../lib/footballCrestStats";
 import {
   loadGridContentType,
   saveGridContentType,
   type GridContentType,
 } from "../lib/gridContentType";
+import {
+  applyLogoBackdropTone,
+  sizeFullscreenLogo,
+} from "../lib/logoBackdrop";
 import { FLAG_SHAPES } from "../lib/flagShapes";
 import { FLAG_FAMILIES } from "../lib/flagFamilies";
 import { FLAG_COLORS } from "../lib/flagColors";
@@ -54,6 +61,31 @@ import { getDriveSide } from "../lib/flagDriveSide";
 import { FLAG_ASPECT_RATIOS } from "../lib/flagAspectRatio";
 import { EntitySummary } from "../components/EntitySummary";
 import { FlagMeaning } from "../components/FlagMeaning";
+import { LearnInfoTabs } from "../components/LearnInfoTabs";
+import { LearnPanelCategoryBody } from "../components/LearnPanelCategoryBody";
+import { LearnPanelSymbolBody } from "../components/LearnPanelSymbolBody";
+import { OverviewIdentity, type OverviewIdentityKind } from "../components/OverviewIdentity";
+import { TravelVisitorStats } from "../components/TravelVisitorStats";
+import {
+  LEARN_PANEL_FINANCE_SECTIONS,
+  LEARN_PANEL_MEDIA_SECTIONS,
+  LEARN_PANEL_SPORTS_SECTIONS,
+  LEARN_PANEL_SUBDIVISION_TABS,
+  LEARN_PANEL_TRAVEL_SECTIONS,
+  financeSectionForGridContent,
+  mediaSectionForGridContent,
+  panelTabForGridContent,
+  sportsSectionForGridContent,
+  travelSectionForGridContent,
+  type LearnPanelFinanceSection,
+  type LearnPanelMediaSection,
+  type LearnPanelSportsSection,
+  type LearnPanelTabId,
+  type LearnPanelTravelSection,
+} from "../lib/learnPanelTabs";
+import {
+  selectionKeyForPanel,
+} from "../lib/learnPanelDrawer";
 import { worldCityMarkers, subdivisionCityMarkers, subdivisionCapital } from "../lib/cityRoles";
 import { SubdivisionPopulation } from "../components/SubdivisionPopulation";
 import { NATIONAL_CAPITAL_DETAILS } from "../data/nationalCapitalDetails";
@@ -69,12 +101,6 @@ import { BroadcasterDetails } from "../components/BroadcasterDetails";
 import { TourismLogoDetails } from "../components/TourismLogoDetails";
 import { NewsAgencyDetails } from "../components/NewsAgencyDetails";
 import { NewspaperDetails } from "../components/NewspaperDetails";
-import { airlinesForCountry, airlineById } from "../lib/commercialAirlines";
-import { broadcastersForCountry, broadcasterById } from "../lib/publicBroadcasters";
-import { tourismLogosForCountry, tourismLogoById } from "../lib/tourismLogos";
-import { newsAgenciesForCountry, newsAgencyById } from "../lib/nationalNewsAgencies";
-import { newspapersForCountry, newspaperById } from "../lib/nationalNewspapers";
-import { partiesForCountry, partyById } from "../lib/politicalParties";
 import type { CommercialAirline } from "../types/airline";
 import type { PublicBroadcaster } from "../types/broadcaster";
 import type { TourismLogo } from "../types/tourismLogo";
@@ -290,6 +316,15 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [showCities, setShowCities] = useState(false);
   // "Colour countries by Democracy Index" layer for the world map.
   const [democracyMapMode, setDemocracyMapMode] = useState<DemocracyMapMode>(null);
+  // Scatter chart of two democracy indexes, shown below the world map behind
+  // a "See chart" accordion (collapsed by default). Axis keys are independent
+  // of the map colour mode so users can compare any pair of indexes.
+  const [democracyChartEnabled, setDemocracyChartEnabled] = useState(false);
+  const democracyChartPanelId = useId();
+  const [democracyChartXKey, setDemocracyChartXKey] =
+    useState<ChartAxisSelection>("cpi");
+  const [democracyChartYKey, setDemocracyChartYKey] =
+    useState<ChartAxisSelection>("v-dem");
 
   // First-run tips card shown in the empty state. Dismissal is remembered so
   // it's a one-time nudge, re-openable from a "Show tips" affordance.
@@ -385,7 +420,17 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // when the same entity also appears in the new era (and to clear it
   // when it doesn't).
   const [availableHistoricalNames, setAvailableHistoricalNames] = useState<ReadonlySet<string>>(new Set());
-  const [zoomedFlagUrl, setZoomedFlagUrl] = useState<string | null>(null);
+  const [zoomedMedia, setZoomedMedia] = useState<{
+    url: string;
+    /** Brand logos get an adaptive neutral plate in the fullscreen viewer. */
+    logoSurface?: boolean;
+  } | null>(null);
+  const enlargeFlag = useCallback((url: string) => {
+    setZoomedMedia({ url });
+  }, []);
+  const enlargeLogo = useCallback((url: string) => {
+    setZoomedMedia({ url, logoSurface: true });
+  }, []);
   const [flagLoadFailed, setFlagLoadFailed] = useState(false);
   // What the flag grid — and, in step with it, the detail panel's image +
   // explainer — shows: the national flag (default), the coat of arms, or the
@@ -394,6 +439,59 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [gridContentType, setGridContentType] = useState<GridContentType>(
     loadGridContentType,
   );
+  // Information-panel tabs organise the country fact-sheet (Overview / Indices) and
+  // the Media / Travel / Politics browsers. Synced from the world-map Show
+  // dropdown so picking "Top newspapers" lands on Media, etc.
+  const [panelTab, setPanelTab] = useState<LearnPanelTabId>(() =>
+    panelTabForGridContent(loadGridContentType()),
+  );
+  const [mediaSection, setMediaSection] = useState<LearnPanelMediaSection>(
+    () => mediaSectionForGridContent(loadGridContentType()) ?? "newspaper",
+  );
+  const [travelSection, setTravelSection] = useState<LearnPanelTravelSection>(
+    () => travelSectionForGridContent(loadGridContentType()) ?? "airline",
+  );
+  const [sportsSection, setSportsSection] = useState<LearnPanelSportsSection>(
+    () => sportsSectionForGridContent(loadGridContentType()) ?? "footballcrest",
+  );
+  const [financeSection, setFinanceSection] = useState<LearnPanelFinanceSection>(
+    () => financeSectionForGridContent(loadGridContentType()) ?? "centralbank",
+  );
+  // Overview leading image: Flag vs Coat of arms pills.
+  const [overviewIdentity, setOverviewIdentity] =
+    useState<OverviewIdentityKind>("flag");
+  // Large-screen information panel drawer. Collapsed until a firm selection
+  // exists; Hide dismisses it while keeping the selection; picking another
+  // (or the same again after clear) opens it. Ignored on ≤900px.
+  const [panelDismissed, setPanelDismissed] = useState(false);
+  const [isWideLayout, setIsWideLayout] = useState(() => {
+    if (typeof window === "undefined" || !window.matchMedia) return true;
+    return window.matchMedia("(min-width: 901px)").matches;
+  });
+  useEffect(() => {
+    if (typeof window === "undefined" || !window.matchMedia) return;
+    const mq = window.matchMedia("(min-width: 901px)");
+    const onChange = () => setIsWideLayout(mq.matches);
+    onChange();
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+  const panelSelectionKey = selectionKeyForPanel(
+    selected,
+    subdivisionMode && subdivisionCountry ? subdivisionCountry.code : null,
+  );
+  const prevPanelSelectionKey = useRef(panelSelectionKey);
+  useEffect(() => {
+    if (panelSelectionKey === prevPanelSelectionKey.current) return;
+    prevPanelSelectionKey.current = panelSelectionKey;
+    // A new firm selection (or a clear) resets the Hide dismissal so the next
+    // pick opens the drawer again. Clearing leaves the panel collapsed because
+    // there is nothing to show.
+    setPanelDismissed(false);
+    setOverviewIdentity("flag");
+  }, [panelSelectionKey]);
+  const panelCollapsed =
+    isWideLayout && (panelSelectionKey == null || panelDismissed);
   // The specific football crest clicked in the grid, when it is a card that is
   // NOT a plain country — a UK home nation, or a FIFA-member entity. Keyed with
   // its parent country so the panel shows that crest only while the parent stays
@@ -416,27 +514,53 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [gridTourismLogoId, setGridTourismLogoId] = useState<string | null>(null);
   // A tourism logo picked in the "National symbols" tab of subdivision view.
   const [selectedSubdivisionTourismLogo, setSelectedSubdivisionTourismLogo] = useState<TourismLogo | null>(null);
+  // Passport cover picked in the Travel tab (or Show → Passports).
+  const [gridPassportId, setGridPassportId] = useState<string | null>(null);
   // The specific national news agency clicked in the grid.
   const [gridNewsAgencyId, setGridNewsAgencyId] = useState<string | null>(null);
   // The specific top national newspaper clicked in the grid.
   const [gridNewspaperId, setGridNewspaperId] = useState<string | null>(null);
   const [gridPartyId, setGridPartyId] = useState<string | null>(null);
+  const [gridCentralBankId, setGridCentralBankId] = useState<string | null>(null);
   // A national news agency picked in the "National symbols" tab of subdivision view.
   const [selectedSubdivisionNewsAgency, setSelectedSubdivisionNewsAgency] = useState<NewsAgency | null>(null);
   // A top national newspaper picked in the "National symbols" tab of subdivision view.
   const [selectedSubdivisionNewspaper, setSelectedSubdivisionNewspaper] = useState<Newspaper | null>(null);
 
-  const chooseGridContentType = (type: GridContentType) => {
-    setGridContentType(type);
-    saveGridContentType(type);
+  /** Clear every Show-grid item pick so map/dropdown country selection (or a
+   *  Show-type change) cannot leave a stale airline/party/etc. behind. */
+  const clearGridItemSelection = useCallback(() => {
     setGridCrest(null);
     setGridOlympicCommittee(null);
     setGridAirlineId(null);
     setGridBroadcasterId(null);
     setGridTourismLogoId(null);
+    setGridPassportId(null);
     setGridNewsAgencyId(null);
     setGridNewspaperId(null);
     setGridPartyId(null);
+    setGridCentralBankId(null);
+  }, []);
+
+  const syncPanelTabsFromShow = useCallback((type: GridContentType) => {
+    setPanelTab(panelTabForGridContent(type));
+    const media = mediaSectionForGridContent(type);
+    if (media) setMediaSection(media);
+    const travel = travelSectionForGridContent(type);
+    if (travel) setTravelSection(travel);
+    const sports = sportsSectionForGridContent(type);
+    if (sports) setSportsSection(sports);
+    const finance = financeSectionForGridContent(type);
+    if (finance) setFinanceSection(finance);
+    if (type === "coatofarms") setOverviewIdentity("coatofarms");
+    if (type === "flag") setOverviewIdentity("flag");
+  }, []);
+
+  const chooseGridContentType = (type: GridContentType) => {
+    setGridContentType(type);
+    saveGridContentType(type);
+    clearGridItemSelection();
+    syncPanelTabsFromShow(type);
   };
   // Captured at "Play" click time so the modal stays open even if the
   // hovered-country display clears while the user moves the mouse.
@@ -649,9 +773,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
 
   // Lock body scroll while the fullscreen flag viewer is open + close on Esc.
   useEffect(() => {
-    if (!zoomedFlagUrl) return;
+    if (!zoomedMedia) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setZoomedFlagUrl(null);
+      if (e.key === "Escape") setZoomedMedia(null);
     };
     window.addEventListener("keydown", onKey);
     const prev = document.body.style.overflow;
@@ -660,7 +784,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = prev;
     };
-  }, [zoomedFlagUrl]);
+  }, [zoomedMedia]);
 
   const codeToCountry = useMemo(
     () => new Map(countries.map((c) => [c.code, c])),
@@ -734,6 +858,25 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     setSelectedSubdivision(null);
     setSubdivisionCountry(null);
   }
+
+  /** Clear whatever the information panel is showing — country/polity selection,
+   *  hover preview, subdivision drill-in, and any Show-grid item pick — so the
+   *  panel returns to the empty "Learn your flags" prompt. */
+  const clearPanelSelection = useCallback(() => {
+    setSelected(null);
+    setHovered(null);
+    clearGridItemSelection();
+    setSelectedNationalFlag(null);
+    setSelectedGroupMeaning(null);
+    setSelectedParty(null);
+    setSelectedCapital(null);
+    setSelectedSubdivisionAirline(null);
+    setSelectedSubdivisionBroadcaster(null);
+    setSelectedSubdivisionTourismLogo(null);
+    setSelectedSubdivisionNewsAgency(null);
+    setSelectedSubdivisionNewspaper(null);
+    exitSubdivisionMode();
+  }, [clearGridItemSelection]);
 
 
 
@@ -1243,11 +1386,29 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // ruled it in the era before — an anachronistic flag, which the era rules forbid.
   const handleHistoricalSelect = useCallback(
     (name: string | null) => {
+      if (!name) {
+        setSelected(null);
+        setHovered(null);
+        return;
+      }
+      // Clicking the already-selected polity (or another polygon grouped with
+      // it, e.g. Iberian Union Spain/Portugal) clears the selection — same
+      // toggle as the Unselect button / modern map / flag grid.
+      if (selected?.kind === "historical") {
+        const already =
+          selected.name === name ||
+          polityDisplayName(selected.name, eraId) === polityDisplayName(name, eraId);
+        if (already) {
+          setSelected(null);
+          setHovered(null);
+          return;
+        }
+      }
       setSelected(selectionFromPolityName(name));
       setHovered(null);
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [eraId, countryByName, polityRulers, derivedBoundaryNames],
+    [eraId, countryByName, polityRulers, derivedBoundaryNames, selected],
   );
   const handleHistoricalHover = useCallback(
     (name: string | null) => {
@@ -1439,7 +1600,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     display.country.code === gridOlympicCommittee.parent
       ? olympicCommitteeById(gridOlympicCommittee.id)
       : null;
-  const panelSymbol =
+  const panelSymbolRaw =
     activeGridCrest ??
     activeGridOlympicCommittee ??
     (!subdivisionMode &&
@@ -1450,6 +1611,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       effectiveGridContentType === "olympiccommittee")
       ? nationalSymbolEntry(display.country.code, effectiveGridContentType)
       : null);
+  // Football-association crests always show sourced World Cup rows in the
+  // panel — attach them here so the world-map Show path cannot drop them.
+  const panelSymbol = panelSymbolRaw
+    ? withFootballCrestStats(panelSymbolRaw)
+    : null;
   // The ISO alpha-2 (or "XK") code whose OWN borders the world map must
   // highlight. Normally that's just the selected country — but while a
   // FIFA_EXTRA / IOC_EXTRA card's own crest/NOC is active (activeGridCrest /
@@ -1563,7 +1729,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
               <button
                 type="button"
                 className="learn-fs__flag"
-                onClick={() => displayFlagUrl && setZoomedFlagUrl(displayFlagUrl)}
+                onClick={() => displayFlagUrl && enlargeFlag(displayFlagUrl)}
                 aria-label={
                   panelSymbol
                     ? `Enlarge ${panelSymbol.name}`
@@ -1608,9 +1774,10 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
               {panelSymbol.stats && panelSymbol.stats.length > 0 && (
                 // Same generic stats list NationalFlagDetails renders in the
                 // "National symbols" tab — kept identical here so a symbol's
-                // comparable facts (an Olympic Committee's Games/medal/athlete
-                // rows) read the same whether reached from the world map or
-                // from drilling into the country's own tab.
+                // comparable facts (an Olympic Committee's Games/medal rows, a
+                // football association's World Cup participations/titles) read
+                // the same whether reached from the world map or from drilling
+                // into the country's own tab.
                 <dl className="entity-summary">
                   {panelSymbol.stats.map((stat) => (
                     <div className="entity-summary__row" key={stat.label}>
@@ -1643,6 +1810,32 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         ? display.name
         : null;
 
+  /** Select a modern country from the map or democracy chart — or clear the
+   *  panel when the click is on the country that is already selected. */
+  const handleModernMapOrChartSelect = useCallback(
+    (code: string) => {
+      const c = codeToCountry.get(code);
+      if (!c) return;
+      if (hoverClearTimer.current) {
+        clearTimeout(hoverClearTimer.current);
+        hoverClearTimer.current = null;
+      }
+      if (selected?.kind === "modern" && selected.country.code === c.code) {
+        clearPanelSelection();
+        return;
+      }
+      setSelected({ kind: "modern", country: c });
+      setHovered(null);
+      // Selecting a different country directly on the map/chart must not leave a
+      // previous country's airline/broadcaster/crest/olympic-committee grid pick
+      // behind — the map and the grid always describe the same entity (see
+      // handleGridSelect). Multi-item Show categories open the country chooser
+      // until the user picks a specific item.
+      clearGridItemSelection();
+    },
+    [codeToCountry, selected, clearPanelSelection, clearGridItemSelection],
+  );
+
   function handleGridSelect(
     id: string,
     crestId?: string,
@@ -1654,6 +1847,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     worldMapCode?: string,
     newspaperId?: string,
     partyId?: string,
+    centralBankId?: string,
   ) {
     if (isModernEra) {
       // `id` is always the entity's own country code (an airline/broadcaster tile's
@@ -1669,6 +1863,40 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       // change on the map. Always keeping map = panel = grid in sync fixes both.
       const c = codeToCountry.get(id);
       if (!c) return;
+
+      // Re-clicking the already-active grid card clears the selection — same
+      // toggle as the Unselect button and clicking the selected country on the
+      // map/chart. Match on the specific Show-item id when the tile carries one
+      // (airline, party, home-nation crest, …); otherwise on the country itself.
+      const countryAlreadySelected =
+        selected?.kind === "modern" && selected.country.code === c.code;
+      if (countryAlreadySelected) {
+        const reclickSameItem =
+          crestId != null
+            ? gridCrest?.id === crestId
+            : olympicCommitteeId != null
+              ? gridOlympicCommittee?.id === olympicCommitteeId
+              : airlineId != null
+                ? gridAirlineId === airlineId
+                : broadcasterId != null
+                  ? gridBroadcasterId === broadcasterId
+                  : tourismLogoId != null
+                    ? gridTourismLogoId === tourismLogoId
+                    : newsAgencyId != null
+                      ? gridNewsAgencyId === newsAgencyId
+                      : newspaperId != null
+                        ? gridNewspaperId === newspaperId
+                        : partyId != null
+                          ? gridPartyId === partyId
+                          : centralBankId != null
+                            ? gridCentralBankId === centralBankId
+                          : true;
+        if (reclickSameItem) {
+          clearPanelSelection();
+          return;
+        }
+      }
+
       setSelected({ kind: "modern", country: c });
       setHovered(null);
       // Exactly one of crestId/airlineId/broadcasterId is ever passed for a given
@@ -1692,13 +1920,42 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       setGridNewsAgencyId(newsAgencyId ?? null);
       setGridNewspaperId(newspaperId ?? null);
       setGridPartyId(partyId ?? null);
-      if (airlineId) setGridContentType("airline");
-      if (broadcasterId) setGridContentType("broadcaster");
-      if (tourismLogoId) setGridContentType("tourismlogo");
-      if (newsAgencyId) setGridContentType("newsagency");
-      if (newspaperId) setGridContentType("newspaper");
-      if (partyId) setGridContentType("party");
+      setGridCentralBankId(centralBankId ?? null);
+      if (airlineId) {
+        setGridContentType("airline");
+        syncPanelTabsFromShow("airline");
+      } else if (broadcasterId) {
+        setGridContentType("broadcaster");
+        syncPanelTabsFromShow("broadcaster");
+      } else if (tourismLogoId) {
+        setGridContentType("tourismlogo");
+        syncPanelTabsFromShow("tourismlogo");
+      } else if (newsAgencyId) {
+        setGridContentType("newsagency");
+        syncPanelTabsFromShow("newsagency");
+      } else if (newspaperId) {
+        setGridContentType("newspaper");
+        syncPanelTabsFromShow("newspaper");
+      } else if (partyId) {
+        setGridContentType("party");
+        syncPanelTabsFromShow("party");
+      } else if (centralBankId) {
+        setGridContentType("centralbank");
+        syncPanelTabsFromShow("centralbank");
+      } else {
+        syncPanelTabsFromShow(gridContentType);
+      }
     } else {
+      // Historical flag-grid tile: same toggle — re-clicking the open polity clears it.
+      if (selected?.kind === "historical") {
+        const already =
+          selected.name === id ||
+          polityDisplayName(selected.name, eraId) === polityDisplayName(id, eraId);
+        if (already) {
+          clearPanelSelection();
+          return;
+        }
+      }
       const sel = selectionFromPolityName(id);
       if (!sel) return;
       setSelected(sel);
@@ -1712,86 +1969,77 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  // Active airline to show in the information widget when in airline view.
-  const activeAirline = useMemo(() => {
-    if (subdivisionMode) return null;
-    if (effectiveGridContentType !== "airline" || display?.kind !== "modern") return null;
-    if (gridAirlineId) {
-      const a = airlineById(gridAirlineId);
-      if (a) {
-        return a;
-      }
-    }
-    const countryAirlines = airlinesForCountry(display.country.code);
-    return countryAirlines[0] ?? null;
-  }, [subdivisionMode, effectiveGridContentType, display, gridAirlineId]);
+  // Pick / clear helpers for the Media · Travel · Sports · Politics panel tabs.
+  const pickPanelCategoryItem = useCallback(
+    (
+      type:
+        | LearnPanelMediaSection
+        | LearnPanelTravelSection
+        | LearnPanelSportsSection
+        | LearnPanelFinanceSection
+        | "party",
+      id: string,
+      countryCode?: string,
+    ) => {
+      if (type === "airline") setGridAirlineId(id);
+      else if (type === "broadcaster") setGridBroadcasterId(id);
+      else if (type === "tourismlogo") setGridTourismLogoId(id);
+      else if (type === "passport") setGridPassportId(id);
+      else if (type === "newsagency") setGridNewsAgencyId(id);
+      else if (type === "newspaper") setGridNewspaperId(id);
+      else if (type === "centralbank") setGridCentralBankId(id);
+      else if (type === "footballcrest") {
+        setGridCrest({ id, parent: countryCode ?? "" });
+      } else if (type === "olympiccommittee") {
+        setGridOlympicCommittee({ id, parent: countryCode ?? "" });
+      } else setGridPartyId(id);
+    },
+    [],
+  );
 
-  // Active public broadcaster to show in the information widget when in broadcaster view.
-  const activeBroadcaster = useMemo(() => {
-    if (subdivisionMode) return null;
-    if (effectiveGridContentType !== "broadcaster" || display?.kind !== "modern") return null;
-    if (gridBroadcasterId) {
-      const b = broadcasterById(gridBroadcasterId);
-      if (b) {
-        return b;
-      }
-    }
-    const countryBroadcasters = broadcastersForCountry(display.country.code);
-    return countryBroadcasters[0] ?? null;
-  }, [subdivisionMode, effectiveGridContentType, display, gridBroadcasterId]);
+  const clearPanelCategoryPick = useCallback(
+    (
+      type:
+        | LearnPanelMediaSection
+        | LearnPanelTravelSection
+        | LearnPanelSportsSection
+        | LearnPanelFinanceSection
+        | "party",
+    ) => {
+      if (type === "airline") setGridAirlineId(null);
+      else if (type === "broadcaster") setGridBroadcasterId(null);
+      else if (type === "tourismlogo") setGridTourismLogoId(null);
+      else if (type === "passport") setGridPassportId(null);
+      else if (type === "newsagency") setGridNewsAgencyId(null);
+      else if (type === "newspaper") setGridNewspaperId(null);
+      else if (type === "centralbank") setGridCentralBankId(null);
+      else if (type === "footballcrest") setGridCrest(null);
+      else if (type === "olympiccommittee") setGridOlympicCommittee(null);
+      else setGridPartyId(null);
+    },
+    [],
+  );
 
-  // Active tourism logo to show in the information widget when in tourism-logo view.
-  const activeTourismLogo = useMemo(() => {
-    if (subdivisionMode) return null;
-    if (effectiveGridContentType !== "tourismlogo" || display?.kind !== "modern") return null;
-    if (gridTourismLogoId) {
-      const t = tourismLogoById(gridTourismLogoId);
-      if (t) {
-        return t;
-      }
-    }
-    const countryTourismLogos = tourismLogosForCountry(display.country.code);
-    return countryTourismLogos[0] ?? null;
-  }, [subdivisionMode, effectiveGridContentType, display, gridTourismLogoId]);
+  // True when the panel is showing a firm country selection (not hover-preview).
+  // Media / Travel / Politics choosers only open on a real select — hovering
+  // must not force an arbitrary first airline/party into the widget.
+  const modernCountrySelected =
+    !subdivisionMode &&
+    selected?.kind === "modern" &&
+    display?.kind === "modern" &&
+    selected.country.code === display.country.code;
 
-  // Active national news agency to show in the information widget when in news-agency view.
-  const activeNewsAgency = useMemo(() => {
-    if (subdivisionMode) return null;
-    if (effectiveGridContentType !== "newsagency" || display?.kind !== "modern") return null;
-    if (gridNewsAgencyId) {
-      const na = newsAgencyById(gridNewsAgencyId);
-      if (na) {
-        return na;
-      }
+  // Keep the panel tab inside the subdivision-only set when drilling in.
+  useEffect(() => {
+    if (!subdivisionMode) return;
+    if (
+      panelTab !== "facts" &&
+      panelTab !== "finance" &&
+      panelTab !== "indices"
+    ) {
+      setPanelTab("facts");
     }
-    const countryAgencies = newsAgenciesForCountry(display.country.code);
-    return countryAgencies[0] ?? null;
-  }, [subdivisionMode, effectiveGridContentType, display, gridNewsAgencyId]);
-
-  // Active top national newspaper to show in the information widget when in newspaper view.
-  const activeNewspaper = useMemo(() => {
-    if (subdivisionMode) return null;
-    if (effectiveGridContentType !== "newspaper" || display?.kind !== "modern") return null;
-    if (gridNewspaperId) {
-      const np = newspaperById(gridNewspaperId);
-      if (np) {
-        return np;
-      }
-    }
-    const countryNewspapers = newspapersForCountry(display.country.code);
-    return countryNewspapers[0] ?? null;
-  }, [subdivisionMode, effectiveGridContentType, display, gridNewspaperId]);
-
-  const activeParty = useMemo(() => {
-    if (subdivisionMode) return null;
-    if (effectiveGridContentType !== "party" || display?.kind !== "modern") return null;
-    if (gridPartyId) {
-      const p = partyById(gridPartyId);
-      if (p) return p;
-    }
-    const countryParties = partiesForCountry(display.country.code);
-    return countryParties[0] ?? null;
-  }, [subdivisionMode, effectiveGridContentType, display, gridPartyId]);
+  }, [subdivisionMode, panelTab]);
 
   // Resolver passed to FlagGrid so it can render absolute http(s) URLs,
   // relative historical-flags/*.png paths, AND bundled flag paths that
@@ -1862,7 +2110,13 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         )}
       </nav>
     )}
-    <div className={`learn-fs${subdivisionMode ? " learn-fs--drilldown" : ""}`}>
+    <div
+      className={`learn-fs${subdivisionMode ? " learn-fs--drilldown" : ""}${
+        panelCollapsed ? " learn-fs--panel-collapsed" : ""
+      }`}
+    >
+      <div className="learn-fs__map-col">
+      <div className="learn-fs__map-stick">
       <div className="learn-fs__map" aria-label="World map">
         {isModernEra && subdivisionMode ? (
           <SubdivisionMap
@@ -1871,6 +2125,12 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             selectedCode={selectedSubdivision?.code ?? null}
             countryCode={subdivisionCountry?.code}
             onSelect={(code) => {
+              // Re-clicking the open division clears it.
+              if (selectedSubdivision?.code === code) {
+                setSelectedSubdivision(null);
+                setSelectedCapital(null);
+                return;
+              }
               const countryMeta = subdivisionCountry ? SUBDIVISION_META[subdivisionCountry.code] : null;
               let meta = countryMeta?.divisions.find((d) => d.code === code);
               if (!meta && subdivisionGeo) {
@@ -1908,28 +2168,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
               // WorldProgressMap resolves territory codes to parent country
               // codes before calling onSelect/onHover, so these handlers
               // always receive a sovereign-country code.
-              onSelect: (code) => {
-                const c = codeToCountry.get(code);
-                if (c) {
-                  if (hoverClearTimer.current) {
-                    clearTimeout(hoverClearTimer.current);
-                    hoverClearTimer.current = null;
-                  }
-                  setSelected({ kind: "modern", country: c });
-                  setHovered(null);
-                  // Selecting a different country directly on the map must not leave a
-                  // previous country's airline/broadcaster/crest/olympic-committee grid
-                  // pick behind — the map and the grid always describe the same entity
-                  // (see handleGridSelect above).
-                  setGridCrest(null);
-                  setGridOlympicCommittee(null);
-                  setGridAirlineId(null);
-                  setGridBroadcasterId(null);
-                  setGridTourismLogoId(null);
-                  setGridNewsAgencyId(null);
-                  setGridNewspaperId(null);
-                }
-              },
+              onSelect: handleModernMapOrChartSelect,
               onHover: (code) => {
                 if (!code) {
                   // Debounce: give the mouse 200ms to reach the side panel
@@ -1992,8 +2231,75 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           />
         )}
       </div>
+      </div>
+      {isModernEra && !subdivisionMode && (
+        <div className="learn-fs__chart-accordion">
+          <button
+            type="button"
+            className="learn-fs__chart-accordion-toggle"
+            aria-expanded={democracyChartEnabled}
+            aria-controls={democracyChartPanelId}
+            onClick={() => setDemocracyChartEnabled((v) => !v)}
+          >
+            <span className="learn-fs__chart-accordion-label">See chart</span>
+            <span className="learn-fs__chart-accordion-chev" aria-hidden="true">
+              {democracyChartEnabled ? "▾" : "▸"}
+            </span>
+          </button>
+          {democracyChartEnabled && (
+            <div
+              className="learn-fs__chart-accordion-panel"
+              id={democracyChartPanelId}
+            >
+              <DemocracyIndexChart
+                countries={countries as Country[]}
+                xKey={democracyChartXKey}
+                yKey={democracyChartYKey}
+                onXKeyChange={setDemocracyChartXKey}
+                onYKeyChange={setDemocracyChartYKey}
+                selectedCode={
+                  selected?.kind === "modern" ? selected.country.code : null
+                }
+                hoveredCode={
+                  hovered?.kind === "modern" ? hovered.country.code : null
+                }
+                onSelect={handleModernMapOrChartSelect}
+                onHover={(code) => {
+                  if (!code) {
+                    hoverClearTimer.current = setTimeout(() => {
+                      setHovered(null);
+                      hoverClearTimer.current = null;
+                    }, 200);
+                    return;
+                  }
+                  if (hoverClearTimer.current) {
+                    clearTimeout(hoverClearTimer.current);
+                    hoverClearTimer.current = null;
+                  }
+                  const c = codeToCountry.get(code);
+                  if (c) setHovered({ kind: "modern", country: c });
+                }}
+              />
+            </div>
+          )}
+        </div>
+      )}
+      </div>
 
-      <div className="learn-fs__panel-wrap">
+      <div
+        className="learn-fs__panel-wrap"
+        aria-hidden={panelCollapsed ? true : undefined}
+      >
+        <button
+          type="button"
+          className="learn-fs__panel-drawer-btn learn-fs__panel-drawer-btn--hide"
+          onClick={() => setPanelDismissed(true)}
+          aria-label="Hide information panel"
+          title="Hide information panel"
+        >
+          <UiIcon name="next" />
+          <span className="learn-fs__panel-drawer-label">Hide</span>
+        </button>
         <aside className="learn-fs__panel" aria-live="polite">
           <div className="learn-fs__detail">
             {isModernEra && (
@@ -2025,15 +2331,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                         setSelected({ kind: "modern", country: c });
                         setHovered(null);
                         // Same reasoning as the map's onSelect: don't leave a previous
-                        // country's airline/broadcaster/crest/olympic-committee grid
-                        // pick behind.
-                        setGridCrest(null);
-                        setGridOlympicCommittee(null);
-                        setGridAirlineId(null);
-                        setGridBroadcasterId(null);
-                        setGridTourismLogoId(null);
-                        setGridNewsAgencyId(null);
-                        setGridNewspaperId(null);
+                        // country's airline/broadcaster/crest/party grid pick behind.
+                        clearGridItemSelection();
                       }
                     }}
                     disabled={countries.length === 0}
@@ -2044,8 +2343,32 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     ? renderHanaCorner(subdivisionCountry.code, subdivisionCountry.name)
                     : display?.kind === "modern" &&
                       renderHanaCorner(display.country.code, display.country.name)}
+                  {(selected != null || (subdivisionMode && subdivisionCountry != null)) && (
+                    <button
+                      type="button"
+                      className="learn-fs__unselect"
+                      onClick={clearPanelSelection}
+                      aria-label="Unselect"
+                      title="Unselect"
+                    >
+                      <UiIcon name="close" />
+                    </button>
+                  )}
                 </div>
               </div>
+            )}
+            {/* Historical eras have no country search row — put Unselect on the
+                polity title instead. */}
+            {!isModernEra && selected != null && (
+              <button
+                type="button"
+                className="learn-fs__unselect learn-fs__unselect--corner"
+                onClick={clearPanelSelection}
+                aria-label="Unselect"
+                title="Unselect"
+              >
+                <UiIcon name="close" />
+              </button>
             )}
             {display ? (
               <>
@@ -2062,195 +2385,380 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     <h2 className="learn-fs__name">{selectionName(display, eraId)}</h2>
                   </>
                 )}
-                {/* The flag the user just picked leads the widget: it sits directly
-                    under the country dropdown, with its "What this flag means"
-                    explainer immediately below (both live inside panelFlagBox), and
-                    the fact-sheet rows follow.
-                    When viewing airlines or broadcasters, show the selected one instead
-                    (same location as coat of arms, passports, crests). */}
-                {display.kind === "modern" &&
-                  !(
-                    !subdivisionMode &&
-                    (effectiveGridContentType === "airline" ||
-                      effectiveGridContentType === "broadcaster" ||
-                      effectiveGridContentType === "tourismlogo" ||
-                      effectiveGridContentType === "newsagency" ||
-                      effectiveGridContentType === "newspaper" ||
-                      effectiveGridContentType === "party")
-                  ) &&
-                  panelFlagBox}
-                {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "airline" && activeAirline && (
-                  <AirlineDetails
-                    airline={activeAirline}
-                    baseUrl={baseUrl}
-                    onEnlarge={setZoomedFlagUrl}
-                  />
-                )}
-                {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "broadcaster" && activeBroadcaster && (
-                  <BroadcasterDetails
-                    broadcaster={activeBroadcaster}
-                    baseUrl={baseUrl}
-                    onEnlarge={setZoomedFlagUrl}
-                  />
-                )}
-                {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "tourismlogo" && activeTourismLogo && (
-                  <TourismLogoDetails
-                    logo={activeTourismLogo}
-                    baseUrl={baseUrl}
-                    onEnlarge={setZoomedFlagUrl}
-                  />
-                )}
-                {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "newsagency" && activeNewsAgency && (
-                  <NewsAgencyDetails
-                    agency={activeNewsAgency}
-                    baseUrl={baseUrl}
-                    onEnlarge={setZoomedFlagUrl}
-                  />
-                )}
-                {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "newspaper" && activeNewspaper && (
-                  <NewspaperDetails
-                    newspaper={activeNewspaper}
-                    baseUrl={baseUrl}
-                    onEnlarge={setZoomedFlagUrl}
-                  />
-                )}
-                {!subdivisionMode && display.kind === "modern" && effectiveGridContentType === "party" && activeParty && (
-                  <PoliticalPartyDetails
-                    party={activeParty}
-                    baseUrl={baseUrl}
-                    onEnlarge={setZoomedFlagUrl}
-                  />
-                )}
                 {display.kind === "modern" ? (
-                  // The country fact-sheet (Population, Capital, Languages, Currency,
-                  // Government, Continent, Region, Anthem) belongs to the NATIONAL FLAG,
-                  // not to whichever other national symbol happens to be selected —
-                  // showing it under a coat of arms / passport / football crest /
-                  // Olympic Committee logo / airline / broadcaster / tourism logo /
-                  // news agency / newspaper mixes two unrelated fact lists in one panel.
-                  // It still shows once the user clicks "Learn more" into the
-                  // country's own tab, where the fact-sheet is always present above
-                  // every symbol's own widget.
-                  !panelSymbol &&
-                    !subdivisionMode &&
-                    !(
-                      effectiveGridContentType === "airline" ||
-                      effectiveGridContentType === "broadcaster" ||
-                      effectiveGridContentType === "tourismlogo" ||
-                      effectiveGridContentType === "newsagency" ||
-                      effectiveGridContentType === "newspaper" ||
-                      effectiveGridContentType === "party"
-                    ) && (
-                    <EntitySummary
-                      kind="modern"
-                      country={display.country}
-                      footer={
-                        <div className="entity-summary__row">
-                          <dt className="entity-summary__label">Anthem</dt>
-                          <dd className="entity-summary__value">
-                            <button
-                              type="button"
-                              className="learn-fs__anthem-btn"
-                              onClick={() => {
-                                setAnthemTarget({
-                                  code: display.country.code,
-                                  name: display.country.name,
-                                  flagUrl: selectionFlag(display, baseUrl),
-                                });
-                                anthemPlayerRef.current?.play();
-                              }}
-                              aria-label={`Play national anthem of ${display.country.name}`}
-                            >
-                              <UiIcon name="play" /> Play
-                            </button>
-                          </dd>
-                        </div>
+                  <>
+                    <LearnInfoTabs
+                      active={
+                        subdivisionMode &&
+                        panelTab !== "facts" &&
+                        panelTab !== "finance" &&
+                        panelTab !== "indices"
+                          ? "facts"
+                          : panelTab
                       }
+                      onChange={setPanelTab}
+                      tabs={subdivisionMode ? LEARN_PANEL_SUBDIVISION_TABS : undefined}
                     />
-                  )
+                    <div className="flag-tabs__panel learn-panel-tabs__panel" role="tabpanel">
+                      {(subdivisionMode
+                        ? panelTab === "indices"
+                          ? "indices"
+                          : panelTab === "finance"
+                            ? "finance"
+                            : "facts"
+                        : panelTab) === "facts" && (
+                        <>
+                          {/* Flag / coat of arms lead Overview via pills.
+                              Passports, crests and Olympic logos live on
+                              Travel / Sports instead. */}
+                          {!flagLoadFailed && (
+                            <OverviewIdentity
+                              country={display.country}
+                              active={overviewIdentity}
+                              onChange={setOverviewIdentity}
+                              flagUrl={flagUrl}
+                              flagPngFallback={
+                                !FLAGCDN_FALLBACK_EXCLUDED.has(display.country.code)
+                                  ? `https://flagcdn.com/${display.country.code.toLowerCase()}.png`
+                                  : null
+                              }
+                              baseUrl={baseUrl}
+                              onEnlarge={enlargeFlag}
+                              onFlagError={() => setFlagLoadFailed(true)}
+                            />
+                          )}
+                          <EntitySummary
+                            kind="modern"
+                            country={display.country}
+                            section="facts"
+                            footer={
+                              <div className="entity-summary__row">
+                                <dt className="entity-summary__label">Anthem</dt>
+                                <dd className="entity-summary__value">
+                                  <button
+                                    type="button"
+                                    className="learn-fs__anthem-btn"
+                                    onClick={() => {
+                                      setAnthemTarget({
+                                        code: display.country.code,
+                                        name: display.country.name,
+                                        flagUrl: selectionFlag(display, baseUrl),
+                                      });
+                                      anthemPlayerRef.current?.play();
+                                    }}
+                                    aria-label={`Play national anthem of ${display.country.name}`}
+                                  >
+                                    <UiIcon name="play" /> Play
+                                  </button>
+                                </dd>
+                              </div>
+                            }
+                          />
+                        </>
+                      )}
+                      {(subdivisionMode
+                        ? panelTab === "finance"
+                        : panelTab === "finance") && (
+                        <>
+                          <EntitySummary
+                            kind="modern"
+                            country={display.country}
+                            section="finance"
+                          />
+                          {!subdivisionMode && modernCountrySelected && (
+                            <LearnPanelCategoryBody
+                              sections={LEARN_PANEL_FINANCE_SECTIONS}
+                              activeSection={financeSection}
+                              onSectionChange={(id) =>
+                                setFinanceSection(id as LearnPanelFinanceSection)
+                              }
+                              countryCode={display.country.code}
+                              countryName={display.country.name}
+                              pickedId={gridCentralBankId}
+                              onPick={(id) =>
+                                pickPanelCategoryItem("centralbank", id)
+                              }
+                              onClearPick={() =>
+                                clearPanelCategoryPick("centralbank")
+                              }
+                              resolveImage={resolveFlag}
+                              baseUrl={baseUrl}
+                              onEnlarge={enlargeLogo}
+                            />
+                          )}
+                        </>
+                      )}
+                      {(subdivisionMode
+                        ? panelTab === "indices"
+                        : panelTab === "indices") && (
+                        <EntitySummary
+                          kind="modern"
+                          country={display.country}
+                          section="indices"
+                        />
+                      )}
+                      {!subdivisionMode && panelTab === "media" && (
+                        modernCountrySelected ? (
+                          <LearnPanelCategoryBody
+                            sections={LEARN_PANEL_MEDIA_SECTIONS}
+                            activeSection={mediaSection}
+                            onSectionChange={(id) =>
+                              setMediaSection(id as LearnPanelMediaSection)
+                            }
+                            countryCode={display.country.code}
+                            countryName={display.country.name}
+                            pickedId={
+                              mediaSection === "newspaper"
+                                ? gridNewspaperId
+                                : mediaSection === "newsagency"
+                                  ? gridNewsAgencyId
+                                  : gridBroadcasterId
+                            }
+                            onPick={(id) => pickPanelCategoryItem(mediaSection, id)}
+                            onClearPick={() => clearPanelCategoryPick(mediaSection)}
+                            resolveImage={resolveFlag}
+                            baseUrl={baseUrl}
+                            onEnlarge={enlargeLogo}
+                          />
+                        ) : (
+                          <p className="learn-panel-tabs__empty">
+                            Select {display.country.name} to browse its newspapers,
+                            news agencies and broadcasters.
+                          </p>
+                        )
+                      )}
+                      {!subdivisionMode && panelTab === "travel" && (
+                        modernCountrySelected ? (
+                          <div className="learn-panel-category">
+                            <TravelVisitorStats
+                              countryCode={display.country.code}
+                            />
+                            <div
+                              className="learn-panel-category__sections"
+                              role="tablist"
+                              aria-label="Travel"
+                            >
+                              {LEARN_PANEL_TRAVEL_SECTIONS.map((s) => {
+                                const selected = s.id === travelSection;
+                                return (
+                                  <button
+                                    key={s.id}
+                                    type="button"
+                                    role="tab"
+                                    aria-selected={selected}
+                                    className={`learn-panel-category__section${
+                                      selected
+                                        ? " learn-panel-category__section--active"
+                                        : ""
+                                    }`}
+                                    onClick={() => setTravelSection(s.id)}
+                                  >
+                                    {s.label}
+                                  </button>
+                                );
+                              })}
+                            </div>
+                            {travelSection === "passport" ? (
+                              <LearnPanelSymbolBody
+                                sections={[
+                                  { id: "passport", label: "Passports" },
+                                ]}
+                                activeSection="passport"
+                                onSectionChange={() => {}}
+                                countryCode={display.country.code}
+                                countryName={display.country.name}
+                                pickedId={gridPassportId}
+                                onPick={(id) =>
+                                  pickPanelCategoryItem("passport", id)
+                                }
+                                onClearPick={() =>
+                                  clearPanelCategoryPick("passport")
+                                }
+                                baseUrl={baseUrl}
+                                onEnlarge={enlargeFlag}
+                              />
+                            ) : (
+                              <LearnPanelCategoryBody
+                                sections={[
+                                  {
+                                    id: travelSection,
+                                    label:
+                                      travelSection === "airline"
+                                        ? "Airlines"
+                                        : "Tourism",
+                                  },
+                                ]}
+                                activeSection={travelSection}
+                                onSectionChange={() => {}}
+                                countryCode={display.country.code}
+                                countryName={display.country.name}
+                                pickedId={
+                                  travelSection === "airline"
+                                    ? gridAirlineId
+                                    : gridTourismLogoId
+                                }
+                                onPick={(id) =>
+                                  pickPanelCategoryItem(travelSection, id)
+                                }
+                                onClearPick={() =>
+                                  clearPanelCategoryPick(travelSection)
+                                }
+                                resolveImage={resolveFlag}
+                                baseUrl={baseUrl}
+                                onEnlarge={enlargeLogo}
+                              />
+                            )}
+                          </div>
+                        ) : (
+                          <p className="learn-panel-tabs__empty">
+                            Select {display.country.name} to browse its airlines,
+                            tourism logos and passports.
+                          </p>
+                        )
+                      )}
+                      {!subdivisionMode && panelTab === "sports" && (
+                        modernCountrySelected ? (
+                          <LearnPanelSymbolBody
+                            sections={LEARN_PANEL_SPORTS_SECTIONS}
+                            activeSection={sportsSection}
+                            onSectionChange={(id) =>
+                              setSportsSection(id as LearnPanelSportsSection)
+                            }
+                            countryCode={display.country.code}
+                            countryName={display.country.name}
+                            pickedId={
+                              sportsSection === "footballcrest"
+                                ? gridCrest?.id ?? null
+                                : gridOlympicCommittee?.id ?? null
+                            }
+                            onPick={(id) =>
+                              pickPanelCategoryItem(
+                                sportsSection,
+                                id,
+                                display.country.code,
+                              )
+                            }
+                            onClearPick={() =>
+                              clearPanelCategoryPick(sportsSection)
+                            }
+                            baseUrl={baseUrl}
+                            onEnlarge={enlargeFlag}
+                          />
+                        ) : (
+                          <p className="learn-panel-tabs__empty">
+                            Select {display.country.name} to browse its football
+                            associations and Olympic committees.
+                          </p>
+                        )
+                      )}
+                      {!subdivisionMode && panelTab === "politics" && (
+                        modernCountrySelected ? (
+                          <>
+                            <EntitySummary
+                              kind="modern"
+                              country={display.country}
+                              section="politics"
+                            />
+                            <LearnPanelCategoryBody
+                              sections={[{ id: "party", label: "Political parties" }]}
+                              activeSection="party"
+                              onSectionChange={() => {}}
+                              countryCode={display.country.code}
+                              countryName={display.country.name}
+                              pickedId={gridPartyId}
+                              onPick={(id) => pickPanelCategoryItem("party", id)}
+                              onClearPick={() => clearPanelCategoryPick("party")}
+                              resolveImage={resolveFlag}
+                              baseUrl={baseUrl}
+                              onEnlarge={enlargeLogo}
+                            />
+                          </>
+                        ) : (
+                          <p className="learn-panel-tabs__empty">
+                            Select {display.country.name} to browse its political
+                            parties.
+                          </p>
+                        )
+                      )}
+                    </div>
+                    {isModernEra && !subdivisionMode && (
+                      <button
+                        type="button"
+                        className="learn-fs__subdiv-btn"
+                        onClick={handleEnterSubdivisionMode}
+                      >
+                        {/* It opens far more than the sub-national grid now — national,
+                            historical, military, maritime, arms and passports too — so the
+                            label says what the user gets rather than naming one tab. */}
+                        Learn more
+                      </button>
+                    )}
+                  </>
                 ) : (
-                  <EntitySummary
-                    kind="historical"
-                    region={display.continent}
-                    note={display.note}
-                    population={display.population}
-                    ruledBy={
-                      display.kind === "historical"
-                        ? display.ruledBy && rulerDisplayName(display.ruledBy, eraId)
-                        : undefined
-                    }
-                    approximateExtent={
-                      display.kind === "historical" ? display.approximateExtent : undefined
-                    }
-                    datingCaveat={
-                      display.kind === "historical" ? display.datingCaveat : undefined
-                    }
-                  />
-                )}
-                {flagUrl && !flagLoadFailed && display.kind === "historical" && display.flagIsRulers && display.ruledBy && (
-                  // A colony flew its ruler's flag. Say so, so the card never implies
-                  // the territory had a national flag of its own. The caption NAMES the
-                  // ruler, so it must not render without one — an empty `ruledBy` used to
-                  // print "Flew the flag of — it had no national flag of its own".
-                  <p className="entity-summary__note">
-                    Flew the flag of {withArticle(rulerDisplayName(display.ruledBy, eraId))} —
-                    it had no national flag of its own at this date.
-                  </p>
-                )}
-                {/* A historical polity keeps its flag BELOW the fact-sheet, where the
-                    ruler caption above and the dated no-flag explanations below belong
-                    with it. A modern country leads with its flag instead — rendered
-                    directly under the country dropdown, above the fact-sheet. */}
-                {display.kind === "historical" && panelFlagBox}
-                {!panelFlagBox ? (
-                  display.kind === "historical" && display.noFlagReason ? (
-                    // Curated, sourced explanation for THIS polity at THIS date — always
-                    // preferred over the two generic lines below. See PolityInfo.noFlagReason.
-                    <p className="learn-fs__no-flag">{display.noFlagReason}</p>
-                  ) : display.kind === "historical" && display.flagOutOfPeriod ? (
-                    // A curated image exists but its design was not flown at this date.
-                    // Naming the design and its years is a real explanation — never let
-                    // this fall through to the causeless line below.
-                    <p className="learn-fs__no-flag">
-                      No flag for {era.label} — {display.flagOutOfPeriod.design} That design
-                      was flown from {formatFlagYear(display.flagOutOfPeriod.from)}
-                      {display.flagOutOfPeriod.to >= 9999
-                        ? " onwards"
-                        : ` to ${formatFlagYear(display.flagOutOfPeriod.to)}`}
-                      , and no flag of this polity's own date is bundled.
-                    </p>
-                  ) : display.kind === "historical" && display.flagTooNew ? (
-                    <p className="learn-fs__no-flag">
-                      No flag for {era.label} — {display.flagTooNew.name}'s modern flag
-                      was only adopted in {display.flagTooNew.year}, and no earlier flag
-                      for this territory is bundled.
-                    </p>
-                  ) : display.kind === "historical" ? (
-                    // Last resort. It must state ONLY what is certainly true — that no
-                    // period flag is bundled — and never assert a historical reason we do
-                    // not actually know. The old line ("this polity predates modern flag
-                    // design or none survives") asserted one for every flagless polity and
-                    // was plainly false for the 20th-century ones: Nazi Germany, the 1938
-                    // Netherlands, the Kingdom of Hawaii. Add a noFlagReason instead.
-                    <p className="learn-fs__no-flag">
-                      No flag shown — no period-accurate flag for{" "}
-                      {selectionName(display, eraId)} in {era.label} is bundled.
-                    </p>
-                  ) : (
-                    <p className="learn-fs__no-flag">No flag image available.</p>
-                  )
-                ) : null}
-                {display.kind === "modern" && isModernEra && !subdivisionMode && (
-                  <button
-                    type="button"
-                    className="learn-fs__subdiv-btn"
-                    onClick={handleEnterSubdivisionMode}
-                  >
-                    {/* It opens far more than the sub-national grid now — national,
-                        historical, military, maritime, arms and passports too — so the
-                        label says what the user gets rather than naming one tab. */}
-                    Learn more
-                  </button>
+                  <>
+                    <EntitySummary
+                      kind="historical"
+                      region={display.continent}
+                      note={display.note}
+                      population={display.population}
+                      ruledBy={
+                        display.ruledBy && rulerDisplayName(display.ruledBy, eraId)
+                      }
+                      approximateExtent={display.approximateExtent}
+                      datingCaveat={display.datingCaveat}
+                    />
+                    {flagUrl && !flagLoadFailed && display.flagIsRulers && display.ruledBy && (
+                      // A colony flew its ruler's flag. Say so, so the card never implies
+                      // the territory had a national flag of its own. The caption NAMES the
+                      // ruler, so it must not render without one — an empty `ruledBy` used to
+                      // print "Flew the flag of — it had no national flag of its own".
+                      <p className="entity-summary__note">
+                        Flew the flag of {withArticle(rulerDisplayName(display.ruledBy, eraId))} —
+                        it had no national flag of its own at this date.
+                      </p>
+                    )}
+                    {/* A historical polity keeps its flag BELOW the fact-sheet, where the
+                        ruler caption above and the dated no-flag explanations below belong
+                        with it. A modern country leads with its flag instead — rendered
+                        on the Overview tab. */}
+                    {panelFlagBox}
+                    {!panelFlagBox ? (
+                      display.noFlagReason ? (
+                        // Curated, sourced explanation for THIS polity at THIS date — always
+                        // preferred over the two generic lines below. See PolityInfo.noFlagReason.
+                        <p className="learn-fs__no-flag">{display.noFlagReason}</p>
+                      ) : display.flagOutOfPeriod ? (
+                        // A curated image exists but its design was not flown at this date.
+                        // Naming the design and its years is a real explanation — never let
+                        // this fall through to the causeless line below.
+                        <p className="learn-fs__no-flag">
+                          No flag for {era.label} — {display.flagOutOfPeriod.design} That design
+                          was flown from {formatFlagYear(display.flagOutOfPeriod.from)}
+                          {display.flagOutOfPeriod.to >= 9999
+                            ? " onwards"
+                            : ` to ${formatFlagYear(display.flagOutOfPeriod.to)}`}
+                          , and no flag of this polity's own date is bundled.
+                        </p>
+                      ) : display.flagTooNew ? (
+                        <p className="learn-fs__no-flag">
+                          No flag for {era.label} — {display.flagTooNew.name}'s modern flag
+                          was only adopted in {display.flagTooNew.year}, and no earlier flag
+                          for this territory is bundled.
+                        </p>
+                      ) : (
+                        // Last resort. It must state ONLY what is certainly true — that no
+                        // period flag is bundled — and never assert a historical reason we do
+                        // not actually know. The old line ("this polity predates modern flag
+                        // design or none survives") asserted one for every flagless polity and
+                        // was plainly false for the 20th-century ones: Nazi Germany, the 1938
+                        // Netherlands, the Kingdom of Hawaii. Add a noFlagReason instead.
+                        <p className="learn-fs__no-flag">
+                          No flag shown — no period-accurate flag for{" "}
+                          {selectionName(display, eraId)} in {era.label} is bundled.
+                        </p>
+                      )
+                    ) : null}
+                  </>
                 )}
               </>
             ) : subdivisionMode && subdivisionCountry ? (() => {
@@ -2273,7 +2781,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                         <button
                           type="button"
                           className="learn-fs__flag"
-                          onClick={() => setZoomedFlagUrl(subdivisionCountry.flagSvg)}
+                          onClick={() => enlargeFlag(subdivisionCountry.flagSvg)}
                           aria-label={`Enlarge ${subdivisionCountry.name} flag`}
                         >
                           <img
@@ -2296,32 +2804,64 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     </div>
                   )}
                   {countryObj && (
-                    <EntitySummary
-                      kind="modern"
-                      country={countryObj}
-                      footer={
-                        <div className="entity-summary__row">
-                          <dt className="entity-summary__label">Anthem</dt>
-                          <dd className="entity-summary__value">
-                            <button
-                              type="button"
-                              className="learn-fs__anthem-btn"
-                              onClick={() => {
-                                setAnthemTarget({
-                                  code: subdivisionCountry.code,
-                                  name: subdivisionCountry.name,
-                                  flagUrl: subdivisionCountry.flagSvg || null,
-                                });
-                                anthemPlayerRef.current?.play();
-                              }}
-                              aria-label={`Play national anthem of ${subdivisionCountry.name}`}
-                            >
-                              <UiIcon name="play" /> Play
-                            </button>
-                          </dd>
-                        </div>
-                      }
-                    />
+                    <>
+                      <LearnInfoTabs
+                        active={
+                          panelTab === "indices"
+                            ? "indices"
+                            : panelTab === "finance"
+                              ? "finance"
+                              : "facts"
+                        }
+                        onChange={setPanelTab}
+                        tabs={LEARN_PANEL_SUBDIVISION_TABS}
+                      />
+                      <div className="flag-tabs__panel learn-panel-tabs__panel" role="tabpanel">
+                        {panelTab !== "indices" && panelTab !== "finance" && (
+                          <EntitySummary
+                            kind="modern"
+                            country={countryObj}
+                            section="facts"
+                            footer={
+                              <div className="entity-summary__row">
+                                <dt className="entity-summary__label">Anthem</dt>
+                                <dd className="entity-summary__value">
+                                  <button
+                                    type="button"
+                                    className="learn-fs__anthem-btn"
+                                    onClick={() => {
+                                      setAnthemTarget({
+                                        code: subdivisionCountry.code,
+                                        name: subdivisionCountry.name,
+                                        flagUrl: subdivisionCountry.flagSvg || null,
+                                      });
+                                      anthemPlayerRef.current?.play();
+                                    }}
+                                    aria-label={`Play national anthem of ${subdivisionCountry.name}`}
+                                  >
+                                    <UiIcon name="play" /> Play
+                                  </button>
+                                </dd>
+                              </div>
+                            }
+                          />
+                        )}
+                        {panelTab === "finance" && (
+                          <EntitySummary
+                            kind="modern"
+                            country={countryObj}
+                            section="finance"
+                          />
+                        )}
+                        {panelTab === "indices" && (
+                          <EntitySummary
+                            kind="modern"
+                            country={countryObj}
+                            section="indices"
+                          />
+                        )}
+                      </div>
+                    </>
                   )}
                   {/* Subdivision info is rendered in the dedicated sub-national
                       box below — not here — so it is never shown twice. */}
@@ -2406,6 +2946,20 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     label="Choose a division"
                     countryCode={subdivisionCountry.code}
                   />
+                  {(selectedSubdivision != null || selectedCapital != null) && (
+                    <button
+                      type="button"
+                      className="learn-fs__unselect"
+                      onClick={() => {
+                        setSelectedSubdivision(null);
+                        setSelectedCapital(null);
+                      }}
+                      aria-label="Unselect division"
+                      title="Unselect"
+                    >
+                      <UiIcon name="close" />
+                    </button>
+                  )}
                 </div>
               </div>
               {selectedSubdivision ? (() => {
@@ -2425,7 +2979,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                           <button
                             type="button"
                             className="learn-fs__flag"
-                            onClick={() => setZoomedFlagUrl(sdUrl)}
+                            onClick={() => enlargeFlag(sdUrl)}
                             aria-label={`Enlarge ${selectedSubdivision.name} flag`}
                           >
                             <img
@@ -2526,7 +3080,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     countryName={subdivisionCountry.name}
                     nationalPopulation={countryObj?.population}
                     baseUrl={baseUrl}
-                    onEnlarge={setZoomedFlagUrl}
+                    onEnlarge={enlargeFlag}
                   />
                 </div>
               </aside>
@@ -2546,7 +3100,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                   countryCode={subdivisionCountry.code}
                   countryName={subdivisionCountry.name}
                   baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
+                  onEnlarge={enlargeFlag}
                   meanings={
                     selectedGroupMeaning
                       ? { [selectedNationalFlag.id]: selectedGroupMeaning }
@@ -2567,7 +3121,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 <PoliticalPartyDetails
                   party={selectedParty}
                   baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
+                  onEnlarge={enlargeLogo}
                 />
               </div>
             </aside>
@@ -2582,7 +3136,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 <AirlineDetails
                   airline={selectedSubdivisionAirline}
                   baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
+                  onEnlarge={enlargeLogo}
                 />
               </div>
             </aside>
@@ -2597,7 +3151,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 <BroadcasterDetails
                   broadcaster={selectedSubdivisionBroadcaster}
                   baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
+                  onEnlarge={enlargeLogo}
                 />
               </div>
             </aside>
@@ -2613,7 +3167,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 <TourismLogoDetails
                   logo={selectedSubdivisionTourismLogo}
                   baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
+                  onEnlarge={enlargeLogo}
                 />
               </div>
             </aside>
@@ -2629,7 +3183,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 <NewsAgencyDetails
                   agency={selectedSubdivisionNewsAgency}
                   baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
+                  onEnlarge={enlargeLogo}
                 />
               </div>
             </aside>
@@ -2645,7 +3199,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 <NewspaperDetails
                   newspaper={selectedSubdivisionNewspaper}
                   baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
+                  onEnlarge={enlargeLogo}
                 />
               </div>
             </aside>
@@ -2693,7 +3247,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                         <button
                           type="button"
                           className="learn-fs__flag"
-                          onClick={() => setZoomedFlagUrl(flagUrl)}
+                          onClick={() => enlargeFlag(flagUrl)}
                           aria-label={`Enlarge ${cap.name} flag`}
                         >
                           <img
@@ -2754,6 +3308,20 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         )}
       </div>
 
+      <button
+        type="button"
+        className="learn-fs__panel-drawer-btn learn-fs__panel-drawer-btn--show"
+        onClick={() => setPanelDismissed(false)}
+        aria-label="Show information panel"
+        title="Show information panel"
+        aria-hidden={!panelCollapsed ? true : undefined}
+        tabIndex={!panelCollapsed ? -1 : undefined}
+        disabled={panelSelectionKey == null}
+      >
+        <UiIcon name="previous" />
+        <span className="learn-fs__panel-drawer-label">Info</span>
+      </button>
+
       {currentCountry && (
         <NationalAnthemPlayer
           ref={anthemPlayerRef}
@@ -2769,29 +3337,50 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         />
       )}
 
-      {zoomedFlagUrl && (
+      {zoomedMedia && (
         <div
           className="flag-zoom"
           role="dialog"
           aria-modal="true"
-          aria-label="Enlarged flag"
-          onClick={() => setZoomedFlagUrl(null)}
+          aria-label={zoomedMedia.logoSurface ? "Enlarged logo" : "Enlarged flag"}
+          onClick={() => setZoomedMedia(null)}
         >
-          <img
-            key={zoomedFlagUrl}
-            src={zoomedFlagUrl}
-            alt=""
-            className="flag-zoom__img"
-            draggable={false}
-          />
+          {zoomedMedia.logoSurface ? (
+            <div
+              className="flag-zoom__plate"
+              data-logo-surface=""
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                key={zoomedMedia.url}
+                src={zoomedMedia.url}
+                alt=""
+                className="flag-zoom__img flag-zoom__img--logo"
+                draggable={false}
+                onLoad={(e) => {
+                  const img = e.currentTarget;
+                  sizeFullscreenLogo(img);
+                  applyLogoBackdropTone(img);
+                }}
+              />
+            </div>
+          ) : (
+            <img
+              key={zoomedMedia.url}
+              src={zoomedMedia.url}
+              alt=""
+              className="flag-zoom__img"
+              draggable={false}
+            />
+          )}
           <button
             type="button"
             className="flag-zoom__close"
             onClick={(e) => {
               e.stopPropagation();
-              setZoomedFlagUrl(null);
+              setZoomedMedia(null);
             }}
-            aria-label="Close enlarged flag"
+            aria-label={zoomedMedia.logoSurface ? "Close enlarged logo" : "Close enlarged flag"}
           >
             <UiIcon name="close" />
           </button>
@@ -2802,6 +3391,13 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         const meta = SUBDIVISION_META[subdivisionCountry.code];
         const divisions = meta?.divisions ?? [];
         const selectSubdivision = (code: string) => {
+          // Re-clicking the open division card clears it — same toggle as the
+          // subdivision map and the national flag grid.
+          if (selectedSubdivision?.code === code) {
+            setSelectedSubdivision(null);
+            setSelectedCapital(null);
+            return;
+          }
           const div = divisions.find((d) => d.code === code);
           if (div) {
             setSelectedSubdivision(div);
@@ -2924,6 +3520,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           selectedNewsAgencyId={gridNewsAgencyId}
           selectedNewspaperId={gridNewspaperId}
           selectedPartyId={gridPartyId}
+          selectedCentralBankId={gridCentralBankId}
           onSelect={handleGridSelect}
           resolveFlag={resolveFlag}
           isModernEra={isModernEra}

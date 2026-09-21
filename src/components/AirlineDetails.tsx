@@ -1,4 +1,5 @@
 import { LogoExplainer } from "./LogoExplainer";
+import { EnlargeableLogo } from "./EnlargeableLogo";
 import type { CommercialAirline } from "../types/airline";
 
 /**
@@ -36,22 +37,13 @@ export function AirlineDetails({
       <div className="learn-fs__flag-box">
         <div className="learn-fs__flag-head">
           <span className="entity-summary__label learn-fs__flag-label">Airline logo</span>
-          <button
-            type="button"
-            className="learn-fs__flag"
-            onClick={() => onEnlarge(logoUrl)}
-            aria-label={`Enlarge ${airline.name} logo`}
-          >
-            <img
-              key={logoUrl}
-              src={logoUrl}
-              alt={`${airline.name} logo`}
-              className="learn-fs__flag-img"
-              draggable={false}
-              style={{ objectFit: "contain", maxHeight: "110px", padding: "6px" }}
-            />
-            <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-          </button>
+          <EnlargeableLogo
+            src={logoUrl}
+            alt={`${airline.name} logo`}
+            ariaLabel={`Enlarge ${airline.name} logo`}
+            onEnlarge={onEnlarge}
+            hint="⤢ Click to enlarge"
+          />
         </div>
         <LogoExplainer description={airline.logoExplainer} label="What this logo means" />
       </div>

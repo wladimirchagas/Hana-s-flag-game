@@ -46,6 +46,12 @@
      which the nav adds itself). Build info + the profile chip share this one
      row, so the body only needs to reserve space for a single bar. */
   --bottom-nav-h: 3rem;
+  /* Neutral plates behind brand logos. Chosen per-logo from the image's own
+     luminance (see lib/logoBackdrop.ts) — NOT from the app theme — so dark
+     mastheads stay readable in dark mode and light logos stay readable on
+     cream. Same hexes in both themes on purpose. */
+  --logo-plate-light: #f2f0ea;
+  --logo-plate-dark: #1a1d27;
 }
 
 /* === Dark mode === */

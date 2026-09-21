@@ -1,0 +1,162 @@
+iso,country,rank,score,rankChange,rating,year
+PK,Pakistan,1,8.574,1,Very High,2026
+BF,Burkina Faso,2,8.324,-1,Very High,2026
+NE,Niger,3,7.816,2,High,2026
+NG,Nigeria,4,7.792,2,High,2026
+ML,Mali,5,7.586,-1,High,2026
+SY,Syria,6,7.545,-3,High,2026
+SO,Somalia,7,7.391,0,High,2026
+CD,Democratic Republic of the Congo,8,7.171,4,High,2026
+CO,Colombia,9,7.116,5,High,2026
+IL,Israel,10,6.79,-2,High,2026
+AF,Afghanistan,11,6.678,-2,High,2026
+CM,Cameroon,12,6.593,-2,High,2026
+IN,India,13,6.428,2,High,2026
+MM,Myanmar,14,6.245,-3,High,2026
+MZ,Mozambique,15,6.022,1,High,2026
+IQ,Iraq,16,5.822,-3,Medium,2026
+RU,Russia,17,5.593,0,Medium,2026
+IR,Iran,18,5.477,0,Medium,2026
+BJ,Benin,19,5.434,8,Medium,2026
+TH,Thailand,20,5.275,6,Medium,2026
+KE,Kenya,21,5.088,-1,Medium,2026
+PS,Palestine,22,4.8,2,Medium,2026
+PH,Philippines,23,4.719,-2,Medium,2026
+ID,Indonesia,24,4.714,6,Medium,2026
+YE,Yemen,25,4.653,-2,Medium,2026
+TD,Chad,26,4.625,-7,Medium,2026
+CL,Chile,27,4.553,-5,Medium,2026
+US,United States of America,28,4.521,6,Medium,2026
+DE,Germany,29,4.447,-1,Medium,2026
+TG,Togo,30,4.305,-5,Medium,2026
+AU,Australia,31,3.732,14,Low,2026
+EG,Egypt,32,3.465,-3,Low,2026
+BI,Burundi,33,3.361,-2,Low,2026
+UG,Uganda,34,3.25,-1,Low,2026
+FR,France,35,3.224,6,Low,2026
+TR,Türkiye,36,3.212,-4,Low,2026
+EC,Ecuador,37,3.063,20,Low,2026
+GB,United Kingdom,38,2.936,2,Low,2026
+UA,Ukraine,39,2.927,8,Low,2026
+GR,Greece,40,2.788,-5,Low,2026
+TJ,Tajikistan,41,2.602,10,Low,2026
+BD,Bangladesh,42,2.286,-6,Low,2026
+OM,Oman,43,2.282,-6,Low,2026
+JO,Jordan,44,2.268,-6,Low,2026
+CZ,Czechia,45,2.261,-6,Low,2026
+SE,Sweden,46,1.839,4,Very Low,2026
+DZ,Algeria,47,1.766,-5,Very Low,2026
+PL,Poland,48,1.682,-2,Very Low,2026
+PE,Peru,49,1.572,-5,Very Low,2026
+TN,Tunisia,50,1.522,-7,Very Low,2026
+AT,Austria,51,1.498,34,Very Low,2026
+NL,Netherlands,52,1.475,10,Very Low,2026
+CA,Canada,53,1.333,-5,Very Low,2026
+CN,China,54,1.311,-5,Very Low,2026
+BE,Belgium,55,1.198,3,Very Low,2026
+AO,Angola,56,1.136,-3,Very Low,2026
+MY,Malaysia,57,1.092,-3,Very Low,2026
+SN,Senegal,58,1.07,-2,Very Low,2026
+LY,Libya,59,1.007,-4,Very Low,2026
+IT,Italy,60,0.999,3,Very Low,2026
+DJ,Djibouti,61,0.925,-2,Very Low,2026
+BR,Brazil,62,0.909,-1,Very Low,2026
+TZ,Tanzania,63,0.888,-1,Very Low,2026
+ES,Spain,64,0.794,1,Very Low,2026
+BA,Bosnia and Herzegovina,65,0.782,2,Very Low,2026
+RS,Serbia,66,0.782,20,Very Low,2026
+CH,Switzerland,67,0.749,-3,Very Low,2026
+AE,United Arab Emirates,68,0.749,2,Very Low,2026
+NO,Norway,69,0.725,-1,Very Low,2026
+DK,Denmark,70,0.72,10,Very Low,2026
+CI,Côte d'Ivoire,71,0.702,-11,Very Low,2026
+LB,Lebanon,72,0.648,-6,Very Low,2026
+SK,Slovakia,73,0.616,-2,Very Low,2026
+FI,Finland,74,0.582,1,Very Low,2026
+JP,Japan,75,0.571,-2,Very Low,2026
+CF,Central African Republic,76,0.556,-4,Very Low,2026
+GE,Georgia,77,0.506,-1,Very Low,2026
+AR,Argentina,79,0.455,-2,Very Low,2026
+SA,Saudi Arabia,80,0.443,-5,Very Low,2026
+AM,Armenia,81,0.423,-1,Very Low,2026
+IE,Ireland,82,0.423,-1,Very Low,2026
+LT,Lithuania,83,0.423,-1,Very Low,2026
+PT,Portugal,84,0.423,20,Very Low,2026
+VE,Venezuela,85,0.396,-1,Very Low,2026
+KR,South Korea,86,0.333,-1,Very Low,2026
+MX,Mexico,87,0.325,-2,Very Low,2026
+ET,Ethiopia,88,0.288,-10,Very Low,2026
+NP,Nepal,89,0.288,-18,Very Low,2026
+KH,Cambodia,90,0.233,-1,Very Low,2026
+LV,Latvia,91,0.233,-1,Very Low,2026
+CY,Cyprus,92,0.176,-1,Very Low,2026
+AZ,Azerbaijan,93,0.123,-1,Very Low,2026
+BY,Belarus,94,0.123,-1,Very Low,2026
+NZ,New Zealand,95,0.114,0,Very Low,2026
+UZ,Uzbekistan,96,0.114,-3,Very Low,2026
+IS,Iceland,97,0.059,-1,Very Low,2026
+SZ,Eswatini,98,0.044,-1,Very Low,2026
+BH,Bahrain,99,0.03,0,Very Low,2026
+AL,Albania,100,0,1,No Impact,2026
+BT,Bhutan,100,0,1,No Impact,2026
+BO,Bolivia,100,0,1,No Impact,2026
+BW,Botswana,100,0,1,No Impact,2026
+BG,Bulgaria,100,0,1,No Impact,2026
+CR,Costa Rica,100,0,1,No Impact,2026
+HR,Croatia,100,0,1,No Impact,2026
+CU,Cuba,100,0,1,No Impact,2026
+DO,Dominican Republic,100,0,1,No Impact,2026
+SV,El Salvador,100,0,1,No Impact,2026
+GQ,Equatorial Guinea,100,0,1,No Impact,2026
+ER,Eritrea,100,0,1,No Impact,2026
+EE,Estonia,100,0,1,No Impact,2026
+GA,Gabon,100,0,1,No Impact,2026
+GH,Ghana,100,0,1,No Impact,2026
+GT,Guatemala,100,0,1,No Impact,2026
+GN,Guinea,100,0,1,No Impact,2026
+GW,Guinea-Bissau,100,0,1,No Impact,2026
+GY,Guyana,100,0,1,No Impact,2026
+HT,Haiti,100,0,1,No Impact,2026
+HN,Honduras,100,0,1,No Impact,2026
+HU,Hungary,100,0,1,No Impact,2026
+JM,Jamaica,100,0,1,No Impact,2026
+KZ,Kazakhstan,100,0,1,No Impact,2026
+KW,Kuwait,100,0,1,No Impact,2026
+KG,Kyrgyz Republic,100,0,1,No Impact,2026
+LA,Laos,100,0,1,No Impact,2026
+LS,Lesotho,100,0,1,No Impact,2026
+LR,Liberia,100,0,1,No Impact,2026
+MG,Madagascar,100,0,1,No Impact,2026
+MW,Malawi,100,0,1,No Impact,2026
+MR,Mauritania,100,0,1,No Impact,2026
+MU,Mauritius,100,0,1,No Impact,2026
+MD,Moldova,100,0,1,No Impact,2026
+MN,Mongolia,100,0,1,No Impact,2026
+ME,Montenegro,100,0,1,No Impact,2026
+MA,Morocco,100,0,1,No Impact,2026
+NA,Namibia,100,0,1,No Impact,2026
+NI,Nicaragua,100,0,1,No Impact,2026
+KP,North Korea,100,0,1,No Impact,2026
+MK,North Macedonia,100,0,1,No Impact,2026
+PA,Panama,100,0,1,No Impact,2026
+PG,Papua New Guinea,100,0,1,No Impact,2026
+PY,Paraguay,100,0,-2,No Impact,2026
+QA,Qatar,100,0,1,No Impact,2026
+CG,Republic of the Congo,100,0,1,No Impact,2026
+RO,Romania,100,0,1,No Impact,2026
+RW,Rwanda,100,0,1,No Impact,2026
+SL,Sierra Leone,100,0,1,No Impact,2026
+SG,Singapore,100,0,1,No Impact,2026
+SI,Slovenia,100,0,1,No Impact,2026
+ZA,South Africa,100,0,1,No Impact,2026
+SS,South Sudan,100,0,1,No Impact,2026
+LK,Sri Lanka,100,0,1,No Impact,2026
+SD,Sudan,100,0,1,No Impact,2026
+GM,The Gambia,100,0,1,No Impact,2026
+TL,Timor-Leste,100,0,1,No Impact,2026
+TT,Trinidad and Tobago,100,0,1,No Impact,2026
+TM,Turkmenistan,100,0,1,No Impact,2026
+UY,Uruguay,100,0,-1,No Impact,2026
+VN,Vietnam,100,0,1,No Impact,2026
+ZM,Zambia,100,0,1,No Impact,2026
+ZW,Zimbabwe,100,0,1,No Impact,2026

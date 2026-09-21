@@ -99,12 +99,21 @@ export interface PoliticalCoalition {
   readonly note?: string;
 }
 
+export interface PartyChamberSeats {
+  readonly name: string;
+  readonly seats: number;
+  readonly seatsTotal: number;
+  /** True only when this party holds more than half the chamber's seats. */
+  readonly majority?: boolean;
+}
+
 export interface PoliticalParty {
   /** Stable id: "{countryCode}-{SHORTCODE}", e.g. "MY-DAP". */
   readonly id: string;
   /** ISO 3166-1 alpha-2 country code. */
   readonly country: string;
-  /** Abbreviation shown on the grid card, e.g. "DAP". */
+  /** Chamber/common abbreviation (e.g. "LIB"). Grid cards show
+   *  `partyCardName()` — the official local name, never this acronym. */
   readonly shortName: string;
   /** Official name in the party's own language. */
   readonly name: string;
@@ -139,16 +148,32 @@ export interface PoliticalParty {
   readonly coalitionId?: string;
   readonly leader?: string;
   readonly leaderTitle?: string;
-  /** Currently part of the national governing coalition/cabinet. */
+  /** Currently part of the national governing coalition (cabinet and/or
+   *  confidence-and-supply). This is NOT "holds a legislative majority" in a
+   *  bicameral country — see `chambers` and `PARTY_LEGISLATURES`. */
   readonly inPower: boolean;
-  /** Party holds executive office (presidency / ministerial cabinet portfolios). */
+  /** Party holds a cabinet portfolio (or equivalent). Distinct from
+   *  `headOfGovernment` — junior coalition partners sit in cabinet without
+   *  supplying the head of government. */
   readonly inExecutive?: boolean;
+  /** The party that supplies the head of government (president in a
+   *  presidential system; prime minister where that office is HoG). At most
+   *  one party per country. Drives the "Exec power" grid badge — never the
+   *  head of state merely for being head of state, and never every cabinet
+   *  party. */
+  readonly headOfGovernment?: boolean;
   /** When the party's current continuous stint in government began (or a brief
    *  sourced summary for a longer/complex history). Absent when not in power. */
   readonly timeInPower?: string;
   readonly seats: number;
   readonly seatsTotal: number;
   readonly chamberName: string;
+  /** Optional per-chamber seat counts. Used when a country is in
+   *  `PARTY_LEGISLATURES` (bicameral / multi-body). The entry whose `name`
+   *  matches `chamberName` must repeat `seats` / `seatsTotal`. `majority` is
+   *  true only when THIS party (or its two-party caucus) holds more than half
+   *  that chamber's seats — never a multi-party bloc, never invented. */
+  readonly chambers?: readonly PartyChamberSeats[];
   /** Sourced, documented explanation of what the logo's design means — the
    *  SAME {description, myths?, sources} shape (and the same `FlagMeaning`
    *  component) every other flag/symbol meaning in this game uses. Present
@@ -1023,7 +1048,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "BZ",
       "shortName": "VIA",
       "name": "Vision Inspired by Action",
-      "noImageReason": "Searched for a Vision Inspired by Action emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no P154 logo image on the party's own item under its country (P17), and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Vision Inspired by Action emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Centrism",
         "Anti-corruption"
@@ -1304,7 +1329,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "BJ",
       "shortName": "DRP",
       "name": "Democratic Renewal Party",
-      "noImageReason": "Searched for a Democratic Renewal Party emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no P154 logo image on the party's own item under its country (P17), and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Democratic Renewal Party emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Conservatism",
         "Christian democracy"
@@ -1366,7 +1391,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PD",
       "name": "Partit de la Democràcia",
       "nameEn": "Democratic Party of Andorra",
-      "noImageReason": "Searched for a Democratic Party of Andorra emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no P154 logo image on the party's own item under its country (P17), and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Democratic Party of Andorra emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Liberalism",
         "Centre-right politics"
@@ -1396,7 +1421,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "UC",
       "name": "Unió Ciutadana",
       "nameEn": "Citizens' Union",
-      "noImageReason": "Searched for a Citizens' Union emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no P154 logo image on the party's own item under its country (P17), and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Citizens' Union emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Liberalism",
         "Progressivism"
@@ -1493,7 +1518,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "LN",
       "name": "Lëvizja për Ndryshim",
       "nameEn": "Movement for Change",
-      "noImageReason": "Searched for a Movement for Change emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no P154 logo image on the party's own item under its country (P17), and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Movement for Change emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Centrism",
         "Liberalism"
@@ -1726,7 +1751,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "AG",
       "shortName": "DMC",
       "name": "Democratic Movement for Change",
-      "noImageReason": "Searched for a Democratic Movement for Change emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no P154 logo image on the party's own item under its country (P17), and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Democratic Movement for Change emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Centrism",
         "Social liberalism"
@@ -2057,7 +2082,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "DİP",
       "name": "Demokratik İslahatlar Partiyası",
       "nameEn": "Democratic Reforms Party",
-      "noImageReason": "Searched for a Democratic Reforms Party emblem and found none that can be bundled: Wikimedia Commons holds no logo file for it, Wikidata records no P154 logo image on its item under Azerbaijan (P17), and its English Wikipedia article's infobox carries no logo parameter at all. No usable file was reachable from the party's own website or the Elects network either. Listed without an emblem rather than dropped.",
+      "noImageReason": "Searched for a Democratic Reforms Party emblem and found none that can be shown here: Wikimedia Commons holds no logo file for it, Wikidata records no logo image on its item for Azerbaijan, and its English Wikipedia article's infobox carries no logo parameter at all. No usable file was reachable from the party's own website or the Elects network either. Listed without an emblem rather than dropped.",
       "ideology": [
         "Reformism"
       ],
@@ -2086,7 +2111,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "BAP",
       "name": "Böyük Azərbaycan Partiyası",
       "nameEn": "Great Azerbaijan Party",
-      "noImageReason": "Searched for a Great Azerbaijan Party emblem and found none that can be bundled: Wikimedia Commons holds no logo file for it, Wikidata records no P154 logo image on its item under Azerbaijan (P17), and it has no English Wikipedia article at all — only a row in the List of political parties in Azerbaijan, which carries no emblem. No usable file was reachable from the party's own website or the Elects network either. Listed without an emblem rather than dropped.",
+      "noImageReason": "Searched for a Great Azerbaijan Party emblem and found none that can be shown here: Wikimedia Commons holds no logo file for it, Wikidata records no logo image on its item for Azerbaijan, and it has no English Wikipedia article at all — only a row in the List of political parties in Azerbaijan, which carries no emblem. No usable file was reachable from the party's own website or the Elects network either. Listed without an emblem rather than dropped.",
       "ideology": [],
       "ideologyPosition": "other",
       "leader": "Elşad Musayev",
@@ -2131,6 +2156,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "President (2023–present)",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "2023-present",
       "seats": 95,
       "seatsTotal": 257,
@@ -3731,7 +3757,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Lega",
       "name": "Lega dei Ticinesi",
       "nameEn": "Ticino League",
-      "noImageReason": "Searched for a Lega dei Ticinesi emblem and found none that can be bundled: Wikimedia Commons holds no logo file for the party (a namespace-6 search returns only seating diagrams), its English Wikipedia article's infobox carries no logo parameter at all, and Wikidata records no P154 logo image on its item under Switzerland (P17). No usable file was reachable from the party's own site or the Elects network either. Listed without an emblem rather than dropped, and rather than shown a canton flag it does not own.",
+      "noImageReason": "Searched for a Lega dei Ticinesi emblem and found none that can be shown here: Wikimedia Commons holds no logo file for the party (a namespace-6 search returns only seating diagrams), its English Wikipedia article's infobox carries no logo parameter at all, and Wikidata records no logo image on its item for Switzerland. No usable file was reachable from the party's own site or the Elects network either. Listed without an emblem rather than dropped, and rather than shown a canton flag it does not own.",
       "ideology": [
         "Regionalism",
         "Right-wing populism"
@@ -5075,7 +5101,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Umma",
       "name": "حزب الأمة",
       "nameEn": "Umma Party",
-      "noImageReason": "Searched Wikimedia Commons and English Wikipedia in both English and Arabic. The only file either holds is the Islamic Action Front emblem overprinted with \"فرع طارق\" (Tariq Branch) — a local branch's version, with text baked into the image that is not part of the party's own emblem, so it is rejected exactly as a caption-bearing flag would be. Wikidata records no P154 logo.",
+      "noImageReason": "Searched Wikimedia Commons and English Wikipedia in both English and Arabic. The only file either holds is the Islamic Action Front emblem overprinted with \"فرع طارق\" (Tariq Branch) — a local branch's version, with text baked into the image that is not part of the party's own emblem, so it is rejected exactly as a caption-bearing flag would be. Wikidata records no logo image logo.",
       "ideology": [
         "Islamism"
       ],
@@ -5192,7 +5218,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Progress",
       "name": "حزب التقدم",
       "nameEn": "Progress Party",
-      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item carrying a logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -5216,7 +5242,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Al-Islah",
       "name": "حزب الإصلاح",
       "nameEn": "Al-Islah Party",
-      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item carrying a logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -5276,7 +5302,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Blessed Land",
       "name": "حزب الأرض المباركة",
       "nameEn": "Blessed Land Party",
-      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item carrying a logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -5300,7 +5326,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Jordanian Labor",
       "name": "حزب العمل الأردني",
       "nameEn": "Jordanian Labor Party",
-      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item carrying a logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -5324,7 +5350,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Namaa",
       "name": "حزب نماء",
       "nameEn": "Growth Party",
-      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item carrying a logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -5348,7 +5374,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "JCDP",
       "name": "الحزب المدني الديمقراطي الأردني",
       "nameEn": "Jordanian Civil Democratic Party",
-      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item carrying a logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -5372,7 +5398,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Labour",
       "name": "حزب العمال",
       "nameEn": "Labour Party",
-      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item carrying a logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -5396,7 +5422,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Youth",
       "name": "حزب الشباب",
       "nameEn": "Youth Party",
-      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item carrying a logo), Wikimedia Commons (no emblem file under the party's English or Arabic name) and English Wikipedia (the party has no article of its own — its name and seat count come from the chamber's published composition and the 2024 election results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -6197,7 +6223,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Ala-Too",
       "name": "Ала-Тоо",
       "nameEn": "Ala-Too",
-      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the group's English, Kyrgyz or Russian name) and English Wikipedia (the group has no article of its own — its name and seat count come from the Supreme Council's published composition). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item carrying a logo), Wikimedia Commons (no emblem file under the group's English, Kyrgyz or Russian name) and English Wikipedia (the group has no article of its own — its name and seat count come from the Supreme Council's published composition). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -6221,7 +6247,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Adilet",
       "name": "Адилет Кыргызстан",
       "nameEn": "Adilet Kyrgyzstan",
-      "noImageReason": "Searched Wikidata (no item carrying a P154 logo), Wikimedia Commons (no emblem file under the group's English, Kyrgyz or Russian name) and English Wikipedia (the group has no article of its own — its name and seat count come from the Supreme Council's published composition). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item carrying a logo), Wikimedia Commons (no emblem file under the group's English, Kyrgyz or Russian name) and English Wikipedia (the group has no article of its own — its name and seat count come from the Supreme Council's published composition). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -6622,7 +6648,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Project Watan",
       "name": "مشروع وطن",
       "nameEn": "Project Watan",
-      "noImageReason": "Searched Wikidata (no item, and no P154 logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (Neemat Frem's article documents the movement but carries no emblem, and it has no article of its own) and the Lebanese parties list. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item, and no logo image logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (Neemat Frem's article documents the movement but carries no emblem, and it has no article of its own) and the Lebanese parties list. No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "leader": "Neemat Frem",
@@ -6771,7 +6797,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Watani",
       "name": "تحالف وطني",
       "nameEn": "Watani Alliance",
-      "noImageReason": "Searched Wikidata (no item, and no P154 logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the alliance has no article of its own; it appears only in the chamber's composition and the Lebanese parties list) and the Lebanese parties list. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item, and no logo image logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the alliance has no article of its own; it appears only in the chamber's composition and the Lebanese parties list) and the Lebanese parties list. No usable emblem could be sourced.",
       "ideology": [
         "Reformism",
         "Social democracy"
@@ -6802,7 +6828,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Mada",
       "name": "حزب مادا",
       "nameEn": "Mada Party",
-      "noImageReason": "Searched Wikidata (no item, and no P154 logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the party has no article of its own; it appears only in the chamber's composition and the Lebanese parties list) and the Lebanese parties list. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item, and no logo image logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the party has no article of its own; it appears only in the chamber's composition and the Lebanese parties list) and the Lebanese parties list. No usable emblem could be sourced.",
       "ideology": [
         "Reformism",
         "Social democracy"
@@ -7069,7 +7095,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Sanad",
       "name": "حركة سند",
       "nameEn": "Sanad Movement",
-      "noImageReason": "Searched Wikidata (no item, and no P154 logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the movement has no article of its own — it appears only in Ashraf Rifi's infobox and the chamber's composition) and the Lebanese parties list. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item, and no logo image logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the movement has no article of its own — it appears only in Ashraf Rifi's infobox and the chamber's composition) and the Lebanese parties list. No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "leader": "Ashraf Rifi",
@@ -7101,7 +7127,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Khatt Ahmar",
       "name": "الخط الأحمر",
       "nameEn": "Khatt Ahmar (Red Line)",
-      "noImageReason": "Searched Wikidata (no item, and no P154 logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the party has no article of its own; it appears only in Waddah Sadek's infobox, the chamber's composition and the Lebanese parties list) and the Lebanese parties list. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item, and no logo image logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the party has no article of its own; it appears only in Waddah Sadek's infobox, the chamber's composition and the Lebanese parties list) and the Lebanese parties list. No usable emblem could be sourced.",
       "ideology": [
         "Reformism",
         "Social democracy"
@@ -7176,7 +7202,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "ReLebanon",
       "name": "لبنان عن جديد",
       "nameEn": "ReLebanon",
-      "noImageReason": "Searched Wikidata (no item, and no P154 logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the party has no article of its own; it appears only in the Forces of Change article, the chamber's composition and the Lebanese parties list) and the Lebanese parties list. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no item, and no logo image logo, for this group under a Lebanon country constraint), Wikimedia Commons (no emblem file under its English or Arabic name), English Wikipedia (the party has no article of its own; it appears only in the Forces of Change article, the chamber's composition and the Lebanese parties list) and the Lebanese parties list. No usable emblem could be sourced.",
       "ideology": [
         "Reformism",
         "Social democracy"
@@ -7288,7 +7314,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "SJB",
       "name": "සමගි ජන බලවේගය",
       "nameEn": "Samagi Jana Balawegaya (United People's Power)",
-      "noImageReason": "Searched Wikidata (no P154 logo on its item under a Sri Lanka country constraint), Wikimedia Commons (the only file is a monochrome ballot symbol drawn by a Commons user as own work, which is not the party's own published emblem), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no logo image logo on its item under a Sri Lanka country constraint), Wikimedia Commons (the only file is a monochrome ballot symbol drawn by a Commons user as own work, which is not the party's own published emblem), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
       "ideology": [
         "Third Way",
         "Social democracy",
@@ -7452,7 +7478,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Sarvajana Balaya",
       "name": "සර්වජන බලය",
       "nameEn": "Sarvajana Balaya",
-      "noImageReason": "Searched Wikidata (no P154 logo on its item under a Sri Lanka country constraint), Wikimedia Commons (the only file is a monochrome ballot symbol drawn by a Commons user as own work, which is not the party's own published emblem), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no logo image logo on its item under a Sri Lanka country constraint), Wikimedia Commons (the only file is a monochrome ballot symbol drawn by a Commons user as own work, which is not the party's own published emblem), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
       "ideology": [
         "Big tent",
         "Sinhalese nationalism",
@@ -7519,7 +7545,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "DTNA",
       "name": "ஜனநாயக தமிழ் தேசிய கூட்டணி",
       "nameEn": "Democratic Tamil National Alliance",
-      "noImageReason": "Searched Wikidata (no P154 logo on its item under a Sri Lanka country constraint), Wikimedia Commons (the one file matching its acronym, \"DTNA Logo.png\", is the logo of Daimler Truck North America and was rejected), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no logo image logo on its item under a Sri Lanka country constraint), Wikimedia Commons (the one file matching its acronym, \"DTNA Logo.png\", is the logo of Daimler Truck North America and was rejected), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
       "ideology": [
         "Tamil nationalism"
       ],
@@ -7580,7 +7606,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "ACMC",
       "name": "அகில இலங்கை மக்கள் காங்கிரஸ்",
       "nameEn": "All Ceylon Makkal Congress",
-      "noImageReason": "Searched Wikidata (no P154 logo on its item under a Sri Lanka country constraint), Wikimedia Commons (no file under the party's English or Tamil name), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no logo image logo on its item under a Sri Lanka country constraint), Wikimedia Commons (no file under the party's English or Tamil name), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "founded": 2005,
@@ -7607,7 +7633,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "SLLP",
       "name": "ශ්‍රී ලංකා කම්කරු පක්ෂය",
       "nameEn": "Sri Lanka Labour Party",
-      "noImageReason": "Searched Wikidata (no P154 logo on its item under a Sri Lanka country constraint), Wikimedia Commons (no file under the party's English or Sinhala name), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no logo image logo on its item under a Sri Lanka country constraint), Wikimedia Commons (no file under the party's English or Sinhala name), English Wikipedia (its article carries no logo in the infobox) and the party's own listing. No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "founded": 1998,
@@ -8441,6 +8467,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Party Leader",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "Holds the presidency: Lee Jae-myung, a Democratic Party member, has been President of South Korea since 4 June 2025, and the party holds 161 of the National Assembly's 300 seats.",
       "seats": 161,
       "seatsTotal": 300,
@@ -10048,7 +10075,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "NG",
       "shortName": "SDP",
       "name": "Social Democratic Party",
-      "noImageReason": "No freely-licensed or fair-use SDP (Nigeria) logo file exists on English Wikipedia or Wikimedia Commons as of this writing; searches of both (including Special:Search in the File namespace and Commons MediaSearch for 'Social Democratic Party Nigeria logo') returned no results.",
+      "noImageReason": "No usable or fair-use SDP (Nigeria) logo file exists on English Wikipedia or Wikimedia Commons as of this writing; searches of both (including Special:Search in the File namespace and Commons MediaSearch for 'Social Democratic Party Nigeria logo') returned no results.",
       "ideology": [
         "Social democracy"
       ],
@@ -10628,6 +10655,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "National Chairman",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "2022-present",
       "seats": 52,
       "seatsTotal": 318,
@@ -10922,7 +10950,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "PH",
       "shortName": "Makatizens",
       "name": "Makatizens United Party",
-      "noImageReason": "Makatizens United Party's English Wikipedia article (https://en.wikipedia.org/wiki/Makatizens_United_Party) has no infobox image/logo field at all — this is a local Makati-based party with no depicted emblem found on Wikipedia or Commons after checking.",
+      "noImageReason": "Makatizens United Party's English Wikipedia article (the linked source has no infobox image/logo field at all — this is a local Makati-based party with no depicted emblem found on Wikipedia or Commons after checking.",
       "ideology": [
         "Localism"
       ],
@@ -13869,7 +13897,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "BKM",
       "name": "বাংলাদেশ খেলাফত মজলিস",
       "nameEn": "Bangladesh Khelafat Majlis",
-      "noImageReason": "Searched for a Bangladesh Khelafat Majlis emblem and found none that can be bundled: Wikimedia Commons holds only photographs and a lapel-pin image, no logo file; the party has no English Wikipedia article, so no infobox logo exists; and Wikidata records no P154 logo image under Bangladesh (P17). No usable file was reachable from the party's own website or the Elects network either. The file that previously sat in this repository for it was hand-drawn SVG primitives and has been deleted.",
+      "noImageReason": "Searched for a Bangladesh Khelafat Majlis emblem and found none that can be shown here: Wikimedia Commons holds only photographs and a lapel-pin image, no logo file; the party has no English Wikipedia article, so no infobox logo exists; and Wikidata records no logo image for Bangladesh. No usable file was reachable from the party's own website or the Elects network either. The file that previously sat in this repository for it was hand-drawn SVG primitives and has been deleted.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -14163,6 +14191,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "National President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "2023-present",
       "seats": 64,
       "seatsTotal": 513,
@@ -16159,6 +16188,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Secretary-General",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "In government since Emmanuel Macron's election in 2017; the second Lecornu government took office in 2025.",
       "seats": 91,
       "seatsTotal": 577,
@@ -17087,6 +17117,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 94,
       "seatsTotal": 150,
       "chamberName": "House of Representatives",
+      "chambers": [
+        { "name": "House of Representatives", "seats": 94, "seatsTotal": 150, "majority": true },
+        { "name": "Senate", "seats": 30, "seatsTotal": 76 }
+      ],
       "sources": [
         {
           "title": "Australian Labor Party – Wikipedia (infobox: oldest branches 1891, ideology Social democracy, position Centre-left, leader Anthony Albanese)",
@@ -17099,6 +17133,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings, as of 25 June 2026)",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
+        },
+        {
+          "title": "Template:Composition of Australian Senate — as of 14 May 2026: Government Labor 30 of 76 (no Senate majority)",
+          "url": "https://en.wikipedia.org/wiki/Template:Composition_of_Australian_Senate"
         }
       ]
     },
@@ -17127,6 +17165,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 17,
       "seatsTotal": 150,
       "chamberName": "House of Representatives",
+      "chambers": [
+        { "name": "House of Representatives", "seats": 17, "seatsTotal": 150 },
+        { "name": "Senate", "seats": 23, "seatsTotal": 76 }
+      ],
       "sources": [
         {
           "title": "Liberal Party of Australia – Wikipedia (infobox: founded 13 October 1944, ideology, position Centre-right to right-wing, leader Angus Taylor)",
@@ -17135,6 +17177,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings: Liberal 17, counted separately from the 16 LNP seats)",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
+        },
+        {
+          "title": "Template:Composition of Australian Senate — as of 14 May 2026: Liberal party room 23 of 76 (including two LNP senators and one Country Liberal senator who sit in the Liberal party room)",
+          "url": "https://en.wikipedia.org/wiki/Template:Composition_of_Australian_Senate"
         }
       ]
     },
@@ -17208,6 +17254,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 8,
       "seatsTotal": 150,
       "chamberName": "House of Representatives",
+      "chambers": [
+        { "name": "House of Representatives", "seats": 8, "seatsTotal": 150 },
+        { "name": "Senate", "seats": 4, "seatsTotal": 76 }
+      ],
       "sources": [
         {
           "title": "National Party of Australia – Wikipedia (founded as the Australian Country Party 1920, renamed National Country Party 1975 and National Party of Australia 1982; leader Matt Canavan since 11 March 2026)",
@@ -17216,6 +17266,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings: National 8, counted separately from the 16 LNP seats)",
           "url": "https://en.wikipedia.org/wiki/Members_of_the_Australian_House_of_Representatives,_2025%E2%80%932028"
+        },
+        {
+          "title": "Template:Composition of Australian Senate — as of 14 May 2026: National party room 4 of 76 (including two LNP senators who sit in the National party room)",
+          "url": "https://en.wikipedia.org/wiki/Template:Composition_of_Australian_Senate"
         }
       ]
     },
@@ -17242,10 +17296,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 2,
       "seatsTotal": 150,
       "chamberName": "House of Representatives",
+      "chambers": [
+        { "name": "House of Representatives", "seats": 2, "seatsTotal": 150 },
+        { "name": "Senate", "seats": 4, "seatsTotal": 76 }
+      ],
       "sources": [
         {
           "title": "One Nation – Wikipedia (infobox: founded 11 April 1997, ideology, position Right-wing to far-right, leader Pauline Hanson)",
           "url": "https://en.wikipedia.org/wiki/One_Nation_(Australia)"
+        },
+        {
+          "title": "Template:Composition of Australian Senate — as of 14 May 2026: One Nation 4 of 76",
+          "url": "https://en.wikipedia.org/wiki/Template:Composition_of_Australian_Senate"
         },
         {
           "title": "48th Parliament of Australia – Wikipedia (Changes in membership: Barnaby Joyce joined One Nation 8 December 2025; David Farley won Farrer for One Nation at the by-election held 9 May 2026)",
@@ -17315,10 +17377,18 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 1,
       "seatsTotal": 150,
       "chamberName": "House of Representatives",
+      "chambers": [
+        { "name": "House of Representatives", "seats": 1, "seatsTotal": 150 },
+        { "name": "Senate", "seats": 10, "seatsTotal": 76 }
+      ],
       "sources": [
         {
           "title": "Australian Greens – Wikipedia (infobox: founded 1992, ideology, position Left-wing, leader Larissa Waters)",
           "url": "https://en.wikipedia.org/wiki/Australian_Greens"
+        },
+        {
+          "title": "Template:Composition of Australian Senate — as of 14 May 2026: Greens 10 of 76",
+          "url": "https://en.wikipedia.org/wiki/Template:Composition_of_Australian_Senate"
         },
         {
           "title": "Members of the Australian House of Representatives, 2025–2028 – Wikipedia (Current party standings, as of 25 June 2026)",
@@ -17530,7 +17600,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Taqaddum",
       "name": "Progress Party",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no P154 logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no logo image logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": true,
@@ -17633,7 +17703,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Nation State Forces",
       "name": "Alliance of Nation State Forces",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no P154 logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no logo image logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
@@ -17735,7 +17805,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Al-Siyadah",
       "name": "National Sovereignty Alliance",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -17754,7 +17824,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Al-Asas",
       "name": "Iraqi Fundamental Coalition",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": true,
@@ -17779,7 +17849,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Ishraqat Kanoon",
       "name": "Ishraqat Kanoon",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no P154 logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no logo image logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "centre",
       "positionRaw": "Centre",
@@ -17805,7 +17875,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Huqouq",
       "name": "Rights Movement",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": true,
@@ -17892,7 +17962,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Khadamat",
       "name": "Services Alliance",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -17911,7 +17981,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Tasmeem Watani",
       "name": "National Determination Alliance",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -17930,7 +18000,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Bushra Iraq",
       "name": "Good News, Iraq",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -17977,7 +18047,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Wasit Ajmal",
       "name": "Wasit Ajmal Alliance",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -17996,7 +18066,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Anbar Identity",
       "name": "Al-Anbar Is Our Identity Alliance",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18015,7 +18085,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Masses",
       "name": "National Party of the Masses",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18062,7 +18132,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Nineveh",
       "name": "Nineveh for Its People",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18081,7 +18151,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Qimam",
       "name": "Qimam Coalition",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18100,7 +18170,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "ITF",
       "name": "Unified Iraqi Turkmen Front",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18119,7 +18189,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "NPU",
       "name": "Nineveh's People Union",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18138,7 +18208,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Sumerian",
       "name": "Sumerian Movement",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18157,7 +18227,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Tafawq",
       "name": "Tafawq Alliance",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18176,7 +18246,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Al-Faw Zakho",
       "name": "Al-Faw Zakho Coalition",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18195,7 +18265,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Arab Alliance",
       "name": "Arab Alliance in Kirkuk",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no P154 logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no logo image logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18218,7 +18288,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Arab Project",
       "name": "Arab Project",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18237,7 +18307,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Diyala First",
       "name": "Diyala First Coalition",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18256,7 +18326,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Idraak",
       "name": "Idraak Movement",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18303,7 +18373,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "National Identity",
       "name": "National Identity",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no P154 logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no logo image logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18326,7 +18396,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Saladin Partnership",
       "name": "Saladin Partnership Alliance",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18345,7 +18415,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Saladin Unified",
       "name": "Saladin Unified Alliance",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18364,7 +18434,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "State Support",
       "name": "State Support Bloc",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18383,7 +18453,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Thabitun",
       "name": "Thabitun",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a P154 logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (this list has no item carrying a logo), Wikimedia Commons (no emblem file under this name), and English Wikipedia (the list has no article of its own — its name and seat count come from the Independent High Electoral Commission's certified results). No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "inPower": false,
@@ -18402,7 +18472,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "IQ",
       "shortName": "Yazidi Cause",
       "name": "Yazidi Cause Alliance",
-      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no P154 logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata with a country-constrained sweep of all 152 parties it records for Iraq (no logo image logo on this party's item), Wikimedia Commons (no emblem file), and the party's own English Wikipedia article, whose infobox carries no logo parameter. No usable emblem could be sourced.",
       "ideology": [
         "Yazidi interests"
       ],
@@ -18597,7 +18667,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "DJP",
       "name": "حزب توسعه و عدالت",
       "nameEn": "Development and Justice Party",
-      "noImageReason": "Searched Wikidata (no P154 logo on this party's item), Wikimedia Commons (no emblem file under its English or Persian name) and the party's own English Wikipedia article, whose infobox carries no logo parameter at all. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no logo image logo on this party's item), Wikimedia Commons (no emblem file under its English or Persian name) and the party's own English Wikipedia article, whose infobox carries no logo parameter at all. No usable emblem could be sourced.",
       "ideology": [
         "Conservatism"
       ],
@@ -18664,7 +18734,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "IAPI",
       "name": "جامعه اسلامی پزشکان ایران",
       "nameEn": "Islamic Association of Physicians of Iran",
-      "noImageReason": "Searched Wikidata (no P154 logo on this party's item), Wikimedia Commons (no emblem file under its English or Persian name) and the party's own English Wikipedia article, whose infobox carries no logo parameter at all. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no logo image logo on this party's item), Wikimedia Commons (no emblem file under its English or Persian name) and the party's own English Wikipedia article, whose infobox carries no logo parameter at all. No usable emblem could be sourced.",
       "ideology": [
         "Conservatism (Iranian)"
       ],
@@ -18846,7 +18916,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "YEKTA",
       "name": "جبهه یکتا",
       "nameEn": "YEKTA Front",
-      "noImageReason": "Searched Wikidata (no P154 logo on this party's item), Wikimedia Commons (no emblem file under its English or Persian name) and the party's own English Wikipedia article, whose infobox carries no logo parameter at all. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (no logo image logo on this party's item), Wikimedia Commons (no emblem file under its English or Persian name) and the party's own English Wikipedia article, whose infobox carries no logo parameter at all. No usable emblem could be sourced.",
       "ideology": [],
       "ideologyPosition": "other",
       "founded": 2015,
@@ -19396,10 +19466,15 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "U.S. President",
       "inPower": true,
       "inExecutive": true,
-      "timeInPower": "In the White House since Donald Trump's second inauguration on 20 January 2025, with the House majority in the 119th Congress.",
+      "headOfGovernment": true,
+      "timeInPower": "In the White House since Donald Trump's second inauguration on 20 January 2025, with the House and Senate majorities in the 119th Congress.",
       "seats": 218,
       "seatsTotal": 435,
       "chamberName": "House of Representatives",
+      "chambers": [
+        { "name": "House of Representatives", "seats": 218, "seatsTotal": 435, "majority": true },
+        { "name": "Senate", "seats": 53, "seatsTotal": 100, "majority": true }
+      ],
       "sources": [
         {
           "title": "Republican Party (United States) — Wikipedia: ideology, political position, founding year and leadership",
@@ -19408,6 +19483,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "United States House of Representatives — Wikipedia: 119th Congress, 435 voting members — Majority 219 (Republican 218 + 1 independent who caucuses with them), Minority 214 (Democratic), 2 vacancies",
           "url": "https://en.wikipedia.org/wiki/United_States_House_of_Representatives"
+        },
+        {
+          "title": "United States Senate — Wikipedia: 119th Congress — Majority Republican 53, Minority 47 (Democratic 45 + 2 independents who caucus with them)",
+          "url": "https://en.wikipedia.org/wiki/United_States_Senate"
         },
         {
           "title": "President of the United States — Wikipedia (Donald Trump, in office since January 20, 2025)",
@@ -19435,6 +19514,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "seats": 214,
       "seatsTotal": 435,
       "chamberName": "House of Representatives",
+      "chambers": [
+        { "name": "House of Representatives", "seats": 214, "seatsTotal": 435 },
+        { "name": "Senate", "seats": 45, "seatsTotal": 100 }
+      ],
       "sources": [
         {
           "title": "Democratic Party (United States) — Wikipedia: ideology, political position, founding year and leadership",
@@ -19443,6 +19526,10 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
         {
           "title": "United States House of Representatives — Wikipedia: 119th Congress, 435 voting members — Majority 219 (Republican 218 + 1 independent who caucuses with them), Minority 214 (Democratic), 2 vacancies",
           "url": "https://en.wikipedia.org/wiki/United_States_House_of_Representatives"
+        },
+        {
+          "title": "United States Senate — Wikipedia: 119th Congress — Majority Republican 53, Minority 47 (Democratic 45 + 2 independents who caucus with them)",
+          "url": "https://en.wikipedia.org/wiki/United_States_Senate"
         }
       ]
     }
@@ -19469,6 +19556,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "seats": 31,
       "seatsTotal": 155,
       "chamberName": "Chamber of Deputies",
@@ -20761,7 +20849,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "Jiusan",
       "name": "九三学社",
       "nameEn": "Jiusan Society",
-      "noImageReason": "Searched Wikidata (the Jiusan Society's item carries no P154 logo), Wikimedia Commons (no emblem file under either the English or the Chinese name 九三学社 社徽), the English and Chinese Wikipedia articles (neither infobox has a logo parameter) and the society's own website 93.gov.cn (its masthead is a text banner, with no emblem image file published). No freely- or non-free-licensable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (the Jiusan Society's item carries no logo image logo), Wikimedia Commons (no emblem file under either the English or the Chinese name 九三学社 社徽), the English and Chinese Wikipedia articles (neither infobox has a logo parameter) and the society's own website 93.gov.cn (its masthead is a text banner, with no emblem image file published). No freely- or non-free-licensable emblem could be sourced.",
       "ideology": [
         "Socialism with Chinese characteristics"
       ],
@@ -20828,7 +20916,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "CAPD",
       "name": "中国民主促进会",
       "nameEn": "China Association for Promoting Democracy",
-      "noImageReason": "Searched Wikidata (the association's item carries no P154 logo), Wikimedia Commons (no emblem file under either the English or the Chinese name 中国民主促进会 会徽), the English and Chinese Wikipedia articles (neither infobox has a logo parameter) and the association's own website mj.org.cn (no emblem image file is published). No freely- or non-free-licensable emblem could be sourced.",
+      "noImageReason": "Searched Wikidata (the association's item carries no logo image logo), Wikimedia Commons (no emblem file under either the English or the Chinese name 中国民主促进会 会徽), the English and Chinese Wikipedia articles (neither infobox has a logo parameter) and the association's own website mj.org.cn (no emblem image file is published). No freely- or non-free-licensable emblem could be sourced.",
       "ideology": [
         "Socialism with Chinese characteristics"
       ],
@@ -20893,7 +20981,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "logo": "party-logos/cn/rcck.png",
       "sha256": "f4fd02ca6ca2f6cd3250c8e721d4a44a6319310a2b3e8a5aab79c5dcc63a9cf5",
       "logoSourceUrl": "https://en.wikipedia.org/wiki/File:Revolutionary_Committee_of_the_Chinese_Kuomintang_emblem.png",
-      "licenceNote": "Non-free. The Revolutionary Committee's emblem is a copyrighted logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos in this repository. Wikidata's P154 for this party points at the Kuomintang's own white-sun emblem, which is a different organisation's mark and is deliberately not used here.",
+      "licenceNote": "Non-free. The Revolutionary Committee's emblem is a copyrighted logo; English Wikipedia hosts this file locally under its non-free-content criteria rather than on Commons, and it is bundled here on the same fair-use basis as the other non-free party logos in this repository. Wikidata's logo for this party points at the Kuomintang's own white-sun emblem, which is a different organisation's mark and is deliberately not used here.",
       "ideology": [
         "New Three Principles of the People",
         "Socialism with Chinese characteristics",
@@ -21235,6 +21323,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Chairman (President, 2024–present)",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "2024-present",
       "seats": 86,
       "seatsTotal": 580,
@@ -22697,7 +22786,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "HAM(S)",
       "name": "हिन्दुस्तानी आवाम मोर्चा (सेक्युलर)",
       "nameEn": "Hindustani Awam Morcha (Secular)",
-      "noImageReason": "Searched Wikimedia Commons (its only file for this party is a broken potrace trace that renders as a single red block, not a flag), Wikidata (no P154 logo), the English Wikipedia infobox (which shows only the party's Election Commission ballot symbol, a photograph of a cooking pan rather than an emblem) and the party's own online presence. No usable emblem could be sourced.",
+      "noImageReason": "Searched Wikimedia Commons (its only file for this party is a broken potrace trace that renders as a single red block, not a flag), Wikidata (no logo image logo), the English Wikipedia infobox (which shows only the party's Election Commission ballot symbol, a photograph of a cooking pan rather than an emblem) and the party's own online presence. No usable emblem could be sourced.",
       "ideology": [
         "Secularism",
         "Dalit rights"
@@ -24083,6 +24172,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Leader",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "Forms the government: the 67th cabinet of Turkey, under President Recep Tayyip Erdoğan, who is also the party's leader.",
       "seats": 280,
       "seatsTotal": 600,
@@ -24703,6 +24793,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Party President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "seats": 41,
       "seatsTotal": 130,
       "chamberName": "Chamber of Deputies",
@@ -28977,7 +29068,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "PS",
       "name": "Parti Socialiste",
       "nameEn": "Socialist Party",
-      "noImageReason": "Searched for a Socialist Party emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no P154 logo image on the party's own item under its country (P17), and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Socialist Party emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Socialism",
         "Left-wing"
@@ -29040,7 +29131,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "BI",
       "shortName": "FRODEBU",
       "name": "Front for Democracy in Burundi",
-      "noImageReason": "Searched for a Front for Democracy in Burundi emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no P154 logo image on the party's own item under its country (P17), and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Front for Democracy in Burundi emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Social democracy",
         "Tutsi political representation"
@@ -29069,7 +29160,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "country": "BI",
       "shortName": "UPRONA",
       "name": "Union for National Progress",
-      "noImageReason": "Searched for a Union for National Progress emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no P154 logo image on the party's own item under its country (P17), and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Union for National Progress emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Conservatism",
         "Tutsi nationalism"
@@ -29521,7 +29612,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "shortName": "UPC",
       "name": "Union des Populations du Cameroun",
       "nameEn": "Union of the Peoples of Cameroon",
-      "noImageReason": "Searched for a Union of the Peoples of Cameroon emblem and found none that can be bundled: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no P154 logo image on the party's own item under its country (P17), and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
+      "noImageReason": "Searched for a Union of the Peoples of Cameroon emblem and found none that can be shown here: Wikimedia Commons has no file for it, the party's English and local-language Wikipedia articles carry no infobox logo, Wikidata records no logo image on the party's own item for its country, and no usable file was reachable from the party's own website or the regional Elects network. The entry that shipped here before cited a Commons filename that does not exist, so its \"logo\" was a saved error page; an acknowledged gap replaces it until a real file is sourced.",
       "ideology": [
         "Socialism",
         "Centrism"
@@ -29765,6 +29856,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "President & Prime Minister",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "July 2023–present",
       "seats": 31,
       "seatsTotal": 65,
@@ -30047,6 +30139,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "In government since Yamandú Orsi took office on 1 March 2025.",
       "seats": 48,
       "seatsTotal": 99,
@@ -30272,6 +30365,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Party President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "In government since Daniel Noboa took office in November 2023; re-elected in 2025.",
       "seats": 66,
       "seatsTotal": 151,
@@ -30632,6 +30726,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Party President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "In government continuously since 1989, apart from 2008–2013; Santiago Peña has been president since 15 August 2023.",
       "seats": 48,
       "seatsTotal": 80,
@@ -30877,6 +30972,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "President",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "In government since Jennifer Geerlings-Simons was inaugurated president on 16 July 2025.",
       "seats": 18,
       "seatsTotal": 51,
@@ -31116,6 +31212,7 @@ export const POLITICAL_PARTIES: Record<string, readonly PoliticalParty[]> = {
       "leaderTitle": "Party leader",
       "inPower": true,
       "inExecutive": true,
+      "headOfGovernment": true,
       "timeInPower": "Governing party since 2007; Chavismo has held the presidency since 1999.",
       "seats": 219,
       "seatsTotal": 285,

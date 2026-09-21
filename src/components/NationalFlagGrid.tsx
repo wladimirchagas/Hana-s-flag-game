@@ -9,7 +9,7 @@ import { broadcastersForCountry } from "../lib/publicBroadcasters";
 import type { PublicBroadcaster } from "../types/broadcaster";
 import { tourismLogosForCountry } from "../lib/tourismLogos";
 import type { TourismLogo } from "../types/tourismLogo";
-import { newsAgenciesForCountry } from "../lib/nationalNewsAgencies";
+import { newsAgenciesForCountry, agencyOwnershipBadge } from "../lib/nationalNewsAgencies";
 import type { NewsAgency } from "../types/newsAgency";
 import { newspapersForCountry } from "../lib/nationalNewspapers";
 import type { Newspaper } from "../types/newspaper";
@@ -366,6 +366,7 @@ export function NationalFlagGrid({
               {newsAgencies.map((agency) => {
                 const active = agency.id === selectedNewsAgencyId;
                 const logoUrl = agency.logo ? `${baseUrl}${agency.logo.replace(/^\//, "")}` : null;
+                const badge = agencyOwnershipBadge(agency);
                 return (
                   <li key={agency.id} className="flag-grid__item">
                     <button
@@ -394,6 +395,13 @@ export function NationalFlagGrid({
                         <AutoFitName className="flag-grid__name-text" text={agency.name} />
                         <span className="flag-grid__flag-sub">
                           Founded {agency.founded}
+                        </span>
+                        <span className="flag-grid__party-badges">
+                          <span
+                            className={`flag-grid__party-badge flag-grid__agency-badge flag-grid__agency-badge--${badge.kind}`}
+                          >
+                            {badge.label}
+                          </span>
                         </span>
                       </span>
                     </button>

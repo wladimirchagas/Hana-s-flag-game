@@ -1,0 +1,3967 @@
+{
+  "applicationRevision": "7dda29d2444d237c6dde9dc3aabbec08408bd03b",
+  "checkedAt": "2026-09-20",
+  "source": "https://files.transparencycdn.org/images/CPI2025_Results.xlsx",
+  "publisherPage": "https://www.transparency.org/en/cpi/2025",
+  "sha256": "543a2ad438c4ba9a70367ee10a44a2565de7fae6bcd8a8db0c23d0b993e46e31",
+  "extraction": "Strict OOXML worksheet XML read directly after standard openpyxl read-only import did not recognize strict worksheet relationships. Original workbook unchanged. CPI Timeseries 2012 - 2025 columns A,B,D,E,I; actual sheet2 cell addresses preserved.",
+  "summary": {
+    "entries": 179,
+    "scoresMatch": 179,
+    "ranksMatch": 179,
+    "rankChangesMatch": 177,
+    "rankChangesUnavailableButZero": 2,
+    "scoreBandsMatch": 179
+  },
+  "rows": [
+    {
+      "code": "AF",
+      "name": "Afghanistan",
+      "sourceRow": "A5",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 169,
+        "rankChange": -4,
+        "score": 16
+      },
+      "primary": {
+        "year": 2025,
+        "score": 16,
+        "rank": 169,
+        "rankChange": -4
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "AL",
+      "name": "Albania",
+      "sourceRow": "A6",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 91,
+        "rankChange": -11,
+        "score": 39
+      },
+      "primary": {
+        "year": 2025,
+        "score": 39,
+        "rank": 91,
+        "rankChange": -11
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "DZ",
+      "name": "Algeria",
+      "sourceRow": "A7",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 109,
+        "rankChange": -2,
+        "score": 34
+      },
+      "primary": {
+        "year": 2025,
+        "score": 34,
+        "rank": 109,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "AO",
+      "name": "Angola",
+      "sourceRow": "A8",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 120,
+        "rankChange": 1,
+        "score": 32
+      },
+      "primary": {
+        "year": 2025,
+        "score": 32,
+        "rank": 120,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "AR",
+      "name": "Argentina",
+      "sourceRow": "A9",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 104,
+        "rankChange": -5,
+        "score": 36
+      },
+      "primary": {
+        "year": 2025,
+        "score": 36,
+        "rank": 104,
+        "rankChange": -5
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "AM",
+      "name": "Armenia",
+      "sourceRow": "A10",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 65,
+        "rankChange": -2,
+        "score": 46
+      },
+      "primary": {
+        "year": 2025,
+        "score": 46,
+        "rank": 65,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "sourceRow": "A11",
+      "claim": {
+        "year": 2025,
+        "rating": "70–79",
+        "rank": 12,
+        "rankChange": -2,
+        "score": 76
+      },
+      "primary": {
+        "year": 2025,
+        "score": 76,
+        "rank": 12,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "70–79",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "DK",
+      "name": "Denmark",
+      "sourceRow": "A12",
+      "claim": {
+        "year": 2025,
+        "rating": "80–89",
+        "rank": 1,
+        "rankChange": 0,
+        "score": 89
+      },
+      "primary": {
+        "year": 2025,
+        "score": 89,
+        "rank": 1,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "80–89",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "AZ",
+      "name": "Azerbaijan",
+      "sourceRow": "A13",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 130,
+        "rankChange": 24,
+        "score": 30
+      },
+      "primary": {
+        "year": 2025,
+        "score": 30,
+        "rank": 130,
+        "rankChange": 24
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BS",
+      "name": "Bahamas",
+      "sourceRow": "A14",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 29,
+        "rankChange": -1,
+        "score": 64
+      },
+      "primary": {
+        "year": 2025,
+        "score": 64,
+        "rank": 29,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BH",
+      "name": "Bahrain",
+      "sourceRow": "A15",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 56,
+        "rankChange": -3,
+        "score": 50
+      },
+      "primary": {
+        "year": 2025,
+        "score": 50,
+        "rank": 56,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BD",
+      "name": "Bangladesh",
+      "sourceRow": "A16",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 150,
+        "rankChange": 1,
+        "score": 24
+      },
+      "primary": {
+        "year": 2025,
+        "score": 24,
+        "rank": 150,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BB",
+      "name": "Barbados",
+      "sourceRow": "A17",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 24,
+        "rankChange": -1,
+        "score": 68
+      },
+      "primary": {
+        "year": 2025,
+        "score": 68,
+        "rank": 24,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BY",
+      "name": "Belarus",
+      "sourceRow": "A18",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 124,
+        "rankChange": -10,
+        "score": 31
+      },
+      "primary": {
+        "year": 2025,
+        "score": 31,
+        "rank": 124,
+        "rankChange": -10
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "FI",
+      "name": "Finland",
+      "sourceRow": "A19",
+      "claim": {
+        "year": 2025,
+        "rating": "80–89",
+        "rank": 2,
+        "rankChange": 0,
+        "score": 88
+      },
+      "primary": {
+        "year": 2025,
+        "score": 88,
+        "rank": 2,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "80–89",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "sourceRow": "A20",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 70,
+        "rankChange": -1,
+        "score": 45
+      },
+      "primary": {
+        "year": 2025,
+        "score": 45,
+        "rank": 70,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BZ",
+      "name": "Belize",
+      "sourceRow": "A21",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 104,
+        "rankChange": 0,
+        "score": 36
+      },
+      "primary": {
+        "year": 2025,
+        "score": 36,
+        "rank": 104,
+        "rankChange": null
+      },
+      "differences": {
+        "rankChange": [
+          0,
+          null
+        ]
+      },
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "unavailable_prior_year_incorrectly_encoded_as_zero"
+    },
+    {
+      "code": "BT",
+      "name": "Bhutan",
+      "sourceRow": "A22",
+      "claim": {
+        "year": 2025,
+        "rating": "70–79",
+        "rank": 18,
+        "rankChange": 0,
+        "score": 71
+      },
+      "primary": {
+        "year": 2025,
+        "score": 71,
+        "rank": 18,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "70–79",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BO",
+      "name": "Bolivia",
+      "sourceRow": "A23",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 136,
+        "rankChange": -3,
+        "score": 28
+      },
+      "primary": {
+        "year": 2025,
+        "score": 28,
+        "rank": 136,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BA",
+      "name": "Bosnia and Herzegovina",
+      "sourceRow": "A24",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 109,
+        "rankChange": 5,
+        "score": 34
+      },
+      "primary": {
+        "year": 2025,
+        "score": 34,
+        "rank": 109,
+        "rankChange": 5
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BW",
+      "name": "Botswana",
+      "sourceRow": "A25",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 41,
+        "rankChange": 2,
+        "score": 58
+      },
+      "primary": {
+        "year": 2025,
+        "score": 58,
+        "rank": 41,
+        "rankChange": 2
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "sourceRow": "A26",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 107,
+        "rankChange": 0,
+        "score": 35
+      },
+      "primary": {
+        "year": 2025,
+        "score": 35,
+        "rank": 107,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BN",
+      "name": "Brunei Darussalam",
+      "sourceRow": "A27",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 31,
+        "rankChange": 0,
+        "score": 63
+      },
+      "primary": {
+        "year": 2025,
+        "score": 63,
+        "rank": 31,
+        "rankChange": null
+      },
+      "differences": {
+        "rankChange": [
+          0,
+          null
+        ]
+      },
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "unavailable_prior_year_incorrectly_encoded_as_zero"
+    },
+    {
+      "code": "LU",
+      "name": "Luxembourg",
+      "sourceRow": "A28",
+      "claim": {
+        "year": 2025,
+        "rating": "70–79",
+        "rank": 8,
+        "rankChange": -3,
+        "score": 78
+      },
+      "primary": {
+        "year": 2025,
+        "score": 78,
+        "rank": 8,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "70–79",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "sourceRow": "A29",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 84,
+        "rankChange": -2,
+        "score": 40
+      },
+      "primary": {
+        "year": 2025,
+        "score": 40,
+        "rank": 84,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BI",
+      "name": "Burundi",
+      "sourceRow": "A30",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 167,
+        "rankChange": -2,
+        "score": 17
+      },
+      "primary": {
+        "year": 2025,
+        "score": 17,
+        "rank": 167,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CV",
+      "name": "Cabo Verde",
+      "sourceRow": "A31",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 35,
+        "rankChange": 0,
+        "score": 62
+      },
+      "primary": {
+        "year": 2025,
+        "score": 62,
+        "rank": 35,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "KH",
+      "name": "Cambodia",
+      "sourceRow": "A32",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 163,
+        "rankChange": -5,
+        "score": 20
+      },
+      "primary": {
+        "year": 2025,
+        "score": 20,
+        "rank": 163,
+        "rankChange": -5
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CM",
+      "name": "Cameroon",
+      "sourceRow": "A33",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 142,
+        "rankChange": -2,
+        "score": 26
+      },
+      "primary": {
+        "year": 2025,
+        "score": 26,
+        "rank": 142,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "sourceRow": "A34",
+      "claim": {
+        "year": 2025,
+        "rating": "70–79",
+        "rank": 16,
+        "rankChange": -1,
+        "score": 75
+      },
+      "primary": {
+        "year": 2025,
+        "score": 75,
+        "rank": 16,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "70–79",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CF",
+      "name": "Central African Republic",
+      "sourceRow": "A35",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 150,
+        "rankChange": -1,
+        "score": 24
+      },
+      "primary": {
+        "year": 2025,
+        "score": 24,
+        "rank": 150,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "TD",
+      "name": "Chad",
+      "sourceRow": "A36",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 157,
+        "rankChange": 1,
+        "score": 22
+      },
+      "primary": {
+        "year": 2025,
+        "score": 22,
+        "rank": 157,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CL",
+      "name": "Chile",
+      "sourceRow": "A37",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 31,
+        "rankChange": 1,
+        "score": 63
+      },
+      "primary": {
+        "year": 2025,
+        "score": 63,
+        "rank": 31,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "sourceRow": "A38",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 76,
+        "rankChange": 0,
+        "score": 43
+      },
+      "primary": {
+        "year": 2025,
+        "score": 43,
+        "rank": 76,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CO",
+      "name": "Colombia",
+      "sourceRow": "A39",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 99,
+        "rankChange": -7,
+        "score": 37
+      },
+      "primary": {
+        "year": 2025,
+        "score": 37,
+        "rank": 99,
+        "rankChange": -7
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "KM",
+      "name": "Comoros",
+      "sourceRow": "A40",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 163,
+        "rankChange": -5,
+        "score": 20
+      },
+      "primary": {
+        "year": 2025,
+        "score": 20,
+        "rank": 163,
+        "rankChange": -5
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CG",
+      "name": "Congo",
+      "sourceRow": "A41",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 153,
+        "rankChange": -2,
+        "score": 23
+      },
+      "primary": {
+        "year": 2025,
+        "score": 23,
+        "rank": 153,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CR",
+      "name": "Costa Rica",
+      "sourceRow": "A42",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 46,
+        "rankChange": -4,
+        "score": 56
+      },
+      "primary": {
+        "year": 2025,
+        "score": 56,
+        "rank": 46,
+        "rankChange": -4
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CI",
+      "name": "Cote d'Ivoire",
+      "sourceRow": "A43",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 76,
+        "rankChange": -7,
+        "score": 43
+      },
+      "primary": {
+        "year": 2025,
+        "score": 43,
+        "rank": 76,
+        "rankChange": -7
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "NO",
+      "name": "Norway",
+      "sourceRow": "A44",
+      "claim": {
+        "year": 2025,
+        "rating": "80–89",
+        "rank": 4,
+        "rankChange": 1,
+        "score": 81
+      },
+      "primary": {
+        "year": 2025,
+        "score": 81,
+        "rank": 4,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "80–89",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CU",
+      "name": "Cuba",
+      "sourceRow": "A45",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 84,
+        "rankChange": -2,
+        "score": 40
+      },
+      "primary": {
+        "year": 2025,
+        "score": 40,
+        "rank": 84,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland",
+      "sourceRow": "A46",
+      "claim": {
+        "year": 2025,
+        "rating": "80–89",
+        "rank": 6,
+        "rankChange": -1,
+        "score": 80
+      },
+      "primary": {
+        "year": 2025,
+        "score": 80,
+        "rank": 6,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "80–89",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SE",
+      "name": "Sweden",
+      "sourceRow": "A47",
+      "claim": {
+        "year": 2025,
+        "rating": "80–89",
+        "rank": 6,
+        "rankChange": 2,
+        "score": 80
+      },
+      "primary": {
+        "year": 2025,
+        "score": 80,
+        "rank": 6,
+        "rankChange": 2
+      },
+      "differences": {},
+      "derivedScoreBand": "80–89",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CD",
+      "name": "Democratic Republic of the Congo",
+      "sourceRow": "A48",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 163,
+        "rankChange": 0,
+        "score": 20
+      },
+      "primary": {
+        "year": 2025,
+        "score": 20,
+        "rank": 163,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "NL",
+      "name": "Netherlands",
+      "sourceRow": "A49",
+      "claim": {
+        "year": 2025,
+        "rating": "70–79",
+        "rank": 8,
+        "rankChange": 1,
+        "score": 78
+      },
+      "primary": {
+        "year": 2025,
+        "score": 78,
+        "rank": 8,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "70–79",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "DJ",
+      "name": "Djibouti",
+      "sourceRow": "A50",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 124,
+        "rankChange": 3,
+        "score": 31
+      },
+      "primary": {
+        "year": 2025,
+        "score": 31,
+        "rank": 124,
+        "rankChange": 3
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "DM",
+      "name": "Dominica",
+      "sourceRow": "A51",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 37,
+        "rankChange": -1,
+        "score": 60
+      },
+      "primary": {
+        "year": 2025,
+        "score": 60,
+        "rank": 37,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "DO",
+      "name": "Dominican Republic",
+      "sourceRow": "A52",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 99,
+        "rankChange": 5,
+        "score": 37
+      },
+      "primary": {
+        "year": 2025,
+        "score": 37,
+        "rank": 99,
+        "rankChange": 5
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "EC",
+      "name": "Ecuador",
+      "sourceRow": "A53",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 116,
+        "rankChange": 5,
+        "score": 33
+      },
+      "primary": {
+        "year": 2025,
+        "score": 33,
+        "rank": 116,
+        "rankChange": 5
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "sourceRow": "A54",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 130,
+        "rankChange": 0,
+        "score": 30
+      },
+      "primary": {
+        "year": 2025,
+        "score": 30,
+        "rank": 130,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SV",
+      "name": "El Salvador",
+      "sourceRow": "A55",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 120,
+        "rankChange": 10,
+        "score": 32
+      },
+      "primary": {
+        "year": 2025,
+        "score": 32,
+        "rank": 120,
+        "rankChange": 10
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "GQ",
+      "name": "Equatorial Guinea",
+      "sourceRow": "A56",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 172,
+        "rankChange": 1,
+        "score": 15
+      },
+      "primary": {
+        "year": 2025,
+        "score": 15,
+        "rank": 172,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "ER",
+      "name": "Eritrea",
+      "sourceRow": "A57",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 177,
+        "rankChange": -4,
+        "score": 13
+      },
+      "primary": {
+        "year": 2025,
+        "score": 13,
+        "rank": 177,
+        "rankChange": -4
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "IS",
+      "name": "Iceland",
+      "sourceRow": "A58",
+      "claim": {
+        "year": 2025,
+        "rating": "70–79",
+        "rank": 10,
+        "rankChange": 0,
+        "score": 77
+      },
+      "primary": {
+        "year": 2025,
+        "score": 77,
+        "rank": 10,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "70–79",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SZ",
+      "name": "Eswatini",
+      "sourceRow": "A59",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 153,
+        "rankChange": -18,
+        "score": 23
+      },
+      "primary": {
+        "year": 2025,
+        "score": 23,
+        "rank": 153,
+        "rankChange": -18
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "ET",
+      "name": "Ethiopia",
+      "sourceRow": "A60",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 96,
+        "rankChange": 3,
+        "score": 38
+      },
+      "primary": {
+        "year": 2025,
+        "score": 38,
+        "rank": 96,
+        "rankChange": 3
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "FJ",
+      "name": "Fiji",
+      "sourceRow": "A61",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 49,
+        "rankChange": 1,
+        "score": 55
+      },
+      "primary": {
+        "year": 2025,
+        "score": 55,
+        "rank": 49,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "IE",
+      "name": "Ireland",
+      "sourceRow": "A62",
+      "claim": {
+        "year": 2025,
+        "rating": "70–79",
+        "rank": 12,
+        "rankChange": -2,
+        "score": 76
+      },
+      "primary": {
+        "year": 2025,
+        "score": 76,
+        "rank": 12,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "70–79",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "EE",
+      "name": "Estonia",
+      "sourceRow": "A63",
+      "claim": {
+        "year": 2025,
+        "rating": "70–79",
+        "rank": 12,
+        "rankChange": 1,
+        "score": 76
+      },
+      "primary": {
+        "year": 2025,
+        "score": 76,
+        "rank": 12,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "70–79",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "GA",
+      "name": "Gabon",
+      "sourceRow": "A64",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 135,
+        "rankChange": 0,
+        "score": 29
+      },
+      "primary": {
+        "year": 2025,
+        "score": 29,
+        "rank": 135,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "GM",
+      "name": "Gambia",
+      "sourceRow": "A65",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 99,
+        "rankChange": -3,
+        "score": 37
+      },
+      "primary": {
+        "year": 2025,
+        "score": 37,
+        "rank": 99,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "GE",
+      "name": "Georgia",
+      "sourceRow": "A66",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 56,
+        "rankChange": -3,
+        "score": 50
+      },
+      "primary": {
+        "year": 2025,
+        "score": 50,
+        "rank": 56,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "sourceRow": "A67",
+      "claim": {
+        "year": 2025,
+        "rating": "70–79",
+        "rank": 10,
+        "rankChange": 5,
+        "score": 77
+      },
+      "primary": {
+        "year": 2025,
+        "score": 77,
+        "rank": 10,
+        "rankChange": 5
+      },
+      "differences": {},
+      "derivedScoreBand": "70–79",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "sourceRow": "A68",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 76,
+        "rankChange": 4,
+        "score": 43
+      },
+      "primary": {
+        "year": 2025,
+        "score": 43,
+        "rank": 76,
+        "rankChange": 4
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "sourceRow": "A69",
+      "claim": {
+        "year": 2025,
+        "rating": "70–79",
+        "rank": 20,
+        "rankChange": 0,
+        "score": 70
+      },
+      "primary": {
+        "year": 2025,
+        "score": 70,
+        "rank": 20,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "70–79",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "GD",
+      "name": "Grenada",
+      "sourceRow": "A70",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 46,
+        "rankChange": 0,
+        "score": 56
+      },
+      "primary": {
+        "year": 2025,
+        "score": 56,
+        "rank": 46,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "GT",
+      "name": "Guatemala",
+      "sourceRow": "A71",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 142,
+        "rankChange": 4,
+        "score": 26
+      },
+      "primary": {
+        "year": 2025,
+        "score": 26,
+        "rank": 142,
+        "rankChange": 4
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "GN",
+      "name": "Guinea",
+      "sourceRow": "A72",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 142,
+        "rankChange": -9,
+        "score": 26
+      },
+      "primary": {
+        "year": 2025,
+        "score": 26,
+        "rank": 142,
+        "rankChange": -9
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "GW",
+      "name": "Guinea Bissau",
+      "sourceRow": "A73",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 161,
+        "rankChange": -3,
+        "score": 21
+      },
+      "primary": {
+        "year": 2025,
+        "score": 21,
+        "rank": 161,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "GY",
+      "name": "Guyana",
+      "sourceRow": "A74",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 84,
+        "rankChange": 8,
+        "score": 40
+      },
+      "primary": {
+        "year": 2025,
+        "score": 40,
+        "rank": 84,
+        "rankChange": 8
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "HT",
+      "name": "Haiti",
+      "sourceRow": "A75",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 169,
+        "rankChange": -1,
+        "score": 16
+      },
+      "primary": {
+        "year": 2025,
+        "score": 16,
+        "rank": 169,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "HN",
+      "name": "Honduras",
+      "sourceRow": "A76",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 157,
+        "rankChange": -3,
+        "score": 22
+      },
+      "primary": {
+        "year": 2025,
+        "score": 22,
+        "rank": 157,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BE",
+      "name": "Belgium",
+      "sourceRow": "A78",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 21,
+        "rankChange": 1,
+        "score": 69
+      },
+      "primary": {
+        "year": 2025,
+        "score": 69,
+        "rank": 21,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "AT",
+      "name": "Austria",
+      "sourceRow": "A79",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 21,
+        "rankChange": 4,
+        "score": 69
+      },
+      "primary": {
+        "year": 2025,
+        "score": 69,
+        "rank": 21,
+        "rankChange": 4
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "sourceRow": "A80",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 91,
+        "rankChange": 5,
+        "score": 39
+      },
+      "primary": {
+        "year": 2025,
+        "score": 39,
+        "rank": 91,
+        "rankChange": 5
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "ID",
+      "name": "Indonesia",
+      "sourceRow": "A81",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 109,
+        "rankChange": -10,
+        "score": 34
+      },
+      "primary": {
+        "year": 2025,
+        "score": 34,
+        "rank": 109,
+        "rankChange": -10
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "IR",
+      "name": "Iran",
+      "sourceRow": "A82",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 153,
+        "rankChange": -2,
+        "score": 23
+      },
+      "primary": {
+        "year": 2025,
+        "score": 23,
+        "rank": 153,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "IQ",
+      "name": "Iraq",
+      "sourceRow": "A83",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 136,
+        "rankChange": 4,
+        "score": 28
+      },
+      "primary": {
+        "year": 2025,
+        "score": 28,
+        "rank": 136,
+        "rankChange": 4
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "sourceRow": "A84",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 27,
+        "rankChange": -2,
+        "score": 66
+      },
+      "primary": {
+        "year": 2025,
+        "score": 66,
+        "rank": 27,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "IL",
+      "name": "Israel",
+      "sourceRow": "A85",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 35,
+        "rankChange": -5,
+        "score": 62
+      },
+      "primary": {
+        "year": 2025,
+        "score": 62,
+        "rank": 35,
+        "rankChange": -5
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "LT",
+      "name": "Lithuania",
+      "sourceRow": "A86",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 28,
+        "rankChange": 4,
+        "score": 65
+      },
+      "primary": {
+        "year": 2025,
+        "score": 65,
+        "rank": 28,
+        "rankChange": 4
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "JM",
+      "name": "Jamaica",
+      "sourceRow": "A87",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 73,
+        "rankChange": 0,
+        "score": 44
+      },
+      "primary": {
+        "year": 2025,
+        "score": 44,
+        "rank": 73,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "sourceRow": "A88",
+      "claim": {
+        "year": 2025,
+        "rating": "70–79",
+        "rank": 18,
+        "rankChange": 2,
+        "score": 71
+      },
+      "primary": {
+        "year": 2025,
+        "score": 71,
+        "rank": 18,
+        "rankChange": 2
+      },
+      "differences": {},
+      "derivedScoreBand": "70–79",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "JO",
+      "name": "Jordan",
+      "sourceRow": "A89",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 56,
+        "rankChange": 3,
+        "score": 50
+      },
+      "primary": {
+        "year": 2025,
+        "score": 50,
+        "rank": 56,
+        "rankChange": 3
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "KZ",
+      "name": "Kazakhstan",
+      "sourceRow": "A90",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 96,
+        "rankChange": -8,
+        "score": 38
+      },
+      "primary": {
+        "year": 2025,
+        "score": 38,
+        "rank": 96,
+        "rankChange": -8
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "sourceRow": "A91",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 130,
+        "rankChange": -9,
+        "score": 30
+      },
+      "primary": {
+        "year": 2025,
+        "score": 30,
+        "rank": 130,
+        "rankChange": -9
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "KP",
+      "name": "Korea, North",
+      "sourceRow": "A92",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 172,
+        "rankChange": -2,
+        "score": 15
+      },
+      "primary": {
+        "year": 2025,
+        "score": 15,
+        "rank": 172,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "KR",
+      "name": "Korea, South",
+      "sourceRow": "A93",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 31,
+        "rankChange": -1,
+        "score": 63
+      },
+      "primary": {
+        "year": 2025,
+        "score": 63,
+        "rank": 31,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "KW",
+      "name": "Kuwait",
+      "sourceRow": "A95",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 65,
+        "rankChange": 0,
+        "score": 46
+      },
+      "primary": {
+        "year": 2025,
+        "score": 46,
+        "rank": 65,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "KG",
+      "name": "Kyrgyzstan",
+      "sourceRow": "A96",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 142,
+        "rankChange": 4,
+        "score": 26
+      },
+      "primary": {
+        "year": 2025,
+        "score": 26,
+        "rank": 142,
+        "rankChange": 4
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "LA",
+      "name": "Laos",
+      "sourceRow": "A97",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 109,
+        "rankChange": 5,
+        "score": 34
+      },
+      "primary": {
+        "year": 2025,
+        "score": 34,
+        "rank": 109,
+        "rankChange": 5
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SI",
+      "name": "Slovenia",
+      "sourceRow": "A98",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 41,
+        "rankChange": -5,
+        "score": 58
+      },
+      "primary": {
+        "year": 2025,
+        "score": 58,
+        "rank": 41,
+        "rankChange": -5
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "LB",
+      "name": "Lebanon",
+      "sourceRow": "A99",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 153,
+        "rankChange": 1,
+        "score": 23
+      },
+      "primary": {
+        "year": 2025,
+        "score": 23,
+        "rank": 153,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "LS",
+      "name": "Lesotho",
+      "sourceRow": "A100",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 99,
+        "rankChange": 0,
+        "score": 37
+      },
+      "primary": {
+        "year": 2025,
+        "score": 37,
+        "rank": 99,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "LR",
+      "name": "Liberia",
+      "sourceRow": "A101",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 136,
+        "rankChange": -1,
+        "score": 28
+      },
+      "primary": {
+        "year": 2025,
+        "score": 28,
+        "rank": 136,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "LY",
+      "name": "Libya",
+      "sourceRow": "A102",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 177,
+        "rankChange": -4,
+        "score": 13
+      },
+      "primary": {
+        "year": 2025,
+        "score": 13,
+        "rank": 177,
+        "rankChange": -4
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "LV",
+      "name": "Latvia",
+      "sourceRow": "A103",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 37,
+        "rankChange": 1,
+        "score": 60
+      },
+      "primary": {
+        "year": 2025,
+        "score": 60,
+        "rank": 37,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "sourceRow": "A104",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 46,
+        "rankChange": -3,
+        "score": 56
+      },
+      "primary": {
+        "year": 2025,
+        "score": 56,
+        "rank": 46,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "MG",
+      "name": "Madagascar",
+      "sourceRow": "A105",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 148,
+        "rankChange": -8,
+        "score": 25
+      },
+      "primary": {
+        "year": 2025,
+        "score": 25,
+        "rank": 148,
+        "rankChange": -8
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "MW",
+      "name": "Malawi",
+      "sourceRow": "A106",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 109,
+        "rankChange": -2,
+        "score": 34
+      },
+      "primary": {
+        "year": 2025,
+        "score": 34,
+        "rank": 109,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "sourceRow": "A107",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 54,
+        "rankChange": 3,
+        "score": 52
+      },
+      "primary": {
+        "year": 2025,
+        "score": 52,
+        "rank": 54,
+        "rankChange": 3
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "MV",
+      "name": "Maldives",
+      "sourceRow": "A108",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 91,
+        "rankChange": 5,
+        "score": 39
+      },
+      "primary": {
+        "year": 2025,
+        "score": 39,
+        "rank": 91,
+        "rankChange": 5
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "sourceRow": "A109",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 136,
+        "rankChange": -1,
+        "score": 28
+      },
+      "primary": {
+        "year": 2025,
+        "score": 28,
+        "rank": 136,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CY",
+      "name": "Cyprus",
+      "sourceRow": "A110",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 49,
+        "rankChange": -3,
+        "score": 55
+      },
+      "primary": {
+        "year": 2025,
+        "score": 55,
+        "rank": 49,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "MR",
+      "name": "Mauritania",
+      "sourceRow": "A111",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 130,
+        "rankChange": 0,
+        "score": 30
+      },
+      "primary": {
+        "year": 2025,
+        "score": 30,
+        "rank": 130,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "MU",
+      "name": "Mauritius",
+      "sourceRow": "A112",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 61,
+        "rankChange": -5,
+        "score": 48
+      },
+      "primary": {
+        "year": 2025,
+        "score": 48,
+        "rank": 61,
+        "rankChange": -5
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "MX",
+      "name": "Mexico",
+      "sourceRow": "A113",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 141,
+        "rankChange": -1,
+        "score": 27
+      },
+      "primary": {
+        "year": 2025,
+        "score": 27,
+        "rank": 141,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "MD",
+      "name": "Moldova",
+      "sourceRow": "A114",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 80,
+        "rankChange": -4,
+        "score": 42
+      },
+      "primary": {
+        "year": 2025,
+        "score": 42,
+        "rank": 80,
+        "rankChange": -4
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "MN",
+      "name": "Mongolia",
+      "sourceRow": "A115",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 124,
+        "rankChange": -10,
+        "score": 31
+      },
+      "primary": {
+        "year": 2025,
+        "score": 31,
+        "rank": 124,
+        "rankChange": -10
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "ME",
+      "name": "Montenegro",
+      "sourceRow": "A116",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 65,
+        "rankChange": 0,
+        "score": 46
+      },
+      "primary": {
+        "year": 2025,
+        "score": 46,
+        "rank": 65,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "sourceRow": "A117",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 91,
+        "rankChange": 8,
+        "score": 39
+      },
+      "primary": {
+        "year": 2025,
+        "score": 39,
+        "rank": 91,
+        "rankChange": 8
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "MZ",
+      "name": "Mozambique",
+      "sourceRow": "A118",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 161,
+        "rankChange": -15,
+        "score": 21
+      },
+      "primary": {
+        "year": 2025,
+        "score": 21,
+        "rank": 161,
+        "rankChange": -15
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "MM",
+      "name": "Myanmar",
+      "sourceRow": "A119",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 169,
+        "rankChange": -1,
+        "score": 16
+      },
+      "primary": {
+        "year": 2025,
+        "score": 16,
+        "rank": 169,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "NA",
+      "name": "Namibia",
+      "sourceRow": "A120",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 65,
+        "rankChange": -6,
+        "score": 46
+      },
+      "primary": {
+        "year": 2025,
+        "score": 46,
+        "rank": 65,
+        "rankChange": -6
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "NP",
+      "name": "Nepal",
+      "sourceRow": "A121",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 109,
+        "rankChange": -2,
+        "score": 34
+      },
+      "primary": {
+        "year": 2025,
+        "score": 34,
+        "rank": 109,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "CZ",
+      "name": "Czechia",
+      "sourceRow": "A122",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 39,
+        "rankChange": 7,
+        "score": 59
+      },
+      "primary": {
+        "year": 2025,
+        "score": 59,
+        "rank": 39,
+        "rankChange": 7
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "NZ",
+      "name": "New Zealand",
+      "sourceRow": "A123",
+      "claim": {
+        "year": 2025,
+        "rating": "80–89",
+        "rank": 4,
+        "rankChange": 0,
+        "score": 81
+      },
+      "primary": {
+        "year": 2025,
+        "score": 81,
+        "rank": 4,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "80–89",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "NI",
+      "name": "Nicaragua",
+      "sourceRow": "A124",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 175,
+        "rankChange": -3,
+        "score": 14
+      },
+      "primary": {
+        "year": 2025,
+        "score": 14,
+        "rank": 175,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "NE",
+      "name": "Niger",
+      "sourceRow": "A125",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 124,
+        "rankChange": -17,
+        "score": 31
+      },
+      "primary": {
+        "year": 2025,
+        "score": 31,
+        "rank": 124,
+        "rankChange": -17
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "sourceRow": "A126",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 142,
+        "rankChange": -2,
+        "score": 26
+      },
+      "primary": {
+        "year": 2025,
+        "score": 26,
+        "rank": 142,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "MK",
+      "name": "North Macedonia",
+      "sourceRow": "A127",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 84,
+        "rankChange": 4,
+        "score": 40
+      },
+      "primary": {
+        "year": 2025,
+        "score": 40,
+        "rank": 84,
+        "rankChange": 4
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "sourceRow": "A128",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 49,
+        "rankChange": -3,
+        "score": 55
+      },
+      "primary": {
+        "year": 2025,
+        "score": 55,
+        "rank": 49,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "OM",
+      "name": "Oman",
+      "sourceRow": "A129",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 54,
+        "rankChange": -4,
+        "score": 52
+      },
+      "primary": {
+        "year": 2025,
+        "score": 52,
+        "rank": 54,
+        "rankChange": -4
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "PK",
+      "name": "Pakistan",
+      "sourceRow": "A130",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 136,
+        "rankChange": -1,
+        "score": 28
+      },
+      "primary": {
+        "year": 2025,
+        "score": 28,
+        "rank": 136,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "PA",
+      "name": "Panama",
+      "sourceRow": "A131",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 116,
+        "rankChange": -2,
+        "score": 33
+      },
+      "primary": {
+        "year": 2025,
+        "score": 33,
+        "rank": 116,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "PG",
+      "name": "Papua New Guinea",
+      "sourceRow": "A132",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 142,
+        "rankChange": -15,
+        "score": 26
+      },
+      "primary": {
+        "year": 2025,
+        "score": 26,
+        "rank": 142,
+        "rankChange": -15
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "PY",
+      "name": "Paraguay",
+      "sourceRow": "A133",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 150,
+        "rankChange": -1,
+        "score": 24
+      },
+      "primary": {
+        "year": 2025,
+        "score": 24,
+        "rank": 150,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "PE",
+      "name": "Peru",
+      "sourceRow": "A134",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 130,
+        "rankChange": -3,
+        "score": 30
+      },
+      "primary": {
+        "year": 2025,
+        "score": 30,
+        "rank": 130,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "PH",
+      "name": "Philippines",
+      "sourceRow": "A135",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 120,
+        "rankChange": -6,
+        "score": 32
+      },
+      "primary": {
+        "year": 2025,
+        "score": 32,
+        "rank": 120,
+        "rankChange": -6
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "sourceRow": "A136",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 52,
+        "rankChange": 0,
+        "score": 53
+      },
+      "primary": {
+        "year": 2025,
+        "score": 53,
+        "rank": 52,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "PL",
+      "name": "Poland",
+      "sourceRow": "A137",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 52,
+        "rankChange": 1,
+        "score": 53
+      },
+      "primary": {
+        "year": 2025,
+        "score": 53,
+        "rank": 52,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "QA",
+      "name": "Qatar",
+      "sourceRow": "A138",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 41,
+        "rankChange": -3,
+        "score": 58
+      },
+      "primary": {
+        "year": 2025,
+        "score": 58,
+        "rank": 41,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "GR",
+      "name": "Greece",
+      "sourceRow": "A139",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 56,
+        "rankChange": 3,
+        "score": 50
+      },
+      "primary": {
+        "year": 2025,
+        "score": 50,
+        "rank": 56,
+        "rankChange": 3
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "sourceRow": "A140",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 157,
+        "rankChange": -3,
+        "score": 22
+      },
+      "primary": {
+        "year": 2025,
+        "score": 22,
+        "rank": 157,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "RW",
+      "name": "Rwanda",
+      "sourceRow": "A141",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 41,
+        "rankChange": 2,
+        "score": 58
+      },
+      "primary": {
+        "year": 2025,
+        "score": 58,
+        "rank": 41,
+        "rankChange": 2
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "LC",
+      "name": "Saint Lucia",
+      "sourceRow": "A142",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 39,
+        "rankChange": -1,
+        "score": 59
+      },
+      "primary": {
+        "year": 2025,
+        "score": 59,
+        "rank": 39,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "VC",
+      "name": "Saint Vincent and the Grenadines",
+      "sourceRow": "A143",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 31,
+        "rankChange": 1,
+        "score": 63
+      },
+      "primary": {
+        "year": 2025,
+        "score": 63,
+        "rank": 31,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "ST",
+      "name": "Sao Tome and Principe",
+      "sourceRow": "A144",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 70,
+        "rankChange": -1,
+        "score": 45
+      },
+      "primary": {
+        "year": 2025,
+        "score": 45,
+        "rank": 70,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "sourceRow": "A145",
+      "claim": {
+        "year": 2025,
+        "rating": "50–59",
+        "rank": 45,
+        "rankChange": -7,
+        "score": 57
+      },
+      "primary": {
+        "year": 2025,
+        "score": 57,
+        "rank": 45,
+        "rankChange": -7
+      },
+      "differences": {},
+      "derivedScoreBand": "50–59",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "sourceRow": "A146",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 65,
+        "rankChange": 4,
+        "score": 46
+      },
+      "primary": {
+        "year": 2025,
+        "score": 46,
+        "rank": 65,
+        "rankChange": 4
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "RS",
+      "name": "Serbia",
+      "sourceRow": "A147",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 116,
+        "rankChange": -11,
+        "score": 33
+      },
+      "primary": {
+        "year": 2025,
+        "score": 33,
+        "rank": 116,
+        "rankChange": -11
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SC",
+      "name": "Seychelles",
+      "sourceRow": "A148",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 24,
+        "rankChange": -6,
+        "score": 68
+      },
+      "primary": {
+        "year": 2025,
+        "score": 68,
+        "rank": 24,
+        "rankChange": -6
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SL",
+      "name": "Sierra Leone",
+      "sourceRow": "A149",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 109,
+        "rankChange": 5,
+        "score": 34
+      },
+      "primary": {
+        "year": 2025,
+        "score": 34,
+        "rank": 109,
+        "rankChange": 5
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "sourceRow": "A150",
+      "claim": {
+        "year": 2025,
+        "rating": "80–89",
+        "rank": 3,
+        "rankChange": 0,
+        "score": 84
+      },
+      "primary": {
+        "year": 2025,
+        "score": 84,
+        "rank": 3,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "80–89",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SK",
+      "name": "Slovakia",
+      "sourceRow": "A151",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 61,
+        "rankChange": -2,
+        "score": 48
+      },
+      "primary": {
+        "year": 2025,
+        "score": 48,
+        "rank": 61,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "HR",
+      "name": "Croatia",
+      "sourceRow": "A152",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 63,
+        "rankChange": 0,
+        "score": 47
+      },
+      "primary": {
+        "year": 2025,
+        "score": 47,
+        "rank": 63,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SB",
+      "name": "Solomon Islands",
+      "sourceRow": "A153",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 73,
+        "rankChange": 3,
+        "score": 44
+      },
+      "primary": {
+        "year": 2025,
+        "score": 44,
+        "rank": 73,
+        "rankChange": 3
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SO",
+      "name": "Somalia",
+      "sourceRow": "A154",
+      "claim": {
+        "year": 2025,
+        "rating": "0–9",
+        "rank": 181,
+        "rankChange": -2,
+        "score": 9
+      },
+      "primary": {
+        "year": 2025,
+        "score": 9,
+        "rank": 181,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "0–9",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "sourceRow": "A155",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 81,
+        "rankChange": 1,
+        "score": 41
+      },
+      "primary": {
+        "year": 2025,
+        "score": 41,
+        "rank": 81,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SS",
+      "name": "South Sudan",
+      "sourceRow": "A156",
+      "claim": {
+        "year": 2025,
+        "rating": "0–9",
+        "rank": 181,
+        "rankChange": -1,
+        "score": 9
+      },
+      "primary": {
+        "year": 2025,
+        "score": 9,
+        "rank": 181,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "0–9",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "MT",
+      "name": "Malta",
+      "sourceRow": "A157",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 60,
+        "rankChange": 5,
+        "score": 49
+      },
+      "primary": {
+        "year": 2025,
+        "score": 49,
+        "rank": 60,
+        "rankChange": 5
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "LK",
+      "name": "Sri Lanka",
+      "sourceRow": "A158",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 107,
+        "rankChange": 14,
+        "score": 35
+      },
+      "primary": {
+        "year": 2025,
+        "score": 35,
+        "rank": 107,
+        "rankChange": 14
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SD",
+      "name": "Sudan",
+      "sourceRow": "A159",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 175,
+        "rankChange": -5,
+        "score": 14
+      },
+      "primary": {
+        "year": 2025,
+        "score": 14,
+        "rank": 175,
+        "rankChange": -5
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SR",
+      "name": "Suriname",
+      "sourceRow": "A160",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 96,
+        "rankChange": -8,
+        "score": 38
+      },
+      "primary": {
+        "year": 2025,
+        "score": 38,
+        "rank": 96,
+        "rankChange": -8
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "RO",
+      "name": "Romania",
+      "sourceRow": "A161",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 70,
+        "rankChange": -5,
+        "score": 45
+      },
+      "primary": {
+        "year": 2025,
+        "score": 45,
+        "rank": 70,
+        "rankChange": -5
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "BG",
+      "name": "Bulgaria",
+      "sourceRow": "A162",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 84,
+        "rankChange": -8,
+        "score": 40
+      },
+      "primary": {
+        "year": 2025,
+        "score": 40,
+        "rank": 84,
+        "rankChange": -8
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "SY",
+      "name": "Syria",
+      "sourceRow": "A163",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 172,
+        "rankChange": 5,
+        "score": 15
+      },
+      "primary": {
+        "year": 2025,
+        "score": 15,
+        "rank": 172,
+        "rankChange": 5
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "TJ",
+      "name": "Tajikistan",
+      "sourceRow": "A165",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 166,
+        "rankChange": -2,
+        "score": 19
+      },
+      "primary": {
+        "year": 2025,
+        "score": 19,
+        "rank": 166,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "sourceRow": "A166",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 84,
+        "rankChange": -2,
+        "score": 40
+      },
+      "primary": {
+        "year": 2025,
+        "score": 40,
+        "rank": 84,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "TH",
+      "name": "Thailand",
+      "sourceRow": "A167",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 116,
+        "rankChange": -9,
+        "score": 33
+      },
+      "primary": {
+        "year": 2025,
+        "score": 33,
+        "rank": 116,
+        "rankChange": -9
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "TL",
+      "name": "Timor-Leste",
+      "sourceRow": "A168",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 73,
+        "rankChange": 0,
+        "score": 44
+      },
+      "primary": {
+        "year": 2025,
+        "score": 44,
+        "rank": 73,
+        "rankChange": 0
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "TG",
+      "name": "Togo",
+      "sourceRow": "A169",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 120,
+        "rankChange": 1,
+        "score": 32
+      },
+      "primary": {
+        "year": 2025,
+        "score": 32,
+        "rank": 120,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "TT",
+      "name": "Trinidad and Tobago",
+      "sourceRow": "A170",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 81,
+        "rankChange": 1,
+        "score": 41
+      },
+      "primary": {
+        "year": 2025,
+        "score": 41,
+        "rank": 81,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "TN",
+      "name": "Tunisia",
+      "sourceRow": "A171",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 91,
+        "rankChange": 1,
+        "score": 39
+      },
+      "primary": {
+        "year": 2025,
+        "score": 39,
+        "rank": 91,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "TR",
+      "name": "Turkey",
+      "sourceRow": "A172",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 124,
+        "rankChange": -17,
+        "score": 31
+      },
+      "primary": {
+        "year": 2025,
+        "score": 31,
+        "rank": 124,
+        "rankChange": -17
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "TM",
+      "name": "Turkmenistan",
+      "sourceRow": "A173",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 167,
+        "rankChange": -2,
+        "score": 17
+      },
+      "primary": {
+        "year": 2025,
+        "score": 17,
+        "rank": 167,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "sourceRow": "A174",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 148,
+        "rankChange": -8,
+        "score": 25
+      },
+      "primary": {
+        "year": 2025,
+        "score": 25,
+        "rank": 148,
+        "rankChange": -8
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "UA",
+      "name": "Ukraine",
+      "sourceRow": "A175",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 104,
+        "rankChange": 1,
+        "score": 36
+      },
+      "primary": {
+        "year": 2025,
+        "score": 36,
+        "rank": 104,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "sourceRow": "A176",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 21,
+        "rankChange": 2,
+        "score": 69
+      },
+      "primary": {
+        "year": 2025,
+        "score": 69,
+        "rank": 21,
+        "rankChange": 2
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "HU",
+      "name": "Hungary",
+      "sourceRow": "A177",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 84,
+        "rankChange": -2,
+        "score": 40
+      },
+      "primary": {
+        "year": 2025,
+        "score": 40,
+        "rank": 84,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "US",
+      "name": "United States of America",
+      "sourceRow": "A178",
+      "claim": {
+        "year": 2025,
+        "rating": "60–69",
+        "rank": 29,
+        "rankChange": -1,
+        "score": 64
+      },
+      "primary": {
+        "year": 2025,
+        "score": 64,
+        "rank": 29,
+        "rankChange": -1
+      },
+      "differences": {},
+      "derivedScoreBand": "60–69",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "UY",
+      "name": "Uruguay",
+      "sourceRow": "A179",
+      "claim": {
+        "year": 2025,
+        "rating": "70–79",
+        "rank": 17,
+        "rankChange": -4,
+        "score": 73
+      },
+      "primary": {
+        "year": 2025,
+        "score": 73,
+        "rank": 17,
+        "rankChange": -4
+      },
+      "differences": {},
+      "derivedScoreBand": "70–79",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "UZ",
+      "name": "Uzbekistan",
+      "sourceRow": "A180",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 124,
+        "rankChange": -3,
+        "score": 31
+      },
+      "primary": {
+        "year": 2025,
+        "score": 31,
+        "rank": 124,
+        "rankChange": -3
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "VU",
+      "name": "Vanuatu",
+      "sourceRow": "A181",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 63,
+        "rankChange": -6,
+        "score": 47
+      },
+      "primary": {
+        "year": 2025,
+        "score": 47,
+        "rank": 63,
+        "rankChange": -6
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "VE",
+      "name": "Venezuela",
+      "sourceRow": "A182",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 180,
+        "rankChange": -2,
+        "score": 10
+      },
+      "primary": {
+        "year": 2025,
+        "score": 10,
+        "rank": 180,
+        "rankChange": -2
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "VN",
+      "name": "Vietnam",
+      "sourceRow": "A183",
+      "claim": {
+        "year": 2025,
+        "rating": "40–49",
+        "rank": 81,
+        "rankChange": 7,
+        "score": 41
+      },
+      "primary": {
+        "year": 2025,
+        "score": 41,
+        "rank": 81,
+        "rankChange": 7
+      },
+      "differences": {},
+      "derivedScoreBand": "40–49",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "YE",
+      "name": "Yemen",
+      "sourceRow": "A184",
+      "claim": {
+        "year": 2025,
+        "rating": "10–19",
+        "rank": 177,
+        "rankChange": -4,
+        "score": 13
+      },
+      "primary": {
+        "year": 2025,
+        "score": 13,
+        "rank": 177,
+        "rankChange": -4
+      },
+      "differences": {},
+      "derivedScoreBand": "10–19",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "ZM",
+      "name": "Zambia",
+      "sourceRow": "A185",
+      "claim": {
+        "year": 2025,
+        "rating": "30–39",
+        "rank": 99,
+        "rankChange": -7,
+        "score": 37
+      },
+      "primary": {
+        "year": 2025,
+        "score": 37,
+        "rank": 99,
+        "rankChange": -7
+      },
+      "differences": {},
+      "derivedScoreBand": "30–39",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    },
+    {
+      "code": "ZW",
+      "name": "Zimbabwe",
+      "sourceRow": "A186",
+      "claim": {
+        "year": 2025,
+        "rating": "20–29",
+        "rank": 157,
+        "rankChange": 1,
+        "score": 22
+      },
+      "primary": {
+        "year": 2025,
+        "score": 22,
+        "rank": 157,
+        "rankChange": 1
+      },
+      "differences": {},
+      "derivedScoreBand": "20–29",
+      "bandMatches": true,
+      "rankChangeVerdict": "matches"
+    }
+  ],
+  "limits": "CPI is perceived public-sector corruption, not a direct count of corruption or a democracy score. Numeric rank changes do not by themselves establish statistically significant changes in corruption. Belize and Brunei must not display unchanged (=) without a prior-year rank."
+}

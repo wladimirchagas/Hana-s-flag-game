@@ -284,6 +284,44 @@
   filter: drop-shadow(0 24px 64px rgba(0, 0, 0, 0.6));
 }
 
+/* Adaptive neutral plate for brand logos in the fullscreen viewer — same
+   light/dark choice as the grid tiles (data-logo-tone from logoBackdrop).
+   Shrink-wrap the plate to the logo so wide wordmarks are never clipped to
+   a square tile (China Southern). sizeFullscreenLogo() sets explicit px. */
+.flag-zoom__plate {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  max-width: min(92vw, 1100px);
+  max-height: min(88vh, 900px);
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  border-radius: 14px;
+  background: var(--logo-plate-light);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: default;
+}
+
+.flag-zoom__plate[data-logo-tone="dark"] {
+  background: var(--logo-plate-dark);
+}
+
+.flag-zoom__plate[data-logo-backing="solid"] {
+  /* Asset already carries its own field — no extra frame around it. */
+  padding: 0.5rem;
+}
+
+.flag-zoom__img--logo {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(84vw, 1000px);
+  max-height: min(72vh, 780px);
+  object-fit: contain;
+  filter: none;
+}
+
 .flag-zoom__close {
   position: fixed;
   top: 1rem;
@@ -3016,7 +3054,8 @@
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.75rem;
-  min-width: 210px;
+  min-width: 280px;
+  max-width: min(22rem, calc(100vw - 2rem));
 }
 
 .democracy-map-control__options {
@@ -3025,9 +3064,741 @@
   gap: 0.35rem;
 }
 
+.democracy-map-control__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.democracy-map-control__group-label {
+  margin: 0;
+  padding: 0.1rem 0.55rem 0;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft, #6b7280);
+}
+
+.democracy-map-control__divider {
+  border: 0;
+  border-top: 1px solid var(--ink-faint, rgba(31, 41, 55, 0.22));
+  margin: 0.15rem 0 0.05rem;
+}
+
+.democracy-map-control__preset,
+.democracy-map-control .map-view-control__preset {
+  text-align: left;
+  white-space: normal;
+  line-height: 1.25;
+}
+
 .world-map__below-node {
   width: 100%;
   margin-top: 0.5rem;
+}
+
+/* ── Democracy Index scatter chart (inside the "See chart" accordion) ───── */
+.democracy-index-chart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  box-sizing: border-box;
+  /* Filter category accents — triggers + selection chips share these.
+     Teal / slate-blue / amber (not coral/red — those read as error). */
+  --chart-filter-continents: var(--sky, #4ecdc4);
+  --chart-filter-membership: #3d7ea6;
+  --chart-filter-indexes: #c4922a;
+}
+
+:root[data-theme="dark"] .democracy-index-chart {
+  --chart-filter-membership: #6eb0d4;
+  --chart-filter-indexes: #e0b45a;
+}
+
+.democracy-index-chart__axes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.75rem;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0.15rem;
+}
+
+.democracy-index-chart__axis-pick {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink, #1f2937);
+}
+
+.democracy-index-chart__axis-pick-label {
+  white-space: nowrap;
+  opacity: 0.75;
+}
+
+.democracy-index-chart__filters {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.democracy-index-chart__filter {
+  position: relative;
+}
+
+.democracy-index-chart__filter--continents {
+  --chart-filter-accent: var(--chart-filter-continents);
+}
+
+.democracy-index-chart__filter--membership {
+  --chart-filter-accent: var(--chart-filter-membership);
+}
+
+.democracy-index-chart__filter--indexes {
+  --chart-filter-accent: var(--chart-filter-indexes);
+}
+
+/* Match the X/Y axis `<select>` chrome — same radius, weight, border. */
+.democracy-index-chart__filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink, #1f2937);
+  background: var(--paper, #fff);
+  border: 2px solid var(--ink-faint, rgba(31, 41, 55, 0.28));
+  border-radius: 10px;
+  padding: 0.3rem 0.45rem 0.3rem 0.55rem;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: none;
+}
+
+.democracy-index-chart__filter-btn-chev {
+  font-size: 0.65rem;
+  opacity: 0.55;
+  line-height: 1;
+}
+
+.democracy-index-chart__filter-btn:hover,
+.democracy-index-chart__filter-btn:focus-visible {
+  border-color: var(--ink, #1f2937);
+}
+
+.democracy-index-chart__filter-btn:focus-visible {
+  outline: 2px solid var(--chart-filter-accent, var(--sky, #4ecdc4));
+  outline-offset: 2px;
+}
+
+.democracy-index-chart__filter-btn--active,
+.democracy-index-chart__filter-btn--open {
+  /* Stay select-like: white fill, category accent only on border + left bar. */
+  border-color: var(--chart-filter-accent);
+  background: var(--paper, #fff);
+  color: var(--ink, #1f2937);
+  box-shadow: inset 3px 0 0 var(--chart-filter-accent);
+}
+
+.democracy-index-chart__filter-btn--open {
+  background: color-mix(
+    in srgb,
+    var(--chart-filter-accent) 8%,
+    var(--paper, #fff)
+  );
+}
+
+.democracy-index-chart__filter-popover {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  left: 0;
+  z-index: 20;
+  width: min(18.5rem, calc(100vw - 2rem));
+  max-height: min(22rem, 55vh);
+  display: flex;
+  flex-direction: column;
+  background: var(--paper, #fff);
+  color: var(--ink, #1f2937);
+  border: 2px solid var(--ink, #1f2937);
+  border-radius: 12px;
+  box-shadow: 0 4px 0 var(--ink, #1f2937);
+  overflow: hidden;
+}
+
+:root[data-theme="dark"] .democracy-index-chart__filter-popover {
+  box-shadow: none;
+  border-color: var(--atlas-border, #374151);
+}
+
+.democracy-index-chart__filter-popover-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.55rem 0.75rem 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  opacity: 0.8;
+  border-bottom: 1px solid color-mix(in srgb, var(--ink, #1f2937) 12%, transparent);
+}
+
+.democracy-index-chart__filter-clear {
+  font: inherit;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--ink-soft, #4b5563);
+  background: transparent;
+  border: 0;
+  padding: 0.15rem 0.25rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.democracy-index-chart__filter-search {
+  padding: 0.45rem 0.55rem 0.35rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--ink, #1f2937) 10%, transparent);
+}
+
+.democracy-index-chart__filter-search-input {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink, #1f2937);
+  background: var(--paper, #fff);
+  border: 2px solid var(--ink-faint, rgba(31, 41, 55, 0.28));
+  border-radius: 10px;
+  padding: 0.3rem 0.55rem;
+}
+
+.democracy-index-chart__filter-search-input::placeholder {
+  color: var(--ink-soft, #4b5563);
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.democracy-index-chart__filter-search-input:focus-visible {
+  outline: 2px solid var(--chart-filter-accent, var(--sky, #4ecdc4));
+  outline-offset: 1px;
+  border-color: var(--chart-filter-accent, var(--sky, #4ecdc4));
+}
+
+.democracy-index-chart__filter-list {
+  overflow: auto;
+  padding: 0.35rem 0.4rem 0.55rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.democracy-index-chart__filter-empty {
+  margin: 0.55rem 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-soft, #4b5563);
+}
+
+.democracy-index-chart__filter-group-title {
+  margin: 0.35rem 0.35rem 0.15rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
+.democracy-index-chart__filter-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0.35rem 0.45rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+.democracy-index-chart__filter-option--nested {
+  padding-left: 1.35rem;
+  font-weight: 500;
+}
+
+.democracy-index-chart__filter-option--continent {
+  font-weight: 800;
+  margin-top: 0.35rem;
+}
+
+.democracy-index-chart__filter-list
+  > .democracy-index-chart__filter-group:first-child
+  > .democracy-index-chart__filter-option--continent:first-child {
+  margin-top: 0;
+}
+
+.democracy-index-chart__filter-option:hover {
+  background: color-mix(in srgb, var(--cream, #f7f3ea) 70%, transparent);
+}
+
+.democracy-index-chart__filter-option--on {
+  background: color-mix(
+    in srgb,
+    var(--chart-filter-accent, var(--sky, #4ecdc4)) 16%,
+    transparent
+  );
+}
+
+.democracy-index-chart__filter-option input {
+  margin-top: 0.12rem;
+  accent-color: var(--chart-filter-accent, var(--sky, #4ecdc4));
+  flex-shrink: 0;
+}
+
+/* Selection chips — secondary to the filter triggers (smaller, softer, tinted). */
+.democracy-index-chart__active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  align-items: center;
+  padding: 0 0.15rem;
+}
+
+.democracy-index-chart__active-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  max-width: 100%;
+  font: inherit;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--ink-soft, #4b5563);
+  background: color-mix(in srgb, var(--ink, #1f2937) 5%, var(--paper, #fff));
+  border: 1px solid color-mix(in srgb, var(--ink, #1f2937) 16%, transparent);
+  border-radius: 6px;
+  padding: 0.14rem 0.3rem 0.14rem 0.4rem;
+  cursor: pointer;
+}
+
+.democracy-index-chart__active-filter--continents {
+  color: color-mix(in srgb, var(--chart-filter-continents) 55%, var(--ink, #1f2937));
+  background: color-mix(in srgb, var(--chart-filter-continents) 14%, var(--paper, #fff));
+  border-color: color-mix(in srgb, var(--chart-filter-continents) 40%, transparent);
+}
+
+.democracy-index-chart__active-filter--membership {
+  color: color-mix(in srgb, var(--chart-filter-membership) 55%, var(--ink, #1f2937));
+  background: color-mix(in srgb, var(--chart-filter-membership) 14%, var(--paper, #fff));
+  border-color: color-mix(in srgb, var(--chart-filter-membership) 40%, transparent);
+}
+
+.democracy-index-chart__active-filter--indexes {
+  color: color-mix(in srgb, var(--chart-filter-indexes) 55%, var(--ink, #1f2937));
+  background: color-mix(in srgb, var(--chart-filter-indexes) 14%, var(--paper, #fff));
+  border-color: color-mix(in srgb, var(--chart-filter-indexes) 40%, transparent);
+}
+
+.democracy-index-chart__active-filter:hover,
+.democracy-index-chart__active-filter:focus-visible {
+  filter: brightness(0.96);
+}
+
+.democracy-index-chart__active-filter:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--ink, #1f2937) 35%, transparent);
+  outline-offset: 2px;
+}
+
+.democracy-index-chart__active-filter-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.democracy-index-chart__active-filter-x {
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.55;
+}
+
+.democracy-index-chart__active-filters-clear {
+  font: inherit;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--ink-soft, #4b5563);
+  background: transparent;
+  border: 0;
+  padding: 0.15rem 0.3rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.democracy-index-chart__active-filters-clear:hover,
+.democracy-index-chart__active-filters-clear:focus-visible {
+  color: var(--ink, #1f2937);
+}
+
+.democracy-index-chart__active-filters-clear:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--ink, #1f2937) 35%, transparent);
+  outline-offset: 2px;
+}
+
+.democracy-index-chart__trend-note {
+  margin: 0;
+  margin-left: auto;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink-soft, #4b5563);
+  white-space: nowrap;
+}
+
+.democracy-index-chart__select {
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink, #1f2937);
+  background: var(--paper, #fff);
+  border: 2px solid var(--ink-faint, rgba(31, 41, 55, 0.28));
+  border-radius: 10px;
+  padding: 0.3rem 0.55rem;
+  max-width: min(100%, 16rem);
+}
+
+.democracy-index-chart__select:focus-visible {
+  outline: 2px solid var(--sky, #4ecdc4);
+  outline-offset: 2px;
+}
+
+.democracy-index-chart__frame {
+  position: relative;
+  width: 100%;
+  /* Same 960:500 aspect as the world map SVG viewBox. */
+  aspect-ratio: 960 / 500;
+  /* Cap height to the same viewport budget the world map uses. */
+  --learn-map-chrome: calc(8.5rem + env(safe-area-inset-top));
+  max-height: calc(100vh - var(--learn-map-chrome));
+  max-height: calc(100dvh - var(--learn-map-chrome));
+  background: var(--paper, #ffffff);
+  border: 2px solid var(--ink, #1f2937);
+  border-radius: 12px;
+  box-shadow: 0 2px 0 var(--ink, #1f2937);
+  /* Visible so hover tooltips above top-row flags are not clipped. */
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.democracy-index-chart__empty {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  min-height: 12rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--ink-soft, #6b7280);
+  font-size: 0.95rem;
+}
+
+:root[data-theme="dark"] .democracy-index-chart__frame {
+  background: var(--paper, #1f2937);
+  border-color: var(--atlas-border, #374151);
+  box-shadow: none;
+}
+
+.democracy-index-chart__svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.democracy-index-chart__plot-bg {
+  fill: color-mix(in srgb, var(--cream, #f7f3ea) 55%, transparent);
+}
+
+:root[data-theme="dark"] .democracy-index-chart__plot-bg {
+  fill: color-mix(in srgb, var(--ink, #111) 18%, transparent);
+}
+
+.democracy-index-chart__band {
+  pointer-events: none;
+}
+
+.democracy-index-chart__band--even {
+  fill: color-mix(in srgb, var(--ink, #1f2937) 3.5%, transparent);
+}
+
+.democracy-index-chart__band--odd {
+  fill: transparent;
+}
+
+.democracy-index-chart__band-y {
+  pointer-events: none;
+}
+
+.democracy-index-chart__band-y--even {
+  fill: color-mix(in srgb, var(--coral-deep, #e05252) 4%, transparent);
+}
+
+.democracy-index-chart__band-y--odd {
+  fill: transparent;
+}
+
+.democracy-index-chart__grid {
+  stroke: color-mix(in srgb, var(--ink, #1f2937) 12%, transparent);
+  stroke-width: 1;
+}
+
+.democracy-index-chart__axis {
+  stroke: var(--ink, #1f2937);
+  stroke-width: 1.5;
+}
+
+.democracy-index-chart__axis-title {
+  fill: var(--ink, #1f2937);
+  font-size: 13px;
+  font-weight: 800;
+  font-family: var(--font-display, system-ui, sans-serif);
+  letter-spacing: 0.01em;
+  opacity: 0.9;
+}
+
+.democracy-index-chart__axis-title--y {
+  font-size: 12px;
+}
+
+.democracy-index-chart__trend {
+  stroke: var(--coral-deep, #e05252);
+  stroke-width: 2.25;
+  stroke-dasharray: 7 5;
+  stroke-linecap: round;
+  fill: none;
+  opacity: 0.9;
+}
+
+/* One-axis categorical bars/columns — teal like a standard value chart. */
+.democracy-index-chart__bar {
+  fill: #2bb3a3;
+  opacity: 0.88;
+}
+
+:root[data-theme="dark"] .democracy-index-chart__bar {
+  fill: #3dceb8;
+  opacity: 0.82;
+}
+
+.democracy-index-chart__bar--active,
+.democracy-index-chart__bar--selected {
+  fill: var(--coral-deep, #e05252);
+  opacity: 1;
+}
+
+.democracy-index-chart__bar--dimmed {
+  opacity: 0.18;
+}
+
+.democracy-index-chart__marker--bar-tip {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.democracy-index-chart--one-axis .democracy-index-chart__plot-bg {
+  fill: color-mix(in srgb, var(--cream, #f7f3ea) 35%, transparent);
+}
+
+.democracy-index-chart__tick {
+  fill: var(--ink, #1f2937);
+  font-size: 11px;
+  font-weight: 600;
+  font-family: var(--font-display, system-ui, sans-serif);
+  opacity: 0.75;
+}
+
+.democracy-index-chart__band-label {
+  fill: var(--ink, #1f2937);
+  font-size: 10px;
+  font-weight: 700;
+  font-family: var(--font-display, system-ui, sans-serif);
+  opacity: 0.72;
+  letter-spacing: 0.01em;
+  paint-order: stroke;
+  stroke: var(--paper, #ffffff);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.democracy-index-chart__band-label--y {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.democracy-index-chart__markers {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.democracy-index-chart__marker {
+  position: absolute;
+  width: 2.025rem;
+  height: 2.025rem;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+  border-radius: 3px;
+}
+
+.democracy-index-chart__marker:focus-visible {
+  outline: 2px solid var(--coral-deep, #e05252);
+  outline-offset: 2px;
+}
+
+.democracy-index-chart__marker--active .democracy-index-chart__flag,
+.democracy-index-chart__marker--selected .democracy-index-chart__flag {
+  box-shadow:
+    0 0 0 2px var(--paper, #fff),
+    0 0 0 3.5px var(--coral-deep, #e05252);
+}
+
+.democracy-index-chart__marker--dimmed {
+  opacity: 0.22;
+  filter: grayscale(0.55);
+}
+
+.democracy-index-chart__marker--dimmed:hover,
+.democracy-index-chart__marker--dimmed:focus-visible {
+  opacity: 0.55;
+  filter: grayscale(0.2);
+}
+
+.democracy-index-chart__flag {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  overflow: visible;
+  background: transparent;
+}
+
+.democracy-index-chart__flag-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: transparent;
+}
+
+.democracy-index-chart__pulse {
+  position: absolute;
+  inset: -0.55rem;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.democracy-index-chart__pulse-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--coral-deep, #e05252);
+  animation: map-ping-ring 1.6s ease-out infinite;
+  opacity: 0.85;
+}
+
+.democracy-index-chart__pulse-ring--2 {
+  animation-delay: 0.8s;
+}
+
+.democracy-index-chart__tooltip {
+  position: absolute;
+  z-index: 5;
+  transform: translate(-50%, calc(-100% - 0.85rem));
+  min-width: 12rem;
+  max-width: min(20rem, 92%);
+  padding: 0.55rem 0.75rem;
+  background: var(--paper, #ffffff);
+  color: var(--ink, #1f2937);
+  border: 2px solid var(--ink, #1f2937);
+  border-radius: 10px;
+  box-shadow: 0 2px 0 var(--ink, #1f2937);
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.92rem;
+  line-height: 1.3;
+  font-family: var(--font-display, system-ui, sans-serif);
+}
+
+.democracy-index-chart__tooltip--below {
+  transform: translate(-50%, 0.85rem);
+}
+
+:root[data-theme="dark"] .democracy-index-chart__tooltip {
+  background: var(--paper, #1f2937);
+  border-color: var(--atlas-border, #374151);
+  box-shadow: none;
+}
+
+.democracy-index-chart__tooltip-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.democracy-index-chart__tooltip-row {
+  font-size: 0.86rem;
+  font-weight: 600;
+  opacity: 0.92;
+}
+
+.democracy-index-chart__tooltip-axis {
+  display: inline-block;
+  min-width: 1.1rem;
+  margin-right: 0.25rem;
+  font-weight: 800;
+  color: var(--coral-deep, #e05252);
+}
+
+@media (max-width: 900px) {
+  .learn-fs__map-col {
+    max-height: none;
+  }
+
+  .democracy-index-chart {
+    max-width: 100%;
+    padding: 0 0.15rem 0.35rem;
+  }
+
+  .democracy-index-chart__trend-note {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .democracy-index-chart__frame {
+    max-height: 55vh;
+  }
+
+  .democracy-index-chart__marker {
+    width: 1.725rem;
+    height: 1.725rem;
+  }
+
+  .democracy-index-chart__tooltip {
+    font-size: 0.86rem;
+  }
 }
 
 .democracy-map-legend {

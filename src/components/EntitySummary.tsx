@@ -2,7 +2,14 @@ import { GOVERNMENT_TYPES } from "../lib/governmentTypes";
 import { formatPopulation } from "../lib/formatPopulation";
 import { NATIONAL_REFERENCE_POPULATION } from "../data/subdivisionPopulation";
 import { COUNTRY_ENDONYMS } from "../data/countryEndonyms";
+import { membershipsForCountry } from "../data/countryBlocks";
 import type { Country } from "../api/countries";
+import {
+  getDemocracyIndexLabel,
+  getDemocracyIndexMenuGroups,
+  type DemocracyIndexKey,
+} from "../lib/democracyColors";
+import { MembershipBadge } from "./MembershipBadge";
 
 /**
  * Structured "fact-sheet" view of an entity for the Learn-mode panel.
@@ -19,12 +26,24 @@ import type { Country } from "../api/countries";
  * reference, not something the user should have to expand).
  */
 
+/** Which rows a modern-country fact-sheet renders. "all" is the legacy
+ *  single-list mode; the Learn panel tabs pass "facts" (Overview),
+ *  "finance", "indices" (Rankings), or "politics". */
+export type EntitySummarySection =
+  | "all"
+  | "facts"
+  | "finance"
+  | "indices"
+  | "politics";
+
 export type ModernSummaryProps = {
   kind: "modern";
   country: Country;
   /** Extra content rendered at the bottom of the fact list — e.g. the
-   *  National Anthem row. */
+   *  National Anthem row. Only used for "facts" / "all". */
   footer?: React.ReactNode;
+  /** Defaults to "all" so existing callers keep the full fact-sheet. */
+  section?: EntitySummarySection;
 };
 
 export type HistoricalSummaryProps = {
@@ -125,71 +144,412 @@ function formatRankChange(rc?: number): string {
 function formatDemocracyIndex(idx?: { year: number; rating: string; rank: number; rankChange?: number }): string | null {
   if (!idx) return null;
   const changeStr = formatRankChange(idx.rankChange);
-  return `Rank ${idx.rank}${changeStr} · ${idx.rating} (${idx.year})`;
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating}`;
+}
+
+/** CPI shows the 0–100 score (the index’s primary figure), not the map score-band. */
+function formatCpiIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score}`;
+}
+
+/** DPI shows tier + Index Score (net % positive − % negative). */
+function formatPerceptionIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  const scoreStr = idx.score > 0 ? `+${idx.score}` : `${idx.score}`;
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${scoreStr}`;
+}
+
+/** WJP shows the 0–1 overall score (the index’s primary figure), not the map band. */
+function formatWjpIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(2)}`;
+}
+
+/** HDI shows the 0–1 score (the index’s primary figure) plus the UNDP category. */
+function formatHdiIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)}`;
+}
+
+/** WEF Global Gender Gap Index — published 0–1 parity score. */
+function formatGenderGapIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(3)}`;
+}
+
+/** GPI shows State of Peace band + overall score (lower = more peaceful). */
+function formatGpiIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)}`;
+}
+
+
+/** WHR shows the Cantril ladder score (0–10), the index’s primary figure. */
+function formatHappinessIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(3)}`;
+}
+
+/** Brand Finance Global Soft Power Index — score out of 100. */
+function formatSoftPowerIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(1)}`;
+}
+
+/** Lowy Global Diplomacy Index — total diplomatic posts abroad. */
+function formatGdiIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · ${idx.score} posts`;
+}
+
+/** IMD World Competitiveness Ranking — 0–100 overall score. */
+function formatImdCompetitivenessIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(2)}`;
+}
+
+/** ETR shows threat band + overall score (higher = greater ecological threat). */
+/** Digital News Report — trust in news overall (% agreeing most news is trustworthy). */
+function formatDigitalNewsIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · ${idx.score}% trust`;
+}
+
+
+/** GTI shows impact band + overall score (higher = greater terrorism impact). */
+function formatGtiIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)}`;
+}
+
+function formatEtrIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)}`;
+}
+
+function buildFactsRows(c: Country): { label: string; value: React.ReactNode }[] {
+  const rows: { label: string; value: React.ReactNode }[] = [];
+  if (c.nameOfficial && c.nameOfficial !== c.name)
+    rows.push({ label: "Name", value: c.nameOfficial });
+  // Local (native-language) name, shown above the population where it differs
+  // from the English exonym the app uses (e.g. Germany → Deutschland).
+  const endonym = COUNTRY_ENDONYMS[c.code];
+  if (endonym) rows.push({ label: "Local name", value: endonym });
+  // Population sits ABOVE Capital and is ALWAYS shown: the live World Bank /
+  // REST figure wins, but a bundled reference (NATIONAL_REFERENCE_POPULATION,
+  // latest dated country-level P1082) fills in when the live source is blocked
+  // or slow, so the row never disappears.
+  const pop =
+    typeof c.population === "number"
+      ? c.population
+      : NATIONAL_REFERENCE_POPULATION[c.code];
+  if (typeof pop === "number")
+    rows.push({ label: "Population", value: formatPopulation(pop) });
+  if (c.capital) rows.push({ label: "Capital", value: c.capital });
+  if (c.languages && c.languages.length > 0)
+    rows.push({
+      label: c.languages.length === 1 ? "Language" : "Languages",
+      value: c.languages.slice(0, 4).join(", "),
+    });
+  if (c.callingCode) rows.push({ label: "Calling code", value: c.callingCode });
+  if (c.tld && c.tld.length > 0)
+    rows.push({
+      label: c.tld.length === 1 ? "Internet domain" : "Internet domains",
+      value: c.tld.join(", "),
+    });
+
+  return rows;
+}
+
+/** Currency + GDP — Finance tab. */
+function buildFinanceRows(c: Country): { label: string; value: React.ReactNode }[] {
+  const rows: { label: string; value: React.ReactNode }[] = [];
+  if (c.currencies && c.currencies.length > 0)
+    rows.push({
+      label: c.currencies.length === 1 ? "Currency" : "Currencies",
+      value: c.currencies.map(formatCurrency).join(", "),
+    });
+  const gdpVal = formatGdpRow(c);
+  if (gdpVal) rows.push({ label: "GDP", value: gdpVal });
+  const gdpCapVal = formatGdpPerCapitaRow(c);
+  if (gdpCapVal) rows.push({ label: "GDP per capita", value: gdpCapVal });
+  return rows;
+}
+
+/** Continent / region — geographic context for Overview. */
+function buildGeoRows(c: Country): { label: string; value: React.ReactNode }[] {
+  const rows: { label: string; value: React.ReactNode }[] = [];
+  if (c.continent) rows.push({ label: "Continent", value: c.continent });
+  if (c.subregion) rows.push({ label: "Region", value: c.subregion });
+  return rows;
+}
+
+/** Government type + organisation membership — Politics tab. */
+function buildPoliticsRows(c: Country): { label: string; value: React.ReactNode }[] {
+  const rows: { label: string; value: React.ReactNode }[] = [];
+  const government = GOVERNMENT_TYPES[c.code];
+  if (government) rows.push({ label: "Government", value: government });
+
+  // Each badge reveals full name (abbr) + sourced explainer on hover/tap.
+  const memberships = membershipsForCountry(c.code);
+  if (memberships.length > 0) {
+    rows.push({
+      label: "Membership",
+      value: (
+        <ul className="entity-summary__membership">
+          {memberships.map((m) => (
+            <MembershipBadge
+              key={m.id}
+              block={m}
+              countryCode={c.code}
+              countryName={c.name}
+            />
+          ))}
+        </ul>
+      ),
+    });
+  }
+  return rows;
+}
+
+/** Legacy single-list order: identity → finance → indices → politics → geo. */
+function interleaveFactsAndIndices(
+  c: Country,
+): { label: string; value: React.ReactNode }[] {
+  return [
+    ...buildFactsRows(c),
+    ...buildFinanceRows(c),
+    ...buildIndicesRows(c),
+    ...buildPoliticsRows(c),
+    ...buildGeoRows(c),
+  ];
+}
+
+/** Format one index value for the Rankings / legacy fact-sheet rows. */
+function formatIndexValue(c: Country, key: DemocracyIndexKey): string | null {
+  const d = c.democracy;
+  if (!d) return null;
+  switch (key) {
+    case "freedom-house":
+      return formatDemocracyIndex(d.freedomHouse);
+    case "v-dem":
+      return formatDemocracyIndex(d.vDem);
+    case "economist":
+      return formatDemocracyIndex(d.economist);
+    case "cpi":
+      return formatCpiIndex(d.cpi);
+    case "perception":
+      return formatPerceptionIndex(d.perception);
+    case "rsf-press":
+      return formatDemocracyIndex(d.rsfPress);
+    case "wjp-rule-of-law":
+      return formatWjpIndex(d.wjpRuleOfLaw);
+    case "hdi":
+      return formatHdiIndex(d.hdi);
+    case "gender-gap":
+      return formatGenderGapIndex(d.genderGap);
+    case "gpi":
+      return formatGpiIndex(d.gpi);
+    case "happiness":
+      return formatHappinessIndex(d.happiness);
+    case "soft-power":
+      return formatSoftPowerIndex(d.softPower);
+    case "gdi":
+      return formatGdiIndex(d.gdi);
+    case "imd-competitiveness":
+      return formatImdCompetitivenessIndex(d.imdCompetitiveness);
+    case "etr":
+      return formatEtrIndex(d.etr);
+    case "digital-news":
+      return formatDigitalNewsIndex(d.digitalNews);
+    case "gti":
+      return formatGtiIndex(d.gti);
+    default: {
+      const _exhaustive: never = key;
+      return _exhaustive;
+    }
+  }
+}
+
+type IndicesGroup = {
+  id: string;
+  label: string;
+  rows: { label: string; value: React.ReactNode }[];
+};
+
+/**
+ * Rankings rows grouped by the same theme order as the map control / Group-by
+ * menus (`getDemocracyIndexMenuGroups`). Empty groups are dropped so a country
+ * with sparse coverage still shows only the themes it has data for.
+ */
+function buildIndicesGroups(c: Country): IndicesGroup[] {
+  if (!c.democracy) return [];
+  return getDemocracyIndexMenuGroups()
+    .map((group) => ({
+      id: group.theme.id,
+      label: group.theme.label,
+      rows: group.indexes
+        .map((meta) => {
+          const value = formatIndexValue(c, meta.key);
+          return value
+            ? { label: getDemocracyIndexLabel(meta.key), value }
+            : null;
+        })
+        .filter((r): r is { label: string; value: string } => r != null),
+    }))
+    .filter((g) => g.rows.length > 0);
+}
+
+/** Flat list for the legacy "all" fact-sheet — same theme order as Rankings. */
+function buildIndicesRows(c: Country): { label: string; value: React.ReactNode }[] {
+  return buildIndicesGroups(c).flatMap((g) => g.rows);
 }
 
 export function EntitySummary(props: EntitySummaryProps) {
   if (props.kind === "modern") {
     const c = props.country;
-    const government = GOVERNMENT_TYPES[c.code];
-    const rows: { label: string; value: React.ReactNode }[] = [];
-    if (c.nameOfficial && c.nameOfficial !== c.name)
-      rows.push({ label: "Name", value: c.nameOfficial });
-    // Local (native-language) name, shown above the population where it differs
-    // from the English exonym the app uses (e.g. Germany → Deutschland).
-    const endonym = COUNTRY_ENDONYMS[c.code];
-    if (endonym) rows.push({ label: "Local name", value: endonym });
-    // Population sits ABOVE Capital and is ALWAYS shown: the live World Bank /
-    // REST figure wins, but a bundled reference (NATIONAL_REFERENCE_POPULATION,
-    // latest dated country-level P1082) fills in when the live source is blocked
-    // or slow, so the row never disappears.
-    const pop =
-      typeof c.population === "number"
-        ? c.population
-        : NATIONAL_REFERENCE_POPULATION[c.code];
-    if (typeof pop === "number")
-      rows.push({ label: "Population", value: formatPopulation(pop) });
-    if (c.capital) rows.push({ label: "Capital", value: c.capital });
-    if (c.languages && c.languages.length > 0)
-      rows.push({
-        label: c.languages.length === 1 ? "Language" : "Languages",
-        value: c.languages.slice(0, 4).join(", "),
-      });
-    if (c.currencies && c.currencies.length > 0)
-      rows.push({
-        label: c.currencies.length === 1 ? "Currency" : "Currencies",
-        value: c.currencies.map(formatCurrency).join(", "),
-      });
-    if (c.callingCode) rows.push({ label: "Calling code", value: c.callingCode });
-    if (c.tld && c.tld.length > 0)
-      rows.push({
-        label: c.tld.length === 1 ? "Internet domain" : "Internet domains",
-        value: c.tld.join(", "),
-      });
+    const section = props.section ?? "all";
+    const footer =
+      section === "indices" ||
+      section === "politics" ||
+      section === "finance"
+        ? undefined
+        : props.footer;
 
-    const gdpVal = formatGdpRow(c);
-    if (gdpVal) rows.push({ label: "GDP", value: gdpVal });
-
-    const gdpCapVal = formatGdpPerCapitaRow(c);
-    if (gdpCapVal) rows.push({ label: "GDP per capita", value: gdpCapVal });
-
-    if (c.democracy) {
-      const fh = formatDemocracyIndex(c.democracy.freedomHouse);
-      if (fh) rows.push({ label: "Freedom House", value: fh });
-
-      const vdem = formatDemocracyIndex(c.democracy.vDem);
-      if (vdem) rows.push({ label: "V-Dem", value: vdem });
-
-      const econ = formatDemocracyIndex(c.democracy.economist);
-      if (econ) rows.push({ label: "The Economist", value: econ });
+    if (section === "indices") {
+      const groups = buildIndicesGroups(c);
+      if (groups.length === 0) {
+        return (
+          <p className="learn-panel-tabs__empty">
+            No governance or ratings indices sourced for this country yet.
+          </p>
+        );
+      }
+      return (
+        <div className="entity-summary__groups">
+          {groups.map((group) => (
+            <section key={group.id} className="entity-summary__group">
+              <h3 className="entity-summary__group-label">{group.label}</h3>
+              <SummaryList rows={group.rows} />
+            </section>
+          ))}
+        </div>
+      );
     }
 
-    if (government) rows.push({ label: "Government", value: government });
-    // Continent + Region shown last (the country name now lives in the search
-    // bar at the top of the widget, and its continent/region moved here).
-    if (c.continent) rows.push({ label: "Continent", value: c.continent });
-    if (c.subregion) rows.push({ label: "Region", value: c.subregion });
-    return <SummaryList rows={rows} footer={props.footer} />;
+    const rows =
+      section === "all"
+        ? interleaveFactsAndIndices(c)
+        : section === "facts"
+          ? [...buildFactsRows(c), ...buildGeoRows(c)]
+          : section === "finance"
+            ? buildFinanceRows(c)
+            : section === "politics"
+              ? buildPoliticsRows(c)
+              : buildIndicesRows(c);
+    if (section === "finance" && rows.length === 0) {
+      return (
+        <p className="learn-panel-tabs__empty">
+          No currency or GDP figures sourced for this country yet.
+        </p>
+      );
+    }
+    if (section === "politics" && rows.length === 0) {
+      return null;
+    }
+    return <SummaryList rows={rows} footer={footer} />;
   }
 
   // Historical — sparser, with the curated note shown above the fact list.

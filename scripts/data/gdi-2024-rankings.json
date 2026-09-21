@@ -1,0 +1,403 @@
+{
+  "source": "https://globaldiplomacyindex.lowyinstitute.org/data/2023/get_country_data.json",
+  "index": "Lowy Institute Global Diplomacy Index 2024",
+  "dataCollected": "July–November 2023",
+  "rankings": [
+    {
+      "name": "China",
+      "rank_overall": 1,
+      "total_posts": 274,
+      "trend_overall": 0
+    },
+    {
+      "name": "United States",
+      "rank_overall": 2,
+      "total_posts": 271,
+      "trend_overall": 0
+    },
+    {
+      "name": "Türkiye",
+      "rank_overall": 3,
+      "total_posts": 252,
+      "trend_overall": 1
+    },
+    {
+      "name": "Japan",
+      "rank_overall": 4,
+      "total_posts": 251,
+      "trend_overall": 0
+    },
+    {
+      "name": "France",
+      "rank_overall": 5,
+      "total_posts": 249,
+      "trend_overall": -1
+    },
+    {
+      "name": "Russia",
+      "rank_overall": 6,
+      "total_posts": 230,
+      "trend_overall": 0
+    },
+    {
+      "name": "United Kingdom",
+      "rank_overall": 7,
+      "total_posts": 225,
+      "trend_overall": 0
+    },
+    {
+      "name": "Germany",
+      "rank_overall": 8,
+      "total_posts": 217,
+      "trend_overall": 0
+    },
+    {
+      "name": "Italy",
+      "rank_overall": 9,
+      "total_posts": 206,
+      "trend_overall": 1
+    },
+    {
+      "name": "Brazil",
+      "rank_overall": 10,
+      "total_posts": 205,
+      "trend_overall": 0
+    },
+    {
+      "name": "India",
+      "rank_overall": 11,
+      "total_posts": 194,
+      "trend_overall": 1
+    },
+    {
+      "name": "Spain",
+      "rank_overall": 12,
+      "total_posts": 190,
+      "trend_overall": -1
+    },
+    {
+      "name": "South Korea",
+      "rank_overall": 13,
+      "total_posts": 187,
+      "trend_overall": 0
+    },
+    {
+      "name": "Mexico",
+      "rank_overall": 14,
+      "total_posts": 161,
+      "trend_overall": 0
+    },
+    {
+      "name": "Canada",
+      "rank_overall": 15,
+      "total_posts": 157,
+      "trend_overall": 1
+    },
+    {
+      "name": "Argentina",
+      "rank_overall": 16,
+      "total_posts": 150,
+      "trend_overall": -1
+    },
+    {
+      "name": "Netherlands",
+      "rank_overall": 17,
+      "total_posts": 149,
+      "trend_overall": -1
+    },
+    {
+      "name": "European Union*",
+      "rank_overall": 18,
+      "total_posts": 143,
+      "trend_overall": 1
+    },
+    {
+      "name": "Switzerland",
+      "rank_overall": 19,
+      "total_posts": 141,
+      "trend_overall": -1
+    },
+    {
+      "name": "Hungary",
+      "rank_overall": 20,
+      "total_posts": 140,
+      "trend_overall": 1
+    },
+    {
+      "name": "Poland",
+      "rank_overall": 21,
+      "total_posts": 135,
+      "trend_overall": -1
+    },
+    {
+      "name": "Greece",
+      "rank_overall": 22,
+      "total_posts": 134,
+      "trend_overall": -1
+    },
+    {
+      "name": "Indonesia",
+      "rank_overall": 23,
+      "total_posts": 130,
+      "trend_overall": 0
+    },
+    {
+      "name": "Saudi Arabia",
+      "rank_overall": 24,
+      "total_posts": 128,
+      "trend_overall": 1
+    },
+    {
+      "name": "Portugal",
+      "rank_overall": 25,
+      "total_posts": 127,
+      "trend_overall": -1
+    },
+    {
+      "name": "Australia",
+      "rank_overall": 26,
+      "total_posts": 124,
+      "trend_overall": 0
+    },
+    {
+      "name": "Chile",
+      "rank_overall": 27,
+      "total_posts": 121,
+      "trend_overall": -1
+    },
+    {
+      "name": "Pakistan",
+      "rank_overall": 27,
+      "total_posts": 121,
+      "trend_overall": 1
+    },
+    {
+      "name": "Czechia",
+      "rank_overall": 29,
+      "total_posts": 120,
+      "trend_overall": 1
+    },
+    {
+      "name": "Colombia",
+      "rank_overall": 30,
+      "total_posts": 117,
+      "trend_overall": 0
+    },
+    {
+      "name": "South Africa",
+      "rank_overall": 31,
+      "total_posts": 114,
+      "trend_overall": -1
+    },
+    {
+      "name": "Belgium",
+      "rank_overall": 32,
+      "total_posts": 113,
+      "trend_overall": -1
+    },
+    {
+      "name": "Taiwan**",
+      "rank_overall": 33,
+      "total_posts": 110,
+      "trend_overall": 0
+    },
+    {
+      "name": "Israel",
+      "rank_overall": 34,
+      "total_posts": 107,
+      "trend_overall": 1
+    },
+    {
+      "name": "Malaysia",
+      "rank_overall": 35,
+      "total_posts": 106,
+      "trend_overall": -1
+    },
+    {
+      "name": "Austria",
+      "rank_overall": 36,
+      "total_posts": 104,
+      "trend_overall": 1
+    },
+    {
+      "name": "Sweden",
+      "rank_overall": 37,
+      "total_posts": 102,
+      "trend_overall": -1
+    },
+    {
+      "name": "Ireland",
+      "rank_overall": 38,
+      "total_posts": 98,
+      "trend_overall": 1
+    },
+    {
+      "name": "Thailand",
+      "rank_overall": 39,
+      "total_posts": 97,
+      "trend_overall": 0
+    },
+    {
+      "name": "Philippines",
+      "rank_overall": 40,
+      "total_posts": 94,
+      "trend_overall": 1
+    },
+    {
+      "name": "Vietnam",
+      "rank_overall": 40,
+      "total_posts": 94,
+      "trend_overall": 0
+    },
+    {
+      "name": "Norway",
+      "rank_overall": 42,
+      "total_posts": 91,
+      "trend_overall": -1
+    },
+    {
+      "name": "Denmark",
+      "rank_overall": 43,
+      "total_posts": 90,
+      "trend_overall": -1
+    },
+    {
+      "name": "Finland",
+      "rank_overall": 43,
+      "total_posts": 90,
+      "trend_overall": 1
+    },
+    {
+      "name": "Slovakia",
+      "rank_overall": 45,
+      "total_posts": 82,
+      "trend_overall": 0
+    },
+    {
+      "name": "Bangladesh",
+      "rank_overall": 46,
+      "total_posts": 80,
+      "trend_overall": 0
+    },
+    {
+      "name": "New Zealand",
+      "rank_overall": 47,
+      "total_posts": 68,
+      "trend_overall": 1
+    },
+    {
+      "name": "Lithuania",
+      "rank_overall": 48,
+      "total_posts": 62,
+      "trend_overall": 0
+    },
+    {
+      "name": "Sri Lanka",
+      "rank_overall": 49,
+      "total_posts": 60,
+      "trend_overall": -1
+    },
+    {
+      "name": "Slovenia",
+      "rank_overall": 50,
+      "total_posts": 58,
+      "trend_overall": 1
+    },
+    {
+      "name": "Costa Rica",
+      "rank_overall": 51,
+      "total_posts": 52,
+      "trend_overall": -1
+    },
+    {
+      "name": "Mongolia",
+      "rank_overall": 52,
+      "total_posts": 50,
+      "trend_overall": 1
+    },
+    {
+      "name": "Singapore",
+      "rank_overall": 52,
+      "total_posts": 50,
+      "trend_overall": 0
+    },
+    {
+      "name": "Estonia",
+      "rank_overall": 54,
+      "total_posts": 46,
+      "trend_overall": 1
+    },
+    {
+      "name": "Latvia",
+      "rank_overall": 54,
+      "total_posts": 46,
+      "trend_overall": 0
+    },
+    {
+      "name": "Luxembourg",
+      "rank_overall": 54,
+      "total_posts": 46,
+      "trend_overall": 1
+    },
+    {
+      "name": "Myanmar",
+      "rank_overall": 54,
+      "total_posts": 46,
+      "trend_overall": 1
+    },
+    {
+      "name": "Cambodia",
+      "rank_overall": 58,
+      "total_posts": 43,
+      "trend_overall": 0
+    },
+    {
+      "name": "North Korea",
+      "rank_overall": 58,
+      "total_posts": 43,
+      "trend_overall": -1
+    },
+    {
+      "name": "Brunei",
+      "rank_overall": 60,
+      "total_posts": 42,
+      "trend_overall": -1
+    },
+    {
+      "name": "Laos",
+      "rank_overall": 61,
+      "total_posts": 40,
+      "trend_overall": 0
+    },
+    {
+      "name": "Nepal",
+      "rank_overall": 61,
+      "total_posts": 40,
+      "trend_overall": 0
+    },
+    {
+      "name": "Timor-Leste",
+      "rank_overall": 63,
+      "total_posts": 31,
+      "trend_overall": 0
+    },
+    {
+      "name": "Iceland",
+      "rank_overall": 64,
+      "total_posts": 26,
+      "trend_overall": -1
+    },
+    {
+      "name": "Papua New Guinea",
+      "rank_overall": 65,
+      "total_posts": 21,
+      "trend_overall": -1
+    },
+    {
+      "name": "Bhutan",
+      "rank_overall": 66,
+      "total_posts": 10,
+      "trend_overall": -1
+    }
+  ]
+}

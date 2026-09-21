@@ -384,6 +384,51 @@ design, http(s) source, bundled image matching its recorded sha256, a `licenceNo
 choice is correct — that is rule 7's visual verification plus the montage-scan of rule 5. Never weaken
 the check to force a crest through; fix the crest or its sourcing.
 
+## Football association World Cup records: always show participations and titles — hard rule, do not override without approval
+
+**Whenever a football-association crest is shown in the Learn-mode information panel (world-map Show →
+Football associations, or the country's Sports / National symbols football section), the panel MUST
+also show that association's sourced FIFA World Cup participations and titles — men's and women's.
+Zeros are honest for associations that have never qualified or won; suppressing the rows is not.**
+
+### Why this rule exists
+
+Owner report (2026-09): World Cup participation / win figures that used to sit with the crest had
+disappeared from the information panel. Olympic committee logos keep their Games / medal / athlete
+`stats` rows; football crests had no equivalent attachment, so selecting a crest showed the logo and
+design alone. An omission the user cannot see makes an incomplete fact-sheet look complete — the same
+class of bug as a missing Torres Strait Islander Flag entry.
+
+### Rules
+
+1. **Every `footballcrest` entry displays four sourced rows** via `withFootballCrestStats()` /
+   `footballCrestStats()` in `src/lib/footballCrestStats.ts`, backed by `src/data/worldCupRecords.ts`:
+   Men's World Cups participated, Men's World Cup titles, Women's World Cups participated, Women's
+   World Cup titles. Titles stay in lock-step with `worldCupTitles.ts` (the Football-crests grid
+   groupings). Appearances come from Wikipedia's national-team appearance tables (men through the
+   2026 tournament; women through 2023 — future / qualified-only cells are NOT counted).
+2. **Both panel surfaces must attach the rows** — `LearnPage` (world-map Show path) AND
+   `NationalFlagDetails` (National symbols / Sports widget). Attaching in only one place reintroduces
+   the bug on the other.
+3. **Never remove, rename, or gate the four rows behind a feature flag**, and never drop
+   `flag.stats?.map` / `panelSymbol.stats` rendering so the rows have nowhere to go. A crest with no
+   record ships with zeros, not with silence.
+4. **Re-generate with `node scripts/build-world-cup-records.mjs`** after a new World Cup concludes;
+   never hand-edit `worldCupRecords.ts` for a one-off.
+5. **Verify in the running app** (the mandatory visual-verification rule applies): open Show →
+   Football associations, select Brazil, and confirm the four rows (23 / 5 / 9 / 0 as of men's 2026
+   and women's 2023); select Australia and confirm men's appearances and women's appearances both
+   render; open the same crest from the country's Sports tab and confirm the rows appear there too.
+
+### Enforcement
+
+`scripts/check-football-crest-stats.mjs` (`npm run flags:check:football-wc`, in `npm run flags:check`,
+`npm run test:ui`, and the `check-era-maps` CI job) **fails the build** when a footballcrest lacks a
+`WORLD_CUP_RECORDS` entry, when titles drift from `worldCupTitles.ts`, when women's appearances exceed
+the number of completed tournaments (the future-cell bug), or when `LearnPage` /
+`NationalFlagDetails` stop calling `withFootballCrestStats` / stop rendering `stats`. Never weaken it
+to hide a crest; fix the record or the wiring.
+
 ## Capital-city flags: never blindly trust P41, missing ≠ nonexistent — hard rule, do not override without approval
 
 **The Learn-mode "View capital" drill-down (`CapitalDetails.tsx`, wired in `LearnPage.tsx`) shows the
@@ -1542,6 +1587,151 @@ country or gains an implausible year, or if a curated `modernName` points at a c
 no adoption year (which would silently refuse the flag the author intended). It also prints
 every borrow the gate refused, so the curation stays visible. Never weaken it; fix the data.
 
+## Membership badges: full name, abbreviation, sourced explainer — hard rule, do not override without approval
+
+**Every Learn-mode country-widget Membership badge (`EntitySummary` →
+`MembershipBadge`, data `COUNTRY_BLOCKS` in `src/data/countryBlocks.ts`) MUST
+reveal, on hover or tap/focus, a tooltip whose title is
+`{fullName} ({abbreviation})` (e.g. `North Atlantic Treaty Organization (NATO)`)
+and whose body is a short sourced explainer covering (1) what the organisation
+is, (2) when it was created, and (3) when THIS country joined — or that it is a
+founding member. A bare badge label with no tooltip is forbidden.**
+
+### Why this rule exists
+
+Membership pills used to show only the short label (`NATO`, `Mercosur`). Users
+could not tell what the organisation was, when it began, or what the country's
+relationship to it was — Brazil looks the same as a late joiner until you know
+it is a Mercosur founder (Treaty of Asunción, 1991). The tooltip makes that
+structured fact visible without cluttering the badge row.
+
+### Rules
+
+1. **Every `CountryBlock` carries `fullName`, `abbreviation`, `founded`,
+   `summary`, and a `joined` map covering every code in `codes`.** Adding a
+   membership (or a member) means filling those fields in the same change —
+   never ship a badge that cannot explain itself.
+2. **Tooltip title is always `membershipDisplayName(block)`** —
+   `{fullName} ({abbreviation})`. Never hand-write a parallel title string in
+   the component.
+3. **Tooltip body is always `membershipExplainer(block, code, countryName)`** —
+   summary + `Created in {founded}.` + either `{country} is a founding member.`
+   (when `joined[code] === founded`) or `{country} became a member in {year}.`.
+   Never invent a join year; if a year cannot be sourced, omit the membership
+   from `codes` rather than guess.
+4. **Hover AND tap/focus must reveal the tip** (`:hover` and `:focus-within` on
+   the badge item; the control is a focusable `<button>`). Desktop-only `title=`
+   tooltips are not enough — touch users must get the same explainer.
+5. **Never weaken `scripts/check-country-blocks.mjs`** to force a block through.
+   If it fires, the metadata or the tooltip wiring is wrong — fix the data /
+   component, not the check.
+6. **Verify in the running app** (the mandatory visual-verification rule
+   applies): open Brazil's **Politics** tab, hover/tap **Mercosur**, confirm
+   the tip reads `Southern Common Market (Mercosur)` and states Brazil is a
+   founding member created in 1991; open Finland, confirm **NATO** states
+   membership from 2023.
+
+### Enforcement
+
+`scripts/check-country-blocks.mjs` (`npm run blocks:check`, in `npm run test:ui`
+/ `flags:check` and the `flag-integrity` workflow) **fails the build** when a
+block lacks `fullName` / `abbreviation` / `founded` / `summary` / per-code
+`joined`, when a join year precedes `founded`, when `EntitySummary` stops
+rendering `MembershipBadge`, when the badge loses `membershipDisplayName` /
+`membershipExplainer` / `role="tooltip"`, or when the CSS hover/focus-within tip
+rules disappear. Never weaken it; fix the membership data or the tooltip.
+
+## Index labels: thematic groups, year + publisher, never "Global" — hard rule, do not override without approval
+
+**Every Learn-mode democracy / governance / ratings index label — map colour dropdown,
+chart axis pickers, flag-grid Group-by, country-widget rows, map legend title, and any
+future surface — MUST come from `DEMOCRACY_INDEX_META` via `getDemocracyIndexLabel()`
+in `src/lib/democracyColors.ts`. The format is always `{name}, {year} ({publisher})`
+(e.g. `Peace Index, 2026 (Institute for Economics & Peace)`). Hand-written index titles
+are forbidden — present and future.**
+
+### Why this rule exists
+
+Indexes arrived with inconsistent names ("Global Peace Index" vs "Peace Index"), missing
+years, missing publishers, and an unsorted flat dropdown. Side-by-side they read as an
+ad-hoc list rather than one Learn-mode family. Centralising the label makes "same naming
+practice" structural: a new index cannot ship without a year, a publisher, a theme group,
+and the shared format.
+
+### Rules
+
+1. **`DEMOCRACY_INDEX_META` is the only source of index display names.** Adding an index
+   means adding a meta row (`name`, `year`, `publisher`, `theme`) in the same change as
+   `DEMOCRACY_INDEX_KEYS` and `INDEX_MAP_COLOR_REGISTRY`. Never hand-write a title in a
+   component, Group-by map, or fact-sheet row.
+2. **`name` never contains "Global".** Coverage is already global; the word is noise.
+   Prefer the short index name (`Peace Index`, `Gender Gap Index`, `Soft Power Index`).
+3. **Label format is always `{name}, {year} ({publisher})`** — built by
+   `formatDemocracyIndexLabel()` / `getDemocracyIndexLabel()`. The year is the bundled
+   COUNTRY_FACTS edition year; the publisher is the organisation responsible for the index.
+4. **Menus are grouped thematically, then A–Z within each group.**
+   `DEMOCRACY_INDEX_THEME_GROUPS` + `getDemocracyIndexMenuGroups()` drive the map dropdown
+   (with line separators between groups), the chart axis `<optgroup>`s, and the flag-grid
+   Group-by optgroups. Never reintroduce a flat unsorted `DEMOCRACY_INDEX_KEYS.map(…)`.
+5. **Never weaken `scripts/check-index-labels.mjs`** to force a label through. If it fires,
+   the label or its wiring is wrong — fix the meta / the caller, not the check.
+6. **Verify in the running app** (the mandatory visual-verification rule applies): open the
+   Learn map's indexes control, confirm thematic groups with separators, A–Z within each
+   group, no "Global" in any name, and every option shows year + publisher; open a country
+   widget and confirm the same label form on each index row.
+
+### Enforcement
+
+`scripts/check-index-labels.mjs` (`npm run index-labels:check`, in `npm run flags:check`
+and the `check-era-maps` CI job — it imports `democracyColors.ts` / `countryFacts.ts`, so
+it needs Node 22.18+) **fails the build** when meta coverage drifts from
+`DEMOCRACY_INDEX_KEYS`, when a name contains "Global", when the label format drifts, when
+`meta.year` disagrees with COUNTRY_FACTS, when menu groups are unsorted or incomplete, when
+a UI surface stops calling the shared helpers, or when a hand-written `Global … Index`
+string reappears under `src/`. Never weaken it; fix the label.
+
+## Index map colours must share one green→red palette — hard rule, do not override without approval
+
+**Every Learn-mode democracy / governance / ratings index map (Freedom House, V-Dem, The Economist,
+CPI, DPI, RSF, HDI, Gender Gap, GPI, Happiness, Soft Power, GDI, WJP, IMD, ETR, Digital News, GTI,
+and any future index) MUST colour its bands by sampling the single shared `INDEX_MAP_PALETTE` in
+`src/lib/democracyColors.ts` via `indexBandColors(labelsBestFirst)`. Hand-written per-index hex
+palettes are forbidden — present and future.**
+
+### Why this rule exists
+
+Indexes arrived with different publisher colour schemes (IEP teal for GPI, UNDP blues for HDI, …).
+Side-by-side on the same map control they read as unrelated products, not as one Learn-mode family.
+Aligning one index by pasting hexes into its `*_MAP_COLORS` object only postponed the next drift.
+The shared palette + sampler make "same scheme" structural: a new index cannot ship a private
+palette without failing the build.
+
+### Rules
+
+1. **`INDEX_MAP_PALETTE` is the only allowed set of map hexes** — ten stops, best (deep green
+   `#004d1a`) → worst (deep red `#7f0000`). Never invent a parallel palette, and never paste a
+   `#rrggbb` into a `*_MAP_COLORS` assignment.
+2. **Every `*_MAP_COLORS` export is `indexBandColors(labelsBestFirst)`** — labels ordered best
+   outcome → worst, regardless of how the legend is later displayed. Inverted indexes (GTI: "Very
+   High" impact is worst) still pass best-first labels into the helper.
+3. **Adding an index means adding an `INDEX_MAP_COLOR_REGISTRY` row in the same change** — key,
+   export name, colours object, and the exact `labelsBestFirst` array used to build it. The check
+   fails if `DEMOCRACY_INDEX_KEYS` and the registry drift apart.
+4. **Never weaken `scripts/check-index-map-colors.mjs`** to force a private palette through. If it
+   fires, the colours are wrong — fix the assignment, not the check.
+5. **Verify in the running app** (the mandatory visual-verification rule applies): open the Learn
+   map's democracy/index control, walk several indexes (e.g. Freedom House, GPI, GTI, HDI), and
+   confirm every legend runs green → yellow → red for best → worst.
+
+### Enforcement
+
+`scripts/check-index-map-colors.mjs` (`npm run index-colors:check`, in `npm run flags:check`
+and the `check-era-maps` CI job — it imports `democracyColors.ts`, so it needs Node 22.18+)
+**fails the build** when the palette shrinks or loses its green/red endpoints, when any
+`*_MAP_COLORS` is not assigned via `indexBandColors()`, when a `#rrggbb` appears outside
+`INDEX_MAP_PALETTE`, when a registry row's colours drift from the sampler, or when a
+`DEMOCRACY_INDEX_KEYS` entry has no registry row. Never weaken it; fix the colours.
+
 ## Country widget information must never be reduced — hard rule, do not override without approval
 
 **The Learn-mode country widget (`EntitySummary`, rendered in `src/pages/LearnPage.tsx`) is a
@@ -1562,9 +1752,7 @@ The widget shows, for a modern country, these rows (each rendered only when its 
 | Internet domain | `country.tld` |
 | GDP | `country.gdpLcu`, `country.gdpUsd` (World Bank) |
 | GDP per capita | `country.gdpPerCapitaLcu`, `country.gdpPerCapitaUsd` (World Bank) |
-| Freedom House | `country.democracy.freedomHouse` |
-| V-Dem | `country.democracy.vDem` |
-| The Economist | `country.democracy.economist` |
+| Freedom House / V-Dem / Economist / CPI / DPI / RSF / HDI / Gender Gap / Peace / Happiness / Soft Power / Diplomacy / WJP / IMD / ETR / Digital News / Terrorism (and any future index) | `country.democracy.*` — row **label** from `getDemocracyIndexLabel()` (`{name}, {year} ({publisher})`) |
 | Government | `GOVERNMENT_TYPES[code]` (curated local map) |
 
 ### Why this rule exists
@@ -2597,6 +2785,65 @@ silently falls back to the raw ISO code (`parentName = parent ?? ""`). The only 
 catch this is the visual verification step — there is no automated check. Add the
 visual check to every PR that touches `disputedSubdivisions.ts` or `unofficialSubdivFlags.ts`.
 
+## No technical / research leakage in Learn-mode user-facing copy — hard rule, do not override without approval
+
+**Any string Learn mode paints for a missing image — `noImageReason`, `noFlagReason`, and
+any future sibling — is LEARNER copy, not a research notebook.** It must read as a short
+plain-language explanation of why there is no picture. Wikidata Q-ids, property codes
+(`P154`, `P17`, …), raw `https://` URLs, and agent/pipeline jargon ("after this pass",
+"bundled yet", "freely citable logo file") belong in `sources[]`, `licenceNote`, generator
+comments, or a non-rendered research note — **never** in the gap paragraph the panel shows.
+
+### Why this rule exists
+
+Reported by the owner (2026-09) on Australia's Finance → Central bank panel: the gap read
+
+> *Wikidata item Q1506724 has no P154 logo, Commons was checked … official site
+> (https://www.rba.gov.au/) — no freely citable logo file has been bundled yet after this pass.*
+
+That is an internal harvest diagnostic. Learners should never see item ids, property codes,
+or "this pass" language. The same class had already shipped into political-party
+`noImageReason` strings (`P154` / `P17`) because the research gate required those tokens
+by name. Research is still mandatory — name the **families** in plain language
+("Wikidata", "Wikimedia Commons", "the bank's official website"), not the machine ids.
+
+### Rules
+
+1. **`noImageReason` / `noFlagReason` are user-facing.** Write them for a curious reader.
+   Name what was searched in ordinary words. Do not paste generator output, SPARQL
+   diagnostics, or file-fetch logs into them.
+2. **Forbidden in those fields (present and future):** Wikidata Q-ids (`Q1506724`),
+   Wikidata property codes (`P154`, `P17`, …), raw `http(s)://` URLs, and pipeline /
+   agent jargon (`this pass`, `bundled`, `freely citable` / `freely-citable`). Put
+   identifiers and URLs in `sources[]` (or the Website row) instead — the AU RBA entry
+   keeps `https://www.wikidata.org/wiki/Q1506724` in `sources[]` and a plain gap sentence
+   in `noImageReason`. Say "shown" / "available in the app", never "bundled".
+3. **Research gates must not REQUIRE the forbidden tokens.** A check may still demand that
+   the reason name source *families* (Wikidata, Commons, official site, Elects, …). It must
+   never demand the literal string `P154` (or a Q-id) as proof of research — that is what
+   forced the leak.
+4. **Generators must emit safe defaults.** `build-central-banks.mjs` (and any future
+   harvest→build pipeline) must write a plain-language gap template, never interpolate
+   `h.qid` / `P154` / a website URL into `noImageReason`.
+5. **This applies to every category** that can show a missing-image gap — national
+   symbols, political parties, central banks, tourism logos, newspapers, news agencies,
+   and any future Show / panel type. Adding a new gap field means adding its name to
+   `USER_FACING_GAP_FIELDS` in `scripts/lib/userFacingCopy.mjs` in the same change.
+6. **Verify in the running app** (the mandatory visual-verification rule applies): open a
+   country with a central-bank gap (e.g. Australia → Finance), confirm the panel says a
+   plain sentence with **no** Q-id, **no** `P154`, and **no** raw URL inside the gap text
+   (the Website row may still link the bank's site).
+
+### Enforcement
+
+`scripts/check-user-facing-copy.mjs` (`npm run flags:check:user-facing-copy`, in
+`npm run flags:check` and the `check-proportions` CI job) scans every
+`noImageReason` / `noFlagReason` under `src/data/` and **fails the build** on any match
+of the shared leak patterns in `scripts/lib/userFacingCopy.mjs`. Per-category checks
+(`check-central-banks.mjs`, `check-political-parties.mjs`) also call
+`findUserFacingLeaks()` so a category cannot regress locally. Never weaken the patterns
+to silence a real leak — rewrite the copy.
+
 ## Sub-national flags menu must match the game exactly — hard rule, do not override without approval
 
 **The Flag Master "Sub-national flags" picker must only offer countries that have at least one
@@ -3328,6 +3575,28 @@ PR #1268 moved Political parties out of the world-map Show dropdown into the cou
 4. **A party tile never falls back to the national flag.** No bundled logo → honest empty/"no image" tile and `noImageReason` in the panel.
 5. **`scripts/check-grid-content-types.mjs` (wired into `npm run test:ui` / `npm run build`) fails the build if `party` leaves the Show list or FlagGrid/LearnPage stop wiring it.** Do not delete or skip that check to land an unrelated change.
 
+## Party grid cards: local official name, A–Z when ungrouped — hard rule, do not override without approval
+
+**A Political parties tile's main label is the party's official name in its own language,
+never a chamber abbreviation and never English-only when a local name exists.** Canada's
+Liberals are **Liberal Party of Canada**, not **LIB**. Brazil's Workers' Party is
+**Partido dos Trabalhadores (Workers' Party)**. `shortName` stays in the data as the
+abbreviation the chamber uses; the card title is always `partyCardName()`
+(`src/lib/politicalParties.ts`): `name`, plus `nameEn` in parentheses when it differs.
+
+**When Group by is "No grouping" (or A–Z buckets), party tiles sort alphabetically by that card name.** Ideology order is only for the ideology / by-country groupings, where the spectrum is the grouping.
+
+### Why this rule exists
+
+Owner request (2026-09): abbreviations are unreadable as the main name on a grid of ~800 parties, and an ungrouped list that is still ordered by ideology is not an A–Z index. A follow-up (same day) required the **local** official name on the card, with the English translation only as a parenthetical — English-first shortening had hidden the name voters actually see.
+
+### Rules
+
+1. **World-map `FlagGrid` and the country-tab `PoliticalPartyGrid` both title tiles with `partyCardName(party, countryName)`.** Never render `shortName` as the card's main name when it is an acronym.
+2. **`partyCardName` is `name`, then ` (nameEn)` when the sourced English differs.** It must never invent a name or prefer the English form over the official local one. On the card, the translation is painted in `--ink-soft` grey (`.flag-grid__name-translation`) so it is visually a gloss, not a second title.
+3. **Ungrouped and A–Z party lists sort by that card name** (`localeCompare` in `en`). Do not reintroduce ideology rank as the ungrouped comparator.
+4. **`scripts/check-political-parties.mjs` fails if Canada's Liberals (`CA-LIB`) would not card as `"Liberal Party of Canada"`, or if any party with a readable official name still cards as an abbreviation.** `scripts/check-grid-content-types.mjs` fails if either grid stops calling `partyCardName`, or if FlagGrid ideology-sorts when Group by is No grouping / A–Z. Never weaken those gates to land an unrelated change.
+
 ## A political party's logo is a SHOULD, never a MUST — the RESEARCH is the hard rule — hard rule, do not override without approval
 
 **Every political party in the Learn-mode "Political parties" grid (`src/data/politicalParties.ts`)
@@ -3390,10 +3659,12 @@ without one — `PoliticalPartyFacts` omits the row rather than rendering `undef
 
 3. **If a logo cannot be found after exhaustive research, ADD THE PARTY ANYWAY, with
    `noImageReason`.** Never drop a seated party because its picture is missing. Document EXACTLY what
-   was searched — the check requires the reason to name **at least two** of the source families in
-   rule 2, and to be at least 60 characters:
-   - ✓ Example: `"Wikidata (no P154 logo), Commons (no file), English Wikipedia (no infobox), Portuguese Wikipedia (no infobox), party website (no logo found), EuropeElects (no emblem), FOTW (not in index)"`
-   - ✗ Never: `"No logo found"`, `"Image not available"`, or `"Wikimedia Commons access blocked"`
+   was searched — in **plain language** a learner can read (the panel shows this string). The check
+   requires the reason to name **at least two** of the source families in rule 2, and to be at least
+   60 characters; it **fails** if the reason contains a Wikidata Q-id, a property code (`P154`…), a
+   raw URL, or agent jargon (see the "No technical / research leakage" hard rule):
+   - ✓ Example: `"Wikidata (no logo image), Commons (no file), English Wikipedia (no infobox), Portuguese Wikipedia (no infobox), party website (no logo found), EuropeElects (no emblem), FOTW (not in index)"`
+   - ✗ Never: `"No logo found"`, `"Image not available"`, `"Wikimedia Commons access blocked"`, or `"Wikidata item Q123 has no P154…"`
 
 3a. **Every logo must be VISUALLY VERIFIED before it ships — montage-scan the batch.** Provenance
    proves where bytes came from; only rendering proves what they are. The 2026-09-12 backfill
@@ -3476,6 +3747,103 @@ lack one.** The gate is on the research, not the image. If `noImageReason` is pr
 genuine, named research effort — but a party is never withheld from the dataset for want of a
 picture.
 
+## Political-party "Exec power" is the head of government — hard rule, do not override without approval
+
+**The Learn-mode Political parties grid badge "Exec power" means the party that supplies the
+head of government.** It does not mean "sits in the cabinet", and it does not mean "is the head
+of state". Cabinet coalitions are irrelevant to this badge: junior partners who hold ministries
+keep `inPower` / "Leg power" (or "In-power" in Westminster systems) and do not receive Exec
+power. Where head of state and head of government are different offices — typical
+semi-presidential systems — Exec power follows the **prime minister's** party, even when the
+president's party is different (cohabitation). Where they are the same person (a presidential
+republic), that person's party is the one Exec-power card.
+
+### Why this rule exists
+
+Owner direction, 2026-09: an Exec-power badge on every coalition minister made Brazil's eleven
+cabinet parties look like eleven executives. The office being labelled is the head of
+government, one per country.
+
+| System | Exec power goes to | Example |
+|--------|--------------------|---------|
+| Presidential (president is HoG) | The president's party | Brazil → Workers' Party (Lula); Indonesia → Gerindra (Prabowo) |
+| Semi-presidential (PM is HoG) | The prime minister's party, not merely the president's | France → Renaissance (PM Lecornu); Timor-Leste → CNRT (PM Gusmão), not the president's party |
+| Parliamentary / Westminster | No Exec/Leg split — a single "In-power" badge | Canada Liberals |
+
+### Rules
+
+1. **`headOfGovernment` is the only input to the Exec-power badge** (`partyPowerBadges` in
+   `src/lib/politicalParties.ts`). Never key Exec power off `inExecutive`. `inExecutive` remains
+   the cabinet-portfolio flag (who sits in the ministry); it is a different fact.
+2. **At most one party per country may have `headOfGovernment: true`.** A country whose HoG is
+   independent of every listed party simply has none — omit the flag rather than pinning it to
+   a coalition partner.
+3. **Never mark a cabinet junior partner `headOfGovernment` to fill the badge.** Missing is
+   honest; eleven Exec-power cards is the bug this rule exists to prevent.
+4. **Verify in the running app:** a presidential coalition (Brazil) shows Exec power on the
+   president's party alone; France shows it on the PM's party; Canada still shows In-power
+   only.
+
+### Enforcement
+
+`scripts/check-political-parties.mjs` fails if two parties in one country both have
+`headOfGovernment: true`. `scripts/check-grid-content-types.mjs` fails if `partyPowerBadges`
+keys Exec power off `inExecutive` or drops the `headOfGovernment` read.
+
+## Political-party "Leg power" is a chamber majority — hard rule, do not override without approval
+
+**The Learn-mode Political parties grid badge "Leg power" means this party holds a majority
+in a legislative chamber — more than half that chamber's seats — not "is in the governing
+coalition".** Bicameral bodies (the US House vs Senate, Australia's House vs Senate, Brazil's
+Chamber vs Federal Senate) can, and often do, disagree. A single `inPower` boolean cannot
+describe that.
+
+`inPower` stays the government-benches / coalition flag (cabinet and confidence-and-supply).
+Chamber control lives on optional `chambers[]` plus the country catalog `PARTY_LEGISLATURES`
+(`src/data/partyLegislatures.ts`). Countries not in the catalog keep the unicameral fallback
+(`inPower` → "Leg power").
+
+### Why this rule exists
+
+Owner direction, 2026-09: Brazil, Australia and the United States can have different parties
+(or no party) in each house. Treating `inPower` as legislative power made Brazil's fourteen
+coalition parties look like fourteen legislative majorities, hid the US Senate, and implied
+Labor held Australia's Senate.
+
+| System | What the card shows | Example (sourced 2026-09) |
+|--------|---------------------|---------------------------|
+| Presidential, both houses same party | Exec + House + Senate (short names, not a generic Leg) | United States → Republicans |
+| Presidential, no party has half the seats | Exec on the HoG; **Leg power on every `inPower` coalition party** | Brazil → Workers' Party Exec+Leg; cabinet partners Leg |
+| Westminster, House majority, Senate hung | In-power only (fused); no Senate badge | Australia → Labor 94/150 House, 30/76 Senate |
+
+### Rules
+
+1. **When any party in the country holds a chamber majority, Leg badges are those houses'
+   `shortName` (House / Senate), not generic Leg.** When none does — Brazil's Chamber and
+   Senate at the party level — fall back to `inPower` → "Leg power" so the governing
+   coalition is still visible. A majority that exists only as a multi-party bloc is
+   not marked as a House/Senate majority on every member; it uses this fallback.
+2. **`majority` requires this party's own seats to be more than half that chamber**
+   (`2 * seats > seatsTotal`). Never widen it to "largest party" or "government bloc".
+   At most one party per chamber per country.
+3. **Westminster still fuses the confidence house into "In-power".** A House majority
+   there is not also a "House" badge. An upper-house majority, when a single party
+   actually has one, may add a Senate (etc.) badge beside In-power.
+4. **Do not invent the other house's seats.** If a source's chamber table does not add
+   up (Brazil's Senate infobox listed 82 against 81 seats), omit per-party figures for
+   that house rather than guess which row is wrong. The catalog `note` still tells the
+   reader the legislature is bicameral.
+5. **Verify in the running app:** US Republicans show Exec + House + Senate; US Democrats
+   show none of those; Brazil's Workers' Party shows Exec **and** Leg (coalition partners
+   show Leg, not Exec); Australia's Labor shows In-power only.
+
+### Enforcement
+
+`scripts/check-political-parties.mjs` fails on a `majority` that is not more than half
+the seats, on two parties claiming the same chamber, and on a `chambers` row that does
+not match `PARTY_LEGISLATURES`. `scripts/check-grid-content-types.mjs` fails if
+`partyPowerBadges` drops the `PARTY_LEGISLATURES` / `chamberMajorityBadges` path.
+
 ## The political-party audit is a STANDING SWEEP — 195 countries, one at a time, shipped one at a time — hard rule, do not override without approval
 
 **The owner has directed (2026-09-11) that the Learn-mode political-party dataset be audited AND
@@ -3518,8 +3886,10 @@ Before doing any work on a country, and after each material boundary (current-ch
    omitted, not guessed. Local-language sources are part of the search, not an optional extra.
 6. **A country's entry must satisfy the dataset's own invariants**: the seat sum must not exceed
    `seatsTotal`; one `seatsTotal` per country; every seated party the chamber lists is either
-   present or its absence is explained in the ledger; `inPower`/`inExecutive` reflect the government
-   in office today; a coalition every member references must exist in `POLITICAL_COALITIONS`.
+   present or its absence is explained in the ledger; `inPower`/`inExecutive`/`headOfGovernment`
+   reflect the government in office today (`headOfGovernment` is the Exec-power badge — the HoG
+   party only; a bicameral Leg badge is a chamber majority in `PARTY_LEGISLATURES`, never `inPower`);
+   a coalition every member references must exist in `POLITICAL_COALITIONS`.
 7. **Never weaken `scripts/check-political-parties.mjs`** to make a country pass. If it fires, the
    data is wrong.
 8. **Verify in the running app before every push** (the mandatory visual-verification rule applies):
@@ -3534,6 +3904,133 @@ this rule and by the ledger's queue. `scripts/check-political-parties.mjs` still
 every push. A session that worked on party data without updating
 `docs/POLITICAL_PARTY_AUDIT_2026.md`, or that stopped to ask whether to carry on while countries
 remained unticked, has violated this rule.
+
+## National news agencies are wholesalers, not retailers — hard rule, do not override without approval
+
+**Before classifying a media organisation for Learn mode — especially when a country has no
+agency, several candidates, or a publisher that both wires and publishes — apply this
+operational distinction. It decides which dataset an entry belongs in.**
+
+| Role | What it is | Primary clients | Learn-mode home | Examples |
+|------|------------|-----------------|-----------------|----------|
+| **National news agency (newswire)** | "Wholesaler" of information | Other media outlets (newspapers, broadcasters, digital publishers) | `src/data/nationalNewsAgencies.ts` (`newsagency` Show type) | Associated Press (US), Reuters (UK), Agence France-Presse (France), Bernama (Malaysia), AAP (Australia) |
+| **Other news organisation** | "Retailer" of news | The general public, direct consumption | Newspapers → `nationalNewspapers.ts`; broadcasters → their own registry; consumer portals stay out of the agency list | CNN, the BBC, *The New York Times*, a country's top dailies |
+
+### Why this rule exists
+
+A news agency (wire service) gathers and distributes **licensable** news content — text,
+photographs, video, and data — to media outlets and other customers. Retail news
+organisations produce content intended for the public. The two look similar in a list of
+"important national media", and past curation mixed them: consumer portals and
+broadcasters landed in the newspaper set, and the reverse risk is putting a daily paper
+or a public broadcaster into `nationalNewsAgencies.ts` because it is nationally
+prominent. The distinction is **functional**, not absolute: many agencies also publish
+directly to the public, and many consumer-facing publishers also syndicate content.
+When both are true, classify by the **core business model** — wholesaling raw/syndicated
+copy to other outlets vs public distribution as the product.
+
+### Rules
+
+1. **`nationalNewsAgencies.ts` holds wire / newswire services only** — organisations
+   whose primary clients are other media outlets. Their `format` / `frequency` /
+   `editorialStance` should read as syndication, wire, or multimedia feed service, not as
+   a consumer newspaper or broadcaster.
+2. **Newspapers, television/radio broadcasters, and digital-native consumer sites do NOT
+   belong in the agency dataset** — even when they are nationally famous or maintain large
+   reporting staffs. Put print/digital press titles in `nationalNewspapers.ts`; put
+   public/commercial broadcasters in the broadcaster registry; omit pure consumer portals
+   from the agency list rather than force-fit them.
+3. **The distinction is functional, not absolute.** An agency that also runs a public
+   website or app can still be an agency if wholesaling to other outlets is the core
+   model. A newspaper that licenses a few stories does not become an agency. Prefer the
+   organisation's own description and authoritative sources (about pages, statutes,
+   industry directories) over a name that merely includes "News" or "Press".
+4. **A country with no national news agency is an honest gap** — leave its agency array
+   absent/empty rather than promote a retailer to fill the slot. A country with several
+   genuine wires may list more than one; multiplicity alone does not license adding
+   retailers.
+5. **Never weaken `scripts/check-national-newspapers.mjs` or
+   `scripts/check-national-news-agencies.mjs`** to smuggle a misclassified outlet across
+   datasets. The newspaper check already fails names that read as news agency / wire /
+   press agency; keep that guard, and apply this rule when adding or moving entries.
+
+### Coverage notes — countries without a wire, and countries with several
+
+**Countries without a national news agency (honest gaps — do not invent a retailer to
+fill the slot):**
+
+| Country / group | Why absent |
+|-----------------|------------|
+| Liechtenstein | No dedicated national newswire; relies on foreign media and small local outlets |
+| Monaco | Relies on French agencies and local bureaux; no dedicated national newswire |
+| Vatican City | Official press/communication organs (e.g. Vatican News) exist, but there is no commercial or state newswire in the traditional wholesaler sense |
+| New Zealand | NZPA ceased in 2011; no single primary national wire has replaced it |
+| Pacific microstates (Kiribati, Marshall Islands, FSM, Nauru, Palau, Tuvalu) | No independent domestic newswire; rely on regional networks (e.g. PACNEWS) or foreign agencies. Nauru's Government Information Office / bulletin is **not** a news agency — do not re-add it |
+
+**San Marino** is an edge case that *does* have a registered daily information agency
+(SMNA, 2016, under Law 211/2014) — it belongs in `nationalNewsAgencies.ts`.
+
+**Canada** has a single national agency — The Canadian Press — not zero and not several.
+
+**Countries with more than one national news agency** (state + private pairs, dual
+central wires, or specialized national wires) may list every genuine wholesaler. Do not
+drop a real wire to force a one-per-country rule. Ownership badges (State / Official /
+Private / Public / Cooperative / Regional / Independent / Government) must show on every
+agency card and on the Ownership row of `NewsAgencyDetails` via `agencyOwnershipBadge()`
+(`src/lib/nationalNewsAgencies.ts`). Prefer an explicit `ownershipKind` when the short
+label would otherwise be ambiguous.
+
+### Enforcement
+
+There is no separate automated "wholesaler vs retailer" classifier — that judgement needs
+the organisation's remit. The guard is this rule plus the existing cross-dataset name
+guards in `check-national-newspapers.mjs`. When reviewing any PR that adds or moves a
+media entry, confirm the core business model matches the target dataset before merging.
+`scripts/check-national-news-agencies.mjs` must keep validating schema/logos; badge
+rendering is guarded by `scripts/check-grid-content-types.mjs` referencing
+`agencyOwnershipBadge`.
+
+## Central-bank logos: brand marks only — never HQ photos, street signs, or banknotes — hard rule, do not override without approval
+
+**The Learn-mode "Central banks" Show view and Finance-tab logo slot must show the institution's
+official brand mark (seal, wordmark, crest) — never a photograph of its headquarters, a street
+sign, a meeting/event photo, or a currency-note vignette. Wikidata `P154` is frequently wrong for
+central banks; a Commons filename is not evidence the file is a logo.**
+
+### Why this rule exists
+
+Reported by the owner (2026-09) on Guatemala's Finance → Central bank panel: the slot titled
+"Central bank logo" showed a photograph of the Bank of Guatemala building (Commons
+`Autoridades de BANGUAT realizan reunión de transición 20231023 (cropped).jpg`) because Wikidata
+`P154` pointed at that file and the pipeline trusted it. The same class of failure had also
+shipped Sweden's `Riksbanken skylt.jpg` (a physical sign photo) and Zimbabwe's
+`$25m 2008 Obverse (cropped).jpg` (a banknote crop). A building photo in a logo slot is the
+central-bank sibling of the Vueling route-map bug.
+
+### Rules
+
+1. **The image is the bank's brand mark** — seal, wordmark, crest, or lockup used on the bank's
+   own publications. Never a HQ exterior, plaza, flagpole, meeting photo, street sign (`skylt`),
+   or banknote obverse/reverse.
+2. **Reject photo-like Commons / Wikipedia filenames at every stage** — harvest, download, build,
+   and `check-central-banks.mjs` all share `scripts/lib/centralBankLogoQuality.mjs`
+   (`isRejectedLogoFilename` / `isRejectedLogoSource` / `isRejectedLogoExplainer`). Known bad
+   files stay in `BAD_COMMONS_LOGO_FILES`; the regex catches the class (reunión, cropped building,
+   skylt, banknote, obverse, headquarters, …).
+3. **When Wikidata `P154` is a photo, source the real mark elsewhere** (Commons under a correct
+   logo filename, or an en.wikipedia fair-use file with `licenceNote`) — or ship `noImageReason`.
+   Never leave the photo wired.
+4. **Never weaken `scripts/check-central-banks.mjs`** to force a photo through. If it fires, the
+   image or its source/explainer is wrong — fix the asset, not the check.
+5. **Verify in the running app** (mandatory visual-verification rule): open Guatemala → Finance and
+   confirm the circular Banco de Guatemala seal (quetzal on a Mayan temple), not the concrete HQ.
+
+### Enforcement
+
+`scripts/check-central-banks.mjs` (`npm run flags:check:central-banks`, in `npm run flags:check`)
+fails the build when a logo path, source URL, or explainer matches the photo/banknote patterns.
+`scripts/download-central-bank-logos.mjs` and `scripts/harvest-central-banks.mjs` refuse those
+filenames so a regen cannot reintroduce them.
 
 ## Commercial airline logos: show brand emblems, never route maps or aircraft photos — hard rule, do not override without approval
 

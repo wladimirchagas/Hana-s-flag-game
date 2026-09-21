@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 140" width="500" height="140">
-  <rect width="500" height="140" fill="#1E3A8A" rx="8"/>
-  <circle cx="70" cy="70" r="32" fill="#F59E0B"/>
-  <text x="70" y="78" font-family="'Inter', sans-serif" font-size="20" font-weight="900" fill="#1E3A8A" text-anchor="middle">FENA</text>
-  <text x="120" y="68" font-family="'Inter', sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">FEDERALNA NOVINSKA</text>
-  <text x="120" y="94" font-family="'Inter', sans-serif" font-size="16" fill="#F59E0B">AGENCIJA — SARAJEVO</text>
-</svg>

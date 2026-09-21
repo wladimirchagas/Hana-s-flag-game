@@ -1,0 +1,146 @@
+rank;iso2;iso3;economy;score;score_change;rank_change
+1;IS;ISL;Iceland;0.930;0.005;-
+2;FI;FIN;Finland;0.872;-0.006;-
+3;NO;NOR;Norway;0.857;-0.006;-
+4;NA;NAM;Namibia;0.845;0.034;+4
+5;GB;GBR;United Kingdom;0.842;0.004;-1
+6;NZ;NZL;New Zealand;0.828;0.001;-1
+7;SE;SWE;Sweden;0.823;0.006;-1
+8;AU;AUS;Australia;0.819;0.027;+5
+9;DE;DEU;Germany;0.817;0.013;-
+10;IE;IRL;Ireland;0.814;0.013;-
+11;DK;DNK;Denmark;0.810;0.019;+3
+12;ES;ESP;Spain;0.796;-0.001;-
+13;BB;BRB;Barbados;0.794;0.008;+2
+14;LT;LTU;Lithuania;0.791;0.008;+5
+15;MD;MDA;Republic of Moldova;0.791;-0.023;-8
+16;EC;ECU;Ecuador;0.790;0.016;+9
+17;LV;LVA;Latvia;0.788;0.010;+4
+18;MX;MEX;Mexico;0.787;0.011;+5
+19;EE;EST;Estonia;0.782;-0.017;-8
+20;PH;PHL;Philippines;0.780;-0.001;-
+21;CR;CRI;Costa Rica;0.779;-0.007;-5
+22;FR;FRA;France;0.779;0.014;+13
+23;SI;SVN;Slovenia;0.778;0.008;+6
+24;CA;CAN;Canada;0.777;0.010;+8
+25;AL;ALB;Albania;0.775;0.012;+11
+26;BI;BDI;Burundi;0.771;0.016;+18
+27;CH;CHE;Switzerland;0.771;-0.014;-10
+28;RW;RWA;Rwanda;0.769;0.008;+11
+29;CL;CHL;Chile;0.769;-0.008;-7
+30;ZA;ZAF;South Africa;0.766;-0.001;+3
+31;SG;SGP;Singapore;0.764;0.015;+16
+32;PT;PRT;Portugal;0.763;-0.003;+2
+33;BE;BEL;Belgium;0.762;-0.011;-6
+34;CO;COL;Colombia;0.761;0.003;+7
+35;GY;GUY;Guyana;0.759;-0.010;-4
+36;BO;BOL;Bolivia (Plurinational State of);0.758;0.010;+12
+37;JM;JAM;Jamaica;0.757;-0.005;+1
+38;TT;TTO;Trinidad and Tobago;0.757;-0.015;-10
+39;RS;SRB;Serbia;0.754;-0.020;-13
+40;AT;AUT;Austria;0.753;0.018;+16
+41;PA;PAN;Panama;0.753;0.011;+10
+42;LU;LUX;Luxembourg;0.752;0.007;+8
+43;LR;LBR;Liberia;0.751;-0.009;-3
+44;PL;POL;Poland;0.751;0.001;+1
+45;AR;ARG;Argentina;0.751;-0.011;-8
+46;NL;NLD;Netherlands;0.750;-0.007;-3
+47;US;USA;United States of America;0.749;-0.008;-5
+48;HR;HRV;Croatia;0.744;0.015;+16
+49;ZW;ZWE;Zimbabwe;0.743;-0.004;-
+50;GT;GTM;Guatemala;0.740;0.034;+31
+51;HN;HND;Honduras;0.740;0.013;+16
+52;BY;BLR;Belarus;0.740;0.003;+2
+53;UY;URY;Uruguay;0.740;0.020;+18
+54;TZ;TZA;United Republic of Tanzania;0.736;-0.001;+1
+55;TH;THA;Thailand;0.735;0.008;+11
+56;GH;GHA;Ghana;0.732;0.029;+32
+57;SR;SUR;Suriname;0.732;-0.006;-5
+58;AM;ARM;Armenia;0.731;0.000;+1
+59;MZ;MOZ;Mozambique;0.728;-0.010;-6
+60;GE;GEO;Georgia;0.727;-0.003;+3
+61;SV;SLV;El Salvador;0.724;0.016;+17
+62;BA;BIH;Bosnia and Herzegovina;0.723;0.005;+11
+63;BW;BWA;Botswana;0.722;-0.009;-3
+64;SK;SVK;Slovakia;0.721;-0.002;+6
+65;KE;KEN;Kenya;0.721;0.032;+33
+66;UA;UKR;Ukraine;0.721;-0.009;-4
+67;DO;DOM;Dominican Republic;0.721;-0.009;-6
+68;GA;GAB;Gabon;0.721;0.022;+23
+69;CV;CPV;Cape Verde;0.721;-0.049;-39
+70;MN;MNG;Mongolia;0.719;-0.009;-5
+71;IL;ISR;Israel;0.717;0.008;+5
+72;BR;BRA;Brazil;0.715;-0.004;-
+73;MT;MLT;Malta;0.715;-0.011;-5
+74;ME;MNE;Montenegro;0.715;0.010;+10
+75;GR;GRC;Greece;0.714;0.006;+2
+76;SZ;SWZ;Eswatini;0.714;-0.034;-30
+77;CZ;CZE;Czechia;0.712;0.027;+25
+78;CY;CYP;Cyprus;0.712;0.006;+4
+79;BD;BGD;Bangladesh;0.712;-0.062;-55
+80;BG;BGR;Bulgaria;0.710;0.004;+3
+81;MG;MDG;Madagascar;0.709;-0.025;-23
+82;MK;MKD;North Macedonia;0.709;0.010;+8
+83;IT;ITA;Italy;0.708;0.004;+2
+84;VN;VNM;Viet Nam;0.707;-0.006;-10
+85;HU;HUN;Hungary;0.707;0.023;+20
+86;PY;PRY;Paraguay;0.706;0.003;+1
+87;AO;AGO;Angola;0.705;0.037;+30
+88;KG;KGZ;Kyrgyzstan;0.704;0.007;+7
+89;LA;LAO;Lao PDR;0.703;0.011;+7
+90;CM;CMR;Cameroon;0.703;0.005;+3
+91;AE;ARE;United Arab Emirates;0.702;-0.022;-22
+92;BZ;BLZ;Belize;0.701;0.000;-3
+93;TL;TLS;Timor-Leste;0.701;-0.003;-7
+94;PE;PER;Peru;0.700;-0.034;-37
+95;KZ;KAZ;Kazakhstan;0.700;0.002;-3
+96;CN;CHN;China;0.699;0.013;+7
+97;RO;ROU;Romania;0.698;0.001;-3
+98;AZ;AZE;Azerbaijan;0.697;0.009;+2
+99;MW;MWI;Malawi;0.695;n/a;n/a
+100;LS;LSO;Lesotho;0.693;0.005;-1
+101;KR;KOR;South Korea;0.693;0.006;-
+102;MU;MUS;Mauritius;0.691;0.014;+9
+103;KM;COM;Comoros;0.689;0.018;+12
+104;MY;MYS;Malaysia;0.689;0.008;+4
+105;BH;BHR;Bahrain;0.689;0.004;-1
+106;ID;IDN;Indonesia;0.687;-0.004;-9
+107;VU;VUT;Vanuatu;0.686;0.007;+2
+108;ZM;ZMB;Zambia;0.684;-0.023;-29
+109;SL;SLE;Sierra Leone;0.683;0.006;+3
+110;UZ;UZB;Uzbekistan;0.682;0.003;-
+111;BN;BRN;Brunei Darussalam;0.681;0.000;-4
+112;BJ;BEN;Benin;0.681;0.005;+1
+113;KH;KHM;Cambodia;0.680;-0.002;-7
+114;NG;NGA;Nigeria;0.676;0.027;+10
+115;BF;BFA;Burkina Faso;0.676;0.016;+5
+116;TG;TGO;Togo;0.675;0.019;+5
+117;JP;JPN;Japan;0.670;0.004;+1
+118;SN;SEN;Senegal;0.670;0.001;-2
+119;MV;MDV;Maldives;0.669;0.044;+19
+120;NP;NPL;Nepal;0.669;0.021;+5
+121;BT;BTN;Bhutan;0.663;0.000;-2
+122;CI;CIV;Côte d’Ivoire;0.660;0.013;+5
+123;GM;GMB;Gambia, Republic of the;0.660;-0.014;-9
+124;NE;NER;Niger;0.655;0.042;+18
+125;TN;TUN;Tunisia;0.650;-0.003;-2
+126;TR;TUR;Türkiye;0.649;0.017;+9
+127;JO;JOR;Jordan;0.649;-0.006;-5
+128;LB;LBN;Lebanon;0.648;0.016;+8
+129;LK;LKA;Sri Lanka;0.646;0.000;+1
+130;FJ;FJI;Fiji;0.646;-0.002;-4
+131;IN;IND;India;0.645;0.001;-
+132;PG;PNG;Papua New Guinea;0.642;0.003;+1
+133;KW;KWT;Kuwait;0.641;-0.006;-5
+134;OM;OMN;Oman;0.639;0.001;-
+135;QA;QAT;Qatar;0.638;n/a;n/a
+136;TJ;TJK;Tajikistan;0.638;-0.008;-7
+137;SA;SAU;Saudi Arabia;0.633;-0.010;-5
+138;EG;EGY;Egypt;0.632;0.007;+1
+139;MA;MAR;Morocco;0.632;0.004;-2
+140;ML;MLI;Mali;0.619;0.002;-
+141;DZ;DZA;Algeria;0.618;0.004;-
+142;CD;COD;Democratic Republic of the Congo;0.595;-0.006;+1
+143;PK;PAK;Pakistan;0.595;0.028;+5
+144;IR;IRN;Iran (Islamic Republic of);0.585;0.002;+1
+145;TD;TCD;Chad;0.578;0.007;+1

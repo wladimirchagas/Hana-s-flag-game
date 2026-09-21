@@ -5,6 +5,7 @@ import {
   type FlagListEntry,
 } from "../lib/flagList";
 import { AutoFitName } from "./AutoFitName";
+import { PartyCardName } from "./PartyCardName";
 import { loadLearnedCodes } from "../lib/learnedFlags";
 import { FLAG_DATA_EVENT } from "../lib/profileSync";
 import {
@@ -40,6 +41,10 @@ import {
   type GridContentType,
 } from "../lib/gridContentType";
 import {
+  applyLogoBackdropTone,
+  gridContentNeedsLogoSurface,
+} from "../lib/logoBackdrop";
+import {
   passportColorGroup,
   PASSPORT_COLOR_GROUP_ORDER,
 } from "../lib/passportColorGroups";
@@ -50,12 +55,14 @@ import { MENS_WORLD_CUP_TITLES, WOMENS_WORLD_CUP_TITLES } from "../data/worldCup
 import { allCommercialAirlines } from "../lib/commercialAirlines";
 import { allPublicBroadcasters } from "../lib/publicBroadcasters";
 import { allTourismLogos } from "../lib/tourismLogos";
-import { allNationalNewsAgencies } from "../lib/nationalNewsAgencies";
+import { allCentralBanks } from "../lib/centralBanks";
+import { allNationalNewsAgencies, agencyOwnershipBadge } from "../lib/nationalNewsAgencies";
 import { allNationalNewspapers } from "../lib/nationalNewspapers";
 import {
   allPoliticalParties,
   coalitionForParty,
   partyById,
+  partyCardName,
   partyPowerBadges,
 } from "../lib/politicalParties";
 import {
@@ -63,6 +70,12 @@ import {
   IDEOLOGY_POSITION_ORDER,
 } from "../data/politicalParties";
 import { COUNTRY_FACTS } from "../data/countryFacts";
+import {
+  DEMOCRACY_INDEX_KEYS,
+  getDemocracyIndexLabel,
+  getDemocracyIndexMenuGroups,
+  type DemocracyIndexKey,
+} from "../lib/democracyColors";
 
 import { GridImage } from "./GridImage";
 
@@ -103,6 +116,7 @@ export type FlagGridProps = {
     worldMapCode?: string,
     newspaperId?: string,
     partyId?: string,
+    centralBankId?: string,
   ) => void;
   /** Optional resolver to prepend the BASE_URL to relative flag paths so
    *  the grid can render flags identically to the panel. */
@@ -127,6 +141,8 @@ export type FlagGridProps = {
   selectedNewspaperId?: string | null;
   /** Currently selected political party ID (if any) */
   selectedPartyId?: string | null;
+  /** Currently selected central bank ID (if any) */
+  selectedCentralBankId?: string | null;
 };
 
 type GroupMode =
@@ -147,6 +163,20 @@ type GroupMode =
   | "freedom-house"
   | "v-dem"
   | "economist"
+  | "cpi"
+  | "perception"
+  | "rsf-press"
+  | "hdi"
+  | "gender-gap"
+  | "gpi"
+  | "happiness"
+  | "soft-power"
+  | "gdi"
+  | "wjp-rule-of-law"
+  | "imd-competitiveness"
+  | "etr"
+  | "digital-news"
+  | "gti"
   | "party-ideology";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
@@ -163,9 +193,10 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   similarity: "By similarity",
   "drive-side": "By driving side",
   "aspect-ratio": "By aspect ratio",
-  "freedom-house": "Freedom House rating",
-  "v-dem": "V-Dem regime type",
-  economist: "The Economist Democracy Index",
+  // Index Group-by labels come from DEMOCRACY_INDEX_META (year + publisher).
+  ...(Object.fromEntries(
+    DEMOCRACY_INDEX_KEYS.map((k) => [k, getDemocracyIndexLabel(k)]),
+  ) as Record<DemocracyIndexKey, string>),
   // Political-parties-view only — buckets along the sourced ideology spectrum.
   "party-ideology": "By ideology",
   // Passports-view only — buckets by the passport cover's colour family.
@@ -227,6 +258,20 @@ const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
   "freedom-house",
   "v-dem",
   "economist",
+  "cpi",
+  "perception",
+  "rsf-press",
+  "hdi",
+  "gender-gap",
+  "gpi",
+  "happiness",
+  "soft-power",
+  "gdi",
+  "wjp-rule-of-law",
+  "imd-competitiveness",
+  "etr",
+  "digital-news",
+  "gti",
 ]);
 
 /** Whether a grouping mode is offered for the given view. The flag-appearance
@@ -248,7 +293,8 @@ function groupModeAvailableFor(
         contentType === "tourismlogo" ||
         contentType === "newsagency" ||
         contentType === "newspaper" ||
-        contentType === "party")
+        contentType === "party" ||
+        contentType === "centralbank")
     );
   }
   if (PASSPORT_ONLY_MODES.has(m)) return isModernEra && contentType === "passport";
@@ -279,6 +325,174 @@ const ECONOMIST_ORDER: Record<string, number> = {
   "Hybrid regime": 3,
   "Authoritarian": 4,
   "Not rated": 5,
+};
+
+/** TI CPI map score bands — cleanest first. */
+const CPI_ORDER: Record<string, number> = {
+  "90–100": 1,
+  "80–89": 2,
+  "70–79": 3,
+  "60–69": 4,
+  "50–59": 5,
+  "40–49": 6,
+  "30–39": 7,
+  "20–29": 8,
+  "10–19": 9,
+  "0–9": 10,
+  "Not rated": 11,
+};
+
+/** Democracy Perception Index tiers — most positive first. */
+const PERCEPTION_ORDER: Record<string, number> = {
+  "Very Positive": 1,
+  Positive: 2,
+  Neutral: 3,
+  Negative: 4,
+  "Very Negative": 5,
+  "Not rated": 6,
+};
+
+const RSF_PRESS_ORDER: Record<string, number> = {
+  Good: 1,
+  Satisfactory: 2,
+  Problematic: 3,
+  Difficult: 4,
+  "Very serious": 5,
+  "Not rated": 6,
+};
+
+/** WJP Rule of Law Index map score bands — strongest adherence first. */
+const WJP_ORDER: Record<string, number> = {
+  "0.80–1.00": 1,
+  "0.70–0.79": 2,
+  "0.60–0.69": 3,
+  "0.50–0.59": 4,
+  "0.40–0.49": 5,
+  "0.30–0.39": 6,
+  "0.20–0.29": 7,
+  "0.00–0.19": 8,
+  "Not rated": 9,
+};
+
+const HDI_ORDER: Record<string, number> = {
+  "Very High": 1,
+  High: 2,
+  Medium: 3,
+  Low: 4,
+  "Not rated": 5,
+};
+
+/** WEF Global Gender Gap Index — occupied decade bands, closest to parity first. */
+const GENDER_GAP_ORDER: Record<string, number> = {
+  "90–100": 1,
+  "80–89": 2,
+  "70–79": 3,
+  "60–69": 4,
+  "50–59": 5,
+  "Not rated": 6,
+};
+
+/** Global Peace Index State of Peace bands — most peaceful first. */
+const GPI_ORDER: Record<string, number> = {
+  "Very High": 1,
+  High: 2,
+  Medium: 3,
+  Low: 4,
+  "Very Low": 5,
+  "Not rated": 6,
+};
+
+/** World Happiness Report Cantril score bands — happiest first. */
+const HAPPINESS_ORDER: Record<string, number> = {
+  "9.0–10": 1,
+  "8.0–8.9": 2,
+  "7.0–7.9": 3,
+  "6.0–6.9": 4,
+  "5.0–5.9": 5,
+  "4.0–4.9": 6,
+  "3.0–3.9": 7,
+  "2.0–2.9": 8,
+  "1.0–1.9": 9,
+  "0.0–0.9": 10,
+  "Not rated": 11,
+};
+
+/** Brand Finance Global Soft Power Index score bands — strongest first. */
+const SOFT_POWER_ORDER: Record<string, number> = {
+  "90–100": 1,
+  "80–89": 2,
+  "70–79": 3,
+  "60–69": 4,
+  "50–59": 5,
+  "40–49": 6,
+  "30–39": 7,
+  "20–29": 8,
+  "10–19": 9,
+  "0–9": 10,
+  "Not rated": 11,
+};
+
+/** Lowy Global Diplomacy Index post-count bands — largest networks first. */
+const GDI_ORDER: Record<string, number> = {
+  "250+": 1,
+  "200–249": 2,
+  "150–199": 3,
+  "100–149": 4,
+  "50–99": 5,
+  "Below 50": 6,
+  "Not rated": 7,
+};
+/** Ecological Threat Index bands — least threat first. */
+const ETR_ORDER: Record<string, number> = {
+  "Very Low": 1,
+  Low: 2,
+  Medium: 3,
+  High: 4,
+  "Very High": 5,
+  "Not rated": 6,
+};
+
+/** Reuters Digital News Report trust % bands — highest trust first. */
+const DIGITAL_NEWS_ORDER: Record<string, number> = {
+  "90–100%": 1,
+  "80–89%": 2,
+  "70–79%": 3,
+  "60–69%": 4,
+  "50–59%": 5,
+  "40–49%": 6,
+  "30–39%": 7,
+  "20–29%": 8,
+  "10–19%": 9,
+  "0–9%": 10,
+  "Not rated": 11,
+};
+
+/** Global Terrorism Index impact bands — most impacted first. */
+const GTI_ORDER: Record<string, number> = {
+  "Very High": 1,
+  High: 2,
+  Medium: 3,
+  Low: 4,
+  "Very Low": 5,
+  "No Impact": 6,
+  "Not rated": 7,
+};
+
+
+
+/** IMD World Competitiveness Ranking score bands — most competitive first. */
+const IMD_COMPETITIVENESS_ORDER: Record<string, number> = {
+  "90–100": 1,
+  "80–89": 2,
+  "70–79": 3,
+  "60–69": 4,
+  "50–59": 5,
+  "40–49": 6,
+  "30–39": 7,
+  "20–29": 8,
+  "10–19": 9,
+  "0–9": 10,
+  "Not rated": 11,
 };
 
 /** Heading for a World-Cup-titles bucket: "5 World Cup titles" / "1 World Cup
@@ -314,6 +528,7 @@ export function FlagGrid({
   selectedNewsAgencyId,
   selectedNewspaperId,
   selectedPartyId,
+  selectedCentralBankId,
 }: FlagGridProps) {
   const [groupMode, setGroupMode] = useState<GroupMode>(loadStoredGroupMode);
   // Free-text filter typed by the user — narrows the grid by country/polity
@@ -372,7 +587,8 @@ export function FlagGrid({
         effectiveContentType === "tourismlogo" ||
         effectiveContentType === "newsagency" ||
         effectiveContentType === "newspaper" ||
-        effectiveContentType === "party";
+        effectiveContentType === "party" ||
+        effectiveContentType === "centralbank";
       setGroupMode(isCountryGrouped ? "by-country" : "none");
     }
   }, [groupMode, effectiveContentType, isModernEra]);
@@ -426,13 +642,14 @@ export function FlagGrid({
       return allTourismLogos().map((t): FlagListEntry => {
         const parent = codeToEntry.get(t.countryCode);
         const countryName = parent ? parent.name : t.countryCode;
-        // Grid label: "[tagline] ([Country])" — uses slogan when present,
-        // falls back to the brand name. sortKey ensures the grid sorts
-        // alphabetically by country name, not by the tagline.
+        // Grid title is the tagline (slogan when present, else brand name).
+        // Country is rendered as a separate grey "(Country)" line under the
+        // title — same treatment as newspapers / airlines / parties — so it
+        // is not baked into `name`. sortKey keeps A–Z order by country.
         const tagline = t.slogan ?? t.name;
         return {
           id: t.id,
-          name: `${tagline} (${countryName})`,
+          name: tagline,
           sortKey: countryName,
           flag: t.logo ?? null,
           tourismLogoImage: t.logo ?? null,
@@ -448,12 +665,15 @@ export function FlagGrid({
       const codeToEntry = new Map(entries.map((e) => [e.id, e]));
       return allNationalNewsAgencies().map((na): FlagListEntry => {
         const parent = codeToEntry.get(na.countryCode);
+        const badge = agencyOwnershipBadge(na);
         return {
           id: na.id,
           name: na.name,
           flag: na.logo ?? null,
           newsAgencyLogo: na.logo ?? null,
           newsAgencyId: na.id,
+          newsAgencyOwnershipKind: badge.kind,
+          newsAgencyOwnershipLabel: badge.label,
           countryName: parent ? parent.name : na.countryCode,
           continent: parent ? parent.continent : "Other",
           subcontinent: parent ? parent.subcontinent : "Other",
@@ -485,7 +705,7 @@ export function FlagGrid({
         const coalition = coalitionForParty(p);
         return {
           id: p.id,
-          name: p.shortName,
+          name: partyCardName(p, parent?.name),
           flag: null,
           partyLogo: p.logo ?? null,
           partyId: p.id,
@@ -496,6 +716,25 @@ export function FlagGrid({
           continent: parent ? parent.continent : "Other",
           subcontinent: parent ? parent.subcontinent : "Other",
           selectId: p.country,
+        };
+      });
+    }
+    if (effectiveContentType === "centralbank") {
+      const codeToEntry = new Map(entries.map((e) => [e.id, e]));
+      return allCentralBanks().map((b): FlagListEntry => {
+        const parent = codeToEntry.get(b.countryCode);
+        const countryName = parent ? parent.name : b.countryCode;
+        return {
+          id: b.id,
+          name: b.name,
+          sortKey: countryName,
+          flag: b.logo ?? null,
+          centralBankLogo: b.logo ?? null,
+          centralBankId: b.id,
+          countryName,
+          continent: parent ? parent.continent : "Other",
+          subcontinent: parent ? parent.subcontinent : "Other",
+          selectId: b.countryCode,
         };
       });
     }
@@ -595,19 +834,24 @@ export function FlagGrid({
   // alphabetise within a group; the headings themselves are ordered by
   // a per-mode comparator below.
   const groups = useMemo(() => {
+    const byName = (a: FlagListEntry, b: FlagListEntry) =>
+      (a.sortKey ?? a.name).localeCompare(b.sortKey ?? b.name, "en");
+    // No grouping (and A–Z buckets) sort alphabetically by the card name.
+    // Ideology order is only for the party-ideology / by-country views, where
+    // the spectrum is the grouping.
     const sorted =
-      effectiveContentType === "party"
+      effectiveContentType === "party" &&
+      groupMode !== "none" &&
+      groupMode !== "alpha"
         ? [...filteredEntries].sort((a, b) => {
             const ra = a.partyIdeologyRank ?? 999;
             const rb = b.partyIdeologyRank ?? 999;
             if (ra !== rb) return ra - rb;
             const ca = (a.countryName ?? "").localeCompare(b.countryName ?? "", "en");
             if (ca !== 0) return ca;
-            return (a.sortKey ?? a.name).localeCompare(b.sortKey ?? b.name, "en");
+            return byName(a, b);
           })
-        : [...filteredEntries].sort((a, b) =>
-            (a.sortKey ?? a.name).localeCompare(b.sortKey ?? b.name, "en"),
-          );
+        : [...filteredEntries].sort(byName);
 
     if (groupMode === "none") {
       return [{ heading: null, items: sorted }];
@@ -755,9 +999,111 @@ export function FlagGrid({
         const rating = COUNTRY_FACTS[code]?.democracy?.economist?.rating ?? "Not rated";
         push(rating, e);
       }
+    } else if (groupMode === "cpi") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.cpi?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "perception") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.perception?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "rsf-press") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.rsfPress?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "hdi") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.hdi?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "gender-gap") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.genderGap?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "gpi") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.gpi?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "happiness") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.happiness?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "soft-power") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.softPower?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "gdi") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.gdi?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "wjp-rule-of-law") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.wjpRuleOfLaw?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "imd-competitiveness") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.imdCompetitiveness?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "etr") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.etr?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "digital-news") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.digitalNews?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "gti") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.gti?.rating ?? "Not rated";
+        push(rating, e);
+      }
     }
 
-    if (groupMode === "freedom-house" || groupMode === "v-dem" || groupMode === "economist") {
+    if (
+      groupMode === "freedom-house" ||
+      groupMode === "v-dem" ||
+      groupMode === "economist" ||
+      groupMode === "cpi" ||
+      groupMode === "perception" ||
+      groupMode === "rsf-press" ||
+      groupMode === "hdi" ||
+      groupMode === "gender-gap" ||
+      groupMode === "gpi" ||
+      groupMode === "happiness" ||
+      groupMode === "soft-power" ||
+      groupMode === "gdi" ||
+      groupMode === "wjp-rule-of-law" ||
+      groupMode === "imd-competitiveness" ||
+      groupMode === "etr" ||
+      groupMode === "digital-news" ||
+      groupMode === "gti"
+    ) {
       for (const [, items] of buckets) {
         items.sort((a, b) => {
           const codeA = (a.selectId || a.id || a.worldMapCode || "").toUpperCase();
@@ -769,13 +1115,65 @@ export function FlagGrid({
               ? factsA?.freedomHouse
               : groupMode === "v-dem"
               ? factsA?.vDem
-              : factsA?.economist;
+              : groupMode === "economist"
+              ? factsA?.economist
+              : groupMode === "cpi"
+              ? factsA?.cpi
+              : groupMode === "perception"
+              ? factsA?.perception
+              : groupMode === "rsf-press"
+              ? factsA?.rsfPress
+              : groupMode === "hdi"
+              ? factsA?.hdi
+              : groupMode === "gender-gap"
+              ? factsA?.genderGap
+              : groupMode === "gpi"
+              ? factsA?.gpi
+              : groupMode === "happiness"
+              ? factsA?.happiness
+              : groupMode === "soft-power"
+              ? factsA?.softPower
+              : groupMode === "gdi"
+              ? factsA?.gdi
+              : groupMode === "wjp-rule-of-law"
+              ? factsA?.wjpRuleOfLaw
+              : groupMode === "imd-competitiveness"
+              ? factsA?.imdCompetitiveness
+              : groupMode === "etr"
+              ? factsA?.etr
+              : factsA?.digitalNews;
           const indexB =
             groupMode === "freedom-house"
               ? factsB?.freedomHouse
               : groupMode === "v-dem"
               ? factsB?.vDem
-              : factsB?.economist;
+              : groupMode === "economist"
+              ? factsB?.economist
+              : groupMode === "cpi"
+              ? factsB?.cpi
+              : groupMode === "perception"
+              ? factsB?.perception
+              : groupMode === "rsf-press"
+              ? factsB?.rsfPress
+              : groupMode === "hdi"
+              ? factsB?.hdi
+              : groupMode === "gender-gap"
+              ? factsB?.genderGap
+              : groupMode === "gpi"
+              ? factsB?.gpi
+              : groupMode === "happiness"
+              ? factsB?.happiness
+              : groupMode === "soft-power"
+              ? factsB?.softPower
+              : groupMode === "gdi"
+              ? factsB?.gdi
+              : groupMode === "wjp-rule-of-law"
+              ? factsB?.wjpRuleOfLaw
+              : groupMode === "imd-competitiveness"
+              ? factsB?.imdCompetitiveness
+              : groupMode === "etr"
+              ? factsB?.etr
+              : factsB?.digitalNews;
           const rankA = indexA?.rank ?? Infinity;
           const rankB = indexB?.rank ?? Infinity;
           if (rankA !== rankB) return rankA - rankB;
@@ -851,6 +1249,76 @@ export function FlagGrid({
       if (groupMode === "economist") {
         const oa = ECONOMIST_ORDER[a] ?? 99;
         const ob = ECONOMIST_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "cpi") {
+        const oa = CPI_ORDER[a] ?? 99;
+        const ob = CPI_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "perception") {
+        const oa = PERCEPTION_ORDER[a] ?? 99;
+        const ob = PERCEPTION_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "rsf-press") {
+        const oa = RSF_PRESS_ORDER[a] ?? 99;
+        const ob = RSF_PRESS_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "wjp-rule-of-law") {
+        const oa = WJP_ORDER[a] ?? 99;
+        const ob = WJP_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "hdi") {
+        const oa = HDI_ORDER[a] ?? 99;
+        const ob = HDI_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "gender-gap") {
+        const oa = GENDER_GAP_ORDER[a] ?? 99;
+        const ob = GENDER_GAP_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "gpi") {
+        const oa = GPI_ORDER[a] ?? 99;
+        const ob = GPI_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "happiness") {
+        const oa = HAPPINESS_ORDER[a] ?? 99;
+        const ob = HAPPINESS_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "soft-power") {
+        const oa = SOFT_POWER_ORDER[a] ?? 99;
+        const ob = SOFT_POWER_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "gdi") {
+        const oa = GDI_ORDER[a] ?? 99;
+        const ob = GDI_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "imd-competitiveness") {
+        const oa = IMD_COMPETITIVENESS_ORDER[a] ?? 99;
+        const ob = IMD_COMPETITIVENESS_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "etr") {
+        const oa = ETR_ORDER[a] ?? 99;
+        const ob = ETR_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "digital-news") {
+        const oa = DIGITAL_NEWS_ORDER[a] ?? 99;
+        const ob = DIGITAL_NEWS_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "gti") {
+        const oa = GTI_ORDER[a] ?? 99;
+        const ob = GTI_ORDER[b] ?? 99;
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "party-ideology") {
@@ -943,11 +1411,27 @@ export function FlagGrid({
             >
               {(Object.keys(GROUP_MODE_LABELS) as GroupMode[])
                 .filter(groupModeAvailable)
+                .filter((m) => !DEMOCRACY_GROUP_MODES.has(m))
                 .map((m) => (
                   <option key={m} value={m}>
                     {GROUP_MODE_LABELS[m]}
                   </option>
                 ))}
+              {getDemocracyIndexMenuGroups().map((group) => {
+                const opts = group.indexes
+                  .map((m) => m.key as GroupMode)
+                  .filter(groupModeAvailable);
+                if (opts.length === 0) return null;
+                return (
+                  <optgroup key={group.theme.id} label={group.theme.label}>
+                    {opts.map((m) => (
+                      <option key={m} value={m}>
+                        {GROUP_MODE_LABELS[m]}
+                      </option>
+                    ))}
+                  </optgroup>
+                );
+              })}
             </select>
           </label>
         </div>
@@ -978,7 +1462,9 @@ export function FlagGrid({
           )}
           <ul className="flag-grid__list">
             {g.items.map((item) => {
-              const active = item.partyId
+              const active = item.centralBankId
+                ? item.centralBankId === selectedCentralBankId
+                : item.partyId
                 ? item.partyId === selectedPartyId
                 : item.newspaperId
                 ? item.newspaperId === selectedNewspaperId
@@ -1010,13 +1496,16 @@ export function FlagGrid({
                           : effectiveContentType === "tourismlogo"
                             ? item.tourismLogoImage ?? item.flag
                             : effectiveContentType === "newsagency"
-                              ? item.newsAgencyLogo ?? item.flag
+                              ? item.newsAgencyLogo ?? null
                               : effectiveContentType === "newspaper"
-                                ? item.newspaperLogo ?? item.flag
+                                ? item.newspaperLogo ?? null
                                 : effectiveContentType === "party"
                                   ? item.partyLogo ?? null
+                                  : effectiveContentType === "centralbank"
+                                    ? item.centralBankLogo ?? null
                                 : item.flag;
               const url = rawImage ? resolveFlag(rawImage) : null;
+              const party = item.partyId ? partyById(item.partyId) : null;
               const isLearned = learnedCodes.has(item.id);
               // In shape mode, the same id can appear in multiple
               // groups. Make the React key + ref key unique per
@@ -1052,18 +1541,28 @@ export function FlagGrid({
                         item.worldMapCode,
                         item.newspaperId,
                         item.partyId,
+                        item.centralBankId,
                       )
                     }
                     aria-pressed={active}
                     aria-label={
-                      item.countryName && (effectiveContentType === "airline" || effectiveContentType === "broadcaster" || effectiveContentType === "tourismlogo" || effectiveContentType === "newsagency" || effectiveContentType === "newspaper" || effectiveContentType === "party")
+                      item.countryName && (effectiveContentType === "airline" || effectiveContentType === "broadcaster" || effectiveContentType === "tourismlogo" || effectiveContentType === "newsagency" || effectiveContentType === "newspaper" || effectiveContentType === "party" || effectiveContentType === "centralbank")
                         ? `Select ${item.name} (${item.countryName})`
                         : isLearned
                           ? `Select ${item.name} (learned)`
                           : `Select ${item.name}`
                     }
                   >
-                    <span className="flag-grid__thumb">
+                    <span
+                      className={
+                        gridContentNeedsLogoSurface(effectiveContentType)
+                          ? "flag-grid__thumb flag-grid__thumb--logo"
+                          : "flag-grid__thumb"
+                      }
+                      {...(gridContentNeedsLogoSurface(effectiveContentType)
+                        ? { "data-logo-surface": "" }
+                        : {})}
+                    >
                       {url ? (
                         // Keyed by the image URL so a change of "Show" (flag →
                         // coat of arms → passport → crest) MOUNTS A FRESH <img>
@@ -1079,6 +1578,11 @@ export function FlagGrid({
                             alt=""
                             draggable={false}
                             className="flag-grid__thumb-img"
+                            onLoad={
+                              gridContentNeedsLogoSurface(effectiveContentType)
+                                ? (e) => applyLogoBackdropTone(e.currentTarget)
+                                : undefined
+                            }
                             onError={(e) => {
                               const img = e.currentTarget;
                               // First, retry the LOCAL flag once. The bundled SVG
@@ -1138,7 +1642,11 @@ export function FlagGrid({
                       )}
                     </span>
                     <span className="flag-grid__name">
-                      <AutoFitName className="flag-grid__name-text" text={item.name} />
+                      {effectiveContentType === "party" && party ? (
+                        <PartyCardName party={party} countryName={item.countryName} />
+                      ) : (
+                        <AutoFitName className="flag-grid__name-text" text={item.name} />
+                      )}
                       {/* The capital is country context that belongs beside the
                           flag, but reads as noise under a coat of arms or a
                           passport cover — show it only in the flag view. */}
@@ -1147,20 +1655,31 @@ export function FlagGrid({
                           Capital: {item.capital}
                         </span>
                       )}
-                      {effectiveContentType === "party" && item.countryName && (
-                        <span className="flag-grid__city-sub">{item.countryName}</span>
-                      )}
+                      {/* Multi-item Show views (newspapers, agencies, tourism,
+                          airlines, broadcasters, parties): country on its own
+                          grey line so a mixed A–Z / continent grid is scannable. */}
+                      {item.countryName &&
+                        (effectiveContentType === "airline" ||
+                          effectiveContentType === "broadcaster" ||
+                          effectiveContentType === "tourismlogo" ||
+                          effectiveContentType === "newsagency" ||
+                          effectiveContentType === "newspaper" ||
+                          effectiveContentType === "party" ||
+                          effectiveContentType === "centralbank") && (
+                          <span className="flag-grid__country-sub">
+                            ({item.countryName})
+                          </span>
+                        )}
                       {effectiveContentType === "party" && (() => {
-                        const party = item.partyId ? partyById(item.partyId) : null;
                         const badges = party
                           ? partyPowerBadges(party, party.country)
                           : [];
                         if (badges.length === 0 && !item.partyCoalitionName) return null;
                         return (
                           <span className="flag-grid__party-badges">
-                            {badges.map((b, i) => (
+                            {badges.map((b) => (
                               <span
-                                key={`${b.kind}-${i}`}
+                                key={`${b.kind}-${b.label}`}
                                 className={`flag-grid__party-badge flag-grid__party-badge--${b.kind}`}
                               >
                                 {b.label}
@@ -1174,6 +1693,17 @@ export function FlagGrid({
                           </span>
                         );
                       })()}
+                      {effectiveContentType === "newsagency" &&
+                        item.newsAgencyOwnershipLabel &&
+                        item.newsAgencyOwnershipKind && (
+                          <span className="flag-grid__party-badges">
+                            <span
+                              className={`flag-grid__party-badge flag-grid__agency-badge flag-grid__agency-badge--${item.newsAgencyOwnershipKind}`}
+                            >
+                              {item.newsAgencyOwnershipLabel}
+                            </span>
+                          </span>
+                        )}
                     </span>
                   </button>
                 </li>

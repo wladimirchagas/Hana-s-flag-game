@@ -245,7 +245,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Finland)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Finland, Category:Tourism in Finland) and the English Wikipedia article for \"Tourism in Finland\" — no freely-licensed Visit Finland logo file could be found; the one Commons file returned by search (\"Visit-suomi-2009-05-by-RalfR-061.jpg\") is a photograph of a physical sign, not the brand mark itself.",
+        "Searched Wikimedia Commons (Category:Logos of Finland, Category:Tourism in Finland) and the English Wikipedia article for \"Tourism in Finland\" — no usable Visit Finland logo file could be found; the one Commons file returned by search (\"Visit-suomi-2009-05-by-RalfR-061.jpg\") is a photograph of a physical sign, not the brand mark itself.",
       sources: [
         "https://www.visitfinland.com/en/",
         "https://en.wikipedia.org/wiki/Tourism_in_Finland",
@@ -267,7 +267,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Guatemala)",
       },
       noImageReason:
-        "Guatemala's tourism brand changed in 2022 from the long-running \"Guatemala, Corazón del Mundo Maya\" (\"Heart of the Mayan World\") to \"Guatemala, Asombrosa e Imparable\" under President Alejandro Giammattei's government. Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Guatemala\" — no freely-licensed logo for either brand could be found on Commons or Wikipedia.",
+        "Guatemala's tourism brand changed in 2022 from the long-running \"Guatemala, Corazón del Mundo Maya\" (\"Heart of the Mayan World\") to \"Guatemala, Asombrosa e Imparable\" under President Alejandro Giammattei's government. Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Guatemala\" — no usable logo for either brand could be found on Commons or Wikipedia.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Guatemala",
         "https://concriterio.gt/no-somos-mas-corazon-del-mundo-maya-hay-nueva-marca-y-costo-q6-8-millones/",
@@ -338,7 +338,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for New Zealand)",
       },
       noImageReason:
-        "\"100% Pure New Zealand\", launched in 1999, is one of the world's longest-running destination-marketing campaigns — its mark stylises \"100% PURE\" above \"NEW ZEALAND\" with the percentage sign's crossbar formed from the shape of the New Zealand islands — but searching Wikimedia Commons and the English Wikipedia articles for \"Tourism New Zealand\" and \"Tourism in New Zealand\" found no freely-licensed copy of the logo.",
+        "\"100% Pure New Zealand\", launched in 1999, is one of the world's longest-running destination-marketing campaigns — its mark stylises \"100% PURE\" above \"NEW ZEALAND\" with the percentage sign's crossbar formed from the shape of the New Zealand islands — but searching Wikimedia Commons and the English Wikipedia articles for \"Tourism New Zealand\" and \"Tourism in New Zealand\" found no usable copy of the logo.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_New_Zealand",
         "https://www.tourismnewzealand.com/news-and-activity/tourism-new-zealands-100-pure-new-zealand-campaign-celebrates-25-years/",
@@ -633,7 +633,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Belgium)",
       },
       noImageReason:
-        "Searched Wikimedia Commons, the English Wikipedia article for \"Tourism in Belgium\", and each region's own site (visitflanders.com, visitwallonia.be, visit.brussels) — no freely-licensed logo file for any of the three regional tourism boards could be found on Commons or Wikipedia. Belgium's tourism branding is federated (like the UK's four home-nation football associations), so a single \"Belgium\" mark would misrepresent how the country actually promotes itself.",
+        "Searched Wikimedia Commons, the English Wikipedia article for \"Tourism in Belgium\", and each region's own site (visitflanders.com, visitwallonia.be, visit.brussels) — no usable logo file for any of the three regional tourism boards could be found on Commons or Wikipedia. Belgium's tourism branding is federated (like the UK's four home-nation football associations), so a single \"Belgium\" mark would misrepresent how the country actually promotes itself.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Belgium",
         "https://www.visitflanders.com/en",
@@ -656,7 +656,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Bahrain)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Bahrain), the English Wikipedia article for \"Tourism in Bahrain\", and the BTEA's own bahrain.com / portal.btea.bh sites — no freely-licensed BTEA / Visit Bahrain logo file could be found on Commons or Wikipedia.",
+        "Searched Wikimedia Commons (Category:Tourism in Bahrain), the English Wikipedia article for \"Tourism in Bahrain\", and the BTEA's own bahrain.com / portal.btea.bh sites — no usable BTEA / Visit Bahrain logo file could be found on Commons or Wikipedia.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Bahrain",
         "https://portal.btea.bh/MainP/AboutUs",
@@ -697,7 +697,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Benin)",
       },
       noImageReason:
-        "Benin unveiled a new country-brand visual identity, \"Bénin, un Monde de Splendeurs\" (\"Benin, a World of Splendors\"), drawing on the Amazones, Bio Guéra, Gèlèdè and Egungun motifs — but the logo is only published on the government's own benin.bj site, and no freely-licensed copy could be found on Wikimedia Commons or Wikipedia after searching both.",
+        "Benin unveiled a new country-brand visual identity, \"Bénin, un Monde de Splendeurs\" (\"Benin, a World of Splendors\"), drawing on the Amazones, Bio Guéra, Gèlèdè and Egungun motifs — but the logo is only published on the government's own benin.bj site, and no usable copy could be found on Wikimedia Commons or Wikipedia after searching both.",
       sources: [
         "https://benin.bj/en/sectors/tourism",
         "https://jumelages-partenariats.com/en/actualites.php?n=23522&art=Benin_unveils_the_visual_identity_of_its_country_brand%3A_%22Benin%2C_a_World_of_Splendors%22.",
@@ -745,7 +745,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Bhutan; a pandemic-year figure — Bhutan's tourism reopened in September 2022 under the current brand)",
       },
       noImageReason:
-        "The Tourism Council of Bhutan launched the country's current national brand, \"Bhutan: Believe\", on 22 September 2022 (replacing the earlier \"Happiness Is a Place\" brand, which paired a blue-poppy motif with its tagline). Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Bhutan\" — no freely-licensed logo for either brand could be found on Commons or Wikipedia.",
+        "The Tourism Council of Bhutan launched the country's current national brand, \"Bhutan: Believe\", on 22 September 2022 (replacing the earlier \"Happiness Is a Place\" brand, which paired a blue-poppy motif with its tagline). Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Bhutan\" — no usable logo for either brand could be found on Commons or Wikipedia.",
       sources: [
         "https://www.dailybhutan.com/article/bhutan-has-a-new-brand-and-tagline-bhutan-believe",
         "https://www.fastcompany.com/90801783/heres-why-bhutan-just-gave-itself-a-new-brand",
@@ -769,7 +769,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Bolivia)",
       },
       noImageReason:
-        "Bolivia's current official country brand, \"Bolivia Corazón del Sur\" (\"Bolivia, Heart of the South\"), was established by Supreme Decree in 2017, replacing the earlier \"Bolivia te espera\" (\"Bolivia awaits you\") tourism logo used from 2010. Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Bolivia\" — no freely-licensed logo for either brand could be found on Commons or Wikipedia; copies of the older \"Bolivia te espera\" mark exist only on commercial logo-aggregator sites with no verifiable licence.",
+        "Bolivia's current official country brand, \"Bolivia Corazón del Sur\" (\"Bolivia, Heart of the South\"), was established by Supreme Decree in 2017, replacing the earlier \"Bolivia te espera\" (\"Bolivia awaits you\") tourism logo used from 2010. Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Bolivia\" — no usable logo for either brand could be found on Commons or Wikipedia; copies of the older \"Bolivia te espera\" mark exist only on commercial logo-aggregator sites with no verifiable licence.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Bolivia",
         "https://www.rigobertoparedes.com/en/country-brand-registration/",
@@ -1118,7 +1118,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       visitorsNote:
         "The UAE has no single published federal international-arrivals total for a full year: tourism statistics are reported separately by emirate (Dubai alone recorded 18.72 million international overnight visitors in 2024, per the Dubai Department of Economy and Tourism), and no consolidated seven-emirate figure could be sourced.",
       noImageReason:
-        "\"Visit UAE\" was unveiled by the Ministry of Economy and Tourism at Arabian Travel Market on 16 September 2026 as the country's first unified national tourism brand at the federal level, replacing separate emirate-level identities (Visit Dubai, Abu Dhabi's Abu Moments, Visit Sharjah, and others). It is too newly launched for any freely-licensed logo image to exist on Wikimedia Commons or elsewhere yet; this entry will be updated once an authoritative image becomes available.",
+        "\"Visit UAE\" was unveiled by the Ministry of Economy and Tourism at Arabian Travel Market on 16 September 2026 as the country's first unified national tourism brand at the federal level, replacing separate emirate-level identities (Visit Dubai, Abu Dhabi's Abu Moments, Visit Sharjah, and others). It is too newly launched for any usable logo image to exist on Wikimedia Commons or elsewhere yet; this entry will be updated once an authoritative image becomes available.",
       sources: [
         "https://gulfnews.com/business/tourism/uae-launches-visit-uae-brand-to-unite-seven-emirates-under-one-tourism-identity-1.500676742",
         "https://www.gccbusinessnews.com/uae-launches-visit-uae-uae-grand-tour/",
@@ -1137,7 +1137,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       visitorsNote:
         "No comprehensive or recent international tourist-arrival statistics are published for Nauru. The most recent sourced figure found is a 2008 Australian outbound-travel survey recording 478 Australian visitors to Nauru that year (Pacific Islands Trade & Investment Commission, cited via Wikipedia's \"Tourism in Nauru\"); Nauru is widely reported in travel media as one of the world's least-visited countries, but no authoritative up-to-date arrivals count could be sourced to cite here.",
       noImageReason:
-        "Searched Wikimedia Commons, Wikipedia (\"Tourism in Nauru\", \"Nauru Tourism Corporation\"), the Corporation's official Facebook and X/Twitter accounts, and general web search for an official Nauru Tourism Corporation logo or emblem. No freely-licensed or otherwise citable official logo image could be found — only the Corporation's name, its founding legislation and a social-media presence with no confirmed distinct brand mark are documented online.",
+        "Searched Wikimedia Commons, Wikipedia (\"Tourism in Nauru\", \"Nauru Tourism Corporation\"), the Corporation's official Facebook and X/Twitter accounts, and general web search for an official Nauru Tourism Corporation logo or emblem. No usable or otherwise citable official logo image could be found — only the Corporation's name, its founding legislation and a social-media presence with no confirmed distinct brand mark are documented online.",
       sources: [
         "https://faolex.fao.org/docs/pdf/nau188240.pdf",
         "https://en.wikipedia.org/wiki/Tourism_in_Nauru",
@@ -1256,7 +1256,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Mexico)",
       },
       noImageReason:
-        "SECTUR took over Mexico's tourism-branding responsibilities after the former Mexico Tourism Board (Consejo de Promoción Turística de México) was dissolved in 2019; searched Wikimedia Commons (Category:Logos of Mexico, Category:Logos of governments and government agencies of Mexico) and English/Spanish Wikipedia — the only bundled tourism-related file found (\"Logo Secretaría de Turismo.png\") is SECTUR's own institutional department seal, not the consumer-facing \"VisitMéxico\" wordmark shown at visitmexico.com, and no freely-licensed copy of that consumer mark could be found.",
+        "SECTUR took over Mexico's tourism-branding responsibilities after the former Mexico Tourism Board (Consejo de Promoción Turística de México) was dissolved in 2019; searched Wikimedia Commons (Category:Logos of Mexico, Category:Logos of governments and government agencies of Mexico) and English/Spanish Wikipedia — the only shown tourism-related file found (\"Logo Secretaría de Turismo.png\") is SECTUR's own institutional department seal, not the consumer-facing \"VisitMéxico\" wordmark shown at visitmexico.com, and no usable copy of that consumer mark could be found.",
       sources: [
         "https://en.wikipedia.org/wiki/Secretariat_of_Tourism_(Mexico)",
         "https://en.wikipedia.org/wiki/Mexico_Tourism_Board",
@@ -1353,7 +1353,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Jordan)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Symbols of Jordan, Category:National emblem of Jordan) and the English Wikipedia articles for the Ministry of Tourism and Antiquities (Jordan) and Tourism in Jordan — no freely-licensed Jordan Tourism Board logo could be found on Commons or Wikipedia.",
+        "Searched Wikimedia Commons (Category:Symbols of Jordan, Category:National emblem of Jordan) and the English Wikipedia articles for the Ministry of Tourism and Antiquities (Jordan) and Tourism in Jordan — no usable Jordan Tourism Board logo could be found on Commons or Wikipedia.",
       sources: [
         "https://en.wikipedia.org/wiki/Ministry_of_Tourism_and_Antiquities_(Jordan)",
         "https://en.wikipedia.org/wiki/Tourism_in_Jordan",
@@ -1396,7 +1396,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Israel)",
       },
       noImageReason:
-        "The only tourism-related file found on Wikimedia Commons (\"IL-Isr-tour-logo.png\", Category:Logo of the Ministry of Tourism (Israel)) is captioned on its own file-history page as a re-creation \"similar to\" the Ministry's logo (German: \"ähnlich Israel-Tourismus\") rather than a verbatim upload of the official mark — bundling a fan approximation would violate this repo's ban on invented/approximated logo content, so the entry is left without an image. No other freely-licensed copy of the Ministry's actual emblem could be found on Commons or Wikipedia.",
+        "The only tourism-related file found on Wikimedia Commons (\"IL-Isr-tour-logo.png\", Category:Logo of the Ministry of Tourism (Israel)) is captioned on its own file-history page as a re-creation \"similar to\" the Ministry's logo (German: \"ähnlich Israel-Tourismus\") rather than a verbatim upload of the official mark — bundling a fan approximation would violate this repo's ban on invented/approximated logo content, so the entry is left without an image. No other usable copy of the Ministry's actual emblem could be found on Commons or Wikipedia.",
       sources: [
         "https://commons.wikimedia.org/wiki/Category:Logo_of_the_Ministry_of_Tourism_(Israel)",
         "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Israel)",
@@ -1493,7 +1493,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Cambodia)",
       },
       noImageReason:
-        "\"Kingdom of Wonder\", Cambodia's tourism brand since 2008, has a documented golden-orange identity built around Angkor Wat, but searching Wikimedia Commons (Category:Tourism in Cambodia) and the English Wikipedia article for \"Tourism in Cambodia\" found no freely-licensed copy of the logo.",
+        "\"Kingdom of Wonder\", Cambodia's tourism brand since 2008, has a documented golden-orange identity built around Angkor Wat, but searching Wikimedia Commons (Category:Tourism in Cambodia) and the English Wikipedia article for \"Tourism in Cambodia\" found no usable copy of the logo.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Cambodia",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Cambodia",
@@ -1515,7 +1515,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Iceland)",
       },
       noImageReason:
-        "\"Inspired by Iceland\", launched in 2010 in response to the Eyjafjallajökull eruption's impact on tourism, is a well-documented campaign, but searching Wikimedia Commons (Category:Logos of Iceland, Category:Tourism in Iceland) and the English Wikipedia article for \"Tourism in Iceland\" found no freely-licensed copy of the logo.",
+        "\"Inspired by Iceland\", launched in 2010 in response to the Eyjafjallajökull eruption's impact on tourism, is a well-documented campaign, but searching Wikimedia Commons (Category:Logos of Iceland, Category:Tourism in Iceland) and the English Wikipedia article for \"Tourism in Iceland\" found no usable copy of the logo.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Iceland",
         "https://commons.wikimedia.org/wiki/Category:Logos_of_Iceland",
@@ -1633,7 +1633,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Norway)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Norway) and general web search — no freely-licensed \"Visitnorway\" logo could be found on Commons or Wikipedia; the only Commons file returned by search (\"Tour of Norway logo.svg\") is for an unrelated cycling race.",
+        "Searched Wikimedia Commons (Category:Tourism in Norway) and general web search — no usable \"Visitnorway\" logo could be found on Commons or Wikipedia; the only Commons file returned by search (\"Tour of Norway logo.svg\") is for an unrelated cycling race.",
       sources: [
         "https://www.visitnorway.com/info/about-visitnorway/",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Norway",
@@ -1751,7 +1751,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Namibia)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Namibia, Category:Symbols of Namibia) and the English Wikipedia articles for the Namibia Tourism Board and \"Tourism in Namibia\" — no freely-licensed NTB consumer-brand logo could be found on Commons or Wikipedia.",
+        "Searched Wikimedia Commons (Category:Tourism in Namibia, Category:Symbols of Namibia) and the English Wikipedia articles for the Namibia Tourism Board and \"Tourism in Namibia\" — no usable NTB consumer-brand logo could be found on Commons or Wikipedia.",
       sources: [
         "https://en.wikipedia.org/wiki/Namibia_Tourism_Board",
         "https://en.wikipedia.org/wiki/Tourism_in_Namibia",
@@ -1796,7 +1796,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Tanzania)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Tanzania) and the English Wikipedia article for \"Tourism in Tanzania\" — no freely-licensed Tanzania Tourist Board consumer-brand logo could be found; the only tourism-labelled Commons file returned by search (\"Ministry of Tourism and Antiquities logo.png\") is Egypt's ministry logo, wrongly surfaced by a generic category match — not Tanzania's own.",
+        "Searched Wikimedia Commons (Category:Tourism in Tanzania) and the English Wikipedia article for \"Tourism in Tanzania\" — no usable Tanzania Tourist Board consumer-brand logo could be found; the only tourism-labelled Commons file returned by search (\"Ministry of Tourism and Antiquities logo.png\") is Egypt's ministry logo, wrongly surfaced by a generic category match — not Tanzania's own.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Tanzania",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Tanzania",
@@ -1817,7 +1817,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Zimbabwe)",
       },
       noImageReason:
-        "\"A World of Wonders\" is the Zimbabwe Tourism Authority's documented brand, but searching Wikimedia Commons and the English Wikipedia articles for the Zimbabwe Tourism Authority and \"Tourism in Zimbabwe\" found no freely-licensed copy of the logo on Commons or Wikipedia.",
+        "\"A World of Wonders\" is the Zimbabwe Tourism Authority's documented brand, but searching Wikimedia Commons and the English Wikipedia articles for the Zimbabwe Tourism Authority and \"Tourism in Zimbabwe\" found no usable copy of the logo on Commons or Wikipedia.",
       sources: [
         "https://en.wikipedia.org/wiki/Zimbabwe_Tourism_Authority",
         "https://en.wikipedia.org/wiki/Tourism_in_Zimbabwe",
@@ -1837,7 +1837,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Senegal)",
       },
       noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia articles for the Ministry of Tourism (Senegal) and \"Tourism in Senegal\" — no freely-licensed Senegalese tourism-board consumer-brand logo could be found; the only Commons file returned by a \"Sunugal\"-brand search (\"SNT Motiv Logo.svg\") is confirmed on its own file page to be an unrelated South Korean company's logo, not Senegal's tourism board.",
+        "Searched Wikimedia Commons and the English Wikipedia articles for the Ministry of Tourism (Senegal) and \"Tourism in Senegal\" — no usable Senegalese tourism-board consumer-brand logo could be found; the only Commons file returned by a \"Sunugal\"-brand search (\"SNT Motiv Logo.svg\") is confirmed on its own file page to be an unrelated South Korean company's logo, not Senegal's tourism board.",
       sources: [
         "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Senegal)",
         "https://en.wikipedia.org/wiki/Tourism_in_Senegal",
@@ -1857,7 +1857,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Côte d'Ivoire)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Symbols of Ivory Coast) and general web search for a Côte d'Ivoire tourism-board consumer-brand logo — no freely-licensed file could be found; Commons results returned only unrelated Ivorian logos (Air Côte d'Ivoire, the coat of arms).",
+        "Searched Wikimedia Commons (Category:Symbols of Ivory Coast) and general web search for a Côte d'Ivoire tourism-board consumer-brand logo — no usable file could be found; Commons results returned only unrelated Ivorian logos (Air Côte d'Ivoire, the coat of arms).",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_Ivory_Coast"],
     },
   ],
@@ -1874,7 +1874,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Mozambique)",
       },
       noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Mozambique\" — no freely-licensed Mozambican tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Mozambique\" — no usable Mozambican tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_Mozambique"],
     },
   ],
@@ -1891,7 +1891,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Angola)",
       },
       noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Angola\" — no freely-licensed Angolan tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Angola\" — no usable Angolan tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_Angola"],
     },
   ],
@@ -1985,7 +1985,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Lithuania)",
       },
       noImageReason:
-        "\"Real Is Beautiful\", a postage-stamp-centred identity introduced by the State Department of Tourism in 2016, is well documented, but searching Wikimedia Commons (Category:Tourism in Lithuania) and the English Wikipedia article for \"Tourism in Lithuania\" found no freely-licensed copy of the logo.",
+        "\"Real Is Beautiful\", a postage-stamp-centred identity introduced by the State Department of Tourism in 2016, is well documented, but searching Wikimedia Commons (Category:Tourism in Lithuania) and the English Wikipedia article for \"Tourism in Lithuania\" found no usable copy of the logo.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Lithuania",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Lithuania",
@@ -2102,7 +2102,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Nigeria)",
       },
       noImageReason:
-        "The only NTDC logo bundled on Wikimedia Commons (\"NTDC Logo new.png\") is filed in the \"Coats of arms of Nigeria\" category — the agency's own institutional emblem, not a consumer destination-marketing mark — the same category error the Brazil/Embratur entry in this dataset was corrected away from. No separate consumer tourism-brand logo could be found on Commons or Wikipedia.",
+        "The only NTDC logo shown on Wikimedia Commons (\"NTDC Logo new.png\") is filed in the \"Coats of arms of Nigeria\" category — the agency's own institutional emblem, not a consumer destination-marketing mark — the same category error the Brazil/Embratur entry in this dataset was corrected away from. No separate consumer tourism-brand logo could be found on Commons or Wikipedia.",
       sources: [
         "https://commons.wikimedia.org/wiki/File:NTDC_Logo_new.png",
         "https://en.wikipedia.org/wiki/Nigerian_Tourism_Development_Corporation",
@@ -2124,7 +2124,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Pakistan)",
       },
       noImageReason:
-        "\"Salam Pakistan\", Pakistan's first-ever national tourism brand, launched by the PTDC in 2025, is too new to have a freely-licensed logo on Wikimedia Commons or Wikipedia yet — searches turned up only the brand's own social-media/video announcements.",
+        "\"Salam Pakistan\", Pakistan's first-ever national tourism brand, launched by the PTDC in 2025, is too new to have a usable logo on Wikimedia Commons or Wikipedia yet — searches turned up only the brand's own social-media/video announcements.",
       sources: [
         "https://www.nativeplanet.com/news/salam-pakistan-first-ever-national-tourism-brand-to-promote-tourism-in-pakistan-008789.html",
         "https://en.wikipedia.org/wiki/Tourism_in_Pakistan",
@@ -2194,7 +2194,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Honduras)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Honduras, Category:Tourism in Honduras) and the English Wikipedia article for \"Tourism in Honduras\" — no freely-licensed Instituto Hondureño de Turismo consumer-brand logo could be found on Commons or Wikipedia.",
+        "Searched Wikimedia Commons (Category:Logos of Honduras, Category:Tourism in Honduras) and the English Wikipedia article for \"Tourism in Honduras\" — no usable Instituto Hondureño de Turismo consumer-brand logo could be found on Commons or Wikipedia.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Honduras",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Honduras",
@@ -2443,7 +2443,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Ethiopia)",
       },
       noImageReason:
-        "\"Land of Origins\", launched in 2016 to replace \"13 Months of Sunshine\", is a well-documented rebrand, but searching Wikimedia Commons and the English Wikipedia article for \"Tourism in Ethiopia\" found no freely-licensed copy of the logo.",
+        "\"Land of Origins\", launched in 2016 to replace \"13 Months of Sunshine\", is a well-documented rebrand, but searching Wikimedia Commons and the English Wikipedia article for \"Tourism in Ethiopia\" found no usable copy of the logo.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_Ethiopia"],
     },
   ],
@@ -2557,7 +2557,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Paraguay)",
       },
       noImageReason:
-        "Searched Wikimedia Commons and general web search — no freely-licensed SENATUR consumer-brand logo could be found on Commons or Wikipedia.",
+        "Searched Wikimedia Commons and general web search — no usable SENATUR consumer-brand logo could be found on Commons or Wikipedia.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_Paraguay"],
     },
   ],
@@ -2574,7 +2574,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Iraq)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Iraq, Category:Tourism in Iraq) and the English Wikipedia article for \"Tourism in Iraq\" — no freely-licensed Iraqi tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+        "Searched Wikimedia Commons (Category:Logos of Iraq, Category:Tourism in Iraq) and the English Wikipedia article for \"Tourism in Iraq\" — no usable Iraqi tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Iraq",
         "https://commons.wikimedia.org/wiki/Category:Logos_of_Iraq",
@@ -2594,7 +2594,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Syria)",
       },
       noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Syria\" — no freely-licensed Syrian tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+        "Searched Wikimedia Commons and the English Wikipedia article for \"Tourism in Syria\" — no usable Syrian tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_Syria"],
     },
   ],
@@ -2635,7 +2635,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Lebanon)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Lebanon) and the English Wikipedia article for the Ministry of Tourism (Lebanon) — no freely-licensed Lebanese tourism-board consumer-brand logo could be found; the only tourism-labelled Commons file returned by search (\"Logo OMT (Lebanon).svg\") is confirmed to be OMT, an unrelated Lebanese money-transfer/fintech company, not the tourism ministry.",
+        "Searched Wikimedia Commons (Category:Logos of Lebanon) and the English Wikipedia article for the Ministry of Tourism (Lebanon) — no usable Lebanese tourism-board consumer-brand logo could be found; the only tourism-labelled Commons file returned by search (\"Logo OMT (Lebanon).svg\") is confirmed to be OMT, an unrelated Lebanese money-transfer/fintech company, not the tourism ministry.",
       sources: [
         "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Lebanon)",
         "https://commons.wikimedia.org/wiki/Category:Logos_of_Lebanon",
@@ -2655,7 +2655,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Sudan)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Sudan, Category:Tourism in Sudan) and the English Wikipedia article for \"Tourism in Sudan\" — no freely-licensed Sudanese tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+        "Searched Wikimedia Commons (Category:Logos of Sudan, Category:Tourism in Sudan) and the English Wikipedia article for \"Tourism in Sudan\" — no usable Sudanese tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Sudan",
         "https://commons.wikimedia.org/wiki/Category:Logos_of_Sudan",
@@ -2671,7 +2671,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       visitorsNote:
         "No World Bank or other authoritative international-tourist-arrivals figure is published for South Sudan.",
       noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia articles for \"Tourism in South Sudan\" and the Ministry of Wildlife Conservation and Tourism — no freely-licensed South Sudanese tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+        "Searched Wikimedia Commons and the English Wikipedia articles for \"Tourism in South Sudan\" and the Ministry of Wildlife Conservation and Tourism — no usable South Sudanese tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_South_Sudan",
         "https://en.wikipedia.org/wiki/Ministry_of_Wildlife_Conservation_and_Tourism",
@@ -2687,7 +2687,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       visitorsNote:
         "No World Bank or other authoritative international-tourist-arrivals figure is published for Somalia.",
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Somalia, Category:Symbols of Somalia) and the English Wikipedia article for \"Tourism in Somalia\" — no freely-licensed Somali tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+        "Searched Wikimedia Commons (Category:Tourism in Somalia, Category:Symbols of Somalia) and the English Wikipedia article for \"Tourism in Somalia\" — no usable Somali tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_Somalia"],
     },
   ],
@@ -2704,7 +2704,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Libya, predating the 2011 civil war)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Libya, Category:Tourism in Libya) and the English Wikipedia article for \"Tourism in Libya\" — no freely-licensed Libyan tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+        "Searched Wikimedia Commons (Category:Logos of Libya, Category:Tourism in Libya) and the English Wikipedia article for \"Tourism in Libya\" — no usable Libyan tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Libya",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Libya",
@@ -2724,7 +2724,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Chad)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Chad, Category:Symbols of Chad) and the English Wikipedia article for \"Tourism in Chad\" — no freely-licensed Chadian tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
+        "Searched Wikimedia Commons (Category:Tourism in Chad, Category:Symbols of Chad) and the English Wikipedia article for \"Tourism in Chad\" — no usable Chadian tourism-board consumer-brand logo could be found on Commons or Wikipedia.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Chad",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Chad",
@@ -2745,7 +2745,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Mongolia)",
       },
       noImageReason:
-        "Mongolia's tourism slogan changed from \"Go Nomadic, Experience Mongolia\" (2013) to \"Mongolia — Nomadic by Nature\", but searching Wikimedia Commons (Category:Tourism in Mongolia, Category:Logos of Mongolia) and the English Wikipedia article for \"Tourism in Mongolia\" found no freely-licensed copy of either campaign's logo; Commons results returned only unrelated Mongolian logos (a forum, the e-Mongolia digital-government service, the Ministry of Environment and Tourism's institutional emblem).",
+        "Mongolia's tourism slogan changed from \"Go Nomadic, Experience Mongolia\" (2013) to \"Mongolia — Nomadic by Nature\", but searching Wikimedia Commons (Category:Tourism in Mongolia, Category:Logos of Mongolia) and the English Wikipedia article for \"Tourism in Mongolia\" found no usable copy of either campaign's logo; Commons results returned only unrelated Mongolian logos (a forum, the e-Mongolia digital-government service, the Ministry of Environment and Tourism's institutional emblem).",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Mongolia",
         "https://commons.wikimedia.org/wiki/Category:Tourism_in_Mongolia",
@@ -2997,7 +2997,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Russia)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Logos associated with tourism in Russia and Category:Tourism in Russia — neither holds a matching file) and the English Wikipedia \"Discover Russia\" article, whose only infobox image is an unrelated 2018–2019 sister-cities contest logo, not the 2024 Möbius-loop \"Discover Russia\" brand mark. No freely-licensed copy of the current brand could be found.",
+        "Searched Wikimedia Commons (Category:Logos associated with tourism in Russia and Category:Tourism in Russia — neither holds a matching file) and the English Wikipedia \"Discover Russia\" article, whose only infobox image is an unrelated 2018–2019 sister-cities contest logo, not the 2024 Möbius-loop \"Discover Russia\" brand mark. No usable copy of the current brand could be found.",
       sources: [
         "https://en.wikipedia.org/wiki/Discover_Russia",
         "https://discoverrussia.ru/en",
@@ -3019,7 +3019,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for China)",
       },
       noImageReason:
-        "Searched Wikimedia Commons for the 2013 \"Beautiful China\" traditional-seal logo (a red seal-script rendering of the phrase over a blue backdrop) — no freely-licensed copy could be found; the China National Tourism Administration that launched it was itself dissolved in 2018 and its duties merged into the Ministry of Culture and Tourism.",
+        "Searched Wikimedia Commons for the 2013 \"Beautiful China\" traditional-seal logo (a red seal-script rendering of the phrase over a blue backdrop) — no usable copy could be found; the China National Tourism Administration that launched it was itself dissolved in 2018 and its duties merged into the Ministry of Culture and Tourism.",
       sources: [
         "https://www.unwto.org/archive/asia/news/2013-07-24/china-unveils-new-tourism-logo",
         "https://en.wikipedia.org/wiki/China_National_Tourism_Administration",
@@ -3092,7 +3092,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Hungary)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Hungary, Category:Logos of Hungary — neither holds a matching file) and the English Wikipedia \"Tourism in Hungary\" article, which names no current brand or logo — no freely-licensed copy of the Hungarian Tourism Agency's 2018 \"WOW Hungary\" (Wellspring of Wonders), designed by Graphasel Design Studio around an ancient Hungarian motif, could be found.",
+        "Searched Wikimedia Commons (Category:Tourism in Hungary, Category:Logos of Hungary — neither holds a matching file) and the English Wikipedia \"Tourism in Hungary\" article, which names no current brand or logo — no usable copy of the Hungarian Tourism Agency's 2018 \"WOW Hungary\" (Wellspring of Wonders), designed by Graphasel Design Studio around an ancient Hungarian motif, could be found.",
       sources: [
         "https://xpatloop.com/channels/2018/10/wow-hungary-national-brand-unveiled-at-tourism-summit.html",
         "https://en.wikipedia.org/wiki/Tourism_in_Hungary",
@@ -3257,7 +3257,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Venezuela)",
       },
       noImageReason:
-        "Searched Wikidata (Q16607782) and Wikimedia Commons for a MINTUR consumer tourism-brand logo — the only linked image, \"Política de Venezuela.png\", is confirmed on its own Commons file page to be a GENERIC Venezuelan government seal reused across many unrelated ministries (Education, Foreign Affairs, Culture, Planning, Communication), not MINTUR's own or any consumer-facing tourism mark, so it was not used as a substitute per this repo's consumer-brand-not-institutional-seal standard.",
+        "Searched Wikidata (the organisation's Wikidata item) and Wikimedia Commons for a MINTUR consumer tourism-brand logo — the only linked image, \"Política de Venezuela.png\", is confirmed on its own Commons file page to be a GENERIC Venezuelan government seal reused across many unrelated ministries (Education, Foreign Affairs, Culture, Planning, Communication), not MINTUR's own or any consumer-facing tourism mark, so it was not used as a substitute per this repo's consumer-brand-not-institutional-seal standard.",
       sources: [
         "https://www.wikidata.org/wiki/Q16607782",
         "https://commons.wikimedia.org/wiki/File:Pol%C3%ADtica_de_Venezuela.png",
@@ -3375,7 +3375,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Belarus)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Belarus) for the government's 2016–2020 \"Hospitable Belarus\" state tourism-development programme — no freely-licensed logo/brand mark distinct from the programme's name could be found.",
+        "Searched Wikimedia Commons (Category:Tourism in Belarus) for the government's 2016–2020 \"Hospitable Belarus\" state tourism-development programme — no usable logo/brand mark distinct from the programme's name could be found.",
       sources: [
         "https://president.gov.by/en/belarus/tourism/hospitable-belarus",
         "https://usa.mfa.gov.by/en/visit_Belarus/hospitality/",
@@ -3397,7 +3397,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Iran)",
       },
       noImageReason:
-        "Searched Wikimedia Commons for Iran's 2020 national tourism brand \"Majestic Iran\" — a turquoise Simurgh (mythical bird) mark with Muqarnas-patterned wings and the word \"Iran\" in terracotta, registered with UN Tourism — no freely-licensed copy of that specific brand mark could be found; Commons' Simurgh category holds only unrelated historical/artistic depictions of the mythological bird. The Ministry's own institutional seal (a separate, broader heritage/handicrafts emblem, not the tourism consumer brand) was not used as a substitute per this repo's consumer-brand-not-institutional-seal standard.",
+        "Searched Wikimedia Commons for Iran's 2020 national tourism brand \"Majestic Iran\" — a turquoise Simurgh (mythical bird) mark with Muqarnas-patterned wings and the word \"Iran\" in terracotta, registered with UN Tourism — no usable copy of that specific brand mark could be found; Commons' Simurgh category holds only unrelated historical/artistic depictions of the mythological bird. The Ministry's own institutional seal (a separate, broader heritage/handicrafts emblem, not the tourism consumer brand) was not used as a substitute per this repo's consumer-brand-not-institutional-seal standard.",
       sources: [
         "https://www.destinationiran.com/iran-national-brand-tourism.htm",
         "https://www.untourism.int/asia/iran-s-new-national-brand-majestic-iran",
@@ -3505,7 +3505,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Cabo Verde)",
       },
       noImageReason:
-        "Searched Wikimedia Commons and Wikidata for an Instituto do Turismo de Cabo Verde / turismo.cv logo — no freely-licensed copy could be found. \"No Stress\" (Cabo Verde's well-known morabeza motto, widely printed on souvenirs and murals) is a cultural catchphrase rather than a registered agency logo, so it is recorded as the slogan, not treated as if it had its own emblem.",
+        "Searched Wikimedia Commons and Wikidata for an Instituto do Turismo de Cabo Verde / turismo.cv logo — no usable copy could be found. \"No Stress\" (Cabo Verde's well-known morabeza motto, widely printed on souvenirs and murals) is a cultural catchphrase rather than a registered agency logo, so it is recorded as the slogan, not treated as if it had its own emblem.",
       sources: ["https://turismo.cv/", "https://www.wikidata.org/wiki/Q1011"],
     },
   ],
@@ -3522,7 +3522,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Madagascar)",
       },
       noImageReason:
-        "Searched Wikimedia Commons for the Office National du Tourisme de Madagascar (ONTM) logo — no freely-licensed copy could be found.",
+        "Searched Wikimedia Commons for the Office National du Tourisme de Madagascar (ONTM) logo — no usable copy could be found.",
       sources: [
         "https://www.developmentaid.org/organizations/view/221601/office-national-du-tourisme-de-madagascar-ontm",
         "https://www.mta.gov.mg/",
@@ -3542,7 +3542,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Antigua and Barbuda)",
       },
       noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in Antigua and Barbuda\" article — no freely-licensed copy of the Antigua and Barbuda Tourism Authority's logo could be found.",
+        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in Antigua and Barbuda\" article — no usable copy of the Antigua and Barbuda Tourism Authority's logo could be found.",
       sources: [
         "https://en.wikipedia.org/wiki/Tourism_in_Antigua_and_Barbuda",
         "https://www.theantiguan.com/antigua-and-barbuda-tourism-authority",
@@ -3652,7 +3652,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Saint Kitts and Nevis)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Saint Kitts and Nevis) — no freely-licensed copy of the St Kitts Tourism Authority's or Nevis Tourism Authority's logo could be found.",
+        "Searched Wikimedia Commons (Category:Saint Kitts and Nevis) — no usable copy of the St Kitts Tourism Authority's or Nevis Tourism Authority's logo could be found.",
       sources: [
         "https://www.routesonline.com/destinations/9413/st-kitts-tourism-authority/about/",
         "https://www.visitstkitts.com/media",
@@ -3672,7 +3672,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Cameroon)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Cameroon, Category:Logos of Cameroon) — no freely-licensed copy of MINTOUL's own logo could be found. The only \"Ministry of Tourism\" file this search surfaced (\"Ministry of Tourism and Antiquities logo.png\") is the SAME Egyptian ministry file that has repeatedly, wrongly resurfaced for Zambia/Tanzania/Myanmar earlier in this sweep — it is Egypt's file, not Cameroon's, and was not used.",
+        "Searched Wikimedia Commons (Category:Tourism in Cameroon, Category:Logos of Cameroon) — no usable copy of MINTOUL's own logo could be found. The only \"Ministry of Tourism\" file this search surfaced (\"Ministry of Tourism and Antiquities logo.png\") is the SAME Egyptian ministry file that has repeatedly, wrongly resurfaced for Zambia/Tanzania/Myanmar earlier in this sweep — it is Egypt's file, not Cameroon's, and was not used.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_Cameroon", "https://mintoul.gov.cm/en/the-ministry/"],
     },
   ],
@@ -3689,7 +3689,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Democratic Republic of the Congo)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in the Democratic Republic of the Congo) — no freely-licensed national tourism-board logo could be found.",
+        "Searched Wikimedia Commons (Category:Tourism in the Democratic Republic of the Congo) — no usable national tourism-board logo could be found.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_the_Democratic_Republic_of_the_Congo"],
     },
   ],
@@ -3706,7 +3706,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Republic of the Congo)",
       },
       noImageReason:
-        "Searched Wikimedia Commons and Wikipedia for a Republic of the Congo national tourism-board name and logo — no dedicated tourism-promotion brand or freely-licensed logo could be found.",
+        "Searched Wikimedia Commons and Wikipedia for a Republic of the Congo national tourism-board name and logo — no dedicated tourism-promotion brand or usable logo could be found.",
       sources: ["https://republic-congo.com/en/tourism/"],
     },
   ],
@@ -3724,7 +3724,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Gabon; this is an older figure, no newer one is published)",
       },
       noImageReason:
-        "Searched Wikimedia Commons for AGATOUR (Gabon's national tourism development and promotion agency, established 2014) — no freely-licensed copy of its logo could be found.",
+        "Searched Wikimedia Commons for AGATOUR (Gabon's national tourism development and promotion agency, established 2014) — no usable copy of its logo could be found.",
       sources: ["https://fr.wikipedia.org/wiki/Tourisme_au_Gabon", "https://www.tourisme.gouv.ga/"],
     },
   ],
@@ -3767,7 +3767,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Guinea)",
       },
       noImageReason:
-        "Searched Wikimedia Commons for a Guinean consumer destination brand — the only freely-licensed file found (\"Logo_ONT.jpg\") reads solely \"Office National du Tourisme\", the tourism office's own institutional name, with no country name or destination slogan of any kind, so it was not used as a substitute per this repo's consumer-brand-not-institutional-logo standard.",
+        "Searched Wikimedia Commons for a Guinean consumer destination brand — the only usable file found (\"Logo_ONT.jpg\") reads solely \"Office National du Tourisme\", the tourism office's own institutional name, with no country name or destination slogan of any kind, so it was not used as a substitute per this repo's consumer-brand-not-institutional-logo standard.",
       sources: [
         "https://commons.wikimedia.org/wiki/File:Logo_ONT.jpg",
         "https://fr.wikipedia.org/wiki/Office_national_du_tourisme_de_Guin%C3%A9e",
@@ -3788,7 +3788,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Burkina Faso)",
       },
       noImageReason:
-        "Searched Wikimedia Commons for a logo of \"Faso Tourisme\", the national tourism-promotion agency the Burkinabè government created in November 2024 to replace the Office National du Tourisme Burkinabè (ONTB) — no freely-licensed copy could be found.",
+        "Searched Wikimedia Commons for a logo of \"Faso Tourisme\", the national tourism-promotion agency the Burkinabè government created in November 2024 to replace the Office National du Tourisme Burkinabè (ONTB) — no usable copy could be found.",
       sources: [
         "https://www.presidencedufaso.bf/promotion-du-tourisme-au-burkina-faso-le-gouvernement-cree-lagence-faso-tourisme/",
         "https://en.wikipedia.org/wiki/Tourism_in_Burkina_Faso",
@@ -3808,7 +3808,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Central African Republic)",
       },
       noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in the Central African Republic\" article — no freely-licensed national tourism-board logo could be found.",
+        "Searched Wikimedia Commons and the English Wikipedia \"Tourism in the Central African Republic\" article — no usable national tourism-board logo could be found.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_the_Central_African_Republic"],
     },
   ],
@@ -3845,7 +3845,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Mali)",
       },
       noImageReason:
-        "Searched Wikimedia Commons for a logo of the Agence de Promotion Touristique du Mali (\"Mali Tourisme\", which succeeded the Office Malien du Tourisme et de l'Hôtellerie, OMATHO) — no freely-licensed copy could be found.",
+        "Searched Wikimedia Commons for a logo of the Agence de Promotion Touristique du Mali (\"Mali Tourisme\", which succeeded the Office Malien du Tourisme et de l'Hôtellerie, OMATHO) — no usable copy could be found.",
       sources: ["https://fr.wikipedia.org/wiki/Tourisme_au_Mali", "https://officetourismemali.com/"],
     },
   ],
@@ -3900,7 +3900,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Haiti)",
       },
       noImageReason:
-        "Searched Wikimedia Commons and the English Wikipedia \"Ministry of Tourism (Haiti)\" article — the article's infobox carries only Haiti's national coat of arms as a generic placeholder, not the ministry's own distinct logo, and no freely-licensed copy of an actual ministry logo could be found.",
+        "Searched Wikimedia Commons and the English Wikipedia \"Ministry of Tourism (Haiti)\" article — the article's infobox carries only Haiti's national coat of arms as a generic placeholder, not the ministry's own distinct logo, and no usable copy of an actual ministry logo could be found.",
       sources: ["https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Haiti)"],
     },
   ],
@@ -3915,7 +3915,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       visitorsNote:
         "No World Bank international-tourist-arrivals figure is published for Liberia.",
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Liberia) for the Liberia National Tourism Authority's logo (established 2024) — no freely-licensed copy could be found.",
+        "Searched Wikimedia Commons (Category:Tourism in Liberia) for the Liberia National Tourism Authority's logo (established 2024) — no usable copy could be found.",
       sources: ["https://lnta.gov.lr/", "https://en.wikipedia.org/wiki/Tourism_in_Liberia"],
     },
   ],
@@ -3933,7 +3933,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Lesotho)",
       },
       noImageReason:
-        "Searched Wikimedia Commons for the Lesotho Tourism Development Corporation's (LTDC, established 2002) logo — no freely-licensed copy could be found.",
+        "Searched Wikimedia Commons for the Lesotho Tourism Development Corporation's (LTDC, established 2002) logo — no usable copy could be found.",
       sources: [
         "https://lndc.org.ls/knowledge-base/lesotho-tourism-development-corporation-ltdc/",
         "https://www.visitlesotho.org.ls/",
@@ -3953,7 +3953,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Eswatini)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Eswatini) for the Eswatini Tourism Authority's logo — no freely-licensed copy could be found.",
+        "Searched Wikimedia Commons (Category:Tourism in Eswatini) for the Eswatini Tourism Authority's logo — no usable copy could be found.",
       sources: ["https://eswatinitourismauthority.org/", "https://www.thekingdomofeswatini.com/"],
     },
   ],
@@ -4016,7 +4016,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Eritrea; this is an older figure, no newer one is published)",
       },
       noImageReason:
-        "Searched Wikimedia Commons for an Eritrea tourism-board/ministry logo — no freely-licensed copy could be found; only the country's national emblem exists on Commons, which is not a consumer tourism brand and was not used as a substitute.",
+        "Searched Wikimedia Commons for an Eritrea tourism-board/ministry logo — no usable copy could be found; only the country's national emblem exists on Commons, which is not a consumer tourism brand and was not used as a substitute.",
       sources: ["https://us.embassyeritrea.org/tourism/", "http://www.eritrea.be/MoT.htm"],
     },
   ],
@@ -4049,7 +4049,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       visitorsNote:
         "No World Bank or other authoritative international-tourist-arrivals figure is published for Equatorial Guinea.",
       noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Equatorial Guinea, 16 files — none tourism-related) and the English Wikipedia \"Tourism in Equatorial Guinea\" article — no freely-licensed national tourism-board logo could be found.",
+        "Searched Wikimedia Commons (Category:Logos of Equatorial Guinea, 16 files — none tourism-related) and the English Wikipedia \"Tourism in Equatorial Guinea\" article — no usable national tourism-board logo could be found.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_Equatorial_Guinea"],
     },
   ],
@@ -4066,7 +4066,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Guinea-Bissau)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Guinea-Bissau, which holds no tourism-related file) — no freely-licensed tourism-board logo could be found. The US Department of State notes no formal tourism industry infrastructure exists in the country, consistent with the absence of a distinct consumer tourism brand.",
+        "Searched Wikimedia Commons (Category:Logos of Guinea-Bissau, which holds no tourism-related file) — no usable tourism-board logo could be found. The US Department of State notes no formal tourism industry infrastructure exists in the country, consistent with the absence of a distinct consumer tourism brand.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_Guinea-Bissau"],
     },
   ],
@@ -4083,7 +4083,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Kyrgyzstan)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Kyrgyzstan) for the Kyrgyz Republic's national tourism logo (presented jointly by the tourism ministry and the International Business Council) — no freely-licensed copy could be found.",
+        "Searched Wikimedia Commons (Category:Tourism in Kyrgyzstan) for the Kyrgyz Republic's national tourism logo (presented jointly by the tourism ministry and the International Business Council) — no usable copy could be found.",
       sources: [
         "https://akipress.com/news:515254:Tourism_Ministry,_IBC_to_present_tourism_logo_and_website_of_Kyrgyzstan/",
         "https://en.wikipedia.org/wiki/Tourism_in_Kyrgyzstan",
@@ -4103,7 +4103,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Liechtenstein)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Liechtenstein, Category:Tourism in Liechtenstein) — the logos found are all other institutions (parliament, government, university), and no freely-licensed copy of a dedicated tourism-board logo could be found.",
+        "Searched Wikimedia Commons (Category:Logos of Liechtenstein, Category:Tourism in Liechtenstein) — the logos found are all other institutions (parliament, government, university), and no usable copy of a dedicated tourism-board logo could be found.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_Liechtenstein"],
     },
   ],
@@ -4120,7 +4120,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Mauritania; this is an old figure, no newer one is published)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Mauritania, Category:Tourism in Mauritania) — no freely-licensed copy of the Office National de Tourisme de Mauritanie's logo could be found.",
+        "Searched Wikimedia Commons (Category:Logos of Mauritania, Category:Tourism in Mauritania) — no usable copy of the Office National de Tourisme de Mauritanie's logo could be found.",
       sources: ["https://isto.international/isto_members/office-national-de-tourisme-de-mauritanie/"],
     },
   ],
@@ -4162,7 +4162,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Tajikistan)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in Tajikistan) for the Committee for Tourism Development's logo — no freely-licensed copy could be found.",
+        "Searched Wikimedia Commons (Category:Tourism in Tajikistan) for the Committee for Tourism Development's logo — no usable copy could be found.",
       sources: ["https://ctd.tj/en/"],
     },
   ],
@@ -4197,7 +4197,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Comoros)",
       },
       noImageReason:
-        "Searched Wikimedia Commons for a Comoros national tourism office logo — no freely-licensed copy could be found.",
+        "Searched Wikimedia Commons for a Comoros national tourism office logo — no usable copy could be found.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_the_Comoros"],
     },
   ],
@@ -4211,7 +4211,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
       visitorsNote:
         "No World Bank international-tourist-arrivals figure is published for North Korea.",
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in North Korea) for a logo of the Korea International Travel Company (KITC, North Korea's largest and oldest state tourism bureau, founded 1953) — no freely-licensed copy could be found.",
+        "Searched Wikimedia Commons (Category:Tourism in North Korea) for a logo of the Korea International Travel Company (KITC, North Korea's largest and oldest state tourism bureau, founded 1953) — no usable copy could be found.",
       sources: ["https://en.wikipedia.org/wiki/Tourism_in_North_Korea", "https://rockyroadtravel.com/korea-international-travel-company/"],
     },
   ],
@@ -4248,7 +4248,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for the Marshall Islands)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Tourism in the Marshall Islands) for a Marshall Islands Visitors Authority (MIVA) logo — no freely-licensed copy could be found.",
+        "Searched Wikimedia Commons (Category:Tourism in the Marshall Islands) for a Marshall Islands Visitors Authority (MIVA) logo — no usable copy could be found.",
       sources: ["https://www.micronesiatour.com/marshall-islands-visitors-authority-miva"],
     },
   ],
@@ -4287,7 +4287,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for São Tomé and Príncipe)",
       },
       noImageReason:
-        "Searched Wikimedia Commons for a São Tomé and Príncipe national tourism logo — a nature-themed consumer destination brand (forest, turtles, whales, parrots and the traditional Roça plantation houses) was designed for the country by the agency Extractdesign, but no freely-licensed copy of it could be found on Commons.",
+        "Searched Wikimedia Commons for a São Tomé and Príncipe national tourism logo — a nature-themed consumer destination brand (forest, turtles, whales, parrots and the traditional Roça plantation houses) was designed for the country by the agency Extractdesign, but no usable copy of it could be found on Commons.",
       sources: ["https://www.extractdesign.com/case-studies/saotomeeprincipe/"],
     },
   ],
@@ -4347,7 +4347,7 @@ export const TOURISM_LOGOS: Record<string, readonly TourismLogo[]> = {
           "International tourist arrivals, calendar year (World Bank, World Development Indicators — the most recent figure the World Bank's dataset carries for Samoa)",
       },
       noImageReason:
-        "Searched Wikimedia Commons (Category:Logos of Samoa, which holds only a newspaper and an Olympic-committee logo, neither tourism-related) for the Samoa Tourism Authority's logo (refreshed to a full-colour version in late 2018) — no freely-licensed copy could be found; the only file matching \"Samoa Tourism\" is a 2009 photograph of the STA's office building, not a logo.",
+        "Searched Wikimedia Commons (Category:Logos of Samoa, which holds only a newspaper and an Olympic-committee logo, neither tourism-related) for the Samoa Tourism Authority's logo (refreshed to a full-colour version in late 2018) — no usable copy could be found; the only file matching \"Samoa Tourism\" is a 2009 photograph of the STA's office building, not a logo.",
       sources: ["https://en.wikipedia.org/wiki/Samoa_Tourism_Authority", "https://www.samoatourism.org/"],
     },
   ],

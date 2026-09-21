@@ -1,6 +1,0 @@
-<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="120" fill="#ffffff"/>
-  <rect x="20" y="20" width="360" height="80" rx="4" fill="none" stroke="#b71c1c" stroke-width="2"/>
-  <text x="200" y="64" font-family="'Traditional Arabic', 'Amiri', 'Georgia', serif" font-size="40" font-weight="bold" fill="#b71c1c" text-anchor="middle">السوداني • AL-SUDANI</text>
-  <text x="200" y="86" font-family="'Arial', sans-serif" font-size="11" font-weight="600" fill="#424242" text-anchor="middle" letter-spacing="2">INDEPENDENT SUDANESE DAILY NEWSPAPER</text>
-</svg>

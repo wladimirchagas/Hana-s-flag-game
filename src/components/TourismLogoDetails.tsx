@@ -1,4 +1,5 @@
 import { LogoExplainer } from "./LogoExplainer";
+import { EnlargeableLogo } from "./EnlargeableLogo";
 import type { TourismLogo } from "../types/tourismLogo";
 
 /**
@@ -13,17 +14,21 @@ import type { TourismLogo } from "../types/tourismLogo";
  * - (a) Explainer of the logo's design and symbolism
  * - (b) Agency / board name (and slogan, when the country has one)
  * - (c) Year the brand was adopted
- * - (d) Comparable annual-visitors figure, with the exact metric it counts —
- *   or a note explaining why none could be sourced
+ * - (d) Optional annual-visitors figure (omitted when the Travel tab already
+ *   shows the country-level figure above its Airlines / Tourism sub-tabs)
  */
 export function TourismLogoDetails({
   logo,
   baseUrl = "",
   onEnlarge,
+  /** When false, omit Annual visitors — the Travel tab shows them above the
+   *  Airlines/Tourism sub-tabs because the figure is country-level, not brand. */
+  includeVisitors = true,
 }: {
   logo: TourismLogo;
   baseUrl?: string;
   onEnlarge: (url: string) => void;
+  includeVisitors?: boolean;
 }) {
   const logoUrl = logo.logo
     ? logo.logo.startsWith("http") || logo.logo.startsWith("data:")
@@ -39,22 +44,13 @@ export function TourismLogoDetails({
         <div className="learn-fs__flag-head">
           <span className="entity-summary__label learn-fs__flag-label">Tourism logo</span>
           {logoUrl ? (
-            <button
-              type="button"
-              className="learn-fs__flag"
-              onClick={() => onEnlarge(logoUrl)}
-              aria-label={`Enlarge ${logo.name} logo`}
-            >
-              <img
-                key={logoUrl}
-                src={logoUrl}
-                alt={`${logo.name} logo`}
-                className="learn-fs__flag-img"
-                draggable={false}
-                style={{ objectFit: "contain", maxHeight: "110px", padding: "6px" }}
-              />
-              <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-            </button>
+            <EnlargeableLogo
+              src={logoUrl}
+              alt={`${logo.name} logo`}
+              ariaLabel={`Enlarge ${logo.name} logo`}
+              onEnlarge={onEnlarge}
+              hint="⤢ Click to enlarge"
+            />
           ) : (
             <p className="learn-fs__no-image">
               <strong>No logo image shown.</strong> {logo.noImageReason}
@@ -89,7 +85,7 @@ export function TourismLogoDetails({
             <dd className="entity-summary__value">{logo.launched}</dd>
           </div>
         )}
-        {logo.visitors ? (
+        {includeVisitors && logo.visitors ? (
           <div className="entity-summary__row">
             <dt className="entity-summary__label">Annual visitors</dt>
             <dd className="entity-summary__value">
@@ -99,7 +95,7 @@ export function TourismLogoDetails({
               </span>
             </dd>
           </div>
-        ) : logo.visitorsNote ? (
+        ) : includeVisitors && logo.visitorsNote ? (
           <div className="entity-summary__row">
             <dt className="entity-summary__label">Annual visitors</dt>
             <dd className="entity-summary__value">{logo.visitorsNote}</dd>

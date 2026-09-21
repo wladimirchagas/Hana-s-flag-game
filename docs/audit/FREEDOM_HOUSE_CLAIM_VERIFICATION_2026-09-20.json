@@ -1,0 +1,3876 @@
+[
+  {
+    "cc": "AE",
+    "name": "United Arab Emirates",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 159,
+      "rankChange": 0,
+      "score": 18
+    },
+    "url": "https://freedomhouse.org/country/united-arab-emirates/freedom-world/2024",
+    "score": 18,
+    "rating": "Not Free",
+    "evidence": "Not Free 18 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "AG",
+    "name": "Antigua & Barbuda",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 57,
+      "rankChange": 0,
+      "score": 83
+    },
+    "url": "https://freedomhouse.org/country/antigua-and-barbuda/freedom-world/2024",
+    "score": 85,
+    "rating": "Free",
+    "evidence": "Free 85 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "AR",
+    "name": "Argentina",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 51,
+      "rankChange": 0,
+      "score": 85
+    },
+    "url": "https://freedomhouse.org/country/argentina/freedom-world/2024",
+    "score": 85,
+    "rating": "Free",
+    "evidence": "Free 85 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "AM",
+    "name": "Armenia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 110,
+      "rankChange": 0,
+      "score": 54
+    },
+    "url": "https://freedomhouse.org/country/armenia/freedom-world/2024",
+    "score": 54,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 54 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "AD",
+    "name": "Andorra",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 24,
+      "rankChange": 0,
+      "score": 93
+    },
+    "url": "https://freedomhouse.org/country/andorra/freedom-world/2024",
+    "score": 93,
+    "rating": "Free",
+    "evidence": "Free 93 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "AF",
+    "name": "Afghanistan",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 184,
+      "rankChange": 0,
+      "score": 6
+    },
+    "url": "https://freedomhouse.org/country/afghanistan/freedom-world/2024",
+    "score": 6,
+    "rating": "Not Free",
+    "evidence": "Not Free 6 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "AL",
+    "name": "Albania",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 85,
+      "rankChange": 0,
+      "score": 68
+    },
+    "url": "https://freedomhouse.org/country/albania/freedom-world/2024",
+    "score": 68,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 68 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "AO",
+    "name": "Angola",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 144,
+      "rankChange": 0,
+      "score": 28
+    },
+    "url": "https://freedomhouse.org/country/angola/freedom-world/2024",
+    "score": 28,
+    "rating": "Not Free",
+    "evidence": "Not Free 28 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "AU",
+    "name": "Australia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 18,
+      "rankChange": 0,
+      "score": 95
+    },
+    "url": "https://freedomhouse.org/country/australia/freedom-world/2024",
+    "score": 95,
+    "rating": "Free",
+    "evidence": "Free 95 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "AZ",
+    "name": "Azerbaijan",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 181,
+      "rankChange": 0,
+      "score": 7
+    },
+    "url": "https://freedomhouse.org/country/azerbaijan/freedom-world/2024",
+    "score": 7,
+    "rating": "Not Free",
+    "evidence": "Not Free 7 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "AT",
+    "name": "Austria",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 24,
+      "rankChange": 0,
+      "score": 93
+    },
+    "url": "https://freedomhouse.org/country/austria/freedom-world/2024",
+    "score": 93,
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "rating": "Free",
+    "evidence": "Last Year's Score & Status 93 100 Free",
+    "evidenceUrl": "https://freedomhouse.org/country/austria/freedom-world/2025",
+    "evidenceMode": "2025 primary report explicitly identifies the previous edition score/status",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BF",
+    "name": "Burkina Faso",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 148,
+      "rankChange": 0,
+      "score": 25
+    },
+    "url": "https://freedomhouse.org/country/burkina-faso/freedom-world/2024",
+    "score": 27,
+    "rating": "Not Free",
+    "evidence": "Not Free 27 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BB",
+    "name": "Barbados",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 23,
+      "rankChange": 0,
+      "score": 94
+    },
+    "url": "https://freedomhouse.org/country/barbados/freedom-world/2024",
+    "score": 94,
+    "rating": "Free",
+    "evidence": "Free 94 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BA",
+    "name": "Bosnia & Herzegovina",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 113,
+      "rankChange": 0,
+      "score": 52
+    },
+    "url": "https://freedomhouse.org/country/bosnia-and-herzegovina/freedom-world/2024",
+    "score": 51,
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "rating": "Partly Free",
+    "evidence": "Last Year's Score & Status 51 100 Partly Free",
+    "evidenceUrl": "https://freedomhouse.org/country/bosnia-and-herzegovina/freedom-world/2025",
+    "evidenceMode": "2025 primary report explicitly identifies the previous edition score/status",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BE",
+    "name": "Belgium",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 11,
+      "rankChange": 0,
+      "score": 96
+    },
+    "url": "https://freedomhouse.org/country/belgium/freedom-world/2024",
+    "score": 96,
+    "rating": "Free",
+    "evidence": "Free 96 100",
+    "evidenceMode": "primary-page search extract; full page timed out",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BD",
+    "name": "Bangladesh",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 122,
+      "rankChange": 0,
+      "score": 45
+    },
+    "url": "https://freedomhouse.org/country/bangladesh/freedom-world/2024",
+    "score": 40,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 40 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BH",
+    "name": "Bahrain",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 171,
+      "rankChange": 0,
+      "score": 12
+    },
+    "url": "https://freedomhouse.org/country/bahrain/freedom-world/2024",
+    "score": 12,
+    "rating": "Not Free",
+    "evidence": "Not Free 12 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BI",
+    "name": "Burundi",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 165,
+      "rankChange": 0,
+      "score": 15
+    },
+    "url": "https://freedomhouse.org/country/burundi/freedom-world/2024",
+    "score": 14,
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "rating": "Not Free",
+    "evidence": "Last Year's Score & Status 14 100 Not Free",
+    "evidenceUrl": "https://freedomhouse.org/country/burundi/freedom-world/2025",
+    "evidenceMode": "2025 primary report explicitly identifies the previous edition score/status",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BG",
+    "name": "Bulgaria",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 72,
+      "rankChange": 0,
+      "score": 77
+    },
+    "url": "https://freedomhouse.org/country/bulgaria/freedom-world/2024",
+    "score": 78,
+    "rating": "Free",
+    "evidence": "Free 78 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BJ",
+    "name": "Benin",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 100,
+      "rankChange": 0,
+      "score": 60
+    },
+    "url": "https://freedomhouse.org/country/benin/freedom-world/2024",
+    "score": 61,
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "rating": "Partly Free",
+    "evidence": "Last Year's Score & Status 61 100 Partly Free",
+    "evidenceUrl": "https://freedomhouse.org/country/benin/freedom-world/2025",
+    "evidenceMode": "2025 primary report explicitly identifies the previous edition score/status",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BO",
+    "name": "Bolivia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 91,
+      "rankChange": 0,
+      "score": 65
+    },
+    "url": "https://freedomhouse.org/country/bolivia/freedom-world/2024",
+    "score": 66,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 66 100",
+    "evidenceMode": "primary-page search extract; full page timed out",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BN",
+    "name": "Brunei",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 145,
+      "rankChange": 0,
+      "score": 27
+    },
+    "url": "https://freedomhouse.org/country/brunei/freedom-world/2024",
+    "score": 28,
+    "rating": "Not Free",
+    "evidence": "Not Free 28 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BR",
+    "name": "Brazil",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 79,
+      "rankChange": 0,
+      "score": 72
+    },
+    "url": "https://freedomhouse.org/country/brazil/freedom-world/2024",
+    "score": 72,
+    "rating": "Free",
+    "evidence": "Free 72 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BS",
+    "name": "Bahamas",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 36,
+      "rankChange": 0,
+      "score": 90
+    },
+    "url": "https://freedomhouse.org/country/bahamas/freedom-world/2024",
+    "score": 91,
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "rating": "Free",
+    "evidence": "Last Year's Score & Status 91 100 Free",
+    "evidenceUrl": "https://freedomhouse.org/country/bahamas/freedom-world/2025",
+    "evidenceMode": "2025 primary report explicitly identifies the previous edition score/status",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CA",
+    "name": "Canada",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 5,
+      "rankChange": 0,
+      "score": 97
+    },
+    "url": "https://freedomhouse.org/country/canada/freedom-world/2024",
+    "score": 97,
+    "rating": "Free",
+    "evidence": "Free 97 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BZ",
+    "name": "Belize",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 48,
+      "rankChange": 0,
+      "score": 88
+    },
+    "url": "https://freedomhouse.org/country/belize/freedom-world/2024",
+    "score": 87,
+    "rating": "Free",
+    "evidence": "Free 87 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BT",
+    "name": "Bhutan",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 85,
+      "rankChange": 0,
+      "score": 68
+    },
+    "url": "https://freedomhouse.org/country/bhutan/freedom-world/2024",
+    "score": 63,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 63 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "contradicted_by_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BY",
+    "name": "Belarus",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 181,
+      "rankChange": 0,
+      "score": 7
+    },
+    "url": "https://freedomhouse.org/country/belarus/freedom-world/2024",
+    "score": 8,
+    "rating": "Not Free",
+    "evidence": "Not Free 8 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CF",
+    "name": "Central African Republic",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 185,
+      "rankChange": 0,
+      "score": 5
+    },
+    "url": "https://freedomhouse.org/country/central-african-republic/freedom-world/2024",
+    "score": 5,
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "rating": "Not Free",
+    "evidence": "Last Year's Score & Status 5 100 Not Free",
+    "evidenceUrl": "https://freedomhouse.org/country/central-african-republic/freedom-world/2025",
+    "evidenceMode": "2025 primary report explicitly identifies the previous edition score/status",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "BW",
+    "name": "Botswana",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 73,
+      "rankChange": 0,
+      "score": 75
+    },
+    "url": "https://freedomhouse.org/country/botswana/freedom-world/2024",
+    "score": 72,
+    "rating": "Free",
+    "evidence": "Free 72 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CG",
+    "name": "Congo - Brazzaville",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 163,
+      "rankChange": 0,
+      "score": 17
+    },
+    "url": "https://freedomhouse.org/country/republic-congo/freedom-world/2024",
+    "score": 17,
+    "rating": "Not Free",
+    "evidence": "Not Free 17 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CD",
+    "name": "Congo - Kinshasa",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 159,
+      "rankChange": 0,
+      "score": 18
+    },
+    "url": "https://freedomhouse.org/country/democratic-republic-congo/freedom-world/2024",
+    "score": 19,
+    "rating": "Not Free",
+    "evidence": "Not Free 19 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CN",
+    "name": "China",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 178,
+      "rankChange": 0,
+      "score": 9
+    },
+    "url": "https://freedomhouse.org/country/china/freedom-world/2024",
+    "score": 9,
+    "rating": "Not Free",
+    "evidence": "Not Free 9 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CR",
+    "name": "Costa Rica",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 33,
+      "rankChange": 0,
+      "score": 91
+    },
+    "url": "https://freedomhouse.org/country/costa-rica/freedom-world/2024",
+    "score": 91,
+    "rating": "Free",
+    "evidence": "Free 91 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CL",
+    "name": "Chile",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 18,
+      "rankChange": 0,
+      "score": 95
+    },
+    "url": "https://freedomhouse.org/country/chile/freedom-world/2024",
+    "score": 94,
+    "rating": "Free",
+    "evidence": "Free 94 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CI",
+    "name": "C\u00f4te d\u2019Ivoire",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 117,
+      "rankChange": 0,
+      "score": 49
+    },
+    "url": "https://freedomhouse.org/country/cote-divoire/freedom-world/2024",
+    "score": 49,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 49 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CH",
+    "name": "Switzerland",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 11,
+      "rankChange": 0,
+      "score": 96
+    },
+    "url": "https://freedomhouse.org/country/switzerland/freedom-world/2024",
+    "score": 96,
+    "rating": "Free",
+    "evidence": "Free 96 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CU",
+    "name": "Cuba",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 175,
+      "rankChange": 0,
+      "score": 10
+    },
+    "url": "https://freedomhouse.org/country/cuba/freedom-world/2024",
+    "score": 12,
+    "rating": "Not Free",
+    "evidence": "Not Free 12 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CO",
+    "name": "Colombia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 81,
+      "rankChange": 0,
+      "score": 70
+    },
+    "url": "https://freedomhouse.org/country/colombia/freedom-world/2024",
+    "score": 70,
+    "rating": "Free",
+    "evidence": "Free 70 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CM",
+    "name": "Cameroon",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 165,
+      "rankChange": 0,
+      "score": 15
+    },
+    "url": "https://freedomhouse.org/country/cameroon/freedom-world/2024",
+    "score": 15,
+    "rating": "Not Free",
+    "evidence": "Not Free 15 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "DO",
+    "name": "Dominican Republic",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 85,
+      "rankChange": 0,
+      "score": 68
+    },
+    "url": "https://freedomhouse.org/country/dominican-republic/freedom-world/2024",
+    "score": 68,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 68 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CY",
+    "name": "Cyprus",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 33,
+      "rankChange": 0,
+      "score": 91
+    },
+    "url": "https://freedomhouse.org/country/cyprus/freedom-world/2024",
+    "score": 92,
+    "rating": "Free",
+    "evidence": "Free 92 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CZ",
+    "name": "Czechia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 18,
+      "rankChange": 0,
+      "score": 95
+    },
+    "url": "https://freedomhouse.org/country/czechia/freedom-world/2024",
+    "score": 94,
+    "rating": "Free",
+    "evidence": "Free 94 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "DE",
+    "name": "Germany",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 18,
+      "rankChange": 0,
+      "score": 95
+    },
+    "url": "https://freedomhouse.org/country/germany/freedom-world/2024",
+    "score": 93,
+    "rating": "Free",
+    "evidence": "Free 93 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "DJ",
+    "name": "Djibouti",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 150,
+      "rankChange": 0,
+      "score": 24
+    },
+    "url": "https://freedomhouse.org/country/djibouti/freedom-world/2024",
+    "score": 24,
+    "rating": "Not Free",
+    "evidence": "Not Free 24 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "DM",
+    "name": "Dominica",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 28,
+      "rankChange": 0,
+      "score": 92
+    },
+    "url": "https://freedomhouse.org/country/dominica/freedom-world/2024",
+    "score": 93,
+    "rating": "Free",
+    "evidence": "Free 93 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "CV",
+    "name": "Cape Verde",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 28,
+      "rankChange": 0,
+      "score": 92
+    },
+    "url": "https://freedomhouse.org/country/cabo-verde/freedom-world/2024",
+    "score": 92,
+    "rating": "Free",
+    "evidence": "Free 92 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "DK",
+    "name": "Denmark",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 5,
+      "rankChange": 0,
+      "score": 97
+    },
+    "url": "https://freedomhouse.org/country/denmark/freedom-world/2024",
+    "score": 97,
+    "rating": "Free",
+    "evidence": "Free 97 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "ER",
+    "name": "Eritrea",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 189,
+      "rankChange": 0,
+      "score": 3
+    },
+    "url": "https://freedomhouse.org/country/eritrea/freedom-world/2024",
+    "score": 3,
+    "rating": "Not Free",
+    "evidence": "Not Free 3 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "ET",
+    "name": "Ethiopia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 159,
+      "rankChange": 0,
+      "score": 18
+    },
+    "url": "https://freedomhouse.org/country/ethiopia/freedom-world/2024",
+    "score": 20,
+    "rating": "Not Free",
+    "evidence": "Not Free 20 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "DZ",
+    "name": "Algeria",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 139,
+      "rankChange": 0,
+      "score": 31
+    },
+    "url": "https://freedomhouse.org/country/algeria/freedom-world/2024",
+    "score": 32,
+    "rating": "Not Free",
+    "evidence": "Not Free 32 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "ES",
+    "name": "Spain",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 36,
+      "rankChange": 0,
+      "score": 90
+    },
+    "url": "https://freedomhouse.org/country/spain/freedom-world/2024",
+    "score": 90,
+    "rating": "Free",
+    "evidence": "Free 90 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "EG",
+    "name": "Egypt",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 159,
+      "rankChange": 0,
+      "score": 18
+    },
+    "url": "https://freedomhouse.org/country/egypt/freedom-world/2024",
+    "score": 18,
+    "rating": "Not Free",
+    "evidence": "Not Free 18 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "EE",
+    "name": "Estonia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 11,
+      "rankChange": 0,
+      "score": 96
+    },
+    "url": "https://freedomhouse.org/country/estonia/freedom-world/2024",
+    "score": 95,
+    "rating": "Free",
+    "evidence": "Free 95 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "EC",
+    "name": "Ecuador",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 91,
+      "rankChange": 0,
+      "score": 65
+    },
+    "url": "https://freedomhouse.org/country/ecuador/freedom-world/2024",
+    "score": 67,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 67 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "FI",
+    "name": "Finland",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 1,
+      "rankChange": 0,
+      "score": 100
+    },
+    "url": "https://freedomhouse.org/country/finland/freedom-world/2024",
+    "score": 100,
+    "rating": "Free",
+    "evidence": "Free 100 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "FM",
+    "name": "Micronesia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 28,
+      "rankChange": 0,
+      "score": 92
+    },
+    "url": "https://freedomhouse.org/country/micronesia/freedom-world/2024",
+    "score": 92,
+    "rating": "Free",
+    "evidence": "Free 92 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "GB",
+    "name": "United Kingdom",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 28,
+      "rankChange": 0,
+      "score": 92
+    },
+    "url": "https://freedomhouse.org/country/united-kingdom/freedom-world/2024",
+    "score": 91,
+    "rating": "Free",
+    "evidence": "Free 91 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "FJ",
+    "name": "Fiji",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 82,
+      "rankChange": 0,
+      "score": 69
+    },
+    "url": "https://freedomhouse.org/country/fiji/freedom-world/2024",
+    "score": 66,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 66 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "GA",
+    "name": "Gabon",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 156,
+      "rankChange": 0,
+      "score": 21
+    },
+    "url": "https://freedomhouse.org/country/gabon/freedom-world/2024",
+    "score": 20,
+    "rating": "Not Free",
+    "evidence": "Not Free 20 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "GH",
+    "name": "Ghana",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 67,
+      "rankChange": 0,
+      "score": 80
+    },
+    "url": "https://freedomhouse.org/country/ghana/freedom-world/2024",
+    "score": 80,
+    "rating": "Free",
+    "evidence": "Free 80 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "GD",
+    "name": "Grenada",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 40,
+      "rankChange": 0,
+      "score": 89
+    },
+    "url": "https://freedomhouse.org/country/grenada/freedom-world/2024",
+    "score": 89,
+    "rating": "Free",
+    "evidence": "Free 89 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "GE",
+    "name": "Georgia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 108,
+      "rankChange": 0,
+      "score": 55
+    },
+    "url": "https://freedomhouse.org/country/georgia/freedom-world/2024",
+    "score": 58,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 58 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "FR",
+    "name": "France",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 40,
+      "rankChange": 0,
+      "score": 89
+    },
+    "url": "https://freedomhouse.org/country/france/freedom-world/2024",
+    "score": 89,
+    "rating": "Free",
+    "evidence": "Free 89 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "GY",
+    "name": "Guyana",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 76,
+      "rankChange": 0,
+      "score": 74
+    },
+    "url": "https://freedomhouse.org/country/guyana/freedom-world/2024",
+    "score": 73,
+    "rating": "Free",
+    "evidence": "Free 73 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "GM",
+    "name": "Gambia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 116,
+      "rankChange": 0,
+      "score": 50
+    },
+    "url": "https://freedomhouse.org/country/gambia/freedom-world/2024",
+    "score": 50,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 50 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "HN",
+    "name": "Honduras",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 118,
+      "rankChange": 0,
+      "score": 48
+    },
+    "url": "https://freedomhouse.org/country/honduras/freedom-world/2024",
+    "score": 48,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 48 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "GR",
+    "name": "Greece",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 51,
+      "rankChange": 0,
+      "score": 85
+    },
+    "url": "https://freedomhouse.org/country/greece/freedom-world/2024",
+    "score": 85,
+    "rating": "Free",
+    "evidence": "Free 85 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "GQ",
+    "name": "Equatorial Guinea",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 185,
+      "rankChange": 0,
+      "score": 5
+    },
+    "url": "https://freedomhouse.org/country/equatorial-guinea/freedom-world/2024",
+    "score": 5,
+    "rating": "Not Free",
+    "evidence": "Not Free 5 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "GW",
+    "name": "Guinea-Bissau",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 127,
+      "rankChange": 0,
+      "score": 41
+    },
+    "url": "https://freedomhouse.org/country/guinea-bissau/freedom-world/2024",
+    "score": 43,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 43 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "GN",
+    "name": "Guinea",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 142,
+      "rankChange": 0,
+      "score": 30
+    },
+    "url": "https://freedomhouse.org/country/guinea/freedom-world/2024",
+    "score": 30,
+    "rating": "Not Free",
+    "evidence": "Not Free 30 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "GT",
+    "name": "Guatemala",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 118,
+      "rankChange": 0,
+      "score": 48
+    },
+    "url": "https://freedomhouse.org/country/guatemala/freedom-world/2024",
+    "score": 46,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 46 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "ID",
+    "name": "Indonesia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 106,
+      "rankChange": 0,
+      "score": 56
+    },
+    "url": "https://freedomhouse.org/country/indonesia/freedom-world/2024",
+    "score": 57,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 57 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "IL",
+    "name": "Israel",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 77,
+      "rankChange": 0,
+      "score": 73
+    },
+    "url": "https://freedomhouse.org/country/israel/freedom-world/2024",
+    "score": 74,
+    "rating": "Free",
+    "evidence": "Free 74 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "HT",
+    "name": "Haiti",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 150,
+      "rankChange": 0,
+      "score": 24
+    },
+    "url": "https://freedomhouse.org/country/haiti/freedom-world/2024",
+    "score": 30,
+    "rating": "Not Free",
+    "evidence": "Not Free 30 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "HR",
+    "name": "Croatia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 59,
+      "rankChange": 0,
+      "score": 82
+    },
+    "url": "https://freedomhouse.org/country/croatia/freedom-world/2024",
+    "score": 83,
+    "rating": "Free",
+    "evidence": "Free 83 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "HU",
+    "name": "Hungary",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 91,
+      "rankChange": 0,
+      "score": 65
+    },
+    "url": "https://freedomhouse.org/country/hungary/freedom-world/2024",
+    "score": 65,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 65 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "IQ",
+    "name": "Iraq",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 139,
+      "rankChange": 0,
+      "score": 31
+    },
+    "url": "https://freedomhouse.org/country/iraq/freedom-world/2024",
+    "score": 30,
+    "rating": "Not Free",
+    "evidence": "Not Free 30 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "IE",
+    "name": "Ireland",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 5,
+      "rankChange": 0,
+      "score": 97
+    },
+    "url": "https://freedomhouse.org/country/ireland/freedom-world/2024",
+    "score": 97,
+    "rating": "Free",
+    "evidence": "Free 97 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "IN",
+    "name": "India",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 96,
+      "rankChange": 0,
+      "score": 63
+    },
+    "url": "https://freedomhouse.org/country/india/freedom-world/2024",
+    "score": 66,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 66 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "JM",
+    "name": "Jamaica",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 67,
+      "rankChange": 0,
+      "score": 80
+    },
+    "url": "https://freedomhouse.org/country/jamaica/freedom-world/2024",
+    "score": 80,
+    "rating": "Free",
+    "evidence": "Free 80 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "IT",
+    "name": "Italy",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 40,
+      "rankChange": 0,
+      "score": 89
+    },
+    "url": "https://freedomhouse.org/country/italy/freedom-world/2024",
+    "score": 90,
+    "rating": "Free",
+    "evidence": "Free 90 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "JP",
+    "name": "Japan",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 11,
+      "rankChange": 0,
+      "score": 96
+    },
+    "url": "https://freedomhouse.org/country/japan/freedom-world/2024",
+    "score": 96,
+    "rating": "Free",
+    "evidence": "Free 96 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "IS",
+    "name": "Iceland",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 18,
+      "rankChange": 0,
+      "score": 95
+    },
+    "url": "https://freedomhouse.org/country/iceland/freedom-world/2024",
+    "score": 94,
+    "rating": "Free",
+    "evidence": "Free 94 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "KG",
+    "name": "Kyrgyzstan",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 146,
+      "rankChange": 0,
+      "score": 26
+    },
+    "url": "https://freedomhouse.org/country/kyrgyzstan/freedom-world/2024",
+    "score": 27,
+    "rating": "Not Free",
+    "evidence": "Not Free 27 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "IR",
+    "name": "Iran",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 174,
+      "rankChange": 0,
+      "score": 11
+    },
+    "url": "https://freedomhouse.org/country/iran/freedom-world/2024",
+    "score": 11,
+    "rating": "Not Free",
+    "evidence": "Not Free 11 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "JO",
+    "name": "Jordan",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 134,
+      "rankChange": 0,
+      "score": 34
+    },
+    "url": "https://freedomhouse.org/country/jordan/freedom-world/2024",
+    "score": 33,
+    "rating": "Not Free",
+    "evidence": "Not Free 33 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "contradicted_by_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "KE",
+    "name": "Kenya",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 114,
+      "rankChange": 0,
+      "score": 51
+    },
+    "url": "https://freedomhouse.org/country/kenya/freedom-world/2024",
+    "score": 52,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 52 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "KM",
+    "name": "Comoros",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 126,
+      "rankChange": 0,
+      "score": 42
+    },
+    "url": "https://freedomhouse.org/country/comoros/freedom-world/2024",
+    "score": 42,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 42 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "KI",
+    "name": "Kiribati",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 40,
+      "rankChange": 0,
+      "score": 89
+    },
+    "url": "https://freedomhouse.org/country/kiribati/freedom-world/2024",
+    "score": 90,
+    "rating": "Free",
+    "evidence": "Free 90 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "KZ",
+    "name": "Kazakhstan",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 154,
+      "rankChange": 0,
+      "score": 23
+    },
+    "url": "https://freedomhouse.org/country/kazakhstan/freedom-world/2024",
+    "score": 23,
+    "rating": "Not Free",
+    "evidence": "Not Free 23 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "KR",
+    "name": "South Korea",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 65,
+      "rankChange": 0,
+      "score": 81
+    },
+    "url": "https://freedomhouse.org/country/south-korea/freedom-world/2024",
+    "score": 83,
+    "rating": "Free",
+    "evidence": "Free 83 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "KN",
+    "name": "St. Kitts & Nevis",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 40,
+      "rankChange": 0,
+      "score": 89
+    },
+    "url": "https://freedomhouse.org/country/st-kitts-and-nevis/freedom-world/2024",
+    "score": 89,
+    "rating": "Free",
+    "evidence": "Free 89 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "KW",
+    "name": "Kuwait",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 139,
+      "rankChange": 0,
+      "score": 31
+    },
+    "url": "https://freedomhouse.org/country/kuwait/freedom-world/2024",
+    "score": 38,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 38 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "contradicted_by_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "KP",
+    "name": "North Korea",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 189,
+      "rankChange": 0,
+      "score": 3
+    },
+    "url": "https://freedomhouse.org/country/north-korea/freedom-world/2024",
+    "score": 3,
+    "rating": "Not Free",
+    "evidence": "Not Free 3 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "KH",
+    "name": "Cambodia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 154,
+      "rankChange": 0,
+      "score": 23
+    },
+    "url": "https://freedomhouse.org/country/cambodia/freedom-world/2024",
+    "score": 23,
+    "rating": "Not Free",
+    "evidence": "Not Free 23 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "LT",
+    "name": "Lithuania",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 40,
+      "rankChange": 0,
+      "score": 89
+    },
+    "url": "https://freedomhouse.org/country/lithuania/freedom-world/2024",
+    "score": 89,
+    "rating": "Free",
+    "evidence": "Free 89 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "LA",
+    "name": "Laos",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 169,
+      "rankChange": 0,
+      "score": 13
+    },
+    "url": "https://freedomhouse.org/country/laos/freedom-world/2024",
+    "score": 13,
+    "rating": "Not Free",
+    "evidence": "Not Free 13 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "LB",
+    "name": "Lebanon",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 130,
+      "rankChange": 0,
+      "score": 39
+    },
+    "url": "https://freedomhouse.org/country/lebanon/freedom-world/2024",
+    "score": 42,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 42 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "LS",
+    "name": "Lesotho",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 90,
+      "rankChange": 0,
+      "score": 66
+    },
+    "url": "https://freedomhouse.org/country/lesotho/freedom-world/2024",
+    "score": 66,
+    "rating": "Free",
+    "evidence": "Free 66 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "LC",
+    "name": "St. Lucia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 33,
+      "rankChange": 0,
+      "score": 91
+    },
+    "url": "https://freedomhouse.org/country/st-lucia/freedom-world/2024",
+    "score": 92,
+    "rating": "Free",
+    "evidence": "Free 92 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "LR",
+    "name": "Liberia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 95,
+      "rankChange": 0,
+      "score": 64
+    },
+    "url": "https://freedomhouse.org/country/liberia/freedom-world/2024",
+    "score": 64,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 64 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "LI",
+    "name": "Liechtenstein",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 36,
+      "rankChange": 0,
+      "score": 90
+    },
+    "url": "https://freedomhouse.org/country/liechtenstein/freedom-world/2024",
+    "score": 90,
+    "rating": "Free",
+    "evidence": "Free 90 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "LK",
+    "name": "Sri Lanka",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 104,
+      "rankChange": 0,
+      "score": 58
+    },
+    "url": "https://freedomhouse.org/country/sri-lanka/freedom-world/2024",
+    "score": 54,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 54 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "LU",
+    "name": "Luxembourg",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 5,
+      "rankChange": 0,
+      "score": 97
+    },
+    "url": "https://freedomhouse.org/country/luxembourg/freedom-world/2024",
+    "score": 97,
+    "rating": "Free",
+    "evidence": "Free 97 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "LV",
+    "name": "Latvia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 40,
+      "rankChange": 0,
+      "score": 89
+    },
+    "url": "https://freedomhouse.org/country/latvia/freedom-world/2024",
+    "score": 88,
+    "rating": "Free",
+    "evidence": "Free 88 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "LY",
+    "name": "Libya",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 175,
+      "rankChange": 0,
+      "score": 10
+    },
+    "url": "https://freedomhouse.org/country/libya/freedom-world/2024",
+    "score": 9,
+    "rating": "Not Free",
+    "evidence": "Not Free 9 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MC",
+    "name": "Monaco",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 59,
+      "rankChange": 0,
+      "score": 82
+    },
+    "url": "https://freedomhouse.org/country/monaco/freedom-world/2024",
+    "score": 82,
+    "rating": "Free",
+    "evidence": "Free 82 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MA",
+    "name": "Morocco",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 132,
+      "rankChange": 0,
+      "score": 37
+    },
+    "url": "https://freedomhouse.org/country/morocco/freedom-world/2024",
+    "score": 37,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 37 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MG",
+    "name": "Madagascar",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 108,
+      "rankChange": 0,
+      "score": 55
+    },
+    "url": "https://freedomhouse.org/country/madagascar/freedom-world/2024",
+    "score": 58,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 58 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MD",
+    "name": "Moldova",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 100,
+      "rankChange": 0,
+      "score": 60
+    },
+    "url": "https://freedomhouse.org/country/moldova/freedom-world/2024",
+    "score": 61,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 61 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "ME",
+    "name": "Montenegro",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 82,
+      "rankChange": 0,
+      "score": 69
+    },
+    "url": "https://freedomhouse.org/country/montenegro/freedom-world/2024",
+    "score": 69,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 69 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MM",
+    "name": "Myanmar (Burma)",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 181,
+      "rankChange": 0,
+      "score": 7
+    },
+    "url": "https://freedomhouse.org/country/myanmar/freedom-world/2024",
+    "score": 8,
+    "rating": "Not Free",
+    "evidence": "Not Free 8 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MR",
+    "name": "Mauritania",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 130,
+      "rankChange": 0,
+      "score": 39
+    },
+    "url": "https://freedomhouse.org/country/mauritania/freedom-world/2024",
+    "score": 39,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 39 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MH",
+    "name": "Marshall Islands",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 24,
+      "rankChange": 0,
+      "score": 93
+    },
+    "url": "https://freedomhouse.org/country/marshall-islands/freedom-world/2024",
+    "score": 93,
+    "rating": "Free",
+    "evidence": "Free 93 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MU",
+    "name": "Mauritius",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 50,
+      "rankChange": 0,
+      "score": 86
+    },
+    "url": "https://freedomhouse.org/country/mauritius/freedom-world/2024",
+    "score": 85,
+    "rating": "Free",
+    "evidence": "Free 85 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "ML",
+    "name": "Mali",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 150,
+      "rankChange": 0,
+      "score": 24
+    },
+    "url": "https://freedomhouse.org/country/mali/freedom-world/2024",
+    "score": 26,
+    "rating": "Not Free",
+    "evidence": "Not Free 26 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MT",
+    "name": "Malta",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 49,
+      "rankChange": 0,
+      "score": 87
+    },
+    "url": "https://freedomhouse.org/country/malta/freedom-world/2024",
+    "score": 87,
+    "rating": "Free",
+    "evidence": "Free 87 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MK",
+    "name": "North Macedonia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 88,
+      "rankChange": 0,
+      "score": 67
+    },
+    "url": "https://freedomhouse.org/country/north-macedonia/freedom-world/2024",
+    "score": 67,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 67 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MN",
+    "name": "Mongolia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 53,
+      "rankChange": 0,
+      "score": 84
+    },
+    "url": "https://freedomhouse.org/country/mongolia/freedom-world/2024",
+    "score": 84,
+    "rating": "Free",
+    "evidence": "Free 84 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MZ",
+    "name": "Mozambique",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 127,
+      "rankChange": 0,
+      "score": 41
+    },
+    "url": "https://freedomhouse.org/country/mozambique/freedom-world/2024",
+    "score": 44,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 44 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MV",
+    "name": "Maldives",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 125,
+      "rankChange": 0,
+      "score": 43
+    },
+    "url": "https://freedomhouse.org/country/maldives/freedom-world/2024",
+    "score": 44,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 44 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "NG",
+    "name": "Nigeria",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 123,
+      "rankChange": 0,
+      "score": 44
+    },
+    "url": "https://freedomhouse.org/country/nigeria/freedom-world/2024",
+    "score": 44,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 44 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MX",
+    "name": "Mexico",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 102,
+      "rankChange": 0,
+      "score": 59
+    },
+    "url": "https://freedomhouse.org/country/mexico/freedom-world/2024",
+    "score": 60,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 60 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "NA",
+    "name": "Namibia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 77,
+      "rankChange": 0,
+      "score": 73
+    },
+    "url": "https://freedomhouse.org/country/namibia/freedom-world/2024",
+    "score": 77,
+    "rating": "Free",
+    "evidence": "Free 77 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MY",
+    "name": "Malaysia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 111,
+      "rankChange": 0,
+      "score": 53
+    },
+    "url": "https://freedomhouse.org/country/malaysia/freedom-world/2024",
+    "score": 53,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 53 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "MW",
+    "name": "Malawi",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 91,
+      "rankChange": 0,
+      "score": 65
+    },
+    "url": "https://freedomhouse.org/country/malawi/freedom-world/2024",
+    "score": 66,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 66 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "NE",
+    "name": "Niger",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 142,
+      "rankChange": 0,
+      "score": 30
+    },
+    "url": "https://freedomhouse.org/country/niger/freedom-world/2024",
+    "score": 33,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 33 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "contradicted_by_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "NO",
+    "name": "Norway",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 2,
+      "rankChange": 0,
+      "score": 99
+    },
+    "url": "https://freedomhouse.org/country/norway/freedom-world/2024",
+    "score": 98,
+    "rating": "Free",
+    "evidence": "Free 98 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "NR",
+    "name": "Nauru",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 73,
+      "rankChange": 0,
+      "score": 75
+    },
+    "url": "https://freedomhouse.org/country/nauru/freedom-world/2024",
+    "score": 77,
+    "rating": "Free",
+    "evidence": "Free 77 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "PA",
+    "name": "Panama",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 57,
+      "rankChange": 0,
+      "score": 83
+    },
+    "url": "https://freedomhouse.org/country/panama/freedom-world/2024",
+    "score": 83,
+    "rating": "Free",
+    "evidence": "Free 83 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "NZ",
+    "name": "New Zealand",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 2,
+      "rankChange": 0,
+      "score": 99
+    },
+    "url": "https://freedomhouse.org/country/new-zealand/freedom-world/2024",
+    "score": 99,
+    "rating": "Free",
+    "evidence": "Free 99 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "NL",
+    "name": "Netherlands",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 5,
+      "rankChange": 0,
+      "score": 97
+    },
+    "url": "https://freedomhouse.org/country/netherlands/freedom-world/2024",
+    "score": 97,
+    "rating": "Free",
+    "evidence": "Free 97 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "OM",
+    "name": "Oman",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 150,
+      "rankChange": 0,
+      "score": 24
+    },
+    "url": "https://freedomhouse.org/country/oman/freedom-world/2024",
+    "score": 24,
+    "rating": "Not Free",
+    "evidence": "Not Free 24 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "NP",
+    "name": "Nepal",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 98,
+      "rankChange": 0,
+      "score": 62
+    },
+    "url": "https://freedomhouse.org/country/nepal/freedom-world/2024",
+    "score": 62,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 62 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "NI",
+    "name": "Nicaragua",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 168,
+      "rankChange": 0,
+      "score": 14
+    },
+    "url": "https://freedomhouse.org/country/nicaragua/freedom-world/2024",
+    "score": 16,
+    "rating": "Not Free",
+    "evidence": "Not Free 16 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "PH",
+    "name": "Philippines",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 104,
+      "rankChange": 0,
+      "score": 58
+    },
+    "url": "https://freedomhouse.org/country/philippines/freedom-world/2024",
+    "score": 58,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 58 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "PL",
+    "name": "Poland",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 59,
+      "rankChange": 0,
+      "score": 82
+    },
+    "url": "https://freedomhouse.org/country/poland/freedom-world/2024",
+    "score": 80,
+    "rating": "Free",
+    "evidence": "Free 80 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "PE",
+    "name": "Peru",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 88,
+      "rankChange": 0,
+      "score": 67
+    },
+    "url": "https://freedomhouse.org/country/peru/freedom-world/2024",
+    "score": 66,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 66 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "PK",
+    "name": "Pakistan",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 138,
+      "rankChange": 0,
+      "score": 32
+    },
+    "url": "https://freedomhouse.org/country/pakistan/freedom-world/2024",
+    "score": 35,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 35 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "PT",
+    "name": "Portugal",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 11,
+      "rankChange": 0,
+      "score": 96
+    },
+    "url": "https://freedomhouse.org/country/portugal/freedom-world/2024",
+    "score": 96,
+    "rating": "Free",
+    "evidence": "Free 96 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "PY",
+    "name": "Paraguay",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 96,
+      "rankChange": 0,
+      "score": 63
+    },
+    "url": "https://freedomhouse.org/country/paraguay/freedom-world/2024",
+    "score": 63,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 63 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "PG",
+    "name": "Papua New Guinea",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 99,
+      "rankChange": 0,
+      "score": 61
+    },
+    "url": "https://freedomhouse.org/country/papua-new-guinea/freedom-world/2024",
+    "score": 61,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 61 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "PW",
+    "name": "Palau",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 28,
+      "rankChange": 0,
+      "score": 92
+    },
+    "url": "https://freedomhouse.org/country/palau/freedom-world/2024",
+    "score": 92,
+    "rating": "Free",
+    "evidence": "Free 92 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "RW",
+    "name": "Rwanda",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 156,
+      "rankChange": 0,
+      "score": 21
+    },
+    "url": "https://freedomhouse.org/country/rwanda/freedom-world/2024",
+    "score": 23,
+    "rating": "Not Free",
+    "evidence": "Not Free 23 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SA",
+    "name": "Saudi Arabia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 178,
+      "rankChange": 0,
+      "score": 9
+    },
+    "url": "https://freedomhouse.org/country/saudi-arabia/freedom-world/2024",
+    "score": 8,
+    "rating": "Not Free",
+    "evidence": "Not Free 8 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "QA",
+    "name": "Qatar",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 148,
+      "rankChange": 0,
+      "score": 25
+    },
+    "url": "https://freedomhouse.org/country/qatar/freedom-world/2024",
+    "score": 25,
+    "rating": "Not Free",
+    "evidence": "Not Free 25 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SC",
+    "name": "Seychelles",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 67,
+      "rankChange": 0,
+      "score": 80
+    },
+    "url": "https://freedomhouse.org/country/seychelles/freedom-world/2024",
+    "score": 79,
+    "rating": "Free",
+    "evidence": "Free 79 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SB",
+    "name": "Solomon Islands",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 73,
+      "rankChange": 0,
+      "score": 75
+    },
+    "url": "https://freedomhouse.org/country/solomon-islands/freedom-world/2024",
+    "score": 75,
+    "rating": "Free",
+    "evidence": "Free 75 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "RU",
+    "name": "Russia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 171,
+      "rankChange": 0,
+      "score": 12
+    },
+    "url": "https://freedomhouse.org/country/russia/freedom-world/2024",
+    "score": 13,
+    "rating": "Not Free",
+    "evidence": "Not Free 13 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "RO",
+    "name": "Romania",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 59,
+      "rankChange": 0,
+      "score": 82
+    },
+    "url": "https://freedomhouse.org/country/romania/freedom-world/2024",
+    "score": 83,
+    "rating": "Free",
+    "evidence": "Free 83 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "RS",
+    "name": "Serbia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 106,
+      "rankChange": 0,
+      "score": 56
+    },
+    "url": "https://freedomhouse.org/country/serbia/freedom-world/2024",
+    "score": 57,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 57 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SM",
+    "name": "San Marino",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 5,
+      "rankChange": 0,
+      "score": 97
+    },
+    "url": "https://freedomhouse.org/country/san-marino/freedom-world/2024",
+    "score": 97,
+    "rating": "Free",
+    "evidence": "Free 97 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SG",
+    "name": "Singapore",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 118,
+      "rankChange": 0,
+      "score": 48
+    },
+    "url": "https://freedomhouse.org/country/singapore/freedom-world/2024",
+    "score": 48,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 48 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SE",
+    "name": "Sweden",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 2,
+      "rankChange": 0,
+      "score": 99
+    },
+    "url": "https://freedomhouse.org/country/sweden/freedom-world/2024",
+    "score": 99,
+    "rating": "Free",
+    "evidence": "Free 99 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SN",
+    "name": "Senegal",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 82,
+      "rankChange": 0,
+      "score": 69
+    },
+    "url": "https://freedomhouse.org/country/senegal/freedom-world/2024",
+    "score": 67,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 67 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "contradicted_by_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SD",
+    "name": "Sudan",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 191,
+      "rankChange": 0,
+      "score": 2
+    },
+    "url": "https://freedomhouse.org/country/sudan/freedom-world/2024",
+    "score": 6,
+    "rating": "Not Free",
+    "evidence": "Not Free 6 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SK",
+    "name": "Slovakia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 40,
+      "rankChange": 0,
+      "score": 89
+    },
+    "url": "https://freedomhouse.org/country/slovakia/freedom-world/2024",
+    "score": 90,
+    "rating": "Free",
+    "evidence": "Free 90 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SL",
+    "name": "Sierra Leone",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 102,
+      "rankChange": 0,
+      "score": 59
+    },
+    "url": "https://freedomhouse.org/country/sierra-leone/freedom-world/2024",
+    "score": 60,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 60 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SI",
+    "name": "Slovenia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 11,
+      "rankChange": 0,
+      "score": 96
+    },
+    "url": "https://freedomhouse.org/country/slovenia/freedom-world/2024",
+    "score": 96,
+    "rating": "Free",
+    "evidence": "Free 96 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SV",
+    "name": "El Salvador",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 121,
+      "rankChange": 0,
+      "score": 47
+    },
+    "url": "https://freedomhouse.org/country/el-salvador/freedom-world/2024",
+    "score": 53,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 53 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "ST",
+    "name": "S\u00e3o Tom\u00e9 & Pr\u00edncipe",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 53,
+      "rankChange": 0,
+      "score": 84
+    },
+    "url": "https://freedomhouse.org/country/sao-tome-and-principe/freedom-world/2024",
+    "score": 84,
+    "rating": "Free",
+    "evidence": "Free 84 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SO",
+    "name": "Somalia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 180,
+      "rankChange": 0,
+      "score": 8
+    },
+    "url": "https://freedomhouse.org/country/somalia/freedom-world/2024",
+    "score": 8,
+    "rating": "Not Free",
+    "evidence": "Not Free 8 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SZ",
+    "name": "Eswatini",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 163,
+      "rankChange": 0,
+      "score": 17
+    },
+    "url": "https://freedomhouse.org/country/eswatini/freedom-world/2024",
+    "score": 17,
+    "rating": "Not Free",
+    "evidence": "Not Free 17 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SS",
+    "name": "South Sudan",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 192,
+      "rankChange": 0,
+      "score": 1
+    },
+    "url": "https://freedomhouse.org/country/south-sudan/freedom-world/2024",
+    "score": 1,
+    "rating": "Not Free",
+    "evidence": "Not Free 1 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SY",
+    "name": "Syria",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 185,
+      "rankChange": 0,
+      "score": 5
+    },
+    "url": "https://freedomhouse.org/country/syria/freedom-world/2024",
+    "score": 1,
+    "rating": "Not Free",
+    "evidence": "Not Free 1 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "TD",
+    "name": "Chad",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 165,
+      "rankChange": 0,
+      "score": 15
+    },
+    "url": "https://freedomhouse.org/country/chad/freedom-world/2024",
+    "score": 15,
+    "rating": "Not Free",
+    "evidence": "Not Free 15 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "SR",
+    "name": "Suriname",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 67,
+      "rankChange": 0,
+      "score": 80
+    },
+    "url": "https://freedomhouse.org/country/suriname/freedom-world/2024",
+    "score": 79,
+    "rating": "Free",
+    "evidence": "Free 79 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "TG",
+    "name": "Togo",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 127,
+      "rankChange": 0,
+      "score": 41
+    },
+    "url": "https://freedomhouse.org/country/togo/freedom-world/2024",
+    "score": 42,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 42 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "TL",
+    "name": "Timor-Leste",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 79,
+      "rankChange": 0,
+      "score": 72
+    },
+    "url": "https://freedomhouse.org/country/timor-leste/freedom-world/2024",
+    "score": 72,
+    "rating": "Free",
+    "evidence": "Free 72 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "TH",
+    "name": "Thailand",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 134,
+      "rankChange": 0,
+      "score": 34
+    },
+    "url": "https://freedomhouse.org/country/thailand/freedom-world/2024",
+    "score": 36,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 36 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "contradicted_by_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "TM",
+    "name": "Turkmenistan",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 192,
+      "rankChange": 0,
+      "score": 1
+    },
+    "url": "https://freedomhouse.org/country/turkmenistan/freedom-world/2024",
+    "score": 2,
+    "rating": "Not Free",
+    "evidence": "Not Free 2 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "TN",
+    "name": "Tunisia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 123,
+      "rankChange": 0,
+      "score": 44
+    },
+    "url": "https://freedomhouse.org/country/tunisia/freedom-world/2024",
+    "score": 51,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 51 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "TO",
+    "name": "Tonga",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 67,
+      "rankChange": 0,
+      "score": 80
+    },
+    "url": "https://freedomhouse.org/country/tonga/freedom-world/2024",
+    "score": 81,
+    "rating": "Free",
+    "evidence": "Free 81 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "TR",
+    "name": "T\u00fcrkiye",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 137,
+      "rankChange": 0,
+      "score": 33
+    },
+    "url": "https://freedomhouse.org/country/turkey/freedom-world/2024",
+    "score": 33,
+    "rating": "Not Free",
+    "evidence": "Not Free 33 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "TJ",
+    "name": "Tajikistan",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 185,
+      "rankChange": 0,
+      "score": 5
+    },
+    "url": "https://freedomhouse.org/country/tajikistan/freedom-world/2024",
+    "score": 5,
+    "rating": "Not Free",
+    "evidence": "Not Free 5 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "UA",
+    "name": "Ukraine",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 114,
+      "rankChange": 0,
+      "score": 51
+    },
+    "url": "https://freedomhouse.org/country/ukraine/freedom-world/2024",
+    "score": 49,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 49 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "TV",
+    "name": "Tuvalu",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 24,
+      "rankChange": 0,
+      "score": 93
+    },
+    "url": "https://freedomhouse.org/country/tuvalu/freedom-world/2024",
+    "score": 93,
+    "rating": "Free",
+    "evidence": "Free 93 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "TZ",
+    "name": "Tanzania",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 133,
+      "rankChange": 0,
+      "score": 35
+    },
+    "url": "https://freedomhouse.org/country/tanzania/freedom-world/2024",
+    "score": 36,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 36 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "contradicted_by_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "UG",
+    "name": "Uganda",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 134,
+      "rankChange": 0,
+      "score": 34
+    },
+    "url": "https://freedomhouse.org/country/uganda/freedom-world/2024",
+    "score": 34,
+    "rating": "Not Free",
+    "evidence": "Not Free 34 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "UY",
+    "name": "Uruguay",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 11,
+      "rankChange": 0,
+      "score": 96
+    },
+    "url": "https://freedomhouse.org/country/uruguay/freedom-world/2024",
+    "score": 96,
+    "rating": "Free",
+    "evidence": "Free 96 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "US",
+    "name": "United States",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 53,
+      "rankChange": 0,
+      "score": 84
+    },
+    "url": "https://freedomhouse.org/country/united-states/freedom-world/2024",
+    "score": 83,
+    "rating": "Free",
+    "evidence": "Free 83 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "TT",
+    "name": "Trinidad & Tobago",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 59,
+      "rankChange": 0,
+      "score": 82
+    },
+    "url": "https://freedomhouse.org/country/trinidad-and-tobago/freedom-world/2024",
+    "score": 82,
+    "rating": "Free",
+    "evidence": "Free 82 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "UZ",
+    "name": "Uzbekistan",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 171,
+      "rankChange": 0,
+      "score": 12
+    },
+    "url": "https://freedomhouse.org/country/uzbekistan/freedom-world/2024",
+    "score": 12,
+    "rating": "Not Free",
+    "evidence": "Not Free 12 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "ZM",
+    "name": "Zambia",
+    "bundled": {
+      "year": 2024,
+      "rating": "Partly Free",
+      "rank": 111,
+      "rankChange": 0,
+      "score": 53
+    },
+    "url": "https://freedomhouse.org/country/zambia/freedom-world/2024",
+    "score": 54,
+    "rating": "Partly Free",
+    "evidence": "Partly Free 54 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "YE",
+    "name": "Yemen",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 175,
+      "rankChange": 0,
+      "score": 10
+    },
+    "url": "https://freedomhouse.org/country/yemen/freedom-world/2024",
+    "score": 10,
+    "rating": "Not Free",
+    "evidence": "Not Free 10 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "ZA",
+    "name": "South Africa",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 65,
+      "rankChange": 0,
+      "score": 81
+    },
+    "url": "https://freedomhouse.org/country/south-africa/freedom-world/2024",
+    "score": 79,
+    "rating": "Free",
+    "evidence": "Free 79 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "VC",
+    "name": "St. Vincent & Grenadines",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 36,
+      "rankChange": 0,
+      "score": 90
+    },
+    "url": "https://freedomhouse.org/country/st-vincent-and-grenadines/freedom-world/2024",
+    "score": 90,
+    "rating": "Free",
+    "evidence": "Free 90 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "WS",
+    "name": "Samoa",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 53,
+      "rankChange": 0,
+      "score": 84
+    },
+    "url": "https://freedomhouse.org/country/samoa/freedom-world/2024",
+    "score": 84,
+    "rating": "Free",
+    "evidence": "Free 84 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "VE",
+    "name": "Venezuela",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 169,
+      "rankChange": 0,
+      "score": 13
+    },
+    "url": "https://freedomhouse.org/country/venezuela/freedom-world/2024",
+    "score": 15,
+    "rating": "Not Free",
+    "evidence": "Not Free 15 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "VN",
+    "name": "Vietnam",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 158,
+      "rankChange": 0,
+      "score": 20
+    },
+    "url": "https://freedomhouse.org/country/vietnam/freedom-world/2024",
+    "score": 19,
+    "rating": "Not Free",
+    "evidence": "Not Free 19 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "VU",
+    "name": "Vanuatu",
+    "bundled": {
+      "year": 2024,
+      "rating": "Free",
+      "rank": 59,
+      "rankChange": 0,
+      "score": 82
+    },
+    "url": "https://freedomhouse.org/country/vanuatu/freedom-world/2024",
+    "score": 82,
+    "rating": "Free",
+    "evidence": "Free 82 100",
+    "scoreStatus": "matches_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  },
+  {
+    "cc": "ZW",
+    "name": "Zimbabwe",
+    "bundled": {
+      "year": 2024,
+      "rating": "Not Free",
+      "rank": 146,
+      "rankChange": 0,
+      "score": 26
+    },
+    "url": "https://freedomhouse.org/country/zimbabwe/freedom-world/2024",
+    "score": 27,
+    "rating": "Not Free",
+    "evidence": "Not Free 27 100",
+    "scoreStatus": "contradicted_by_primary_2024_report",
+    "ratingStatus": "matches_primary_2024_report",
+    "rankStatus": "not_verified_derived_app_ranking",
+    "checkedAt": "2026-09-20",
+    "applicationRevision": "43cfd13b2194cdf57a5f32a7c910d4dd7ab04d67"
+  }
+]

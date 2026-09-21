@@ -68,6 +68,15 @@ body:has(.learn-page--atlas) .bottom-nav {
   box-shadow: var(--shadow);
   padding: 1.25rem;
 }
+.learn-page--atlas .learn-fs__panel-drawer-btn {
+  border-width: 1px;
+  box-shadow: none;
+  border-radius: 999px;
+}
+.learn-page--atlas .learn-fs__panel-drawer-btn:active {
+  box-shadow: none;
+  transform: none;
+}
 .learn-page--atlas .learn-fs__map .world-map__zoom-controls {
   padding: .5rem;
   gap: .4rem;
@@ -244,6 +253,10 @@ body:has(.learn-page--atlas) :is(.dropdown-option:hover, .dropdown-option[aria-s
 }
 .learn-page--atlas .flag-grid__card--active :is(.flag-grid__name,
   .flag-grid__city-sub, .flag-grid__flag-sub) { color: var(--ink); }
+.learn-page--atlas .flag-grid__card--active .flag-grid__name-translation,
+.learn-page--atlas .flag-grid__card--active .flag-grid__country-sub {
+  color: var(--ink-soft);
+}
 .learn-page--atlas .flag-grid__name { font-weight: 500; }
 .learn-page--atlas .flag-grid__controls { gap: .75rem; }
 .learn-page--atlas .flag-grid__group-select-label { text-transform: none; letter-spacing: 0; }
