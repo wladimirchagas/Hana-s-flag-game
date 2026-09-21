@@ -49,7 +49,10 @@ import {
   saveGridContentType,
   type GridContentType,
 } from "../lib/gridContentType";
-import { applyLogoBackdropTone } from "../lib/logoBackdrop";
+import {
+  applyLogoBackdropTone,
+  sizeFullscreenLogo,
+} from "../lib/logoBackdrop";
 import { FLAG_SHAPES } from "../lib/flagShapes";
 import { FLAG_FAMILIES } from "../lib/flagFamilies";
 import { FLAG_COLORS } from "../lib/flagColors";
@@ -3354,7 +3357,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 alt=""
                 className="flag-zoom__img flag-zoom__img--logo"
                 draggable={false}
-                onLoad={(e) => applyLogoBackdropTone(e.currentTarget)}
+                onLoad={(e) => {
+                  const img = e.currentTarget;
+                  sizeFullscreenLogo(img);
+                  applyLogoBackdropTone(img);
+                }}
               />
             </div>
           ) : (
