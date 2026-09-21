@@ -3222,6 +3222,80 @@
   flex-shrink: 0;
 }
 
+/* Active filter selections — always visible below the filter menus. */
+.democracy-index-chart__active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  padding: 0 0.15rem;
+}
+
+.democracy-index-chart__active-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  max-width: 100%;
+  font: inherit;
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--coral-deep, #e05252);
+  background: color-mix(in srgb, var(--coral-deep, #e05252) 12%, var(--paper, #fff));
+  border: 1.5px solid color-mix(in srgb, var(--coral-deep, #e05252) 55%, transparent);
+  border-radius: 999px;
+  padding: 0.22rem 0.45rem 0.22rem 0.6rem;
+  cursor: pointer;
+}
+
+.democracy-index-chart__active-filter:hover,
+.democracy-index-chart__active-filter:focus-visible {
+  background: color-mix(in srgb, var(--coral-deep, #e05252) 22%, var(--paper, #fff));
+  border-color: var(--coral-deep, #e05252);
+}
+
+.democracy-index-chart__active-filter:focus-visible {
+  outline: 2px solid var(--coral-deep, #e05252);
+  outline-offset: 2px;
+}
+
+.democracy-index-chart__active-filter-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.democracy-index-chart__active-filter-x {
+  flex-shrink: 0;
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.75;
+}
+
+.democracy-index-chart__active-filters-clear {
+  font: inherit;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--coral-deep, #e05252);
+  background: transparent;
+  border: 0;
+  padding: 0.2rem 0.35rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.democracy-index-chart__active-filters-clear:hover,
+.democracy-index-chart__active-filters-clear:focus-visible {
+  opacity: 0.85;
+}
+
+.democracy-index-chart__active-filters-clear:focus-visible {
+  outline: 2px solid var(--coral-deep, #e05252);
+  outline-offset: 2px;
+}
+
 .democracy-index-chart__trend-note {
   margin: 0;
   margin-left: auto;

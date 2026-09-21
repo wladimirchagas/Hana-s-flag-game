@@ -366,6 +366,54 @@ export function DemocracyIndexChart({
   const filtersActive =
     continentFilter.size > 0 || membershipFilter.size > 0 || indexFilter.size > 0;
 
+  /** Selected filter options as removable pills — always visible below the menus. */
+  const activeFilterPills = useMemo(() => {
+    type Pill = {
+      id: string;
+      label: string;
+      kind: Exclude<FilterKind, null>;
+    };
+    const pills: Pill[] = [];
+    for (const opt of continentOptions) {
+      if (!continentFilter.has(opt.id)) continue;
+      pills.push({ id: opt.id, label: opt.label, kind: "continents" });
+    }
+    for (const opt of membershipOptions) {
+      if (!membershipFilter.has(opt.id)) continue;
+      pills.push({ id: opt.id, label: opt.label, kind: "membership" });
+    }
+    for (const opt of indexOptions) {
+      if (!indexFilter.has(opt.id)) continue;
+      // Index ratings share names across indexes ("Free", "High") — qualify them.
+      const label = opt.group ? `${opt.group} · ${opt.label}` : opt.label;
+      pills.push({ id: opt.id, label, kind: "indexes" });
+    }
+    return pills;
+  }, [
+    continentOptions,
+    membershipOptions,
+    indexOptions,
+    continentFilter,
+    membershipFilter,
+    indexFilter,
+  ]);
+
+  const removeFilterPill = (kind: Exclude<FilterKind, null>, id: string) => {
+    if (kind === "continents") {
+      setContinentFilter((prev) => toggleInSet(prev, id));
+    } else if (kind === "membership") {
+      setMembershipFilter((prev) => toggleInSet(prev, id));
+    } else {
+      setIndexFilter((prev) => toggleInSet(prev, id));
+    }
+  };
+
+  const clearAllFilters = () => {
+    setContinentFilter(new Set());
+    setMembershipFilter(new Set());
+    setIndexFilter(new Set());
+  };
+
   /**
    * Filters are additive (OR) across menus and within each menu.
    * e.g. Africa + ASEAN highlights every African country OR every ASEAN member.
@@ -551,6 +599,41 @@ export function DemocracyIndexChart({
           </p>
         )}
       </div>
+
+      {activeFilterPills.length > 0 && (
+        <div
+          className="democracy-index-chart__active-filters"
+          role="group"
+          aria-label="Active highlight filters"
+        >
+          {activeFilterPills.map((pill) => (
+            <button
+              key={`${pill.kind}:${pill.id}`}
+              type="button"
+              className="democracy-index-chart__active-filter"
+              onClick={() => removeFilterPill(pill.kind, pill.id)}
+              aria-label={`Remove filter ${pill.label}`}
+              title={`Remove ${pill.label}`}
+            >
+              <span className="democracy-index-chart__active-filter-label">
+                {pill.label}
+              </span>
+              <span className="democracy-index-chart__active-filter-x" aria-hidden="true">
+                ×
+              </span>
+            </button>
+          ))}
+          {activeFilterPills.length > 1 && (
+            <button
+              type="button"
+              className="democracy-index-chart__active-filters-clear"
+              onClick={clearAllFilters}
+            >
+              Clear all
+            </button>
+          )}
+        </div>
+      )}
 
       <div className="democracy-index-chart__frame" ref={frameRef}>
         <svg
