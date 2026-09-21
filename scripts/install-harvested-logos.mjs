@@ -15,84 +15,84 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "ye-al-masdar",
-    src: "tmp/batch70-install/ye-al-masdar.svg",
+    id: "ao-o-pais",
+    src: "tmp/batch71-install/ao-o-pais.png",
     explainer:
-      "Red Arabic 'المصدر' over grey 'ALMASDAR Online' — Al-Masdar Online masthead.",
+      "Black spaced serif 'O PAÍS' — O País (Angola) masthead wordmark.",
     licence:
-      "Al-Masdar Online masthead (Wikimedia Commons File:Al-Masdar Online.svg) trademark bundled for educational reference in Learn mode.",
+      "O País brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "ke-taifa-leo",
-    src: "tmp/batch70-install/ke-taifa-leo.jpg",
+    id: "bb-barbados-advocate",
+    src: "tmp/batch71-install/bb-barbados-advocate.jpg",
     explainer:
-      "White serif 'TAIFA LEO' on red with Swahili strap 'Lugha yetu, gazeti letu' — Taifa Leo brand mark.",
+      "White capital 'A' on a blue circle — The Barbados Advocate brand mark.",
     licence:
-      "Taifa Leo brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "The Barbados Advocate brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "mm-the-irrawaddy",
-    src: "tmp/batch70-install/mm-the-irrawaddy.jpg",
+    id: "eg-al-wafd",
+    src: "tmp/batch71-install/eg-al-wafd.jpg",
     explainer:
-      "Red circle with yellow motifs and blue pen nib above red serif 'The Irrawaddy' — Irrawaddy magazine emblem.",
+      "Green Arabic calligraphy with crescent-plus emblem and green strap — Al-Wafd masthead.",
     licence:
-      "The Irrawaddy brand mark from the magazine's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Al-Wafd brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "mt-maltatoday",
-    src: "tmp/batch70-install/mt-maltatoday.jpg",
+    id: "ht-le-matin",
+    src: "tmp/batch71-install/ht-le-matin.png",
     explainer:
-      "White lowercase slab-serif 'mt' on red square — MaltaToday brand mark.",
+      "Blue serif 'Le Matin' with red dotted i and script 'Haiti' in a red frame — Le Matin masthead.",
     licence:
-      "MaltaToday brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Le Matin (Haiti) brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "mt-the-malta-independent",
-    src: "tmp/batch70-install/mt-the-malta-independent.jpg",
+    id: "iq-al-zaman",
+    src: "tmp/batch71-install/iq-al-zaman.jpg",
     explainer:
-      "Orange serif 'I' in a white circle on blue — The Malta Independent brand mark.",
+      "Orange-gradient Arabic title with quill icon over 'AZZAMAN.COM' — Azzaman masthead.",
     licence:
-      "The Malta Independent brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Azzaman brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "ni-el-19-digital",
-    src: "tmp/batch70-install/ni-el-19-digital.jpg",
+    id: "jm-loop-jamaica",
+    src: "tmp/batch71-install/jm-loop-jamaica.png",
     explainer:
-      "Blue script 'el' beside magenta '19' with strap 'POR MÁS VICTORIAS!' — El 19 Digital brand mark.",
+      "Lowercase 'loop' wordmark fading blue-to-burgundy — Loop News Jamaica brand mark.",
     licence:
-      "El 19 Digital brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Loop News Jamaica brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "sm-san-marino-fixing",
-    src: "tmp/batch70-install/sm-san-marino-fixing.jpg",
+    id: "lc-loop",
+    src: "tmp/batch71-install/lc-loop.png",
     explainer:
-      "Blue 'SAN MARINO FIXING' on yellow-striped field with chart-arrow graphic — San Marino Fixing masthead.",
+      "Lowercase 'loop' wordmark fading blue-to-burgundy — Loop St Lucia brand mark.",
     licence:
-      "San Marino Fixing masthead from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Loop St Lucia brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "va-asianews",
-    src: "tmp/batch70-install/va-asianews.jpg",
+    id: "to-loop-tonga",
+    src: "tmp/batch71-install/to-loop-tonga.jpg",
     explainer:
-      "Orange 'AsiaNews.it' wordmark with PIME figure icon on blue — AsiaNews brand mark.",
+      "Red rounded tile with stylised 'Loop' wordmark — Loop Tonga brand mark.",
     licence:
-      "AsiaNews brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Loop Tonga brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "ws-samoa-global-news",
-    src: "tmp/batch70-install/ws-samoa-global-news.png",
+    id: "zm-times-of-zambia",
+    src: "tmp/batch71-install/zm-times-of-zambia.png",
     explainer:
-      "Circular globe with Samoa island silhouettes and 'SAMOA GLOBAL NEWS' — Samoa Global News emblem.",
+      "Red serif 'TIMES OF ZAMBIA' over italic strap 'Your paper for all times' — Times of Zambia masthead.",
     licence:
-      "Samoa Global News emblem from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "Times of Zambia brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "mk-sloboden-pecat",
-    src: "tmp/batch70-install/mk-sloboden-pecat.jpg",
+    id: "zw-newsday",
+    src: "tmp/batch71-install/zw-newsday.jpg",
     explainer:
-      "White Cyrillic 'СП.' on black — Sloboden Pečat brand initials.",
+      "Maroon 'NEWSDAY' on yellow with 'OFFICIAL ACCOUNT' bar — NewsDay Zimbabwe brand mark.",
     licence:
-      "Sloboden Pečat brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+      "NewsDay brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
 ];
 

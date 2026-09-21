@@ -888,7 +888,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Nova Group Review 2023"
       },
       "revenueModel": "Print sales and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ao/o-pais.png",
+      "logoExplainer": "Black spaced serif 'O PAÍS' — O País (Angola) masthead wordmark.",
+      "licenceNote": "O País brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://opais.ao",
         "https://pt.wikipedia.org/wiki/O_Pa%C3%ADs_(Angola)"
@@ -1587,7 +1590,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Advocate Publishers Review 2023"
       },
       "revenueModel": "Print newsstand sales, digital subscriptions, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bb/barbados-advocate.jpg",
+      "logoExplainer": "White capital 'A' on a blue circle — The Barbados Advocate brand mark.",
+      "licenceNote": "The Barbados Advocate brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.barbadosadvocate.com",
         "https://en.wikipedia.org/wiki/The_Barbados_Advocate"
@@ -6967,7 +6973,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al-Wafd Media Center 2023"
       },
       "revenueModel": "Print sales, party subscriptions, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/eg/al-wafd.jpg",
+      "logoExplainer": "Green Arabic calligraphy with crescent-plus emblem and green strap — Al-Wafd masthead.",
+      "licenceNote": "Al-Wafd brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://alwafd.news",
         "https://en.wikipedia.org/wiki/Al-Wafd_(newspaper)"
@@ -9829,7 +9838,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Le Matin Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ht/le-matin.png",
+      "logoExplainer": "Blue serif 'Le Matin' with red dotted i and script 'Haiti' in a red frame — Le Matin masthead.",
+      "licenceNote": "Le Matin (Haiti) brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://lenouvelliste.com/",
         "https://www.unesco.org/"
@@ -10633,7 +10645,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Iraqi Press Union Report 2023"
       },
       "revenueModel": "Print advertising, sales, and subscription",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/iq/al-zaman.jpg",
+      "logoExplainer": "Orange-gradient Arabic title with quill icon over 'AZZAMAN.COM' — Azzaman masthead.",
+      "licenceNote": "Azzaman brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.azzaman.com",
         "https://en.wikipedia.org/wiki/Azzaman"
@@ -11247,7 +11262,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Trend Media Caribbean Analytics 2024"
       },
       "revenueModel": "Digital programmatic advertising and mobile carrier partnerships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/jm/loop-jamaica.png",
+      "logoExplainer": "Lowercase 'loop' wordmark fading blue-to-burgundy — Loop News Jamaica brand mark.",
+      "licenceNote": "Loop News Jamaica brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://jamaica.loopnews.com",
         "https://www.trendmediagroup.com"
@@ -13219,7 +13237,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "lc-loop",
       "countryCode": "LC",
       "name": "Loop St Lucia",
@@ -13235,6 +13252,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major St Lucia news website",
         "source": "https://stlucia.loopnews.com"
       },
+      "logo": "newspaper-logos/lc/loop.png",
+      "logoExplainer": "Lowercase 'loop' wordmark fading blue-to-burgundy — Loop St Lucia brand mark.",
+      "licenceNote": "Loop St Lucia brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://stlucia.loopnews.com"
       ]
@@ -23550,7 +23571,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -23569,6 +23589,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Tonga news website",
         "source": "https://www.looptonga.com"
       },
+      "logo": "newspaper-logos/to/loop-tonga.jpg",
+      "logoExplainer": "Red rounded tile with stylised 'Loop' wordmark — Loop Tonga brand mark.",
+      "licenceNote": "Loop Tonga brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.looptonga.com"
       ]
@@ -26015,7 +26039,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Audit Bureau of Circulations Zambia / ZICCL"
       },
       "revenueModel": "Government notices, commercial print advertisements, and newsstand sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/zm/times-of-zambia.png",
+      "logoExplainer": "Red serif 'TIMES OF ZAMBIA' over italic strap 'Your paper for all times' — Times of Zambia masthead.",
+      "licenceNote": "Times of Zambia brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.times.co.zm",
         "https://en.wikipedia.org/wiki/Times_of_Zambia"
@@ -26182,7 +26209,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ZAMPS Audit / AMH Commercial Profile"
       },
       "revenueModel": "Single-copy retail sales, corporate display advertisements, and digital subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/zw/newsday.jpg",
+      "logoExplainer": "Maroon 'NEWSDAY' on yellow with 'OFFICIAL ACCOUNT' bar — NewsDay Zimbabwe brand mark.",
+      "licenceNote": "NewsDay brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.newsday.co.zw",
         "https://en.wikipedia.org/wiki/NewsDay_(Zimbabwe)"
