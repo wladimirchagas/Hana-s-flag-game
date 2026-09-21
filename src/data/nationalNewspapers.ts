@@ -4811,7 +4811,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Nanfang Media Group Annual Review 2023"
       },
       "revenueModel": "Provincial institutional subscriptions and regional commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/cn/nanfang-ribao.png",
+      "logoExplainer": "Red calligraphic '南方日报' (Nanfang Daily) wordmark — Nanfang Daily masthead.",
+      "licenceNote": "Nanfang Daily masthead trademark bundled from the publisher's official epaper brand assets (epaper.southcn.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.nanfangdaily.com.cn",
         "https://en.wikipedia.org/wiki/Nanfang_Daily"
@@ -15595,7 +15598,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -15614,6 +15616,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Leading Mongolian news website",
         "source": "https://news.mn"
       },
+      "logo": "newspaper-logos/mn/news-mn.png",
+      "logoExplainer": "Red circle with black serif 'N' beside red 'news' and navy '.mn' — News.mn masthead.",
+      "licenceNote": "News.mn masthead trademark bundled from the publisher's official site brand assets (news.mn) for educational reference in Learn mode.",
+
       "sources": [
         "https://news.mn"
       ]
@@ -19992,7 +19998,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Rwanda Governance Board Media Barometer 2023"
       },
       "revenueModel": "State budget subsidy, public announcements, and retail print sales",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/rw/imvaho-nshya.svg",
+      "logoExplainer": "Green sans-serif 'Imvaho Nshya' with Kinyarwanda tagline 'Soma Usobanukirwe Buri Munsi' — Imvaho Nshya masthead.",
+      "licenceNote": "Imvaho Nshya masthead trademark bundled from the publisher's official site brand assets (imvahonshya.co.rw) for educational reference in Learn mode.",
+
       "sources": [
         "https://imvahonshya.co.rw",
         "https://en.wikipedia.org/wiki/Media_of_Rwanda"
@@ -22512,7 +22521,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Union des Journalistes Tchadiens 2023"
       },
       "revenueModel": "Print retail sales and private advertisements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/td/journal-le-pays.png",
+      "logoExplainer": "White italic 'LE PAYS' on blue with yellow Chad map and slogan bar 'Raconter le Tchad au Monde…' — Le Pays masthead.",
+      "licenceNote": "Le Pays (Chad) masthead trademark bundled from the publisher's official site brand assets (lepaystchad.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://lepaystchad.com"
       ]
@@ -24889,7 +24901,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Newspaper & digital",
       "format": "Newspaper & digital",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "va-ncregister",
       "countryCode": "VA",
       "name": "National Catholic Register",
@@ -24905,6 +24916,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Leading English-language Catholic newspaper",
         "source": "https://en.wikipedia.org/wiki/National_Catholic_Register"
       },
+      "logo": "newspaper-logos/va/ncregister.svg",
+      "logoExplainer": "Serif 'NATIONAL CATHOLIC' over large 'REGISTER' with papal tiara and crossed-keys crest — National Catholic Register masthead.",
+      "licenceNote": "National Catholic Register masthead trademark bundled from the publisher's official site brand assets (ncregister.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.ncregister.com",
         "https://en.wikipedia.org/wiki/National_Catholic_Register"
@@ -25467,7 +25482,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "vu-vbct",
       "countryCode": "VU",
       "name": "VBTC News",
@@ -25483,6 +25497,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "National Vanuatu news brand",
         "source": "https://www.vbtc.vu"
       },
+      "logo": "newspaper-logos/vu/vbct.webp",
+      "logoExplainer": "Gold 'VBTC' with equaliser bars and Bislama tagline 'blong yumi evriwan' — VBTC News masthead.",
+      "licenceNote": "VBTC masthead trademark bundled from the publisher's official site brand assets (vbtc.vu) for educational reference in Learn mode.",
+
       "sources": [
         "https://www.vbtc.vu"
       ]

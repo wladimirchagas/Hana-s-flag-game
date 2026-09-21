@@ -15,52 +15,52 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "ye-al-ayyam",
-    src: "tmp/batch66-install/ye-al-ayyam.png",
+    id: "td-journal-le-pays",
+    src: "tmp/batch67-install/td-journal-le-pays.png",
     explainer:
-      "Black Arabic 'الأيام' over twin wireframe globes with white outline glow and italic 'AL-AYYAM' — Al-Ayyam (Aden) masthead.",
+      "White italic 'LE PAYS' on blue with yellow Chad map and slogan bar 'Raconter le Tchad au Monde…' — Le Pays masthead.",
     licence:
-      "Al-Ayyam (Aden) masthead trademark bundled from the publisher's official site brand assets (alayyam.info) for educational reference in Learn mode.",
+      "Le Pays (Chad) masthead trademark bundled from the publisher's official site brand assets (lepaystchad.com) for educational reference in Learn mode.",
   },
   {
-    id: "tj-sadoi-mardum",
-    src: "tmp/batch66-install/tj-sadoi-mardum.png",
+    id: "mn-news-mn",
+    src: "tmp/batch67-install/mn-news-mn.png",
     explainer:
-      "Parliament building illustration with Tajik flag beside bold Cyrillic 'Садои мардум' and Supreme Assembly subtitle — Sadoi Mardum masthead.",
+      "Red circle with black serif 'N' beside red 'news' and navy '.mn' — News.mn masthead.",
     licence:
-      "Sadoi Mardum masthead trademark bundled from the publisher's official site brand assets (sadoimardum.tj) for educational reference in Learn mode.",
+      "News.mn masthead trademark bundled from the publisher's official site brand assets (news.mn) for educational reference in Learn mode.",
   },
   {
-    id: "iq-al-sabaah",
-    src: "tmp/batch66-install/iq-al-sabaah.jpg",
+    id: "rw-imvaho-nshya",
+    src: "tmp/batch67-install/rw-imvaho-nshya.svg",
     explainer:
-      "Orange rising-sun icon with white 'Assabah' beside Arabic 'الصباح' on blue, tagged 'ASSABAH NEWSPAPER' — Al-Sabaah masthead.",
+      "Green sans-serif 'Imvaho Nshya' with Kinyarwanda tagline 'Soma Usobanukirwe Buri Munsi' — Imvaho Nshya masthead.",
     licence:
-      "Al-Sabaah (Iraq) masthead from Wikimedia Commons File:شعار جريدة الصباح العراقية.jpg (Public domain) for educational reference in Learn mode.",
+      "Imvaho Nshya masthead trademark bundled from the publisher's official site brand assets (imvahonshya.co.rw) for educational reference in Learn mode.",
   },
   {
-    id: "ye-al-mashhad",
-    src: "tmp/batch66-install/ye-al-mashhad.png",
+    id: "vu-vbct",
+    src: "tmp/batch67-install/vu-vbct.webp",
     explainer:
-      "White Arabic 'المشهد' beside grey 'نيوز' panel cut by a red diagonal on black — Al-Mashhad Al-Yemeni site masthead.",
+      "Gold 'VBTC' with equaliser bars and Bislama tagline 'blong yumi evriwan' — VBTC News masthead.",
     licence:
-      "Al-Mashhad Al-Yemeni masthead trademark bundled from the publisher's official site brand assets (almashhad-alyemeni.com / almashhad.news CDN) for educational reference in Learn mode.",
+      "VBTC masthead trademark bundled from the publisher's official site brand assets (vbtc.vu) for educational reference in Learn mode.",
   },
   {
-    id: "sl-sl-telegraph",
-    src: "tmp/batch66-install/sl-sl-telegraph.png",
+    id: "va-ncregister",
+    src: "tmp/batch67-install/va-ncregister.svg",
     explainer:
-      "Navy stacked 'THE SIERRA LEONE / TELEGRAPH' with 'SIERRA LEONE NEWS' tagline on grey — Sierra Leone Telegraph masthead.",
+      "Serif 'NATIONAL CATHOLIC' over large 'REGISTER' with papal tiara and crossed-keys crest — National Catholic Register masthead.",
     licence:
-      "The Sierra Leone Telegraph masthead trademark bundled from the publisher's official site brand assets (thesierraleonetelegraph.com) for educational reference in Learn mode.",
+      "National Catholic Register masthead trademark bundled from the publisher's official site brand assets (ncregister.com) for educational reference in Learn mode.",
   },
   {
-    id: "tn-essahafa",
-    src: "tmp/batch66-install/tn-essahafa.png",
+    id: "cn-nanfang-ribao",
+    src: "tmp/batch67-install/cn-nanfang-ribao.png",
     explainer:
-      "Bold red Arabic 'الصحافة' over smaller 'اليوم' — Essahafa / Assahafa Al-Youm masthead.",
+      "Red calligraphic '南方日报' (Nanfang Daily) wordmark — Nanfang Daily masthead.",
     licence:
-      "Essahafa masthead trademark bundled from the publisher's official site brand assets (essahafa.tn) for educational reference in Learn mode.",
+      "Nanfang Daily masthead trademark bundled from the publisher's official epaper brand assets (epaper.southcn.com) for educational reference in Learn mode.",
   },
 ];
 
