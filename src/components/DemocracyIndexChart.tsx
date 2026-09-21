@@ -428,7 +428,17 @@ export function DemocracyIndexChart({
   const barMode = Boolean(activeXKey && !activeYKey);
   const oneAxisMode = columnMode || barMode;
 
-  const points = useMemo(() => {
+  const points = useMemo((): {
+    code: string;
+    x: number;
+    y: number;
+    xLabel: string;
+    yLabel: string;
+    country: Country;
+    cx: number;
+    cy: number;
+    bar?: { x: number; y: number; width: number; height: number };
+  }[] => {
     type BarGeom = { x: number; y: number; width: number; height: number };
     type LaidOut = {
       code: string;
@@ -443,7 +453,7 @@ export function DemocracyIndexChart({
     };
 
     if (activeXKey && activeYKey) {
-      return rawPoints.map((p) => {
+      return rawPoints.map((p): LaidOut => {
         const country = byCode.get(p.code)!;
         return {
           ...p,
