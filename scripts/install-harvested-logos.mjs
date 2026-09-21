@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "ie-breakingnews-ie",
-    src: "tmp/batch87-install/ie-breakingnews-ie.png",
+    id: "zw-the-zimbabwe-independent",
+    src: "tmp/batch88-install/zw-the-zimbabwe-independent.png",
     explainer:
-      "Navy 'BN' monogram with yellow lightning bolt cutout beside italic 'Breaking News.ie' on yellow field, with 'Truth Delivered 24/7' script slogan — BreakingNews.ie publisher masthead.",
+      "Maroon newspaper-icon mark beside black serif 'Zimbabwe Independent' with grey uppercase tagline 'AUTHORITATIVE · INDEPENDENT · ZIMBABWEAN' — the site masthead as shown on zimbabwe-independent.com.",
     licence:
-      "BreakingNews.ie publisher logo from the outlet's official site brand assets (breakingnews.ie/i/publisher-logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Zimbabwe Independent masthead cropped from a publisher-hosted site screenshot in the outlet's own WordPress media library (zimbabwe-independent.com); trademark bundled for educational reference in Learn mode.",
   },
 ];
 
