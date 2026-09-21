@@ -240,10 +240,10 @@
   padding: 0.25rem 0.25rem 0;
 }
 
-/* Map column: sticky map on top, optional democracy chart beneath it (same
-   width as the map, above the flag grid). The sticky wrapper wraps ONLY the
-   map so the sticky map unpins before the chart — otherwise it would float
-   over the chart while scrolling the column. */
+/* Map column: sticky map on top, optional democracy chart accordion beneath
+   it (same width as the map, above the flag grid). The sticky wrapper wraps
+   ONLY the map so the sticky map unpins before the chart — otherwise it would
+   float over the chart while scrolling the column. */
 .learn-fs__map-col {
   grid-area: map;
   display: flex;
@@ -261,6 +261,67 @@
 
 .learn-fs__map-col .learn-fs__map {
   grid-area: unset;
+}
+
+/* Full-width "See chart" accordion under the world map — same max-width as
+   `.learn-fs__map .world-map` so the toggle and chart align with the map on
+   both tall and wide viewports. */
+.learn-fs__chart-accordion {
+  --learn-map-chrome: calc(8.5rem + env(safe-area-inset-top));
+  width: 100%;
+  max-width: min(100%, calc((100vh - var(--learn-map-chrome)) * 1.92));
+  max-width: min(100%, calc((100dvh - var(--learn-map-chrome)) * 1.92));
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  box-sizing: border-box;
+}
+
+.learn-fs__chart-accordion-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.55rem 0.85rem;
+  background: var(--cream);
+  border: 2px solid var(--ink-faint);
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.learn-fs__chart-accordion-toggle:hover,
+.learn-fs__chart-accordion-toggle:focus-visible {
+  outline: none;
+  border-color: var(--ink);
+  background: var(--paper, #fff);
+  color: var(--ink);
+}
+
+.learn-fs__chart-accordion-toggle[aria-expanded="true"] {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.learn-fs__chart-accordion-label {
+  flex: 1;
+  text-align: left;
+}
+
+.learn-fs__chart-accordion-chev {
+  color: var(--ink-muted, #888);
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.learn-fs__chart-accordion-panel {
+  width: 100%;
+  min-width: 0;
 }
 
 /* === Sticky map (both world-map and drill-down modes) =============

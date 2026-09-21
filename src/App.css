@@ -3025,26 +3025,14 @@
   gap: 0.35rem;
 }
 
-.democracy-map-control__divider {
-  border: 0;
-  border-top: 1px solid var(--ink-faint, rgba(31, 41, 55, 0.22));
-  margin: 0.15rem 0 0.05rem;
-}
-
 .world-map__below-node {
   width: 100%;
   margin-top: 0.5rem;
 }
 
-/* ── Democracy Index scatter chart (below world map) ─────────────────────── */
+/* ── Democracy Index scatter chart (inside the "See chart" accordion) ───── */
 .democracy-index-chart {
   width: 100%;
-  /* Match the world map's width/height cap so the chart reads as the same
-     frame size sitting directly under the map. */
-  --learn-map-chrome: calc(8.5rem + env(safe-area-inset-top));
-  max-width: min(100%, calc((100vh - var(--learn-map-chrome)) * 1.92));
-  max-width: min(100%, calc((100dvh - var(--learn-map-chrome)) * 1.92));
-  margin-inline: auto;
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
@@ -3327,6 +3315,8 @@
   width: 100%;
   /* Same 960:500 aspect as the world map SVG viewBox. */
   aspect-ratio: 960 / 500;
+  /* Cap height to the same viewport budget the world map uses. */
+  --learn-map-chrome: calc(8.5rem + env(safe-area-inset-top));
   max-height: calc(100vh - var(--learn-map-chrome));
   max-height: calc(100dvh - var(--learn-map-chrome));
   background: var(--paper, #ffffff);

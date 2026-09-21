@@ -1,5 +1,5 @@
 import { UiIcon } from "../components/UiIcon";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link, useLocation, useSearchParams } from "react-router-dom";
 import { bundledCountries, fetchCountries, type Country } from "../api/countries";
@@ -299,10 +299,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [showCities, setShowCities] = useState(false);
   // "Colour countries by Democracy Index" layer for the world map.
   const [democracyMapMode, setDemocracyMapMode] = useState<DemocracyMapMode>(null);
-  // Scatter chart of two democracy indexes, shown below the world map when
-  // enabled from the Democracy Index control. Axis keys are independent of
-  // the map colour mode so users can compare any pair of indexes.
+  // Scatter chart of two democracy indexes, shown below the world map behind
+  // a "See chart" accordion (collapsed by default). Axis keys are independent
+  // of the map colour mode so users can compare any pair of indexes.
   const [democracyChartEnabled, setDemocracyChartEnabled] = useState(false);
+  const democracyChartPanelId = useId();
   const [democracyChartXKey, setDemocracyChartXKey] =
     useState<ChartAxisKey>("cpi");
   const [democracyChartYKey, setDemocracyChartYKey] =
@@ -1401,8 +1402,6 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           <DemocracyMapControl
             mode={democracyMapMode}
             onChange={handleDemocracyMapModeChange}
-            chartEnabled={democracyChartEnabled}
-            onChartEnabledChange={setDemocracyChartEnabled}
           />
         )}
         {/* Rotation + globe (view-centre) are secondary — they collapse into the
@@ -1424,7 +1423,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       </>
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap, isModernEra, showPassportColors, togglePassportColors, showCities, toggleCities, democracyMapMode, handleDemocracyMapModeChange, democracyChartEnabled, eraId, setEraId],
+    [isRotating, mapView, toggleRotation, showFlagMap, toggleFlagMap, isModernEra, showPassportColors, togglePassportColors, showCities, toggleCities, democracyMapMode, handleDemocracyMapModeChange, eraId, setEraId],
   );
 
   // Leaner control set for the subdivision map: just the flag-overlay
@@ -2212,36 +2211,57 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         )}
       </div>
       </div>
-      {isModernEra && !subdivisionMode && democracyChartEnabled && (
-        <DemocracyIndexChart
-          countries={countries as Country[]}
-          xKey={democracyChartXKey}
-          yKey={democracyChartYKey}
-          onXKeyChange={setDemocracyChartXKey}
-          onYKeyChange={setDemocracyChartYKey}
-          selectedCode={
-            selected?.kind === "modern" ? selected.country.code : null
-          }
-          hoveredCode={
-            hovered?.kind === "modern" ? hovered.country.code : null
-          }
-          onSelect={handleModernMapOrChartSelect}
-          onHover={(code) => {
-            if (!code) {
-              hoverClearTimer.current = setTimeout(() => {
-                setHovered(null);
-                hoverClearTimer.current = null;
-              }, 200);
-              return;
-            }
-            if (hoverClearTimer.current) {
-              clearTimeout(hoverClearTimer.current);
-              hoverClearTimer.current = null;
-            }
-            const c = codeToCountry.get(code);
-            if (c) setHovered({ kind: "modern", country: c });
-          }}
-        />
+      {isModernEra && !subdivisionMode && (
+        <div className="learn-fs__chart-accordion">
+          <button
+            type="button"
+            className="learn-fs__chart-accordion-toggle"
+            aria-expanded={democracyChartEnabled}
+            aria-controls={democracyChartPanelId}
+            onClick={() => setDemocracyChartEnabled((v) => !v)}
+          >
+            <span className="learn-fs__chart-accordion-label">See chart</span>
+            <span className="learn-fs__chart-accordion-chev" aria-hidden="true">
+              {democracyChartEnabled ? "▾" : "▸"}
+            </span>
+          </button>
+          {democracyChartEnabled && (
+            <div
+              className="learn-fs__chart-accordion-panel"
+              id={democracyChartPanelId}
+            >
+              <DemocracyIndexChart
+                countries={countries as Country[]}
+                xKey={democracyChartXKey}
+                yKey={democracyChartYKey}
+                onXKeyChange={setDemocracyChartXKey}
+                onYKeyChange={setDemocracyChartYKey}
+                selectedCode={
+                  selected?.kind === "modern" ? selected.country.code : null
+                }
+                hoveredCode={
+                  hovered?.kind === "modern" ? hovered.country.code : null
+                }
+                onSelect={handleModernMapOrChartSelect}
+                onHover={(code) => {
+                  if (!code) {
+                    hoverClearTimer.current = setTimeout(() => {
+                      setHovered(null);
+                      hoverClearTimer.current = null;
+                    }, 200);
+                    return;
+                  }
+                  if (hoverClearTimer.current) {
+                    clearTimeout(hoverClearTimer.current);
+                    hoverClearTimer.current = null;
+                  }
+                  const c = codeToCountry.get(code);
+                  if (c) setHovered({ kind: "modern", country: c });
+                }}
+              />
+            </div>
+          )}
+        </div>
       )}
       </div>
 

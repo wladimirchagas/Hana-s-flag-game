@@ -10,16 +10,11 @@ import {
 export type DemocracyMapControlProps = {
   mode: DemocracyMapMode;
   onChange: (next: DemocracyMapMode) => void;
-  /** When true, the democracy scatter chart is shown below the world map. */
-  chartEnabled: boolean;
-  onChartEnabledChange: (next: boolean) => void;
 };
 
 export function DemocracyMapControl({
   mode,
   onChange,
-  chartEnabled,
-  onChartEnabledChange,
 }: DemocracyMapControlProps) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -48,7 +43,7 @@ export function DemocracyMapControl({
     setOpen(false);
   };
 
-  const isActive = mode !== null || chartEnabled;
+  const isActive = mode !== null;
 
   return (
     <div className="democracy-map-control" ref={ref}>
@@ -74,18 +69,6 @@ export function DemocracyMapControl({
         >
           <p className="map-view-control__heading">Democracy Index</p>
           <div className="democracy-map-control__options">
-            <button
-              type="button"
-              className={`map-view-control__preset democracy-map-control__chart-toggle${chartEnabled ? " map-view-control__preset--active" : ""}`}
-              onClick={() => {
-                onChartEnabledChange(!chartEnabled);
-                setOpen(false);
-              }}
-              aria-pressed={chartEnabled}
-            >
-              {chartEnabled ? "Chart view · On" : "Chart view"}
-            </button>
-            <hr className="democracy-map-control__divider" aria-hidden="true" />
             <button
               type="button"
               className={`map-view-control__preset${mode === null ? " map-view-control__preset--active" : ""}`}
