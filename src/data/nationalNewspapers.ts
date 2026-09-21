@@ -22438,7 +22438,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Independent News Media 2023"
       },
       "revenueModel": "Print retail sales and local commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sz/independent-news-eswatini.png",
+      "logoExplainer": "Bold black 'Independent' + red 'News' with small black 'ESWATINI' under News — Independent News Eswatini masthead.",
+      "licenceNote": "Independent News Eswatini trademark bundled from the publisher's official site brand assets (independentnews.co.sz) for educational reference in Learn mode.",
+
       "sources": [
         "https://independentnews.co.sz"
       ]

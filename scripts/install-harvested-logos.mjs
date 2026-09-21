@@ -15,22 +15,14 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "lk-daily-news",
-    src: "tmp/batch63-final/lk-daily-news.png",
+    id: "sz-independent-news-eswatini",
+    src: "tmp/batch64-final/sz-independent-news-eswatini.png",
     explainer:
-      "Blackletter 'Daily News' with tagline 'Sri Lanka's National Newspaper since 1918' — Daily News (Sri Lanka) masthead.",
+      "Bold black 'Independent' + red 'News' with small black 'ESWATINI' under News — Independent News Eswatini masthead.",
     licence:
-      "Daily News (Sri Lanka) trademark from Wikimedia Commons File:Daily News Sri Lanka logo.gif (public domain), bundled for educational reference in Learn mode.",
+      "Independent News Eswatini trademark bundled from the publisher's official site brand assets (independentnews.co.sz) for educational reference in Learn mode.",
   },
-  {
-    id: "is-kjarninn",
-    src: "tmp/batch63-final/is-kjarninn.png",
-    explainer:
-      "Orange circle with white lowercase 'k' above slab-serif 'kjarninn' — Kjarninn masthead.",
-    licence:
-      "Kjarninn trademark from Wikimedia Commons File:Kjarninn-logo.png (public domain), bundled for educational reference in Learn mode.",
-  },
-]
+];
 
 function findObjectSpan(src, id) {
   const idRe = new RegExp(`"id":\\s*"${id}"`);
