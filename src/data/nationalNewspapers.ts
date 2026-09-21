@@ -9367,8 +9367,12 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ANG (Agência Noticiosa da Guiné) Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "No authentic masthead is shown yet. A placeholder graphic was removed. Wikimedia Commons, the newspaper's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
+      "logo": "newspaper-logos/gw/ang-agencia-noticiosa-da-guine.jpg",
+      "logoExplainer": "Red italic 'ANG' under a five-pointed star ringed by concentric signal ellipses, with curved 'Agência de Notícias da Guiné' below — official ANG site masthead.",
+      "licenceNote": "ANG (Agência de Notícias da Guiné) logo from the agency's official site (ang.gw/wp-content/uploads/2023/01/LOGO-ANG-scaled.jpg); trademark bundled for educational reference in Learn mode.",
+
       "sources": [
+        "https://ang.gw/",
         "https://agencianoticiosadaguine.com/",
         "https://www.gov.gw/"
       ]

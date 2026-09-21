@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "ag-antigua-trumpet",
-    src: "tmp/batch110-install/ag-antigua-trumpet.png",
+    id: "gw-ang-agencia-noticiosa-da-guine",
+    src: "tmp/batch111-install/gw-ang-agencia-noticiosa-da-guine.jpg",
     explainer:
-      "Dark-blue 'Trumpet' joined to grey 'News', with the tagline 'ANTIGUA | WE MEAN BUSINESS' under a thin rule — Antiguan Trumpet site masthead.",
+      "Red italic 'ANG' under a five-pointed star ringed by concentric signal ellipses, with curved 'Agência de Notícias da Guiné' below — official ANG site masthead.",
     licence:
-      "Antiguan Trumpet logo from the newspaper's official site (antiguantrumpet.com/wp-content/uploads/2020/07/ATMainLogo272x90.png); trademark bundled for educational reference in Learn mode.",
+      "ANG (Agência de Notícias da Guiné) logo from the agency's official site (ang.gw/wp-content/uploads/2023/01/LOGO-ANG-scaled.jpg); trademark bundled for educational reference in Learn mode.",
   },
 ];
 
