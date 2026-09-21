@@ -1542,6 +1542,48 @@ country or gains an implausible year, or if a curated `modernName` points at a c
 no adoption year (which would silently refuse the flag the author intended). It also prints
 every borrow the gate refused, so the curation stays visible. Never weaken it; fix the data.
 
+## Index map colours must share one green→red palette — hard rule, do not override without approval
+
+**Every Learn-mode democracy / governance / ratings index map (Freedom House, V-Dem, The Economist,
+CPI, DPI, RSF, HDI, Gender Gap, GPI, Happiness, Soft Power, GDI, WJP, IMD, ETR, Digital News, GTI,
+and any future index) MUST colour its bands by sampling the single shared `INDEX_MAP_PALETTE` in
+`src/lib/democracyColors.ts` via `indexBandColors(labelsBestFirst)`. Hand-written per-index hex
+palettes are forbidden — present and future.**
+
+### Why this rule exists
+
+Indexes arrived with different publisher colour schemes (IEP teal for GPI, UNDP blues for HDI, …).
+Side-by-side on the same map control they read as unrelated products, not as one Learn-mode family.
+Aligning one index by pasting hexes into its `*_MAP_COLORS` object only postponed the next drift.
+The shared palette + sampler make "same scheme" structural: a new index cannot ship a private
+palette without failing the build.
+
+### Rules
+
+1. **`INDEX_MAP_PALETTE` is the only allowed set of map hexes** — ten stops, best (deep green
+   `#004d1a`) → worst (deep red `#7f0000`). Never invent a parallel palette, and never paste a
+   `#rrggbb` into a `*_MAP_COLORS` assignment.
+2. **Every `*_MAP_COLORS` export is `indexBandColors(labelsBestFirst)`** — labels ordered best
+   outcome → worst, regardless of how the legend is later displayed. Inverted indexes (GTI: "Very
+   High" impact is worst) still pass best-first labels into the helper.
+3. **Adding an index means adding an `INDEX_MAP_COLOR_REGISTRY` row in the same change** — key,
+   export name, colours object, and the exact `labelsBestFirst` array used to build it. The check
+   fails if `DEMOCRACY_INDEX_KEYS` and the registry drift apart.
+4. **Never weaken `scripts/check-index-map-colors.mjs`** to force a private palette through. If it
+   fires, the colours are wrong — fix the assignment, not the check.
+5. **Verify in the running app** (the mandatory visual-verification rule applies): open the Learn
+   map's democracy/index control, walk several indexes (e.g. Freedom House, GPI, GTI, HDI), and
+   confirm every legend runs green → yellow → red for best → worst.
+
+### Enforcement
+
+`scripts/check-index-map-colors.mjs` (`npm run index-colors:check`, in `npm run flags:check`
+and the `check-era-maps` CI job — it imports `democracyColors.ts`, so it needs Node 22.18+)
+**fails the build** when the palette shrinks or loses its green/red endpoints, when any
+`*_MAP_COLORS` is not assigned via `indexBandColors()`, when a `#rrggbb` appears outside
+`INDEX_MAP_PALETTE`, when a registry row's colours drift from the sampler, or when a
+`DEMOCRACY_INDEX_KEYS` entry has no registry row. Never weaken it; fix the colours.
+
 ## Country widget information must never be reduced — hard rule, do not override without approval
 
 **The Learn-mode country widget (`EntitySummary`, rendered in `src/pages/LearnPage.tsx`) is a

@@ -64,6 +64,8 @@ on:
       - "scripts/data/gggr-2026.csv"
       - "scripts/data/gggr2026Data.mjs"
       - "scripts/check-gpi-data.mjs"
+      - "scripts/check-index-map-colors.mjs"
+      - "src/lib/democracyColors.ts"
       - "scripts/check-etr-data.mjs"
       - "scripts/data/etr-2024.csv"
       - "scripts/data/etr2024Data.mjs"
@@ -343,6 +345,12 @@ jobs:
       # into the game.
       - name: Verify every quiz symbol deck has one answer per question
         run: node scripts/check-quiz-symbol-decks.mjs
+
+      # Shared green→red index map palette. Imports democracyColors.ts, so it
+      # belongs in this Node 24 job. Fails if any index invents its own colours
+      # or drifts from indexBandColors(INDEX_MAP_PALETTE).
+      - name: Verify every index map samples the shared INDEX_MAP_PALETTE
+        run: node scripts/check-index-map-colors.mjs
 
   check-flag-meanings:
     runs-on: ubuntu-latest

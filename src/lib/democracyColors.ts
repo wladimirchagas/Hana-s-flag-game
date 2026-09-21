@@ -2,7 +2,7 @@ import {
   COUNTRY_FACTS,
   type DemocracyData,
   type DemocracyIndex,
-} from "../data/countryFacts";
+} from "../data/countryFacts.ts";
 
 export type DemocracyIndexKey =
   | "freedom-house"
@@ -62,43 +62,75 @@ export type DemocracyLegendItem = {
   color: string;
 };
 
-export const FREEDOM_HOUSE_MAP_COLORS: Record<string, string> = {
-  "Free": "#2e7d32",
-  "Partly Free": "#f57c00",
-  "Not Free": "#c62828",
-};
+/**
+ * Canonical Learn-mode index map palette — best outcome → worst.
+ * Every democracy / governance / ratings index map MUST colour its bands by
+ * sampling this scale via `indexBandColors()`. Never invent a per-index
+ * palette, and never paste hexes into a `*_MAP_COLORS` object by hand.
+ */
+export const INDEX_MAP_PALETTE = [
+  "#004d1a",
+  "#1b5e20",
+  "#43a047",
+  "#9ccc65",
+  "#fdd835",
+  "#fb8c00",
+  "#f4511e",
+  "#e53935",
+  "#c62828",
+  "#7f0000",
+] as const;
 
-export const V_DEM_MAP_COLORS: Record<string, string> = {
-  "Liberal Democracy": "#1b5e20",
-  "Electoral Democracy": "#4caf50",
-  "Electoral Autocracy": "#ff9800",
-  "Closed Autocracy": "#b71c1c",
-};
+/** Evenly sample `bandCount` colours from `INDEX_MAP_PALETTE` (best→worst). */
+export function indexMapPaletteSample(bandCount: number): string[] {
+  const n = INDEX_MAP_PALETTE.length;
+  if (!Number.isInteger(bandCount) || bandCount < 1) {
+    throw new Error(`indexMapPaletteSample: bandCount must be a positive integer (got ${bandCount})`);
+  }
+  if (bandCount > n) {
+    throw new Error(
+      `indexMapPaletteSample: at most ${n} bands (got ${bandCount}) — extend INDEX_MAP_PALETTE first`,
+    );
+  }
+  if (bandCount === 1) return [INDEX_MAP_PALETTE[0]];
+  if (bandCount === n) return [...INDEX_MAP_PALETTE];
+  const out: string[] = [];
+  for (let i = 0; i < bandCount; i++) {
+    const idx = Math.round((i * (n - 1)) / (bandCount - 1));
+    out.push(INDEX_MAP_PALETTE[idx]);
+  }
+  return out;
+}
 
-export const ECONOMIST_MAP_COLORS: Record<string, string> = {
-  "Full democracy": "#1b5e20",
-  "Flawed democracy": "#4caf50",
-  "Hybrid regime": "#ff9800",
-  "Authoritarian": "#b71c1c",
-};
+/**
+ * Build a label→colour map for an index. `labelsBestFirst` MUST be ordered
+ * best outcome → worst (green → red), regardless of how the legend is later
+ * displayed. Inverted indexes (e.g. GTI, where "Very High" impact is worst)
+ * still pass best-first labels here.
+ */
+export function indexBandColors(
+  labelsBestFirst: readonly string[],
+): Readonly<Record<string, string>> {
+  if (labelsBestFirst.length === 0) {
+    throw new Error("indexBandColors: labelsBestFirst must not be empty");
+  }
+  const seen = new Set<string>();
+  for (const label of labelsBestFirst) {
+    if (!label || seen.has(label)) {
+      throw new Error(`indexBandColors: duplicate or empty label "${label}"`);
+    }
+    seen.add(label);
+  }
+  const colors = indexMapPaletteSample(labelsBestFirst.length);
+  const out: Record<string, string> = {};
+  labelsBestFirst.forEach((label, i) => {
+    out[label] = colors[i]!;
+  });
+  return out;
+}
 
-/** Transparency International CPI map score bands (official CPI map legend).
- *  Higher score = less perceived public-sector corruption. Colours run
- *  clean→corrupt (green→yellow→red), matching TI’s published map scale. */
-export const CPI_MAP_COLORS: Record<string, string> = {
-  "90–100": "#004d1a",
-  "80–89": "#1b5e20",
-  "70–79": "#43a047",
-  "60–69": "#9ccc65",
-  "50–59": "#fdd835",
-  "40–49": "#fb8c00",
-  "30–39": "#f4511e",
-  "20–29": "#e53935",
-  "10–19": "#c62828",
-  "0–9": "#7f0000",
-};
-
-export const CPI_BAND_ORDER: readonly string[] = [
+/** Decade score bands shared by CPI / Soft Power / Gender Gap / IMD (best→worst). */
+export const DECADE_SCORE_BAND_ORDER = [
   "90–100",
   "80–89",
   "70–79",
@@ -109,33 +141,44 @@ export const CPI_BAND_ORDER: readonly string[] = [
   "20–29",
   "10–19",
   "0–9",
-];
+] as const;
 
-// RSF World Press Freedom Index map colours follow the Index methodology bands
-// (good / satisfactory / problematic / difficult / very serious).
-export const RSF_PRESS_MAP_COLORS: Record<string, string> = {
-  Good: "#2e7d32",
-  Satisfactory: "#c0ca33",
-  Problematic: "#fb8c00",
-  Difficult: "#ef6c00",
-  "Very serious": "#b71c1c",
-};
+export const FREEDOM_HOUSE_MAP_COLORS = indexBandColors([
+  "Free",
+  "Partly Free",
+  "Not Free",
+]);
 
-/** WJP Rule of Law Index map score bands (0–1 overall score, published 2-dp).
- *  Higher score = stronger adherence to the rule of law. Colours run
- *  strong→weak (green→yellow→red), matching the other governance maps. */
-export const WJP_MAP_COLORS: Record<string, string> = {
-  "0.80–1.00": "#1b5e20",
-  "0.70–0.79": "#43a047",
-  "0.60–0.69": "#9ccc65",
-  "0.50–0.59": "#fdd835",
-  "0.40–0.49": "#fb8c00",
-  "0.30–0.39": "#f4511e",
-  "0.20–0.29": "#e53935",
-  "0.00–0.19": "#7f0000",
-};
+export const V_DEM_MAP_COLORS = indexBandColors([
+  "Liberal Democracy",
+  "Electoral Democracy",
+  "Electoral Autocracy",
+  "Closed Autocracy",
+]);
 
-export const WJP_BAND_ORDER: readonly string[] = [
+export const ECONOMIST_MAP_COLORS = indexBandColors([
+  "Full democracy",
+  "Flawed democracy",
+  "Hybrid regime",
+  "Authoritarian",
+]);
+
+/** Transparency International CPI map score bands. Higher = less corruption. */
+export const CPI_MAP_COLORS = indexBandColors(DECADE_SCORE_BAND_ORDER);
+
+export const CPI_BAND_ORDER: readonly string[] = DECADE_SCORE_BAND_ORDER;
+
+/** RSF World Press Freedom Index methodology bands (good → very serious). */
+export const RSF_PRESS_MAP_COLORS = indexBandColors([
+  "Good",
+  "Satisfactory",
+  "Problematic",
+  "Difficult",
+  "Very serious",
+]);
+
+/** WJP Rule of Law Index map score bands (0–1). Higher = stronger rule of law. */
+export const WJP_BAND_ORDER = [
   "0.80–1.00",
   "0.70–0.79",
   "0.60–0.69",
@@ -144,60 +187,28 @@ export const WJP_BAND_ORDER: readonly string[] = [
   "0.30–0.39",
   "0.20–0.29",
   "0.00–0.19",
-];
+] as const;
 
-/** UNDP Human Development Index map colours follow the official hdicode bands
- *  (Very High / High / Medium / Low). Higher development → greener. */
-export const HDI_MAP_COLORS: Record<string, string> = {
-  "Very High": "#1b5e20",
-  High: "#4caf50",
-  Medium: "#ff9800",
-  Low: "#b71c1c",
-};
+export const WJP_MAP_COLORS = indexBandColors(WJP_BAND_ORDER);
 
-export const HDI_BAND_ORDER: readonly string[] = [
-  "Very High",
-  "High",
-  "Medium",
-  "Low",
-];
+/** UNDP HDI hdicode bands. Higher development → greener. */
+export const HDI_BAND_ORDER = ["Very High", "High", "Medium", "Low"] as const;
 
-/** Global Peace Index State of Peace bands. Lower score = more peaceful.
- *  Colours match the shared Learn-mode green→yellow→red scale used by HDI,
- *  ETR, V-Dem and the other democracy-index maps (not the IEP site palette). */
-export const GPI_MAP_COLORS: Record<string, string> = {
-  "Very High": "#1b5e20",
-  High: "#4caf50",
-  Medium: "#fdd835",
-  Low: "#fb8c00",
-  "Very Low": "#b71c1c",
-};
+export const HDI_MAP_COLORS = indexBandColors(HDI_BAND_ORDER);
 
-export const GPI_BAND_ORDER: readonly string[] = [
+/** Global Peace Index State of Peace bands. Lower score = more peaceful. */
+export const GPI_BAND_ORDER = [
   "Very High",
   "High",
   "Medium",
   "Low",
   "Very Low",
-];
+] as const;
 
-/** Reuters Institute Digital News Report trust-in-news % bands (higher = greener).
- *  DNR publishes no categorical tiers — decade bands exist for the map / Group-by
- *  only, matching the CPI score-band pattern. */
-export const DIGITAL_NEWS_MAP_COLORS: Record<string, string> = {
-  "90–100%": "#004d1a",
-  "80–89%": "#1b5e20",
-  "70–79%": "#43a047",
-  "60–69%": "#9ccc65",
-  "50–59%": "#fdd835",
-  "40–49%": "#fb8c00",
-  "30–39%": "#f4511e",
-  "20–29%": "#e53935",
-  "10–19%": "#c62828",
-  "0–9%": "#7f0000",
-};
+export const GPI_MAP_COLORS = indexBandColors(GPI_BAND_ORDER);
 
-export const DIGITAL_NEWS_BAND_ORDER: readonly string[] = [
+/** Reuters Institute Digital News Report trust-in-news % bands. */
+export const DIGITAL_NEWS_BAND_ORDER = [
   "90–100%",
   "80–89%",
   "70–79%",
@@ -208,66 +219,50 @@ export const DIGITAL_NEWS_BAND_ORDER: readonly string[] = [
   "20–29%",
   "10–19%",
   "0–9%",
-];
+] as const;
 
-/** Global Terrorism Index impact bands (IEP map legend). Higher score =
- *  greater impact of terrorism. Colours run high-impact→none (red→green). */
-export const GTI_MAP_COLORS: Record<string, string> = {
-  "Very High": "#7f0000",
-  High: "#c62828",
-  Medium: "#fb8c00",
-  Low: "#fdd835",
-  "Very Low": "#9ccc65",
-  "No Impact": "#1b5e20",
-};
+export const DIGITAL_NEWS_MAP_COLORS = indexBandColors(DIGITAL_NEWS_BAND_ORDER);
 
-export const GTI_BAND_ORDER: readonly string[] = [
+/**
+ * Global Terrorism Index impact bands. Higher score = greater impact.
+ * Legend order is impact-high→none; colours are assigned best→worst
+ * (No Impact = green, Very High = red).
+ */
+export const GTI_BAND_ORDER = [
   "Very High",
   "High",
   "Medium",
   "Low",
   "Very Low",
   "No Impact",
-];
+] as const;
 
-/** IEP Ecological Threat Index (ETR) map bands — Appendix A methodology
- *  (Very Low <1.6 … Very High >3.8 on the 1–5 scale). Higher threat → redder.
- *  Note: ETR “Very High” means greatest threat (opposite of GPI “Very High”
- *  peacefulness). */
-export const ETR_MAP_COLORS: Record<string, string> = {
-  "Very Low": "#1b5e20",
-  Low: "#4caf50",
-  Medium: "#fdd835",
-  High: "#fb8c00",
-  "Very High": "#b71c1c",
-};
-
-export const ETR_BAND_ORDER: readonly string[] = [
+export const GTI_MAP_COLORS = indexBandColors([
+  "No Impact",
   "Very Low",
   "Low",
   "Medium",
   "High",
   "Very High",
-];
+]);
 
-/** World Happiness Report Cantril-ladder score bands (happiest → least).
- *  Bands are 1-point intervals on the published 0–10 life-evaluation scale;
- *  WHR itself does not publish categorical tiers — these exist for the map
- *  and Group-by, matching the CPI score-band pattern. */
-export const HAPPINESS_MAP_COLORS: Record<string, string> = {
-  "9.0–10": "#004d1a",
-  "8.0–8.9": "#1b5e20",
-  "7.0–7.9": "#2e7d32",
-  "6.0–6.9": "#66bb6a",
-  "5.0–5.9": "#c0ca33",
-  "4.0–4.9": "#fdd835",
-  "3.0–3.9": "#fb8c00",
-  "2.0–2.9": "#f4511e",
-  "1.0–1.9": "#c62828",
-  "0.0–0.9": "#7f0000",
-};
+/**
+ * IEP Ecological Threat Index bands. Higher threat → redder.
+ * Note: ETR “Very High” means greatest threat (opposite of GPI “Very High”
+ * peacefulness).
+ */
+export const ETR_BAND_ORDER = [
+  "Very Low",
+  "Low",
+  "Medium",
+  "High",
+  "Very High",
+] as const;
 
-export const HAPPINESS_BAND_ORDER: readonly string[] = [
+export const ETR_MAP_COLORS = indexBandColors(ETR_BAND_ORDER);
+
+/** World Happiness Report Cantril-ladder score bands (happiest → least). */
+export const HAPPINESS_BAND_ORDER = [
   "9.0–10",
   "8.0–8.9",
   "7.0–7.9",
@@ -278,134 +273,184 @@ export const HAPPINESS_BAND_ORDER: readonly string[] = [
   "2.0–2.9",
   "1.0–1.9",
   "0.0–0.9",
-];
+] as const;
 
-/** Brand Finance Global Soft Power Index score bands (0–100). Higher = stronger
- *  soft power. Brand Finance publishes rank + score only — these 10-point bands
- *  exist for the map and Group-by, matching the CPI score-band pattern. */
-export const SOFT_POWER_MAP_COLORS: Record<string, string> = {
-  "90–100": "#004d1a",
-  "80–89": "#1b5e20",
-  "70–79": "#43a047",
-  "60–69": "#9ccc65",
-  "50–59": "#fdd835",
-  "40–49": "#fb8c00",
-  "30–39": "#f4511e",
-  "20–29": "#e53935",
-  "10–19": "#c62828",
-  "0–9": "#7f0000",
-};
+export const HAPPINESS_MAP_COLORS = indexBandColors(HAPPINESS_BAND_ORDER);
 
-export const SOFT_POWER_BAND_ORDER: readonly string[] = [
-  "90–100",
-  "80–89",
-  "70–79",
-  "60–69",
-  "50–59",
-  "40–49",
-  "30–39",
-  "20–29",
-  "10–19",
-  "0–9",
-];
+/** Brand Finance Global Soft Power Index score bands (0–100). */
+export const SOFT_POWER_BAND_ORDER: readonly string[] = DECADE_SCORE_BAND_ORDER;
 
-/** Lowy Institute Global Diplomacy Index — total diplomatic posts abroad.
- *  Lowy does not publish categorical tiers; these post-count bands exist for
- *  the map and Group-by only (same pattern as WHR / CPI score bands).
- *  Higher posts → greener. */
-export const GDI_MAP_COLORS: Record<string, string> = {
-  "250+": "#004d1a",
-  "200–249": "#1b5e20",
-  "150–199": "#43a047",
-  "100–149": "#9ccc65",
-  "50–99": "#fdd835",
-  "Below 50": "#fb8c00",
-};
+export const SOFT_POWER_MAP_COLORS = indexBandColors(DECADE_SCORE_BAND_ORDER);
 
-export const GDI_BAND_ORDER: readonly string[] = [
+/** Lowy Institute Global Diplomacy Index — total diplomatic posts abroad. */
+export const GDI_BAND_ORDER = [
   "250+",
   "200–249",
   "150–199",
   "100–149",
   "50–99",
   "Below 50",
-];
+] as const;
 
-/** IMD World Competitiveness Ranking score bands (0–100 chart index).
- *  Decade bands for the map / Group-by; IMD itself publishes ranks + scores,
- *  not categorical tiers. Higher score → greener (more competitive). */
-export const IMD_COMPETITIVENESS_MAP_COLORS: Record<string, string> = {
-  "90–100": "#004d1a",
-  "80–89": "#1b5e20",
-  "70–79": "#43a047",
-  "60–69": "#9ccc65",
-  "50–59": "#fdd835",
-  "40–49": "#fb8c00",
-  "30–39": "#f4511e",
-  "20–29": "#e53935",
-  "10–19": "#c62828",
-  "0–9": "#7f0000",
-};
+export const GDI_MAP_COLORS = indexBandColors(GDI_BAND_ORDER);
 
-export const IMD_COMPETITIVENESS_BAND_ORDER: readonly string[] = [
-  "90–100",
-  "80–89",
-  "70–79",
-  "60–69",
-  "50–59",
-  "40–49",
-  "30–39",
-  "20–29",
-  "10–19",
-  "0–9",
-];
+/** IMD World Competitiveness Ranking score bands (0–100). */
+export const IMD_COMPETITIVENESS_BAND_ORDER: readonly string[] = DECADE_SCORE_BAND_ORDER;
 
-/** WEF Global Gender Gap Index map bands — decade of percentage closed
- *  (score×100). Colours reuse the shared green→yellow→red palette (CPI /
- *  Happiness / RSF), but are shifted so green only starts well above the
- *  published global average (~69% closed in 2026). The bulk of economies sit
- *  in 60–79 and must read as middling (lime/yellow), not "doing well". */
-export const GENDER_GAP_MAP_COLORS: Record<string, string> = {
-  "90–100": "#004d1a", // CPI 90–100 — exceptional (Iceland alone in 2026)
-  "80–89": "#1b5e20", // CPI 80–89 / HDI Very High — clear leaders
-  "70–79": "#c0ca33", // RSF Satisfactory / Happiness mid — just above average
-  "60–69": "#fdd835", // CPI 50–59 — at / below global average
-  "50–59": "#fb8c00", // CPI 40–49 — weak
-  "40–49": "#f4511e", // CPI 30–39
-  "30–39": "#e53935", // CPI 20–29
-  "20–29": "#c62828", // CPI 10–19
-  "10–19": "#7f0000", // CPI 0–9
-  "0–9": "#7f0000",
-};
+export const IMD_COMPETITIVENESS_MAP_COLORS = indexBandColors(DECADE_SCORE_BAND_ORDER);
 
-export const GENDER_GAP_BAND_ORDER: readonly string[] = [
-  "90–100",
-  "80–89",
-  "70–79",
-  "60–69",
-  "50–59",
-  "40–49",
-  "30–39",
-  "20–29",
-  "10–19",
-  "0–9",
-];
+/** WEF Global Gender Gap Index — decade of percentage closed (score×100). */
+export const GENDER_GAP_BAND_ORDER: readonly string[] = DECADE_SCORE_BAND_ORDER;
 
-/** Democracy Perception Index 2026 tiers (±5 / ±15 on Index Score). */
-export const PERCEPTION_MAP_COLORS: Record<string, string> = {
-  "Very Positive": "#1b5e20",
-  Positive: "#4caf50",
-  Neutral: "#9e9e9e",
-  Negative: "#ff9800",
-  "Very Negative": "#b71c1c",
-};
+export const GENDER_GAP_MAP_COLORS = indexBandColors(DECADE_SCORE_BAND_ORDER);
 
-export const PERCEPTION_TIER_ORDER: readonly string[] = [
+/** Democracy Perception Index tiers (±5 / ±15 on Index Score). */
+export const PERCEPTION_TIER_ORDER = [
   "Very Positive",
   "Positive",
   "Neutral",
   "Negative",
   "Very Negative",
+] as const;
+
+export const PERCEPTION_MAP_COLORS = indexBandColors(PERCEPTION_TIER_ORDER);
+
+/**
+ * Registry of every index colour map + the best→worst label order used to
+ * build it. The colour-scheme check walks this list; adding an index means
+ * adding a row here in the SAME change.
+ */
+export const INDEX_MAP_COLOR_REGISTRY: readonly {
+  key: DemocracyIndexKey | "decade-shared";
+  name: string;
+  colors: Readonly<Record<string, string>>;
+  labelsBestFirst: readonly string[];
+}[] = [
+  {
+    key: "freedom-house",
+    name: "FREEDOM_HOUSE_MAP_COLORS",
+    colors: FREEDOM_HOUSE_MAP_COLORS,
+    labelsBestFirst: ["Free", "Partly Free", "Not Free"],
+  },
+  {
+    key: "v-dem",
+    name: "V_DEM_MAP_COLORS",
+    colors: V_DEM_MAP_COLORS,
+    labelsBestFirst: [
+      "Liberal Democracy",
+      "Electoral Democracy",
+      "Electoral Autocracy",
+      "Closed Autocracy",
+    ],
+  },
+  {
+    key: "economist",
+    name: "ECONOMIST_MAP_COLORS",
+    colors: ECONOMIST_MAP_COLORS,
+    labelsBestFirst: [
+      "Full democracy",
+      "Flawed democracy",
+      "Hybrid regime",
+      "Authoritarian",
+    ],
+  },
+  {
+    key: "cpi",
+    name: "CPI_MAP_COLORS",
+    colors: CPI_MAP_COLORS,
+    labelsBestFirst: DECADE_SCORE_BAND_ORDER,
+  },
+  {
+    key: "rsf-press",
+    name: "RSF_PRESS_MAP_COLORS",
+    colors: RSF_PRESS_MAP_COLORS,
+    labelsBestFirst: [
+      "Good",
+      "Satisfactory",
+      "Problematic",
+      "Difficult",
+      "Very serious",
+    ],
+  },
+  {
+    key: "wjp-rule-of-law",
+    name: "WJP_MAP_COLORS",
+    colors: WJP_MAP_COLORS,
+    labelsBestFirst: WJP_BAND_ORDER,
+  },
+  {
+    key: "hdi",
+    name: "HDI_MAP_COLORS",
+    colors: HDI_MAP_COLORS,
+    labelsBestFirst: HDI_BAND_ORDER,
+  },
+  {
+    key: "gpi",
+    name: "GPI_MAP_COLORS",
+    colors: GPI_MAP_COLORS,
+    labelsBestFirst: GPI_BAND_ORDER,
+  },
+  {
+    key: "digital-news",
+    name: "DIGITAL_NEWS_MAP_COLORS",
+    colors: DIGITAL_NEWS_MAP_COLORS,
+    labelsBestFirst: DIGITAL_NEWS_BAND_ORDER,
+  },
+  {
+    key: "gti",
+    name: "GTI_MAP_COLORS",
+    colors: GTI_MAP_COLORS,
+    labelsBestFirst: [
+      "No Impact",
+      "Very Low",
+      "Low",
+      "Medium",
+      "High",
+      "Very High",
+    ],
+  },
+  {
+    key: "etr",
+    name: "ETR_MAP_COLORS",
+    colors: ETR_MAP_COLORS,
+    labelsBestFirst: ETR_BAND_ORDER,
+  },
+  {
+    key: "happiness",
+    name: "HAPPINESS_MAP_COLORS",
+    colors: HAPPINESS_MAP_COLORS,
+    labelsBestFirst: HAPPINESS_BAND_ORDER,
+  },
+  {
+    key: "soft-power",
+    name: "SOFT_POWER_MAP_COLORS",
+    colors: SOFT_POWER_MAP_COLORS,
+    labelsBestFirst: DECADE_SCORE_BAND_ORDER,
+  },
+  {
+    key: "gdi",
+    name: "GDI_MAP_COLORS",
+    colors: GDI_MAP_COLORS,
+    labelsBestFirst: GDI_BAND_ORDER,
+  },
+  {
+    key: "imd-competitiveness",
+    name: "IMD_COMPETITIVENESS_MAP_COLORS",
+    colors: IMD_COMPETITIVENESS_MAP_COLORS,
+    labelsBestFirst: DECADE_SCORE_BAND_ORDER,
+  },
+  {
+    key: "gender-gap",
+    name: "GENDER_GAP_MAP_COLORS",
+    colors: GENDER_GAP_MAP_COLORS,
+    labelsBestFirst: DECADE_SCORE_BAND_ORDER,
+  },
+  {
+    key: "perception",
+    name: "PERCEPTION_MAP_COLORS",
+    colors: PERCEPTION_MAP_COLORS,
+    labelsBestFirst: PERCEPTION_TIER_ORDER,
+  },
 ];
 
 export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
