@@ -2025,6 +2025,66 @@
   background: var(--ink-fixed);
 }
 
+/* === Learn information-panel tabs (Facts / Indices / Media / …) ======= */
+
+.learn-panel-tabs {
+  margin: 0.35rem 0 0.85rem;
+  gap: 0.35rem;
+}
+
+.learn-panel-tabs .flag-tabs__tab {
+  font-size: 0.78rem;
+  padding: 0.35rem 0.65rem;
+  min-height: 2rem;
+}
+
+.learn-panel-tabs__panel {
+  margin-top: 0.15rem;
+  min-width: 0;
+}
+
+.learn-panel-tabs__empty {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+
+.learn-panel-category__sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0 0 0.85rem;
+}
+
+.learn-panel-category__section {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  min-height: 2rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.learn-panel-category__section:hover,
+.learn-panel-category__section:focus-visible {
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--ink) 35%, transparent);
+}
+
+.learn-panel-category__section--active {
+  color: var(--ink-fixed);
+  background: color-mix(in srgb, var(--accent, #2a6) 22%, transparent);
+  border-color: color-mix(in srgb, var(--accent, #2a6) 45%, transparent);
+}
+
 /* A controls row (group-by / filter) that sits inside a tab panel rather than
    in the section header. */
 .flag-grid__controls--tab {

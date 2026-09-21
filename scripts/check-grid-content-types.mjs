@@ -80,13 +80,21 @@ assert.ok(
 );
 
 assert.ok(
-  learnPageSrc.includes('effectiveGridContentType === "party"'),
-  "LearnPage must swap the world-map panel to PoliticalPartyDetails in the party Show view",
+  learnPageSrc.includes('panelTab === "politics"') &&
+    learnPageSrc.includes("LearnPanelCategoryBody") &&
+    learnPageSrc.includes("syncPanelTabsFromShow"),
+  "LearnPage must route the party Show view through the Politics information-panel tab",
 );
 
 assert.ok(
-  learnPageSrc.includes("<PoliticalPartyDetails"),
-  "LearnPage must still mount PoliticalPartyDetails for the world-map party view",
+  learnPageSrc.includes("<PoliticalPartyDetails") ||
+    fs
+      .readFileSync(
+        path.join(root, "src/components/LearnPanelCategoryBody.tsx"),
+        "utf8",
+      )
+      .includes("<PoliticalPartyDetails"),
+  "LearnPage (or its panel category body) must still mount PoliticalPartyDetails for the world-map party view",
 );
 
 const partyLibSrc = fs.readFileSync(
