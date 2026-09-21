@@ -17,28 +17,20 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "ls-the-post",
-    src: "tmp/batch80-install/ls-the-post.png",
+    id: "mm-mizzima",
+    src: "tmp/batch81-install/mm-mizzima.png",
     explainer:
-      "Red 'the' + white 'post' wordmark with a Lesotho-map badge holding a Basotho hat (mokorotlo) — The Post (Lesotho) masthead.",
+      "Green peacock feather beside blue lowercase 'mizzima' with 'NEWS FROM MYANMAR' tagline — Mizzima News English masthead.",
     licence:
-      "The Post (Lesotho) masthead from the publisher's official site brand assets (thepost.co.ls), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Mizzima News masthead from the publisher's official English site brand assets (eng.mizzima.com), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "zw-the-herald",
-    src: "tmp/batch80-install/zw-the-herald.png",
+    id: "pl-polska-times",
+    src: "tmp/batch81-install/pl-polska-times.png",
     explainer:
-      "Blue gear-and-quill Zimpapers mark beside red serif 'The Herald' — Zimbabwe Herald masthead from the publisher's site theme.",
+      "Black serif all-caps 'POLSKA TIMES' wordmark — Polska Times masthead without temporary campaign overlays.",
     licence:
-      "The Herald (Zimbabwe) masthead from the publisher's official site theme assets (herald.co.zw), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "zw-the-chronicle",
-    src: "tmp/batch80-install/zw-the-chronicle.png",
-    explainer:
-      "Blue gear-and-quill mark beside cyan serif 'Chronicle' — Bulawayo Chronicle masthead from the publisher's site theme.",
-    licence:
-      "The Chronicle (Zimbabwe) masthead from the publisher's official site theme assets (chronicle.co.zw), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Polska Times masthead from the publisher's official site brand assets (polskatimes.pl / Polska Press), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
