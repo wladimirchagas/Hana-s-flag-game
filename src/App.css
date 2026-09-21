@@ -284,6 +284,34 @@
   filter: drop-shadow(0 24px 64px rgba(0, 0, 0, 0.6));
 }
 
+/* Adaptive neutral plate for brand logos in the fullscreen viewer — same
+   light/dark choice as the grid tiles (data-logo-tone from logoBackdrop). */
+.flag-zoom__plate {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: min(92vw, 1100px);
+  max-height: min(88vh, 900px);
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  border-radius: 14px;
+  background: var(--logo-plate-light);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: default;
+}
+
+.flag-zoom__plate[data-logo-tone="dark"] {
+  background: var(--logo-plate-dark);
+}
+
+.flag-zoom__img--logo {
+  width: auto;
+  height: auto;
+  max-width: min(84vw, 1000px);
+  max-height: min(72vh, 780px);
+  filter: none;
+}
+
 .flag-zoom__close {
   position: fixed;
   top: 1rem;
