@@ -20052,7 +20052,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -20071,6 +20070,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Rwandan news website",
         "source": "https://greatlakesvoice.com"
       },
+      "logo": "newspaper-logos/rw/great-lakes.png",
+      "logoExplainer": "White paper airplane with speed lines inside a textured dark-red circle — Great Lakes Voice emblem.",
+      "licenceNote": "Great Lakes Voice trademark bundled from the publisher's official site brand assets (greatlakesvoice.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://greatlakesvoice.com"
       ]
@@ -21994,7 +21997,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "STP Media Analytics 2023"
       },
       "revenueModel": "Digital advertising networks and commercial partnerships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/st/noticias-stp.png",
+      "logoExplainer": "White circular STP monogram seal beside sans-serif 'STP DIGITAL' — Notícias STP / STP Digital masthead.",
+      "licenceNote": "STP Digital trademark bundled from the publisher's official site brand assets (stpdigital.net) for educational reference in Learn mode.",
+
       "sources": [
         "https://noticias.st",
         "https://en.wikipedia.org/wiki/Media_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe"
