@@ -3625,7 +3625,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Reporter Media Kit 2023"
       },
       "revenueModel": "Print newsstand sales and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bz/reporter.png",
+      "logoExplainer": "Black torch with orange flame on a radial orange ground — The Reporter (Belize) emblem.",
+      "licenceNote": "The Reporter brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.reporter.bz",
         "https://en.wikipedia.org/wiki/The_Reporter_(Belize)"
@@ -3678,7 +3681,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "BBN Media Review 2024"
       },
       "revenueModel": "Digital display ads, mobile advertising, and corporate sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/bz/bbn.png",
+      "logoExplainer": "Grey 'BBN' with teal 'BREAKING BELIZE NEWS' strap — Breaking Belize News brand mark.",
+      "licenceNote": "Breaking Belize News brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.breakingbelizenews.com"
       ]
@@ -3687,7 +3693,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "bz-love-fm-news",
       "name": "Love News Belize",
       "founded": 2010,
@@ -3703,6 +3708,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Belize news brand",
         "source": "https://lovenewsbelize.com"
       },
+      "logo": "newspaper-logos/bz/love-fm-news.jpg",
+      "logoExplainer": "Red cursive 'Love' with blue 'FM' in the e-loop — Love FM / Love News Belize brand mark.",
+      "licenceNote": "Love FM brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://lovenewsbelize.com"
       ]
@@ -6270,7 +6279,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Dominica Vibes Audience Review 2023"
       },
       "revenueModel": "Digital display ads and festival event promotions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/dm/dominica-vibes.jpg",
+      "logoExplainer": "Green gradient 'DA VIBES' with sun arc and dominicavibes.com banner — Dominica Vibes brand mark.",
+      "licenceNote": "Dominica Vibes brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.dominicavibes.dm"
       ]
@@ -7672,7 +7684,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "https://fijilive.com"
       },
       "revenueModel": "Digital advertising",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/fj/fijilive.jpg",
+      "logoExplainer": "White lowercase 'fijilive' on a bright blue field — FijiLive brand mark.",
+      "licenceNote": "FijiLive brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://fijilive.com"
       ]
@@ -12319,7 +12334,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SKNT&LU Annual Report 2023"
       },
       "revenueModel": "Print sales, union dues, and classified advertisements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/kn/the-labour-spokesman.jpg",
+      "logoExplainer": "White serif 'The Labour Spokesman' in a circle with 'EST. 1957' on maroon — Labour Spokesman masthead.",
+      "licenceNote": "The Labour Spokesman brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.facebook.com/LabourSpokesman",
         "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
@@ -15359,7 +15377,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ml-aBamako",
       "countryCode": "ML",
       "name": "aBamako.com",
@@ -15375,6 +15392,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Mali news website",
         "source": "https://news.abamako.com"
       },
+      "logo": "newspaper-logos/ml/aBamako.jpg",
+      "logoExplainer": "Yellow speech-bubble 'a' beside green 'Bamako.com' — aBamako.com brand mark.",
+      "licenceNote": "aBamako.com brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://news.abamako.com"
       ]
@@ -18980,7 +19001,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "ps-al-hadath",
       "name": "Al-Hadath",
       "founded": 2010,
@@ -18996,6 +19016,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Palestinian news website",
         "source": "https://www.alhadath.ps"
       },
+      "logo": "newspaper-logos/ps/al-hadath.png",
+      "logoExplainer": "Red-and-black Arabic wordmark with red accent mark — Al-Hadath masthead.",
+      "licenceNote": "Al-Hadath brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.alhadath.ps"
       ]
@@ -19637,7 +19661,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "BRAT Romania 2023"
       },
       "revenueModel": "Print sales, corporate subscriptions, and display advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ro/romania-libera.png",
+      "logoExplainer": "Purple 'RL' initials over magenta script 'România liberă' — România Liberă brand mark.",
+      "licenceNote": "România Liberă brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://romanialibera.ro",
         "https://en.wikipedia.org/wiki/Rom%C3%A2nia_Liber%C4%83"
@@ -20332,7 +20359,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Pacific Islands Media Association (PIMA)"
       },
       "revenueModel": "Single-copy retail sales and weekend commercial advertisements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sb/sunday-isles.jpg",
+      "logoExplainer": "Camera line-art above red/black 'Sunday Isles' on yellow — Sunday Isles brand mark.",
+      "licenceNote": "Sunday Isles brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://islesmedia.net",
         "https://en.wikipedia.org/wiki/Media_of_the_Solomon_Islands"
@@ -20384,7 +20414,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Media Association of Solomon Islands (MASI) / Solomon Star Media Kit"
       },
       "revenueModel": "Print newsstand sales, national commercial advertising, and public notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the agency's logo). Wikimedia Commons, the agency's official site, and common brand CDNs were checked for a freely-citable authentic emblem; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sb/solomon-star.jpg",
+      "logoExplainer": "Red five-point star between arched 'Solomon' and 'Star' — Solomon Star masthead.",
+      "licenceNote": "Solomon Star brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.solomonstarnews.com",
         "https://en.wikipedia.org/wiki/Solomon_Star"
@@ -20473,7 +20506,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "United Seychelles Publications 2023"
       },
       "revenueModel": "Print sales, party subscriptions, and classified advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sc/the-people.jpg",
+      "logoExplainer": "Red 3D block 'THE PEOPLE' with white outline — The People (Seychelles) masthead.",
+      "licenceNote": "The People brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://unitedseychelles.com",
         "https://en.wikipedia.org/wiki/Media_of_Seychelles"
@@ -21303,7 +21339,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Concord Times Communications 2023"
       },
       "revenueModel": "Retail print sales and institutional public notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sl/concord-times.jpg",
+      "logoExplainer": "Blue globe tile above 'CONCORD TIMES' and strap 'Excellence & Objectivity' — Concord Times masthead.",
+      "licenceNote": "Concord Times brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://slconcordtimes.com",
         "https://en.wikipedia.org/wiki/Concord_Times"
@@ -22640,7 +22679,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -22659,6 +22697,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Chad news website",
         "source": "https://tchadinfos.com"
       },
+      "logo": "newspaper-logos/td/tchadinfos.jpg",
+      "logoExplainer": "White lowercase 'Tchadinfos' letter-grid on dark blue — Tchadinfos brand mark.",
+      "licenceNote": "Tchadinfos brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://tchadinfos.com"
       ]
@@ -23534,7 +23576,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Pacific Journalism Review / PINA"
       },
       "revenueModel": "Single-copy retail sales and diaspora classified advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/to/taimi-o-tonga.jpg",
+      "logoExplainer": "White serif 'Taimi' over 'TÓNGA' on a red masthead bar — Taimi 'o Tonga masthead.",
+      "licenceNote": "Taimi 'o Tonga masthead from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://taimiotonga.com",
         "https://en.wikipedia.org/wiki/Taimi_ʻo_Tonga"
