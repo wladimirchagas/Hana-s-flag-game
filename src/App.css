@@ -3586,6 +3586,36 @@
   opacity: 0.9;
 }
 
+/* One-axis categorical bars/columns — teal like a standard value chart. */
+.democracy-index-chart__bar {
+  fill: #2bb3a3;
+  opacity: 0.88;
+}
+
+:root[data-theme="dark"] .democracy-index-chart__bar {
+  fill: #3dceb8;
+  opacity: 0.82;
+}
+
+.democracy-index-chart__bar--active,
+.democracy-index-chart__bar--selected {
+  fill: var(--coral-deep, #e05252);
+  opacity: 1;
+}
+
+.democracy-index-chart__bar--dimmed {
+  opacity: 0.18;
+}
+
+.democracy-index-chart__marker--bar-tip {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.democracy-index-chart--one-axis .democracy-index-chart__plot-bg {
+  fill: color-mix(in srgb, var(--cream, #f7f3ea) 35%, transparent);
+}
+
 .democracy-index-chart__tick {
   fill: var(--ink, #1f2937);
   font-size: 11px;
