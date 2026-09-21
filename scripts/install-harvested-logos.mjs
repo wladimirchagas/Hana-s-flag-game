@@ -17,12 +17,20 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "va-donne-chiesa-mondo",
-    src: "tmp/batch91-install/va-donne-chiesa-mondo.png",
+    id: "mm-myanma-alinn",
+    src: "tmp/batch92-install/mm-myanma-alinn.png",
     explainer:
-      "White serif 'DONNE CHIESA MONDO' on a red swallowtail ribbon with a dark-blue cut end — masthead banner of L'Osservatore Romano's monthly women's supplement.",
+      "Dark navy Burmese script 'မြန်မာ့အလင်း' (Myanma Alinn) with a thin royal-blue outline — the state daily's masthead wordmark.",
     licence:
-      "Donne Chiesa Mondo masthead cropped from the magazine's official cover artwork on osservatoreromano.va; trademark bundled for educational reference in Learn mode.",
+      "Myanma Alinn masthead from Wikimedia Commons File:Myanmar Alin - logo.png (Public domain), bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "rw-igihe",
+    src: "tmp/batch92-install/rw-igihe.png",
+    explainer:
+      "Blue uppercase 'IGIHE' between two matching blue wave marks on a soft white cloud — Igihe's site masthead (arton151116.png).",
+    licence:
+      "Igihe masthead from the publisher's official site brand assets (igihe.com), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 

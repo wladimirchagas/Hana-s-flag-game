@@ -15471,7 +15471,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "News and Periodicals Enterprise 2023"
       },
       "revenueModel": "Newspaper copy sales and mandatory public tender announcements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mm/myanma-alinn.png",
+      "logoExplainer": "Dark navy Burmese script 'မြန်မာ့အလင်း' (Myanma Alinn) with a thin royal-blue outline — the state daily's masthead wordmark.",
+      "licenceNote": "Myanma Alinn masthead from Wikimedia Commons File:Myanmar Alin - logo.png (Public domain), bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.moi.gov.mm",
         "https://en.wikipedia.org/wiki/Myanma_Alinn"
@@ -20172,7 +20175,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "SimilarWeb & Igihe Media Analytics 2023"
       },
       "revenueModel": "Digital display advertising, sponsored content, and video production",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/rw/igihe.png",
+      "logoExplainer": "Blue uppercase 'IGIHE' between two matching blue wave marks on a soft white cloud — Igihe's site masthead (arton151116.png).",
+      "licenceNote": "Igihe masthead from the publisher's official site brand assets (igihe.com), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://en.igihe.com",
         "https://en.wikipedia.org/wiki/Media_of_Rwanda"
