@@ -15,28 +15,12 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "dm-the-sun-dominica",
-    src: "tmp/batch62-final/dm-the-sun-dominica.png",
+    id: "sz-independent-news-eswatini",
+    src: "tmp/batch64-final/sz-independent-news-eswatini.png",
     explainer:
-      "Golden inline-serif 'THE SUN' on a deep-red bar — The Sun (Dominica) masthead.",
+      "Bold black 'Independent' + red 'News' with small black 'ESWATINI' under News — Independent News Eswatini masthead.",
     licence:
-      "The Sun (Dominica) trademark bundled from the publisher's official site brand assets (sundominica.com) for educational reference in Learn mode.",
-  },
-  {
-    id: "ve-efectococuyo",
-    src: "tmp/batch62-final/ve-efectococuyo.png",
-    explainer:
-      "Bold black 'EFECTO · · COCUYO' with two lime firefly dots and tagline PERIODISMO QUE ILUMINA — Efecto Cocuyo masthead.",
-    licence:
-      "Efecto Cocuyo trademark from Wikimedia Commons File:Logo Efecto Cocuyo (Venezuela) 2025.png, bundled for educational reference in Learn mode.",
-  },
-  {
-    id: "ru-moskovsky-komsomolets",
-    src: "tmp/batch62-final/ru-moskovsky-komsomolets.svg",
-    explainer:
-      "Italic blue Cyrillic 'МОСКОВСКИЙ КОМСОМОЛЕЦ' wordmark — Moskovsky Komsomolets masthead.",
-    licence:
-      "Moskovsky Komsomolets trademark from Wikimedia Commons File:Text logo of Moskovskij Komsomolets (Cyrillic).svg, bundled for educational reference in Learn mode.",
+      "Independent News Eswatini trademark bundled from the publisher's official site brand assets (independentnews.co.sz) for educational reference in Learn mode.",
   },
 ];
 

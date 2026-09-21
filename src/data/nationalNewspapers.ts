@@ -10986,7 +10986,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kjarninn Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/is/kjarninn.png",
+      "logoExplainer": "Orange circle with white lowercase 'k' above slab-serif 'kjarninn' — Kjarninn masthead.",
+      "licenceNote": "Kjarninn trademark from Wikimedia Commons File:Kjarninn-logo.png (public domain), bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://kjarninn.is/",
         "https://press.is/"
@@ -13418,7 +13421,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ANCL Lake House Annual Report"
       },
       "revenueModel": "Government notices, corporate print advertising, and newsstand distribution",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/lk/daily-news.png",
+      "logoExplainer": "Blackletter 'Daily News' with tagline 'Sri Lanka's National Newspaper since 1918' — Daily News (Sri Lanka) masthead.",
+      "licenceNote": "Daily News (Sri Lanka) trademark from Wikimedia Commons File:Daily News Sri Lanka logo.gif (public domain), bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.dailynews.lk",
         "https://en.wikipedia.org/wiki/Daily_News_(Sri_Lanka)"
@@ -22432,7 +22438,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Independent News Media 2023"
       },
       "revenueModel": "Print retail sales and local commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sz/independent-news-eswatini.png",
+      "logoExplainer": "Bold black 'Independent' + red 'News' with small black 'ESWATINI' under News — Independent News Eswatini masthead.",
+      "licenceNote": "Independent News Eswatini trademark bundled from the publisher's official site brand assets (independentnews.co.sz) for educational reference in Learn mode.",
+
       "sources": [
         "https://independentnews.co.sz"
       ]
