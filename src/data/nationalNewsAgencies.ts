@@ -1944,8 +1944,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "readership": {"metric":"Deploys correspondents across all 15 counties of Liberia, feeding wire dispatches to all domestic radio and print outlets","source":"MICAT Liberia Annual Report 2023"},
       "annualPublicFunding": {"total":"Parliamentary state budget appropriation","perCapita":"State funded"},
       "revenueModel": "Parliamentary state budget funding and agency licensing",
-      "noImageReason": "No authentic emblem is shown yet. A placeholder graphic was removed. Wikimedia Commons, the agency's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
-      "sources": ["https://liberianewsagency.com","https://en.wikipedia.org/wiki/Liberia_News_Agency"],
+      "logo": "newspaper-logos/lr/lina.png",
+      "logoExplainer": "Dark-blue serif 'LINA' over a red bar reading 'LIBERIA NEWS AGENCY', with a red wireframe globe and orbital arcs — Liberia News Agency site masthead.",
+      "licenceNote": "LINA logo from the agency's official site (lina.micat.gov.lr/wp-content/uploads/2026/04/cropped-lin-logo-1536x654.png); trademark bundled for educational reference in Learn mode.",
+
+      "sources": ["https://lina.micat.gov.lr/","https://liberianewsagency.com","https://en.wikipedia.org/wiki/Liberia_News_Agency"]
     }
   ],
   "LS": [
