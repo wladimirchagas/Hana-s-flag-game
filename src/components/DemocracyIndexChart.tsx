@@ -3,10 +3,11 @@ import type { Country } from "../api/countries";
 import {
   DEMOCRACY_INDEX_KEYS,
   type DemocracyIndexKey,
+  clipDemocracyAxisBands,
   democracyChartPoints,
+  fitDemocracyAxisDomain,
   formatDemocracyAxisValue,
   getDemocracyAxisBands,
-  getDemocracyAxisDomain,
   getDemocracyIndexLabel,
 } from "../lib/democracyColors";
 import { GridImage } from "./GridImage";
@@ -28,6 +29,7 @@ export type DemocracyIndexChartProps = {
 const PAD = { top: 16, right: 18, bottom: 64, left: 52 };
 const VIEW_W = 960;
 const VIEW_H = 500;
+const TICK_COUNT = 5;
 
 function scaleLinear(
   value: number,
@@ -41,7 +43,7 @@ function scaleLinear(
 function formatTick(key: DemocracyIndexKey, value: number): string {
   if (key === "v-dem") return value.toFixed(1);
   if (key === "hdi" || key === "gender-gap" || key === "gpi") return value.toFixed(2);
-  if (key === "economist") return value.toFixed(0);
+  if (key === "economist" || key === "happiness") return value.toFixed(1);
   if (key === "perception") return value > 0 ? `+${value}` : `${value}`;
   return `${Math.round(value)}`;
 }
@@ -74,11 +76,6 @@ export function DemocracyIndexChart({
     return m;
   }, [countries]);
 
-  const xDomain = useMemo(() => getDemocracyAxisDomain(xKey), [xKey]);
-  const yDomain = useMemo(() => getDemocracyAxisDomain(yKey), [yKey]);
-  const xBands = useMemo(() => getDemocracyAxisBands(xKey), [xKey]);
-  const yBands = useMemo(() => getDemocracyAxisBands(yKey), [yKey]);
-
   const plot = {
     x0: PAD.left,
     x1: VIEW_W - PAD.right,
@@ -86,22 +83,43 @@ export function DemocracyIndexChart({
     y1: VIEW_H - PAD.bottom,
   };
 
+  // Raw scored pairs first — domains fit THESE values, not the full published
+  // scale (so a Gender Gap cluster above 0.5 does not leave half the chart empty).
+  const rawPoints = useMemo(
+    () => democracyChartPoints(xKey, yKey).filter((p) => byCode.has(p.code)),
+    [xKey, yKey, byCode],
+  );
+
+  const xDomain = useMemo(
+    () => fitDemocracyAxisDomain(rawPoints.map((p) => p.x), xKey, TICK_COUNT),
+    [rawPoints, xKey],
+  );
+  const yDomain = useMemo(
+    () => fitDemocracyAxisDomain(rawPoints.map((p) => p.y), yKey, TICK_COUNT),
+    [rawPoints, yKey],
+  );
+
+  const xBands = useMemo(
+    () => clipDemocracyAxisBands(getDemocracyAxisBands(xKey), xDomain),
+    [xKey, xDomain],
+  );
+  const yBands = useMemo(
+    () => clipDemocracyAxisBands(getDemocracyAxisBands(yKey), yDomain),
+    [yKey, yDomain],
+  );
+
   const points = useMemo(() => {
-    return democracyChartPoints(xKey, yKey)
-      .map((p) => {
-        const country = byCode.get(p.code);
-        if (!country) return null;
-        const cx = scaleLinear(p.x, xDomain, { min: plot.x0, max: plot.x1 });
-        const cy = scaleLinear(p.y, yDomain, { min: plot.y1, max: plot.y0 });
-        return { ...p, country, cx, cy };
-      })
-      .filter((p): p is NonNullable<typeof p> => p != null);
-  }, [xKey, yKey, byCode, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
+    return rawPoints.map((p) => {
+      const country = byCode.get(p.code)!;
+      const cx = scaleLinear(p.x, xDomain, { min: plot.x0, max: plot.x1 });
+      const cy = scaleLinear(p.y, yDomain, { min: plot.y1, max: plot.y0 });
+      return { ...p, country, cx, cy };
+    });
+  }, [rawPoints, byCode, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
 
   const xTicks = useMemo(() => {
-    const n = 5;
-    return Array.from({ length: n + 1 }, (_, i) => {
-      const v = xDomain.min + ((xDomain.max - xDomain.min) * i) / n;
+    return Array.from({ length: TICK_COUNT + 1 }, (_, i) => {
+      const v = xDomain.min + ((xDomain.max - xDomain.min) * i) / TICK_COUNT;
       return {
         value: v,
         x: scaleLinear(v, xDomain, { min: plot.x0, max: plot.x1 }),
@@ -110,15 +128,14 @@ export function DemocracyIndexChart({
   }, [xDomain, plot.x0, plot.x1]);
 
   const yTicks = useMemo(() => {
-    const n = 5;
-    return Array.from({ length: n + 1 }, (_, i) => {
-      const v = yDomain.min + ((yDomain.max - yDomain.min) * i) / n;
+    return Array.from({ length: TICK_COUNT + 1 }, (_, i) => {
+      const v = yDomain.min + ((yDomain.max - yDomain.min) * i) / TICK_COUNT;
       return {
         value: v,
         y: scaleLinear(v, yDomain, { min: plot.y1, max: plot.y0 }),
       };
     });
-  }, [yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
+  }, [yDomain, plot.y0, plot.y1]);
 
   const activeCode = hoveredCode ?? selectedCode;
 

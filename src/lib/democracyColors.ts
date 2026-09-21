@@ -385,9 +385,9 @@ export function getDemocracyIndexFor(
 }
 
 /**
- * Numeric axis domain for a given index. Ranges follow each index's own
- * published scale so a future index can declare its domain without rewriting
- * the chart.
+ * Full published scale for an index — used as a fallback when no points are
+ * plotted, and as a hint for tick rounding. Chart axes no longer always span
+ * this full range; see `fitDemocracyAxisDomain`.
  */
 export function getDemocracyAxisDomain(key: DemocracyIndexKey): { min: number; max: number } {
   if (key === "v-dem" || key === "hdi" || key === "gender-gap") return { min: 0, max: 1 };
@@ -396,6 +396,87 @@ export function getDemocracyAxisDomain(key: DemocracyIndexKey): { min: number; m
   if (key === "gpi") return { min: 1, max: 5 };
   // Freedom House, CPI, RSF — 0–100 scores.
   return { min: 0, max: 100 };
+}
+
+/** Nice step size near `rough` (1 / 2 / 5 × 10^n). */
+function niceStep(rough: number): number {
+  if (!Number.isFinite(rough) || rough <= 0) return 1;
+  const exp = Math.floor(Math.log10(rough));
+  const base = rough / 10 ** exp;
+  const nice =
+    base <= 1 ? 1 :
+    base <= 2 ? 2 :
+    base <= 5 ? 5 :
+    10;
+  return nice * 10 ** exp;
+}
+
+/**
+ * Axis domain fitted to the values actually plotted — not the full published
+ * scale. If every Gender Gap score sits above 0.5, the axis starts near 0.5
+ * instead of zero. Adds padding and snaps to nice tick boundaries so the
+ * ends do not hug the outermost flags.
+ */
+export function fitDemocracyAxisDomain(
+  values: readonly number[],
+  key: DemocracyIndexKey,
+  tickCount = 5,
+): { min: number; max: number } {
+  const full = getDemocracyAxisDomain(key);
+  if (values.length === 0) return full;
+
+  let lo = Math.min(...values);
+  let hi = Math.max(...values);
+  const span = hi - lo;
+  const fullSpan = full.max - full.min || 1;
+
+  if (span <= 0) {
+    // Single value (or all identical) — open a small window around it.
+    const pad = Math.max(fullSpan * 0.05, Math.abs(lo) * 0.05 || 0.05);
+    lo -= pad;
+    hi += pad;
+  } else {
+    const pad = span * 0.08;
+    lo -= pad;
+    hi += pad;
+  }
+
+  const step = niceStep((hi - lo) / tickCount);
+  let niceMin = Math.floor(lo / step) * step;
+  let niceMax = Math.ceil(hi / step) * step;
+  if (niceMax <= niceMin) niceMax = niceMin + step;
+
+  // Floating-point tidy for 0–1 scales (HDI / Gender Gap / V-Dem).
+  const decimals = step < 0.01 ? 4 : step < 0.1 ? 3 : step < 1 ? 2 : 0;
+  const factor = 10 ** decimals;
+  niceMin = Math.round(niceMin * factor) / factor;
+  niceMax = Math.round(niceMax * factor) / factor;
+
+  // Never invent scores outside the index's published scale (no negative
+  // V-Dem / HDI / Gender Gap; no CPI above 100). The fitted window can still
+  // start ABOVE the published floor when the data does — that is the point.
+  niceMin = Math.max(niceMin, full.min);
+  niceMax = Math.min(niceMax, full.max);
+  if (niceMax <= niceMin) {
+    // Degenerate after clamping — fall back to the full published scale.
+    return full;
+  }
+
+  return { min: niceMin, max: niceMax };
+}
+
+/** Keep only the part of each classification band that intersects the domain. */
+export function clipDemocracyAxisBands(
+  bands: readonly DemocracyAxisBand[],
+  domain: { min: number; max: number },
+): DemocracyAxisBand[] {
+  const out: DemocracyAxisBand[] = [];
+  for (const band of bands) {
+    const min = Math.max(band.min, domain.min);
+    const max = Math.min(band.max, domain.max);
+    if (max > min) out.push({ label: band.label, min, max });
+  }
+  return out;
 }
 
 /**
