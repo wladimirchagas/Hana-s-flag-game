@@ -26406,7 +26406,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "ZAMPS / AMH Corporate Pack"
       },
       "revenueModel": "Paid weekly subscriptions, corporate financial notices, and print advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/zw/the-zimbabwe-independent.png",
+      "logoExplainer": "Maroon newspaper-icon mark beside black serif 'Zimbabwe Independent' with grey uppercase tagline 'AUTHORITATIVE · INDEPENDENT · ZIMBABWEAN' — the site masthead as shown on zimbabwe-independent.com.",
+      "licenceNote": "Zimbabwe Independent masthead cropped from a publisher-hosted site screenshot in the outlet's own WordPress media library (zimbabwe-independent.com); trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.theindependent.co.zw",
         "https://en.wikipedia.org/wiki/Zimbabwe_Independent"
