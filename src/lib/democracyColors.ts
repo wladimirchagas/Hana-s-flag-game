@@ -15,6 +15,7 @@ export type DemocracyIndexKey =
   | "gender-gap"
   | "gpi"
   | "happiness"
+  | "soft-power"
   | "gdi"
   | "wjp-rule-of-law"
   | "imd-competitiveness"
@@ -36,6 +37,7 @@ export const DEMOCRACY_INDEX_KEYS: readonly DemocracyIndexKey[] = [
   "gender-gap",
   "gpi",
   "happiness",
+  "soft-power",
   "gdi",
   "wjp-rule-of-law",
   "imd-competitiveness",
@@ -224,6 +226,35 @@ export const HAPPINESS_BAND_ORDER: readonly string[] = [
   "0.0–0.9",
 ];
 
+/** Brand Finance Global Soft Power Index score bands (0–100). Higher = stronger
+ *  soft power. Brand Finance publishes rank + score only — these 10-point bands
+ *  exist for the map and Group-by, matching the CPI score-band pattern. */
+export const SOFT_POWER_MAP_COLORS: Record<string, string> = {
+  "90–100": "#004d1a",
+  "80–89": "#1b5e20",
+  "70–79": "#43a047",
+  "60–69": "#9ccc65",
+  "50–59": "#fdd835",
+  "40–49": "#fb8c00",
+  "30–39": "#f4511e",
+  "20–29": "#e53935",
+  "10–19": "#c62828",
+  "0–9": "#7f0000",
+};
+
+export const SOFT_POWER_BAND_ORDER: readonly string[] = [
+  "90–100",
+  "80–89",
+  "70–79",
+  "60–69",
+  "50–59",
+  "40–49",
+  "30–39",
+  "20–29",
+  "10–19",
+  "0–9",
+];
+
 /** Lowy Institute Global Diplomacy Index — total diplomatic posts abroad.
  *  Lowy does not publish categorical tiers; these post-count bands exist for
  *  the map and Group-by only (same pattern as WHR / CPI score bands).
@@ -332,6 +363,7 @@ export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
   if (mode === "gender-gap") return "Global Gender Gap Index";
   if (mode === "gpi") return "Global Peace Index";
   if (mode === "happiness") return "World Happiness Report";
+  if (mode === "soft-power") return "Global Soft Power Index";
   if (mode === "gdi") return "Global Diplomacy Index";
   if (mode === "wjp-rule-of-law") return "WJP Rule of Law Index";
   if (mode === "imd-competitiveness") return "IMD World Competitiveness Ranking";
@@ -408,6 +440,12 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
       color: HAPPINESS_MAP_COLORS[label],
     }));
   }
+  if (mode === "soft-power") {
+    return SOFT_POWER_BAND_ORDER.map((label) => ({
+      label,
+      color: SOFT_POWER_MAP_COLORS[label],
+    }));
+  }
   if (mode === "gdi") {
     return GDI_BAND_ORDER.map((label) => ({
       label,
@@ -473,6 +511,9 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
     } else if (mode === "happiness") {
       rating = demo.happiness?.rating;
       colorMap = HAPPINESS_MAP_COLORS;
+    } else if (mode === "soft-power") {
+      rating = demo.softPower?.rating;
+      colorMap = SOFT_POWER_MAP_COLORS;
     } else if (mode === "gdi") {
       rating = demo.gdi?.rating;
       colorMap = GDI_MAP_COLORS;
@@ -507,6 +548,7 @@ export function getDemocracyIndexLabel(key: DemocracyIndexKey): string {
   if (key === "gender-gap") return "Global Gender Gap Index";
   if (key === "gpi") return "Global Peace Index";
   if (key === "happiness") return "World Happiness Report";
+  if (key === "soft-power") return "Global Soft Power Index";
   if (key === "gdi") return "Global Diplomacy Index";
   if (key === "wjp-rule-of-law") return "WJP Rule of Law Index";
   if (key === "imd-competitiveness") return "IMD World Competitiveness Ranking";
@@ -530,6 +572,7 @@ export function getDemocracyIndexFor(
   if (key === "gender-gap") return democracy.genderGap;
   if (key === "gpi") return democracy.gpi;
   if (key === "happiness") return democracy.happiness;
+  if (key === "soft-power") return democracy.softPower;
   if (key === "gdi") return democracy.gdi;
   if (key === "wjp-rule-of-law") return democracy.wjpRuleOfLaw;
   if (key === "imd-competitiveness") return democracy.imdCompetitiveness;
@@ -548,7 +591,7 @@ export function getDemocracyAxisDomain(key: DemocracyIndexKey): { min: number; m
   if (key === "perception") return { min: -40, max: 40 };
   if (key === "gpi" || key === "etr") return { min: 1, max: 5 };
   if (key === "gdi") return { min: 0, max: 280 };
-  // Freedom House, CPI, RSF — 0–100 scores.
+  // Freedom House, CPI, RSF, Soft Power — 0–100 scores.
   return { min: 0, max: 100 };
 }
 
@@ -792,6 +835,7 @@ export function formatDemocracyAxisValue(
   if (key === "gender-gap") return `${idx.rating} · ${score.toFixed(3)}`;
   if (key === "gpi") return `${idx.rating} · ${score.toFixed(3)}`;
   if (key === "happiness") return `${idx.rating} · ${score.toFixed(3)}`;
+  if (key === "soft-power") return `${idx.rating} · ${score.toFixed(1)}`;
   if (key === "gdi") return `${idx.rating} · ${score} posts`;
   if (key === "wjp-rule-of-law") return `${idx.rating} · ${score.toFixed(2)}`;
   if (key === "imd-competitiveness") return `${idx.rating} · score ${score.toFixed(2)}`;

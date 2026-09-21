@@ -218,6 +218,8 @@ export type DemocracyData = {
   gpi?: DemocracyIndex;
   /** World Happiness Report life-evaluation (Cantril ladder) ranking */
   happiness?: DemocracyIndex;
+  /** Brand Finance Global Soft Power Index */
+  softPower?: DemocracyIndex;
   /** Lowy Institute Global Diplomacy Index (diplomatic posts abroad) */
   gdi?: DemocracyIndex;
   /** World Justice Project Rule of Law Index */
