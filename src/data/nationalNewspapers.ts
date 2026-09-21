@@ -24204,9 +24204,12 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Tuvalu Media Department Newsletter Statistics"
       },
       "revenueModel": "State media operational budget",
-      "noImageReason": "No authentic masthead is shown yet. A placeholder graphic was removed. Wikimedia Commons, the newspaper's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
+      "logo": "newspaper-logos/tv/fenui-news.png",
+      "logoExplainer": "White calligraphic 'Fenui' wordmark on an olive-green banner — masthead from the Tuvalu Media Department Fenui newsletter (March 2015 issue hosted by the Tuvalu Permanent Mission to the UN).",
+      "licenceNote": "Fenui trademark bundled from the Tuvalu Media Department / Government of Tuvalu newsletter brand assets (Fenui PDF masthead via un.int/tuvalu) for educational reference in Learn mode.",
       "sources": [
         "https://en.wikipedia.org/wiki/Media_of_Tuvalu",
+        "https://www.un.int/tuvalu/news/fenui-news",
         "https://www.rnz.co.nz/international/pacific-news"
       ]
     },
