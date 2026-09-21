@@ -2101,8 +2101,11 @@ export const NATIONAL_NEWS_AGENCIES: Record<string, readonly NewsAgency[]> = {
       "editorialStance": "Official national news agency of Madagascar; provides institutional dispatches, government communiqués, and regional reporting from all 23 regions of the island",
       "readership": {"metric":"Syndicated to all major print, broadcast, and community radio stations throughout Madagascar","source":"Ministère de la Communication et de la Culture Rapport Annuel 2023"},
       "revenueModel": "State budget allocation and wire distribution subscriptions",
-      "noImageReason": "No authentic emblem is shown yet. A placeholder graphic was removed. Wikimedia Commons, the agency's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
-      "sources": ["https://taratra.mg","https://anta.mg"],
+      "logo": "newspaper-logos/mg/taratra.png",
+      "logoExplainer": "Red stylized 'D' with play-button counter beside white slab-serif 'DEPECHE', over green 'INFORMATIVE' and white 'TARATRA' on a dark field — official Dépêche Informative Taratra (state news agency, formerly ANTA) masthead from depeche-taratra.mg.",
+      "licenceNote": "Dépêche Informative Taratra (Madagascar state news agency) trademark bundled from the agency's official site brand assets (depeche-taratra.mg masthead, archived via the Wayback Machine) for educational reference in Learn mode.",
+
+      "sources": ["https://www.depeche-taratra.mg","https://2424.mg/information-madagascar-relance-son-agence-de-presse-officielle-la-depeche-informative-taratra/","https://taratra.mg","https://anta.mg"]
     }
   ],
   "MK": [
