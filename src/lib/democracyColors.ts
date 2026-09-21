@@ -11,7 +11,8 @@ export type DemocracyIndexKey =
   | "cpi"
   | "perception"
   | "rsf-press"
-  | "hdi";
+  | "hdi"
+  | "gender-gap";
 
 export type DemocracyMapMode = DemocracyIndexKey | null;
 
@@ -26,6 +27,7 @@ export const DEMOCRACY_INDEX_KEYS: readonly DemocracyIndexKey[] = [
   "perception",
   "rsf-press",
   "hdi",
+  "gender-gap",
 ] as const;
 
 export type DemocracyAxisBand = {
@@ -117,6 +119,25 @@ export const HDI_BAND_ORDER: readonly string[] = [
   "Low",
 ];
 
+/** WEF Global Gender Gap Index map bands — % of the gender gap closed (higher = greener). */
+export const GENDER_GAP_MAP_COLORS: Record<string, string> = {
+  "90–100%": "#004d1a",
+  "80–89%": "#1b5e20",
+  "70–79%": "#43a047",
+  "60–69%": "#fdd835",
+  "50–59%": "#fb8c00",
+  "Below 50%": "#b71c1c",
+};
+
+export const GENDER_GAP_BAND_ORDER: readonly string[] = [
+  "90–100%",
+  "80–89%",
+  "70–79%",
+  "60–69%",
+  "50–59%",
+  "Below 50%",
+];
+
 /** Democracy Perception Index 2026 tiers (±5 / ±15 on Index Score). */
 export const PERCEPTION_MAP_COLORS: Record<string, string> = {
   "Very Positive": "#1b5e20",
@@ -142,6 +163,7 @@ export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
   if (mode === "perception") return "Democracy Perception Index";
   if (mode === "rsf-press") return "RSF Press Freedom";
   if (mode === "hdi") return "Human Development Index";
+  if (mode === "gender-gap") return "Global Gender Gap Index";
   return "";
 }
 
@@ -196,6 +218,12 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
       color: HDI_MAP_COLORS[label],
     }));
   }
+  if (mode === "gender-gap") {
+    return GENDER_GAP_BAND_ORDER.map((label) => ({
+      label,
+      color: GENDER_GAP_MAP_COLORS[label],
+    }));
+  }
   return [];
 }
 
@@ -225,9 +253,14 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
     } else if (mode === "rsf-press") {
       rating = demo.rsfPress?.rating;
       colorMap = RSF_PRESS_MAP_COLORS;
-    } else {
+    } else if (mode === "hdi") {
       rating = demo.hdi?.rating;
       colorMap = HDI_MAP_COLORS;
+    } else if (mode === "gender-gap") {
+      rating = demo.genderGap?.rating;
+      colorMap = GENDER_GAP_MAP_COLORS;
+    } else {
+      continue;
     }
     if (rating && colorMap[rating]) {
       overlay.set(code, colorMap[rating]);
@@ -244,7 +277,8 @@ export function getDemocracyIndexLabel(key: DemocracyIndexKey): string {
   if (key === "cpi") return "Corruption Perceptions Index";
   if (key === "perception") return "Democracy Perception Index";
   if (key === "rsf-press") return "RSF Press Freedom Index";
-  return "Human Development Index";
+  if (key === "hdi") return "Human Development Index";
+  return "Global Gender Gap Index";
 }
 
 /** Pull the index row for a country from bundled facts. */
@@ -259,7 +293,8 @@ export function getDemocracyIndexFor(
   if (key === "cpi") return democracy.cpi;
   if (key === "perception") return democracy.perception;
   if (key === "rsf-press") return democracy.rsfPress;
-  return democracy.hdi;
+  if (key === "hdi") return democracy.hdi;
+  return democracy.genderGap;
 }
 
 /**
@@ -268,7 +303,7 @@ export function getDemocracyIndexFor(
  * the chart.
  */
 export function getDemocracyAxisDomain(key: DemocracyIndexKey): { min: number; max: number } {
-  if (key === "v-dem" || key === "hdi") return { min: 0, max: 1 };
+  if (key === "v-dem" || key === "hdi" || key === "gender-gap") return { min: 0, max: 1 };
   if (key === "economist") return { min: 0, max: 10 };
   if (key === "perception") return { min: -40, max: 40 };
   // Freedom House, CPI, RSF — 0–100 scores.
@@ -331,6 +366,16 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
       { label: "Good", min: 85, max: 100 },
     ];
   }
+  if (key === "gender-gap") {
+    return [
+      { label: "Below 50%", min: 0, max: 0.5 },
+      { label: "50–59%", min: 0.5, max: 0.6 },
+      { label: "60–69%", min: 0.6, max: 0.7 },
+      { label: "70–79%", min: 0.7, max: 0.8 },
+      { label: "80–89%", min: 0.8, max: 0.9 },
+      { label: "90–100%", min: 0.9, max: 1 },
+    ];
+  }
   // hdi — UNDP cut-offs (Very High ≥0.800, High ≥0.700, Medium ≥0.550).
   return [
     { label: "Low", min: 0, max: 0.55 },
@@ -356,6 +401,7 @@ export function formatDemocracyAxisValue(
   if (key === "economist") return `${idx.rating} · ${score.toFixed(2)}`;
   if (key === "rsf-press") return `${idx.rating} · ${score.toFixed(1)}`;
   if (key === "hdi") return `${idx.rating} · ${score.toFixed(3)}`;
+  if (key === "gender-gap") return `${idx.rating} · ${score.toFixed(3)}`;
   return `${idx.rating} · ${score}`;
 }
 
