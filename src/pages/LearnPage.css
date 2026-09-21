@@ -2219,11 +2219,20 @@
 
 /* === Learn information-panel tabs (Overview / Politics / Finance / …) = */
 
+/* MUST stretch to the panel width. `.learn-fs__detail` centres its children
+   (`align-items: center`), so without an explicit stretch a nowrap tab strip
+   grows to the sum of its tabs and overflows the panel — the tabs then paint
+   over the map to the left of the drawer (owner report, 2026-09). Stretch +
+   min-width:0 keeps them inside the bordered panel and lets overflow-x scroll. */
 .learn-panel-tabs-wrap {
   position: relative;
   display: flex;
   align-items: stretch;
+  align-self: stretch;
+  width: 100%;
+  max-width: 100%;
   min-width: 0;
+  box-sizing: border-box;
   margin: 0.35rem 0 0.85rem;
 }
 
@@ -2319,7 +2328,11 @@
 
 .learn-panel-tabs__panel {
   margin-top: 0.15rem;
+  align-self: stretch;
+  width: 100%;
+  max-width: 100%;
   min-width: 0;
+  box-sizing: border-box;
 }
 
 .learn-panel-tabs__empty {
