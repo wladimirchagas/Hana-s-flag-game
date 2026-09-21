@@ -15,12 +15,44 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "dm-ebean-news",
-    src: "tmp/batch75-install/dm-ebean-news.png",
+    id: "gd-grenada-informer",
+    src: "tmp/batch76-install/gd-grenada-informer.jpg",
     explainer:
-      "Black serif 'Emonews' wordmark — EmoNews (Dominica) site title as published on emonewsdm.com.",
+      "Red INFORMER wordmark on green with Grenada-flag ribbon and NON PARTISAN / FEARLESS WEEKLY slogans — The Grenada Informer masthead.",
     licence:
-      "EmoNews wordmark cropped from the publisher's own site title on emonewsdm.com; trademark bundled for educational reference in Learn mode.",
+      "The Grenada Informer masthead from the publisher's own site brand assets (thegrenadainformer.com); trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "tz-mwananchi",
+    src: "tmp/batch76-install/tz-mwananchi.png",
+    explainer:
+      "Black serif 'MWANANCHI' wordmark — Mwananchi (Tanzania) masthead as published on mwananchi.co.tz.",
+    licence:
+      "Mwananchi wordmark cropped from the publisher's own site header on mwananchi.co.tz; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "ly-febrayer",
+    src: "tmp/batch76-install/ly-febrayer.jpg",
+    explainer:
+      "White Arabic 'فبراير' (Febrayer) with 'الحقيقة.. كما هي' slogan on red — Febrayer brand mark.",
+    licence:
+      "Febrayer brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "cd-la-prosperite",
+    src: "tmp/batch76-install/cd-la-prosperite.jpg",
+    explainer:
+      "Orange bullseye-and-arrow above black 'LAPROSPERITE' and orange '.CD' — La Prospérité brand mark.",
+    licence:
+      "La Prospérité brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "ws-savali",
+    src: "tmp/batch76-install/ws-savali.jpg",
+    explainer:
+      "Circular seal with Samoa coat of arms ringed by 'SAVALI NEWSPAPER & PRODUCTIONS' — Savali brand mark.",
+    licence:
+      "Savali brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
