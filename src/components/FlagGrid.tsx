@@ -55,6 +55,7 @@ import { MENS_WORLD_CUP_TITLES, WOMENS_WORLD_CUP_TITLES } from "../data/worldCup
 import { allCommercialAirlines } from "../lib/commercialAirlines";
 import { allPublicBroadcasters } from "../lib/publicBroadcasters";
 import { allTourismLogos } from "../lib/tourismLogos";
+import { allCentralBanks } from "../lib/centralBanks";
 import { allNationalNewsAgencies, agencyOwnershipBadge } from "../lib/nationalNewsAgencies";
 import { allNationalNewspapers } from "../lib/nationalNewspapers";
 import {
@@ -115,6 +116,7 @@ export type FlagGridProps = {
     worldMapCode?: string,
     newspaperId?: string,
     partyId?: string,
+    centralBankId?: string,
   ) => void;
   /** Optional resolver to prepend the BASE_URL to relative flag paths so
    *  the grid can render flags identically to the panel. */
@@ -139,6 +141,8 @@ export type FlagGridProps = {
   selectedNewspaperId?: string | null;
   /** Currently selected political party ID (if any) */
   selectedPartyId?: string | null;
+  /** Currently selected central bank ID (if any) */
+  selectedCentralBankId?: string | null;
 };
 
 type GroupMode =
@@ -289,7 +293,8 @@ function groupModeAvailableFor(
         contentType === "tourismlogo" ||
         contentType === "newsagency" ||
         contentType === "newspaper" ||
-        contentType === "party")
+        contentType === "party" ||
+        contentType === "centralbank")
     );
   }
   if (PASSPORT_ONLY_MODES.has(m)) return isModernEra && contentType === "passport";
@@ -523,6 +528,7 @@ export function FlagGrid({
   selectedNewsAgencyId,
   selectedNewspaperId,
   selectedPartyId,
+  selectedCentralBankId,
 }: FlagGridProps) {
   const [groupMode, setGroupMode] = useState<GroupMode>(loadStoredGroupMode);
   // Free-text filter typed by the user — narrows the grid by country/polity
@@ -581,7 +587,8 @@ export function FlagGrid({
         effectiveContentType === "tourismlogo" ||
         effectiveContentType === "newsagency" ||
         effectiveContentType === "newspaper" ||
-        effectiveContentType === "party";
+        effectiveContentType === "party" ||
+        effectiveContentType === "centralbank";
       setGroupMode(isCountryGrouped ? "by-country" : "none");
     }
   }, [groupMode, effectiveContentType, isModernEra]);
@@ -709,6 +716,25 @@ export function FlagGrid({
           continent: parent ? parent.continent : "Other",
           subcontinent: parent ? parent.subcontinent : "Other",
           selectId: p.country,
+        };
+      });
+    }
+    if (effectiveContentType === "centralbank") {
+      const codeToEntry = new Map(entries.map((e) => [e.id, e]));
+      return allCentralBanks().map((b): FlagListEntry => {
+        const parent = codeToEntry.get(b.countryCode);
+        const countryName = parent ? parent.name : b.countryCode;
+        return {
+          id: b.id,
+          name: b.name,
+          sortKey: countryName,
+          flag: b.logo ?? null,
+          centralBankLogo: b.logo ?? null,
+          centralBankId: b.id,
+          countryName,
+          continent: parent ? parent.continent : "Other",
+          subcontinent: parent ? parent.subcontinent : "Other",
+          selectId: b.countryCode,
         };
       });
     }
@@ -1436,7 +1462,9 @@ export function FlagGrid({
           )}
           <ul className="flag-grid__list">
             {g.items.map((item) => {
-              const active = item.partyId
+              const active = item.centralBankId
+                ? item.centralBankId === selectedCentralBankId
+                : item.partyId
                 ? item.partyId === selectedPartyId
                 : item.newspaperId
                 ? item.newspaperId === selectedNewspaperId
@@ -1473,6 +1501,8 @@ export function FlagGrid({
                                 ? item.newspaperLogo ?? null
                                 : effectiveContentType === "party"
                                   ? item.partyLogo ?? null
+                                  : effectiveContentType === "centralbank"
+                                    ? item.centralBankLogo ?? null
                                 : item.flag;
               const url = rawImage ? resolveFlag(rawImage) : null;
               const party = item.partyId ? partyById(item.partyId) : null;
@@ -1511,11 +1541,12 @@ export function FlagGrid({
                         item.worldMapCode,
                         item.newspaperId,
                         item.partyId,
+                        item.centralBankId,
                       )
                     }
                     aria-pressed={active}
                     aria-label={
-                      item.countryName && (effectiveContentType === "airline" || effectiveContentType === "broadcaster" || effectiveContentType === "tourismlogo" || effectiveContentType === "newsagency" || effectiveContentType === "newspaper" || effectiveContentType === "party")
+                      item.countryName && (effectiveContentType === "airline" || effectiveContentType === "broadcaster" || effectiveContentType === "tourismlogo" || effectiveContentType === "newsagency" || effectiveContentType === "newspaper" || effectiveContentType === "party" || effectiveContentType === "centralbank")
                         ? `Select ${item.name} (${item.countryName})`
                         : isLearned
                           ? `Select ${item.name} (learned)`
@@ -1633,7 +1664,8 @@ export function FlagGrid({
                           effectiveContentType === "tourismlogo" ||
                           effectiveContentType === "newsagency" ||
                           effectiveContentType === "newspaper" ||
-                          effectiveContentType === "party") && (
+                          effectiveContentType === "party" ||
+                          effectiveContentType === "centralbank") && (
                           <span className="flag-grid__country-sub">
                             ({item.countryName})
                           </span>

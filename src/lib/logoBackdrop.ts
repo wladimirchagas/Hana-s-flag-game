@@ -1,6 +1,6 @@
 /**
  * Adaptive neutral plates behind brand logos (newspapers, agencies, airlines,
- * broadcasters, tourism logos, parties). Many mastheads are dark ink on
+ * broadcasters, tourism logos, parties, central banks). Many mastheads are dark ink on
  * transparent backgrounds and vanish in dark mode; some are light ink and
  * vanish on cream. The plate is chosen from the logo's own opaque pixels —
  * not from the app theme — so contrast stays correct in both themes.

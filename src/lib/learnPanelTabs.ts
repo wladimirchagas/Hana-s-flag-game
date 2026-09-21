@@ -60,6 +60,8 @@ export function panelTabForGridContent(
       return "sports";
     case "party":
       return "politics";
+    case "centralbank":
+      return "finance";
     // Flag / coat of arms lead Overview (pills switch between them).
     case "flag":
     case "coatofarms":
@@ -71,6 +73,12 @@ export function panelTabForGridContent(
 export type LearnPanelMediaSection = "newspaper" | "newsagency" | "broadcaster";
 export type LearnPanelTravelSection = "airline" | "tourismlogo" | "passport";
 export type LearnPanelSportsSection = "footballcrest" | "olympiccommittee";
+export type LearnPanelFinanceSection = "centralbank";
+
+export const LEARN_PANEL_FINANCE_SECTIONS: readonly {
+  id: LearnPanelFinanceSection;
+  label: string;
+}[] = [{ id: "centralbank", label: "Central banks" }];
 
 /** National-symbol categories browsed via LearnPanelSymbolBody. */
 export type LearnPanelSymbolSection =
@@ -125,5 +133,12 @@ export function sportsSectionForGridContent(
   type: GridContentType,
 ): LearnPanelSportsSection | null {
   if (type === "footballcrest" || type === "olympiccommittee") return type;
+  return null;
+}
+
+export function financeSectionForGridContent(
+  type: GridContentType,
+): LearnPanelFinanceSection | null {
+  if (type === "centralbank") return type;
   return null;
 }

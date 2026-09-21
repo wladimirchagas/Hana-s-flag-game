@@ -20,7 +20,8 @@ export type GridContentType =
   | "tourismlogo"
   | "newsagency"
   | "newspaper"
-  | "party";
+  | "party"
+  | "centralbank";
 
 export const GRID_CONTENT_TYPE_LABELS: Record<GridContentType, string> = {
   flag: "National flags",
@@ -34,6 +35,7 @@ export const GRID_CONTENT_TYPE_LABELS: Record<GridContentType, string> = {
   newsagency: "National news agencies",
   newspaper: "Top newspapers",
   party: "Political parties",
+  centralbank: "Central banks",
 };
 
 /**
@@ -54,6 +56,7 @@ export const GRID_CONTENT_TYPE_ORDER: readonly GridContentType[] = [
   "newsagency",
   "newspaper",
   "party",
+  "centralbank",
 ];
 
 const STORAGE_KEY = "flagGame.learn.contentType";

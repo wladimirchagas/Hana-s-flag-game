@@ -64,14 +64,17 @@ import { LearnPanelSymbolBody } from "../components/LearnPanelSymbolBody";
 import { OverviewIdentity, type OverviewIdentityKind } from "../components/OverviewIdentity";
 import { TravelVisitorStats } from "../components/TravelVisitorStats";
 import {
+  LEARN_PANEL_FINANCE_SECTIONS,
   LEARN_PANEL_MEDIA_SECTIONS,
   LEARN_PANEL_SPORTS_SECTIONS,
   LEARN_PANEL_SUBDIVISION_TABS,
   LEARN_PANEL_TRAVEL_SECTIONS,
+  financeSectionForGridContent,
   mediaSectionForGridContent,
   panelTabForGridContent,
   sportsSectionForGridContent,
   travelSectionForGridContent,
+  type LearnPanelFinanceSection,
   type LearnPanelMediaSection,
   type LearnPanelSportsSection,
   type LearnPanelTabId,
@@ -448,6 +451,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [sportsSection, setSportsSection] = useState<LearnPanelSportsSection>(
     () => sportsSectionForGridContent(loadGridContentType()) ?? "footballcrest",
   );
+  const [financeSection, setFinanceSection] = useState<LearnPanelFinanceSection>(
+    () => financeSectionForGridContent(loadGridContentType()) ?? "centralbank",
+  );
   // Overview leading image: Flag vs Coat of arms pills.
   const [overviewIdentity, setOverviewIdentity] =
     useState<OverviewIdentityKind>("flag");
@@ -512,6 +518,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // The specific top national newspaper clicked in the grid.
   const [gridNewspaperId, setGridNewspaperId] = useState<string | null>(null);
   const [gridPartyId, setGridPartyId] = useState<string | null>(null);
+  const [gridCentralBankId, setGridCentralBankId] = useState<string | null>(null);
   // A national news agency picked in the "National symbols" tab of subdivision view.
   const [selectedSubdivisionNewsAgency, setSelectedSubdivisionNewsAgency] = useState<NewsAgency | null>(null);
   // A top national newspaper picked in the "National symbols" tab of subdivision view.
@@ -529,6 +536,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     setGridNewsAgencyId(null);
     setGridNewspaperId(null);
     setGridPartyId(null);
+    setGridCentralBankId(null);
   }, []);
 
   const syncPanelTabsFromShow = useCallback((type: GridContentType) => {
@@ -539,6 +547,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     if (travel) setTravelSection(travel);
     const sports = sportsSectionForGridContent(type);
     if (sports) setSportsSection(sports);
+    const finance = financeSectionForGridContent(type);
+    if (finance) setFinanceSection(finance);
     if (type === "coatofarms") setOverviewIdentity("coatofarms");
     if (type === "flag") setOverviewIdentity("flag");
   }, []);
@@ -1834,6 +1844,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     worldMapCode?: string,
     newspaperId?: string,
     partyId?: string,
+    centralBankId?: string,
   ) {
     if (isModernEra) {
       // `id` is always the entity's own country code (an airline/broadcaster tile's
@@ -1874,6 +1885,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                         ? gridNewspaperId === newspaperId
                         : partyId != null
                           ? gridPartyId === partyId
+                          : centralBankId != null
+                            ? gridCentralBankId === centralBankId
                           : true;
         if (reclickSameItem) {
           clearPanelSelection();
@@ -1904,6 +1917,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       setGridNewsAgencyId(newsAgencyId ?? null);
       setGridNewspaperId(newspaperId ?? null);
       setGridPartyId(partyId ?? null);
+      setGridCentralBankId(centralBankId ?? null);
       if (airlineId) {
         setGridContentType("airline");
         syncPanelTabsFromShow("airline");
@@ -1922,6 +1936,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       } else if (partyId) {
         setGridContentType("party");
         syncPanelTabsFromShow("party");
+      } else if (centralBankId) {
+        setGridContentType("centralbank");
+        syncPanelTabsFromShow("centralbank");
       } else {
         syncPanelTabsFromShow(gridContentType);
       }
@@ -1956,6 +1973,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         | LearnPanelMediaSection
         | LearnPanelTravelSection
         | LearnPanelSportsSection
+        | LearnPanelFinanceSection
         | "party",
       id: string,
       countryCode?: string,
@@ -1966,6 +1984,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       else if (type === "passport") setGridPassportId(id);
       else if (type === "newsagency") setGridNewsAgencyId(id);
       else if (type === "newspaper") setGridNewspaperId(id);
+      else if (type === "centralbank") setGridCentralBankId(id);
       else if (type === "footballcrest") {
         setGridCrest({ id, parent: countryCode ?? "" });
       } else if (type === "olympiccommittee") {
@@ -1981,6 +2000,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         | LearnPanelMediaSection
         | LearnPanelTravelSection
         | LearnPanelSportsSection
+        | LearnPanelFinanceSection
         | "party",
     ) => {
       if (type === "airline") setGridAirlineId(null);
@@ -1989,6 +2009,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       else if (type === "passport") setGridPassportId(null);
       else if (type === "newsagency") setGridNewsAgencyId(null);
       else if (type === "newspaper") setGridNewspaperId(null);
+      else if (type === "centralbank") setGridCentralBankId(null);
       else if (type === "footballcrest") setGridCrest(null);
       else if (type === "olympiccommittee") setGridOlympicCommittee(null);
       else setGridPartyId(null);
@@ -2435,11 +2456,34 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                       {(subdivisionMode
                         ? panelTab === "finance"
                         : panelTab === "finance") && (
-                        <EntitySummary
-                          kind="modern"
-                          country={display.country}
-                          section="finance"
-                        />
+                        <>
+                          <EntitySummary
+                            kind="modern"
+                            country={display.country}
+                            section="finance"
+                          />
+                          {!subdivisionMode && modernCountrySelected && (
+                            <LearnPanelCategoryBody
+                              sections={LEARN_PANEL_FINANCE_SECTIONS}
+                              activeSection={financeSection}
+                              onSectionChange={(id) =>
+                                setFinanceSection(id as LearnPanelFinanceSection)
+                              }
+                              countryCode={display.country.code}
+                              countryName={display.country.name}
+                              pickedId={gridCentralBankId}
+                              onPick={(id) =>
+                                pickPanelCategoryItem("centralbank", id)
+                              }
+                              onClearPick={() =>
+                                clearPanelCategoryPick("centralbank")
+                              }
+                              resolveImage={resolveFlag}
+                              baseUrl={baseUrl}
+                              onEnlarge={enlargeLogo}
+                            />
+                          )}
+                        </>
                       )}
                       {(subdivisionMode
                         ? panelTab === "indices"
@@ -3469,6 +3513,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           selectedNewsAgencyId={gridNewsAgencyId}
           selectedNewspaperId={gridNewspaperId}
           selectedPartyId={gridPartyId}
+          selectedCentralBankId={gridCentralBankId}
           onSelect={handleGridSelect}
           resolveFlag={resolveFlag}
           isModernEra={isModernEra}

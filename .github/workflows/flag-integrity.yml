@@ -22,6 +22,7 @@ on:
       - "src/data/commercialAirlines.ts"
       - "public/airline-logos/**"
       - "scripts/check-tourism-logos.mjs"
+      - "scripts/check-central-banks.mjs"
       - "src/data/tourismLogos.ts"
       - "public/tourism-logos/**"
       - "scripts/check-national-news-agencies.mjs"
@@ -392,6 +393,9 @@ jobs:
 
       - name: Verify every tourism logo is sourced, bundled and well-formed
         run: node scripts/check-tourism-logos.mjs
+
+      - name: Check central bank logos
+        run: node scripts/check-central-banks.mjs
 
       - name: Verify every national news agency is sourced, bundled and well-formed
         run: node scripts/check-national-news-agencies.mjs
