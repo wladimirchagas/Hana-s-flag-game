@@ -2470,7 +2470,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       "frequency": "Continuous digital news",
       "format": "Digital news portal",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "id": "bi-bonesha",
       "countryCode": "BI",
       "name": "Bonesha FM News digital",
@@ -2486,6 +2485,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Burundi news brand",
         "source": "https://www.bonesha.bi"
       },
+      "logo": "newspaper-logos/bi/bonesha.jpg",
+      "logoExplainer": "Circular RSF Bonesha FM emblem — orange arc, handshake before a microphone over red-yellow-green stripes, radio tower with frequency ring (96.8 / 102.4 / 87.7 MHz) — the Bonesha FM News digital brand mark.",
+      "licenceNote": "Bonesha FM logo from the station's official site (bonesha.bi/images/logo.jpg), archived via the Wayback Machine (2013 capture); trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.bonesha.bi"
       ]
@@ -9188,7 +9191,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "elPeriódico Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gt/el-periodico.png",
+      "logoExplainer": "Black sans 'elPeriódico' wordmark with a short red bar over the first 'o' — elPeriódico (Guatemala) digital masthead.",
+      "licenceNote": "elPeriódico masthead from the newspaper's own theme asset (elperiodico.com.gt/wp-content/themes/elperiodico/images/logoep.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://elperiodico.com.gt/",
         "https://cpj.org/"
@@ -22138,7 +22144,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Union of Journalists of South Sudan (UJOSS) Report"
       },
       "revenueModel": "Print sales, commercial notices, NGO advertisements, and institutional tenders",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ss/juba-monitor.png",
+      "logoExplainer": "White masthead banner with red 'JUBA' and blue 'MONITOR' outlined capitals, magenta 'QUALITY INFORMATION' strap between globe-Q marks, and red publisher line — The Juba Monitor brand mark.",
+      "licenceNote": "The Juba Monitor masthead from the newspaper's official site (jubamonitor.com/wp-content/uploads/2016/07/front.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://en.wikipedia.org/wiki/The_Juba_Monitor",
         "https://cpj.org/tags/juba-monitor"
