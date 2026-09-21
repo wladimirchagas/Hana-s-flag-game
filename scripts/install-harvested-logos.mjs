@@ -17,13 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "ug-urn",
-    src: "tmp/batch86-install/ug-urn.png",
+    id: "ie-breakingnews-ie",
+    src: "tmp/batch87-install/ie-breakingnews-ie.png",
     explainer:
-      "Yellow oval 'UGANDA' beside red 'RADIONETWORK™' with 'Truth on time' slogan bar and site URL — Uganda Radio Network masthead.",
+      "Navy 'BN' monogram with yellow lightning bolt cutout beside italic 'Breaking News.ie' on yellow field, with 'Truth Delivered 24/7' script slogan — BreakingNews.ie publisher masthead.",
     licence:
-      "Uganda Radio Network masthead from the agency's official site brand assets (ugandaradionetwork.com), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
-    dataset: "agency",
+      "BreakingNews.ie publisher logo from the outlet's official site brand assets (breakingnews.ie/i/publisher-logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
