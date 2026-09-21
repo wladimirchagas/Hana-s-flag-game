@@ -17,20 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "pw-tia-belau",
-    src: "tmp/batch117-install/pw-tia-belau.png",
+    id: "gq-ebano",
+    src: "tmp/batch118-install/gq-ebano.png",
     explainer:
-      "Yellow masthead with blue 3D 'TIA BELAU' lettering, a traditional Palauan bai as the 'A', a spear-bearing warrior, and the constitutional open-government quotation — official brand banner from tiabelaunews.com.",
+      "Circular gold-rimmed emblem with a green 'E' over a light-blue silhouette of Equatorial Guinea, beside black script 'BANO' and the tricolour subtitle 'ÓRGANO INFORMATIVO NACIONAL' — official masthead from periodicoebano.com.",
     licence:
-      "Tia Belau trademark bundled from the publisher's official site brand assets (tiabelaunews.com masthead, archived via the Wayback Machine) for educational reference in Learn mode.",
-  },
-  {
-    id: "tg-liberte-togo",
-    src: "tmp/batch117-install/tg-liberte-togo.png",
-    explainer:
-      "Red header with yellow megaphone, white bubble-letter 'LIBERTÉ', and the slogan 'Le peuple peut enfin parler !' over a curved white strip naming the Togolese daily — official site banner from libertetogo.tg.",
-    licence:
-      "Liberté (Togo) trademark bundled from the publisher's official site brand assets (libertetogo.tg header banner, archived via the Wayback Machine) for educational reference in Learn mode.",
+      "Ébano trademark bundled from the publisher's official site brand assets (periodicoebano.com/images/logo.png) for educational reference in Learn mode.",
   },
 ];
 
