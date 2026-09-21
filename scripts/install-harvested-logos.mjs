@@ -17,12 +17,28 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "ki-kiribati-updates",
-    src: "tmp/batch104-install/ki-kiribati-updates.png",
+    id: "pw-eco-palau-news",
+    src: "tmp/batch105-install/pw-eco-palau-news.png",
     explainer:
-      "Maneaba (meeting-house) sketch beside bold 'KIRIBATI UPDATES' capitals over the strap 'KIRIBATI EVENTS. PHOTOS & NEWS UPDATE' — Kiribati Updates brand mark.",
+      "Palau Fruit Dove on a nest branch with egg and foliage beside teal 'Palau Conservation Society' and the strap 'protecting our natural heritage' — Eco Palau News / PCS brand mark.",
     licence:
-      "Kiribati Updates masthead from the outlet's own site (kiribatiupdates.com.ki/wp-content/uploads/2014/08/KU_logo2b2.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Palau Conservation Society logo from the society's official site (palauconservation.org/wp-content/uploads/2016/12/pcslogo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode. Eco Palau News is published by PCS.",
+  },
+  {
+    id: "et-reporter-amharic",
+    src: "tmp/batch105-install/et-reporter-amharic.png",
+    explainer:
+      "Circular Ethiopian Press Agency seal — quill on a light-blue field, Amharic arc above and English 'Ethiopian Press Agency' below — the Addis Zemen publisher brand mark from press.et.",
+    licence:
+      "Ethiopian Press Agency seal from the agency's official site (press.et/.../cropped-press-logo-300x65-1-270x270.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode. Addis Zemen is published by the EPA.",
+  },
+  {
+    id: "bt-the-journalist",
+    src: "tmp/batch105-install/bt-the-journalist.jpg",
+    explainer:
+      "Solid red masthead block with a large white serif 'J' over stacked 'The Journalist' — The Journalist (Bhutan) print brand mark.",
+    licence:
+      "The Journalist masthead mark cropped from the newspaper's own header asset (bhutanjournalist.com/wp-content/uploads/2014/09/headercopy2.jpg), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
