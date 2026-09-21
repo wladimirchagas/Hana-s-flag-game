@@ -411,8 +411,9 @@ export function DemocracyIndexChart({
   const points = useMemo(() => {
     const midX = (plot.x0 + plot.x1) / 2;
     const midY = (plot.y0 + plot.y1) / 2;
-    const jitterXSpan = (plot.x1 - plot.x0) * 0.36;
-    const jitterYSpan = (plot.y1 - plot.y0) * 0.36;
+    // One-axis strips: use most of the free dimension so flags do not stack.
+    const jitterXSpan = (plot.x1 - plot.x0) * 0.88;
+    const jitterYSpan = (plot.y1 - plot.y0) * 0.88;
     return rawPoints.map((p) => {
       const country = byCode.get(p.code)!;
       let cx: number;
