@@ -43,6 +43,7 @@ import {
 import { NATIONAL_FLAG_MEANINGS } from "../data/nationalFlags";
 import { PASSPORT_COLORS } from "../data/passportColors";
 import { meaningLabel, symbolNoun } from "../lib/nationalFlags";
+import { withFootballCrestStats } from "../lib/footballCrestStats";
 import {
   loadGridContentType,
   saveGridContentType,
@@ -1586,7 +1587,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     display.country.code === gridOlympicCommittee.parent
       ? olympicCommitteeById(gridOlympicCommittee.id)
       : null;
-  const panelSymbol =
+  const panelSymbolRaw =
     activeGridCrest ??
     activeGridOlympicCommittee ??
     (!subdivisionMode &&
@@ -1597,6 +1598,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       effectiveGridContentType === "olympiccommittee")
       ? nationalSymbolEntry(display.country.code, effectiveGridContentType)
       : null);
+  // Football-association crests always show sourced World Cup rows in the
+  // panel — attach them here so the world-map Show path cannot drop them.
+  const panelSymbol = panelSymbolRaw
+    ? withFootballCrestStats(panelSymbolRaw)
+    : null;
   // The ISO alpha-2 (or "XK") code whose OWN borders the world map must
   // highlight. Normally that's just the selected country — but while a
   // FIFA_EXTRA / IOC_EXTRA card's own crest/NOC is active (activeGridCrest /
