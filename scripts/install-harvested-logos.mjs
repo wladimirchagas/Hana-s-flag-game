@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "sd-al-intibaha",
-    src: "tmp/batch90-install/sd-al-intibaha.jpg",
+    id: "va-donne-chiesa-mondo",
+    src: "tmp/batch91-install/va-donne-chiesa-mondo.png",
     explainer:
-      "Circular globe-grid emblem with blue Sudan map, red Arabic 'الانتباهة' over English 'Alintibaha', and curved slogan 'صوت الأغلبية الصامتة' — Al-Intibaha newspaper brand mark.",
+      "White serif 'DONNE CHIESA MONDO' on a red swallowtail ribbon with a dark-blue cut end — masthead banner of L'Osservatore Romano's monthly women's supplement.",
     licence:
-      "Al-Intibaha masthead from the newspaper's official Facebook page brand assets; trademark bundled for educational reference in Learn mode.",
+      "Donne Chiesa Mondo masthead cropped from the magazine's official cover artwork on osservatoreromano.va; trademark bundled for educational reference in Learn mode.",
   },
 ];
 

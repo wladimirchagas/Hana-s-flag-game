@@ -25074,7 +25074,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "L'Osservatore Romano Editorial Board"
       },
       "revenueModel": "Holy See communication funding and periodical subscriptions",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/va/donne-chiesa-mondo.png",
+      "logoExplainer": "White serif 'DONNE CHIESA MONDO' on a red swallowtail ribbon with a dark-blue cut end — masthead banner of L'Osservatore Romano's monthly women's supplement.",
+      "licenceNote": "Donne Chiesa Mondo masthead cropped from the magazine's official cover artwork on osservatoreromano.va; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.osservatoreromano.va/it/donne-chiesa-mondo.html",
         "https://en.wikipedia.org/wiki/L%27Osservatore_Romano"
