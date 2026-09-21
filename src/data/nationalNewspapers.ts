@@ -22480,7 +22480,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Al-Wahda Press Foundation Annual Review"
       },
       "revenueModel": "State budget funding, government notices, and commercial display ads",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sy/tishreen.png",
+      "logoExplainer": "Cyan Arabic calligraphy masthead 'تشرين' (Tishreen) with a small Pan-Arab-colours emblem above and the black strap 'حرية العرب في قوتهم' — Tishreen newspaper brand mark.",
+      "licenceNote": "Tishreen masthead from the newspaper's own site (tishreen.news.sy/wp-content/uploads/2018/07/Tishreen_log.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://tishreen.news.sy",
         "https://en.wikipedia.org/wiki/Tishreen_(newspaper)"
