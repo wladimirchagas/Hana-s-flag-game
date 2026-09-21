@@ -1,25 +1,33 @@
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Country } from "../api/countries";
 import {
+  CHART_METRIC_KEYS,
+  type ChartAxisKey,
+  chartAxisPoints,
+  chartAxisScaleValue,
+  fitChartAxisDomain,
+  formatChartAxisTick,
+  getChartAxisBands,
+  getChartAxisLabel,
+} from "../lib/chartAxes";
+import { CONTINENT_ORDER, SUBREGION_GROUPS } from "../lib/continentGroups";
+import {
   DEMOCRACY_INDEX_KEYS,
-  type DemocracyIndexKey,
   clipDemocracyAxisBands,
   clipTrendToDomain,
-  democracyChartPoints,
+  countryMatchesIndexRatings,
+  democracyIndexRatingOptions,
   democracyOlsTrend,
-  fitDemocracyAxisDomain,
-  formatDemocracyAxisValue,
-  getDemocracyAxisBands,
   getDemocracyIndexLabel,
 } from "../lib/democracyColors";
 import { GridImage } from "./GridImage";
 
 export type DemocracyIndexChartProps = {
   countries: readonly Country[];
-  xKey: DemocracyIndexKey;
-  yKey: DemocracyIndexKey;
-  onXKeyChange: (key: DemocracyIndexKey) => void;
-  onYKeyChange: (key: DemocracyIndexKey) => void;
+  xKey: ChartAxisKey;
+  yKey: ChartAxisKey;
+  onXKeyChange: (key: ChartAxisKey) => void;
+  onYKeyChange: (key: ChartAxisKey) => void;
   /** Selected country code (map / dropdown / grid) — blinks on the chart. */
   selectedCode: string | null;
   /** Transient hover from the chart; parent mirrors map hover. */
@@ -33,6 +41,8 @@ const VIEW_W = 960;
 const VIEW_H = 500;
 const TICK_COUNT = 5;
 
+type FilterKind = "continents" | "subcontinents" | "indexes" | null;
+
 function scaleLinear(
   value: number,
   domain: { min: number; max: number },
@@ -42,12 +52,135 @@ function scaleLinear(
   return range.min + t * (range.max - range.min);
 }
 
-function formatTick(key: DemocracyIndexKey, value: number): string {
-  if (key === "v-dem") return value.toFixed(1);
-  if (key === "hdi" || key === "gender-gap" || key === "gpi" || key === "etr") return value.toFixed(2);
-  if (key === "economist" || key === "happiness") return value.toFixed(1);
-  if (key === "perception") return value > 0 ? `+${value}` : `${value}`;
-  return `${Math.round(value)}`;
+function toggleInSet(prev: ReadonlySet<string>, value: string): Set<string> {
+  const next = new Set(prev);
+  if (next.has(value)) next.delete(value);
+  else next.add(value);
+  return next;
+}
+
+type FilterMenuProps = {
+  label: string;
+  kind: Exclude<FilterKind, null>;
+  openKind: FilterKind;
+  onOpen: (kind: FilterKind) => void;
+  selected: ReadonlySet<string>;
+  options: readonly { id: string; label: string; group?: string }[];
+  onToggle: (id: string) => void;
+  onClear: () => void;
+};
+
+function ChartFilterMenu({
+  label,
+  kind,
+  openKind,
+  onOpen,
+  selected,
+  options,
+  onToggle,
+  onClear,
+}: FilterMenuProps) {
+  const open = openKind === kind;
+  const ref = useRef<HTMLDivElement>(null);
+  const count = selected.size;
+  const active = count > 0;
+
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) onOpen(null);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onOpen(null);
+    };
+    window.addEventListener("mousedown", onDown);
+    window.addEventListener("keydown", onKey);
+    return () => {
+      window.removeEventListener("mousedown", onDown);
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [open, onOpen]);
+
+  const grouped = useMemo(() => {
+    const groups: { title: string | null; items: typeof options }[] = [];
+    let current: (typeof groups)[number] | null = null;
+    for (const opt of options) {
+      const title = opt.group ?? null;
+      if (!current || current.title !== title) {
+        current = { title, items: [] };
+        groups.push(current);
+      }
+      current.items.push(opt);
+    }
+    return groups;
+  }, [options]);
+
+  return (
+    <div className="democracy-index-chart__filter" ref={ref}>
+      <button
+        type="button"
+        className={
+          "democracy-index-chart__filter-btn" +
+          (active ? " democracy-index-chart__filter-btn--active" : "") +
+          (open ? " democracy-index-chart__filter-btn--open" : "")
+        }
+        aria-expanded={open}
+        aria-haspopup="dialog"
+        onClick={() => onOpen(open ? null : kind)}
+      >
+        {label}
+        {active ? ` · ${count}` : ""}
+      </button>
+      {open && (
+        <div
+          className="democracy-index-chart__filter-popover"
+          role="dialog"
+          aria-label={`Filter by ${label}`}
+        >
+          <div className="democracy-index-chart__filter-popover-head">
+            <span>Show countries in</span>
+            {active && (
+              <button
+                type="button"
+                className="democracy-index-chart__filter-clear"
+                onClick={onClear}
+              >
+                Clear
+              </button>
+            )}
+          </div>
+          <div className="democracy-index-chart__filter-list">
+            {grouped.map((g) => (
+              <div key={g.title ?? "_"} className="democracy-index-chart__filter-group">
+                {g.title && (
+                  <p className="democracy-index-chart__filter-group-title">{g.title}</p>
+                )}
+                {g.items.map((opt) => {
+                  const checked = selected.has(opt.id);
+                  return (
+                    <label
+                      key={opt.id}
+                      className={
+                        "democracy-index-chart__filter-option" +
+                        (checked ? " democracy-index-chart__filter-option--on" : "")
+                      }
+                    >
+                      <input
+                        type="checkbox"
+                        checked={checked}
+                        onChange={() => onToggle(opt.id)}
+                      />
+                      <span>{opt.label}</span>
+                    </label>
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
 
 export function DemocracyIndexChart({
@@ -72,11 +205,42 @@ export function DemocracyIndexChart({
     below: boolean;
   } | null>(null);
 
+  const [openFilter, setOpenFilter] = useState<FilterKind>(null);
+  const [continentFilter, setContinentFilter] = useState<ReadonlySet<string>>(
+    () => new Set(),
+  );
+  const [subcontinentFilter, setSubcontinentFilter] = useState<ReadonlySet<string>>(
+    () => new Set(),
+  );
+  const [indexFilter, setIndexFilter] = useState<ReadonlySet<string>>(() => new Set());
+
   const byCode = useMemo(() => {
     const m = new Map<string, Country>();
     for (const c of countries) m.set(c.code, c);
     return m;
   }, [countries]);
+
+  const continentOptions = useMemo(
+    () => CONTINENT_ORDER.map((c) => ({ id: c, label: c })),
+    [],
+  );
+  const subcontinentOptions = useMemo(
+    () =>
+      SUBREGION_GROUPS.map((g) => ({
+        id: g.label,
+        label: g.label,
+        group: g.continent,
+      })),
+    [],
+  );
+  const indexOptions = useMemo(() => {
+    const opts = democracyIndexRatingOptions();
+    return opts.map((o) => ({
+      id: o.id,
+      label: o.rating,
+      group: getDemocracyIndexLabel(o.key),
+    }));
+  }, []);
 
   const plot = {
     x0: PAD.left,
@@ -88,38 +252,85 @@ export function DemocracyIndexChart({
   // Raw scored pairs first — domains fit THESE values, not the full published
   // scale (so a Gender Gap cluster above 0.5 does not leave half the chart empty).
   const rawPoints = useMemo(
-    () => democracyChartPoints(xKey, yKey).filter((p) => byCode.has(p.code)),
-    [xKey, yKey, byCode],
+    () => chartAxisPoints(xKey, yKey, countries).filter((p) => byCode.has(p.code)),
+    [xKey, yKey, countries, byCode],
   );
 
   const xDomain = useMemo(
-    () => fitDemocracyAxisDomain(rawPoints.map((p) => p.x), xKey, TICK_COUNT),
+    () =>
+      fitChartAxisDomain(
+        rawPoints.map((p) => chartAxisScaleValue(xKey, p.x)),
+        xKey,
+        TICK_COUNT,
+      ),
     [rawPoints, xKey],
   );
   const yDomain = useMemo(
-    () => fitDemocracyAxisDomain(rawPoints.map((p) => p.y), yKey, TICK_COUNT),
+    () =>
+      fitChartAxisDomain(
+        rawPoints.map((p) => chartAxisScaleValue(yKey, p.y)),
+        yKey,
+        TICK_COUNT,
+      ),
     [rawPoints, yKey],
   );
 
   const xBands = useMemo(
-    () => clipDemocracyAxisBands(getDemocracyAxisBands(xKey), xDomain),
+    () => clipDemocracyAxisBands(getChartAxisBands(xKey), xDomain),
     [xKey, xDomain],
   );
   const yBands = useMemo(
-    () => clipDemocracyAxisBands(getDemocracyAxisBands(yKey), yDomain),
+    () => clipDemocracyAxisBands(getChartAxisBands(yKey), yDomain),
     [yKey, yDomain],
   );
 
   const points = useMemo(() => {
     return rawPoints.map((p) => {
       const country = byCode.get(p.code)!;
-      const cx = scaleLinear(p.x, xDomain, { min: plot.x0, max: plot.x1 });
-      const cy = scaleLinear(p.y, yDomain, { min: plot.y1, max: plot.y0 });
+      const cx = scaleLinear(chartAxisScaleValue(xKey, p.x), xDomain, {
+        min: plot.x0,
+        max: plot.x1,
+      });
+      const cy = scaleLinear(chartAxisScaleValue(yKey, p.y), yDomain, {
+        min: plot.y1,
+        max: plot.y0,
+      });
       return { ...p, country, cx, cy };
     });
-  }, [rawPoints, byCode, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
+  }, [rawPoints, byCode, xKey, yKey, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
 
-  const trend = useMemo(() => democracyOlsTrend(rawPoints), [rawPoints]);
+  const filtersActive =
+    continentFilter.size > 0 ||
+    subcontinentFilter.size > 0 ||
+    indexFilter.size > 0;
+
+  const highlightedCodes = useMemo(() => {
+    if (!filtersActive) return null;
+    const set = new Set<string>();
+    for (const p of points) {
+      const c = p.country;
+      if (continentFilter.size > 0 && !continentFilter.has(c.continent)) continue;
+      if (
+        subcontinentFilter.size > 0 &&
+        !(c.subregion && subcontinentFilter.has(c.subregion))
+      ) {
+        continue;
+      }
+      if (!countryMatchesIndexRatings(p.code, indexFilter)) continue;
+      set.add(p.code);
+    }
+    return set;
+  }, [filtersActive, points, continentFilter, subcontinentFilter, indexFilter]);
+
+  const trend = useMemo(() => {
+    // OLS on the same scale the markers use (log for population/GDP/…).
+    return democracyOlsTrend(
+      rawPoints.map((p) => ({
+        x: chartAxisScaleValue(xKey, p.x),
+        y: chartAxisScaleValue(yKey, p.y),
+      })),
+    );
+  }, [rawPoints, xKey, yKey]);
   const trendSegment = useMemo(() => {
     if (!trend) return null;
     const clipped = clipTrendToDomain(trend, xDomain, yDomain);
@@ -135,23 +346,29 @@ export function DemocracyIndexChart({
   }, [trend, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
 
   const xTicks = useMemo(() => {
-    return Array.from({ length: TICK_COUNT + 1 }, (_, i) => {
-      const v = xDomain.min + ((xDomain.max - xDomain.min) * i) / TICK_COUNT;
-      return {
-        value: v,
-        x: scaleLinear(v, xDomain, { min: plot.x0, max: plot.x1 }),
-      };
-    });
+    const ticks: { value: number; x: number }[] = [];
+    const span = xDomain.max - xDomain.min;
+    for (let i = 0; i <= TICK_COUNT; i++) {
+      const value = xDomain.min + (span * i) / TICK_COUNT;
+      ticks.push({
+        value,
+        x: scaleLinear(value, xDomain, { min: plot.x0, max: plot.x1 }),
+      });
+    }
+    return ticks;
   }, [xDomain, plot.x0, plot.x1]);
 
   const yTicks = useMemo(() => {
-    return Array.from({ length: TICK_COUNT + 1 }, (_, i) => {
-      const v = yDomain.min + ((yDomain.max - yDomain.min) * i) / TICK_COUNT;
-      return {
-        value: v,
-        y: scaleLinear(v, yDomain, { min: plot.y1, max: plot.y0 }),
-      };
-    });
+    const ticks: { value: number; y: number }[] = [];
+    const span = yDomain.max - yDomain.min;
+    for (let i = 0; i <= TICK_COUNT; i++) {
+      const value = yDomain.min + (span * i) / TICK_COUNT;
+      ticks.push({
+        value,
+        y: scaleLinear(value, yDomain, { min: plot.y1, max: plot.y0 }),
+      });
+    }
+    return ticks;
   }, [yDomain, plot.y0, plot.y1]);
 
   const activeCode = hoveredCode ?? selectedCode;
@@ -166,8 +383,8 @@ export function DemocracyIndexChart({
     setTooltip({
       code,
       name: country.name,
-      xLabel: formatDemocracyAxisValue(xKey, pt.xIndex),
-      yLabel: formatDemocracyAxisValue(yKey, pt.yIndex),
+      xLabel: pt.xLabel,
+      yLabel: pt.yLabel,
       left,
       top,
       // Top-third markers flip the tip below so it stays legible.
@@ -188,14 +405,23 @@ export function DemocracyIndexChart({
           <select
             className="democracy-index-chart__select"
             value={xKey}
-            onChange={(e) => onXKeyChange(e.target.value as DemocracyIndexKey)}
-            aria-label="Chart X axis index"
+            onChange={(e) => onXKeyChange(e.target.value as ChartAxisKey)}
+            aria-label="Chart X axis"
           >
-            {DEMOCRACY_INDEX_KEYS.map((key) => (
-              <option key={key} value={key}>
-                {getDemocracyIndexLabel(key)}
-              </option>
-            ))}
+            <optgroup label="Indexes">
+              {DEMOCRACY_INDEX_KEYS.map((key) => (
+                <option key={key} value={key}>
+                  {getChartAxisLabel(key)}
+                </option>
+              ))}
+            </optgroup>
+            <optgroup label="Country metrics">
+              {CHART_METRIC_KEYS.map((key) => (
+                <option key={key} value={key}>
+                  {getChartAxisLabel(key)}
+                </option>
+              ))}
+            </optgroup>
           </select>
         </label>
         <label className="democracy-index-chart__axis-pick">
@@ -203,16 +429,59 @@ export function DemocracyIndexChart({
           <select
             className="democracy-index-chart__select"
             value={yKey}
-            onChange={(e) => onYKeyChange(e.target.value as DemocracyIndexKey)}
-            aria-label="Chart Y axis index"
+            onChange={(e) => onYKeyChange(e.target.value as ChartAxisKey)}
+            aria-label="Chart Y axis"
           >
-            {DEMOCRACY_INDEX_KEYS.map((key) => (
-              <option key={key} value={key}>
-                {getDemocracyIndexLabel(key)}
-              </option>
-            ))}
+            <optgroup label="Indexes">
+              {DEMOCRACY_INDEX_KEYS.map((key) => (
+                <option key={key} value={key}>
+                  {getChartAxisLabel(key)}
+                </option>
+              ))}
+            </optgroup>
+            <optgroup label="Country metrics">
+              {CHART_METRIC_KEYS.map((key) => (
+                <option key={key} value={key}>
+                  {getChartAxisLabel(key)}
+                </option>
+              ))}
+            </optgroup>
           </select>
         </label>
+
+        <div className="democracy-index-chart__filters" role="group" aria-label="Highlight countries">
+          <ChartFilterMenu
+            label="Continents"
+            kind="continents"
+            openKind={openFilter}
+            onOpen={setOpenFilter}
+            selected={continentFilter}
+            options={continentOptions}
+            onToggle={(id) => setContinentFilter((prev) => toggleInSet(prev, id))}
+            onClear={() => setContinentFilter(new Set())}
+          />
+          <ChartFilterMenu
+            label="Sub-continents"
+            kind="subcontinents"
+            openKind={openFilter}
+            onOpen={setOpenFilter}
+            selected={subcontinentFilter}
+            options={subcontinentOptions}
+            onToggle={(id) => setSubcontinentFilter((prev) => toggleInSet(prev, id))}
+            onClear={() => setSubcontinentFilter(new Set())}
+          />
+          <ChartFilterMenu
+            label="Indexes"
+            kind="indexes"
+            openKind={openFilter}
+            onOpen={setOpenFilter}
+            selected={indexFilter}
+            options={indexOptions}
+            onToggle={(id) => setIndexFilter((prev) => toggleInSet(prev, id))}
+            onClear={() => setIndexFilter(new Set())}
+          />
+        </div>
+
         {trendSegment && (
           <p className="democracy-index-chart__trend-note" title="Ordinary least squares linear fit of Y on X across plotted countries">
             Trend: linear (OLS) · R² = {trendSegment.r2.toFixed(2)} · n = {trendSegment.n}
@@ -225,7 +494,7 @@ export function DemocracyIndexChart({
           className="democracy-index-chart__svg"
           viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
           role="img"
-          aria-label={`${getDemocracyIndexLabel(yKey)} versus ${getDemocracyIndexLabel(xKey)}`}
+          aria-label={`${getChartAxisLabel(yKey)} versus ${getChartAxisLabel(xKey)}`}
         >
           {/* Plot background */}
           <rect
@@ -292,7 +561,7 @@ export function DemocracyIndexChart({
                 textAnchor="middle"
                 className="democracy-index-chart__tick"
               >
-                {formatTick(xKey, t.value)}
+                {formatChartAxisTick(xKey, t.value)}
               </text>
             </g>
           ))}
@@ -311,7 +580,7 @@ export function DemocracyIndexChart({
                 textAnchor="end"
                 className="democracy-index-chart__tick"
               >
-                {formatTick(yKey, t.value)}
+                {formatChartAxisTick(yKey, t.value)}
               </text>
             </g>
           ))}
@@ -380,7 +649,7 @@ export function DemocracyIndexChart({
             textAnchor="middle"
             className="democracy-index-chart__axis-title"
           >
-            {getDemocracyIndexLabel(xKey)}
+            {getChartAxisLabel(xKey)}
           </text>
           <text
             x={16}
@@ -389,7 +658,7 @@ export function DemocracyIndexChart({
             transform={`rotate(-90 16 ${(plot.y0 + plot.y1) / 2})`}
             className="democracy-index-chart__axis-title democracy-index-chart__axis-title--y"
           >
-            {getDemocracyIndexLabel(yKey)}
+            {getChartAxisLabel(yKey)}
           </text>
 
           {/* OLS linear trend — under flags, above bands/grid */}
@@ -410,6 +679,11 @@ export function DemocracyIndexChart({
           {points.map((p) => {
             const isSelected = selectedCode === p.code;
             const isActive = activeCode === p.code;
+            const dimmed =
+              highlightedCodes !== null &&
+              !highlightedCodes.has(p.code) &&
+              !isSelected &&
+              !isActive;
             return (
               <button
                 key={p.code}
@@ -417,14 +691,15 @@ export function DemocracyIndexChart({
                 className={
                   "democracy-index-chart__marker" +
                   (isSelected ? " democracy-index-chart__marker--selected" : "") +
-                  (isActive ? " democracy-index-chart__marker--active" : "")
+                  (isActive ? " democracy-index-chart__marker--active" : "") +
+                  (dimmed ? " democracy-index-chart__marker--dimmed" : "")
                 }
                 style={{
                   left: `${(p.cx / VIEW_W) * 100}%`,
                   top: `${(p.cy / VIEW_H) * 100}%`,
-                  zIndex: isActive || isSelected ? 3 : 1,
+                  zIndex: isActive || isSelected ? 3 : dimmed ? 0 : 2,
                 }}
-                aria-label={`${p.country.name}: X ${formatDemocracyAxisValue(xKey, p.xIndex)}, Y ${formatDemocracyAxisValue(yKey, p.yIndex)}`}
+                aria-label={`${p.country.name}: X ${p.xLabel}, Y ${p.yLabel}`}
                 aria-pressed={isSelected}
                 onClick={() => onSelect(p.code)}
                 onMouseEnter={() => {
@@ -478,11 +753,11 @@ export function DemocracyIndexChart({
             <strong className="democracy-index-chart__tooltip-name">{tooltip.name}</strong>
             <span className="democracy-index-chart__tooltip-row">
               <span className="democracy-index-chart__tooltip-axis">X</span>
-              {getDemocracyIndexLabel(xKey)}: {tooltip.xLabel}
+              {getChartAxisLabel(xKey)}: {tooltip.xLabel}
             </span>
             <span className="democracy-index-chart__tooltip-row">
               <span className="democracy-index-chart__tooltip-axis">Y</span>
-              {getDemocracyIndexLabel(yKey)}: {tooltip.yLabel}
+              {getChartAxisLabel(yKey)}: {tooltip.yLabel}
             </span>
           </div>
         )}

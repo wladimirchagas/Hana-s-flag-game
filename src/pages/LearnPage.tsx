@@ -18,8 +18,8 @@ import { MapViewControl } from "../components/MapViewControl";
 import { DemocracyMapControl } from "../components/DemocracyMapControl";
 import { DemocracyMapLegend } from "../components/DemocracyMapLegend";
 import { DemocracyIndexChart } from "../components/DemocracyIndexChart";
+import type { ChartAxisKey } from "../lib/chartAxes";
 import {
-  type DemocracyIndexKey,
   type DemocracyMapMode,
   getDemocracyColorOverlay,
 } from "../lib/democracyColors";
@@ -304,9 +304,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // the map colour mode so users can compare any pair of indexes.
   const [democracyChartEnabled, setDemocracyChartEnabled] = useState(false);
   const [democracyChartXKey, setDemocracyChartXKey] =
-    useState<DemocracyIndexKey>("cpi");
+    useState<ChartAxisKey>("cpi");
   const [democracyChartYKey, setDemocracyChartYKey] =
-    useState<DemocracyIndexKey>("v-dem");
+    useState<ChartAxisKey>("v-dem");
 
   // First-run tips card shown in the empty state. Dismissal is remembered so
   // it's a one-time nudge, re-openable from a "Show tips" affordance.

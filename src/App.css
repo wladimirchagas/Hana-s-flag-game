@@ -3074,6 +3074,138 @@
   opacity: 0.75;
 }
 
+.democracy-index-chart__filters {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.democracy-index-chart__filter {
+  position: relative;
+}
+
+.democracy-index-chart__filter-btn {
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ink, #1f2937);
+  background: var(--paper, #fff);
+  border: 2px solid var(--ink-faint, rgba(31, 41, 55, 0.28));
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.democracy-index-chart__filter-btn:hover,
+.democracy-index-chart__filter-btn:focus-visible {
+  border-color: var(--ink, #1f2937);
+}
+
+.democracy-index-chart__filter-btn:focus-visible {
+  outline: 2px solid var(--coral-deep, #e05252);
+  outline-offset: 2px;
+}
+
+.democracy-index-chart__filter-btn--active,
+.democracy-index-chart__filter-btn--open {
+  background: color-mix(in srgb, var(--coral-deep, #e05252) 14%, var(--paper, #fff));
+  border-color: var(--coral-deep, #e05252);
+  color: var(--coral-deep, #e05252);
+}
+
+.democracy-index-chart__filter-popover {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  left: 0;
+  z-index: 20;
+  width: min(18.5rem, calc(100vw - 2rem));
+  max-height: min(22rem, 55vh);
+  display: flex;
+  flex-direction: column;
+  background: var(--paper, #fff);
+  color: var(--ink, #1f2937);
+  border: 2px solid var(--ink, #1f2937);
+  border-radius: 12px;
+  box-shadow: 0 4px 0 var(--ink, #1f2937);
+  overflow: hidden;
+}
+
+:root[data-theme="dark"] .democracy-index-chart__filter-popover {
+  box-shadow: none;
+  border-color: var(--atlas-border, #374151);
+}
+
+.democracy-index-chart__filter-popover-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.55rem 0.75rem 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  opacity: 0.8;
+  border-bottom: 1px solid color-mix(in srgb, var(--ink, #1f2937) 12%, transparent);
+}
+
+.democracy-index-chart__filter-clear {
+  font: inherit;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--coral-deep, #e05252);
+  background: transparent;
+  border: 0;
+  padding: 0.15rem 0.25rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.democracy-index-chart__filter-list {
+  overflow: auto;
+  padding: 0.35rem 0.4rem 0.55rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.democracy-index-chart__filter-group-title {
+  margin: 0.35rem 0.35rem 0.15rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
+.democracy-index-chart__filter-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0.35rem 0.45rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+.democracy-index-chart__filter-option:hover {
+  background: color-mix(in srgb, var(--cream, #f7f3ea) 70%, transparent);
+}
+
+.democracy-index-chart__filter-option--on {
+  background: color-mix(in srgb, var(--coral-deep, #e05252) 12%, transparent);
+}
+
+.democracy-index-chart__filter-option input {
+  margin-top: 0.12rem;
+  accent-color: var(--coral-deep, #e05252);
+  flex-shrink: 0;
+}
+
 .democracy-index-chart__trend-note {
   margin: 0;
   margin-left: auto;
@@ -3248,6 +3380,17 @@
   box-shadow:
     0 0 0 2px var(--paper, #fff),
     0 0 0 3.5px var(--coral-deep, #e05252);
+}
+
+.democracy-index-chart__marker--dimmed {
+  opacity: 0.22;
+  filter: grayscale(0.55);
+}
+
+.democracy-index-chart__marker--dimmed:hover,
+.democracy-index-chart__marker--dimmed:focus-visible {
+  opacity: 0.55;
+  filter: grayscale(0.2);
 }
 
 .democracy-index-chart__flag {
