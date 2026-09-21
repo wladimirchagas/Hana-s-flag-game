@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "ws-newsline-samoa",
-    src: "tmp/batch109-install/ws-newsline-samoa.jpg",
+    id: "ag-antigua-trumpet",
+    src: "tmp/batch110-install/ag-antigua-trumpet.png",
     explainer:
-      "Red uppercase 'NEWSLINE' stacked over navy 'SAMOA' on white — Newsline Samoa site icon from newslinesamoa.com.",
+      "Dark-blue 'Trumpet' joined to grey 'News', with the tagline 'ANTIGUA | WE MEAN BUSINESS' under a thin rule — Antiguan Trumpet site masthead.",
     licence:
-      "Newsline Samoa logo from the newspaper's official site (newslinesamoa.com/wp-content/uploads/2025/09/7fbffa1b-8a50-4dd9-b99d-7e4fa0148c78.jpg); trademark bundled for educational reference in Learn mode.",
+      "Antiguan Trumpet logo from the newspaper's official site (antiguantrumpet.com/wp-content/uploads/2020/07/ATMainLogo272x90.png); trademark bundled for educational reference in Learn mode.",
   },
 ];
 
