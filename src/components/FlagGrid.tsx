@@ -154,6 +154,7 @@ type GroupMode =
   | "rsf-press"
   | "hdi"
   | "gender-gap"
+  | "gpi"
   | "party-ideology";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
@@ -178,6 +179,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   "rsf-press": "RSF Press Freedom Index",
   hdi: "Human Development Index",
   "gender-gap": "Global Gender Gap Index",
+  gpi: "Global Peace Index",
   // Political-parties-view only — buckets along the sourced ideology spectrum.
   "party-ideology": "By ideology",
   // Passports-view only — buckets by the passport cover's colour family.
@@ -244,6 +246,7 @@ const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
   "rsf-press",
   "hdi",
   "gender-gap",
+  "gpi",
 ]);
 
 /** Whether a grouping mode is offered for the given view. The flag-appearance
@@ -353,6 +356,16 @@ const GENDER_GAP_ORDER: Record<string, number> = {
   "10–19": 9,
   "0–9": 10,
   "Not rated": 11,
+};
+
+/** Global Peace Index State of Peace bands — most peaceful first. */
+const GPI_ORDER: Record<string, number> = {
+  "Very High": 1,
+  High: 2,
+  Medium: 3,
+  Low: 4,
+  "Very Low": 5,
+  "Not rated": 6,
 };
 
 /** Heading for a World-Cup-titles bucket: "5 World Cup titles" / "1 World Cup
@@ -868,6 +881,12 @@ export function FlagGrid({
         const rating = COUNTRY_FACTS[code]?.democracy?.genderGap?.rating ?? "Not rated";
         push(rating, e);
       }
+    } else if (groupMode === "gpi") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.gpi?.rating ?? "Not rated";
+        push(rating, e);
+      }
     }
 
     if (
@@ -878,7 +897,8 @@ export function FlagGrid({
       groupMode === "perception" ||
       groupMode === "rsf-press" ||
       groupMode === "hdi" ||
-      groupMode === "gender-gap"
+      groupMode === "gender-gap" ||
+      groupMode === "gpi"
     ) {
       for (const [, items] of buckets) {
         items.sort((a, b) => {
@@ -901,7 +921,9 @@ export function FlagGrid({
               ? factsA?.rsfPress
               : groupMode === "hdi"
               ? factsA?.hdi
-              : factsA?.genderGap;
+              : groupMode === "gender-gap"
+              ? factsA?.genderGap
+              : factsA?.gpi;
           const indexB =
             groupMode === "freedom-house"
               ? factsB?.freedomHouse
@@ -917,7 +939,9 @@ export function FlagGrid({
               ? factsB?.rsfPress
               : groupMode === "hdi"
               ? factsB?.hdi
-              : factsB?.genderGap;
+              : groupMode === "gender-gap"
+              ? factsB?.genderGap
+              : factsB?.gpi;
           const rankA = indexA?.rank ?? Infinity;
           const rankB = indexB?.rank ?? Infinity;
           if (rankA !== rankB) return rankA - rankB;
@@ -1018,6 +1042,11 @@ export function FlagGrid({
       if (groupMode === "gender-gap") {
         const oa = GENDER_GAP_ORDER[a] ?? 99;
         const ob = GENDER_GAP_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "gpi") {
+        const oa = GPI_ORDER[a] ?? 99;
+        const ob = GPI_ORDER[b] ?? 99;
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "party-ideology") {

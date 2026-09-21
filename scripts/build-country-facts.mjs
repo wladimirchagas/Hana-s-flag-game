@@ -214,6 +214,8 @@ export type DemocracyData = {
   hdi?: DemocracyIndex;
   /** World Economic Forum Global Gender Gap Index */
   genderGap?: DemocracyIndex;
+  /** Institute for Economics & Peace Global Peace Index */
+  gpi?: DemocracyIndex;
 };
 
 export type CountryFacts = {

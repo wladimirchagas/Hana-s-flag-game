@@ -63,6 +63,9 @@ on:
       - "scripts/check-gggr-data.mjs"
       - "scripts/data/gggr-2026.csv"
       - "scripts/data/gggr2026Data.mjs"
+      - "scripts/check-gpi-data.mjs"
+      - "scripts/data/gpi-2026.csv"
+      - "scripts/data/gpi2026Data.mjs"
       - "scripts/data/democracyData.mjs"
       - "src/data/countryFacts.ts"
       - "src/lib/democracyColors.ts"
@@ -171,6 +174,9 @@ jobs:
 
       - name: Verify WEF Global Gender Gap Index 2026 data matches the official extract
         run: node scripts/check-gggr-data.mjs
+
+      - name: Verify IEP Global Peace Index 2026 data matches the official extract
+        run: node scripts/check-gpi-data.mjs
 
       - name: Verify every flags:check gate actually runs in CI
         run: node scripts/check-ci-coverage.mjs
