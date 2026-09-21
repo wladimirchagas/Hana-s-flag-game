@@ -1,6 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Country } from "../api/countries";
 import {
+  COUNTRY_BLOCKS,
+  COUNTRY_BLOCK_GROUP_ORDER,
+  countryMatchesBlocks,
+} from "../data/countryBlocks";
+import {
   CHART_METRIC_KEYS,
   type ChartAxisKey,
   chartAxisPoints,
@@ -41,7 +46,31 @@ const VIEW_W = 960;
 const VIEW_H = 500;
 const TICK_COUNT = 5;
 
-type FilterKind = "continents" | "subcontinents" | "indexes" | null;
+type FilterKind = "continents" | "membership" | "indexes" | null;
+
+/** Continent / sub-continent ids in the nested Continents menu. */
+const CONTINENT_ID_PREFIX = "c:";
+const SUBCONTINENT_ID_PREFIX = "s:";
+
+function continentFilterId(continent: string): string {
+  return CONTINENT_ID_PREFIX + continent;
+}
+function subcontinentFilterId(label: string): string {
+  return SUBCONTINENT_ID_PREFIX + label;
+}
+
+/** Match a country against the nested Continents filter (OR within the set). */
+function countryMatchesContinentFilter(
+  country: Country,
+  selected: ReadonlySet<string>,
+): boolean {
+  if (selected.size === 0) return false;
+  if (selected.has(continentFilterId(country.continent))) return true;
+  if (country.subregion && selected.has(subcontinentFilterId(country.subregion))) {
+    return true;
+  }
+  return false;
+}
 
 function scaleLinear(
   value: number,
@@ -59,13 +88,23 @@ function toggleInSet(prev: ReadonlySet<string>, value: string): Set<string> {
   return next;
 }
 
+type FilterOption = {
+  id: string;
+  label: string;
+  group?: string;
+  /** Indent under a continent / group heading (sub-continents). */
+  nested?: boolean;
+  /** Top-level continent row in the nested Continents menu. */
+  continentLevel?: boolean;
+};
+
 type FilterMenuProps = {
   label: string;
   kind: Exclude<FilterKind, null>;
   openKind: FilterKind;
   onOpen: (kind: FilterKind) => void;
   selected: ReadonlySet<string>;
-  options: readonly { id: string; label: string; group?: string }[];
+  options: readonly FilterOption[];
   onToggle: (id: string) => void;
   onClear: () => void;
 };
@@ -102,7 +141,7 @@ function ChartFilterMenu({
   }, [open, onOpen]);
 
   const grouped = useMemo(() => {
-    type Opt = FilterMenuProps["options"][number];
+    type Opt = FilterOption;
     const groups: { title: string | null; items: Opt[] }[] = [];
     let current: (typeof groups)[number] | null = null;
     for (const opt of options) {
@@ -139,7 +178,7 @@ function ChartFilterMenu({
           aria-label={`Filter by ${label}`}
         >
           <div className="democracy-index-chart__filter-popover-head">
-            <span>Show countries in</span>
+            <span>Highlight any of</span>
             {active && (
               <button
                 type="button"
@@ -163,6 +202,10 @@ function ChartFilterMenu({
                       key={opt.id}
                       className={
                         "democracy-index-chart__filter-option" +
+                        (opt.nested ? " democracy-index-chart__filter-option--nested" : "") +
+                        (opt.continentLevel
+                          ? " democracy-index-chart__filter-option--continent"
+                          : "") +
                         (checked ? " democracy-index-chart__filter-option--on" : "")
                       }
                     >
@@ -207,10 +250,11 @@ export function DemocracyIndexChart({
   } | null>(null);
 
   const [openFilter, setOpenFilter] = useState<FilterKind>(null);
+  /** Nested continents + sub-continents (ids prefixed `c:` / `s:`). */
   const [continentFilter, setContinentFilter] = useState<ReadonlySet<string>>(
     () => new Set(),
   );
-  const [subcontinentFilter, setSubcontinentFilter] = useState<ReadonlySet<string>>(
+  const [membershipFilter, setMembershipFilter] = useState<ReadonlySet<string>>(
     () => new Set(),
   );
   const [indexFilter, setIndexFilter] = useState<ReadonlySet<string>>(() => new Set());
@@ -221,19 +265,38 @@ export function DemocracyIndexChart({
     return m;
   }, [countries]);
 
-  const continentOptions = useMemo(
-    () => CONTINENT_ORDER.map((c) => ({ id: c, label: c })),
-    [],
-  );
-  const subcontinentOptions = useMemo(
-    () =>
-      SUBREGION_GROUPS.map((g) => ({
-        id: g.label,
-        label: g.label,
-        group: g.continent,
-      })),
-    [],
-  );
+  /** One nested menu: each continent, then its sub-continents indented. */
+  const continentOptions = useMemo(() => {
+    const opts: FilterOption[] = [];
+    for (const continent of CONTINENT_ORDER) {
+      opts.push({
+        id: continentFilterId(continent),
+        label: continent,
+        continentLevel: true,
+      });
+      for (const g of SUBREGION_GROUPS) {
+        if (g.continent !== continent) continue;
+        opts.push({
+          id: subcontinentFilterId(g.label),
+          label: g.label,
+          nested: true,
+        });
+      }
+    }
+    return opts;
+  }, []);
+
+  const membershipOptions = useMemo(() => {
+    const opts: FilterOption[] = [];
+    for (const group of COUNTRY_BLOCK_GROUP_ORDER) {
+      for (const b of COUNTRY_BLOCKS) {
+        if (b.group !== group) continue;
+        opts.push({ id: b.id, label: b.label, group });
+      }
+    }
+    return opts;
+  }, []);
+
   const indexOptions = useMemo(() => {
     const opts = democracyIndexRatingOptions();
     return opts.map((o) => ({
@@ -301,27 +364,26 @@ export function DemocracyIndexChart({
   }, [rawPoints, byCode, xKey, yKey, xDomain, yDomain, plot.x0, plot.x1, plot.y0, plot.y1]);
 
   const filtersActive =
-    continentFilter.size > 0 ||
-    subcontinentFilter.size > 0 ||
-    indexFilter.size > 0;
+    continentFilter.size > 0 || membershipFilter.size > 0 || indexFilter.size > 0;
 
+  /**
+   * Filters are additive (OR) across menus and within each menu.
+   * e.g. Africa + ASEAN highlights every African country OR every ASEAN member.
+   * An empty menu contributes nothing (does not constrain the others).
+   */
   const highlightedCodes = useMemo(() => {
     if (!filtersActive) return null;
     const set = new Set<string>();
     for (const p of points) {
       const c = p.country;
-      if (continentFilter.size > 0 && !continentFilter.has(c.continent)) continue;
-      if (
-        subcontinentFilter.size > 0 &&
-        !(c.subregion && subcontinentFilter.has(c.subregion))
-      ) {
-        continue;
-      }
-      if (!countryMatchesIndexRatings(p.code, indexFilter)) continue;
-      set.add(p.code);
+      const matchContinent = countryMatchesContinentFilter(c, continentFilter);
+      const matchMembership = countryMatchesBlocks(p.code, membershipFilter);
+      const matchIndex =
+        indexFilter.size > 0 && countryMatchesIndexRatings(p.code, indexFilter);
+      if (matchContinent || matchMembership || matchIndex) set.add(p.code);
     }
     return set;
-  }, [filtersActive, points, continentFilter, subcontinentFilter, indexFilter]);
+  }, [filtersActive, points, continentFilter, membershipFilter, indexFilter]);
 
   const trend = useMemo(() => {
     // OLS on the same scale the markers use (log for population/GDP/…).
@@ -462,14 +524,14 @@ export function DemocracyIndexChart({
             onClear={() => setContinentFilter(new Set())}
           />
           <ChartFilterMenu
-            label="Sub-continents"
-            kind="subcontinents"
+            label="Membership"
+            kind="membership"
             openKind={openFilter}
             onOpen={setOpenFilter}
-            selected={subcontinentFilter}
-            options={subcontinentOptions}
-            onToggle={(id) => setSubcontinentFilter((prev) => toggleInSet(prev, id))}
-            onClear={() => setSubcontinentFilter(new Set())}
+            selected={membershipFilter}
+            options={membershipOptions}
+            onToggle={(id) => setMembershipFilter((prev) => toggleInSet(prev, id))}
+            onClear={() => setMembershipFilter(new Set())}
           />
           <ChartFilterMenu
             label="Indexes"

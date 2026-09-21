@@ -81,6 +81,9 @@ on:
       - "scripts/check-imd-wcr.mjs"
       - "scripts/check-soft-power-data.mjs"
       - "scripts/check-dnr-trust.mjs"
+      - "scripts/check-country-blocks.mjs"
+      - "src/data/countryBlocks.ts"
+      - "src/components/DemocracyIndexChart.tsx"
       - "scripts/data/soft-power-2026.csv"
       - "scripts/data/softPower2026Data.mjs"
       - "scripts/data/dnr-trust-2026.csv"
@@ -229,6 +232,9 @@ jobs:
 
       - name: Verify Reuters Digital News Report 2026 trust index matches the official extract
         run: node scripts/check-dnr-trust.mjs
+
+      - name: Verify chart country-blocks filter data and OR wiring
+        run: node scripts/check-country-blocks.mjs
 
       - name: Verify every flags:check gate actually runs in CI
         run: node scripts/check-ci-coverage.mjs

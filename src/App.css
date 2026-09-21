@@ -3192,6 +3192,22 @@
   line-height: 1.25;
 }
 
+.democracy-index-chart__filter-option--nested {
+  padding-left: 1.35rem;
+  font-weight: 500;
+}
+
+.democracy-index-chart__filter-option--continent {
+  font-weight: 800;
+  margin-top: 0.35rem;
+}
+
+.democracy-index-chart__filter-list
+  > .democracy-index-chart__filter-group:first-child
+  > .democracy-index-chart__filter-option--continent:first-child {
+  margin-top: 0;
+}
+
 .democracy-index-chart__filter-option:hover {
   background: color-mix(in srgb, var(--cream, #f7f3ea) 70%, transparent);
 }
