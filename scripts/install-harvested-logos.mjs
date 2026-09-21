@@ -15,20 +15,84 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "sd-sudan-tribune",
-    src: "tmp/batch69-install/sd-sudan-tribune.png",
+    id: "ye-al-masdar",
+    src: "tmp/batch70-install/ye-al-masdar.svg",
     explainer:
-      "Black serif 'Sudan' beside blackletter 'Tribune' — Sudan Tribune masthead.",
+      "Red Arabic 'المصدر' over grey 'ALMASDAR Online' — Al-Masdar Online masthead.",
     licence:
-      "Sudan Tribune masthead (English Wikipedia File:St logo 250.png, public domain text logo; credited to sudantribune.com) bundled for educational reference in Learn mode.",
+      "Al-Masdar Online masthead (Wikimedia Commons File:Al-Masdar Online.svg) trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "ss-sudan-tribune-ss",
-    src: "tmp/batch69-install/ss-sudan-tribune-ss.png",
+    id: "ke-taifa-leo",
+    src: "tmp/batch70-install/ke-taifa-leo.jpg",
     explainer:
-      "Black serif 'Sudan' beside blackletter 'Tribune' — Sudan Tribune (South Sudan Desk) masthead.",
+      "White serif 'TAIFA LEO' on red with Swahili strap 'Lugha yetu, gazeti letu' — Taifa Leo brand mark.",
     licence:
-      "Sudan Tribune masthead (English Wikipedia File:St logo 250.png, public domain text logo; credited to sudantribune.com) bundled for educational reference in Learn mode — same brand as the Sudan desk.",
+      "Taifa Leo brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "mm-the-irrawaddy",
+    src: "tmp/batch70-install/mm-the-irrawaddy.jpg",
+    explainer:
+      "Red circle with yellow motifs and blue pen nib above red serif 'The Irrawaddy' — Irrawaddy magazine emblem.",
+    licence:
+      "The Irrawaddy brand mark from the magazine's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "mt-maltatoday",
+    src: "tmp/batch70-install/mt-maltatoday.jpg",
+    explainer:
+      "White lowercase slab-serif 'mt' on red square — MaltaToday brand mark.",
+    licence:
+      "MaltaToday brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "mt-the-malta-independent",
+    src: "tmp/batch70-install/mt-the-malta-independent.jpg",
+    explainer:
+      "Orange serif 'I' in a white circle on blue — The Malta Independent brand mark.",
+    licence:
+      "The Malta Independent brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "ni-el-19-digital",
+    src: "tmp/batch70-install/ni-el-19-digital.jpg",
+    explainer:
+      "Blue script 'el' beside magenta '19' with strap 'POR MÁS VICTORIAS!' — El 19 Digital brand mark.",
+    licence:
+      "El 19 Digital brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "sm-san-marino-fixing",
+    src: "tmp/batch70-install/sm-san-marino-fixing.jpg",
+    explainer:
+      "Blue 'SAN MARINO FIXING' on yellow-striped field with chart-arrow graphic — San Marino Fixing masthead.",
+    licence:
+      "San Marino Fixing masthead from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "va-asianews",
+    src: "tmp/batch70-install/va-asianews.jpg",
+    explainer:
+      "Orange 'AsiaNews.it' wordmark with PIME figure icon on blue — AsiaNews brand mark.",
+    licence:
+      "AsiaNews brand mark from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "ws-samoa-global-news",
+    src: "tmp/batch70-install/ws-samoa-global-news.png",
+    explainer:
+      "Circular globe with Samoa island silhouettes and 'SAMOA GLOBAL NEWS' — Samoa Global News emblem.",
+    licence:
+      "Samoa Global News emblem from the outlet's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "mk-sloboden-pecat",
+    src: "tmp/batch70-install/mk-sloboden-pecat.jpg",
+    explainer:
+      "White Cyrillic 'СП.' on black — Sloboden Pečat brand initials.",
+    licence:
+      "Sloboden Pečat brand mark from the newspaper's official Facebook page profile picture; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
