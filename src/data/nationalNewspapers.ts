@@ -22420,7 +22420,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Swazi Bridge Audience Review 2023"
       },
       "revenueModel": "Digital advertising and community sponsorships",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/sz/swazi-bridge.jpg",
+      "logoExplainer": "Bold black 'THE BRIDGE' with ladder-cut B, blue-yellow-red vertical bar, and red tagline 'Impartial | Credible | Fearless' — Swazi Bridge masthead.",
+      "licenceNote": "Swazi Bridge / The Bridge trademark bundled from the publisher's official site brand assets (swazibridge.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://swazibridge.com"
       ]
@@ -22666,7 +22669,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Togo Matin Commercial Profile / OTM"
       },
       "revenueModel": "Single-copy retail sales, corporate display ads, and web advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tg/togo-matin.png",
+      "logoExplainer": "Sky-blue lowercase 'tm' ligature beside uppercase 'TOGOMATIN' wordmark — Togo Matin masthead.",
+      "licenceNote": "Togo Matin trademark bundled from the publisher's official site brand assets (togomatin.tg) for educational reference in Learn mode.",
+
       "sources": [
         "https://togomatin.tg",
         "https://en.wikipedia.org/wiki/Media_of_Togo"
@@ -22706,7 +22712,6 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo.",
       "revenueModel": "Advertising, subscriptions, and/or print sales",
       "frequency": "Daily newspaper",
       "format": "Digital news portal",
@@ -22725,6 +22730,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "metric": "Major Togo news website",
         "source": "https://icilome.com"
       },
+      "logo": "newspaper-logos/tg/ici-lome.png",
+      "logoExplainer": "Cartoon child mascot beside blue 'iciLome.com' and cursive tagline 'Le portail togolais par excellence!' — Ici Lomé masthead.",
+      "licenceNote": "Ici Lomé trademark bundled from the publisher's official site brand assets (icilome.com) for educational reference in Learn mode.",
+
       "sources": [
         "https://icilome.com"
       ]
@@ -22900,7 +22909,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Ministry of Culture of the Republic of Tajikistan Press Register"
       },
       "revenueModel": "State budget funding, institutional mandatory subscriptions, and legal announcements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tj/jumhuriyat.png",
+      "logoExplainer": "Blue Cyrillic 'ҶУМҲУРИЯТ' between Tajik flag and state emblem, with official-publication subtitle — Jumhuriyat masthead.",
+      "licenceNote": "Jumhuriyat trademark bundled from the publisher's official site brand assets (jumhuriyat.tj) for educational reference in Learn mode.",
+
       "sources": [
         "https://jumhuriyat.tj",
         "https://tg.wikipedia.org/wiki/%D2%B6%D1%83%D0%BC%D2%B cordance"
@@ -23037,7 +23049,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Conselho de Imprensa de Timor-Leste 2023"
       },
       "revenueModel": "Print sales and local corporate advertisements",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/tl/jornal-independente.jpg",
+      "logoExplainer": "Black serif 'INDEPENDENTE' with eye icon and Tetum tagline 'Imi Nia Lian. Imi Nia Liberdade' — Jornal Independente masthead.",
+      "licenceNote": "Jornal Independente trademark bundled from the publisher's official site brand assets (independente.tl) for educational reference in Learn mode.",
+
       "sources": [
         "https://independente.tl"
       ]
