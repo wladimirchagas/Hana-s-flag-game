@@ -15,20 +15,44 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "rw-great-lakes",
-    src: "tmp/batch64-final/rw-great-lakes.png",
+    id: "sz-swazi-bridge",
+    src: "tmp/batch65-final/sz-swazi-bridge.jpg",
     explainer:
-      "White paper airplane with speed lines inside a textured dark-red circle — Great Lakes Voice emblem.",
+      "Bold black 'THE BRIDGE' with ladder-cut B, blue-yellow-red vertical bar, and red tagline 'Impartial | Credible | Fearless' — Swazi Bridge masthead.",
     licence:
-      "Great Lakes Voice trademark bundled from the publisher's official site brand assets (greatlakesvoice.com) for educational reference in Learn mode.",
+      "Swazi Bridge / The Bridge trademark bundled from the publisher's official site brand assets (swazibridge.com) for educational reference in Learn mode.",
   },
   {
-    id: "st-noticias-stp",
-    src: "tmp/batch64-final/st-noticias-stp.png",
+    id: "tg-ici-lome",
+    src: "tmp/batch65-final/tg-ici-lome.png",
     explainer:
-      "White circular STP monogram seal beside sans-serif 'STP DIGITAL' — Notícias STP / STP Digital masthead.",
+      "Cartoon child mascot beside blue 'iciLome.com' and cursive tagline 'Le portail togolais par excellence!' — Ici Lomé masthead.",
     licence:
-      "STP Digital trademark bundled from the publisher's official site brand assets (stpdigital.net) for educational reference in Learn mode.",
+      "Ici Lomé trademark bundled from the publisher's official site brand assets (icilome.com) for educational reference in Learn mode.",
+  },
+  {
+    id: "tg-togo-matin",
+    src: "tmp/batch65-final/tg-togo-matin.png",
+    explainer:
+      "Sky-blue lowercase 'tm' ligature beside uppercase 'TOGOMATIN' wordmark — Togo Matin masthead.",
+    licence:
+      "Togo Matin trademark bundled from the publisher's official site brand assets (togomatin.tg) for educational reference in Learn mode.",
+  },
+  {
+    id: "tj-jumhuriyat",
+    src: "tmp/batch65-final/tj-jumhuriyat.png",
+    explainer:
+      "Blue Cyrillic 'ҶУМҲУРИЯТ' between Tajik flag and state emblem, with official-publication subtitle — Jumhuriyat masthead.",
+    licence:
+      "Jumhuriyat trademark bundled from the publisher's official site brand assets (jumhuriyat.tj) for educational reference in Learn mode.",
+  },
+  {
+    id: "tl-jornal-independente",
+    src: "tmp/batch65-final/tl-jornal-independente.jpg",
+    explainer:
+      "Black serif 'INDEPENDENTE' with eye icon and Tetum tagline 'Imi Nia Lian. Imi Nia Liberdade' — Jornal Independente masthead.",
+    licence:
+      "Jornal Independente trademark bundled from the publisher's official site brand assets (independente.tl) for educational reference in Learn mode.",
   },
 ];
 
