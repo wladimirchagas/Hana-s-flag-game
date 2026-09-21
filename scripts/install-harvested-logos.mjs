@@ -17,13 +17,20 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "mg-taratra",
-    dataset: "agency",
-    src: "tmp/batch116-install/mg-taratra.png",
+    id: "pw-tia-belau",
+    src: "tmp/batch117-install/pw-tia-belau.png",
     explainer:
-      "Red stylized 'D' with play-button counter beside white slab-serif 'DEPECHE', over green 'INFORMATIVE' and white 'TARATRA' on a dark field — official Dépêche Informative Taratra (state news agency, formerly ANTA) masthead from depeche-taratra.mg.",
+      "Yellow masthead with blue 3D 'TIA BELAU' lettering, a traditional Palauan bai as the 'A', a spear-bearing warrior, and the constitutional open-government quotation — official brand banner from tiabelaunews.com.",
     licence:
-      "Dépêche Informative Taratra (Madagascar state news agency) trademark bundled from the agency's official site brand assets (depeche-taratra.mg masthead, archived via the Wayback Machine) for educational reference in Learn mode.",
+      "Tia Belau trademark bundled from the publisher's official site brand assets (tiabelaunews.com masthead, archived via the Wayback Machine) for educational reference in Learn mode.",
+  },
+  {
+    id: "tg-liberte-togo",
+    src: "tmp/batch117-install/tg-liberte-togo.png",
+    explainer:
+      "Red header with yellow megaphone, white bubble-letter 'LIBERTÉ', and the slogan 'Le peuple peut enfin parler !' over a curved white strip naming the Togolese daily — official site banner from libertetogo.tg.",
+    licence:
+      "Liberté (Togo) trademark bundled from the publisher's official site brand assets (libertetogo.tg header banner, archived via the Wayback Machine) for educational reference in Learn mode.",
   },
 ];
 
