@@ -403,10 +403,12 @@ function niceStep(rough: number): number {
   if (!Number.isFinite(rough) || rough <= 0) return 1;
   const exp = Math.floor(Math.log10(rough));
   const base = rough / 10 ** exp;
+  // Wilkinson-style breakpoints (< 1.5 / 3 / 7) so a rough of 5.03 does not
+  // jump to 10× and leave half the chart empty below the data.
   const nice =
-    base <= 1 ? 1 :
-    base <= 2 ? 2 :
-    base <= 5 ? 5 :
+    base < 1.5 ? 1 :
+    base < 3 ? 2 :
+    base < 7 ? 5 :
     10;
   return nice * 10 ** exp;
 }
@@ -414,8 +416,8 @@ function niceStep(rough: number): number {
 /**
  * Axis domain fitted to the values actually plotted — not the full published
  * scale. If every Gender Gap score sits above 0.5, the axis starts near 0.5
- * instead of zero. Adds padding and snaps to nice tick boundaries so the
- * ends do not hug the outermost flags.
+ * instead of zero. Snaps to nice tick boundaries, and refines the step when a
+ * coarse snap would leave a large empty band below (or above) the data.
  */
 export function fitDemocracyAxisDomain(
   values: readonly number[],
@@ -425,29 +427,48 @@ export function fitDemocracyAxisDomain(
   const full = getDemocracyAxisDomain(key);
   if (values.length === 0) return full;
 
-  let lo = Math.min(...values);
-  let hi = Math.max(...values);
-  const span = hi - lo;
+  const dataMin = Math.min(...values);
+  const dataMax = Math.max(...values);
+  const span = dataMax - dataMin;
   const fullSpan = full.max - full.min || 1;
 
   if (span <= 0) {
     // Single value (or all identical) — open a small window around it.
-    const pad = Math.max(fullSpan * 0.05, Math.abs(lo) * 0.05 || 0.05);
-    lo -= pad;
-    hi += pad;
-  } else {
-    const pad = span * 0.08;
-    lo -= pad;
-    hi += pad;
+    const pad = Math.max(fullSpan * 0.05, Math.abs(dataMin) * 0.05 || 0.05);
+    let lo = dataMin - pad;
+    let hi = dataMax + pad;
+    const step = niceStep((hi - lo) / tickCount);
+    let niceMin = Math.floor(lo / step) * step;
+    let niceMax = Math.ceil(hi / step) * step;
+    if (niceMax <= niceMin) niceMax = niceMin + step;
+    niceMin = Math.max(niceMin, full.min);
+    niceMax = Math.min(niceMax, full.max);
+    return niceMax > niceMin ? { min: niceMin, max: niceMax } : full;
   }
 
-  const step = niceStep((hi - lo) / tickCount);
-  let niceMin = Math.floor(lo / step) * step;
-  let niceMax = Math.ceil(hi / step) * step;
+  // Prefer a step that covers the DATA span in ~tickCount intervals. Floor /
+  // ceil the data ends onto that step so we do not invent empty space below
+  // the lowest score (the Gender Gap / Happiness bug with a coarse step of 2
+  // snapping 1.4→0).
+  let step = niceStep(span / tickCount);
+  let niceMin = Math.floor(dataMin / step) * step;
+  let niceMax = Math.ceil(dataMax / step) * step;
+
+  // If flooring dropped more than ~20% of the data span below the lowest
+  // point, the step is too coarse — try a finer one so the axis hugs the data.
+  if ((dataMin - niceMin) / span > 0.2 || (niceMax - dataMax) / span > 0.2) {
+    step = niceStep(span / (tickCount + 2));
+    niceMin = Math.floor(dataMin / step) * step;
+    niceMax = Math.ceil(dataMax / step) * step;
+  }
+
+  // Tiny headroom when a point sits exactly on a tick edge.
+  if (dataMin - niceMin < step * 0.02) niceMin -= step;
+  if (niceMax - dataMax < step * 0.02) niceMax += step;
   if (niceMax <= niceMin) niceMax = niceMin + step;
 
   // Floating-point tidy for 0–1 scales (HDI / Gender Gap / V-Dem).
-  const decimals = step < 0.01 ? 4 : step < 0.1 ? 3 : step < 1 ? 2 : 0;
+  const decimals = step < 0.01 ? 4 : step < 0.1 ? 3 : step < 1 ? 2 : 1;
   const factor = 10 ** decimals;
   niceMin = Math.round(niceMin * factor) / factor;
   niceMax = Math.round(niceMax * factor) / factor;
@@ -457,10 +478,7 @@ export function fitDemocracyAxisDomain(
   // start ABOVE the published floor when the data does — that is the point.
   niceMin = Math.max(niceMin, full.min);
   niceMax = Math.min(niceMax, full.max);
-  if (niceMax <= niceMin) {
-    // Degenerate after clamping — fall back to the full published scale.
-    return full;
-  }
+  if (niceMax <= niceMin) return full;
 
   return { min: niceMin, max: niceMax };
 }
