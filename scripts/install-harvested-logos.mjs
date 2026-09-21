@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "bs-punch",
-    src: "tmp/batch114-install/bs-punch.png",
+    id: "td-le-progres",
+    src: "tmp/batch115-install/td-le-progres.png",
     explainer:
-      "White stylised 'THE PUNCH' wordmark (tall P and H flanking stacked THE / UNC) on a solid magenta field — official masthead from the publisher's nassaupunch.com brand assets (Wayback).",
+      "Red italic serif 'Le Progrès' above black 'Quotidien', with a curved underline dipping under the 'g' — official masthead from the publisher's leprogrestd.com brand assets.",
     licence:
-      "The Punch (Bahamas) trademark bundled from the publisher's official site brand assets (nassaupunch.com/wp-content/uploads/2014/03/cropped-abcd-e1394813641440.png via Wayback Machine) for educational reference in Learn mode.",
+      "Le Progrès (Chad) trademark bundled from the publisher's official site brand assets (leprogrestd.com/logo.png) for educational reference in Learn mode.",
   },
 ];
 
