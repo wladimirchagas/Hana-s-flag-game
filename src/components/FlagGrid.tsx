@@ -152,6 +152,8 @@ type GroupMode =
   | "cpi"
   | "perception"
   | "rsf-press"
+  | "hdi"
+  | "gender-gap"
   | "gpi"
   | "party-ideology";
 
@@ -175,6 +177,8 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   cpi: "Corruption Perceptions Index",
   perception: "Democracy Perception Index",
   "rsf-press": "RSF Press Freedom Index",
+  hdi: "Human Development Index",
+  "gender-gap": "Global Gender Gap Index",
   gpi: "Global Peace Index",
   // Political-parties-view only — buckets along the sourced ideology spectrum.
   "party-ideology": "By ideology",
@@ -240,6 +244,8 @@ const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
   "cpi",
   "perception",
   "rsf-press",
+  "hdi",
+  "gender-gap",
   "gpi",
 ]);
 
@@ -327,6 +333,25 @@ const RSF_PRESS_ORDER: Record<string, number> = {
   Difficult: 4,
   "Very serious": 5,
   "Not rated": 6,
+};
+
+const HDI_ORDER: Record<string, number> = {
+  "Very High": 1,
+  High: 2,
+  Medium: 3,
+  Low: 4,
+  "Not rated": 5,
+};
+
+/** WEF Global Gender Gap Index — highest parity first. */
+const GENDER_GAP_ORDER: Record<string, number> = {
+  "90–100%": 1,
+  "80–89%": 2,
+  "70–79%": 3,
+  "60–69%": 4,
+  "50–59%": 5,
+  "Below 50%": 6,
+  "Not rated": 7,
 };
 
 /** Global Peace Index State of Peace bands — most peaceful first. */
@@ -840,6 +865,18 @@ export function FlagGrid({
         const rating = COUNTRY_FACTS[code]?.democracy?.rsfPress?.rating ?? "Not rated";
         push(rating, e);
       }
+    } else if (groupMode === "hdi") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.hdi?.rating ?? "Not rated";
+        push(rating, e);
+      }
+    } else if (groupMode === "gender-gap") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        const rating = COUNTRY_FACTS[code]?.democracy?.genderGap?.rating ?? "Not rated";
+        push(rating, e);
+      }
     } else if (groupMode === "gpi") {
       for (const e of sorted) {
         const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
@@ -855,6 +892,8 @@ export function FlagGrid({
       groupMode === "cpi" ||
       groupMode === "perception" ||
       groupMode === "rsf-press" ||
+      groupMode === "hdi" ||
+      groupMode === "gender-gap" ||
       groupMode === "gpi"
     ) {
       for (const [, items] of buckets) {
@@ -876,6 +915,10 @@ export function FlagGrid({
               ? factsA?.perception
               : groupMode === "rsf-press"
               ? factsA?.rsfPress
+              : groupMode === "hdi"
+              ? factsA?.hdi
+              : groupMode === "gender-gap"
+              ? factsA?.genderGap
               : factsA?.gpi;
           const indexB =
             groupMode === "freedom-house"
@@ -890,6 +933,10 @@ export function FlagGrid({
               ? factsB?.perception
               : groupMode === "rsf-press"
               ? factsB?.rsfPress
+              : groupMode === "hdi"
+              ? factsB?.hdi
+              : groupMode === "gender-gap"
+              ? factsB?.genderGap
               : factsB?.gpi;
           const rankA = indexA?.rank ?? Infinity;
           const rankB = indexB?.rank ?? Infinity;
@@ -981,6 +1028,16 @@ export function FlagGrid({
       if (groupMode === "rsf-press") {
         const oa = RSF_PRESS_ORDER[a] ?? 99;
         const ob = RSF_PRESS_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "hdi") {
+        const oa = HDI_ORDER[a] ?? 99;
+        const ob = HDI_ORDER[b] ?? 99;
+        if (oa !== ob) return oa - ob;
+      }
+      if (groupMode === "gender-gap") {
+        const oa = GENDER_GAP_ORDER[a] ?? 99;
+        const ob = GENDER_GAP_ORDER[b] ?? 99;
         if (oa !== ob) return oa - ob;
       }
       if (groupMode === "gpi") {

@@ -155,6 +155,32 @@ function formatPerceptionIndex(idx?: {
   return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${scoreStr} (${idx.year})`;
 }
 
+/** HDI shows the 0–1 score (the index’s primary figure) plus the UNDP category. */
+function formatHdiIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${idx.score.toFixed(3)} (${idx.year})`;
+}
+
+/** WEF Global Gender Gap Index — published 0–1 parity score. */
+function formatGenderGapIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(3)} (${idx.year})`;
+}
+
 /** GPI shows State of Peace band + overall score (lower = more peaceful). */
 function formatGpiIndex(idx?: {
   year: number;
@@ -231,6 +257,12 @@ export function EntitySummary(props: EntitySummaryProps) {
 
       const rsf = formatDemocracyIndex(c.democracy.rsfPress);
       if (rsf) rows.push({ label: "RSF Press Freedom", value: rsf });
+
+      const hdi = formatHdiIndex(c.democracy.hdi);
+      if (hdi) rows.push({ label: "Human Development Index", value: hdi });
+
+      const gggi = formatGenderGapIndex(c.democracy.genderGap);
+      if (gggi) rows.push({ label: "Global Gender Gap Index", value: gggi });
 
       const gpi = formatGpiIndex(c.democracy.gpi);
       if (gpi) rows.push({ label: "Global Peace Index", value: gpi });

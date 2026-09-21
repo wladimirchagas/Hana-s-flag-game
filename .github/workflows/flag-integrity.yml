@@ -57,6 +57,12 @@ on:
       - "scripts/check-quiz-symbol-decks.mjs"
       - "scripts/check-rsf-press-freedom.mjs"
       - "scripts/data/rsf-press-freedom-2026.csv"
+      - "scripts/check-hdi-data.mjs"
+      - "scripts/data/hdi2023Data.mjs"
+      - "scripts/data/hdr25-hdi-2023.csv"
+      - "scripts/check-gggi-data.mjs"
+      - "scripts/data/gggi-2025.csv"
+      - "scripts/data/gggi2025Data.mjs"
       - "scripts/check-gpi-data.mjs"
       - "scripts/data/gpi-2026.csv"
       - "scripts/data/gpi2026Data.mjs"
@@ -163,7 +169,13 @@ jobs:
       - name: Verify RSF World Press Freedom Index 2026 data matches the official CSV
         run: node scripts/check-rsf-press-freedom.mjs
 
-      - name: Verify Global Peace Index 2026 data matches the official extract
+      - name: Verify UNDP Human Development Index 2023 data matches the official extract
+        run: node scripts/check-hdi-data.mjs
+
+      - name: Verify WEF Global Gender Gap Index 2025 data matches the sourced extract
+        run: node scripts/check-gggi-data.mjs
+
+      - name: Verify IEP Global Peace Index 2026 data matches the official extract
         run: node scripts/check-gpi-data.mjs
 
       - name: Verify every flags:check gate actually runs in CI

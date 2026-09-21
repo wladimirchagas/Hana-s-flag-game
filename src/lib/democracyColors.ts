@@ -11,6 +11,8 @@ export type DemocracyIndexKey =
   | "cpi"
   | "perception"
   | "rsf-press"
+  | "hdi"
+  | "gender-gap"
   | "gpi";
 
 export type DemocracyMapMode = DemocracyIndexKey | null;
@@ -25,6 +27,8 @@ export const DEMOCRACY_INDEX_KEYS: readonly DemocracyIndexKey[] = [
   "cpi",
   "perception",
   "rsf-press",
+  "hdi",
+  "gender-gap",
   "gpi",
 ] as const;
 
@@ -101,6 +105,22 @@ export const RSF_PRESS_MAP_COLORS: Record<string, string> = {
   "Very serious": "#b71c1c",
 };
 
+/** UNDP Human Development Index map colours follow the official hdicode bands
+ *  (Very High / High / Medium / Low). Higher development → greener. */
+export const HDI_MAP_COLORS: Record<string, string> = {
+  "Very High": "#1b5e20",
+  High: "#4caf50",
+  Medium: "#ff9800",
+  Low: "#b71c1c",
+};
+
+export const HDI_BAND_ORDER: readonly string[] = [
+  "Very High",
+  "High",
+  "Medium",
+  "Low",
+];
+
 /** Global Peace Index State of Peace bands (IEP map legend). Lower score =
  *  more peaceful. Colours follow the official Vision of Humanity / IEP map. */
 export const GPI_MAP_COLORS: Record<string, string> = {
@@ -117,6 +137,25 @@ export const GPI_BAND_ORDER: readonly string[] = [
   "Medium",
   "Low",
   "Very Low",
+];
+
+/** WEF Global Gender Gap Index map bands — % of the gender gap closed (higher = greener). */
+export const GENDER_GAP_MAP_COLORS: Record<string, string> = {
+  "90–100%": "#004d1a",
+  "80–89%": "#1b5e20",
+  "70–79%": "#43a047",
+  "60–69%": "#fdd835",
+  "50–59%": "#fb8c00",
+  "Below 50%": "#b71c1c",
+};
+
+export const GENDER_GAP_BAND_ORDER: readonly string[] = [
+  "90–100%",
+  "80–89%",
+  "70–79%",
+  "60–69%",
+  "50–59%",
+  "Below 50%",
 ];
 
 /** Democracy Perception Index 2026 tiers (±5 / ±15 on Index Score). */
@@ -143,6 +182,8 @@ export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
   if (mode === "cpi") return "Corruption Perceptions Index";
   if (mode === "perception") return "Democracy Perception Index";
   if (mode === "rsf-press") return "RSF Press Freedom";
+  if (mode === "hdi") return "Human Development Index";
+  if (mode === "gender-gap") return "Global Gender Gap Index";
   if (mode === "gpi") return "Global Peace Index";
   return "";
 }
@@ -192,6 +233,18 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
       { label: "Very serious", color: RSF_PRESS_MAP_COLORS["Very serious"] },
     ];
   }
+  if (mode === "hdi") {
+    return HDI_BAND_ORDER.map((label) => ({
+      label,
+      color: HDI_MAP_COLORS[label],
+    }));
+  }
+  if (mode === "gender-gap") {
+    return GENDER_GAP_BAND_ORDER.map((label) => ({
+      label,
+      color: GENDER_GAP_MAP_COLORS[label],
+    }));
+  }
   if (mode === "gpi") {
     return GPI_BAND_ORDER.map((label) => ({
       label,
@@ -227,9 +280,17 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
     } else if (mode === "rsf-press") {
       rating = demo.rsfPress?.rating;
       colorMap = RSF_PRESS_MAP_COLORS;
-    } else {
+    } else if (mode === "hdi") {
+      rating = demo.hdi?.rating;
+      colorMap = HDI_MAP_COLORS;
+    } else if (mode === "gender-gap") {
+      rating = demo.genderGap?.rating;
+      colorMap = GENDER_GAP_MAP_COLORS;
+    } else if (mode === "gpi") {
       rating = demo.gpi?.rating;
       colorMap = GPI_MAP_COLORS;
+    } else {
+      continue;
     }
     if (rating && colorMap[rating]) {
       overlay.set(code, colorMap[rating]);
@@ -246,6 +307,8 @@ export function getDemocracyIndexLabel(key: DemocracyIndexKey): string {
   if (key === "cpi") return "Corruption Perceptions Index";
   if (key === "perception") return "Democracy Perception Index";
   if (key === "rsf-press") return "RSF Press Freedom Index";
+  if (key === "hdi") return "Human Development Index";
+  if (key === "gender-gap") return "Global Gender Gap Index";
   return "Global Peace Index";
 }
 
@@ -261,6 +324,8 @@ export function getDemocracyIndexFor(
   if (key === "cpi") return democracy.cpi;
   if (key === "perception") return democracy.perception;
   if (key === "rsf-press") return democracy.rsfPress;
+  if (key === "hdi") return democracy.hdi;
+  if (key === "gender-gap") return democracy.genderGap;
   return democracy.gpi;
 }
 
@@ -270,10 +335,9 @@ export function getDemocracyIndexFor(
  * the chart.
  */
 export function getDemocracyAxisDomain(key: DemocracyIndexKey): { min: number; max: number } {
-  if (key === "v-dem") return { min: 0, max: 1 };
+  if (key === "v-dem" || key === "hdi" || key === "gender-gap") return { min: 0, max: 1 };
   if (key === "economist") return { min: 0, max: 10 };
   if (key === "perception") return { min: -40, max: 40 };
-  // GPI overall score — 1 (most peaceful) to 5 (least peaceful).
   if (key === "gpi") return { min: 1, max: 5 };
   // Freedom House, CPI, RSF — 0–100 scores.
   return { min: 0, max: 100 };
@@ -282,11 +346,10 @@ export function getDemocracyAxisDomain(key: DemocracyIndexKey): { min: number; m
 /**
  * Classification bands drawn as labelled regions on a chart axis.
  * Boundaries follow each index's published methodology (EIU score cut-offs,
- * TI CPI map bands, DPI ±5/±15 tiers, RSF score bands, GPI State of Peace
- * bands, FH Free / Partly Free / Not Free thresholds). V-Dem regimes are not
- * a pure EDI cut, so bands use the approximate EDI ranges that separate the
- * four regime types in the bundled data — labels describe the classification,
- * scores place the point.
+ * TI CPI map bands, DPI ±5/±15 tiers, RSF score bands, FH Free / Partly Free /
+ * Not Free thresholds). V-Dem regimes are not a pure EDI cut, so bands use
+ * the approximate EDI ranges that separate the four regime types in the
+ * bundled data — labels describe the classification, scores place the point.
  */
 export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand[] {
   if (key === "freedom-house") {
@@ -336,14 +399,35 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
       { label: "Good", min: 85, max: 100 },
     ];
   }
-  // gpi — IEP 2026 State of Peace cutoffs (lower score = more peaceful).
+  if (key === "gender-gap") {
+    return [
+      { label: "Below 50%", min: 0, max: 0.5 },
+      { label: "50–59%", min: 0.5, max: 0.6 },
+      { label: "60–69%", min: 0.6, max: 0.7 },
+      { label: "70–79%", min: 0.7, max: 0.8 },
+      { label: "80–89%", min: 0.8, max: 0.9 },
+      { label: "90–100%", min: 0.9, max: 1 },
+    ];
+  }
+  // hdi — UNDP cut-offs (Very High ≥0.800, High ≥0.700, Medium ≥0.550).
   return [
-    { label: "Very High", min: 1, max: 1.435 },
-    { label: "High", min: 1.435, max: 1.903 },
-    { label: "Medium", min: 1.903, max: 2.333 },
-    { label: "Low", min: 2.333, max: 2.882 },
-    { label: "Very Low", min: 2.882, max: 5 },
+    { label: "Low", min: 0, max: 0.55 },
+    { label: "Medium", min: 0.55, max: 0.7 },
+    { label: "High", min: 0.7, max: 0.8 },
+    { label: "Very High", min: 0.8, max: 1 },
   ];
+
+  if (key === "gpi") {
+    // IEP 2026 State of Peace cutoffs (lower score = more peaceful).
+    return [
+      { label: "Very High", min: 1, max: 1.435 },
+      { label: "High", min: 1.435, max: 1.903 },
+      { label: "Medium", min: 1.903, max: 2.333 },
+      { label: "Low", min: 2.333, max: 2.882 },
+      { label: "Very Low", min: 2.882, max: 5 },
+    ];
+  }
+
 }
 
 /** Format a country's value on one axis for tooltips (classification + score). */
@@ -361,6 +445,8 @@ export function formatDemocracyAxisValue(
   if (key === "v-dem") return `${idx.rating} · ${score.toFixed(2)}`;
   if (key === "economist") return `${idx.rating} · ${score.toFixed(2)}`;
   if (key === "rsf-press") return `${idx.rating} · ${score.toFixed(1)}`;
+  if (key === "hdi") return `${idx.rating} · ${score.toFixed(3)}`;
+  if (key === "gender-gap") return `${idx.rating} · ${score.toFixed(3)}`;
   if (key === "gpi") return `${idx.rating} · ${score.toFixed(3)}`;
   return `${idx.rating} · ${score}`;
 }
