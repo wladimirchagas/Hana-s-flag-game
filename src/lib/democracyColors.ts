@@ -361,18 +361,20 @@ export const IMD_COMPETITIVENESS_BAND_ORDER: readonly string[] = [
 ];
 
 /** WEF Global Gender Gap Index map bands — decade of percentage closed
- *  (score×100). Higher = closer to parity. Colours run parity→gap
- *  (green→yellow→red), matching the CPI clean→corrupt convention. */
+ *  (score×100). Colours reuse the shared green→yellow→red palette (CPI /
+ *  Happiness / RSF), but are shifted so green only starts well above the
+ *  published global average (~69% closed in 2026). The bulk of economies sit
+ *  in 60–79 and must read as middling (lime/yellow), not "doing well". */
 export const GENDER_GAP_MAP_COLORS: Record<string, string> = {
-  "90–100": "#004d1a",
-  "80–89": "#1b5e20",
-  "70–79": "#43a047",
-  "60–69": "#9ccc65",
-  "50–59": "#fdd835",
-  "40–49": "#fb8c00",
-  "30–39": "#f4511e",
-  "20–29": "#e53935",
-  "10–19": "#c62828",
+  "90–100": "#004d1a", // CPI 90–100 — exceptional (Iceland alone in 2026)
+  "80–89": "#1b5e20", // CPI 80–89 / HDI Very High — clear leaders
+  "70–79": "#c0ca33", // RSF Satisfactory / Happiness mid — just above average
+  "60–69": "#fdd835", // CPI 50–59 — at / below global average
+  "50–59": "#fb8c00", // CPI 40–49 — weak
+  "40–49": "#f4511e", // CPI 30–39
+  "30–39": "#e53935", // CPI 20–29
+  "20–29": "#c62828", // CPI 10–19
+  "10–19": "#7f0000", // CPI 0–9
   "0–9": "#7f0000",
 };
 
