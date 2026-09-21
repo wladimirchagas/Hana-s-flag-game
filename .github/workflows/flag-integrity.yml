@@ -66,6 +66,10 @@ on:
       - "scripts/check-gpi-data.mjs"
       - "scripts/data/gpi-2026.csv"
       - "scripts/data/gpi2026Data.mjs"
+      - "scripts/check-wjp-rule-of-law.mjs"
+      - "scripts/data/wjp-rule-of-law-2025.csv"
+      - "scripts/data/wjp-rule-of-law-2024.csv"
+      - "scripts/data/wjp2025Data.mjs"
       - "scripts/data/democracyData.mjs"
       - "scripts/check-whr-happiness.mjs"
       - "scripts/check-gdi-data.mjs"
@@ -191,6 +195,9 @@ jobs:
 
       - name: Check Lowy Global Diplomacy Index data
         run: node scripts/check-gdi-data.mjs
+
+      - name: Verify WJP Rule of Law Index 2025 data matches the official CSVs
+        run: node scripts/check-wjp-rule-of-law.mjs
 
       - name: Verify every flags:check gate actually runs in CI
         run: node scripts/check-ci-coverage.mjs

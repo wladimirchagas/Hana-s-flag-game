@@ -155,6 +155,19 @@ function formatPerceptionIndex(idx?: {
   return `Rank ${idx.rank}${changeStr} · ${idx.rating} · ${scoreStr} (${idx.year})`;
 }
 
+/** WJP shows the 0–1 overall score (the index’s primary figure), not the map band. */
+function formatWjpIndex(idx?: {
+  year: number;
+  rating: string;
+  rank: number;
+  rankChange?: number;
+  score?: number;
+}): string | null {
+  if (!idx || typeof idx.score !== "number") return null;
+  const changeStr = formatRankChange(idx.rankChange);
+  return `Rank ${idx.rank}${changeStr} · Score ${idx.score.toFixed(2)} (${idx.year})`;
+}
+
 /** HDI shows the 0–1 score (the index’s primary figure) plus the UNDP category. */
 function formatHdiIndex(idx?: {
   year: number;
@@ -284,6 +297,9 @@ export function EntitySummary(props: EntitySummaryProps) {
 
       const rsf = formatDemocracyIndex(c.democracy.rsfPress);
       if (rsf) rows.push({ label: "RSF Press Freedom", value: rsf });
+
+      const wjp = formatWjpIndex(c.democracy.wjpRuleOfLaw);
+      if (wjp) rows.push({ label: "WJP Rule of Law Index", value: wjp });
 
       const hdi = formatHdiIndex(c.democracy.hdi);
       if (hdi) rows.push({ label: "Human Development Index", value: hdi });

@@ -15,7 +15,8 @@ export type DemocracyIndexKey =
   | "gender-gap"
   | "gpi"
   | "happiness"
-  | "gdi";
+  | "gdi"
+  | "wjp-rule-of-law";
 
 export type DemocracyMapMode = DemocracyIndexKey | null;
 
@@ -34,6 +35,7 @@ export const DEMOCRACY_INDEX_KEYS: readonly DemocracyIndexKey[] = [
   "gpi",
   "happiness",
   "gdi",
+  "wjp-rule-of-law",
 ] as const;
 
 export type DemocracyAxisBand = {
@@ -108,6 +110,31 @@ export const RSF_PRESS_MAP_COLORS: Record<string, string> = {
   Difficult: "#ef6c00",
   "Very serious": "#b71c1c",
 };
+
+/** WJP Rule of Law Index map score bands (0–1 overall score, published 2-dp).
+ *  Higher score = stronger adherence to the rule of law. Colours run
+ *  strong→weak (green→yellow→red), matching the other governance maps. */
+export const WJP_MAP_COLORS: Record<string, string> = {
+  "0.80–1.00": "#1b5e20",
+  "0.70–0.79": "#43a047",
+  "0.60–0.69": "#9ccc65",
+  "0.50–0.59": "#fdd835",
+  "0.40–0.49": "#fb8c00",
+  "0.30–0.39": "#f4511e",
+  "0.20–0.29": "#e53935",
+  "0.00–0.19": "#7f0000",
+};
+
+export const WJP_BAND_ORDER: readonly string[] = [
+  "0.80–1.00",
+  "0.70–0.79",
+  "0.60–0.69",
+  "0.50–0.59",
+  "0.40–0.49",
+  "0.30–0.39",
+  "0.20–0.29",
+  "0.00–0.19",
+];
 
 /** UNDP Human Development Index map colours follow the official hdicode bands
  *  (Very High / High / Medium / Low). Higher development → greener. */
@@ -253,6 +280,7 @@ export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
   if (mode === "gpi") return "Global Peace Index";
   if (mode === "happiness") return "World Happiness Report";
   if (mode === "gdi") return "Global Diplomacy Index";
+  if (mode === "wjp-rule-of-law") return "WJP Rule of Law Index";
   return "";
 }
 
@@ -331,6 +359,12 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
       color: GDI_MAP_COLORS[label],
     }));
   }
+  if (mode === "wjp-rule-of-law") {
+    return WJP_BAND_ORDER.map((label) => ({
+      label,
+      color: WJP_MAP_COLORS[label],
+    }));
+  }
   return [];
 }
 
@@ -375,6 +409,9 @@ export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, st
     } else if (mode === "gdi") {
       rating = demo.gdi?.rating;
       colorMap = GDI_MAP_COLORS;
+    } else if (mode === "wjp-rule-of-law") {
+      rating = demo.wjpRuleOfLaw?.rating;
+      colorMap = WJP_MAP_COLORS;
     } else {
       continue;
     }
@@ -397,7 +434,8 @@ export function getDemocracyIndexLabel(key: DemocracyIndexKey): string {
   if (key === "gender-gap") return "Global Gender Gap Index";
   if (key === "gpi") return "Global Peace Index";
   if (key === "happiness") return "World Happiness Report";
-  return "Global Diplomacy Index";
+  if (key === "gdi") return "Global Diplomacy Index";
+  return "WJP Rule of Law Index";
 }
 
 /** Pull the index row for a country from bundled facts. */
@@ -416,7 +454,8 @@ export function getDemocracyIndexFor(
   if (key === "gender-gap") return democracy.genderGap;
   if (key === "gpi") return democracy.gpi;
   if (key === "happiness") return democracy.happiness;
-  return democracy.gdi;
+  if (key === "gdi") return democracy.gdi;
+  return democracy.wjpRuleOfLaw;
 }
 
 /**
@@ -425,7 +464,7 @@ export function getDemocracyIndexFor(
  * the chart.
  */
 export function getDemocracyAxisDomain(key: DemocracyIndexKey): { min: number; max: number } {
-  if (key === "v-dem" || key === "hdi" || key === "gender-gap") return { min: 0, max: 1 };
+  if (key === "v-dem" || key === "hdi" || key === "gender-gap" || key === "wjp-rule-of-law") return { min: 0, max: 1 };
   if (key === "economist" || key === "happiness") return { min: 0, max: 10 };
   if (key === "perception") return { min: -40, max: 40 };
   if (key === "gpi") return { min: 1, max: 5 };
@@ -437,10 +476,11 @@ export function getDemocracyAxisDomain(key: DemocracyIndexKey): { min: number; m
 /**
  * Classification bands drawn as labelled regions on a chart axis.
  * Boundaries follow each index's published methodology (EIU score cut-offs,
- * TI CPI map bands, DPI ±5/±15 tiers, RSF score bands, FH Free / Partly Free /
- * Not Free thresholds). V-Dem regimes are not a pure EDI cut, so bands use
- * the approximate EDI ranges that separate the four regime types in the
- * bundled data — labels describe the classification, scores place the point.
+ * TI CPI map bands, DPI ±5/±15 tiers, RSF score bands, WJP 0–1 score bands,
+ * FH Free / Partly Free / Not Free thresholds). V-Dem regimes are not a pure
+ * EDI cut, so bands use the approximate EDI ranges that separate the four
+ * regime types in the bundled data — labels describe the classification,
+ * scores place the point.
  */
 export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand[] {
   if (key === "freedom-house") {
@@ -524,6 +564,12 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
       { label: "250+", min: 250, max: 280 },
     ];
   }
+  if (key === "wjp-rule-of-law") {
+    return WJP_BAND_ORDER.map((label) => {
+      const [lo, hi] = label.split("–").map(Number);
+      return { label, min: lo, max: hi };
+    }).reverse(); // low→high for the axis
+  }
   // hdi — UNDP cut-offs (Very High ≥0.800, High ≥0.700, Medium ≥0.550).
   return [
     { label: "Low", min: 0, max: 0.55 },
@@ -553,6 +599,7 @@ export function formatDemocracyAxisValue(
   if (key === "gpi") return `${idx.rating} · ${score.toFixed(3)}`;
   if (key === "happiness") return `${idx.rating} · ${score.toFixed(3)}`;
   if (key === "gdi") return `${idx.rating} · ${score} posts`;
+  if (key === "wjp-rule-of-law") return `${idx.rating} · ${score.toFixed(2)}`;
   return `${idx.rating} · ${score}`;
 }
 
