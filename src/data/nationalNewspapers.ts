@@ -13694,7 +13694,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Press Union of Liberia Audit 2023"
       },
       "revenueModel": "Print newsstand sales and local advertising",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/lr/the-inquirer.png",
+      "logoExplainer": "Vertical black masthead with white italic 'The' over stacked bold white 'INQUIRER' — The Inquirer (Liberia) brand mark.",
+      "licenceNote": "The Inquirer masthead from the newspaper's official site logo asset (inquirernewspaper.com/wp-content/uploads/2019/07/inquirer-logo1.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://inquirernewspaper.com",
         "https://en.wikipedia.org/wiki/Media_of_Liberia"
@@ -25295,7 +25298,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "News784 Web Metrics 2023"
       },
       "revenueModel": "Online display advertising and sponsored content",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/vc/news784.png",
+      "logoExplainer": "Blue-yellow-green signal-tower 'N' with SVG map beside grey 'NEWS' and flag-coloured '784', tagline \"St. Vincent's #1 News Source\" — News784 brand mark.",
+      "licenceNote": "News784 brand mark from the outlet's official site logo asset (news784.com/wp-content/uploads/2018/07/logo_580x150.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://news784.com",
         "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"

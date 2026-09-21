@@ -17,12 +17,20 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "tl-suara-timor-lorosae",
-    src: "tmp/batch99-install/tl-suara-timor-lorosae.png",
+    id: "lr-the-inquirer",
+    src: "tmp/batch100-install/lr-the-inquirer.png",
     explainer:
-      "Yellow 'SuaraTimorLorosae.com' on blue beside a yellow ST-stars CORP badge reading 'Suara Timor Lorosae Corporation' — Suara Timor Lorosae brand banner.",
+      "Vertical black masthead with white italic 'The' over stacked bold white 'INQUIRER' — The Inquirer (Liberia) brand mark.",
     licence:
-      "Suara Timor Lorosae brand banner from the newspaper's official site asset (suara-timor-lorosae.com/wp-content/uploads/2013/06/banner-atas1sedang.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "The Inquirer masthead from the newspaper's official site logo asset (inquirernewspaper.com/wp-content/uploads/2019/07/inquirer-logo1.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "vc-news784",
+    src: "tmp/batch100-install/vc-news784.png",
+    explainer:
+      "Blue-yellow-green signal-tower 'N' with SVG map beside grey 'NEWS' and flag-coloured '784', tagline \"St. Vincent's #1 News Source\" — News784 brand mark.",
+    licence:
+      "News784 brand mark from the outlet's official site logo asset (news784.com/wp-content/uploads/2018/07/logo_580x150.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
