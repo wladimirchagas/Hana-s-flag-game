@@ -3952,7 +3952,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Groupe L'Avenir Media Review 2023"
       },
       "revenueModel": "Print newspaper sales and commercial advertising",
-      "noImageReason": "No authentic masthead is shown yet. A placeholder graphic was removed. Wikimedia Commons, the newspaper's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
+      "logo": "newspaper-logos/cd/l-avenir.png",
+      "logoExplainer": "Blue rounded 'GA' app-icon with white 'GROUPE L'AVENIR' under the monogram, beside the strap 'Le portail numérique des médias du Groupe L'avenir' — L'Avenir (DRC) publisher brand mark.",
+      "licenceNote": "Groupe L'Avenir logo from the group's own site (groupelavenir.org/images/logo14.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode. L'Avenir is published by Groupe L'Avenir.",
+
       "sources": [
         "https://groupelavenir.cd",
         "https://fr.wikipedia.org/wiki/L%27Avenir_(journal_congolais)"
