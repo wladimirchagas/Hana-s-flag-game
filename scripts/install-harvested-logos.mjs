@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "sc-seychelles-weekly",
-    src: "tmp/batch120-install/sc-seychelles-weekly.png",
+    id: "tv-fenui-news",
+    src: "tmp/batch121-install/tv-fenui-news.png",
     explainer:
-      "Banner masthead reading 'Le Nouveau SEYCHELLES WEEKLY' over an island seascape, with the tagline 'Putting Seychelles First-' — official site banner from seychellesweekly.com (Wayback Machine, July 2006).",
+      "White calligraphic 'Fenui' wordmark on an olive-green banner — masthead from the Tuvalu Media Department Fenui newsletter (March 2015 issue hosted by the Tuvalu Permanent Mission to the UN).",
     licence:
-      "Seychelles Weekly trademark bundled from the publisher's official site brand assets (seychellesweekly.com banner, archived via the Wayback Machine) for educational reference in Learn mode.",
+      "Fenui trademark bundled from the Tuvalu Media Department / Government of Tuvalu newsletter brand assets (Fenui PDF masthead via un.int/tuvalu) for educational reference in Learn mode.",
   },
 ];
 
