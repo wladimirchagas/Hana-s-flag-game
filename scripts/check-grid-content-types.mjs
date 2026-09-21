@@ -87,6 +87,31 @@ assert.ok(
 );
 
 assert.ok(
+  learnPageSrc.includes('panelTab === "sports"') &&
+    learnPageSrc.includes("LearnPanelSymbolBody") &&
+    learnPageSrc.includes("LEARN_PANEL_SPORTS_SECTIONS"),
+  "LearnPage must expose a Sports tab with Football + Olympics symbol choosers",
+);
+
+assert.ok(
+  learnPageSrc.includes("OverviewIdentity") &&
+    learnPageSrc.includes("gridPassportId"),
+  "Overview must offer Flag/Coat of arms pills; Travel must host passports",
+);
+
+const tabsSrc = fs.readFileSync(
+  path.join(root, "src/lib/learnPanelTabs.ts"),
+  "utf8",
+);
+assert.ok(
+  /sports:\s*"Sports"/.test(tabsSrc) &&
+    tabsSrc.includes('case "passport":') &&
+    tabsSrc.includes('return "travel"') &&
+    tabsSrc.includes('return "sports"'),
+  "learnPanelTabs must label Sports and route passport→Travel, crests/NOCs→Sports",
+);
+
+assert.ok(
   learnPageSrc.includes("<PoliticalPartyDetails") ||
     fs
       .readFileSync(

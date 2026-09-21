@@ -21,14 +21,17 @@ export function CountryItemChooser({
   items,
   resolveImage,
   onSelect,
+  heading: headingOverride,
 }: {
   type: MultiItemGridContentType;
   countryName: string;
   items: readonly CountryChooserItem[];
   resolveImage: (raw: string) => string;
   onSelect: (id: string) => void;
+  /** Override the default "{Show label} in {country}" heading. */
+  heading?: string;
 }) {
-  const heading = chooserHeading(type, countryName);
+  const heading = headingOverride ?? chooserHeading(type, countryName);
 
   if (items.length === 0) {
     return (

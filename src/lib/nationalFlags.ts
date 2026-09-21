@@ -14,6 +14,14 @@ export function countryNationalFlags(countryCode: string): readonly NationalFlag
   return NATIONAL_FLAGS[countryCode] ?? [];
 }
 
+/** Symbols of one category for a country (passports, football crests, NOCs, …). */
+export function symbolsOfCategory(
+  countryCode: string,
+  category: NationalFlagCategory,
+): readonly NationalFlag[] {
+  return countryNationalFlags(countryCode).filter((f) => f.category === category);
+}
+
 /** How many flags the tab will show — the count badge on the tab strip. */
 export function nationalFlagCount(countryCode: string): number {
   return countryNationalFlags(countryCode).length;

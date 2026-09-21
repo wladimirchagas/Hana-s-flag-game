@@ -13,6 +13,7 @@ export const LEARN_PANEL_TAB_IDS = [
   "indices",
   "media",
   "travel",
+  "sports",
   "politics",
 ] as const;
 
@@ -25,11 +26,12 @@ export const LEARN_PANEL_TAB_LABELS: Record<LearnPanelTabId, string> = {
   indices: "Indices",
   media: "Media",
   travel: "Travel",
+  sports: "Sports",
   politics: "Politics",
 };
 
-/** Country fact-sheet only — Media/Travel/Politics live in their own widgets
- *  below when drilled into a country's national-symbols tabs. */
+/** Country fact-sheet only — Media/Travel/Sports/Politics live in their own
+ *  widgets below when drilled into a country's national-symbols tabs. */
 export const LEARN_PANEL_SUBDIVISION_TABS: readonly LearnPanelTabId[] = [
   "facts",
   "indices",
@@ -46,23 +48,29 @@ export function panelTabForGridContent(
       return "media";
     case "airline":
     case "tourismlogo":
-      return "travel";
-    case "party":
-      return "politics";
-    // Flags, coats of arms, passports, crests and Olympic logos remain the
-    // leading identity image on Overview (and in subdivision drill-in).
-    case "flag":
-    case "coatofarms":
     case "passport":
+      return "travel";
     case "footballcrest":
     case "olympiccommittee":
+      return "sports";
+    case "party":
+      return "politics";
+    // Flag / coat of arms lead Overview (pills switch between them).
+    case "flag":
+    case "coatofarms":
       return "facts";
   }
 }
 
-/** Media / Travel sub-sections that host a multi-item chooser. */
+/** Media / Travel / Sports sub-sections that host a multi-item chooser. */
 export type LearnPanelMediaSection = "newspaper" | "newsagency" | "broadcaster";
-export type LearnPanelTravelSection = "airline" | "tourismlogo";
+export type LearnPanelTravelSection = "airline" | "tourismlogo" | "passport";
+export type LearnPanelSportsSection = "footballcrest" | "olympiccommittee";
+
+/** National-symbol categories browsed via LearnPanelSymbolBody. */
+export type LearnPanelSymbolSection =
+  | "passport"
+  | LearnPanelSportsSection;
 
 export const LEARN_PANEL_MEDIA_SECTIONS: readonly {
   id: LearnPanelMediaSection;
@@ -79,6 +87,15 @@ export const LEARN_PANEL_TRAVEL_SECTIONS: readonly {
 }[] = [
   { id: "airline", label: "Airlines" },
   { id: "tourismlogo", label: "Tourism" },
+  { id: "passport", label: "Passports" },
+];
+
+export const LEARN_PANEL_SPORTS_SECTIONS: readonly {
+  id: LearnPanelSportsSection;
+  label: string;
+}[] = [
+  { id: "footballcrest", label: "Football" },
+  { id: "olympiccommittee", label: "Olympics" },
 ];
 
 export function mediaSectionForGridContent(
@@ -93,6 +110,15 @@ export function mediaSectionForGridContent(
 export function travelSectionForGridContent(
   type: GridContentType,
 ): LearnPanelTravelSection | null {
-  if (type === "airline" || type === "tourismlogo") return type;
+  if (type === "airline" || type === "tourismlogo" || type === "passport") {
+    return type;
+  }
+  return null;
+}
+
+export function sportsSectionForGridContent(
+  type: GridContentType,
+): LearnPanelSportsSection | null {
+  if (type === "footballcrest" || type === "olympiccommittee") return type;
   return null;
 }
