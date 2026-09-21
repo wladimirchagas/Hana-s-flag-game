@@ -19028,7 +19028,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "PNA Ministry of Information Register"
       },
       "revenueModel": "Government budget allocations and official legal notices",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ps/al-hayat-al-jadida.png",
+      "logoExplainer": "Large red Arabic 'الحياة' wordmark with smaller grey 'الجديدة' and a red bar — Al-Hayat Al-Jadida masthead.",
+      "licenceNote": "Al-Hayat Al-Jadida masthead from the publisher's official site brand assets (alhayat-j.com/images/logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.alhayat-j.com",
         "https://en.wikipedia.org/wiki/Al-Hayat_al-Jadida"
