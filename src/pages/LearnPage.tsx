@@ -758,6 +758,25 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     setSubdivisionCountry(null);
   }
 
+  /** Clear whatever the information panel is showing — country/polity selection,
+   *  hover preview, subdivision drill-in, and any Show-grid item pick — so the
+   *  panel returns to the empty "Learn your flags" prompt. */
+  const clearPanelSelection = useCallback(() => {
+    setSelected(null);
+    setHovered(null);
+    clearGridItemSelection();
+    setSelectedNationalFlag(null);
+    setSelectedGroupMeaning(null);
+    setSelectedParty(null);
+    setSelectedCapital(null);
+    setSelectedSubdivisionAirline(null);
+    setSelectedSubdivisionBroadcaster(null);
+    setSelectedSubdivisionTourismLogo(null);
+    setSelectedSubdivisionNewsAgency(null);
+    setSelectedSubdivisionNewspaper(null);
+    exitSubdivisionMode();
+  }, [clearGridItemSelection]);
+
 
 
   const handleEnterSubdivisionMode = useCallback(async () => {
@@ -2159,6 +2178,17 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
 
       <div className="learn-fs__panel-wrap">
         <aside className="learn-fs__panel" aria-live="polite">
+          {(selected != null || (subdivisionMode && subdivisionCountry != null)) && (
+            <button
+              type="button"
+              className="learn-fs__unselect"
+              onClick={clearPanelSelection}
+              aria-label="Unselect"
+              title="Unselect"
+            >
+              <UiIcon name="close" />
+            </button>
+          )}
           <div className="learn-fs__detail">
             {isModernEra && (
               <div className="learn-fs__widget-search">
@@ -2567,6 +2597,20 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         {subdivisionMode && subdivisionCountry && (
           <>
           <aside className="learn-fs__panel" aria-live="polite">
+            {(selectedSubdivision != null || selectedCapital != null) && (
+              <button
+                type="button"
+                className="learn-fs__unselect"
+                onClick={() => {
+                  setSelectedSubdivision(null);
+                  setSelectedCapital(null);
+                }}
+                aria-label="Unselect division"
+                title="Unselect"
+              >
+                <UiIcon name="close" />
+              </button>
+            )}
             <div className="learn-fs__detail">
               <div className="learn-fs__widget-search">
                 <span className="learn-fs__search-label" aria-hidden="true">

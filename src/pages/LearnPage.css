@@ -517,6 +517,57 @@
   gap: 0.85rem;
 }
 
+/* Clear the panel selection — top-right of the information card. Sits on the
+   same row as the "Choose a country/division" label (or above a historical
+   polity title), so it does not collide with the +/✓ Hana corner button in
+   the search row beneath. */
+.learn-fs__unselect {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.5rem;
+  z-index: 1;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-soft);
+  background: var(--cream, var(--paper));
+  border: 2px solid var(--ink-faint, var(--ink));
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 120ms ease, background 120ms ease, color 120ms ease,
+    border-color 120ms ease;
+}
+
+.learn-fs__unselect:hover,
+.learn-fs__unselect:focus-visible {
+  outline: none;
+  color: #fff;
+  background: var(--coral);
+  border-color: var(--ink);
+  transform: translateY(-1px);
+}
+
+.learn-fs__unselect:active {
+  transform: translateY(1px);
+}
+
+.learn-fs__unselect .ui-icon {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+/* When the unselect control is present, keep the search label from running
+   underneath it. */
+.learn-fs__panel:has(.learn-fs__unselect) .learn-fs__search-label {
+  padding-right: 2rem;
+}
+
+.learn-fs__panel:has(.learn-fs__unselect) .learn-fs__name {
+  padding-right: 2rem;
+}
+
 /* "Add to my list" as a compact +/✓ button in the widget's top-right corner
    (replaces the old full-width Hana's-Game row). */
 .learn-fs__hana-corner {
