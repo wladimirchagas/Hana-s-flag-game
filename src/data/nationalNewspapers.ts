@@ -8662,7 +8662,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "The Chronicle Audience Review 2024"
       },
       "revenueModel": "Digital banner advertising and philanthropic investigative grants",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/gm/the-chronicle-gambia.png",
+      "logoExplainer": "Blackletter 'The Chronicle' masthead in a blue-framed box over the slogan 'Safeguarding Liberty through Journalism' — The Chronicle (Gambia) brand mark.",
+      "licenceNote": "The Chronicle (Gambia) masthead from the newspaper's official site logo asset (chronicle.gm/wp-content/uploads/2018/03/2x-logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.chronicle.gm"
       ]
