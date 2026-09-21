@@ -1542,6 +1542,55 @@ country or gains an implausible year, or if a curated `modernName` points at a c
 no adoption year (which would silently refuse the flag the author intended). It also prints
 every borrow the gate refused, so the curation stays visible. Never weaken it; fix the data.
 
+## Index labels: thematic groups, year + publisher, never "Global" — hard rule, do not override without approval
+
+**Every Learn-mode democracy / governance / ratings index label — map colour dropdown,
+chart axis pickers, flag-grid Group-by, country-widget rows, map legend title, and any
+future surface — MUST come from `DEMOCRACY_INDEX_META` via `getDemocracyIndexLabel()`
+in `src/lib/democracyColors.ts`. The format is always `{name}, {year} ({publisher})`
+(e.g. `Peace Index, 2026 (Institute for Economics & Peace)`). Hand-written index titles
+are forbidden — present and future.**
+
+### Why this rule exists
+
+Indexes arrived with inconsistent names ("Global Peace Index" vs "Peace Index"), missing
+years, missing publishers, and an unsorted flat dropdown. Side-by-side they read as an
+ad-hoc list rather than one Learn-mode family. Centralising the label makes "same naming
+practice" structural: a new index cannot ship without a year, a publisher, a theme group,
+and the shared format.
+
+### Rules
+
+1. **`DEMOCRACY_INDEX_META` is the only source of index display names.** Adding an index
+   means adding a meta row (`name`, `year`, `publisher`, `theme`) in the same change as
+   `DEMOCRACY_INDEX_KEYS` and `INDEX_MAP_COLOR_REGISTRY`. Never hand-write a title in a
+   component, Group-by map, or fact-sheet row.
+2. **`name` never contains "Global".** Coverage is already global; the word is noise.
+   Prefer the short index name (`Peace Index`, `Gender Gap Index`, `Soft Power Index`).
+3. **Label format is always `{name}, {year} ({publisher})`** — built by
+   `formatDemocracyIndexLabel()` / `getDemocracyIndexLabel()`. The year is the bundled
+   COUNTRY_FACTS edition year; the publisher is the organisation responsible for the index.
+4. **Menus are grouped thematically, then A–Z within each group.**
+   `DEMOCRACY_INDEX_THEME_GROUPS` + `getDemocracyIndexMenuGroups()` drive the map dropdown
+   (with line separators between groups), the chart axis `<optgroup>`s, and the flag-grid
+   Group-by optgroups. Never reintroduce a flat unsorted `DEMOCRACY_INDEX_KEYS.map(…)`.
+5. **Never weaken `scripts/check-index-labels.mjs`** to force a label through. If it fires,
+   the label or its wiring is wrong — fix the meta / the caller, not the check.
+6. **Verify in the running app** (the mandatory visual-verification rule applies): open the
+   Learn map's indexes control, confirm thematic groups with separators, A–Z within each
+   group, no "Global" in any name, and every option shows year + publisher; open a country
+   widget and confirm the same label form on each index row.
+
+### Enforcement
+
+`scripts/check-index-labels.mjs` (`npm run index-labels:check`, in `npm run flags:check`
+and the `check-era-maps` CI job — it imports `democracyColors.ts` / `countryFacts.ts`, so
+it needs Node 22.18+) **fails the build** when meta coverage drifts from
+`DEMOCRACY_INDEX_KEYS`, when a name contains "Global", when the label format drifts, when
+`meta.year` disagrees with COUNTRY_FACTS, when menu groups are unsorted or incomplete, when
+a UI surface stops calling the shared helpers, or when a hand-written `Global … Index`
+string reappears under `src/`. Never weaken it; fix the label.
+
 ## Index map colours must share one green→red palette — hard rule, do not override without approval
 
 **Every Learn-mode democracy / governance / ratings index map (Freedom House, V-Dem, The Economist,
@@ -1604,16 +1653,7 @@ The widget shows, for a modern country, these rows (each rendered only when its 
 | Internet domain | `country.tld` |
 | GDP | `country.gdpLcu`, `country.gdpUsd` (World Bank) |
 | GDP per capita | `country.gdpPerCapitaLcu`, `country.gdpPerCapitaUsd` (World Bank) |
-| Freedom House | `country.democracy.freedomHouse` |
-| V-Dem | `country.democracy.vDem` |
-| The Economist | `country.democracy.economist` |
-| Corruption Perceptions Index | `country.democracy.cpi` |
-| Democracy Perception Index | `country.democracy.perception` |
-| RSF Press Freedom | `country.democracy.rsfPress` |
-| Human Development Index | `country.democracy.hdi` |
-| Global Gender Gap Index | `country.democracy.genderGap` |
-| Global Peace Index | `country.democracy.gpi` |
-| World Happiness Report | `country.democracy.happiness` |
+| Freedom House / V-Dem / Economist / CPI / DPI / RSF / HDI / Gender Gap / Peace / Happiness / Soft Power / Diplomacy / WJP / IMD / ETR / Digital News / Terrorism (and any future index) | `country.democracy.*` — row **label** from `getDemocracyIndexLabel()` (`{name}, {year} ({publisher})`) |
 | Government | `GOVERNMENT_TYPES[code]` (curated local map) |
 
 ### Why this rule exists

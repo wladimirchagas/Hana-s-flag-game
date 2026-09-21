@@ -65,6 +65,7 @@ on:
       - "scripts/data/gggr2026Data.mjs"
       - "scripts/check-gpi-data.mjs"
       - "scripts/check-index-map-colors.mjs"
+      - "scripts/check-index-labels.mjs"
       - "src/lib/democracyColors.ts"
       - "scripts/check-etr-data.mjs"
       - "scripts/data/etr-2024.csv"
@@ -351,6 +352,11 @@ jobs:
       # or drifts from indexBandColors(INDEX_MAP_PALETTE).
       - name: Verify every index map samples the shared INDEX_MAP_PALETTE
         run: node scripts/check-index-map-colors.mjs
+
+      # Universal index labelling: thematic groups, no "Global", always
+      # "{name}, {year} ({publisher})". Imports democracyColors.ts + countryFacts.
+      - name: Verify every index label uses DEMOCRACY_INDEX_META
+        run: node scripts/check-index-labels.mjs
 
   check-flag-meanings:
     runs-on: ubuntu-latest

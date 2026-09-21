@@ -65,6 +65,12 @@ import {
   IDEOLOGY_POSITION_ORDER,
 } from "../data/politicalParties";
 import { COUNTRY_FACTS } from "../data/countryFacts";
+import {
+  DEMOCRACY_INDEX_KEYS,
+  getDemocracyIndexLabel,
+  getDemocracyIndexMenuGroups,
+  type DemocracyIndexKey,
+} from "../lib/democracyColors";
 
 import { GridImage } from "./GridImage";
 
@@ -179,23 +185,10 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   similarity: "By similarity",
   "drive-side": "By driving side",
   "aspect-ratio": "By aspect ratio",
-  "freedom-house": "Freedom House rating",
-  "v-dem": "V-Dem regime type",
-  economist: "The Economist Democracy Index",
-  cpi: "Corruption Perceptions Index",
-  perception: "Democracy Perception Index",
-  "rsf-press": "RSF Press Freedom Index",
-  hdi: "Human Development Index",
-  "gender-gap": "Global Gender Gap Index",
-  gpi: "Global Peace Index",
-  happiness: "World Happiness Report",
-  "soft-power": "Global Soft Power Index",
-  gdi: "Global Diplomacy Index",
-  "wjp-rule-of-law": "WJP Rule of Law Index",
-  "imd-competitiveness": "IMD World Competitiveness Ranking",
-  etr: "Ecological Threat Index",
-  "digital-news": "Digital News Report Index",
-  gti: "Global Terrorism Index",
+  // Index Group-by labels come from DEMOCRACY_INDEX_META (year + publisher).
+  ...(Object.fromEntries(
+    DEMOCRACY_INDEX_KEYS.map((k) => [k, getDemocracyIndexLabel(k)]),
+  ) as Record<DemocracyIndexKey, string>),
   // Political-parties-view only — buckets along the sourced ideology spectrum.
   "party-ideology": "By ideology",
   // Passports-view only — buckets by the passport cover's colour family.
@@ -1388,11 +1381,27 @@ export function FlagGrid({
             >
               {(Object.keys(GROUP_MODE_LABELS) as GroupMode[])
                 .filter(groupModeAvailable)
+                .filter((m) => !DEMOCRACY_GROUP_MODES.has(m))
                 .map((m) => (
                   <option key={m} value={m}>
                     {GROUP_MODE_LABELS[m]}
                   </option>
                 ))}
+              {getDemocracyIndexMenuGroups().map((group) => {
+                const opts = group.indexes
+                  .map((m) => m.key as GroupMode)
+                  .filter(groupModeAvailable);
+                if (opts.length === 0) return null;
+                return (
+                  <optgroup key={group.theme.id} label={group.theme.label}>
+                    {opts.map((m) => (
+                      <option key={m} value={m}>
+                        {GROUP_MODE_LABELS[m]}
+                      </option>
+                    ))}
+                  </optgroup>
+                );
+              })}
             </select>
           </label>
         </div>

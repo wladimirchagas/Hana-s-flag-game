@@ -17,13 +17,13 @@ import {
 } from "../lib/chartAxes";
 import { CONTINENT_ORDER, SUBREGION_GROUPS } from "../lib/continentGroups";
 import {
-  DEMOCRACY_INDEX_KEYS,
   clipDemocracyAxisBands,
   clipTrendToDomain,
   countryMatchesIndexRatings,
   democracyIndexRatingOptions,
   democracyOlsTrend,
   getDemocracyIndexLabel,
+  getDemocracyIndexMenuGroups,
 } from "../lib/democracyColors";
 import { normalizeForSearch } from "../lib/searchNormalize";
 import { GridImage } from "./GridImage";
@@ -565,13 +565,15 @@ export function DemocracyIndexChart({
             onChange={(e) => onXKeyChange(e.target.value as ChartAxisKey)}
             aria-label="Chart X axis"
           >
-            <optgroup label="Indexes">
-              {DEMOCRACY_INDEX_KEYS.map((key) => (
-                <option key={key} value={key}>
-                  {getChartAxisLabel(key)}
-                </option>
-              ))}
-            </optgroup>
+            {getDemocracyIndexMenuGroups().map((group) => (
+              <optgroup key={`x-${group.theme.id}`} label={group.theme.label}>
+                {group.indexes.map((meta) => (
+                  <option key={meta.key} value={meta.key}>
+                    {getDemocracyIndexLabel(meta.key)}
+                  </option>
+                ))}
+              </optgroup>
+            ))}
             <optgroup label="Country metrics">
               {CHART_METRIC_KEYS.map((key) => (
                 <option key={key} value={key}>
@@ -589,13 +591,15 @@ export function DemocracyIndexChart({
             onChange={(e) => onYKeyChange(e.target.value as ChartAxisKey)}
             aria-label="Chart Y axis"
           >
-            <optgroup label="Indexes">
-              {DEMOCRACY_INDEX_KEYS.map((key) => (
-                <option key={key} value={key}>
-                  {getChartAxisLabel(key)}
-                </option>
-              ))}
-            </optgroup>
+            {getDemocracyIndexMenuGroups().map((group) => (
+              <optgroup key={`y-${group.theme.id}`} label={group.theme.label}>
+                {group.indexes.map((meta) => (
+                  <option key={meta.key} value={meta.key}>
+                    {getDemocracyIndexLabel(meta.key)}
+                  </option>
+                ))}
+              </optgroup>
+            ))}
             <optgroup label="Country metrics">
               {CHART_METRIC_KEYS.map((key) => (
                 <option key={key} value={key}>
