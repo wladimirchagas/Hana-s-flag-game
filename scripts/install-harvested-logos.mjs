@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "to-talaki",
-    src: "tmp/batch103-install/to-talaki.png",
+    id: "ki-kiribati-updates",
+    src: "tmp/batch104-install/ki-kiribati-updates.png",
     explainer:
-      "Blue rectangular masthead with dark serif 'Talaki' wordmark and small white star and bird marks above the final letters — Talaki (Tonga) brand mark.",
+      "Maneaba (meeting-house) sketch beside bold 'KIRIBATI UPDATES' capitals over the strap 'KIRIBATI EVENTS. PHOTOS & NEWS UPDATE' — Kiribati Updates brand mark.",
     licence:
-      "Talaki masthead from the newspaper's official site (talaki.to/images/Talaki-logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Kiribati Updates masthead from the outlet's own site (kiribatiupdates.com.ki/wp-content/uploads/2014/08/KU_logo2b2.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 

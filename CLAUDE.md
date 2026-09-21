@@ -384,6 +384,51 @@ design, http(s) source, bundled image matching its recorded sha256, a `licenceNo
 choice is correct — that is rule 7's visual verification plus the montage-scan of rule 5. Never weaken
 the check to force a crest through; fix the crest or its sourcing.
 
+## Football association World Cup records: always show participations and titles — hard rule, do not override without approval
+
+**Whenever a football-association crest is shown in the Learn-mode information panel (world-map Show →
+Football associations, or the country's Sports / National symbols football section), the panel MUST
+also show that association's sourced FIFA World Cup participations and titles — men's and women's.
+Zeros are honest for associations that have never qualified or won; suppressing the rows is not.**
+
+### Why this rule exists
+
+Owner report (2026-09): World Cup participation / win figures that used to sit with the crest had
+disappeared from the information panel. Olympic committee logos keep their Games / medal / athlete
+`stats` rows; football crests had no equivalent attachment, so selecting a crest showed the logo and
+design alone. An omission the user cannot see makes an incomplete fact-sheet look complete — the same
+class of bug as a missing Torres Strait Islander Flag entry.
+
+### Rules
+
+1. **Every `footballcrest` entry displays four sourced rows** via `withFootballCrestStats()` /
+   `footballCrestStats()` in `src/lib/footballCrestStats.ts`, backed by `src/data/worldCupRecords.ts`:
+   Men's World Cups participated, Men's World Cup titles, Women's World Cups participated, Women's
+   World Cup titles. Titles stay in lock-step with `worldCupTitles.ts` (the Football-crests grid
+   groupings). Appearances come from Wikipedia's national-team appearance tables (men through the
+   2026 tournament; women through 2023 — future / qualified-only cells are NOT counted).
+2. **Both panel surfaces must attach the rows** — `LearnPage` (world-map Show path) AND
+   `NationalFlagDetails` (National symbols / Sports widget). Attaching in only one place reintroduces
+   the bug on the other.
+3. **Never remove, rename, or gate the four rows behind a feature flag**, and never drop
+   `flag.stats?.map` / `panelSymbol.stats` rendering so the rows have nowhere to go. A crest with no
+   record ships with zeros, not with silence.
+4. **Re-generate with `node scripts/build-world-cup-records.mjs`** after a new World Cup concludes;
+   never hand-edit `worldCupRecords.ts` for a one-off.
+5. **Verify in the running app** (the mandatory visual-verification rule applies): open Show →
+   Football associations, select Brazil, and confirm the four rows (23 / 5 / 9 / 0 as of men's 2026
+   and women's 2023); select Australia and confirm men's appearances and women's appearances both
+   render; open the same crest from the country's Sports tab and confirm the rows appear there too.
+
+### Enforcement
+
+`scripts/check-football-crest-stats.mjs` (`npm run flags:check:football-wc`, in `npm run flags:check`,
+`npm run test:ui`, and the `check-era-maps` CI job) **fails the build** when a footballcrest lacks a
+`WORLD_CUP_RECORDS` entry, when titles drift from `worldCupTitles.ts`, when women's appearances exceed
+the number of completed tournaments (the future-cell bug), or when `LearnPage` /
+`NationalFlagDetails` stop calling `withFootballCrestStats` / stop rendering `stats`. Never weaken it
+to hide a crest; fix the record or the wiring.
+
 ## Capital-city flags: never blindly trust P41, missing ≠ nonexistent — hard rule, do not override without approval
 
 **The Learn-mode "View capital" drill-down (`CapitalDetails.tsx`, wired in `LearnPage.tsx`) shows the

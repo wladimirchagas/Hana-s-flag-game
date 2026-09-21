@@ -2,6 +2,7 @@ import { UiIcon } from "./UiIcon";
 import { FlagMeaning } from "./FlagMeaning";
 import { NATIONAL_FLAG_MEANINGS, NATIONAL_INDEPENDENCE, type NationalFlag } from "../data/nationalFlags";
 import type { FlagMeaning as FlagMeaningData } from "../data/flagMeanings";
+import { withFootballCrestStats } from "../lib/footballCrestStats";
 import { flagYearLabel, meaningLabel, symbolNoun } from "../lib/nationalFlags";
 
 /**
@@ -25,7 +26,7 @@ import { flagYearLabel, meaningLabel, symbolNoun } from "../lib/nationalFlags";
  * `LearnPage` therefore scrolls to that panel instead of opening this one.
  */
 export function NationalFlagDetails({
-  flag,
+  flag: flagProp,
   countryCode,
   countryName,
   baseUrl,
@@ -45,6 +46,11 @@ export function NationalFlagDetails({
    */
   meanings?: Record<string, FlagMeaningData>;
 }) {
+  // Football-association crests always carry sourced World Cup rows — attach
+  // them here so every surface that opens this widget (National symbols tab,
+  // Sports panel) shows them, and so they cannot be silently dropped from the
+  // underlying entry.
+  const flag = withFootballCrestStats(flagProp);
   const url = flag.path ? `${baseUrl}${flag.path}` : null;
   const years = flagYearLabel(flag);
   // A pre-independence flag is spelled out, not merely badged: which power held the

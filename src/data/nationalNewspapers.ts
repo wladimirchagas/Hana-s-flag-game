@@ -12166,7 +12166,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Kiribati Digital Analytics 2024"
       },
       "revenueModel": "Digital display advertising and community sponsorship",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/ki/kiribati-updates.png",
+      "logoExplainer": "Maneaba (meeting-house) sketch beside bold 'KIRIBATI UPDATES' capitals over the strap 'KIRIBATI EVENTS. PHOTOS & NEWS UPDATE' — Kiribati Updates brand mark.",
+      "licenceNote": "Kiribati Updates masthead from the outlet's own site (kiribatiupdates.com.ki/wp-content/uploads/2014/08/KU_logo2b2.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.facebook.com/kiribatiupdates"
       ]

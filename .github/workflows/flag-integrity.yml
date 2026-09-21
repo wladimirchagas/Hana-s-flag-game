@@ -42,6 +42,10 @@ on:
       - "scripts/download-national-flags.mjs"
       - "scripts/build-national-flags.mjs"
       - "scripts/check-national-flags.mjs"
+      - "scripts/check-football-crest-stats.mjs"
+      - "src/data/worldCupRecords.ts"
+      - "src/data/worldCupTitles.ts"
+      - "src/lib/footballCrestStats.ts"
       - "scripts/seed-national-symbols.mjs"
       - "scripts/harvest-national-symbols.mjs"
       - "src/data/nationalFlags.ts"
@@ -332,6 +336,13 @@ jobs:
       # from the curated manifest.
       - name: Verify the national-flags tab is sourced, bundled and agrees with the eras
         run: node scripts/check-national-flags.mjs
+
+      # Football-association crests always show sourced World Cup appearance +
+      # title rows in the Learn panel. This fails if a crest loses its record,
+      # if titles drift from worldCupTitles.ts, or if LearnPage /
+      # NationalFlagDetails stop calling withFootballCrestStats.
+      - name: Verify football-crest World Cup records stay on the panel
+        run: node scripts/check-football-crest-stats.mjs
 
       # Measures each polity's own polygons against the bundled basemap, so it needs the
       # same Node 24 that can load historicalEras.ts directly.
