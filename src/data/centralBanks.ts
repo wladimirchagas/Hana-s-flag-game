@@ -1024,13 +1024,14 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "GT",
       "name": "Bank of Guatemala",
       "website": "http://www.banguat.gob.gt",
-      "logo": "/central-bank-logos/gt/guatemala.jpg",
-      "logoExplainer": "Official brand mark of the Bank of Guatemala: Autoridades de BANGUAT realizan reunión de transición 20231023. Sourced from Wikimedia Commons and visually checked to be the bank mark.",
+      "logo": "/central-bank-logos/gt/guatemala.png",
+      "logoExplainer": "Bank of Guatemala circular seal: a Resplendent Quetzal perched on a Mayan temple (Temple I at Tikal) with green sprigs, ringed by BANCO DE GUATEMALA lettering — the bank's institutional cognisance, not a photograph of its headquarters.",
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
       "sources": [
+        "https://commons.wikimedia.org/wiki/File:Bank_of_Guatemala_logo.png",
+        "https://www.banguat.gob.gt/",
         "https://www.wikidata.org/wiki/Q3359424",
-        "http://www.banguat.gob.gt",
-        "https://commons.wikimedia.org/wiki/File:Autoridades_de_BANGUAT_realizan_reuni%C3%B3n_de_transici%C3%B3n_20231023_(cropped).jpg"
+        "http://www.banguat.gob.gt"
       ]
     }
   ],
@@ -2271,13 +2272,14 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "SE",
       "name": "Sveriges Riksbank",
       "website": "https://riksbank.se",
-      "logo": "/central-bank-logos/se/riksbank.jpg",
-      "logoExplainer": "Sveriges Riksbank wordmark in a formal typeface — Scandinavia's oldest central bank, using a minimal institutional identity.",
-      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
+      "logo": "/central-bank-logos/se/riksbank.svg",
+      "logoExplainer": "Sveriges Riksbank mark: three crowns above crossed cornucopias with the Latin motto HINC ROBUR ET SECURITAS, above the stacked wordmark SVERIGES RIKSBANK — the bank's heraldic institutional identity.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
+        "https://en.wikipedia.org/wiki/File:Riksbanken_Logo.svg",
+        "https://www.riksbank.se/",
         "https://www.wikidata.org/wiki/Q564652",
-        "https://riksbank.se",
-        "https://commons.wikimedia.org/wiki/File:Riksbanken_skylt.jpg"
+        "https://riksbank.se"
       ]
     }
   ],
@@ -2843,13 +2845,13 @@ export const CENTRAL_BANKS: Record<string, readonly CentralBank[]> = {
       "countryCode": "ZW",
       "name": "Reserve Bank of Zimbabwe",
       "website": "https://www.rbz.co.zw/",
-      "logo": "/central-bank-logos/zw/zimbabwe.jpg",
-      "logoExplainer": "Official brand mark of the Reserve Bank of Zimbabwe: This is the obverse of a paper banknote of the Zimbabwe Dollar. Sourced from Wikimedia Commons and visually checked to be the bank mark.",
-      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
+      "logo": "/central-bank-logos/zw/zimbabwe.png",
+      "logoExplainer": "Reserve Bank of Zimbabwe circular seal: the Chiremba Balancing Rocks in gold on a blue disc, ringed by RESERVE BANK OF ZIMBABWE lettering — the bank's institutional emblem, not a currency-note vignette.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
       "sources": [
-        "https://www.wikidata.org/wiki/Q1025119",
+        "https://en.wikipedia.org/wiki/File:RESERVE_BANK_OF_ZIMBABWE_LOGO.png",
         "https://www.rbz.co.zw/",
-        "https://commons.wikimedia.org/wiki/File:Zimbabwe_%2425m_2008_Obverse_(cropped).jpg"
+        "https://www.wikidata.org/wiki/Q1025119"
       ]
     }
   ]

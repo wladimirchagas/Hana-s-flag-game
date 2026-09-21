@@ -12,6 +12,11 @@ import { readFileSync, existsSync, statSync } from "node:fs";
 import { dirname, resolve, extname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { findUserFacingLeaks } from "./lib/userFacingCopy.mjs";
+import {
+  isRejectedLogoFilename,
+  isRejectedLogoSource,
+  isRejectedLogoExplainer,
+} from "./lib/centralBankLogoQuality.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(__dirname, "..", "src", "data", "centralBanks.ts");
@@ -150,9 +155,27 @@ for (const [countryKey, list] of Object.entries(banksByCountry)) {
       withImage++;
     }
 
+    if (hasExplainer && isRejectedLogoExplainer(entry.logoExplainer)) {
+      failures.push(
+        `${ctx}: logoExplainer describes a photo/banknote/building — not a brand mark`,
+      );
+    }
+
     if (hasLogo) {
       const rel = entry.logo.replace(/^\//, "");
       const abs = resolve(PUBLIC_DIR, rel);
+      if (isRejectedLogoFilename(rel.split("/").pop())) {
+        failures.push(
+          `${ctx}: logo filename "${rel}" looks like a photo/banknote/building, not a brand mark`,
+        );
+      }
+      for (const s of entry.sources || []) {
+        if (isRejectedLogoSource(s)) {
+          failures.push(
+            `${ctx}: source cites a photo/banknote/building file (${s}) — not a brand mark`,
+          );
+        }
+      }
       if (!existsSync(abs)) {
         failures.push(`${ctx}: logo file missing at public/${rel}`);
       } else {

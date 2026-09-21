@@ -3990,6 +3990,48 @@ media entry, confirm the core business model matches the target dataset before m
 rendering is guarded by `scripts/check-grid-content-types.mjs` referencing
 `agencyOwnershipBadge`.
 
+## Central-bank logos: brand marks only — never HQ photos, street signs, or banknotes — hard rule, do not override without approval
+
+**The Learn-mode "Central banks" Show view and Finance-tab logo slot must show the institution's
+official brand mark (seal, wordmark, crest) — never a photograph of its headquarters, a street
+sign, a meeting/event photo, or a currency-note vignette. Wikidata `P154` is frequently wrong for
+central banks; a Commons filename is not evidence the file is a logo.**
+
+### Why this rule exists
+
+Reported by the owner (2026-09) on Guatemala's Finance → Central bank panel: the slot titled
+"Central bank logo" showed a photograph of the Bank of Guatemala building (Commons
+`Autoridades de BANGUAT realizan reunión de transición 20231023 (cropped).jpg`) because Wikidata
+`P154` pointed at that file and the pipeline trusted it. The same class of failure had also
+shipped Sweden's `Riksbanken skylt.jpg` (a physical sign photo) and Zimbabwe's
+`$25m 2008 Obverse (cropped).jpg` (a banknote crop). A building photo in a logo slot is the
+central-bank sibling of the Vueling route-map bug.
+
+### Rules
+
+1. **The image is the bank's brand mark** — seal, wordmark, crest, or lockup used on the bank's
+   own publications. Never a HQ exterior, plaza, flagpole, meeting photo, street sign (`skylt`),
+   or banknote obverse/reverse.
+2. **Reject photo-like Commons / Wikipedia filenames at every stage** — harvest, download, build,
+   and `check-central-banks.mjs` all share `scripts/lib/centralBankLogoQuality.mjs`
+   (`isRejectedLogoFilename` / `isRejectedLogoSource` / `isRejectedLogoExplainer`). Known bad
+   files stay in `BAD_COMMONS_LOGO_FILES`; the regex catches the class (reunión, cropped building,
+   skylt, banknote, obverse, headquarters, …).
+3. **When Wikidata `P154` is a photo, source the real mark elsewhere** (Commons under a correct
+   logo filename, or an en.wikipedia fair-use file with `licenceNote`) — or ship `noImageReason`.
+   Never leave the photo wired.
+4. **Never weaken `scripts/check-central-banks.mjs`** to force a photo through. If it fires, the
+   image or its source/explainer is wrong — fix the asset, not the check.
+5. **Verify in the running app** (mandatory visual-verification rule): open Guatemala → Finance and
+   confirm the circular Banco de Guatemala seal (quetzal on a Mayan temple), not the concrete HQ.
+
+### Enforcement
+
+`scripts/check-central-banks.mjs` (`npm run flags:check:central-banks`, in `npm run flags:check`)
+fails the build when a logo path, source URL, or explainer matches the photo/banknote patterns.
+`scripts/download-central-bank-logos.mjs` and `scripts/harvest-central-banks.mjs` refuse those
+filenames so a regen cannot reintroduce them.
+
 ## Commercial airline logos: show brand emblems, never route maps or aircraft photos — hard rule, do not override without approval
 
 **The Learn-mode "Commercial airlines" view (`src/data/commercialAirlines.ts`, rendered by `CommercialAirlinesGrid.tsx` / `FlagGrid.tsx`, images bundled locally under `public/airline-logos/{countryCode}/`) displays the commercial airlines of each country. The logo MUST be the airline's official brand logo, wordmark, or aircraft empennage emblem — never an operational route map, destinations chart, fleet diagram, or aircraft livery photograph.**

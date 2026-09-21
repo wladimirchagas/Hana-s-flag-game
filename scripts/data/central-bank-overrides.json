@@ -142,8 +142,13 @@
       "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
     },
     "GT": {
-      "logoExplainer": "Official brand mark of the Bank of Guatemala: Autoridades de BANGUAT realizan reunión de transición 20231023. Sourced from Wikimedia Commons and visually checked to be the bank mark.",
-      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+      "logoExplainer": "Bank of Guatemala circular seal: a Resplendent Quetzal perched on a Mayan temple (Temple I at Tikal) with green sprigs, ringed by BANCO DE GUATEMALA lettering — the bank's institutional cognisance, not a photograph of its headquarters.",
+      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark.",
+      "sources": [
+        "https://commons.wikimedia.org/wiki/File:Bank_of_Guatemala_logo.png",
+        "https://www.banguat.gob.gt/",
+        "https://www.wikidata.org/wiki/Q3359424"
+      ]
     },
     "GW": {
       "logoExplainer": "Official brand mark of the Central Bank of West African States as used on the institution's own publications. Primary artwork colours include #4d2005. Sourced from Wikimedia Commons and visually checked to be the bank mark, not a national flag or coat of arms.",
@@ -311,8 +316,13 @@
       "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
     },
     "SE": {
-      "logoExplainer": "Sveriges Riksbank wordmark in a formal typeface — Scandinavia's oldest central bank, using a minimal institutional identity.",
-      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+      "logoExplainer": "Sveriges Riksbank mark: three crowns above crossed cornucopias with the Latin motto HINC ROBUR ET SECURITAS, above the stacked wordmark SVERIGES RIKSBANK — the bank's heraldic institutional identity.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/File:Riksbanken_Logo.svg",
+        "https://www.riksbank.se/",
+        "https://www.wikidata.org/wiki/Q564652"
+      ]
     },
     "SG": {
       "logoExplainer": "The Monetary Authority of Singapore logo: a red lion-head profile drawn from Singapore's national lion symbol, paired with the MAS / Monetary Authority of Singapore wordmark in a clean corporate lockup.",
@@ -379,8 +389,13 @@
       "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists."
     },
     "ZW": {
-      "logoExplainer": "Official brand mark of the Reserve Bank of Zimbabwe: This is the obverse of a paper banknote of the Zimbabwe Dollar. Sourced from Wikimedia Commons and visually checked to be the bank mark.",
-      "licenceNote": "Image from Wikimedia Commons; licence per the Commons file page. Bundled for identification of the central bank's official mark."
+      "logoExplainer": "Reserve Bank of Zimbabwe circular seal: the Chiremba Balancing Rocks in gold on a blue disc, ringed by RESERVE BANK OF ZIMBABWE lettering — the bank's institutional emblem, not a currency-note vignette.",
+      "licenceNote": "Non-free logo. English Wikipedia hosts this file under a fair-use rationale as the bank's official mark; it is not on Wikimedia Commons. Bundled here, cited, for identification of the central bank only — the same educational-reference position as non-free football crests and passport covers in this repository. Replace it the moment a freely-licensed file exists.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/File:RESERVE_BANK_OF_ZIMBABWE_LOGO.png",
+        "https://www.rbz.co.zw/",
+        "https://www.wikidata.org/wiki/Q1025119"
+      ]
     },
     "PK": {
       "logoExplainer": "State Bank of Pakistan seal: a green circular device with crescent and star above wheat stalks and bilingual English/Urdu lettering — SBP's official institutional emblem.",
