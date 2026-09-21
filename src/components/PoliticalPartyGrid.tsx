@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { PartyCardName } from "./PartyCardName";
 import { GridImage } from "./GridImage";
+import { applyLogoBackdropTone } from "../lib/logoBackdrop";
 import {
   IDEOLOGY_POSITION_LABELS,
   IDEOLOGY_POSITION_ORDER,
@@ -201,13 +202,14 @@ export function PoliticalPartyGrid({
                           : `Show ${party.name}`
                       }
                     >
-                      <span className="flag-grid__thumb">
+                      <span className="flag-grid__thumb flag-grid__thumb--logo" data-logo-surface="">
                         {party.logo ? (
                           <GridImage
                             src={`${baseUrl}${party.logo}`}
                             alt=""
                             draggable={false}
                             className="flag-grid__thumb-img"
+                            onLoad={(e) => applyLogoBackdropTone(e.currentTarget)}
                             onError={(e) => { e.currentTarget.style.display = "none"; }}
                           />
                         ) : (

@@ -1,4 +1,5 @@
 import { LogoExplainer } from "./LogoExplainer";
+import { EnlargeableLogo } from "./EnlargeableLogo";
 import type { TourismLogo } from "../types/tourismLogo";
 
 /**
@@ -43,22 +44,13 @@ export function TourismLogoDetails({
         <div className="learn-fs__flag-head">
           <span className="entity-summary__label learn-fs__flag-label">Tourism logo</span>
           {logoUrl ? (
-            <button
-              type="button"
-              className="learn-fs__flag"
-              onClick={() => onEnlarge(logoUrl)}
-              aria-label={`Enlarge ${logo.name} logo`}
-            >
-              <img
-                key={logoUrl}
-                src={logoUrl}
-                alt={`${logo.name} logo`}
-                className="learn-fs__flag-img"
-                draggable={false}
-                style={{ objectFit: "contain", maxHeight: "110px", padding: "6px" }}
-              />
-              <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-            </button>
+            <EnlargeableLogo
+              src={logoUrl}
+              alt={`${logo.name} logo`}
+              ariaLabel={`Enlarge ${logo.name} logo`}
+              onEnlarge={onEnlarge}
+              hint="⤢ Click to enlarge"
+            />
           ) : (
             <p className="learn-fs__no-image">
               <strong>No logo image shown.</strong> {logo.noImageReason}

@@ -41,6 +41,10 @@ import {
   type GridContentType,
 } from "../lib/gridContentType";
 import {
+  applyLogoBackdropTone,
+  gridContentNeedsLogoSurface,
+} from "../lib/logoBackdrop";
+import {
   passportColorGroup,
   PASSPORT_COLOR_GROUP_ORDER,
 } from "../lib/passportColorGroups";
@@ -1548,7 +1552,16 @@ export function FlagGrid({
                           : `Select ${item.name}`
                     }
                   >
-                    <span className="flag-grid__thumb">
+                    <span
+                      className={
+                        gridContentNeedsLogoSurface(effectiveContentType)
+                          ? "flag-grid__thumb flag-grid__thumb--logo"
+                          : "flag-grid__thumb"
+                      }
+                      {...(gridContentNeedsLogoSurface(effectiveContentType)
+                        ? { "data-logo-surface": "" }
+                        : {})}
+                    >
                       {url ? (
                         // Keyed by the image URL so a change of "Show" (flag →
                         // coat of arms → passport → crest) MOUNTS A FRESH <img>
@@ -1564,6 +1577,11 @@ export function FlagGrid({
                             alt=""
                             draggable={false}
                             className="flag-grid__thumb-img"
+                            onLoad={
+                              gridContentNeedsLogoSurface(effectiveContentType)
+                                ? (e) => applyLogoBackdropTone(e.currentTarget)
+                                : undefined
+                            }
                             onError={(e) => {
                               const img = e.currentTarget;
                               // First, retry the LOCAL flag once. The bundled SVG

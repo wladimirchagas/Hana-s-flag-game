@@ -17,12 +17,12 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "gm-the-chronicle-gambia",
-    src: "tmp/batch101-install/gm-the-chronicle-gambia.png",
+    id: "to-talaki",
+    src: "tmp/batch103-install/to-talaki.png",
     explainer:
-      "Blackletter 'The Chronicle' masthead in a blue-framed box over the slogan 'Safeguarding Liberty through Journalism' — The Chronicle (Gambia) brand mark.",
+      "Blue rectangular masthead with dark serif 'Talaki' wordmark and small white star and bird marks above the final letters — Talaki (Tonga) brand mark.",
     licence:
-      "The Chronicle (Gambia) masthead from the newspaper's official site logo asset (chronicle.gm/wp-content/uploads/2018/03/2x-logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+      "Talaki masthead from the newspaper's official site (talaki.to/images/Talaki-logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 

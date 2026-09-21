@@ -18,7 +18,7 @@ import { MapViewControl } from "../components/MapViewControl";
 import { DemocracyMapControl } from "../components/DemocracyMapControl";
 import { DemocracyMapLegend } from "../components/DemocracyMapLegend";
 import { DemocracyIndexChart } from "../components/DemocracyIndexChart";
-import type { ChartAxisKey } from "../lib/chartAxes";
+import type { ChartAxisSelection } from "../lib/chartAxes";
 import {
   type DemocracyMapMode,
   getDemocracyColorOverlay,
@@ -48,6 +48,7 @@ import {
   saveGridContentType,
   type GridContentType,
 } from "../lib/gridContentType";
+import { applyLogoBackdropTone } from "../lib/logoBackdrop";
 import { FLAG_SHAPES } from "../lib/flagShapes";
 import { FLAG_FAMILIES } from "../lib/flagFamilies";
 import { FLAG_COLORS } from "../lib/flagColors";
@@ -317,9 +318,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [democracyChartEnabled, setDemocracyChartEnabled] = useState(false);
   const democracyChartPanelId = useId();
   const [democracyChartXKey, setDemocracyChartXKey] =
-    useState<ChartAxisKey>("cpi");
+    useState<ChartAxisSelection>("cpi");
   const [democracyChartYKey, setDemocracyChartYKey] =
-    useState<ChartAxisKey>("v-dem");
+    useState<ChartAxisSelection>("v-dem");
 
   // First-run tips card shown in the empty state. Dismissal is remembered so
   // it's a one-time nudge, re-openable from a "Show tips" affordance.
@@ -415,7 +416,17 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // when the same entity also appears in the new era (and to clear it
   // when it doesn't).
   const [availableHistoricalNames, setAvailableHistoricalNames] = useState<ReadonlySet<string>>(new Set());
-  const [zoomedFlagUrl, setZoomedFlagUrl] = useState<string | null>(null);
+  const [zoomedMedia, setZoomedMedia] = useState<{
+    url: string;
+    /** Brand logos get an adaptive neutral plate in the fullscreen viewer. */
+    logoSurface?: boolean;
+  } | null>(null);
+  const enlargeFlag = useCallback((url: string) => {
+    setZoomedMedia({ url });
+  }, []);
+  const enlargeLogo = useCallback((url: string) => {
+    setZoomedMedia({ url, logoSurface: true });
+  }, []);
   const [flagLoadFailed, setFlagLoadFailed] = useState(false);
   // What the flag grid — and, in step with it, the detail panel's image +
   // explainer — shows: the national flag (default), the coat of arms, or the
@@ -758,9 +769,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
 
   // Lock body scroll while the fullscreen flag viewer is open + close on Esc.
   useEffect(() => {
-    if (!zoomedFlagUrl) return;
+    if (!zoomedMedia) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setZoomedFlagUrl(null);
+      if (e.key === "Escape") setZoomedMedia(null);
     };
     window.addEventListener("keydown", onKey);
     const prev = document.body.style.overflow;
@@ -769,7 +780,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = prev;
     };
-  }, [zoomedFlagUrl]);
+  }, [zoomedMedia]);
 
   const codeToCountry = useMemo(
     () => new Map(countries.map((c) => [c.code, c])),
@@ -1709,7 +1720,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
               <button
                 type="button"
                 className="learn-fs__flag"
-                onClick={() => displayFlagUrl && setZoomedFlagUrl(displayFlagUrl)}
+                onClick={() => displayFlagUrl && enlargeFlag(displayFlagUrl)}
                 aria-label={
                   panelSymbol
                     ? `Enlarge ${panelSymbol.name}`
@@ -2402,7 +2413,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                                   : null
                               }
                               baseUrl={baseUrl}
-                              onEnlarge={setZoomedFlagUrl}
+                              onEnlarge={enlargeFlag}
                               onFlagError={() => setFlagLoadFailed(true)}
                             />
                           )}
@@ -2462,7 +2473,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                               }
                               resolveImage={resolveFlag}
                               baseUrl={baseUrl}
-                              onEnlarge={setZoomedFlagUrl}
+                              onEnlarge={enlargeLogo}
                             />
                           )}
                         </>
@@ -2497,7 +2508,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                             onClearPick={() => clearPanelCategoryPick(mediaSection)}
                             resolveImage={resolveFlag}
                             baseUrl={baseUrl}
-                            onEnlarge={setZoomedFlagUrl}
+                            onEnlarge={enlargeLogo}
                           />
                         ) : (
                           <p className="learn-panel-tabs__empty">
@@ -2554,7 +2565,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                                   clearPanelCategoryPick("passport")
                                 }
                                 baseUrl={baseUrl}
-                                onEnlarge={setZoomedFlagUrl}
+                                onEnlarge={enlargeFlag}
                               />
                             ) : (
                               <LearnPanelCategoryBody
@@ -2584,7 +2595,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                                 }
                                 resolveImage={resolveFlag}
                                 baseUrl={baseUrl}
-                                onEnlarge={setZoomedFlagUrl}
+                                onEnlarge={enlargeLogo}
                               />
                             )}
                           </div>
@@ -2621,7 +2632,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                               clearPanelCategoryPick(sportsSection)
                             }
                             baseUrl={baseUrl}
-                            onEnlarge={setZoomedFlagUrl}
+                            onEnlarge={enlargeFlag}
                           />
                         ) : (
                           <p className="learn-panel-tabs__empty">
@@ -2649,7 +2660,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                               onClearPick={() => clearPanelCategoryPick("party")}
                               resolveImage={resolveFlag}
                               baseUrl={baseUrl}
-                              onEnlarge={setZoomedFlagUrl}
+                              onEnlarge={enlargeLogo}
                             />
                           </>
                         ) : (
@@ -2760,7 +2771,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                         <button
                           type="button"
                           className="learn-fs__flag"
-                          onClick={() => setZoomedFlagUrl(subdivisionCountry.flagSvg)}
+                          onClick={() => enlargeFlag(subdivisionCountry.flagSvg)}
                           aria-label={`Enlarge ${subdivisionCountry.name} flag`}
                         >
                           <img
@@ -2958,7 +2969,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                           <button
                             type="button"
                             className="learn-fs__flag"
-                            onClick={() => setZoomedFlagUrl(sdUrl)}
+                            onClick={() => enlargeFlag(sdUrl)}
                             aria-label={`Enlarge ${selectedSubdivision.name} flag`}
                           >
                             <img
@@ -3059,7 +3070,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                     countryName={subdivisionCountry.name}
                     nationalPopulation={countryObj?.population}
                     baseUrl={baseUrl}
-                    onEnlarge={setZoomedFlagUrl}
+                    onEnlarge={enlargeFlag}
                   />
                 </div>
               </aside>
@@ -3079,7 +3090,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                   countryCode={subdivisionCountry.code}
                   countryName={subdivisionCountry.name}
                   baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
+                  onEnlarge={enlargeFlag}
                   meanings={
                     selectedGroupMeaning
                       ? { [selectedNationalFlag.id]: selectedGroupMeaning }
@@ -3100,7 +3111,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 <PoliticalPartyDetails
                   party={selectedParty}
                   baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
+                  onEnlarge={enlargeLogo}
                 />
               </div>
             </aside>
@@ -3115,7 +3126,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 <AirlineDetails
                   airline={selectedSubdivisionAirline}
                   baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
+                  onEnlarge={enlargeLogo}
                 />
               </div>
             </aside>
@@ -3130,7 +3141,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 <BroadcasterDetails
                   broadcaster={selectedSubdivisionBroadcaster}
                   baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
+                  onEnlarge={enlargeLogo}
                 />
               </div>
             </aside>
@@ -3146,7 +3157,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 <TourismLogoDetails
                   logo={selectedSubdivisionTourismLogo}
                   baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
+                  onEnlarge={enlargeLogo}
                 />
               </div>
             </aside>
@@ -3162,7 +3173,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 <NewsAgencyDetails
                   agency={selectedSubdivisionNewsAgency}
                   baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
+                  onEnlarge={enlargeLogo}
                 />
               </div>
             </aside>
@@ -3178,7 +3189,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                 <NewspaperDetails
                   newspaper={selectedSubdivisionNewspaper}
                   baseUrl={baseUrl}
-                  onEnlarge={setZoomedFlagUrl}
+                  onEnlarge={enlargeLogo}
                 />
               </div>
             </aside>
@@ -3226,7 +3237,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                         <button
                           type="button"
                           className="learn-fs__flag"
-                          onClick={() => setZoomedFlagUrl(flagUrl)}
+                          onClick={() => enlargeFlag(flagUrl)}
                           aria-label={`Enlarge ${cap.name} flag`}
                         >
                           <img
@@ -3316,29 +3327,46 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         />
       )}
 
-      {zoomedFlagUrl && (
+      {zoomedMedia && (
         <div
           className="flag-zoom"
           role="dialog"
           aria-modal="true"
-          aria-label="Enlarged flag"
-          onClick={() => setZoomedFlagUrl(null)}
+          aria-label={zoomedMedia.logoSurface ? "Enlarged logo" : "Enlarged flag"}
+          onClick={() => setZoomedMedia(null)}
         >
-          <img
-            key={zoomedFlagUrl}
-            src={zoomedFlagUrl}
-            alt=""
-            className="flag-zoom__img"
-            draggable={false}
-          />
+          {zoomedMedia.logoSurface ? (
+            <div
+              className="flag-zoom__plate"
+              data-logo-surface=""
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                key={zoomedMedia.url}
+                src={zoomedMedia.url}
+                alt=""
+                className="flag-zoom__img flag-zoom__img--logo"
+                draggable={false}
+                onLoad={(e) => applyLogoBackdropTone(e.currentTarget)}
+              />
+            </div>
+          ) : (
+            <img
+              key={zoomedMedia.url}
+              src={zoomedMedia.url}
+              alt=""
+              className="flag-zoom__img"
+              draggable={false}
+            />
+          )}
           <button
             type="button"
             className="flag-zoom__close"
             onClick={(e) => {
               e.stopPropagation();
-              setZoomedFlagUrl(null);
+              setZoomedMedia(null);
             }}
-            aria-label="Close enlarged flag"
+            aria-label={zoomedMedia.logoSurface ? "Close enlarged logo" : "Close enlarged flag"}
           >
             <UiIcon name="close" />
           </button>
