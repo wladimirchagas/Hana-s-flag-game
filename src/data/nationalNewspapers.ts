@@ -8814,10 +8814,15 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Horoya Audience Review 2024"
       },
       "revenueModel": "Digital subscriptions, print sales, and commercial advertising",
-      "noImageReason": "No authentic masthead is shown yet. A placeholder graphic was removed. Wikimedia Commons, the newspaper's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
+      "logo": "newspaper-logos/gn/horoya.png",
+      "logoExplainer": "White 'HOROYA' over 'Quotidien National' inside a red oval, with red tagline 'La référence de l’information Juste' beneath — official masthead from horoya.net.",
+      "licenceNote": "Horoya trademark bundled from the publisher's official site brand assets (horoya.net/wp-content/uploads/2025/03/horoya-logo.png) for educational reference in Learn mode.",
+
       "sources": [
-        "https://horoya.info/",
-        "https://mic.gov.gn/"
+        "https://horoya.net/",
+        "https://horoya.net/wp-content/uploads/2025/03/horoya-logo.png",
+        "https://mic.gov.gn/",
+        "https://fr.wikipedia.org/wiki/Horoya"
       ]
     },
     {
@@ -23376,26 +23381,34 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
       ]
     },
     {
-      "id": "tl-independente-already-check",
+      "id": "tl-diario-nacional",
       "countryCode": "TL",
       "name": "Diário Nacional",
-      "founded": 2015,
+      "nativeName": "Jornal Nacional Diário",
+      "englishTranslation": "National Daily Journal",
+      "founded": 2005,
       "frequency": "Daily newspaper",
       "format": "Print & digital",
       "language": "Portuguese / Tetum",
       "headquarters": "Dili",
       "owner": {
-        "name": "Diário Nacional",
+        "name": "Grupo de Média Nacional (GMN)",
         "type": "Independent commercial media"
       },
       "editorialStance": "Timor-Leste general-interest daily; politics and current affairs",
       "readership": {
         "metric": "Timor-Leste daily newspaper",
-        "source": "https://en.wikipedia.org/wiki/Media_of_East_Timor"
+        "source": "https://pt.wikipedia.org/wiki/Grupo_de_M%C3%A9dia_Nacional"
       },
       "revenueModel": "Advertising and print sales",
-      "noImageReason": "No masthead image is shown for this newspaper yet. The publisher's official site and Wikimedia Commons were checked; listed without an image rather than an invented logo.",
+      "logo": "newspaper-logos/tl/diario-nacional.png",
+      "logoExplainer": "Timor-Leste flag beside red 'Jornal Nacional' over black 'Diário' with a sun-ray stylised 'i' — masthead from the publisher's jndiario.tl brand assets.",
+      "licenceNote": "Jornal Nacional Diário / Grupo de Média Nacional trademark bundled from the publisher's official site brand assets (jndiario.tl/media/vizitor/gmn.png) for educational reference in Learn mode.",
+
       "sources": [
+        "https://jndiario.tl/",
+        "https://jndiario.tl/media/vizitor/gmn.png",
+        "https://pt.wikipedia.org/wiki/Grupo_de_M%C3%A9dia_Nacional",
         "https://en.wikipedia.org/wiki/Media_of_East_Timor"
       ]
     }
