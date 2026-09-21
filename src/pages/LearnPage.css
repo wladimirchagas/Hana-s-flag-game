@@ -578,6 +578,85 @@
   gap: 0.85rem;
 }
 
+/* === Information panel drawer (large screens only) =================
+   Above 900px the panel can tuck away so the map/chart uses the full
+   row width. Below 900px the stacked layout is unchanged and these
+   controls stay hidden. */
+.learn-fs__panel-drawer-btn {
+  display: none;
+}
+
+@media (min-width: 901px) {
+  .learn-fs__panel-drawer-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--ink);
+    background: var(--paper);
+    border: 3px solid var(--ink);
+    border-radius: 999px;
+    box-shadow: 0 2px 0 var(--ink);
+    cursor: pointer;
+    padding: 0.35rem 0.7rem;
+    min-height: 2rem;
+    line-height: 1;
+  }
+
+  .learn-fs__panel-drawer-btn:hover,
+  .learn-fs__panel-drawer-btn:focus-visible {
+    background: var(--cream, var(--paper));
+  }
+
+  .learn-fs__panel-drawer-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 0 var(--ink);
+  }
+
+  .learn-fs__panel-drawer-btn .ui-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .learn-fs__panel-drawer-btn--hide {
+    align-self: flex-end;
+    margin: 0 0 0.35rem;
+  }
+
+  .learn-fs__panel-drawer-btn--show {
+    /* Only visible while the panel is collapsed — sits on the map's
+       right edge so the user can bring the drawer back. */
+    display: none;
+    position: absolute;
+    top: 0.85rem;
+    right: 0.75rem;
+    z-index: 8;
+  }
+
+  .learn-fs--panel-collapsed {
+    grid-template-columns: 1fr;
+    grid-template-areas: "map";
+    column-gap: 0;
+  }
+
+  .learn-fs--panel-collapsed .learn-fs__panel-wrap {
+    /* Keep in the DOM for a11y toggles / state, but take no grid space. */
+    display: none;
+  }
+
+  .learn-fs--panel-collapsed .learn-fs__panel-drawer-btn--show {
+    display: inline-flex;
+  }
+
+  .learn-fs:not(.learn-fs--panel-collapsed) .learn-fs__panel-drawer-btn--show {
+    display: none;
+  }
+}
+
 /* Clear the panel selection. In the modern era it sits at the right end of
    the country/division search row (after the +/✓ Hana button). In historical
    eras (--corner) it is absolutely positioned at the panel's top-right. */

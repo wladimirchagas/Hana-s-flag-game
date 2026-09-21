@@ -68,6 +68,15 @@ body:has(.learn-page--atlas) .bottom-nav {
   box-shadow: var(--shadow);
   padding: 1.25rem;
 }
+.learn-page--atlas .learn-fs__panel-drawer-btn {
+  border-width: 1px;
+  box-shadow: none;
+  border-radius: 999px;
+}
+.learn-page--atlas .learn-fs__panel-drawer-btn:active {
+  box-shadow: none;
+  transform: none;
+}
 .learn-page--atlas .learn-fs__map .world-map__zoom-controls {
   padding: .5rem;
   gap: .4rem;

@@ -69,6 +69,10 @@ import {
   type LearnPanelTabId,
   type LearnPanelTravelSection,
 } from "../lib/learnPanelTabs";
+import {
+  loadLearnPanelOpen,
+  saveLearnPanelOpen,
+} from "../lib/learnPanelDrawer";
 import { worldCityMarkers, subdivisionCityMarkers, subdivisionCapital } from "../lib/cityRoles";
 import { SubdivisionPopulation } from "../components/SubdivisionPopulation";
 import { NATIONAL_CAPITAL_DETAILS } from "../data/nationalCapitalDetails";
@@ -424,6 +428,26 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   const [travelSection, setTravelSection] = useState<LearnPanelTravelSection>(
     () => travelSectionForGridContent(loadGridContentType()) ?? "airline",
   );
+  // Large-screen information panel drawer: open = today's two-column layout;
+  // closed = map/chart fills the row. Ignored on ≤900px (stacked layout).
+  const [panelOpen, setPanelOpen] = useState(loadLearnPanelOpen);
+  const [isWideLayout, setIsWideLayout] = useState(() => {
+    if (typeof window === "undefined" || !window.matchMedia) return true;
+    return window.matchMedia("(min-width: 901px)").matches;
+  });
+  useEffect(() => {
+    if (typeof window === "undefined" || !window.matchMedia) return;
+    const mq = window.matchMedia("(min-width: 901px)");
+    const onChange = () => setIsWideLayout(mq.matches);
+    onChange();
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+  const panelCollapsed = isWideLayout && !panelOpen;
+  const setPanelOpenAndPersist = useCallback((open: boolean) => {
+    setPanelOpen(open);
+    saveLearnPanelOpen(open);
+  }, []);
   // The specific football crest clicked in the grid, when it is a card that is
   // NOT a plain country — a UK home nation, or a FIFA-member entity. Keyed with
   // its parent country so the panel shows that crest only while the parent stays
@@ -1986,7 +2010,11 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
         )}
       </nav>
     )}
-    <div className={`learn-fs${subdivisionMode ? " learn-fs--drilldown" : ""}`}>
+    <div
+      className={`learn-fs${subdivisionMode ? " learn-fs--drilldown" : ""}${
+        panelCollapsed ? " learn-fs--panel-collapsed" : ""
+      }`}
+    >
       <div className="learn-fs__map-col">
       <div className="learn-fs__map-stick">
       <div className="learn-fs__map" aria-label="World map">
@@ -2158,7 +2186,20 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
       )}
       </div>
 
-      <div className="learn-fs__panel-wrap">
+      <div
+        className="learn-fs__panel-wrap"
+        aria-hidden={panelCollapsed ? true : undefined}
+      >
+        <button
+          type="button"
+          className="learn-fs__panel-drawer-btn learn-fs__panel-drawer-btn--hide"
+          onClick={() => setPanelOpenAndPersist(false)}
+          aria-label="Hide information panel"
+          title="Hide information panel"
+        >
+          <UiIcon name="next" />
+          <span className="learn-fs__panel-drawer-label">Hide</span>
+        </button>
         <aside className="learn-fs__panel" aria-live="polite">
           <div className="learn-fs__detail">
             {isModernEra && (
@@ -3000,6 +3041,19 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           </>
         )}
       </div>
+
+      <button
+        type="button"
+        className="learn-fs__panel-drawer-btn learn-fs__panel-drawer-btn--show"
+        onClick={() => setPanelOpenAndPersist(true)}
+        aria-label="Show information panel"
+        title="Show information panel"
+        aria-hidden={!panelCollapsed ? true : undefined}
+        tabIndex={!panelCollapsed ? -1 : undefined}
+      >
+        <UiIcon name="previous" />
+        <span className="learn-fs__panel-drawer-label">Info</span>
+      </button>
 
       {currentCountry && (
         <NationalAnthemPlayer
