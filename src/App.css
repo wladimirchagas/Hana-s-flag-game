@@ -285,12 +285,15 @@
 }
 
 /* Adaptive neutral plate for brand logos in the fullscreen viewer — same
-   light/dark choice as the grid tiles (data-logo-tone from logoBackdrop). */
+   light/dark choice as the grid tiles (data-logo-tone from logoBackdrop).
+   Shrink-wrap the plate to the logo so wide wordmarks are never clipped to
+   a square tile (China Southern). sizeFullscreenLogo() sets explicit px. */
 .flag-zoom__plate {
   box-sizing: border-box;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: max-content;
   max-width: min(92vw, 1100px);
   max-height: min(88vh, 900px);
   padding: clamp(1.25rem, 4vw, 2.5rem);
@@ -304,11 +307,18 @@
   background: var(--logo-plate-dark);
 }
 
+.flag-zoom__plate[data-logo-backing="solid"] {
+  /* Asset already carries its own field — no extra frame around it. */
+  padding: 0.5rem;
+}
+
 .flag-zoom__img--logo {
+  display: block;
   width: auto;
   height: auto;
   max-width: min(84vw, 1000px);
   max-height: min(72vh, 780px);
+  object-fit: contain;
   filter: none;
 }
 

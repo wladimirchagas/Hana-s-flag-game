@@ -911,6 +911,10 @@
   border-color: color-mix(in srgb, #fff 14%, transparent);
 }
 
+.learn-fs__flag--logo[data-logo-backing="solid"] {
+  padding: 0.35rem 0.45rem;
+}
+
 .learn-fs__flag--logo .learn-fs__flag-img {
   filter: none;
 }
@@ -2024,7 +2028,7 @@
 }
 
 /* Brand-logo tiles (newspapers, agencies, airlines, …): a neutral plate
-   picked from the logo's own luminance. Defaults to the light plate until
+   picked from the logo's own pixels. Defaults to the light plate until
    onLoad paints data-logo-tone — that is the common dark-masthead case. */
 .flag-grid__thumb--logo {
   box-sizing: border-box;
@@ -2038,6 +2042,12 @@
 .flag-grid__thumb--logo[data-logo-tone="dark"] {
   background: var(--logo-plate-dark);
   border-color: color-mix(in srgb, #fff 14%, transparent);
+}
+
+/* Solid-backed assets (white canvas / black tile) — match the field and
+   tighten padding so we don't draw a second frame around the rectangle. */
+.flag-grid__thumb--logo[data-logo-backing="solid"] {
+  padding: 0.15rem;
 }
 
 .flag-grid__thumb--logo .flag-grid__thumb-img {
