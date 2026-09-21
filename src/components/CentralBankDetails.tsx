@@ -1,10 +1,16 @@
 import { LogoExplainer } from "./LogoExplainer";
+import { EnlargeableLogo } from "./EnlargeableLogo";
 import type { CentralBank } from "../types/centralBank";
 
 /**
  * Information widget for a selected national central bank.
  * Rendered in the Finance tab of the Learn panel and when the world-map
  * Show dropdown is set to "Central banks".
+ *
+ * Logo thumbnails must go through EnlargeableLogo (adaptive cream/dark plate)
+ * — same readability treatment as airlines / parties / newspapers. A raw
+ * <img> on the panel background fails for dark wordmarks (Bank of Japan,
+ * owner report 2026-09).
  */
 export function CentralBankDetails({
   bank,
@@ -29,22 +35,13 @@ export function CentralBankDetails({
         <div className="learn-fs__flag-head">
           <span className="entity-summary__label learn-fs__flag-label">Central bank logo</span>
           {logoUrl ? (
-            <button
-              type="button"
-              className="learn-fs__flag"
-              onClick={() => onEnlarge(logoUrl)}
-              aria-label={`Enlarge ${bank.name} logo`}
-            >
-              <img
-                key={logoUrl}
-                src={logoUrl}
-                alt={`${bank.name} logo`}
-                className="learn-fs__flag-img"
-                draggable={false}
-                style={{ objectFit: "contain", maxHeight: "110px", padding: "6px" }}
-              />
-              <span className="learn-fs__flag-hint" aria-hidden="true">⤢ Click to enlarge</span>
-            </button>
+            <EnlargeableLogo
+              src={logoUrl}
+              alt={`${bank.name} logo`}
+              ariaLabel={`Enlarge ${bank.name} logo`}
+              onEnlarge={onEnlarge}
+              hint="⤢ Click to enlarge"
+            />
           ) : (
             <p className="learn-fs__no-image">
               <strong>No logo image shown.</strong> {bank.noImageReason}
