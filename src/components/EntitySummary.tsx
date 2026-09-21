@@ -24,8 +24,13 @@ import { MembershipBadge } from "./MembershipBadge";
 
 /** Which rows a modern-country fact-sheet renders. "all" is the legacy
  *  single-list mode; the Learn panel tabs pass "facts" (Overview),
- *  "indices", or "politics". */
-export type EntitySummarySection = "all" | "facts" | "indices" | "politics";
+ *  "finance", "indices" (Rankings), or "politics". */
+export type EntitySummarySection =
+  | "all"
+  | "facts"
+  | "finance"
+  | "indices"
+  | "politics";
 
 export type ModernSummaryProps = {
   kind: "modern";
@@ -334,11 +339,6 @@ function buildFactsRows(c: Country): { label: string; value: React.ReactNode }[]
       label: c.languages.length === 1 ? "Language" : "Languages",
       value: c.languages.slice(0, 4).join(", "),
     });
-  if (c.currencies && c.currencies.length > 0)
-    rows.push({
-      label: c.currencies.length === 1 ? "Currency" : "Currencies",
-      value: c.currencies.map(formatCurrency).join(", "),
-    });
   if (c.callingCode) rows.push({ label: "Calling code", value: c.callingCode });
   if (c.tld && c.tld.length > 0)
     rows.push({
@@ -346,12 +346,21 @@ function buildFactsRows(c: Country): { label: string; value: React.ReactNode }[]
       value: c.tld.join(", "),
     });
 
+  return rows;
+}
+
+/** Currency + GDP — Finance tab. */
+function buildFinanceRows(c: Country): { label: string; value: React.ReactNode }[] {
+  const rows: { label: string; value: React.ReactNode }[] = [];
+  if (c.currencies && c.currencies.length > 0)
+    rows.push({
+      label: c.currencies.length === 1 ? "Currency" : "Currencies",
+      value: c.currencies.map(formatCurrency).join(", "),
+    });
   const gdpVal = formatGdpRow(c);
   if (gdpVal) rows.push({ label: "GDP", value: gdpVal });
-
   const gdpCapVal = formatGdpPerCapitaRow(c);
   if (gdpCapVal) rows.push({ label: "GDP per capita", value: gdpCapVal });
-
   return rows;
 }
 
@@ -391,12 +400,13 @@ function buildPoliticsRows(c: Country): { label: string; value: React.ReactNode 
   return rows;
 }
 
-/** Legacy single-list order: identity/economy → indices → politics → geo. */
+/** Legacy single-list order: identity → finance → indices → politics → geo. */
 function interleaveFactsAndIndices(
   c: Country,
 ): { label: string; value: React.ReactNode }[] {
   return [
     ...buildFactsRows(c),
+    ...buildFinanceRows(c),
     ...buildIndicesRows(c),
     ...buildPoliticsRows(c),
     ...buildGeoRows(c),
@@ -470,15 +480,28 @@ export function EntitySummary(props: EntitySummaryProps) {
         ? interleaveFactsAndIndices(c)
         : section === "facts"
           ? [...buildFactsRows(c), ...buildGeoRows(c)]
-          : section === "politics"
-            ? buildPoliticsRows(c)
-            : buildIndicesRows(c);
+          : section === "finance"
+            ? buildFinanceRows(c)
+            : section === "politics"
+              ? buildPoliticsRows(c)
+              : buildIndicesRows(c);
     const footer =
-      section === "indices" || section === "politics" ? undefined : props.footer;
+      section === "indices" ||
+      section === "politics" ||
+      section === "finance"
+        ? undefined
+        : props.footer;
     if (section === "indices" && rows.length === 0) {
       return (
         <p className="learn-panel-tabs__empty">
           No governance or ratings indices sourced for this country yet.
+        </p>
+      );
+    }
+    if (section === "finance" && rows.length === 0) {
+      return (
+        <p className="learn-panel-tabs__empty">
+          No currency or GDP figures sourced for this country yet.
         </p>
       );
     }

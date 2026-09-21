@@ -2207,17 +2207,104 @@
   background: var(--ink-fixed);
 }
 
-/* === Learn information-panel tabs (Facts / Indices / Media / …) ======= */
+/* === Learn information-panel tabs (Overview / Politics / Finance / …) = */
+
+.learn-panel-tabs-wrap {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-width: 0;
+  margin: 0.35rem 0 0.85rem;
+}
+
+.learn-panel-tabs-wrap--more-start .learn-panel-tabs {
+  mask-image: linear-gradient(to right, transparent 0, #000 1.25rem, #000 100%);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 1.25rem,
+    #000 100%
+  );
+}
+
+.learn-panel-tabs-wrap--more-end .learn-panel-tabs {
+  mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 1.25rem), transparent 100%);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    #000 0,
+    #000 calc(100% - 1.25rem),
+    transparent 100%
+  );
+}
+
+.learn-panel-tabs-wrap--more-start.learn-panel-tabs-wrap--more-end .learn-panel-tabs {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 1.25rem,
+    #000 calc(100% - 1.25rem),
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 1.25rem,
+    #000 calc(100% - 1.25rem),
+    transparent 100%
+  );
+}
+
+.learn-panel-tabs__more {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  flex: 0 0 auto;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  color: var(--ink);
+  background: var(--paper);
+  padding: 0.15rem 0.2rem;
+  border-radius: 0.25rem;
+  pointer-events: none;
+  user-select: none;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--ink) 12%, transparent);
+}
+
+.learn-panel-tabs__more--start {
+  left: 0;
+}
+
+.learn-panel-tabs__more--end {
+  right: 0;
+}
 
 .learn-panel-tabs {
-  margin: 0.35rem 0 0.85rem;
+  display: flex;
+  flex-wrap: nowrap;
   gap: 0.35rem;
+  margin: 0;
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+
+.learn-panel-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .learn-panel-tabs .flag-tabs__tab {
+  flex: 0 0 auto;
   font-size: 0.78rem;
   padding: 0.35rem 0.65rem;
   min-height: 2rem;
+  white-space: nowrap;
 }
 
 .learn-panel-tabs__panel {
