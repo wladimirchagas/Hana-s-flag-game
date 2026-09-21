@@ -8,13 +8,15 @@
  */
 import type { GridContentType } from "./gridContentType";
 
+/** Display order — single-line strip (scrolls horizontally when needed). */
 export const LEARN_PANEL_TAB_IDS = [
   "facts",
-  "indices",
+  "politics",
+  "finance",
   "media",
   "travel",
   "sports",
-  "politics",
+  "indices",
 ] as const;
 
 export type LearnPanelTabId = (typeof LEARN_PANEL_TAB_IDS)[number];
@@ -23,17 +25,20 @@ export const LEARN_PANEL_TAB_LABELS: Record<LearnPanelTabId, string> = {
   // "Overview" — identity + core country rows. Id stays `facts` so Show sync
   // and subdivision drill-in keep a stable key.
   facts: "Overview",
-  indices: "Indices",
+  politics: "Politics",
+  finance: "Finance",
   media: "Media",
   travel: "Travel",
   sports: "Sports",
-  politics: "Politics",
+  // "Rankings" — democracy / governance / ratings indices. Id stays `indices`.
+  indices: "Rankings",
 };
 
 /** Country fact-sheet only — Media/Travel/Sports/Politics live in their own
  *  widgets below when drilled into a country's national-symbols tabs. */
 export const LEARN_PANEL_SUBDIVISION_TABS: readonly LearnPanelTabId[] = [
   "facts",
+  "finance",
   "indices",
 ];
 

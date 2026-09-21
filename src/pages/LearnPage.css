@@ -2168,17 +2168,89 @@
   background: var(--ink-fixed);
 }
 
-/* === Learn information-panel tabs (Facts / Indices / Media / …) ======= */
+/* === Learn information-panel tabs (Overview / Politics / Finance / …) = */
+
+.learn-panel-tabs-wrap {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-width: 0;
+  margin: 0.35rem 0 0.85rem;
+}
+
+.learn-panel-tabs-wrap--more-start .learn-panel-tabs {
+  mask-image: linear-gradient(to right, transparent 0, #000 1.25rem, #000 100%);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 1.25rem,
+    #000 100%
+  );
+}
+
+.learn-panel-tabs-wrap--more-end .learn-panel-tabs {
+  mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 1.25rem), transparent 100%);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    #000 0,
+    #000 calc(100% - 1.25rem),
+    transparent 100%
+  );
+}
+
+.learn-panel-tabs-wrap--more-start.learn-panel-tabs-wrap--more-end .learn-panel-tabs {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 1.25rem,
+    #000 calc(100% - 1.25rem),
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 1.25rem,
+    #000 calc(100% - 1.25rem),
+    transparent 100%
+  );
+}
+
+.learn-panel-tabs__more {
+  flex: 0 0 auto;
+  align-self: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ink-soft);
+  padding: 0 0.15rem;
+  pointer-events: none;
+  user-select: none;
+}
 
 .learn-panel-tabs {
-  margin: 0.35rem 0 0.85rem;
+  display: flex;
+  flex-wrap: nowrap;
   gap: 0.35rem;
+  margin: 0;
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+
+.learn-panel-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .learn-panel-tabs .flag-tabs__tab {
+  flex: 0 0 auto;
   font-size: 0.78rem;
   padding: 0.35rem 0.65rem;
   min-height: 2rem;
+  white-space: nowrap;
 }
 
 .learn-panel-tabs__panel {

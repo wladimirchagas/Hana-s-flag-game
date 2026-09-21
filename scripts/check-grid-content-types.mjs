@@ -105,10 +105,12 @@ const tabsSrc = fs.readFileSync(
 );
 assert.ok(
   /sports:\s*"Sports"/.test(tabsSrc) &&
+    /indices:\s*"Rankings"/.test(tabsSrc) &&
+    /finance:\s*"Finance"/.test(tabsSrc) &&
     tabsSrc.includes('case "passport":') &&
     tabsSrc.includes('return "travel"') &&
     tabsSrc.includes('return "sports"'),
-  "learnPanelTabs must label Sports and route passport→Travel, crests/NOCs→Sports",
+  "learnPanelTabs must label Sports/Rankings/Finance and route passport→Travel, crests/NOCs→Sports",
 );
 
 assert.ok(

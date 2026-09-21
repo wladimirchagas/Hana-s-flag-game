@@ -1990,7 +1990,13 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // Keep the panel tab inside the subdivision-only set when drilling in.
   useEffect(() => {
     if (!subdivisionMode) return;
-    if (panelTab !== "facts" && panelTab !== "indices") setPanelTab("facts");
+    if (
+      panelTab !== "facts" &&
+      panelTab !== "finance" &&
+      panelTab !== "indices"
+    ) {
+      setPanelTab("facts");
+    }
   }, [subdivisionMode, panelTab]);
 
   // Resolver passed to FlagGrid so it can render absolute http(s) URLs,
@@ -2341,7 +2347,10 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                   <>
                     <LearnInfoTabs
                       active={
-                        subdivisionMode && panelTab !== "facts" && panelTab !== "indices"
+                        subdivisionMode &&
+                        panelTab !== "facts" &&
+                        panelTab !== "finance" &&
+                        panelTab !== "indices"
                           ? "facts"
                           : panelTab
                       }
@@ -2352,7 +2361,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                       {(subdivisionMode
                         ? panelTab === "indices"
                           ? "indices"
-                          : "facts"
+                          : panelTab === "finance"
+                            ? "finance"
+                            : "facts"
                         : panelTab) === "facts" && (
                         <>
                           {/* Flag / coat of arms lead Overview via pills.
@@ -2401,19 +2412,16 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                               </div>
                             }
                           />
-                          {isModernEra && !subdivisionMode && (
-                            <button
-                              type="button"
-                              className="learn-fs__subdiv-btn"
-                              onClick={handleEnterSubdivisionMode}
-                            >
-                              {/* It opens far more than the sub-national grid now — national,
-                                  historical, military, maritime, arms and passports too — so the
-                                  label says what the user gets rather than naming one tab. */}
-                              Learn more
-                            </button>
-                          )}
                         </>
+                      )}
+                      {(subdivisionMode
+                        ? panelTab === "finance"
+                        : panelTab === "finance") && (
+                        <EntitySummary
+                          kind="modern"
+                          country={display.country}
+                          section="finance"
+                        />
                       )}
                       {(subdivisionMode
                         ? panelTab === "indices"
@@ -2608,6 +2616,18 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                         )
                       )}
                     </div>
+                    {isModernEra && !subdivisionMode && (
+                      <button
+                        type="button"
+                        className="learn-fs__subdiv-btn"
+                        onClick={handleEnterSubdivisionMode}
+                      >
+                        {/* It opens far more than the sub-national grid now — national,
+                            historical, military, maritime, arms and passports too — so the
+                            label says what the user gets rather than naming one tab. */}
+                        Learn more
+                      </button>
+                    )}
                   </>
                 ) : (
                   <>
@@ -2721,12 +2741,18 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                   {countryObj && (
                     <>
                       <LearnInfoTabs
-                        active={panelTab === "indices" ? "indices" : "facts"}
+                        active={
+                          panelTab === "indices"
+                            ? "indices"
+                            : panelTab === "finance"
+                              ? "finance"
+                              : "facts"
+                        }
                         onChange={setPanelTab}
                         tabs={LEARN_PANEL_SUBDIVISION_TABS}
                       />
                       <div className="flag-tabs__panel learn-panel-tabs__panel" role="tabpanel">
-                        {(panelTab === "indices" ? "indices" : "facts") === "facts" && (
+                        {panelTab !== "indices" && panelTab !== "finance" && (
                           <EntitySummary
                             kind="modern"
                             country={countryObj}
@@ -2753,6 +2779,13 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                                 </dd>
                               </div>
                             }
+                          />
+                        )}
+                        {panelTab === "finance" && (
+                          <EntitySummary
+                            kind="modern"
+                            country={countryObj}
+                            section="finance"
                           />
                         )}
                         {panelTab === "indices" && (
