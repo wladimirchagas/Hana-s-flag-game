@@ -15,12 +15,20 @@ const ROOT = resolve(__dirname, "..");
 /** Visually verified batch — montage-scanned light/dark. */
 const MANIFEST = [
   {
-    id: "sz-independent-news-eswatini",
-    src: "tmp/batch64-final/sz-independent-news-eswatini.png",
+    id: "rw-great-lakes",
+    src: "tmp/batch64-final/rw-great-lakes.png",
     explainer:
-      "Bold black 'Independent' + red 'News' with small black 'ESWATINI' under News — Independent News Eswatini masthead.",
+      "White paper airplane with speed lines inside a textured dark-red circle — Great Lakes Voice emblem.",
     licence:
-      "Independent News Eswatini trademark bundled from the publisher's official site brand assets (independentnews.co.sz) for educational reference in Learn mode.",
+      "Great Lakes Voice trademark bundled from the publisher's official site brand assets (greatlakesvoice.com) for educational reference in Learn mode.",
+  },
+  {
+    id: "st-noticias-stp",
+    src: "tmp/batch64-final/st-noticias-stp.png",
+    explainer:
+      "White circular STP monogram seal beside sans-serif 'STP DIGITAL' — Notícias STP / STP Digital masthead.",
+    licence:
+      "STP Digital trademark bundled from the publisher's official site brand assets (stpdigital.net) for educational reference in Learn mode.",
   },
 ];
 
