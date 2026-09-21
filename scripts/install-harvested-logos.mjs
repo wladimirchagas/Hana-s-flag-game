@@ -17,21 +17,28 @@ const ROOT = resolve(__dirname, "..");
  */
 const MANIFEST = [
   {
-    id: "lv-leta",
-    dataset: "agency",
-    src: "tmp/batch79-install/lv-leta.jpg",
+    id: "ls-the-post",
+    src: "tmp/batch80-install/ls-the-post.png",
     explainer:
-      "Two-tone green circular mark beside bold black 'LETA' with subtitle 'nacionālā informācijas aģentūra' — Latvian national news agency wordmark.",
+      "Red 'the' + white 'post' wordmark with a Lesotho-map badge holding a Basotho hat (mokorotlo) — The Post (Lesotho) masthead.",
     licence:
-      "LETA brand mark from the agency's official Facebook page profile picture (letanews); trademark bundled for educational reference in Learn mode.",
+      "The Post (Lesotho) masthead from the publisher's official site brand assets (thepost.co.ls), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
   {
-    id: "ci-nouveau-reveil",
-    src: "tmp/batch79-install/ci-nouveau-reveil.png",
+    id: "zw-the-herald",
+    src: "tmp/batch80-install/zw-the-herald.png",
     explainer:
-      "Dark green serif 'Réveil' with black 'LE NOUVEAU' above and slogan 'LE JOURNAL DE CHOC DES IVOIRIENS' — Le Nouveau Réveil (Côte d'Ivoire) masthead.",
+      "Blue gear-and-quill Zimpapers mark beside red serif 'The Herald' — Zimbabwe Herald masthead from the publisher's site theme.",
     licence:
-      "Nouveaureveil.gif from French Wikipedia (marque déposée / logo); trademark bundled for educational reference in Learn mode with licenceNote.",
+      "The Herald (Zimbabwe) masthead from the publisher's official site theme assets (herald.co.zw), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+  },
+  {
+    id: "zw-the-chronicle",
+    src: "tmp/batch80-install/zw-the-chronicle.png",
+    explainer:
+      "Blue gear-and-quill mark beside cyan serif 'Chronicle' — Bulawayo Chronicle masthead from the publisher's site theme.",
+    licence:
+      "The Chronicle (Zimbabwe) masthead from the publisher's official site theme assets (chronicle.co.zw), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
   },
 ];
 
