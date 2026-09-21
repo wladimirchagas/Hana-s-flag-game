@@ -10353,10 +10353,13 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "https://www.breakingnews.ie"
       },
       "revenueModel": "Digital advertising",
+      "logo": "newspaper-logos/ie/breakingnews-ie.png",
+      "logoExplainer": "Navy 'BN' monogram with yellow lightning bolt cutout beside italic 'Breaking News.ie' on yellow field, with 'Truth Delivered 24/7' script slogan — BreakingNews.ie publisher masthead.",
+      "licenceNote": "BreakingNews.ie publisher logo from the outlet's official site brand assets (breakingnews.ie/i/publisher-logo.png), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.breakingnews.ie"
-      ],
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+      ]
     }
   ],
   "IL": [
