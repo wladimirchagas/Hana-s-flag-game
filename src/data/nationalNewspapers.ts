@@ -17062,9 +17062,13 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Maison de la Presse du Niger 2023"
       },
       "revenueModel": "Newsstand sales, institutional subscriptions, and commercial advertising",
-      "noImageReason": "No authentic emblem is shown yet. A placeholder graphic was removed. Wikimedia Commons, the agency's official site, and common brand sources were checked; listed without an image rather than an invented logo.",
+      "logo": "newspaper-logos/ne/le-republicain.png",
+      "logoExplainer": "Black 'Le Républicain' over italic 'Niger' on an orange rounded rectangle — historic masthead from the paper's own site (republicain-niger.com), archived 2008.",
+      "licenceNote": "Le Républicain (Niger) trademark bundled from the publisher's official site brand assets via Wayback Machine (republicain-niger.com/images/LogoRepublicain.gif, 2008-03-12) for educational reference in Learn mode.",
+
       "sources": [
         "https://republicain-niger.com",
+        "https://web.archive.org/web/20080312223259id_/http://www.republicain-niger.com/images/LogoRepublicain.gif",
         "https://fr.wikipedia.org/wiki/Le_R%C3%A9publicain_(Niger)"
       ]
     }
