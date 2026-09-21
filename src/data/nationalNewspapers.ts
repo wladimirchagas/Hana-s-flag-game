@@ -15519,7 +15519,10 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "Mizzima Media Group Audience Audit 2023"
       },
       "revenueModel": "Donor press development funding, commercial sponsorships, and syndicated video",
-      "noImageReason": "Placeholder rect+text SVG removed (fabricated, not the newspaper's masthead). Wikimedia Commons, the newspaper's official site, and common brand CDNs were checked for a freely-citable authentic masthead; none confidently sourced yet — listed with no image rather than an invented logo.",
+      "logo": "newspaper-logos/mm/mizzima.png",
+      "logoExplainer": "Green peacock feather beside blue lowercase 'mizzima' with 'NEWS FROM MYANMAR' tagline — Mizzima News English masthead.",
+      "licenceNote": "Mizzima News masthead from the publisher's official English site brand assets (eng.mizzima.com), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://www.mizzima.com",
         "https://en.wikipedia.org/wiki/Mizzima_News"
@@ -18889,11 +18892,14 @@ export const NATIONAL_NEWSPAPERS: Record<string, Newspaper[]> = {
         "source": "https://en.wikipedia.org/wiki/Polska_Times"
       },
       "revenueModel": "Print sales and advertising",
+      "logo": "newspaper-logos/pl/polska-times.png",
+      "logoExplainer": "Black serif all-caps 'POLSKA TIMES' wordmark — Polska Times masthead without temporary campaign overlays.",
+      "licenceNote": "Polska Times masthead from the publisher's official site brand assets (polskatimes.pl / Polska Press), archived via the Wayback Machine; trademark bundled for educational reference in Learn mode.",
+
       "sources": [
         "https://polskatimes.pl",
         "https://en.wikipedia.org/wiki/Polska_Times"
-      ],
-      "noImageReason": "Authentic masthead not yet bundled for this entry. Official publisher site and Wikimedia Commons were checked for a freely-citable logo; none confidently sourced on this pass — listed with no image rather than an invented logo."
+      ]
     },
     {
       "id": "pl-onet-wiadomosci",
