@@ -2,7 +2,12 @@ import {
   type DemocracyMapMode,
   getDemocracyLegendTitle,
   getDemocracyLegendItems,
+  isWvsMapMode,
 } from "../lib/democracyColors";
+import {
+  formatWvsSelectionLabel,
+  getWvsLegendStops,
+} from "../lib/wvsResults";
 
 export type DemocracyMapLegendProps = {
   mode: DemocracyMapMode;
@@ -10,6 +15,29 @@ export type DemocracyMapLegendProps = {
 
 export function DemocracyMapLegend({ mode }: DemocracyMapLegendProps) {
   if (!mode) return null;
+
+  if (isWvsMapMode(mode)) {
+    const title = formatWvsSelectionLabel(mode) ?? "World Values Survey";
+    const items = getWvsLegendStops(mode);
+    if (items.length === 0) return null;
+    return (
+      <div className="democracy-map-legend" role="region" aria-label={`${title} map legend`}>
+        <span className="democracy-map-legend__title">{title}:</span>
+        <ul className="democracy-map-legend__list">
+          {items.map((item) => (
+            <li key={item.label} className="democracy-map-legend__item">
+              <span
+                className="democracy-map-legend__swatch"
+                style={{ backgroundColor: item.color }}
+                aria-hidden="true"
+              />
+              <span className="democracy-map-legend__label">{item.label}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
 
   const title = getDemocracyLegendTitle(mode);
   const items = getDemocracyLegendItems(mode);

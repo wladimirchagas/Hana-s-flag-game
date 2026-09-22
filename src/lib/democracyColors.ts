@@ -23,7 +23,28 @@ export type DemocracyIndexKey =
   | "digital-news"
   | "gti";
 
-export type DemocracyMapMode = DemocracyIndexKey | null;
+/**
+ * World Values Survey map colour mode — one question with one or more answer
+ * columns summed. Kept as a structured object (not a string key) so the Indexes
+ * popover can edit answer checkboxes without re-encoding on every toggle.
+ */
+export type WvsMapMode = {
+  kind: "wvs";
+  questionId: string;
+  answerIndexes: number[];
+};
+
+export type DemocracyMapMode = DemocracyIndexKey | WvsMapMode | null;
+
+export function isWvsMapMode(mode: DemocracyMapMode): mode is WvsMapMode {
+  return typeof mode === "object" && mode !== null && mode.kind === "wvs";
+}
+
+export function isDemocracyIndexMode(
+  mode: DemocracyMapMode,
+): mode is DemocracyIndexKey {
+  return typeof mode === "string";
+}
 
 /** Ordered list of every democracy / governance index the map and chart can use.
  *  New indexes land here so the chart axis pickers and map colour modes stay in
@@ -663,11 +684,12 @@ export const INDEX_MAP_COLOR_REGISTRY: readonly {
 ];
 
 export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
-  if (!mode) return "";
+  if (!mode || isWvsMapMode(mode)) return "";
   return getDemocracyIndexLabel(mode);
 }
 
 export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegendItem[] {
+  if (!mode || isWvsMapMode(mode)) return [];
   if (mode === "freedom-house") {
     return [
       { label: "Free", color: FREEDOM_HOUSE_MAP_COLORS["Free"] },
@@ -782,7 +804,7 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
 }
 
 export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, string> | null {
-  if (!mode) return null;
+  if (!mode || isWvsMapMode(mode)) return null;
   const overlay = new Map<string, string>();
   for (const [code, facts] of Object.entries(COUNTRY_FACTS)) {
     const demo = facts.democracy;

@@ -4,8 +4,12 @@ import { useEffect, useRef, useState } from "react";
 import {
   getDemocracyIndexLabel,
   getDemocracyIndexMenuGroups,
+  isDemocracyIndexMode,
+  isWvsMapMode,
   type DemocracyMapMode,
 } from "../lib/democracyColors";
+import { formatWvsSelectionLabel } from "../lib/wvsResults";
+import { WvsSelectionPicker } from "./WvsSelectionPicker";
 
 export type DemocracyMapControlProps = {
   mode: DemocracyMapMode;
@@ -18,7 +22,7 @@ export function DemocracyMapControl({
 }: DemocracyMapControlProps) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-  const popoverStyle = usePopoverBounds(open, ref, 360);
+  const popoverStyle = usePopoverBounds(open, ref, 420);
   const menuGroups = getDemocracyIndexMenuGroups();
 
   useEffect(() => {
@@ -39,12 +43,17 @@ export function DemocracyMapControl({
     };
   }, [open]);
 
-  const selectMode = (next: DemocracyMapMode) => {
+  const selectIndex = (next: DemocracyMapMode) => {
     onChange(next);
     setOpen(false);
   };
 
   const isActive = mode !== null;
+  const activeLabel = isWvsMapMode(mode)
+    ? formatWvsSelectionLabel(mode)
+    : isDemocracyIndexMode(mode)
+      ? getDemocracyIndexLabel(mode)
+      : null;
 
   return (
     <div className="democracy-map-control" ref={ref}>
@@ -53,8 +62,16 @@ export function DemocracyMapControl({
         className={`world-map__zoom-btn world-map__zoom-btn--layer${isActive ? " world-map__zoom-btn--active" : ""}`}
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
-        aria-label="Colour countries by index or ranking"
-        title="Colour countries by index or ranking"
+        aria-label={
+          activeLabel
+            ? `Colour countries by index or survey — ${activeLabel}`
+            : "Colour countries by index, ranking, or survey"
+        }
+        title={
+          activeLabel
+            ? `Colour by: ${activeLabel}`
+            : "Colour countries by index, ranking, or survey"
+        }
       >
         <span className="world-map__zoom-icon" aria-hidden="true">
           <UiIcon name="democracy" />
@@ -66,14 +83,14 @@ export function DemocracyMapControl({
           className="map-view-control__popover democracy-map-control__popover"
           style={popoverStyle}
           role="dialog"
-          aria-label="Index and ranking map view"
+          aria-label="Index, ranking, and survey map view"
         >
           <p className="map-view-control__heading">Indexes & rankings</p>
           <div className="democracy-map-control__options">
             <button
               type="button"
               className={`map-view-control__preset${mode === null ? " map-view-control__preset--active" : ""}`}
-              onClick={() => selectMode(null)}
+              onClick={() => selectIndex(null)}
             >
               Off (Default map)
             </button>
@@ -86,13 +103,27 @@ export function DemocracyMapControl({
                     key={meta.key}
                     type="button"
                     className={`map-view-control__preset${mode === meta.key ? " map-view-control__preset--active" : ""}`}
-                    onClick={() => selectMode(meta.key)}
+                    onClick={() => selectIndex(meta.key)}
                   >
                     {getDemocracyIndexLabel(meta.key)}
                   </button>
                 ))}
               </div>
             ))}
+            <div className="democracy-map-control__group">
+              <hr className="democracy-map-control__divider" aria-hidden="true" />
+              <WvsSelectionPicker
+                value={isWvsMapMode(mode) ? mode : null}
+                onChange={(sel) => {
+                  if (!sel) {
+                    onChange(null);
+                    return;
+                  }
+                  // Keep the popover open so further answers can be ticked.
+                  onChange({ kind: "wvs", ...sel });
+                }}
+              />
+            </div>
           </div>
         </div>
       )}

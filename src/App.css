@@ -3093,6 +3093,170 @@
   line-height: 1.25;
 }
 
+/* World Values Survey picker (Indexes popover + chart) */
+.wvs-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.wvs-picker__note {
+  margin: 0;
+  padding: 0 0.55rem;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: var(--ink-soft, #6b7280);
+}
+
+.wvs-picker__active {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--sky, #4ecdc4) 12%, transparent);
+}
+
+.wvs-picker__active-label {
+  flex: 1;
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+
+.wvs-picker__clear {
+  flex-shrink: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft, #6b7280);
+  font-size: 0.72rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.wvs-picker__themes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  max-height: min(50vh, 28rem);
+  overflow: auto;
+}
+
+.wvs-picker__theme-btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.35rem 0.55rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.wvs-picker__theme-btn:hover,
+.wvs-picker__theme-btn:focus-visible {
+  background: color-mix(in srgb, var(--ink, #1f2937) 6%, transparent);
+}
+
+.wvs-picker__count {
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--ink-soft, #6b7280);
+}
+
+.wvs-picker__questions {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0.25rem 0.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.wvs-picker__question-btn {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  gap: 0.4rem;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.78rem;
+  text-align: left;
+  padding: 0.3rem 0.45rem;
+  cursor: pointer;
+  border-radius: 4px;
+  line-height: 1.25;
+}
+
+.wvs-picker__question-btn:hover,
+.wvs-picker__question-btn:focus-visible {
+  background: color-mix(in srgb, var(--ink, #1f2937) 6%, transparent);
+}
+
+.wvs-picker__question-btn--active {
+  background: color-mix(in srgb, var(--sky, #4ecdc4) 16%, transparent);
+}
+
+.wvs-picker__qid {
+  flex-shrink: 0;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--ink-soft, #6b7280);
+}
+
+.wvs-picker__qtitle {
+  flex: 1;
+}
+
+.wvs-picker__answers {
+  border: 0;
+  margin: 0.15rem 0 0.35rem 0.9rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.wvs-picker__answer {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  cursor: pointer;
+  padding: 0.15rem 0.2rem;
+}
+
+.wvs-picker__answer input {
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+.democracy-index-chart__wvs-answers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.65rem;
+  margin-top: 0.35rem;
+  max-width: 22rem;
+}
+
+.democracy-index-chart__wvs-answer {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
 .world-map__below-node {
   width: 100%;
   margin-top: 0.5rem;
