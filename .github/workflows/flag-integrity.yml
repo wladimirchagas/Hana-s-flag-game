@@ -35,6 +35,10 @@ on:
       - "src/data/flagMeanings.ts"
       - "src/data/cityFlagMeanings.ts"
       - "public/subdivisions/**"
+      - "public/world-subnational-borders.json"
+      - "scripts/build-world-subnational-borders.mjs"
+      - "scripts/lib/subnational-border-mesh.mjs"
+      - "src/lib/worldSubnationalBorders.ts"
       - "scripts/build-subdivision-meta.mjs"
       - "scripts/check-subdivision-meta-coverage.mjs"
       - "public/national-flags/**"
@@ -254,6 +258,9 @@ jobs:
 
       - name: Verify World Values Survey results wiring (incl. Joint EVS/WVS France)
         run: node scripts/check-wvs-results.mjs
+
+      - name: Verify the precomputed world sub-national borders mesh is up to date
+        run: node scripts/build-world-subnational-borders.mjs --check
 
       - name: Verify every flags:check gate actually runs in CI
         run: node scripts/check-ci-coverage.mjs
