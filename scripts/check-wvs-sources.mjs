@@ -44,8 +44,11 @@ if (!Array.isArray(manifest.entries) || manifest.entries.length === 0) {
   process.exit(1);
 }
 
+const INVENTORY_PATH = resolve(ROOT, "scripts/data/wvs-wave7-inventory.json");
+
 const requiredCountryIsos = new Set(["JP", "NZ", "SG", "AU", "BR", "ID", "MY", "FR"]);
 const seenIsos = new Set();
+const seenWave7Doids = new Set();
 
 for (const entry of manifest.entries) {
   const path = resolve(ROOT, entry.path);
@@ -110,6 +113,7 @@ for (const entry of manifest.entries) {
       }
     }
     if (entry.iso2) seenIsos.add(entry.iso2);
+    if (entry.wave === 7 && entry.doid) seenWave7Doids.add(String(entry.doid));
   }
   if (entry.kind === "participating_countries_list" && entry.iso2) {
     seenIsos.add(entry.iso2);
@@ -125,6 +129,30 @@ for (const iso of requiredCountryIsos) {
 }
 for (const iso of ["JP", "NZ", "SG", "FR"]) {
   if (seenIsos.has(iso)) ok(`coverage includes newly fetched ${iso}`);
+}
+
+// Full Wave 7 archive coverage — every inventory DOID with a published
+// country-results PDF must appear in the manifest (India/Uzbekistan omitted
+// because the archive has no results PDF yet).
+if (existsSync(INVENTORY_PATH)) {
+  const inventory = JSON.parse(readFileSync(INVENTORY_PATH, "utf8"));
+  const requiredDoids = inventory.documents
+    .filter((d) => d.doid)
+    .map((d) => String(d.doid));
+  let missing = 0;
+  for (const doid of requiredDoids) {
+    if (!seenWave7Doids.has(doid)) {
+      fail(`Wave 7 inventory DOID ${doid} missing from manifest country-results`);
+      missing += 1;
+    }
+  }
+  if (missing === 0) {
+    ok(
+      `Wave 7 inventory coverage: all ${requiredDoids.length} published country-results DOIDs present`,
+    );
+  }
+} else {
+  fail(`missing Wave 7 inventory ${INVENTORY_PATH}`);
 }
 
 if (process.exitCode) {
