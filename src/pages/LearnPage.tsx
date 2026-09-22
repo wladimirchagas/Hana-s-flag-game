@@ -2195,6 +2195,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             centerLongitude={mapView.centerLongitude}
             rotationOffset={rotationOffset}
             southUp={mapView.southUp}
+            showSubnationalBorders={mapView.showSubnationalBorders}
             extraControls={mapExtraControls}
             flagOverlay={modernFlagOverlay}
             fillOverride={democracyColorOverlay ?? passportColorOverlay}

@@ -13,6 +13,8 @@ import { useZoomPan, type ZoomPanState } from "../hooks/useZoomPan";
 import { useUnitPx } from "../hooks/useUnitPx";
 import { CityMarkers, type ScreenCity } from "./CityMarkers";
 import type { PlacedCity } from "../lib/cityRoles";
+import { loadWorldSubnationalBorders } from "../lib/worldSubnationalBorders";
+import type { SubdivisionGeoFeature } from "../types/subdivision";
 
 // Countries whose land area is ≤ Denmark (~43,094 km²).  These get the
 // pulsing indicator when selected so they're easy to locate on the map.
@@ -145,6 +147,13 @@ type Props = {
   rotationOffset?: number;
   /** When true, the rendered map is flipped vertically — south at the top. */
   southUp?: boolean;
+  /**
+   * When true, draw every country's bundled sub-national borders as a lighter
+   * dashed overlay on top of the country fills. Decorative only
+   * (`pointer-events: none`) — hover/click still select the country. Used by
+   * Learn-mode Today; ignored elsewhere.
+   */
+  showSubnationalBorders?: boolean;
   /** Optional extra controls to render below the +/-/⛶ zoom buttons. */
   extraControls?: React.ReactNode;
   /** When provided, each country whose alpha-2 code is a key in this map
@@ -409,6 +418,7 @@ export function WorldProgressMap({
   centerLongitude = 0,
   rotationOffset = 0,
   southUp = false,
+  showSubnationalBorders = false,
   extraControls,
   flagOverlay = null,
   fillOverride = null,
@@ -422,6 +432,12 @@ export function WorldProgressMap({
   // Locally-tracked hovered country, used to reveal that country's capital
   // label in the (non-interactive) city overlay.
   const [hoveredCode, setHoveredCode] = useState<string | null>(null);
+  // Sub-national border overlay features — loaded lazily the first time the
+  // checkbox is turned on, then kept for the life of the component so a
+  // toggle-off / toggle-on does not refetch.
+  const [subnationalFeatures, setSubnationalFeatures] = useState<
+    SubdivisionGeoFeature[] | null
+  >(null);
   const frameRef = useRef<HTMLDivElement>(null);
   // Screen px per user unit — keeps the revealed capital label a constant size.
   const [unitPx, measureFrame] = useUnitPx(WIDTH);
@@ -585,6 +601,25 @@ export function WorldProgressMap({
     };
   }, []);
 
+  // Load all country subdivision GeoJSONs the first time the overlay is
+  // enabled. Cached by loadWorldSubnationalBorders() so later toggles are free.
+  useEffect(() => {
+    if (!showSubnationalBorders) return;
+    if (subnationalFeatures) return;
+    let cancelled = false;
+    (async () => {
+      try {
+        const features = await loadWorldSubnationalBorders();
+        if (!cancelled) setSubnationalFeatures(features);
+      } catch {
+        // Leave null — a later toggle / remount can retry.
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [showSubnationalBorders, subnationalFeatures]);
+
   // Cold path — only reruns when geography data or center meridian changes.
   // rotationOffset is intentionally excluded: the three-copy translate approach
   // handles globe rotation in O(1) without reprojecting paths on every frame.
@@ -636,6 +671,23 @@ export function WorldProgressMap({
 
     return { pathByIdx, centroidByAlpha2, spherePath, pxPerDegree };
   }, [geographies, centerLongitude]);
+
+  // Projected sub-national border paths — same Equal Earth / centre-longitude
+  // projection as the country layer so the three-copy rotation translate lines
+  // them up. Recomputed only when features or the meridian change.
+  const subnationalPaths = useMemo(() => {
+    if (!subnationalFeatures || subnationalFeatures.length === 0) return [] as string[];
+    const projection = geoEqualEarth()
+      .rotate([-centerLongitude, 0])
+      .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
+    const mapPath = geoPath(projection);
+    const paths: string[] = [];
+    for (const f of subnationalFeatures) {
+      const d = mapPath(f as never);
+      if (d) paths.push(d);
+    }
+    return paths;
+  }, [subnationalFeatures, centerLongitude]);
 
   // O(1) hot path — no memo, no reprojection. Three copies of the country
   // paths (at -WIDTH, 0, +WIDTH) are all translated together by this amount,
@@ -1021,6 +1073,77 @@ export function WorldProgressMap({
                     highlightCodes={highlightCodes}
                     territoryParent={selectable?.territoryParent}
                   />
+                )}
+                {/* Sub-national borders — decorative only. Drawn ABOVE country
+                    fills (and any flag overlay) so internal state/province
+                    lines are visible; pointer-events:none so hover/click still
+                    hit the country underneath. A stroke-only national-border
+                    pass follows so coastlines stay solid, not dashed. */}
+                {showSubnationalBorders && subnationalPaths.length > 0 && (
+                  <g
+                    className="world-map__subnational-borders"
+                    pointerEvents="none"
+                    aria-hidden="true"
+                  >
+                    {subnationalPaths.map((d, i) => (
+                      <path
+                        key={i}
+                        d={d}
+                        fill="none"
+                        stroke={palette.stroke}
+                        strokeWidth={0.35}
+                        strokeOpacity={0.4}
+                        strokeDasharray="2.5 2"
+                        vectorEffect="non-scaling-stroke"
+                      />
+                    ))}
+                  </g>
+                )}
+                {/* Re-stroke national outlines on top of the dashed overlay so
+                    country borders stay visually distinct (solid, darker). */}
+                {showSubnationalBorders && subnationalPaths.length > 0 && (
+                  <g
+                    className="world-map__national-border-restore"
+                    pointerEvents="none"
+                    aria-hidden="true"
+                  >
+                    {geographies.map((geo, idx) => {
+                      const path = pathByIdx.get(idx);
+                      if (!path) return null;
+                      const alpha2 = toIsoAlpha2(geo.id);
+                      const isSelected =
+                        !!alpha2 &&
+                        (alpha2 === selectedCode || !!highlightCodes?.has(alpha2));
+                      const featureName =
+                        typeof geo.properties?.name === "string"
+                          ? geo.properties.name
+                          : null;
+                      const isDisputedTerritory =
+                        geo.id === "DISPUTED_CRIMEA" ||
+                        (alpha2 !== null &&
+                          (DISPUTED_TERRITORY_CODES.has(alpha2) ||
+                            WORLD_MAP_DISPUTED_ALPHA2.has(alpha2))) ||
+                        (featureName !== null &&
+                          WORLD_MAP_DISPUTED_NAMES.has(featureName));
+                      return (
+                        <path
+                          key={`nb-${String(geo.id ?? idx)}-${idx}`}
+                          d={path}
+                          fill="none"
+                          stroke={
+                            isSelected ? palette.selectedStroke : palette.stroke
+                          }
+                          strokeWidth={
+                            isSelected ? 1.4 : isDisputedTerritory ? 0.75 : 0.45
+                          }
+                          strokeOpacity={
+                            isSelected ? 1 : isDisputedTerritory ? 0.8 : 0.55
+                          }
+                          vectorEffect="non-scaling-stroke"
+                        />
+                      );
+                    })}
+                  </g>
                 )}
               </g>
             ))}
