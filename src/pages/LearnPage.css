@@ -1723,6 +1723,9 @@
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-display);
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .flag-grid__header {
@@ -1732,6 +1735,10 @@
   gap: 1rem;
   flex-wrap: wrap;
   margin: 0 0 1.25rem;
+  /* Bound the flex row so a long native <select> (Group-by index labels)
+     cannot grow the page past the viewport — owner report, 2026-09. */
+  min-width: 0;
+  max-width: 100%;
 }
 
 .flag-grid__title {
@@ -1757,13 +1764,21 @@
 }
 
 /* Group-by dropdown — replaces the old segmented A-Z/continent/region
-   toolbar. Sits to the right of the section title. */
+   toolbar. Sits to the right of the section title.
+   Grid + minmax(0, 1fr) is the reliable way to stop a native <select> from
+   sizing its closed control to the widest <option> (index Group-by labels
+   run 50–63 chars and were overflowing phones — owner report, 2026-09). */
 .flag-grid__group-select {
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
   gap: 0.5rem;
   font-size: 0.85rem;
   font-weight: 600;
+  min-width: 0;
+  max-width: min(100%, 22rem);
+  flex: 1 1 auto;
+  box-sizing: border-box;
 }
 
 .flag-grid__group-select-label {
@@ -1787,6 +1802,10 @@
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
   /* Custom chevron */
   background-image: linear-gradient(45deg, transparent 50%, var(--ink) 50%),
                     linear-gradient(135deg, var(--ink) 50%, transparent 50%);
@@ -1813,6 +1832,9 @@
   gap: 0.6rem;
   flex-wrap: nowrap;
   min-width: 0;
+  max-width: 100%;
+  flex: 1 1 auto;
+  box-sizing: border-box;
 }
 
 .flag-grid__filter {
@@ -3436,22 +3458,29 @@
   }
   /* Give the controls their own full-width row under the title. With the
      "Show" dropdown added there can be three controls (filter + Show + Group
-     by), which no longer fit on one phone-width line — so allow wrapping: the
-     filter takes its own row, and the two selects share the row beneath it. */
+     by), which no longer fit on one phone-width line — so allow wrapping:
+     filter on its own row, then each select on a full-width row beneath.
+     Full-width rows (not side-by-side) keep long Group-by option labels from
+     pushing the page into horizontal overflow on phones. */
   .flag-grid__controls {
     width: 100%;
     flex: 1 1 100%;
     flex-wrap: wrap;
+    max-width: 100%;
   }
   .flag-grid__filter {
     flex: 1 1 100%;
   }
   .flag-grid__group-select {
-    flex: 0 1 auto;
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
     min-width: 0;
   }
   .flag-grid__select {
+    width: 100%;
     max-width: 100%;
+    min-width: 0;
   }
 
   /* Hierarchy table — smaller thumb/text so all 3 columns keep fitting
