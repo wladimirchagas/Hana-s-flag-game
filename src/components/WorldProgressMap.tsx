@@ -1091,9 +1091,9 @@ export function WorldProgressMap({
                         d={d}
                         fill="none"
                         stroke={palette.stroke}
-                        strokeWidth={0.35}
-                        strokeOpacity={0.4}
-                        strokeDasharray="2.5 2"
+                        strokeWidth={0.55}
+                        strokeOpacity={0.45}
+                        strokeDasharray="4 3"
                         vectorEffect="non-scaling-stroke"
                       />
                     ))}
