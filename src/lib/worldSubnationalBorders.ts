@@ -2,15 +2,16 @@
  * Lazy loader for the Learn-mode world-map "Sub-national borders" overlay.
  *
  * Fetches every country with a bundled subdivision GeoJSON (the same set
- * `SUBDIVISION_META` covers), then builds a MultiLineString of INTERNAL
- * borders only — each shared edge once. That matters for two reasons:
+ * `SUBDIVISION_META` covers), then builds one MultiLineString of INTERNAL
+ * borders per country — each shared edge once, stitched into polylines.
  *
- * 1. Stroking every subdivision polygon draws each shared edge twice; with
- *    opposite winding the two dash patterns interleave and look solid.
- * 2. One mesh path is far cheaper to project/render than ~4,300 polygons.
+ * Stroking every subdivision polygon draws each shared edge twice; with
+ * opposite winding the two dash patterns interleave and look solid. A mesh
+ * of unique internal edges keeps dashes visible and drops coastlines (the
+ * country layer already draws those solid).
  *
- * Coastline / national-outline edges (count 1) are dropped — the country
- * layer already draws those solid. Results are session-cached.
+ * One Feature per country (not one giant world mesh) keeps SVG path strings
+ * tractable. Results are session-cached.
  *
  * Antarctica is excluded by construction: `AQ` is not in `SUBDIVISION_META`.
  */
@@ -47,21 +48,22 @@ function ringsOf(geometry: unknown): Ring[] {
   return [];
 }
 
+function qKey(p: LonLat): string {
+  return `${p[0].toFixed(Q)},${p[1].toFixed(Q)}`;
+}
+
 function edgeKey(a: LonLat, b: LonLat): string {
-  const a0 = a[0].toFixed(Q);
-  const a1 = a[1].toFixed(Q);
-  const b0 = b[0].toFixed(Q);
-  const b1 = b[1].toFixed(Q);
-  // Undirected: smaller endpoint first.
-  if (a0 < b0 || (a0 === b0 && a1 < b1)) return `${a0},${a1}|${b0},${b1}`;
-  return `${b0},${b1}|${a0},${a1}`;
+  const ka = qKey(a);
+  const kb = qKey(b);
+  return ka < kb ? `${ka}|${kb}` : `${kb}|${ka}`;
 }
 
 /**
- * Build a single MultiLineString of edges that appear on two or more
- * subdivision rings (internal borders). Exterior/coast edges are omitted.
+ * Internal-border mesh for one country: edges that appear on two or more
+ * subdivision rings, stitched into continuous polylines where endpoints meet.
  */
-function internalBorderMesh(
+function countryInternalMesh(
+  countryCode: string,
   features: readonly SubdivisionGeoFeature[],
 ): SubdivisionGeoFeature | null {
   const counts = new Map<string, number>();
@@ -80,37 +82,102 @@ function internalBorderMesh(
     }
   }
 
-  const lines: LonLat[][] = [];
+  // Adjacency: quantized endpoint → list of undirected edge keys
+  const adj = new Map<string, string[]>();
+  const internalKeys: string[] = [];
   for (const [key, n] of counts) {
-    if (n < 2) continue; // exterior / unmatched — leave to the national stroke
+    if (n < 2) continue;
+    internalKeys.push(key);
     const pair = coords.get(key);
-    if (pair) lines.push(pair);
+    if (!pair) continue;
+    const ka = qKey(pair[0]);
+    const kb = qKey(pair[1]);
+    if (!adj.has(ka)) adj.set(ka, []);
+    if (!adj.has(kb)) adj.set(kb, []);
+    adj.get(ka)!.push(key);
+    adj.get(kb)!.push(key);
   }
-  if (lines.length === 0) return null;
+  if (internalKeys.length === 0) return null;
+
+  const used = new Set<string>();
+  const lines: LonLat[][] = [];
+
+  function otherEnd(key: string, from: string): string {
+    const pair = coords.get(key)!;
+    const ka = qKey(pair[0]);
+    return ka === from ? qKey(pair[1]) : ka;
+  }
+
+  function pointFor(key: string, endpoint: string): LonLat {
+    const pair = coords.get(key)!;
+    return qKey(pair[0]) === endpoint ? pair[0] : pair[1];
+  }
+
+  function walk(startKey: string): LonLat[] {
+    used.add(startKey);
+    const startPair = coords.get(startKey)!;
+    // Prefer walking from a degree-1 endpoint when the edge is in a chain.
+    let left = qKey(startPair[0]);
+    let right = qKey(startPair[1]);
+    const line: LonLat[] = [startPair[0], startPair[1]];
+
+    // Extend forward from `right`
+    let tip = right;
+    for (;;) {
+      const next = (adj.get(tip) ?? []).find((k) => !used.has(k));
+      if (!next) break;
+      used.add(next);
+      const far = otherEnd(next, tip);
+      line.push(pointFor(next, far));
+      tip = far;
+    }
+
+    // Extend backward from `left`
+    tip = left;
+    for (;;) {
+      const next = (adj.get(tip) ?? []).find((k) => !used.has(k));
+      if (!next) break;
+      used.add(next);
+      const far = otherEnd(next, tip);
+      line.unshift(pointFor(next, far));
+      tip = far;
+    }
+    return line;
+  }
+
+  for (const key of internalKeys) {
+    if (used.has(key)) continue;
+    lines.push(walk(key));
+  }
 
   return {
     type: "Feature",
-    properties: { name: "subnational-borders", iso_3166_2: "" },
+    properties: {
+      name: `${countryCode}-subnational-borders`,
+      iso_3166_2: countryCode,
+    },
     geometry: { type: "MultiLineString", coordinates: lines },
   };
 }
 
 async function loadAll(): Promise<SubdivisionGeoFeature[]> {
-  const features: SubdivisionGeoFeature[] = [];
+  const meshes: SubdivisionGeoFeature[] = [];
   for (let i = 0; i < COUNTRY_CODES.length; i += CONCURRENCY) {
     const batch = COUNTRY_CODES.slice(i, i + CONCURRENCY);
     const geos = await Promise.all(batch.map((code) => fetchSubdivisionGeo(code)));
-    for (const geo of geos) {
-      if (!geo) continue;
-      for (const f of geo.features) features.push(f);
+    for (let j = 0; j < batch.length; j++) {
+      const code = batch[j]!;
+      const geo = geos[j];
+      if (!geo || geo.features.length === 0) continue;
+      const mesh = countryInternalMesh(code, geo.features);
+      if (mesh) meshes.push(mesh);
     }
   }
-  const mesh = internalBorderMesh(features);
-  return mesh ? [mesh] : [];
+  return meshes;
 }
 
 /**
- * Returns the internal-border mesh as a one-feature list for the world-map
+ * Returns one internal-border mesh Feature per country for the world-map
  * overlay. Resolves the same array on every subsequent call (session cache).
  */
 export function loadWorldSubnationalBorders(): Promise<SubdivisionGeoFeature[]> {
