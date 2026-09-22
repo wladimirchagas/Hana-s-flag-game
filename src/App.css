@@ -2663,7 +2663,7 @@
   position: absolute;
   top: 0;
   right: calc(100% + 0.5rem);
-  width: 13rem;
+  width: 14rem;
   padding: 0.7rem 0.8rem 0.75rem;
   background: var(--paper, #fff);
   border: 2px solid var(--ink, #1a2238);
@@ -2750,6 +2750,10 @@
   font-size: 0.84rem;
   font-weight: 600;
   cursor: pointer;
+}
+
+.map-view-control__check + .map-view-control__check {
+  margin-top: 0.4rem;
 }
 
 .map-view-control__check input {

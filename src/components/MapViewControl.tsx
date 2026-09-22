@@ -15,7 +15,8 @@ import {
  *
  * Designed to sit in the same column as the +/-/⟲ zoom buttons. Closed
  * state is a single globe-icon button; open state floats a popover with
- * the preset chips, the slider, and the polarity toggle.
+ * the preset chips, the slider, the polarity toggle, and the sub-national
+ * borders toggle (Today map only — HistoricalMap ignores the setting).
  */
 export type MapViewControlProps = {
   view: MapViewSettings;
@@ -49,6 +50,11 @@ export function MapViewControl({ view, onChange }: MapViewControlProps) {
   const setLongitude = (n: number) =>
     onChange({ ...view, centerLongitude: clampLongitude(n) });
   const toggleSouthUp = () => onChange({ ...view, southUp: !view.southUp });
+  const toggleSubnationalBorders = () =>
+    onChange({
+      ...view,
+      showSubnationalBorders: !view.showSubnationalBorders,
+    });
 
   return (
     <div className="map-view-control" ref={ref}>
@@ -108,6 +114,15 @@ export function MapViewControl({ view, onChange }: MapViewControlProps) {
               onChange={toggleSouthUp}
             />
             <span>South-up</span>
+          </label>
+
+          <label className="map-view-control__check">
+            <input
+              type="checkbox"
+              checked={view.showSubnationalBorders}
+              onChange={toggleSubnationalBorders}
+            />
+            <span>Sub-national borders</span>
           </label>
         </div>
       )}

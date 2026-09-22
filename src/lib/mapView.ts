@@ -17,6 +17,12 @@ export type MapViewSettings = {
   centerLongitude: number;
   /** When true, the map is mirrored vertically — south at the top. */
   southUp: boolean;
+  /**
+   * When true, the modern (Today) world map draws every country's bundled
+   * sub-national borders as a lighter dashed overlay. Purely decorative —
+   * clicks still select the country. Persisted with the other view settings.
+   */
+  showSubnationalBorders: boolean;
 };
 
 export type MapViewPreset = {
@@ -40,6 +46,7 @@ export const MAP_VIEW_PRESETS: readonly MapViewPreset[] = [
 export const DEFAULT_MAP_VIEW: MapViewSettings = {
   centerLongitude: 0,
   southUp: false,
+  showSubnationalBorders: false,
 };
 
 const STORAGE_KEY = "hana-flag-game.map-view";
@@ -56,6 +63,7 @@ export function loadMapView(): MapViewSettings {
           ? clampLongitude(parsed.centerLongitude)
           : DEFAULT_MAP_VIEW.centerLongitude,
       southUp: !!parsed.southUp,
+      showSubnationalBorders: !!parsed.showSubnationalBorders,
     };
   } catch {
     return DEFAULT_MAP_VIEW;
