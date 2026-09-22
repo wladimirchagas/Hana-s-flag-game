@@ -1091,9 +1091,13 @@ export function WorldProgressMap({
                         d={d}
                         fill="none"
                         stroke={palette.stroke}
-                        strokeWidth={0.55}
-                        strokeOpacity={0.45}
-                        strokeDasharray="4 3"
+                        strokeWidth={0.7}
+                        strokeOpacity={0.5}
+                        // Longer gaps than dashes so shared edges drawn twice
+                        // (once per adjacent subdivision) still read as dashed
+                        // rather than filling in to a solid line.
+                        strokeDasharray="1.5 4"
+                        strokeLinecap="butt"
                         vectorEffect="non-scaling-stroke"
                       />
                     ))}
