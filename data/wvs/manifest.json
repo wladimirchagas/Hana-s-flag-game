@@ -1,6 +1,6 @@
 {
   "dataset": "World Values Survey country/wave results (aggregated PDF/XLSX reports)",
-  "note": "Wave 7 (2017\u20132022) is the latest completed WVS-only wave available from the WVS Data Archive as of retrieval. WVS-8 fieldwork is planned for 2024\u20132026 and is not published as equivalent country-results PDFs yet. No figures were invented or transcribed by hand \u2014 files are WVS archive downloads (JP/NZ/SG + wave Results-by-Country) or user-provided copies that match archive titles/DOIDs (AU/BR/ID/MY). France never fielded a WVS Wave 6 or Wave 7 survey \u2014 confirmed by checking the WVS Data Archive's own per-wave country index (AJDocumentation.jsp?CndWAVE=1..9), which lists France only under Wave 1, Wave 2 (both EVS re-hosts, 1981\u20131984/1990\u20131994) and Wave 5 (2006). The latest France data on worldvaluessurvey.org is the officially co-published Joint EVS/WVS 2017\u20132022 dataset (WVSA + European Values Study), whose France component fielded 2018-03-02 to 2018-08-16 (CAPI, French, EVS round) \u2014 see the joint-evs-wvs-2017-2022 entries below, downloaded directly from https://www.worldvaluessurvey.org/WVSEVSjoint2017.jsp.",
+  "note": "Wave 7 (2017–2022) is the latest completed WVS wave available from the WVS Data Archive as of retrieval. WVS-8 fieldwork is planned for 2024–2026 and is not published as equivalent country-results PDFs yet. No figures were invented or transcribed by hand — files are WVS archive downloads. India 2023 and Uzbekistan 2022 are Wave 7 societies but have no country-results PDF on the archive yet. France is covered via Wave 5 + Joint EVS/WVS (see wave5/ and joint-evs-wvs-2017-2022/).",
   "citation": "Haerpfer, C., Inglehart, R., Moreno, A., Welzel, C., Kizilova, K., Diez-Medrano, J., Lagos, M., Norris, P., Ponarin, E. & Puranen B. et al. (eds.). World Values Survey Wave 7 documentation / country results. World Values Survey Association / JD Systems Data Archive. https://www.worldvaluessurvey.org/WVSDocumentationWV7.jsp",
   "conditions_of_use_summary": "Non-profit use with proper citation. Do not redistribute microdata (SPSS/Stata/CSV). This folder stores aggregated country/wave results PDF reports only.",
   "official_index": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
@@ -34,7 +34,7 @@
         "title_country_match": true,
         "sample_n_from_pdf": 1813,
         "japan_v4_exclusive_country_ok": null,
-        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) | Australia | Study # WVS-2017 | v3.0"
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Australia Study # WVS-2017 v3.0"
       }
     },
     {
@@ -65,7 +65,7 @@
         "title_country_match": true,
         "sample_n_from_pdf": 1762,
         "japan_v4_exclusive_country_ok": null,
-        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) | Brazil | Study # WVS-2017 | v3.0"
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Brazil Study # WVS-2017 v3.0"
       }
     },
     {
@@ -96,7 +96,7 @@
         "title_country_match": true,
         "sample_n_from_pdf": 3200,
         "japan_v4_exclusive_country_ok": null,
-        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) | Indonesia | Study # WVS-2017 | v3.0"
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Indonesia Study # WVS-2017 v3.0"
       }
     },
     {
@@ -127,7 +127,7 @@
         "title_country_match": true,
         "sample_n_from_pdf": 1313,
         "japan_v4_exclusive_country_ok": null,
-        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) | Malaysia | Study # WVS-2017 | v3.0"
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Malaysia Study # WVS-2017 v3.0"
       }
     },
     {
@@ -158,7 +158,7 @@
         "title_country_match": true,
         "sample_n_from_pdf": 1353,
         "japan_v4_exclusive_country_ok": null,
-        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) | Japan | Study # WVS-2017 | v3.0"
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Japan Study # WVS-2017 v3.0"
       }
     },
     {
@@ -189,7 +189,8 @@
         "title_country_match": true,
         "sample_n_from_pdf": 1353,
         "japan_v4_exclusive_country_ok": true,
-        "first_page_excerpt": "World Values Survey Wave 7 (2017-2022) | Results in % by Sex and Age weighted by | w_weight | Study report #WVS-2017 | v4.0"
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2022) Results in % by Sex and Age weighted by w_weight Study report #WVS-2017 v4.0",
+        "soft_title_fallback": true
       }
     },
     {
@@ -220,7 +221,7 @@
         "title_country_match": true,
         "sample_n_from_pdf": 1057,
         "japan_v4_exclusive_country_ok": null,
-        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) | New Zealand | Study # WVS-2017 | v3.0"
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) New Zealand Study # WVS-2017 v3.0"
       }
     },
     {
@@ -251,7 +252,7 @@
         "title_country_match": true,
         "sample_n_from_pdf": 2012,
         "japan_v4_exclusive_country_ok": null,
-        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) | Singapore | Study # WVS-2017 | v3.0"
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Singapore Study # WVS-2017 v3.0"
       }
     },
     {
@@ -379,6 +380,1773 @@
         "japan_v4_exclusive_country_ok": null,
         "first_page_excerpt": "EVS_WVS_Countries_Territories sheet, row 32: Country=France | Round=EVS | Sample size=1870 | Fieldwork period=02-03-2018 - 16-08-2018 | Mode=CAPI | Language=French",
         "note": "Sample size here (1870, from the participating-countries worksheet) differs slightly from the 1,880 shown in the F00011082 frequency tables — both figures are taken verbatim from their respective official WVS/EVS files and neither has been altered to reconcile them."
+      }
+    },
+    {
+      "id": "F00010543",
+      "doid": "10543",
+      "wvs_sample_id": 3462,
+      "iso2": "MM",
+      "country": "Myanmar",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010543-World_Values_Survey_Wave_7_2017-2020_Myanmar_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010543-World_Values_Survey_Wave_7_2017-2020_Myanmar_v3.0.pdf",
+      "bytes": 2772272,
+      "sha256": "44d13a4cbe2c4b93d3b84efa3f22260d8e3095c1c67651ddae295d19e73c025f",
+      "pdf_pages": 98,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Myanmar Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010545",
+      "doid": "10545",
+      "wvs_sample_id": 3456,
+      "iso2": "NI",
+      "country": "Nicaragua",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010545-World_Values_Survey_Wave_7_2017-2020_Nicaragua_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010545-World_Values_Survey_Wave_7_2017-2020_Nicaragua_v3.0.pdf",
+      "bytes": 2868819,
+      "sha256": "8539d775ddbce37afe2f87b5846d87aeda54781173ac370797d8032e07761196",
+      "pdf_pages": 102,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Nicaragua Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010546",
+      "doid": "10546",
+      "wvs_sample_id": 3271,
+      "iso2": "NG",
+      "country": "Nigeria",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010546-World_Values_Survey_Wave_7_2017-2020_Nigeria_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010546-World_Values_Survey_Wave_7_2017-2020_Nigeria_v3.0.pdf",
+      "bytes": 2923364,
+      "sha256": "8f60daf977ebb6eeeb2297686a6447c888a560478311f1b91b9c1e3df402fc71",
+      "pdf_pages": 104,
+      "expected_sample_n": 1237,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1237,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Nigeria Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010547",
+      "doid": "10547",
+      "wvs_sample_id": 3350,
+      "iso2": "PK",
+      "country": "Pakistan",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010547-World_Values_Survey_Wave_7_2017-2020_Pakistan_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010547-World_Values_Survey_Wave_7_2017-2020_Pakistan_v3.0.pdf",
+      "bytes": 2983428,
+      "sha256": "3321e75c20d722c946838ea5322af77c23e5ebec6c5be85e232d460e3ff282f5",
+      "pdf_pages": 105,
+      "expected_sample_n": 1995,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1995,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Pakistan Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010548",
+      "doid": "10548",
+      "wvs_sample_id": 3300,
+      "iso2": "PE",
+      "country": "Peru",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010548-World_Values_Survey_Wave_7_2017-2020_Peru_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010548-World_Values_Survey_Wave_7_2017-2020_Peru_v3.0.pdf",
+      "bytes": 2809249,
+      "sha256": "702807b825843889376854589066402c2c4f911ccb93456d38aaaf1a6cfcf4fc",
+      "pdf_pages": 99,
+      "expected_sample_n": 1400,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1400,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Peru Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010549",
+      "doid": "10549",
+      "wvs_sample_id": 3457,
+      "iso2": "PH",
+      "country": "Philippines",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010549-World_Values_Survey_Wave_7_2017-2020_Philippines_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010549-World_Values_Survey_Wave_7_2017-2020_Philippines_v3.0.pdf",
+      "bytes": 2899930,
+      "sha256": "5515d1c0bdc7ddb274aeddb99a27803bb72745902c0f5a81c5090336de956d3d",
+      "pdf_pages": 103,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Philippines Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010550",
+      "doid": "10550",
+      "wvs_sample_id": 3403,
+      "iso2": "PR",
+      "country": "Puerto Rico",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010550-World_Values_Survey_Wave_7_2017-2020_Puerto_Rico_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010550-World_Values_Survey_Wave_7_2017-2020_Puerto_Rico_v3.0.pdf",
+      "bytes": 2951602,
+      "sha256": "52ba189505740719fb44f410003128387596442527caddef9900d1f904dad9e0",
+      "pdf_pages": 102,
+      "expected_sample_n": 1127,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1127,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Puerto Rico Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010551",
+      "doid": "10551",
+      "wvs_sample_id": 3243,
+      "iso2": "RO",
+      "country": "Romania",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010551-World_Values_Survey_Wave_7_2017-2020_Romania_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010551-World_Values_Survey_Wave_7_2017-2020_Romania_v3.0.pdf",
+      "bytes": 3077917,
+      "sha256": "bad92b14ca81044c78c11b4d683436bafb7fb1b8ff119d9d147d6766dfc5303e",
+      "pdf_pages": 109,
+      "expected_sample_n": 1257,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1257,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Romania Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010552",
+      "doid": "10552",
+      "wvs_sample_id": 3264,
+      "iso2": "RU",
+      "country": "Russian Federation",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010552-World_Values_Survey_Wave_7_2017-2020_Russian_Federation_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010552-World_Values_Survey_Wave_7_2017-2020_Russian_Federation_v3.0.pdf",
+      "bytes": 2903383,
+      "sha256": "bfa6a5d884c3c44f09e9ba6c96d82b39a17e06248105abfa776844e90c7c71f0",
+      "pdf_pages": 103,
+      "expected_sample_n": 1810,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1810,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Russian Federation Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010553",
+      "doid": "10553",
+      "wvs_sample_id": 3216,
+      "iso2": "RS",
+      "country": "Serbia",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010553-World_Values_Survey_Wave_7_2017-2020_Serbia_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010553-World_Values_Survey_Wave_7_2017-2020_Serbia_v3.0.pdf",
+      "bytes": 3042847,
+      "sha256": "d9f1dbc1209ceab1b5ae3a563e809a736dcb753103d3358712e6fe8886ffedc3",
+      "pdf_pages": 107,
+      "expected_sample_n": 1046,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1046,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Serbia Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010554",
+      "doid": "10554",
+      "wvs_sample_id": 3265,
+      "iso2": "KR",
+      "country": "South Korea",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010554-World_Values_Survey_Wave_7_2017-2020_South_Korea_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010554-World_Values_Survey_Wave_7_2017-2020_South_Korea_v3.0.pdf",
+      "bytes": 2771972,
+      "sha256": "6cfd899ca31fbf1f5446439e209233e382af90291c1857fad01cc3d7a32af338",
+      "pdf_pages": 98,
+      "expected_sample_n": 1245,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1245,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) South Korea Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010557",
+      "doid": "10557",
+      "wvs_sample_id": 3401,
+      "iso2": "TW",
+      "country": "Taiwan ROC",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010557-World_Values_Survey_Wave_7_2017-2020_Taiwan_ROC_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010557-World_Values_Survey_Wave_7_2017-2020_Taiwan_ROC_v3.0.pdf",
+      "bytes": 2999251,
+      "sha256": "7326d76e687da0679dd8b2aa75144f29aedbb24f098a3c5b6e88ff3d9b1da0ce",
+      "pdf_pages": 106,
+      "expected_sample_n": 1223,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1223,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Taiwan ROC Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010558",
+      "doid": "10558",
+      "wvs_sample_id": 3458,
+      "iso2": "TJ",
+      "country": "Tajikistan",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010558-World_Values_Survey_Wave_7_2017-2020_Tajikistan_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010558-World_Values_Survey_Wave_7_2017-2020_Tajikistan_v3.0.pdf",
+      "bytes": 2793694,
+      "sha256": "e0ed9cf185013633ab3adbc162f56d761971b4d0a88a9a5e0d86b88e73b657dd",
+      "pdf_pages": 99,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Tajikistan Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010559",
+      "doid": "10559",
+      "wvs_sample_id": 3223,
+      "iso2": "TH",
+      "country": "Thailand",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010559-World_Values_Survey_Wave_7_2017-2020_Thailand_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010559-World_Values_Survey_Wave_7_2017-2020_Thailand_v3.0.pdf",
+      "bytes": 3044822,
+      "sha256": "da0a27a9b8750a5e7df3f90a0a9aaa24a9a5a4277a52dbc55d475f88412c22c7",
+      "pdf_pages": 106,
+      "expected_sample_n": 1500,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1500,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Thailand Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010560",
+      "doid": "10560",
+      "wvs_sample_id": 3417,
+      "iso2": "TN",
+      "country": "Tunisia",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010560-World_Values_Survey_Wave_7_2017-2020_Tunisia_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010560-World_Values_Survey_Wave_7_2017-2020_Tunisia_v3.0.pdf",
+      "bytes": 3074339,
+      "sha256": "7a2aaf06dd3aca4577bc7384acee5e80341a41ff137df99047e63def96b1c24f",
+      "pdf_pages": 107,
+      "expected_sample_n": 1208,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1208,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Tunisia Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010561",
+      "doid": "10561",
+      "wvs_sample_id": 3460,
+      "iso2": "TR",
+      "country": "Turkey",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010561-World_Values_Survey_Wave_7_2017-2020_Turkey_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010561-World_Values_Survey_Wave_7_2017-2020_Turkey_v3.0.pdf",
+      "bytes": 2905884,
+      "sha256": "81d5f41efcf587c8fb5e154665a83629b4dbd576e1fbc054659b4e5546d62b13",
+      "pdf_pages": 102,
+      "expected_sample_n": 2415,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 2415,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Turkey Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010562",
+      "doid": "10562",
+      "wvs_sample_id": 3745,
+      "iso2": "US",
+      "country": "United States",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010562-World_Values_Survey_Wave_7_2017-2020_United_States_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010562-World_Values_Survey_Wave_7_2017-2020_United_States_v3.0.pdf",
+      "bytes": 3170178,
+      "sha256": "2b4225895f1491ca5ab304656302b683cd0d7002617371f12a369762a74a3395",
+      "pdf_pages": 114,
+      "expected_sample_n": 2596,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 2596,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) United States Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010563",
+      "doid": "10563",
+      "wvs_sample_id": 3459,
+      "iso2": "VN",
+      "country": "Vietnam",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010563-World_Values_Survey_Wave_7_2017-2020_Vietnam_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010563-World_Values_Survey_Wave_7_2017-2020_Vietnam_v3.0.pdf",
+      "bytes": 2752354,
+      "sha256": "48941c22273e96e6918f4dce718ee3550185ecfcaa0e435df9f0f3892691278f",
+      "pdf_pages": 97,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Vietnam Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00010564",
+      "doid": "10564",
+      "wvs_sample_id": 3465,
+      "iso2": "ZW",
+      "country": "Zimbabwe",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00010564-World_Values_Survey_Wave_7_2017-2020_Zimbabwe_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00010564-World_Values_Survey_Wave_7_2017-2020_Zimbabwe_v3.0.pdf",
+      "bytes": 2951099,
+      "sha256": "6f05c23b9335a7d0a42ee4198d42ccc51df3992021ed86e28abcc1b94a038a34",
+      "pdf_pages": 104,
+      "expected_sample_n": 1215,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1215,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Zimbabwe Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011099",
+      "doid": "11099",
+      "wvs_sample_id": 3473,
+      "iso2": "UA",
+      "country": "Ukraine",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011099-World_Values_Survey_Wave_7_2017-2020_Ukraine_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011099-World_Values_Survey_Wave_7_2017-2020_Ukraine_v3.0.pdf",
+      "bytes": 2911002,
+      "sha256": "e327e54ece94ad7af1991678cffaf919fa3a0551dbfa90fb12ab4acf3b86fca0",
+      "pdf_pages": 103,
+      "expected_sample_n": 1289,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1289,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Ukraine Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011828",
+      "doid": "11828",
+      "wvs_sample_id": 3725,
+      "iso2": "VE",
+      "country": "Venezuela",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011828-World_Values_Survey_Wave_7_2017-2020_Venezuela_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011828-World_Values_Survey_Wave_7_2017-2020_Venezuela_v3.0.pdf",
+      "bytes": 2795640,
+      "sha256": "4ca0a6f56850c6f3410e17e8a32a2e89eac16d6726b46ff668d1acfad5baf9b8",
+      "pdf_pages": 99,
+      "expected_sample_n": 1190,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1190,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Venezuela Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011870",
+      "doid": "11870",
+      "wvs_sample_id": 3747,
+      "iso2": "AM",
+      "country": "Armenia",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011870-World_Values_Survey_Wave_7_2017-2020_Armenia_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011870-World_Values_Survey_Wave_7_2017-2020_Armenia_v3.0.pdf",
+      "bytes": 2848954,
+      "sha256": "4ceaf0eec92f29011aae320cebfadd66add139aaa52da8218907da8e651305d8",
+      "pdf_pages": 101,
+      "expected_sample_n": 1223,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1223,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Armenia Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011871",
+      "doid": "11871",
+      "wvs_sample_id": 3749,
+      "iso2": "KE",
+      "country": "Kenya",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011871-World_Values_Survey_Wave_7_2017-2020_Kenya_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011871-World_Values_Survey_Wave_7_2017-2020_Kenya_v3.0.pdf",
+      "bytes": 3144609,
+      "sha256": "1ea4721fc488e96c5e4f58a9d7099407a5d4300bf3776bc8e54a71746184a9b7",
+      "pdf_pages": 108,
+      "expected_sample_n": 1266,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1266,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Kenya Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011872",
+      "doid": "11872",
+      "wvs_sample_id": 3776,
+      "iso2": "LY",
+      "country": "Libya",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011872-World_Values_Survey_Wave_7_2017-2020_Libya_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011872-World_Values_Survey_Wave_7_2017-2020_Libya_v3.0.pdf",
+      "bytes": 3075410,
+      "sha256": "4b2df63a11af63f26107163339e3cb9cf2f72ea2e7f4a13ff134f3f12681ada2",
+      "pdf_pages": 107,
+      "expected_sample_n": 1196,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1196,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Libya Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011873",
+      "doid": "11873",
+      "wvs_sample_id": 3446,
+      "iso2": "MN",
+      "country": "Mongolia",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011873-World_Values_Survey_Wave_7_2017-2020_Mongolia_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011873-World_Values_Survey_Wave_7_2017-2020_Mongolia_v3.0.pdf",
+      "bytes": 2794808,
+      "sha256": "3ae8e26703b07885b196a07e1e64ee2231f123662b36ff6f2dc157ff5c6d653d",
+      "pdf_pages": 99,
+      "expected_sample_n": 1638,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1638,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Mongolia Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011874",
+      "doid": "11874",
+      "wvs_sample_id": 3445,
+      "iso2": "MA",
+      "country": "Morocco",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011874-World_Values_Survey_Wave_7_2017-2020_Morocco_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011874-World_Values_Survey_Wave_7_2017-2020_Morocco_v3.0.pdf",
+      "bytes": 2821110,
+      "sha256": "69d9f3c034ce5ee3ecdc938c68a0b90ca98389bc93c7e03035768dca617bf822",
+      "pdf_pages": 100,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Morocco Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011876",
+      "doid": "11876",
+      "wvs_sample_id": 3455,
+      "iso2": "KG",
+      "country": "Kyrgyzstan",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011876-World_Values_Survey_Wave_7_2017-2020_Kyrgyzstan_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011876-World_Values_Survey_Wave_7_2017-2020_Kyrgyzstan_v3.0.pdf",
+      "bytes": 2858962,
+      "sha256": "8276262aa8596208931ef81121363cddf4355526e17b7536d7df63836298724e",
+      "pdf_pages": 101,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Kyrgyzstan Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011901",
+      "doid": "11901",
+      "wvs_sample_id": 3284,
+      "iso2": "AD",
+      "country": "Andorra",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011901-World_Values_Survey_Wave_7_2017-2020_Andorra_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011901-World_Values_Survey_Wave_7_2017-2020_Andorra_v3.0.pdf",
+      "bytes": 2878332,
+      "sha256": "0d7742e2e28d185f947437bbcdffe43acb2b668b4f31e3e192901f17369f59d6",
+      "pdf_pages": 102,
+      "expected_sample_n": 1004,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1004,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Andorra Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011902",
+      "doid": "11902",
+      "wvs_sample_id": 3286,
+      "iso2": "AR",
+      "country": "Argentina",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011902-World_Values_Survey_Wave_7_2017-2020_Argentina_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011902-World_Values_Survey_Wave_7_2017-2020_Argentina_v3.0.pdf",
+      "bytes": 2831009,
+      "sha256": "24182652ff22f7dc55d4fd9d9be11b86f170764afb0adf93b93532d30eeb1120",
+      "pdf_pages": 100,
+      "expected_sample_n": 1003,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1003,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Argentina Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011904",
+      "doid": "11904",
+      "wvs_sample_id": 3367,
+      "iso2": "BD",
+      "country": "Bangladesh",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011904-World_Values_Survey_Wave_7_2017-2020_Bangladesh_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011904-World_Values_Survey_Wave_7_2017-2020_Bangladesh_v3.0.pdf",
+      "bytes": 2854054,
+      "sha256": "7045bca87df91d5bbd64365298179aabdbeff1fc5fcad928773e7d2580bff4e6",
+      "pdf_pages": 101,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Bangladesh Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011905",
+      "doid": "11905",
+      "wvs_sample_id": 3202,
+      "iso2": "BO",
+      "country": "Bolivia",
+      "wave": 7,
+      "wave_years_label": "2017-2022",
+      "document_version": "v5.0",
+      "document_format": "country_v5",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011905-World_Values_Survey_Wave_7_2017-2022_Bolivia_v5.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011905-World_Values_Survey_Wave_7_2017-2022_Bolivia_v5.0.pdf",
+      "bytes": 2693089,
+      "sha256": "07184938d7a69a874eadc4a183e9a97fc2dd71a5754d3b1e5fcb0845cf703599",
+      "pdf_pages": 95,
+      "expected_sample_n": 2067,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 2067,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2022) Bolivia Study # WVS-2017 v5.0"
+      }
+    },
+    {
+      "id": "F00011907",
+      "doid": "11907",
+      "wvs_sample_id": 3474,
+      "iso2": "CA",
+      "country": "Canada",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011907-World_Values_Survey_Wave_7_2017-2020_Canada_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011907-World_Values_Survey_Wave_7_2017-2020_Canada_v3.0.pdf",
+      "bytes": 2899303,
+      "sha256": "6e2224fa90b0b00939361bb7fd72cc32aad97779c07c0ceee1b047db6716c922",
+      "pdf_pages": 103,
+      "expected_sample_n": 4018,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 4018,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Canada Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011908",
+      "doid": "11908",
+      "wvs_sample_id": 3364,
+      "iso2": "CO",
+      "country": "Colombia",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011908-World_Values_Survey_Wave_7_2017-2020_Colombia_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011908-World_Values_Survey_Wave_7_2017-2020_Colombia_v3.0.pdf",
+      "bytes": 2828948,
+      "sha256": "8da4412fcdb4016f63c5636c15b6652f2be161292ffe37df26118ebd9a299560",
+      "pdf_pages": 100,
+      "expected_sample_n": 1520,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1520,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Colombia Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011909",
+      "doid": "11909",
+      "wvs_sample_id": 3405,
+      "iso2": "CY",
+      "country": "Cyprus",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011909-World_Values_Survey_Wave_7_2017-2020_Cyprus_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011909-World_Values_Survey_Wave_7_2017-2020_Cyprus_v3.0.pdf",
+      "bytes": 2807127,
+      "sha256": "e32fbbc6d1c3ef0b6d76524e58a211b3c2ab887a55ce37dfd4a1ce5a02928faf",
+      "pdf_pages": 99,
+      "expected_sample_n": 1000,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1000,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Cyprus Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011910",
+      "doid": "11910",
+      "wvs_sample_id": 3305,
+      "iso2": "CL",
+      "country": "Chile",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011910-World_Values_Survey_Wave_7_2017-2020_Chile_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011910-World_Values_Survey_Wave_7_2017-2020_Chile_v3.0.pdf",
+      "bytes": 2876599,
+      "sha256": "cd11f2c36cda6c8604f1b324ee07264e58fcf06b92483b7f9413a983eaf20909",
+      "pdf_pages": 102,
+      "expected_sample_n": 1000,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1000,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Chile Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011911",
+      "doid": "11911",
+      "wvs_sample_id": 3267,
+      "iso2": "CN",
+      "country": "China",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011911-World_Values_Survey_Wave_7_2017-2020_China_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011911-World_Values_Survey_Wave_7_2017-2020_China_v3.0.pdf",
+      "bytes": 2513947,
+      "sha256": "0cc7db876c59a2874ab927e96a843843ef67ff51e57b484515bf9bd9f4ae4708",
+      "pdf_pages": 87,
+      "expected_sample_n": 3036,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 3036,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) China Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011912",
+      "doid": "11912",
+      "wvs_sample_id": 3266,
+      "iso2": "EC",
+      "country": "Ecuador",
+      "wave": 7,
+      "wave_years_label": "2017-2022",
+      "document_version": "v5.0",
+      "document_format": "country_v5",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011912-World_Values_Survey_Wave_7_2017-2022_Ecuador_v5.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011912-World_Values_Survey_Wave_7_2017-2022_Ecuador_v5.0.pdf",
+      "bytes": 2775811,
+      "sha256": "57c682812af30a17f236a9fdc9cac2f7485fb33c46a211d844098ad97d5af0c5",
+      "pdf_pages": 98,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2022) Ecuador Study # WVS-2017 v5.0"
+      }
+    },
+    {
+      "id": "F00011913",
+      "doid": "11913",
+      "wvs_sample_id": 3322,
+      "iso2": "EG",
+      "country": "Egypt",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011913-World_Values_Survey_Wave_7_2017-2020_Egypt_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011913-World_Values_Survey_Wave_7_2017-2020_Egypt_v3.0.pdf",
+      "bytes": 2650289,
+      "sha256": "4a681890fbf1d3b1bc18c8387a2df75c957810a7e7475e14cde57b28810c5934",
+      "pdf_pages": 93,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Egypt Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011914",
+      "doid": "11914",
+      "wvs_sample_id": 3463,
+      "iso2": "ET",
+      "country": "Ethiopia",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011914-World_Values_Survey_Wave_7_2017-2020_Ethiopia_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011914-World_Values_Survey_Wave_7_2017-2020_Ethiopia_v3.0.pdf",
+      "bytes": 2810542,
+      "sha256": "5d5c27a1c23cda9869e8e35daae5e7f613e6d52c937d3393b43ed32df168a042",
+      "pdf_pages": 99,
+      "expected_sample_n": 1230,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1230,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Ethiopia Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011915",
+      "doid": "11915",
+      "wvs_sample_id": 3310,
+      "iso2": "DE",
+      "country": "Germany",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011915-World_Values_Survey_Wave_7_2017-2020_Germany_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011915-World_Values_Survey_Wave_7_2017-2020_Germany_v3.0.pdf",
+      "bytes": 2917173,
+      "sha256": "4574c182a2da7d78a66b2497199b952f45281a4c011939015abc7923aa7dc01f",
+      "pdf_pages": 104,
+      "expected_sample_n": 1528,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1528,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Germany Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011916",
+      "doid": "11916",
+      "wvs_sample_id": 3232,
+      "iso2": "GR",
+      "country": "Greece",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011916-World_Values_Survey_Wave_7_2017-2020_Greece_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011916-World_Values_Survey_Wave_7_2017-2020_Greece_v3.0.pdf",
+      "bytes": 2905045,
+      "sha256": "5424c8e7bbcf58a247e4ce6d9216134d632e221845ec83c3db68c12fd2b25a77",
+      "pdf_pages": 103,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Greece Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011917",
+      "doid": "11917",
+      "wvs_sample_id": 3407,
+      "iso2": "GT",
+      "country": "Guatemala",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011917-World_Values_Survey_Wave_7_2017-2020_Guatemala_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011917-World_Values_Survey_Wave_7_2017-2020_Guatemala_v3.0.pdf",
+      "bytes": 2803085,
+      "sha256": "53bae2b4d45963d2c338d241b071a023ba52baf9c25ac954edf9f938a5aac86b",
+      "pdf_pages": 99,
+      "expected_sample_n": 1229,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1229,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Guatemala Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011918",
+      "doid": "11918",
+      "wvs_sample_id": 3285,
+      "iso2": "HK",
+      "country": "Hong Kong SAR",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011918-World_Values_Survey_Wave_7_2017-2020_Hong_Kong_SAR_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011918-World_Values_Survey_Wave_7_2017-2020_Hong_Kong_SAR_v3.0.pdf",
+      "bytes": 3004528,
+      "sha256": "d522130b795d12aa1cd53f298bdb1f91ff68b643d598ab754d99dd06eae15efa",
+      "pdf_pages": 106,
+      "expected_sample_n": 2075,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 2075,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Hong Kong SAR Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011920",
+      "doid": "11920",
+      "wvs_sample_id": 3466,
+      "iso2": "IR",
+      "country": "Iran",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011920-World_Values_Survey_Wave_7_2017-2020_Iran_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011920-World_Values_Survey_Wave_7_2017-2020_Iran_v3.0.pdf",
+      "bytes": 2799929,
+      "sha256": "0eff2acec995228c5481cce0176c34d2f7870b53c1caf3cfa2e64721ce329d72",
+      "pdf_pages": 99,
+      "expected_sample_n": 1499,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1499,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Iran Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011921",
+      "doid": "11921",
+      "wvs_sample_id": 3323,
+      "iso2": "IQ",
+      "country": "Iraq",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011921-World_Values_Survey_Wave_7_2017-2020_Iraq_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011921-World_Values_Survey_Wave_7_2017-2020_Iraq_v3.0.pdf",
+      "bytes": 2750832,
+      "sha256": "4e82f9e7c883e3224c4b1e9c99f16d3661a453a0dcae81d187a02a418814986c",
+      "pdf_pages": 97,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Iraq Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011923",
+      "doid": "11923",
+      "wvs_sample_id": 3307,
+      "iso2": "JO",
+      "country": "Jordan",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011923-World_Values_Survey_Wave_7_2017-2020_Jordan_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011923-World_Values_Survey_Wave_7_2017-2020_Jordan_v3.0.pdf",
+      "bytes": 2733350,
+      "sha256": "42526a125b1d58670f40c81c2555284f37e26e98a93deee21af9ddfaa7e3a087",
+      "pdf_pages": 96,
+      "expected_sample_n": 1203,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1203,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Jordan Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011924",
+      "doid": "11924",
+      "wvs_sample_id": 3309,
+      "iso2": "KZ",
+      "country": "Kazakhstan",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011924-World_Values_Survey_Wave_7_2017-2020_Kazakhstan_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011924-World_Values_Survey_Wave_7_2017-2020_Kazakhstan_v3.0.pdf",
+      "bytes": 2877764,
+      "sha256": "14f48768984991f736d139ae7324cb92f416dab598d7a4d8f2b71827e97416dc",
+      "pdf_pages": 102,
+      "expected_sample_n": 1276,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1276,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Kazakhstan Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011925",
+      "doid": "11925",
+      "wvs_sample_id": 3308,
+      "iso2": "LB",
+      "country": "Lebanon",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011925-World_Values_Survey_Wave_7_2017-2020_Lebanon_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011925-World_Values_Survey_Wave_7_2017-2020_Lebanon_v3.0.pdf",
+      "bytes": 2799601,
+      "sha256": "5214ed47f507f1ceb586f86075e89a60601615cec7cfccfff1626e297713b923",
+      "pdf_pages": 99,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Lebanon Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011926",
+      "doid": "11926",
+      "wvs_sample_id": 3447,
+      "iso2": "MO",
+      "country": "Macau SAR",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011926-World_Values_Survey_Wave_7_2017-2020_Macau_SAR_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011926-World_Values_Survey_Wave_7_2017-2020_Macau_SAR_v3.0.pdf",
+      "bytes": 2953251,
+      "sha256": "b789d4a146fd05f26d759179ec01790b73c8378434fb9453fdfc51355e8eb324",
+      "pdf_pages": 102,
+      "expected_sample_n": 1023,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1023,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Macau SAR Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011928",
+      "doid": "11928",
+      "wvs_sample_id": 3203,
+      "iso2": "MX",
+      "country": "Mexico",
+      "wave": 7,
+      "wave_years_label": "2017-2020",
+      "document_version": "v3.0",
+      "document_format": "country_v3",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011928-World_Values_Survey_Wave_7_2017-2020_Mexico_v3.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011928-World_Values_Survey_Wave_7_2017-2020_Mexico_v3.0.pdf",
+      "bytes": 3064693,
+      "sha256": "faee54eeaff1ca170bc86b3f26c0593df99b576d035d44055f08470f97b03005",
+      "pdf_pages": 108,
+      "expected_sample_n": 1741,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1741,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2020) Mexico Study # WVS-2017 v3.0"
+      }
+    },
+    {
+      "id": "F00011929",
+      "doid": "11929",
+      "wvs_sample_id": 3840,
+      "iso2": "NL",
+      "country": "Netherlands",
+      "wave": 7,
+      "wave_years_label": "2017-2022",
+      "document_version": "v4.0",
+      "document_format": "country_v4",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00011929-World_Values_Survey_Wave_7_2017-2022_Netherlands_v4.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00011929-World_Values_Survey_Wave_7_2017-2022_Netherlands_v4.0.pdf",
+      "bytes": 2758708,
+      "sha256": "a5f1ed43f17a0db858c7c3bc2b403f501b11520eb2bccbce5f9725cd4bdf7d0c",
+      "pdf_pages": 97,
+      "expected_sample_n": 2145,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 2145,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2022) Netherlands Study # WVS-2017 v4.0"
+      }
+    },
+    {
+      "id": "F00012137",
+      "doid": "12137",
+      "wvs_sample_id": 3746,
+      "iso2": "MV",
+      "country": "Maldives",
+      "wave": 7,
+      "wave_years_label": "2017-2022",
+      "document_version": "v4.0",
+      "document_format": "country_v4",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00012137-World_Values_Survey_Wave_7_2017-2022_Maldives_v4.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00012137-World_Values_Survey_Wave_7_2017-2022_Maldives_v4.0.pdf",
+      "bytes": 3049584,
+      "sha256": "3bfceac33c30a5c26a41c53ed83f61a87f68e30cbe3981c478f272c20bafe369",
+      "pdf_pages": 105,
+      "expected_sample_n": 1039,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1039,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2022) Maldives Study # WVS-2017 v4.0"
+      }
+    },
+    {
+      "id": "F00013343",
+      "doid": "13343",
+      "wvs_sample_id": 3843,
+      "iso2": "CZ",
+      "country": "Czechia",
+      "wave": 7,
+      "wave_years_label": "2017-2022",
+      "document_version": "v5.0",
+      "document_format": "country_v5",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00013343-World_Values_Survey_Wave_7_2017-2022_Czechia_v5.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00013343-World_Values_Survey_Wave_7_2017-2022_Czechia_v5.0.pdf",
+      "bytes": 2742600,
+      "sha256": "2d51dea445da50262634fe607330a238c7b44ae1d38bedbab317febc78de1956",
+      "pdf_pages": 97,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2022) Czechia Study # WVS-2017 v5.0"
+      }
+    },
+    {
+      "id": "F00013344",
+      "doid": "13344",
+      "wvs_sample_id": 3839,
+      "iso2": "SK",
+      "country": "Slovakia",
+      "wave": 7,
+      "wave_years_label": "2017-2022",
+      "document_version": "v5.0",
+      "document_format": "country_v5",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00013344-World_Values_Survey_Wave_7_2017-2022_Slovakia_v5.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00013344-World_Values_Survey_Wave_7_2017-2022_Slovakia_v5.0.pdf",
+      "bytes": 2744199,
+      "sha256": "6a6eebf4068b8ce28753faca1922f0615d38fa35cce5c4a1454e452c15452532",
+      "pdf_pages": 97,
+      "expected_sample_n": 1200,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1200,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2022) Slovakia Study # WVS-2017 v5.0"
+      }
+    },
+    {
+      "id": "F00013345",
+      "doid": "13345",
+      "wvs_sample_id": 3875,
+      "iso2": "GB",
+      "country": "United Kingdom - Great Britain",
+      "wave": 7,
+      "wave_years_label": "2017-2022",
+      "document_version": "v5.0",
+      "document_format": "country_v5",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00013345-World_Values_Survey_Wave_7_2017-2022_UK_-_Great_Britain_v5.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00013345-World_Values_Survey_Wave_7_2017-2022_UK_-_Great_Britain_v5.0.pdf",
+      "bytes": 3640390,
+      "sha256": "5ddf5bcb1a0a1e1035409039d4de2aab9f619d72db5f050e5f99dff0a7ee7e70",
+      "pdf_pages": 130,
+      "expected_sample_n": 2609,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 2609,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2022) UK - Great Britain Study # WVS-2017 v5.0"
+      }
+    },
+    {
+      "id": "F00013346",
+      "doid": "13346",
+      "wvs_sample_id": 3906,
+      "iso2": "GB-NIR",
+      "country": "United Kingdom - Northern Ireland",
+      "wave": 7,
+      "wave_years_label": "2017-2022",
+      "document_version": "v5.0",
+      "document_format": "country_v5",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00013346-World_Values_Survey_Wave_7_2017-2022_Northern_Ireland_v5.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00013346-World_Values_Survey_Wave_7_2017-2022_Northern_Ireland_v5.0.pdf",
+      "bytes": 3083143,
+      "sha256": "3427bc909f24811b28d82c872de0d4cec7b67b380c000577fe913dc0aff93f71",
+      "pdf_pages": 111,
+      "expected_sample_n": 447,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 447,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2022) Northern Ireland Study # WVS-2017 v5.0"
+      }
+    },
+    {
+      "id": "F00013347",
+      "doid": "13347",
+      "wvs_sample_id": 3845,
+      "iso2": "UY",
+      "country": "Uruguay",
+      "wave": 7,
+      "wave_years_label": "2017-2022",
+      "document_version": "v5.0",
+      "document_format": "country_v5",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00013347-World_Values_Survey_Wave_7_2017-2022_Uruguay_v5.0.pdf",
+      "path": "data/wvs/wave7/country-results/F00013347-World_Values_Survey_Wave_7_2017-2022_Uruguay_v5.0.pdf",
+      "bytes": 2768673,
+      "sha256": "29397a99ed24a3673d977b339d22b28868b010f38a674aba2eb52e55ae7afdbb",
+      "pdf_pages": 98,
+      "expected_sample_n": 1000,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
+        "download_method": "playwright_browser_fetch_ajdownload",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1000,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "World Values Survey Wave 7 (2017-2022) Uruguay Study # WVS-2017 v5.0"
       }
     }
   ]
