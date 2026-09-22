@@ -1,6 +1,6 @@
 {
-  "dataset": "World Values Survey Wave 7 country/wave results (aggregated PDF reports)",
-  "note": "Wave 7 (2017\u20132022) is the latest completed WVS wave available from the WVS Data Archive as of retrieval. WVS-8 fieldwork is planned for 2024\u20132026 and is not published as equivalent country-results PDFs yet. No figures were invented or transcribed by hand \u2014 files are WVS archive downloads (JP/NZ/SG + wave Results-by-Country) or user-provided copies that match archive titles/DOIDs (AU/BR/ID/MY).",
+  "dataset": "World Values Survey country/wave results (aggregated PDF/XLSX reports)",
+  "note": "Wave 7 (2017\u20132022) is the latest completed WVS-only wave available from the WVS Data Archive as of retrieval. WVS-8 fieldwork is planned for 2024\u20132026 and is not published as equivalent country-results PDFs yet. No figures were invented or transcribed by hand \u2014 files are WVS archive downloads (JP/NZ/SG + wave Results-by-Country) or user-provided copies that match archive titles/DOIDs (AU/BR/ID/MY). France never fielded a WVS Wave 6 or Wave 7 survey \u2014 confirmed by checking the WVS Data Archive's own per-wave country index (AJDocumentation.jsp?CndWAVE=1..9), which lists France only under Wave 1, Wave 2 (both EVS re-hosts, 1981\u20131984/1990\u20131994) and Wave 5 (2006). The latest France data on worldvaluessurvey.org is the officially co-published Joint EVS/WVS 2017\u20132022 dataset (WVSA + European Values Study), whose France component fielded 2018-03-02 to 2018-08-16 (CAPI, French, EVS round) \u2014 see the joint-evs-wvs-2017-2022 entries below, downloaded directly from https://www.worldvaluessurvey.org/WVSEVSjoint2017.jsp.",
   "citation": "Haerpfer, C., Inglehart, R., Moreno, A., Welzel, C., Kizilova, K., Diez-Medrano, J., Lagos, M., Norris, P., Ponarin, E. & Puranen B. et al. (eds.). World Values Survey Wave 7 documentation / country results. World Values Survey Association / JD Systems Data Archive. https://www.worldvaluessurvey.org/WVSDocumentationWV7.jsp",
   "conditions_of_use_summary": "Non-profit use with proper citation. Do not redistribute microdata (SPSS/Stata/CSV). This folder stores aggregated country/wave results PDF reports only.",
   "official_index": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=7",
@@ -283,6 +283,102 @@
         "sample_n_from_pdf": null,
         "japan_v4_exclusive_country_ok": null,
         "first_page_excerpt": "World Values Survey Wave 7 (2017-2022) | Results in % by country weighted by w_weight | Study # WVS-2017 | v6 .0"
+      }
+    },
+    {
+      "id": "F00007894",
+      "doid": "7894",
+      "wvs_sample_id": 455,
+      "iso2": "FR",
+      "country": "France",
+      "wave": 5,
+      "wave_years_label": "2006",
+      "document_version": "v20180912",
+      "document_format": "country_wv5",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00007894-WV5_Results_France_2006_v20180912.pdf",
+      "path": "data/wvs/wave5/country-results/F00007894-WV5_Results_France_2006_v20180912.pdf",
+      "bytes": 2487947,
+      "sha256": "dd321d8b7a05e8f8dd359600d70f2f6a9c9bf510dcc0aa5406bb4ad0d610c7f8",
+      "pdf_pages": 97,
+      "expected_sample_n": 1001,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=5",
+        "download_method": "downloaded_from_wvs_archive",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 1001,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "WV5_Results  Study #  France 2006_v20180912",
+        "note": "This is the most recent France entry in the WVS-only (non-joint) archive index — France was not fielded in WVS Wave 3, 4, 6 or 7. Superseded as “latest” by the Joint EVS/WVS 2017-2022 entries below; kept here as the most recent WVS-only per-country report."
+      }
+    },
+    {
+      "id": "F00011082",
+      "doid": "11082",
+      "wvs_sample_id": null,
+      "iso2": null,
+      "country": "cross-national",
+      "wave": "joint-evs-wvs-2017-2022",
+      "wave_years_label": "2017-2022",
+      "document_version": "v5.0.0",
+      "document_format": "joint_evs_wvs_results_by_country",
+      "kind": "wave_results_by_country",
+      "filename": "F00011082-EVS_WVS_Joint_v5_Results_by_Country.pdf",
+      "path": "data/wvs/joint-evs-wvs-2017-2022/F00011082-EVS_WVS_Joint_v5_Results_by_Country.pdf",
+      "bytes": 3661565,
+      "sha256": "8f888d026b0102c7d93c555625f0afa5d57786db8bfe361a05cc2b134335c785",
+      "pdf_pages": 694,
+      "expected_sample_n": null,
+      "source": {
+        "publisher": "World Values Survey Association (WVSA) & European Values Study (EVS) / GESIS-DAS & JD Systems Madrid",
+        "documentation_url": "https://www.worldvaluessurvey.org/WVSEVSjoint2017.jsp",
+        "download_method": "downloaded_from_wvs_archive",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": null,
+        "sample_n_from_pdf": null,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "Joint EVS/WVS 2017-2022 Dataset | Updated tables as of June 2024 | Related to the Joint EVS/WVS, Version 5.0.0 | GESIS: doi:10.4232/1.14320 | WVSA: doi:10.14281/18241.26 | Variable Report - Tables",
+        "note": "This is the cross-national frequency-table PDF (the joint-dataset sibling of F00010763). Page 6 of the PDF lists France's country row: “France   1,880   -   100.0   -   -   -   -   -” (N=1,880, 100% fielded in 2018) among the per-country Year-survey breakdown — confirmed by direct text extraction, not transcribed from memory."
+      }
+    },
+    {
+      "id": "F00011087",
+      "doid": "11087",
+      "wvs_sample_id": null,
+      "iso2": "FR",
+      "country": "France",
+      "wave": "joint-evs-wvs-2017-2022",
+      "wave_years_label": "2018",
+      "document_version": "v5.0",
+      "document_format": "participating_countries_xlsx",
+      "kind": "participating_countries_list",
+      "filename": "F00011087-EVS_WVS_joint__v5.0._Participating_Countries.xlsx",
+      "path": "data/wvs/joint-evs-wvs-2017-2022/F00011087-EVS_WVS_joint__v5.0._Participating_Countries.xlsx",
+      "bytes": 229441,
+      "sha256": "dbc2ed288a6bcb4039ec20e5005d9bbf47d1f964b7c4971345cd3aeb837c9edd",
+      "pdf_pages": null,
+      "expected_sample_n": 1870,
+      "source": {
+        "publisher": "World Values Survey Association (WVSA) & European Values Study (EVS)",
+        "documentation_url": "https://www.worldvaluessurvey.org/WVSEVSjoint2017.jsp",
+        "download_method": "downloaded_from_wvs_archive",
+        "retrieved_utc": "2026-09-22"
+      },
+      "audit": {
+        "pdf_header_ok": null,
+        "title_country_match": true,
+        "sample_n_from_pdf": null,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "EVS_WVS_Countries_Territories sheet, row 32: Country=France | Round=EVS | Sample size=1870 | Fieldwork period=02-03-2018 - 16-08-2018 | Mode=CAPI | Language=French",
+        "note": "Sample size here (1870, from the participating-countries worksheet) differs slightly from the 1,880 shown in the F00011082 frequency tables — both figures are taken verbatim from their respective official WVS/EVS files and neither has been altered to reconcile them."
       }
     }
   ]

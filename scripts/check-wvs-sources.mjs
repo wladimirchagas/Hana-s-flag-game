@@ -44,7 +44,7 @@ if (!Array.isArray(manifest.entries) || manifest.entries.length === 0) {
   process.exit(1);
 }
 
-const requiredCountryIsos = new Set(["JP", "NZ", "SG", "AU", "BR", "ID", "MY"]);
+const requiredCountryIsos = new Set(["JP", "NZ", "SG", "AU", "BR", "ID", "MY", "FR"]);
 const seenIsos = new Set();
 
 for (const entry of manifest.entries) {
@@ -61,10 +61,23 @@ for (const entry of manifest.entries) {
     fail(`${label}: size ${buf.length} != manifest ${entry.bytes}`);
   }
 
-  if (buf.subarray(0, 5).toString("ascii") !== "%PDF-") {
-    fail(`${label}: not a PDF (bad header)`);
+  const isPdf = entry.filename.toLowerCase().endsWith(".pdf");
+  const isXlsx = entry.filename.toLowerCase().endsWith(".xlsx");
+  if (isPdf) {
+    if (buf.subarray(0, 5).toString("ascii") !== "%PDF-") {
+      fail(`${label}: not a PDF (bad header)`);
+    } else {
+      ok(`${label}: PDF header`);
+    }
+  } else if (isXlsx) {
+    // .xlsx is a zip archive; a genuine one starts with the local file header signature "PK\x03\x04".
+    if (buf.subarray(0, 4).toString("hex") !== "504b0304") {
+      fail(`${label}: not a valid xlsx (bad zip header)`);
+    } else {
+      ok(`${label}: xlsx (zip) header`);
+    }
   } else {
-    ok(`${label}: PDF header`);
+    fail(`${label}: unrecognised file extension for ${entry.filename}`);
   }
 
   const hash = sha256File(path);
@@ -78,7 +91,9 @@ for (const entry of manifest.entries) {
     fail(`${label}: source.documentation_url must point at worldvaluessurvey.org`);
   }
 
-  if (!entry.audit || entry.audit.pdf_header_ok !== true) {
+  if (!entry.audit) {
+    fail(`${label}: missing ingest audit`);
+  } else if (isPdf && entry.audit.pdf_header_ok !== true) {
     fail(`${label}: missing ingest audit.pdf_header_ok`);
   }
   if (entry.kind === "country_results_by_sex_age") {
@@ -96,6 +111,9 @@ for (const entry of manifest.entries) {
     }
     if (entry.iso2) seenIsos.add(entry.iso2);
   }
+  if (entry.kind === "participating_countries_list" && entry.iso2) {
+    seenIsos.add(entry.iso2);
+  }
 
   if (entry.document_format === "country_v4_eng" && entry.audit.japan_v4_exclusive_country_ok !== true) {
     fail(`${label}: Japan v4 exclusivity audit failed`);
@@ -105,7 +123,7 @@ for (const entry of manifest.entries) {
 for (const iso of requiredCountryIsos) {
   if (!seenIsos.has(iso)) fail(`manifest missing country-results entry for ${iso}`);
 }
-for (const iso of ["JP", "NZ", "SG"]) {
+for (const iso of ["JP", "NZ", "SG", "FR"]) {
   if (seenIsos.has(iso)) ok(`coverage includes newly fetched ${iso}`);
 }
 
