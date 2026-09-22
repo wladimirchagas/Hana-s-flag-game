@@ -22,7 +22,9 @@ import type { ChartAxisSelection } from "../lib/chartAxes";
 import {
   type DemocracyMapMode,
   getDemocracyColorOverlay,
+  isWvsMapMode,
 } from "../lib/democracyColors";
+import { getWvsColorOverlay } from "../lib/wvsResults";
 import {
   loadMapView,
   saveMapView,
@@ -1445,10 +1447,12 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     [],
   );
 
-  const democracyColorOverlay = useMemo(
-    () => getDemocracyColorOverlay(democracyMapMode),
-    [democracyMapMode],
-  );
+  const democracyColorOverlay = useMemo(() => {
+    if (isWvsMapMode(democracyMapMode)) {
+      return getWvsColorOverlay(democracyMapMode);
+    }
+    return getDemocracyColorOverlay(democracyMapMode);
+  }, [democracyMapMode]);
 
   // Rotation + view-centre controls shared by both WorldProgressMap and
   // HistoricalMap so the buttons are always present regardless of era.

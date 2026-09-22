@@ -9,6 +9,14 @@ import {
   getDemocracyIndexMenuGroups,
   type DemocracyIndexKey,
 } from "../lib/democracyColors";
+import {
+  WVS_PUBLISHER,
+  WVS_WAVE_YEAR_LABEL,
+  getWvsCountryBreakdown,
+  getWvsQuestionsByTheme,
+  getWvsSociety,
+  getWvsThemes,
+} from "../lib/wvsResults";
 import { MembershipBadge } from "./MembershipBadge";
 
 /**
@@ -497,6 +505,76 @@ function buildIndicesRows(c: Country): { label: string; value: React.ReactNode }
   return buildIndicesGroups(c).flatMap((g) => g.rows);
 }
 
+function formatWvsPct(pct: number | null): string {
+  if (pct == null || !Number.isFinite(pct)) return "—";
+  return Number.isInteger(pct) ? `${pct}%` : `${pct.toFixed(1)}%`;
+}
+
+/**
+ * Expandable World Values Survey breakdown for one country. Themes and
+ * questions with no row for this society are omitted (honest gaps).
+ */
+function WvsCountrySection({ code }: { code: string }) {
+  const society = getWvsSociety(code);
+  if (!society) return null;
+
+  const themes = [];
+  for (const theme of getWvsThemes()) {
+    const questions = [];
+    for (const q of getWvsQuestionsByTheme(theme.id)) {
+      const breakdown = getWvsCountryBreakdown(code, q.id);
+      if (!breakdown) continue;
+      questions.push({ q, breakdown });
+    }
+    if (questions.length === 0) continue;
+    themes.push({ theme, questions });
+  }
+
+  if (themes.length === 0) return null;
+
+  return (
+    <details className="entity-summary__wvs">
+      <summary className="entity-summary__wvs-summary">
+        World Values Survey, {WVS_WAVE_YEAR_LABEL} ({WVS_PUBLISHER})
+        {society.year != null ? ` · fieldwork ${society.year}` : ""}
+      </summary>
+      {society.note && (
+        <p className="entity-summary__wvs-note">{society.note}</p>
+      )}
+      <div className="entity-summary__wvs-themes">
+        {themes.map(({ theme, questions }) => (
+          <details key={theme.id} className="entity-summary__wvs-theme">
+            <summary>
+              {theme.label}
+              <span className="entity-summary__wvs-count">{questions.length}</span>
+            </summary>
+            <ul className="entity-summary__wvs-questions">
+              {questions.map(({ q, breakdown }) => (
+                <li key={q.id} className="entity-summary__wvs-question">
+                  <details>
+                    <summary>
+                      <span className="entity-summary__wvs-qid">{q.id}</span>
+                      {q.title}
+                    </summary>
+                    <dl className="entity-summary__wvs-answers">
+                      {breakdown.map(({ answer, pct }) => (
+                        <div key={answer} className="entity-summary__wvs-answer">
+                          <dt>{answer}</dt>
+                          <dd>{formatWvsPct(pct)}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  </details>
+                </li>
+              ))}
+            </ul>
+          </details>
+        ))}
+      </div>
+    </details>
+  );
+}
+
 export function EntitySummary(props: EntitySummaryProps) {
   if (props.kind === "modern") {
     const c = props.country;
@@ -510,7 +588,8 @@ export function EntitySummary(props: EntitySummaryProps) {
 
     if (section === "indices") {
       const groups = buildIndicesGroups(c);
-      if (groups.length === 0) {
+      const hasWvs = !!getWvsSociety(c.code);
+      if (groups.length === 0 && !hasWvs) {
         return (
           <p className="learn-panel-tabs__empty">
             No governance or ratings indices sourced for this country yet.
@@ -525,6 +604,7 @@ export function EntitySummary(props: EntitySummaryProps) {
               <SummaryList rows={group.rows} />
             </section>
           ))}
+          <WvsCountrySection code={c.code} />
         </div>
       );
     }

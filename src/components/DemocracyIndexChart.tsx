@@ -13,13 +13,21 @@ import {
   chartAxisPoints,
   chartAxisScaleValue,
   chartAxisUsesLogScale,
+  encodeWvsAxisKey,
   fitChartAxisDomain,
   formatChartAxisTick,
   getChartAxisBands,
   getChartAxisDomain,
   getChartAxisLabel,
+  getWvsQuestionsByTheme,
+  getWvsThemes,
   isChartAxisNone,
+  isWvsChartAxis,
+  parseWvsAxisKey,
 } from "../lib/chartAxes";
+import {
+  getWvsQuestion,
+} from "../lib/wvsResults";
 import { CONTINENT_ORDER, SUBREGION_GROUPS } from "../lib/continentGroups";
 import {
   clipDemocracyAxisBands,
@@ -68,6 +76,67 @@ function oneAxisValueDomain(
   const full = getChartAxisDomain(key);
   const floor = chartAxisScaleValue(key, full.min <= 0 ? 0 : full.min);
   return { min: Math.min(floor, fitted.min), max: fitted.max };
+}
+
+/** Select shows `wvs:Q1`; stored key is `wvs:Q1:0+1`. */
+function wvsSelectValue(key: ChartAxisSelection): string {
+  if (!isWvsChartAxis(key)) return key;
+  const sel = parseWvsAxisKey(key);
+  return sel ? `wvs:${sel.questionId}` : key;
+}
+
+function normalizeAxisPick(raw: string): ChartAxisSelection {
+  if (raw === CHART_AXIS_NONE) return CHART_AXIS_NONE;
+  if (raw.startsWith("wvs:") && !raw.slice(4).includes(":")) {
+    const questionId = raw.slice(4);
+    const q = getWvsQuestion(questionId);
+    if (!q) return CHART_AXIS_NONE;
+    return encodeWvsAxisKey({ questionId, answerIndexes: q.answers.length ? [0] : [] });
+  }
+  return raw as ChartAxisSelection;
+}
+
+function WvsAnswerChecks({
+  axisLabel,
+  axisKey,
+  onChange,
+}: {
+  axisLabel: string;
+  axisKey: ChartAxisSelection;
+  onChange: (key: ChartAxisSelection) => void;
+}) {
+  const sel = parseWvsAxisKey(String(axisKey));
+  const q = sel ? getWvsQuestion(sel.questionId) : undefined;
+  if (!sel || !q) return null;
+  const toggle = (i: number) => {
+    const set = new Set(sel.answerIndexes);
+    if (set.has(i)) set.delete(i);
+    else set.add(i);
+    onChange(
+      encodeWvsAxisKey({
+        questionId: sel.questionId,
+        answerIndexes: [...set].sort((a, b) => a - b),
+      }),
+    );
+  };
+  return (
+    <div
+      className="democracy-index-chart__wvs-answers"
+      role="group"
+      aria-label={`${axisLabel} axis World Values Survey answers`}
+    >
+      {q.answers.map((label, i) => (
+        <label key={`${q.id}-${i}`} className="democracy-index-chart__wvs-answer">
+          <input
+            type="checkbox"
+            checked={sel.answerIndexes.includes(i)}
+            onChange={() => toggle(i)}
+          />
+          <span>{label}</span>
+        </label>
+      ))}
+    </div>
+  );
 }
 
 type FilterKind = "continents" | "membership" | "indexes" | null;
@@ -724,8 +793,8 @@ export function DemocracyIndexChart({
           <span className="democracy-index-chart__axis-pick-label">X axis</span>
           <select
             className="democracy-index-chart__select"
-            value={xKey}
-            onChange={(e) => onXKeyChange(e.target.value as ChartAxisSelection)}
+            value={wvsSelectValue(xKey)}
+            onChange={(e) => onXKeyChange(normalizeAxisPick(e.target.value))}
             aria-label="Chart X axis"
           >
             <option value={CHART_AXIS_NONE}>None</option>
@@ -745,14 +814,34 @@ export function DemocracyIndexChart({
                 </option>
               ))}
             </optgroup>
+            {getWvsThemes().map((theme) => {
+              const qs = getWvsQuestionsByTheme(theme.id);
+              if (!qs.length) return null;
+              return (
+                <optgroup key={`x-wvs-${theme.id}`} label={`WVS — ${theme.label}`}>
+                  {qs.map((q) => (
+                    <option key={`x-${q.id}`} value={`wvs:${q.id}`}>
+                      {q.title}
+                    </option>
+                  ))}
+                </optgroup>
+              );
+            })}
           </select>
+          {isWvsChartAxis(xKey) && (
+            <WvsAnswerChecks
+              axisLabel="X"
+              axisKey={xKey}
+              onChange={onXKeyChange}
+            />
+          )}
         </label>
         <label className="democracy-index-chart__axis-pick">
           <span className="democracy-index-chart__axis-pick-label">Y axis</span>
           <select
             className="democracy-index-chart__select"
-            value={yKey}
-            onChange={(e) => onYKeyChange(e.target.value as ChartAxisSelection)}
+            value={wvsSelectValue(yKey)}
+            onChange={(e) => onYKeyChange(normalizeAxisPick(e.target.value))}
             aria-label="Chart Y axis"
           >
             <option value={CHART_AXIS_NONE}>None</option>
@@ -772,7 +861,27 @@ export function DemocracyIndexChart({
                 </option>
               ))}
             </optgroup>
+            {getWvsThemes().map((theme) => {
+              const qs = getWvsQuestionsByTheme(theme.id);
+              if (!qs.length) return null;
+              return (
+                <optgroup key={`y-wvs-${theme.id}`} label={`WVS — ${theme.label}`}>
+                  {qs.map((q) => (
+                    <option key={`y-${q.id}`} value={`wvs:${q.id}`}>
+                      {q.title}
+                    </option>
+                  ))}
+                </optgroup>
+              );
+            })}
           </select>
+          {isWvsChartAxis(yKey) && (
+            <WvsAnswerChecks
+              axisLabel="Y"
+              axisKey={yKey}
+              onChange={onYKeyChange}
+            />
+          )}
         </label>
 
         <div className="democracy-index-chart__filters" role="group" aria-label="Highlight countries">

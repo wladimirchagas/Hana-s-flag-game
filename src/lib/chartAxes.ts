@@ -28,6 +28,18 @@ import {
   getDemocracyIndexFor,
   getDemocracyIndexLabel,
 } from "./democracyColors";
+import {
+  encodeWvsAxisKey,
+  formatWvsSelectionLabel,
+  formatWvsSelectionShort,
+  getAllWvsQuestions,
+  getWvsQuestionsByTheme,
+  getWvsThemes,
+  isWvsAxisKey,
+  parseWvsAxisKey,
+  sumWvsAnswers,
+  type WvsSelection,
+} from "./wvsResults";
 
 export type ChartMetricKey =
   | "population"
@@ -42,9 +54,9 @@ export type ChartMetricKey =
   | "commercial-airlines"
   | "annual-visitors";
 
-export type ChartAxisKey = DemocracyIndexKey | ChartMetricKey;
+export type ChartAxisKey = DemocracyIndexKey | ChartMetricKey | string;
 
-/** Axis picker value — a real metric, or `"none"` for a one-axis chart. */
+/** Axis picker value — a real metric, WVS selection key, or `"none"`. */
 export type ChartAxisSelection = ChartAxisKey | "none";
 
 export const CHART_AXIS_NONE = "none" as const;
@@ -76,14 +88,22 @@ export const CHART_AXIS_KEYS: readonly ChartAxisKey[] = [
 ];
 
 const METRIC_KEY_SET = new Set<string>(CHART_METRIC_KEYS);
+const DEMOCRACY_KEY_SET = new Set<string>(DEMOCRACY_INDEX_KEYS);
 
 export function isChartMetricKey(key: ChartAxisKey): key is ChartMetricKey {
   return METRIC_KEY_SET.has(key);
 }
 
 export function isDemocracyAxisKey(key: ChartAxisKey): key is DemocracyIndexKey {
-  return !isChartMetricKey(key);
+  return DEMOCRACY_KEY_SET.has(key);
 }
+
+export function isWvsChartAxis(key: ChartAxisSelection): boolean {
+  return typeof key === "string" && isWvsAxisKey(key);
+}
+
+export { encodeWvsAxisKey, parseWvsAxisKey, getWvsThemes, getWvsQuestionsByTheme, getAllWvsQuestions };
+export type { WvsSelection };
 
 /** Population / money / arrivals span orders of magnitude — log axes keep them readable. */
 const LOG_METRIC_KEYS = new Set<ChartMetricKey>([
@@ -98,6 +118,11 @@ export function chartAxisUsesLogScale(key: ChartAxisKey): boolean {
 }
 
 export function getChartAxisLabel(key: ChartAxisKey): string {
+  if (isWvsAxisKey(key)) {
+    const sel = parseWvsAxisKey(key);
+    if (!sel) return "World Values Survey";
+    return formatWvsSelectionLabel(sel) ?? formatWvsSelectionShort(sel);
+  }
   if (isDemocracyAxisKey(key)) return getDemocracyIndexLabel(key);
   if (key === "population") return "Population";
   if (key === "gdp") return "GDP (USD)";
@@ -181,6 +206,13 @@ export function getChartAxisValue(
   key: ChartAxisKey,
   country: Country | undefined,
 ): ChartAxisValue | null {
+  if (isWvsAxisKey(key)) {
+    const sel = parseWvsAxisKey(key);
+    if (!sel || !sel.answerIndexes.length) return null;
+    const score = sumWvsAnswers(code, sel);
+    if (score == null) return null;
+    return { score, label: `${score}%` };
+  }
   if (isDemocracyAxisKey(key)) {
     const facts = COUNTRY_FACTS[code];
     const idx = getDemocracyIndexFor(facts?.democracy, key);
@@ -259,6 +291,7 @@ export function getChartAxisBands(key: ChartAxisKey): DemocracyAxisBand[] {
 }
 
 export function getChartAxisDomain(key: ChartAxisKey): { min: number; max: number } {
+  if (isWvsAxisKey(key)) return { min: 0, max: 100 };
   if (isDemocracyAxisKey(key)) return getDemocracyAxisDomain(key);
   if (key === "population") return { min: 1, max: 1.5e9 };
   if (key === "gdp") return { min: 1e6, max: 3e13 };
@@ -310,6 +343,16 @@ export function fitChartAxisDomain(
   if (isDemocracyAxisKey(key)) {
     return fitDemocracyAxisDomain(values, key, tickCount);
   }
+  if (isWvsAxisKey(key)) {
+    if (values.length === 0) return getChartAxisDomain(key);
+    const dataMin = Math.min(...values);
+    const dataMax = Math.max(...values);
+    const pad = Math.max(1, (dataMax - dataMin) * 0.08);
+    return {
+      min: Math.max(0, Math.floor(dataMin - pad)),
+      max: Math.min(100, Math.ceil(dataMax + pad)),
+    };
+  }
   const full = getChartAxisDomain(key);
   if (values.length === 0) {
     return chartAxisUsesLogScale(key)
@@ -351,6 +394,10 @@ function fitLogDomain(
 }
 
 export function formatChartAxisTick(key: ChartAxisKey, rawValue: number): string {
+  if (isWvsAxisKey(key)) {
+    const v = Math.round(rawValue * 10) / 10;
+    return Number.isInteger(v) ? `${v}%` : `${v.toFixed(1)}%`;
+  }
   if (isDemocracyAxisKey(key)) {
     if (key === "v-dem") return rawValue.toFixed(1);
     if (key === "hdi" || key === "gender-gap" || key === "gpi" || key === "etr" || key === "gti") {
