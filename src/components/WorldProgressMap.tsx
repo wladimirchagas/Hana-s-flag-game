@@ -13,7 +13,7 @@ import { useZoomPan, type ZoomPanState } from "../hooks/useZoomPan";
 import { useUnitPx } from "../hooks/useUnitPx";
 import { CityMarkers, type ScreenCity } from "./CityMarkers";
 import type { PlacedCity } from "../lib/cityRoles";
-import { loadWorldSubnationalBorders } from "../lib/worldSubnationalBorders";
+import { loadWorldSubnationalBorders, prefetchWorldSubnationalBorders } from "../lib/worldSubnationalBorders";
 import type { SubdivisionGeoFeature } from "../types/subdivision";
 
 // Countries whose land area is ≤ Denmark (~43,094 km²).  These get the
@@ -601,8 +601,14 @@ export function WorldProgressMap({
     };
   }, []);
 
-  // Load all country subdivision GeoJSONs the first time the overlay is
-  // enabled. Cached by loadWorldSubnationalBorders() so later toggles are free.
+  // Prefetch the precomputed sub-national border mesh as soon as the Today
+  // map mounts, so toggling the checkbox is usually instant (cache hit).
+  useEffect(() => {
+    prefetchWorldSubnationalBorders();
+  }, []);
+
+  // Load the overlay the first time the checkbox is turned on. The module
+  // cache (and the prefetch above) means this is typically already resolved.
   useEffect(() => {
     if (!showSubnationalBorders) return;
     if (subnationalFeatures) return;
@@ -673,14 +679,15 @@ export function WorldProgressMap({
   }, [geographies, centerLongitude]);
 
   // Projected sub-national border paths — same Equal Earth / centre-longitude
-  // projection as the country layer so the three-copy rotation translate lines
-  // them up. Recomputed only when features or the meridian change.
+  // projection as the country layer. digits(1) keeps the SVG `d` under a
+  // pixel at map scale while cutting path-string size ~25%. One path string
+  // is reused by the centre rotation copy only (see render below).
   const subnationalPaths = useMemo(() => {
     if (!subnationalFeatures || subnationalFeatures.length === 0) return [] as string[];
     const projection = geoEqualEarth()
       .rotate([-centerLongitude, 0])
       .fitSize([WIDTH, HEIGHT], { type: "Sphere" } as never);
-    const mapPath = geoPath(projection);
+    const mapPath = geoPath(projection).digits(1);
     const paths: string[] = [];
     for (const f of subnationalFeatures) {
       const d = mapPath(f as never);
@@ -1078,8 +1085,14 @@ export function WorldProgressMap({
                     fills (and any flag overlay) so internal state/province
                     lines are visible; pointer-events:none so hover/click still
                     hit the country underneath. A stroke-only national-border
-                    pass follows so coastlines stay solid, not dashed. */}
-                {showSubnationalBorders && subnationalPaths.length > 0 && (
+                    pass follows so coastlines stay solid, not dashed.
+                    Only the centre rotation-copy renders the overlay: the
+                    ±WIDTH copies would triple a multi-MB path string in the
+                    DOM for a seam that only matters while the globe is
+                    free-spinning. */}
+                {offset === 0 &&
+                  showSubnationalBorders &&
+                  subnationalPaths.length > 0 && (
                   <g
                     className="world-map__subnational-borders"
                     pointerEvents="none"
@@ -1102,7 +1115,9 @@ export function WorldProgressMap({
                 )}
                 {/* Re-stroke national outlines on top of the dashed overlay so
                     country borders stay visually distinct (solid, darker). */}
-                {showSubnationalBorders && subnationalPaths.length > 0 && (
+                {offset === 0 &&
+                  showSubnationalBorders &&
+                  subnationalPaths.length > 0 && (
                   <g
                     className="world-map__national-border-restore"
                     pointerEvents="none"
