@@ -158,6 +158,39 @@ for (const [rel, tokens] of surfaces) {
   }
 }
 
+// Joint EVS/WVS merge guard. The EVS-only European countries (France, Italy,
+// Spain, …) come from the Joint PDF, matched to Wave 7 questions by data. The
+// earlier title-key match collapsed Q177–Q195 (all titled just "Justifiable")
+// onto one table, giving France identical numbers for different questions.
+if (data?.questions) {
+  for (const iso of ["FR", "IT", "ES", "PL", "SE", "CH", "PT", "AT"]) {
+    const s = data.societies?.[iso];
+    const n = data.questions.filter((q) => Array.isArray(q.values?.[iso])).length;
+    if (!s || s.source !== "joint-evs-wvs-2017-2022") {
+      fail(`${iso} must be a Joint EVS/WVS society (got ${JSON.stringify(s?.source)})`);
+    }
+    if (n < 120) fail(`${iso} has Joint EVS/WVS data for only ${n} questions (need ≥120)`);
+  }
+  const fr1 = data.questions.find((q) => q.id === "Q1")?.values?.FR;
+  if (!fr1 || fr1[0] !== 85.4 || fr1[1] !== 11.6) {
+    fail(`Q1 FR must start [85.4, 11.6] (Joint A001), got ${JSON.stringify(fr1)}`);
+  }
+  const it49 = data.questions.find((q) => q.id === "Q49")?.values?.IT;
+  // Joint A170 Italy row: "1.3 1.0 … 10.0 12.0" (dissatisfied → satisfied);
+  // Wave 7 Q49 runs satisfied → dissatisfied, so it must start [12, 10].
+  if (!it49 || it49[0] !== 12 || it49[1] !== 10 || it49[9] !== 1.3) {
+    fail(`Q49 IT must start [12, 10] and end the scale at 1.3 (Joint A170 reversed), got ${JSON.stringify(it49)}`);
+  }
+  const seen = new Map();
+  for (const q of data.questions) {
+    const v = q.values?.FR;
+    if (!v) continue;
+    const key = JSON.stringify(v);
+    if (seen.has(key)) fail(`FR has identical values for ${seen.get(key)} and ${q.id} — Joint tables collided`);
+    else seen.set(key, q.id);
+  }
+}
+
 // Continuation-page regression guard. Most tables span two PDF pages and the
 // countries after the break (Tunisia … United States … Venezuela, Northern
 // Ireland) live on the second one. A footer-stripping regex once deleted every

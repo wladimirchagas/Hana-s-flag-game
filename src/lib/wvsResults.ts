@@ -29,7 +29,7 @@ export type WvsSociety = {
   name: string;
   year: number | null;
   wave: number;
-  /** Present when figures come from Joint EVS/WVS (France) rather than Wave 7. */
+  /** Present when figures come from Joint EVS/WVS (France, Italy, Spain, … — the EVS-only countries) rather than Wave 7. */
   source?: string;
   note?: string;
 };
