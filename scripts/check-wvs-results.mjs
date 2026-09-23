@@ -158,6 +158,26 @@ for (const [rel, tokens] of surfaces) {
   }
 }
 
+// Continuation-page regression guard. Most tables span two PDF pages and the
+// countries after the break (Tunisia … United States … Venezuela, Northern
+// Ireland) live on the second one. A footer-stripping regex once deleted every
+// continuation page, leaving the US with data for 4 of 307 questions.
+if (data?.questions) {
+  const q65 = data.questions.find((q) => q.id === "Q65");
+  const us = q65?.values?.US;
+  if (!us || us[0] !== 32.8 || us[1] !== 47.5) {
+    fail(`Q65 US must start [32.8, 47.5] (continuation page), got ${JSON.stringify(us)}`);
+  }
+  for (const iso of ["US", "GB", "UY", "VE", "UA", "TR", "TN"]) {
+    const n = data.questions.filter(
+      (q) => Array.isArray(q.values?.[iso]) && q.values[iso].some((v) => v != null),
+    ).length;
+    if (n < 200) {
+      fail(`${iso} has data for only ${n} questions (need ≥200) — continuation pages dropped?`);
+    }
+  }
+}
+
 if (errors.length) {
   console.error("WVS results check failed:");
   for (const e of errors) console.error(`  - ${e}`);

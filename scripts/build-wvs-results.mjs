@@ -440,10 +440,21 @@ print(json.dumps(pages))
   return JSON.parse(out);
 }
 
+/**
+ * Remove every per-page footer ("World Values Survey Wave 7 (2017-2022)" …
+ * "Page N of 969") individually.
+ *
+ * The old pattern ended in `\s*$` with no `m` flag, so `$` meant END OF
+ * STRING: the lazy match ran from the FIRST page's footer all the way to the
+ * LAST, deleting every continuation page of a multi-page table. Most tables
+ * span two pages, so every country after the page break (Tunisia … United
+ * States … Venezuela, Northern Ireland) silently lost its data — the US had
+ * values for only 4 of 307 questions.
+ */
 function stripFooter(text) {
   return text
     .replace(
-      /World Values Survey Wave 7[\s\S]*?Page \d+ of \d+\s*$/g,
+      /World Values Survey Wave 7 \(2017-2022\)\s*\n[\s\S]*?Page \d+ of \d+[ \t]*/g,
       "",
     )
     .trimEnd();
@@ -950,21 +961,39 @@ function extractAnswerLabels(block, colCount, shortTitle, strict = false) {
   return Array.from({ length: colCount }, (_, i) => `Answer ${i + 1}`);
 }
 
-function parseQuestionBlock(id, prompt, block, layoutBlockLines) {
-  const clean = stripFooter(block);
+/**
+ * `blockPages` is the question's table pages in order. Header, short title,
+ * answer labels and the column-count mode come from the FIRST page only (as
+ * before the continuation-page fix, so labels do not drift); country rows are
+ * read from EVERY page, first occurrence of an ISO winning.
+ */
+function parseQuestionBlock(id, prompt, blockPages, layoutBlockLines) {
+  const cleanPages = blockPages.map((p) => stripFooter(p || ""));
+  const clean = cleanPages[0] || "";
   const shortTitle = extractShortTitle(clean) || id;
+  const parseRows = (text) => {
+    const out = [];
+    for (const line of text.split("\n")) {
+      const t = line.trim();
+      if (!isCountryRow(t)) continue;
+      const row = parseCountryDataRow(t);
+      if (row) out.push(row);
+    }
+    return out;
+  };
+  const firstPageRows = parseRows(clean);
   const rows = [];
-  for (const line of clean.split("\n")) {
-    const t = line.trim();
-    if (!isCountryRow(t)) continue;
-    const row = parseCountryDataRow(t);
-    if (row) rows.push(row);
+  const seen = new Set();
+  for (const r of [firstPageRows, ...cleanPages.slice(1).map(parseRows)].flat()) {
+    if (seen.has(r.iso)) continue;
+    seen.add(r.iso);
+    rows.push(r);
   }
-  if (!rows.length) return null;
+  if (!firstPageRows.length) return null;
 
-  // Column count = mode of pct lengths (ignore truncated rows).
+  // Column count = mode of pct lengths (ignore truncated rows), first page only.
   const counts = new Map();
-  for (const r of rows) {
+  for (const r of firstPageRows) {
     counts.set(r.pcts.length, (counts.get(r.pcts.length) || 0) + 1);
   }
   let colCount = 0;
@@ -993,7 +1022,7 @@ function parseQuestionBlock(id, prompt, block, layoutBlockLines) {
         layoutLines: layoutBlockLines,
         colCount,
         shortTitle,
-        firstRowName: rows[0].name,
+        firstRowName: firstPageRows[0].name,
       });
     } catch {
       answers = null;
@@ -1050,14 +1079,25 @@ function main() {
   }
   console.log(`Question starts: ${starts.length}`);
 
+  // Every page that opens ANY table (including variants such as "Q33_3-",
+  // which the question-start regex above deliberately does not import). A
+  // question's block must end at the next one, or — now that continuation
+  // pages are kept — a variant table's rows would bleed into the question
+  // before it and overwrite its values.
+  const tableStarts = [];
+  for (let i = 0; i < pages.length; i++) {
+    if (/^[A-Z]+\d+[A-Za-z0-9_]*\s*[-–]/.test(pages[i] || "")) tableStarts.push(i);
+  }
+
   const questions = [];
   for (let s = 0; s < starts.length; s++) {
     const cur = starts[s];
-    const endPage =
-      s + 1 < starts.length ? starts[s + 1].page : Math.min(cur.page + 3, pages.length);
-    const block = pages.slice(cur.page, endPage).join("\n");
-    const layoutBlockLines = layoutPages.slice(cur.page, endPage).join("\n").split("\n");
-    const q = parseQuestionBlock(cur.id, cur.prompt, block, layoutBlockLines);
+    const nextTable = tableStarts.find((p) => p > cur.page) ?? pages.length;
+    const nextQuestion = s + 1 < starts.length ? starts[s + 1].page : pages.length;
+    const endPage = Math.min(nextTable, nextQuestion, cur.page + 3, pages.length);
+    const blockPages = pages.slice(cur.page, endPage);
+    const layoutBlockLines = (layoutPages[cur.page] || "").split("\n");
+    const q = parseQuestionBlock(cur.id, cur.prompt, blockPages, layoutBlockLines);
     if (q) questions.push(q);
     else console.warn(`  skip ${cur.id} (parse failed)`);
   }
