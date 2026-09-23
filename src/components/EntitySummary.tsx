@@ -535,8 +535,17 @@ function WvsCountrySection({ code }: { code: string }) {
   return (
     <details className="entity-summary__wvs">
       <summary className="entity-summary__wvs-summary">
-        World Values Survey, {WVS_WAVE_YEAR_LABEL} ({WVS_PUBLISHER})
-        {society.year != null ? ` · fieldwork ${society.year}` : ""}
+        {society.wave < 7 ? (
+          <>
+            World Values Survey, {society.year ?? `Wave ${society.wave}`} ({WVS_PUBLISHER})
+            {` · Wave ${society.wave}, older than most countries' ${WVS_WAVE_YEAR_LABEL} figures`}
+          </>
+        ) : (
+          <>
+            World Values Survey, {WVS_WAVE_YEAR_LABEL} ({WVS_PUBLISHER})
+            {society.year != null ? ` · fieldwork ${society.year}` : ""}
+          </>
+        )}
       </summary>
       {society.note && (
         <p className="entity-summary__wvs-note">{society.note}</p>

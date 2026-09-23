@@ -4022,6 +4022,15 @@
   flex-wrap: wrap;
 }
 
+.democracy-map-legend__note {
+  flex-basis: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--ink-soft, #4b5563);
+}
+
 .democracy-map-legend__item {
   display: inline-flex;
   align-items: center;

@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import {
   formatWvsSelectionLabel,
   getWvsQuestionsByTheme,
+  getOlderWvsSocieties,
   getWvsThemes,
   type WvsSelection,
 } from "../lib/wvsResults";
@@ -24,6 +25,7 @@ export function WvsSelectionPicker({
   heading = "World Values Survey",
 }: WvsSelectionPickerProps) {
   const themes = useMemo(() => getWvsThemes(), []);
+  const olderSurveys = useMemo(() => getOlderWvsSocieties(), []);
   const [openTheme, setOpenTheme] = useState<string | null>(
     value ? themeOf(value.questionId) : null,
   );
@@ -53,6 +55,8 @@ export function WvsSelectionPicker({
         Wave 7, 2017–2022 (World Values Survey Association). Pick a question,
         then tick one or more answers to sum. Countries without data keep the
         default map colour.
+        {olderSurveys.length > 0 &&
+          ` Older survey shown: ${olderSurveys.map((o) => `${o.name}, ${o.label}`).join("; ")}.`}
       </p>
       {selectedLabel && (
         <div className="wvs-picker__active">

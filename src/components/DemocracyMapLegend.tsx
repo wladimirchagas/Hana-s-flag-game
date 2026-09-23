@@ -7,6 +7,7 @@ import {
 import {
   formatWvsSelectionLabel,
   getWvsLegendStops,
+  olderWvsSocietiesIn,
 } from "../lib/wvsResults";
 
 export type DemocracyMapLegendProps = {
@@ -20,6 +21,7 @@ export function DemocracyMapLegend({ mode }: DemocracyMapLegendProps) {
     const title = formatWvsSelectionLabel(mode) ?? "World Values Survey";
     const items = getWvsLegendStops(mode);
     if (items.length === 0) return null;
+    const older = olderWvsSocietiesIn(mode);
     return (
       <div className="democracy-map-legend" role="region" aria-label={`${title} map legend`}>
         <span className="democracy-map-legend__title">{title}:</span>
@@ -35,6 +37,11 @@ export function DemocracyMapLegend({ mode }: DemocracyMapLegendProps) {
             </li>
           ))}
         </ul>
+        {older.length > 0 && (
+          <p className="democracy-map-legend__note">
+            {older.map((o) => `${o.name}: ${o.label}`).join("; ")}, not 2017–2022.
+          </p>
+        )}
       </div>
     );
   }

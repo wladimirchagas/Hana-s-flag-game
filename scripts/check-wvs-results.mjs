@@ -211,6 +211,48 @@ if (data?.questions) {
   }
 }
 
+// Wave 6 guard. South Africa's latest WVS survey is Wave 6 (2013). It is
+// paired to Wave 7 questions through the Common EVS/WVS Dictionary and by
+// answer label, so a reversed scale or a changed scale can never slip in —
+// and because it is older, every surface must date it.
+if (data?.questions) {
+  const za = data.societies?.ZA;
+  if (!za || za.wave !== 6 || za.year !== 2013 || za.source !== "wvs-wave6") {
+    fail(`ZA must be the 2013 Wave 6 society (got ${JSON.stringify(za)})`);
+  } else if (!String(za.note || "").includes("2013")) {
+    fail("ZA note must say its figures are from 2013");
+  }
+  const val = (id) => data.questions.find((q) => q.id === id)?.values?.ZA;
+  const expect = (id, idx, want, why) => {
+    const v = val(id);
+    if (!v || v[idx] !== want) fail(`${id} ZA[${idx}] must be ${want} (${why}), got ${JSON.stringify(v)}`);
+  };
+  expect("Q1", 0, 92.5, "V4 Family: Very important");
+  // V23 runs dissatisfied → satisfied; Wave 7 Q49 runs satisfied → dissatisfied.
+  expect("Q49", 0, 10.4, "V23 Completely satisfied");
+  expect("Q49", 9, 4.1, "V23 Completely dissatisfied");
+  expect("Q8", 0, 63.5, "V12 Independence: Mentioned");
+  expect("Q94", 0, 18.5, "V25 Church: Not a member");
+  // Wave 7 code absent in Wave 6 stays empty, never zero.
+  expect("Q241", 0, null, "no 'against democracy (spontaneous)' code in Wave 6");
+  expect("Q241", 1, 6.1, "V131 Not an essential characteristic");
+  // Scale changed between waves (4-point → 5-point health) — must stay out.
+  if (val("Q47")) fail("Q47 must have no ZA row: Wave 6 V11 is a 4-point scale, Wave 7 Q47 is 5-point");
+  const n = data.questions.filter((q) => Array.isArray(q.values?.ZA)).length;
+  if (n < 150) fail(`ZA has Wave 6 data for only ${n} questions (need ≥150)`);
+}
+for (const [rel, token] of [
+  ["src/components/EntitySummary.tsx", "society.wave < 7"],
+  ["src/components/DemocracyMapLegend.tsx", "olderWvsSocietiesIn"],
+  ["src/components/WvsSelectionPicker.tsx", "getOlderWvsSocieties"],
+  ["src/components/DemocracyIndexChart.tsx", "wvsOlderSurveyLabel"],
+]) {
+  const p = resolve(ROOT, rel);
+  if (existsSync(p) && !readFileSync(p, "utf8").includes(token)) {
+    fail(`${rel} must date older-survey societies (${token})`);
+  }
+}
+
 if (errors.length) {
   console.error("WVS results check failed:");
   for (const e of errors) console.error(`  - ${e}`);

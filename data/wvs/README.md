@@ -41,6 +41,10 @@ data/wvs/
   manifest.json                     # provenance + sha256 + audit fields
   wave5/
     country-results/                # France 2006 (sex × age crossings)
+  wave6/
+    country-results/                # South Africa 2013 (sex × age crossings)
+  ivs/
+    F00011424-Common_EVS_WVS_Dictionary_IVS.xlsx  # official cross-wave variable dictionary
   wave7/
     country-results/                # one PDF per Wave 7 society (sex × age)
     wave-results/                   # cross-national "Results By Country" PDF
@@ -115,8 +119,30 @@ Countries that fielded **both** surveys (Armenia, Czechia, Germany, Great Britai
 the Netherlands, Romania, Russia, Serbia, Slovakia, Ukraine) keep their Wave 7
 figures.
 
-**Not covered by either dataset:** e.g. South Africa, whose most recent WVS survey
-is Wave 6 (2013), which uses a different questionnaire and numbering.
+## South Africa (Wave 6, 2013)
+
+South Africa fielded neither WVS Wave 7 nor the EVS 2017 round. Its most recent
+WVS survey is **Wave 6, fielded 18 Aug – 6 Oct 2013** (N = 3,531; archive SAID
+2208). Its official country report,
+`wave6/country-results/F00007746-WV6_Results_South-Africa_2013_v20180912.pdf`, is
+merged by `scripts/build-wvs-results.mjs` (`mergeWave6Countries`):
+
+- **Pairing** — each Wave 6 variable (V4, V5, …) is paired with a Wave 7 question
+  (Q1, Q2, …) only where the official **Common EVS/WVS Dictionary** names both
+  (`ivs/F00011424-Common_EVS_WVS_Dictionary_IVS.xlsx`, extracted into
+  `scripts/data/wvs-wave6-wave7-crosswalk.json` by
+  `scripts/build-wvs-wave-crosswalk.mjs`). Nothing is paired by wording.
+- **Answer alignment** — every Wave 6 answer row must land on one Wave 7 answer by
+  label. Clean Wave 7 labels are read from the Wave 7 country reports (US, then
+  AU, NZ, CA, GB), trusted only where that report's TOTAL column reproduces the
+  country's Wave 7 values exactly. The handful of answers the two waves word
+  differently are listed in `WAVE6_LABEL_EQUIVALENTS`, each checked against the
+  South African Wave 6 questionnaire (DOID 2766). A question whose scale changed
+  between waves (e.g. 4-point vs 5-point health, 3-point vs 5-point agreement) is
+  left empty, never forced. 190 questions qualify.
+- **Dated everywhere** — these figures are older than every other country's, so
+  the country widget, map legend, question picker and chart tooltip all say
+  "2013 survey (Wave 6)".
 
 ## Also stored
 

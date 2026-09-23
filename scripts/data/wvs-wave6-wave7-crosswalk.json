@@ -1,0 +1,1241 @@
+{
+ "source": {
+  "path": "data/wvs/ivs/F00011424-Common_EVS_WVS_Dictionary_IVS.xlsx",
+  "sha256": "21bd5559b58220392a0c3da50f4873e9667abfae6beb184f14777f3ed4df7ef7",
+  "doid": "11424",
+  "documentation_url": "https://www.worldvaluessurvey.org/WVSEVStrend.jsp",
+  "note": "Common EVS/WVS Dictionary (IVS 1981-2022), sheet IVS_EVS_and_WVS_Variables: columns 'WVS 6: Variable name' and 'WVS 7: Variable name'."
+ },
+ "pairs": [
+  {
+   "ivs": "A001",
+   "label": "Important in life: Family",
+   "w6": "V4",
+   "w7": "Q1"
+  },
+  {
+   "ivs": "A002",
+   "label": "Important in life: Friends",
+   "w6": "V5",
+   "w7": "Q2"
+  },
+  {
+   "ivs": "A003",
+   "label": "Important in life: Leisure time",
+   "w6": "V6",
+   "w7": "Q3"
+  },
+  {
+   "ivs": "A004",
+   "label": "Important in life: Politics",
+   "w6": "V7",
+   "w7": "Q4"
+  },
+  {
+   "ivs": "A005",
+   "label": "Important in life: Work",
+   "w6": "V8",
+   "w7": "Q5"
+  },
+  {
+   "ivs": "A006",
+   "label": "Important in life: Religion",
+   "w6": "V9",
+   "w7": "Q6"
+  },
+  {
+   "ivs": "A008",
+   "label": "Feeling of happiness",
+   "w6": "V10",
+   "w7": "Q46"
+  },
+  {
+   "ivs": "A009",
+   "label": "State of health (subjective)",
+   "w6": "V11",
+   "w7": "Q47"
+  },
+  {
+   "ivs": "A029",
+   "label": "Important child qualities: independence",
+   "w6": "V12",
+   "w7": "Q8"
+  },
+  {
+   "ivs": "A030",
+   "label": "Important child qualities: Hard work",
+   "w6": "V13",
+   "w7": "Q9"
+  },
+  {
+   "ivs": "A032",
+   "label": "Important child qualities: feeling of responsibility",
+   "w6": "V14",
+   "w7": "Q10"
+  },
+  {
+   "ivs": "A034",
+   "label": "Important child qualities: imagination",
+   "w6": "V15",
+   "w7": "Q11"
+  },
+  {
+   "ivs": "A035",
+   "label": "Important child qualities: tolerance and respect for other people",
+   "w6": "V16",
+   "w7": "Q12"
+  },
+  {
+   "ivs": "A038",
+   "label": "Important child qualities: thrift saving money and things",
+   "w6": "V17",
+   "w7": "Q13"
+  },
+  {
+   "ivs": "A039",
+   "label": "Important child qualities: determination perseverance",
+   "w6": "V18",
+   "w7": "Q14"
+  },
+  {
+   "ivs": "A040",
+   "label": "Important child qualities: religious faith",
+   "w6": "V19",
+   "w7": "Q15"
+  },
+  {
+   "ivs": "A041",
+   "label": "Important child qualities: unselfishness",
+   "w6": "V20",
+   "w7": "Q16"
+  },
+  {
+   "ivs": "A042",
+   "label": "Important child qualities: obedience",
+   "w6": "V21",
+   "w7": "Q17"
+  },
+  {
+   "ivs": "A098",
+   "label": "Active/Inactive membership of church or religious organization",
+   "w6": "V25",
+   "w7": "Q94"
+  },
+  {
+   "ivs": "A099",
+   "label": "Active/Inactive membership of sport or recreation",
+   "w6": "V26",
+   "w7": "Q95"
+  },
+  {
+   "ivs": "A100",
+   "label": "Active/Inactive membership of art, music, educational",
+   "w6": "V27",
+   "w7": "Q96"
+  },
+  {
+   "ivs": "A101",
+   "label": "Active/Inactive membership of labour unions",
+   "w6": "V28",
+   "w7": "Q97"
+  },
+  {
+   "ivs": "A102",
+   "label": "Active/Inactive membership of political party",
+   "w6": "V29",
+   "w7": "Q98"
+  },
+  {
+   "ivs": "A103",
+   "label": "Active/Inactive membership of environmental organization",
+   "w6": "V30",
+   "w7": "Q99"
+  },
+  {
+   "ivs": "A104",
+   "label": "Active/Inactive membership of professional organization",
+   "w6": "V31",
+   "w7": "Q100"
+  },
+  {
+   "ivs": "A105",
+   "label": "Active/Inactive membership of charitable/humanitarian organization",
+   "w6": "V32",
+   "w7": "Q101"
+  },
+  {
+   "ivs": "A106",
+   "label": "Active/Inactive membership of any other organization",
+   "w6": "V35",
+   "w7": "Q105"
+  },
+  {
+   "ivs": "A106B",
+   "label": "Active/Inactive membership: Consumer organization",
+   "w6": "V33",
+   "w7": "Q102"
+  },
+  {
+   "ivs": "A106C",
+   "label": "Active/Inactive membership: Self-help group, mutual aid group",
+   "w6": "V34",
+   "w7": "Q103"
+  },
+  {
+   "ivs": "A124_02",
+   "label": "Neighbours: People of a different race",
+   "w6": "V37",
+   "w7": "Q19"
+  },
+  {
+   "ivs": "A124_03",
+   "label": "Neighbours: Heavy drinkers",
+   "w6": "V42",
+   "w7": "Q24"
+  },
+  {
+   "ivs": "A124_06",
+   "label": "Neighbours: Immigrants/foreign workers",
+   "w6": "V39",
+   "w7": "Q21"
+  },
+  {
+   "ivs": "A124_07",
+   "label": "Neighbours: People who have AIDS",
+   "w6": "V38",
+   "w7": "Q20"
+  },
+  {
+   "ivs": "A124_08",
+   "label": "Neighbours: Drug addicts",
+   "w6": "V36",
+   "w7": "Q18"
+  },
+  {
+   "ivs": "A124_09",
+   "label": "Neighbours: Homosexuals",
+   "w6": "V40",
+   "w7": "Q22"
+  },
+  {
+   "ivs": "A124_12",
+   "label": "Neighbours: People of a different religion",
+   "w6": "V41",
+   "w7": "Q23"
+  },
+  {
+   "ivs": "A124_42",
+   "label": "Neighbours: Unmarried couples living together",
+   "w6": "V43",
+   "w7": "Q25"
+  },
+  {
+   "ivs": "A124_43",
+   "label": "Neighbours: People who speak a different language",
+   "w6": "V44",
+   "w7": "Q26"
+  },
+  {
+   "ivs": "A165",
+   "label": "Most people can be trusted",
+   "w6": "V24",
+   "w7": "Q57"
+  },
+  {
+   "ivs": "A170",
+   "label": "Satisfaction with your life",
+   "w6": "V23",
+   "w7": "Q49"
+  },
+  {
+   "ivs": "A173",
+   "label": "How much freedom of choice and control",
+   "w6": "V55",
+   "w7": "Q48"
+  },
+  {
+   "ivs": "B008",
+   "label": "Protecting environment vs. Economic growth",
+   "w6": "V81",
+   "w7": "Q111"
+  },
+  {
+   "ivs": "C001",
+   "label": "Jobs scarce: Men should have more right to a job than women (3 categories)",
+   "w6": "V45",
+   "w7": "Q33"
+  },
+  {
+   "ivs": "C002",
+   "label": "Jobs scarce: Employers should give priority to (nation) people than immigrants (3 categories)",
+   "w6": "V46",
+   "w7": "Q34"
+  },
+  {
+   "ivs": "C006",
+   "label": "Satisfaction with financial situation of household",
+   "w6": "V59",
+   "w7": "Q50"
+  },
+  {
+   "ivs": "D001_B",
+   "label": "How much do you trust your family (4-point scale)",
+   "w6": "V102",
+   "w7": "Q58"
+  },
+  {
+   "ivs": "D054",
+   "label": "One of main goals in life has been to make my parents proud",
+   "w6": "V49",
+   "w7": "Q27"
+  },
+  {
+   "ivs": "D057",
+   "label": "Being a housewife just as fulfilling",
+   "w6": "V54",
+   "w7": "Q32"
+  },
+  {
+   "ivs": "D059",
+   "label": "Men make better political leaders than women do",
+   "w6": "V51",
+   "w7": "Q29"
+  },
+  {
+   "ivs": "D060",
+   "label": "University is more important for a boy than for a girl",
+   "w6": "V52",
+   "w7": "Q30"
+  },
+  {
+   "ivs": "D061",
+   "label": "Pre-school child suffers with working mother",
+   "w6": "V50",
+   "w7": "Q28"
+  },
+  {
+   "ivs": "D066_B",
+   "label": "Problem if women have more income than husband (B)",
+   "w6": "V47",
+   "w7": "Q35"
+  },
+  {
+   "ivs": "D078",
+   "label": "Men make better business executives than women do",
+   "w6": "V53",
+   "w7": "Q31"
+  },
+  {
+   "ivs": "E001",
+   "label": "Aims of country: first choice",
+   "w6": "V60",
+   "w7": "Q152"
+  },
+  {
+   "ivs": "E002",
+   "label": "Aims of country: second choice",
+   "w6": "V61",
+   "w7": "Q153"
+  },
+  {
+   "ivs": "E003",
+   "label": "Aims of respondent: first choice",
+   "w6": "V62",
+   "w7": "Q154"
+  },
+  {
+   "ivs": "E004",
+   "label": "Aims of respondent: second choice",
+   "w6": "V63",
+   "w7": "Q155"
+  },
+  {
+   "ivs": "E005",
+   "label": "Most important: first choice",
+   "w6": "V64",
+   "w7": "Q156"
+  },
+  {
+   "ivs": "E006",
+   "label": "Most important: second choice",
+   "w6": "V65",
+   "w7": "Q157"
+  },
+  {
+   "ivs": "E012",
+   "label": "Willingness to fight for country",
+   "w6": "V66",
+   "w7": "Q151"
+  },
+  {
+   "ivs": "E015",
+   "label": "Future changes: Less importance placed on work",
+   "w6": "V67",
+   "w7": "Q43"
+  },
+  {
+   "ivs": "E016",
+   "label": "Future changes: More emphasis on technology",
+   "w6": "V68",
+   "w7": "Q44"
+  },
+  {
+   "ivs": "E018",
+   "label": "Future changes: Greater respect for authority",
+   "w6": "V69",
+   "w7": "Q45"
+  },
+  {
+   "ivs": "E023",
+   "label": "Interest in politics",
+   "w6": "V84",
+   "w7": "Q199"
+  },
+  {
+   "ivs": "E025",
+   "label": "Political action: Signing a petition",
+   "w6": "V85",
+   "w7": "Q209"
+  },
+  {
+   "ivs": "E026",
+   "label": "Political action: joining in boycotts",
+   "w6": "V86",
+   "w7": "Q210"
+  },
+  {
+   "ivs": "E027",
+   "label": "Political action: attending lawful/peaceful demonstrations",
+   "w6": "V87",
+   "w7": "Q211"
+  },
+  {
+   "ivs": "E028",
+   "label": "Political action: joining unofficial strikes",
+   "w6": "V88",
+   "w7": "Q212"
+  },
+  {
+   "ivs": "E033",
+   "label": "Self positioning in political scale",
+   "w6": "V95",
+   "w7": "Q240"
+  },
+  {
+   "ivs": "E035",
+   "label": "Income equality",
+   "w6": "V96",
+   "w7": "Q106"
+  },
+  {
+   "ivs": "E036",
+   "label": "Private vs state ownership of business",
+   "w6": "V97",
+   "w7": "Q107"
+  },
+  {
+   "ivs": "E037",
+   "label": "Government responsibility",
+   "w6": "V98",
+   "w7": "Q108"
+  },
+  {
+   "ivs": "E039",
+   "label": "Competition good or harmful",
+   "w6": "V99",
+   "w7": "Q109"
+  },
+  {
+   "ivs": "E040",
+   "label": "Hard work brings success",
+   "w6": "V100",
+   "w7": "Q110"
+  },
+  {
+   "ivs": "E069_01",
+   "label": "Confidence: Churches",
+   "w6": "V108",
+   "w7": "Q64"
+  },
+  {
+   "ivs": "E069_02",
+   "label": "Confidence: Armed Forces",
+   "w6": "V109",
+   "w7": "Q65"
+  },
+  {
+   "ivs": "E069_04",
+   "label": "Confidence: The Press",
+   "w6": "V110",
+   "w7": "Q66"
+  },
+  {
+   "ivs": "E069_05",
+   "label": "Confidence: Labour Unions",
+   "w6": "V112",
+   "w7": "Q68"
+  },
+  {
+   "ivs": "E069_06",
+   "label": "Confidence: The Police",
+   "w6": "V113",
+   "w7": "Q69"
+  },
+  {
+   "ivs": "E069_07",
+   "label": "Confidence: Parliament",
+   "w6": "V117",
+   "w7": "Q73"
+  },
+  {
+   "ivs": "E069_08",
+   "label": "Confidence: The Civil Services",
+   "w6": "V118",
+   "w7": "Q74"
+  },
+  {
+   "ivs": "E069_10",
+   "label": "Confidence: Television",
+   "w6": "V111",
+   "w7": "Q67"
+  },
+  {
+   "ivs": "E069_11",
+   "label": "Confidence: The Government",
+   "w6": "V115",
+   "w7": "Q71"
+  },
+  {
+   "ivs": "E069_12",
+   "label": "Confidence: The Political Parties",
+   "w6": "V116",
+   "w7": "Q72"
+  },
+  {
+   "ivs": "E069_13",
+   "label": "Confidence: Major Companies",
+   "w6": "V120",
+   "w7": "Q77"
+  },
+  {
+   "ivs": "E069_14",
+   "label": "Confidence: The Environmental Protection Movement",
+   "w6": "V122",
+   "w7": "Q79"
+  },
+  {
+   "ivs": "E069_15",
+   "label": "Confidence: The Women´s Movement",
+   "w6": "V123",
+   "w7": "Q80"
+  },
+  {
+   "ivs": "E069_17",
+   "label": "Confidence: Justice System/Courts",
+   "w6": "V114",
+   "w7": "Q70"
+  },
+  {
+   "ivs": "E069_20",
+   "label": "Confidence: The United Nations",
+   "w6": "V126",
+   "w7": "Q83"
+  },
+  {
+   "ivs": "E069_40",
+   "label": "Confidence: Charitable or humanitarian organizations",
+   "w6": "V124",
+   "w7": "Q81"
+  },
+  {
+   "ivs": "E069_41",
+   "label": "Confidence: Banks",
+   "w6": "V121",
+   "w7": "Q78"
+  },
+  {
+   "ivs": "E069_54",
+   "label": "Confidence: Universities",
+   "w6": "V119",
+   "w7": "Q75"
+  },
+  {
+   "ivs": "E114",
+   "label": "Political system: Having a strong leader",
+   "w6": "V127",
+   "w7": "Q235"
+  },
+  {
+   "ivs": "E115",
+   "label": "Political system: Having experts make decisions",
+   "w6": "V128",
+   "w7": "Q236"
+  },
+  {
+   "ivs": "E116",
+   "label": "Political system: Having the army rule",
+   "w6": "V129",
+   "w7": "Q237"
+  },
+  {
+   "ivs": "E117",
+   "label": "Political system: Having a democratic political system",
+   "w6": "V130",
+   "w7": "Q238"
+  },
+  {
+   "ivs": "E124",
+   "label": "Respect for individual human rights nowadays",
+   "w6": "V142",
+   "w7": "Q253"
+  },
+  {
+   "ivs": "E179WVS",
+   "label": "Which party would you vote for: first choice (WVS)",
+   "w6": "V228",
+   "w7": "Q223"
+  },
+  {
+   "ivs": "E217",
+   "label": "Science and technology are making our lives healthier, easier, and more comfortable",
+   "w6": "V192",
+   "w7": "Q158"
+  },
+  {
+   "ivs": "E218",
+   "label": "Because of science and technology, there will be more opportunities for the next generation",
+   "w6": "V193",
+   "w7": "Q159"
+  },
+  {
+   "ivs": "E220",
+   "label": "We depend too much on science and not enough on faith",
+   "w6": "V194",
+   "w7": "Q160"
+  },
+  {
+   "ivs": "E224",
+   "label": "Democracy: Governments tax the rich and subsidize the poor.",
+   "w6": "V131",
+   "w7": "Q241"
+  },
+  {
+   "ivs": "E225",
+   "label": "Democracy: Religious authorities interpret the laws.",
+   "w6": "V132",
+   "w7": "Q242"
+  },
+  {
+   "ivs": "E226",
+   "label": "Democracy: People choose their leaders in free elections.",
+   "w6": "V133",
+   "w7": "Q243"
+  },
+  {
+   "ivs": "E227",
+   "label": "Democracy: People receive state aid for unemployment.",
+   "w6": "V134",
+   "w7": "Q244"
+  },
+  {
+   "ivs": "E228",
+   "label": "Democracy: The army takes over when government is incompetent.",
+   "w6": "V135",
+   "w7": "Q245"
+  },
+  {
+   "ivs": "E229",
+   "label": "Democracy: Civil rights protect people’s liberty against oppression.",
+   "w6": "V136",
+   "w7": "Q246"
+  },
+  {
+   "ivs": "E233",
+   "label": "Democracy: Women have the same rights as men.",
+   "w6": "V139",
+   "w7": "Q249"
+  },
+  {
+   "ivs": "E233A",
+   "label": "Democracy: The state makes people's incomes equal",
+   "w6": "V137",
+   "w7": "Q247"
+  },
+  {
+   "ivs": "E233B",
+   "label": "Democracy: People obey their rulers",
+   "w6": "V138",
+   "w7": "Q248"
+  },
+  {
+   "ivs": "E234",
+   "label": "The world is better off, or worse off, because of science and technology",
+   "w6": "V197",
+   "w7": "Q163"
+  },
+  {
+   "ivs": "E235",
+   "label": "Importance of democracy",
+   "w6": "V140",
+   "w7": "Q250"
+  },
+  {
+   "ivs": "E236",
+   "label": "Democraticness in own country",
+   "w6": "V141",
+   "w7": "Q251"
+  },
+  {
+   "ivs": "E248B",
+   "label": "Information source: Daily newspaper (B)",
+   "w6": "V217",
+   "w7": "Q201"
+  },
+  {
+   "ivs": "E254B",
+   "label": "Information source: Talk with friends or colleagues (B)",
+   "w6": "V224",
+   "w7": "Q208"
+  },
+  {
+   "ivs": "E258B",
+   "label": "Information source: TV news (B)",
+   "w6": "V219",
+   "w7": "Q202"
+  },
+  {
+   "ivs": "E259B",
+   "label": "Information source: Radio news (B)",
+   "w6": "V220",
+   "w7": "Q203"
+  },
+  {
+   "ivs": "E260B",
+   "label": "Information source: Mobile phone (B)",
+   "w6": "V221",
+   "w7": "Q204"
+  },
+  {
+   "ivs": "E261B",
+   "label": "Information source: Email (B)",
+   "w6": "V222",
+   "w7": "Q205"
+  },
+  {
+   "ivs": "E262B",
+   "label": "Information source: Internet (B)",
+   "w6": "V223",
+   "w7": "Q206"
+  },
+  {
+   "ivs": "E263",
+   "label": "Vote in elections: local level",
+   "w6": "V226",
+   "w7": "Q221"
+  },
+  {
+   "ivs": "E264",
+   "label": "Vote in elections: National level",
+   "w6": "V227",
+   "w7": "Q222"
+  },
+  {
+   "ivs": "E265_01",
+   "label": "How often in country's elections: Votes are counted fairly",
+   "w6": "V228A",
+   "w7": "Q224"
+  },
+  {
+   "ivs": "E265_02",
+   "label": "How often in country's elections: Opposition candidates are prevented from running",
+   "w6": "V228B",
+   "w7": "Q225"
+  },
+  {
+   "ivs": "E265_03",
+   "label": "How often in country's elections: TV news favors the governing party",
+   "w6": "V228C",
+   "w7": "Q226"
+  },
+  {
+   "ivs": "E265_04",
+   "label": "How often in country's elections: Voters are bribed",
+   "w6": "V228D",
+   "w7": "Q227"
+  },
+  {
+   "ivs": "E265_05",
+   "label": "How often in country's elections: Journalists provide fair coverage of elections",
+   "w6": "V228E",
+   "w7": "Q228"
+  },
+  {
+   "ivs": "E265_06",
+   "label": "How often in country's elections: Election officials are fair",
+   "w6": "V228F",
+   "w7": "Q229"
+  },
+  {
+   "ivs": "E265_07",
+   "label": "How often in country's elections: Rich people buy elections",
+   "w6": "V228G",
+   "w7": "Q230"
+  },
+  {
+   "ivs": "E265_08",
+   "label": "How often in country's elections: Voters are threatened with  violence at the polls",
+   "w6": "V228H",
+   "w7": "Q231"
+  },
+  {
+   "ivs": "E265_09",
+   "label": "How often in country's elections: Voters are offered a genuine choice in the elections",
+   "w6": "V228I",
+   "w7": "Q232"
+  },
+  {
+   "ivs": "E266",
+   "label": "Some people think that having honest elections makes a lot of difference in their lives;  other people think that it doesn’t matter much",
+   "w6": "V228J",
+   "w7": "Q234"
+  },
+  {
+   "ivs": "F025",
+   "label": "Religious denomination (major groups)",
+   "w6": "V144G",
+   "w7": "Q289"
+  },
+  {
+   "ivs": "F028",
+   "label": "How often do you attend religious services",
+   "w6": "V145",
+   "w7": "Q171"
+  },
+  {
+   "ivs": "F028B",
+   "label": "How often do you pray",
+   "w6": "V146",
+   "w7": "Q172"
+  },
+  {
+   "ivs": "F034",
+   "label": "Religious person",
+   "w6": "V147",
+   "w7": "Q173"
+  },
+  {
+   "ivs": "F050",
+   "label": "Believe in: God",
+   "w6": "V148",
+   "w7": "Q165"
+  },
+  {
+   "ivs": "F053",
+   "label": "Believe in: hell",
+   "w6": "V149",
+   "w7": "Q167"
+  },
+  {
+   "ivs": "F063",
+   "label": "How important is God in your life",
+   "w6": "V152",
+   "w7": "Q164"
+  },
+  {
+   "ivs": "F114A",
+   "label": "Justifiable: Claiming government benefits to which you are not entitled",
+   "w6": "V198",
+   "w7": "Q177"
+  },
+  {
+   "ivs": "F114B",
+   "label": "Justifiable: Stealing property",
+   "w6": "V200",
+   "w7": "Q179"
+  },
+  {
+   "ivs": "F114C",
+   "label": "Justifiable: Parents beating children",
+   "w6": "V209",
+   "w7": "Q190"
+  },
+  {
+   "ivs": "F114D",
+   "label": "Justifiable: Violence against other people",
+   "w6": "V210",
+   "w7": "Q191"
+  },
+  {
+   "ivs": "F115",
+   "label": "Justifiable: Avoiding a fare on public transport",
+   "w6": "V199",
+   "w7": "Q178"
+  },
+  {
+   "ivs": "F116",
+   "label": "Justifiable: Cheating on taxes",
+   "w6": "V201",
+   "w7": "Q180"
+  },
+  {
+   "ivs": "F117",
+   "label": "Justifiable: Someone accepting a bribe",
+   "w6": "V202",
+   "w7": "Q181"
+  },
+  {
+   "ivs": "F118",
+   "label": "Justifiable: Homosexuality",
+   "w6": "V203",
+   "w7": "Q182"
+  },
+  {
+   "ivs": "F119",
+   "label": "Justifiable: Prostitution",
+   "w6": "V203A",
+   "w7": "Q183"
+  },
+  {
+   "ivs": "F120",
+   "label": "Justifiable: Abortion",
+   "w6": "V204",
+   "w7": "Q184"
+  },
+  {
+   "ivs": "F121",
+   "label": "Justifiable: Divorce",
+   "w6": "V205",
+   "w7": "Q185"
+  },
+  {
+   "ivs": "F122",
+   "label": "Justifiable: Euthanasia",
+   "w6": "V207A",
+   "w7": "Q188"
+  },
+  {
+   "ivs": "F123",
+   "label": "Justifiable: Suicide",
+   "w6": "V207",
+   "w7": "Q187"
+  },
+  {
+   "ivs": "F135A",
+   "label": "Justifiable: Sex before marriage",
+   "w6": "V206",
+   "w7": "Q186"
+  },
+  {
+   "ivs": "F199",
+   "label": "Justifiable: For a man to beat his wife",
+   "w6": "V208",
+   "w7": "Q189"
+  },
+  {
+   "ivs": "F200",
+   "label": "Meaning of religion: To follow religious norms and ceremonies vs To do good to other people",
+   "w6": "V150",
+   "w7": "Q174"
+  },
+  {
+   "ivs": "F201",
+   "label": "Meaning of religion: To make sense of life after death vs To make sense of life in this world",
+   "w6": "V151",
+   "w7": "Q175"
+  },
+  {
+   "ivs": "F202",
+   "label": "Whenever science and religion conflict,  religion is always right",
+   "w6": "V153",
+   "w7": "Q169"
+  },
+  {
+   "ivs": "F203",
+   "label": "The only acceptable religion  is my religion",
+   "w6": "V154",
+   "w7": "Q170"
+  },
+  {
+   "ivs": "G006",
+   "label": "How proud of nationality",
+   "w6": "V211",
+   "w7": "Q254"
+  },
+  {
+   "ivs": "G007_18_B",
+   "label": "Trust: Your neighborhood (B)",
+   "w6": "V103",
+   "w7": "Q59"
+  },
+  {
+   "ivs": "G007_33_B",
+   "label": "Trust: People you know personally (B)",
+   "w6": "V104",
+   "w7": "Q60"
+  },
+  {
+   "ivs": "G007_34_B",
+   "label": "Trust: People you meet for the first time (B)",
+   "w6": "V105",
+   "w7": "Q61"
+  },
+  {
+   "ivs": "G007_35_B",
+   "label": "Trust: People of another religion (B)",
+   "w6": "V106",
+   "w7": "Q62"
+  },
+  {
+   "ivs": "G007_36_B",
+   "label": "Trust: People of another nationality (B)",
+   "w6": "V107",
+   "w7": "Q63"
+  },
+  {
+   "ivs": "G016",
+   "label": "Language at home",
+   "w6": "V247",
+   "w7": "Q272"
+  },
+  {
+   "ivs": "G026",
+   "label": "Mother immigrant",
+   "w6": "V243",
+   "w7": "Q264"
+  },
+  {
+   "ivs": "G027",
+   "label": "Father immigrant",
+   "w6": "V244",
+   "w7": "Q265"
+  },
+  {
+   "ivs": "G027A",
+   "label": "Respondent immigrant",
+   "w6": "V245",
+   "w7": "Q263"
+  },
+  {
+   "ivs": "G027B",
+   "label": "Respondent citizen",
+   "w6": "V246",
+   "w7": "Q269"
+  },
+  {
+   "ivs": "H001",
+   "label": "Secure in neighborhood",
+   "w6": "V170",
+   "w7": "Q131"
+  },
+  {
+   "ivs": "H002_01",
+   "label": "Frequency in your neighborhood: Robberies",
+   "w6": "V171",
+   "w7": "Q132"
+  },
+  {
+   "ivs": "H002_02",
+   "label": "Frequency in your neighborhood: Alcohol consumed in the streets",
+   "w6": "V172",
+   "w7": "Q133"
+  },
+  {
+   "ivs": "H002_03",
+   "label": "Frequency in your neighborhood: Police or military interfere with people’s private life",
+   "w6": "V173",
+   "w7": "Q134"
+  },
+  {
+   "ivs": "H002_04",
+   "label": "Frequency in your neighborhood: Racist behavior",
+   "w6": "V174",
+   "w7": "Q135"
+  },
+  {
+   "ivs": "H002_05",
+   "label": "Frequency in your neighborhood: Drug sale in streets",
+   "w6": "V175",
+   "w7": "Q136"
+  },
+  {
+   "ivs": "H003_01",
+   "label": "Things done for reasons of security: Didn’t carry much money",
+   "w6": "V176",
+   "w7": "Q139"
+  },
+  {
+   "ivs": "H003_02",
+   "label": "Things done for reasons of security: Preferred not to go out at night",
+   "w6": "V177",
+   "w7": "Q140"
+  },
+  {
+   "ivs": "H003_03",
+   "label": "Things done for reasons of security: Carried a knife, gun or other weapon",
+   "w6": "V178",
+   "w7": "Q141"
+  },
+  {
+   "ivs": "H004",
+   "label": "Respondent was victim of a crime during the past year",
+   "w6": "V179",
+   "w7": "Q144"
+  },
+  {
+   "ivs": "H005",
+   "label": "Respondent's family was victim of a crime during last year",
+   "w6": "V180",
+   "w7": "Q145"
+  },
+  {
+   "ivs": "H006_01",
+   "label": "Worries: Losing my job or not finding a job",
+   "w6": "V181",
+   "w7": "Q142"
+  },
+  {
+   "ivs": "H006_02",
+   "label": "Worries: Not being able to give one's children a good education",
+   "w6": "V182",
+   "w7": "Q143"
+  },
+  {
+   "ivs": "H006_03",
+   "label": "Worries: A war involving my country",
+   "w6": "V183",
+   "w7": "Q146"
+  },
+  {
+   "ivs": "H006_04",
+   "label": "Worries: A terrorist attack",
+   "w6": "V184",
+   "w7": "Q147"
+  },
+  {
+   "ivs": "H006_05",
+   "label": "Worries: A civil war",
+   "w6": "V185",
+   "w7": "Q148"
+  },
+  {
+   "ivs": "H008_01",
+   "label": "Frequency you/family (last 12 month): Gone without enough food to eat",
+   "w6": "V188",
+   "w7": "Q51"
+  },
+  {
+   "ivs": "H008_02",
+   "label": "Frequency you/family (last 12 month): Felt unsafe from crime in your own home",
+   "w6": "V189",
+   "w7": "Q52"
+  },
+  {
+   "ivs": "H008_03",
+   "label": "Frequency you/family (last 12 month): Gone without needed medicine or treatment that you needed",
+   "w6": "V190",
+   "w7": "Q53"
+  },
+  {
+   "ivs": "H008_04",
+   "label": "Frequency you/family (last 12 month): Gone without a cash income",
+   "w6": "V191",
+   "w7": "Q54"
+  },
+  {
+   "ivs": "I001",
+   "label": "One of the bad effects of science is that it breaks down people’s ideas of right and wrong",
+   "w6": "V195",
+   "w7": "Q161"
+  },
+  {
+   "ivs": "I002",
+   "label": "It is not important for me to know about science in my daily life",
+   "w6": "V196",
+   "w7": "Q162"
+  },
+  {
+   "ivs": "X001",
+   "label": "Sex",
+   "w6": "V240",
+   "w7": "Q260"
+  },
+  {
+   "ivs": "X002",
+   "label": "Year of birth",
+   "w6": "V241",
+   "w7": "Q261"
+  },
+  {
+   "ivs": "X003",
+   "label": "Age",
+   "w6": "V242",
+   "w7": "Q262"
+  },
+  {
+   "ivs": "X007",
+   "label": "Marital status",
+   "w6": "V57",
+   "w7": "Q273"
+  },
+  {
+   "ivs": "X011",
+   "label": "How many children do you have",
+   "w6": "V58",
+   "w7": "Q274"
+  },
+  {
+   "ivs": "X025CSWVS",
+   "label": "Education (country specific) WVS",
+   "w6": "V248_CS",
+   "w7": "Q275A"
+  },
+  {
+   "ivs": "X028",
+   "label": "Employment status",
+   "w6": "V229",
+   "w7": "Q279"
+  },
+  {
+   "ivs": "X040",
+   "label": "Are you the chief wage earner in your house",
+   "w6": "V235",
+   "w7": "Q285"
+  },
+  {
+   "ivs": "X044",
+   "label": "Family savings during past year",
+   "w6": "V237",
+   "w7": "Q286"
+  },
+  {
+   "ivs": "X045",
+   "label": "Social class (subjective)",
+   "w6": "V238",
+   "w7": "Q287"
+  },
+  {
+   "ivs": "X047_WVS",
+   "label": "Subjective income level (10 categories) (WVS)",
+   "w6": "V239",
+   "w7": "Q288"
+  },
+  {
+   "ivs": "X047R_WVS",
+   "label": "Income level (3 categories) WVS",
+   "w6": "V239R",
+   "w7": "Q288R"
+  },
+  {
+   "ivs": "X051",
+   "label": "Ethnic group",
+   "w6": "V254",
+   "w7": "Q290"
+  },
+  {
+   "ivs": "X052",
+   "label": "Institution of occupation",
+   "w6": "V230",
+   "w7": "Q284"
+  }
+ ]
+}

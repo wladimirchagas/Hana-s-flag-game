@@ -27,6 +27,7 @@ import {
 } from "../lib/chartAxes";
 import {
   getWvsQuestion,
+  wvsOlderSurveyLabel,
 } from "../lib/wvsResults";
 import { CONTINENT_ORDER, SUBREGION_GROUPS } from "../lib/continentGroups";
 import {
@@ -773,9 +774,14 @@ export function DemocracyIndexChart({
     const rect = frameRef.current.getBoundingClientRect();
     const left = (cx / VIEW_W) * rect.width;
     const top = (cy / VIEW_H) * rect.height;
+    // A WVS axis may mix in an older survey (South Africa 2013) — date it.
+    const olderWvs =
+      isWvsChartAxis(activeXKey ?? "") || isWvsChartAxis(activeYKey ?? "")
+        ? wvsOlderSurveyLabel(code)
+        : null;
     setTooltip({
       code,
-      name: country.name,
+      name: olderWvs ? `${country.name} (WVS ${olderWvs})` : country.name,
       xLabel: pt.xLabel,
       yLabel: pt.yLabel,
       left,
