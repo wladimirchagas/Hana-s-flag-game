@@ -2148,6 +2148,70 @@
         "japan_v4_exclusive_country_ok": null,
         "first_page_excerpt": "World Values Survey Wave 7 (2017-2022) Uruguay Study # WVS-2017 v5.0"
       }
+    },
+    {
+      "id": "F00007746",
+      "doid": "7746",
+      "wvs_sample_id": 2208,
+      "iso2": "ZA",
+      "country": "South Africa",
+      "wave": 6,
+      "wave_years_label": "2013",
+      "document_version": "v20180912",
+      "document_format": "country_wv6",
+      "kind": "country_results_by_sex_age",
+      "filename": "F00007746-WV6_Results_South-Africa_2013_v20180912.pdf",
+      "path": "data/wvs/wave6/country-results/F00007746-WV6_Results_South-Africa_2013_v20180912.pdf",
+      "bytes": 3224370,
+      "sha256": "4d71faa507f1585be7f4f6cc73b34b022f7d8a20f25d15fcbdb394f264b941bc",
+      "pdf_pages": 135,
+      "expected_sample_n": 3531,
+      "source": {
+        "publisher": "World Values Survey Association / JD Systems Data Archive",
+        "documentation_url": "https://www.worldvaluessurvey.org/AJDocumentation.jsp?CndWAVE=6",
+        "download_method": "downloaded_from_wvs_archive",
+        "retrieved_utc": "2026-09-23"
+      },
+      "audit": {
+        "pdf_header_ok": true,
+        "title_country_match": true,
+        "sample_n_from_pdf": 3531,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "SOUTH-AFRICA 2013 | Fieldwork Period: 18-08-2013 - 06-10-2013 | Universe: National Population, Both sexes, 18 and more years | Sample size: 3531",
+        "note": "South Africa is not a Wave 7 society and did not field the EVS; this Wave 6 (2013) report is its most recent WVS survey. The archive's Wave 6 index lists it as “South-Africa 2013” (SAID 2208), PI Prof Hennie Kotze, institute IPSOS."
+      }
+    },
+    {
+      "id": "F00011424",
+      "doid": "11424",
+      "wvs_sample_id": null,
+      "iso2": null,
+      "country": "cross-national",
+      "wave": "ivs-1981-2022",
+      "wave_years_label": "1981-2022",
+      "document_version": "2021",
+      "document_format": "common_evs_wvs_dictionary_xlsx",
+      "kind": "variable_dictionary",
+      "filename": "F00011424-Common_EVS_WVS_Dictionary_IVS.xlsx",
+      "path": "data/wvs/ivs/F00011424-Common_EVS_WVS_Dictionary_IVS.xlsx",
+      "bytes": 341406,
+      "sha256": "21bd5559b58220392a0c3da50f4873e9667abfae6beb184f14777f3ed4df7ef7",
+      "pdf_pages": null,
+      "expected_sample_n": null,
+      "source": {
+        "publisher": "World Values Survey Association (WVSA) & European Values Study (EVS)",
+        "documentation_url": "https://www.worldvaluessurvey.org/WVSEVStrend.jsp",
+        "download_method": "downloaded_from_wvs_archive",
+        "retrieved_utc": "2026-09-23"
+      },
+      "audit": {
+        "pdf_header_ok": null,
+        "title_country_match": null,
+        "sample_n_from_pdf": null,
+        "japan_v4_exclusive_country_ok": null,
+        "first_page_excerpt": "Common EVS/WVS Dictionary - Integrated Values Surveys (IVS) 1981-2022 | sheet IVS_EVS_and_WVS_Variables: 'WVS 6: Variable name' / 'WVS 7: Variable name'",
+        "note": "Variable-level crosswalk (not respondent data). scripts/build-wvs-wave-crosswalk.mjs extracts its Wave 6 → Wave 7 pairs into scripts/data/wvs-wave6-wave7-crosswalk.json."
+      }
     }
   ]
 }

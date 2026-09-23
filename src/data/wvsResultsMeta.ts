@@ -37,7 +37,17 @@ export const WVS_RESULTS_SOURCE = {
     "SE",
     "CH"
   ],
-  "retrieved_note": "Wave 7 percentages from the official Results By Country PDF (weighted by w_weight). France never fielded WVS Wave 7 — its figures, like those of 25 other European countries that fielded only the EVS 2017 round (Italy, Spain, Poland, Sweden, …), are merged from the co-published Joint EVS/WVS 2017–2022 Results by Country PDF. A Joint table is used only where its figures for every Wave 7 society it shares reproduce that Wave 7 question exactly, which proves both the pairing and the column order. Wave 5 France is superseded and not used."
+  "wave6_societies": [
+    {
+      "iso": "ZA",
+      "name": "South Africa",
+      "year": 2013,
+      "path": "data/wvs/wave6/country-results/F00007746-WV6_Results_South-Africa_2013_v20180912.pdf",
+      "questions_merged": 190
+    }
+  ],
+  "wave6_crosswalk_path": "scripts/data/wvs-wave6-wave7-crosswalk.json",
+  "retrieved_note": "Wave 7 percentages from the official Results By Country PDF (weighted by w_weight). France never fielded WVS Wave 7 — its figures, like those of 25 other European countries that fielded only the EVS 2017 round (Italy, Spain, Poland, Sweden, …), are merged from the co-published Joint EVS/WVS 2017–2022 Results by Country PDF. A Joint table is used only where its figures for every Wave 7 society it shares reproduce that Wave 7 question exactly, which proves both the pairing and the column order. Wave 5 France is superseded and not used. South Africa never fielded Wave 7 or the EVS; its figures are from its 2013 WVS Wave 6 country report, paired to Wave 7 questions through the official Common EVS/WVS Dictionary and used only where the answer scale is unchanged, and are labelled with their 2013 date wherever they appear."
 } as const;
 
 export const WVS_THEME_ORDER = [

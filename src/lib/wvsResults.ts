@@ -29,7 +29,11 @@ export type WvsSociety = {
   name: string;
   year: number | null;
   wave: number;
-  /** Present when figures come from Joint EVS/WVS (France, Italy, Spain, … — the EVS-only countries) rather than Wave 7. */
+  /**
+   * Present when figures do not come from Wave 7: "joint-evs-wvs-2017-2022"
+   * (France, Italy, Spain, … — the EVS-only countries) or "wvs-wave6"
+   * (South Africa, 2013 — an older survey, labelled with its year everywhere).
+   */
   source?: string;
   note?: string;
 };
@@ -90,6 +94,34 @@ export function getWvsSociety(code: string): WvsSociety | undefined {
 
 export function getAllWvsSocieties(): Readonly<Record<string, WvsSociety>> {
   return DATA.societies;
+}
+
+/**
+ * "2013 survey (Wave 6)" for a society whose figures predate Wave 7, so every
+ * surface can date them; null for Wave 7 / Joint EVS/WVS societies.
+ */
+export function wvsOlderSurveyLabel(code: string): string | null {
+  const s = DATA.societies[code];
+  if (!s || s.wave >= 7) return null;
+  return s.year != null ? `${s.year} survey (Wave ${s.wave})` : `Wave ${s.wave} survey`;
+}
+
+/** Societies whose figures predate Wave 7, e.g. South Africa 2013. */
+export function getOlderWvsSocieties(): { code: string; name: string; label: string }[] {
+  const out: { code: string; name: string; label: string }[] = [];
+  for (const [code, s] of Object.entries(DATA.societies)) {
+    const label = wvsOlderSurveyLabel(code);
+    if (label) out.push({ code, name: s.name, label });
+  }
+  return out;
+}
+
+/** Older-survey societies that actually have figures for this selection. */
+export function olderWvsSocietiesIn(
+  sel: WvsSelectionLike | null | undefined,
+): { code: string; name: string; label: string }[] {
+  if (!sel) return [];
+  return getOlderWvsSocieties().filter(({ code }) => sumWvsAnswers(code, sel) != null);
 }
 
 export function getAllWvsQuestions(): readonly WvsQuestion[] {

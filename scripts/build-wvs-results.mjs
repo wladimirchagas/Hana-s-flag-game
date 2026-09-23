@@ -263,6 +263,246 @@ function mergeJointEvs(questions, societies) {
   };
 }
 
+/**
+ * Countries with NO Wave 7 or Joint EVS/WVS survey whose most recent WVS
+ * survey is Wave 6. Their figures are older than everyone else's, so every
+ * surface that shows them says the year (society.year / society.wave).
+ */
+const WAVE6_ONLY_COUNTRIES = {
+  ZA: {
+    name: "South Africa",
+    pdf: "data/wvs/wave6/country-results/F00007746-WV6_Results_South-Africa_2013_v20180912.pdf",
+    year: 2013,
+  },
+};
+const WAVE6_CROSSWALK = resolve(ROOT, "scripts/data/wvs-wave6-wave7-crosswalk.json");
+const WAVE7_COUNTRY_DIR = resolve(ROOT, "data/wvs/wave7/country-results");
+
+/**
+ * Wave 7 country-results PDFs used to read CLEAN answer labels (one row per
+ * answer, instead of the wave PDF's wrapped column headers). A country's rows
+ * are trusted for a question only when their TOTAL column reproduces that
+ * country's Wave 7 values exactly, answer for answer.
+ */
+const WAVE7_LABEL_COUNTRIES = [
+  ["US", /_United_States_/],
+  ["AU", /_Australia_/],
+  ["NZ", /_New_Zealand_/],
+  ["CA", /_Canada_/],
+  ["GB", /_Great_Britain_/],
+];
+
+/**
+ * Where the Wave 6 report and the Wave 7 report name the SAME answer code of
+ * the same IVS variable differently. Keyed by Wave 7 question → { Wave 6 row
+ * label: Wave 7 answer label }. Each entry was checked against the South
+ * African Wave 6 questionnaire (DOID 2766) or is the same statement in a
+ * shorter form; anything not listed must match word for word.
+ */
+const WAVE6_LABEL_EQUIVALENTS = (() => {
+  const childQualities = { Mentioned: "Important" };
+  const membership = { "Not a member": "Don't belong" };
+  const defence = {
+    "Making sure this country has strong defense forces":
+      "Making sure this country has strong defence forces",
+  };
+  return {
+    Q46: { "Rather happy": "Quite happy" },
+    ...Object.fromEntries(
+      ["Q8", "Q9", "Q10", "Q11", "Q12", "Q13", "Q14", "Q15", "Q16", "Q17"].map((q) => [q, childQualities]),
+    ),
+    ...Object.fromEntries(["Q94", "Q95", "Q96", "Q99", "Q102", "Q103", "Q105"].map((q) => [q, membership])),
+    Q48: { "No choice at all": "None at all", "A great deal of choice": "A great deal" },
+    Q50: { "Completely dissatisfied": "Dissatisfied", "Completely satisfied": "Satisfied" },
+    Q106: {
+      "Incomes should be made more equal": "Incomes more equal",
+      "We need larger income differences as incentives for individual effort": "Larger income differences",
+    },
+    Q107: {
+      "Private ownership of business and industry should be increased":
+        "Private ownership of business should be increased",
+      "Government ownership of business and industry should be increased":
+        "Government ownership of business should be increased",
+    },
+    Q109: {
+      "Competition is good. It stimulates people to work hard and develop new ideas": "Competition is good",
+      "Competition is harmful. It brings out the worst in people": "Competition is harmful",
+    },
+    Q111: {
+      "Protecting the environment should be given priority, even if it causes slower economic growth and some loss of jobs":
+        "Protecting environment",
+      "Economic growth and creating jobs should be the top priority, even if the environment suffers to some extent":
+        "Economy growth and creating jobs",
+    },
+    // Questionnaire V183 showcard: "VERY MUCH / A GOOD DEAL / NOT MUCH / NOT AT ALL".
+    Q146: { "A great deal": "A good deal" },
+    Q151: { "Don't know; SG: Unsure": "Don't know" },
+    Q152: defence,
+    Q153: defence,
+    Q172: { "Less often than once a year": "Less often" },
+    // Questionnaire V127 showcard: "VERY GOOD / FAIRLY GOOD / FAIRLY BAD / VERY BAD".
+    Q235: { Bad: "Fairly Bad" },
+    Q253: { "A great deal of respect for individual human rights": "A great deal of respect" },
+    Q263: {
+      "I am an immigrant to this country": "I am an immigrant to this country (born outside this country)",
+    },
+    Q269: {
+      "Yes, I am a citizen of this country": "Yes",
+      "Not, I am not a citizen of this country": "No",
+    },
+    // Questionnaire V237 code 3 reads "Spend some savings", as Wave 7 does.
+    Q286: { "Spent some savings and borrowed money": "Spent some savings" },
+    Q288: { "Eigth step": "Eight step" },
+  };
+})();
+
+/**
+ * Wave 7 answer codes that did not exist in Wave 6, so they stay empty for a
+ * Wave 6 country (they were not offered — not zero).
+ */
+const WAVE7_CODES_NOT_IN_WAVE6 = new Set([
+  "It is against democracy (spontaneous)",
+  "Not allowed to vote",
+]);
+
+const MISSING_CODE_RE = /^(don't know|no answer|missing|other missing|not applicable|not asked|inap)/;
+
+function normLabel(s) {
+  return String(s)
+    .replace(/[´’`]/g, "'")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/^[\s.:;]+|[\s.:;]+$/g, "")
+    .toLowerCase();
+}
+
+/**
+ * Tables of a WVS "crossings by sex and age" country report: { id: [[label,
+ * total]] }. Every data row ends in six cells (TOTAL, Male, Female, three age
+ * bands); a line without them continues the previous row's wrapped label.
+ */
+function parseCountryResultTables(pdfPath, idPattern) {
+  const text = extractAllPagesLayout(pdfPath).join("\n");
+  const cell = /^(?:\d+(?:\.\d+)?|\*|-)$/;
+  const chrome = /Page \d+ of \d+|Study #|_v\d{8}|WV\d_Results|World Values Survey Wave|Distributions in %/;
+  const tables = {};
+  for (const block of text.split(new RegExp(`\\n(?=${idPattern})`)).slice(1)) {
+    const id = block.match(/^([A-Z]+\d+[A-Z_]*)/)?.[1];
+    if (!id || tables[id]) continue;
+    const lines = block.split("\n");
+    const h = lines.findIndex((l) => /(^|\s)TOTAL\s/.test(l));
+    if (h < 0) continue;
+    const rows = [];
+    for (const l of lines.slice(h + 1)) {
+      const s = l.trim();
+      if (s.startsWith("(N)")) break;
+      if (!s || chrome.test(l) || /^(Male|Sex|more|Age)\b/.test(s)) continue;
+      const tk = s.split(/\s+/);
+      if (tk.length >= 7 && tk.slice(-6).every((t) => cell.test(t))) {
+        rows.push([tk.slice(0, -6).join(" "), tk[tk.length - 6]]);
+      } else if (rows.length) {
+        rows[rows.length - 1][0] += ` ${s}`;
+      }
+    }
+    tables[id] = rows;
+  }
+  return tables;
+}
+
+const pctOrNull = (tok) => (tok === "-" || tok === "*" ? null : Number(tok));
+
+/** Clean Wave 7 answer labels per question, proven by value equality. */
+function cleanWave7Labels(questions, wanted) {
+  const files = existsSync(WAVE7_COUNTRY_DIR) ? readdirSync(WAVE7_COUNTRY_DIR) : [];
+  const labels = {};
+  for (const [iso, re] of WAVE7_LABEL_COUNTRIES) {
+    const todo = questions.filter((q) => wanted.has(q.id) && !labels[q.id] && q.values[iso]);
+    if (!todo.length) continue;
+    const file = files.find((f) => re.test(f));
+    if (!file) continue;
+    const tables = parseCountryResultTables(resolve(WAVE7_COUNTRY_DIR, file), "Q\\d+[A-Z_]*-");
+    for (const q of todo) {
+      const rows = tables[q.id];
+      const v = q.values[iso];
+      if (!rows || rows.length !== q.answers.length) continue;
+      if (rows.every(([, t], i) => pctOrNull(t) === v[i])) labels[q.id] = rows.map(([l]) => l);
+    }
+  }
+  return labels;
+}
+
+/**
+ * Merge countries whose latest WVS survey is Wave 6 (South Africa, 2013).
+ *
+ * The Wave 6 → Wave 7 pairing comes from the official Common EVS/WVS
+ * Dictionary (same IVS variable), never from wording. A pair is used only if
+ * every Wave 6 answer row lands on exactly one Wave 7 answer by label (after
+ * WAVE6_LABEL_EQUIVALENTS) and every substantive Wave 7 answer is covered —
+ * so a question whose scale changed between waves (4 → 5 health points, a
+ * 3-point agree scale → 5, "7 children" / "8 or more" vs "7 or more") is left
+ * empty instead of forced. Values are the report's TOTAL column, verbatim.
+ */
+function mergeWave6Countries(questions, societies) {
+  const { pairs } = JSON.parse(readFileSync(WAVE6_CROSSWALK, "utf8"));
+  const byId = new Map(questions.map((q) => [q.id, q]));
+  const usable = pairs.filter((p) => byId.has(p.w7));
+  const labels = cleanWave7Labels(questions, new Set(usable.map((p) => p.w7)));
+  const summary = {};
+
+  for (const [iso, cfg] of Object.entries(WAVE6_ONLY_COUNTRIES)) {
+    const tables = parseCountryResultTables(resolve(ROOT, cfg.pdf), "V\\d+[A-Z_]*\\.-");
+    const merged = [];
+    const skipped = [];
+    for (const { w6, w7 } of usable) {
+      const q = byId.get(w7);
+      const rows = tables[w6];
+      const w7Labels = labels[w7];
+      if (!rows?.length || !w7Labels) {
+        skipped.push(`${w7}←${w6} (${rows?.length ? "no clean Wave 7 labels" : "no Wave 6 table"})`);
+        continue;
+      }
+      const target = w7Labels.map(normLabel);
+      const equiv = Object.fromEntries(
+        Object.entries(WAVE6_LABEL_EQUIVALENTS[w7] || {}).map(([a, b]) => [normLabel(a), normLabel(b)]),
+      );
+      const out = new Array(q.answers.length).fill(null);
+      const used = new Set();
+      let ok = true;
+      for (const [label, total] of rows) {
+        const n = normLabel(label);
+        let j = target.indexOf(n);
+        if (j < 0 && equiv[n]) j = target.indexOf(equiv[n]);
+        if (j < 0 || used.has(j)) {
+          ok = false;
+          break;
+        }
+        used.add(j);
+        out[j] = pctOrNull(total);
+      }
+      const uncovered = target.filter(
+        (l, j) => !used.has(j) && !MISSING_CODE_RE.test(l) && !WAVE7_CODES_NOT_IN_WAVE6.has(w7Labels[j]),
+      );
+      if (!ok || uncovered.length) {
+        skipped.push(`${w7}←${w6} (answer scale differs)`);
+        continue;
+      }
+      q.values[iso] = out;
+      merged.push(w7);
+    }
+    societies[iso] = {
+      name: cfg.name,
+      year: cfg.year,
+      wave: 6,
+      source: "wvs-wave6",
+      note: `${cfg.name} did not field WVS Wave 7. These figures are from its ${cfg.year} survey (WVS Wave 6), for the questions both waves share, so they are older than most countries' figures.`,
+    };
+    summary[iso] = { merged: merged.length, skipped };
+    console.log(`Wave 6 ${cfg.name} ${cfg.year}: ${merged.length} questions merged; ${skipped.length} skipped`);
+    for (const s of skipped) console.log(`  skip ${s}`);
+  }
+  return summary;
+}
+
 const COUNTRY_NAME_TO_ISO = {
   Andorra: "AD",
   Argentina: "AR",
@@ -1287,6 +1527,7 @@ function main() {
   }
 
   const { franceMerged, jointPath, isos: jointIsos } = mergeJointEvs(questions, societies);
+  const wave6 = mergeWave6Countries(questions, societies);
 
   const pdfBuf = readFileSync(pdfPath);
   const payload = {
@@ -1304,8 +1545,16 @@ function main() {
         : null,
       france_questions_merged: franceMerged,
       joint_evs_societies: jointIsos,
+      wave6_societies: Object.entries(WAVE6_ONLY_COUNTRIES).map(([iso, c]) => ({
+        iso,
+        name: c.name,
+        year: c.year,
+        path: c.pdf,
+        questions_merged: wave6[iso]?.merged ?? 0,
+      })),
+      wave6_crosswalk_path: "scripts/data/wvs-wave6-wave7-crosswalk.json",
       retrieved_note:
-        "Wave 7 percentages from the official Results By Country PDF (weighted by w_weight). France never fielded WVS Wave 7 — its figures, like those of 25 other European countries that fielded only the EVS 2017 round (Italy, Spain, Poland, Sweden, …), are merged from the co-published Joint EVS/WVS 2017–2022 Results by Country PDF. A Joint table is used only where its figures for every Wave 7 society it shares reproduce that Wave 7 question exactly, which proves both the pairing and the column order. Wave 5 France is superseded and not used.",
+        "Wave 7 percentages from the official Results By Country PDF (weighted by w_weight). France never fielded WVS Wave 7 — its figures, like those of 25 other European countries that fielded only the EVS 2017 round (Italy, Spain, Poland, Sweden, …), are merged from the co-published Joint EVS/WVS 2017–2022 Results by Country PDF. A Joint table is used only where its figures for every Wave 7 society it shares reproduce that Wave 7 question exactly, which proves both the pairing and the column order. Wave 5 France is superseded and not used. South Africa never fielded Wave 7 or the EVS; its figures are from its 2013 WVS Wave 6 country report, paired to Wave 7 questions through the official Common EVS/WVS Dictionary and used only where the answer scale is unchanged, and are labelled with their 2013 date wherever they appear.",
     },
     themes: [...THEME_DEFS.map(({ id, label }) => ({ id, label })), THEME_FALLBACK],
     societies,
