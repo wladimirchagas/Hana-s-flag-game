@@ -1237,32 +1237,42 @@ export function democracyAxisBandSegments(
 }
 
 /** Format a country's value on one axis for tooltips (classification + score). */
+/**
+ * The index's own score for one country, formatted the way its publisher
+ * reports it (decimals, "score", "posts", "%", signed DPI net). Null when the
+ * index carries no score for that country — callers then show the rating alone.
+ */
+export function formatDemocracyScoreValue(
+  key: DemocracyIndexKey,
+  idx: DemocracyIndex,
+): string | null {
+  const score = idx.score;
+  if (typeof score !== "number") return null;
+  if (key === "perception") return score > 0 ? `+${score}` : `${score}`;
+  if (key === "cpi") return `score ${score}`;
+  if (key === "v-dem") return score.toFixed(2);
+  if (key === "economist") return score.toFixed(2);
+  if (key === "rsf-press") return score.toFixed(1);
+  if (key === "hdi") return score.toFixed(3);
+  if (key === "gender-gap") return score.toFixed(3);
+  if (key === "gpi") return score.toFixed(3);
+  if (key === "happiness") return score.toFixed(3);
+  if (key === "soft-power") return score.toFixed(1);
+  if (key === "gdi") return `${score} posts`;
+  if (key === "wjp-rule-of-law") return score.toFixed(2);
+  if (key === "imd-competitiveness") return `score ${score.toFixed(2)}`;
+  if (key === "etr") return score.toFixed(3);
+  if (key === "digital-news") return `${score}%`;
+  if (key === "gti") return score.toFixed(3);
+  return `${score}`;
+}
+
 export function formatDemocracyAxisValue(
   key: DemocracyIndexKey,
   idx: DemocracyIndex,
 ): string {
-  const score = idx.score;
-  if (typeof score !== "number") return idx.rating;
-  if (key === "perception") {
-    const signed = score > 0 ? `+${score}` : `${score}`;
-    return `${idx.rating} · ${signed}`;
-  }
-  if (key === "cpi") return `${idx.rating} · score ${score}`;
-  if (key === "v-dem") return `${idx.rating} · ${score.toFixed(2)}`;
-  if (key === "economist") return `${idx.rating} · ${score.toFixed(2)}`;
-  if (key === "rsf-press") return `${idx.rating} · ${score.toFixed(1)}`;
-  if (key === "hdi") return `${idx.rating} · ${score.toFixed(3)}`;
-  if (key === "gender-gap") return `${idx.rating} · ${score.toFixed(3)}`;
-  if (key === "gpi") return `${idx.rating} · ${score.toFixed(3)}`;
-  if (key === "happiness") return `${idx.rating} · ${score.toFixed(3)}`;
-  if (key === "soft-power") return `${idx.rating} · ${score.toFixed(1)}`;
-  if (key === "gdi") return `${idx.rating} · ${score} posts`;
-  if (key === "wjp-rule-of-law") return `${idx.rating} · ${score.toFixed(2)}`;
-  if (key === "imd-competitiveness") return `${idx.rating} · score ${score.toFixed(2)}`;
-  if (key === "etr") return `${idx.rating} · ${score.toFixed(3)}`;
-  if (key === "digital-news") return `${idx.rating} · ${score}%`;
-  if (key === "gti") return `${idx.rating} · ${score.toFixed(3)}`;
-  return `${idx.rating} · ${score}`;
+  const value = formatDemocracyScoreValue(key, idx);
+  return value == null ? idx.rating : `${idx.rating} · ${value}`;
 }
 
 /** Every country that has a scored value for both chart axes. */

@@ -4037,3 +4037,59 @@
   flex: none;
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
+
+/* --- Data-map tooltip (hover a country, or tap it on touch) --- */
+.map-data-tooltip {
+  position: absolute;
+  z-index: 6;
+  /* Purely informational: it must never swallow the hover or the tap meant
+     for the country underneath. */
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  max-width: 15rem;
+  padding: 0.45rem 0.65rem;
+  background: var(--paper);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  box-shadow: 0 3px 0 var(--ink), 0 8px 16px rgba(26, 34, 56, 0.2);
+  font-size: 0.82rem;
+  line-height: 1.3;
+}
+
+.map-data-tooltip__name {
+  font-weight: 800;
+}
+
+.map-data-tooltip__measure,
+.map-data-tooltip__year,
+.map-data-tooltip__empty {
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+}
+
+.map-data-tooltip__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem 0.4rem;
+}
+
+.map-data-tooltip__swatch {
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  flex: none;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.map-data-tooltip__category {
+  font-weight: 800;
+}
+
+.map-data-tooltip__value {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
