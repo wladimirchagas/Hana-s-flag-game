@@ -127,7 +127,7 @@ export const DEMOCRACY_INDEX_META: Readonly<
   "freedom-house": {
     key: "freedom-house",
     name: "Freedom in the World",
-    year: 2024,
+    year: 2026,
     publisher: "Freedom House",
     theme: "state-of-democracy",
   },

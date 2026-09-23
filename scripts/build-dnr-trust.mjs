@@ -61,7 +61,7 @@ const header = `// Authoritative democracy / governance / press-freedom / develo
 // and the Reuters Institute Digital News Report
 // (trust in news).
 // Covers UN member states and permanent observers. Sourced from official publications:
-// - Freedom House: Freedom in the World 2024
+// - Freedom House: Freedom in the World 2026 (scripts/data/fiw-2026.csv, built by scripts/build-fiw.mjs)
 // - V-Dem Institute: Democracy Report 2026 / Dataset v16
 // - Economist Intelligence Unit (EIU): Democracy Index 2025
 // - Transparency International: Corruption Perceptions Index 2025 (CPI2025_Results.xlsx)
