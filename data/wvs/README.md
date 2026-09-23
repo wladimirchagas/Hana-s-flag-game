@@ -91,6 +91,33 @@ the frequency-table PDF vs 1,870 in the participating-countries worksheet) are b
 taken verbatim from their respective official files; the small discrepancy is not
 reconciled or guessed at here — both numbers are recorded as-is.
 
+## Other EVS-only European countries (Joint EVS/WVS)
+
+France is not the only country the Joint PDF above covers without a WVS Wave 7
+survey. **26 European countries** fielded only the EVS 2017 round and are merged
+from `joint-evs-wvs-2017-2022/F00011082-…Results_by_Country.pdf` by
+`scripts/build-wvs-results.mjs` (`mergeJointEvs`): Albania, Austria, Azerbaijan,
+Belarus, Bosnia and Herzegovina, Bulgaria, Croatia, Denmark, Estonia, Finland,
+France, Georgia, Hungary, Iceland, Italy, Latvia, Lithuania, Montenegro, North
+Macedonia, Norway, Poland, Portugal, Slovenia, Spain, Sweden, Switzerland.
+
+A Joint table is paired with a Wave 7 question **only when its figures for every
+Wave 7 society it shares (60+ of them) reproduce that question exactly** under one
+column order: as-is, "Not mentioned / Mentioned" swapped, or a reversed scale. The
+Joint figures for WVS societies are the Wave 7 figures, so this check proves both
+the pairing and the column alignment before any EVS value is copied. 143 tables
+qualify, about 140 of the 307 Wave 7 questions per country. Questions the EVS did
+not ask, or asked differently (e.g. yes/no memberships vs WVS's
+active/inactive/none), are left empty and never approximated. Fieldwork year per
+country comes from the PDF's own "Year survey" table.
+
+Countries that fielded **both** surveys (Armenia, Czechia, Germany, Great Britain,
+the Netherlands, Romania, Russia, Serbia, Slovakia, Ukraine) keep their Wave 7
+figures.
+
+**Not covered by either dataset:** e.g. South Africa, whose most recent WVS survey
+is Wave 6 (2013), which uses a different questionnaire and numbering.
+
 ## Also stored
 
 | Document | DOID | Notes |

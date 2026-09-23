@@ -8,8 +8,36 @@ export const WVS_RESULTS_SOURCE = {
   "publisher": "World Values Survey Association",
   "documentation_url": "https://www.worldvaluessurvey.org/WVSDocumentationWV7.jsp",
   "joint_evs_wvs_path": "data/wvs/joint-evs-wvs-2017-2022/F00011082-EVS_WVS_Joint_v5_Results_by_Country.pdf",
-  "france_questions_merged": 51,
-  "retrieved_note": "Wave 7 percentages from the official Results By Country PDF (weighted by w_weight). France never fielded WVS Wave 7 — its figures are merged from the Joint EVS/WVS 2017–2022 Results by Country PDF, matched by shared short title, fieldwork year 2018. Wave 5 France is superseded and not used."
+  "france_questions_merged": 140,
+  "joint_evs_societies": [
+    "AL",
+    "AT",
+    "AZ",
+    "BY",
+    "BA",
+    "BG",
+    "HR",
+    "DK",
+    "EE",
+    "FI",
+    "FR",
+    "GE",
+    "HU",
+    "IS",
+    "IT",
+    "LV",
+    "LT",
+    "ME",
+    "MK",
+    "NO",
+    "PL",
+    "PT",
+    "SI",
+    "ES",
+    "SE",
+    "CH"
+  ],
+  "retrieved_note": "Wave 7 percentages from the official Results By Country PDF (weighted by w_weight). France never fielded WVS Wave 7 — its figures, like those of 25 other European countries that fielded only the EVS 2017 round (Italy, Spain, Poland, Sweden, …), are merged from the co-published Joint EVS/WVS 2017–2022 Results by Country PDF. A Joint table is used only where its figures for every Wave 7 society it shares reproduce that Wave 7 question exactly, which proves both the pairing and the column order. Wave 5 France is superseded and not used."
 } as const;
 
 export const WVS_THEME_ORDER = [

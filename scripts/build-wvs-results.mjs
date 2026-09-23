@@ -37,80 +37,230 @@ function findJointResultsPdf() {
 }
 
 /**
- * France never fielded WVS Wave 7. Latest comparable percentages live in the
- * Joint EVS/WVS 2017–2022 Results-by-Country PDF (variable codes A### / …),
- * matched to Wave 7 questions by shared short title (e.g. both say
- * "Important in life: Family"). Wave 5 France PDF is superseded — do not use.
+ * European countries that fielded the EVS 2017 round but NOT WVS Wave 7. Their
+ * latest comparable percentages live in the co-published Joint EVS/WVS
+ * 2017–2022 Results-by-Country PDF. Keyed by the PDF's own row label. Countries
+ * that fielded BOTH surveys ("Germany EVS" / "Germany WVS") keep their Wave 7
+ * figures and are not listed here.
  */
-function mergeFranceFromJoint(questions, societies) {
-  const jointPath = findJointResultsPdf();
-  if (!jointPath) {
-    console.warn("No Joint EVS/WVS Results_by_Country PDF — France not merged");
-    return { merged: 0, jointPath: null };
-  }
-  console.log(`Merging France from ${jointPath} …`);
-  const pages = extractAllPages(jointPath);
-  const byTitle = new Map();
-  for (let i = 0; i < pages.length; i++) {
-    const t = pages[i] || "";
-    // Joint variables: A001-, A002-, … also some Q-coded shared items
-    const m = t.match(
-      /^([A-Z]\d+[A-Z]?)\s*[-–]\s*([\s\S]+?)(?=\nTOTAL\b)/,
-    );
-    if (!m) continue;
-    const end = Math.min(i + 3, pages.length);
-    const block = stripFooter(pages.slice(i, end).join("\n"));
-    const title = extractShortTitle(block);
-    if (!title) continue;
-    let franceLine = null;
-    for (const line of block.split("\n")) {
-      const trimmed = line.trim();
-      // Prefer bare "France" over "France EVS" if both appear; Joint uses "France".
-      if (/^France\s+[\d,(]/.test(trimmed) && !/^France\s+(EVS|WVS)/i.test(trimmed)) {
-        franceLine = trimmed;
-        break;
+const JOINT_ONLY_COUNTRIES = {
+  Albania: "AL",
+  Austria: "AT",
+  Azerbaijan: "AZ",
+  Belarus: "BY",
+  "Bosnia and Herzegovina": "BA",
+  Bulgaria: "BG",
+  Croatia: "HR",
+  Denmark: "DK",
+  Estonia: "EE",
+  Finland: "FI",
+  France: "FR",
+  Georgia: "GE",
+  Hungary: "HU",
+  Iceland: "IS",
+  Italy: "IT",
+  Latvia: "LV",
+  Lithuania: "LT",
+  Montenegro: "ME",
+  "North Macedonia": "MK",
+  Norway: "NO",
+  Poland: "PL",
+  Portugal: "PT",
+  Slovenia: "SI",
+  Spain: "ES",
+  Sweden: "SE",
+  Switzerland: "CH",
+};
+
+/** Joint-PDF row labels of Wave 7 societies whose name differs from ours. */
+const JOINT_WVS_ALIASES = {
+  "Great Britain WVS": "GB",
+  "Northern Ireland": "GB-NIR",
+  "Czechia WVS": "CZ",
+  "Germany WVS": "DE",
+  "Netherlands WVS": "NL",
+  "Romania WVS": "RO",
+  "Russia WVS": "RU",
+  "Serbia WVS": "RS",
+  "Slovakia WVS": "SK",
+  "Ukraine WVS": "UA",
+  "Armenia WVS": "AM",
+  Uzbequistan: "UZ",
+};
+
+/**
+ * Column re-orderings a Joint table may need to line up with its Wave 7 twin:
+ * identity; "Not mentioned / Mentioned" → "Mentioned / Not mentioned" (the
+ * binary child-quality / neighbour items); and a reversed n-point scale (WVS
+ * stores several 1–10 scales 10 → 1). A re-ordering is only ever ACCEPTED when
+ * it reproduces every shared Wave 7 country exactly — see mergeJointEvs.
+ */
+const JOINT_COLUMN_ORDERS = [
+  (c) => c,
+  (c) => [c[1], c[0], ...c.slice(2)],
+  ...[3, 4, 5, 6, 7, 8, 9, 10, 11].map((k) => (c) => [
+    ...c.slice(0, k).reverse(),
+    ...c.slice(k),
+  ]),
+];
+
+function parseJointRows(text, namesByLen) {
+  const rows = new Map();
+  const lines = text.split("\n").map((l) => l.trim());
+  const startsWithName = (l) => namesByLen.find((n) => l.startsWith(n + " "));
+  for (let i = 0; i < lines.length; i++) {
+    let l = lines[i];
+    // Long labels wrap ("Bosnia and" / "Herzegovina" / "(1,735) 2.2 …").
+    if (!startsWithName(l)) {
+      for (const k of [1, 2]) {
+        const joined = lines.slice(i, i + k + 1).join(" ");
+        if (startsWithName(joined) && /^\S.* \(?[\d,]+\)? [\d.-]/.test(joined)) {
+          l = joined;
+          break;
+        }
       }
     }
-    if (!franceLine) continue;
-    // Reuse country-row parser with France aliased
-    const fake = franceLine; // "France 1,880 85.4 …"
-    const parsed = (() => {
-      const rest = fake.replace(/^France\s+/, "").trim();
-      const parenN = rest.match(/^\(([\d,]+)\)\s+(.*)$/);
-      const bareN = rest.match(/^([\d,]+)\s+(.*)$/);
-      let pctRest;
-      if (parenN) pctRest = parenN[2];
-      else if (bareN) pctRest = bareN[2];
-      else return null;
-      pctRest = pctRest.replace(/\s*\([\d,]+\)\s+[\d.]+$/, "").trim();
-      return pctRest.split(/\s+/).filter(Boolean).map(parsePctCell);
-    })();
-    if (!parsed || parsed.length < 2) continue;
-    const key = titleMatchKey(title);
-    byTitle.set(key, parsed);
+    // Scale tables end with "(base N) mean std-dev".
+    l = l.replace(/\s*\([\d,]+\)\s+[\d.]+\s+[\d.]+$/, "");
+    const name = startsWithName(l);
+    if (!name) continue;
+    const m = l.slice(name.length).trim().match(/^\(?([\d,]+)\)?\s+(.*)$/);
+    if (!m) continue;
+    const cells = m[2].split(/\s+/).map((s) =>
+      s === "-" ? null : /^\d+(\.\d+)?$/.test(s) ? Number(s) : undefined,
+    );
+    if (cells.some((c) => c === undefined)) continue;
+    if (!rows.has(name)) rows.set(name, cells);
+  }
+  return rows;
+}
+
+/**
+ * Merge the 26 EVS-only European countries (France, Italy, Spain, …) from the
+ * Joint EVS/WVS 2017–2022 Results-by-Country PDF.
+ *
+ * Tables are matched to Wave 7 questions by DATA, never by title: a Joint
+ * table is paired with a Wave 7 question only when every Wave 7 society
+ * present in both (≥10 of them, typically 60+) has byte-identical
+ * percentages under one column ordering, and exactly one question qualifies.
+ * The Joint figures for WVS societies ARE the Wave 7 figures, so this proves
+ * both the pairing and the column alignment before a single EVS value is
+ * copied. (The earlier title-key match collapsed Q177–Q195 — whose short
+ * titles all read just "Justifiable" — onto one table, giving France the
+ * same numbers for a dozen different questions.)
+ */
+function mergeJointEvs(questions, societies) {
+  const jointPath = findJointResultsPdf();
+  if (!jointPath) {
+    console.warn("No Joint EVS/WVS Results_by_Country PDF — EVS countries not merged");
+    return { merged: 0, franceMerged: 0, jointPath: null, isos: [] };
+  }
+  console.log(`Merging EVS-only countries from ${jointPath} …`);
+  const pages = extractAllPages(jointPath);
+
+  // Row labels come from the PDF's own "wave-" table (pages 1–2 of the report).
+  const names = [];
+  for (const p of pages.slice(0, 8)) {
+    for (const l of p.split("\n")) {
+      const m = l.match(/^(.+?) [\d,]+ (100\.0|-) (100\.0|-)$/);
+      if (m) names.push(m[1]);
+    }
+  }
+  const namesByLen = [...new Set(names)].sort((a, b) => b.length - a.length);
+  for (const n of Object.keys(JOINT_ONLY_COUNTRIES)) {
+    if (!namesByLen.includes(n)) throw new Error(`Joint PDF has no row label "${n}"`);
   }
 
+  const wvsIsoByName = {};
+  for (const [iso, s] of Object.entries(societies)) wvsIsoByName[s.name] = iso;
+  Object.assign(wvsIsoByName, JOINT_WVS_ALIASES);
+  for (const n of Object.keys(JOINT_ONLY_COUNTRIES)) delete wvsIsoByName[n];
+  const wvsIsoFor = (n) => (/ EVS$/.test(n) ? null : wvsIsoByName[n] ?? null);
+
+  const starts = [];
+  pages.forEach((t, i) => {
+    const m = t.match(/^([A-Za-z]+\d+[A-Za-z0-9_]*)\s*[-–]/);
+    if (m) starts.push({ page: i, id: m[1] });
+  });
+
+  // Fieldwork year per country: modal column of the "year- Year survey" table.
+  const years = {};
+  const yearPage = pages.findIndex((t) => t.startsWith("year-"));
+  if (yearPage >= 0) {
+    const yearText = pages.slice(yearPage, yearPage + 2).join("\n");
+    const header = yearText.match(/\n((?:20\d\d ?)+)\n/);
+    const cols = header ? header[1].trim().split(/\s+/).map(Number) : [];
+    for (const [name, cells] of parseJointRows(yearText, namesByLen)) {
+      let best = -1;
+      cells.forEach((v, j) => {
+        if (v != null && (best < 0 || v > cells[best])) best = j;
+      });
+      if (best >= 0 && cols[best]) years[name] = cols[best];
+    }
+  }
+
+  const values = {};
+  const matchedQids = new Set();
   let merged = 0;
-  for (const q of questions) {
-    const key = titleMatchKey(q.title);
-    const pcts = byTitle.get(key);
-    if (!pcts) continue;
-    // Align length to this question's answer columns
-    const aligned = pcts.slice(0, q.answers.length);
-    while (aligned.length < q.answers.length) aligned.push(null);
-    q.values.FR = aligned;
-    merged += 1;
+  for (let k = 0; k < starts.length; k++) {
+    const st = starts[k];
+    const end = Math.min(k + 1 < starts.length ? starts[k + 1].page : pages.length, st.page + 4);
+    const rows = parseJointRows(pages.slice(st.page, end).join("\n"), namesByLen);
+    const hits = [];
+    for (const q of questions) {
+      const L = q.answers.length;
+      JOINT_COLUMN_ORDERS.forEach((order, oi) => {
+        let shared = 0;
+        let exact = 0;
+        for (const [name, cells] of rows) {
+          const iso = wvsIsoFor(name);
+          const v = iso && q.values[iso];
+          if (!v) continue;
+          shared++;
+          const a = order(cells).slice(0, L);
+          if (a.length === L && a.every((x, j) => x === v[j])) exact++;
+        }
+        if (shared >= 10 && exact === shared) hits.push({ q, oi });
+      });
+    }
+    if (hits.length !== 1) continue;
+    const { q, oi } = hits[0];
+    if (matchedQids.has(q.id)) throw new Error(`Joint tables collide on ${q.id}`);
+    matchedQids.add(q.id);
+    merged++;
+    for (const [name, iso] of Object.entries(JOINT_ONLY_COUNTRIES)) {
+      const cells = rows.get(name);
+      if (!cells) continue;
+      const a = JOINT_COLUMN_ORDERS[oi](cells).slice(0, q.answers.length);
+      while (a.length < q.answers.length) a.push(null);
+      (values[iso] ??= {})[q.id] = a;
+    }
   }
 
-  societies.FR = {
-    name: "France",
-    year: 2018,
-    wave: 7,
-    source: "joint-evs-wvs-2017-2022",
-    note: "France did not field WVS Wave 7; figures from Joint EVS/WVS 2017–2022 (EVS fieldwork 2018).",
+  for (const [name, iso] of Object.entries(JOINT_ONLY_COUNTRIES)) {
+    for (const q of questions) {
+      if (values[iso]?.[q.id]) q.values[iso] = values[iso][q.id];
+    }
+    societies[iso] = {
+      name: iso === "FR" ? "France" : name,
+      year: years[name] ?? null,
+      wave: 7,
+      source: "joint-evs-wvs-2017-2022",
+      note: `${name} did not field WVS Wave 7; figures from the Joint EVS/WVS 2017–2022 dataset (EVS fieldwork${years[name] ? ` ${years[name]}` : ""}), for the questions both surveys share.`,
+    };
+  }
+  const franceMerged = Object.keys(values.FR || {}).length;
+  console.log(
+    `Joint EVS/WVS: ${merged} tables matched; ${Object.keys(JOINT_ONLY_COUNTRIES).length} countries merged (France: ${franceMerged} questions)`,
+  );
+  return {
+    merged,
+    franceMerged,
+    jointPath,
+    isos: Object.values(JOINT_ONLY_COUNTRIES),
+    values,
+    years,
   };
-  console.log(`France merged into ${merged} / ${questions.length} questions`);
-  return { merged, jointPath };
 }
 
 const COUNTRY_NAME_TO_ISO = {
@@ -756,14 +906,6 @@ function extractShortTitle(block) {
   return title || null;
 }
 
-function titleMatchKey(title) {
-  return title
-    .replace(/\s+/g, " ")
-    .trim()
-    .toLowerCase()
-    .replace(/^important child qualities:/, "child qualities:");
-}
-
 /** Known multi-word answer tokens (longer first). */
 const KNOWN_ANSWERS = [
   "Other missing",
@@ -1144,10 +1286,7 @@ function main() {
     }
   }
 
-  const { merged: franceMerged, jointPath } = mergeFranceFromJoint(
-    questions,
-    societies,
-  );
+  const { franceMerged, jointPath, isos: jointIsos } = mergeJointEvs(questions, societies);
 
   const pdfBuf = readFileSync(pdfPath);
   const payload = {
@@ -1164,8 +1303,9 @@ function main() {
         ? jointPath.replace(ROOT + "/", "")
         : null,
       france_questions_merged: franceMerged,
+      joint_evs_societies: jointIsos,
       retrieved_note:
-        "Wave 7 percentages from the official Results By Country PDF (weighted by w_weight). France never fielded WVS Wave 7 — its figures are merged from the Joint EVS/WVS 2017–2022 Results by Country PDF, matched by shared short title, fieldwork year 2018. Wave 5 France is superseded and not used.",
+        "Wave 7 percentages from the official Results By Country PDF (weighted by w_weight). France never fielded WVS Wave 7 — its figures, like those of 25 other European countries that fielded only the EVS 2017 round (Italy, Spain, Poland, Sweden, …), are merged from the co-published Joint EVS/WVS 2017–2022 Results by Country PDF. A Joint table is used only where its figures for every Wave 7 society it shares reproduce that Wave 7 question exactly, which proves both the pairing and the column order. Wave 5 France is superseded and not used.",
     },
     themes: [...THEME_DEFS.map(({ id, label }) => ({ id, label })), THEME_FALLBACK],
     societies,
