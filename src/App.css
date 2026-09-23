@@ -3638,8 +3638,17 @@
   background: var(--paper, #fff);
   border: 2px solid var(--ink-faint, rgba(31, 41, 55, 0.28));
   border-radius: 10px;
-  padding: 0.3rem 0.55rem;
+  padding: 0.3rem 1.6rem 0.3rem 0.55rem;
+  width: 14rem;
   max-width: min(100%, 16rem);
+  box-sizing: border-box;
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink, #1f2937) 50%),
+                    linear-gradient(135deg, var(--ink, #1f2937) 50%, transparent 50%);
+  background-position:
+    calc(100% - 0.95rem) calc(50% - 2px),
+    calc(100% - 0.65rem) calc(50% - 2px);
+  background-size: 5px 5px;
+  background-repeat: no-repeat;
 }
 
 .democracy-index-chart__select:focus-visible {

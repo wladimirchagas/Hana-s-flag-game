@@ -42,6 +42,7 @@ import {
 } from "../lib/democracyColors";
 import { normalizeForSearch } from "../lib/searchNormalize";
 import { GridImage } from "./GridImage";
+import { SearchableSelect, type SelectOption } from "./SearchableSelect";
 
 export type DemocracyIndexChartProps = {
   countries: readonly Country[];
@@ -448,6 +449,39 @@ export function DemocracyIndexChart({
     }));
   }, []);
 
+  const axisOptions: SelectOption[] = useMemo(() => {
+    const opts: SelectOption[] = [
+      { value: CHART_AXIS_NONE, label: "None" },
+    ];
+    for (const group of getDemocracyIndexMenuGroups()) {
+      for (const meta of group.indexes) {
+        opts.push({
+          value: meta.key,
+          label: getDemocracyIndexLabel(meta.key),
+          secondaryLabel: group.theme.label,
+        });
+      }
+    }
+    for (const key of CHART_METRIC_KEYS) {
+      opts.push({
+        value: key,
+        label: getChartAxisLabel(key),
+        secondaryLabel: "Country metrics",
+      });
+    }
+    for (const theme of getWvsThemes()) {
+      const qs = getWvsQuestionsByTheme(theme.id);
+      for (const q of qs) {
+        opts.push({
+          value: `wvs:${q.id}`,
+          label: `${q.id}: ${q.title}`,
+          secondaryLabel: `WVS — ${theme.label}`,
+        });
+      }
+    }
+    return opts;
+  }, []);
+
   const plot = {
     x0: PAD.left,
     x1: VIEW_W - PAD.right,
@@ -804,45 +838,16 @@ export function DemocracyIndexChart({
       aria-label="Democracy index chart"
     >
       <div className="democracy-index-chart__axes">
-        <label className="democracy-index-chart__axis-pick">
+        <div className="democracy-index-chart__axis-pick">
           <span className="democracy-index-chart__axis-pick-label">X axis</span>
-          <select
-            className="democracy-index-chart__select"
+          <SearchableSelect
             value={wvsSelectValue(xKey)}
-            onChange={(e) => onXKeyChange(normalizeAxisPick(e.target.value))}
-            aria-label="Chart X axis"
-          >
-            <option value={CHART_AXIS_NONE}>None</option>
-            {getDemocracyIndexMenuGroups().map((group) => (
-              <optgroup key={`x-${group.theme.id}`} label={group.theme.label}>
-                {group.indexes.map((meta) => (
-                  <option key={meta.key} value={meta.key}>
-                    {getDemocracyIndexLabel(meta.key)}
-                  </option>
-                ))}
-              </optgroup>
-            ))}
-            <optgroup label="Country metrics">
-              {CHART_METRIC_KEYS.map((key) => (
-                <option key={key} value={key}>
-                  {getChartAxisLabel(key)}
-                </option>
-              ))}
-            </optgroup>
-            {getWvsThemes().map((theme) => {
-              const qs = getWvsQuestionsByTheme(theme.id);
-              if (!qs.length) return null;
-              return (
-                <optgroup key={`x-wvs-${theme.id}`} label={`WVS — ${theme.label}`}>
-                  {qs.map((q) => (
-                    <option key={`x-${q.id}`} value={`wvs:${q.id}`}>
-                      {q.title}
-                    </option>
-                  ))}
-                </optgroup>
-              );
-            })}
-          </select>
+            options={axisOptions}
+            onChange={(raw) => onXKeyChange(normalizeAxisPick(raw))}
+            ariaLabel="Chart X axis"
+            triggerClassName="democracy-index-chart__select"
+            popoverWidth={340}
+          />
           {isWvsChartAxis(xKey) && (
             <WvsAnswerChecks
               axisLabel="X"
@@ -850,46 +855,17 @@ export function DemocracyIndexChart({
               onChange={onXKeyChange}
             />
           )}
-        </label>
-        <label className="democracy-index-chart__axis-pick">
+        </div>
+        <div className="democracy-index-chart__axis-pick">
           <span className="democracy-index-chart__axis-pick-label">Y axis</span>
-          <select
-            className="democracy-index-chart__select"
+          <SearchableSelect
             value={wvsSelectValue(yKey)}
-            onChange={(e) => onYKeyChange(normalizeAxisPick(e.target.value))}
-            aria-label="Chart Y axis"
-          >
-            <option value={CHART_AXIS_NONE}>None</option>
-            {getDemocracyIndexMenuGroups().map((group) => (
-              <optgroup key={`y-${group.theme.id}`} label={group.theme.label}>
-                {group.indexes.map((meta) => (
-                  <option key={meta.key} value={meta.key}>
-                    {getDemocracyIndexLabel(meta.key)}
-                  </option>
-                ))}
-              </optgroup>
-            ))}
-            <optgroup label="Country metrics">
-              {CHART_METRIC_KEYS.map((key) => (
-                <option key={key} value={key}>
-                  {getChartAxisLabel(key)}
-                </option>
-              ))}
-            </optgroup>
-            {getWvsThemes().map((theme) => {
-              const qs = getWvsQuestionsByTheme(theme.id);
-              if (!qs.length) return null;
-              return (
-                <optgroup key={`y-wvs-${theme.id}`} label={`WVS — ${theme.label}`}>
-                  {qs.map((q) => (
-                    <option key={`y-${q.id}`} value={`wvs:${q.id}`}>
-                      {q.title}
-                    </option>
-                  ))}
-                </optgroup>
-              );
-            })}
-          </select>
+            options={axisOptions}
+            onChange={(raw) => onYKeyChange(normalizeAxisPick(raw))}
+            ariaLabel="Chart Y axis"
+            triggerClassName="democracy-index-chart__select"
+            popoverWidth={340}
+          />
           {isWvsChartAxis(yKey) && (
             <WvsAnswerChecks
               axisLabel="Y"
@@ -897,7 +873,7 @@ export function DemocracyIndexChart({
               onChange={onYKeyChange}
             />
           )}
-        </label>
+        </div>
 
         <div className="democracy-index-chart__filters" role="group" aria-label="Highlight countries">
           <ChartFilterMenu
