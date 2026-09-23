@@ -15,6 +15,8 @@ import { CityMarkers, type ScreenCity } from "./CityMarkers";
 import type { PlacedCity } from "../lib/cityRoles";
 import { loadWorldSubnationalBorders, prefetchWorldSubnationalBorders } from "../lib/worldSubnationalBorders";
 import type { SubdivisionGeoFeature } from "../types/subdivision";
+import { MapDataTooltipLayer, type MapDataTooltipHandle } from "./MapDataTooltipLayer";
+import type { MapDataTooltip } from "../lib/mapDataTooltip";
 
 // Countries whose land area is ≤ Denmark (~43,094 km²).  These get the
 // pulsing indicator when selected so they're easy to locate on the map.
@@ -172,6 +174,14 @@ type Props = {
   cityOverlay?: PlacedCity[] | null;
   /** Optional content rendered directly below the map frame (e.g. Democracy Index legend). */
   belowMapNode?: React.ReactNode;
+  /**
+   * When provided (the map is coloured by an index or a WVS question), hovering
+   * a country with a mouse — or tapping it on a touch screen, where there is no
+   * hover — shows a tooltip with that country's value, rating category, colour
+   * and data year. Must be a stable function (memoise it): it is only read when
+   * the tooltip renders, never while the map paths render.
+   */
+  dataTooltip?: ((code: string) => MapDataTooltip | null) | null;
 };
 
 // HARD RULE — disputed/claimed landmass colour.
@@ -424,11 +434,16 @@ export function WorldProgressMap({
   fillOverride = null,
   cityOverlay = null,
   belowMapNode = null,
+  dataTooltip = null,
 }: Props) {
   const { theme } = useTheme();
   const palette = theme === "dark" ? DARK_PALETTE : LIGHT_PALETTE;
   const [geographies, setGeographies] = useState<GeoFeature[]>([]);
   const [popover, setPopover] = useState<Popover | null>(null);
+  const dataTipRef = useRef<MapDataTooltipHandle>(null);
+  // Pointer type of the latest press on a country, so a click can tell a tap
+  // (show the data tooltip, since touch has no hover) from a mouse click.
+  const lastPointerTypeRef = useRef<string>("mouse");
   // Locally-tracked hovered country, used to reveal that country's capital
   // label in the (non-interactive) city overlay.
   const [hoveredCode, setHoveredCode] = useState<string | null>(null);
@@ -784,6 +799,25 @@ export function WorldProgressMap({
 
   const isInteractive = !!selectable && !disabled;
 
+  // Frame-relative position of a pointer event, for the data tooltip.
+  function framePoint(e: React.MouseEvent): { x: number; y: number } | null {
+    const rect = frameRef.current?.getBoundingClientRect();
+    if (!rect) return null;
+    return { x: e.clientX - rect.left, y: e.clientY - rect.top };
+  }
+
+  function countryName(code: string): string {
+    return selectable?.names.get(code) ?? ALL_UN_NAMES.get(code) ?? code;
+  }
+
+  // A tapped tooltip is pinned to where the finger was, so once the map moves
+  // under it (zoom, pan, rotation) it would point at the wrong country — close
+  // it. A mouse tooltip follows the cursor and is left alone.
+  const { k: viewK, tx: viewTx, ty: viewTy } = zoom.view;
+  useEffect(() => {
+    if (lastPointerTypeRef.current !== "mouse") dataTipRef.current?.hide();
+  }, [viewK, viewTx, viewTy, centerLongitude, rotationOffset, southUp]);
+
   function handlePathClick(e: React.MouseEvent<SVGPathElement>, alpha2: string) {
     if (!isInteractive || !selectable) return;
     const frameRect = frameRef.current?.getBoundingClientRect();
@@ -823,6 +857,11 @@ export function WorldProgressMap({
       selectable.names.get(resolvedCode) ??
       ALL_UN_NAMES.get(resolvedCode) ??
       resolvedCode;
+
+    // Touch has no hover, so a tap is what reveals the data tooltip.
+    if (dataTooltip && lastPointerTypeRef.current !== "mouse") {
+      dataTipRef.current?.show(resolvedCode, name, clickX, clickY);
+    }
 
     if (isInPool) {
       selectable.onSelect(resolvedCode);
@@ -920,6 +959,18 @@ export function WorldProgressMap({
           onPointerMove={zoom.svgHandlers.onPointerMove}
           onPointerUp={zoom.svgHandlers.onPointerUp}
           onPointerCancel={zoom.svgHandlers.onPointerCancel}
+          // Tapping anywhere that is not a country (the sea, a disputed
+          // territory) closes a tapped data tooltip.
+          onClick={
+            dataTooltip
+              ? (e) => {
+                  const t = e.target as Element;
+                  if (!t.classList?.contains("world-map__country--selectable")) {
+                    dataTipRef.current?.hide();
+                  }
+                }
+              : undefined
+          }
           style={{
             cursor: zoom.isZoomed ? "grab" : "default",
             touchAction: zoom.isZoomed ? "none" : "auto",
@@ -1046,14 +1097,40 @@ export function WorldProgressMap({
                       // Touch-generated mouse hover can open the detail panel
                       // before click, moving the map under the user's finger.
                       // Keep previews mouse-only; touch commits through onClick.
+                      onPointerDown={
+                        clickable
+                          ? (e) => {
+                              lastPointerTypeRef.current = e.pointerType;
+                            }
+                          : undefined
+                      }
                       onPointerEnter={
                         clickable && alpha2
                           ? (e) => {
                               if (e.pointerType !== "mouse") return;
+                              lastPointerTypeRef.current = "mouse";
                               const resolved =
                                 selectable!.territoryParent?.[alpha2!] ?? alpha2!;
                               setHoveredCode(resolved);
                               selectable?.onHover?.(resolved);
+                              const pt = dataTooltip ? framePoint(e) : null;
+                              if (pt) {
+                                dataTipRef.current?.show(
+                                  resolved,
+                                  countryName(resolved),
+                                  pt.x,
+                                  pt.y,
+                                );
+                              }
+                            }
+                          : undefined
+                      }
+                      onPointerMove={
+                        clickable && dataTooltip
+                          ? (e) => {
+                              if (e.pointerType !== "mouse") return;
+                              const pt = framePoint(e);
+                              if (pt) dataTipRef.current?.move(pt.x, pt.y);
                             }
                           : undefined
                       }
@@ -1063,11 +1140,14 @@ export function WorldProgressMap({
                               if (e.pointerType !== "mouse") return;
                               setHoveredCode(null);
                               selectable?.onHover?.(null);
+                              dataTipRef.current?.hide();
                             }
                           : undefined
                       }
                     >
-                      {tooltip ? <title>{tooltip}</title> : null}
+                      {/* The data tooltip replaces the browser's own title
+                          tooltip, which would otherwise pop up on top of it. */}
+                      {tooltip && !dataTooltip ? <title>{tooltip}</title> : null}
                     </path>
                   );
                 })}
@@ -1191,6 +1271,9 @@ export function WorldProgressMap({
             />
           )}
         </svg>
+        {dataTooltip && isInteractive && (
+          <MapDataTooltipLayer ref={dataTipRef} getData={dataTooltip} />
+        )}
         {popover && isInteractive && (
           <div
             className={`map-popover map-popover--${popover.kind} map-popover--${popover.placement}`}

@@ -25,6 +25,7 @@ import {
   isWvsMapMode,
 } from "../lib/democracyColors";
 import { getWvsColorOverlay } from "../lib/wvsResults";
+import { getMapDataTooltip } from "../lib/mapDataTooltip";
 import {
   loadMapView,
   saveMapView,
@@ -1454,6 +1455,16 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
     return getDemocracyColorOverlay(democracyMapMode);
   }, [democracyMapMode]);
 
+  // Hover / tap tooltip for the data-coloured map: the country's value, rating
+  // category, fill colour and data year. Built from the SAME overlay the map
+  // paints with, so the swatch always matches the country's fill. Memoised so
+  // WorldProgressMap only sees a new function when the colour mode changes.
+  const mapDataTooltip = useMemo(() => {
+    if (!democracyMapMode) return null;
+    return (code: string) =>
+      getMapDataTooltip(democracyMapMode, code, democracyColorOverlay);
+  }, [democracyMapMode, democracyColorOverlay]);
+
   // Rotation + view-centre controls shared by both WorldProgressMap and
   // HistoricalMap so the buttons are always present regardless of era.
   // Memoised so that HistoricalMap’s React.memo() wrapper is not bypassed
@@ -2204,6 +2215,7 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
             flagOverlay={modernFlagOverlay}
             fillOverride={democracyColorOverlay ?? passportColorOverlay}
             cityOverlay={worldCityOverlay}
+            dataTooltip={isModernEra ? mapDataTooltip : null}
             belowMapNode={
               isModernEra && democracyMapMode ? (
                 <DemocracyMapLegend mode={democracyMapMode} />

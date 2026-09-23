@@ -28,6 +28,10 @@ for (const name of ['WorldProgressMap', 'SubdivisionMap', 'HistoricalMap']) {
           selectable: { territoryParent: {}, onHover: value => hover.push(value) },
           onHover: value => hover.push(value), setHoveredCode: () => {},
           handlePathClick: (_e, value) => selected.push(value), onSelect: value => selected.push(value),
+          // WorldProgressMap's data-map tooltip (index / WVS colouring) — in scope
+          // for its path handlers; inert here, the hover/tap contract is unchanged.
+          dataTooltip: null, dataTipRef: { current: null }, lastPointerTypeRef: { current: 'mouse' },
+          framePoint: () => null, countryName: value => value,
         };
         const handler = prop => {
           const expression = props.get(prop).initializer.expression.getText(tree);
@@ -47,6 +51,20 @@ for (const name of ['WorldProgressMap', 'SubdivisionMap', 'HistoricalMap']) {
         assert.equal(selected.length, 1, `${name}: a tap selects once`);
         leave({ pointerType: 'touch' });
         assert.equal(selected.length, 1, `${name}: lifting the finger does not clear selection`);
+        if (name === 'WorldProgressMap') {
+          // Data tooltip: a mouse hover shows it and leaving hides it; a touch
+          // enter never does (touch reveals it on tap, through the click).
+          const tips = [];
+          context.dataTooltip = () => null;
+          context.framePoint = () => ({ x: 1, y: 1 });
+          context.dataTipRef = { current: { show: code => tips.push(code), hide: () => tips.push(null), move: () => {} } };
+          enter({ pointerType: 'touch' });
+          assert.equal(tips.length, 0, `${name}: touch hover must not open the data tooltip`);
+          enter({ pointerType: 'mouse' });
+          assert.equal(tips.at(-1), 'AU', `${name}: mouse hover opens the data tooltip`);
+          leave({ pointerType: 'mouse' });
+          assert.equal(tips.at(-1), null, `${name}: mouse leave closes the data tooltip`);
+        }
         pairs++;
       }
     }
