@@ -1021,30 +1021,82 @@ export function clipDemocracyAxisBands(
 }
 
 /**
- * Classification bands drawn as labelled regions on a chart axis.
- * Boundaries follow each index's published methodology (EIU score cut-offs,
- * TI CPI map bands, DPI ±5/±15 tiers, RSF score bands, WJP 0–1 score bands,
- * FH Free / Partly Free / Not Free thresholds). V-Dem regimes are not a pure
- * EDI cut, so bands use the approximate EDI ranges that separate the four
- * regime types in the bundled data — labels describe the classification,
- * scores place the point.
+ * Indexes whose published category is NOT a cut of the published score.
+ * V-Dem's Regimes of the World type is assigned from separate indicators
+ * (free multiparty elections, the liberal component), so Malaysia (0.35) is an
+ * Electoral Democracy while Singapore (0.36) is an Electoral Autocracy.
+ * Freedom House's status combines its Political Rights and Civil Liberties
+ * ratings, so Bhutan is Free at 68 while Tanzania is Not Free at 35. No fixed
+ * cut-offs can put every country inside its own category, so these axes draw
+ * each category across the score range its countries actually span. Where two
+ * categories' ranges overlap, the chart shows a shared zone.
+ */
+const OBSERVED_RANGE_BAND_ORDER: Partial<Record<DemocracyIndexKey, readonly string[]>> = {
+  "freedom-house": ["Not Free", "Partly Free", "Free"],
+  "v-dem": [
+    "Closed Autocracy",
+    "Electoral Autocracy",
+    "Electoral Democracy",
+    "Liberal Democracy",
+  ],
+};
+
+/** Each category's band = the min…max score its countries carry in COUNTRY_FACTS. */
+function observedRangeBands(
+  key: DemocracyIndexKey,
+  order: readonly string[],
+): DemocracyAxisBand[] {
+  const ranges = new Map<string, { min: number; max: number }>();
+  for (const facts of Object.values(COUNTRY_FACTS)) {
+    const idx = getDemocracyIndexFor(facts.democracy, key);
+    if (!idx || typeof idx.score !== "number") continue;
+    const r = ranges.get(idx.rating);
+    if (r) {
+      r.min = Math.min(r.min, idx.score);
+      r.max = Math.max(r.max, idx.score);
+    } else {
+      ranges.set(idx.rating, { min: idx.score, max: idx.score });
+    }
+  }
+  const out: DemocracyAxisBand[] = [];
+  for (const label of order) {
+    const r = ranges.get(label);
+    if (r) out.push({ label, min: r.min, max: r.max });
+  }
+  return out;
+}
+
+/**
+ * "a–b" step labels (best-first) → contiguous low→high bands [a, a+step].
+ * A label names whole steps ("60–69"), but scores carry decimals (0.697,
+ * 6.916), so each band must run up to the next band's floor — ending it at
+ * "69" left a gap that 69.5 fell into.
+ */
+function steppedBands(
+  labelsBestFirst: readonly string[],
+  step: number,
+  scale = 1,
+): DemocracyAxisBand[] {
+  return [...labelsBestFirst].reverse().map((label) => {
+    const [lo, hi] = label.split("–").map((v) => Number(v.replace("%", "")));
+    const top = Math.max(hi!, lo! + step);
+    return { label, min: lo! / scale, max: Math.round((top / scale) * 1e6) / 1e6 };
+  });
+}
+
+/**
+ * Classification bands drawn as labelled regions on a chart axis, low→high.
+ * Every country's score MUST lie inside the band named by its own rating, and
+ * bands leave no gap a score can fall into (`scripts/check-index-chart-bands.mjs`
+ * fails the build otherwise). Boundaries follow each index's published
+ * methodology where its category IS a score cut (EIU, CPI, DPI ±5/±15, RSF,
+ * WJP, UNDP HDI, IEP GPI/ETR/GTI); V-Dem and Freedom House use observed ranges
+ * (see `OBSERVED_RANGE_BAND_ORDER`) that can overlap, so charts render
+ * `democracyAxisBandSegments()`, never these bands directly.
  */
 export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand[] {
-  if (key === "freedom-house") {
-    return [
-      { label: "Not Free", min: 0, max: 34 },
-      { label: "Partly Free", min: 35, max: 69 },
-      { label: "Free", min: 70, max: 100 },
-    ];
-  }
-  if (key === "v-dem") {
-    return [
-      { label: "Closed Autocracy", min: 0, max: 0.25 },
-      { label: "Electoral Autocracy", min: 0.25, max: 0.45 },
-      { label: "Electoral Democracy", min: 0.45, max: 0.7 },
-      { label: "Liberal Democracy", min: 0.7, max: 1 },
-    ];
-  }
+  const observedOrder = OBSERVED_RANGE_BAND_ORDER[key];
+  if (observedOrder) return observedRangeBands(key, observedOrder);
   if (key === "economist") {
     return [
       { label: "Authoritarian", min: 0, max: 4 },
@@ -1053,12 +1105,8 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
       { label: "Full democracy", min: 8, max: 10 },
     ];
   }
-  if (key === "cpi") {
-    return CPI_BAND_ORDER.map((label) => {
-      const [lo, hi] = label.split("–").map(Number);
-      return { label, min: lo, max: hi };
-    }).reverse(); // low→high for the axis
-  }
+  if (key === "cpi") return steppedBands(CPI_BAND_ORDER, 10);
+  if (key === "soft-power") return steppedBands(DECADE_SCORE_BAND_ORDER, 10);
   if (key === "perception") {
     return [
       { label: "Very Negative", min: -40, max: -15 },
@@ -1077,13 +1125,8 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
       { label: "Good", min: 85, max: 100 },
     ];
   }
-  if (key === "gender-gap") {
-    // Decade bands on the 0–1 parity scale (score×100).
-    return GENDER_GAP_BAND_ORDER.map((label) => {
-      const [lo, hi] = label.split("–").map(Number);
-      return { label, min: lo / 100, max: hi / 100 };
-    }).reverse(); // low→high for the axis
-  }
+  // Decade bands on the 0–1 parity scale (score×100).
+  if (key === "gender-gap") return steppedBands(GENDER_GAP_BAND_ORDER, 10, 100);
   if (key === "gpi") {
     // IEP 2026 State of Peace cutoffs (lower score = more peaceful).
     return [
@@ -1105,49 +1148,34 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
     ];
   }
   if (key === "gti") {
+    // IEP: a score of exactly 0 is "No Impact"; any recorded impact is at
+    // least "Very Low". The published scores have three decimals, so the
+    // No Impact strip ends at the smallest non-zero value (0.001).
     return [
-      { label: "Very Low", min: 0, max: 2 },
+      { label: "No Impact", min: 0, max: 0.001 },
+      { label: "Very Low", min: 0.001, max: 2 },
       { label: "Low", min: 2, max: 4 },
       { label: "Medium", min: 4, max: 6 },
       { label: "High", min: 6, max: 8 },
       { label: "Very High", min: 8, max: 10 },
     ];
   }
-  if (key === "digital-news") {
-    return DIGITAL_NEWS_BAND_ORDER.map((label) => {
-      if (label === "90–100%") return { label, min: 90, max: 100 };
-      const lo = Number(label.split("–")[0]);
-      return { label, min: lo, max: lo + 9 };
-    }).reverse(); // low→high for the axis
-  }
-  if (key === "happiness") {
-    return HAPPINESS_BAND_ORDER.map((label) => {
-      if (label === "9.0–10") return { label, min: 9, max: 10 };
-      const [lo] = label.split("–").map(Number);
-      return { label, min: lo, max: lo + 0.9 };
-    }).reverse(); // low→high for the axis
-  }
+  if (key === "digital-news") return steppedBands(DIGITAL_NEWS_BAND_ORDER, 10);
+  if (key === "happiness") return steppedBands(HAPPINESS_BAND_ORDER, 1);
   if (key === "gdi") {
+    // Diplomatic posts are whole numbers, so "Below 50" ends where "50–99" begins.
     return [
-      { label: "Below 50", min: 0, max: 49 },
-      { label: "50–99", min: 50, max: 99 },
-      { label: "100–149", min: 100, max: 149 },
-      { label: "150–199", min: 150, max: 199 },
-      { label: "200–249", min: 200, max: 249 },
+      { label: "Below 50", min: 0, max: 50 },
+      { label: "50–99", min: 50, max: 100 },
+      { label: "100–149", min: 100, max: 150 },
+      { label: "150–199", min: 150, max: 200 },
+      { label: "200–249", min: 200, max: 250 },
       { label: "250+", min: 250, max: 280 },
     ];
   }
-  if (key === "wjp-rule-of-law") {
-    return WJP_BAND_ORDER.map((label) => {
-      const [lo, hi] = label.split("–").map(Number);
-      return { label, min: lo, max: hi };
-    }).reverse(); // low→high for the axis
-  }
+  if (key === "wjp-rule-of-law") return steppedBands(WJP_BAND_ORDER, 0.1);
   if (key === "imd-competitiveness") {
-    return IMD_COMPETITIVENESS_BAND_ORDER.map((label) => {
-      const [lo, hi] = label.split("–").map(Number);
-      return { label, min: lo, max: hi };
-    }).reverse(); // low→high for the axis
+    return steppedBands(IMD_COMPETITIVENESS_BAND_ORDER, 10);
   }
   // hdi — UNDP cut-offs (Very High ≥0.800, High ≥0.700, Medium ≥0.550).
   return [
@@ -1156,6 +1184,56 @@ export function getDemocracyAxisBands(key: DemocracyIndexKey): DemocracyAxisBand
     { label: "High", min: 0.7, max: 0.8 },
     { label: "Very High", min: 0.8, max: 1 },
   ];
+}
+
+/** A drawable, non-overlapping piece of an axis: one category, or a zone several share. */
+export type DemocracyAxisBandSegment = DemocracyAxisBand & {
+  /** Every category whose band covers this piece, low→high. */
+  categories: string[];
+};
+
+/**
+ * Turn possibly-overlapping category bands into contiguous segments to draw.
+ * A range covered by one category is labelled with it; a range two categories
+ * share is labelled "A / B" and flagged as shared; an empty stretch between
+ * two categories is split at its midpoint between them, so the axis never has
+ * an unlabelled hole between classifications.
+ */
+export function democracyAxisBandSegments(
+  bands: readonly DemocracyAxisBand[],
+): DemocracyAxisBandSegment[] {
+  const cuts = [...new Set(bands.flatMap((b) => [b.min, b.max]))].sort((a, b) => a - b);
+  const raw: DemocracyAxisBandSegment[] = [];
+  for (let i = 0; i + 1 < cuts.length; i++) {
+    const min = cuts[i]!;
+    const max = cuts[i + 1]!;
+    const categories = bands
+      .filter((b) => b.min <= min && b.max >= max)
+      .map((b) => b.label);
+    raw.push({ label: categories.join(" / "), min, max, categories });
+  }
+  // Split empty stretches between their neighbours.
+  for (let i = 0; i < raw.length; i++) {
+    const seg = raw[i]!;
+    if (seg.categories.length > 0) continue;
+    const prev = raw[i - 1];
+    const next = raw[i + 1];
+    if (!prev || !next) continue;
+    const mid = (seg.min + seg.max) / 2;
+    prev.max = mid;
+    next.min = mid;
+  }
+  const out: DemocracyAxisBandSegment[] = [];
+  for (const seg of raw) {
+    if (seg.categories.length === 0 || seg.max <= seg.min) continue;
+    const last = out[out.length - 1];
+    if (last && last.label === seg.label && last.max === seg.min) {
+      last.max = seg.max;
+    } else {
+      out.push({ ...seg, categories: [...seg.categories] });
+    }
+  }
+  return out;
 }
 
 /** Format a country's value on one axis for tooltips (classification + score). */

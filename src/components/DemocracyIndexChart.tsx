@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useId, useMemo, useRef, useState } from "react";
 import type { Country } from "../api/countries";
 import {
   COUNTRY_BLOCKS,
@@ -31,6 +31,7 @@ import {
 import { CONTINENT_ORDER, SUBREGION_GROUPS } from "../lib/continentGroups";
 import {
   clipDemocracyAxisBands,
+  democracyAxisBandSegments,
   clipTrendToDomain,
   countryMatchesIndexRatings,
   democracyIndexRatingOptions,
@@ -377,6 +378,8 @@ export function DemocracyIndexChart({
   onHover,
 }: DemocracyIndexChartProps) {
   const frameRef = useRef<HTMLDivElement>(null);
+  // Per-instance id so two charts on one page never share a hatch <pattern>.
+  const sharedHatchId = `democracy-index-chart-hatch-${useId().replace(/:/g, "")}`;
   const [tooltip, setTooltip] = useState<{
     code: string;
     name: string;
@@ -482,14 +485,20 @@ export function DemocracyIndexChart({
     return fitChartAxisDomain(scaled, activeYKey, TICK_COUNT);
   }, [rawPoints, activeXKey, activeYKey]);
 
-  // Classification bands only on the scatter (two-axis) view.
+  // Classification bands only on the scatter (two-axis) view. Drawn as
+  // segments so a zone two categories share (V-Dem, Freedom House) is labelled
+  // with both, and every country sits inside a band naming its own category.
   const xBands = useMemo(() => {
     if (!activeXKey || !activeYKey) return [];
-    return clipDemocracyAxisBands(getChartAxisBands(activeXKey), xDomain);
+    return democracyAxisBandSegments(
+      clipDemocracyAxisBands(getChartAxisBands(activeXKey), xDomain),
+    );
   }, [activeXKey, activeYKey, xDomain]);
   const yBands = useMemo(() => {
     if (!activeXKey || !activeYKey) return [];
-    return clipDemocracyAxisBands(getChartAxisBands(activeYKey), yDomain);
+    return democracyAxisBandSegments(
+      clipDemocracyAxisBands(getChartAxisBands(activeYKey), yDomain),
+    );
   }, [activeXKey, activeYKey, yDomain]);
 
   /** X=None → vertical columns (value on Y). Y=None → horizontal bars (value on X). */
@@ -972,6 +981,18 @@ export function DemocracyIndexChart({
           role="img"
           aria-label={chartAriaLabel}
         >
+          <defs>
+            <pattern
+              id={sharedHatchId}
+              width={8}
+              height={8}
+              patternUnits="userSpaceOnUse"
+              patternTransform="rotate(45)"
+            >
+              <line x1={0} y1={0} x2={0} y2={8} className="democracy-index-chart__shared-hatch-line" />
+            </pattern>
+          </defs>
+
           {/* Plot background */}
           <rect
             x={plot.x0}
@@ -987,15 +1008,18 @@ export function DemocracyIndexChart({
             const x1 = scaleLinear(band.max, xDomain, { min: plot.x0, max: plot.x1 });
             return (
               <rect
-                key={`xb-${band.label}`}
+                key={`xb-${i}-${band.label}`}
+                fill={band.categories.length > 1 ? `url(#${sharedHatchId})` : undefined}
                 x={x0}
                 y={plot.y0}
                 width={Math.max(0, x1 - x0)}
                 height={plot.y1 - plot.y0}
                 className={
-                  i % 2 === 0
-                    ? "democracy-index-chart__band democracy-index-chart__band--even"
-                    : "democracy-index-chart__band democracy-index-chart__band--odd"
+                  band.categories.length > 1
+                    ? "democracy-index-chart__band democracy-index-chart__band--shared"
+                    : i % 2 === 0
+                      ? "democracy-index-chart__band democracy-index-chart__band--even"
+                      : "democracy-index-chart__band democracy-index-chart__band--odd"
                 }
               />
             );
@@ -1007,15 +1031,18 @@ export function DemocracyIndexChart({
             const yLo = scaleLinear(band.min, yDomain, { min: plot.y1, max: plot.y0 });
             return (
               <rect
-                key={`yb-${band.label}`}
+                key={`yb-${i}-${band.label}`}
+                fill={band.categories.length > 1 ? `url(#${sharedHatchId})` : undefined}
                 x={plot.x0}
                 y={yHi}
                 width={plot.x1 - plot.x0}
                 height={Math.max(0, yLo - yHi)}
                 className={
-                  i % 2 === 0
-                    ? "democracy-index-chart__band-y democracy-index-chart__band-y--even"
-                    : "democracy-index-chart__band-y democracy-index-chart__band-y--odd"
+                  band.categories.length > 1
+                    ? "democracy-index-chart__band-y democracy-index-chart__band-y--shared"
+                    : i % 2 === 0
+                      ? "democracy-index-chart__band-y democracy-index-chart__band-y--even"
+                      : "democracy-index-chart__band-y democracy-index-chart__band-y--odd"
                 }
               />
             );
@@ -1062,14 +1089,14 @@ export function DemocracyIndexChart({
           ))}
 
           {/* Classification labels along X — skip bands too narrow for text. */}
-          {xBands.map((band) => {
+          {xBands.map((band, i) => {
             const x0 = scaleLinear(band.min, xDomain, { min: plot.x0, max: plot.x1 });
             const x1 = scaleLinear(band.max, xDomain, { min: plot.x0, max: plot.x1 });
             if (x1 - x0 < 36) return null;
             const x = (x0 + x1) / 2;
             return (
               <text
-                key={`xl-${band.label}`}
+                key={`xl-${i}-${band.label}`}
                 x={x}
                 y={plot.y1 + 36}
                 textAnchor="middle"
@@ -1082,7 +1109,7 @@ export function DemocracyIndexChart({
 
           {/* Classification labels along Y — horizontal, inside the plot,
               only when the band is tall enough that the label fits. */}
-          {yBands.map((band) => {
+          {yBands.map((band, i) => {
             const yHi = scaleLinear(band.max, yDomain, { min: plot.y1, max: plot.y0 });
             const yLo = scaleLinear(band.min, yDomain, { min: plot.y1, max: plot.y0 });
             const bandH = yLo - yHi;
@@ -1090,7 +1117,7 @@ export function DemocracyIndexChart({
             const y = (yHi + yLo) / 2;
             return (
               <text
-                key={`yl-${band.label}`}
+                key={`yl-${i}-${band.label}`}
                 x={plot.x0 + 8}
                 y={y + 4}
                 textAnchor="start"
