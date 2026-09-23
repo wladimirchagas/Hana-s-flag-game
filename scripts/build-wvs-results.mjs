@@ -416,6 +416,30 @@ print(json.dumps(pages))
   return JSON.parse(out);
 }
 
+/**
+ * Same PDF, extracted with pypdf's "layout" mode, which preserves each
+ * column's x-position as whitespace padding instead of flattening to plain
+ * reading order. Used only for reconstructing answer-column HEADER labels
+ * (see extractAnswerLabelsLayout) — row values still come from the plain
+ * extraction above, which is already proven correct.
+ */
+function extractAllPagesLayout(pdfPath) {
+  const py = `
+from pypdf import PdfReader
+import json, sys
+r = PdfReader(sys.argv[1])
+pages = []
+for i, p in enumerate(r.pages):
+    pages.append(p.extract_text(extraction_mode="layout") or "")
+print(json.dumps(pages))
+`;
+  const out = execFileSync("python3", ["-c", py, pdfPath], {
+    encoding: "utf8",
+    maxBuffer: 64 * 1024 * 1024,
+  });
+  return JSON.parse(out);
+}
+
 function stripFooter(text) {
   return text
     .replace(
@@ -523,8 +547,15 @@ function parseCountryDataRow(line) {
     } else {
       return null;
     }
-    // Drop trailing "Base mean" / Mean pair: "(978) 5.80" or bare mean.
-    pctRest = pctRest.replace(/\s*\([\d,]+\)\s+[\d.]+$/, "").trim();
+    // Drop a trailing "Base mean" / "Mean" [/ "Std Dev."] group: "(978) 5.80",
+    // "(1,004) 46.83 16.15" (some scale variables — e.g. Q262 Age, Q270
+    // household size — report Base, Mean AND Std Dev.), or a bare "(995)"
+    // with no mean value at all (e.g. Q241-249 "essential characteristic of
+    // democracy" battery). Every one of these was previously left attached
+    // and silently counted as an extra "answer" percentage column.
+    pctRest = pctRest
+      .replace(/\s*\([\d,]+\)(?:\s+[\d.]+(?:\s+[\d.]+)?)?$/, "")
+      .trim();
     const cells = pctRest.trim().split(/\s+/).filter(Boolean).map(parsePctCell);
     return {
       name,
@@ -534,6 +565,138 @@ function parseCountryDataRow(line) {
     };
   }
   return null;
+}
+
+const COUNTRY_NAMES_BY_LEN = Object.keys(COUNTRY_NAME_TO_ISO).sort(
+  (a, b) => b.length - a.length,
+);
+
+/** Locate a country row's numeric/dash token spans in a LAYOUT-mode line. */
+function findCountryTokenSpans(line) {
+  for (const name of COUNTRY_NAMES_BY_LEN) {
+    if (!line.startsWith(name)) continue;
+    const restStart = name.length;
+    const rest = line.slice(restStart);
+    const spans = [];
+    const re = /\(([\d,]+)\)|(-)(?!\w)|(\d[\d,]*\.?\d*)/g;
+    let m;
+    while ((m = re.exec(rest))) {
+      spans.push({
+        start: restStart + m.index,
+        end: restStart + m.index + m[0].length,
+        text: m[0],
+      });
+    }
+    if (spans.length) return { name, spans };
+  }
+  return null;
+}
+
+const HOUSEKEEPING_HEADER_WORDS = new Set(["base", "mean"]);
+
+/**
+ * Reconstruct answer-column labels by slicing the PDF's LAYOUT-mode text
+ * (extraction_mode="layout", which preserves each column's x-position as
+ * whitespace padding) into per-column word groups, using the first parsed
+ * country data row's own numeric-token x-positions as column anchors, then
+ * assigning each header word to whichever column's anchor is nearest its own
+ * x-position.
+ *
+ * This recovers free-text / scale-endpoint labels the old KNOWN_ANSWERS
+ * dictionary approach (extractAnswerLabels, kept below as a fallback) could
+ * never see, because they are unique per question ("Incomes should be made
+ * more equal", the three "Basic kinds of attitudes" options, …). That
+ * dictionary approach also silently mislabelled recurring short tokens that
+ * were never added to it — e.g. bare "Important" (Q7-Q17 "child qualities")
+ * was skipped as junk, shifting every label one column short. See the WVS
+ * label-alignment audit (2026-09) for the full defect catalogue.
+ */
+function extractAnswerLabelsLayout({ layoutLines, colCount, shortTitle, firstRowName }) {
+  let dataIdx = -1;
+  let spans = null;
+  for (let i = 0; i < layoutLines.length; i++) {
+    const ln = layoutLines[i];
+    if (!ln.startsWith(firstRowName)) continue;
+    const found = findCountryTokenSpans(ln);
+    if (found && found.spans.length >= colCount + 1) {
+      dataIdx = i;
+      spans = found.spans;
+      break;
+    }
+  }
+  if (dataIdx < 0 || !spans) return null;
+
+  const answerSpans = spans.slice(1, 1 + colCount);
+  if (answerSpans.length < colCount) return null;
+  const centers = answerSpans.map((s) => (s.start + s.end) / 2);
+  // The right edge of the LAST content column must not swallow a trailing
+  // "(base_n) mean" pair's header text ("Base" / "mean" / "Mean").
+  const trailingBound = spans.length > 1 + colCount ? spans[1 + colCount].start : null;
+
+  const normTitle = shortTitle
+    ? shortTitle.toLowerCase().replace(/[^a-z0-9]+/g, "")
+    : null;
+  const colWords = Array.from({ length: colCount }, () => []);
+  let lineSeq = 0;
+  for (let i = 0; i < dataIdx; i++) {
+    const ln = layoutLines[i];
+    const stripped = ln.trim();
+    if (!stripped) continue;
+    if (ln.includes("World Values Survey Wave 7") || ln.includes("Results in % by country")) {
+      continue;
+    }
+    const lead = ln.length - ln.replace(/^ +/, "").length;
+    if (lead === 0) continue; // flush-left prompt paragraph text, not column headers
+    if (normTitle) {
+      const normLine = stripped.toLowerCase().replace(/[^a-z0-9]+/g, "");
+      if (normLine) {
+        if (normLine === normTitle) continue;
+        if (normLine.includes(normTitle) && normLine.length - normTitle.length <= 6) continue;
+        if (normTitle.includes(normLine) && normTitle.length - normLine.length <= 6) continue;
+      }
+    }
+    lineSeq += 1;
+    const wordRe = /\S+/g;
+    let wm;
+    while ((wm = wordRe.exec(ln))) {
+      const word = wm[0];
+      if (word === "TOTAL") continue;
+      if (HOUSEKEEPING_HEADER_WORDS.has(word.toLowerCase())) continue;
+      const wStart = wm.index;
+      const wEnd = wm.index + word.length;
+      if (trailingBound != null && wStart >= trailingBound) continue;
+      const wCenter = (wStart + wEnd) / 2;
+      let bestI = 0;
+      let bestD = Infinity;
+      for (let ci = 0; ci < centers.length; ci++) {
+        const d = Math.abs(wCenter - centers[ci]);
+        if (d < bestD) {
+          bestD = d;
+          bestI = ci;
+        }
+      }
+      colWords[bestI].push([lineSeq, wStart, word]);
+    }
+  }
+
+  const labels = colWords.map((words) => {
+    words.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+    return words
+      .map((w) => w[2])
+      .join(" ")
+      .replace(/\s+/g, " ")
+      .trim();
+  });
+  const emptyCount = labels.filter((l) => !l).length;
+  // Reject only when extraction made little real progress. A single empty
+  // column (its header word landed just past a neighbour's boundary — the
+  // remaining columns are still trustworthy) is filled with a positional
+  // placeholder rather than discarding everything already recovered
+  // correctly; that is strictly better than the caller's own full-question
+  // "Answer 1..N" fallback, which would also blank out the columns this DID
+  // get right.
+  if (emptyCount > Math.max(1, Math.ceil(colCount * 0.2))) return null;
+  return labels.map((l, i) => l || `Answer ${i + 1}`);
 }
 
 /** Answer-header fragments that must never be absorbed into the short title. */
@@ -617,7 +780,16 @@ const KNOWN_ANSWERS = [
   "Agree strongly",
   "Strongly agree",
   "Strongly disagree",
-  "Disagree strongly",
+  // NOT "Disagree strongly" — the WVS agree/disagree batteries always word
+  // the negative extreme as "Strongly disagree", never "Disagree strongly".
+  // That string used to appear in this list anyway, and matched a genuine
+  // "Disagree" column immediately followed by the START of a genuine
+  // "Strongly disagree" column ("...Disagree Strongly\ndisagree..." is how
+  // pypdf renders the wrapped header) as if it were ONE label — which
+  // silently swallowed the true "Disagree" column and shifted "Strongly
+  // disagree"'s value onto the "Disagree" slot for every 4-point
+  // agree/disagree question (Q27-Q29 and others) in every country. See the
+  // WVS label-alignment audit (2026-09).
   "Neither agree nor disagree",
   "Neither agree or disagree",
   "Completely agree",
@@ -631,6 +803,7 @@ const KNOWN_ANSWERS = [
   "Agree",
   "Disagree",
   "Mentioned",
+  "Important",
   "Better off",
   "Worse off",
   "Or about the same",
@@ -653,12 +826,31 @@ function normaliseAnswerLabel(raw) {
     .replace(/dissatisfi ed$/i, "dissatisfied");
 }
 
-function extractAnswerLabels(block, colCount, shortTitle) {
+/**
+ * Dictionary-based answer-label extraction. When `strict` is true, this
+ * NEVER guesses: it returns a label set only when the KNOWN_ANSWERS
+ * vocabulary explains the ENTIRE header text with nothing skipped as
+ * "junk" and produces EXACTLY colCount labels — i.e. a proof, not a
+ * plausible-looking approximation. That strict mode is what the caller
+ * trusts over the layout-based extraction (extractAnswerLabelsLayout) for
+ * questions built entirely from short recurring phrases (e.g. "Very
+ * important" / "Rather important" / …), where it reproduces the exact
+ * column order and phrase grouping the layout heuristic sometimes garbles
+ * for closely-spaced short columns.
+ *
+ * In non-strict mode (the pre-existing behaviour, used only as a last-resort
+ * fallback when neither strict dictionary matching nor layout extraction
+ * succeeds) it silently skips unrecognised text and pads short results with
+ * "Answer N" placeholders — this is why an unrecognised token like bare
+ * "Important" was once silently dropped instead of surfacing as a defect.
+ */
+function extractAnswerLabels(block, colCount, shortTitle, strict = false) {
   // Heuristic: text between short title and first country row, joined and
   // split into colCount labels when possible; otherwise generate Answer 1..N.
   const lines = block.split("\n").map((l) => l.trim()).filter(Boolean);
   const totalIdx = lines.findIndex((l) => l === "TOTAL");
   if (totalIdx < 0) {
+    if (strict) return null;
     return Array.from({ length: colCount }, (_, i) => `Answer ${i + 1}`);
   }
 
@@ -666,6 +858,7 @@ function extractAnswerLabels(block, colCount, shortTitle) {
     (l, i) => i > totalIdx && isCountryRow(l),
   );
   if (firstCountry < 0) {
+    if (strict) return null;
     return Array.from({ length: colCount }, (_, i) => `Answer ${i + 1}`);
   }
 
@@ -694,6 +887,7 @@ function extractAnswerLabels(block, colCount, shortTitle) {
   if (joined) {
     const labels = [];
     let rest = joined;
+    let skippedAnyText = false;
     // Parse recognisable tokens; SKIP junk instead of promoting it to a label
     // (that is how short titles used to become answer column 1).
     while (rest && labels.length < colCount + 4) {
@@ -726,10 +920,22 @@ function extractAnswerLabels(block, colCount, shortTitle) {
       const nextNum = rest.search(/\d/);
       if (nextNum >= 0 && nextNum < next) next = nextNum;
       if (next < Infinity && next > 0) {
+        skippedAnyText = true;
         rest = rest.slice(next).trim();
         continue;
       }
       break;
+    }
+    if (strict) {
+      // A proof: nothing skipped, no leftover unmatched text, and at least
+      // colCount labels recovered (trailing recognised footer categories
+      // beyond colCount — e.g. "Multiple answers"/"Mail (EVS)" after the
+      // real data columns end — are truncated, exactly as the relaxed path
+      // below already does; that never hides anything, since every token up
+      // to and including colCount was still proven, not guessed).
+      return !skippedAnyText && !rest && labels.length >= colCount
+        ? labels.slice(0, colCount)
+        : null;
     }
     if (labels.length >= colCount) return labels.slice(0, colCount);
     if (labels.length >= Math.max(2, colCount - 2)) {
@@ -740,10 +946,11 @@ function extractAnswerLabels(block, colCount, shortTitle) {
     }
   }
 
+  if (strict) return null;
   return Array.from({ length: colCount }, (_, i) => `Answer ${i + 1}`);
 }
 
-function parseQuestionBlock(id, prompt, block) {
+function parseQuestionBlock(id, prompt, block, layoutBlockLines) {
   const clean = stripFooter(block);
   const shortTitle = extractShortTitle(clean) || id;
   const rows = [];
@@ -770,7 +977,31 @@ function parseQuestionBlock(id, prompt, block) {
   }
   if (colCount < 2) return null;
 
-  const answers = extractAnswerLabels(clean, colCount, shortTitle);
+  // Prefer a STRICT dictionary match first: when every column is one of the
+  // short, widely-recurring phrases (KNOWN_ANSWERS) with nothing skipped, it
+  // reproduces the exact phrase text and grouping more reliably than the
+  // layout heuristic does for tightly-packed short columns. Only fall back
+  // to layout-based extraction (which alone can recover free-text /
+  // scale-endpoint labels no dictionary could ever list) when the strict
+  // dictionary match can't prove itself; and only fall back further to the
+  // relaxed dictionary match (which may silently drop unrecognised text) as
+  // a last resort.
+  let answers = extractAnswerLabels(clean, colCount, shortTitle, true);
+  if (!answers && layoutBlockLines) {
+    try {
+      answers = extractAnswerLabelsLayout({
+        layoutLines: layoutBlockLines,
+        colCount,
+        shortTitle,
+        firstRowName: rows[0].name,
+      });
+    } catch {
+      answers = null;
+    }
+  }
+  if (!answers || answers.length !== colCount) {
+    answers = extractAnswerLabels(clean, colCount, shortTitle);
+  }
   const byCode = {};
   for (const r of rows) {
     if (r.pcts.length !== colCount) {
@@ -798,6 +1029,8 @@ function main() {
   console.log(`Parsing ${pdfPath} …`);
   const pages = extractAllPages(pdfPath);
   console.log(`Pages: ${pages.length}`);
+  console.log("Extracting layout-mode text for answer-column labels …");
+  const layoutPages = extractAllPagesLayout(pdfPath);
 
   const surveyYears = parseSurveyYears(pages);
   console.log(`Survey years for ${Object.keys(surveyYears).length} societies`);
@@ -823,7 +1056,8 @@ function main() {
     const endPage =
       s + 1 < starts.length ? starts[s + 1].page : Math.min(cur.page + 3, pages.length);
     const block = pages.slice(cur.page, endPage).join("\n");
-    const q = parseQuestionBlock(cur.id, cur.prompt, block);
+    const layoutBlockLines = layoutPages.slice(cur.page, endPage).join("\n").split("\n");
+    const q = parseQuestionBlock(cur.id, cur.prompt, block, layoutBlockLines);
     if (q) questions.push(q);
     else console.warn(`  skip ${cur.id} (parse failed)`);
   }

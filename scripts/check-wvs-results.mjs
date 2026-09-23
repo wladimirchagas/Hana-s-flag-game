@@ -56,6 +56,48 @@ if (existsSync(JSON_PATH)) {
       fail(`Q1 AU values length ${au.length} ≠ answers ${q1.answers.length}`);
     }
   }
+
+  // Q7-Q17 "Important child qualities" family: the PDF's bare "Important"
+  // answer token was once silently dropped by the label extractor (not in
+  // its known-token dictionary), shifting every label one column and
+  // relabelling "Important: 84.2%" as "Not mentioned: 84.2%" for every
+  // country. Regression guard for that exact defect class.
+  const q7 = data.questions.find((q) => q.id === "Q7");
+  if (!q7) {
+    fail("Q7 missing from wvsResults.json");
+  } else {
+    if (q7.answers[0] !== "Important") {
+      fail(`Q7 answers[0] should be "Important", got ${JSON.stringify(q7.answers[0])}`);
+    }
+    const au7 = q7.values?.AU;
+    if (!au7 || au7[0] !== 84.2) {
+      fail(`Q7 AU[0] should be 84.2 (Important), got ${JSON.stringify(au7)}`);
+    }
+  }
+
+  // Q27-Q29 agree/disagree batteries: "Disagree strongly" was a phantom
+  // KNOWN_ANSWERS entry that never occurs as a genuine PDF label — it only
+  // ever matched a real "Disagree" column immediately followed by the START
+  // of a real "Strongly disagree" column ("...Disagree Strongly\ndisagree
+  // ..." is how pypdf renders the wrapped header), consuming both as one
+  // token and silently shifting "Strongly disagree"'s value onto the
+  // "Disagree" slot for every country. Regression guard for that defect.
+  const q27 = data.questions.find((q) => q.id === "Q27");
+  if (!q27) {
+    fail("Q27 missing from wvsResults.json");
+  } else {
+    if (q27.answers[2] !== "Disagree") {
+      fail(`Q27 answers[2] should be "Disagree", got ${JSON.stringify(q27.answers[2])}`);
+    }
+    const au27 = q27.values?.AU;
+    if (!au27 || au27[2] !== 19) {
+      fail(`Q27 AU[2] should be 19 (Disagree), got ${JSON.stringify(au27)}`);
+    }
+    if (!au27 || au27[3] !== 3.9) {
+      fail(`Q27 AU[3] should be 3.9 (Strongly disagree), got ${JSON.stringify(au27)}`);
+    }
+  }
+
   // No question may list its own title as answer 0
   let titleLeaks = 0;
   for (const q of data.questions) {
