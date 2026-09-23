@@ -1,5 +1,6 @@
 import { UiIcon } from "./UiIcon";
 import { Fragment, useEffect, useMemo, useRef, useState } from "react";
+import { SearchableSelect } from "./SearchableSelect";
 import {
   continentOrder,
   type FlagListEntry,
@@ -1385,55 +1386,50 @@ export function FlagGrid({
             )}
           </div>
           {isModernEra && (
-            <label className="flag-grid__group-select">
-              <span className="flag-grid__group-select-label">Show:</span>
-              <select
-                value={contentType}
-                onChange={(e) =>
-                  onContentTypeChange(e.target.value as GridContentType)
-                }
-                className="flag-grid__select"
-              >
-                {GRID_CONTENT_TYPE_ORDER.map((t) => (
-                  <option key={t} value={t}>
-                    {GRID_CONTENT_TYPE_LABELS[t]}
-                  </option>
-                ))}
-              </select>
-            </label>
+            <SearchableSelect
+              id="flag-grid-show-select"
+              label="Show:"
+              value={contentType}
+              onChange={(val) =>
+                onContentTypeChange(val as GridContentType)
+              }
+              options={GRID_CONTENT_TYPE_ORDER.map((t) => ({
+                value: t,
+                label: GRID_CONTENT_TYPE_LABELS[t],
+              }))}
+              ariaLabel="Show content type"
+              searchPlaceholder="Filter content type…"
+              className="flag-grid__group-select"
+            />
           )}
-          <label className="flag-grid__group-select">
-            <span className="flag-grid__group-select-label">Group by:</span>
-            <select
-              value={groupMode}
-              onChange={(e) => chooseGroupMode(e.target.value as GroupMode)}
-              className="flag-grid__select"
-            >
-              {(Object.keys(GROUP_MODE_LABELS) as GroupMode[])
+          <SearchableSelect
+            id="flag-grid-group-select"
+            label="Group by:"
+            value={groupMode}
+            onChange={(val) => chooseGroupMode(val as GroupMode)}
+            options={[
+              ...(Object.keys(GROUP_MODE_LABELS) as GroupMode[])
                 .filter(groupModeAvailable)
                 .filter((m) => !DEMOCRACY_GROUP_MODES.has(m))
-                .map((m) => (
-                  <option key={m} value={m}>
-                    {GROUP_MODE_LABELS[m]}
-                  </option>
-                ))}
-              {getDemocracyIndexMenuGroups().map((group) => {
-                const opts = group.indexes
-                  .map((m) => m.key as GroupMode)
-                  .filter(groupModeAvailable);
-                if (opts.length === 0) return null;
-                return (
-                  <optgroup key={group.theme.id} label={group.theme.label}>
-                    {opts.map((m) => (
-                      <option key={m} value={m}>
-                        {GROUP_MODE_LABELS[m]}
-                      </option>
-                    ))}
-                  </optgroup>
-                );
-              })}
-            </select>
-          </label>
+                .map((m) => ({
+                  value: m,
+                  label: GROUP_MODE_LABELS[m],
+                })),
+              ...getDemocracyIndexMenuGroups().flatMap((group) =>
+                group.indexes
+                  .map((meta) => meta.key as GroupMode)
+                  .filter(groupModeAvailable)
+                  .map((m) => ({
+                    value: m,
+                    label: GROUP_MODE_LABELS[m],
+                    secondaryLabel: group.theme.label,
+                  })),
+              ),
+            ]}
+            ariaLabel="Group flags by"
+            searchPlaceholder="Filter grouping…"
+            className="flag-grid__group-select"
+          />
         </div>
       </header>
 
