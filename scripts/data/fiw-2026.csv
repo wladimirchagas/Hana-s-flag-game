@@ -1,0 +1,208 @@
+country,iso,kind,score,status,political_rights,civil_liberties
+Abkhazia,,territory,40,Partly Free,18,22
+Afghanistan,AF,country,8,Not Free,1,7
+Albania,AL,country,69,Partly Free,28,41
+Algeria,DZ,country,31,Not Free,10,21
+Andorra,AD,country,93,Free,38,55
+Angola,AO,country,28,Not Free,10,18
+Antigua and Barbuda,AG,country,83,Free,32,51
+Argentina,AR,country,85,Free,35,50
+Armenia,AM,country,54,Partly Free,23,31
+Australia,AU,country,94,Free,39,55
+Austria,AT,country,94,Free,38,56
+Azerbaijan,AZ,country,6,Not Free,0,6
+Bahrain,BH,country,12,Not Free,2,10
+Bangladesh,BD,country,44,Partly Free,15,29
+Barbados,BB,country,94,Free,37,57
+Belarus,BY,country,7,Not Free,1,6
+Belgium,BE,country,95,Free,38,57
+Belize,BZ,country,87,Free,34,53
+Benin,BJ,country,61,Partly Free,19,42
+Bhutan,BT,country,69,Free,33,36
+Bolivia,BO,country,69,Free,30,39
+Bosnia and Herzegovina,BA,country,54,Partly Free,17,37
+Botswana,BW,country,75,Free,31,44
+Brazil,BR,country,73,Free,30,43
+Brunei,BN,country,27,Not Free,7,20
+Bulgaria,BG,country,74,Free,30,44
+Burkina Faso,BF,country,20,Not Free,2,18
+Burundi,BI,country,13,Not Free,2,11
+Cabo Verde,CV,country,92,Free,38,54
+Cambodia,KH,country,22,Not Free,4,18
+Cameroon,CM,country,15,Not Free,6,9
+Canada,CA,country,97,Free,39,58
+Central African Republic,CF,country,5,Not Free,1,4
+Chad,TD,country,15,Not Free,1,14
+Chile,CL,country,95,Free,38,57
+China,CN,country,9,Not Free,-2,11
+Colombia,CO,country,69,Free,31,38
+Comoros,KM,country,41,Partly Free,16,25
+Costa Rica,CR,country,91,Free,38,53
+Croatia,HR,country,82,Free,34,48
+Cuba,CU,country,9,Not Free,0,9
+Cyprus,CY,country,90,Free,38,52
+Czechia,CZ,country,95,Free,37,58
+Côte d'Ivoire,CI,country,46,Partly Free,17,29
+Democratic Republic of the Congo,CD,country,18,Not Free,4,14
+Denmark,DK,country,97,Free,40,57
+Djibouti,DJ,country,24,Not Free,5,19
+Dominica,DM,country,92,Free,37,55
+Dominican Republic,DO,country,67,Partly Free,27,40
+Ecuador,EC,country,64,Partly Free,27,37
+Egypt,EG,country,18,Not Free,6,12
+El Salvador,SV,country,42,Partly Free,15,27
+Equatorial Guinea,GQ,country,5,Not Free,0,5
+Eritrea,ER,country,3,Not Free,1,2
+Estonia,EE,country,96,Free,39,57
+Eswatini,SZ,country,17,Not Free,1,16
+Ethiopia,ET,country,18,Not Free,8,10
+Fiji,FJ,country,72,Free,28,44
+Finland,FI,country,100,Free,40,60
+France,FR,country,89,Free,38,51
+Gabon,GA,country,25,Not Free,5,20
+Gaza Strip,,territory,2,Not Free,-2,4
+Georgia,GE,country,51,Partly Free,19,32
+Germany,DE,country,95,Free,40,55
+Ghana,GH,country,80,Free,35,45
+Greece,GR,country,85,Free,35,50
+Grenada,GD,country,89,Free,37,52
+Guatemala,GT,country,48,Partly Free,19,29
+Guinea,GN,country,28,Not Free,6,22
+Guinea-Bissau,GW,country,33,Partly Free,7,26
+Guyana,GY,country,74,Free,29,45
+Haiti,HT,country,22,Not Free,5,17
+Honduras,HN,country,47,Partly Free,21,26
+Hong Kong,,territory,41,Partly Free,9,32
+Hungary,HU,country,65,Partly Free,24,41
+Iceland,IS,country,95,Free,38,57
+India,IN,country,62,Partly Free,31,31
+Indian Kashmir,,territory,38,Partly Free,17,21
+Indonesia,ID,country,56,Partly Free,28,28
+Iran,IR,country,10,Not Free,4,6
+Iraq,IQ,country,31,Not Free,16,15
+Ireland,IE,country,98,Free,40,58
+Israel,IL,country,73,Free,34,39
+Italy,IT,country,87,Free,35,52
+Jamaica,JM,country,81,Free,34,47
+Japan,JP,country,96,Free,40,56
+Jordan,JO,country,34,Partly Free,12,22
+Kazakhstan,KZ,country,23,Not Free,5,18
+Kenya,KE,country,49,Partly Free,21,28
+Kiribati,KI,country,89,Free,36,53
+Kosovo,XK,country,61,Partly Free,27,34
+Kuwait,KW,country,30,Not Free,7,23
+Kyrgyzstan,KG,country,25,Not Free,4,21
+Laos,LA,country,13,Not Free,2,11
+Latvia,LV,country,89,Free,37,52
+Lebanon,LB,country,41,Partly Free,15,26
+Lesotho,LS,country,67,Free,31,36
+Liberia,LR,country,65,Partly Free,31,34
+Libya,LY,country,10,Not Free,2,8
+Liechtenstein,LI,country,90,Free,33,57
+Lithuania,LT,country,90,Free,38,52
+Luxembourg,LU,country,97,Free,38,59
+Madagascar,MG,country,50,Partly Free,16,34
+Malawi,MW,country,68,Free,30,38
+Malaysia,MY,country,53,Partly Free,22,31
+Maldives,MV,country,41,Partly Free,19,22
+Mali,ML,country,21,Not Free,3,18
+Malta,MT,country,88,Free,35,53
+Marshall Islands,MH,country,93,Free,38,55
+Mauritania,MR,country,38,Partly Free,15,23
+Mauritius,MU,country,87,Free,36,51
+Mexico,MX,country,58,Partly Free,26,32
+Micronesia,FM,country,92,Free,37,55
+Moldova,MD,country,60,Partly Free,25,35
+Monaco,MC,country,82,Free,25,57
+Mongolia,MN,country,84,Free,36,48
+Montenegro,ME,country,68,Partly Free,26,42
+Morocco,MA,country,37,Partly Free,13,24
+Mozambique,MZ,country,42,Partly Free,13,29
+Myanmar,MM,country,4,Not Free,-2,6
+Namibia,NA,country,73,Free,28,45
+Nauru,NR,country,75,Free,32,43
+Nepal,NP,country,59,Partly Free,27,32
+Netherlands,NL,country,97,Free,39,58
+New Zealand,NZ,country,99,Free,40,59
+Nicaragua,NI,country,14,Not Free,2,12
+Niger,NE,country,27,Not Free,3,24
+Nigeria,NG,country,44,Partly Free,20,24
+North Korea,KP,country,3,Not Free,0,3
+North Macedonia,MK,country,67,Partly Free,28,39
+Northern Cyprus,,territory,75,Free,28,47
+Norway,NO,country,99,Free,39,60
+Oman,OM,country,24,Not Free,6,18
+Pakistan,PK,country,32,Partly Free,12,20
+Pakistani Kashmir,,territory,30,Not Free,9,21
+Palau,PW,country,92,Free,37,55
+Panama,PA,country,82,Free,35,47
+Papua New Guinea,PG,country,61,Partly Free,22,39
+Paraguay,PY,country,63,Partly Free,26,37
+Peru,PE,country,66,Partly Free,27,39
+Philippines,PH,country,58,Partly Free,25,33
+Poland,PL,country,82,Free,34,48
+Portugal,PT,country,96,Free,39,57
+Qatar,QA,country,25,Not Free,7,18
+Republic of the Congo,CG,country,17,Not Free,2,15
+Romania,RO,country,83,Free,35,48
+Russia,RU,country,12,Not Free,4,8
+Rwanda,RW,country,21,Not Free,7,14
+Samoa,WS,country,84,Free,32,52
+San Marino,SM,country,97,Free,39,58
+Saudi Arabia,SA,country,9,Not Free,1,8
+Senegal,SN,country,70,Free,30,40
+Serbia,RS,country,53,Partly Free,18,35
+Seychelles,SC,country,81,Free,35,46
+Sierra Leone,SL,country,61,Partly Free,23,38
+Singapore,SG,country,48,Partly Free,19,29
+Slovakia,SK,country,88,Free,35,53
+Slovenia,SI,country,97,Free,39,58
+Solomon Islands,SB,country,74,Free,27,47
+Somalia,SO,country,8,Not Free,2,6
+Somaliland,,territory,47,Partly Free,21,26
+South Africa,ZA,country,81,Free,34,47
+South Korea,KR,country,83,Free,33,50
+South Ossetia,,territory,12,Not Free,3,9
+South Sudan,SS,country,0,Not Free,-4,4
+Spain,ES,country,91,Free,37,54
+Sri Lanka,LK,country,63,Partly Free,29,34
+St. Kitts and Nevis,KN,country,89,Free,35,54
+St. Lucia,LC,country,91,Free,38,53
+St. Vincent and the Grenadines,VC,country,90,Free,36,54
+Sudan,SD,country,1,Not Free,-4,5
+Suriname,SR,country,81,Free,35,46
+Sweden,SE,country,99,Free,40,59
+Switzerland,CH,country,96,Free,39,57
+Syria,SY,country,10,Not Free,-2,12
+São Tomé and Príncipe,ST,country,84,Free,35,49
+Taiwan,TW,country,93,Free,38,55
+Tajikistan,TJ,country,5,Not Free,0,5
+Tanzania,TZ,country,28,Not Free,6,22
+Thailand,TH,country,33,Not Free,11,22
+The Bahamas,BS,country,90,Free,38,52
+The Gambia,GM,country,51,Partly Free,22,29
+Tibet,,territory,0,Not Free,-2,2
+Timor-Leste,TL,country,73,Free,33,40
+Togo,TG,country,37,Partly Free,11,26
+Tonga,TO,country,79,Free,29,50
+Transnistria,,territory,16,Not Free,4,12
+Trinidad and Tobago,TT,country,83,Free,34,49
+Tunisia,TN,country,42,Partly Free,11,31
+Turkey,TR,country,32,Not Free,16,16
+Turkmenistan,TM,country,1,Not Free,0,1
+Tuvalu,TV,country,93,Free,37,56
+Uganda,UG,country,33,Not Free,10,23
+Ukraine,UA,country,51,Partly Free,22,29
+United Arab Emirates,AE,country,18,Not Free,5,13
+United Kingdom,GB,country,92,Free,39,53
+United States,US,country,81,Free,32,49
+Uruguay,UY,country,97,Free,40,57
+Uzbekistan,UZ,country,12,Not Free,2,10
+Vanuatu,VU,country,82,Free,32,50
+Venezuela,VE,country,13,Not Free,0,13
+Vietnam,VN,country,20,Not Free,4,16
+West Bank,,territory,22,Not Free,4,18
+Western Sahara,,territory,4,Not Free,-3,7
+Yemen,YE,country,10,Not Free,1,9
+Zambia,ZM,country,53,Partly Free,22,31
+Zimbabwe,ZW,country,25,Not Free,8,17

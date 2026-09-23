@@ -1,5 +1,6 @@
 // Democracy / governance indexes including IEP Global Terrorism Index 2026.
 // Includes Freedom House, V-Dem, EIU, CPI, DPI, RSF, HDI, GGGR, WHR, Soft Power,
+// - Freedom House: Freedom in the World 2026 (scripts/data/fiw-2026.csv, built by scripts/build-fiw.mjs)
 // Lowy GDI, WJP, IMD, ETR, Digital News, IEP GPI + GTI.
 // - IEP Global Terrorism Index 2026
 //   https://www.visionofhumanity.org/wp-content/uploads/2026/03/Global-Terrorism-Index-2026-Report.pdf
@@ -11,13 +12,13 @@
  */
 export const DEMOCRACY_DATA = {
   "AD": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":24,"rankChange":0,"score":93},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":25,"score":93},
     "rsfPress": {"year":2026,"rating":"Problematic","rank":60,"rankChange":5,"score":63.91},
     "hdi": {"year":2023,"rating":"Very High","rank":32,"rankChange":5,"score":0.913},
     "softPower": {"year":2026,"rating":"30–39","rank":135,"rankChange":-21,"score":30.4}
   },
   "AE": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":159,"rankChange":0,"score":18},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":161,"score":18},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":155,"rankChange":-2,"score":0.08},
     "economist": {"year":2025,"rating":"Authoritarian","rank":117,"rankChange":0,"score":3.18},
     "cpi": {"year":2025,"rating":"60–69","rank":21,"rankChange":2,"score":69},
@@ -33,7 +34,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":68,"rankChange":2,"score":0.749}
   },
   "AF": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":184,"rankChange":0,"score":6},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":183,"score":8},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":176,"rankChange":2,"score":0.02},
     "economist": {"year":2025,"rating":"Authoritarian","rank":167,"rankChange":-2,"score":0.25},
     "cpi": {"year":2025,"rating":"10–19","rank":169,"rankChange":-4,"score":16},
@@ -47,13 +48,13 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"High","rank":11,"rankChange":-2,"score":6.678}
   },
   "AG": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":57,"rankChange":0,"score":83},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":57,"score":83},
     "hdi": {"year":2023,"rating":"Very High","rank":53,"rankChange":-2,"score":0.851},
     "softPower": {"year":2026,"rating":"20–29","rank":176,"rankChange":-2,"score":24.8},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":38,"score":0.64,"rankChange":-1}
   },
   "AL": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":85,"rankChange":0,"score":68},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":84,"score":69},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":81,"rankChange":-2,"score":0.38},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":67,"rankChange":-2,"score":6.2},
     "cpi": {"year":2025,"rating":"30–39","rank":91,"rankChange":-11,"score":39},
@@ -68,7 +69,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "AM": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":110,"rankChange":0,"score":54},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":109,"score":54},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":86,"rankChange":-10,"score":0.37},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":84,"rankChange":-3,"score":5.35},
     "cpi": {"year":2025,"rating":"40–49","rank":65,"rankChange":-2,"score":46},
@@ -82,7 +83,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":81,"rankChange":-1,"score":0.423}
   },
   "AO": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":144,"rankChange":0,"score":28},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":143,"score":28},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":120,"rankChange":1,"score":0.16},
     "economist": {"year":2025,"rating":"Authoritarian","rank":107,"rankChange":-2,"score":3.94},
     "cpi": {"year":2025,"rating":"30–39","rank":120,"rankChange":1,"score":32},
@@ -97,7 +98,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":56,"rankChange":-3,"score":1.136}
   },
   "AR": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":51,"rankChange":0,"score":85},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":52,"score":85},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":56,"rankChange":-5,"score":0.52},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":49,"rankChange":4,"score":6.89},
     "cpi": {"year":2025,"rating":"30–39","rank":104,"rankChange":-5,"score":36},
@@ -116,7 +117,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":79,"rankChange":-2,"score":0.455}
   },
   "AT": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":24,"rankChange":0,"score":93},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":22,"score":94},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":19,"rankChange":0,"score":0.76},
     "economist": {"year":2025,"rating":"Full democracy","rank":17,"rankChange":1,"score":8.42},
     "cpi": {"year":2025,"rating":"60–69","rank":21,"rankChange":4,"score":69},
@@ -135,7 +136,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":51,"rankChange":34,"score":1.498}
   },
   "AU": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":18,"rankChange":0,"score":95},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":22,"score":94},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":12,"rankChange":0,"score":0.79},
     "economist": {"year":2025,"rating":"Full democracy","rank":13,"rankChange":-2,"score":8.85},
     "cpi": {"year":2025,"rating":"70–79","rank":12,"rankChange":-2,"score":76},
@@ -154,7 +155,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":31,"rankChange":14,"score":3.732}
   },
   "AZ": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":181,"rankChange":0,"score":7},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":186,"score":6},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":164,"rankChange":0,"score":0.05},
     "economist": {"year":2025,"rating":"Authoritarian","rank":127,"rankChange":-3,"score":2.8},
     "cpi": {"year":2025,"rating":"30–39","rank":130,"rankChange":24,"score":30},
@@ -168,7 +169,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":93,"rankChange":-1,"score":0.123}
   },
   "BA": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":113,"rankChange":0,"score":52},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":109,"score":54},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":91,"rankChange":0,"score":0.34},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":85,"rankChange":1,"score":5.23},
     "cpi": {"year":2025,"rating":"30–39","rank":109,"rankChange":5,"score":34},
@@ -183,7 +184,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":65,"rankChange":2,"score":0.782}
   },
   "BB": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":23,"rankChange":0,"score":94},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":22,"score":94},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":32,"rankChange":1,"score":0.68},
     "cpi": {"year":2025,"rating":"60–69","rank":24,"rankChange":-1,"score":68},
     "hdi": {"year":2023,"rating":"Very High","rank":69,"rankChange":0,"score":0.811},
@@ -192,7 +193,7 @@ export const DEMOCRACY_DATA = {
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":33,"score":0.66,"rankChange":2}
   },
   "BD": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":122,"rankChange":0,"score":45},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":123,"score":44},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":133,"rankChange":14,"score":0.12},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":101,"rankChange":-3,"score":4.27},
     "cpi": {"year":2025,"rating":"20–29","rank":150,"rankChange":1,"score":24},
@@ -209,7 +210,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":42,"rankChange":-6,"score":2.286}
   },
   "BE": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":11,"rankChange":0,"score":96},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":17,"score":95},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":11,"rankChange":-2,"score":0.79},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":31,"rankChange":2,"score":7.77},
     "cpi": {"year":2025,"rating":"60–69","rank":21,"rankChange":1,"score":69},
@@ -228,7 +229,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":55,"rankChange":3,"score":1.198}
   },
   "BF": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":148,"rankChange":0,"score":25},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":159,"score":20},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":141,"rankChange":-10,"score":0.1},
     "economist": {"year":2025,"rating":"Authoritarian","rank":137,"rankChange":-2,"score":2.55},
     "cpi": {"year":2025,"rating":"40–49","rank":84,"rankChange":-2,"score":40},
@@ -243,7 +244,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very High","rank":2,"rankChange":-1,"score":8.324}
   },
   "BG": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":72,"rankChange":0,"score":77},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":75,"score":74},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":67,"rankChange":-12,"score":0.5},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":61,"rankChange":-1,"score":6.34},
     "cpi": {"year":2025,"rating":"40–49","rank":84,"rankChange":-8,"score":40},
@@ -260,7 +261,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "BH": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":171,"rankChange":0,"score":12},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":173,"score":12},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":157,"rankChange":0,"score":0.06},
     "economist": {"year":2025,"rating":"Authoritarian","rank":138,"rankChange":-2,"score":2.45},
     "cpi": {"year":2025,"rating":"50–59","rank":56,"rankChange":-3,"score":50},
@@ -275,7 +276,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":99,"rankChange":0,"score":0.03}
   },
   "BI": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":165,"rankChange":0,"score":15},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":170,"score":13},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":159,"rankChange":-1,"score":0.06},
     "economist": {"year":2025,"rating":"Authoritarian","rank":144,"rankChange":-2,"score":2.13},
     "cpi": {"year":2025,"rating":"10–19","rank":167,"rankChange":-2,"score":17},
@@ -288,7 +289,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":33,"rankChange":-2,"score":3.361}
   },
   "BJ": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":100,"rankChange":0,"score":60},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":100,"score":61},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":93,"rankChange":2,"score":0.32},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":102,"rankChange":-4,"score":4.26},
     "cpi": {"year":2025,"rating":"40–49","rank":70,"rankChange":-1,"score":45},
@@ -303,7 +304,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":19,"rankChange":8,"score":5.434}
   },
   "BN": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":145,"rankChange":0,"score":27},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":146,"score":27},
     "cpi": {"year":2025,"rating":"60–69","rank":31,"rankChange":0,"score":63},
     "rsfPress": {"year":2026,"rating":"Difficult","rank":96,"rankChange":1,"score":52.58},
     "hdi": {"year":2023,"rating":"Very High","rank":60,"rankChange":3,"score":0.837},
@@ -313,7 +314,7 @@ export const DEMOCRACY_DATA = {
     "etr": {"year":2024,"rating":"Low","rank":54,"score":2.127}
   },
   "BO": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":91,"rankChange":0,"score":65},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":84,"score":69},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":89,"rankChange":9,"score":0.35},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":83,"rankChange":18,"score":5.38},
     "cpi": {"year":2025,"rating":"20–29","rank":136,"rankChange":-3,"score":28},
@@ -329,7 +330,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "BR": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":79,"rankChange":0,"score":72},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":78,"score":73},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":29,"rankChange":0,"score":0.7},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":50,"rankChange":6,"score":6.76},
     "cpi": {"year":2025,"rating":"30–39","rank":107,"rankChange":0,"score":35},
@@ -348,7 +349,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":62,"rankChange":-1,"score":0.909}
   },
   "BS": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":36,"rankChange":0,"score":90},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":37,"score":90},
     "cpi": {"year":2025,"rating":"60–69","rank":29,"rankChange":-1,"score":64},
     "hdi": {"year":2023,"rating":"Very High","rank":66,"rankChange":0,"score":0.82},
     "softPower": {"year":2026,"rating":"30–39","rank":86,"rankChange":-12,"score":35.4},
@@ -356,7 +357,7 @@ export const DEMOCRACY_DATA = {
     "etr": {"year":2024,"rating":"Low","rank":46,"score":2.022}
   },
   "BT": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":85,"rankChange":0,"score":68},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":84,"score":69},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":72,"rankChange":-1,"score":0.46},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":79,"rankChange":-1,"score":5.65},
     "cpi": {"year":2025,"rating":"70–79","rank":18,"rankChange":0,"score":71},
@@ -370,7 +371,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "BW": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":73,"rankChange":0,"score":75},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":73,"score":75},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":59,"rankChange":10,"score":0.52},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":36,"rankChange":-2,"score":7.63},
     "cpi": {"year":2025,"rating":"50–59","rank":41,"rankChange":2,"score":58},
@@ -386,7 +387,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "BY": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":181,"rankChange":0,"score":7},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":185,"score":7},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":172,"rankChange":0,"score":0.04},
     "economist": {"year":2025,"rating":"Authoritarian","rank":149,"rankChange":1,"score":1.99},
     "cpi": {"year":2025,"rating":"30–39","rank":124,"rankChange":-10,"score":31},
@@ -401,7 +402,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":94,"rankChange":-1,"score":0.123}
   },
   "BZ": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":48,"rankChange":0,"score":88},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":49,"score":87},
     "cpi": {"year":2025,"rating":"30–39","rank":104,"rankChange":0,"score":36},
     "rsfPress": {"year":2026,"rating":"Problematic","rank":66,"rankChange":-19,"score":61.66},
     "hdi": {"year":2023,"rating":"High","rank":115,"rankChange":3,"score":0.721},
@@ -412,7 +413,7 @@ export const DEMOCRACY_DATA = {
     "etr": {"year":2024,"rating":"Medium","rank":88,"score":2.694}
   },
   "CA": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":5,"rankChange":0,"score":97},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":6,"score":97},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":23,"rankChange":2,"score":0.74},
     "economist": {"year":2025,"rating":"Full democracy","rank":9,"rankChange":4,"score":9.08},
     "cpi": {"year":2025,"rating":"70–79","rank":16,"rankChange":-1,"score":75},
@@ -431,7 +432,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":53,"rankChange":-5,"score":1.333}
   },
   "CD": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":159,"rankChange":0,"score":18},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":161,"score":18},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":134,"rankChange":-1,"score":0.12},
     "economist": {"year":2025,"rating":"Authoritarian","rank":156,"rankChange":-2,"score":1.92},
     "cpi": {"year":2025,"rating":"20–29","rank":163,"rankChange":0,"score":20},
@@ -447,7 +448,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"High","rank":8,"rankChange":4,"score":7.171}
   },
   "CF": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":185,"rankChange":0,"score":5},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":187,"score":5},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":143,"rankChange":3,"score":0.1},
     "economist": {"year":2025,"rating":"Authoritarian","rank":164,"rankChange":-2,"score":1.18},
     "cpi": {"year":2025,"rating":"20–29","rank":150,"rankChange":-1,"score":24},
@@ -459,7 +460,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":76,"rankChange":-4,"score":0.556}
   },
   "CG": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":163,"rankChange":0,"score":17},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":165,"score":17},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":135,"rankChange":2,"score":0.12},
     "economist": {"year":2025,"rating":"Authoritarian","rank":128,"rankChange":-2,"score":2.79},
     "cpi": {"year":2025,"rating":"20–29","rank":153,"rankChange":-2,"score":23},
@@ -473,7 +474,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "CH": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":11,"rankChange":0,"score":96},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":13,"score":96},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":4,"rankChange":1,"score":0.84},
     "economist": {"year":2025,"rating":"Full democracy","rank":8,"rankChange":-3,"score":9.32},
     "cpi": {"year":2025,"rating":"80–89","rank":6,"rankChange":-1,"score":80},
@@ -491,7 +492,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":67,"rankChange":-3,"score":0.749}
   },
   "CI": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":117,"rankChange":0,"score":49},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":122,"score":46},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":109,"rankChange":-3,"score":0.23},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":104,"rankChange":-1,"score":4.24},
     "cpi": {"year":2025,"rating":"40–49","rank":76,"rankChange":-7,"score":43},
@@ -507,7 +508,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":71,"rankChange":-11,"score":0.702}
   },
   "CL": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":18,"rankChange":0,"score":95},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":17,"score":95},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":16,"rankChange":-3,"score":0.78},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":27,"rankChange":1,"score":7.97},
     "cpi": {"year":2025,"rating":"60–69","rank":31,"rankChange":1,"score":63},
@@ -526,7 +527,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":27,"rankChange":-5,"score":4.553}
   },
   "CM": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":165,"rankChange":0,"score":15},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":167,"score":15},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":138,"rankChange":-6,"score":0.11},
     "economist": {"year":2025,"rating":"Authoritarian","rank":136,"rankChange":-2,"score":2.56},
     "cpi": {"year":2025,"rating":"20–29","rank":142,"rankChange":-2,"score":26},
@@ -542,7 +543,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"High","rank":12,"rankChange":-2,"score":6.593}
   },
   "CN": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":178,"rankChange":0,"score":9},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":180,"score":9},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":171,"rankChange":0,"score":0.04},
     "economist": {"year":2025,"rating":"Authoritarian","rank":142,"rankChange":1,"score":2.24},
     "cpi": {"year":2025,"rating":"40–49","rank":76,"rankChange":0,"score":43},
@@ -560,7 +561,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":54,"rankChange":-5,"score":1.311}
   },
   "CO": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":81,"rankChange":0,"score":70},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":84,"score":69},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":53,"rankChange":-1,"score":0.56},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":73,"rankChange":-14,"score":6.04},
     "cpi": {"year":2025,"rating":"30–39","rank":99,"rankChange":-7,"score":37},
@@ -579,7 +580,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"High","rank":9,"rankChange":5,"score":7.116}
   },
   "CR": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":33,"rankChange":0,"score":91},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":34,"score":91},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":7,"rankChange":3,"score":0.81},
     "economist": {"year":2025,"rating":"Full democracy","rank":19,"rankChange":-2,"score":8.29},
     "cpi": {"year":2025,"rating":"50–59","rank":46,"rankChange":-4,"score":56},
@@ -596,7 +597,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "CU": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":175,"rankChange":0,"score":10},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":180,"score":9},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":161,"rankChange":-1,"score":0.06},
     "economist": {"year":2025,"rating":"Authoritarian","rank":135,"rankChange":-2,"score":2.58},
     "cpi": {"year":2025,"rating":"40–49","rank":84,"rankChange":-2,"score":40},
@@ -608,7 +609,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "CV": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":28,"rankChange":0,"score":92},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":29,"score":92},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":40,"rankChange":-1,"score":0.63},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":37,"rankChange":-1,"score":7.58},
     "cpi": {"year":2025,"rating":"60–69","rank":35,"rankChange":0,"score":62},
@@ -618,7 +619,7 @@ export const DEMOCRACY_DATA = {
     "softPower": {"year":2026,"rating":"20–29","rank":157,"rankChange":-2,"score":27.6}
   },
   "CY": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":33,"rankChange":0,"score":91},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":37,"score":90},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":35,"rankChange":1,"score":0.66},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":40,"rankChange":-1,"score":7.45},
     "cpi": {"year":2025,"rating":"50–59","rank":49,"rankChange":-3,"score":55},
@@ -634,7 +635,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":92,"rankChange":-1,"score":0.176}
   },
   "CZ": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":18,"rankChange":0,"score":95},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":17,"score":95},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":10,"rankChange":-3,"score":0.79},
     "economist": {"year":2025,"rating":"Full democracy","rank":23,"rankChange":-1,"score":8.15},
     "cpi": {"year":2025,"rating":"50–59","rank":39,"rankChange":7,"score":59},
@@ -652,7 +653,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":45,"rankChange":-6,"score":2.261}
   },
   "DE": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":18,"rankChange":0,"score":95},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":17,"score":95},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":15,"rankChange":1,"score":0.78},
     "economist": {"year":2025,"rating":"Full democracy","rank":16,"rankChange":-4,"score":8.73},
     "cpi": {"year":2025,"rating":"70–79","rank":10,"rankChange":5,"score":77},
@@ -671,7 +672,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":29,"rankChange":-1,"score":4.447}
   },
   "DJ": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":150,"rankChange":0,"score":24},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":152,"score":24},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":132,"rankChange":7,"score":0.12},
     "economist": {"year":2025,"rating":"Authoritarian","rank":131,"rankChange":-1,"score":2.7},
     "cpi": {"year":2025,"rating":"30–39","rank":124,"rankChange":3,"score":31},
@@ -683,7 +684,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":61,"rankChange":-2,"score":0.925}
   },
   "DK": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":5,"rankChange":0,"score":97},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":6,"score":97},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":1,"rankChange":0,"score":0.88},
     "economist": {"year":2025,"rating":"Full democracy","rank":3,"rankChange":4,"score":9.42},
     "cpi": {"year":2025,"rating":"80–89","rank":1,"rankChange":0,"score":89},
@@ -702,14 +703,14 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":70,"rankChange":10,"score":0.72}
   },
   "DM": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":28,"rankChange":0,"score":92},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":29,"score":92},
     "cpi": {"year":2025,"rating":"60–69","rank":37,"rankChange":-1,"score":60},
     "hdi": {"year":2023,"rating":"High","rank":98,"rankChange":0,"score":0.761},
     "softPower": {"year":2026,"rating":"30–39","rank":136,"rankChange":4,"score":30.3},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.50–0.59","rank":54,"score":0.58,"rankChange":0}
   },
   "DO": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":85,"rankChange":0,"score":68},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":90,"score":67},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":65,"rankChange":0,"score":0.51},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":51,"rankChange":0,"score":6.75},
     "cpi": {"year":2025,"rating":"30–39","rank":99,"rankChange":5,"score":37},
@@ -725,7 +726,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "DZ": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":139,"rankChange":0,"score":31},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":140,"score":31},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":131,"rankChange":4,"score":0.13},
     "economist": {"year":2025,"rating":"Authoritarian","rank":110,"rankChange":-2,"score":3.55},
     "cpi": {"year":2025,"rating":"30–39","rank":109,"rankChange":-2,"score":34},
@@ -741,7 +742,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":47,"rankChange":-5,"score":1.766}
   },
   "EC": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":91,"rankChange":0,"score":65},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":96,"score":64},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":79,"rankChange":-6,"score":0.39},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":86,"rankChange":-2,"score":5.2},
     "cpi": {"year":2025,"rating":"30–39","rank":116,"rankChange":5,"score":33},
@@ -757,7 +758,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":37,"rankChange":20,"score":3.063}
   },
   "EE": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":11,"rankChange":0,"score":96},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":13,"score":96},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":5,"rankChange":-3,"score":0.84},
     "economist": {"year":2025,"rating":"Full democracy","rank":24,"rankChange":-4,"score":8.07},
     "cpi": {"year":2025,"rating":"70–79","rank":12,"rankChange":1,"score":76},
@@ -774,7 +775,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "EG": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":159,"rankChange":0,"score":18},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":161,"score":18},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":136,"rankChange":-2,"score":0.12},
     "economist": {"year":2025,"rating":"Authoritarian","rank":128,"rankChange":-2,"score":2.79},
     "cpi": {"year":2025,"rating":"30–39","rank":130,"rankChange":0,"score":30},
@@ -790,7 +791,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":32,"rankChange":-3,"score":3.465}
   },
   "ER": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":189,"rankChange":0,"score":3},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":191,"score":3},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":179,"rankChange":0,"score":0.01},
     "economist": {"year":2025,"rating":"Authoritarian","rank":150,"rankChange":1,"score":1.97},
     "cpi": {"year":2025,"rating":"10–19","rank":177,"rankChange":-4,"score":13},
@@ -802,7 +803,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "ES": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":36,"rankChange":0,"score":90},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":34,"score":91},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":21,"rankChange":5,"score":0.74},
     "economist": {"year":2025,"rating":"Full democracy","rank":22,"rankChange":-2,"score":8.2},
     "cpi": {"year":2025,"rating":"50–59","rank":49,"rankChange":-3,"score":55},
@@ -821,7 +822,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":64,"rankChange":1,"score":0.794}
   },
   "ET": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":159,"rankChange":0,"score":18},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":161,"score":18},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":145,"rankChange":4,"score":0.1},
     "economist": {"year":2025,"rating":"Authoritarian","rank":119,"rankChange":-5,"score":3.13},
     "cpi": {"year":2025,"rating":"30–39","rank":96,"rankChange":3,"score":38},
@@ -836,7 +837,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":88,"rankChange":-10,"score":0.288}
   },
   "FI": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":1,"rankChange":0,"score":100},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":1,"score":100},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":8,"rankChange":6,"score":0.81},
     "economist": {"year":2025,"rating":"Full democracy","rank":5,"rankChange":1,"score":9.37},
     "cpi": {"year":2025,"rating":"80–89","rank":2,"rankChange":0,"score":88},
@@ -855,7 +856,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":74,"rankChange":1,"score":0.582}
   },
   "FJ": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":82,"rankChange":0,"score":69},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":82,"score":72},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":78,"rankChange":-1,"score":0.4},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":82,"rankChange":-2,"score":5.39},
     "cpi": {"year":2025,"rating":"50–59","rank":49,"rankChange":1,"score":55},
@@ -866,12 +867,12 @@ export const DEMOCRACY_DATA = {
     "etr": {"year":2024,"rating":"Medium","rank":68,"score":2.449}
   },
   "FM": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":28,"rankChange":0,"score":92},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":29,"score":92},
     "hdi": {"year":2023,"rating":"Medium","rank":149,"rankChange":-2,"score":0.615},
     "softPower": {"year":2026,"rating":"20–29","rank":188,"score":22.3}
   },
   "FR": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":40,"rankChange":0,"score":89},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":42,"score":89},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":9,"rankChange":2,"score":0.8},
     "economist": {"year":2025,"rating":"Full democracy","rank":26,"rankChange":-1,"score":8.05},
     "cpi": {"year":2025,"rating":"60–69","rank":27,"rankChange":-2,"score":66},
@@ -890,7 +891,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":35,"rankChange":6,"score":3.224}
   },
   "GA": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":156,"rankChange":0,"score":21},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":148,"score":25},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":114,"rankChange":9,"score":0.18},
     "economist": {"year":2025,"rating":"Authoritarian","rank":111,"rankChange":30,"score":3.49},
     "cpi": {"year":2025,"rating":"20–29","rank":135,"rankChange":0,"score":29},
@@ -905,7 +906,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "GB": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":28,"rankChange":0,"score":92},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":29,"score":92},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":30,"rankChange":-6,"score":0.69},
     "economist": {"year":2025,"rating":"Full democracy","rank":18,"rankChange":-2,"score":8.34},
     "cpi": {"year":2025,"rating":"70–79","rank":20,"rankChange":0,"score":70},
@@ -924,14 +925,14 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":38,"rankChange":2,"score":2.936}
   },
   "GD": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":40,"rankChange":0,"score":89},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":42,"score":89},
     "cpi": {"year":2025,"rating":"50–59","rank":46,"rankChange":0,"score":56},
     "hdi": {"year":2023,"rating":"High","rank":80,"rankChange":0,"score":0.791},
     "softPower": {"year":2026,"rating":"20–29","rank":171,"rankChange":-11,"score":25.6},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":49,"score":0.6,"rankChange":0}
   },
   "GE": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":108,"rankChange":0,"score":55},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":114,"score":51},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":101,"rankChange":-8,"score":0.28},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":99,"rankChange":-7,"score":4.36},
     "cpi": {"year":2025,"rating":"50–59","rank":56,"rankChange":-3,"score":50},
@@ -947,7 +948,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":77,"rankChange":-1,"score":0.506}
   },
   "GH": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":67,"rankChange":0,"score":80},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":71,"score":80},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":45,"rankChange":5,"score":0.61},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":65,"rankChange":-1,"score":6.24},
     "cpi": {"year":2025,"rating":"40–49","rank":76,"rankChange":4,"score":43},
@@ -964,7 +965,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "GM": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":116,"rankChange":0,"score":50},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":114,"score":51},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":58,"rankChange":1,"score":0.52},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":97,"rankChange":0,"score":4.47},
     "cpi": {"year":2025,"rating":"30–39","rank":99,"rankChange":-3,"score":37},
@@ -979,7 +980,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "GN": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":142,"rankChange":0,"score":30},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":143,"score":28},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":150,"rankChange":4,"score":0.1},
     "economist": {"year":2025,"rating":"Authoritarian","rank":143,"rankChange":4,"score":2.15},
     "cpi": {"year":2025,"rating":"20–29","rank":142,"rankChange":-9,"score":26},
@@ -993,7 +994,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "GQ": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":185,"rankChange":0,"score":5},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":187,"score":5},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":166,"rankChange":-1,"score":0.05},
     "economist": {"year":2025,"rating":"Authoritarian","rank":156,"rankChange":-2,"score":1.92},
     "cpi": {"year":2025,"rating":"10–19","rank":172,"rankChange":1,"score":15},
@@ -1005,7 +1006,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "GR": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":51,"rankChange":0,"score":85},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":52,"score":85},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":52,"rankChange":-3,"score":0.57},
     "economist": {"year":2025,"rating":"Full democracy","rank":24,"rankChange":0,"score":8.07},
     "cpi": {"year":2025,"rating":"50–59","rank":56,"rankChange":3,"score":50},
@@ -1024,7 +1025,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":40,"rankChange":-5,"score":2.788}
   },
   "GT": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":118,"rankChange":0,"score":48},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":119,"score":48},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":57,"rankChange":9,"score":0.52},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":94,"rankChange":1,"score":4.65},
     "cpi": {"year":2025,"rating":"20–29","rank":142,"rankChange":4,"score":26},
@@ -1040,7 +1041,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "GW": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":127,"rankChange":0,"score":41},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":135,"score":33},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":149,"rankChange":-23,"score":0.1},
     "economist": {"year":2025,"rating":"Authoritarian","rank":162,"rankChange":-14,"score":1.37},
     "cpi": {"year":2025,"rating":"20–29","rank":161,"rankChange":-3,"score":21},
@@ -1052,7 +1053,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "GY": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":76,"rankChange":0,"score":74},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":75,"score":74},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":92,"rankChange":5,"score":0.33},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":71,"rankChange":-3,"score":6.09},
     "cpi": {"year":2025,"rating":"40–49","rank":84,"rankChange":8,"score":40},
@@ -1066,7 +1067,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "HN": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":118,"rankChange":0,"score":48},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":121,"score":47},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":82,"rankChange":1,"score":0.38},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":92,"rankChange":-4,"score":4.87},
     "cpi": {"year":2025,"rating":"20–29","rank":157,"rankChange":-3,"score":22},
@@ -1082,7 +1083,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "HR": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":59,"rankChange":0,"score":82},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":61,"score":82},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":46,"rankChange":-1,"score":0.59},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":57,"rankChange":-2,"score":6.5},
     "cpi": {"year":2025,"rating":"40–49","rank":63,"rankChange":0,"score":47},
@@ -1099,7 +1100,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "HT": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":150,"rankChange":0,"score":24},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":155,"score":22},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":146,"rankChange":-2,"score":0.1},
     "economist": {"year":2025,"rating":"Authoritarian","rank":125,"rankChange":4,"score":2.81},
     "cpi": {"year":2025,"rating":"10–19","rank":169,"rankChange":-1,"score":16},
@@ -1112,7 +1113,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "HU": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":91,"rankChange":0,"score":65},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":94,"score":65},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":94,"rankChange":0,"score":0.32},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":55,"rankChange":-2,"score":6.58},
     "cpi": {"year":2025,"rating":"40–49","rank":84,"rankChange":-2,"score":40},
@@ -1131,7 +1132,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "ID": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":106,"rankChange":0,"score":56},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":108,"score":56},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":99,"rankChange":-7,"score":0.3},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":60,"rankChange":-2,"score":6.37},
     "cpi": {"year":2025,"rating":"30–39","rank":109,"rankChange":-10,"score":34},
@@ -1150,7 +1151,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":24,"rankChange":6,"score":4.714}
   },
   "IE": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":5,"rankChange":0,"score":97},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":5,"score":98},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":6,"rankChange":0,"score":0.82},
     "economist": {"year":2025,"rating":"Full democracy","rank":7,"rankChange":1,"score":9.33},
     "cpi": {"year":2025,"rating":"70–79","rank":12,"rankChange":-2,"score":76},
@@ -1169,7 +1170,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":82,"rankChange":-1,"score":0.423}
   },
   "IL": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":77,"rankChange":0,"score":73},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":78,"score":73},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":48,"rankChange":-2,"score":0.59},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":30,"rankChange":0,"score":7.8},
     "cpi": {"year":2025,"rating":"60–69","rank":35,"rankChange":-5,"score":62},
@@ -1185,7 +1186,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"High","rank":10,"rankChange":-2,"score":6.79}
   },
   "IN": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":96,"rankChange":0,"score":63},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":99,"score":62},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":105,"rankChange":-4,"score":0.26},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":47,"rankChange":-7,"score":6.96},
     "cpi": {"year":2025,"rating":"30–39","rank":91,"rankChange":5,"score":39},
@@ -1204,7 +1205,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"High","rank":13,"rankChange":2,"score":6.428}
   },
   "IQ": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":139,"rankChange":0,"score":31},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":140,"score":31},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":111,"rankChange":1,"score":0.22},
     "economist": {"year":2025,"rating":"Authoritarian","rank":119,"rankChange":5,"score":3.13},
     "cpi": {"year":2025,"rating":"20–29","rank":136,"rankChange":4,"score":28},
@@ -1218,7 +1219,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":16,"rankChange":-3,"score":5.822}
   },
   "IR": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":174,"rankChange":0,"score":11},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":176,"score":10},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":142,"rankChange":10,"score":0.1},
     "economist": {"year":2025,"rating":"Authoritarian","rank":152,"rankChange":0,"score":1.96},
     "cpi": {"year":2025,"rating":"20–29","rank":153,"rankChange":-2,"score":23},
@@ -1233,7 +1234,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":18,"rankChange":0,"score":5.477}
   },
   "IS": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":18,"rankChange":0,"score":95},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":17,"score":95},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":25,"rankChange":-4,"score":0.72},
     "economist": {"year":2025,"rating":"Full democracy","rank":4,"rankChange":0,"score":9.38},
     "cpi": {"year":2025,"rating":"70–79","rank":10,"rankChange":0,"score":77},
@@ -1249,7 +1250,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":97,"rankChange":-1,"score":0.059}
   },
   "IT": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":40,"rankChange":0,"score":89},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":49,"score":87},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":37,"rankChange":-6,"score":0.64},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":37,"rankChange":-1,"score":7.58},
     "cpi": {"year":2025,"rating":"50–59","rank":52,"rankChange":0,"score":53},
@@ -1268,7 +1269,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":60,"rankChange":3,"score":0.999}
   },
   "JM": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":67,"rankChange":0,"score":80},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":66,"score":81},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":33,"rankChange":1,"score":0.68},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":52,"rankChange":-4,"score":6.74},
     "cpi": {"year":2025,"rating":"40–49","rank":73,"rankChange":0,"score":44},
@@ -1284,7 +1285,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "JO": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":134,"rankChange":0,"score":34},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":134,"score":34},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":102,"rankChange":2,"score":0.27},
     "economist": {"year":2025,"rating":"Authoritarian","rank":115,"rankChange":-2,"score":3.28},
     "cpi": {"year":2025,"rating":"50–59","rank":56,"rankChange":3,"score":50},
@@ -1301,7 +1302,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":44,"rankChange":-6,"score":2.268}
   },
   "JP": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":11,"rankChange":0,"score":96},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":13,"score":96},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":24,"rankChange":3,"score":0.73},
     "economist": {"year":2025,"rating":"Full democracy","rank":13,"rankChange":2,"score":8.85},
     "cpi": {"year":2025,"rating":"70–79","rank":18,"rankChange":2,"score":71},
@@ -1320,7 +1321,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":75,"rankChange":-2,"score":0.571}
   },
   "KE": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":114,"rankChange":0,"score":51},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":118,"score":49},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":74,"rankChange":0,"score":0.45},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":89,"rankChange":-2,"score":5.05},
     "cpi": {"year":2025,"rating":"30–39","rank":130,"rankChange":-9,"score":30},
@@ -1338,7 +1339,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":21,"rankChange":-1,"score":5.088}
   },
   "KG": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":146,"rankChange":0,"score":26},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":148,"score":25},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":115,"rankChange":1,"score":0.18},
     "economist": {"year":2025,"rating":"Authoritarian","rank":116,"rankChange":-7,"score":3.27},
     "cpi": {"year":2025,"rating":"20–29","rank":142,"rankChange":4,"score":26},
@@ -1354,7 +1355,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "KH": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":154,"rankChange":0,"score":23},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":155,"score":22},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":165,"rankChange":1,"score":0.05},
     "economist": {"year":2025,"rating":"Authoritarian","rank":131,"rankChange":-10,"score":2.7},
     "cpi": {"year":2025,"rating":"20–29","rank":163,"rankChange":-5,"score":20},
@@ -1370,12 +1371,12 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":90,"rankChange":-1,"score":0.233}
   },
   "KI": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":40,"rankChange":0,"score":89},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":42,"score":89},
     "hdi": {"year":2023,"rating":"Medium","rank":140,"rankChange":0,"score":0.644},
     "softPower": {"year":2026,"rating":"10–19","rank":193,"score":19.7}
   },
   "KM": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":126,"rankChange":0,"score":42},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":128,"score":41},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":126,"rankChange":10,"score":0.13},
     "economist": {"year":2025,"rating":"Authoritarian","rank":125,"rankChange":-3,"score":2.81},
     "cpi": {"year":2025,"rating":"20–29","rank":163,"rankChange":-5,"score":20},
@@ -1387,13 +1388,13 @@ export const DEMOCRACY_DATA = {
     "etr": {"year":2024,"rating":"High","rank":122,"score":3.296}
   },
   "KN": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":40,"rankChange":0,"score":89},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":42,"score":89},
     "hdi": {"year":2023,"rating":"Very High","rank":58,"rankChange":2,"score":0.84},
     "softPower": {"year":2026,"rating":"20–29","rank":189,"score":21.5},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":40,"score":0.63,"rankChange":-2}
   },
   "KP": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":189,"rankChange":0,"score":3},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":191,"score":3},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":178,"rankChange":-1,"score":0.01},
     "economist": {"year":2025,"rating":"Authoritarian","rank":165,"rankChange":-2,"score":1.08},
     "cpi": {"year":2025,"rating":"10–19","rank":172,"rankChange":-2,"score":15},
@@ -1405,7 +1406,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "KR": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":65,"rankChange":0,"score":81},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":57,"score":83},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":22,"rankChange":20,"score":0.74},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":32,"rankChange":-1,"score":7.75},
     "cpi": {"year":2025,"rating":"60–69","rank":31,"rankChange":-1,"score":63},
@@ -1424,7 +1425,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":86,"rankChange":-1,"score":0.333}
   },
   "KW": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":139,"rankChange":0,"score":31},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":142,"score":30},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":129,"rankChange":-11,"score":0.13},
     "economist": {"year":2025,"rating":"Authoritarian","rank":130,"rankChange":-2,"score":2.78},
     "cpi": {"year":2025,"rating":"40–49","rank":65,"rankChange":0,"score":46},
@@ -1441,7 +1442,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "KZ": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":154,"rankChange":0,"score":23},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":154,"score":23},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":127,"rankChange":2,"score":0.13},
     "economist": {"year":2025,"rating":"Authoritarian","rank":123,"rankChange":-7,"score":2.91},
     "cpi": {"year":2025,"rating":"30–39","rank":96,"rankChange":-8,"score":38},
@@ -1458,7 +1459,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "LA": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":169,"rankChange":0,"score":13},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":170,"score":13},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":140,"rankChange":0,"score":0.11},
     "economist": {"year":2025,"rating":"Authoritarian","rank":159,"rankChange":-1,"score":1.71},
     "cpi": {"year":2025,"rating":"30–39","rank":109,"rankChange":5,"score":34},
@@ -1473,7 +1474,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "LB": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":130,"rankChange":0,"score":39},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":128,"score":41},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":103,"rankChange":7,"score":0.27},
     "economist": {"year":2025,"rating":"Authoritarian","rank":109,"rankChange":-2,"score":3.81},
     "cpi": {"year":2025,"rating":"20–29","rank":153,"rankChange":1,"score":23},
@@ -1489,20 +1490,20 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":72,"rankChange":-6,"score":0.648}
   },
   "LC": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":33,"rankChange":0,"score":91},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":34,"score":91},
     "cpi": {"year":2025,"rating":"50–59","rank":39,"rankChange":-1,"score":59},
     "hdi": {"year":2023,"rating":"High","rank":103,"rankChange":-1,"score":0.748},
     "softPower": {"year":2026,"rating":"20–29","rank":178,"score":24.5},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":43,"score":0.62,"rankChange":0}
   },
   "LI": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":36,"rankChange":0,"score":90},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":37,"score":90},
     "rsfPress": {"year":2026,"rating":"Satisfactory","rank":13,"rankChange":-1,"score":82.62},
     "hdi": {"year":2023,"rating":"Very High","rank":17,"rankChange":-2,"score":0.938},
     "softPower": {"year":2026,"rating":"30–39","rank":91,"rankChange":-6,"score":34.6}
   },
   "LK": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":104,"rankChange":0,"score":58},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":97,"score":63},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":44,"rankChange":20,"score":0.61},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":56,"rankChange":10,"score":6.57},
     "cpi": {"year":2025,"rating":"30–39","rank":107,"rankChange":14,"score":35},
@@ -1519,7 +1520,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "LR": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":95,"rankChange":0,"score":64},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":94,"score":65},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":76,"rankChange":2,"score":0.42},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":80,"rankChange":-1,"score":5.57},
     "cpi": {"year":2025,"rating":"20–29","rank":136,"rankChange":-1,"score":28},
@@ -1534,7 +1535,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "LS": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":90,"rankChange":0,"score":66},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":90,"score":67},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":62,"rankChange":-2,"score":0.51},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":66,"rankChange":3,"score":6.23},
     "cpi": {"year":2025,"rating":"30–39","rank":99,"rankChange":0,"score":37},
@@ -1548,7 +1549,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "LT": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":40,"rankChange":0,"score":89},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":37,"score":90},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":27,"rankChange":1,"score":0.71},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":39,"rankChange":-4,"score":7.55},
     "cpi": {"year":2025,"rating":"60–69","rank":28,"rankChange":4,"score":65},
@@ -1566,7 +1567,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":83,"rankChange":-1,"score":0.423}
   },
   "LU": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":5,"rankChange":0,"score":97},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":6,"score":97},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":17,"rankChange":-2,"score":0.78},
     "economist": {"year":2025,"rating":"Full democracy","rank":9,"rankChange":1,"score":9.08},
     "cpi": {"year":2025,"rating":"70–79","rank":8,"rankChange":-3,"score":78},
@@ -1581,7 +1582,7 @@ export const DEMOCRACY_DATA = {
     "etr": {"year":2024,"rating":"Low","rank":41,"score":1.939}
   },
   "LV": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":40,"rankChange":0,"score":89},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":42,"score":89},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":20,"rankChange":0,"score":0.75},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":33,"rankChange":-1,"score":7.73},
     "cpi": {"year":2025,"rating":"60–69","rank":37,"rankChange":1,"score":60},
@@ -1598,7 +1599,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":91,"rankChange":-1,"score":0.233}
   },
   "LY": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":175,"rankChange":0,"score":10},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":176,"score":10},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":147,"rankChange":-4,"score":0.1},
     "economist": {"year":2025,"rating":"Authoritarian","rank":141,"rankChange":-3,"score":2.31},
     "cpi": {"year":2025,"rating":"10–19","rank":177,"rankChange":-4,"score":13},
@@ -1612,7 +1613,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":59,"rankChange":-4,"score":1.007}
   },
   "MA": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":132,"rankChange":0,"score":37},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":132,"score":37},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":107,"rankChange":-2,"score":0.25},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":91,"rankChange":-2,"score":4.97},
     "cpi": {"year":2025,"rating":"30–39","rank":91,"rankChange":8,"score":39},
@@ -1629,11 +1630,11 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "MC": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":59,"rankChange":0,"score":82},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":61,"score":82},
     "softPower": {"year":2026,"rating":"40–49","rank":36,"rankChange":1,"score":45.5}
   },
   "MD": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":100,"rankChange":0,"score":60},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":104,"score":60},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":73,"rankChange":-12,"score":0.45},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":77,"rankChange":-7,"score":5.86},
     "cpi": {"year":2025,"rating":"40–49","rank":80,"rankChange":-4,"score":42},
@@ -1649,7 +1650,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "ME": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":82,"rankChange":0,"score":69},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":88,"score":68},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":66,"rankChange":-3,"score":0.5},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":53,"rankChange":-4,"score":6.73},
     "cpi": {"year":2025,"rating":"40–49","rank":65,"rankChange":0,"score":46},
@@ -1664,7 +1665,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "MG": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":108,"rankChange":0,"score":55},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":117,"score":50},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":113,"rankChange":0,"score":0.19},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":88,"rankChange":-6,"score":5.06},
     "cpi": {"year":2025,"rating":"20–29","rank":148,"rankChange":-8,"score":25},
@@ -1679,12 +1680,12 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "MH": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":24,"rankChange":0,"score":93},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":25,"score":93},
     "hdi": {"year":2023,"rating":"High","rank":108,"rankChange":2,"score":0.733},
     "softPower": {"year":2026,"rating":"20–29","rank":181,"score":24}
   },
   "MK": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":88,"rankChange":0,"score":67},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":90,"score":67},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":85,"rankChange":1,"score":0.37},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":64,"rankChange":-3,"score":6.28},
     "cpi": {"year":2025,"rating":"40–49","rank":84,"rankChange":4,"score":40},
@@ -1699,7 +1700,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "ML": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":150,"rankChange":0,"score":24},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":157,"score":21},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":122,"rankChange":3,"score":0.15},
     "economist": {"year":2025,"rating":"Authoritarian","rank":140,"rankChange":-3,"score":2.4},
     "cpi": {"year":2025,"rating":"20–29","rank":136,"rankChange":-1,"score":28},
@@ -1714,7 +1715,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"High","rank":5,"rankChange":-1,"score":7.586}
   },
   "MM": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":181,"rankChange":0,"score":7},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":190,"score":4},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":177,"rankChange":-1,"score":0.01},
     "economist": {"year":2025,"rating":"Authoritarian","rank":166,"rankChange":-2,"score":0.96},
     "cpi": {"year":2025,"rating":"10–19","rank":169,"rankChange":-1,"score":16},
@@ -1729,7 +1730,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"High","rank":14,"rankChange":-3,"score":6.245}
   },
   "MN": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":53,"rankChange":0,"score":84},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":54,"score":84},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":75,"rankChange":7,"score":0.42},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":57,"rankChange":-5,"score":6.5},
     "cpi": {"year":2025,"rating":"30–39","rank":124,"rankChange":-10,"score":31},
@@ -1746,7 +1747,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "MR": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":130,"rankChange":0,"score":39},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":131,"score":38},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":130,"rankChange":-2,"score":0.13},
     "economist": {"year":2025,"rating":"Authoritarian","rank":108,"rankChange":-2,"score":3.84},
     "cpi": {"year":2025,"rating":"30–39","rank":130,"rankChange":0,"score":30},
@@ -1760,7 +1761,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "MT": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":49,"rankChange":0,"score":87},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":47,"score":88},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":43,"rankChange":0,"score":0.62},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":28,"rankChange":-2,"score":7.93},
     "cpi": {"year":2025,"rating":"40–49","rank":60,"rankChange":5,"score":49},
@@ -1772,7 +1773,7 @@ export const DEMOCRACY_DATA = {
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":31,"score":0.67,"rankChange":-1}
   },
   "MU": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":50,"rankChange":0,"score":86},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":49,"score":87},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":38,"rankChange":47,"score":0.64},
     "economist": {"year":2025,"rating":"Full democracy","rank":21,"rankChange":-2,"score":8.23},
     "cpi": {"year":2025,"rating":"40–49","rank":61,"rankChange":-5,"score":48},
@@ -1787,7 +1788,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "MV": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":125,"rankChange":0,"score":43},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":128,"score":41},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":77,"rankChange":-2,"score":0.42},
     "cpi": {"year":2025,"rating":"30–39","rank":91,"rankChange":5,"score":39},
     "rsfPress": {"year":2026,"rating":"Difficult","rank":108,"rankChange":-4,"score":49.23},
@@ -1796,7 +1797,7 @@ export const DEMOCRACY_DATA = {
     "softPower": {"year":2026,"rating":"30–39","rank":59,"rankChange":-2,"score":39.2}
   },
   "MW": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":91,"rankChange":0,"score":65},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":88,"score":68},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":70,"rankChange":-3,"score":0.46},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":70,"rankChange":5,"score":6.1},
     "cpi": {"year":2025,"rating":"30–39","rank":109,"rankChange":-2,"score":34},
@@ -1811,7 +1812,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "MX": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":102,"rankChange":0,"score":59},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":106,"score":58},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":110,"rankChange":-2,"score":0.22},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":81,"rankChange":2,"score":5.4},
     "cpi": {"year":2025,"rating":"20–29","rank":141,"rankChange":-1,"score":27},
@@ -1830,7 +1831,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":87,"rankChange":-2,"score":0.325}
   },
   "MY": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":111,"rankChange":0,"score":53},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":111,"score":53},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":88,"rankChange":0,"score":0.35},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":42,"rankChange":1,"score":7.11},
     "cpi": {"year":2025,"rating":"50–59","rank":54,"rankChange":3,"score":52},
@@ -1849,7 +1850,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":57,"rankChange":-3,"score":1.092}
   },
   "MZ": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":127,"rankChange":0,"score":41},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":125,"score":42},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":118,"rankChange":-3,"score":0.17},
     "economist": {"year":2025,"rating":"Authoritarian","rank":113,"rankChange":-2,"score":3.38},
     "cpi": {"year":2025,"rating":"20–29","rank":161,"rankChange":-15,"score":21},
@@ -1864,7 +1865,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"High","rank":15,"rankChange":1,"score":6.022}
   },
   "NA": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":77,"rankChange":0,"score":73},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":78,"score":73},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":60,"rankChange":-2,"score":0.52},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":59,"rankChange":-2,"score":6.48},
     "cpi": {"year":2025,"rating":"40–49","rank":65,"rankChange":-6,"score":46},
@@ -1881,7 +1882,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "NE": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":142,"rankChange":0,"score":30},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":146,"score":27},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":116,"rankChange":1,"score":0.18},
     "economist": {"year":2025,"rating":"Authoritarian","rank":153,"rankChange":-14,"score":1.95},
     "cpi": {"year":2025,"rating":"30–39","rank":124,"rankChange":-17,"score":31},
@@ -1896,7 +1897,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"High","rank":3,"rankChange":2,"score":7.816}
   },
   "NG": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":123,"rankChange":0,"score":44},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":123,"score":44},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":96,"rankChange":0,"score":0.31},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":105,"rankChange":-1,"score":4.1},
     "cpi": {"year":2025,"rating":"20–29","rank":142,"rankChange":-2,"score":26},
@@ -1914,7 +1915,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"High","rank":4,"rankChange":2,"score":7.792}
   },
   "NI": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":168,"rankChange":0,"score":14},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":169,"score":14},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":175,"rankChange":0,"score":0.02},
     "economist": {"year":2025,"rating":"Authoritarian","rank":150,"rankChange":-5,"score":1.97},
     "cpi": {"year":2025,"rating":"10–19","rank":175,"rankChange":-3,"score":14},
@@ -1929,7 +1930,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "NL": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":5,"rankChange":0,"score":97},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":6,"score":97},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":18,"rankChange":0,"score":0.77},
     "economist": {"year":2025,"rating":"Full democracy","rank":11,"rankChange":-2,"score":8.93},
     "cpi": {"year":2025,"rating":"70–79","rank":8,"rankChange":1,"score":78},
@@ -1948,7 +1949,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":52,"rankChange":10,"score":1.475}
   },
   "NO": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":2,"rankChange":0,"score":99},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":2,"score":99},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":3,"rankChange":0,"score":0.85},
     "economist": {"year":2025,"rating":"Full democracy","rank":1,"rankChange":0,"score":9.81},
     "cpi": {"year":2025,"rating":"80–89","rank":4,"rankChange":1,"score":81},
@@ -1967,7 +1968,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":69,"rankChange":-1,"score":0.725}
   },
   "NP": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":98,"rankChange":0,"score":62},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":105,"score":59},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":64,"rankChange":-8,"score":0.51},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":106,"rankChange":-12,"score":4.01},
     "cpi": {"year":2025,"rating":"30–39","rank":109,"rankChange":-2,"score":34},
@@ -1983,12 +1984,12 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":89,"rankChange":-18,"score":0.288}
   },
   "NR": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":73,"rankChange":0,"score":75},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":73,"score":75},
     "hdi": {"year":2023,"rating":"High","rank":124,"rankChange":1,"score":0.703},
     "softPower": {"year":2026,"rating":"20–29","rank":192,"score":20.7}
   },
   "NZ": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":2,"rankChange":0,"score":99},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":2,"score":99},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":14,"rankChange":-6,"score":0.79},
     "economist": {"year":2025,"rating":"Full democracy","rank":2,"rankChange":0,"score":9.62},
     "cpi": {"year":2025,"rating":"80–89","rank":4,"rankChange":0,"score":81},
@@ -2006,7 +2007,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":95,"rankChange":0,"score":0.114}
   },
   "OM": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":150,"rankChange":0,"score":24},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":152,"score":24},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":125,"rankChange":2,"score":0.14},
     "economist": {"year":2025,"rating":"Authoritarian","rank":121,"rankChange":-3,"score":3.05},
     "cpi": {"year":2025,"rating":"50–59","rank":54,"rankChange":-4,"score":52},
@@ -2022,7 +2023,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":43,"rankChange":-6,"score":2.282}
   },
   "PA": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":57,"rankChange":0,"score":83},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":61,"score":82},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":49,"rankChange":-1,"score":0.57},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":44,"rankChange":2,"score":7.04},
     "cpi": {"year":2025,"rating":"30–39","rank":116,"rankChange":-2,"score":33},
@@ -2038,7 +2039,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "PE": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":88,"rankChange":0,"score":67},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":93,"score":66},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":63,"rankChange":-1,"score":0.51},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":76,"rankChange":1,"score":5.88},
     "cpi": {"year":2025,"rating":"30–39","rank":130,"rankChange":-3,"score":30},
@@ -2056,7 +2057,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":49,"rankChange":-5,"score":1.572}
   },
   "PG": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":99,"rankChange":0,"score":61},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":100,"score":61},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":80,"rankChange":4,"score":0.38},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":75,"rankChange":-3,"score":5.9},
     "cpi": {"year":2025,"rating":"20–29","rank":142,"rankChange":-15,"score":26},
@@ -2070,7 +2071,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "PH": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":104,"rankChange":0,"score":58},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":106,"score":58},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":100,"rankChange":0,"score":0.29},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":62,"rankChange":-12,"score":6.31},
     "cpi": {"year":2025,"rating":"30–39","rank":120,"rankChange":-6,"score":32},
@@ -2089,7 +2090,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":23,"rankChange":-2,"score":4.719}
   },
   "PK": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":138,"rankChange":0,"score":32},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":138,"score":32},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":117,"rankChange":-3,"score":0.18},
     "economist": {"year":2025,"rating":"Authoritarian","rank":139,"rankChange":-17,"score":2.44},
     "cpi": {"year":2025,"rating":"20–29","rank":136,"rankChange":-1,"score":28},
@@ -2106,7 +2107,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very High","rank":1,"rankChange":1,"score":8.574}
   },
   "PL": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":59,"rankChange":0,"score":82},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":61,"score":82},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":36,"rankChange":8,"score":0.65},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":34,"rankChange":4,"score":7.65},
     "cpi": {"year":2025,"rating":"50–59","rank":52,"rankChange":1,"score":53},
@@ -2135,7 +2136,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":22,"rankChange":2,"score":4.8}
   },
   "PT": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":11,"rankChange":0,"score":96},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":13,"score":96},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":26,"rankChange":-4,"score":0.72},
     "economist": {"year":2025,"rating":"Full democracy","rank":20,"rankChange":2,"score":8.28},
     "cpi": {"year":2025,"rating":"50–59","rank":46,"rankChange":-3,"score":56},
@@ -2154,12 +2155,12 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":84,"rankChange":20,"score":0.423}
   },
   "PW": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":28,"rankChange":0,"score":92},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":29,"score":92},
     "hdi": {"year":2023,"rating":"High","rank":84,"rankChange":-3,"score":0.786},
     "softPower": {"year":2026,"rating":"20–29","rank":184,"score":23.6}
   },
   "PY": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":96,"rankChange":0,"score":63},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":97,"score":63},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":83,"rankChange":-2,"score":0.38},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":73,"rankChange":1,"score":6.04},
     "cpi": {"year":2025,"rating":"20–29","rank":150,"rankChange":-1,"score":24},
@@ -2175,7 +2176,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":-2,"score":0}
   },
   "QA": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":148,"rankChange":0,"score":25},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":148,"score":25},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":151,"rankChange":-3,"score":0.09},
     "economist": {"year":2025,"rating":"Authoritarian","rank":118,"rankChange":-3,"score":3.17},
     "cpi": {"year":2025,"rating":"50–59","rank":41,"rankChange":-3,"score":58},
@@ -2190,7 +2191,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "RO": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":59,"rankChange":0,"score":82},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":57,"score":83},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":69,"rankChange":3,"score":0.46},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":69,"rankChange":2,"score":6.11},
     "cpi": {"year":2025,"rating":"40–49","rank":70,"rankChange":-5,"score":45},
@@ -2208,7 +2209,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "RS": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":106,"rankChange":0,"score":56},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":111,"score":53},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":112,"rankChange":-1,"score":0.21},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":63,"rankChange":0,"score":6.3},
     "cpi": {"year":2025,"rating":"30–39","rank":116,"rankChange":-11,"score":33},
@@ -2225,7 +2226,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":66,"rankChange":20,"score":0.782}
   },
   "RU": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":171,"rankChange":0,"score":12},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":173,"score":12},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":162,"rankChange":-3,"score":0.06},
     "economist": {"year":2025,"rating":"Authoritarian","rank":148,"rankChange":0,"score":2.03},
     "cpi": {"year":2025,"rating":"20–29","rank":157,"rankChange":-3,"score":22},
@@ -2241,7 +2242,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":17,"rankChange":0,"score":5.593}
   },
   "RW": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":156,"rankChange":0,"score":21},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":157,"score":21},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":152,"rankChange":-2,"score":0.09},
     "economist": {"year":2025,"rating":"Authoritarian","rank":114,"rankChange":-2,"score":3.34},
     "cpi": {"year":2025,"rating":"50–59","rank":41,"rankChange":2,"score":58},
@@ -2255,7 +2256,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "SA": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":178,"rankChange":0,"score":9},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":180,"score":9},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":167,"rankChange":0,"score":0.05},
     "economist": {"year":2025,"rating":"Authoritarian","rank":147,"rankChange":-1,"score":2.08},
     "cpi": {"year":2025,"rating":"50–59","rank":45,"rankChange":-7,"score":57},
@@ -2272,7 +2273,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":80,"rankChange":-5,"score":0.443}
   },
   "SB": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":73,"rankChange":0,"score":75},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":75,"score":74},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":55,"rankChange":-1,"score":0.54},
     "cpi": {"year":2025,"rating":"40–49","rank":73,"rankChange":3,"score":44},
     "hdi": {"year":2023,"rating":"Medium","rank":156,"rankChange":-1,"score":0.584},
@@ -2280,7 +2281,7 @@ export const DEMOCRACY_DATA = {
     "etr": {"year":2024,"rating":"High","rank":127,"score":3.426}
   },
   "SC": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":67,"rankChange":0,"score":80},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":66,"score":81},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":31,"rankChange":6,"score":0.68},
     "cpi": {"year":2025,"rating":"60–69","rank":24,"rankChange":-6,"score":68},
     "rsfPress": {"year":2026,"rating":"Satisfactory","rank":35,"rankChange":10,"score":73.04},
@@ -2288,7 +2289,7 @@ export const DEMOCRACY_DATA = {
     "softPower": {"year":2026,"rating":"20–29","rank":150,"rankChange":-3,"score":28.7}
   },
   "SD": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":191,"rankChange":0,"score":2},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":193,"score":1},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":174,"rankChange":0,"score":0.03},
     "economist": {"year":2025,"rating":"Authoritarian","rank":161,"rankChange":-1,"score":1.46},
     "cpi": {"year":2025,"rating":"10–19","rank":175,"rankChange":-5,"score":14},
@@ -2301,7 +2302,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "SE": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":2,"rankChange":0,"score":99},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":2,"score":99},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":2,"rankChange":2,"score":0.85},
     "economist": {"year":2025,"rating":"Full democracy","rank":6,"rankChange":-3,"score":9.35},
     "cpi": {"year":2025,"rating":"80–89","rank":6,"rankChange":2,"score":80},
@@ -2320,7 +2321,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":46,"rankChange":4,"score":1.839}
   },
   "SG": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":118,"rankChange":0,"score":48},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":119,"score":48},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":87,"rankChange":3,"score":0.36},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":68,"rankChange":-1,"score":6.18},
     "cpi": {"year":2025,"rating":"80–89","rank":3,"rankChange":0,"score":84},
@@ -2339,7 +2340,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "SI": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":11,"rankChange":0,"score":96},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":6,"score":97},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":47,"rankChange":-6,"score":0.59},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":29,"rankChange":0,"score":7.82},
     "cpi": {"year":2025,"rating":"50–59","rank":41,"rankChange":-5,"score":58},
@@ -2356,7 +2357,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "SK": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":40,"rankChange":0,"score":89},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":47,"score":88},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":50,"rankChange":-3,"score":0.57},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":48,"rankChange":-7,"score":6.94},
     "cpi": {"year":2025,"rating":"40–49","rank":61,"rankChange":-2,"score":48},
@@ -2374,7 +2375,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":73,"rankChange":-2,"score":0.616}
   },
   "SL": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":102,"rankChange":0,"score":59},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":100,"score":61},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":90,"rankChange":-3,"score":0.35},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":98,"rankChange":2,"score":4.44},
     "cpi": {"year":2025,"rating":"30–39","rank":109,"rankChange":5,"score":34},
@@ -2389,12 +2390,12 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "SM": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":5,"rankChange":0,"score":97},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":6,"score":97},
     "hdi": {"year":2023,"rating":"Very High","rank":29,"rankChange":1,"score":0.915},
     "softPower": {"year":2026,"rating":"30–39","rank":132,"rankChange":-3,"score":30.8}
   },
   "SN": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":82,"rankChange":0,"score":69},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":83,"score":70},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":68,"rankChange":2,"score":0.48},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":72,"rankChange":1,"score":6.05},
     "cpi": {"year":2025,"rating":"40–49","rank":65,"rankChange":4,"score":46},
@@ -2410,7 +2411,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":58,"rankChange":-2,"score":1.07}
   },
   "SO": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":180,"rankChange":0,"score":8},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":183,"score":8},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":128,"rankChange":2,"score":0.13},
     "cpi": {"year":2025,"rating":"0–9","rank":181,"rankChange":-2,"score":9},
     "rsfPress": {"year":2026,"rating":"Difficult","rank":126,"rankChange":10,"score":43.84},
@@ -2422,7 +2423,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"High","rank":7,"rankChange":0,"score":7.391}
   },
   "SR": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":67,"rankChange":0,"score":80},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":66,"score":81},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":41,"rankChange":-1,"score":0.63},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":45,"rankChange":2,"score":7.03},
     "cpi": {"year":2025,"rating":"30–39","rank":96,"rankChange":-8,"score":38},
@@ -2434,7 +2435,7 @@ export const DEMOCRACY_DATA = {
     "etr": {"year":2024,"rating":"Medium","rank":97,"score":2.795}
   },
   "SS": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":192,"rankChange":0,"score":1},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":195,"score":0},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":156,"rankChange":0,"score":0.06},
     "cpi": {"year":2025,"rating":"0–9","rank":181,"rankChange":-1,"score":9},
     "rsfPress": {"year":2026,"rating":"Difficult","rank":118,"rankChange":-9,"score":46.16},
@@ -2445,14 +2446,14 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "ST": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":53,"rankChange":0,"score":84},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":54,"score":84},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":61,"rankChange":-4,"score":0.52},
     "cpi": {"year":2025,"rating":"40–49","rank":70,"rankChange":-1,"score":45},
     "hdi": {"year":2023,"rating":"Medium","rank":141,"rankChange":0,"score":0.637},
     "softPower": {"year":2026,"rating":"20–29","rank":175,"rankChange":-3,"score":25}
   },
   "SV": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":121,"rankChange":0,"score":47},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":125,"score":42},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":153,"rankChange":-2,"score":0.09},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":96,"rankChange":-3,"score":4.57},
     "cpi": {"year":2025,"rating":"30–39","rank":120,"rankChange":10,"score":32},
@@ -2468,7 +2469,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "SY": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":185,"rankChange":0,"score":5},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":176,"score":10},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":163,"rankChange":0,"score":0.05},
     "economist": {"year":2025,"rating":"Authoritarian","rank":162,"rankChange":-1,"score":1.37},
     "cpi": {"year":2025,"rating":"10–19","rank":172,"rankChange":5,"score":15},
@@ -2481,7 +2482,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"High","rank":6,"rankChange":-3,"score":7.545}
   },
   "SZ": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":163,"rankChange":0,"score":17},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":165,"score":17},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":148,"rankChange":-3,"score":0.1},
     "economist": {"year":2025,"rating":"Authoritarian","rank":134,"rankChange":-2,"score":2.6},
     "cpi": {"year":2025,"rating":"20–29","rank":153,"rankChange":-18,"score":23},
@@ -2495,7 +2496,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":98,"rankChange":-1,"score":0.044}
   },
   "TD": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":165,"rankChange":0,"score":15},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":167,"score":15},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":158,"rankChange":4,"score":0.06},
     "economist": {"year":2025,"rating":"Authoritarian","rank":158,"rankChange":-2,"score":1.76},
     "cpi": {"year":2025,"rating":"20–29","rank":157,"rankChange":1,"score":22},
@@ -2509,7 +2510,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":26,"rankChange":-7,"score":4.625}
   },
   "TG": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":127,"rankChange":0,"score":41},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":132,"score":37},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":121,"rankChange":-1,"score":0.16},
     "economist": {"year":2025,"rating":"Authoritarian","rank":124,"rankChange":-5,"score":2.88},
     "cpi": {"year":2025,"rating":"30–39","rank":120,"rankChange":1,"score":32},
@@ -2524,7 +2525,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":30,"rankChange":-5,"score":4.305}
   },
   "TH": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":134,"rankChange":0,"score":34},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":135,"score":33},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":95,"rankChange":4,"score":0.31},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":54,"rankChange":8,"score":6.59},
     "cpi": {"year":2025,"rating":"30–39","rank":116,"rankChange":-9,"score":33},
@@ -2543,7 +2544,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":20,"rankChange":6,"score":5.275}
   },
   "TJ": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":185,"rankChange":0,"score":5},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":187,"score":5},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":168,"rankChange":2,"score":0.04},
     "economist": {"year":2025,"rating":"Authoritarian","rank":155,"rankChange":2,"score":1.94},
     "cpi": {"year":2025,"rating":"10–19","rank":166,"rankChange":-2,"score":19},
@@ -2557,7 +2558,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":41,"rankChange":10,"score":2.602}
   },
   "TL": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":79,"rankChange":0,"score":72},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":78,"score":73},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":54,"rankChange":-1,"score":0.55},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":46,"rankChange":-1,"score":6.97},
     "cpi": {"year":2025,"rating":"40–49","rank":73,"rankChange":0,"score":44},
@@ -2571,7 +2572,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "TM": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":192,"rankChange":0,"score":1},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":193,"score":1},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":173,"rankChange":0,"score":0.03},
     "economist": {"year":2025,"rating":"Authoritarian","rank":160,"rankChange":-1,"score":1.54},
     "cpi": {"year":2025,"rating":"10–19","rank":167,"rankChange":-2,"score":17},
@@ -2583,7 +2584,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "TN": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":123,"rankChange":0,"score":44},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":125,"score":42},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":104,"rankChange":-1,"score":0.27},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":94,"rankChange":-3,"score":4.65},
     "cpi": {"year":2025,"rating":"30–39","rank":91,"rankChange":1,"score":39},
@@ -2599,13 +2600,13 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":50,"rankChange":-7,"score":1.522}
   },
   "TO": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":67,"rankChange":0,"score":80},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":72,"score":79},
     "rsfPress": {"year":2026,"rating":"Problematic","rank":51,"rankChange":-5,"score":66.62},
     "hdi": {"year":2023,"rating":"High","rank":92,"rankChange":-1,"score":0.769},
     "softPower": {"year":2026,"rating":"20–29","rank":187,"score":22.7}
   },
   "TR": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":137,"rankChange":0,"score":33},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":138,"score":32},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":139,"rankChange":3,"score":0.11},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":102,"rankChange":-1,"score":4.26},
     "cpi": {"year":2025,"rating":"30–39","rank":124,"rankChange":-17,"score":31},
@@ -2624,7 +2625,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":36,"rankChange":-4,"score":3.212}
   },
   "TT": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":59,"rankChange":0,"score":82},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":57,"score":83},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":34,"rankChange":1,"score":0.67},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":43,"rankChange":1,"score":7.09},
     "cpi": {"year":2025,"rating":"40–49","rank":81,"rankChange":1,"score":41},
@@ -2639,12 +2640,12 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "TV": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":24,"rankChange":0,"score":93},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":25,"score":93},
     "hdi": {"year":2023,"rating":"Medium","rank":129,"rankChange":1,"score":0.689},
     "softPower": {"year":2026,"rating":"20–29","rank":190,"score":21.5}
   },
   "TZ": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":133,"rankChange":0,"score":35},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":143,"score":28},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":97,"rankChange":-8,"score":0.3},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":87,"rankChange":-2,"score":5.13},
     "cpi": {"year":2025,"rating":"40–49","rank":84,"rankChange":-2,"score":40},
@@ -2660,7 +2661,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":63,"rankChange":-1,"score":0.888}
   },
   "UA": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":114,"rankChange":0,"score":51},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":114,"score":51},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":108,"rankChange":1,"score":0.24},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":93,"rankChange":-3,"score":4.79},
     "cpi": {"year":2025,"rating":"30–39","rank":104,"rankChange":1,"score":36},
@@ -2676,7 +2677,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":39,"rankChange":8,"score":2.927}
   },
   "UG": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":134,"rankChange":0,"score":34},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":135,"score":33},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":119,"rankChange":0,"score":0.17},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":100,"rankChange":-4,"score":4.31},
     "cpi": {"year":2025,"rating":"20–29","rank":148,"rankChange":-8,"score":25},
@@ -2691,7 +2692,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Low","rank":34,"rankChange":-1,"score":3.25}
   },
   "US": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":53,"rankChange":0,"score":84},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":66,"score":81},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":51,"rankChange":-28,"score":0.57},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":34,"rankChange":-7,"score":7.65},
     "cpi": {"year":2025,"rating":"60–69","rank":29,"rankChange":-1,"score":64},
@@ -2710,7 +2711,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":28,"rankChange":6,"score":4.521}
   },
   "UY": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":11,"rankChange":0,"score":96},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":6,"score":97},
     "vDem": {"year":2026,"rating":"Liberal Democracy","rank":13,"rankChange":4,"score":0.79},
     "economist": {"year":2025,"rating":"Full democracy","rank":12,"rankChange":2,"score":8.92},
     "cpi": {"year":2025,"rating":"70–79","rank":17,"rankChange":-4,"score":73},
@@ -2726,7 +2727,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":-1,"score":0}
   },
   "UZ": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":171,"rankChange":0,"score":12},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":173,"score":12},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":154,"rankChange":1,"score":0.08},
     "economist": {"year":2025,"rating":"Authoritarian","rank":146,"rankChange":-2,"score":2.1},
     "cpi": {"year":2025,"rating":"30–39","rank":124,"rankChange":-3,"score":31},
@@ -2742,14 +2743,14 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":96,"rankChange":-3,"score":0.114}
   },
   "VC": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":36,"rankChange":0,"score":90},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":37,"score":90},
     "cpi": {"year":2025,"rating":"60–69","rank":31,"rankChange":1,"score":63},
     "hdi": {"year":2023,"rating":"High","rank":76,"rankChange":-1,"score":0.798},
     "softPower": {"year":2026,"rating":"20–29","rank":186,"score":22.9},
     "wjpRuleOfLaw": {"year":2025,"rating":"0.60–0.69","rank":42,"score":0.62,"rankChange":2}
   },
   "VE": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":169,"rankChange":0,"score":13},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":170,"score":13},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":170,"rankChange":-1,"score":0.04},
     "economist": {"year":2025,"rating":"Authoritarian","rank":144,"rankChange":-4,"score":2.13},
     "cpi": {"year":2025,"rating":"10–19","rank":180,"rankChange":-2,"score":10},
@@ -2765,7 +2766,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Very Low","rank":85,"rankChange":-1,"score":0.396}
   },
   "VN": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":158,"rankChange":0,"score":20},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":159,"score":20},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":144,"rankChange":-3,"score":0.1},
     "economist": {"year":2025,"rating":"Authoritarian","rank":133,"rankChange":-2,"score":2.62},
     "cpi": {"year":2025,"rating":"40–49","rank":81,"rankChange":7,"score":41},
@@ -2782,7 +2783,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "VU": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":59,"rankChange":0,"score":82},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":61,"score":82},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":42,"rankChange":-10,"score":0.62},
     "cpi": {"year":2025,"rating":"40–49","rank":63,"rankChange":-6,"score":47},
     "hdi": {"year":2023,"rating":"Medium","rank":146,"rankChange":-1,"score":0.621},
@@ -2791,13 +2792,13 @@ export const DEMOCRACY_DATA = {
     "etr": {"year":2024,"rating":"High","rank":105,"score":3.056}
   },
   "WS": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":53,"rankChange":0,"score":84},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":54,"score":84},
     "rsfPress": {"year":2026,"rating":"Problematic","rank":59,"rankChange":-15,"score":64.53},
     "hdi": {"year":2023,"rating":"High","rank":122,"rankChange":1,"score":0.708},
     "softPower": {"year":2026,"rating":"20–29","rank":174,"rankChange":-3,"score":25.1}
   },
   "YE": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":175,"rankChange":0,"score":10},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":176,"score":10},
     "vDem": {"year":2026,"rating":"Closed Autocracy","rank":169,"rankChange":-1,"score":0.04},
     "economist": {"year":2025,"rating":"Authoritarian","rank":153,"rankChange":0,"score":1.95},
     "cpi": {"year":2025,"rating":"10–19","rank":177,"rankChange":-4,"score":13},
@@ -2811,7 +2812,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"Medium","rank":25,"rankChange":-2,"score":4.653}
   },
   "ZA": {
-    "freedomHouse": {"year":2024,"rating":"Free","rank":65,"rankChange":0,"score":81},
+    "freedomHouse": {"year":2026,"rating":"Free","rank":66,"score":81},
     "vDem": {"year":2026,"rating":"Electoral Democracy","rank":39,"rankChange":-1,"score":0.63},
     "economist": {"year":2025,"rating":"Flawed democracy","rank":41,"rankChange":1,"score":7.16},
     "cpi": {"year":2025,"rating":"40–49","rank":81,"rankChange":1,"score":41},
@@ -2830,7 +2831,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "ZM": {
-    "freedomHouse": {"year":2024,"rating":"Partly Free","rank":111,"rankChange":0,"score":53},
+    "freedomHouse": {"year":2026,"rating":"Partly Free","rank":111,"score":53},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":84,"rankChange":-4,"score":0.38},
     "economist": {"year":2025,"rating":"Hybrid regime","rank":78,"rankChange":-2,"score":5.82},
     "cpi": {"year":2025,"rating":"30–39","rank":99,"rankChange":-7,"score":37},
@@ -2846,7 +2847,7 @@ export const DEMOCRACY_DATA = {
     "gti": {"year":2026,"rating":"No Impact","rank":100,"rankChange":1,"score":0}
   },
   "ZW": {
-    "freedomHouse": {"year":2024,"rating":"Not Free","rank":146,"rankChange":0,"score":26},
+    "freedomHouse": {"year":2026,"rating":"Not Free","rank":148,"score":25},
     "vDem": {"year":2026,"rating":"Electoral Autocracy","rank":123,"rankChange":-1,"score":0.15},
     "economist": {"year":2025,"rating":"Authoritarian","rank":122,"rankChange":-2,"score":2.98},
     "cpi": {"year":2025,"rating":"20–29","rank":157,"rankChange":1,"score":22},
