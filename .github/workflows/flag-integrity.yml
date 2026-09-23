@@ -75,6 +75,7 @@ on:
       - "scripts/check-gpi-data.mjs"
       - "scripts/check-index-map-colors.mjs"
       - "scripts/check-index-labels.mjs"
+      - "scripts/check-index-chart-bands.mjs"
       - "src/lib/democracyColors.ts"
       - "scripts/check-etr-data.mjs"
       - "scripts/data/etr-2024.csv"
@@ -389,6 +390,11 @@ jobs:
       # "{name}, {year} ({publisher})". Imports democracyColors.ts + countryFacts.
       - name: Verify every index label uses DEMOCRACY_INDEX_META
         run: node scripts/check-index-labels.mjs
+
+      # Every country sits inside a chart band naming its own category (V-Dem /
+      # Freedom House use observed, possibly overlapping ranges). Imports .ts.
+      - name: Verify index chart bands match every country's category
+        run: node scripts/check-index-chart-bands.mjs
 
       # World Values Survey Wave 7 extract + Learn-mode map/chart/widget wiring.
       - name: Verify WVS results data and Learn-mode wiring

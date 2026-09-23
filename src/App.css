@@ -3710,6 +3710,14 @@
   fill: transparent;
 }
 
+/* A score range two categories share (V-Dem, Freedom House): the rect is
+   filled by the chart's own hatch pattern (a per-instance id); this only
+   colours the hatch lines. */
+.democracy-index-chart__shared-hatch-line {
+  stroke: color-mix(in srgb, var(--ink, #1f2937) 14%, transparent);
+  stroke-width: 3;
+}
+
 .democracy-index-chart__band-y {
   pointer-events: none;
 }

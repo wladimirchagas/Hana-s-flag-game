@@ -1732,6 +1732,48 @@ and the `check-era-maps` CI job — it imports `democracyColors.ts`, so it needs
 `INDEX_MAP_PALETTE`, when a registry row's colours drift from the sampler, or when a
 `DEMOCRACY_INDEX_KEYS` entry has no registry row. Never weaken it; fix the colours.
 
+## Index chart bands must always match the score — hard rule, do not override without approval
+
+**On the Learn-mode chart (`DemocracyIndexChart.tsx`), every country must sit inside a shaded band
+that names ITS OWN category, on both the X and the Y axis, for every index.** Bands come from
+`getDemocracyAxisBands()` and are drawn through `democracyAxisBandSegments()` in
+`src/lib/democracyColors.ts`.
+
+### Why this rule exists
+
+Reported by the owner with a photo (2026-09): Brazil and Malaysia are both V-Dem **Electoral
+Democracies**, but the chart put Malaysia (0.35) in an "Electoral Autocracy" band and Brazil (0.70)
+on the "Liberal Democracy" line. The V-Dem bands were invented fixed cut-offs, but V-Dem's Regimes
+of the World category is **not** a cut of its score (Singapore at 0.36 is an Electoral Autocracy),
+and neither is Freedom House's status (Bhutan is Free at 68, Tanzania Not Free at 35). An audit of
+every index found 102 countries outside their own band. It also found decade bands ending at "69"
+(so 69.9 fell into a gap: Gender Gap, Happiness, IMD), Soft Power falling through to HDI's bands,
+and no band at all for the Terrorism Index's "No Impact".
+
+### Rules
+
+1. **Where the publisher's category IS a score cut, use the published cut-offs, with no gaps.**
+   A step label ("60–69") runs up to the next band's floor (`steppedBands()`), because scores carry
+   decimals.
+2. **Where it is NOT a score cut (V-Dem, Freedom House, and any future index like them), each
+   category's band spans the score range its countries actually cover** (`OBSERVED_RANGE_BAND_ORDER`).
+   Where two categories' ranges overlap, the chart shows a hatched shared zone labelled with both
+   (owner's choice, 2026-09). Never invent fixed cut-offs for such an index.
+3. **Never move a country's score or change its rating to fit a band.** Both are sourced data; the
+   band is what adapts.
+4. **Adding an index means giving every rating it publishes a band** in the same change.
+5. **Verify in the running app** (the mandatory visual-verification rule applies): chart the V-Dem
+   axis, confirm Brazil and Malaysia each sit in a band naming "Electoral Democracy", and that the
+   overlap zones are hatched.
+
+### Enforcement
+
+`scripts/check-index-chart-bands.mjs` (`npm run index-bands:check`, in `npm run flags:check` and
+the `check-era-maps` CI job; it imports `.ts`, so it needs Node 22.18+) **fails the build** when any
+country's score lies in no band naming its rating, when a rating has no band, when the drawn
+segments leave a gap, or when the chart stops drawing through `democracyAxisBandSegments()`. Never
+weaken it. Fix the bands.
+
 ## Country widget information must never be reduced — hard rule, do not override without approval
 
 **The Learn-mode country widget (`EntitySummary`, rendered in `src/pages/LearnPage.tsx`) is a
