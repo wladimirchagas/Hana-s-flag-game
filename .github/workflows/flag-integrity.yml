@@ -146,6 +146,7 @@ on:
       - "src/data/flagOverlayAspectRatios.ts"
       - "package.json"
       - ".github/workflows/flag-integrity.yml"
+      - ".github/workflows/deploy.yml"
       - "src/data/flagAdoptionYears.ts"
       - "scripts/repair-historical-maps.mjs"
       - "scripts/restore-era-geometry.mjs"

@@ -1844,12 +1844,15 @@ This rule keeps those safeguards in force after the build.
 ### Enforcement
 
 Two scripts in `npm run flags:check` and the `check-era-maps` CI job both import `.ts`, so they
-need Node 22.18+.
+need Node 22.18+. **Never add either to `npm run test:ui`**: `npm run build` runs `test:ui`, and
+the Deploy workflow builds on Node 20, which cannot load `.ts`. Adding the check there broke the
+Deploy build on 2026-09-24 (PR #1697), so the personas release reached nobody until it was
+removed.
 
 `node scripts/build-country-personas.mjs --check` fails when the generated file has drifted from
 the frozen model.
 
-`scripts/check-country-personas.mjs` also runs in `npm run test:ui`. It fails the build on:
+`scripts/check-country-personas.mjs` fails the build on:
 - a state with no entry;
 - a group outside 10–45 countries or a type below 4;
 - a banned word, a place name, an ISO-looking token or a technical leak in any learner copy;

@@ -146,6 +146,36 @@ for (const [s, js] of ranBy) {
   }
 }
 
+/* ---------------------------------------- the Deploy build's own Node */
+// `npm run build` runs `test:ui`, and the Deploy workflow builds on its own pinned Node. A
+// `.ts`-importing check placed anywhere on that path kills the production build, and the
+// merge then reaches nobody. That happened on 2026-09-24: the Country Personas check was
+// added to `test:ui`, the Deploy workflow's Node 20 build died with
+// ERR_UNKNOWN_FILE_EXTENSION, and the release did not ship.
+const DEPLOY = "../.github/workflows/deploy.yml";
+const deployWf = readFileSync(R(DEPLOY), "utf8");
+const deployNode = deployWf.match(/node-version:\s*"?([\d.]+)"?/)?.[1] ?? null;
+const buildChain = new Set();
+const expand = (name, seen = new Set()) => {
+  if (seen.has(name) || !pkg.scripts?.[name]) return;
+  seen.add(name);
+  const cmd = pkg.scripts[name];
+  for (const m of cmd.matchAll(/scripts\/([\w.-]+\.mjs)/g)) buildChain.add(m[1]);
+  for (const m of cmd.matchAll(/npm run ([\w:.-]+)/g)) expand(m[1], seen);
+};
+if (/npm run build\b/.test(deployWf)) expand("build");
+for (const s of buildChain) {
+  if (!needsModernNode.has(s)) continue;
+  if (deployNode == null || tooOld(deployNode)) {
+    failures.push(
+      `DEPLOY BUILD BREAKS: \`npm run build\` runs scripts/${s}, which \`import()\`s a TypeScript ` +
+        `module, but the Deploy workflow builds on Node ${deployNode ?? "(unset)"}. The production ` +
+        `build will die with ERR_UNKNOWN_FILE_EXTENSION and nothing ships. Keep it in flags:check ` +
+        `and a Node ${MIN_TS_NODE.join(".")}+ CI job, not on the build path.`,
+    );
+  }
+}
+
 /* ------------------------------------------------------------------- report */
 console.log(
   `CI coverage: ${new Set(gateScripts).size} check(s) in flags:check, ` +
@@ -155,6 +185,7 @@ console.log(
 for (const j of jobs) {
   console.log(`  ${j.id.padEnd(24)} node=${String(j.node ?? "(unset)").padEnd(7)} ${j.scripts.size} script(s)`);
 }
+console.log(`  ${"deploy (npm run build)".padEnd(24)} node=${String(deployNode ?? "(unset)").padEnd(7)} ${buildChain.size} script(s)`);
 
 // A CI check absent from flags:check is fine (the slow landmass raster and the
 // era-flag sha256 re-verification are legitimately CI-only), but list them so
