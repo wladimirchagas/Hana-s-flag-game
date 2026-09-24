@@ -1,3484 +1,7199 @@
 {
- "status": "FROZEN — Country Personas edition 2026 (v1). Approved by the owner 2026-09-24. Promoted from country-personas-model.draft.json; the Node scorer (scripts/build-country-personas.mjs) reads this file only.",
+ "status": "FROZEN — Country Personas edition 2026, version 2",
+ "frozenFrom": {
+  "file": "scripts/data/country-personas-model.draft.json",
+  "sha256": "06746df7c4c0eed2f99c4d30f8fdad94601c8e2f6bb6c34ea74d28c1d019b1c9"
+ },
+ "approval": {
+  "date": "2026-09-24",
+  "basis": "Built to the owner's brief of 2026-09-24 (ledger D9) and shipped under the owner's standing instruction to merge without waiting for confirmation. The names and descriptions were drafted by Claude against that brief; the owner may revise them, which is a copy revision of this edition (ledger D16)."
+ },
+ "version": 2,
  "builtBy": "scripts/country-personas/build.py",
  "snapshot": {
   "file": "scripts/data/country-persona-inputs.json",
-  "sha256": "4c628ab6729996599ee6774acf9040feef43b7f8e8e8844f8ed1416425e6abeb",
+  "sha256": "d506a8c4f7bba63a320730b5753ac0de5451297d20f5082f878936c76943a51d",
   "generated": "2026-09-24"
  },
  "seed": 20260924,
  "rules": {
-  "buildShare": 0.75,
+  "tau": 1,
+  "minSize": 3,
+  "kRange": [
+   10,
+   30
+  ],
+  "lambda": 20,
+  "claimMinZ": 0.5,
   "unclassifiedShare": 0.5,
-  "minTypeSize": 4,
-  "groupJaccard": 0.75,
-  "typeJaccard": 0.6,
-  "scoring": "nearest group centroid, then nearest type centroid within that group; partial distance over observed domains",
-  "imputations": 20,
-  "consensusSubsamples": 25
+  "provisionalShare": 0.6,
+  "distance": "four pillars (facts, index scores, attitudes, heritage); domain weights start equal by pillar and are calibrated so no domain exceeds 1/15 of the leave-one-out influence; per domain the mean squared difference over the indicators both countries have, divided by that domain's mean over all pairs; no imputation",
+  "boundary": "every member within 1.0 world SD of its persona's median on each core dimension (members observed on that dimension); personas of at least 3",
+  "claims": "a variable may be claimed only if every observed member lies within 1.0 world SD of the persona median (on the variable's analysis scale) and the median is at least 0.5 SD from the world median"
  },
- "domains": [
+ "weighting": {
+  "start": "equal pillars, equal domains within a pillar",
+  "influenceCap": 0.06666666666666667,
+  "calibrationIterations": 7,
+  "influenceShareNominal": {
+   "development": 0.0551,
+   "demography": 0.0529,
+   "economy": 0.0364,
+   "society": 0.044,
+   "scale": 0.1702,
+   "democracy": 0.0615,
+   "integrity": 0.0518,
+   "peace": 0.0267,
+   "wellbeing": 0.0445,
+   "standing": 0.1066,
+   "secular": 0.0272,
+   "selfexpression": 0.0276,
+   "religion": 0.1351,
+   "language": 0.0972,
+   "region": 0.0632
+  },
+  "influenceShareCalibrated": {
+   "development": 0.0692,
+   "demography": 0.0692,
+   "economy": 0.0693,
+   "society": 0.0694,
+   "scale": 0.0694,
+   "democracy": 0.0694,
+   "integrity": 0.0691,
+   "peace": 0.0649,
+   "wellbeing": 0.0692,
+   "standing": 0.0695,
+   "secular": 0.0513,
+   "selfexpression": 0.0522,
+   "religion": 0.0692,
+   "language": 0.0693,
+   "region": 0.0694
+  }
+ },
+ "pillars": [
+  {
+   "key": "facts",
+   "label": "Measured facts",
+   "nominalWeight": 0.25,
+   "weight": 0.233146,
+   "domains": [
+    {
+     "key": "development",
+     "label": "Development",
+     "nominalWeight": 0.05,
+     "weight": 0.04959736444814936,
+     "meanPairSquaredDistance": 1.99990853303633,
+     "indicators": [
+      {
+       "var": "wb_gdppc_ppp",
+       "transform": "log",
+       "sign": 1,
+       "fallback": {
+        "var": "wb_gdppc_usd",
+        "slope": 0.7934141611876425,
+        "intercept": 2.6410161721463234,
+        "usedFor": [
+         "CU",
+         "LI",
+         "MC",
+         "VE",
+         "YE"
+        ]
+       },
+       "median": 9.907896677506027,
+       "sd": 1.1967188079430697,
+       "skew": -0.22,
+       "coverage": 192
+      },
+      {
+       "var": "idx_hdi",
+       "transform": "none",
+       "sign": 1,
+       "median": 0.7615000000000001,
+       "sd": 0.15120773166109097,
+       "skew": -0.4,
+       "coverage": 192
+      },
+      {
+       "var": "wb_internet",
+       "transform": "none",
+       "sign": 1,
+       "median": 81.40690230999999,
+       "sd": 26.669922160813865,
+       "skew": -0.86,
+       "coverage": 192
+      },
+      {
+       "var": "wb_life_expectancy",
+       "transform": "none",
+       "sign": 1,
+       "median": 73.75,
+       "sd": 7.133329157048067,
+       "skew": -0.3,
+       "coverage": 194
+      }
+     ]
+    },
+    {
+     "key": "demography",
+     "label": "Demography",
+     "nominalWeight": 0.05,
+     "weight": 0.04889888281127524,
+     "meanPairSquaredDistance": 2,
+     "indicators": [
+      {
+       "var": "wb_fertility",
+       "transform": "log",
+       "sign": 1,
+       "median": 0.6895423418713542,
+       "sd": 0.4700415991860536,
+       "skew": 0.31,
+       "coverage": 194
+      },
+      {
+       "var": "wb_age_0_14",
+       "transform": "none",
+       "sign": 1,
+       "median": 24.28379036291365,
+       "sd": 10.272149851035875,
+       "skew": 0.36,
+       "coverage": 194
+      },
+      {
+       "var": "wb_age_65_up",
+       "transform": "none",
+       "sign": -1,
+       "median": 7.449395808645335,
+       "sd": 7.341789346503159,
+       "skew": 0.79,
+       "coverage": 194
+      },
+      {
+       "var": "wb_pop_growth",
+       "transform": "none",
+       "sign": 1,
+       "median": 1.028093954976445,
+       "sd": 1.226581947335127,
+       "skew": 0.13,
+       "coverage": 194
+      }
+     ]
+    },
+    {
+     "key": "economy",
+     "label": "Economic structure",
+     "nominalWeight": 0.05,
+     "weight": 0.05780039748370798,
+     "meanPairSquaredDistance": 2.0143127998621098,
+     "indicators": [
+      {
+       "var": "wb_agriculture",
+       "transform": "asinh",
+       "sign": 1,
+       "median": 2.601567097834544,
+       "sd": 1.1553972863533268,
+       "skew": -0.2,
+       "coverage": 188
+      },
+      {
+       "var": "wb_industry",
+       "transform": "none",
+       "sign": 1,
+       "yeoJohnsonLambda": 0.41217101096383274,
+       "skewBefore": 1.2,
+       "median": 6.7308861399420215,
+       "sd": 1.630982391244947,
+       "skew": 0.06,
+       "coverage": 189
+      },
+      {
+       "var": "wb_resource_rents",
+       "transform": "asinh",
+       "sign": 1,
+       "median": 1.4115560619393277,
+       "sd": 1.4447120396146962,
+       "skew": 0.33,
+       "coverage": 191
+      },
+      {
+       "var": "wb_trade",
+       "transform": "log",
+       "sign": 1,
+       "median": 4.37326937046034,
+       "sd": 0.6038997833231001,
+       "skew": -0.99,
+       "coverage": 172
+      },
+      {
+       "var": "wb_remittances",
+       "transform": "asinh",
+       "sign": 1,
+       "median": 1.5627237530521438,
+       "sd": 1.209602331943905,
+       "skew": 0.38,
+       "coverage": 176
+      },
+      {
+       "var": "tourism_per_person",
+       "transform": "log",
+       "sign": 1,
+       "median": -1.9999189216142186,
+       "sd": 2.026742773163016,
+       "skew": 0.09,
+       "coverage": 180
+      }
+     ]
+    },
+    {
+     "key": "society",
+     "label": "Society",
+     "nominalWeight": 0.05,
+     "weight": 0.051647446182859706,
+     "meanPairSquaredDistance": 2.0518521830059466,
+     "indicators": [
+      {
+       "var": "wb_urban",
+       "transform": "none",
+       "sign": 1,
+       "median": 63.38845234205665,
+       "sd": 22.343050936556114,
+       "skew": -0.2,
+       "coverage": 194
+      },
+      {
+       "var": "wb_migrants",
+       "transform": "log",
+       "sign": 1,
+       "median": 1.4816045409242156,
+       "sd": 1.5388978081927023,
+       "skew": -0.3,
+       "coverage": 193
+      },
+      {
+       "var": "wb_female_lfp",
+       "transform": "none",
+       "sign": 1,
+       "median": 53.411,
+       "sd": 15.880349408998924,
+       "skew": -0.71,
+       "coverage": 179
+      },
+      {
+       "var": "wb_homicide",
+       "transform": "log1p",
+       "sign": 1,
+       "median": 1.1770136178399127,
+       "sd": 1.0171109042491853,
+       "skew": 0.86,
+       "coverage": 151
+      }
+     ]
+    },
+    {
+     "key": "scale",
+     "label": "Size",
+     "nominalWeight": 0.05,
+     "weight": 0.025201728095233838,
+     "meanPairSquaredDistance": 2,
+     "indicators": [
+      {
+       "var": "wb_population",
+       "transform": "log",
+       "sign": 1,
+       "median": 16.029277174137867,
+       "sd": 2.24542523834816,
+       "skew": -0.62,
+       "coverage": 194
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "indices",
+   "label": "Index scores",
+   "nominalWeight": 0.25,
+   "weight": 0.248427,
+   "domains": [
+    {
+     "key": "democracy",
+     "label": "Democracy and freedom",
+     "nominalWeight": 0.05,
+     "weight": 0.04405632052581475,
+     "meanPairSquaredDistance": 2.00858549461723,
+     "indicators": [
+      {
+       "var": "idx_freedomHouse",
+       "transform": "none",
+       "sign": 1,
+       "median": 63,
+       "sd": 31.560125233426565,
+       "skew": -0.27,
+       "coverage": 193
+      },
+      {
+       "var": "idx_vDem",
+       "transform": "none",
+       "sign": 1,
+       "median": 0.35,
+       "sd": 0.26397324213547974,
+       "skew": 0.27,
+       "coverage": 173
+      },
+      {
+       "var": "idx_economist",
+       "transform": "none",
+       "sign": 1,
+       "median": 5.35,
+       "sd": 2.4613261257130303,
+       "skew": 0.04,
+       "coverage": 165
+      },
+      {
+       "var": "idx_rsfPress",
+       "transform": "none",
+       "sign": 1,
+       "median": 53.97,
+       "sd": 19.005491148085785,
+       "skew": -0.09,
+       "coverage": 175
+      }
+     ]
+    },
+    {
+     "key": "integrity",
+     "label": "Clean government and rule of law",
+     "nominalWeight": 0.05,
+     "weight": 0.05047484833966403,
+     "meanPairSquaredDistance": 2.0376734334278805,
+     "indicators": [
+      {
+       "var": "idx_cpi",
+       "transform": "none",
+       "sign": 1,
+       "median": 39,
+       "sd": 18.958378735693177,
+       "skew": 0.48,
+       "coverage": 179
+      },
+      {
+       "var": "idx_wjpRuleOfLaw",
+       "transform": "none",
+       "sign": 1,
+       "median": 0.52,
+       "sd": 0.14693453249289554,
+       "skew": 0.52,
+       "coverage": 141
+      }
+     ]
+    },
+    {
+     "key": "peace",
+     "label": "Peace and security",
+     "nominalWeight": 0.05,
+     "weight": 0.06765996976624018,
+     "meanPairSquaredDistance": 1.9584464393337653,
+     "indicators": [
+      {
+       "var": "idx_gpi",
+       "transform": "none",
+       "sign": -1,
+       "median": 1.9929999999999999,
+       "sd": 0.46766576413270183,
+       "skew": 0.77,
+       "coverage": 160
+      },
+      {
+       "var": "idx_gti",
+       "transform": "none",
+       "sign": -1,
+       "yeoJohnsonLambda": -0.8672984766022692,
+       "skewBefore": 1.42,
+       "median": 0.303909120504974,
+       "sd": 0.37703633652623464,
+       "skew": 0.36,
+       "coverage": 161
+      },
+      {
+       "var": "idx_etr",
+       "transform": "none",
+       "sign": -1,
+       "median": 2.6935000000000002,
+       "sd": 0.8613208133289947,
+       "skew": 0.12,
+       "coverage": 170
+      }
+     ]
+    },
+    {
+     "key": "wellbeing",
+     "label": "Happiness and gender equality",
+     "nominalWeight": 0.05,
+     "weight": 0.054340093582392765,
+     "meanPairSquaredDistance": 2.042289558739579,
+     "indicators": [
+      {
+       "var": "idx_happiness",
+       "transform": "none",
+       "sign": 1,
+       "median": 5.9365000000000006,
+       "sd": 1.1417614685087474,
+       "skew": -0.58,
+       "coverage": 144
+      },
+      {
+       "var": "idx_genderGap",
+       "transform": "none",
+       "sign": 1,
+       "median": 0.715,
+       "sd": 0.05938036686775065,
+       "skew": 0.32,
+       "coverage": 145
+      }
+     ]
+    },
+    {
+     "key": "standing",
+     "label": "Global reputation",
+     "nominalWeight": 0.05,
+     "weight": 0.031896015142645506,
+     "meanPairSquaredDistance": 2,
+     "indicators": [
+      {
+       "var": "idx_softPower",
+       "transform": "log",
+       "sign": 1,
+       "median": 3.5263605246161616,
+       "sd": 0.28455362539747053,
+       "skew": 0.51,
+       "coverage": 193
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "attitudes",
+   "label": "Attitudes (World Values Survey)",
+   "nominalWeight": 0.25,
+   "weight": 0.3383,
+   "domains": [
+    {
+     "key": "secular",
+     "label": "Traditional to secular-rational values",
+     "nominalWeight": 0.125,
+     "weight": 0.16914992441560048,
+     "meanPairSquaredDistance": 2.0147461631653814,
+     "indicators": [
+      {
+       "var": "wvs_god_importance",
+       "transform": "none",
+       "sign": -1,
+       "median": 7.66,
+       "sd": 2.0424293743639956,
+       "skew": -0.35,
+       "coverage": 87
+      },
+      {
+       "var": "wvs_abortion_justifiable",
+       "transform": "none",
+       "sign": 1,
+       "median": 3.6,
+       "sd": 1.7670761993044841,
+       "skew": 0.67,
+       "coverage": 88
+      },
+      {
+       "var": "wvs_very_proud",
+       "transform": "none",
+       "sign": -1,
+       "median": 63.650000000000006,
+       "sd": 20.144329568127578,
+       "skew": -0.41,
+       "coverage": 62
+      },
+      {
+       "var": "wvs_respect_authority_good",
+       "transform": "none",
+       "sign": -1,
+       "median": 60.150000000000006,
+       "sd": 18.762410452205003,
+       "skew": -0.36,
+       "coverage": 88
+      },
+      {
+       "var": "wvs_autonomy",
+       "transform": "none",
+       "sign": 1,
+       "median": 26.85,
+       "sd": 53.708129715082826,
+       "skew": -0.33,
+       "coverage": 88
+      }
+     ]
+    },
+    {
+     "key": "selfexpression",
+     "label": "Survival to self-expression values",
+     "nominalWeight": 0.125,
+     "weight": 0.16914992441560048,
+     "meanPairSquaredDistance": 2.0101623941115583,
+     "indicators": [
+      {
+       "var": "wvs_happy",
+       "transform": "none",
+       "sign": 1,
+       "yeoJohnsonLambda": 5.751526030680284,
+       "skewBefore": -1.43,
+       "median": 27512149554.426647,
+       "sd": 10817340973.9831,
+       "skew": -0.15,
+       "coverage": 88
+      },
+      {
+       "var": "wvs_trust",
+       "transform": "log",
+       "sign": 1,
+       "median": 3.0130054454302826,
+       "sd": 0.7867497265889188,
+       "skew": -0.4,
+       "coverage": 88
+      },
+      {
+       "var": "wvs_homosexuality_justifiable",
+       "transform": "none",
+       "sign": 1,
+       "median": 3.71,
+       "sd": 2.2977380669018035,
+       "skew": 0.63,
+       "coverage": 85
+      },
+      {
+       "var": "wvs_petition_signed",
+       "transform": "log",
+       "sign": 1,
+       "median": 2.838804800176089,
+       "sd": 0.7892062792114493,
+       "skew": 0.17,
+       "coverage": 88
+      },
+      {
+       "var": "wvs_postmaterialist_first",
+       "transform": "log",
+       "sign": 1,
+       "yeoJohnsonLambda": 4.600627032553359,
+       "skewBefore": -1.14,
+       "median": 233.15300736519703,
+       "sd": 76.34878161605317,
+       "skew": -0.02,
+       "coverage": 88
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "heritage",
+   "label": "Culture and heritage",
+   "nominalWeight": 0.25,
+   "weight": 0.180127,
+   "domains": [
+    {
+     "key": "religion",
+     "label": "Religious make-up",
+     "nominalWeight": 0.08333333333333333,
+     "weight": 0.04983717723553282,
+     "meanPairSquaredDistance": 0.1062468279600401,
+     "indicators": [
+      {
+       "var": "rel_christian_hellinger",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 183
+      },
+      {
+       "var": "rel_muslim_hellinger",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 183
+      },
+      {
+       "var": "rel_unaffiliated_hellinger",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 183
+      },
+      {
+       "var": "rel_buddhist_hellinger",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 183
+      },
+      {
+       "var": "rel_hindu_hellinger",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 183
+      },
+      {
+       "var": "rel_jewish_hellinger",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 183
+      },
+      {
+       "var": "rel_other_hellinger",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 183
+      }
+     ]
+    },
+    {
+     "key": "language",
+     "label": "Official languages",
+     "nominalWeight": 0.08333333333333333,
+     "weight": 0.058332945249657465,
+     "meanPairSquaredDistance": 0.1905728479095286,
+     "indicators": [
+      {
+       "var": "lang_english",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "lang_french",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "lang_arabic",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "lang_spanish",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "lang_portuguese",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "lang_russian",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "lang_german",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      }
+     ]
+    },
+    {
+     "key": "region",
+     "label": "Regional organisations",
+     "nominalWeight": 0.08333333333333333,
+     "weight": 0.07195696230562551,
+     "meanPairSquaredDistance": 0.15471262218898563,
+     "indicators": [
+      {
+       "var": "member_european_union",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_african_union",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_asean",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_mercosur",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_arab_league",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_caricom",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_ecowas",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_sadc",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_pacific_islands_forum",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_organization_of_american_states",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_gulf_cooperation_council",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_eurasian_economic_union",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_andean_community",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_pacific_alliance",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_usmca",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      },
+      {
+       "var": "member_commonwealth_of_nations",
+       "transform": "none",
+       "sign": 1,
+       "coverage": 195
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "core": [
   {
    "key": "development",
    "label": "Development",
-   "weight": 1,
-   "indicators": [
-    {
-     "var": "wb_gdppc_ppp",
-     "transform": "log",
-     "sign": 1,
-     "median": 9.903275484671303,
-     "interDecileRange": 3.039017628353939,
-     "skew": -0.31,
-     "coverage": 187,
-     "fallback": {
-      "var": "wb_gdppc_usd",
-      "transform": "log",
-      "sign": 1,
-      "median": 8.934876286776069,
-      "interDecileRange": 3.932218697427376,
-      "skew": 0.02,
-      "coverage": 192,
-      "usedFor": [
-       "CU",
-       "LI",
-       "MC",
-       "VE",
-       "YE"
-      ]
-     }
-    },
-    {
-     "var": "idx_hdi",
-     "transform": "none",
-     "sign": 1,
-     "median": 0.7615000000000001,
-     "interDecileRange": 0.41680000000000006,
-     "skew": -0.4,
-     "coverage": 192
-    },
-    {
-     "var": "wb_internet",
-     "transform": "none",
-     "sign": 1,
-     "median": 81.40690230999999,
-     "interDecileRange": 70.386322412,
-     "skew": -0.86,
-     "coverage": 192
-    },
-    {
-     "var": "wb_urban",
-     "transform": "none",
-     "sign": 1,
-     "median": 63.38845234205665,
-     "interDecileRange": 60.3037061718378,
-     "skew": -0.2,
-     "coverage": 194
-    },
-    {
-     "var": "wb_agriculture",
-     "transform": "asinh",
-     "sign": -1,
-     "median": 2.601567097834544,
-     "interDecileRange": 3.0228070621330234,
-     "skew": -0.2,
-     "coverage": 188
-    },
-    {
-     "var": "wb_services",
-     "transform": "none",
-     "sign": 1,
-     "median": 57.125953453753496,
-     "interDecileRange": 29.730718157320354,
-     "skew": -0.25,
-     "coverage": 188
-    }
+   "kind": "mean",
+   "from": [
+    "development"
    ],
-   "mean": -0.046984857947839326,
-   "sd": 0.3284469767779989
+   "minObserved": 2,
+   "parts": [],
+   "median": -0.02926646203596457,
+   "sd": 0.9557977982382603,
+   "coverage": 193
+  },
+  {
+   "key": "demography",
+   "label": "Demography (fertility, age structure, population growth)",
+   "kind": "mean",
+   "from": [
+    "demography"
+   ],
+   "minObserved": 2,
+   "parts": [],
+   "median": -0.06123026980691207,
+   "sd": 0.8956072269294079,
+   "coverage": 194
   },
   {
    "key": "governance",
-   "label": "Governance",
-   "weight": 1,
-   "indicators": [
+   "label": "Governance (democracy, clean government, rule of law)",
+   "kind": "mean_of_domains",
+   "from": [
+    "democracy",
+    "integrity"
+   ],
+   "minObserved": 1,
+   "parts": [
     {
-     "var": "idx_freedomHouse",
-     "transform": "none",
-     "sign": 1,
-     "median": 63,
-     "interDecileRange": 84.6,
-     "skew": -0.27,
-     "coverage": 193
+     "domain": "democracy",
+     "median": 0.09547223530591106,
+     "sd": 0.9420994649490931
     },
     {
-     "var": "idx_vDem",
-     "transform": "none",
-     "sign": 1,
-     "median": 0.35,
-     "interDecileRange": 0.7080000000000002,
-     "skew": 0.27,
-     "coverage": 173
-    },
-    {
-     "var": "idx_economist",
-     "transform": "none",
-     "sign": 1,
-     "median": 5.35,
-     "interDecileRange": 6.349999999999999,
-     "skew": 0.04,
-     "coverage": 165
-    },
-    {
-     "var": "idx_rsfPress",
-     "transform": "none",
-     "sign": 1,
-     "median": 53.97,
-     "interDecileRange": 51.138000000000005,
-     "skew": -0.09,
-     "coverage": 175
-    },
-    {
-     "var": "idx_cpi",
-     "transform": "none",
-     "sign": 1,
-     "median": 39,
-     "interDecileRange": 50.20000000000002,
-     "skew": 0.48,
-     "coverage": 179
-    },
-    {
-     "var": "idx_wjpRuleOfLaw",
-     "transform": "none",
-     "sign": 1,
-     "median": 0.52,
-     "interDecileRange": 0.41000000000000003,
-     "skew": 0.52,
-     "coverage": 141
+     "domain": "integrity",
+     "median": -0.1020862811859784,
+     "sd": 1.0012968337536947
     }
    ],
-   "mean": 0.022225513923030744,
-   "sd": 0.34308952013462973
+   "median": 0.03789403979073225,
+   "sd": 0.937929622361884,
+   "coverage": 194
   },
   {
-   "key": "age_structure",
-   "label": "Age structure relative to development",
-   "weight": 1,
-   "indicators": [
+   "key": "values",
+   "label": "Values (secular-rational and self-expression)",
+   "kind": "mean_of_domains_all",
+   "from": [
+    "secular",
+    "selfexpression"
+   ],
+   "minObserved": 3,
+   "parts": [
     {
-     "var": "wb_age_65_up",
-     "transform": "none",
-     "sign": 1,
-     "median": 7.449395808645335,
-     "interDecileRange": 18.13243967685081,
-     "skew": 0.79,
-     "coverage": 194
+     "domain": "secular",
+     "median": 0.009435204865804922,
+     "sd": 0.8356304033475301
     },
     {
-     "var": "wb_age_0_14",
-     "transform": "none",
-     "sign": -1,
-     "median": 24.28379036291365,
-     "interDecileRange": 26.133791521033416,
-     "skew": 0.36,
-     "coverage": 194
-    },
-    {
-     "var": "wb_fertility",
-     "transform": "log",
-     "sign": -1,
-     "median": 0.6895423418713542,
-     "interDecileRange": 1.1946978492458251,
-     "skew": 0.31,
-     "coverage": 194
-    },
-    {
-     "var": "wb_life_expectancy",
-     "transform": "none",
-     "sign": 1,
-     "median": 73.75,
-     "interDecileRange": 19.089395121951227,
-     "skew": -0.3,
-     "coverage": 194
-    },
-    {
-     "var": "wb_pop_growth",
-     "transform": "none",
-     "sign": -1,
-     "median": 1.028093954976445,
-     "interDecileRange": 2.9997318554189283,
-     "skew": 0.13,
-     "coverage": 194
+     "domain": "selfexpression",
+     "median": -0.1048646137529726,
+     "sd": 0.7772308232295108
     }
    ],
-   "residualOn": "development",
-   "residual": {
-    "intercept": 0.03691051916901238,
-    "slope": 0.9074450173765896,
-    "r": 0.8543605252481083
-   },
-   "mean": -1.8312957107219077e-17,
-   "sd": 0.18129300758728709
-  },
-  {
-   "key": "scale",
-   "label": "Scale and global reach",
-   "weight": 1,
-   "indicators": [
-    {
-     "var": "wb_population",
-     "transform": "log",
-     "sign": 1,
-     "median": 16.029277174137867,
-     "interDecileRange": 5.644173070726394,
-     "skew": -0.62,
-     "coverage": 194
-    },
-    {
-     "var": "idx_softPower",
-     "transform": "log",
-     "sign": 1,
-     "median": 3.5263605246161616,
-     "interDecileRange": 0.7803877433325614,
-     "skew": 0.51,
-     "coverage": 193
-    }
-   ],
-   "mean": -0.004059240853485585,
-   "sd": 0.33260987479715887
+   "median": 0.10235200506039771,
+   "sd": 0.9272257633402735,
+   "coverage": 88
   }
  ],
- "structure": {
-  "groups": 5,
-  "types": 12,
-  "groupCentroidsWeighted": {
-   "E": [
-    -1.44048,
-    -1.0361,
-    0.07657,
-    -0.08439
+ "sweep": [
+  {
+   "k": 10,
+   "violators": 0,
+   "cost": 104.34408446328487,
+   "silhouette": 0.10497932814243606,
+   "stabilityMedian": 0.458,
+   "stabilityMin": 0.287,
+   "sizes": [
+    26,
+    23,
+    23,
+    21,
+    20,
+    20,
+    19,
+    18,
+    16,
+    8
    ],
-   "D": [
-    0.02758,
-    -0.37724,
-    -1.32735,
-    -0.06088
-   ],
-   "A": [
-    1.15092,
-    1.29037,
-    0.32981,
-    0.78865
-   ],
-   "C": [
-    0.16366,
-    -0.5206,
-    0.70398,
-    0.61003
-   ],
-   "B": [
-    0.07899,
-    0.69772,
-    0.36626,
-    -1.39654
-   ]
+   "start": "average"
   },
-  "typeCentroidsWeighted": {
-   "E11": [
-    -1.48078,
-    -0.76624,
-    -0.30998,
-    0.02986
+  {
+   "k": 11,
+   "violators": 0,
+   "cost": 102.73765300643052,
+   "silhouette": 0.09979295026595102,
+   "stabilityMedian": 0.434,
+   "stabilityMin": 0.272,
+   "sizes": [
+    25,
+    24,
+    24,
+    23,
+    20,
+    16,
+    15,
+    15,
+    13,
+    11,
+    8
    ],
-   "E12": [
-    -1.39346,
-    -1.35093,
-    0.52754,
-    -0.21767
-   ],
-   "D10": [
-    0.02758,
-    -0.37724,
-    -1.32735,
-    -0.06088
-   ],
-   "A02": [
-    1.69057,
-    1.02274,
-    -0.67349,
-    -0.17621
-   ],
-   "A01": [
-    1.30389,
-    1.64056,
-    -0.09194,
-    1.32574
-   ],
-   "A03": [
-    0.86858,
-    1.31372,
-    0.85152,
-    0.24384
-   ],
-   "A04": [
-    0.90198,
-    0.84323,
-    1.03776,
-    1.38963
-   ],
-   "C08": [
-    0.28375,
-    -0.05805,
-    1.34708,
-    0.13089
-   ],
-   "C09": [
-    0.10122,
-    -0.76113,
-    0.36957,
-    0.85918
-   ],
-   "B06": [
-    0.17718,
-    0.53514,
-    1.11804,
-    -0.83129
-   ],
-   "B05": [
-    0.46447,
-    0.82688,
-    0.00333,
-    -1.54714
-   ],
-   "B07": [
-    -0.93473,
-    0.55351,
-    0.47644,
-    -1.60414
-   ]
+   "start": "average"
   },
-  "typeGroup": {
-   "E11": "E",
-   "E12": "E",
-   "D10": "D",
-   "A02": "A",
-   "A01": "A",
-   "A03": "A",
-   "A04": "A",
-   "C08": "C",
-   "C09": "C",
-   "B06": "B",
-   "B05": "B",
-   "B07": "B"
+  {
+   "k": 12,
+   "violators": 1,
+   "cost": 99.63035289776975,
+   "silhouette": 0.10948484255173989,
+   "stabilityMedian": 0.486,
+   "stabilityMin": 0.291,
+   "sizes": [
+    26,
+    23,
+    21,
+    21,
+    19,
+    16,
+    15,
+    15,
+    13,
+    12,
+    7,
+    6
+   ],
+   "start": "average"
+  },
+  {
+   "k": 13,
+   "violators": 0,
+   "cost": 96.96839468257026,
+   "silhouette": 0.11474137312491933,
+   "stabilityMedian": 0.558,
+   "stabilityMin": 0.317,
+   "sizes": [
+    27,
+    19,
+    19,
+    18,
+    17,
+    15,
+    15,
+    14,
+    12,
+    12,
+    11,
+    8,
+    7
+   ],
+   "start": "average"
+  },
+  {
+   "k": 14,
+   "violators": 0,
+   "cost": 95.28738204155597,
+   "silhouette": 0.13259509428065128,
+   "stabilityMedian": 0.622,
+   "stabilityMin": 0.239,
+   "sizes": [
+    23,
+    22,
+    19,
+    19,
+    18,
+    15,
+    15,
+    13,
+    11,
+    11,
+    9,
+    9,
+    7,
+    3
+   ],
+   "start": "average"
+  },
+  {
+   "k": 15,
+   "violators": 0,
+   "cost": 93.71381497493776,
+   "silhouette": 0.12421317314125768,
+   "stabilityMedian": 0.537,
+   "stabilityMin": 0.306,
+   "sizes": [
+    23,
+    22,
+    18,
+    17,
+    14,
+    14,
+    13,
+    13,
+    13,
+    12,
+    11,
+    8,
+    6,
+    5,
+    5
+   ],
+   "start": "pam"
+  },
+  {
+   "k": 16,
+   "violators": 0,
+   "cost": 92.30427221751705,
+   "silhouette": 0.12845363904258467,
+   "stabilityMedian": 0.618,
+   "stabilityMin": 0.184,
+   "sizes": [
+    26,
+    19,
+    17,
+    17,
+    15,
+    15,
+    14,
+    12,
+    11,
+    9,
+    8,
+    8,
+    7,
+    6,
+    5,
+    5
+   ],
+   "start": "pam"
+  },
+  {
+   "k": 17,
+   "violators": 0,
+   "cost": 91.05865095726445,
+   "silhouette": 0.12419959273122218,
+   "stabilityMedian": 0.62,
+   "stabilityMin": 0.374,
+   "sizes": [
+    22,
+    17,
+    15,
+    15,
+    14,
+    14,
+    13,
+    12,
+    11,
+    11,
+    11,
+    9,
+    8,
+    6,
+    6,
+    5,
+    5
+   ],
+   "start": "average"
+  },
+  {
+   "k": 18,
+   "violators": 0,
+   "cost": 90.51167533116404,
+   "silhouette": 0.12879702844690777,
+   "stabilityMedian": 0.54,
+   "stabilityMin": 0.185,
+   "sizes": [
+    23,
+    17,
+    17,
+    16,
+    14,
+    13,
+    13,
+    11,
+    11,
+    11,
+    8,
+    7,
+    6,
+    6,
+    6,
+    5,
+    5,
+    5
+   ],
+   "start": "average"
+  },
+  {
+   "k": 19,
+   "violators": 0,
+   "cost": 88.91665182780085,
+   "silhouette": 0.13225402400240083,
+   "stabilityMedian": 0.514,
+   "stabilityMin": 0.344,
+   "sizes": [
+    22,
+    14,
+    14,
+    14,
+    13,
+    13,
+    12,
+    11,
+    11,
+    11,
+    9,
+    9,
+    9,
+    7,
+    5,
+    5,
+    5,
+    5,
+    5
+   ],
+   "start": "average"
+  },
+  {
+   "k": 20,
+   "violators": 0,
+   "cost": 88.230741142962,
+   "silhouette": 0.10845917554161452,
+   "stabilityMedian": 0.453,
+   "stabilityMin": 0.161,
+   "sizes": [
+    17,
+    17,
+    16,
+    13,
+    12,
+    12,
+    11,
+    11,
+    11,
+    10,
+    10,
+    8,
+    8,
+    8,
+    7,
+    7,
+    5,
+    4,
+    4,
+    3
+   ],
+   "start": "pam"
+  },
+  {
+   "k": 21,
+   "violators": 0,
+   "cost": 86.73236472045721,
+   "silhouette": 0.11610483372157455,
+   "stabilityMedian": 0.481,
+   "stabilityMin": 0.201,
+   "sizes": [
+    24,
+    15,
+    13,
+    13,
+    12,
+    12,
+    11,
+    11,
+    11,
+    9,
+    9,
+    8,
+    7,
+    6,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    3
+   ],
+   "start": "pam"
+  },
+  {
+   "k": 22,
+   "violators": 0,
+   "cost": 86.05176385020167,
+   "silhouette": 0.1388491439296073,
+   "stabilityMedian": 0.496,
+   "stabilityMin": 0.257,
+   "sizes": [
+    22,
+    20,
+    13,
+    12,
+    12,
+    11,
+    11,
+    11,
+    11,
+    11,
+    7,
+    6,
+    6,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    3,
+    3
+   ],
+   "start": "average"
+  },
+  {
+   "k": 23,
+   "violators": 0,
+   "cost": 84.64825242563833,
+   "silhouette": 0.10910428627558975,
+   "stabilityMedian": 0.447,
+   "stabilityMin": 0.242,
+   "sizes": [
+    17,
+    15,
+    13,
+    13,
+    12,
+    11,
+    10,
+    10,
+    9,
+    8,
+    8,
+    8,
+    7,
+    7,
+    6,
+    6,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4
+   ],
+   "start": "pam"
+  },
+  {
+   "k": 24,
+   "violators": 0,
+   "cost": 83.19923834707468,
+   "silhouette": 0.12125650281934512,
+   "stabilityMedian": 0.582,
+   "stabilityMin": 0.33,
+   "sizes": [
+    16,
+    15,
+    15,
+    12,
+    12,
+    12,
+    11,
+    11,
+    10,
+    9,
+    8,
+    7,
+    7,
+    6,
+    6,
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    3,
+    3,
+    3
+   ],
+   "start": "average"
+  },
+  {
+   "k": 25,
+   "violators": 0,
+   "cost": 83.30700593737072,
+   "silhouette": 0.10181540442171348,
+   "stabilityMedian": 0.432,
+   "stabilityMin": 0.242,
+   "sizes": [
+    15,
+    14,
+    13,
+    12,
+    11,
+    11,
+    9,
+    8,
+    8,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    6,
+    6,
+    6,
+    5,
+    5,
+    5,
+    4,
+    4,
+    3
+   ],
+   "start": "pam"
+  },
+  {
+   "k": 26,
+   "violators": 0,
+   "cost": 81.94771491563006,
+   "silhouette": 0.1121214099446977,
+   "stabilityMedian": 0.499,
+   "stabilityMin": 0.158,
+   "sizes": [
+    18,
+    14,
+    12,
+    11,
+    11,
+    10,
+    9,
+    9,
+    8,
+    8,
+    8,
+    8,
+    6,
+    6,
+    6,
+    6,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    3,
+    3
+   ],
+   "start": "pam"
+  },
+  {
+   "k": 27,
+   "violators": 0,
+   "cost": 80.91586578243236,
+   "silhouette": 0.11464023077802972,
+   "stabilityMedian": 0.558,
+   "stabilityMin": 0.246,
+   "sizes": [
+    15,
+    14,
+    12,
+    12,
+    11,
+    10,
+    10,
+    10,
+    10,
+    9,
+    8,
+    8,
+    7,
+    7,
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   "start": "average"
+  },
+  {
+   "k": 28,
+   "violators": 0,
+   "cost": 79.9429082018264,
+   "silhouette": 0.12029179156552097,
+   "stabilityMedian": 0.517,
+   "stabilityMin": 0.24,
+   "sizes": [
+    15,
+    13,
+    12,
+    12,
+    11,
+    11,
+    11,
+    10,
+    10,
+    8,
+    8,
+    7,
+    6,
+    6,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   "start": "average"
+  },
+  {
+   "k": 29,
+   "violators": 0,
+   "cost": 79.13636783024194,
+   "silhouette": 0.12412686757622941,
+   "stabilityMedian": 0.529,
+   "stabilityMin": 0.187,
+   "sizes": [
+    15,
+    13,
+    11,
+    11,
+    11,
+    10,
+    10,
+    10,
+    9,
+    8,
+    8,
+    7,
+    6,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    3,
+    3
+   ],
+   "start": "average"
+  },
+  {
+   "k": 30,
+   "violators": 0,
+   "cost": 78.47410605805185,
+   "silhouette": 0.12319156892527304,
+   "stabilityMedian": 0.629,
+   "stabilityMin": 0.208,
+   "sizes": [
+    11,
+    11,
+    11,
+    10,
+    10,
+    10,
+    9,
+    8,
+    8,
+    8,
+    7,
+    7,
+    7,
+    7,
+    7,
+    6,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    4,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   "start": "average"
   }
- },
+ ],
+ "kRule": "no K met the reproducibility bar; most reproducible K chosen",
+ "chosenK": 30,
+ "personas": [
+  {
+   "code": "01",
+   "size": 5,
+   "members": [
+    "AD",
+    "IS",
+    "LI",
+    "MC",
+    "SM"
+   ],
+   "medoid": "AD",
+   "typical": [
+    "AD",
+    "SM",
+    "IS"
+   ],
+   "coreMedians": {
+    "development": 1.203,
+    "demography": -0.949,
+    "governance": 1.071,
+    "values": 1.597
+   },
+   "stability": 0.718,
+   "surveyed": 2,
+   "claimable": [
+    "geo_capital_lat",
+    "idx_freedomHouse",
+    "idx_freedomHouse_rating",
+    "idx_hdi",
+    "idx_rsfPress",
+    "sport_summer_games",
+    "sport_summer_medals",
+    "sport_winter_games",
+    "wb_age_0_14",
+    "wb_agriculture",
+    "wb_fertility",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_internet",
+    "wb_life_expectancy",
+    "wb_migrants",
+    "wb_remittances",
+    "wb_resource_rents",
+    "wb_tertiary"
+   ]
+  },
+  {
+   "code": "02",
+   "size": 8,
+   "members": [
+    "AU",
+    "DK",
+    "FI",
+    "NL",
+    "NZ",
+    "NO",
+    "SE",
+    "GB"
+   ],
+   "medoid": "SE",
+   "typical": [
+    "SE",
+    "DK",
+    "NO"
+   ],
+   "coreMedians": {
+    "development": 1.138,
+    "demography": -0.946,
+    "governance": 1.986,
+    "values": 1.715
+   },
+   "stability": 0.548,
+   "surveyed": 8,
+   "claimable": [
+    "hist_independence_year",
+    "idx_cpi",
+    "idx_economist",
+    "idx_economist_rating",
+    "idx_etr",
+    "idx_freedomHouse",
+    "idx_freedomHouse_rating",
+    "idx_gpi",
+    "idx_happiness",
+    "idx_hdi",
+    "idx_hdi_rating",
+    "idx_imdCompetitiveness",
+    "idx_rsfPress",
+    "idx_vDem",
+    "idx_wjpRuleOfLaw",
+    "member_oecd",
+    "rel_buddhist",
+    "rel_unaffiliated",
+    "sport_summer_games",
+    "sport_summer_medals",
+    "sport_winter_games",
+    "wb_age_0_14",
+    "wb_age_65_up",
+    "wb_co2_pc",
+    "wb_female_lfp",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_gini",
+    "wb_health_exp",
+    "wb_homicide",
+    "wb_internet",
+    "wb_life_expectancy",
+    "wb_migrants",
+    "wb_remittances",
+    "wb_tertiary",
+    "wb_urban",
+    "wvs_abortion_justifiable",
+    "wvs_autonomy",
+    "wvs_god_importance",
+    "wvs_homosexuality_justifiable",
+    "wvs_petition_signed",
+    "wvs_postmaterialist_first",
+    "wvs_trust"
+   ]
+  },
+  {
+   "code": "03",
+   "size": 10,
+   "members": [
+    "AT",
+    "BE",
+    "CA",
+    "CZ",
+    "DE",
+    "IE",
+    "JP",
+    "LU",
+    "KR",
+    "CH"
+   ],
+   "medoid": "AT",
+   "typical": [
+    "AT",
+    "BE",
+    "CH"
+   ],
+   "coreMedians": {
+    "development": 1.069,
+    "demography": -1.052,
+    "governance": 1.655,
+    "values": 1.491
+   },
+   "stability": 0.456,
+   "surveyed": 7,
+   "claimable": [
+    "geo_capital_lat",
+    "hist_independence_year",
+    "idx_cpi",
+    "idx_economist",
+    "idx_etr",
+    "idx_freedomHouse",
+    "idx_freedomHouse_rating",
+    "idx_gpi",
+    "idx_happiness",
+    "idx_hdi",
+    "idx_hdi_rating",
+    "idx_rsfPress",
+    "idx_vDem",
+    "idx_wjpRuleOfLaw",
+    "member_oecd",
+    "rel_unaffiliated",
+    "wb_age_0_14",
+    "wb_agriculture",
+    "wb_co2_pc",
+    "wb_fertility",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_homicide",
+    "wb_internet",
+    "wb_largest_city",
+    "wb_life_expectancy",
+    "wb_urban",
+    "wvs_autonomy",
+    "wvs_god_importance",
+    "wvs_trust"
+   ]
+  },
+  {
+   "code": "04",
+   "size": 8,
+   "members": [
+    "BG",
+    "EE",
+    "HU",
+    "LV",
+    "LT",
+    "SG",
+    "SK",
+    "SI"
+   ],
+   "medoid": "LV",
+   "typical": [
+    "LV",
+    "LT",
+    "HU"
+   ],
+   "coreMedians": {
+    "development": 0.688,
+    "demography": -1.196,
+    "governance": 1.029,
+    "values": 0.386
+   },
+   "stability": 0.437,
+   "surveyed": 8,
+   "claimable": [
+    "count_airlines",
+    "count_news_agencies",
+    "idx_economist",
+    "idx_etr",
+    "idx_genderGap_rating",
+    "idx_gpi",
+    "idx_hdi",
+    "idx_hdi_rating",
+    "idx_vDem",
+    "rel_unaffiliated",
+    "wb_age_0_14",
+    "wb_age_65_up",
+    "wb_co2_pc",
+    "wb_fertility",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_life_expectancy",
+    "wb_military",
+    "wb_resource_rents",
+    "wb_services",
+    "wb_tertiary",
+    "wvs_abortion_justifiable",
+    "wvs_autonomy",
+    "wvs_god_importance"
+   ]
+  },
+  {
+   "code": "05",
+   "size": 7,
+   "members": [
+    "HR",
+    "FR",
+    "IT",
+    "PL",
+    "PT",
+    "ES",
+    "US"
+   ],
+   "medoid": "IT",
+   "typical": [
+    "IT",
+    "ES",
+    "PL"
+   ],
+   "coreMedians": {
+    "development": 0.968,
+    "demography": -1.14,
+    "governance": 0.996,
+    "values": 0.577
+   },
+   "stability": 0.45,
+   "surveyed": 7,
+   "claimable": [
+    "geo_capital_lat",
+    "idx_cpi",
+    "idx_economist",
+    "idx_etr",
+    "idx_freedomHouse",
+    "idx_freedomHouse_rating",
+    "idx_genderGap",
+    "idx_genderGap_rating",
+    "idx_happiness",
+    "idx_happiness_rating",
+    "idx_hdi",
+    "idx_hdi_rating",
+    "idx_rsfPress",
+    "idx_vDem",
+    "idx_wjpRuleOfLaw",
+    "member_nato",
+    "rel_unaffiliated",
+    "sport_summer_medals",
+    "sport_wc_men_apps",
+    "wb_age_0_14",
+    "wb_age_65_up",
+    "wb_co2_pc",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_life_expectancy",
+    "wb_migrants",
+    "wb_pop_growth",
+    "wb_resource_rents",
+    "wb_services",
+    "wb_tertiary"
+   ]
+  },
+  {
+   "code": "06",
+   "size": 3,
+   "members": [
+    "CL",
+    "CR",
+    "UY"
+   ],
+   "medoid": "CR",
+   "typical": [
+    "CR",
+    "UY",
+    "CL"
+   ],
+   "coreMedians": {
+    "development": 0.616,
+    "demography": -0.87,
+    "governance": 1.166,
+    "values": 0.294
+   },
+   "stability": 0.502,
+   "surveyed": 2,
+   "claimable": [
+    "count_news_agencies",
+    "hist_flag_adopted",
+    "idx_cpi",
+    "idx_economist",
+    "idx_etr",
+    "idx_etr_rating",
+    "idx_freedomHouse",
+    "idx_freedomHouse_rating",
+    "idx_genderGap",
+    "idx_genderGap_rating",
+    "idx_gpi_rating",
+    "idx_happiness",
+    "idx_hdi",
+    "idx_hdi_rating",
+    "idx_rsfPress",
+    "idx_softPower_rating",
+    "idx_vDem",
+    "idx_vDem_rating",
+    "idx_wjpRuleOfLaw",
+    "lang_spanish",
+    "member_organization_of_american_states",
+    "rel_other",
+    "rel_unaffiliated",
+    "sport_summer_games",
+    "sport_wc_men_apps",
+    "wb_age_0_14",
+    "wb_age_65_up",
+    "wb_density",
+    "wb_fertility",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_gini",
+    "wb_health_exp",
+    "wb_homicide",
+    "wb_largest_city",
+    "wb_life_expectancy",
+    "wb_remittances",
+    "wb_services",
+    "wb_tertiary",
+    "wb_tourist_arrivals",
+    "wb_urban"
+   ]
+  },
+  {
+   "code": "07",
+   "size": 3,
+   "members": [
+    "BH",
+    "BN",
+    "KW"
+   ],
+   "medoid": "BH",
+   "typical": [
+    "BH",
+    "KW",
+    "BN"
+   ],
+   "coreMedians": {
+    "development": 0.993,
+    "demography": -0.164,
+    "governance": -0.347,
+    "values": null
+   },
+   "stability": 0.417,
+   "surveyed": 0,
+   "claimable": [
+    "idx_cpi",
+    "idx_freedomHouse",
+    "idx_freedomHouse_rating",
+    "idx_genderGap",
+    "idx_genderGap_rating",
+    "idx_hdi",
+    "idx_hdi_rating",
+    "idx_rsfPress",
+    "idx_softPower",
+    "rel_christian",
+    "rel_muslim",
+    "rel_unaffiliated",
+    "wb_age_0_14",
+    "wb_agriculture",
+    "wb_co2_pc",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_internet",
+    "wb_land_area",
+    "wb_life_expectancy",
+    "wb_migrants",
+    "wb_military",
+    "wb_population",
+    "wb_resource_rents",
+    "wb_trade"
+   ]
+  },
+  {
+   "code": "08",
+   "size": 4,
+   "members": [
+    "OM",
+    "QA",
+    "SA",
+    "AE"
+   ],
+   "medoid": "SA",
+   "typical": [
+    "SA",
+    "AE",
+    "OM"
+   ],
+   "coreMedians": {
+    "development": 1.033,
+    "demography": 0.829,
+    "governance": -0.108,
+    "values": null
+   },
+   "stability": 0.711,
+   "surveyed": 0,
+   "claimable": [
+    "idx_cpi",
+    "idx_economist",
+    "idx_economist_rating",
+    "idx_etr_rating",
+    "idx_freedomHouse",
+    "idx_freedomHouse_rating",
+    "idx_happiness",
+    "idx_hdi",
+    "idx_hdi_rating",
+    "idx_imdCompetitiveness",
+    "idx_vDem",
+    "idx_vDem_rating",
+    "lang_arabic",
+    "member_arab_league",
+    "member_gulf_cooperation_council",
+    "rel_christian",
+    "rel_muslim",
+    "rel_other",
+    "rel_unaffiliated",
+    "wb_age_65_up",
+    "wb_co2_pc",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_homicide",
+    "wb_industry",
+    "wb_internet",
+    "wb_life_expectancy",
+    "wb_migrants",
+    "wb_military",
+    "wb_pop_growth",
+    "wb_remittances",
+    "wb_resource_rents",
+    "wb_services",
+    "wb_urban"
+   ]
+  },
+  {
+   "code": "09",
+   "size": 11,
+   "members": [
+    "FJ",
+    "KI",
+    "MH",
+    "FM",
+    "NR",
+    "PW",
+    "WS",
+    "SB",
+    "TO",
+    "TV",
+    "VU"
+   ],
+   "medoid": "KI",
+   "typical": [
+    "KI",
+    "WS",
+    "TO"
+   ],
+   "coreMedians": {
+    "development": -0.592,
+    "demography": 0.373,
+    "governance": 0.648,
+    "values": null
+   },
+   "stability": 0.719,
+   "surveyed": 0,
+   "claimable": [
+    "count_news_agencies",
+    "geo_capital_lat",
+    "idx_freedomHouse",
+    "idx_freedomHouse_rating",
+    "idx_rsfPress",
+    "idx_softPower",
+    "idx_vDem",
+    "lang_english",
+    "member_pacific_islands_forum",
+    "rel_christian",
+    "rel_unaffiliated",
+    "sport_summer_medals",
+    "wb_gdppc_ppp",
+    "wb_gini",
+    "wb_industry",
+    "wb_life_expectancy"
+   ]
+  },
+  {
+   "code": "10",
+   "size": 3,
+   "members": [
+    "CV",
+    "ST",
+    "TL"
+   ],
+   "medoid": "CV",
+   "typical": [
+    "CV",
+    "ST",
+    "TL"
+   ],
+   "coreMedians": {
+    "development": -0.795,
+    "demography": 0.612,
+    "governance": 0.504,
+    "values": null
+   },
+   "stability": 0.754,
+   "surveyed": 0,
+   "claimable": [
+    "geo_capital_lat",
+    "idx_freedomHouse",
+    "idx_freedomHouse_rating",
+    "idx_hdi",
+    "idx_hdi_rating",
+    "idx_softPower",
+    "idx_softPower_rating",
+    "idx_vDem",
+    "idx_vDem_rating",
+    "lang_portuguese",
+    "rel_christian",
+    "sport_summer_games",
+    "sport_summer_medals",
+    "wb_age_0_14",
+    "wb_agriculture",
+    "wb_co2_pc",
+    "wb_fertility",
+    "wb_gdppc_ppp",
+    "wb_industry",
+    "wb_internet",
+    "wb_land_area",
+    "wb_life_expectancy",
+    "wb_migrants",
+    "wb_population",
+    "wb_remittances",
+    "wb_services",
+    "wb_tertiary",
+    "wb_tourist_arrivals"
+   ]
+  },
+  {
+   "code": "11",
+   "size": 4,
+   "members": [
+    "BW",
+    "NA",
+    "SC",
+    "ZA"
+   ],
+   "medoid": "BW",
+   "typical": [
+    "BW",
+    "NA",
+    "ZA"
+   ],
+   "coreMedians": {
+    "development": -0.386,
+    "demography": 0.468,
+    "governance": 0.654,
+    "values": -0.238
+   },
+   "stability": 0.611,
+   "surveyed": 1,
+   "claimable": [
+    "geo_capital_lat",
+    "idx_cpi",
+    "idx_economist",
+    "idx_freedomHouse_rating",
+    "idx_imdCompetitiveness",
+    "idx_rsfPress",
+    "idx_vDem",
+    "idx_wjpRuleOfLaw",
+    "lang_english",
+    "member_african_union",
+    "member_commonwealth_of_nations",
+    "member_sadc",
+    "rel_christian",
+    "wb_remittances",
+    "wb_services",
+    "wb_tertiary"
+   ]
+  },
+  {
+   "code": "12",
+   "size": 3,
+   "members": [
+    "GY",
+    "SR",
+    "TT"
+   ],
+   "medoid": "TT",
+   "typical": [
+    "TT",
+    "GY",
+    "SR"
+   ],
+   "coreMedians": {
+    "development": 0.246,
+    "demography": 0.095,
+    "governance": 0.362,
+    "values": null
+   },
+   "stability": 0.699,
+   "surveyed": 0,
+   "claimable": [
+    "count_news_agencies",
+    "idx_economist",
+    "idx_economist_rating",
+    "idx_etr_rating",
+    "idx_freedomHouse",
+    "idx_freedomHouse_rating",
+    "idx_genderGap",
+    "idx_genderGap_rating",
+    "idx_rsfPress",
+    "idx_softPower",
+    "idx_softPower_rating",
+    "member_caricom",
+    "member_organization_of_american_states",
+    "rel_hindu",
+    "sport_summer_games",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_homicide",
+    "wb_population",
+    "wb_resource_rents",
+    "wb_tertiary",
+    "wb_tourist_arrivals"
+   ]
+  },
+  {
+   "code": "13",
+   "size": 10,
+   "members": [
+    "AG",
+    "BS",
+    "BB",
+    "BZ",
+    "DM",
+    "GD",
+    "JM",
+    "KN",
+    "LC",
+    "VC"
+   ],
+   "medoid": "GD",
+   "typical": [
+    "GD",
+    "LC",
+    "VC"
+   ],
+   "coreMedians": {
+    "development": 0.014,
+    "demography": -0.633,
+    "governance": 0.854,
+    "values": null
+   },
+   "stability": 0.833,
+   "surveyed": 0,
+   "claimable": [
+    "idx_freedomHouse",
+    "idx_freedomHouse_rating",
+    "idx_genderGap",
+    "idx_softPower",
+    "idx_wjpRuleOfLaw",
+    "lang_english",
+    "member_caricom",
+    "member_commonwealth_of_nations",
+    "member_organization_of_american_states",
+    "pol_effective_parties",
+    "rel_christian",
+    "rel_unaffiliated",
+    "wb_age_0_14",
+    "wb_age_65_up",
+    "wb_female_lfp",
+    "wb_gini",
+    "wb_health_exp",
+    "wb_industry",
+    "wb_resource_rents",
+    "wb_services",
+    "wb_trade"
+   ]
+  },
+  {
+   "code": "14",
+   "size": 9,
+   "members": [
+    "AL",
+    "AM",
+    "BA",
+    "MV",
+    "MD",
+    "ME",
+    "MK",
+    "RO",
+    "RS"
+   ],
+   "medoid": "BA",
+   "typical": [
+    "BA",
+    "MK",
+    "MD"
+   ],
+   "coreMedians": {
+    "development": 0.416,
+    "demography": -1.137,
+    "governance": 0.208,
+    "values": -0.516
+   },
+   "stability": 0.542,
+   "surveyed": 8,
+   "claimable": [
+    "idx_etr",
+    "idx_perception",
+    "idx_rsfPress",
+    "wb_age_0_14",
+    "wb_gini",
+    "wb_life_expectancy",
+    "wb_population",
+    "wvs_homosexuality_justifiable"
+   ]
+  },
+  {
+   "code": "15",
+   "size": 7,
+   "members": [
+    "CY",
+    "GE",
+    "GR",
+    "IL",
+    "MY",
+    "MT",
+    "MU"
+   ],
+   "medoid": "CY",
+   "typical": [
+    "CY",
+    "MT",
+    "GR"
+   ],
+   "coreMedians": {
+    "development": 0.806,
+    "demography": -0.683,
+    "governance": 0.786,
+    "values": -0.296
+   },
+   "stability": 0.267,
+   "surveyed": 4,
+   "claimable": [
+    "idx_cpi",
+    "idx_hdi",
+    "idx_hdi_rating",
+    "idx_wjpRuleOfLaw",
+    "wb_co2_pc",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_homicide",
+    "wb_largest_city",
+    "wvs_trust"
+   ]
+  },
+  {
+   "code": "16",
+   "size": 3,
+   "members": [
+    "BT",
+    "NP",
+    "LK"
+   ],
+   "medoid": "LK",
+   "typical": [
+    "LK",
+    "NP",
+    "BT"
+   ],
+   "coreMedians": {
+    "development": -0.099,
+    "demography": -0.282,
+    "governance": -0.003,
+    "values": null
+   },
+   "stability": 0.593,
+   "surveyed": 0,
+   "claimable": [
+    "idx_gdi",
+    "idx_genderGap",
+    "idx_genderGap_rating",
+    "idx_rsfPress",
+    "idx_softPower_rating",
+    "idx_vDem",
+    "idx_vDem_rating",
+    "pol_effective_parties",
+    "rel_christian",
+    "rel_unaffiliated",
+    "sport_summer_medals",
+    "wb_agriculture",
+    "wb_co2_pc",
+    "wb_health_exp",
+    "wb_pop_growth",
+    "wb_resource_rents",
+    "wb_tertiary"
+   ]
+  },
+  {
+   "code": "17",
+   "size": 5,
+   "members": [
+    "KH",
+    "LA",
+    "MN",
+    "KP",
+    "VN"
+   ],
+   "medoid": "LA",
+   "typical": [
+    "LA",
+    "KH",
+    "VN"
+   ],
+   "coreMedians": {
+    "development": -0.33,
+    "demography": 0.431,
+    "governance": -0.902,
+    "values": 0.328
+   },
+   "stability": 0.667,
+   "surveyed": 2,
+   "claimable": [
+    "idx_etr",
+    "idx_gdi",
+    "idx_hdi",
+    "pol_effective_parties",
+    "rel_christian",
+    "wb_agriculture",
+    "wb_industry",
+    "wb_migrants",
+    "wb_services",
+    "wb_trade"
+   ]
+  },
+  {
+   "code": "18",
+   "size": 7,
+   "members": [
+    "BO",
+    "SV",
+    "GT",
+    "HT",
+    "HN",
+    "NI",
+    "VE"
+   ],
+   "medoid": "HN",
+   "typical": [
+    "HN",
+    "GT",
+    "SV"
+   ],
+   "coreMedians": {
+    "development": -0.391,
+    "demography": 0.486,
+    "governance": -0.71,
+    "values": -0.932
+   },
+   "stability": 0.645,
+   "surveyed": 4,
+   "claimable": [
+    "hist_independence_year",
+    "idx_cpi",
+    "idx_freedomHouse",
+    "idx_hdi",
+    "idx_perception",
+    "idx_rsfPress",
+    "idx_wjpRuleOfLaw",
+    "member_organization_of_american_states",
+    "rel_christian",
+    "rel_other",
+    "rel_unaffiliated",
+    "wb_age_0_14",
+    "wb_co2_pc",
+    "wb_gdppc_usd",
+    "wb_gini",
+    "wb_homicide",
+    "wb_internet",
+    "wb_tertiary",
+    "wvs_abortion_justifiable",
+    "wvs_autonomy",
+    "wvs_god_importance",
+    "wvs_respect_authority_good",
+    "wvs_very_proud"
+   ]
+  },
+  {
+   "code": "19",
+   "size": 10,
+   "members": [
+    "AR",
+    "BR",
+    "CO",
+    "CU",
+    "DO",
+    "EC",
+    "MX",
+    "PA",
+    "PY",
+    "PE"
+   ],
+   "medoid": "DO",
+   "typical": [
+    "DO",
+    "PA",
+    "PY"
+   ],
+   "coreMedians": {
+    "development": 0.226,
+    "demography": -0.07,
+    "governance": -0.113,
+    "values": -0.511
+   },
+   "stability": 0.588,
+   "surveyed": 6,
+   "claimable": [
+    "idx_gdi",
+    "idx_genderGap",
+    "idx_imdCompetitiveness",
+    "idx_perception",
+    "member_organization_of_american_states",
+    "rel_christian",
+    "rel_unaffiliated",
+    "wb_land_area",
+    "wb_life_expectancy",
+    "wb_urban",
+    "wvs_abortion_justifiable",
+    "wvs_autonomy",
+    "wvs_god_importance",
+    "wvs_respect_authority_good",
+    "wvs_trust"
+   ]
+  },
+  {
+   "code": "20",
+   "size": 6,
+   "members": [
+    "AZ",
+    "BY",
+    "CN",
+    "RU",
+    "TH",
+    "UA"
+   ],
+   "medoid": "BY",
+   "typical": [
+    "BY",
+    "RU",
+    "UA"
+   ],
+   "coreMedians": {
+    "development": 0.378,
+    "demography": -1.028,
+    "governance": -1.011,
+    "values": 0.189
+   },
+   "stability": 0.547,
+   "surveyed": 6,
+   "claimable": [
+    "idx_etr",
+    "idx_vDem",
+    "sport_summer_medals",
+    "sport_winter_games",
+    "wb_age_0_14",
+    "wb_co2_pc",
+    "wb_fertility",
+    "wb_tertiary",
+    "wvs_homosexuality_justifiable",
+    "wvs_postmaterialist_first"
+   ]
+  },
+  {
+   "code": "21",
+   "size": 5,
+   "members": [
+    "KZ",
+    "KG",
+    "TJ",
+    "TM",
+    "UZ"
+   ],
+   "medoid": "UZ",
+   "typical": [
+    "UZ",
+    "KG",
+    "TM"
+   ],
+   "coreMedians": {
+    "development": -0.157,
+    "demography": 0.669,
+    "governance": -0.89,
+    "values": -0.373
+   },
+   "stability": 0.758,
+   "surveyed": 4,
+   "claimable": [
+    "geo_capital_lat",
+    "hist_independence_year",
+    "idx_cpi",
+    "idx_economist",
+    "idx_economist_rating",
+    "idx_freedomHouse",
+    "idx_freedomHouse_rating",
+    "idx_gpi_rating",
+    "idx_rsfPress",
+    "idx_rsfPress_rating",
+    "idx_vDem",
+    "lang_russian",
+    "rel_christian",
+    "rel_muslim",
+    "rel_other",
+    "rel_unaffiliated",
+    "sport_summer_games",
+    "wb_age_0_14",
+    "wb_fertility",
+    "wb_industry",
+    "wb_pop_growth",
+    "wb_resource_rents",
+    "wb_tourist_arrivals",
+    "wb_urban",
+    "wvs_abortion_justifiable",
+    "wvs_god_importance",
+    "wvs_happy",
+    "wvs_postmaterialist_first"
+   ]
+  },
+  {
+   "code": "22",
+   "size": 7,
+   "members": [
+    "BD",
+    "IN",
+    "ID",
+    "LB",
+    "MM",
+    "PK",
+    "PH"
+   ],
+   "medoid": "BD",
+   "typical": [
+    "BD",
+    "ID",
+    "PK"
+   ],
+   "coreMedians": {
+    "development": -0.422,
+    "demography": 0.044,
+    "governance": -0.695,
+    "values": -0.85
+   },
+   "stability": 0.488,
+   "surveyed": 7,
+   "claimable": [
+    "idx_cpi",
+    "idx_hdi",
+    "idx_rsfPress",
+    "idx_wjpRuleOfLaw",
+    "rel_unaffiliated",
+    "wb_gdppc_usd",
+    "wb_internet",
+    "wvs_abortion_justifiable",
+    "wvs_god_importance"
+   ]
+  },
+  {
+   "code": "23",
+   "size": 11,
+   "members": [
+    "DZ",
+    "DJ",
+    "EG",
+    "IR",
+    "IQ",
+    "JO",
+    "LY",
+    "MA",
+    "PS",
+    "TN",
+    "TR"
+   ],
+   "medoid": "DZ",
+   "typical": [
+    "DZ",
+    "TN",
+    "PS"
+   ],
+   "coreMedians": {
+    "development": -0.028,
+    "demography": 0.312,
+    "governance": -0.877,
+    "values": -1.142
+   },
+   "stability": 0.675,
+   "surveyed": 8,
+   "claimable": [
+    "geo_capital_lat",
+    "idx_economist",
+    "idx_freedomHouse",
+    "idx_genderGap",
+    "idx_happiness",
+    "idx_rsfPress",
+    "idx_vDem",
+    "rel_christian",
+    "rel_muslim",
+    "rel_other",
+    "wb_fertility",
+    "wvs_abortion_justifiable",
+    "wvs_god_importance",
+    "wvs_homosexuality_justifiable"
+   ]
+  },
+  {
+   "code": "24",
+   "size": 5,
+   "members": [
+    "AF",
+    "SO",
+    "SD",
+    "SY",
+    "YE"
+   ],
+   "medoid": "YE",
+   "typical": [
+    "YE",
+    "SY",
+    "SO"
+   ],
+   "coreMedians": {
+    "development": -1.768,
+    "demography": 1.617,
+    "governance": -1.563,
+    "values": null
+   },
+   "stability": 0.899,
+   "surveyed": 0,
+   "claimable": [
+    "idx_cpi",
+    "idx_economist",
+    "idx_etr",
+    "idx_freedomHouse",
+    "idx_freedomHouse_rating",
+    "idx_gpi",
+    "idx_gpi_rating",
+    "idx_hdi",
+    "idx_rsfPress",
+    "idx_vDem",
+    "idx_vDem_rating",
+    "rel_christian",
+    "rel_muslim",
+    "rel_other",
+    "rel_unaffiliated",
+    "sport_summer_medals",
+    "wb_age_65_up",
+    "wb_co2_pc",
+    "wb_female_lfp",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_internet",
+    "wb_land_area",
+    "wb_pop_growth",
+    "wb_population",
+    "wb_services",
+    "wb_tertiary"
+   ]
+  },
+  {
+   "code": "25",
+   "size": 11,
+   "members": [
+    "AO",
+    "SZ",
+    "GH",
+    "LS",
+    "LR",
+    "MW",
+    "PG",
+    "RW",
+    "SL",
+    "ZM",
+    "ZW"
+   ],
+   "medoid": "ZM",
+   "typical": [
+    "ZM",
+    "MW",
+    "ZW"
+   ],
+   "coreMedians": {
+    "development": -1.474,
+    "demography": 1.187,
+    "governance": -0.202,
+    "values": -1.754
+   },
+   "stability": 0.586,
+   "surveyed": 1,
+   "claimable": [
+    "geo_capital_lat",
+    "idx_etr",
+    "idx_gpi_rating",
+    "idx_happiness",
+    "idx_hdi",
+    "wb_age_0_14",
+    "wb_age_65_up",
+    "wb_co2_pc",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_life_expectancy",
+    "wb_migrants",
+    "wb_military",
+    "wb_pop_growth",
+    "wb_resource_rents",
+    "wb_services",
+    "wb_tertiary"
+   ]
+  },
+  {
+   "code": "26",
+   "size": 8,
+   "members": [
+    "CM",
+    "ER",
+    "ET",
+    "KE",
+    "MZ",
+    "NG",
+    "TZ",
+    "UG"
+   ],
+   "medoid": "UG",
+   "typical": [
+    "UG",
+    "KE",
+    "TZ"
+   ],
+   "coreMedians": {
+    "development": -1.571,
+    "demography": 1.441,
+    "governance": -0.876,
+    "values": -1.038
+   },
+   "stability": 0.666,
+   "surveyed": 3,
+   "claimable": [
+    "idx_cpi",
+    "idx_economist",
+    "idx_etr",
+    "idx_freedomHouse",
+    "idx_gpi",
+    "idx_happiness",
+    "idx_hdi",
+    "idx_wjpRuleOfLaw",
+    "member_african_union",
+    "pol_effective_parties",
+    "rel_muslim",
+    "wb_age_0_14",
+    "wb_age_65_up",
+    "wb_agriculture",
+    "wb_co2_pc",
+    "wb_electricity",
+    "wb_fertility",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_homicide",
+    "wb_internet",
+    "wb_land_area",
+    "wb_migrants",
+    "wb_military",
+    "wb_pop_growth",
+    "wb_tertiary",
+    "wvs_autonomy",
+    "wvs_god_importance",
+    "wvs_homosexuality_justifiable"
+   ]
+  },
+  {
+   "code": "27",
+   "size": 4,
+   "members": [
+    "BI",
+    "CF",
+    "CD",
+    "SS"
+   ],
+   "medoid": "CF",
+   "typical": [
+    "CF",
+    "BI",
+    "SS"
+   ],
+   "coreMedians": {
+    "development": -2.316,
+    "demography": 1.798,
+    "governance": -1.262,
+    "values": null
+   },
+   "stability": 0.401,
+   "surveyed": 0,
+   "claimable": [
+    "geo_capital_lat",
+    "idx_cpi",
+    "idx_economist",
+    "idx_etr",
+    "idx_etr_rating",
+    "idx_freedomHouse",
+    "idx_freedomHouse_rating",
+    "idx_hdi",
+    "idx_hdi_rating",
+    "idx_vDem",
+    "member_african_union",
+    "rel_christian",
+    "rel_unaffiliated",
+    "sport_summer_medals",
+    "wb_age_0_14",
+    "wb_age_65_up",
+    "wb_co2_pc",
+    "wb_electricity",
+    "wb_female_lfp",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_gini",
+    "wb_internet",
+    "wb_life_expectancy",
+    "wb_pop_growth",
+    "wb_remittances",
+    "wb_resource_rents",
+    "wb_services",
+    "wb_tourist_arrivals",
+    "wb_urban"
+   ]
+  },
+  {
+   "code": "28",
+   "size": 5,
+   "members": [
+    "BF",
+    "TD",
+    "KM",
+    "ML",
+    "NE"
+   ],
+   "medoid": "ML",
+   "typical": [
+    "ML",
+    "BF",
+    "NE"
+   ],
+   "coreMedians": {
+    "development": -1.881,
+    "demography": 1.876,
+    "governance": -0.89,
+    "values": null
+   },
+   "stability": 0.583,
+   "surveyed": 0,
+   "claimable": [
+    "idx_cpi",
+    "idx_economist",
+    "idx_economist_rating",
+    "idx_etr",
+    "idx_freedomHouse",
+    "idx_gpi",
+    "idx_happiness",
+    "idx_vDem",
+    "idx_wjpRuleOfLaw",
+    "lang_french",
+    "member_african_union",
+    "rel_christian",
+    "rel_muslim",
+    "rel_unaffiliated",
+    "sport_summer_medals",
+    "wb_age_0_14",
+    "wb_age_65_up",
+    "wb_co2_pc",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_health_exp",
+    "wb_internet",
+    "wb_life_expectancy",
+    "wb_migrants",
+    "wb_military",
+    "wb_pop_growth",
+    "wb_tertiary",
+    "wb_trade",
+    "wb_urban"
+   ]
+  },
+  {
+   "code": "29",
+   "size": 7,
+   "members": [
+    "BJ",
+    "CI",
+    "GM",
+    "GN",
+    "GW",
+    "SN",
+    "TG"
+   ],
+   "medoid": "CI",
+   "typical": [
+    "CI",
+    "GN",
+    "TG"
+   ],
+   "coreMedians": {
+    "development": -1.455,
+    "demography": 1.351,
+    "governance": -0.242,
+    "values": null
+   },
+   "stability": 0.591,
+   "surveyed": 0,
+   "claimable": [
+    "idx_etr",
+    "idx_freedomHouse",
+    "idx_genderGap",
+    "idx_happiness",
+    "idx_hdi",
+    "member_african_union",
+    "member_ecowas",
+    "rel_christian",
+    "sport_summer_medals",
+    "wb_age_0_14",
+    "wb_age_65_up",
+    "wb_co2_pc",
+    "wb_electricity",
+    "wb_fertility",
+    "wb_gdppc_ppp",
+    "wb_gdppc_usd",
+    "wb_internet",
+    "wb_life_expectancy",
+    "wb_pop_growth",
+    "wb_resource_rents",
+    "wb_tertiary",
+    "wb_tourist_arrivals"
+   ]
+  },
+  {
+   "code": "30",
+   "size": 5,
+   "members": [
+    "CG",
+    "GQ",
+    "GA",
+    "MG",
+    "MR"
+   ],
+   "medoid": "CG",
+   "typical": [
+    "CG",
+    "GA",
+    "GQ"
+   ],
+   "coreMedians": {
+    "development": -1.006,
+    "demography": 1.33,
+    "governance": -0.703,
+    "values": null
+   },
+   "stability": 0.527,
+   "surveyed": 0,
+   "claimable": [
+    "geo_capital_lat",
+    "idx_cpi",
+    "idx_economist",
+    "idx_etr",
+    "idx_freedomHouse",
+    "idx_gti_rating",
+    "idx_happiness",
+    "idx_vDem",
+    "idx_vDem_rating",
+    "idx_wjpRuleOfLaw",
+    "member_african_union",
+    "rel_other",
+    "sport_summer_medals",
+    "wb_age_0_14",
+    "wb_age_65_up",
+    "wb_co2_pc",
+    "wb_density",
+    "wb_fertility",
+    "wb_gdppc_usd",
+    "wb_health_exp",
+    "wb_life_expectancy",
+    "wb_pop_growth",
+    "wb_remittances",
+    "wb_resource_rents",
+    "wb_services",
+    "wb_tertiary"
+   ]
+  }
+ ],
  "assignments": {
   "AD": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.319,
-   "secondGroup": "A",
-   "type": "B05",
-   "typeConfidence": 0.449,
-   "secondType": "B06",
-   "consensus": 0.934,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "01",
+   "secondPersona": "02",
+   "confidence": 0.228,
+   "stability": 0.681,
+   "exceptions": [],
+   "observedShare": 0.767,
+   "surveyed": true,
+   "core": {
+    "development": 1.103673,
+    "demography": -0.949491,
+    "governance": 0.685377,
+    "values": 1.272484
+   }
   },
   "AE": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.389,
-   "secondGroup": "A",
-   "type": "D10",
-   "consensus": 0.901,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "08",
+   "secondPersona": "07",
+   "confidence": 0.336,
+   "stability": 0.933,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 1.163679,
+    "demography": 0.594716,
+    "governance": -0.044566,
+    "values": null
+   }
   },
   "AF": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.655,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.277,
-   "secondType": "E11",
-   "consensus": 0.966,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "24",
+   "secondPersona": "27",
+   "confidence": 0.203,
+   "stability": 0.938,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.822591,
+    "demography": 1.669029,
+    "governance": -1.716467,
+    "values": null
+   }
   },
   "AG": {
-   "status": "built",
-   "group": "B",
-   "confidence": 0.787,
-   "secondGroup": "C",
-   "type": "B05",
-   "typeConfidence": 0.392,
-   "secondType": "B06",
-   "consensus": 0.935,
-   "observedShare": 1,
-   "imputedDomains": []
+   "status": "provisional",
+   "persona": "13",
+   "secondPersona": "12",
+   "confidence": 0.362,
+   "stability": 0.894,
+   "exceptions": [],
+   "observedShare": 0.567,
+   "surveyed": false,
+   "core": {
+    "development": 0.374089,
+    "demography": -0.567899,
+    "governance": 0.753317,
+    "values": null
+   }
   },
   "AL": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.135,
-   "secondGroup": "B",
-   "type": "C08",
-   "typeConfidence": 0.5,
-   "secondType": "C09",
-   "consensus": 0.865,
+   "persona": "14",
+   "secondPersona": "15",
+   "confidence": 0.188,
+   "stability": 0.609,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.45348,
+    "demography": -1.261528,
+    "governance": 0.01638,
+    "values": -1.203855
+   }
   },
   "AM": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.149,
-   "secondGroup": "B",
-   "type": "C08",
-   "typeConfidence": 0.227,
-   "secondType": "C09",
-   "consensus": 0.831,
+   "persona": "14",
+   "secondPersona": "19",
+   "confidence": 0.122,
+   "stability": 0.491,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.328784,
+    "demography": -0.274143,
+    "governance": 0.224015,
+    "values": -1.123035
+   }
   },
   "AO": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.486,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.912,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "25",
+   "secondPersona": "26",
+   "confidence": 0,
+   "stability": 0.527,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.095276,
+    "demography": 1.780939,
+    "governance": -0.697606,
+    "values": null
+   }
   },
   "AR": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.012,
-   "secondGroup": "C",
-   "type": "A04",
-   "typeConfidence": 0.209,
-   "secondType": "A03",
-   "consensus": 0.595,
+   "persona": "19",
+   "secondPersona": "06",
+   "confidence": 0,
+   "stability": 0.644,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.535481,
+    "demography": -0.541499,
+    "governance": 0.220872,
+    "values": -0.078855
+   }
   },
   "AT": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.83,
-   "secondGroup": "C",
-   "type": "A03",
-   "typeConfidence": 0.192,
-   "secondType": "A01",
-   "consensus": 0.957,
+   "persona": "03",
+   "secondPersona": "02",
+   "confidence": 0,
+   "stability": 0.597,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.020631,
+    "demography": -1.134283,
+    "governance": 1.594941,
+    "values": 1.490563
+   }
   },
   "AU": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.628,
-   "secondGroup": "C",
-   "type": "A01",
-   "typeConfidence": 0.757,
-   "secondType": "A02",
-   "consensus": 0.955,
+   "persona": "02",
+   "secondPersona": "03",
+   "confidence": 0.262,
+   "stability": 0.571,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.134795,
+    "demography": -0.577125,
+    "governance": 1.716038,
+    "values": 1.390091
+   }
   },
   "AZ": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.41,
-   "secondGroup": "E",
-   "type": "C09",
-   "typeConfidence": 0.302,
-   "secondType": "C08",
-   "consensus": 0.924,
+   "persona": "20",
+   "secondPersona": "21",
+   "confidence": 0,
+   "stability": 0.175,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.257923,
+    "demography": -0.41353,
+    "governance": -1.079086,
+    "values": -0.652599
+   }
   },
   "BA": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.215,
-   "secondGroup": "B",
-   "type": "C08",
-   "typeConfidence": 0.569,
-   "secondType": "C09",
-   "consensus": 0.899,
+   "persona": "14",
+   "secondPersona": "15",
+   "confidence": 0.299,
+   "stability": 0.656,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.362437,
+    "demography": -1.408558,
+    "governance": -0.160496,
+    "values": -0.447145
+   }
   },
   "BB": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.59,
-   "secondGroup": "A",
-   "type": "B05",
-   "typeConfidence": 0.359,
-   "secondType": "B06",
-   "consensus": 0.936,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "13",
+   "secondPersona": "12",
+   "confidence": 0.41,
+   "stability": 0.864,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": 0.158113,
+    "demography": -0.807235,
+    "governance": 1.252356,
+    "values": null
+   }
   },
   "BD": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.312,
-   "secondGroup": "E",
-   "type": "C09",
-   "typeConfidence": 0.354,
-   "secondType": "C08",
-   "consensus": 0.919,
+   "persona": "22",
+   "secondPersona": "21",
+   "confidence": 0.063,
+   "stability": 0.496,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.482032,
+    "demography": 0.274095,
+    "governance": -0.912419,
+    "values": -1.067122
+   }
   },
   "BE": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.717,
-   "secondGroup": "C",
-   "type": "A01",
-   "typeConfidence": 0.66,
-   "secondType": "A02",
-   "consensus": 0.958,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "03",
+   "secondPersona": "05",
+   "confidence": 0.098,
+   "stability": 0.572,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 1.099828,
+    "demography": -0.946365,
+    "governance": 1.572977,
+    "values": null
+   }
   },
   "BF": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.833,
-   "secondGroup": "C",
-   "type": "E11",
-   "typeConfidence": 0.643,
-   "secondType": "E12",
-   "consensus": 0.968,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "28",
+   "secondPersona": "27",
+   "confidence": 0.244,
+   "stability": 0.787,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.881208,
+    "demography": 1.406875,
+    "governance": -0.68106,
+    "values": null
+   }
   },
   "BG": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.185,
-   "secondGroup": "A",
-   "type": "C08",
-   "typeConfidence": 0.469,
-   "secondType": "C09",
-   "consensus": 0.828,
+   "persona": "04",
+   "secondPersona": "14",
+   "confidence": 0.064,
+   "stability": 0.336,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.432514,
+    "demography": -1.112508,
+    "governance": 0.261875,
+    "values": -0.318896
+   }
   },
   "BH": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.428,
-   "secondGroup": "C",
-   "type": "D10",
-   "consensus": 0.905,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "07",
+   "secondPersona": "08",
+   "confidence": 0.041,
+   "stability": 0.537,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 1.008107,
+    "demography": -0.086246,
+    "governance": -0.498675,
+    "values": null
+   }
   },
   "BI": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.681,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.385,
-   "secondType": "E11",
-   "consensus": 0.966,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "27",
+   "secondPersona": "26",
+   "confidence": 0.064,
+   "stability": 0.55,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -2.212807,
+    "demography": 1.624454,
+    "governance": -1.280765,
+    "values": null
+   }
   },
   "BJ": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.132,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.746,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "29",
+   "secondPersona": "28",
+   "confidence": 0.1,
+   "stability": 0.588,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.641932,
+    "demography": 1.486977,
+    "governance": -0.183077,
+    "values": null
+   }
   },
   "BN": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.084,
-   "secondGroup": "B",
-   "type": "D10",
-   "consensus": 0.432,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "07",
+   "secondPersona": "08",
+   "confidence": 0.109,
+   "stability": 0.575,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 0.70507,
+    "demography": -0.163817,
+    "governance": 0.290485,
+    "values": null
+   }
   },
   "BO": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.723,
-   "secondGroup": "C",
-   "type": "D10",
-   "consensus": 0.913,
+   "persona": "18",
+   "secondPersona": "19",
+   "confidence": 0,
+   "stability": 0.212,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.316378,
+    "demography": 0.486498,
+    "governance": -0.435579,
+    "values": -1.065776
+   }
   },
   "BR": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.056,
-   "secondGroup": "C",
-   "type": "A04",
-   "typeConfidence": 0.34,
-   "secondType": "A01",
-   "consensus": 0.745,
+   "persona": "19",
+   "secondPersona": "06",
+   "confidence": 0.062,
+   "stability": 0.606,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.219985,
+    "demography": -0.489946,
+    "governance": 0.27325,
+    "values": 0.004694
+   }
   },
   "BS": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.055,
-   "secondGroup": "D",
-   "type": "B05",
-   "typeConfidence": 0.376,
-   "secondType": "B06",
-   "consensus": 0.719,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "13",
+   "secondPersona": "06",
+   "confidence": 0.32,
+   "stability": 0.761,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": 0.432843,
+    "demography": -0.647016,
+    "governance": 0.90375,
+    "values": null
+   }
   },
   "BT": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.385,
-   "secondGroup": "C",
-   "type": "B06",
-   "typeConfidence": 0.557,
-   "secondType": "B07",
-   "consensus": 0.883,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "16",
+   "secondPersona": "14",
+   "confidence": 0.083,
+   "stability": 0.525,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.00576,
+    "demography": -0.282369,
+    "governance": 0.809287,
+    "values": null
+   }
   },
   "BW": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.428,
-   "secondGroup": "B",
-   "type": "D10",
-   "consensus": 0.909,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "11",
+   "secondPersona": "25",
+   "confidence": 0.219,
+   "stability": 0.658,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.413894,
+    "demography": 0.718888,
+    "governance": 0.713971,
+    "values": null
+   }
   },
   "BY": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.49,
-   "secondGroup": "E",
-   "type": "C08",
-   "typeConfidence": 0.136,
-   "secondType": "C09",
-   "consensus": 0.926,
+   "persona": "20",
+   "secondPersona": "14",
+   "confidence": 0.055,
+   "stability": 0.53,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.406938,
+    "demography": -1.215072,
+    "governance": -1.102978,
+    "values": 0.24104
+   }
   },
   "BZ": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.557,
-   "secondGroup": "D",
-   "type": "B05",
-   "typeConfidence": 0.232,
-   "secondType": "B07",
-   "consensus": 0.934,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "13",
+   "secondPersona": "12",
+   "confidence": 0.115,
+   "stability": 0.758,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.117923,
+    "demography": 0.298273,
+    "governance": 0.211198,
+    "values": null
+   }
   },
   "CA": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.659,
-   "secondGroup": "C",
-   "type": "A01",
-   "typeConfidence": 0.548,
-   "secondType": "A04",
-   "consensus": 0.955,
+   "persona": "03",
+   "secondPersona": "02",
+   "confidence": 0,
+   "stability": 0.344,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.033544,
+    "demography": -0.96876,
+    "governance": 1.714864,
+    "values": 1.4113
+   }
   },
   "CD": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.05,
-   "secondGroup": "D",
-   "type": "E11",
-   "typeConfidence": 0.364,
-   "secondType": "E12",
-   "consensus": 0.543,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "27",
+   "secondPersona": "28",
+   "confidence": 0,
+   "stability": 0.533,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.930415,
+    "demography": 1.970633,
+    "governance": -1.242965,
+    "values": null
+   }
   },
   "CF": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.432,
-   "secondGroup": "D",
-   "type": "E11",
-   "typeConfidence": 0.415,
-   "secondType": "E12",
-   "consensus": 0.969,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "27",
+   "secondPersona": "28",
+   "confidence": 0.157,
+   "stability": 0.608,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": -2.419349,
+    "demography": 2.113543,
+    "governance": -1.074387,
+    "values": null
+   }
   },
   "CG": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.56,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.915,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "30",
+   "secondPersona": "27",
+   "confidence": 0.099,
+   "stability": 0.588,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.00589,
+    "demography": 1.39443,
+    "governance": -0.904826,
+    "values": null
+   }
   },
   "CH": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.665,
-   "secondGroup": "C",
-   "type": "A01",
-   "typeConfidence": 0.772,
-   "secondType": "A02",
-   "consensus": 0.956,
+   "persona": "03",
+   "secondPersona": "02",
+   "confidence": 0,
+   "stability": 0.539,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.294369,
+    "demography": -0.954502,
+    "governance": 1.979688,
+    "values": 1.730563
+   }
   },
   "CI": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.48,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.913,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "29",
+   "secondPersona": "28",
+   "confidence": 0.233,
+   "stability": 0.612,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.294338,
+    "demography": 1.450486,
+    "governance": -0.241596,
+    "values": null
+   }
   },
   "CL": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.653,
-   "secondGroup": "C",
-   "type": "A03",
-   "typeConfidence": 0.589,
-   "secondType": "A04",
-   "consensus": 0.959,
+   "persona": "06",
+   "secondPersona": "05",
+   "confidence": 0.174,
+   "stability": 0.725,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.788268,
+    "demography": -0.869712,
+    "governance": 1.126141,
+    "values": 0.09705
+   }
   },
   "CM": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.234,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.863,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "26",
+   "secondPersona": "28",
+   "confidence": 0.121,
+   "stability": 0.664,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.244874,
+    "demography": 1.502158,
+    "governance": -1.114034,
+    "values": null
+   }
   },
   "CN": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.297,
-   "secondGroup": "A",
-   "type": "C09",
-   "typeConfidence": 0.195,
-   "secondType": "C08",
-   "consensus": 0.927,
+   "persona": "20",
+   "secondPersona": "17",
+   "confidence": 0.078,
+   "stability": 0.5,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.431201,
+    "demography": -1.130987,
+    "governance": -0.941921,
+    "values": 0.2636
+   }
   },
   "CO": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.542,
-   "secondGroup": "A",
-   "type": "C09",
-   "typeConfidence": 0.252,
-   "secondType": "C08",
-   "consensus": 0.927,
+   "persona": "19",
+   "secondPersona": "18",
+   "confidence": 0.161,
+   "stability": 0.642,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.235029,
+    "demography": -0.273797,
+    "governance": 0.003155,
+    "values": -0.738931
+   }
   },
   "CR": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.496,
-   "secondGroup": "B",
-   "type": "A03",
-   "typeConfidence": 0.519,
-   "secondType": "A02",
-   "consensus": 0.958,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "06",
+   "secondPersona": "19",
+   "confidence": 0.254,
+   "stability": 0.713,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 0.590337,
+    "demography": -0.673119,
+    "governance": 1.166298,
+    "values": null
+   }
   },
   "CU": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.566,
-   "secondGroup": "E",
-   "type": "C09",
-   "typeConfidence": 0.132,
-   "secondType": "C08",
-   "consensus": 0.93,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "19",
+   "secondPersona": "18",
+   "confidence": 0,
+   "stability": 0.411,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": 0.091728,
+    "demography": -1.061003,
+    "governance": -0.752874,
+    "values": null
+   }
   },
   "CV": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.773,
-   "secondGroup": "A",
-   "type": "B05",
-   "typeConfidence": 0.516,
-   "secondType": "B06",
-   "consensus": 0.935,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "10",
+   "secondPersona": "14",
+   "confidence": 0.18,
+   "stability": 0.7,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": -0.215457,
+    "demography": -0.201621,
+    "governance": 1.148084,
+    "values": null
+   }
   },
   "CY": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.269,
-   "secondGroup": "B",
-   "type": "A02",
-   "typeConfidence": 0.562,
-   "secondType": "A03",
-   "consensus": 0.94,
+   "persona": "15",
+   "secondPersona": "14",
+   "confidence": 0,
+   "stability": 0.267,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.924208,
+    "demography": -0.683225,
+    "governance": 0.88607,
+    "values": -0.28933
+   }
   },
   "CZ": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.658,
-   "secondGroup": "C",
-   "type": "A03",
-   "typeConfidence": 0.693,
-   "secondType": "A04",
-   "consensus": 0.957,
+   "persona": "03",
+   "secondPersona": "04",
+   "confidence": 0,
+   "stability": 0.486,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.827036,
+    "demography": -1.202404,
+    "governance": 1.395633,
+    "values": 1.006266
+   }
   },
   "DE": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.564,
-   "secondGroup": "C",
-   "type": "A01",
-   "typeConfidence": 0.285,
-   "secondType": "A04",
-   "consensus": 0.956,
+   "persona": "03",
+   "secondPersona": "02",
+   "confidence": 0,
+   "stability": 0.553,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.038207,
+    "demography": -1.299937,
+    "governance": 1.833151,
+    "values": 1.659976
+   }
   },
   "DJ": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.42,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.913,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "23",
+   "secondPersona": "29",
+   "confidence": 0.099,
+   "stability": 0.32,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": -1.023204,
+    "demography": 0.510474,
+    "governance": -0.930443,
+    "values": null
+   }
   },
   "DK": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.704,
-   "secondGroup": "B",
-   "type": "A01",
-   "typeConfidence": 0.53,
-   "secondType": "A03",
-   "consensus": 0.955,
+   "persona": "02",
+   "secondPersona": "03",
+   "confidence": 0.25,
+   "stability": 0.639,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.179994,
+    "demography": -0.980854,
+    "governance": 2.277568,
+    "values": 1.758724
+   }
   },
   "DM": {
-   "status": "built",
-   "group": "B",
-   "confidence": 0.704,
-   "secondGroup": "C",
-   "type": "B06",
-   "typeConfidence": 0.34,
-   "secondType": "B05",
-   "consensus": 0.939,
-   "observedShare": 1,
-   "imputedDomains": []
+   "status": "provisional",
+   "persona": "13",
+   "secondPersona": "12",
+   "confidence": 0.384,
+   "stability": 0.861,
+   "exceptions": [],
+   "observedShare": 0.567,
+   "surveyed": false,
+   "core": {
+    "development": -0.027184,
+    "demography": -0.857274,
+    "governance": 0.883444,
+    "values": null
+   }
   },
   "DO": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.439,
-   "secondGroup": "A",
-   "type": "D10",
-   "consensus": 0.911,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "19",
+   "secondPersona": "18",
+   "confidence": 0.089,
+   "stability": 0.664,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 0.232269,
+    "demography": 0.107338,
+    "governance": 0.197053,
+    "values": null
+   }
   },
   "DZ": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.18,
-   "secondGroup": "D",
-   "type": "C09",
-   "typeConfidence": 0.608,
-   "secondType": "C08",
-   "consensus": 0.677,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "23",
+   "secondPersona": "21",
+   "confidence": 0.271,
+   "stability": 0.7,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 0.077024,
+    "demography": 0.497473,
+    "governance": -0.652901,
+    "values": null
+   }
   },
   "EC": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.68,
-   "secondGroup": "E",
-   "type": "C09",
-   "typeConfidence": 0.16,
-   "secondType": "C08",
-   "consensus": 0.928,
+   "persona": "19",
+   "secondPersona": "18",
+   "confidence": 0.052,
+   "stability": 0.514,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.11667,
+    "demography": -0.085169,
+    "governance": -0.287181,
+    "values": -1.010022
+   }
   },
   "EE": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.288,
-   "secondGroup": "B",
-   "type": "A03",
-   "typeConfidence": 0.638,
-   "secondType": "A04",
-   "consensus": 0.948,
+   "persona": "04",
+   "secondPersona": "03",
+   "confidence": 0.137,
+   "stability": 0.496,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.79672,
+    "demography": -1.365356,
+    "governance": 1.847109,
+    "values": 0.94362
+   }
   },
   "EG": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.123,
-   "secondGroup": "E",
-   "type": "C09",
-   "typeConfidence": 0.564,
-   "secondType": "C08",
-   "consensus": 0.663,
+   "persona": "23",
+   "secondPersona": "24",
+   "confidence": 0.144,
+   "stability": 0.698,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.118664,
+    "demography": 0.657001,
+    "governance": -1.162756,
+    "values": -1.848598
+   }
   },
   "ER": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.417,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.426,
-   "secondType": "E11",
-   "consensus": 0.967,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "26",
+   "secondPersona": "27",
+   "confidence": 0,
+   "stability": 0.479,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": -1.679925,
+    "demography": 1.136596,
+    "governance": -1.741123,
+    "values": null
+   }
   },
   "ES": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.61,
-   "secondGroup": "C",
-   "type": "A04",
-   "typeConfidence": 0.46,
-   "secondType": "A01",
-   "consensus": 0.96,
+   "persona": "05",
+   "secondPersona": "02",
+   "confidence": 0.08,
+   "stability": 0.529,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.052478,
+    "demography": -1.14043,
+    "governance": 1.186772,
+    "values": 1.011247
+   }
   },
   "ET": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.506,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.162,
-   "secondType": "E11",
-   "consensus": 0.965,
+   "persona": "26",
+   "secondPersona": "27",
+   "confidence": 0,
+   "stability": 0.618,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -1.60996,
+    "demography": 1.366914,
+    "governance": -0.950988,
+    "values": -1.038258
+   }
   },
   "FI": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.64,
-   "secondGroup": "C",
-   "type": "A03",
-   "typeConfidence": 0.343,
-   "secondType": "A01",
-   "consensus": 0.958,
+   "persona": "02",
+   "secondPersona": "03",
+   "confidence": 0.22,
+   "stability": 0.654,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.048482,
+    "demography": -1.242848,
+    "governance": 2.165489,
+    "values": 1.780677
+   }
   },
   "FJ": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.463,
-   "secondGroup": "D",
-   "type": "B05",
-   "typeConfidence": 0.212,
-   "secondType": "B07",
-   "consensus": 0.936,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "09",
+   "secondPersona": "16",
+   "confidence": 0.155,
+   "stability": 0.675,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.363566,
+    "demography": 0.118687,
+    "governance": 0.648313,
+    "values": null
+   }
   },
   "FM": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.535,
-   "secondGroup": "E",
-   "type": "B07",
-   "typeConfidence": 0.623,
-   "secondType": "B06",
-   "consensus": 0.937,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "09",
+   "secondPersona": "10",
+   "confidence": 0.271,
+   "stability": 0.698,
+   "exceptions": [],
+   "observedShare": 0.6,
+   "surveyed": false,
+   "core": {
+    "development": -1.189954,
+    "demography": 0.373169,
+    "governance": 0.891454,
+    "values": null
+   }
   },
   "FR": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.579,
-   "secondGroup": "C",
-   "type": "A01",
-   "typeConfidence": 0.24,
-   "secondType": "A04",
-   "consensus": 0.956,
+   "persona": "05",
+   "secondPersona": "02",
+   "confidence": 0,
+   "stability": 0.467,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.967505,
+    "demography": -1.029172,
+    "governance": 1.383289,
+    "values": 1.1156
+   }
   },
   "GA": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.609,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.908,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "30",
+   "secondPersona": "29",
+   "confidence": 0.148,
+   "stability": 0.575,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.313171,
+    "demography": 1.115975,
+    "governance": -0.642665,
+    "values": null
+   }
   },
   "GB": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.527,
-   "secondGroup": "C",
-   "type": "A01",
-   "typeConfidence": 0.583,
-   "secondType": "A04",
-   "consensus": 0.955,
+   "persona": "02",
+   "secondPersona": "03",
+   "confidence": 0.231,
+   "stability": 0.536,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.023061,
+    "demography": -0.911652,
+    "governance": 1.539939,
+    "values": 1.511079
+   }
   },
   "GD": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.732,
-   "secondGroup": "C",
-   "type": "B06",
-   "typeConfidence": 0.147,
-   "secondType": "B05",
-   "consensus": 0.94,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "13",
+   "secondPersona": "12",
+   "confidence": 0.457,
+   "stability": 0.894,
+   "exceptions": [],
+   "observedShare": 0.65,
+   "surveyed": false,
+   "core": {
+    "development": 0.043926,
+    "demography": -0.666944,
+    "governance": 0.809725,
+    "values": null
+   }
   },
   "GE": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.497,
-   "secondGroup": "C",
-   "type": "D10",
-   "consensus": 0.908,
+   "persona": "15",
+   "secondPersona": "14",
+   "confidence": 0,
+   "stability": 0.2,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.313391,
+    "demography": 0.070758,
+    "governance": -0.023371,
+    "values": -1.008206
+   }
   },
   "GH": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.306,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.911,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "25",
+   "secondPersona": "29",
+   "confidence": 0.092,
+   "stability": 0.49,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.771367,
+    "demography": 1.001037,
+    "governance": 0.454701,
+    "values": null
+   }
   },
   "GM": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.205,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.776,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "29",
+   "secondPersona": "25",
+   "confidence": 0.053,
+   "stability": 0.354,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.344711,
+    "demography": 1.322312,
+    "governance": -0.020771,
+    "values": null
+   }
   },
   "GN": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.858,
-   "secondGroup": "D",
-   "type": "E11",
-   "typeConfidence": 0.611,
-   "secondType": "E12",
-   "consensus": 0.967,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "29",
+   "secondPersona": "28",
+   "confidence": 0.103,
+   "stability": 0.6,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.671349,
+    "demography": 1.386386,
+    "governance": -0.937757,
+    "values": null
+   }
   },
   "GQ": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.459,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.911,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "30",
+   "secondPersona": "18",
+   "confidence": 0.133,
+   "stability": 0.6,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": -0.707206,
+    "demography": 1.298714,
+    "governance": -1.340719,
+    "values": null
+   }
   },
   "GR": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.192,
-   "secondGroup": "C",
-   "type": "A04",
-   "typeConfidence": 0.122,
-   "secondType": "A03",
-   "consensus": 0.864,
+   "persona": "15",
+   "secondPersona": "04",
+   "confidence": 0,
+   "stability": 0.192,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.805888,
+    "demography": -1.383185,
+    "governance": 0.640192,
+    "values": -0.301966
+   }
   },
   "GT": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.293,
-   "secondGroup": "C",
-   "type": "D10",
-   "consensus": 0.865,
+   "persona": "18",
+   "secondPersona": "19",
+   "confidence": 0.117,
+   "stability": 0.662,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.447073,
+    "demography": 0.539349,
+    "governance": -0.463999,
+    "values": -0.12236
+   }
   },
   "GW": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.661,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.28,
-   "secondType": "E11",
-   "consensus": 0.965,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "29",
+   "secondPersona": "25",
+   "confidence": 0.128,
+   "stability": 0.387,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": -1.647289,
+    "demography": 1.245211,
+    "governance": -1.05749,
+    "values": null
+   }
   },
   "GY": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.427,
-   "secondGroup": "E",
-   "type": "B07",
-   "typeConfidence": 0.253,
-   "secondType": "B06",
-   "consensus": 0.936,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "12",
+   "secondPersona": "13",
+   "confidence": 0.346,
+   "stability": 0.875,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 0.291691,
+    "demography": 0.221497,
+    "governance": 0.060609,
+    "values": null
+   }
   },
   "HN": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.137,
-   "secondGroup": "C",
-   "type": "E11",
-   "typeConfidence": 0.219,
-   "secondType": "E12",
-   "consensus": 0.843,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "18",
+   "secondPersona": "19",
+   "confidence": 0.262,
+   "stability": 0.717,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.625028,
+    "demography": 0.611922,
+    "governance": -0.65768,
+    "values": null
+   }
   },
   "HR": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.013,
-   "secondGroup": "A",
-   "type": "C08",
-   "typeConfidence": 0.6,
-   "secondType": "C09",
-   "consensus": 0.576,
+   "persona": "05",
+   "secondPersona": "04",
+   "confidence": 0,
+   "stability": 0.35,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.666312,
+    "demography": -1.193534,
+    "governance": 0.607033,
+    "values": 0.084074
+   }
   },
   "HT": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.592,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.428,
-   "secondType": "E11",
-   "consensus": 0.969,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "18",
+   "secondPersona": "27",
+   "confidence": 0.07,
+   "stability": 0.417,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": -1.379865,
+    "demography": 0.532489,
+    "governance": -1.216264,
+    "values": null
+   }
   },
   "HU": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.382,
-   "secondGroup": "A",
-   "type": "C08",
-   "typeConfidence": 0.523,
-   "secondType": "C09",
-   "consensus": 0.928,
+   "persona": "04",
+   "secondPersona": "05",
+   "confidence": 0.168,
+   "stability": 0.364,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.647301,
+    "demography": -1.276202,
+    "governance": 0.045081,
+    "values": 0.3991
+   }
   },
   "ID": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.523,
-   "secondGroup": "E",
-   "type": "C09",
-   "typeConfidence": 0.461,
-   "secondType": "C08",
-   "consensus": 0.93,
+   "persona": "22",
+   "secondPersona": "21",
+   "confidence": 0.068,
+   "stability": 0.446,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.230367,
+    "demography": 0.043778,
+    "governance": -0.191332,
+    "values": -0.90091
+   }
   },
   "IE": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.654,
-   "secondGroup": "B",
-   "type": "A01",
-   "typeConfidence": 0.346,
-   "secondType": "A02",
-   "consensus": 0.956,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "03",
+   "secondPersona": "02",
+   "confidence": 0,
+   "stability": 0.55,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 1.295979,
+    "demography": -0.476913,
+    "governance": 1.898347,
+    "values": null
+   }
   },
   "IL": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.198,
-   "secondGroup": "A",
-   "type": "D10",
-   "consensus": 0.894,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "15",
+   "secondPersona": "05",
+   "confidence": 0,
+   "stability": 0.096,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 0.954057,
+    "demography": 0.202729,
+    "governance": 0.864175,
+    "values": null
+   }
   },
   "IN": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.348,
-   "secondGroup": "E",
-   "type": "C09",
-   "typeConfidence": 0.241,
-   "secondType": "C08",
-   "consensus": 0.928,
+   "persona": "22",
+   "secondPersona": "16",
+   "confidence": 0.083,
+   "stability": 0.467,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.386387,
+    "demography": 0.027412,
+    "governance": -0.218431,
+    "values": -0.345782
+   }
   },
   "IQ": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.624,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.91,
+   "persona": "23",
+   "secondPersona": "24",
+   "confidence": 0.202,
+   "stability": 0.677,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.207166,
+    "demography": 1.069456,
+    "governance": -0.876651,
+    "values": -1.255594
+   }
   },
   "IR": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.468,
-   "secondGroup": "E",
-   "type": "C09",
-   "typeConfidence": 0.609,
-   "secondType": "C08",
-   "consensus": 0.929,
+   "persona": "23",
+   "secondPersona": "22",
+   "confidence": 0.073,
+   "stability": 0.5,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.280273,
+    "demography": -0.159827,
+    "governance": -1.356575,
+    "values": -0.796392
+   }
   },
   "IS": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.31,
-   "secondGroup": "B",
-   "type": "A02",
-   "typeConfidence": 0.575,
-   "secondType": "A01",
-   "consensus": 0.956,
+   "persona": "01",
+   "secondPersona": "02",
+   "confidence": 0,
+   "stability": 0.475,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.202943,
+    "demography": -0.474445,
+    "governance": 1.814766,
+    "values": 1.922342
+   }
   },
   "IT": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.24,
-   "secondGroup": "C",
-   "type": "A04",
-   "typeConfidence": 0.645,
-   "secondType": "A03",
-   "consensus": 0.946,
+   "persona": "05",
+   "secondPersona": "04",
+   "confidence": 0.196,
+   "stability": 0.621,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.995966,
+    "demography": -1.505249,
+    "governance": 0.884584,
+    "values": 0.462677
+   }
   },
   "JM": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.145,
-   "secondGroup": "C",
-   "type": "B06",
-   "typeConfidence": 0.599,
-   "secondType": "B05",
-   "consensus": 0.571,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "13",
+   "secondPersona": "12",
+   "confidence": 0.111,
+   "stability": 0.639,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.124716,
+    "demography": -0.619223,
+    "governance": 0.621142,
+    "values": null
+   }
   },
   "JO": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.342,
-   "secondGroup": "C",
-   "type": "D10",
-   "consensus": 0.904,
+   "persona": "23",
+   "secondPersona": "07",
+   "confidence": 0.142,
+   "stability": 0.557,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.210803,
+    "demography": 0.192921,
+    "governance": -0.232071,
+    "values": -1.379968
+   }
   },
   "JP": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.372,
-   "secondGroup": "C",
-   "type": "A04",
-   "typeConfidence": 0.392,
-   "secondType": "A01",
-   "consensus": 0.957,
+   "persona": "03",
+   "secondPersona": "02",
+   "confidence": 0.075,
+   "stability": 0.497,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.952977,
+    "demography": -1.815763,
+    "governance": 1.499471,
+    "values": 1.625164
+   }
   },
   "KE": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.261,
-   "secondGroup": "D",
-   "type": "E11",
-   "typeConfidence": 0.486,
-   "secondType": "E12",
-   "consensus": 0.941,
+   "persona": "26",
+   "secondPersona": "25",
+   "confidence": 0.186,
+   "stability": 0.782,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -1.24919,
+    "demography": 1.042408,
+    "governance": -0.345422,
+    "values": -0.630544
+   }
   },
   "KG": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.04,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.604,
+   "persona": "21",
+   "secondPersona": "14",
+   "confidence": 0.38,
+   "stability": 0.869,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.156721,
+    "demography": 0.634697,
+    "governance": -0.871159,
+    "values": -0.58025
+   }
   },
   "KH": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.332,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.559,
-   "secondType": "E11",
-   "consensus": 0.963,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "17",
+   "secondPersona": "16",
+   "confidence": 0.246,
+   "stability": 0.669,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.659625,
+    "demography": 0.431091,
+    "governance": -1.338166,
+    "values": null
+   }
   },
   "KI": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.257,
-   "secondGroup": "D",
-   "type": "B05",
-   "typeConfidence": 0.22,
-   "secondType": "B07",
-   "consensus": 0.929,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "09",
+   "secondPersona": "13",
+   "confidence": 0.307,
+   "stability": 0.685,
+   "exceptions": [],
+   "observedShare": 0.6,
+   "surveyed": false,
+   "core": {
+    "development": -0.712243,
+    "demography": 0.823071,
+    "governance": 0.783877,
+    "values": null
+   }
   },
   "KM": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.444,
-   "secondGroup": "B",
-   "type": "E12",
-   "typeConfidence": 0.125,
-   "secondType": "E11",
-   "consensus": 0.967,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "28",
+   "secondPersona": "29",
+   "confidence": 0.046,
+   "stability": 0.369,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.30978,
+    "demography": 1.099009,
+    "governance": -0.889541,
+    "values": null
+   }
   },
   "KN": {
-   "status": "built",
-   "group": "B",
-   "confidence": 0.679,
-   "secondGroup": "D",
-   "type": "B05",
-   "typeConfidence": 0.504,
-   "secondType": "B07",
-   "consensus": 0.935,
-   "observedShare": 1,
-   "imputedDomains": []
+   "status": "provisional",
+   "persona": "13",
+   "secondPersona": "12",
+   "confidence": 0.379,
+   "stability": 0.883,
+   "exceptions": [],
+   "observedShare": 0.567,
+   "surveyed": false,
+   "core": {
+    "development": 0.200363,
+    "demography": -0.609777,
+    "governance": 0.824659,
+    "values": null
+   }
   },
   "KP": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.32,
-   "secondGroup": "E",
-   "type": "C09",
-   "typeConfidence": 0.397,
-   "secondType": "C08",
-   "consensus": 0.921,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "17",
+   "secondPersona": "20",
+   "confidence": 0.109,
+   "stability": 0.575,
+   "exceptions": [],
+   "observedShare": 0.65,
+   "surveyed": false,
+   "core": {
+    "development": null,
+    "demography": -0.514948,
+    "governance": -1.718023,
+    "values": null
+   }
   },
   "KR": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.357,
-   "secondGroup": "C",
-   "type": "A04",
-   "typeConfidence": 0.57,
-   "secondType": "A03",
-   "consensus": 0.953,
+   "persona": "03",
+   "secondPersona": "04",
+   "confidence": 0,
+   "stability": 0.183,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.108414,
+    "demography": -1.649132,
+    "governance": 1.244838,
+    "values": 0.912181
+   }
   },
   "KW": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.099,
-   "secondGroup": "C",
-   "type": "D10",
-   "consensus": 0.826,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "07",
+   "secondPersona": "08",
+   "confidence": 0.073,
+   "stability": 0.637,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 0.992539,
+    "demography": -0.469012,
+    "governance": -0.347316,
+    "values": null
+   }
   },
   "KZ": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.636,
-   "secondGroup": "C",
-   "type": "D10",
-   "consensus": 0.907,
+   "persona": "21",
+   "secondPersona": "20",
+   "confidence": 0.117,
+   "stability": 0.737,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.480216,
+    "demography": 0.422902,
+    "governance": -0.600901,
+    "values": -0.255241
+   }
   },
   "LA": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.496,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.502,
-   "secondType": "E11",
-   "consensus": 0.967,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "17",
+   "secondPersona": "16",
+   "confidence": 0.211,
+   "stability": 0.688,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.684602,
+    "demography": 0.495832,
+    "governance": -0.901935,
+    "values": null
+   }
   },
   "LB": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.372,
-   "secondGroup": "D",
-   "type": "C09",
-   "typeConfidence": 0.324,
-   "secondType": "C08",
-   "consensus": 0.919,
+   "persona": "22",
+   "secondPersona": "23",
+   "confidence": 0,
+   "stability": 0.058,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.046306,
+    "demography": -0.008291,
+    "governance": -0.695339,
+    "values": -0.589268
+   }
   },
   "LC": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.833,
-   "secondGroup": "A",
-   "type": "B05",
-   "typeConfidence": 0.456,
-   "secondType": "B06",
-   "consensus": 0.935,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "13",
+   "secondPersona": "12",
+   "confidence": 0.476,
+   "stability": 0.894,
+   "exceptions": [],
+   "observedShare": 0.65,
+   "surveyed": false,
+   "core": {
+    "development": -0.077581,
+    "demography": -0.617321,
+    "governance": 0.923941,
+    "values": null
+   }
   },
   "LI": {
-   "status": "built",
-   "group": "B",
-   "confidence": 0.541,
-   "secondGroup": "A",
-   "type": "B05",
-   "typeConfidence": 0.319,
-   "secondType": "B06",
-   "consensus": 0.938,
-   "observedShare": 1,
-   "imputedDomains": []
+   "status": "provisional",
+   "persona": "01",
+   "secondPersona": "04",
+   "confidence": 0.005,
+   "stability": 0.544,
+   "exceptions": [],
+   "observedShare": 0.517,
+   "surveyed": false,
+   "core": {
+    "development": 1.429496,
+    "demography": -0.870236,
+    "governance": 1.188643,
+    "values": null
+   }
   },
   "LK": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.318,
-   "secondGroup": "E",
-   "type": "C08",
-   "typeConfidence": 0.469,
-   "secondType": "C09",
-   "consensus": 0.928,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "16",
+   "secondPersona": "14",
+   "confidence": 0.2,
+   "stability": 0.688,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.099141,
+    "demography": -0.605898,
+    "governance": -0.003155,
+    "values": null
+   }
   },
   "LR": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.526,
-   "secondGroup": "D",
-   "type": "E11",
-   "typeConfidence": 0.4,
-   "secondType": "E12",
-   "consensus": 0.967,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "25",
+   "secondPersona": "29",
+   "confidence": 0.043,
+   "stability": 0.422,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.811958,
+    "demography": 1.261179,
+    "governance": -0.201666,
+    "values": null
+   }
   },
   "LS": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.161,
-   "secondGroup": "D",
-   "type": "B07",
-   "typeConfidence": 0.264,
-   "secondType": "B05",
-   "consensus": 0.905,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "25",
+   "secondPersona": "11",
+   "confidence": 0.119,
+   "stability": 0.648,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.613146,
+    "demography": 0.660088,
+    "governance": 0.060989,
+    "values": null
+   }
   },
   "LT": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.324,
-   "secondGroup": "B",
-   "type": "A03",
-   "typeConfidence": 0.748,
-   "secondType": "A04",
-   "consensus": 0.953,
+   "persona": "04",
+   "secondPersona": "03",
+   "confidence": 0.262,
+   "stability": 0.543,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.691245,
+    "demography": -1.279572,
+    "governance": 1.422032,
+    "values": 0.372726
+   }
   },
   "LU": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.268,
-   "secondGroup": "D",
-   "type": "A02",
-   "typeConfidence": 0.453,
-   "secondType": "A01",
-   "consensus": 0.954,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "03",
+   "secondPersona": "04",
+   "confidence": 0.048,
+   "stability": 0.506,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 1.277147,
+    "demography": -0.660261,
+    "governance": 1.890936,
+    "values": null
+   }
   },
   "LV": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.15,
-   "secondGroup": "B",
-   "type": "A03",
-   "typeConfidence": 0.579,
-   "secondType": "A04",
-   "consensus": 0.91,
+   "persona": "04",
+   "secondPersona": "05",
+   "confidence": 0.284,
+   "stability": 0.557,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.641974,
+    "demography": -1.479936,
+    "governance": 1.304127,
+    "values": 0.510525
+   }
   },
   "LY": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.173,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.846,
+   "persona": "23",
+   "secondPersona": "07",
+   "confidence": 0.046,
+   "stability": 0.605,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.173192,
+    "demography": 0.312329,
+    "governance": -1.417932,
+    "values": -1.402659
+   }
   },
   "MA": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.686,
-   "secondGroup": "E",
-   "type": "C09",
-   "typeConfidence": 0.661,
-   "secondType": "C08",
-   "consensus": 0.928,
+   "persona": "23",
+   "secondPersona": "16",
+   "confidence": 0.182,
+   "stability": 0.675,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.027932,
+    "demography": 0.090092,
+    "governance": -0.329969,
+    "values": -0.544509
+   }
   },
   "MC": {
-   "status": "built",
-   "group": "A",
-   "confidence": 0.054,
-   "secondGroup": "B",
-   "type": "A02",
-   "typeConfidence": 0.486,
-   "secondType": "A03",
-   "consensus": 0.639,
-   "observedShare": 1,
-   "imputedDomains": []
+   "status": "provisional",
+   "persona": "01",
+   "secondPersona": "04",
+   "confidence": 0.105,
+   "stability": 0.681,
+   "exceptions": [],
+   "observedShare": 0.517,
+   "surveyed": false,
+   "core": {
+    "development": 1.673314,
+    "demography": -1.677015,
+    "governance": 0.532867,
+    "values": null
+   }
   },
   "MD": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.025,
-   "secondGroup": "C",
-   "type": "B06",
-   "typeConfidence": 0.604,
-   "secondType": "B07",
-   "consensus": 0.462,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "14",
+   "secondPersona": "04",
+   "confidence": 0.183,
+   "stability": 0.519,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.058005,
+    "demography": -1.136998,
+    "governance": 0.244441,
+    "values": null
+   }
   },
   "ME": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.491,
-   "secondGroup": "C",
-   "type": "B06",
-   "typeConfidence": 0.349,
-   "secondType": "B05",
-   "consensus": 0.936,
+   "persona": "14",
+   "secondPersona": "04",
+   "confidence": 0.176,
+   "stability": 0.594,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.553568,
+    "demography": -0.826815,
+    "governance": 0.463623,
+    "values": 0.138132
+   }
   },
   "MG": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.657,
-   "secondGroup": "C",
-   "type": "E11",
-   "typeConfidence": 0.441,
-   "secondType": "E12",
-   "consensus": 0.967,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "30",
+   "secondPersona": "25",
+   "confidence": 0,
+   "stability": 0.331,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.932464,
+    "demography": 1.330046,
+    "governance": -0.582864,
+    "values": null
+   }
   },
   "MH": {
-   "status": "built",
-   "group": "B",
-   "confidence": 0.738,
-   "secondGroup": "D",
-   "type": "B05",
-   "typeConfidence": 0.265,
-   "secondType": "B07",
-   "consensus": 0.935,
-   "observedShare": 1,
-   "imputedDomains": []
+   "status": "provisional",
+   "persona": "09",
+   "secondPersona": "13",
+   "confidence": 0.206,
+   "stability": 0.605,
+   "exceptions": [],
+   "observedShare": 0.517,
+   "surveyed": false,
+   "core": {
+    "development": -0.591721,
+    "demography": -0.371757,
+    "governance": 0.927312,
+    "values": null
+   }
   },
   "MK": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.117,
-   "secondGroup": "C",
-   "type": "B06",
-   "typeConfidence": 0.718,
-   "secondType": "B05",
-   "consensus": 0.561,
+   "persona": "14",
+   "secondPersona": "04",
+   "confidence": 0.182,
+   "stability": 0.644,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.415755,
+    "demography": -1.050119,
+    "governance": 0.207819,
+    "values": 0.113912
+   }
   },
   "ML": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.584,
-   "secondGroup": "D",
-   "type": "E11",
-   "typeConfidence": 0.607,
-   "secondType": "E12",
-   "consensus": 0.968,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "28",
+   "secondPersona": "29",
+   "confidence": 0.354,
+   "stability": 0.806,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.860476,
+    "demography": 1.876209,
+    "governance": -0.957111,
+    "values": null
+   }
   },
   "MM": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.144,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.392,
-   "secondType": "E11",
-   "consensus": 0.923,
+   "persona": "22",
+   "secondPersona": "17",
+   "confidence": 0.064,
+   "stability": 0.3,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -1.093555,
+    "demography": 0.002517,
+    "governance": -1.593462,
+    "values": -0.867337
+   }
   },
   "MN": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.481,
-   "secondGroup": "B",
-   "type": "D10",
-   "consensus": 0.916,
+   "persona": "17",
+   "secondPersona": "16",
+   "confidence": 0,
+   "stability": 0.312,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0,
+    "demography": 0.527063,
+    "governance": 0.076997,
+    "values": 0.462614
+   }
   },
   "MR": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.177,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.752,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "30",
+   "secondPersona": "23",
+   "confidence": 0,
+   "stability": 0.106,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.057138,
+    "demography": 1.618482,
+    "governance": -0.703166,
+    "values": null
+   }
   },
   "MT": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.14,
-   "secondGroup": "B",
-   "type": "A02",
-   "typeConfidence": 0.78,
-   "secondType": "A03",
-   "consensus": 0.744,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "15",
+   "secondPersona": "04",
+   "confidence": 0,
+   "stability": 0.204,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": 1.051057,
+    "demography": -0.946043,
+    "governance": 0.832727,
+    "values": null
+   }
   },
   "MU": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.312,
-   "secondGroup": "C",
-   "type": "B06",
-   "typeConfidence": 0.721,
-   "secondType": "B05",
-   "consensus": 0.837,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "15",
+   "secondPersona": "11",
+   "confidence": 0,
+   "stability": 0.133,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 0.142458,
+    "demography": -0.914082,
+    "governance": 0.785908,
+    "values": null
+   }
   },
   "MV": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.144,
-   "secondGroup": "B",
-   "type": "C08",
-   "typeConfidence": 0.242,
-   "secondType": "C09",
-   "consensus": 0.835,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "14",
+   "secondPersona": "16",
+   "confidence": 0.001,
+   "stability": 0.488,
+   "exceptions": [],
+   "observedShare": 0.95,
+   "surveyed": true,
+   "core": {
+    "development": 0.429153,
+    "demography": -0.278099,
+    "governance": -0.16858,
+    "values": -1.011577
+   }
   },
   "MW": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.413,
-   "secondGroup": "C",
-   "type": "E11",
-   "typeConfidence": 0.167,
-   "secondType": "E12",
-   "consensus": 0.966,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "25",
+   "secondPersona": "26",
+   "confidence": 0.137,
+   "stability": 0.667,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.747201,
+    "demography": 1.381158,
+    "governance": 0.066214,
+    "values": null
+   }
   },
   "MX": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.138,
-   "secondGroup": "D",
-   "type": "C09",
-   "typeConfidence": 0.525,
-   "secondType": "C08",
-   "consensus": 0.617,
+   "persona": "19",
+   "secondPersona": "18",
+   "confidence": 0.089,
+   "stability": 0.497,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.2058,
+    "demography": -0.05436,
+    "governance": -0.580231,
+    "values": -0.284063
+   }
   },
   "MY": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.092,
-   "secondGroup": "A",
-   "type": "C09",
-   "typeConfidence": 0.341,
-   "secondType": "C08",
-   "consensus": 0.708,
+   "persona": "15",
+   "secondPersona": "14",
+   "confidence": 0,
+   "stability": 0.133,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.564195,
+    "demography": -0.153213,
+    "governance": 0.280148,
+    "values": 0.121531
+   }
   },
   "MZ": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.741,
-   "secondGroup": "D",
-   "type": "E11",
-   "typeConfidence": 0.737,
-   "secondType": "E12",
-   "consensus": 0.968,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "26",
+   "secondPersona": "27",
+   "confidence": 0.083,
+   "stability": 0.704,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.935872,
+    "demography": 1.710073,
+    "governance": -0.881039,
+    "values": null
+   }
   },
   "NA": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.459,
-   "secondGroup": "B",
-   "type": "D10",
-   "consensus": 0.911,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "11",
+   "secondPersona": "25",
+   "confidence": 0.193,
+   "stability": 0.617,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.639904,
+    "demography": 1.058761,
+    "governance": 0.593334,
+    "values": null
+   }
   },
   "NE": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.674,
-   "secondGroup": "C",
-   "type": "E11",
-   "typeConfidence": 0.236,
-   "secondType": "E12",
-   "consensus": 0.966,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "28",
+   "secondPersona": "27",
+   "confidence": 0.316,
+   "stability": 0.806,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -2.144954,
+    "demography": 1.99592,
+    "governance": -0.840627,
+    "values": null
+   }
   },
   "NG": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.399,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.909,
+   "persona": "26",
+   "secondPersona": "29",
+   "confidence": 0.156,
+   "stability": 0.761,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -1.575997,
+    "demography": 1.379391,
+    "governance": -0.643957,
+    "values": -1.352706
+   }
   },
   "NI": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.283,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.434,
-   "secondType": "E11",
-   "consensus": 0.968,
+   "persona": "18",
+   "secondPersona": "19",
+   "confidence": 0.233,
+   "stability": 0.717,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.380844,
+    "demography": 0.369505,
+    "governance": -1.541851,
+    "values": -1.271522
+   }
   },
   "NL": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.692,
-   "secondGroup": "C",
-   "type": "A01",
-   "typeConfidence": 0.849,
-   "secondType": "A03",
-   "consensus": 0.954,
+   "persona": "02",
+   "secondPersona": "03",
+   "confidence": 0.115,
+   "stability": 0.518,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.140757,
+    "demography": -1.008209,
+    "governance": 1.894418,
+    "values": 1.672214
+   }
   },
   "NO": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.726,
-   "secondGroup": "C",
-   "type": "A01",
-   "typeConfidence": 0.413,
-   "secondType": "A03",
-   "consensus": 0.954,
+   "persona": "02",
+   "secondPersona": "03",
+   "confidence": 0.275,
+   "stability": 0.657,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.268374,
+    "demography": -0.86676,
+    "governance": 2.194058,
+    "values": 2.135955
+   }
   },
   "NP": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.343,
-   "secondGroup": "E",
-   "type": "C08",
-   "typeConfidence": 0.298,
-   "secondType": "C09",
-   "consensus": 0.926,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "16",
+   "secondPersona": "22",
+   "confidence": 0.129,
+   "stability": 0.662,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.926785,
+    "demography": -0.066675,
+    "governance": -0.113304,
+    "values": null
+   }
   },
   "NR": {
-   "status": "built",
-   "group": "D",
-   "confidence": 0.052,
-   "secondGroup": "B",
-   "type": "D10",
-   "consensus": 0.437,
-   "observedShare": 1,
-   "imputedDomains": []
+   "status": "provisional",
+   "persona": "09",
+   "secondPersona": "13",
+   "confidence": 0.131,
+   "stability": 0.622,
+   "exceptions": [],
+   "observedShare": 0.517,
+   "surveyed": false,
+   "core": {
+    "development": -0.551262,
+    "demography": 0.798756,
+    "governance": 0.281856,
+    "values": null
+   }
   },
   "NZ": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.766,
-   "secondGroup": "B",
-   "type": "A01",
-   "typeConfidence": 0.338,
-   "secondType": "A03",
-   "consensus": 0.957,
+   "persona": "02",
+   "secondPersona": "03",
+   "confidence": 0.274,
+   "stability": 0.586,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.986872,
+    "demography": -0.7188,
+    "governance": 1.928103,
+    "values": 1.576662
+   }
   },
   "OM": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.63,
-   "secondGroup": "C",
-   "type": "D10",
-   "consensus": 0.905,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "08",
+   "secondPersona": "07",
+   "confidence": 0.254,
+   "stability": 0.883,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 0.73425,
+    "demography": 1.053418,
+    "governance": -0.171208,
+    "values": null
+   }
   },
   "PA": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.322,
-   "secondGroup": "A",
-   "type": "D10",
-   "consensus": 0.909,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "19",
+   "secondPersona": "06",
+   "confidence": 0.025,
+   "stability": 0.617,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 0.471792,
+    "demography": 0.068419,
+    "governance": 0.236683,
+    "values": null
+   }
   },
   "PE": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.5,
-   "secondGroup": "D",
-   "type": "C09",
-   "typeConfidence": 0.442,
-   "secondType": "C08",
-   "consensus": 0.93,
+   "persona": "19",
+   "secondPersona": "18",
+   "confidence": 0.117,
+   "stability": 0.683,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.231608,
+    "demography": -0.03144,
+    "governance": -0.229172,
+    "values": -1.054106
+   }
   },
   "PG": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.363,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.075,
-   "secondType": "E11",
-   "consensus": 0.965,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "25",
+   "secondPersona": "26",
+   "confidence": 0.1,
+   "stability": 0.575,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.47371,
+    "demography": 0.876445,
+    "governance": -0.320722,
+    "values": null
+   }
   },
   "PH": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.351,
-   "secondGroup": "D",
-   "type": "C09",
-   "typeConfidence": 0.574,
-   "secondType": "C08",
-   "consensus": 0.879,
+   "persona": "22",
+   "secondPersona": "19",
+   "confidence": 0,
+   "stability": 0.233,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.421713,
+    "demography": 0.131945,
+    "governance": -0.299897,
+    "values": -0.849773
+   }
   },
   "PK": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.244,
-   "secondGroup": "C",
-   "type": "E11",
-   "typeConfidence": 0.212,
-   "secondType": "E12",
-   "consensus": 0.962,
+   "persona": "22",
+   "secondPersona": "26",
+   "confidence": 0.056,
+   "stability": 0.458,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -1.044871,
+    "demography": 0.974206,
+    "governance": -1.022575,
+    "values": -0.667433
+   }
   },
   "PL": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.308,
-   "secondGroup": "C",
-   "type": "A04",
-   "typeConfidence": 0.535,
-   "secondType": "A03",
-   "consensus": 0.94,
+   "persona": "05",
+   "secondPersona": "04",
+   "confidence": 0.093,
+   "stability": 0.571,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.739025,
+    "demography": -1.347,
+    "governance": 0.948667,
+    "values": 0.577071
+   }
   },
   "PS": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.589,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.907,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "23",
+   "secondPersona": "24",
+   "confidence": 0.224,
+   "stability": 0.602,
+   "exceptions": [],
+   "observedShare": 0.65,
+   "surveyed": false,
+   "core": {
+    "development": -0.539772,
+    "demography": 1.152507,
+    "governance": -1.21845,
+    "values": null
+   }
   },
   "PT": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.618,
-   "secondGroup": "C",
-   "type": "A03",
-   "typeConfidence": 0.142,
-   "secondType": "A04",
-   "consensus": 0.957,
+   "persona": "05",
+   "secondPersona": "04",
+   "confidence": 0.069,
+   "stability": 0.525,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.851529,
+    "demography": -1.117281,
+    "governance": 1.206342,
+    "values": -0.026899
+   }
   },
   "PW": {
-   "status": "built",
-   "group": "B",
-   "confidence": 0.495,
-   "secondGroup": "D",
-   "type": "B05",
-   "typeConfidence": 0.536,
-   "secondType": "B07",
-   "consensus": 0.931,
-   "observedShare": 1,
-   "imputedDomains": []
+   "status": "provisional",
+   "persona": "09",
+   "secondPersona": "13",
+   "confidence": 0,
+   "stability": 0.44,
+   "exceptions": [],
+   "observedShare": 0.517,
+   "surveyed": false,
+   "core": {
+    "development": -0.032352,
+    "demography": -0.579609,
+    "governance": 0.891454,
+    "values": null
+   }
   },
   "PY": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.171,
-   "secondGroup": "C",
-   "type": "D10",
-   "consensus": 0.823,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "19",
+   "secondPersona": "18",
+   "confidence": 0,
+   "stability": 0.667,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 0.032302,
+    "demography": 0.361599,
+    "governance": -0.316567,
+    "values": null
+   }
   },
   "QA": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.439,
-   "secondGroup": "A",
-   "type": "D10",
-   "consensus": 0.904,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "08",
+   "secondPersona": "07",
+   "confidence": 0.223,
+   "stability": 0.933,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 1.137464,
+    "demography": 0.605407,
+    "governance": 0.016241,
+    "values": null
+   }
   },
   "RO": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.099,
-   "secondGroup": "A",
-   "type": "C08",
-   "typeConfidence": 0.511,
-   "secondType": "C09",
-   "consensus": 0.673,
+   "persona": "14",
+   "secondPersona": "04",
+   "confidence": 0.103,
+   "stability": 0.547,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.574491,
+    "demography": -1.13687,
+    "governance": 0.501772,
+    "values": -0.58538
+   }
   },
   "RS": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.536,
-   "secondGroup": "B",
-   "type": "C08",
-   "typeConfidence": 0.761,
-   "secondType": "C09",
-   "consensus": 0.926,
+   "persona": "14",
+   "secondPersona": "04",
+   "confidence": 0.046,
+   "stability": 0.591,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.411701,
+    "demography": -1.276284,
+    "governance": -0.303824,
+    "values": 0.121955
+   }
   },
   "RU": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.444,
-   "secondGroup": "D",
-   "type": "C09",
-   "typeConfidence": 0.446,
-   "secondType": "C08",
-   "consensus": 0.928,
+   "persona": "20",
+   "secondPersona": "14",
+   "confidence": 0.239,
+   "stability": 0.53,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.465717,
+    "demography": -0.982877,
+    "governance": -1.282287,
+    "values": -0.004694
+   }
   },
   "RW": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.632,
-   "secondGroup": "C",
-   "type": "E11",
-   "typeConfidence": 0.521,
-   "secondType": "E12",
-   "consensus": 0.968,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "25",
+   "secondPersona": "26",
+   "confidence": 0.029,
+   "stability": 0.345,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.328404,
+    "demography": 1.163174,
+    "governance": -0.124229,
+    "values": null
+   }
   },
   "SA": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.37,
-   "secondGroup": "C",
-   "type": "D10",
-   "consensus": 0.901,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "08",
+   "secondPersona": "07",
+   "confidence": 0.385,
+   "stability": 0.95,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 0.928746,
+    "demography": 1.124551,
+    "governance": -0.384819,
+    "values": null
+   }
   },
   "SB": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.129,
-   "secondGroup": "E",
-   "type": "B07",
-   "typeConfidence": 0.589,
-   "secondType": "B06",
-   "consensus": 0.748,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "09",
+   "secondPersona": "25",
+   "confidence": 0,
+   "stability": 0.412,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": -1.33371,
+    "demography": 1.182284,
+    "governance": 0.402591,
+    "values": null
+   }
   },
   "SC": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.534,
-   "secondGroup": "D",
-   "type": "B05",
-   "typeConfidence": 0.688,
-   "secondType": "B06",
-   "consensus": 0.932,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "11",
+   "secondPersona": "13",
+   "confidence": 0.035,
+   "stability": 0.567,
+   "exceptions": [],
+   "observedShare": 0.65,
+   "surveyed": false,
+   "core": {
+    "development": 0.463067,
+    "demography": -0.125213,
+    "governance": 1.306947,
+    "values": null
+   }
   },
   "SD": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.622,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.444,
-   "secondType": "E11",
-   "consensus": 0.966,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "24",
+   "secondPersona": "28",
+   "confidence": 0.066,
+   "stability": 0.819,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": -1.767906,
+    "demography": 1.414252,
+    "governance": -1.575886,
+    "values": null
+   }
   },
   "SE": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.74,
-   "secondGroup": "C",
-   "type": "A01",
-   "typeConfidence": 0.67,
-   "secondType": "A03",
-   "consensus": 0.955,
+   "persona": "02",
+   "secondPersona": "03",
+   "confidence": 0.265,
+   "stability": 0.654,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.171858,
+    "demography": -1.022615,
+    "governance": 2.043076,
+    "values": 2.26933
+   }
   },
   "SG": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.326,
-   "secondGroup": "D",
-   "type": "A02",
-   "typeConfidence": 0.255,
-   "secondType": "A01",
-   "consensus": 0.96,
+   "persona": "04",
+   "secondPersona": "03",
+   "confidence": 0.035,
+   "stability": 0.268,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 1.286918,
+    "demography": -0.914079,
+    "governance": 0.978681,
+    "values": 0.297245
+   }
   },
   "SI": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.257,
-   "secondGroup": "B",
-   "type": "A03",
-   "typeConfidence": 0.658,
-   "secondType": "A04",
-   "consensus": 0.917,
+   "persona": "04",
+   "secondPersona": "05",
+   "confidence": 0.087,
+   "stability": 0.471,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.964945,
+    "demography": -1.115714,
+    "governance": 1.080308,
+    "values": 1.158784
+   }
   },
   "SK": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.231,
-   "secondGroup": "C",
-   "type": "A03",
-   "typeConfidence": 0.518,
-   "secondType": "A04",
-   "consensus": 0.866,
+   "persona": "04",
+   "secondPersona": "05",
+   "confidence": 0.136,
+   "stability": 0.429,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.683857,
+    "demography": -1.062368,
+    "governance": 0.764527,
+    "values": 0.289163
+   }
   },
   "SL": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.556,
-   "secondGroup": "B",
-   "type": "E11",
-   "typeConfidence": 0.247,
-   "secondType": "E12",
-   "consensus": 0.966,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "25",
+   "secondPersona": "29",
+   "confidence": 0,
+   "stability": 0.412,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.831923,
+    "demography": 1.187368,
+    "governance": -0.293482,
+    "values": null
+   }
   },
   "SM": {
-   "status": "built",
-   "group": "B",
-   "confidence": 0.427,
-   "secondGroup": "A",
-   "type": "B05",
-   "typeConfidence": 0.285,
-   "secondType": "B06",
-   "consensus": 0.937,
-   "observedShare": 1,
-   "imputedDomains": []
+   "status": "provisional",
+   "persona": "01",
+   "secondPersona": "04",
+   "confidence": 0.147,
+   "stability": 0.719,
+   "exceptions": [],
+   "observedShare": 0.517,
+   "surveyed": false,
+   "core": {
+    "development": 1.193753,
+    "demography": -1.334495,
+    "governance": 1.070747,
+    "values": null
+   }
   },
   "SN": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.133,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.768,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "29",
+   "secondPersona": "28",
+   "confidence": 0.223,
+   "stability": 0.596,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.040175,
+    "demography": 1.245389,
+    "governance": 0.302772,
+    "values": null
+   }
   },
   "SO": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.455,
-   "secondGroup": "D",
-   "type": "E11",
-   "typeConfidence": 0.339,
-   "secondType": "E12",
-   "consensus": 0.968,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "24",
+   "secondPersona": "28",
+   "confidence": 0,
+   "stability": 0.894,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -2.201448,
+    "demography": 2.039197,
+    "governance": -1.468985,
+    "values": null
+   }
   },
   "SR": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.735,
-   "secondGroup": "D",
-   "type": "B05",
-   "typeConfidence": 0.535,
-   "secondType": "B07",
-   "consensus": 0.935,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "12",
+   "secondPersona": "14",
+   "confidence": 0.218,
+   "stability": 0.8,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 0.04758,
+    "demography": 0.095431,
+    "governance": 0.361959,
+    "values": null
+   }
   },
   "SS": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.763,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.456,
-   "secondType": "E11",
-   "consensus": 0.967,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "27",
+   "secondPersona": "26",
+   "confidence": 0.091,
+   "stability": 0.475,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": -2.559803,
+    "demography": 1.21685,
+    "governance": -1.543789,
+    "values": null
+   }
   },
   "ST": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.187,
-   "secondGroup": "B",
-   "type": "D10",
-   "consensus": 0.636,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "10",
+   "secondPersona": "09",
+   "confidence": 0.266,
+   "stability": 0.775,
+   "exceptions": [],
+   "observedShare": 0.65,
+   "surveyed": false,
+   "core": {
+    "development": -0.794727,
+    "demography": 1.127479,
+    "governance": 0.498884,
+    "values": null
+   }
   },
   "SV": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.493,
-   "secondGroup": "E",
-   "type": "C09",
-   "typeConfidence": 0.397,
-   "secondType": "C08",
-   "consensus": 0.927,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "18",
+   "secondPersona": "19",
+   "confidence": 0.084,
+   "stability": 0.679,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.390677,
+    "demography": -0.168793,
+    "governance": -0.710144,
+    "values": null
+   }
   },
   "SY": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.66,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.405,
-   "secondType": "E11",
-   "consensus": 0.967,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "24",
+   "secondPersona": "23",
+   "confidence": 0.179,
+   "stability": 0.938,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": -1.129991,
+    "demography": 1.084701,
+    "governance": -1.449286,
+    "values": null
+   }
   },
   "SZ": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.069,
-   "secondGroup": "D",
-   "type": "E11",
-   "typeConfidence": 0.1,
-   "secondType": "E12",
-   "consensus": 0.772,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "25",
+   "secondPersona": "11",
+   "confidence": 0.087,
+   "stability": 0.638,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -0.71199,
+    "demography": 0.616638,
+    "governance": -1.002721,
+    "values": null
+   }
   },
   "TD": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.537,
-   "secondGroup": "D",
-   "type": "E11",
-   "typeConfidence": 0.392,
-   "secondType": "E12",
-   "consensus": 0.968,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "28",
+   "secondPersona": "27",
+   "confidence": 0.216,
+   "stability": 0.744,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -2.343184,
+    "demography": 2.059995,
+    "governance": -1.094893,
+    "values": null
+   }
   },
   "TG": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.186,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.776,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "29",
+   "secondPersona": "28",
+   "confidence": 0.123,
+   "stability": 0.579,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.455068,
+    "demography": 1.351212,
+    "governance": -0.672233,
+    "values": null
+   }
   },
   "TH": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.54,
-   "secondGroup": "A",
-   "type": "C08",
-   "typeConfidence": 0.218,
-   "secondType": "C09",
-   "consensus": 0.927,
+   "persona": "20",
+   "secondPersona": "17",
+   "confidence": 0.014,
+   "stability": 0.18,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.348193,
+    "demography": -1.074103,
+    "governance": -0.245193,
+    "values": 0.209168
+   }
   },
   "TJ": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.623,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.77,
-   "secondType": "E11",
-   "consensus": 0.967,
+   "persona": "21",
+   "secondPersona": "22",
+   "confidence": 0.296,
+   "stability": 0.737,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.676294,
+    "demography": 0.944657,
+    "governance": -1.385707,
+    "values": -0.491167
+   }
   },
   "TL": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.551,
-   "secondGroup": "E",
-   "type": "B07",
-   "typeConfidence": 0.607,
-   "secondType": "B05",
-   "consensus": 0.936,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "10",
+   "secondPersona": "25",
+   "confidence": 0.142,
+   "stability": 0.75,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.171458,
+    "demography": 0.611537,
+    "governance": 0.50414,
+    "values": null
+   }
   },
   "TM": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.433,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.256,
-   "secondType": "E11",
-   "consensus": 0.969,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "21",
+   "secondPersona": "17",
+   "confidence": 0.413,
+   "stability": 0.869,
+   "exceptions": [],
+   "observedShare": 0.7,
+   "surveyed": false,
+   "core": {
+    "development": -0.691374,
+    "demography": 0.669499,
+    "governance": -1.55633,
+    "values": null
+   }
   },
   "TN": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.729,
-   "secondGroup": "E",
-   "type": "C09",
-   "typeConfidence": 0.324,
-   "secondType": "C08",
-   "consensus": 0.928,
+   "persona": "23",
+   "secondPersona": "22",
+   "confidence": 0.268,
+   "stability": 0.682,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.003791,
+    "demography": -0.202286,
+    "governance": -0.37244,
+    "values": -1.02874
+   }
   },
   "TO": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.584,
-   "secondGroup": "E",
-   "type": "B07",
-   "typeConfidence": 0.628,
-   "secondType": "B06",
-   "consensus": 0.937,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "09",
+   "secondPersona": "13",
+   "confidence": 0.279,
+   "stability": 0.702,
+   "exceptions": [],
+   "observedShare": 0.6,
+   "surveyed": false,
+   "core": {
+    "development": -0.301839,
+    "demography": 0.313807,
+    "governance": 0.515051,
+    "values": null
+   }
   },
   "TR": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.334,
-   "secondGroup": "D",
-   "type": "C09",
-   "typeConfidence": 0.535,
-   "secondType": "C08",
-   "consensus": 0.896,
+   "persona": "23",
+   "secondPersona": "20",
+   "confidence": 0,
+   "stability": 0.208,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.583201,
+    "demography": -0.454001,
+    "governance": -0.875653,
+    "values": -0.360002
+   }
   },
   "TT": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.647,
-   "secondGroup": "A",
-   "type": "B05",
-   "typeConfidence": 0.186,
-   "secondType": "B06",
-   "consensus": 0.937,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "12",
+   "secondPersona": "13",
+   "confidence": 0.12,
+   "stability": 0.825,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": 0.246044,
+    "demography": -0.722446,
+    "governance": 0.48533,
+    "values": null
+   }
   },
   "TV": {
-   "status": "built",
-   "group": "B",
-   "confidence": 0.518,
-   "secondGroup": "E",
-   "type": "B07",
-   "typeConfidence": 0.331,
-   "secondType": "B05",
-   "consensus": 0.934,
-   "observedShare": 1,
-   "imputedDomains": []
+   "status": "provisional",
+   "persona": "09",
+   "secondPersona": "13",
+   "confidence": 0.276,
+   "stability": 0.613,
+   "exceptions": [],
+   "observedShare": 0.517,
+   "surveyed": false,
+   "core": {
+    "development": -1.024036,
+    "demography": -0.002517,
+    "governance": 0.927312,
+    "values": null
+   }
   },
   "TZ": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.534,
-   "secondGroup": "C",
-   "type": "E11",
-   "typeConfidence": 0.514,
-   "secondType": "E12",
-   "consensus": 0.967,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "26",
+   "secondPersona": "25",
+   "confidence": 0.038,
+   "stability": 0.596,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.387492,
+    "demography": 1.631532,
+    "governance": -0.388741,
+    "values": null
+   }
   },
   "UA": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.796,
-   "secondGroup": "A",
-   "type": "C09",
-   "typeConfidence": 0.216,
-   "secondType": "C08",
-   "consensus": 0.93,
+   "persona": "20",
+   "secondPersona": "14",
+   "confidence": 0.062,
+   "stability": 0.485,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.092636,
+    "demography": -0.644564,
+    "governance": -0.209301,
+    "values": 0.168096
+   }
   },
   "UG": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.74,
-   "secondGroup": "C",
-   "type": "E11",
-   "typeConfidence": 0.483,
-   "secondType": "E12",
-   "consensus": 0.966,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "26",
+   "secondPersona": "27",
+   "confidence": 0.217,
+   "stability": 0.782,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.566163,
+    "demography": 1.597201,
+    "governance": -0.870238,
+    "values": null
+   }
   },
   "US": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.317,
-   "secondGroup": "C",
-   "type": "A01",
-   "typeConfidence": 0.286,
-   "secondType": "A04",
-   "consensus": 0.957,
+   "persona": "05",
+   "secondPersona": "02",
+   "confidence": 0.086,
+   "stability": 0.479,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.982562,
+    "demography": -0.778427,
+    "governance": 0.995907,
+    "values": 0.923711
+   }
   },
   "UY": {
    "status": "built",
-   "group": "A",
-   "confidence": 0.514,
-   "secondGroup": "B",
-   "type": "A03",
-   "typeConfidence": 0.632,
-   "secondType": "A02",
-   "consensus": 0.959,
+   "persona": "06",
+   "secondPersona": "05",
+   "confidence": 0.246,
+   "stability": 0.538,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.615757,
+    "demography": -0.898697,
+    "governance": 1.502832,
+    "values": 0.491355
+   }
   },
   "UZ": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.244,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.856,
+   "persona": "21",
+   "secondPersona": "17",
+   "confidence": 0.421,
+   "stability": 0.863,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.057188,
+    "demography": 0.838132,
+    "governance": -0.890293,
+    "values": 0.01552
+   }
   },
   "VA": {
    "status": "unclassified",
-   "observedShare": 0
+   "observedShare": 0.167
   },
   "VC": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.765,
-   "secondGroup": "A",
-   "type": "B05",
-   "typeConfidence": 0.453,
-   "secondType": "B06",
-   "consensus": 0.937,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "13",
+   "secondPersona": "12",
+   "confidence": 0.456,
+   "stability": 0.883,
+   "exceptions": [],
+   "observedShare": 0.65,
+   "surveyed": false,
+   "core": {
+    "development": -0.016565,
+    "demography": -0.671364,
+    "governance": 0.962176,
+    "values": null
+   }
   },
   "VE": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.243,
-   "secondGroup": "E",
-   "type": "C09",
-   "typeConfidence": 0.477,
-   "secondType": "C08",
-   "consensus": 0.875,
+   "persona": "18",
+   "secondPersona": "19",
+   "confidence": 0.032,
+   "stability": 0.621,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.319463,
+    "demography": -0.132479,
+    "governance": -1.668464,
+    "values": -0.797886
+   }
   },
   "VN": {
    "status": "built",
-   "group": "C",
-   "confidence": 0.491,
-   "secondGroup": "E",
-   "type": "C09",
-   "typeConfidence": 0.357,
-   "secondType": "C08",
-   "consensus": 0.925,
+   "persona": "17",
+   "secondPersona": "16",
+   "confidence": 0.168,
+   "stability": 0.694,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": 0.078541,
+    "demography": -0.174805,
+    "governance": -0.776134,
+    "values": 0.192868
+   }
   },
   "VU": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.414,
-   "secondGroup": "E",
-   "type": "B07",
-   "typeConfidence": 0.749,
-   "secondType": "B05",
-   "consensus": 0.938,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "09",
+   "secondPersona": "25",
+   "confidence": 0.143,
+   "stability": 0.67,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.194219,
+    "demography": 1.176429,
+    "governance": 0.6443,
+    "values": null
+   }
   },
   "WS": {
    "status": "built",
-   "group": "B",
-   "confidence": 0.417,
-   "secondGroup": "D",
-   "type": "B05",
-   "typeConfidence": 0.199,
-   "secondType": "B07",
-   "consensus": 0.938,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "09",
+   "secondPersona": "13",
+   "confidence": 0.264,
+   "stability": 0.702,
+   "exceptions": [],
+   "observedShare": 0.6,
+   "surveyed": false,
+   "core": {
+    "development": -0.410676,
+    "demography": 0.778694,
+    "governance": 0.542472,
+    "values": null
+   }
   },
   "YE": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.676,
-   "secondGroup": "C",
-   "type": "E12",
-   "typeConfidence": 0.275,
-   "secondType": "E11",
-   "consensus": 0.965,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "24",
+   "secondPersona": "28",
+   "confidence": 0.293,
+   "stability": 0.938,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.727993,
+    "demography": 1.617354,
+    "governance": -1.563445,
+    "values": null
+   }
   },
   "ZA": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.147,
-   "secondGroup": "A",
-   "type": "D10",
-   "consensus": 0.905,
+   "persona": "11",
+   "secondPersona": "25",
+   "confidence": 0.165,
+   "stability": 0.658,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -0.358508,
+    "demography": 0.216708,
+    "governance": 0.573728,
+    "values": -0.237878
+   }
   },
   "ZM": {
    "status": "built",
-   "group": "D",
-   "confidence": 0.481,
-   "secondGroup": "E",
-   "type": "D10",
-   "consensus": 0.909,
-   "observedShare": 1,
-   "imputedDomains": []
+   "persona": "25",
+   "secondPersona": "26",
+   "confidence": 0.162,
+   "stability": 0.66,
+   "exceptions": [],
+   "observedShare": 0.75,
+   "surveyed": false,
+   "core": {
+    "development": -1.485811,
+    "demography": 1.544783,
+    "governance": -0.162395,
+    "values": null
+   }
   },
   "ZW": {
    "status": "built",
-   "group": "E",
-   "confidence": 0.157,
-   "secondGroup": "D",
-   "type": "E11",
-   "typeConfidence": 0.469,
-   "secondType": "E12",
-   "consensus": 0.694,
+   "persona": "25",
+   "secondPersona": "26",
+   "confidence": 0.115,
+   "stability": 0.65,
+   "exceptions": [],
    "observedShare": 1,
-   "imputedDomains": []
+   "surveyed": true,
+   "core": {
+    "development": -1.281629,
+    "demography": 1.209127,
+    "governance": -0.999473,
+    "values": -1.753855
+   }
   }
  },
- "familyTree": {
+ "familyMap": {
+  "method": "classical multidimensional scaling of the persona distance",
   "explainedVariance": [
-   0.42,
-   0.257
+   0.307,
+   0.12
   ],
-  "loadings": {
+  "axisCorrelations": {
    "development": [
-    0.69,
-    0.038
+    0.903,
+    0.312
+   ],
+   "demography": [
+    -0.862,
+    -0.115
    ],
    "governance": [
-    0.671,
-    -0.335
+    0.867,
+    -0.308
    ],
-   "age_structure": [
-    0.183,
-    0.057
-   ],
-   "scale": [
-    0.2,
-    0.94
+   "values": [
+    0.903,
+    -0.269
    ]
   },
   "countries": {
    "AD": [
-    1.224,
-    -1.575
+    0.6165,
+    -0.0652
    ],
    "AE": [
-    0.327,
-    1.15
+    0.2591,
+    0.6187
    ],
    "AF": [
-    -2.429,
-    0.606
+    -0.8972,
+    -0.1892
    ],
    "AG": [
-    0.497,
-    -1.891
+    0.2985,
+    -0.4563
    ],
    "AL": [
-    0.411,
-    -0.217
+    0.0362,
+    0.0009
    ],
    "AM": [
-    0.305,
-    -0.223
+    0.0127,
+    0.0289
    ],
    "AO": [
-    -1.321,
-    0.373
+    -0.3987,
+    0.062
    ],
    "AR": [
-    0.866,
-    0.87
+    0.2277,
+    0.2105
    ],
    "AT": [
-    2.032,
-    0.409
+    0.6963,
+    0.0786
    ],
    "AU": [
-    2.096,
-    0.735
+    0.6327,
+    0.0218
    ],
    "AZ": [
-    -0.726,
-    0.621
+    -0.1759,
+    0.3306
    ],
    "BA": [
-    0.396,
-    -0.121
+    0.0929,
+    0.1091
    ],
    "BB": [
-    1.133,
-    -1.458
+    0.4469,
+    -0.4715
    ],
    "BD": [
-    -0.766,
-    1.066
+    -0.4115,
+    0.1838
    ],
    "BE": [
-    2.14,
-    0.483
+    0.6612,
+    0.1813
    ],
    "BF": [
-    -1.707,
-    0.217
+    -0.5954,
+    0.0599
    ],
    "BG": [
-    0.876,
-    0.105
+    0.2369,
+    0.037
    ],
    "BH": [
-    -0.135,
-    0.25
+    0.1288,
+    0.4624
    ],
    "BI": [
-    -2.289,
-    0.064
+    -0.6007,
+    -0.1367
    ],
    "BJ": [
-    -1.213,
-    -0.328
+    -0.4312,
+    -0.0947
    ],
    "BN": [
-    0.145,
-    -0.85
+    0.2086,
+    0.1989
    ],
    "BO": [
-    -0.368,
-    0.122
+    -0.1733,
+    -0.0126
    ],
    "BR": [
-    0.961,
-    1.368
+    0.0872,
+    0.1828
    ],
    "BS": [
-    1.15,
-    -0.989
+    0.4878,
+    -0.2932
    ],
    "BT": [
-    0.018,
-    -0.755
+    0.134,
+    -0.052
    ],
    "BW": [
-    0.207,
-    -0.917
+    0.0216,
+    -0.335
    ],
    "BY": [
-    -0.288,
-    0.638
+    0.1143,
+    0.2209
    ],
    "BZ": [
-    -0.242,
-    -1.309
+    0.0794,
+    -0.3346
    ],
    "CA": [
-    2.223,
-    1.042
+    0.665,
+    0.072
    ],
    "CD": [
-    -1.913,
-    0.834
+    -0.7571,
+    0.0307
    ],
    "CF": [
-    -2.333,
-    0.067
+    -0.6809,
+    -0.0838
    ],
    "CG": [
-    -1.335,
-    -0.104
+    -0.4076,
+    -0.018
    ],
    "CH": [
-    2.441,
-    0.586
+    0.787,
+    0.1054
    ],
    "CI": [
-    -0.961,
-    0.269
+    -0.3588,
+    0.0387
    ],
    "CL": [
-    1.489,
-    0.179
+    0.4013,
+    0.1642
    ],
    "CM": [
-    -1.571,
-    0.524
+    -0.4918,
+    -0.0273
    ],
    "CN": [
-    0.289,
-    3.178
+    0.0598,
+    0.6106
    ],
    "CO": [
-    0.439,
-    0.678
+    -0.0353,
+    0.0691
    ],
    "CR": [
-    1.402,
-    -0.317
+    0.4553,
+    -0.0695
    ],
    "CU": [
-    -0.101,
-    0.629
+    0.1125,
+    0.1735
    ],
    "CV": [
-    0.678,
-    -1.409
+    0.138,
+    -0.2296
    ],
    "CY": [
-    1.29,
-    -0.463
+    0.348,
+    0.024
    ],
    "CZ": [
-    1.815,
-    0.136
+    0.5887,
+    0.0825
    ],
    "DE": [
-    2.485,
-    1.329
+    0.7532,
+    0.1751
    ],
    "DJ": [
-    -1.179,
-    -0.797
+    -0.3128,
+    0.0762
    ],
    "DK": [
-    2.477,
-    0.155
+    0.8436,
+    -0.0424
    ],
    "DM": [
-    0.555,
-    -1.637
+    0.3102,
+    -0.472
    ],
    "DO": [
-    0.412,
-    0.066
+    0.112,
+    -0.0042
    ],
    "DZ": [
-    -0.536,
-    0.806
+    -0.2676,
+    0.439
    ],
    "EC": [
-    -0.028,
-    0.32
+    -0.112,
+    -0.0051
    ],
    "EE": [
-    1.959,
-    -0.736
+    0.655,
+    -0.0723
    ],
    "EG": [
-    -0.93,
-    1.532
+    -0.5491,
+    0.3296
    ],
    "ER": [
-    -2.541,
-    -0.222
+    -0.6675,
+    -0.0896
    ],
    "ES": [
-    1.977,
-    1.121
+    0.6001,
+    0.2141
    ],
    "ET": [
-    -1.72,
-    0.938
+    -0.6426,
+    0.0845
    ],
    "FI": [
-    2.333,
-    0.147
+    0.827,
+    -0.0577
    ],
    "FJ": [
-    0.043,
-    -0.924
+    0.0153,
+    -0.2288
    ],
    "FM": [
-    -0.303,
-    -2.154
+    -0.0679,
+    -0.6477
    ],
    "FR": [
-    2.132,
-    1.337
+    0.5944,
+    0.208
    ],
    "GA": [
-    -0.931,
-    -0.699
+    -0.2113,
+    0.0074
    ],
    "GB": [
-    2.265,
-    1.368
+    0.6662,
+    0.0656
    ],
    "GD": [
-    0.471,
-    -1.781
+    0.2532,
+    -0.523
    ],
    "GE": [
-    0.065,
-    0.095
+    -0.0077,
+    0.0768
    ],
    "GH": [
-    -0.2,
-    0.111
+    -0.2011,
+    -0.1628
    ],
    "GM": [
-    -0.922,
-    -0.703
+    -0.3715,
+    -0.2216
    ],
    "GN": [
-    -1.815,
-    0.153
+    -0.5818,
+    0.0136
    ],
    "GQ": [
-    -1.47,
-    -0.379
+    -0.3488,
+    0.0394
    ],
    "GR": [
-    1.42,
-    0.516
+    0.346,
+    0.1606
    ],
    "GT": [
-    -0.492,
-    0.134
+    -0.1156,
+    -0.0021
    ],
    "GW": [
-    -1.944,
-    -0.506
+    -0.5433,
+    -0.1099
    ],
    "GY": [
-    -0.472,
-    -1.014
+    0.0101,
+    -0.219
    ],
    "HN": [
-    -0.76,
-    0.052
+    -0.1824,
+    -0.0615
    ],
    "HR": [
-    1.107,
-    0.06
+    0.3914,
+    0.042
    ],
    "HT": [
-    -1.444,
-    -0.044
+    -0.4827,
+    -0.1911
    ],
    "HU": [
-    0.852,
-    0.443
+    0.3724,
+    0.1073
    ],
    "ID": [
-    -0.026,
-    1.342
+    -0.262,
+    0.2916
    ],
    "IE": [
-    2.009,
-    -0.01
+    0.7248,
+    -0.0267
    ],
    "IL": [
-    1.108,
-    0.28
+    0.3108,
+    0.2137
    ],
    "IN": [
-    -0.01,
-    2.027
+    -0.1916,
+    0.2393
    ],
    "IQ": [
-    -0.852,
-    0.657
+    -0.4063,
+    0.3882
    ],
    "IR": [
-    -0.656,
-    1.375
+    -0.2928,
+    0.4588
    ],
    "IS": [
-    1.777,
-    -0.759
+    0.7758,
+    -0.2388
    ],
    "IT": [
-    1.839,
-    1.394
+    0.5253,
+    0.303
    ],
    "JM": [
-    0.617,
-    -0.4
+    0.1775,
+    -0.3153
    ],
    "JO": [
-    -0.043,
-    0.442
+    -0.1838,
+    0.2963
    ],
    "JP": [
-    2.509,
-    1.664
+    0.6197,
+    0.2962
    ],
    "KE": [
-    -0.874,
-    0.564
+    -0.3591,
+    -0.1022
    ],
    "KG": [
-    -0.997,
-    0
+    -0.2433,
+    0.1562
    ],
    "KH": [
-    -1.398,
-    0.537
+    -0.34,
+    0.0897
    ],
    "KI": [
-    -0.237,
-    -2.386
+    -0.0638,
+    -0.6587
    ],
    "KM": [
-    -1.642,
-    -0.894
+    -0.6066,
+    -0.0495
    ],
    "KN": [
-    0.428,
-    -2.364
+    0.2414,
+    -0.5951
    ],
    "KP": [
-    -0.918,
-    1.202
+    -0.2127,
+    0.2252
    ],
    "KR": [
-    2.09,
-    1.198
+    0.5208,
+    0.2577
    ],
    "KW": [
-    0.445,
-    0.567
+    0.1706,
+    0.5037
    ],
    "KZ": [
-    -0.345,
-    0.528
+    -0.0221,
+    0.3083
    ],
    "LA": [
-    -1.394,
-    0.084
+    -0.2419,
+    0.0596
    ],
    "LB": [
-    -0.322,
-    0.194
+    -0.1419,
+    0.2279
    ],
    "LC": [
-    0.573,
-    -1.816
+    0.2621,
+    -0.5712
    ],
    "LI": [
-    1.282,
-    -1.648
+    0.555,
+    -0.1024
    ],
    "LK": [
-    0.118,
-    0.311
+    -0.1079,
+    0.0065
    ],
    "LR": [
-    -1.176,
-    -0.337
+    -0.4279,
+    -0.2866
    ],
    "LS": [
-    -0.757,
-    -1.115
+    -0.2945,
+    -0.3819
    ],
    "LT": [
-    1.628,
-    -0.508
+    0.5059,
+    -0.0388
    ],
    "LU": [
-    2.224,
-    -0.561
+    0.7736,
+    0.0651
    ],
    "LV": [
-    1.577,
-    -0.526
+    0.521,
+    -0.0566
    ],
    "LY": [
-    -1.059,
-    0.23
+    -0.3895,
+    0.4629
    ],
    "MA": [
-    -0.139,
-    0.835
+    -0.2209,
+    0.3249
    ],
    "MC": [
-    1.752,
-    -0.952
+    0.7736,
+    0.0383
    ],
    "MD": [
-    0.419,
-    -0.481
+    0.1652,
+    -0.1575
    ],
    "ME": [
-    0.722,
-    -0.833
+    0.2708,
+    -0.0527
    ],
    "MG": [
-    -1.4,
-    0.404
+    -0.5163,
+    -0.1083
    ],
    "MH": [
-    0.296,
-    -2.306
+    0.1127,
+    -0.5616
    ],
    "MK": [
-    0.531,
-    -0.548
+    0.1731,
+    0.008
    ],
    "ML": [
-    -1.989,
-    0.364
+    -0.7064,
+    0.0826
    ],
    "MM": [
-    -1.659,
-    0.714
+    -0.5364,
+    0.1872
    ],
    "MN": [
-    -0.117,
-    -0.357
+    0.0288,
+    0.0175
    ],
    "MR": [
-    -1.425,
-    -0.401
+    -0.4794,
+    0.1068
    ],
    "MT": [
-    1.485,
-    -0.748
+    0.5243,
+    -0.0772
    ],
    "MU": [
-    0.826,
-    -0.683
+    0.1773,
+    -0.2064
    ],
    "MV": [
-    0.055,
-    -0.322
+    -0.088,
+    0.0721
    ],
    "MW": [
-    -1.082,
-    -0.214
+    -0.4652,
+    -0.3531
    ],
    "MX": [
-    0.146,
-    1.323
+    0.0272,
+    0.1942
    ],
    "MY": [
-    0.61,
-    0.835
+    0.1706,
+    0.2183
    ],
    "MZ": [
-    -1.778,
-    0.314
+    -0.5234,
+    -0.0831
    ],
    "NA": [
-    -0.163,
-    -0.685
+    -0.0463,
+    -0.3386
    ],
    "NE": [
-    -2.168,
-    0.28
+    -0.7191,
+    0.0235
    ],
    "NG": [
-    -1.042,
-    1.063
+    -0.5802,
+    -0.0359
    ],
    "NI": [
-    -1.431,
-    0.117
+    -0.3377,
+    0.0087
    ],
    "NL": [
-    2.394,
-    0.6
+    0.7548,
+    0.0779
    ],
    "NO": [
-    2.359,
-    0.143
+    0.7531,
+    -0.0456
    ],
    "NP": [
-    -0.272,
-    0.378
+    -0.1836,
+    0.048
    ],
    "NR": [
-    -0.464,
-    -2.789
+    0.113,
+    -0.5639
    ],
    "NZ": [
-    2.057,
-    0.081
+    0.7084,
+    -0.177
    ],
    "OM": [
-    -0.401,
-    0.33
+    0.0164,
+    0.5098
    ],
    "PA": [
-    0.588,
-    -0.065
+    0.2037,
+    -0.0077
    ],
    "PE": [
-    0.149,
-    0.551
+    -0.0862,
+    0.1421
    ],
    "PG": [
-    -1.043,
-    -0.299
+    -0.4323,
+    -0.2149
    ],
    "PH": [
-    -0.058,
-    1.02
+    -0.1839,
+    0.0379
    ],
    "PK": [
-    -1.223,
-    1.247
+    -0.4957,
+    0.1038
    ],
    "PL": [
-    1.586,
-    0.809
+    0.4599,
+    0.141
    ],
    "PS": [
-    -1.098,
-    0
+    -0.228,
+    0.2799
    ],
    "PT": [
-    1.76,
-    0.444
+    0.4804,
+    0.1402
    ],
    "PW": [
-    0.603,
-    -2.523
+    0.3017,
+    -0.4815
    ],
    "PY": [
-    -0.223,
-    0.119
+    0.0303,
+    0.0096
    ],
    "QA": [
-    0.365,
-    0.599
+    0.1576,
+    0.5532
    ],
    "RO": [
-    1.041,
-    0.429
+    0.2382,
+    0.1146
    ],
    "RS": [
-    0.446,
-    0.296
+    0.2146,
+    0.1019
    ],
    "RU": [
-    0.013,
-    2.213
+    0.0376,
+    0.4995
    ],
    "RW": [
-    -1.162,
-    0.109
+    -0.2631,
+    -0.2296
    ],
    "SA": [
-    -0.436,
-    1.528
+    0.0444,
+    0.6772
    ],
    "SB": [
-    -0.864,
-    -1.226
+    -0.3223,
+    -0.447
    ],
    "SC": [
-    0.775,
-    -1.755
+    0.2754,
+    -0.4421
    ],
    "SD": [
-    -2.209,
-    0.733
+    -0.7457,
+    0.1035
    ],
    "SE": [
-    2.442,
-    0.466
+    0.769,
+    -0.0455
    ],
    "SG": [
-    1.636,
-    0.594
+    0.6056,
+    0.2216
    ],
    "SI": [
-    1.423,
-    -0.34
+    0.5932,
+    -0.063
    ],
    "SK": [
-    1.194,
-    -0.012
+    0.4081,
+    0.0304
    ],
    "SL": [
-    -1.336,
-    -0.497
+    -0.5371,
+    -0.2518
    ],
    "SM": [
-    1.489,
-    -1.846
+    0.6891,
+    -0.062
    ],
    "SN": [
-    -0.526,
-    -0.016
+    -0.3157,
+    0.071
    ],
    "SO": [
-    -2.41,
-    -0.056
+    -0.8045,
+    0.149
    ],
    "SR": [
-    0.083,
-    -1.471
+    0.0355,
+    -0.1422
    ],
    "SS": [
-    -2.2,
-    0.212
+    -0.6846,
+    -0.2029
    ],
    "ST": [
-    -0.295,
-    -1.738
+    -0.1406,
+    -0.3441
    ],
    "SV": [
-    -0.405,
-    0.321
+    -0.0243,
+    0.0235
    ],
    "SY": [
-    -1.715,
-    0.579
+    -0.5217,
+    0.2459
    ],
    "SZ": [
-    -1.35,
-    -0.588
+    -0.3099,
+    -0.2367
    ],
    "TD": [
-    -2.404,
-    0.02
+    -0.8306,
+    0.1031
    ],
    "TG": [
-    -1.415,
-    -0.298
+    -0.4929,
+    -0.1307
    ],
    "TH": [
-    0.535,
-    1.215
+    0.1488,
+    0.2659
    ],
    "TJ": [
-    -1.774,
-    0.376
+    -0.4177,
+    0.2727
    ],
    "TL": [
-    -0.35,
-    -1.344
+    -0.1808,
+    -0.2711
    ],
    "TM": [
-    -1.669,
-    0.298
+    -0.3693,
+    0.2361
    ],
    "TN": [
-    -0.094,
-    0.407
+    -0.2276,
+    0.28
    ],
    "TO": [
-    -0.364,
-    -2.012
+    -0.0202,
+    -0.5968
    ],
    "TR": [
-    0.141,
-    1.691
+    -0.0241,
+    0.4638
    ],
    "TT": [
-    0.679,
-    -1.044
+    0.1957,
+    -0.2451
    ],
    "TV": [
-    -0.21,
-    -2.833
+    0.004,
+    -0.7691
    ],
    "TZ": [
-    -1.338,
-    0.62
+    -0.4426,
+    -0.0959
    ],
    "UA": [
-    0.331,
-    0.855
+    0.0424,
+    0.1477
    ],
    "UG": [
-    -1.632,
-    0.552
+    -0.5489,
+    -0.1542
    ],
    "US": [
-    1.966,
-    2.067
+    0.5086,
+    0.2797
    ],
    "UY": [
-    1.619,
-    -0.419
+    0.4979,
+    -0.0149
    ],
    "UZ": [
-    -0.994,
-    0.694
+    -0.1786,
+    0.2785
    ],
    "VC": [
-    0.563,
-    -2.107
+    0.2631,
+    -0.6076
    ],
    "VE": [
-    -0.905,
-    0.847
+    -0.248,
+    0.2286
    ],
    "VN": [
-    -0.545,
-    1.313
+    -0.0363,
+    0.1936
    ],
    "VU": [
-    -0.731,
-    -1.915
+    -0.2247,
+    -0.4538
    ],
    "WS": [
-    -0.246,
-    -1.722
+    -0.0902,
+    -0.5892
    ],
    "YE": [
-    -2.171,
-    0.743
+    -0.789,
+    0.1496
    ],
    "ZA": [
-    0.656,
-    0.701
+    0.0023,
+    -0.0585
    ],
    "ZM": [
-    -0.882,
-    0.059
+    -0.3857,
+    -0.1891
    ],
    "ZW": [
-    -1.467,
-    0.305
+    -0.5718,
+    -0.199
    ]
   },
-  "types": {
-   "E11": [
-    -1.587,
-    0.21
+  "personas": {
+   "10": [
+    -0.1406,
+    -0.2711
    ],
-   "E12": [
-    -1.815,
-    0.224
+   "11": [
+    0.012,
+    -0.3368
    ],
-   "D10": [
-    -0.489,
-    -0.006
+   "12": [
+    0.0355,
+    -0.219
    ],
-   "A02": [
-    1.694,
-    -0.481
+   "13": [
+    0.2626,
+    -0.4718
    ],
-   "A01": [
-    2.249,
-    0.742
+   "14": [
+    0.1652,
+    0.0289
    ],
-   "A03": [
-    1.686,
-    -0.129
+   "15": [
+    0.3108,
+    0.0768
    ],
-   "A04": [
-    1.656,
-    1.118
+   "16": [
+    -0.1079,
+    0.0065
    ],
-   "C08": [
-    0.429,
-    0.23
+   "17": [
+    -0.2127,
+    0.0897
    ],
-   "C09": [
-    -0.202,
-    1.087
+   "18": [
+    -0.1824,
+    -0.0021
    ],
-   "B06": [
-    0.52,
-    -0.89
+   "19": [
+    0.0588,
+    0.1056
    ],
-   "B05": [
-    0.567,
-    -1.713
+   "20": [
+    0.0511,
+    0.2983
    ],
-   "B07": [
-    -0.506,
-    -1.702
+   "21": [
+    -0.2433,
+    0.2727
+   ],
+   "22": [
+    -0.262,
+    0.1872
+   ],
+   "23": [
+    -0.2676,
+    0.3296
+   ],
+   "24": [
+    -0.789,
+    0.149
+   ],
+   "25": [
+    -0.3987,
+    -0.2296
+   ],
+   "26": [
+    -0.5361,
+    -0.0863
+   ],
+   "27": [
+    -0.6827,
+    -0.1103
+   ],
+   "28": [
+    -0.7064,
+    0.0599
+   ],
+   "29": [
+    -0.4312,
+    -0.0947
+   ],
+   "30": [
+    -0.4076,
+    0.0074
+   ],
+   "07": [
+    0.1706,
+    0.4624
+   ],
+   "09": [
+    -0.0202,
+    -0.5639
+   ],
+   "01": [
+    0.6891,
+    -0.0652
+   ],
+   "03": [
+    0.6807,
+    0.094
+   ],
+   "08": [
+    0.101,
+    0.586
+   ],
+   "06": [
+    0.4553,
+    -0.0149
+   ],
+   "02": [
+    0.7539,
+    -0.044
+   ],
+   "05": [
+    0.5086,
+    0.208
+   ],
+   "04": [
+    0.5135,
+    -0.0042
    ]
   }
  },
- "edition": "2026",
- "approved": {
-  "date": "2026-09-24",
-  "by": "owner",
-  "promotedFrom": "scripts/data/country-personas-model.draft.json",
-  "draftSha256": "4e5e924a4c621c8c02dc4f9f87af1290d4d07233c7e9501be9f1db86588c26f3"
+ "validation": {
+  "stability": {
+   "runs": 40,
+   "kinds": {
+    "weights": 12,
+    "drop-domain": 15,
+    "indicators": 13
+   },
+   "medianPersonaJaccard": 0.59,
+   "personaJaccard": {
+    "10": 0.754,
+    "11": 0.611,
+    "12": 0.699,
+    "13": 0.833,
+    "14": 0.542,
+    "15": 0.267,
+    "16": 0.593,
+    "17": 0.667,
+    "18": 0.645,
+    "19": 0.588,
+    "20": 0.547,
+    "21": 0.758,
+    "22": 0.488,
+    "23": 0.675,
+    "24": 0.899,
+    "25": 0.586,
+    "26": 0.666,
+    "27": 0.401,
+    "28": 0.583,
+    "29": 0.591,
+    "30": 0.527,
+    "07": 0.417,
+    "09": 0.719,
+    "01": 0.718,
+    "03": 0.456,
+    "08": 0.711,
+    "06": 0.502,
+    "02": 0.548,
+    "05": 0.45,
+    "04": 0.437
+   },
+   "medianARI": 0.568
+  },
+  "homogeneity": {
+   "v1Types": 0.3740886937887482,
+   "v2": 0.6521939080387298
+  },
+  "benchmarksARI": {
+   "geo_continent": 0.16,
+   "geo_subregion": 0.266,
+   "wb_income_group": 0.085,
+   "wb_region": 0.187,
+   "v1Groups": 0.135
+  },
+  "domainInfluence": {
+   "development": 0.0692,
+   "demography": 0.0692,
+   "economy": 0.0693,
+   "society": 0.0694,
+   "scale": 0.0694,
+   "democracy": 0.0694,
+   "integrity": 0.0691,
+   "peace": 0.0649,
+   "wellbeing": 0.0692,
+   "standing": 0.0695,
+   "secular": 0.0513,
+   "selfexpression": 0.0522,
+   "religion": 0.0692,
+   "language": 0.0693,
+   "region": 0.0694
+  },
+  "domainSeparation": {
+   "development": 0.8321,
+   "demography": 0.7774,
+   "economy": 0.4883,
+   "society": 0.5361,
+   "scale": 0.668,
+   "democracy": 0.7824,
+   "integrity": 0.8087,
+   "peace": 0.6569,
+   "wellbeing": 0.7062,
+   "standing": 0.7367,
+   "secular": 0.6268,
+   "selfexpression": 0.5915,
+   "religion": 0.6745,
+   "language": 0.55,
+   "region": 0.6107
+  },
+  "silhouette": 0.1232,
+  "violators": 0
  }
 }

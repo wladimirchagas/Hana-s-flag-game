@@ -34,7 +34,7 @@ export type WvsMapMode = {
   answerIndexes: number[];
 };
 
-/** Colour the map by Country Persona group (src/data/countryPersonas.ts). Categorical, NOT an
+/** Colour the map by Country Persona (src/data/countryPersonas.ts). Categorical, NOT an
  *  index: it never enters DEMOCRACY_INDEX_KEYS and never uses the green→red index palette. */
 export type PersonaMapMode = { kind: "persona" };
 

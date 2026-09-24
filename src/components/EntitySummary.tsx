@@ -383,7 +383,7 @@ function buildGeoRows(c: Country): { label: string; value: React.ReactNode }[] {
   const rows: { label: string; value: React.ReactNode }[] = [];
   if (c.continent) rows.push({ label: "Continent", value: c.continent });
   if (c.subregion) rows.push({ label: "Region", value: c.subregion });
-  // Country Personas (edition 2026): the country's persona group and type, each explained on
+  // Country Personas (edition 2026): the country's persona, explained on
   // hover or tap. Added row — the fact sheet's rows are never reduced (CLAUDE.md).
   if (COUNTRY_PERSONAS[c.code])
     rows.push({ label: "Country persona", value: <PersonaBadge code={c.code} countryName={c.name} /> });

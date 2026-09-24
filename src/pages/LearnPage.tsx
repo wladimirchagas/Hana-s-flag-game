@@ -26,7 +26,7 @@ import {
   isWvsMapMode,
 } from "../lib/democracyColors";
 import { getPersonaColorOverlay } from "../lib/countryPersonas";
-import { PersonaFamilyTree } from "../components/PersonaFamilyTree";
+import { PersonaMapChart } from "../components/PersonaMapChart";
 import { getWvsColorOverlay } from "../lib/wvsResults";
 import { getMapDataTooltip } from "../lib/mapDataTooltip";
 import {
@@ -327,8 +327,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // of the map colour mode so users can compare any pair of indexes.
   const [democracyChartEnabled, setDemocracyChartEnabled] = useState(false);
   const democracyChartPanelId = useId();
-  const [personaTreeEnabled, setPersonaTreeEnabled] = useState(false);
-  const personaTreePanelId = useId();
+  const [personaMapEnabled, setPersonaMapEnabled] = useState(false);
+  const personaMapPanelId = useId();
   const [democracyChartXKey, setDemocracyChartXKey] =
     useState<ChartAxisSelection>("cpi");
   const [democracyChartYKey, setDemocracyChartYKey] =
@@ -2319,21 +2319,21 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
           <button
             type="button"
             className="learn-fs__chart-accordion-toggle"
-            aria-expanded={personaTreeEnabled}
-            aria-controls={personaTreePanelId}
-            onClick={() => setPersonaTreeEnabled((v) => !v)}
+            aria-expanded={personaMapEnabled}
+            aria-controls={personaMapPanelId}
+            onClick={() => setPersonaMapEnabled((v) => !v)}
           >
             <span className="learn-fs__chart-accordion-label">See country personas map</span>
             <span className="learn-fs__chart-accordion-chev" aria-hidden="true">
-              {personaTreeEnabled ? "▾" : "▸"}
+              {personaMapEnabled ? "▾" : "▸"}
             </span>
           </button>
-          {personaTreeEnabled && (
+          {personaMapEnabled && (
             <div
               className="learn-fs__chart-accordion-panel"
-              id={personaTreePanelId}
+              id={personaMapPanelId}
             >
-              <PersonaFamilyTree
+              <PersonaMapChart
                 nameOf={(code) => codeToCountry.get(code)?.name ?? ""}
                 selectedCode={
                   selected?.kind === "modern" ? selected.country.code : null

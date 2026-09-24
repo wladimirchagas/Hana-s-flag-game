@@ -79,8 +79,8 @@ import {
 } from "../lib/democracyColors";
 
 import { GridImage } from "./GridImage";
-import { PersonaGroupTip, PersonaTypeTip } from "./PersonaTip";
-import { personaFromHeading, personaHeading, personaHeadingOrder } from "../lib/countryPersonas";
+import { PersonaInfoTip, PersonaSwatch } from "./PersonaTip";
+import { personaColor, personaFromHeading, personaHeading, personaHeadingOrder } from "../lib/countryPersonas";
 
 /**
  * Flag-grid section rendered under the Learn map.
@@ -181,8 +181,7 @@ type GroupMode =
   | "digital-news"
   | "gti"
   | "party-ideology"
-  | "persona-group"
-  | "persona-type";
+  | "persona";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
@@ -194,8 +193,7 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   "by-country": "By country",
   // Country Personas (edition 2026) — src/data/countryPersonas.ts. Any modern-era view whose
   // tiles are countries; each heading carries a hover/tap explanation of its persona.
-  "persona-group": "By country persona",
-  "persona-type": "By persona type",
+  persona: "By country persona",
   shape: "By characteristics",
   family: "By family",
   color: "By colour",
@@ -225,6 +223,8 @@ function loadStoredGroupMode(): GroupMode {
   try {
     const s = localStorage.getItem(GROUP_MODE_STORAGE_KEY);
     if (s && s in GROUP_MODE_LABELS) return s as GroupMode;
+    // Country Personas 2026 v1 had two levels; v2 has one.
+    if (s === "persona-group" || s === "persona-type") return "persona";
   } catch {
     /* localStorage unavailable — fall through to the default */
   }
@@ -263,8 +263,8 @@ const COUNTRY_GROUP_MODES = new Set<GroupMode>(["by-country"]);
 const PARTY_ONLY_MODES = new Set<GroupMode>(["party-ideology"]);
 
 // Modes offered across all modern-era content types — group by Democracy ratings/indices.
-// Modes offered across all modern-era content types — group by Country Persona (group or type).
-const PERSONA_GROUP_MODES = new Set<GroupMode>(["persona-group", "persona-type"]);
+// Modes offered across all modern-era content types — group by Country Persona.
+const PERSONA_GROUP_MODES = new Set<GroupMode>(["persona"]);
 
 const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
   "freedom-house",
@@ -881,10 +881,10 @@ export function FlagGrid({
       for (const e of sorted) {
         push(e.countryName ?? "Other", e);
       }
-    } else if (groupMode === "persona-group" || groupMode === "persona-type") {
+    } else if (groupMode === "persona") {
       for (const e of sorted) {
         const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
-        push(personaHeading(code, groupMode === "persona-group" ? "group" : "type"), e);
+        push(personaHeading(code), e);
       }
     } else if (groupMode === "alpha") {
       for (const e of sorted) {
@@ -1203,8 +1203,8 @@ export function FlagGrid({
     // Sort the bucket list.
     const list = [...buckets.entries()];
     list.sort(([a], [b]) => {
-      if (groupMode === "persona-group" || groupMode === "persona-type") {
-        // A…E (or A01…E12), then "not classified", then entries outside the 195 states.
+      if (groupMode === "persona") {
+        // 01…30, then "not classified", then entries outside the 195 states.
         return personaHeadingOrder(a).localeCompare(personaHeadingOrder(b), "en");
       }
       if (groupMode === "continent") {
@@ -1471,27 +1471,23 @@ export function FlagGrid({
         <div key={g.heading ?? "_all"} className="flag-grid__group">
           {g.heading && (
             <h3 className="flag-grid__group-heading">
+              {groupMode === "persona" && personaFromHeading(g.heading) && (
+                <PersonaSwatch color={personaColor(personaFromHeading(g.heading)?.code)} />
+              )}
               <span className="flag-grid__group-name">{g.heading}</span>
               <span className="flag-grid__group-count">
                 ({g.items.length})
               </span>
-              {(groupMode === "persona-group" || groupMode === "persona-type") &&
+              {groupMode === "persona" &&
                 (() => {
-                  const ref = personaFromHeading(g.heading);
-                  if (!ref) return null;
-                  return "group" in ref ? (
-                    <PersonaGroupTip
-                      group={ref.group}
+                  const persona = personaFromHeading(g.heading);
+                  if (!persona) return null;
+                  return (
+                    <PersonaInfoTip
+                      persona={persona}
                       className="persona-tip-anchor--icon"
                       label="ⓘ"
                       ariaLabel={`What is persona ${g.heading}?`}
-                    />
-                  ) : (
-                    <PersonaTypeTip
-                      type={ref.type}
-                      className="persona-tip-anchor--icon"
-                      label="ⓘ"
-                      ariaLabel={`What is persona type ${g.heading}?`}
                     />
                   );
                 })()}

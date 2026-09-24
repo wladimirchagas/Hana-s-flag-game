@@ -11,7 +11,128 @@ Newest entries first.
 
 ---
 
-## 2026-09-24 — Build v2 (draft, awaiting owner review)
+## 2026-09-24 — Edition 2026, version 2: frozen and shipped
+
+### D15. Results of the v2 build
+
+- **30 personas, one level, zero members outside the boundary.** The rule fixed in advance
+  (D14) asked for the most granular K with no boundary exceptions and reproducible personas: a
+  median persona Jaccard of at least 0.60, with none at 0.50 or below. **No K from 10 to 30 met
+  that bar.** Quick-stability medians ranged 0.43–0.63, and every K had a persona at 0.29 or
+  below. So the pre-registered fallback applied: the most reproducible K among those with the
+  fewest violators. That was **K = 30** (quick median 0.63).
+- **Full stability (40 perturbed rebuilds):**
+  - median persona Jaccard **0.59**;
+  - median ARI **0.57**;
+  - persona range: from **0.27** (15, a mixed persona of Cyprus, Georgia, Greece, Israel,
+    Malaysia, Malta and Mauritius) to **0.90** (24).
+  - The owner can ask for fewer, coarser personas. K = 17 had the best worst case (0.62 median,
+    0.37 minimum) but lower homogeneity.
+- **Homogeneity, the owner's complaint measured.** This is the share of measured variables on
+  which **every** member sits within 1 world SD of its persona's median: **v1 types 37% → v2
+  personas 65%**.
+- **Benchmarks (ARI).** Continent 0.16, sub-region 0.27, World Bank income group 0.09, World
+  Bank region 0.19, v1 groups 0.14. The personas are neither the map nor income bands redrawn.
+- **Coverage.**
+  - 194 placed. Of those, **10 are provisional**, placed on under 60% of the similarity weight:
+    Antigua and Barbuda, Dominica, Saint Kitts and Nevis, Liechtenstein, Monaco, Marshall
+    Islands, Nauru, Palau, San Marino and Tuvalu.
+  - Vatican City is unclassified.
+  - 88 are surveyed by the World Values Survey.
+
+| Code | Persona | Countries | Stability |
+|---|---|---:|---:|
+| 01 | Tiny, Very Wealthy Democracies | 5 | 0.72 |
+| 02 | High-Trust Secular Democracies | 8 | 0.55 |
+| 03 | Prosperous Rule-of-Law Democracies | 10 | 0.46 |
+| 04 | Small, Ageing High-Income Economies | 8 | 0.44 |
+| 05 | Ageing Democracies, Sporting Heavyweights | 7 | 0.45 |
+| 06 | Urban Liberal Democracies, Wide Income Gaps | 3 | 0.50 |
+| 07 | Small Resource-Rich States | 3 | 0.42 |
+| 08 | Fast-Growing Resource-Rich States | 4 | 0.71 |
+| 09 | Small Democracies with Little Industry | 11 | 0.72 |
+| 10 | Small Remittance-Reliant Democracies | 3 | 0.75 |
+| 11 | Democracies with a Relatively Free Press | 4 | 0.61 |
+| 12 | Small Resource-Rich Democracies | 3 | 0.70 |
+| 13 | Small English-Speaking Service Democracies | 10 | 0.83 |
+| 14 | Low-Inequality Societies, Mid-Ranking Democracy Scores | 9 | 0.54 |
+| 15 | Very High Human-Development, Mid-Ranking Governance | 7 | 0.27 |
+| 16 | Electoral Democracies, Stable Populations | 3 | 0.59 |
+| 17 | Industry-Heavy Economies, Few Immigrants | 5 | 0.67 |
+| 18 | Long-Independent States, Low Rule-of-Law Scores | 7 | 0.65 |
+| 19 | Urbanised Spanish- and Portuguese-Speaking Societies | 10 | 0.59 |
+| 20 | Low-Birth-Rate States, Below-Median Democracy Scores | 6 | 0.55 |
+| 21 | Young Resource Economies, Low Freedom Scores | 5 | 0.76 |
+| 22 | Traditional-Values Middle-Income Societies | 7 | 0.49 |
+| 23 | Traditional-Values States, Low Freedom Scores | 11 | 0.68 |
+| 24 | Conflict-Affected Low-Income States | 5 | 0.90 |
+| 25 | Young Economies, Shorter Life Expectancy | 11 | 0.59 |
+| 26 | Young Agrarian Economies | 8 | 0.67 |
+| 27 | Very Young, Very Low-Income States | 4 | 0.40 |
+| 28 | Very Young Rural States | 5 | 0.58 |
+| 29 | Young, Steadily Growing States | 7 | 0.59 |
+| 30 | Sparsely Populated Young Economies | 5 | 0.53 |
+
+The owner's two examples, now:
+- **Brazil** is in 19. Its description quotes fertility of **1.4–2.4 children per woman**, a
+  range that contains Brazil's 1.6. There is no average.
+- **Malaysia** is in 15. No population figure is quoted for 15, because its members' populations
+  are too far apart to be quotable.
+
+### D16. Frozen and shipped; how the copy was checked
+
+- **Approval basis, recorded honestly.** The owner set the brief (D9) and has a standing
+  instruction to merge without waiting for confirmation. The names and descriptions were drafted
+  by Claude against that brief and have **not** been individually approved by the owner. The
+  owner can revise any of them. That is a copy revision: the partition is untouched. The frozen
+  files record this in `approval.basis`.
+  - model frozen from `country-personas-model.draft.json`, sha256 `06746df7…`;
+  - copy frozen from `country-persona-portraits.draft.json`, sha256 `54487a3e…`.
+- **Every plain-text claim now carries a checking token.** When the first drafts were rendered
+  under the new checks, they caught **17 problems**. Each was rewritten, never forced:
+  - "Low-income" for 28 and 29: Comoros, Benin, Côte d'Ivoire, Guinea and Senegal are lower-middle
+    income.
+  - "Middle-income" for 11, 14 and 19: Seychelles, Romania and Panama are high income.
+  - "Lower-middle-income" for 22: Indonesia and the Philippines are upper-middle.
+  - "Lower-income" for 25: not a World Bank group, so it cannot be checked.
+  - Eight figures that some members lack; each sentence now says "where reported" or "where
+    surveyed".
+- **Checking world positions caught four more:**
+  - "Resource-dependent" for 25: Eswatini, Rwanda, Malawi and Lesotho have 3–4% resource rents.
+    Renamed "Young Economies, Shorter Life Expectancy".
+  - "Trade-heavy" for 17: Laos sits at the world's 45th percentile. Renamed "Industry-Heavy
+    Economies, Few Immigrants".
+  - "Low crime" for 14: one member is above the world median.
+  - "Low liberal-democracy" for 20: Ukraine sits at the 46th percentile. Now "below the world
+    median".
+- **Language claims checked against current reality, not only the data.**
+  - Dropped "French is an official language" for 28. Mali (2023), Burkina Faso (2023) and Niger
+    (2025) made French a working language only.
+  - Dropped "Russian is an official language" for 21. It is not official in Turkmenistan or
+    Uzbekistan, although the bundled language data lists it.
+- **Religion.** Religion is not quoted anywhere:
+  - no Pew share appears in any description;
+  - "Devout" names became the World Values Survey's own term, "Traditional-Values", used at both
+    ends of that scale (02 "Secular", 22/23 "Traditional-Values").
+  - Three descriptions quote the survey's importance-of-God score as one attitude among others.
+- **Colours.**
+  - 30 categorical colours with a minimum pairwise ΔE2000 of 13.4.
+  - Assigned by `assign-colors.mjs` so that personas sharing a land border, or neighbouring on the
+    persona map, differ by at least ΔE2000 21.3 (309 land borders).
+- **Borderline.**
+  - "Also close to …" shows below a confidence of 0.05: 51 of 194 countries.
+  - v1 used 0.1; at 30 personas that flagged 85 (44%), too many to be informative.
+- **UI.**
+  - One Group-by mode, "By country persona". A stored v1 two-level choice migrates to it.
+  - The map legend is a compact grid of 30 personas.
+  - The fact-sheet badge's tooltip lists the four key ranges under "Every member country falls
+    within these ranges (they are not averages)".
+  - The v1 family tree is replaced by the persona map. Hover fades other personas; the legend
+    highlights a persona's dots.
+
+---
+
+## 2026-09-24 — Build v2 (research)
 
 ### D9. The owner's feedback on v1
 
