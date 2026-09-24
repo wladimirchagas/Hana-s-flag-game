@@ -165,6 +165,14 @@ for (const ct of ALL_CONTENT_TYPES) {
   }
 }
 
+// Verify Country Persona group modes are available for all modern content types, never historical
+for (const ct of ALL_CONTENT_TYPES) {
+  for (const personaMode of ["persona-group", "persona-type"]) {
+    assert.equal(groupModeAvailableFor(personaMode, ct, true), true, `${personaMode} must be available for ${ct} (modern era)`);
+    assert.equal(groupModeAvailableFor(personaMode, ct, false), false, `${personaMode} must NOT be available for historical era`);
+  }
+}
+
 // Verify by-country is only available for airline, broadcaster, tourismlogo, newsagency, newspaper and party in modern era
 for (const ct of ALL_CONTENT_TYPES) {
   const expected =

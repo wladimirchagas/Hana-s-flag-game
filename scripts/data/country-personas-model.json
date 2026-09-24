@@ -1,0 +1,3484 @@
+{
+ "status": "FROZEN — Country Personas edition 2026 (v1). Approved by the owner 2026-09-24. Promoted from country-personas-model.draft.json; the Node scorer (scripts/build-country-personas.mjs) reads this file only.",
+ "builtBy": "scripts/country-personas/build.py",
+ "snapshot": {
+  "file": "scripts/data/country-persona-inputs.json",
+  "sha256": "4c628ab6729996599ee6774acf9040feef43b7f8e8e8844f8ed1416425e6abeb",
+  "generated": "2026-09-24"
+ },
+ "seed": 20260924,
+ "rules": {
+  "buildShare": 0.75,
+  "unclassifiedShare": 0.5,
+  "minTypeSize": 4,
+  "groupJaccard": 0.75,
+  "typeJaccard": 0.6,
+  "scoring": "nearest group centroid, then nearest type centroid within that group; partial distance over observed domains",
+  "imputations": 20,
+  "consensusSubsamples": 25
+ },
+ "domains": [
+  {
+   "key": "development",
+   "label": "Development",
+   "weight": 1,
+   "indicators": [
+    {
+     "var": "wb_gdppc_ppp",
+     "transform": "log",
+     "sign": 1,
+     "median": 9.903275484671303,
+     "interDecileRange": 3.039017628353939,
+     "skew": -0.31,
+     "coverage": 187,
+     "fallback": {
+      "var": "wb_gdppc_usd",
+      "transform": "log",
+      "sign": 1,
+      "median": 8.934876286776069,
+      "interDecileRange": 3.932218697427376,
+      "skew": 0.02,
+      "coverage": 192,
+      "usedFor": [
+       "CU",
+       "LI",
+       "MC",
+       "VE",
+       "YE"
+      ]
+     }
+    },
+    {
+     "var": "idx_hdi",
+     "transform": "none",
+     "sign": 1,
+     "median": 0.7615000000000001,
+     "interDecileRange": 0.41680000000000006,
+     "skew": -0.4,
+     "coverage": 192
+    },
+    {
+     "var": "wb_internet",
+     "transform": "none",
+     "sign": 1,
+     "median": 81.40690230999999,
+     "interDecileRange": 70.386322412,
+     "skew": -0.86,
+     "coverage": 192
+    },
+    {
+     "var": "wb_urban",
+     "transform": "none",
+     "sign": 1,
+     "median": 63.38845234205665,
+     "interDecileRange": 60.3037061718378,
+     "skew": -0.2,
+     "coverage": 194
+    },
+    {
+     "var": "wb_agriculture",
+     "transform": "asinh",
+     "sign": -1,
+     "median": 2.601567097834544,
+     "interDecileRange": 3.0228070621330234,
+     "skew": -0.2,
+     "coverage": 188
+    },
+    {
+     "var": "wb_services",
+     "transform": "none",
+     "sign": 1,
+     "median": 57.125953453753496,
+     "interDecileRange": 29.730718157320354,
+     "skew": -0.25,
+     "coverage": 188
+    }
+   ],
+   "mean": -0.046984857947839326,
+   "sd": 0.3284469767779989
+  },
+  {
+   "key": "governance",
+   "label": "Governance",
+   "weight": 1,
+   "indicators": [
+    {
+     "var": "idx_freedomHouse",
+     "transform": "none",
+     "sign": 1,
+     "median": 63,
+     "interDecileRange": 84.6,
+     "skew": -0.27,
+     "coverage": 193
+    },
+    {
+     "var": "idx_vDem",
+     "transform": "none",
+     "sign": 1,
+     "median": 0.35,
+     "interDecileRange": 0.7080000000000002,
+     "skew": 0.27,
+     "coverage": 173
+    },
+    {
+     "var": "idx_economist",
+     "transform": "none",
+     "sign": 1,
+     "median": 5.35,
+     "interDecileRange": 6.349999999999999,
+     "skew": 0.04,
+     "coverage": 165
+    },
+    {
+     "var": "idx_rsfPress",
+     "transform": "none",
+     "sign": 1,
+     "median": 53.97,
+     "interDecileRange": 51.138000000000005,
+     "skew": -0.09,
+     "coverage": 175
+    },
+    {
+     "var": "idx_cpi",
+     "transform": "none",
+     "sign": 1,
+     "median": 39,
+     "interDecileRange": 50.20000000000002,
+     "skew": 0.48,
+     "coverage": 179
+    },
+    {
+     "var": "idx_wjpRuleOfLaw",
+     "transform": "none",
+     "sign": 1,
+     "median": 0.52,
+     "interDecileRange": 0.41000000000000003,
+     "skew": 0.52,
+     "coverage": 141
+    }
+   ],
+   "mean": 0.022225513923030744,
+   "sd": 0.34308952013462973
+  },
+  {
+   "key": "age_structure",
+   "label": "Age structure relative to development",
+   "weight": 1,
+   "indicators": [
+    {
+     "var": "wb_age_65_up",
+     "transform": "none",
+     "sign": 1,
+     "median": 7.449395808645335,
+     "interDecileRange": 18.13243967685081,
+     "skew": 0.79,
+     "coverage": 194
+    },
+    {
+     "var": "wb_age_0_14",
+     "transform": "none",
+     "sign": -1,
+     "median": 24.28379036291365,
+     "interDecileRange": 26.133791521033416,
+     "skew": 0.36,
+     "coverage": 194
+    },
+    {
+     "var": "wb_fertility",
+     "transform": "log",
+     "sign": -1,
+     "median": 0.6895423418713542,
+     "interDecileRange": 1.1946978492458251,
+     "skew": 0.31,
+     "coverage": 194
+    },
+    {
+     "var": "wb_life_expectancy",
+     "transform": "none",
+     "sign": 1,
+     "median": 73.75,
+     "interDecileRange": 19.089395121951227,
+     "skew": -0.3,
+     "coverage": 194
+    },
+    {
+     "var": "wb_pop_growth",
+     "transform": "none",
+     "sign": -1,
+     "median": 1.028093954976445,
+     "interDecileRange": 2.9997318554189283,
+     "skew": 0.13,
+     "coverage": 194
+    }
+   ],
+   "residualOn": "development",
+   "residual": {
+    "intercept": 0.03691051916901238,
+    "slope": 0.9074450173765896,
+    "r": 0.8543605252481083
+   },
+   "mean": -1.8312957107219077e-17,
+   "sd": 0.18129300758728709
+  },
+  {
+   "key": "scale",
+   "label": "Scale and global reach",
+   "weight": 1,
+   "indicators": [
+    {
+     "var": "wb_population",
+     "transform": "log",
+     "sign": 1,
+     "median": 16.029277174137867,
+     "interDecileRange": 5.644173070726394,
+     "skew": -0.62,
+     "coverage": 194
+    },
+    {
+     "var": "idx_softPower",
+     "transform": "log",
+     "sign": 1,
+     "median": 3.5263605246161616,
+     "interDecileRange": 0.7803877433325614,
+     "skew": 0.51,
+     "coverage": 193
+    }
+   ],
+   "mean": -0.004059240853485585,
+   "sd": 0.33260987479715887
+  }
+ ],
+ "structure": {
+  "groups": 5,
+  "types": 12,
+  "groupCentroidsWeighted": {
+   "E": [
+    -1.44048,
+    -1.0361,
+    0.07657,
+    -0.08439
+   ],
+   "D": [
+    0.02758,
+    -0.37724,
+    -1.32735,
+    -0.06088
+   ],
+   "A": [
+    1.15092,
+    1.29037,
+    0.32981,
+    0.78865
+   ],
+   "C": [
+    0.16366,
+    -0.5206,
+    0.70398,
+    0.61003
+   ],
+   "B": [
+    0.07899,
+    0.69772,
+    0.36626,
+    -1.39654
+   ]
+  },
+  "typeCentroidsWeighted": {
+   "E11": [
+    -1.48078,
+    -0.76624,
+    -0.30998,
+    0.02986
+   ],
+   "E12": [
+    -1.39346,
+    -1.35093,
+    0.52754,
+    -0.21767
+   ],
+   "D10": [
+    0.02758,
+    -0.37724,
+    -1.32735,
+    -0.06088
+   ],
+   "A02": [
+    1.69057,
+    1.02274,
+    -0.67349,
+    -0.17621
+   ],
+   "A01": [
+    1.30389,
+    1.64056,
+    -0.09194,
+    1.32574
+   ],
+   "A03": [
+    0.86858,
+    1.31372,
+    0.85152,
+    0.24384
+   ],
+   "A04": [
+    0.90198,
+    0.84323,
+    1.03776,
+    1.38963
+   ],
+   "C08": [
+    0.28375,
+    -0.05805,
+    1.34708,
+    0.13089
+   ],
+   "C09": [
+    0.10122,
+    -0.76113,
+    0.36957,
+    0.85918
+   ],
+   "B06": [
+    0.17718,
+    0.53514,
+    1.11804,
+    -0.83129
+   ],
+   "B05": [
+    0.46447,
+    0.82688,
+    0.00333,
+    -1.54714
+   ],
+   "B07": [
+    -0.93473,
+    0.55351,
+    0.47644,
+    -1.60414
+   ]
+  },
+  "typeGroup": {
+   "E11": "E",
+   "E12": "E",
+   "D10": "D",
+   "A02": "A",
+   "A01": "A",
+   "A03": "A",
+   "A04": "A",
+   "C08": "C",
+   "C09": "C",
+   "B06": "B",
+   "B05": "B",
+   "B07": "B"
+  }
+ },
+ "assignments": {
+  "AD": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.319,
+   "secondGroup": "A",
+   "type": "B05",
+   "typeConfidence": 0.449,
+   "secondType": "B06",
+   "consensus": 0.934,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "AE": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.389,
+   "secondGroup": "A",
+   "type": "D10",
+   "consensus": 0.901,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "AF": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.655,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.277,
+   "secondType": "E11",
+   "consensus": 0.966,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "AG": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.787,
+   "secondGroup": "C",
+   "type": "B05",
+   "typeConfidence": 0.392,
+   "secondType": "B06",
+   "consensus": 0.935,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "AL": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.135,
+   "secondGroup": "B",
+   "type": "C08",
+   "typeConfidence": 0.5,
+   "secondType": "C09",
+   "consensus": 0.865,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "AM": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.149,
+   "secondGroup": "B",
+   "type": "C08",
+   "typeConfidence": 0.227,
+   "secondType": "C09",
+   "consensus": 0.831,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "AO": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.486,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.912,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "AR": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.012,
+   "secondGroup": "C",
+   "type": "A04",
+   "typeConfidence": 0.209,
+   "secondType": "A03",
+   "consensus": 0.595,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "AT": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.83,
+   "secondGroup": "C",
+   "type": "A03",
+   "typeConfidence": 0.192,
+   "secondType": "A01",
+   "consensus": 0.957,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "AU": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.628,
+   "secondGroup": "C",
+   "type": "A01",
+   "typeConfidence": 0.757,
+   "secondType": "A02",
+   "consensus": 0.955,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "AZ": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.41,
+   "secondGroup": "E",
+   "type": "C09",
+   "typeConfidence": 0.302,
+   "secondType": "C08",
+   "consensus": 0.924,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BA": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.215,
+   "secondGroup": "B",
+   "type": "C08",
+   "typeConfidence": 0.569,
+   "secondType": "C09",
+   "consensus": 0.899,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BB": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.59,
+   "secondGroup": "A",
+   "type": "B05",
+   "typeConfidence": 0.359,
+   "secondType": "B06",
+   "consensus": 0.936,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BD": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.312,
+   "secondGroup": "E",
+   "type": "C09",
+   "typeConfidence": 0.354,
+   "secondType": "C08",
+   "consensus": 0.919,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BE": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.717,
+   "secondGroup": "C",
+   "type": "A01",
+   "typeConfidence": 0.66,
+   "secondType": "A02",
+   "consensus": 0.958,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BF": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.833,
+   "secondGroup": "C",
+   "type": "E11",
+   "typeConfidence": 0.643,
+   "secondType": "E12",
+   "consensus": 0.968,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BG": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.185,
+   "secondGroup": "A",
+   "type": "C08",
+   "typeConfidence": 0.469,
+   "secondType": "C09",
+   "consensus": 0.828,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BH": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.428,
+   "secondGroup": "C",
+   "type": "D10",
+   "consensus": 0.905,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BI": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.681,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.385,
+   "secondType": "E11",
+   "consensus": 0.966,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BJ": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.132,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.746,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BN": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.084,
+   "secondGroup": "B",
+   "type": "D10",
+   "consensus": 0.432,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BO": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.723,
+   "secondGroup": "C",
+   "type": "D10",
+   "consensus": 0.913,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BR": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.056,
+   "secondGroup": "C",
+   "type": "A04",
+   "typeConfidence": 0.34,
+   "secondType": "A01",
+   "consensus": 0.745,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BS": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.055,
+   "secondGroup": "D",
+   "type": "B05",
+   "typeConfidence": 0.376,
+   "secondType": "B06",
+   "consensus": 0.719,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BT": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.385,
+   "secondGroup": "C",
+   "type": "B06",
+   "typeConfidence": 0.557,
+   "secondType": "B07",
+   "consensus": 0.883,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BW": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.428,
+   "secondGroup": "B",
+   "type": "D10",
+   "consensus": 0.909,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BY": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.49,
+   "secondGroup": "E",
+   "type": "C08",
+   "typeConfidence": 0.136,
+   "secondType": "C09",
+   "consensus": 0.926,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "BZ": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.557,
+   "secondGroup": "D",
+   "type": "B05",
+   "typeConfidence": 0.232,
+   "secondType": "B07",
+   "consensus": 0.934,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CA": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.659,
+   "secondGroup": "C",
+   "type": "A01",
+   "typeConfidence": 0.548,
+   "secondType": "A04",
+   "consensus": 0.955,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CD": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.05,
+   "secondGroup": "D",
+   "type": "E11",
+   "typeConfidence": 0.364,
+   "secondType": "E12",
+   "consensus": 0.543,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CF": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.432,
+   "secondGroup": "D",
+   "type": "E11",
+   "typeConfidence": 0.415,
+   "secondType": "E12",
+   "consensus": 0.969,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CG": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.56,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.915,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CH": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.665,
+   "secondGroup": "C",
+   "type": "A01",
+   "typeConfidence": 0.772,
+   "secondType": "A02",
+   "consensus": 0.956,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CI": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.48,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.913,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CL": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.653,
+   "secondGroup": "C",
+   "type": "A03",
+   "typeConfidence": 0.589,
+   "secondType": "A04",
+   "consensus": 0.959,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CM": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.234,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.863,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CN": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.297,
+   "secondGroup": "A",
+   "type": "C09",
+   "typeConfidence": 0.195,
+   "secondType": "C08",
+   "consensus": 0.927,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CO": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.542,
+   "secondGroup": "A",
+   "type": "C09",
+   "typeConfidence": 0.252,
+   "secondType": "C08",
+   "consensus": 0.927,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CR": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.496,
+   "secondGroup": "B",
+   "type": "A03",
+   "typeConfidence": 0.519,
+   "secondType": "A02",
+   "consensus": 0.958,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CU": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.566,
+   "secondGroup": "E",
+   "type": "C09",
+   "typeConfidence": 0.132,
+   "secondType": "C08",
+   "consensus": 0.93,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CV": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.773,
+   "secondGroup": "A",
+   "type": "B05",
+   "typeConfidence": 0.516,
+   "secondType": "B06",
+   "consensus": 0.935,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CY": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.269,
+   "secondGroup": "B",
+   "type": "A02",
+   "typeConfidence": 0.562,
+   "secondType": "A03",
+   "consensus": 0.94,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "CZ": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.658,
+   "secondGroup": "C",
+   "type": "A03",
+   "typeConfidence": 0.693,
+   "secondType": "A04",
+   "consensus": 0.957,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "DE": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.564,
+   "secondGroup": "C",
+   "type": "A01",
+   "typeConfidence": 0.285,
+   "secondType": "A04",
+   "consensus": 0.956,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "DJ": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.42,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.913,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "DK": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.704,
+   "secondGroup": "B",
+   "type": "A01",
+   "typeConfidence": 0.53,
+   "secondType": "A03",
+   "consensus": 0.955,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "DM": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.704,
+   "secondGroup": "C",
+   "type": "B06",
+   "typeConfidence": 0.34,
+   "secondType": "B05",
+   "consensus": 0.939,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "DO": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.439,
+   "secondGroup": "A",
+   "type": "D10",
+   "consensus": 0.911,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "DZ": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.18,
+   "secondGroup": "D",
+   "type": "C09",
+   "typeConfidence": 0.608,
+   "secondType": "C08",
+   "consensus": 0.677,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "EC": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.68,
+   "secondGroup": "E",
+   "type": "C09",
+   "typeConfidence": 0.16,
+   "secondType": "C08",
+   "consensus": 0.928,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "EE": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.288,
+   "secondGroup": "B",
+   "type": "A03",
+   "typeConfidence": 0.638,
+   "secondType": "A04",
+   "consensus": 0.948,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "EG": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.123,
+   "secondGroup": "E",
+   "type": "C09",
+   "typeConfidence": 0.564,
+   "secondType": "C08",
+   "consensus": 0.663,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "ER": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.417,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.426,
+   "secondType": "E11",
+   "consensus": 0.967,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "ES": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.61,
+   "secondGroup": "C",
+   "type": "A04",
+   "typeConfidence": 0.46,
+   "secondType": "A01",
+   "consensus": 0.96,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "ET": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.506,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.162,
+   "secondType": "E11",
+   "consensus": 0.965,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "FI": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.64,
+   "secondGroup": "C",
+   "type": "A03",
+   "typeConfidence": 0.343,
+   "secondType": "A01",
+   "consensus": 0.958,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "FJ": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.463,
+   "secondGroup": "D",
+   "type": "B05",
+   "typeConfidence": 0.212,
+   "secondType": "B07",
+   "consensus": 0.936,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "FM": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.535,
+   "secondGroup": "E",
+   "type": "B07",
+   "typeConfidence": 0.623,
+   "secondType": "B06",
+   "consensus": 0.937,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "FR": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.579,
+   "secondGroup": "C",
+   "type": "A01",
+   "typeConfidence": 0.24,
+   "secondType": "A04",
+   "consensus": 0.956,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "GA": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.609,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.908,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "GB": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.527,
+   "secondGroup": "C",
+   "type": "A01",
+   "typeConfidence": 0.583,
+   "secondType": "A04",
+   "consensus": 0.955,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "GD": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.732,
+   "secondGroup": "C",
+   "type": "B06",
+   "typeConfidence": 0.147,
+   "secondType": "B05",
+   "consensus": 0.94,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "GE": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.497,
+   "secondGroup": "C",
+   "type": "D10",
+   "consensus": 0.908,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "GH": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.306,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.911,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "GM": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.205,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.776,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "GN": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.858,
+   "secondGroup": "D",
+   "type": "E11",
+   "typeConfidence": 0.611,
+   "secondType": "E12",
+   "consensus": 0.967,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "GQ": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.459,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.911,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "GR": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.192,
+   "secondGroup": "C",
+   "type": "A04",
+   "typeConfidence": 0.122,
+   "secondType": "A03",
+   "consensus": 0.864,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "GT": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.293,
+   "secondGroup": "C",
+   "type": "D10",
+   "consensus": 0.865,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "GW": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.661,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.28,
+   "secondType": "E11",
+   "consensus": 0.965,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "GY": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.427,
+   "secondGroup": "E",
+   "type": "B07",
+   "typeConfidence": 0.253,
+   "secondType": "B06",
+   "consensus": 0.936,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "HN": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.137,
+   "secondGroup": "C",
+   "type": "E11",
+   "typeConfidence": 0.219,
+   "secondType": "E12",
+   "consensus": 0.843,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "HR": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.013,
+   "secondGroup": "A",
+   "type": "C08",
+   "typeConfidence": 0.6,
+   "secondType": "C09",
+   "consensus": 0.576,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "HT": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.592,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.428,
+   "secondType": "E11",
+   "consensus": 0.969,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "HU": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.382,
+   "secondGroup": "A",
+   "type": "C08",
+   "typeConfidence": 0.523,
+   "secondType": "C09",
+   "consensus": 0.928,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "ID": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.523,
+   "secondGroup": "E",
+   "type": "C09",
+   "typeConfidence": 0.461,
+   "secondType": "C08",
+   "consensus": 0.93,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "IE": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.654,
+   "secondGroup": "B",
+   "type": "A01",
+   "typeConfidence": 0.346,
+   "secondType": "A02",
+   "consensus": 0.956,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "IL": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.198,
+   "secondGroup": "A",
+   "type": "D10",
+   "consensus": 0.894,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "IN": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.348,
+   "secondGroup": "E",
+   "type": "C09",
+   "typeConfidence": 0.241,
+   "secondType": "C08",
+   "consensus": 0.928,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "IQ": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.624,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.91,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "IR": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.468,
+   "secondGroup": "E",
+   "type": "C09",
+   "typeConfidence": 0.609,
+   "secondType": "C08",
+   "consensus": 0.929,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "IS": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.31,
+   "secondGroup": "B",
+   "type": "A02",
+   "typeConfidence": 0.575,
+   "secondType": "A01",
+   "consensus": 0.956,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "IT": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.24,
+   "secondGroup": "C",
+   "type": "A04",
+   "typeConfidence": 0.645,
+   "secondType": "A03",
+   "consensus": 0.946,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "JM": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.145,
+   "secondGroup": "C",
+   "type": "B06",
+   "typeConfidence": 0.599,
+   "secondType": "B05",
+   "consensus": 0.571,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "JO": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.342,
+   "secondGroup": "C",
+   "type": "D10",
+   "consensus": 0.904,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "JP": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.372,
+   "secondGroup": "C",
+   "type": "A04",
+   "typeConfidence": 0.392,
+   "secondType": "A01",
+   "consensus": 0.957,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "KE": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.261,
+   "secondGroup": "D",
+   "type": "E11",
+   "typeConfidence": 0.486,
+   "secondType": "E12",
+   "consensus": 0.941,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "KG": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.04,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.604,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "KH": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.332,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.559,
+   "secondType": "E11",
+   "consensus": 0.963,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "KI": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.257,
+   "secondGroup": "D",
+   "type": "B05",
+   "typeConfidence": 0.22,
+   "secondType": "B07",
+   "consensus": 0.929,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "KM": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.444,
+   "secondGroup": "B",
+   "type": "E12",
+   "typeConfidence": 0.125,
+   "secondType": "E11",
+   "consensus": 0.967,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "KN": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.679,
+   "secondGroup": "D",
+   "type": "B05",
+   "typeConfidence": 0.504,
+   "secondType": "B07",
+   "consensus": 0.935,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "KP": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.32,
+   "secondGroup": "E",
+   "type": "C09",
+   "typeConfidence": 0.397,
+   "secondType": "C08",
+   "consensus": 0.921,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "KR": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.357,
+   "secondGroup": "C",
+   "type": "A04",
+   "typeConfidence": 0.57,
+   "secondType": "A03",
+   "consensus": 0.953,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "KW": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.099,
+   "secondGroup": "C",
+   "type": "D10",
+   "consensus": 0.826,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "KZ": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.636,
+   "secondGroup": "C",
+   "type": "D10",
+   "consensus": 0.907,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "LA": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.496,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.502,
+   "secondType": "E11",
+   "consensus": 0.967,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "LB": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.372,
+   "secondGroup": "D",
+   "type": "C09",
+   "typeConfidence": 0.324,
+   "secondType": "C08",
+   "consensus": 0.919,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "LC": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.833,
+   "secondGroup": "A",
+   "type": "B05",
+   "typeConfidence": 0.456,
+   "secondType": "B06",
+   "consensus": 0.935,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "LI": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.541,
+   "secondGroup": "A",
+   "type": "B05",
+   "typeConfidence": 0.319,
+   "secondType": "B06",
+   "consensus": 0.938,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "LK": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.318,
+   "secondGroup": "E",
+   "type": "C08",
+   "typeConfidence": 0.469,
+   "secondType": "C09",
+   "consensus": 0.928,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "LR": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.526,
+   "secondGroup": "D",
+   "type": "E11",
+   "typeConfidence": 0.4,
+   "secondType": "E12",
+   "consensus": 0.967,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "LS": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.161,
+   "secondGroup": "D",
+   "type": "B07",
+   "typeConfidence": 0.264,
+   "secondType": "B05",
+   "consensus": 0.905,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "LT": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.324,
+   "secondGroup": "B",
+   "type": "A03",
+   "typeConfidence": 0.748,
+   "secondType": "A04",
+   "consensus": 0.953,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "LU": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.268,
+   "secondGroup": "D",
+   "type": "A02",
+   "typeConfidence": 0.453,
+   "secondType": "A01",
+   "consensus": 0.954,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "LV": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.15,
+   "secondGroup": "B",
+   "type": "A03",
+   "typeConfidence": 0.579,
+   "secondType": "A04",
+   "consensus": 0.91,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "LY": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.173,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.846,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MA": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.686,
+   "secondGroup": "E",
+   "type": "C09",
+   "typeConfidence": 0.661,
+   "secondType": "C08",
+   "consensus": 0.928,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MC": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.054,
+   "secondGroup": "B",
+   "type": "A02",
+   "typeConfidence": 0.486,
+   "secondType": "A03",
+   "consensus": 0.639,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MD": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.025,
+   "secondGroup": "C",
+   "type": "B06",
+   "typeConfidence": 0.604,
+   "secondType": "B07",
+   "consensus": 0.462,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "ME": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.491,
+   "secondGroup": "C",
+   "type": "B06",
+   "typeConfidence": 0.349,
+   "secondType": "B05",
+   "consensus": 0.936,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MG": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.657,
+   "secondGroup": "C",
+   "type": "E11",
+   "typeConfidence": 0.441,
+   "secondType": "E12",
+   "consensus": 0.967,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MH": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.738,
+   "secondGroup": "D",
+   "type": "B05",
+   "typeConfidence": 0.265,
+   "secondType": "B07",
+   "consensus": 0.935,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MK": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.117,
+   "secondGroup": "C",
+   "type": "B06",
+   "typeConfidence": 0.718,
+   "secondType": "B05",
+   "consensus": 0.561,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "ML": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.584,
+   "secondGroup": "D",
+   "type": "E11",
+   "typeConfidence": 0.607,
+   "secondType": "E12",
+   "consensus": 0.968,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MM": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.144,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.392,
+   "secondType": "E11",
+   "consensus": 0.923,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MN": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.481,
+   "secondGroup": "B",
+   "type": "D10",
+   "consensus": 0.916,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MR": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.177,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.752,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MT": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.14,
+   "secondGroup": "B",
+   "type": "A02",
+   "typeConfidence": 0.78,
+   "secondType": "A03",
+   "consensus": 0.744,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MU": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.312,
+   "secondGroup": "C",
+   "type": "B06",
+   "typeConfidence": 0.721,
+   "secondType": "B05",
+   "consensus": 0.837,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MV": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.144,
+   "secondGroup": "B",
+   "type": "C08",
+   "typeConfidence": 0.242,
+   "secondType": "C09",
+   "consensus": 0.835,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MW": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.413,
+   "secondGroup": "C",
+   "type": "E11",
+   "typeConfidence": 0.167,
+   "secondType": "E12",
+   "consensus": 0.966,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MX": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.138,
+   "secondGroup": "D",
+   "type": "C09",
+   "typeConfidence": 0.525,
+   "secondType": "C08",
+   "consensus": 0.617,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MY": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.092,
+   "secondGroup": "A",
+   "type": "C09",
+   "typeConfidence": 0.341,
+   "secondType": "C08",
+   "consensus": 0.708,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "MZ": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.741,
+   "secondGroup": "D",
+   "type": "E11",
+   "typeConfidence": 0.737,
+   "secondType": "E12",
+   "consensus": 0.968,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "NA": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.459,
+   "secondGroup": "B",
+   "type": "D10",
+   "consensus": 0.911,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "NE": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.674,
+   "secondGroup": "C",
+   "type": "E11",
+   "typeConfidence": 0.236,
+   "secondType": "E12",
+   "consensus": 0.966,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "NG": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.399,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.909,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "NI": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.283,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.434,
+   "secondType": "E11",
+   "consensus": 0.968,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "NL": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.692,
+   "secondGroup": "C",
+   "type": "A01",
+   "typeConfidence": 0.849,
+   "secondType": "A03",
+   "consensus": 0.954,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "NO": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.726,
+   "secondGroup": "C",
+   "type": "A01",
+   "typeConfidence": 0.413,
+   "secondType": "A03",
+   "consensus": 0.954,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "NP": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.343,
+   "secondGroup": "E",
+   "type": "C08",
+   "typeConfidence": 0.298,
+   "secondType": "C09",
+   "consensus": 0.926,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "NR": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.052,
+   "secondGroup": "B",
+   "type": "D10",
+   "consensus": 0.437,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "NZ": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.766,
+   "secondGroup": "B",
+   "type": "A01",
+   "typeConfidence": 0.338,
+   "secondType": "A03",
+   "consensus": 0.957,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "OM": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.63,
+   "secondGroup": "C",
+   "type": "D10",
+   "consensus": 0.905,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "PA": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.322,
+   "secondGroup": "A",
+   "type": "D10",
+   "consensus": 0.909,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "PE": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.5,
+   "secondGroup": "D",
+   "type": "C09",
+   "typeConfidence": 0.442,
+   "secondType": "C08",
+   "consensus": 0.93,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "PG": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.363,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.075,
+   "secondType": "E11",
+   "consensus": 0.965,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "PH": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.351,
+   "secondGroup": "D",
+   "type": "C09",
+   "typeConfidence": 0.574,
+   "secondType": "C08",
+   "consensus": 0.879,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "PK": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.244,
+   "secondGroup": "C",
+   "type": "E11",
+   "typeConfidence": 0.212,
+   "secondType": "E12",
+   "consensus": 0.962,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "PL": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.308,
+   "secondGroup": "C",
+   "type": "A04",
+   "typeConfidence": 0.535,
+   "secondType": "A03",
+   "consensus": 0.94,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "PS": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.589,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.907,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "PT": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.618,
+   "secondGroup": "C",
+   "type": "A03",
+   "typeConfidence": 0.142,
+   "secondType": "A04",
+   "consensus": 0.957,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "PW": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.495,
+   "secondGroup": "D",
+   "type": "B05",
+   "typeConfidence": 0.536,
+   "secondType": "B07",
+   "consensus": 0.931,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "PY": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.171,
+   "secondGroup": "C",
+   "type": "D10",
+   "consensus": 0.823,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "QA": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.439,
+   "secondGroup": "A",
+   "type": "D10",
+   "consensus": 0.904,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "RO": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.099,
+   "secondGroup": "A",
+   "type": "C08",
+   "typeConfidence": 0.511,
+   "secondType": "C09",
+   "consensus": 0.673,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "RS": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.536,
+   "secondGroup": "B",
+   "type": "C08",
+   "typeConfidence": 0.761,
+   "secondType": "C09",
+   "consensus": 0.926,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "RU": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.444,
+   "secondGroup": "D",
+   "type": "C09",
+   "typeConfidence": 0.446,
+   "secondType": "C08",
+   "consensus": 0.928,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "RW": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.632,
+   "secondGroup": "C",
+   "type": "E11",
+   "typeConfidence": 0.521,
+   "secondType": "E12",
+   "consensus": 0.968,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SA": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.37,
+   "secondGroup": "C",
+   "type": "D10",
+   "consensus": 0.901,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SB": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.129,
+   "secondGroup": "E",
+   "type": "B07",
+   "typeConfidence": 0.589,
+   "secondType": "B06",
+   "consensus": 0.748,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SC": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.534,
+   "secondGroup": "D",
+   "type": "B05",
+   "typeConfidence": 0.688,
+   "secondType": "B06",
+   "consensus": 0.932,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SD": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.622,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.444,
+   "secondType": "E11",
+   "consensus": 0.966,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SE": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.74,
+   "secondGroup": "C",
+   "type": "A01",
+   "typeConfidence": 0.67,
+   "secondType": "A03",
+   "consensus": 0.955,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SG": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.326,
+   "secondGroup": "D",
+   "type": "A02",
+   "typeConfidence": 0.255,
+   "secondType": "A01",
+   "consensus": 0.96,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SI": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.257,
+   "secondGroup": "B",
+   "type": "A03",
+   "typeConfidence": 0.658,
+   "secondType": "A04",
+   "consensus": 0.917,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SK": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.231,
+   "secondGroup": "C",
+   "type": "A03",
+   "typeConfidence": 0.518,
+   "secondType": "A04",
+   "consensus": 0.866,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SL": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.556,
+   "secondGroup": "B",
+   "type": "E11",
+   "typeConfidence": 0.247,
+   "secondType": "E12",
+   "consensus": 0.966,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SM": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.427,
+   "secondGroup": "A",
+   "type": "B05",
+   "typeConfidence": 0.285,
+   "secondType": "B06",
+   "consensus": 0.937,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SN": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.133,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.768,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SO": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.455,
+   "secondGroup": "D",
+   "type": "E11",
+   "typeConfidence": 0.339,
+   "secondType": "E12",
+   "consensus": 0.968,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SR": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.735,
+   "secondGroup": "D",
+   "type": "B05",
+   "typeConfidence": 0.535,
+   "secondType": "B07",
+   "consensus": 0.935,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SS": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.763,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.456,
+   "secondType": "E11",
+   "consensus": 0.967,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "ST": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.187,
+   "secondGroup": "B",
+   "type": "D10",
+   "consensus": 0.636,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SV": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.493,
+   "secondGroup": "E",
+   "type": "C09",
+   "typeConfidence": 0.397,
+   "secondType": "C08",
+   "consensus": 0.927,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SY": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.66,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.405,
+   "secondType": "E11",
+   "consensus": 0.967,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "SZ": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.069,
+   "secondGroup": "D",
+   "type": "E11",
+   "typeConfidence": 0.1,
+   "secondType": "E12",
+   "consensus": 0.772,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "TD": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.537,
+   "secondGroup": "D",
+   "type": "E11",
+   "typeConfidence": 0.392,
+   "secondType": "E12",
+   "consensus": 0.968,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "TG": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.186,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.776,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "TH": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.54,
+   "secondGroup": "A",
+   "type": "C08",
+   "typeConfidence": 0.218,
+   "secondType": "C09",
+   "consensus": 0.927,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "TJ": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.623,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.77,
+   "secondType": "E11",
+   "consensus": 0.967,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "TL": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.551,
+   "secondGroup": "E",
+   "type": "B07",
+   "typeConfidence": 0.607,
+   "secondType": "B05",
+   "consensus": 0.936,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "TM": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.433,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.256,
+   "secondType": "E11",
+   "consensus": 0.969,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "TN": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.729,
+   "secondGroup": "E",
+   "type": "C09",
+   "typeConfidence": 0.324,
+   "secondType": "C08",
+   "consensus": 0.928,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "TO": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.584,
+   "secondGroup": "E",
+   "type": "B07",
+   "typeConfidence": 0.628,
+   "secondType": "B06",
+   "consensus": 0.937,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "TR": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.334,
+   "secondGroup": "D",
+   "type": "C09",
+   "typeConfidence": 0.535,
+   "secondType": "C08",
+   "consensus": 0.896,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "TT": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.647,
+   "secondGroup": "A",
+   "type": "B05",
+   "typeConfidence": 0.186,
+   "secondType": "B06",
+   "consensus": 0.937,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "TV": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.518,
+   "secondGroup": "E",
+   "type": "B07",
+   "typeConfidence": 0.331,
+   "secondType": "B05",
+   "consensus": 0.934,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "TZ": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.534,
+   "secondGroup": "C",
+   "type": "E11",
+   "typeConfidence": 0.514,
+   "secondType": "E12",
+   "consensus": 0.967,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "UA": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.796,
+   "secondGroup": "A",
+   "type": "C09",
+   "typeConfidence": 0.216,
+   "secondType": "C08",
+   "consensus": 0.93,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "UG": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.74,
+   "secondGroup": "C",
+   "type": "E11",
+   "typeConfidence": 0.483,
+   "secondType": "E12",
+   "consensus": 0.966,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "US": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.317,
+   "secondGroup": "C",
+   "type": "A01",
+   "typeConfidence": 0.286,
+   "secondType": "A04",
+   "consensus": 0.957,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "UY": {
+   "status": "built",
+   "group": "A",
+   "confidence": 0.514,
+   "secondGroup": "B",
+   "type": "A03",
+   "typeConfidence": 0.632,
+   "secondType": "A02",
+   "consensus": 0.959,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "UZ": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.244,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.856,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "VA": {
+   "status": "unclassified",
+   "observedShare": 0
+  },
+  "VC": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.765,
+   "secondGroup": "A",
+   "type": "B05",
+   "typeConfidence": 0.453,
+   "secondType": "B06",
+   "consensus": 0.937,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "VE": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.243,
+   "secondGroup": "E",
+   "type": "C09",
+   "typeConfidence": 0.477,
+   "secondType": "C08",
+   "consensus": 0.875,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "VN": {
+   "status": "built",
+   "group": "C",
+   "confidence": 0.491,
+   "secondGroup": "E",
+   "type": "C09",
+   "typeConfidence": 0.357,
+   "secondType": "C08",
+   "consensus": 0.925,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "VU": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.414,
+   "secondGroup": "E",
+   "type": "B07",
+   "typeConfidence": 0.749,
+   "secondType": "B05",
+   "consensus": 0.938,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "WS": {
+   "status": "built",
+   "group": "B",
+   "confidence": 0.417,
+   "secondGroup": "D",
+   "type": "B05",
+   "typeConfidence": 0.199,
+   "secondType": "B07",
+   "consensus": 0.938,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "YE": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.676,
+   "secondGroup": "C",
+   "type": "E12",
+   "typeConfidence": 0.275,
+   "secondType": "E11",
+   "consensus": 0.965,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "ZA": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.147,
+   "secondGroup": "A",
+   "type": "D10",
+   "consensus": 0.905,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "ZM": {
+   "status": "built",
+   "group": "D",
+   "confidence": 0.481,
+   "secondGroup": "E",
+   "type": "D10",
+   "consensus": 0.909,
+   "observedShare": 1,
+   "imputedDomains": []
+  },
+  "ZW": {
+   "status": "built",
+   "group": "E",
+   "confidence": 0.157,
+   "secondGroup": "D",
+   "type": "E11",
+   "typeConfidence": 0.469,
+   "secondType": "E12",
+   "consensus": 0.694,
+   "observedShare": 1,
+   "imputedDomains": []
+  }
+ },
+ "familyTree": {
+  "explainedVariance": [
+   0.42,
+   0.257
+  ],
+  "loadings": {
+   "development": [
+    0.69,
+    0.038
+   ],
+   "governance": [
+    0.671,
+    -0.335
+   ],
+   "age_structure": [
+    0.183,
+    0.057
+   ],
+   "scale": [
+    0.2,
+    0.94
+   ]
+  },
+  "countries": {
+   "AD": [
+    1.224,
+    -1.575
+   ],
+   "AE": [
+    0.327,
+    1.15
+   ],
+   "AF": [
+    -2.429,
+    0.606
+   ],
+   "AG": [
+    0.497,
+    -1.891
+   ],
+   "AL": [
+    0.411,
+    -0.217
+   ],
+   "AM": [
+    0.305,
+    -0.223
+   ],
+   "AO": [
+    -1.321,
+    0.373
+   ],
+   "AR": [
+    0.866,
+    0.87
+   ],
+   "AT": [
+    2.032,
+    0.409
+   ],
+   "AU": [
+    2.096,
+    0.735
+   ],
+   "AZ": [
+    -0.726,
+    0.621
+   ],
+   "BA": [
+    0.396,
+    -0.121
+   ],
+   "BB": [
+    1.133,
+    -1.458
+   ],
+   "BD": [
+    -0.766,
+    1.066
+   ],
+   "BE": [
+    2.14,
+    0.483
+   ],
+   "BF": [
+    -1.707,
+    0.217
+   ],
+   "BG": [
+    0.876,
+    0.105
+   ],
+   "BH": [
+    -0.135,
+    0.25
+   ],
+   "BI": [
+    -2.289,
+    0.064
+   ],
+   "BJ": [
+    -1.213,
+    -0.328
+   ],
+   "BN": [
+    0.145,
+    -0.85
+   ],
+   "BO": [
+    -0.368,
+    0.122
+   ],
+   "BR": [
+    0.961,
+    1.368
+   ],
+   "BS": [
+    1.15,
+    -0.989
+   ],
+   "BT": [
+    0.018,
+    -0.755
+   ],
+   "BW": [
+    0.207,
+    -0.917
+   ],
+   "BY": [
+    -0.288,
+    0.638
+   ],
+   "BZ": [
+    -0.242,
+    -1.309
+   ],
+   "CA": [
+    2.223,
+    1.042
+   ],
+   "CD": [
+    -1.913,
+    0.834
+   ],
+   "CF": [
+    -2.333,
+    0.067
+   ],
+   "CG": [
+    -1.335,
+    -0.104
+   ],
+   "CH": [
+    2.441,
+    0.586
+   ],
+   "CI": [
+    -0.961,
+    0.269
+   ],
+   "CL": [
+    1.489,
+    0.179
+   ],
+   "CM": [
+    -1.571,
+    0.524
+   ],
+   "CN": [
+    0.289,
+    3.178
+   ],
+   "CO": [
+    0.439,
+    0.678
+   ],
+   "CR": [
+    1.402,
+    -0.317
+   ],
+   "CU": [
+    -0.101,
+    0.629
+   ],
+   "CV": [
+    0.678,
+    -1.409
+   ],
+   "CY": [
+    1.29,
+    -0.463
+   ],
+   "CZ": [
+    1.815,
+    0.136
+   ],
+   "DE": [
+    2.485,
+    1.329
+   ],
+   "DJ": [
+    -1.179,
+    -0.797
+   ],
+   "DK": [
+    2.477,
+    0.155
+   ],
+   "DM": [
+    0.555,
+    -1.637
+   ],
+   "DO": [
+    0.412,
+    0.066
+   ],
+   "DZ": [
+    -0.536,
+    0.806
+   ],
+   "EC": [
+    -0.028,
+    0.32
+   ],
+   "EE": [
+    1.959,
+    -0.736
+   ],
+   "EG": [
+    -0.93,
+    1.532
+   ],
+   "ER": [
+    -2.541,
+    -0.222
+   ],
+   "ES": [
+    1.977,
+    1.121
+   ],
+   "ET": [
+    -1.72,
+    0.938
+   ],
+   "FI": [
+    2.333,
+    0.147
+   ],
+   "FJ": [
+    0.043,
+    -0.924
+   ],
+   "FM": [
+    -0.303,
+    -2.154
+   ],
+   "FR": [
+    2.132,
+    1.337
+   ],
+   "GA": [
+    -0.931,
+    -0.699
+   ],
+   "GB": [
+    2.265,
+    1.368
+   ],
+   "GD": [
+    0.471,
+    -1.781
+   ],
+   "GE": [
+    0.065,
+    0.095
+   ],
+   "GH": [
+    -0.2,
+    0.111
+   ],
+   "GM": [
+    -0.922,
+    -0.703
+   ],
+   "GN": [
+    -1.815,
+    0.153
+   ],
+   "GQ": [
+    -1.47,
+    -0.379
+   ],
+   "GR": [
+    1.42,
+    0.516
+   ],
+   "GT": [
+    -0.492,
+    0.134
+   ],
+   "GW": [
+    -1.944,
+    -0.506
+   ],
+   "GY": [
+    -0.472,
+    -1.014
+   ],
+   "HN": [
+    -0.76,
+    0.052
+   ],
+   "HR": [
+    1.107,
+    0.06
+   ],
+   "HT": [
+    -1.444,
+    -0.044
+   ],
+   "HU": [
+    0.852,
+    0.443
+   ],
+   "ID": [
+    -0.026,
+    1.342
+   ],
+   "IE": [
+    2.009,
+    -0.01
+   ],
+   "IL": [
+    1.108,
+    0.28
+   ],
+   "IN": [
+    -0.01,
+    2.027
+   ],
+   "IQ": [
+    -0.852,
+    0.657
+   ],
+   "IR": [
+    -0.656,
+    1.375
+   ],
+   "IS": [
+    1.777,
+    -0.759
+   ],
+   "IT": [
+    1.839,
+    1.394
+   ],
+   "JM": [
+    0.617,
+    -0.4
+   ],
+   "JO": [
+    -0.043,
+    0.442
+   ],
+   "JP": [
+    2.509,
+    1.664
+   ],
+   "KE": [
+    -0.874,
+    0.564
+   ],
+   "KG": [
+    -0.997,
+    0
+   ],
+   "KH": [
+    -1.398,
+    0.537
+   ],
+   "KI": [
+    -0.237,
+    -2.386
+   ],
+   "KM": [
+    -1.642,
+    -0.894
+   ],
+   "KN": [
+    0.428,
+    -2.364
+   ],
+   "KP": [
+    -0.918,
+    1.202
+   ],
+   "KR": [
+    2.09,
+    1.198
+   ],
+   "KW": [
+    0.445,
+    0.567
+   ],
+   "KZ": [
+    -0.345,
+    0.528
+   ],
+   "LA": [
+    -1.394,
+    0.084
+   ],
+   "LB": [
+    -0.322,
+    0.194
+   ],
+   "LC": [
+    0.573,
+    -1.816
+   ],
+   "LI": [
+    1.282,
+    -1.648
+   ],
+   "LK": [
+    0.118,
+    0.311
+   ],
+   "LR": [
+    -1.176,
+    -0.337
+   ],
+   "LS": [
+    -0.757,
+    -1.115
+   ],
+   "LT": [
+    1.628,
+    -0.508
+   ],
+   "LU": [
+    2.224,
+    -0.561
+   ],
+   "LV": [
+    1.577,
+    -0.526
+   ],
+   "LY": [
+    -1.059,
+    0.23
+   ],
+   "MA": [
+    -0.139,
+    0.835
+   ],
+   "MC": [
+    1.752,
+    -0.952
+   ],
+   "MD": [
+    0.419,
+    -0.481
+   ],
+   "ME": [
+    0.722,
+    -0.833
+   ],
+   "MG": [
+    -1.4,
+    0.404
+   ],
+   "MH": [
+    0.296,
+    -2.306
+   ],
+   "MK": [
+    0.531,
+    -0.548
+   ],
+   "ML": [
+    -1.989,
+    0.364
+   ],
+   "MM": [
+    -1.659,
+    0.714
+   ],
+   "MN": [
+    -0.117,
+    -0.357
+   ],
+   "MR": [
+    -1.425,
+    -0.401
+   ],
+   "MT": [
+    1.485,
+    -0.748
+   ],
+   "MU": [
+    0.826,
+    -0.683
+   ],
+   "MV": [
+    0.055,
+    -0.322
+   ],
+   "MW": [
+    -1.082,
+    -0.214
+   ],
+   "MX": [
+    0.146,
+    1.323
+   ],
+   "MY": [
+    0.61,
+    0.835
+   ],
+   "MZ": [
+    -1.778,
+    0.314
+   ],
+   "NA": [
+    -0.163,
+    -0.685
+   ],
+   "NE": [
+    -2.168,
+    0.28
+   ],
+   "NG": [
+    -1.042,
+    1.063
+   ],
+   "NI": [
+    -1.431,
+    0.117
+   ],
+   "NL": [
+    2.394,
+    0.6
+   ],
+   "NO": [
+    2.359,
+    0.143
+   ],
+   "NP": [
+    -0.272,
+    0.378
+   ],
+   "NR": [
+    -0.464,
+    -2.789
+   ],
+   "NZ": [
+    2.057,
+    0.081
+   ],
+   "OM": [
+    -0.401,
+    0.33
+   ],
+   "PA": [
+    0.588,
+    -0.065
+   ],
+   "PE": [
+    0.149,
+    0.551
+   ],
+   "PG": [
+    -1.043,
+    -0.299
+   ],
+   "PH": [
+    -0.058,
+    1.02
+   ],
+   "PK": [
+    -1.223,
+    1.247
+   ],
+   "PL": [
+    1.586,
+    0.809
+   ],
+   "PS": [
+    -1.098,
+    0
+   ],
+   "PT": [
+    1.76,
+    0.444
+   ],
+   "PW": [
+    0.603,
+    -2.523
+   ],
+   "PY": [
+    -0.223,
+    0.119
+   ],
+   "QA": [
+    0.365,
+    0.599
+   ],
+   "RO": [
+    1.041,
+    0.429
+   ],
+   "RS": [
+    0.446,
+    0.296
+   ],
+   "RU": [
+    0.013,
+    2.213
+   ],
+   "RW": [
+    -1.162,
+    0.109
+   ],
+   "SA": [
+    -0.436,
+    1.528
+   ],
+   "SB": [
+    -0.864,
+    -1.226
+   ],
+   "SC": [
+    0.775,
+    -1.755
+   ],
+   "SD": [
+    -2.209,
+    0.733
+   ],
+   "SE": [
+    2.442,
+    0.466
+   ],
+   "SG": [
+    1.636,
+    0.594
+   ],
+   "SI": [
+    1.423,
+    -0.34
+   ],
+   "SK": [
+    1.194,
+    -0.012
+   ],
+   "SL": [
+    -1.336,
+    -0.497
+   ],
+   "SM": [
+    1.489,
+    -1.846
+   ],
+   "SN": [
+    -0.526,
+    -0.016
+   ],
+   "SO": [
+    -2.41,
+    -0.056
+   ],
+   "SR": [
+    0.083,
+    -1.471
+   ],
+   "SS": [
+    -2.2,
+    0.212
+   ],
+   "ST": [
+    -0.295,
+    -1.738
+   ],
+   "SV": [
+    -0.405,
+    0.321
+   ],
+   "SY": [
+    -1.715,
+    0.579
+   ],
+   "SZ": [
+    -1.35,
+    -0.588
+   ],
+   "TD": [
+    -2.404,
+    0.02
+   ],
+   "TG": [
+    -1.415,
+    -0.298
+   ],
+   "TH": [
+    0.535,
+    1.215
+   ],
+   "TJ": [
+    -1.774,
+    0.376
+   ],
+   "TL": [
+    -0.35,
+    -1.344
+   ],
+   "TM": [
+    -1.669,
+    0.298
+   ],
+   "TN": [
+    -0.094,
+    0.407
+   ],
+   "TO": [
+    -0.364,
+    -2.012
+   ],
+   "TR": [
+    0.141,
+    1.691
+   ],
+   "TT": [
+    0.679,
+    -1.044
+   ],
+   "TV": [
+    -0.21,
+    -2.833
+   ],
+   "TZ": [
+    -1.338,
+    0.62
+   ],
+   "UA": [
+    0.331,
+    0.855
+   ],
+   "UG": [
+    -1.632,
+    0.552
+   ],
+   "US": [
+    1.966,
+    2.067
+   ],
+   "UY": [
+    1.619,
+    -0.419
+   ],
+   "UZ": [
+    -0.994,
+    0.694
+   ],
+   "VC": [
+    0.563,
+    -2.107
+   ],
+   "VE": [
+    -0.905,
+    0.847
+   ],
+   "VN": [
+    -0.545,
+    1.313
+   ],
+   "VU": [
+    -0.731,
+    -1.915
+   ],
+   "WS": [
+    -0.246,
+    -1.722
+   ],
+   "YE": [
+    -2.171,
+    0.743
+   ],
+   "ZA": [
+    0.656,
+    0.701
+   ],
+   "ZM": [
+    -0.882,
+    0.059
+   ],
+   "ZW": [
+    -1.467,
+    0.305
+   ]
+  },
+  "types": {
+   "E11": [
+    -1.587,
+    0.21
+   ],
+   "E12": [
+    -1.815,
+    0.224
+   ],
+   "D10": [
+    -0.489,
+    -0.006
+   ],
+   "A02": [
+    1.694,
+    -0.481
+   ],
+   "A01": [
+    2.249,
+    0.742
+   ],
+   "A03": [
+    1.686,
+    -0.129
+   ],
+   "A04": [
+    1.656,
+    1.118
+   ],
+   "C08": [
+    0.429,
+    0.23
+   ],
+   "C09": [
+    -0.202,
+    1.087
+   ],
+   "B06": [
+    0.52,
+    -0.89
+   ],
+   "B05": [
+    0.567,
+    -1.713
+   ],
+   "B07": [
+    -0.506,
+    -1.702
+   ]
+  }
+ },
+ "edition": "2026",
+ "approved": {
+  "date": "2026-09-24",
+  "by": "owner",
+  "promotedFrom": "scripts/data/country-personas-model.draft.json",
+  "draftSha256": "4e5e924a4c621c8c02dc4f9f87af1290d4d07233c7e9501be9f1db86588c26f3"
+ }
+}

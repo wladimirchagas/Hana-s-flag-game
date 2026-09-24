@@ -34,10 +34,18 @@ export type WvsMapMode = {
   answerIndexes: number[];
 };
 
-export type DemocracyMapMode = DemocracyIndexKey | WvsMapMode | null;
+/** Colour the map by Country Persona group (src/data/countryPersonas.ts). Categorical, NOT an
+ *  index: it never enters DEMOCRACY_INDEX_KEYS and never uses the green→red index palette. */
+export type PersonaMapMode = { kind: "persona" };
+
+export type DemocracyMapMode = DemocracyIndexKey | WvsMapMode | PersonaMapMode | null;
 
 export function isWvsMapMode(mode: DemocracyMapMode): mode is WvsMapMode {
   return typeof mode === "object" && mode !== null && mode.kind === "wvs";
+}
+
+export function isPersonaMapMode(mode: DemocracyMapMode): mode is PersonaMapMode {
+  return typeof mode === "object" && mode !== null && mode.kind === "persona";
 }
 
 export function isDemocracyIndexMode(
@@ -684,12 +692,12 @@ export const INDEX_MAP_COLOR_REGISTRY: readonly {
 ];
 
 export function getDemocracyLegendTitle(mode: DemocracyMapMode): string {
-  if (!mode || isWvsMapMode(mode)) return "";
+  if (!isDemocracyIndexMode(mode)) return "";
   return getDemocracyIndexLabel(mode);
 }
 
 export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegendItem[] {
-  if (!mode || isWvsMapMode(mode)) return [];
+  if (!isDemocracyIndexMode(mode)) return [];
   if (mode === "freedom-house") {
     return [
       { label: "Free", color: FREEDOM_HOUSE_MAP_COLORS["Free"] },
@@ -804,7 +812,7 @@ export function getDemocracyLegendItems(mode: DemocracyMapMode): DemocracyLegend
 }
 
 export function getDemocracyColorOverlay(mode: DemocracyMapMode): Map<string, string> | null {
-  if (!mode || isWvsMapMode(mode)) return null;
+  if (!isDemocracyIndexMode(mode)) return null;
   const overlay = new Map<string, string>();
   for (const [code, facts] of Object.entries(COUNTRY_FACTS)) {
     const demo = facts.democracy;

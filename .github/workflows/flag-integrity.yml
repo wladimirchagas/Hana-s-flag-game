@@ -101,6 +101,14 @@ on:
       - "src/data/wvsResults.json"
       - "src/data/wvsResultsMeta.ts"
       - "src/lib/wvsResults.ts"
+      - "scripts/build-country-personas.mjs"
+      - "scripts/check-country-personas.mjs"
+      - "scripts/data/country-personas-model.json"
+      - "scripts/data/country-persona-portraits.json"
+      - "scripts/data/country-persona-inputs.json"
+      - "src/data/countryPersonas.ts"
+      - "src/lib/countryPersonas.ts"
+      - "src/components/Persona*.tsx"
       - "src/components/WvsSelectionPicker.tsx"
       - "src/data/countryBlocks.ts"
       - "src/components/DemocracyIndexChart.tsx"
@@ -406,6 +414,14 @@ jobs:
       # World Values Survey Wave 7 extract + Learn-mode map/chart/widget wiring.
       - name: Verify WVS results data and Learn-mode wiring
         run: node scripts/check-wvs-results.mjs
+
+      # Country Personas: src/data/countryPersonas.ts must re-score exactly from the frozen,
+      # owner-approved model (no drift), and the data, copy lint, portrait claims and UI wiring
+      # must hold. Both import .ts modules, so they need this Node 24 job.
+      - name: Verify Country Personas reproduce the frozen model
+        run: node scripts/build-country-personas.mjs --check
+      - name: Verify Country Personas data, copy and UI wiring
+        run: node scripts/check-country-personas.mjs
 
   check-flag-meanings:
     runs-on: ubuntu-latest

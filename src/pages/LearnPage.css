@@ -4611,3 +4611,206 @@ body .searchable-select__option--selected:hover {
     padding: 0.3rem 0.4rem;
   }
 }
+
+/* ── Country Personas ─────────────────────────────────────────────────────────
+   Shared explanation tooltip (PersonaTip): hover for pointers, :focus-within for
+   keyboard and touch — a tap focuses the button and shows the tip, tapping
+   elsewhere dismisses it. Same pattern as the membership badges. */
+.persona-tip-anchor {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.persona-tip-btn {
+  margin: 0;
+  padding: 0.12rem 0.5rem;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 650;
+  line-height: 1.3;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--cream, #f7f3ea) 85%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ink, #1f2937) 16%, transparent);
+  border-radius: 999px;
+  cursor: help;
+  text-align: left;
+}
+
+.persona-tip-btn:hover,
+.persona-tip-btn:focus-visible {
+  border-color: color-mix(in srgb, var(--ink, #1f2937) 32%, transparent);
+  outline: none;
+}
+
+.persona-tip-anchor--icon .persona-tip-btn {
+  padding: 0 0.38rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--ink-soft, #4b5563);
+}
+
+.persona-tip-anchor--plain .persona-tip-btn {
+  padding: 0;
+  background: none;
+  border: none;
+  font-weight: inherit;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+}
+
+.persona-tip {
+  display: none;
+  position: absolute;
+  z-index: 60;
+  left: 0;
+  top: calc(100% + 0.35rem);
+  width: min(21rem, 86vw);
+  padding: 0.6rem 0.7rem;
+  text-align: left;
+  white-space: normal;
+  font-size: 0.74rem;
+  font-weight: 450;
+  line-height: 1.42;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--ink);
+  background: var(--cream, #f7f3ea);
+  border: 1px solid color-mix(in srgb, var(--ink, #1f2937) 18%, transparent);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--ink, #1f2937) 14%, transparent);
+  pointer-events: none;
+}
+
+.persona-tip-anchor:hover .persona-tip,
+.persona-tip-anchor:focus-within .persona-tip {
+  display: block;
+}
+
+.persona-tip__title {
+  display: block;
+  margin: 0 0 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.persona-tip__line {
+  display: block;
+  margin: 0 0 0.35rem;
+  font-style: italic;
+}
+
+.persona-tip__body,
+.persona-tip__meta,
+.persona-tip__types,
+.persona-tip__note {
+  display: block;
+  margin: 0 0 0.35rem;
+  color: var(--ink-soft, #4b5563);
+}
+
+.persona-tip__note {
+  margin: 0;
+  font-size: 0.68rem;
+}
+
+/* --cream already flips with data-theme, so only the shadow needs a dark variant. */
+:root[data-theme="dark"] .persona-tip {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+.persona-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.35rem;
+  align-items: baseline;
+}
+
+.persona-badges__swatch {
+  display: inline-block;
+  width: 0.62rem;
+  height: 0.62rem;
+  margin-right: 0.3rem;
+  border-radius: 2px;
+  vertical-align: baseline;
+}
+
+.persona-badges__note {
+  flex-basis: 100%;
+  font-size: 0.72rem;
+  color: var(--ink-soft, #4b5563);
+}
+
+/* Country personas map (PersonaFamilyTree) */
+.persona-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.persona-tree__svg {
+  width: 100%;
+  height: auto;
+  max-height: 26rem;
+  overflow: visible;
+}
+
+.persona-tree__axis {
+  stroke: var(--ink-faint);
+  stroke-width: 1;
+}
+
+.persona-tree__axis-label {
+  fill: var(--ink-soft);
+  font-size: 12px;
+}
+
+.persona-tree__dot {
+  stroke: var(--cream);
+  stroke-width: 0.8;
+  cursor: pointer;
+}
+
+.persona-tree__dot:hover {
+  stroke: var(--ink);
+  stroke-width: 1.4;
+}
+
+.persona-tree__dot--selected {
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+
+.persona-tree__type-label,
+.persona-tree__focus-label {
+  fill: var(--ink);
+  font-size: 11px;
+  font-weight: 700;
+  paint-order: stroke;
+  stroke: var(--cream);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.persona-tree__focus-label {
+  font-size: 12px;
+}
+
+.persona-tree__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.35rem;
+}
+
+.persona-tree__legend--types .persona-tip-btn {
+  font-size: 0.72rem;
+}
+
+.persona-tree__caption {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}

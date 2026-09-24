@@ -22,8 +22,11 @@ import type { ChartAxisSelection } from "../lib/chartAxes";
 import {
   type DemocracyMapMode,
   getDemocracyColorOverlay,
+  isPersonaMapMode,
   isWvsMapMode,
 } from "../lib/democracyColors";
+import { getPersonaColorOverlay } from "../lib/countryPersonas";
+import { PersonaFamilyTree } from "../components/PersonaFamilyTree";
 import { getWvsColorOverlay } from "../lib/wvsResults";
 import { getMapDataTooltip } from "../lib/mapDataTooltip";
 import {
@@ -324,6 +327,8 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   // of the map colour mode so users can compare any pair of indexes.
   const [democracyChartEnabled, setDemocracyChartEnabled] = useState(false);
   const democracyChartPanelId = useId();
+  const [personaTreeEnabled, setPersonaTreeEnabled] = useState(false);
+  const personaTreePanelId = useId();
   const [democracyChartXKey, setDemocracyChartXKey] =
     useState<ChartAxisSelection>("cpi");
   const [democracyChartYKey, setDemocracyChartYKey] =
@@ -1449,6 +1454,9 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
   );
 
   const democracyColorOverlay = useMemo(() => {
+    if (isPersonaMapMode(democracyMapMode)) {
+      return getPersonaColorOverlay();
+    }
     if (isWvsMapMode(democracyMapMode)) {
       return getWvsColorOverlay(democracyMapMode);
     }
@@ -1827,6 +1835,25 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
 
   /** Select a modern country from the map or democracy chart — or clear the
    *  panel when the click is on the country that is already selected. */
+  /** Hover from the index chart or the personas map previews that country in the panel. */
+  const handleChartHover = useCallback(
+    (code: string | null) => {
+      if (!code) {
+        hoverClearTimer.current = setTimeout(() => {
+          setHovered(null);
+          hoverClearTimer.current = null;
+        }, 200);
+        return;
+      }
+      if (hoverClearTimer.current) {
+        clearTimeout(hoverClearTimer.current);
+        hoverClearTimer.current = null;
+      }
+      const c = codeToCountry.get(code);
+      if (c) setHovered({ kind: "modern", country: c });
+    },
+    [codeToCountry],
+  );
   const handleModernMapOrChartSelect = useCallback(
     (code: string) => {
       const c = codeToCountry.get(code);
@@ -2281,21 +2308,38 @@ export default function LearnPage({ variant = "atlas" }: { variant?: "atlas" | "
                   hovered?.kind === "modern" ? hovered.country.code : null
                 }
                 onSelect={handleModernMapOrChartSelect}
-                onHover={(code) => {
-                  if (!code) {
-                    hoverClearTimer.current = setTimeout(() => {
-                      setHovered(null);
-                      hoverClearTimer.current = null;
-                    }, 200);
-                    return;
-                  }
-                  if (hoverClearTimer.current) {
-                    clearTimeout(hoverClearTimer.current);
-                    hoverClearTimer.current = null;
-                  }
-                  const c = codeToCountry.get(code);
-                  if (c) setHovered({ kind: "modern", country: c });
-                }}
+                onHover={handleChartHover}
+              />
+            </div>
+          )}
+        </div>
+      )}
+      {isModernEra && !subdivisionMode && (
+        <div className="learn-fs__chart-accordion">
+          <button
+            type="button"
+            className="learn-fs__chart-accordion-toggle"
+            aria-expanded={personaTreeEnabled}
+            aria-controls={personaTreePanelId}
+            onClick={() => setPersonaTreeEnabled((v) => !v)}
+          >
+            <span className="learn-fs__chart-accordion-label">See country personas map</span>
+            <span className="learn-fs__chart-accordion-chev" aria-hidden="true">
+              {personaTreeEnabled ? "▾" : "▸"}
+            </span>
+          </button>
+          {personaTreeEnabled && (
+            <div
+              className="learn-fs__chart-accordion-panel"
+              id={personaTreePanelId}
+            >
+              <PersonaFamilyTree
+                nameOf={(code) => codeToCountry.get(code)?.name ?? ""}
+                selectedCode={
+                  selected?.kind === "modern" ? selected.country.code : null
+                }
+                onSelect={handleModernMapOrChartSelect}
+                onHover={handleChartHover}
               />
             </div>
           )}
