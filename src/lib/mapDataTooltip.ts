@@ -7,7 +7,7 @@ import {
   isPersonaMapMode,
   isWvsMapMode,
 } from "./democracyColors.ts";
-import { COUNTRY_PERSONAS, PERSONA_GROUPS, PERSONA_TYPES } from "../data/countryPersonas.ts";
+import { COUNTRY_PERSONAS, PERSONAS } from "../data/countryPersonas.ts";
 import {
   formatWvsSelectionShort,
   getWvsSociety,
@@ -54,16 +54,15 @@ export function getMapDataTooltip(
   const color = overlay?.get(code) ?? null;
 
   if (isPersonaMapMode(mode)) {
-    // Country Personas: the group is the "value", the type its "category". A persona has no
-    // per-country data year of its own (edition 2026 is shown in the legend).
+    // Country Personas: the persona is the "value". A persona has no per-country data year of
+    // its own (edition 2026 is shown in the legend).
     const p = COUNTRY_PERSONAS[code];
-    const g = p?.group ? PERSONA_GROUPS.find((x) => x.code === p.group) : undefined;
-    const t = p?.type ? PERSONA_TYPES.find((x) => x.code === p.type) : undefined;
-    if (!p || !g) return { measure: "Country persona", value: null, category: null, color: null, year: null };
+    const persona = p?.persona ? PERSONAS.find((x) => x.code === p.persona) : undefined;
+    if (!p || !persona) return { measure: "Country persona", value: null, category: null, color: null, year: null };
     return {
       measure: "Country persona",
-      value: `${g.code} · ${g.name}`,
-      category: t && g.typeCodes.length > 1 ? `${t.code} · ${t.name}` : null,
+      value: `${persona.code} · ${persona.name}`,
+      category: null,
       color,
       year: null,
     };

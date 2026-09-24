@@ -4703,7 +4703,6 @@ body .searchable-select__option--selected:hover {
 
 .persona-tip__body,
 .persona-tip__meta,
-.persona-tip__types,
 .persona-tip__note {
   display: block;
   margin: 0 0 0.35rem;
@@ -4713,6 +4712,38 @@ body .searchable-select__option--selected:hover {
 .persona-tip__note {
   margin: 0;
   font-size: 0.68rem;
+}
+
+.persona-tip__facts {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.1rem 0.6rem;
+  margin: 0 0 0.4rem;
+  padding: 0.35rem 0 0;
+  border-top: 1px solid color-mix(in srgb, var(--ink, #1f2937) 12%, transparent);
+}
+
+.persona-tip__facts-title {
+  grid-column: 1 / -1;
+  font-size: 0.68rem;
+  color: var(--ink-soft, #4b5563);
+}
+
+.persona-tip__facts-title {
+  font-weight: 700;
+}
+
+.persona-tip__fact {
+  display: contents;
+}
+
+.persona-tip__fact-label {
+  color: var(--ink-soft, #4b5563);
+}
+
+.persona-tip__fact-value {
+  font-weight: 650;
+  text-align: right;
 }
 
 /* --cream already flips with data-theme, so only the shadow needs a dark variant. */
@@ -4742,48 +4773,77 @@ body .searchable-select__option--selected:hover {
   color: var(--ink-soft, #4b5563);
 }
 
-/* Country personas map (PersonaFamilyTree) */
-.persona-tree {
+/* The map legend lists every persona: a left-aligned grid rather than one centred row. */
+.democracy-map-legend__list--personas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  justify-items: start;
+  gap: 0 1rem;
+  width: 100%;
+}
+
+.democracy-map-legend__list--personas .democracy-map-legend__item {
+  min-width: 0;
+  white-space: normal;
+  text-align: left;
+}
+
+/* Touch keeps the 44px targets (ButtonControls.css); a mouse can use compact rows, which keeps a
+   30-persona legend to a readable height. */
+@media (pointer: fine) {
+  .democracy-map-legend__list--personas .persona-tip-btn,
+  .persona-map__legend .persona-tip-btn {
+    min-height: 28px;
+  }
+}
+
+/* Country personas map (PersonaMapChart) */
+.persona-map {
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
 }
 
-.persona-tree__svg {
+.persona-map__svg {
   width: 100%;
   height: auto;
-  max-height: 26rem;
+  max-height: 28rem;
   overflow: visible;
 }
 
-.persona-tree__axis {
+.persona-map__axis {
   stroke: var(--ink-faint);
   stroke-width: 1;
 }
 
-.persona-tree__axis-label {
+.persona-map__axis-label {
   fill: var(--ink-soft);
   font-size: 12px;
 }
 
-.persona-tree__dot {
+.persona-map__dot {
   stroke: var(--cream);
   stroke-width: 0.8;
   cursor: pointer;
+  transition: opacity 0.15s ease;
 }
 
-.persona-tree__dot:hover {
+.persona-map__dot:hover {
   stroke: var(--ink);
   stroke-width: 1.4;
 }
 
-.persona-tree__dot--selected {
+.persona-map__dot--selected {
   stroke: var(--ink);
   stroke-width: 2;
 }
 
-.persona-tree__type-label,
-.persona-tree__focus-label {
+.persona-map__dot--faded {
+  opacity: 0.22;
+}
+
+.persona-map__persona-label,
+.persona-map__focus-label {
   fill: var(--ink);
   font-size: 11px;
   font-weight: 700;
@@ -4794,21 +4854,28 @@ body .searchable-select__option--selected:hover {
   pointer-events: none;
 }
 
-.persona-tree__focus-label {
+.persona-map__persona-label--faded {
+  opacity: 0.35;
+}
+
+.persona-map__focus-label {
   font-size: 12px;
 }
 
-.persona-tree__legend {
+.persona-map__legend {
   display: flex;
   flex-wrap: wrap;
   gap: 0.3rem 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.persona-tree__legend--types .persona-tip-btn {
+.persona-map__legend .persona-tip-btn {
   font-size: 0.72rem;
 }
 
-.persona-tree__caption {
+.persona-map__caption {
   margin: 0;
   font-size: 0.72rem;
   line-height: 1.45;

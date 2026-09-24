@@ -1774,91 +1774,140 @@ country's score lies in no band naming its rating, when a rating has no band, wh
 segments leave a gap, or when the chart stops drawing through `democracyAxisBandSegments()`. Never
 weaken it. Fix the bands.
 
-## Country Personas: a frozen, sourced classification with neutral names — hard rule, do not override without approval
+## Country Personas: a frozen, sourced classification whose every figure fits every member — hard rule, do not override without approval
 
-**Country Personas groups the 195 states into 5 persona groups and 12 types. It uses a
-Mosaic-style clustering of the repo's own sourced national data; the method is in
-`docs/COUNTRY_PERSONAS_PLAYBOOK.md` and every decision in `docs/COUNTRY_PERSONAS_LEDGER.md`.
-The owner approved the model on 2026-09-24. It is a FROZEN edition, not something to re-tune.
-It appears on four Learn-mode surfaces, each with a tooltip for every group and type:**
-- the flag grid's Group by ("By country persona", "By persona type");
+**Country Personas groups the 195 states into 30 personas, one level (edition 2026, version 2).
+It uses a Mosaic-style clustering of the repo's own sourced national data. The method is in
+`docs/COUNTRY_PERSONAS_PLAYBOOK.md`; every decision is in `docs/COUNTRY_PERSONAS_LEDGER.md`
+(v2: D9–D16). It is a FROZEN edition, not something to re-tune. It appears on four Learn-mode
+surfaces, each with a hover-and-tap tooltip for every persona:**
+- the flag grid's Group by ("By country persona");
 - the map colour mode "Country personas, 2026";
 - the fact-sheet "Country persona" row;
-- the "See country personas map" family-tree chart.
+- the "See country personas map" chart.
 
 ### Why this rule exists
 
-A classification of countries is a judgement that looks like a fact. A persona that moves
-because someone re-ran the clustering, a name that sneaks in a value word ("developing",
-"poor", "failed"), or a portrait sentence the data does not support would each publish an
-opinion about a country under the app's authority. The playbook's safeguards exist to prevent
-exactly that:
-- stability gates;
-- neutral naming;
-- portraits traceable to the Grand Index;
-- the national-averages note.
+A classification of countries is a judgement that looks like a fact. The owner rejected v1
+(2026-09-24) because its descriptions quoted **averages that misdescribed their own members**:
+- Malaysia's group claimed its countries "average 180m people" (China and India skewed the
+  mean);
+- Brazil's group claimed fertility of 1.21 (Brazil's is 1.6).
 
-This rule keeps those safeguards in force after the build.
+The owner set the rule: no more than 1 standard deviation from the median. They also asked for
+more weight on indices and World Values Survey attitudes, culture and heritage blended in, one
+level of 10–30 personas, and religion kept as one variable among many.
+
+v2 makes each of those structural:
+- a hard boundary on the partition;
+- a quotable rule on every figure;
+- a token for every plain-text claim;
+- a calibrated weighting that caps every domain's influence.
+
+This rule keeps them in force.
 
 ### Rules
 
-1. **The model is frozen per edition.** `scripts/data/country-personas-model.json` and
-   `scripts/data/country-persona-portraits.json` carry `status: FROZEN` and the sha256 of the
-   draft the owner approved.
-   - Never edit them by hand.
-   - Never re-run `scripts/country-personas/build.py` over them.
+1. **The model and the copy are frozen per edition.**
+   - The frozen files are `scripts/data/country-personas-model.json` and
+     `scripts/data/country-persona-portraits.json`. They carry `status: FROZEN` and the sha256 of
+     the draft each was frozen from.
+   - Never edit them by hand. Never re-run `scripts/country-personas/build.py` over them.
    - Never change a country's assignment to "fix" how it looks.
-   - A new edition means a new research build, a new owner review, and a new ledger entry.
-2. **`src/data/countryPersonas.ts` is generated** by `node scripts/build-country-personas.mjs`,
-   which re-scores every country from the frozen model and the input snapshot. It fails if even
-   one assignment differs from the frozen model. Never hand-edit it.
-3. **Names and one-line descriptions are neutral and place-free.** No value words (the banned
-   list is in `check-country-personas.mjs`), no religion, ethnicity or region names, and no ISO
-   codes. A name describes what the data measures, never what a country "is".
-4. **Every portrait claim must match the data.** A sentence that says a persona is higher or
-   lower on something must be listed in the portrait's `claims`, and the check verifies its
-   direction against the snapshot.
-5. **Group colours are categorical (Okabe–Ito, `PERSONA_GROUP_COLORS`), never the index
-   green→red palette.** Letters are labels, not ranks, and the legend says so.
-6. **Every persona tooltip opens on hover AND on focus or tap** (CSS `:hover` /
-   `:focus-within` on `.persona-tip-anchor`, like the membership badges).
-   - Every tooltip ends with `PERSONA_AVERAGES_NOTE`: a persona describes national averages,
-     not the people who live there.
-   - Never drop that note.
-   - Never move the tooltips to hover-only `title=` attributes.
+   - A new edition means a new research build, a new review and a new ledger entry.
+   - The owner may revise the NAMES and DESCRIPTIONS. That is a copy revision: new draft copy,
+     re-rendered and re-frozen, with a ledger entry. The partition does not change.
+2. **The boundary is the owner's rule and it is checked, not assumed.** Every member lies within
+   **1 world standard deviation** of its persona's median on the four core dimensions:
+   - development;
+   - demography;
+   - governance;
+   - values (surveyed countries only).
+
+   `scripts/build-country-personas.mjs` recomputes every country's core values from the snapshot
+   and fails if one member is outside. Religion is **not** a core dimension, and no similarity
+   domain may exceed 1/15 of the influence (ledger D13).
+3. **A figure is quoted only if it describes every member.**
+   - Descriptions are templates. Every number is a token rendered by `scripts/lib/personaText.mjs`
+     as the persona's member range (or median), never a mean.
+   - A token is allowed only when every observed member lies within 1 world SD of the persona
+     median on that variable. The render fails otherwise, so a description can never again quote
+     a figure that misdescribes one of its members.
+   - A figure some members lack sits in a sentence that says "where reported" or
+     "where surveyed", or the render fails.
+   - Key facts must cover every member.
+4. **Every plain-text claim is checked against the data by a token.**
+   - A rating ("all are rated Free"): `{every:var=Level}`.
+   - An official language: `{all:var}` or `{all:a|b}`.
+   - A world position ("among the world's highest", "higher than in most countries"):
+     `{world:var>P}`.
+   - A threshold every member meets: `{under:…}` / `{over:…}`.
+   - An income-class word ("high-income", "middle-income", "wealthy") must hold for **every**
+     member under the snapshot's World Bank group (`incomeClaimErrors` in
+     `scripts/lib/personaLint.mjs`). "lower-income" is refused as unverifiable.
+   - Never drop a token to make a claim pass. Reword the claim.
+   - **Check the claim against current reality too, not only the data.** The language data can
+     lag a change: Mali, Burkina Faso and Niger demoted French in 2023–25. Do not assert a
+     language claim you know the data has overtaken.
+5. **Names and one-line descriptions are neutral and place-free** (shared lint,
+   `scripts/lib/personaLint.mjs`):
+   - no value words;
+   - no country, region, religion or ethnicity names;
+   - no ISO codes;
+   - a religion may be named in a description only in a sentence that quotes its sourced share.
+
+   Values are named with the World Values Survey's own terms, applied at both ends ("Secular",
+   "Traditional-Values"). Never label only one end.
+6. **Colours are categorical, never the index green→red palette.**
+   - There are 30 colours from `scripts/country-personas/palette.py`.
+   - `scripts/country-personas/assign-colors.mjs` chose which persona gets which colour, so that
+     bordering personas differ by ΔE2000 ≥ 21.
+   - The two-digit codes are labels, not ranks, and the legend says so.
+7. **Every persona tooltip opens on hover AND on focus or tap** (CSS `:hover` / `:focus-within`
+   on `.persona-tip-anchor`, like the membership badges).
+   - Every tooltip ends with `PERSONA_AVERAGES_NOTE`.
+   - Its key facts are introduced by `PERSONA_FIGURES_NOTE`: the ranges every member falls
+     within, never averages.
    - Keep the viewport nudge in `PersonaTip`, so a tooltip never overflows a phone screen.
-7. **An unclassified state is shown honestly.** Vatican City lacks comparable data. It shows
-   "Not classified" with a tooltip saying why; it is never forced into a group.
-8. **Never remove a persona surface** (the Group-by modes, map mode, fact-sheet row or family
-   tree) without owner approval. The fact-sheet row is covered by the "country widget
+8. **An unclassified state is shown honestly.** Vatican City lacks comparable data. It shows
+   "Not classified" and is never forced into a persona.
+   - A country within 0.05 of its next persona says "Also close to …".
+   - A country placed on thin data says "Provisional".
+9. **Never remove a persona surface** without owner approval: the Group-by mode, map mode,
+   fact-sheet row or persona map. The fact-sheet row is covered by the "country widget
    information must never be reduced" rule as well.
-9. **Verify in the running app** (the mandatory visual-verification rule applies):
-   - Set Group by → "By country persona" and confirm 5 headings with ⓘ tooltips.
-   - Turn on the map mode and confirm the 5 colours and the legend tooltips.
-   - Open Brazil and confirm the row, its "sits between" note and the tooltip on hover and on
-     focus.
-   - Open Vatican City and confirm "Not classified".
-   - Open the family tree and confirm 194 dots, 12 type labels, and that hover and click work.
-   - At 390px width, confirm no tooltip causes horizontal scroll.
+10. **Verify in the running app** (the mandatory visual-verification rule applies):
+    - Group by → "By country persona": 30 headings plus "Not classified", each with its ⓘ
+      tooltip.
+    - The map mode: 30 colours and the legend tooltips.
+    - Brazil: 19; Malaysia: 15, with its "Also close to" note; Vatican City: "Not classified".
+    - The persona map: 194 dots and 30 labels; hover fades the other personas, click selects.
+    - At 390px width, no tooltip causes horizontal scroll.
 
 ### Enforcement
 
-Two scripts in `npm run flags:check` and the `check-era-maps` CI job both import `.ts`, so they
-need Node 22.18+. **Never add either to `npm run test:ui`**: `npm run build` runs `test:ui`, and
-the Deploy workflow builds on Node 20, which cannot load `.ts`. Adding the check there broke the
-Deploy build on 2026-09-24 (PR #1697), so the personas release reached nobody until it was
-removed.
+**`node scripts/build-country-personas.mjs --check` fails when:**
+- the generated file has drifted;
+- a core value no longer recomputes;
+- the 1-SD boundary is broken;
+- a figure is not quotable or a claim token fails;
+- the income-class, place or religion lint fires;
+- a key fact does not cover every member.
 
-`node scripts/build-country-personas.mjs --check` fails when the generated file has drifted from
-the frozen model.
+It needs no `.ts` loader.
 
-`scripts/check-country-personas.mjs` fails the build on:
+**`scripts/check-country-personas.mjs` fails the build on:**
 - a state with no entry;
-- a group outside 10–45 countries or a type below 4;
-- a banned word, a place name, an ISO-looking token or a technical leak in any learner copy;
-- a portrait claim the data contradicts;
-- shipped copy that differs from the frozen portraits;
-- any of the four surfaces, or the shared tooltip and its hover/focus CSS, losing its wiring.
+- a persona outside 3+ countries or a count outside 10–30;
+- shipped copy that differs from the frozen copy;
+- a leak or lint failure in any learner copy;
+- a missing, duplicate or index-palette colour;
+- any surface, or the shared tooltip and its hover/focus CSS, losing its wiring.
+
+Both run in `npm run flags:check` and the `check-era-maps` CI job. The check imports `.ts`, so
+it needs Node 22.18+. **Never add it to `npm run test:ui`**: `npm run build` runs `test:ui`, and
+the Deploy workflow builds on Node 20. Adding it there broke the Deploy build on 2026-09-24
+(PR #1697). `check-ci-coverage.mjs` now fails on exactly that.
 
 Never weaken either script to land a change. If one fires, fix the data, the copy or the wiring.
 

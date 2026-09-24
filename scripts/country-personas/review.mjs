@@ -14,7 +14,8 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { renderTemplate, formatRange, formatValue } from "../lib/personaText.mjs";
+import { renderTemplate, formatRange, formatValue, worldPercentiles } from "../lib/personaText.mjs";
+import { lintCopy, incomeClaimErrors } from "../lib/personaLint.mjs";
 import { findUserFacingLeaks } from "../lib/userFacingCopy.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
@@ -25,34 +26,7 @@ const SNAP = read("scripts/data/country-persona-inputs.json");
 const VARS = SNAP.variables;
 const NAMES = SNAP.names;
 const COPY_FILE = "scripts/data/country-persona-portraits.draft.json";
-
-// Names and one-line descriptions: no value judgements, no places, no religions or ethnicities.
-export const BANNED = ["poor", "developing", "developed", "third world", "backward", "failed", "failing", "rogue", "elite",
-  "primitive", "civilised", "civilized", "corrupt", "dictatorship", "fragile", "western", "eastern", "northern",
-  "southern", "christian", "muslim", "islamic", "catholic", "hindu", "buddhist", "jewish", "arab", "african", "asian",
-  "european", "latin", "anglo", "slavic", "nordic", "gulf", "caribbean", "pacific", "island", "tribal", "emerging"];
-const PLACES = ["africa", "asia", "europe", "america", "americas", "oceania", "middle east", "balkan", "sahel",
-  ...Object.values(NAMES).map((n) => n.toLowerCase())];
-const has = (text, word) => new RegExp(`\\b${word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(text);
-const RELIGION_WORDS = ["christian", "christians", "muslim", "muslims", "hindu", "hindus", "buddhist", "buddhists", "jewish", "jews"];
-
-export function lintCopy(code, name, line, portrait) {
-  const errs = [];
-  for (const w of BANNED) if (has(`${name} ${line}`, w)) errs.push(`${code}: banned term "${w}" in its name or line`);
-  for (const w of PLACES) if (has(`${name} ${line}`, w)) errs.push(`${code}: place name "${w}" in its name or line`);
-  for (const w of BANNED.filter((b) => !RELIGION_WORDS.includes(b))) if (has(portrait, w)) errs.push(`${code}: banned term "${w}" in its description`);
-  // a religion may be named in a description only in a sentence that quotes its Pew share
-  for (const sentence of portrait.split(/(?<=[.!?])\s+/)) {
-    if (RELIGION_WORDS.some((w) => has(sentence, w)) && !/\{(range|median|min|max):rel_/.test(sentence)) {
-      errs.push(`${code}: a religion is named without its sourced share ("${sentence.slice(0, 60)}…")`);
-    }
-  }
-  const all = `${name} ${line} ${portrait}`.replace(/\{[^}]+\}/g, "");
-  if (/\b[A-Z]{2}\b/.test(all)) errs.push(`${code}: ISO-code-looking token "${all.match(/\b[A-Z]{2}\b/)[0]}"`);
-  for (const leak of findUserFacingLeaks(all)) errs.push(`${code}: ${leak.label}`);
-  if (name.split(/\s+/).length > 6) errs.push(`${code}: name longer than 6 words`);
-  return errs;
-}
+const worldPct = worldPercentiles(SNAP.values);
 
 const personas = MODEL.personas;
 const surveyed = (p) => p.members.filter((c) => MODEL.assignments[c]?.surveyed).length;
@@ -95,14 +69,22 @@ for (const p of personas) {
     errors.push(`${p.code}: no draft copy`);
     continue;
   }
-  const ctx = { size: p.size, surveyed: surveyed(p) };
+  const ctx = { size: p.size, surveyed: surveyed(p), worldPct, members: p.members, values: SNAP.values };
   const prof = PROFILE.personas[p.code];
   const r1 = renderTemplate(c.line, prof, VARS, ctx);
   const r2 = renderTemplate(c.portrait, prof, VARS, ctx);
   errors.push(...r1.errors.map((e) => `${p.code} line: ${e}`), ...r2.errors.map((e) => `${p.code} description: ${e}`));
-  errors.push(...lintCopy(p.code, c.name, c.line, c.portrait));
+  errors.push(...lintCopy(p.code, c.name, c.line, c.portrait, Object.values(NAMES)));
+  for (const leak of findUserFacingLeaks(`${c.name} ${c.line} ${r2.text}`)) errors.push(`${p.code}: ${leak.label}`);
+  errors.push(...incomeClaimErrors(p.code, `${c.name}. ${r1.text} ${r2.text}`, p.members.map((m) => SNAP.values[m]?.wb_income_group?.v)));
+  const facts = (c.facts ?? []).map((f) => {
+    const r = prof[f.var];
+    if (!r?.quotable) errors.push(`${p.code} fact ${f.var}: not quotable (a member lies more than 1 world SD from the median)`);
+    else if (r.n < p.size) errors.push(`${p.code} fact ${f.var}: only ${r.n} of ${p.size} members have a figure — a key fact must cover every member`);
+    return r ? `${f.label}: ${formatRange(f.var, VARS[f.var], r.min, r.max)}` : `${f.label}: —`;
+  });
   const exceptions = p.members.filter((m) => MODEL.assignments[m].exceptions?.length);
-  doc.push(`## ${p.code} · ${c.name}`, "", `*${r1.text}*`, "", r2.text, "",
+  doc.push(`## ${p.code} · ${c.name}`, "", `*${r1.text}*`, "", r2.text, "", `Key facts — ${facts.join(" · ")}`, "",
     `**${p.size} countries:** ${p.members.map((m) => NAMES[m]).join(", ")}`, "",
     `Stability ${p.stability.toFixed(2)} · surveyed by the World Values Survey: ${ctx.surveyed} of ${p.size}` +
     (exceptions.length ? ` · exceptions: ${exceptions.map((m) => NAMES[m]).join(", ")}` : ""), "");

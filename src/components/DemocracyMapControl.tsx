@@ -98,7 +98,7 @@ export function DemocracyMapControl({
             >
               Off (Default map)
             </button>
-            {/* Country Personas: categorical groups, not an index (no green→red scale). */}
+            {/* Country Personas: categorical personas, not an index (no green→red scale). */}
             <div className="democracy-map-control__group">
               <hr className="democracy-map-control__divider" aria-hidden="true" />
               <p className="democracy-map-control__group-label">Country personas</p>

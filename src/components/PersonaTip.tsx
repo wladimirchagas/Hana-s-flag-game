@@ -1,20 +1,17 @@
 import { useCallback, useId, useRef, type ReactNode } from "react";
 import {
   PERSONA_AVERAGES_NOTE,
-  PERSONA_TYPES,
-  personaGroupLabel,
-  personaGroupMeta,
-  personaTypeLabel,
-  personaTypeMeta,
-  type PersonaGroup,
-  type PersonaType,
+  PERSONA_FIGURES_NOTE,
+  personaLabel,
+  personaMeta,
+  type Persona,
 } from "../lib/countryPersonas";
 
 /**
- * Explanation tooltip for a Country Persona group or type. Hover (pointer) or focus/tap
- * (keyboard & touch) reveals it — CSS :hover / :focus-within on the anchor, no JS open state,
- * exactly like the fact-sheet membership badges — so a tap focuses the button and shows the tip
- * and tapping elsewhere dismisses it. Every tip ends with the national-averages note
+ * Explanation tooltip for a Country Persona. Hover (pointer) or focus/tap (keyboard & touch)
+ * reveals it — CSS :hover / :focus-within on the anchor, no JS open state, exactly like the
+ * fact-sheet membership badges — so a tap focuses the button and shows the tip and tapping
+ * elsewhere dismisses it. Every tip ends with the national-averages note
  * (PERSONA_AVERAGES_NOTE): a persona describes a country's averages, never its people.
  */
 export function PersonaTip({
@@ -70,56 +67,47 @@ export function PersonaTip({
         <strong className="persona-tip__title">{title}</strong>
         <span className="persona-tip__line">{line}</span>
         {portrait && <span className="persona-tip__body">{portrait}</span>}
-        {meta && <span className="persona-tip__meta">{meta}</span>}
         {extra}
+        {meta && <span className="persona-tip__meta">{meta}</span>}
         <span className="persona-tip__note">{PERSONA_AVERAGES_NOTE}</span>
       </span>
     </span>
   );
 }
 
-/** Tooltip for a whole group, listing the types it contains. */
-export function PersonaGroupTip({ group, label, ariaLabel, className }: {
-  group: PersonaGroup;
+/** Tooltip for one persona: its line, description, key facts (ranges every member falls within)
+ *  and size. */
+export function PersonaInfoTip({ persona, label, ariaLabel, className }: {
+  persona: Persona;
   label: ReactNode;
   ariaLabel?: string;
   className?: string;
 }) {
-  const types = PERSONA_TYPES.filter((t) => t.group === group.code);
   return (
     <PersonaTip
       label={label}
       ariaLabel={ariaLabel}
       className={className}
-      title={personaGroupLabel(group)}
-      line={group.line}
-      portrait={group.portrait}
-      meta={personaGroupMeta(group)}
+      title={personaLabel(persona)}
+      line={persona.line}
+      portrait={persona.portrait}
+      meta={personaMeta(persona)}
       extra={
-        <span className="persona-tip__types">
-          {types.length > 1 ? `Types: ${types.map((t) => personaTypeLabel(t)).join("; ")}` : "One type: this group has no stable subdivision."}
+        <span className="persona-tip__facts">
+          <span className="persona-tip__facts-title">{PERSONA_FIGURES_NOTE}</span>
+          {persona.facts.map((f) => (
+            <span key={f.label} className="persona-tip__fact">
+              <span className="persona-tip__fact-label">{f.label}</span>
+              <span className="persona-tip__fact-value">{f.value}</span>
+            </span>
+          ))}
         </span>
       }
     />
   );
 }
 
-/** Tooltip for one type. */
-export function PersonaTypeTip({ type, label, ariaLabel, className }: {
-  type: PersonaType;
-  label: ReactNode;
-  ariaLabel?: string;
-  className?: string;
-}) {
-  return (
-    <PersonaTip
-      label={label}
-      ariaLabel={ariaLabel}
-      className={className}
-      title={personaTypeLabel(type)}
-      line={type.line}
-      portrait={type.portrait}
-      meta={personaTypeMeta(type)}
-    />
-  );
+/** A persona's colour chip (decorative; the label beside it carries the meaning). */
+export function PersonaSwatch({ color }: { color: string | undefined }) {
+  return <span className="persona-badges__swatch" style={{ backgroundColor: color }} aria-hidden="true" />;
 }

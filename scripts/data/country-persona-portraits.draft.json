@@ -1,111 +1,701 @@
 {
- "status": "DRAFT — awaiting owner review (playbook step 12). Not read by the app.",
- "model": "scripts/data/country-personas-model.draft.json",
- "rules": "Names describe measured characteristics; never a place, religion, ethnicity or language, and never a moral or developmental judgement. Governance statements always name the index and its year. Every figure is a Grand Index persona mean (unweighted across countries, each country one vote) set against the world mean of the same variable. 'claims' lists each variable a portrait relies on and the direction it asserts, so a check can verify the text against the Grand Index.",
- "groups": {
-  "A": {
-   "name": "Prosperous Ageing Societies",
-   "line": "High-income, long-lived and older societies with the highest scores on freedom and rule-of-law indices and the Corruption Perceptions Index.",
-   "portrait": "The 40 countries in this group have the highest average income of any group, about $70,000 per person at purchasing-power parity against a world average near $31,000, and the longest lives, 82 years on average. One person in five is 65 or older, and families are small, at 1.35 children per woman. They average 91 of 100 on Freedom House's 2026 index, where 39 of the 40 are rated Free, and 66 of 100 on Transparency International's 2025 Corruption Perceptions Index. Four in five belong to the OECD. Most are in Europe, with others in the Americas, Asia and Oceania.",
-   "claims": [["wb_gdppc_ppp", "+"], ["wb_life_expectancy", "+"], ["wb_age_65_up", "+"], ["wb_fertility", "-"], ["idx_freedomHouse", "+"], ["idx_cpi", "+"], ["member_oecd", "+"]]
-  },
-  "B": {
-   "name": "Small States",
-   "line": "Countries with very small populations and territories, mostly rated Free by Freedom House 2026.",
-   "portrait": "The 35 countries in this group are defined by size: an average population of about 600,000 people, tiny land areas, and a low global profile on the Brand Finance Soft Power Index. Together they hold 0.3% of the world's people. Incomes are a little below the world average. They score higher than average on Freedom House's 2026 index (83 of 100 on average; 32 of the 35 are rated Free), and more than half belong to the Commonwealth. They are spread across the Americas, Oceania, Europe, Africa and Asia.",
-   "claims": [["wb_population", "-"], ["wb_land_area", "-"], ["idx_softPower", "-"], ["idx_freedomHouse", "+"], ["member_commonwealth_of_nations", "+"]]
-  },
-  "C": {
-   "name": "Maturing Middle-Income Countries",
-   "line": "Middle-income countries with falling birth rates and large populations, most rated Partly Free or Not Free by Freedom House 2026.",
-   "portrait": "The 38 countries in this group are home to 57% of the world's people, with the largest average populations of any group. Incomes are in the world's middle range, and families are already small, at 1.73 children per woman against a world average of 2.43. They average 43 of 100 on Freedom House's 2026 index (21 rated Partly Free, 13 Not Free and 4 Free) and score below the world average on RSF's 2026 World Press Freedom Index. In the World Values Survey, fewer people than the world average say most people can be trusted. Most are in Asia and Europe, with others in the Americas and Africa.",
-   "claims": [["wb_population", "+"], ["wb_fertility", "-"], ["idx_freedomHouse", "-"], ["idx_rsfPress", "-"], ["wvs_trust", "-"]]
-  },
-  "D": {
-   "name": "Young Resource Economies",
-   "line": "Young, fast-growing and mostly urban populations in economies where natural resources and industry weigh more than average.",
-   "portrait": "The 42 countries in this group have young and growing populations. Fewer than one person in twenty is 65 or older, a third are under 15, and numbers grow by about 2% a year, against 1.1% worldwide. Natural-resource rents average 14% of GDP, twice the world average, industry's share of the economy is above average, and one in five belongs to OPEC. On average, 70% of people live in cities. Incomes average a little below the world figure but range from among the highest to among the lowest. They average 44 of 100 on Freedom House's 2026 index, with Not Free, Partly Free and Free countries all represented. Most are in Africa and Asia.",
-   "claims": [["wb_age_65_up", "-"], ["wb_age_0_14", "+"], ["wb_pop_growth", "+"], ["wb_resource_rents", "+"], ["wb_industry", "+"], ["member_opec", "+"], ["wb_urban", "+"]]
-  },
-  "E": {
-   "name": "Young Agrarian Countries",
-   "line": "Young, mostly rural populations in economies where farming is a large share of output and incomes are the lowest of any group.",
-   "portrait": "The 39 countries in this group have the lowest average incomes of any group, about $4,800 per person at purchasing-power parity, and a Human Development Index of 0.54 against a world average of 0.74. Agriculture produces a quarter of their economic output, fewer than four in ten people live in cities, and 31% use the internet. Populations are young, at 3.9 children per woman, with 38% of people under 15. They average 25 of 100 on Freedom House's 2026 index, with 28 of the 39 rated Not Free. Most are in Africa, with others in Asia, the Americas and Oceania.",
-   "claims": [["wb_gdppc_ppp", "-"], ["idx_hdi", "-"], ["wb_agriculture", "+"], ["wb_urban", "-"], ["wb_internet", "-"], ["wb_fertility", "+"], ["wb_age_0_14", "+"], ["idx_freedomHouse", "-"]]
+  "status": "DRAFT — written against the owner's 2026-09-24 brief",
+  "edition": "2026",
+  "note": "Figures are template tokens rendered from the data by scripts/lib/personaText.mjs: medians and member ranges, each allowed only if every member lies within 1 world SD of the persona median. Plain-text claims that every member shares a rating are asserted with {every:…} / {all:…} tokens.",
+  "mapAxes": [
+    "Higher incomes, older populations, stronger democracy scores and more secular values →",
+    "Larger populations and a bigger global footprint →"
+  ],
+  "personas": {
+    "01": {
+      "name": "Tiny, Very Wealthy Democracies",
+      "line": "Tiny, very wealthy democracies where people live long lives{world:wb_life_expectancy>85} and many residents were born abroad{world:wb_migrants>80}.",
+      "portrait": "Each has fewer than {under:wb_population=400000}. Income per person runs {range:wb_gdppc_usd}, and life expectancy is {range:wb_life_expectancy}. International migrants make up {range:wb_migrants} of residents. All {size} are rated Free by Freedom House, with scores of {range:idx_freedomHouse}.{every:idx_freedomHouse_rating=Free}",
+      "facts": [
+        {
+          "label": "Income per person (US$)",
+          "var": "wb_gdppc_usd"
+        },
+        {
+          "label": "Life expectancy",
+          "var": "wb_life_expectancy"
+        },
+        {
+          "label": "Residents born abroad",
+          "var": "wb_migrants"
+        },
+        {
+          "label": "Freedom House score",
+          "var": "idx_freedomHouse"
+        }
+      ]
+    },
+    "02": {
+      "name": "High-Trust Secular Democracies",
+      "line": "Wealthy democracies where the World Values Survey finds unusually high trust between people{world:wvs_trust>80} and strongly secular values{world:wvs_god_importance<20}.",
+      "portrait": "Between {between:wvs_trust} of people say most others can be trusted, and {range:wvs_petition_signed} have signed a petition. People rate the importance of God at {range:wvs_god_importance}, among the lowest scores the survey records. They score {range:idx_cpi} on the Corruption Perceptions Index and {range:idx_economist} on the Economist's Democracy Index.{every:idx_freedomHouse_rating=Free}",
+      "facts": [
+        {
+          "label": "Say most people can be trusted",
+          "var": "wvs_trust"
+        },
+        {
+          "label": "Have signed a petition",
+          "var": "wvs_petition_signed"
+        },
+        {
+          "label": "Corruption Perceptions Index",
+          "var": "idx_cpi"
+        },
+        {
+          "label": "Democracy Index (Economist)",
+          "var": "idx_economist"
+        }
+      ]
+    },
+    "03": {
+      "name": "Prosperous Rule-of-Law Democracies",
+      "line": "High-income democracies with low perceived corruption{world:idx_cpi>75}, strong rule of law and small families{world:wb_fertility<30}.{every:idx_freedomHouse_rating=Free}",
+      "portrait": "They score {range:idx_cpi} on the Corruption Perceptions Index and {range:idx_freedomHouse} on Freedom House's scale. Where reported, the World Justice Project scores their rule of law {range:idx_wjpRuleOfLaw}. Income per person is {range:wb_gdppc_ppp} in purchasing-power terms. Families are small, with fertility of {range:wb_fertility}, and life expectancy is {range:wb_life_expectancy}.",
+      "facts": [
+        {
+          "label": "Corruption Perceptions Index",
+          "var": "idx_cpi"
+        },
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        },
+        {
+          "label": "Fertility",
+          "var": "wb_fertility"
+        },
+        {
+          "label": "Life expectancy",
+          "var": "wb_life_expectancy"
+        }
+      ]
+    },
+    "04": {
+      "name": "Small, Ageing High-Income Economies",
+      "line": "Small, peaceful high-income economies with ageing populations{world:wb_age_65_up>65} and few children.",
+      "portrait": "Populations are {range:wb_population}, with {range:wb_age_65_up} aged 65 or over and {range:wb_age_0_14} under 15. Income per person is {range:wb_gdppc_ppp} in purchasing-power terms, and life expectancy is {range:wb_life_expectancy}. All rank among the world's most peaceful countries on the Peace Index ({range:idx_gpi}, where lower is more peaceful){world:idx_gpi<20}.",
+      "facts": [
+        {
+          "label": "Aged 65 or over",
+          "var": "wb_age_65_up"
+        },
+        {
+          "label": "Population",
+          "var": "wb_population"
+        },
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        },
+        {
+          "label": "Peace Index (lower = more peaceful)",
+          "var": "idx_gpi"
+        }
+      ]
+    },
+    "05": {
+      "name": "Ageing Democracies, Sporting Heavyweights",
+      "line": "Older high-income democracies{world:wb_age_65_up>75} with long records at the World Cup and the Olympics.{every:idx_freedomHouse_rating=Free}",
+      "portrait": "Between {between:wb_age_65_up} of people are 65 or over, and fertility is {range:wb_fertility}. Each has played in {range:sport_wc_men_apps} men's World Cups and won {range:sport_summer_medals} Summer Olympic medals. Freedom House scores run {range:idx_freedomHouse}, and income per person is {range:wb_gdppc_ppp} in purchasing-power terms.",
+      "facts": [
+        {
+          "label": "Aged 65 or over",
+          "var": "wb_age_65_up"
+        },
+        {
+          "label": "Men's World Cups played",
+          "var": "sport_wc_men_apps"
+        },
+        {
+          "label": "Summer Olympic medals",
+          "var": "sport_summer_medals"
+        },
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        }
+      ]
+    },
+    "06": {
+      "name": "Urban Liberal Democracies, Wide Income Gaps",
+      "line": "Highly urban, high-income democracies{world:wb_urban>75} with some of the world's highest liberal-democracy scores{world:idx_vDem>85} and wide income gaps{world:wb_gini>70}.",
+      "portrait": "V-Dem rates their liberal democracy {range:idx_vDem}, among the world's highest, and Freedom House scores run {range:idx_freedomHouse}. Between {between:wb_urban} of people live in cities. Income is unequal, with Gini indices of {range:wb_gini}, and homicide rates of {range:wb_homicide} are higher than in most countries{world:wb_homicide>50}. All three are Spanish-speaking.{all:lang_spanish}",
+      "facts": [
+        {
+          "label": "Liberal Democracy Index (V-Dem)",
+          "var": "idx_vDem"
+        },
+        {
+          "label": "Living in cities",
+          "var": "wb_urban"
+        },
+        {
+          "label": "Income inequality (Gini)",
+          "var": "wb_gini"
+        },
+        {
+          "label": "Homicides",
+          "var": "wb_homicide"
+        }
+      ]
+    },
+    "07": {
+      "name": "Small Resource-Rich States",
+      "line": "Small, high-income, resource-rich states{world:wb_resource_rents>80} with large migrant populations{world:wb_migrants>85} and Not Free ratings.{every:idx_freedomHouse_rating=Not Free}",
+      "portrait": "Natural-resource rents make up {range:wb_resource_rents} of the economy, and carbon emissions of {range:wb_co2_pc} are among the world's highest{world:wb_co2_pc>90}. International migrants are {range:wb_migrants} of residents. Freedom House rates all three Not Free, with scores of {range:idx_freedomHouse}.{every:idx_freedomHouse_rating=Not Free}",
+      "facts": [
+        {
+          "label": "Natural-resource rents (share of economy)",
+          "var": "wb_resource_rents"
+        },
+        {
+          "label": "Residents born abroad",
+          "var": "wb_migrants"
+        },
+        {
+          "label": "Carbon emissions",
+          "var": "wb_co2_pc"
+        },
+        {
+          "label": "Freedom House score",
+          "var": "idx_freedomHouse"
+        }
+      ]
+    },
+    "08": {
+      "name": "Fast-Growing Resource-Rich States",
+      "line": "Wealthy resource economies with fast-growing populations{world:wb_pop_growth>90} in which migrants are a large share of residents{world:wb_migrants>90}.",
+      "portrait": "Populations grow {range:wb_pop_growth}, and international migrants are {range:wb_migrants} of residents. Industry makes up {range:wb_industry} of the economy and natural-resource rents {range:wb_resource_rents}. Income per person is {range:wb_gdppc_ppp} in purchasing-power terms, and Freedom House rates all four Not Free ({range:idx_freedomHouse}).{every:idx_freedomHouse_rating=Not Free}",
+      "facts": [
+        {
+          "label": "Population growth",
+          "var": "wb_pop_growth"
+        },
+        {
+          "label": "Residents born abroad",
+          "var": "wb_migrants"
+        },
+        {
+          "label": "Industry (share of economy)",
+          "var": "wb_industry"
+        },
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        }
+      ]
+    },
+    "09": {
+      "name": "Small Democracies with Little Industry",
+      "line": "Small democracies with shorter lives than in most countries{world:wb_life_expectancy<50} and, where reported, little industry{world:wb_industry<50}.{every:idx_freedomHouse_rating=Free}",
+      "portrait": "Each has fewer than {under:wb_population=1000000}. All {size} are rated Free by Freedom House, with scores of {range:idx_freedomHouse}.{every:idx_freedomHouse_rating=Free} Income per person is {range:wb_gdppc_ppp} in purchasing-power terms. Where reported, industry makes up only {range:wb_industry} of the economy. Life expectancy is {range:wb_life_expectancy}. English is an official language in every one.{all:lang_english}",
+      "facts": [
+        {
+          "label": "Freedom House score",
+          "var": "idx_freedomHouse"
+        },
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        },
+        {
+          "label": "Life expectancy",
+          "var": "wb_life_expectancy"
+        },
+        {
+          "label": "Human Development Index",
+          "var": "idx_hdi"
+        }
+      ]
+    },
+    "10": {
+      "name": "Small Remittance-Reliant Democracies",
+      "line": "Small, service-based democracies that rely on money sent home from abroad{world:wb_remittances>75}.{every:idx_freedomHouse_rating=Free}",
+      "portrait": "Populations are {range:wb_population}. Services make up {range:wb_services} of the economy, and remittances sent home from abroad equal {range:wb_remittances} of GDP. Income per person is {range:wb_gdppc_ppp} in purchasing-power terms, and all three are rated Free by Freedom House.{every:idx_freedomHouse_rating=Free} Portuguese is an official language in each.{all:lang_portuguese}",
+      "facts": [
+        {
+          "label": "Population",
+          "var": "wb_population"
+        },
+        {
+          "label": "Remittances (share of GDP)",
+          "var": "wb_remittances"
+        },
+        {
+          "label": "Services (share of economy)",
+          "var": "wb_services"
+        },
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        }
+      ]
+    },
+    "11": {
+      "name": "Democracies with a Relatively Free Press",
+      "line": "Democracies with a relatively free press{world:idx_rsfPress>60} and little reliance on money sent home from abroad{world:wb_remittances<35}.{every:idx_freedomHouse_rating=Free}",
+      "portrait": "All four are rated Free by Freedom House, with scores of {range:idx_freedomHouse}, and RSF press-freedom scores run {range:idx_rsfPress}.{every:idx_freedomHouse_rating=Free} Income per person is {range:wb_gdppc_ppp} in purchasing-power terms. Remittances are small, at {range:wb_remittances} of GDP, and {range:wb_tertiary} of young people enrol in higher education. English is an official language in all four.{all:lang_english}",
+      "facts": [
+        {
+          "label": "Freedom House score",
+          "var": "idx_freedomHouse"
+        },
+        {
+          "label": "Press freedom (RSF)",
+          "var": "idx_rsfPress"
+        },
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        },
+        {
+          "label": "Enrolled in higher education",
+          "var": "wb_tertiary"
+        }
+      ]
+    },
+    "12": {
+      "name": "Small Resource-Rich Democracies",
+      "line": "Small, resource-rich democracies{world:wb_resource_rents>60} with high homicide rates{world:wb_homicide>70}.{every:idx_freedomHouse_rating=Free}",
+      "portrait": "Natural-resource rents make up {range:wb_resource_rents} of the economy, and populations are {range:wb_population}. Homicide rates run {range:wb_homicide}, higher than in most countries. All three are rated Free by Freedom House ({range:idx_freedomHouse}){every:idx_freedomHouse_rating=Free}, and the Economist rates each a flawed democracy.{every:idx_economist_rating=Flawed democracy} RSF press-freedom scores run {range:idx_rsfPress}.",
+      "facts": [
+        {
+          "label": "Natural-resource rents (share of economy)",
+          "var": "wb_resource_rents"
+        },
+        {
+          "label": "Population",
+          "var": "wb_population"
+        },
+        {
+          "label": "Homicides",
+          "var": "wb_homicide"
+        },
+        {
+          "label": "Freedom House score",
+          "var": "idx_freedomHouse"
+        }
+      ]
+    },
+    "13": {
+      "name": "Small English-Speaking Service Democracies",
+      "line": "Small, service-based democracies{world:wb_services>45} with almost no natural-resource income, all rated Free.{every:idx_freedomHouse_rating=Free}{all:lang_english}",
+      "portrait": "Services make up {range:wb_services} of the economy and natural-resource rents just {range:wb_resource_rents}. Freedom House scores run {range:idx_freedomHouse}, and the World Justice Project scores their rule of law {range:idx_wjpRuleOfLaw}.{every:idx_freedomHouse_rating=Free} English is an official language in all {size}.{all:lang_english}",
+      "facts": [
+        {
+          "label": "Services (share of economy)",
+          "var": "wb_services"
+        },
+        {
+          "label": "Freedom House score",
+          "var": "idx_freedomHouse"
+        },
+        {
+          "label": "Rule of Law Index",
+          "var": "idx_wjpRuleOfLaw"
+        },
+        {
+          "label": "Natural-resource rents (share of economy)",
+          "var": "wb_resource_rents"
+        }
+      ]
+    },
+    "14": {
+      "name": "Low-Inequality Societies, Mid-Ranking Democracy Scores",
+      "line": "Societies with small income gaps{world:wb_gini<50}, few children{world:wb_age_0_14<40} and mid-ranking democracy scores{world:idx_freedomHouse>30}{world:idx_freedomHouse<70}.",
+      "portrait": "Income gaps are small, with Gini indices of {range:wb_gini}, and {range:wb_age_0_14} of people are under 15. Income per person is {range:wb_gdppc_ppp} in purchasing-power terms, and life expectancy is {range:wb_life_expectancy}. Freedom House scores run {range:idx_freedomHouse}. Where surveyed, only {range:wvs_trust} of people say most others can be trusted.",
+      "facts": [
+        {
+          "label": "Income inequality (Gini)",
+          "var": "wb_gini"
+        },
+        {
+          "label": "Aged under 15",
+          "var": "wb_age_0_14"
+        },
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        },
+        {
+          "label": "Freedom House score",
+          "var": "idx_freedomHouse"
+        }
+      ]
+    },
+    "15": {
+      "name": "Very High Human-Development, Mid-Ranking Governance",
+      "line": "Societies with very high human-development scores{every:idx_hdi_rating=Very High} and anti-corruption scores in the world's upper-middle range{world:idx_cpi>60}{world:idx_cpi<85}.",
+      "portrait": "Human Development Index scores run {range:idx_hdi}, and income per person is {range:wb_gdppc_ppp} in purchasing-power terms. They score {range:idx_cpi} on the Corruption Perceptions Index. Where reported, the World Justice Project scores their rule of law {range:idx_wjpRuleOfLaw}. Homicide rates are {range:wb_homicide}, no higher than the world median{world:wb_homicide<51}. Where surveyed, only {range:wvs_trust} of people say most others can be trusted.",
+      "facts": [
+        {
+          "label": "Human Development Index",
+          "var": "idx_hdi"
+        },
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        },
+        {
+          "label": "Corruption Perceptions Index",
+          "var": "idx_cpi"
+        },
+        {
+          "label": "Homicides",
+          "var": "wb_homicide"
+        }
+      ]
+    },
+    "16": {
+      "name": "Electoral Democracies, Stable Populations",
+      "line": "Electoral democracies with larger farm sectors than most countries{world:wb_agriculture>50} and populations that are barely growing or shrinking{world:wb_pop_growth<40}.{every:idx_vDem_rating=Electoral Democracy}",
+      "portrait": "Agriculture makes up {range:wb_agriculture} of the economy, and populations are changing by only {range:wb_pop_growth}. V-Dem classifies all three as electoral democracies, with liberal-democracy scores of {range:idx_vDem}.{every:idx_vDem_rating=Electoral Democracy} Carbon emissions are low, at {range:wb_co2_pc}{world:wb_co2_pc<50}.",
+      "facts": [
+        {
+          "label": "Agriculture (share of economy)",
+          "var": "wb_agriculture"
+        },
+        {
+          "label": "Population growth",
+          "var": "wb_pop_growth"
+        },
+        {
+          "label": "Liberal Democracy Index (V-Dem)",
+          "var": "idx_vDem"
+        },
+        {
+          "label": "Carbon emissions",
+          "var": "wb_co2_pc"
+        }
+      ]
+    },
+    "17": {
+      "name": "Industry-Heavy Economies, Few Immigrants",
+      "line": "Economies with very few immigrants{world:wb_migrants<15} and, where reported, large industrial sectors{world:wb_industry>65} and small service sectors{world:wb_services<35}.",
+      "portrait": "International migrants are just {range:wb_migrants} of residents. Where reported, industry makes up {range:wb_industry} of the economy and services only {range:wb_services}, and trade equals {range:wb_trade} of GDP. Where reported, Human Development Index scores run {range:idx_hdi}.",
+      "facts": [
+        {
+          "label": "Residents born abroad",
+          "var": "wb_migrants"
+        },
+        {
+          "label": "Diplomatic posts abroad (Lowy Institute)",
+          "var": "idx_gdi"
+        },
+        {
+          "label": "Ecological Threat Report (higher = more threat)",
+          "var": "idx_etr"
+        },
+        {
+          "label": "Corruption Perceptions Index",
+          "var": "idx_cpi"
+        }
+      ]
+    },
+    "18": {
+      "name": "Long-Independent States, Low Rule-of-Law Scores",
+      "line": "Long-independent middle-income states with low rule-of-law scores{world:idx_wjpRuleOfLaw<30} and high homicide rates{world:wb_homicide>60}.{every:wb_income_group=Lower middle income|Upper middle income}",
+      "portrait": "All became independent between {between:hist_independence_year}. The World Justice Project scores their rule of law {range:idx_wjpRuleOfLaw}, and homicide rates run {range:wb_homicide}. Where reported, life satisfaction scores {range:idx_happiness} on the World Happiness Report, close to or above the world median{world:idx_happiness>40}.",
+      "facts": [
+        {
+          "label": "Rule of Law Index",
+          "var": "idx_wjpRuleOfLaw"
+        },
+        {
+          "label": "Homicides",
+          "var": "wb_homicide"
+        },
+        {
+          "label": "Independence",
+          "var": "hist_independence_year"
+        },
+        {
+          "label": "Corruption Perceptions Index",
+          "var": "idx_cpi"
+        }
+      ]
+    },
+    "19": {
+      "name": "Urbanised Spanish- and Portuguese-Speaking Societies",
+      "line": "Urbanised societies where Spanish or Portuguese is an official language{all:lang_spanish|lang_portuguese}, with life expectancies above the world median{world:wb_life_expectancy>50}{world:wb_urban>49}.",
+      "portrait": "Between {between:wb_urban} of people live in cities, and life expectancy is {range:wb_life_expectancy}. Fertility is {range:wb_fertility}. Where reported, income per person is {range:wb_gdppc_ppp} in purchasing-power terms, and life satisfaction scores {range:idx_happiness} on the World Happiness Report, above the world median{world:idx_happiness>50}. Where surveyed, only {range:wvs_trust} of people say most others can be trusted.",
+      "facts": [
+        {
+          "label": "Living in cities",
+          "var": "wb_urban"
+        },
+        {
+          "label": "Life expectancy",
+          "var": "wb_life_expectancy"
+        },
+        {
+          "label": "Fertility",
+          "var": "wb_fertility"
+        },
+        {
+          "label": "Human Development Index",
+          "var": "idx_hdi"
+        }
+      ]
+    },
+    "20": {
+      "name": "Low-Birth-Rate States, Below-Median Democracy Scores",
+      "line": "Middle- and high-income states with very low birth rates{world:wb_fertility<25}, long Olympic records and liberal-democracy scores below the world median{world:idx_vDem<50}.{every:wb_income_group=Upper middle income|High income}",
+      "portrait": "Fertility is just {range:wb_fertility}, and life expectancy {range:wb_life_expectancy}. V-Dem scores their liberal democracy {range:idx_vDem}. Each has won {range:sport_summer_medals} Summer Olympic medals. On the World Values Survey, only {range:wvs_postmaterialist_first} put free speech or more say in government first among national aims.",
+      "facts": [
+        {
+          "label": "Fertility",
+          "var": "wb_fertility"
+        },
+        {
+          "label": "Liberal Democracy Index (V-Dem)",
+          "var": "idx_vDem"
+        },
+        {
+          "label": "Summer Olympic medals",
+          "var": "sport_summer_medals"
+        },
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        }
+      ]
+    },
+    "21": {
+      "name": "Young Resource Economies, Low Freedom Scores",
+      "line": "Young, resource-rich economies{world:wb_resource_rents>70}{world:wb_age_0_14>55} with low freedom scores{world:idx_freedomHouse<30}.{every:idx_freedomHouse_rating=Not Free}",
+      "portrait": "Natural-resource rents make up {range:wb_resource_rents} of the economy, fertility is {range:wb_fertility}, and {range:wb_age_0_14} of people are under 15. Freedom House rates all five Not Free, with scores of {range:idx_freedomHouse}.{every:idx_freedomHouse_rating=Not Free} Where surveyed, {range:wvs_happy} of people say they are very or quite happy.",
+      "facts": [
+        {
+          "label": "Natural-resource rents (share of economy)",
+          "var": "wb_resource_rents"
+        },
+        {
+          "label": "Fertility",
+          "var": "wb_fertility"
+        },
+        {
+          "label": "Aged under 15",
+          "var": "wb_age_0_14"
+        },
+        {
+          "label": "Freedom House score",
+          "var": "idx_freedomHouse"
+        }
+      ]
+    },
+    "22": {
+      "name": "Traditional-Values Middle-Income Societies",
+      "line": "Middle-income societies with strongly traditional values on the World Values Survey{world:wvs_god_importance>50} and low press-freedom scores{world:idx_rsfPress<40}.{every:wb_income_group=Lower middle income|Upper middle income}",
+      "portrait": "On the World Values Survey, people rate the importance of God at {range:wvs_god_importance} and the justifiability of abortion at just {range:wvs_abortion_justifiable}. Income per person is {range:wb_gdppc_usd} at market exchange rates, and RSF press-freedom scores run {range:idx_rsfPress}. Human Development Index scores run {range:idx_hdi}.",
+      "facts": [
+        {
+          "label": "Income per person (US$)",
+          "var": "wb_gdppc_usd"
+        },
+        {
+          "label": "Press freedom (RSF)",
+          "var": "idx_rsfPress"
+        },
+        {
+          "label": "Human Development Index",
+          "var": "idx_hdi"
+        },
+        {
+          "label": "Corruption Perceptions Index",
+          "var": "idx_cpi"
+        }
+      ]
+    },
+    "23": {
+      "name": "Traditional-Values States, Low Freedom Scores",
+      "line": "Middle-income states with low liberal-democracy scores{world:idx_vDem<45} and press-freedom scores below the world median{world:idx_rsfPress<50}; where surveyed, values are strongly traditional{world:wvs_god_importance>50}.{every:wb_income_group=Lower middle income|Upper middle income}",
+      "portrait": "V-Dem rates their liberal democracy {range:idx_vDem}, and RSF press-freedom scores run {range:idx_rsfPress}. Where reported, Freedom House scores run {range:idx_freedomHouse}. Where surveyed, people rate the importance of God at {range:wvs_god_importance}. Fertility is {range:wb_fertility}.",
+      "facts": [
+        {
+          "label": "Liberal Democracy Index (V-Dem)",
+          "var": "idx_vDem"
+        },
+        {
+          "label": "Press freedom (RSF)",
+          "var": "idx_rsfPress"
+        },
+        {
+          "label": "Fertility",
+          "var": "wb_fertility"
+        },
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        }
+      ]
+    },
+    "24": {
+      "name": "Conflict-Affected Low-Income States",
+      "line": "Low-income states marked by conflict, with among the world's lowest peace scores{world:idx_gpi>90} and very few women in paid work{world:wb_female_lfp<10}.",
+      "portrait": "Peace Index scores of {range:idx_gpi} are among the world's least peaceful, and Freedom House scores run just {range:idx_freedomHouse}. Only {range:wb_female_lfp} of women are in the labour force, and {range:wb_internet} of people use the internet. Populations grow {range:wb_pop_growth}.",
+      "facts": [
+        {
+          "label": "Peace Index (lower = more peaceful)",
+          "var": "idx_gpi"
+        },
+        {
+          "label": "Women in the labour force",
+          "var": "wb_female_lfp"
+        },
+        {
+          "label": "Using the internet",
+          "var": "wb_internet"
+        },
+        {
+          "label": "Freedom House score",
+          "var": "idx_freedomHouse"
+        }
+      ]
+    },
+    "25": {
+      "name": "Young Economies, Shorter Life Expectancy",
+      "line": "Young economies{world:wb_age_0_14>65} where life expectancy is below that of most countries{world:wb_life_expectancy<30} and carbon emissions are very low{world:wb_co2_pc<30}.",
+      "portrait": "Between {between:wb_age_0_14} of people are under 15, and life expectancy is {range:wb_life_expectancy}. Income per person is {range:wb_gdppc_ppp} in purchasing-power terms, and Human Development Index scores run {range:idx_hdi}. Carbon emissions are just {range:wb_co2_pc}. Where reported, life satisfaction is low, at {range:idx_happiness} on the World Happiness Report{world:idx_happiness<25}.",
+      "facts": [
+        {
+          "label": "Aged under 15",
+          "var": "wb_age_0_14"
+        },
+        {
+          "label": "Life expectancy",
+          "var": "wb_life_expectancy"
+        },
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        },
+        {
+          "label": "Human Development Index",
+          "var": "idx_hdi"
+        }
+      ]
+    },
+    "26": {
+      "name": "Young Agrarian Economies",
+      "line": "Fast-growing populations{world:wb_pop_growth>70} where many people still lack electricity{world:wb_electricity<25} and, where reported, farming is a large share of the economy{world:wb_agriculture>75}.",
+      "portrait": "Where reported, agriculture makes up {range:wb_agriculture} of the economy{world:wb_agriculture>75}. Between {between:wb_electricity} of people have electricity. Fertility is {range:wb_fertility}, and populations grow {range:wb_pop_growth}. Freedom House scores run {range:idx_freedomHouse}.",
+      "facts": [
+        {
+          "label": "With electricity",
+          "var": "wb_electricity"
+        },
+        {
+          "label": "Fertility",
+          "var": "wb_fertility"
+        },
+        {
+          "label": "Population growth",
+          "var": "wb_pop_growth"
+        },
+        {
+          "label": "Freedom House score",
+          "var": "idx_freedomHouse"
+        }
+      ]
+    },
+    "27": {
+      "name": "Very Young, Very Low-Income States",
+      "line": "Among the world's lowest-income states, with very young populations and little access to electricity{world:wb_electricity<5}.",
+      "portrait": "Income per person is just {range:wb_gdppc_ppp} in purchasing-power terms, and only {range:wb_electricity} of people have electricity. Between {between:wb_age_0_14} of people are under 15, and life expectancy is {range:wb_life_expectancy}. Freedom House rates all four Not Free ({range:idx_freedomHouse}).{every:idx_freedomHouse_rating=Not Free}",
+      "facts": [
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        },
+        {
+          "label": "With electricity",
+          "var": "wb_electricity"
+        },
+        {
+          "label": "Aged under 15",
+          "var": "wb_age_0_14"
+        },
+        {
+          "label": "Life expectancy",
+          "var": "wb_life_expectancy"
+        }
+      ]
+    },
+    "28": {
+      "name": "Very Young Rural States",
+      "line": "Very young{world:wb_age_0_14>75}, mostly rural states{world:wb_urban<20} where lives are shorter than in most countries{world:wb_life_expectancy<25}.",
+      "portrait": "Only {range:wb_urban} of people live in cities, and {range:wb_age_0_14} are under 15. Income per person is {range:wb_gdppc_ppp} in purchasing-power terms, and life expectancy is {range:wb_life_expectancy}. Where reported, Peace Index scores of {range:idx_gpi} are among the least peaceful{world:idx_gpi>85}.",
+      "facts": [
+        {
+          "label": "Living in cities",
+          "var": "wb_urban"
+        },
+        {
+          "label": "Aged under 15",
+          "var": "wb_age_0_14"
+        },
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        },
+        {
+          "label": "Life expectancy",
+          "var": "wb_life_expectancy"
+        }
+      ]
+    },
+    "29": {
+      "name": "Young, Steadily Growing States",
+      "line": "Young states with steadily growing populations, limited access to electricity{world:wb_electricity<30} and peace scores near the world's middle{world:idx_gpi>30}{world:idx_gpi<75}.",
+      "portrait": "Populations grow {range:wb_pop_growth}, and fertility is {range:wb_fertility}. Income per person is {range:wb_gdppc_ppp} in purchasing-power terms, and {range:wb_electricity} of people have electricity. Peace Index scores of {range:idx_gpi} are close to the world's middle.",
+      "facts": [
+        {
+          "label": "Population growth",
+          "var": "wb_pop_growth"
+        },
+        {
+          "label": "Fertility",
+          "var": "wb_fertility"
+        },
+        {
+          "label": "Income per person (PPP)",
+          "var": "wb_gdppc_ppp"
+        },
+        {
+          "label": "With electricity",
+          "var": "wb_electricity"
+        }
+      ]
+    },
+    "30": {
+      "name": "Sparsely Populated Young Economies",
+      "line": "Young, thinly populated economies{world:wb_density<40}{world:wb_age_0_14>75} with more natural-resource income than most countries{world:wb_resource_rents>60}.",
+      "portrait": "Population density is only {range:wb_density}, and natural-resource rents make up {range:wb_resource_rents} of the economy. Fertility is {range:wb_fertility}, and life expectancy is {range:wb_life_expectancy}. Freedom House scores run {range:idx_freedomHouse}, and V-Dem classifies all five as electoral autocracies.{every:idx_vDem_rating=Electoral Autocracy}",
+      "facts": [
+        {
+          "label": "Population density",
+          "var": "wb_density"
+        },
+        {
+          "label": "Natural-resource rents (share of economy)",
+          "var": "wb_resource_rents"
+        },
+        {
+          "label": "Fertility",
+          "var": "wb_fertility"
+        },
+        {
+          "label": "Freedom House score",
+          "var": "idx_freedomHouse"
+        }
+      ]
+    }
   }
- },
- "types": {
-  "A01": {
-   "name": "Influential High-Income Societies",
-   "line": "The group's largest global profile, with the highest integrity scores and many migrant residents.",
-   "portrait": "These 14 countries have the highest Soft Power scores in their group and a Corruption Perceptions Index average of 76 of 100 (Transparency International, 2025). About one resident in five was born abroad. In the World Values Survey, more people than elsewhere in the group have signed a petition, and more say homosexuality and abortion can be justified.",
-   "claims": [["idx_softPower", "+"], ["idx_cpi", "+"], ["wb_migrants", "+"], ["wvs_petition_signed", "+"], ["wvs_homosexuality_justifiable", "+"], ["wvs_abortion_justifiable", "+"]]
-  },
-  "A02": {
-   "name": "Small Wealthy Service Hubs",
-   "line": "Very small, very high-income economies built on services and trade, with the highest share of foreign-born residents.",
-   "portrait": "These 6 countries have the highest incomes in the classification, over $100,000 per person at purchasing-power parity, and five of the six have fewer than 1.5 million people. Services dominate their economies, trade averages more than twice their GDP, and about two residents in five were born abroad.",
-   "claims": [["wb_gdppc_ppp", "+"], ["wb_population", "-"], ["wb_services", "+"], ["wb_trade", "+"], ["wb_migrants", "+"]]
-  },
-  "A03": {
-   "name": "Mid-sized High-Income Societies",
-   "line": "Mid-sized, high-income societies with some of the highest Freedom House 2026 scores and a lower global profile than their group.",
-   "portrait": "These 12 countries have populations of around 6.5 million on average and incomes above $50,000 per person at purchasing-power parity. They average 94 of 100 on Freedom House's 2026 index, and all 12 are rated Free. Compared with the rest of their group they score lower on the Soft Power Index, and a smaller share of people live in cities.",
-   "claims": [["wb_population", "-"], ["idx_freedomHouse", "+"], ["idx_softPower", "-"], ["wb_urban", "-"]]
-  },
-  "A04": {
-   "name": "Large Low-Birth-Rate Societies",
-   "line": "Large societies with the oldest populations and the lowest birth rates in the classification.",
-   "portrait": "These 8 countries average over 70 million people each. They have the lowest fertility in the classification, 1.21 children per woman, and one person in five is 65 or older. Fewer residents were born abroad than elsewhere in the group, and they score lower than their group on Transparency International's 2025 Corruption Perceptions Index (52 of 100).",
-   "claims": [["wb_population", "+"], ["wb_fertility", "-"], ["wb_age_65_up", "+"], ["wb_migrants", "-"], ["idx_cpi", "-"]]
-  },
-  "B05": {
-   "name": "Very Small Service Economies",
-   "line": "The smallest states, with service-based economies and high Freedom House 2026 scores.",
-   "portrait": "These 19 countries average about 300,000 people each. All 19 are rated Free by Freedom House (2026), averaging 88 of 100. Incomes are close to the world average, services make up a larger share of the economy than in the rest of the group, and about one resident in six was born abroad.",
-   "claims": [["wb_population", "-"], ["idx_freedomHouse", "+"], ["wb_services", "+"], ["wb_migrants", "+"]]
-  },
-  "B06": {
-   "name": "Small Ageing States",
-   "line": "Small states whose populations are older and have fewer children than the rest of their group.",
-   "portrait": "These 8 countries average about 1.2 million people. They are older than the rest of their group, with 14% of people aged 65 or over and 1.51 children per woman. They score higher on the Soft Power Index than their group, and lower on Freedom House's 2026 index (77 of 100; 5 rated Free and 3 Partly Free).",
-   "claims": [["wb_age_65_up", "+"], ["wb_fertility", "-"], ["idx_softPower", "+"], ["idx_freedomHouse", "-"]]
-  },
-  "B07": {
-   "name": "Small Young Rural States",
-   "line": "Small states with young, mostly rural populations and limited internet access.",
-   "portrait": "These 8 countries have the youngest populations in their group, averaging 3 children per woman. Only a third of people live in cities, farming weighs more in the economy, and fewer people use the internet or have electricity than elsewhere in the group. All 8 are rated Free by Freedom House (2026).",
-   "claims": [["wb_fertility", "+"], ["wb_age_0_14", "+"], ["wb_urban", "-"], ["wb_agriculture", "+"], ["wb_internet", "-"], ["wb_electricity", "-"]]
-  },
-  "C08": {
-   "name": "Older Middle-Income Countries",
-   "line": "Middle-income countries with older, slow-growing or shrinking populations.",
-   "portrait": "These 13 countries have the oldest populations in their group, with 17% of people aged 65 or over, and populations that are, on average, slightly shrinking. They are smaller than the rest of their group, at about 14 million people on average, and score higher on RSF's 2026 World Press Freedom Index.",
-   "claims": [["wb_age_65_up", "+"], ["wb_pop_growth", "-"], ["wb_population", "-"], ["idx_rsfPress", "+"]]
-  },
-  "C09": {
-   "name": "Populous Middle-Income Countries",
-   "line": "Very populous middle-income countries, together home to more than half of humanity.",
-   "portrait": "These 25 countries average about 180 million people each and together hold 55% of the world's population. Their populations are younger and still growing compared with the rest of their group. They average 36 of 100 on Freedom House's 2026 index (13 Partly Free, 11 Not Free and 1 Free) and score lower on RSF's 2026 World Press Freedom Index than their group.",
-   "claims": [["wb_population", "+"], ["wb_age_65_up", "-"], ["wb_pop_growth", "+"], ["idx_freedomHouse", "-"], ["idx_rsfPress", "-"]]
-  },
-  "D10": {
-   "name": "Young Resource Economies",
-   "line": "The whole of group D: its members did not divide into stable types.",
-   "portrait": "Group D forms a single type: no split of its 42 countries was stable enough to publish, so they are described together. See group D.",
-   "claims": []
-  },
-  "E11": {
-   "name": "High-Fertility Agrarian Countries",
-   "line": "Young agrarian countries with the highest birth rates in the classification.",
-   "portrait": "These 21 countries have the highest fertility in the classification, 4.35 children per woman, and the largest share of children. Fewer than four in ten people live in cities. They score higher than the rest of their group on the V-Dem 2026 Liberal Democracy Index, though 13 of the 21 are rated Not Free by Freedom House (2026).",
-   "claims": [["wb_fertility", "+"], ["wb_age_0_14", "+"], ["wb_urban", "-"], ["idx_vDem", "+"]]
-  },
-  "E12": {
-   "name": "Agrarian Countries, Lowest Freedom Scores",
-   "line": "Agrarian countries with the lowest scores in the classification on Freedom House 2026 and Transparency International 2025.",
-   "portrait": "These 18 countries average about 16 of 100 on Freedom House's 2026 index, and 15 of the 18 are rated Not Free. They also average 19 of 100 on Transparency International's 2025 Corruption Perceptions Index, the lowest of any type. Compared with the rest of their group, birth rates are lower, life expectancy is higher and more young people enrol in higher education.",
-   "claims": [["idx_freedomHouse", "-"], ["idx_cpi", "-"], ["wb_fertility", "-"], ["wb_life_expectancy", "+"], ["wb_tertiary", "+"]]
-  }
- }
 }

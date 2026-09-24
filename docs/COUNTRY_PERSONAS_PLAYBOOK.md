@@ -1,6 +1,13 @@
 # Country Personas — how Experian builds Mosaic, and a playbook for clustering our 195 countries
 
-**Status:** research and design only. No classification has been built or shipped.
+**Status:** the method document. Edition 2026 is built and shipped. Version 2 has 30 personas
+on one level and replaced version 1 at the owner's request. The two-level plan below is where
+the work started. [`COUNTRY_PERSONAS_LEDGER.md`](COUNTRY_PERSONAS_LEDGER.md) (D9–D16) records
+where v2 departs from it:
+- a hard 1-SD boundary;
+- quotable figures only;
+- calibrated weights;
+- one level.
 **Date:** 2026-09-24 · **Pilot code:** [`docs/country-personas/`](country-personas/) (Appendix A)
 **Working name:** "Country Personas". *Mosaic* is Experian's registered trademark, so it must
 not appear in any user-facing text. In this document "Mosaic" always means Experian's product.

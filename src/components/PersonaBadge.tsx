@@ -2,19 +2,17 @@ import { COUNTRY_PERSONAS } from "../data/countryPersonas";
 import {
   PERSONA_AVERAGES_NOTE,
   PERSONA_EDITION,
-  PERSONA_GROUP_COLORS,
   isBorderline,
-  personaGroupByCode,
-  personaGroupLabel,
-  personaTypeByCode,
-  personaTypeLabel,
+  personaByCode,
+  personaColor,
+  personaLabel,
 } from "../lib/countryPersonas";
-import { PersonaGroupTip, PersonaTip, PersonaTypeTip } from "./PersonaTip";
+import { PersonaInfoTip, PersonaSwatch, PersonaTip } from "./PersonaTip";
 
 /**
- * The fact-sheet "Country persona" row value: the country's persona group and type, each a
- * badge whose tooltip (hover or tap) explains that cluster. A borderline country says which
- * group it sits closest to after its own; an unclassified one says why it has no persona.
+ * The fact-sheet "Country persona" row value: the country's persona as a badge whose tooltip
+ * (hover or tap) explains it. A country close to the border with another persona says which;
+ * an unclassified one says why it has no persona.
  */
 export function PersonaBadge({ code, countryName }: { code: string; countryName: string }) {
   const p = COUNTRY_PERSONAS[code];
@@ -29,27 +27,28 @@ export function PersonaBadge({ code, countryName }: { code: string; countryName:
       />
     );
   }
-  const group = personaGroupByCode(p.group);
-  const type = personaTypeByCode(p.type);
-  if (!group || !type) return null;
-  const second = isBorderline(p) ? personaGroupByCode(p.secondGroup) : null;
+  const persona = personaByCode(p.persona);
+  if (!persona) return null;
+  const second = isBorderline(p) ? personaByCode(p.secondPersona) : null;
   return (
     <span className="persona-badges">
-      <PersonaGroupTip
-        group={group}
+      <PersonaInfoTip
+        persona={persona}
         label={
           <>
-            <span className="persona-badges__swatch" style={{ backgroundColor: PERSONA_GROUP_COLORS[group.code] }} aria-hidden="true" />
-            {personaGroupLabel(group)}
+            <PersonaSwatch color={personaColor(persona.code)} />
+            {personaLabel(persona)}
           </>
         }
       />
-      {type.code !== group.code && group.typeCodes.length > 1 && (
-        <PersonaTypeTip type={type} label={personaTypeLabel(type)} />
-      )}
       {second && (
         <span className="persona-badges__note">
-          Sits between {group.code} and {second.code}: close to the border with {personaGroupLabel(second)}.
+          Also close to{" "}
+          <PersonaInfoTip
+            persona={second}
+            className="persona-tip-anchor--plain"
+            label={personaLabel(second)}
+          />
         </span>
       )}
       {p.status === "provisional" && (

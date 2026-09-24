@@ -103,6 +103,8 @@ on:
       - "src/lib/wvsResults.ts"
       - "scripts/build-country-personas.mjs"
       - "scripts/check-country-personas.mjs"
+      - "scripts/lib/personaText.mjs"
+      - "scripts/lib/personaLint.mjs"
       - "scripts/data/country-personas-model.json"
       - "scripts/data/country-persona-portraits.json"
       - "scripts/data/country-persona-inputs.json"
@@ -416,9 +418,10 @@ jobs:
       - name: Verify WVS results data and Learn-mode wiring
         run: node scripts/check-wvs-results.mjs
 
-      # Country Personas: src/data/countryPersonas.ts must re-score exactly from the frozen,
-      # owner-approved model (no drift), and the data, copy lint, portrait claims and UI wiring
-      # must hold. Both import .ts modules, so they need this Node 24 job.
+      # Country Personas: src/data/countryPersonas.ts must match the frozen model exactly (core
+      # values recomputed, the 1-SD boundary held, every quoted figure re-derived from the
+      # snapshot), and the data, copy lint, colours and UI wiring must hold. The check imports
+      # .ts modules, so both run in this Node 24 job.
       - name: Verify Country Personas reproduce the frozen model
         run: node scripts/build-country-personas.mjs --check
       - name: Verify Country Personas data, copy and UI wiring
