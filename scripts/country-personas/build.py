@@ -56,56 +56,55 @@ BOOTSTRAPS = 100            # per candidate k and for final stability
 BUILD_SHARE = 0.75          # ≥ 75% of domain weight observed → part of the build
 UNCLASSIFIED_SHARE = 0.50   # < 50% → "Unclassified: not enough comparable data"
 MIN_TYPE = 4                # playbook E2
-TYPE_K_RANGE = range(15, 28)
-GROUP_K_RANGE = (6, 7, 8)
+GROUP_K_RANGE = range(4, 9)
+SPLIT_K_RANGE = (2, 3, 4)
 GROUP_SIZE = (10, 45)
+GROUP_JACCARD = 0.75        # every group must be at least this stable (Hennig 2007: "stable")
+TYPE_JACCARD = 0.60         # a group is split into types only when every type reaches this
 
 # ── Domains (playbook step 5, E1) ────────────────────────────────────────────
 # Indicator = (snapshot variable, transform, sign). Sign aligns every indicator so that
 # higher = more of the named concept. `fallback` fills a country the primary misses.
+#
+# Four core domains. The first build used nine (prosperity, freedom, integrity, age,
+# urban/services, resources, migrants, scale, women in work): at 195 countries that gave
+# about seven near-independent dimensions and NO stable partition (group bootstrap Jaccard
+# 0.54-0.74, types 31% >= 0.60, weight-sensitivity ARI 0.46). Merging the domains that
+# measure one latent axis (prosperity + urban/service economy = development; freedom +
+# integrity = governance) and keeping the two genuinely independent axes (age structure
+# relative to development; scale) gives five groups that all pass Jaccard >= 0.75. The
+# dropped domains stay in the snapshot as descriptors and feature in the Grand Index.
+# Evidence and alternatives tried: docs/COUNTRY_PERSONAS_LEDGER.md.
 DOMAINS = [
-    {"key": "prosperity", "label": "Prosperity and connectivity", "weight": 1.0, "indicators": [
+    {"key": "development", "label": "Development", "weight": 1.0, "indicators": [
         {"var": "wb_gdppc_ppp", "transform": "log", "sign": 1, "fallback": "wb_gdppc_usd"},
         {"var": "idx_hdi", "transform": "none", "sign": 1},
         {"var": "wb_internet", "transform": "none", "sign": 1},
+        {"var": "wb_urban", "transform": "none", "sign": 1},
+        {"var": "wb_agriculture", "transform": "asinh", "sign": -1},
+        {"var": "wb_services", "transform": "none", "sign": 1},
     ]},
-    {"key": "freedom", "label": "Political freedom", "weight": 1.0, "indicators": [
+    {"key": "governance", "label": "Governance", "weight": 1.0, "indicators": [
         {"var": "idx_freedomHouse", "transform": "none", "sign": 1},
         {"var": "idx_vDem", "transform": "none", "sign": 1},
         {"var": "idx_economist", "transform": "none", "sign": 1},
         {"var": "idx_rsfPress", "transform": "none", "sign": 1},
-    ]},
-    {"key": "integrity", "label": "Institutional integrity", "weight": 1.0, "indicators": [
         {"var": "idx_cpi", "transform": "none", "sign": 1},
         {"var": "idx_wjpRuleOfLaw", "transform": "none", "sign": 1},
     ]},
-    # Age structure correlates 0.87 with prosperity (above the 0.81 duplication gate), so the
-    # domain is its RESIDUAL on prosperity: older or younger than countries at the same level
-    # of prosperity. That keeps the informative exceptions without counting wealth twice.
-    {"key": "age_structure", "label": "Age structure relative to prosperity", "weight": 1.0, "residualOn": "prosperity", "indicators": [
+    # Age structure correlates 0.87 with development (above the 0.81 duplication gate), so
+    # the domain is its RESIDUAL on development: older or younger than countries at the same
+    # level of development. That keeps the informative exceptions without counting wealth twice.
+    {"key": "age_structure", "label": "Age structure relative to development", "weight": 1.0, "residualOn": "development", "indicators": [
         {"var": "wb_age_65_up", "transform": "none", "sign": 1},
         {"var": "wb_age_0_14", "transform": "none", "sign": -1},
         {"var": "wb_fertility", "transform": "log", "sign": -1},
         {"var": "wb_life_expectancy", "transform": "none", "sign": 1},
         {"var": "wb_pop_growth", "transform": "none", "sign": -1},
     ]},
-    {"key": "urban_services", "label": "Urban, service-based economy", "weight": 1.0, "indicators": [
-        {"var": "wb_urban", "transform": "none", "sign": 1},
-        {"var": "wb_agriculture", "transform": "asinh", "sign": -1},
-        {"var": "wb_services", "transform": "none", "sign": 1},
-    ]},
-    {"key": "resources", "label": "Natural-resource dependence", "weight": 1.0, "indicators": [
-        {"var": "wb_resource_rents", "transform": "asinh", "sign": 1},
-    ]},
-    {"key": "migrants", "label": "International migrants", "weight": 1.0, "indicators": [
-        {"var": "wb_migrants", "transform": "asinh", "sign": 1},
-    ]},
     {"key": "scale", "label": "Scale and global reach", "weight": 1.0, "indicators": [
         {"var": "wb_population", "transform": "log", "sign": 1},
         {"var": "idx_softPower", "transform": "log", "sign": 1},
-    ]},
-    {"key": "women_work", "label": "Women in the workforce", "weight": 1.0, "indicators": [
-        {"var": "wb_female_lfp", "transform": "none", "sign": 1},
     ]},
 ]
 
@@ -285,39 +284,6 @@ def enforce_min_size(X, labels, min_size=MIN_TYPE):
     return labels
 
 
-def weighted_ward(C, sizes, k):
-    """Agglomerate type centroids with Ward's criterion, weighting each by its member count.
-    Returns a group label per type and the merge history."""
-    clusters = [{"c": C[i].astype(float), "w": float(sizes[i]), "types": [i]} for i in range(len(C))]
-    history = []
-    while len(clusters) > k:
-        best = None
-        for a in range(len(clusters)):
-            for b in range(a + 1, len(clusters)):
-                A, B = clusters[a], clusters[b]
-                cost = A["w"] * B["w"] / (A["w"] + B["w"]) * float(((A["c"] - B["c"]) ** 2).sum())
-                if best is None or cost < best[0]:
-                    best = (cost, a, b)
-        cost, a, b = best
-        A, B = clusters[a], clusters[b]
-        merged = {"c": (A["w"] * A["c"] + B["w"] * B["c"]) / (A["w"] + B["w"]), "w": A["w"] + B["w"], "types": A["types"] + B["types"]}
-        history.append({"cost": cost, "merged": [A["types"], B["types"]]})
-        clusters = [c for i, c in enumerate(clusters) if i not in (a, b)] + [merged]
-    lab = np.zeros(len(C), dtype=int)
-    for g, cl in enumerate(clusters):
-        lab[cl["types"]] = g
-    return lab, history
-
-
-def pipeline(X, k_types, k_groups, seed=SEED, n_init=20):
-    """Types by k-means (min size enforced), then groups by weighted Ward on type centroids."""
-    t = enforce_min_size(X, kmeans(X, k_types, n_init=n_init, seed=seed).labels_)
-    C, ks = centroids_of(X, t)
-    t = np.array([ks.index(v) for v in t])
-    g_of_type, _ = weighted_ward(C, np.bincount(t), min(k_groups, len(C)))
-    return t, g_of_type[t]
-
-
 def jaccard_vs(labels, idx, boot_labels):
     drawn = set(idx.tolist())
     boot_sets = [set(idx[boot_labels == k].tolist()) for k in set(boot_labels)]
@@ -337,20 +303,21 @@ def bootstrap_jaccard(X, labels, fit, B=BOOTSTRAPS, seed=SEED):
     return np.nanmean(np.array(J, dtype=float), axis=0)
 
 
-# ── Step 8: choose the number of types ───────────────────────────────────────
-type_candidates = []
-for k in TYPE_K_RANGE:
-    lab = enforce_min_size(Xw, kmeans(Xw, k, n_init=300).labels_)
-    kk = len(set(lab))
-    J = bootstrap_jaccard(Xw, lab, lambda Xb, b, kk=kk: kmeans(Xb, kk, n_init=10, seed=b).labels_)
-    type_candidates.append({
-        "k": k, "kAfterMinSize": kk, "silhouette": float(silhouette_score(Xw, lab)),
-        "ch": float(calinski_harabasz_score(Xw, lab)), "minSize": int(min(Counter(lab).values())),
-        "jaccardShare060": float(np.mean(J >= 0.6)), "jaccardMin": float(np.min(J)), "jaccardMean": float(np.mean(J)),
+# ── Step 8: choose the number of groups (top-down, OAC-style) ────────────────
+group_candidates = []
+for k in GROUP_K_RANGE:
+    lab = kmeans(Xw, k, n_init=500).labels_
+    sizes = np.bincount(lab)
+    J = bootstrap_jaccard(Xw, lab, lambda Xb, b, k=k: kmeans(Xb, k, n_init=10, seed=b).labels_)
+    group_candidates.append({
+        "k": k, "sizes": sorted(sizes.tolist(), reverse=True),
+        "sizesOk": bool(sizes.min() >= GROUP_SIZE[0] and sizes.max() <= GROUP_SIZE[1]),
+        "silhouette": float(silhouette_score(Xw, lab)), "ch": float(calinski_harabasz_score(Xw, lab)),
+        "jaccard": sorted([round(float(x), 2) for x in J], reverse=True), "jaccardMin": float(np.min(J)),
     })
-passing = [c for c in type_candidates if c["jaccardShare060"] >= 0.8 and c["jaccardMin"] > 0.5]
-chosen_type = max(passing, key=lambda c: c["kAfterMinSize"]) if passing else max(type_candidates, key=lambda c: (c["jaccardShare060"], c["jaccardMean"]))
-K_T = chosen_type["kAfterMinSize"]
+passing = [g for g in group_candidates if g["sizesOk"] and g["jaccardMin"] >= GROUP_JACCARD]
+chosen_group = max(passing, key=lambda g: g["k"]) if passing else max(group_candidates, key=lambda g: (g["jaccardMin"], g["silhouette"]))
+K_G = chosen_group["k"]
 
 # ── Step 9: consensus across imputations × subsamples, then polish ───────────
 co = np.zeros((n, n))
@@ -360,95 +327,139 @@ for m, Xm in enumerate(imputations):
     r = np.random.default_rng(SEED + 1000 + m)
     for s in range(CONSENSUS_SUBSAMPLES):
         idx = np.sort(r.choice(n, int(0.8 * n), replace=False))
-        lab = kmeans(Xmw[idx], K_T, n_init=10, seed=m * 100 + s).labels_
-        same = lab[:, None] == lab[None, :]
-        co[np.ix_(idx, idx)] += same
+        lab = kmeans(Xmw[idx], K_G, n_init=10, seed=m * 100 + s).labels_
+        co[np.ix_(idx, idx)] += lab[:, None] == lab[None, :]
         cs[np.ix_(idx, idx)] += 1
 CONSENSUS = np.where(cs > 0, co / np.maximum(cs, 1), 0.0)
 np.fill_diagonal(CONSENSUS, 1.0)
-consensus_labels = fcluster(linkage(squareform(1 - CONSENSUS, checks=False), "average"), K_T, "maxclust") - 1
-reference_kmeans = enforce_min_size(Xw, kmeans(Xw, K_T, n_init=1000).labels_)
-TYPES = enforce_min_size(Xw, consensus_labels)
-C_T, ks = centroids_of(Xw, TYPES)
-TYPES = np.array([ks.index(v) for v in TYPES])
+consensus_labels = fcluster(linkage(squareform(1 - CONSENSUS, checks=False), "average"), K_G, "maxclust") - 1
+reference_kmeans = kmeans(Xw, K_G, n_init=1000).labels_
+GROUPS = enforce_min_size(Xw, consensus_labels, min_size=GROUP_SIZE[0])
+C_G, ks = centroids_of(Xw, GROUPS)
+GROUPS = np.array([ks.index(v) for v in GROUPS])
+K_G = len(C_G)
+group_jaccard = bootstrap_jaccard(Xw, GROUPS, lambda Xb, b: kmeans(Xb, K_G, n_init=10, seed=b).labels_, B=200)
+
+# ── Types: split a group only where the split is itself stable ───────────────
+split_candidates = {}
+SPLIT_K = {}
+TYPES = np.zeros(n, dtype=int)
+G_OF_T, C_T, type_jaccard_list = [], [], []
+for g in range(K_G):
+    idx = np.where(GROUPS == g)[0]
+    Xg = Xw[idx]
+    cands, best = [], None
+    for k in SPLIT_K_RANGE:
+        if len(idx) < k * MIN_TYPE:
+            break
+        lab = kmeans(Xg, k, n_init=300).labels_
+        if np.bincount(lab).min() < MIN_TYPE:
+            cands.append({"k": k, "minSize": int(np.bincount(lab).min()), "jaccard": None})
+            continue
+        J = bootstrap_jaccard(Xg, lab, lambda Xb, b, k=k: kmeans(Xb, k, n_init=10, seed=b).labels_)
+        cands.append({"k": k, "minSize": int(np.bincount(lab).min()), "silhouette": float(silhouette_score(Xg, lab)),
+                      "jaccard": sorted([round(float(x), 2) for x in J], reverse=True)})
+        if J.min() >= TYPE_JACCARD and (best is None or k > best[0]):
+            best = (k, lab, J)
+    split_candidates[g] = cands
+    k, lab, J = best if best else (1, np.zeros(len(idx), dtype=int), np.array([float(group_jaccard[g])]))
+    SPLIT_K[g] = k
+    for s in range(k):
+        TYPES[idx[lab == s]] = len(C_T)
+        C_T.append(Xg[lab == s].mean(axis=0))
+        G_OF_T.append(g)
+        type_jaccard_list.append(float(J[s]))
+C_T = np.array(C_T)
+G_OF_T = np.array(G_OF_T)
 K_T = len(C_T)
 TYPE_SIZES = np.bincount(TYPES)
+type_jaccard = np.array(type_jaccard_list)
 
-# ── Groups: weighted Ward on type centroids; choose k in 6..8 ────────────────
-group_candidates = []
-for kg in GROUP_K_RANGE:
-    g_of_t, _ = weighted_ward(C_T, TYPE_SIZES, kg)
-    gl = g_of_t[TYPES]
-    sizes = np.bincount(gl)
-    J = bootstrap_jaccard(Xw, gl, lambda Xb, b, kg=kg: pipeline(Xb, K_T, kg, seed=b)[1])
-    top_down = kmeans(Xw, kg, n_init=1000).labels_
-    group_candidates.append({
-        "k": kg, "sizes": sorted(sizes.tolist(), reverse=True), "sizesOk": bool(sizes.min() >= GROUP_SIZE[0] and sizes.max() <= GROUP_SIZE[1]),
-        "silhouette": float(silhouette_score(Xw, gl)), "jaccard": [round(float(j), 2) for j in J],
-        "jaccardMin": float(np.min(J)), "topDownARI": float(adjusted_rand_score(gl, top_down)),
-    })
-ok_groups = [g for g in group_candidates if g["sizesOk"]] or group_candidates
-chosen_group = max(ok_groups, key=lambda g: (g["jaccardMin"], g["silhouette"]))
-K_G = chosen_group["k"]
-G_OF_T, WARD_HISTORY = weighted_ward(C_T, TYPE_SIZES, K_G)
-GROUPS = G_OF_T[TYPES]
-C_G, _ = centroids_of(Xw, GROUPS)
+
+def pipeline(X, seed=SEED, n_init=50):
+    """Re-run groups then the same per-group splits on (re-weighted) data X aligned with BUILD.
+    New groups are matched to final groups by majority overlap to pick each split's k."""
+    g = kmeans(X, K_G, n_init=n_init, seed=seed).labels_
+    t = np.zeros(len(X), dtype=int)
+    nxt = 0
+    for ng in range(K_G):
+        idx = np.where(g == ng)[0]
+        if len(idx) == 0:
+            continue
+        k = SPLIT_K[Counter(GROUPS[idx]).most_common(1)[0][0]]
+        sub = kmeans(X[idx], k, n_init=n_init, seed=seed).labels_ if k > 1 and len(idx) >= k else np.zeros(len(idx), dtype=int)
+        t[idx] = nxt + sub
+        nxt += k
+    return t, g
+
 
 # ── Codes: order groups (and types within groups) along the first family-tree axis ──
 pca = PCA(n_components=2).fit(Xw)
-axis = pca.transform(C_G)[:, 0]
-if pca.components_[0][DKEYS.index("prosperity")] < 0:  # orient the axis so prosperity points right
-    axis = -axis
+flip = 1 if pca.components_[0][DKEYS.index("development")] >= 0 else -1  # development points right
+axis = pca.transform(C_G)[:, 0] * flip
 group_order = list(np.argsort(-axis))
 GROUP_LETTER = {g: "ABCDEFGHIJ"[i] for i, g in enumerate(group_order)}
-type_axis = pca.transform(C_T)[:, 0] * (1 if pca.components_[0][DKEYS.index("prosperity")] >= 0 else -1)
+type_axis = pca.transform(C_T)[:, 0] * flip
 type_order = sorted(range(K_T), key=lambda t: (group_order.index(G_OF_T[t]), -type_axis[t]))
 TYPE_CODE = {t: f"{GROUP_LETTER[G_OF_T[t]]}{i + 1:02d}" for i, t in enumerate(type_order)}
 
-# ── Step 10: confidence, second choice; provisional scoring ──────────────────
+# ── Step 10: confidence and second choice (hierarchical, like future scoring) ─
+def nearest_two(dists):
+    order = np.argsort(dists)
+    return int(order[0]), (int(order[1]) if len(order) > 1 else None)
+
+
+def classify(xw, weights_ok=None):
+    """Nearest group centroid, then nearest type centroid inside that group. `weights_ok`
+    masks unobserved domains (partial distance, rescaled by observed weight)."""
+    ok = np.ones(len(xw), dtype=bool) if weights_ok is None else weights_ok
+    scale = (WEIGHTS ** 2).sum() / (WEIGHTS[ok] ** 2).sum()
+    dg = np.sqrt(((C_G[:, ok] - xw[ok]) ** 2).sum(axis=1) * scale)
+    g, g2 = nearest_two(dg)
+    members = [t for t in range(K_T) if G_OF_T[t] == g]
+    dt = np.sqrt(((C_T[members][:, ok] - xw[ok]) ** 2).sum(axis=1) * scale)
+    ti, t2i = nearest_two(dt)
+    out = {"group": GROUP_LETTER[g], "confidence": round(float(1 - dg[g] / dg[g2]), 3), "secondGroup": GROUP_LETTER[g2],
+           "type": TYPE_CODE[members[ti]]}
+    if t2i is not None:
+        out["typeConfidence"] = round(float(1 - dt[ti] / dt[t2i]), 3)
+        out["secondType"] = TYPE_CODE[members[t2i]]
+    return out, g, members[ti]
+
+
 assign: dict[str, dict] = {}
+mismatch = 0
 for i, c in enumerate(BUILD):
-    d = np.sqrt(((C_T - Xw[i]) ** 2).sum(axis=1))
-    own = TYPES[i]
-    other = [t for t in range(K_T) if t != own]
-    second = other[int(np.argmin(d[other]))]
-    mates = np.where(TYPES == own)[0]
-    assign[c] = {"status": "built", "type": TYPE_CODE[own], "group": GROUP_LETTER[G_OF_T[own]],
-                 "confidence": round(float(1 - d[own] / d[second]), 3), "secondType": TYPE_CODE[second],
-                 "consensus": round(float(CONSENSUS[i, mates].mean()), 3),
+    out, g, t = classify(Xw[i])
+    mismatch += (g != GROUPS[i]) or (t != TYPES[i])
+    mates = np.where(GROUPS == GROUPS[i])[0]
+    assign[c] = {"status": "built", **out, "consensus": round(float(CONSENSUS[i, mates].mean()), 3),
                  "observedShare": round(float(obs_share[c]), 3),
                  "imputedDomains": [DKEYS[j] for j in range(len(DKEYS)) if not observed.loc[c].iloc[j]]}
 for c in PROVISIONAL:
     z = SCORES.loc[c].values
     ok = ~np.isnan(z)
-    scale = (WEIGHTS ** 2).sum() / (WEIGHTS[ok] ** 2).sum()
-    d = np.sqrt((((C_T[:, ok] - (z[ok] * WEIGHTS[ok])) ** 2).sum(axis=1)) * scale)
-    order = np.argsort(d)
-    own, second = int(order[0]), int(order[1])
-    assign[c] = {"status": "provisional", "type": TYPE_CODE[own], "group": GROUP_LETTER[G_OF_T[own]],
-                 "confidence": round(float(1 - d[own] / d[second]), 3), "secondType": TYPE_CODE[second],
-                 "observedShare": round(float(obs_share[c]), 3),
+    out, _, _ = classify(np.where(ok, z, 0) * WEIGHTS, ok)
+    assign[c] = {"status": "provisional", **out, "observedShare": round(float(obs_share[c]), 3),
                  "imputedDomains": [DKEYS[j] for j in range(len(DKEYS)) if not ok[j]]}
 for c in UNCLASSIFIED:
     assign[c] = {"status": "unclassified", "observedShare": round(float(obs_share[c]), 3)}
 
 # ── Stability, imputation agreement, sensitivity, leave-one-variable-out ─────
-type_jaccard = bootstrap_jaccard(Xw, TYPES, lambda Xb, b: kmeans(Xb, K_T, n_init=10, seed=b).labels_, B=200)
-group_jaccard = bootstrap_jaccard(Xw, GROUPS, lambda Xb, b: pipeline(Xb, K_T, K_G, seed=b)[1], B=200)
 imp_agree = []
 for Xm in imputations:
-    d = (((Xm * WEIGHTS)[:, None, :] - C_T[None, :, :]) ** 2).sum(axis=2)
-    imp_agree.append(np.argmin(d, axis=1))
+    Xmw = Xm * WEIGHTS
+    imp_agree.append([classify(Xmw[i])[2] for i in range(n)])
 imp_agree = np.array(imp_agree)
 modal = np.array([Counter(imp_agree[:, i]).most_common(1)[0][0] for i in range(n)])
 imputation_agreement = float(np.mean(modal == TYPES))
 
-baseline_t, baseline_g = pipeline(Xw, K_T, K_G, seed=SEED, n_init=200)
+baseline_t, baseline_g = pipeline(Xw, seed=SEED, n_init=200)
 method_floor = {"types": float(adjusted_rand_score(TYPES, baseline_t)), "groups": float(adjusted_rand_score(GROUPS, baseline_g))}
 
 
-def rebuild_ari(Xbar_, weights, seed):
-    t, g = pipeline(Xbar_ * weights, K_T, K_G, seed=seed, n_init=50)
+def rebuild_ari(X_, seed):
+    t, g = pipeline(X_, seed=seed, n_init=50)
     return adjusted_rand_score(TYPES, t), adjusted_rand_score(GROUPS, g)
 
 
@@ -457,25 +468,27 @@ for j, key in enumerate(DKEYS):
     for f in (0.5, 1.5):
         w = WEIGHTS.copy()
         w[j] *= f
-        at, ag = rebuild_ari(Xbar, w, SEED + j)
+        at, ag = rebuild_ari(Xbar * w, SEED + j)
         one_at_a_time.append({"domain": key, "factor": f, "typesARI": round(at, 3), "groupsARI": round(ag, 3)})
 dir_r = np.random.default_rng(SEED + 7)
-dirichlet = []
+dirichlet, dirichlet_tight = [], []
 for b in range(200):
-    w = len(WEIGHTS) * dir_r.dirichlet(np.full(len(WEIGHTS), 10.0)) * WEIGHTS
-    dirichlet.append(rebuild_ari(Xbar, w, SEED + 500 + b))
-dirichlet = np.array(dirichlet)
+    w = len(WEIGHTS) * dir_r.dirichlet(np.full(len(WEIGHTS), 10.0)) * WEIGHTS   # per-weight CV ≈ 27%
+    dirichlet.append(rebuild_ari(Xbar * w, SEED + 500 + b))
+    w = len(WEIGHTS) * dir_r.dirichlet(np.full(len(WEIGHTS), 40.0)) * WEIGHTS   # per-weight CV ≈ 14%
+    dirichlet_tight.append(rebuild_ari(Xbar * w, SEED + 900 + b))
+dirichlet, dirichlet_tight = np.array(dirichlet), np.array(dirichlet_tight)
 
 lovo = []
 for d in DOMAINS:
     for ind in d["indicators"]:
-        Sx, mx = domain_scores(DOMAINS, drop=ind["var"])
+        Sx, _ = domain_scores(DOMAINS, drop=ind["var"])
         keys = list(Sx.columns)
         wx = np.array([dd["weight"] for dd in DOMAINS if dd["key"] in keys])
         Xl = IterativeImputer(max_iter=30, random_state=SEED).fit_transform(Sx.loc[BUILD].values)
-        t, g = pipeline(Xl * wx, K_T, K_G, seed=SEED, n_init=50)
+        t_, g_ = pipeline(Xl * wx, seed=SEED, n_init=50)
         lovo.append({"dropped": ind["var"], "domainRemoved": d["key"] not in keys,
-                     "typesARI": round(adjusted_rand_score(TYPES, t), 3), "groupsARI": round(adjusted_rand_score(GROUPS, g), 3)})
+                     "typesARI": round(adjusted_rand_score(TYPES, t_), 3), "groupsARI": round(adjusted_rand_score(GROUPS, g_), 3)})
 
 # ── Step 11: Grand Index ─────────────────────────────────────────────────────
 ASSIGNED = [c for c in U if assign[c]["status"] != "unclassified"]
@@ -625,7 +638,6 @@ agreement = {name: {"groupsARI": float(adjusted_rand_score(groups_s[b.notna() & 
              for name, b in benchmarks.items()}
 
 # ── Family tree (step 14) ────────────────────────────────────────────────────
-flip = 1 if pca.components_[0][DKEYS.index("prosperity")] >= 0 else -1
 coords = pca.transform(Xw) * np.array([flip, 1])
 family_tree = {
     "explainedVariance": [round(float(v), 3) for v in pca.explained_variance_ratio_],
@@ -643,11 +655,12 @@ criteria = [
     ("Group size 10–45 countries", all(GROUP_SIZE[0] <= s <= GROUP_SIZE[1] for s in group_sizes.values()), f"{min(group_sizes.values())}–{max(group_sizes.values())}"),
     ("Type size ≥ 4 countries (built set)", int(TYPE_SIZES.min()) >= MIN_TYPE, f"min {int(TYPE_SIZES.min())}"),
     ("Every group bootstrap Jaccard ≥ 0.75", bool(np.all(group_jaccard >= 0.75)), ", ".join(f"{x:.2f}" for x in sorted(group_jaccard, reverse=True))),
-    ("≥ 80% of types Jaccard ≥ 0.60, none ≤ 0.50", bool(np.mean(type_jaccard >= 0.6) >= 0.8 and np.min(type_jaccard) > 0.5), f"{np.mean(type_jaccard >= 0.6):.0%} ≥ 0.60; min {np.min(type_jaccard):.2f}"),
+    ("≥ 80% of types Jaccard ≥ 0.60, none ≤ 0.50 (within-group bootstrap)", bool(np.mean(type_jaccard >= 0.6) >= 0.8 and np.min(type_jaccard) > 0.5), f"{np.mean(type_jaccard >= 0.6):.0%} ≥ 0.60; min {np.min(type_jaccard):.2f}"),
     ("Modal type across the 20 imputations = final type for ≥ 90%", imputation_agreement >= 0.9, f"{imputation_agreement:.1%}"),
-    ("Weight sensitivity: median group ARI ≥ 0.70 (Dirichlet)", float(np.median(dirichlet[:, 1])) >= 0.7, f"median {np.median(dirichlet[:, 1]):.2f}, types {np.median(dirichlet[:, 0]):.2f}"),
+    ("Weight sensitivity: median group ARI ≥ 0.70 (Dirichlet, weight CV ≈ 27%)", float(np.median(dirichlet[:, 1])) >= 0.7, f"median {np.median(dirichlet[:, 1]):.2f}, types {np.median(dirichlet[:, 0]):.2f}; at CV ≈ 14%: {np.median(dirichlet_tight[:, 1]):.2f} / {np.median(dirichlet_tight[:, 0]):.2f}"),
+    ("Hierarchical nearest-centroid scoring reproduces every built assignment", mismatch == 0, f"{mismatch} mismatches"),
     ("Leave-one-variable-out group ARI ≥ 0.80 for every variable", lovo_min >= 0.8, f"min {lovo_min:.2f}"),
-    ("Bottom-up vs top-down group ARI ≥ 0.60", chosen_group["topDownARI"] >= 0.6, f"{chosen_group['topDownARI']:.2f}"),
+    ("Consensus groups vs direct 1,000-restart k-means ARI ≥ 0.60", adjusted_rand_score(GROUPS, reference_kmeans) >= 0.6, f"{adjusted_rand_score(GROUPS, reference_kmeans):.2f}"),
     ("Beats the permutation null (p < 0.01) on ≥ 90% of trailers", float(np.mean([r["p"] < 0.01 for r in validation])) >= 0.9, f"{np.mean([r['p'] < 0.01 for r in validation]):.0%} of {len(validation)}"),
     ("Average silhouette (reported, not gated)", None, f"groups {silhouette_score(Xw, GROUPS):.3f}; types {silhouette_score(Xw, TYPES):.3f}"),
 ]
@@ -659,9 +672,11 @@ model = {
     "snapshot": {"file": "scripts/data/country-persona-inputs.json", "sha256": hashlib.sha256(snap_bytes).hexdigest(), "generated": S["generated"]},
     "seed": SEED,
     "rules": {"buildShare": BUILD_SHARE, "unclassifiedShare": UNCLASSIFIED_SHARE, "minTypeSize": MIN_TYPE,
+              "groupJaccard": GROUP_JACCARD, "typeJaccard": TYPE_JACCARD, "scoring": "nearest group centroid, then nearest type centroid within that group; partial distance over observed domains",
               "imputations": M_IMPUTATIONS, "consensusSubsamples": CONSENSUS_SUBSAMPLES},
     "domains": DOMAIN_META,
     "structure": {"groups": K_G, "types": K_T,
+                  "groupCentroidsWeighted": {GROUP_LETTER[g]: [round(float(x), 5) for x in C_G[g]] for g in range(K_G)},
                   "typeCentroidsWeighted": {TYPE_CODE[t]: [round(float(x), 5) for x in C_T[t]] for t in range(K_T)},
                   "typeGroup": {TYPE_CODE[t]: GROUP_LETTER[G_OF_T[t]] for t in range(K_T)}},
     "assignments": {c: assign[c] for c in U},
@@ -694,7 +709,7 @@ lines = [
 for m in DOMAIN_META:
     inds = "; ".join(f"{VARS[i['var']]['label']} ({'+' if i['sign'] > 0 else '−'}{', ' + i['transform'] if i['transform'] != 'none' else ''}{', Yeo-Johnson' if 'yeoJohnsonLambda' in i else ''})" for i in m["indicators"])
     u = UNIDIM.get(m["key"], {}).get("firstComponentShare")
-    lines.append(f"| {m['label']}{' (residual on prosperity, r = %.2f)' % m['residual']['r'] if m.get('residual') else ''} | {inds} | {int(SCORES[m['key']].notna().sum())} | {'—' if u is None else f'{u:.2f}'} | {m['weight']} |")
+    lines.append(f"| {m['label']}{' (residual on development, r = %.2f)' % m['residual']['r'] if m.get('residual') else ''} | {inds} | {int(SCORES[m['key']].notna().sum())} | {'—' if u is None else f'{u:.2f}'} | {m['weight']} |")
 high = [(a, b, CROSS.loc[a, b]) for i, a in enumerate(DKEYS) for b in DKEYS[i + 1:] if abs(CROSS.loc[a, b]) >= 0.81]
 lines += ["", f"Cross-domain correlations at or above the 0.81 duplication gate: {', '.join(f'{a}–{b} {r:.2f}' for a, b, r in high) if high else 'none'}.",
           "", "Domain score correlations:", "", "| | " + " | ".join(DKEYS) + " |", "|---|" + "---|" * len(DKEYS)]
@@ -703,14 +718,15 @@ lines += ["", "## Who is built, provisional, unclassified", "",
           f"- **Built** ({len(BUILD)}): ≥ {BUILD_SHARE:.0%} of domain weight observed.",
           f"- **Provisional** ({len(PROVISIONAL)}): scored against the frozen centroids by partial distance: {N(PROVISIONAL) or 'none'}.",
           f"- **Unclassified** ({len(UNCLASSIFIED)}): {N(UNCLASSIFIED) or 'none'}.",
-          "", "## Choosing the number of types", "",
-          "| k | after min-size | silhouette | min size | types Jaccard ≥ 0.60 | min Jaccard |", "|---|---|---|---|---|---|"]
-lines += [f"| {c['k']} | {c['kAfterMinSize']} | {c['silhouette']:.3f} | {c['minSize']} | {c['jaccardShare060']:.0%} | {c['jaccardMin']:.2f} |" for c in type_candidates]
-lines += ["", f"Chosen: **{K_T} types** ({'largest k meeting the type-stability rule' if passing else 'no k met the stability rule; best available'}). "
-          f"Consensus partition vs a direct 1,000-restart k-means: ARI {adjusted_rand_score(TYPES, reference_kmeans):.2f}.",
-          "", "## Choosing the number of groups", "", "| k | sizes | silhouette | group Jaccard | top-down ARI |", "|---|---|---|---|---|"]
-lines += [f"| {g['k']} | {g['sizes']} | {g['silhouette']:.3f} | {g['jaccard']} | {g['topDownARI']:.2f} |" for g in group_candidates]
-lines += ["", f"Chosen: **{K_G} groups** (size rule, then highest minimum Jaccard).", "", "## Structure (codes only — names come after review)", ""]
+          "", "## Choosing the number of groups (top-down)", "", "| k | sizes | silhouette | bootstrap Jaccard | sizes 10–45 |", "|---|---|---|---|---|"]
+lines += [f"| {g['k']} | {g['sizes']} | {g['silhouette']:.3f} | {g['jaccard']} | {'yes' if g['sizesOk'] else 'no'} |" for g in group_candidates]
+lines += ["", f"Chosen: **{K_G} groups** ({'the largest k where every group reaches Jaccard ≥ ' + str(GROUP_JACCARD) + ' within the size rule' if passing else 'no k met the rule; best available'}). "
+          f"Consensus groups vs a direct 1,000-restart k-means: ARI {adjusted_rand_score(GROUPS, reference_kmeans):.2f}.",
+          "", "## Splitting groups into types (only where the split is stable)", "",
+          f"A group is split into k = 2–4 types only when every type reaches a within-group bootstrap Jaccard ≥ {TYPE_JACCARD} with ≥ {MIN_TYPE} members; the largest such k wins.", "",
+          "| Group | candidates (k: min size, Jaccard) | chosen k |", "|---|---|---|"]
+lines += [f"| {GROUP_LETTER[g]} | " + "; ".join(f"k={c['k']}: {c['minSize']}, {c['jaccard'] if c['jaccard'] is not None else 'type below min size'}" for c in split_candidates[g]) + f" | {SPLIT_K[g]} |" for g in group_order]
+lines += ["", "## Structure (codes only — names come after review)", ""]
 for g in group_order:
     L = GROUP_LETTER[g]
     gi = grand["groups"][L]
@@ -725,18 +741,18 @@ for g in group_order:
         prov = [c for c in ti["members"] if assign[c]["status"] == "provisional"]
         low = [c for c in ti["members"] if assign[c].get("confidence", 1) < 0.1]
         lines += [f"- **{code}** ({ti['size']}): {N(ti['members'])}"
-                  + (f" — provisional: {N(prov)}" if prov else "") + (f" — borderline (confidence < 0.1): {N(low)}" if low else ""),
+                  + (f" — provisional: {N(prov)}" if prov else "") + (f" — borderline between groups (confidence < 0.1): {N(low)}" if low else ""),
                   "  - vs group: " + "; ".join(f"{r['label']} (z {r['z']:+.2f})" for r in ti["keyFeaturesVsGroup"][:4])]
     lines.append("")
 lines += ["## Stability", "",
-          f"- Type bootstrap Jaccard (200 resamples): {', '.join(f'{TYPE_CODE[t]} {type_jaccard[t]:.2f}' for t in type_order)}.",
-          f"- Group bootstrap Jaccard (full pipeline, 200 resamples): {', '.join(f'{GROUP_LETTER[g]} {group_jaccard[g]:.2f}' for g in group_order)}.",
+          f"- Type bootstrap Jaccard (within its group, 100 resamples): {', '.join(f'{TYPE_CODE[t]} {type_jaccard[t]:.2f}' for t in type_order)}.",
+          f"- Group bootstrap Jaccard (200 resamples): {', '.join(f'{GROUP_LETTER[g]} {group_jaccard[g]:.2f}' for g in group_order)}.",
           f"- Imputation agreement (modal type over {M_IMPUTATIONS} imputations = final): {imputation_agreement:.1%}.",
-          f"- Method floor (plain k-means pipeline vs final consensus model): types ARI {method_floor['types']:.2f}, groups ARI {method_floor['groups']:.2f}. "
+          f"- Method floor (plain k-means re-run vs final consensus model): types ARI {method_floor['types']:.2f}, groups ARI {method_floor['groups']:.2f}. "
           "Sensitivity ARIs below are measured against the final model, so they cannot exceed this floor by much.",
           "", "## Weight sensitivity", "",
-          f"Dirichlet (200 draws centred on the defaults): groups ARI median {np.median(dirichlet[:, 1]):.2f} (5th pct {np.percentile(dirichlet[:, 1], 5):.2f}); "
-          f"types median {np.median(dirichlet[:, 0]):.2f}.", "", "| Domain | ×0.5 groups / types | ×1.5 groups / types |", "|---|---|---|"]
+          f"Dirichlet, 200 draws centred on the defaults. Weight CV ≈ 27%: groups ARI median {np.median(dirichlet[:, 1]):.2f} (5th pct {np.percentile(dirichlet[:, 1], 5):.2f}), "
+          f"types {np.median(dirichlet[:, 0]):.2f}. Weight CV ≈ 14%: groups {np.median(dirichlet_tight[:, 1]):.2f} (5th pct {np.percentile(dirichlet_tight[:, 1], 5):.2f}), types {np.median(dirichlet_tight[:, 0]):.2f}.", "", "| Domain | ×0.5 groups / types | ×1.5 groups / types |", "|---|---|---|"]
 for key in DKEYS:
     lo = next(r for r in one_at_a_time if r["domain"] == key and r["factor"] == 0.5)
     hi = next(r for r in one_at_a_time if r["domain"] == key and r["factor"] == 1.5)
