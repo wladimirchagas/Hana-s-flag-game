@@ -1,0 +1,6 @@
+# Research build for Country Personas (scripts/country-personas/build.py).
+# Pinned so a rebuild reproduces the same model. Python 3.11.
+numpy==2.4.6
+pandas==3.0.6
+scikit-learn==1.9.1
+scipy==1.17.1
