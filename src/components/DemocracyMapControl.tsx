@@ -5,9 +5,11 @@ import {
   getDemocracyIndexLabel,
   getDemocracyIndexMenuGroups,
   isDemocracyIndexMode,
+  isPersonaMapMode,
   isWvsMapMode,
   type DemocracyMapMode,
 } from "../lib/democracyColors";
+import { PERSONA_EDITION, PERSONA_MAP_MODE } from "../lib/countryPersonas";
 import { formatWvsSelectionLabel } from "../lib/wvsResults";
 import { WvsSelectionPicker } from "./WvsSelectionPicker";
 
@@ -51,9 +53,11 @@ export function DemocracyMapControl({
   const isActive = mode !== null;
   const activeLabel = isWvsMapMode(mode)
     ? formatWvsSelectionLabel(mode)
-    : isDemocracyIndexMode(mode)
-      ? getDemocracyIndexLabel(mode)
-      : null;
+    : isPersonaMapMode(mode)
+      ? `Country personas, ${PERSONA_EDITION}`
+      : isDemocracyIndexMode(mode)
+        ? getDemocracyIndexLabel(mode)
+        : null;
 
   return (
     <div className="democracy-map-control" ref={ref}>
@@ -94,6 +98,18 @@ export function DemocracyMapControl({
             >
               Off (Default map)
             </button>
+            {/* Country Personas: categorical groups, not an index (no green→red scale). */}
+            <div className="democracy-map-control__group">
+              <hr className="democracy-map-control__divider" aria-hidden="true" />
+              <p className="democracy-map-control__group-label">Country personas</p>
+              <button
+                type="button"
+                className={`map-view-control__preset${isPersonaMapMode(mode) ? " map-view-control__preset--active" : ""}`}
+                onClick={() => selectIndex(PERSONA_MAP_MODE)}
+              >
+                {`Country personas, ${PERSONA_EDITION}`}
+              </button>
+            </div>
             {menuGroups.map((group) => (
               <div key={group.theme.id} className="democracy-map-control__group">
                 <hr className="democracy-map-control__divider" aria-hidden="true" />

@@ -1,0 +1,468 @@
+{
+ "status": "FROZEN — approved by the owner 2026-09-24 (5 groups, 12 types; names as drafted; E12 score-based name kept). Edit only through a new review.",
+ "model": "scripts/data/country-personas-model.json",
+ "rules": "Names describe measured characteristics; never a place, religion, ethnicity or language, and never a moral or developmental judgement. Governance statements always name the index and its year. Every figure is a Grand Index persona mean (unweighted across countries, each country one vote) set against the world mean of the same variable. 'claims' lists each variable a portrait relies on and the direction it asserts, so a check can verify the text against the Grand Index.",
+ "groups": {
+  "A": {
+   "name": "Prosperous Ageing Societies",
+   "line": "High-income, long-lived and older societies with the highest scores on freedom and rule-of-law indices and the Corruption Perceptions Index.",
+   "portrait": "The 40 countries in this group have the highest average income of any group, about $70,000 per person at purchasing-power parity against a world average near $31,000, and the longest lives, 82 years on average. One person in five is 65 or older, and families are small, at 1.35 children per woman. They average 91 of 100 on Freedom House's 2026 index, where 39 of the 40 are rated Free, and 66 of 100 on Transparency International's 2025 Corruption Perceptions Index. Four in five belong to the OECD. Most are in Europe, with others in the Americas, Asia and Oceania.",
+   "claims": [
+    [
+     "wb_gdppc_ppp",
+     "+"
+    ],
+    [
+     "wb_life_expectancy",
+     "+"
+    ],
+    [
+     "wb_age_65_up",
+     "+"
+    ],
+    [
+     "wb_fertility",
+     "-"
+    ],
+    [
+     "idx_freedomHouse",
+     "+"
+    ],
+    [
+     "idx_cpi",
+     "+"
+    ],
+    [
+     "member_oecd",
+     "+"
+    ]
+   ]
+  },
+  "B": {
+   "name": "Small States",
+   "line": "Countries with very small populations and territories, mostly rated Free by Freedom House 2026.",
+   "portrait": "The 35 countries in this group are defined by size: an average population of about 600,000 people, tiny land areas, and a low global profile on the Brand Finance Soft Power Index. Together they hold 0.3% of the world's people. Incomes are a little below the world average. They score higher than average on Freedom House's 2026 index (83 of 100 on average; 32 of the 35 are rated Free), and more than half belong to the Commonwealth. They are spread across the Americas, Oceania, Europe, Africa and Asia.",
+   "claims": [
+    [
+     "wb_population",
+     "-"
+    ],
+    [
+     "wb_land_area",
+     "-"
+    ],
+    [
+     "idx_softPower",
+     "-"
+    ],
+    [
+     "idx_freedomHouse",
+     "+"
+    ],
+    [
+     "member_commonwealth_of_nations",
+     "+"
+    ]
+   ]
+  },
+  "C": {
+   "name": "Maturing Middle-Income Countries",
+   "line": "Middle-income countries with falling birth rates and large populations, most rated Partly Free or Not Free by Freedom House 2026.",
+   "portrait": "The 38 countries in this group are home to 57% of the world's people, with the largest average populations of any group. Incomes are in the world's middle range, and families are already small, at 1.73 children per woman against a world average of 2.43. They average 43 of 100 on Freedom House's 2026 index (21 rated Partly Free, 13 Not Free and 4 Free) and score below the world average on RSF's 2026 World Press Freedom Index. In the World Values Survey, fewer people than the world average say most people can be trusted. Most are in Asia and Europe, with others in the Americas and Africa.",
+   "claims": [
+    [
+     "wb_population",
+     "+"
+    ],
+    [
+     "wb_fertility",
+     "-"
+    ],
+    [
+     "idx_freedomHouse",
+     "-"
+    ],
+    [
+     "idx_rsfPress",
+     "-"
+    ],
+    [
+     "wvs_trust",
+     "-"
+    ]
+   ]
+  },
+  "D": {
+   "name": "Young Resource Economies",
+   "line": "Young, fast-growing and mostly urban populations in economies where natural resources and industry weigh more than average.",
+   "portrait": "The 42 countries in this group have young and growing populations. Fewer than one person in twenty is 65 or older, a third are under 15, and numbers grow by about 2% a year, against 1.1% worldwide. Natural-resource rents average 14% of GDP, twice the world average, industry's share of the economy is above average, and one in five belongs to OPEC. On average, 70% of people live in cities. Incomes average a little below the world figure but range from among the highest to among the lowest. They average 44 of 100 on Freedom House's 2026 index, with Not Free, Partly Free and Free countries all represented. Most are in Africa and Asia.",
+   "claims": [
+    [
+     "wb_age_65_up",
+     "-"
+    ],
+    [
+     "wb_age_0_14",
+     "+"
+    ],
+    [
+     "wb_pop_growth",
+     "+"
+    ],
+    [
+     "wb_resource_rents",
+     "+"
+    ],
+    [
+     "wb_industry",
+     "+"
+    ],
+    [
+     "member_opec",
+     "+"
+    ],
+    [
+     "wb_urban",
+     "+"
+    ]
+   ]
+  },
+  "E": {
+   "name": "Young Agrarian Countries",
+   "line": "Young, mostly rural populations in economies where farming is a large share of output and incomes are the lowest of any group.",
+   "portrait": "The 39 countries in this group have the lowest average incomes of any group, about $4,800 per person at purchasing-power parity, and a Human Development Index of 0.54 against a world average of 0.74. Agriculture produces a quarter of their economic output, fewer than four in ten people live in cities, and 31% use the internet. Populations are young, at 3.9 children per woman, with 38% of people under 15. They average 25 of 100 on Freedom House's 2026 index, with 28 of the 39 rated Not Free. Most are in Africa, with others in Asia, the Americas and Oceania.",
+   "claims": [
+    [
+     "wb_gdppc_ppp",
+     "-"
+    ],
+    [
+     "idx_hdi",
+     "-"
+    ],
+    [
+     "wb_agriculture",
+     "+"
+    ],
+    [
+     "wb_urban",
+     "-"
+    ],
+    [
+     "wb_internet",
+     "-"
+    ],
+    [
+     "wb_fertility",
+     "+"
+    ],
+    [
+     "wb_age_0_14",
+     "+"
+    ],
+    [
+     "idx_freedomHouse",
+     "-"
+    ]
+   ]
+  }
+ },
+ "types": {
+  "A01": {
+   "name": "Influential High-Income Societies",
+   "line": "The group's largest global profile, with the highest integrity scores and many migrant residents.",
+   "portrait": "These 14 countries have the highest Soft Power scores in their group and a Corruption Perceptions Index average of 76 of 100 (Transparency International, 2025). About one resident in five was born abroad. In the World Values Survey, more people than elsewhere in the group have signed a petition, and more say homosexuality and abortion can be justified.",
+   "claims": [
+    [
+     "idx_softPower",
+     "+"
+    ],
+    [
+     "idx_cpi",
+     "+"
+    ],
+    [
+     "wb_migrants",
+     "+"
+    ],
+    [
+     "wvs_petition_signed",
+     "+"
+    ],
+    [
+     "wvs_homosexuality_justifiable",
+     "+"
+    ],
+    [
+     "wvs_abortion_justifiable",
+     "+"
+    ]
+   ]
+  },
+  "A02": {
+   "name": "Small Wealthy Service Hubs",
+   "line": "Very small, very high-income economies built on services and trade, with the highest share of foreign-born residents.",
+   "portrait": "These 6 countries have the highest incomes in the classification, over $100,000 per person at purchasing-power parity, and five of the six have fewer than 1.5 million people. Services dominate their economies, trade averages more than twice their GDP, and about two residents in five were born abroad.",
+   "claims": [
+    [
+     "wb_gdppc_ppp",
+     "+"
+    ],
+    [
+     "wb_population",
+     "-"
+    ],
+    [
+     "wb_services",
+     "+"
+    ],
+    [
+     "wb_trade",
+     "+"
+    ],
+    [
+     "wb_migrants",
+     "+"
+    ]
+   ]
+  },
+  "A03": {
+   "name": "Mid-sized High-Income Societies",
+   "line": "Mid-sized, high-income societies with some of the highest Freedom House 2026 scores and a lower global profile than their group.",
+   "portrait": "These 12 countries have populations of around 6.5 million on average and incomes above $50,000 per person at purchasing-power parity. They average 94 of 100 on Freedom House's 2026 index, and all 12 are rated Free. Compared with the rest of their group they score lower on the Soft Power Index, and a smaller share of people live in cities.",
+   "claims": [
+    [
+     "wb_population",
+     "-"
+    ],
+    [
+     "idx_freedomHouse",
+     "+"
+    ],
+    [
+     "idx_softPower",
+     "-"
+    ],
+    [
+     "wb_urban",
+     "-"
+    ]
+   ]
+  },
+  "A04": {
+   "name": "Large Low-Birth-Rate Societies",
+   "line": "Large societies with the oldest populations and the lowest birth rates in the classification.",
+   "portrait": "These 8 countries average over 70 million people each. They have the lowest fertility in the classification, 1.21 children per woman, and one person in five is 65 or older. Fewer residents were born abroad than elsewhere in the group, and they score lower than their group on Transparency International's 2025 Corruption Perceptions Index (52 of 100).",
+   "claims": [
+    [
+     "wb_population",
+     "+"
+    ],
+    [
+     "wb_fertility",
+     "-"
+    ],
+    [
+     "wb_age_65_up",
+     "+"
+    ],
+    [
+     "wb_migrants",
+     "-"
+    ],
+    [
+     "idx_cpi",
+     "-"
+    ]
+   ]
+  },
+  "B05": {
+   "name": "Very Small Service Economies",
+   "line": "The smallest states, with service-based economies and high Freedom House 2026 scores.",
+   "portrait": "These 19 countries average about 300,000 people each. All 19 are rated Free by Freedom House (2026), averaging 88 of 100. Incomes are close to the world average, services make up a larger share of the economy than in the rest of the group, and about one resident in six was born abroad.",
+   "claims": [
+    [
+     "wb_population",
+     "-"
+    ],
+    [
+     "idx_freedomHouse",
+     "+"
+    ],
+    [
+     "wb_services",
+     "+"
+    ],
+    [
+     "wb_migrants",
+     "+"
+    ]
+   ]
+  },
+  "B06": {
+   "name": "Small Ageing States",
+   "line": "Small states whose populations are older and have fewer children than the rest of their group.",
+   "portrait": "These 8 countries average about 1.2 million people. They are older than the rest of their group, with 14% of people aged 65 or over and 1.51 children per woman. They score higher on the Soft Power Index than their group, and lower on Freedom House's 2026 index (77 of 100; 5 rated Free and 3 Partly Free).",
+   "claims": [
+    [
+     "wb_age_65_up",
+     "+"
+    ],
+    [
+     "wb_fertility",
+     "-"
+    ],
+    [
+     "idx_softPower",
+     "+"
+    ],
+    [
+     "idx_freedomHouse",
+     "-"
+    ]
+   ]
+  },
+  "B07": {
+   "name": "Small Young Rural States",
+   "line": "Small states with young, mostly rural populations and limited internet access.",
+   "portrait": "These 8 countries have the youngest populations in their group, averaging 3 children per woman. Only a third of people live in cities, farming weighs more in the economy, and fewer people use the internet or have electricity than elsewhere in the group. All 8 are rated Free by Freedom House (2026).",
+   "claims": [
+    [
+     "wb_fertility",
+     "+"
+    ],
+    [
+     "wb_age_0_14",
+     "+"
+    ],
+    [
+     "wb_urban",
+     "-"
+    ],
+    [
+     "wb_agriculture",
+     "+"
+    ],
+    [
+     "wb_internet",
+     "-"
+    ],
+    [
+     "wb_electricity",
+     "-"
+    ]
+   ]
+  },
+  "C08": {
+   "name": "Older Middle-Income Countries",
+   "line": "Middle-income countries with older, slow-growing or shrinking populations.",
+   "portrait": "These 13 countries have the oldest populations in their group, with 17% of people aged 65 or over, and populations that are, on average, slightly shrinking. They are smaller than the rest of their group, at about 14 million people on average, and score higher on RSF's 2026 World Press Freedom Index.",
+   "claims": [
+    [
+     "wb_age_65_up",
+     "+"
+    ],
+    [
+     "wb_pop_growth",
+     "-"
+    ],
+    [
+     "wb_population",
+     "-"
+    ],
+    [
+     "idx_rsfPress",
+     "+"
+    ]
+   ]
+  },
+  "C09": {
+   "name": "Populous Middle-Income Countries",
+   "line": "Very populous middle-income countries, together home to more than half of humanity.",
+   "portrait": "These 25 countries average about 180 million people each and together hold 55% of the world's population. Their populations are younger and still growing compared with the rest of their group. They average 36 of 100 on Freedom House's 2026 index (13 Partly Free, 11 Not Free and 1 Free) and score lower on RSF's 2026 World Press Freedom Index than their group.",
+   "claims": [
+    [
+     "wb_population",
+     "+"
+    ],
+    [
+     "wb_age_65_up",
+     "-"
+    ],
+    [
+     "wb_pop_growth",
+     "+"
+    ],
+    [
+     "idx_freedomHouse",
+     "-"
+    ],
+    [
+     "idx_rsfPress",
+     "-"
+    ]
+   ]
+  },
+  "D10": {
+   "name": "Young Resource Economies",
+   "line": "The whole of group D: its members did not divide into stable types.",
+   "portrait": "Group D forms a single type: no split of its 42 countries was stable enough to publish, so they are described together. See group D.",
+   "claims": []
+  },
+  "E11": {
+   "name": "High-Fertility Agrarian Countries",
+   "line": "Young agrarian countries with the highest birth rates in the classification.",
+   "portrait": "These 21 countries have the highest fertility in the classification, 4.35 children per woman, and the largest share of children. Fewer than four in ten people live in cities. They score higher than the rest of their group on the V-Dem 2026 Liberal Democracy Index, though 13 of the 21 are rated Not Free by Freedom House (2026).",
+   "claims": [
+    [
+     "wb_fertility",
+     "+"
+    ],
+    [
+     "wb_age_0_14",
+     "+"
+    ],
+    [
+     "wb_urban",
+     "-"
+    ],
+    [
+     "idx_vDem",
+     "+"
+    ]
+   ]
+  },
+  "E12": {
+   "name": "Agrarian Countries, Lowest Freedom Scores",
+   "line": "Agrarian countries with the lowest scores in the classification on Freedom House 2026 and Transparency International 2025.",
+   "portrait": "These 18 countries average about 16 of 100 on Freedom House's 2026 index, and 15 of the 18 are rated Not Free. They also average 19 of 100 on Transparency International's 2025 Corruption Perceptions Index, the lowest of any type. Compared with the rest of their group, birth rates are lower, life expectancy is higher and more young people enrol in higher education.",
+   "claims": [
+    [
+     "idx_freedomHouse",
+     "-"
+    ],
+    [
+     "idx_cpi",
+     "-"
+    ],
+    [
+     "wb_fertility",
+     "-"
+    ],
+    [
+     "wb_life_expectancy",
+     "+"
+    ],
+    [
+     "wb_tertiary",
+     "+"
+    ]
+   ]
+  }
+ },
+ "approved": {
+  "date": "2026-09-24",
+  "by": "owner",
+  "draftSha256": "8c19c95158198ea76d05781fb25d8f47efc4c220f37e8cd568dffb778ca4e27c"
+ }
+}

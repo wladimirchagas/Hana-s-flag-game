@@ -79,6 +79,8 @@ import {
 } from "../lib/democracyColors";
 
 import { GridImage } from "./GridImage";
+import { PersonaGroupTip, PersonaTypeTip } from "./PersonaTip";
+import { personaFromHeading, personaHeading, personaHeadingOrder } from "../lib/countryPersonas";
 
 /**
  * Flag-grid section rendered under the Learn map.
@@ -178,7 +180,9 @@ type GroupMode =
   | "etr"
   | "digital-news"
   | "gti"
-  | "party-ideology";
+  | "party-ideology"
+  | "persona-group"
+  | "persona-type";
 
 const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   none: "No grouping",
@@ -188,6 +192,10 @@ const GROUP_MODE_LABELS: Record<GroupMode, string> = {
   // Commercial-airlines/Public-broadcasters/Tourism-logos/News-agencies view — groups by country.
   // Kept immediately after "By sub-continent" so it always appears directly below it in the dropdown.
   "by-country": "By country",
+  // Country Personas (edition 2026) — src/data/countryPersonas.ts. Any modern-era view whose
+  // tiles are countries; each heading carries a hover/tap explanation of its persona.
+  "persona-group": "By country persona",
+  "persona-type": "By persona type",
   shape: "By characteristics",
   family: "By family",
   color: "By colour",
@@ -255,6 +263,9 @@ const COUNTRY_GROUP_MODES = new Set<GroupMode>(["by-country"]);
 const PARTY_ONLY_MODES = new Set<GroupMode>(["party-ideology"]);
 
 // Modes offered across all modern-era content types — group by Democracy ratings/indices.
+// Modes offered across all modern-era content types — group by Country Persona (group or type).
+const PERSONA_GROUP_MODES = new Set<GroupMode>(["persona-group", "persona-type"]);
+
 const DEMOCRACY_GROUP_MODES = new Set<GroupMode>([
   "freedom-house",
   "v-dem",
@@ -286,6 +297,7 @@ function groupModeAvailableFor(
   isModernEra: boolean,
 ): boolean {
   if (DEMOCRACY_GROUP_MODES.has(m)) return isModernEra;
+  if (PERSONA_GROUP_MODES.has(m)) return isModernEra;
   if (COUNTRY_GROUP_MODES.has(m)) {
     return (
       isModernEra &&
@@ -869,6 +881,11 @@ export function FlagGrid({
       for (const e of sorted) {
         push(e.countryName ?? "Other", e);
       }
+    } else if (groupMode === "persona-group" || groupMode === "persona-type") {
+      for (const e of sorted) {
+        const code = (e.selectId || e.id || e.worldMapCode || "").toUpperCase();
+        push(personaHeading(code, groupMode === "persona-group" ? "group" : "type"), e);
+      }
     } else if (groupMode === "alpha") {
       for (const e of sorted) {
         // Bucket by the sort key so the UK's home-nation cards land together
@@ -1186,6 +1203,10 @@ export function FlagGrid({
     // Sort the bucket list.
     const list = [...buckets.entries()];
     list.sort(([a], [b]) => {
+      if (groupMode === "persona-group" || groupMode === "persona-type") {
+        // A…E (or A01…E12), then "not classified", then entries outside the 195 states.
+        return personaHeadingOrder(a).localeCompare(personaHeadingOrder(b), "en");
+      }
       if (groupMode === "continent") {
         const oa = continentOrder(a);
         const ob = continentOrder(b);
@@ -1454,6 +1475,26 @@ export function FlagGrid({
               <span className="flag-grid__group-count">
                 ({g.items.length})
               </span>
+              {(groupMode === "persona-group" || groupMode === "persona-type") &&
+                (() => {
+                  const ref = personaFromHeading(g.heading);
+                  if (!ref) return null;
+                  return "group" in ref ? (
+                    <PersonaGroupTip
+                      group={ref.group}
+                      className="persona-tip-anchor--icon"
+                      label="ⓘ"
+                      ariaLabel={`What is persona ${g.heading}?`}
+                    />
+                  ) : (
+                    <PersonaTypeTip
+                      type={ref.type}
+                      className="persona-tip-anchor--icon"
+                      label="ⓘ"
+                      ariaLabel={`What is persona type ${g.heading}?`}
+                    />
+                  );
+                })()}
             </h3>
           )}
           <ul className="flag-grid__list">

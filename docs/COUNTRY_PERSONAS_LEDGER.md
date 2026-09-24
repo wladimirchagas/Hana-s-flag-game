@@ -11,6 +11,68 @@ Newest entries first.
 
 ---
 
+## 2026-09-24 — UI surfaces shipped (edition 2026)
+
+The four approved surfaces are built. Every one reads `src/data/countryPersonas.ts`, which
+`scripts/build-country-personas.mjs` re-scores from the frozen model. If the re-score differs
+from any frozen assignment, the build fails.
+
+- **Flag grid, Group by:** "By country persona" (5 group headings) and "By persona type"
+  (12 type headings). These modes appear on today's map only. Each heading has an ⓘ tooltip.
+  Vatican City, the one unclassified state, gets its own "Not classified" heading.
+- **Map colour mode:** "Country personas, 2026" sits in the index menu under its own
+  "Country personas" heading, separate from the indexes.
+  - Colours use the Okabe–Ito categorical palette, because personas are unordered and must not
+    borrow the index green→red scale.
+  - The legend says "Letters are labels, not ranks", and every legend entry carries the group
+    tooltip.
+  - The hover tooltip names the group and, when the group has several types, the type.
+- **Fact-sheet row:** a "Country persona" row sits after Region. It shows the group badge, plus
+  a type badge when the group has more than one type.
+  - A country with confidence below 0.1 (D7) also says which group it borders.
+  - Vatican City reads "Not classified", and its tooltip explains why.
+- **Family tree:** a "See country personas map" accordion under the index chart.
+  - It plots 194 countries on the first two principal components (42% and 26% of the
+    variation), coloured by group.
+  - Each type's centre is labelled.
+  - Hovering a dot previews the country in the panel; clicking or tapping selects it.
+  - Legends underneath carry every group and type tooltip.
+- **Tooltips:** they open on hover and on focus or tap, using CSS `:hover` / `:focus-within`,
+  like the membership badges.
+  - Every tooltip ends with the averages note: a persona describes national averages, not people.
+  - A small layout-only nudge keeps a tooltip inside the screen. Without it, a badge near the
+    right edge of a 390px phone pushed the page into horizontal scroll (measured 469px wide
+    before the fix, 390px after).
+
+---
+
+## 2026-09-24 — Owner approval; edition 2026 frozen
+
+The owner reviewed `docs/country-personas/PERSONAS_DRAFT.md` and approved four points:
+
+- **Structure:** 5 groups and 12 types, with the three failing acceptance criteria recorded (D7).
+- **Names and portraits:** approved as drafted.
+- **E12's name:** keep the score-based name, "Agrarian Countries, Lowest Freedom Scores". It
+  describes the published index scores and names Freedom House 2026 in its line.
+- **Where personas appear:** all four surfaces, each with tooltips explaining every group and
+  type:
+  - the flag grid's Group by;
+  - the map colour mode;
+  - a fact-sheet row;
+  - a family-tree chart.
+
+**Freezing.** The approved drafts were promoted to frozen files; each records the sha256 of the
+draft it came from.
+
+- `scripts/data/country-personas-model.draft.json` → `scripts/data/country-personas-model.json`
+- `scripts/data/country-persona-portraits.draft.json` → `scripts/data/country-persona-portraits.json`
+
+**What happens to the drafts.** From here on, `build.py` still writes to the `.draft.json` files.
+A rebuild never touches the frozen model: a new edition needs a new owner review and promotion
+(playbook step 16).
+
+---
+
 ## 2026-09-24 — Build v1 (draft, awaiting owner review)
 
 ### D1. Inputs: a single dated snapshot, with World Bank indicators added (Phase 0)
