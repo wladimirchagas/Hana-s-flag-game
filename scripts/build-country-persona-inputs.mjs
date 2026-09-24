@@ -20,10 +20,14 @@
 // Which variables BUILD the classification and which only DESCRIBE it is decided by the
 // build (85% coverage gate, docs/COUNTRY_PERSONAS_PLAYBOOK.md step 3), not here.
 //
-// Needs Node 22.18+ (imports .ts modules) and egress to api.worldbank.org.
+// Pew Research Center religion shares and official-language flags are read from bundled files
+// (the Pew table verbatim, checked by sha256). Needs Node 22.18+ (imports .ts modules) and
+// egress to api.worldbank.org.
+import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import isoCountries from "i18n-iso-countries";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = resolve(ROOT, "scripts/data/country-persona-inputs.json");
@@ -299,6 +303,75 @@ for (const [key, label, fn] of WVS_ITEMS) {
     const soc = wvs.societies[c];
     if (!soc) continue;
     put(c, key, fn(c), soc.year);
+  }
+}
+
+// Religion: Pew Research Center, "How the Global Religious Landscape Changed From 2010 to
+// 2020" (June 2025). The percentages table of Pew's own dataset zip is bundled VERBATIM under
+// scripts/data/ and verified by sha256 here, so a changed or hand-edited file fails loudly.
+// Pew estimates cover places with at least 100,000 people, so a dozen microstates (and the
+// Vatican) have no figure — they stay missing, never estimated here.
+const PEW = {
+  file: "scripts/data/pew-religious-composition-2010-2020-percentages.csv",
+  sha256: "0634d9ff61bcce57c4e9aecd5fdcdd84e01cd465089b39450fd85527c0351d2f",
+  zip: "https://www.pewresearch.org/wp-content/uploads/sites/20/2025/06/Religious-Composition-2010-2020-dataset.zip",
+  zipSha256: "39d1cf1b1dec28e22bc5e2a0e9ab958a8afdcdc971a79c175ff49d03e6ce8af6",
+  report: "https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/",
+  fetched: "2026-09-24",
+  year: 2020,
+};
+{
+  const raw = readFileSync(resolve(ROOT, PEW.file));
+  const got = createHash("sha256").update(raw).digest("hex");
+  if (got !== PEW.sha256) throw new Error(`${PEW.file}: sha256 ${got} does not match the recorded Pew file`);
+  const [header, ...lines] = raw.toString("utf8").replace(/^\uFEFF/, "").trim().split(/\r?\n/);
+  const cols = header.split(",");
+  const at = (name) => {
+    const i = cols.indexOf(name);
+    if (i < 0) throw new Error(`${PEW.file}: no column ${name}`);
+    return i;
+  };
+  const RELIGIONS = [
+    ["rel_christian", "Christians", "Christians (% of population)"],
+    ["rel_muslim", "Muslims", "Muslims (% of population)"],
+    ["rel_unaffiliated", "Religiously_unaffiliated", "Religiously unaffiliated (% of population)"],
+    ["rel_buddhist", "Buddhists", "Buddhists (% of population)"],
+    ["rel_hindu", "Hindus", "Hindus (% of population)"],
+    ["rel_jewish", "Jews", "Jews (% of population)"],
+    ["rel_other", "Other_religions", "Other religions, incl. folk religions (% of population)"],
+  ];
+  for (const [key, , label] of RELIGIONS) {
+    define(key, {
+      label, unit: "%", kind: "numeric", publisher: "Pew Research Center", source: PEW.report,
+      dataset: PEW.zip, datasetSha256: PEW.zipSha256, bundled: PEW.file, fetched: PEW.fetched,
+      note: `${PEW.year} estimates. Pew covers places with at least 100,000 people.`,
+    });
+  }
+  const [iYear, iLevel, iCode] = [at("Year"), at("Level"), at("Countrycode")];
+  for (const line of lines) {
+    const f = line.split(",");
+    if (f[iYear] !== String(PEW.year) || f[iLevel] !== "1") continue;
+    const code = isoCountries.numericToAlpha2(f[iCode].padStart(3, "0"))?.toUpperCase();
+    if (!code || !values[code]) continue;
+    for (const [key, col] of RELIGIONS) put(code, key, Math.round(Number(f[at(col)]) * 100) / 100, PEW.year);
+  }
+}
+
+// Official languages: the seven languages that are official in five or more of the 195
+// states, read from the app's bundled COUNTRY_FACTS (mledoze/countries, the authoritative
+// source restcountries is generated from). Binary heritage descriptors.
+{
+  const LANGS = ["English", "French", "Arabic", "Spanish", "Portuguese", "Russian", "German"];
+  for (const lang of LANGS) {
+    const key = `lang_${lang.toLowerCase()}`;
+    define(key, {
+      label: `${lang} is an official language`, kind: "binary", publisher: "mledoze/countries",
+      source: "https://github.com/mledoze/countries", bundled: "src/data/countryFacts.ts",
+    });
+    for (const c of CODES) {
+      const langs = COUNTRY_FACTS[c]?.languages;
+      if (Array.isArray(langs) && langs.length) put(c, key, langs.includes(lang) ? 1 : 0);
+    }
   }
 }
 
