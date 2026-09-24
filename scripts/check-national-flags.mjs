@@ -98,6 +98,16 @@ for (const [cc, country] of Object.entries(manifest.countries)) {
           if (!s.label?.trim() || !s.value?.trim()) {
             fail(`${where}: every stats row needs a non-empty label and value.`);
           }
+          // Stats rows are painted verbatim in the Learn panel. A value copied out of a
+          // Wikipedia infobox by cutting at the first "|" shipped raw template code for nine
+          // Olympic committees ("{{start date and age", "1967{{sfn", "1984<ref …",
+          // "1948 (original)<br>2004 …"). Wiki/HTML markup is never a displayable value:
+          // resolve it to plain text from the cited source.
+          for (const text of [s.label, s.value]) {
+            if (/\{\{|\}\}|\[\[|\]\]|<\/?[a-z][^>]*>|\|/i.test(text ?? "")) {
+              fail(`${where}: stats row "${s.label}" contains wiki/HTML markup (${JSON.stringify(text)}) — write the plain text the cited source states.`);
+            }
+          }
         }
       }
     }
