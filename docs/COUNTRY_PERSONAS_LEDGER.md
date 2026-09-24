@@ -153,7 +153,63 @@ counts as descriptors only.
   the Commonwealth.
 - **Nothing is lost.** Every excluded row stays in the full Grand Index profile.
 
-### D7. Known limits, carried to the owner review
+### D7. Results of the chosen design (build v1)
+
+- **Who is placed.** 194 countries are built, none is provisional, and 1 is unclassified (the
+  Vatican).
+- **Structure.** 5 groups hold 35–42 countries each. The 12 types break down as:
+
+  | Group | Types | How the split was decided |
+  |---|---|---|
+  | A | 4 | split was stable |
+  | B | 3 | split was stable |
+  | C | 2 | split was stable |
+  | D | 1 | no stable split, so it stays whole |
+  | E | 2 | split was stable |
+
+| Criterion (playbook E3) | Result |
+|---|---|
+| Group sizes 10–45 | PASS (35–42) |
+| Type size ≥ 4 | PASS (min 6) |
+| Every group Jaccard ≥ 0.75 | PASS (0.76–0.87) |
+| Types Jaccard ≥ 0.60 | PASS (100%; min 0.64) |
+| Imputation agreement ≥ 90% | PASS (100%) |
+| Scoring reproduces every assignment | PASS (0 mismatches) |
+| Consensus vs direct k-means ARI ≥ 0.60 | PASS (0.91) |
+| Reweighting ARI ≥ 0.70 at weight CV ≈ 27% | **FAIL (0.60)**; 0.83 at CV ≈ 14% |
+| Leave-one-variable-out ARI ≥ 0.80 | **FAIL (min 0.73: % urban; 0.76: population)** |
+| Beats the permutation null on ≥ 90% of trailers | **FAIL (84% of 49)** |
+| Silhouette (not gated) | groups 0.29, types 0.18 |
+
+**The three failures, read honestly:**
+
+- **Validation.** On the variables held out of the build, persona groups explain more variance
+  than either continent or World Bank income group: median η² 0.30 for the groups, 0.21 for
+  continent, 0.17 for income group. The 8 trailers they do not beat the null on are largely
+  unrelated to national character:
+  - newspapers listed;
+  - population density;
+  - military spending;
+  - the terrorism index;
+  - the happiness share from the World Values Survey;
+  - the effective number of parties;
+  - the diplomacy index, with 64 countries;
+  - women in the workforce.
+- **Leave-one-variable-out.** It misses narrowly, and on the two variables that carry the most
+  weight within their domains.
+- **Reweighting.** See D8.
+
+**Agreement with existing typologies (ARI)** is moderate, which is the intended outcome: the
+personas are neither the map nor income bands redrawn.
+
+| Typology | ARI |
+|---|---|
+| Continent | 0.19 |
+| Sub-region | 0.12 |
+| World Bank income group | 0.26 |
+| Freedom House status | 0.25 |
+
+### D8. Known limits, carried to the owner review
 
 - **Reweighting sensitivity at ±27% fails the playbook's 0.70 target.** At ±14% the groups
   hold (ARI about 0.8). Borders between groups depend on how much weight each axis gets, as
