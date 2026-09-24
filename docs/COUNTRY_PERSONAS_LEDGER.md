@@ -11,6 +11,146 @@ Newest entries first.
 
 ---
 
+## 2026-09-24 — Build v2 (draft, awaiting owner review)
+
+### D9. The owner's feedback on v1
+
+The owner did not accept the v1 personas and asked for a rebuild. Their points, in order:
+
+1. **Averages that misdescribe members.** Malaysia's v1 group (C09) claimed its countries
+   "average 180m people" (China and India skewed the mean; Malaysia has 34m). Brazil's group
+   (A04) claimed fertility of 1.21 (Brazil's is 1.6). The fix they asked for: *"stricter
+   boundaries (e.g., no more than 1 standard deviation from the median)"*.
+2. **Use more of the indices and the World Values Survey** so that countries with similar
+   attitudes and scores are closer, in addition to the factual statistics v1 prioritised.
+3. **Blend in culture and heritage:** religion, official languages, regional organisations.
+4. **One level of personas.** First "20–30", then clarified: 30 is a ceiling, 10 a floor.
+5. **Religion must be "one of many variables"**; do not over-index on it.
+
+### D10. New inputs (PR #1699)
+
+- **Religion.** 2020 shares from Pew Research Center, *How the Global Religious Landscape
+  Changed From 2010 to 2020* (June 2025), bundled verbatim and checked by sha256. Coverage is
+  183 of 195; the 12 microstates Pew does not cover stay missing.
+- **Official languages.** Seven flags from the bundled `COUNTRY_FACTS`: English, French, Arabic,
+  Spanish, Portuguese, Russian and German (each official in 5 or more states).
+
+### D11. Attitudes are compared only where surveyed — never imputed
+
+The World Values Survey covers 88 of the 195 states. I tested whether the attitudes of the
+other 107 could be estimated from everything else (10-fold cross-validated ridge regression on
+all other indicators):
+
+| Inglehart–Welzel dimension | CV R² | Median abs. error | 90th percentile error |
+|---|---:|---:|---:|
+| Traditional → secular-rational | 0.67 | 0.43 SD | 0.95 SD |
+| Survival → self-expression | 0.63 | 0.38 SD | 0.97 SD |
+
+An error of up to a full standard deviation is as large as the owner's whole tolerance. So
+v2 imputes nothing. Two countries are compared on the indicators **both** have (a partial,
+Gower-style distance), and attitudes count only between surveyed countries.
+
+### D12. A 1-SD boundary on every dimension needs about 50 personas — so the boundary sits on four core dimensions
+
+**Measured on the snapshot.**
+
+- **Plain clustering does not meet the rule.** Ordinary clustering into 25 personas leaves
+  **73 of 195 countries (37%)** more than 1 SD from their persona's median on at least one of
+  12 dimensions. That is the owner's complaint, measured.
+- **The rule on all 11 candidate dimensions is too strict for a persona count of 30 or fewer.**
+  Those dimensions were development, demography, democracy, integrity, peace, the two attitude
+  dimensions, and four religion shares. An exact set-partition solver over about 5,000 feasible
+  candidates needed:
+  - at 1 SD: **50 personas, 18 of them single countries**;
+  - at 1.5 SD: 37 personas, 12 of them single countries.
+
+  A one-country persona describes a country, not a persona.
+- **With a fixed 20 personas** (at least 3 countries each), the countries left outside the rule
+  numbered:
+  - 31 with all 11 dimensions;
+  - 15 with 8;
+  - 2 with 5.
+
+  The blocking dimensions were mostly the religion shares and peace.
+
+**Decision.** The hard boundary covers four **core** dimensions, one headline axis per pillar
+that has one:
+
+- development;
+- demography;
+- governance (democracy and integrity together);
+- values (the two attitude dimensions together, surveyed countries only).
+
+Every other variable is governed by the **quotable** rule instead (D14).
+
+### D13. Religion is out of the boundary, and weights are calibrated so no domain dominates
+
+- **Religion took up 40% of the first boundary.** An intermediate design put the Christian and
+  Muslim shares in the boundary: 2 of its 5 dimensions. The owner then asked not to over-index
+  on religion, so it was removed from the boundary entirely.
+- **Religion also dominated the similarity itself.** I measured each domain's influence as the
+  change in the similarity when that domain is left out, as a share of the total. The shares
+  under equal pillar weights:
+
+| Domain | Nominal weight | Influence share |
+|---|---:|---:|
+| Size (population) | 5.0% | **16.0%** |
+| Religion | 8.3% | **15.2%** |
+| Global reputation (soft power) | 5.0% | 10.4% |
+| Official languages | 8.3% | 9.4% |
+| Regional organisations | 8.3% | 7.8% |
+| … | … | … |
+| Each attitude dimension | 12.5% | 3.1% |
+
+Religion and size separate countries in a sharp, near-categorical way that no other domain
+duplicates. So a small nominal weight still bought an outsized say.
+
+**Decision: calibrate.** Weights start equal by pillar. Any domain whose influence share
+exceeds 1/15 (6.7%) is then damped and the weights renormalised, repeating until none does.
+It converged in 7 iterations, with every domain at 6.9% or less:
+
+- religion: 8.3% → **5.0%**;
+- size: 5.0% → 2.5%;
+- soft power: 5.0% → 3.2%;
+- each attitude dimension: 12.5% → 16.9%.
+
+**Resulting pillar weights.** The owner's emphasis on scores and attitudes is kept:
+
+| Pillar | Weight |
+|---|---:|
+| Facts | 23% |
+| Index scores | 25% |
+| Attitudes | 34% |
+| Heritage | 18% |
+
+The calibrated similarity correlates 0.986 with the uncalibrated one: a correction, not a
+different model.
+
+### D14. Search, persona count and descriptions
+
+- **Search.** Constrained iterated local search on the calibrated similarity, for every K from
+  10 to 30. The objective, in order:
+  - first, members outside the boundary, at a weight of 20 distance units each;
+  - second, the sum of distances to each persona's medoid.
+
+  Every persona has at least 3 countries. Each K starts from average-linkage, Ward and k-medoids
+  solutions and keeps the best.
+- **Sweep result.** Every K from 10 to 30 reaches **zero** members outside the boundary except
+  K = 12 (one). Silhouettes are low everywhere (0.10–0.14): countries form a continuum, not
+  islands.
+- **Choosing K.** The rule was fixed before the results were seen: the most granular K with no
+  boundary exceptions whose personas are reproducible. "Reproducible" follows Hennig (2007): a
+  median persona Jaccard of at least 0.60 across perturbed rebuilds, and no persona at 0.50 or
+  below ("dissolved"). The perturbations re-weight domains, leave one domain out, or resample
+  indicators.
+- **Descriptions.** Figures are template tokens rendered from the data
+  (`scripts/lib/personaText.mjs`), as medians and member ranges and never means. A figure is
+  **quotable** only if every member lies within 1 world SD of the persona's median on it. So a
+  description can no longer quote a figure that misdescribes a member, which was the owner's
+  complaint.
+
+---
+
 ## 2026-09-24 — UI surfaces shipped (edition 2026)
 
 The four approved surfaces are built. Every one reads `src/data/countryPersonas.ts`, which
