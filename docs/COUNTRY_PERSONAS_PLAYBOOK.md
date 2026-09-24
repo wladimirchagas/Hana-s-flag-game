@@ -971,6 +971,10 @@ Notes:
 
 ### E2. Target structure
 
+> **Superseded by the v1 build (2026-09-24).** Measured stability supports **5 groups and 12 types**,
+> built top-down on four core domains; finer structures were not stable. See
+> [`COUNTRY_PERSONAS_LEDGER.md`](COUNTRY_PERSONAS_LEDGER.md) D2–D4.
+
 - **Groups:** 6–8; each 10–45 countries (≤ 23% of the 195).
 - **Types:** 18–24, nested; each ≥ 4 countries; about 3 per group.
 - **Special codes:** "provisional" (scored, not built) and "Unclassified" (under 50% of domain
