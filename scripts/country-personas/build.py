@@ -541,12 +541,33 @@ def profile(members: list[str], reference: list[str]) -> list[dict]:
     return rows
 
 
+def geographic_memberships() -> set[str]:
+    """An organisation whose members are ≥ 80% from one continent is a geographic label (the
+    EU, the African Union, CARICOM, the Gulf Cooperation Council…). Featuring it would bring
+    geography back into the portraits, which the playbook forbids; it stays in the profile."""
+    out, cont = set(), col("geo_continent")
+    for var, meta in VARS.items():
+        if not var.startswith("member_"):
+            continue
+        members = [c for c in U if num(var)[c] == 1]
+        shares = Counter(cont[members].dropna()).values()
+        if members and max(shares) / len(members) >= 0.8:
+            out.add(var)
+    return out
+
+
+GEOGRAPHIC_MEMBERSHIPS = geographic_memberships()
+
+
 def key_features(rows, size, k=6):
     """Top six by |z|, observed for ≥ 60% of members (and ≥ 3 of them), drawn from ≥ 3 themes.
-    Benchmarks (continent, region, income group) and rating labels are profiled, never featured."""
+    Never featured (profiled only): benchmarks (continent, region, income group), rating labels,
+    geographic memberships, and counts of the app's own listings (count_*), which measure our
+    catalogue as much as the country."""
     need = max(3, math.ceil(0.6 * size))
     cand = [r for r in rows if r["n"] >= need and r.get("role") != "benchmark"
-            and not r["var"].startswith(("geo_", "wb_region", "wb_income_group")) and "_rating" not in r["var"]]
+            and not r["var"].startswith(("geo_", "wb_region", "wb_income_group", "count_")) and "_rating" not in r["var"]
+            and r["var"] not in GEOGRAPHIC_MEMBERSHIPS]
     cand.sort(key=lambda r: -abs(r["z"]))
     picked, themes = [], []
     for r in cand:  # the best row from each of the three strongest themes first

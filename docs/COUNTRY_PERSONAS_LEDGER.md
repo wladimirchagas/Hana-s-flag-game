@@ -130,13 +130,30 @@ The pilot (playbook C2.7) produced a microstate cluster whose members had, on av
 their inputs imputed. It was an artefact. The same-looking group in this build is different:
 
 - **It is earned from observed data.** Population and Soft Power are observed for every member.
-  Only two countries in the whole build set have any imputed domain.
+  No built country has any domain imputed: within-domain averaging covers every item-level gap.
+  Only the Vatican lacks whole domains; it observes a single domain and is **Unclassified**.
 - **Imputation doesn't move it.** Every one of the 20 imputations gives the same modal type
   (imputation agreement 100%).
 - **It matches an established category.** "Small states" is used by the World Bank and the
   Commonwealth.
 
-### D6. Known limits, carried to the owner review
+### D6. Key features exclude geography-in-disguise and the app's own catalogue counts
+
+The first profiles featured "Member of CARICOM" and "Member of the African Union" (geography
+under another name) and "Public broadcasters listed" (a count of the app's own curation, not a
+fact about the country). The playbook bars geography from key features and treats curation
+counts as descriptors only.
+
+- **The rule.** An organisation is a *geographic label* when at least 80% of its members are on
+  one continent. That is measured from `countryBlocks.ts`, not decided by hand. `count_*`
+  variables are never featured.
+- **What it removes.** It excludes the EU, ASEAN, Mercosur, the Gulf Cooperation Council, the
+  African Union, CARICOM and NATO.
+- **What it keeps.** Cross-continental clubs stay eligible: the OECD, OPEC, BRICS, the G20 and
+  the Commonwealth.
+- **Nothing is lost.** Every excluded row stays in the full Grand Index profile.
+
+### D7. Known limits, carried to the owner review
 
 - **Reweighting sensitivity at ±27% fails the playbook's 0.70 target.** At ±14% the groups
   hold (ARI about 0.8). Borders between groups depend on how much weight each axis gets, as
