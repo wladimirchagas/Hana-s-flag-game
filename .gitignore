@@ -44,3 +44,7 @@ scripts/__pycache__/
 # 28 MB of source data whose exact content is pinned by the sha256 recorded for each era
 # in scripts/data/era-gap-fill.json, so provenance survives without the bulk.
 scripts/data/upstream-eras/
+
+# Country Personas research build: Python bytecode and search caches (never committed)
+scripts/country-personas/__pycache__/
+scripts/country-personas/.*.json

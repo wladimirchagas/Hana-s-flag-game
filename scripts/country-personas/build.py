@@ -1,44 +1,64 @@
 #!/usr/bin/env python3
-"""Country Personas — research build (docs/COUNTRY_PERSONAS_PLAYBOOK.md, steps 3–14).
+"""Country Personas v2 — research build (docs/COUNTRY_PERSONAS_PLAYBOOK.md; decisions in
+docs/COUNTRY_PERSONAS_LEDGER.md).
 
 Reads ONLY scripts/data/country-persona-inputs.json (the dated, sourced snapshot written by
 scripts/build-country-persona-inputs.mjs) and writes:
 
-  scripts/data/country-personas-model.draft.json   the draft model: transforms, standardisation
-                                                    constants, domain weights, centroids,
-                                                    hierarchy and every country's assignment
-  scripts/data/country-personas-grand-index.json    persona-vs-world profile of every variable
-  docs/country-personas/BUILD_REPORT.md             diagnostics and acceptance criteria
+  scripts/data/country-personas-model.draft.json   the draft model: indicators and their
+                                                    standardisation constants, pillar/domain
+                                                    weights, the tolerance rule, every persona's
+                                                    members and every country's assignment
+  scripts/data/country-personas-profile.json       every persona's MEDIAN and member RANGE on
+                                                    every variable, and whether that variable
+                                                    may be claimed in its description
+  docs/country-personas/BUILD_REPORT.md             diagnostics
 
-This is the heavy, occasional build. Nothing in src/ reads its output until the owner has
-reviewed the personas (playbook step 12) and the model is frozen.
+The owner's brief for v2 (2026-09-24):
+  • ONE level of personas — at most 30, at least 10 (no groups/types);
+  • greater use of the indices and the World Values Survey attitudes, with culture and heritage
+    (religion, official languages, regional organisations) blended in;
+  • STRICT BOUNDARIES: a member must sit within 1 world standard deviation of its persona's
+    median, and no description may quote an average that does not describe its members.
+
+How this build meets that brief:
+  • Similarity = four pillars — facts, index scores, attitudes, heritage — starting from equal
+    weights split equally over each pillar's domains, then CALIBRATED so that no single domain
+    accounts for more than 1/15 of what separates countries (owner: religion must be "one of many
+    variables"; measured before calibration, religion drove 15% and country size 16%). Missing values are never imputed: two countries are compared
+    on the indicators BOTH have (a partial, Gower-style distance), so the ~107 states the World
+    Values Survey has not covered are compared on the other three pillars only.
+  • Boundaries: every member must lie within TAU (= 1 world SD) of its persona's median on each
+    CORE dimension — development, demography, governance and values. Religion is deliberately NOT
+    a core dimension (owner, 2026-09-24: "one of many variables … don't over-index on it"); it is
+    one of 15 similarity domains. The partition is found by iterated local search that minimises
+    (members outside the tolerance) first and within-persona distance second, with every persona
+    at least MIN_SIZE countries. A member still outside after the search is recorded as an
+    EXCEPTION on the dimension it misses, never hidden.
+  • Descriptions: profile.json reports medians and member ranges, never means, and marks a
+    variable claimable only when EVERY observed member sits within 1 world SD of the persona
+    median on it (and it is distinctive). The portraits may state only claimable figures.
 
     python3 -m venv /tmp/cp && /tmp/cp/bin/pip install -r scripts/country-personas/requirements.txt
     /tmp/cp/bin/python scripts/country-personas/build.py
-
-Imputed values exist only inside this build, to compute distances. They are never written
-to any output as data.
 """
 from __future__ import annotations
 
 import hashlib
 import json
 import math
-import sys
+import os
 import warnings
 from collections import Counter
+from multiprocessing import Pool
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from scipy.cluster.hierarchy import fcluster, linkage
+from scipy.cluster.hierarchy import fcluster, leaves_list, linkage, optimal_leaf_ordering
 from scipy.spatial.distance import squareform
 from scipy.stats import skew
-from sklearn.cluster import KMeans
-from sklearn.decomposition import PCA
-from sklearn.experimental import enable_iterative_imputer  # noqa: F401
-from sklearn.impute import IterativeImputer
-from sklearn.metrics import adjusted_rand_score, calinski_harabasz_score, silhouette_score
+from sklearn.metrics import adjusted_rand_score, silhouette_score
 from sklearn.preprocessing import PowerTransformer
 
 warnings.filterwarnings("ignore")
@@ -46,91 +66,72 @@ warnings.filterwarnings("ignore")
 ROOT = Path(__file__).resolve().parents[2]
 SNAPSHOT = ROOT / "scripts/data/country-persona-inputs.json"
 OUT_MODEL = ROOT / "scripts/data/country-personas-model.draft.json"
-OUT_GRAND_INDEX = ROOT / "scripts/data/country-personas-grand-index.json"
+OUT_PROFILE = ROOT / "scripts/data/country-personas-profile.json"
 OUT_REPORT = ROOT / "docs/country-personas/BUILD_REPORT.md"
 
 SEED = 20260924
-M_IMPUTATIONS = 20          # playbook step 6
-CONSENSUS_SUBSAMPLES = 25   # per imputation (step 9)
-BOOTSTRAPS = 100            # per candidate k and for final stability
-BUILD_SHARE = 0.75          # ≥ 75% of domain weight observed → part of the build
-UNCLASSIFIED_SHARE = 0.50   # < 50% → "Unclassified: not enough comparable data"
-MIN_TYPE = 4                # playbook E2
-GROUP_K_RANGE = range(4, 9)
-SPLIT_K_RANGE = (2, 3, 4)
-GROUP_SIZE = (10, 45)
-GROUP_JACCARD = 0.75        # every group must be at least this stable (Hennig 2007: "stable")
-TYPE_JACCARD = 0.60         # a group is split into types only when every type reaches this
+TAU = 1.0                  # owner: "no more than 1 standard deviation from the median"
+MIN_SIZE = 3               # a persona of one or two countries describes a country, not a persona
+K_RANGE = range(10, 31)    # owner: one level; 30 is a ceiling, 10 a floor
+if os.environ.get("K_ONLY"):
+    K_RANGE = [int(k) for k in os.environ["K_ONLY"].split(",")]
+LAMBDA = 20.0              # cost of one member outside the tolerance, in distance units
+SEARCH_ROUNDS = 15         # iterated-local-search kicks per start
+STAB_RUNS_PER_K = 12       # quick stability ensemble for every K in the sweep
+PERTURBATIONS = 40         # full stability ensemble for the chosen K
+STABLE_MEDIAN = 0.60       # Hennig (2007): mean Jaccard 0.6–0.75 = a real pattern; ≥ 0.75 stable
+DISSOLVED = 0.50           # ≤ 0.5 = the cluster dissolves under perturbation
+CLAIM_MIN_Z = 0.5          # a claim must also be distinctive: ≥ 0.5 world SD from the world median
+UNCLASSIFIED_SHARE = 0.5   # < 50% of the similarity weight observed → "not enough comparable data"
+PROVISIONAL_SHARE = 0.6    # < 60% → placed, but provisional
+WORKERS = max(1, min(4, os.cpu_count() or 1))
+SMOKE = bool(os.environ.get("SMOKE"))    # tiny settings to test the pipeline end to end
+if SMOKE:
+    SEARCH_ROUNDS, STAB_RUNS_PER_K, PERTURBATIONS = 1, 3, 3
 
-# ── Domains (playbook step 5, E1) ────────────────────────────────────────────
-# Indicator = (snapshot variable, transform, sign). Sign aligns every indicator so that
-# higher = more of the named concept. `fallback` fills a country the primary misses.
-#
-# Four core domains. The first build used nine (prosperity, freedom, integrity, age,
-# urban/services, resources, migrants, scale, women in work): at 195 countries that gave
-# about seven near-independent dimensions and NO stable partition (group bootstrap Jaccard
-# 0.54-0.74, types 31% >= 0.60, weight-sensitivity ARI 0.46). Merging the domains that
-# measure one latent axis (prosperity + urban/service economy = development; freedom +
-# integrity = governance) and keeping the two genuinely independent axes (age structure
-# relative to development; scale) gives five groups that all pass Jaccard >= 0.75. The
-# dropped domains stay in the snapshot as descriptors and feature in the Grand Index.
-# Evidence and alternatives tried: docs/COUNTRY_PERSONAS_LEDGER.md.
-DOMAINS = [
-    {"key": "development", "label": "Development", "weight": 1.0, "indicators": [
-        {"var": "wb_gdppc_ppp", "transform": "log", "sign": 1, "fallback": "wb_gdppc_usd"},
-        {"var": "idx_hdi", "transform": "none", "sign": 1},
-        {"var": "wb_internet", "transform": "none", "sign": 1},
-        {"var": "wb_urban", "transform": "none", "sign": 1},
-        {"var": "wb_agriculture", "transform": "asinh", "sign": -1},
-        {"var": "wb_services", "transform": "none", "sign": 1},
-    ]},
-    {"key": "governance", "label": "Governance", "weight": 1.0, "indicators": [
-        {"var": "idx_freedomHouse", "transform": "none", "sign": 1},
-        {"var": "idx_vDem", "transform": "none", "sign": 1},
-        {"var": "idx_economist", "transform": "none", "sign": 1},
-        {"var": "idx_rsfPress", "transform": "none", "sign": 1},
-        {"var": "idx_cpi", "transform": "none", "sign": 1},
-        {"var": "idx_wjpRuleOfLaw", "transform": "none", "sign": 1},
-    ]},
-    # Age structure correlates 0.87 with development (above the 0.81 duplication gate), so
-    # the domain is its RESIDUAL on development: older or younger than countries at the same
-    # level of development. That keeps the informative exceptions without counting wealth twice.
-    {"key": "age_structure", "label": "Age structure relative to development", "weight": 1.0, "residualOn": "development", "indicators": [
-        {"var": "wb_age_65_up", "transform": "none", "sign": 1},
-        {"var": "wb_age_0_14", "transform": "none", "sign": -1},
-        {"var": "wb_fertility", "transform": "log", "sign": -1},
-        {"var": "wb_life_expectancy", "transform": "none", "sign": 1},
-        {"var": "wb_pop_growth", "transform": "none", "sign": -1},
-    ]},
-    {"key": "scale", "label": "Scale and global reach", "weight": 1.0, "indicators": [
-        {"var": "wb_population", "transform": "log", "sign": 1},
-        {"var": "idx_softPower", "transform": "log", "sign": 1},
-    ]},
-]
-
-THEMES = {  # for the "key features from ≥ 3 themes" rule (playbook step 11)
-    "economy": ["wb_gdppc", "wb_agriculture", "wb_industry", "wb_services", "wb_trade", "wb_resource_rents",
-                "wb_remittances", "wb_tourist_arrivals", "idx_imdCompetitiveness", "wb_gini"],
-    "people": ["wb_population", "wb_urban", "wb_largest_city", "wb_density", "wb_land_area", "wb_age", "wb_fertility",
-               "wb_life_expectancy", "wb_pop_growth", "wb_migrants", "wb_female_lfp", "wb_health_exp", "wb_tertiary"],
-    "infrastructure": ["wb_internet", "wb_electricity", "wb_co2_pc"],
-    "governance": ["idx_freedomHouse", "idx_vDem", "idx_economist", "idx_cpi", "idx_rsfPress", "idx_wjpRuleOfLaw",
-                   "idx_perception", "pol_"],
-    "wellbeing": ["idx_hdi", "idx_happiness", "idx_genderGap"],
-    "security": ["idx_gpi", "idx_gti", "idx_etr", "wb_homicide", "wb_military"],
-    "global ties": ["idx_softPower", "idx_gdi", "count_", "member_"],
-    "sport": ["sport_"],
-    "values": ["wvs_"],
-    "history": ["hist_"],
+# ── Pillars, domains, indicators ─────────────────────────────────────────────
+# (variable, transform, sign). Sign aligns an indicator so that higher = more of the named
+# concept. Derived variables (tourism per person, Hellinger religion shares) are built below.
+PILLARS = {
+    "facts": {"label": "Measured facts", "domains": {
+        "development": ("Development", [("wb_gdppc_ppp", "log", 1), ("idx_hdi", "none", 1), ("wb_internet", "none", 1), ("wb_life_expectancy", "none", 1)]),
+        "demography": ("Demography", [("wb_fertility", "log", 1), ("wb_age_0_14", "none", 1), ("wb_age_65_up", "none", -1), ("wb_pop_growth", "none", 1)]),
+        "economy": ("Economic structure", [("wb_agriculture", "asinh", 1), ("wb_industry", "none", 1), ("wb_resource_rents", "asinh", 1), ("wb_trade", "log", 1), ("wb_remittances", "asinh", 1), ("tourism_per_person", "log", 1)]),
+        "society": ("Society", [("wb_urban", "none", 1), ("wb_migrants", "log", 1), ("wb_female_lfp", "none", 1), ("wb_homicide", "log1p", 1)]),
+        "scale": ("Size", [("wb_population", "log", 1)]),
+    }},
+    "indices": {"label": "Index scores", "domains": {
+        "democracy": ("Democracy and freedom", [("idx_freedomHouse", "none", 1), ("idx_vDem", "none", 1), ("idx_economist", "none", 1), ("idx_rsfPress", "none", 1)]),
+        "integrity": ("Clean government and rule of law", [("idx_cpi", "none", 1), ("idx_wjpRuleOfLaw", "none", 1)]),
+        "peace": ("Peace and security", [("idx_gpi", "none", -1), ("idx_gti", "none", -1), ("idx_etr", "none", -1)]),
+        "wellbeing": ("Happiness and gender equality", [("idx_happiness", "none", 1), ("idx_genderGap", "none", 1)]),
+        "standing": ("Global reputation", [("idx_softPower", "log", 1)]),
+    }},
+    "attitudes": {"label": "Attitudes (World Values Survey)", "domains": {
+        "secular": ("Traditional to secular-rational values", [("wvs_god_importance", "none", -1), ("wvs_abortion_justifiable", "none", 1), ("wvs_very_proud", "none", -1), ("wvs_respect_authority_good", "none", -1), ("wvs_autonomy", "none", 1)]),
+        "selfexpression": ("Survival to self-expression values", [("wvs_happy", "none", 1), ("wvs_trust", "log", 1), ("wvs_homosexuality_justifiable", "none", 1), ("wvs_petition_signed", "log", 1), ("wvs_postmaterialist_first", "log", 1)]),
+    }},
+    "heritage": {"label": "Culture and heritage", "domains": {
+        "religion": ("Religious make-up", [(f"{r}_hellinger", "none", 1) for r in ("rel_christian", "rel_muslim", "rel_unaffiliated", "rel_buddhist", "rel_hindu", "rel_jewish", "rel_other")]),
+        "language": ("Official languages", [(f"lang_{l}", "none", 1) for l in ("english", "french", "arabic", "spanish", "portuguese", "russian", "german")]),
+        "region": ("Regional organisations", [(f"member_{m}", "none", 1) for m in (
+            "european_union", "african_union", "asean", "mercosur", "arab_league", "caricom", "ecowas", "sadc",
+            "pacific_islands_forum", "organization_of_american_states", "gulf_cooperation_council",
+            "eurasian_economic_union", "andean_community", "pacific_alliance", "usmca", "commonwealth_of_nations")]),
+    }},
 }
+UNSCALED_DOMAINS = {"religion", "language", "region"}   # already on a common scale (shares / 0–1)
+FALLBACK = {"wb_gdppc_ppp": "wb_gdppc_usd"}
 
-
-def theme_of(var: str) -> str:
-    for theme, prefixes in THEMES.items():
-        if any(var.startswith(p) for p in prefixes):
-            return theme
-    return "other"
-
+# CORE dimensions carry the hard 1-SD boundary: the headline axes of the facts, index-score and
+# attitude pillars. Heritage (religion, language, regional organisations) shapes similarity but
+# never the boundary. Each core dimension is re-standardised to median 0, world SD 1.
+CORE = [
+    ("development", "Development", ("mean", ["development"], 2)),
+    ("demography", "Demography (fertility, age structure, population growth)", ("mean", ["demography"], 2)),
+    ("governance", "Governance (democracy, clean government, rule of law)", ("mean_of_domains", ["democracy", "integrity"], 1)),
+    ("values", "Values (secular-rational and self-expression)", ("mean_of_domains_all", ["secular", "selfexpression"], 3)),
+]
 
 # ── Load ─────────────────────────────────────────────────────────────────────
 snap_bytes = SNAPSHOT.read_bytes()
@@ -138,663 +139,815 @@ S = json.loads(snap_bytes)
 U: list[str] = S["universe"]
 NAMES: dict[str, str] = S["names"]
 VARS: dict = S["variables"]
-
-
-def col(var: str) -> pd.Series:
-    return pd.Series({c: (S["values"][c].get(var) or {}).get("v", np.nan) for c in U}, dtype=object)
+N0 = len(U)
 
 
 def num(var: str) -> pd.Series:
-    return pd.to_numeric(col(var), errors="coerce").astype(float)
+    return pd.to_numeric(pd.Series({c: (S["values"][c].get(var) or {}).get("v", np.nan) for c in U}, dtype=object), errors="coerce").astype(float)
+
+
+RAW: dict[str, pd.Series] = {}
+
+
+def raw(var: str) -> pd.Series:
+    if var not in RAW:
+        if var == "tourism_per_person":
+            RAW[var] = num("wb_tourist_arrivals") / num("wb_population")
+        elif var.endswith("_hellinger"):
+            RAW[var] = np.sqrt(num(var[: -len("_hellinger")]).clip(lower=0) / 100.0)
+        else:
+            RAW[var] = num(var)
+    return RAW[var]
 
 
 def transform(x: pd.Series, how: str) -> pd.Series:
     if how == "log":
         return np.log(x.where(x > 0))
+    if how == "log1p":
+        return np.log1p(x.clip(lower=0))
     if how == "asinh":
         return np.arcsinh(x)
     return x
 
 
-# ── Step 4: transform, align, robust-standardise ─────────────────────────────
-def standardise(var: str, how: str, sign: int) -> tuple[pd.Series, dict]:
-    x = transform(num(var), how)
+def standardise(var: str, how: str, sign: int, scaled: bool) -> tuple[pd.Series, dict]:
+    """Transform; tame |skew| > 1 with Yeo-Johnson; centre on the median and divide by the world
+    SD (the owner's unit of tolerance); clip at ±4 SD so one extreme cannot dominate."""
+    x = transform(raw(var), how)
     meta: dict = {"var": var, "transform": how, "sign": sign}
+    if var in FALLBACK:
+        fb = transform(raw(FALLBACK[var]), how)
+        # rescale the fallback onto the primary's scale over the countries that have both
+        both = x.notna() & fb.notna()
+        a, b = np.polyfit(fb[both], x[both], 1)
+        fill = x.isna() & fb.notna()
+        x = x.where(~fill, a * fb + b)
+        meta["fallback"] = {"var": FALLBACK[var], "slope": float(a), "intercept": float(b), "usedFor": sorted(x.index[fill])}
+    if not scaled:
+        meta["coverage"] = int(x.notna().sum())
+        return (sign * x), meta
     obs = x.dropna()
     sk = float(skew(obs))
-    if abs(sk) > 1:  # ONS rule: |skewness| ≤ 1 after transformation
+    if abs(sk) > 1:
         pt = PowerTransformer(method="yeo-johnson", standardize=False).fit(obs.values.reshape(-1, 1))
-        lam = float(pt.lambdas_[0])
-        x = pd.Series(pt.transform(x.values.reshape(-1, 1)).ravel(), index=x.index).where(x.notna())
-        meta["yeoJohnsonLambda"] = lam
+        meta["yeoJohnsonLambda"] = float(pt.lambdas_[0])
         meta["skewBefore"] = round(sk, 2)
+        x = pd.Series(pt.transform(x.values.reshape(-1, 1)).ravel(), index=x.index).where(x.notna())
         sk = float(skew(x.dropna()))
-    med = float(x.median())
-    idr = float(x.quantile(0.9) - x.quantile(0.1))
-    meta.update({"median": med, "interDecileRange": idr, "skew": round(sk, 2), "coverage": int(x.notna().sum())})
-    return sign * (x - med) / idr, meta
+    med, sd = float(x.median()), float(x.std())
+    meta.update({"median": med, "sd": sd, "skew": round(sk, 2), "coverage": int(x.notna().sum())})
+    return (sign * (x - med) / sd).clip(-4, 4), meta
 
 
-def domain_scores(domains: list[dict], drop: str | None = None) -> tuple[pd.DataFrame, list[dict]]:
-    """Mean of available standardised indicators per domain; residualise where declared;
-    rescale every domain to mean 0, SD 1. `drop` removes one indicator (leave-one-out)."""
-    raw, metas = {}, []
-    for d in domains:
-        zs, ims = [], []
-        for ind in d["indicators"]:
-            if ind["var"] == drop:
-                continue
-            z, m = standardise(ind["var"], ind["transform"], ind["sign"])
-            if ind.get("fallback") and ind["fallback"] != drop:
-                zf, mf = standardise(ind["fallback"], ind["transform"], ind["sign"])
-                filled = z.isna() & zf.notna()
-                z = z.fillna(zf)
-                m["fallback"] = {**mf, "usedFor": sorted(z.index[filled])}
-            zs.append(z)
-            ims.append(m)
-        if not zs:
+Z: dict[str, pd.Series] = {}          # "domain:var" → standardised series
+DOMAIN_OF: dict[str, str] = {}
+PILLAR_OF: dict[str, str] = {}
+INDICATOR_META: dict[str, list[dict]] = {}
+for p, pdef in PILLARS.items():
+    for d, (dlabel, inds) in pdef["domains"].items():
+        PILLAR_OF[d] = p
+        INDICATOR_META[d] = []
+        for var, how, sign in inds:
+            z, meta = standardise(var, how, sign, d not in UNSCALED_DOMAINS)
+            Z[f"{d}:{var}"] = z
+            DOMAIN_OF[f"{d}:{var}"] = d
+            INDICATOR_META[d].append(meta)
+ZF = pd.DataFrame(Z, index=U)
+DOMAINS = [d for p in PILLARS for d in PILLARS[p]["domains"]]
+W_DOMAIN = {d: (1.0 / len(PILLARS)) / len(PILLARS[PILLAR_OF[d]]["domains"]) for d in DOMAINS}
+
+# ── Data sufficiency (on the NOMINAL equal-pillar weights: a country the World Values Survey has
+#    not covered still has three of four pillars, 75%, and is placed) ─────────
+dom_observed = pd.DataFrame({d: ZF[[c for c in ZF.columns if DOMAIN_OF[c] == d]].notna().any(axis=1) for d in DOMAINS})
+obs_share = sum(dom_observed[d].astype(float) * W_DOMAIN[d] for d in DOMAINS)
+STATUS = pd.Series("built", index=U)
+STATUS[obs_share < PROVISIONAL_SHARE] = "provisional"
+STATUS[obs_share < UNCLASSIFIED_SHARE] = "unclassified"
+PLACED = [c for c in U if STATUS[c] != "unclassified"]
+N = len(PLACED)
+IDX = {c: i for i, c in enumerate(PLACED)}
+
+
+# ── Distances (partial over observed indicators, per domain) ─────────────────
+def domain_d2(d: str, Zm: pd.DataFrame, cols: list[str] | None = None) -> np.ndarray:
+    cols = cols if cols is not None else [c for c in Zm.columns if DOMAIN_OF[c] == d]
+    X = Zm.loc[PLACED, cols].to_numpy(float)
+    M = ~np.isnan(X)
+    X0 = np.nan_to_num(X)
+    num_ = np.zeros((N, N))
+    cnt = np.zeros((N, N))
+    for k in range(X.shape[1]):
+        m = M[:, k].astype(float)
+        x = X0[:, k]
+        mm = m[:, None] * m[None, :]
+        num_ += (x[:, None] - x[None, :]) ** 2 * mm
+        cnt += mm
+    with np.errstate(invalid="ignore", divide="ignore"):
+        D2 = num_ / cnt
+    D2[cnt == 0] = np.nan
+    return D2
+
+
+def normalise(D2: np.ndarray) -> tuple[np.ndarray, float]:
+    off = D2[~np.eye(len(D2), dtype=bool)]
+    scale = float(np.nanmean(off))
+    return D2 / scale, scale
+
+
+DD: dict[str, np.ndarray] = {}
+DOMAIN_SCALE: dict[str, float] = {}
+for d in DOMAINS:
+    DD[d], DOMAIN_SCALE[d] = normalise(domain_d2(d, ZF))
+
+
+def combine(DD_: dict[str, np.ndarray], weights: dict[str, float]) -> np.ndarray:
+    num_ = np.zeros((N, N))
+    den = np.zeros((N, N))
+    for d, D2 in DD_.items():
+        w = weights.get(d, 0.0)
+        if w <= 0:
             continue
-        raw[d["key"]] = pd.concat(zs, axis=1).mean(axis=1, skipna=True)
-        metas.append({"key": d["key"], "label": d["label"], "weight": d["weight"], "indicators": ims,
-                      **({"residualOn": d["residualOn"]} if d.get("residualOn") else {})})
-    R = pd.DataFrame(raw)
-    for m in metas:
-        if m.get("residualOn") and m["residualOn"] in R:
-            y, x = R[m["key"]], R[m["residualOn"]]
-            ok = y.notna() & x.notna()
-            b, a = np.polyfit(x[ok], y[ok], 1)
-            R[m["key"]] = (y - (a + b * x)).where(ok)
-            m["residual"] = {"intercept": float(a), "slope": float(b), "r": float(np.corrcoef(x[ok], y[ok])[0, 1])}
-    for m in metas:
-        mu, sd = float(R[m["key"]].mean()), float(R[m["key"]].std())
-        R[m["key"]] = (R[m["key"]] - mu) / sd
-        m["mean"], m["sd"] = mu, sd
-    return R, metas
+        ok = ~np.isnan(D2)
+        num_ += np.where(ok, w * D2, 0.0)
+        den += np.where(ok, w, 0.0)
+    with np.errstate(invalid="ignore", divide="ignore"):
+        D = np.sqrt(num_ / den)
+    np.fill_diagonal(D, 0.0)
+    return np.nan_to_num(D, nan=float(np.nanmax(D)))
 
 
-SCORES, DOMAIN_META = domain_scores(DOMAINS)
-DKEYS = list(SCORES.columns)
-WEIGHTS = np.array([d["weight"] for d in DOMAINS if d["key"] in DKEYS])
+IU = np.triu_indices(N, 1)
 
 
-def unidimensionality() -> dict:
+def influence_shares(weights: dict[str, float]) -> dict[str, float]:
+    """Each domain's share of the total leave-one-out influence: 1 − corr(full distance, distance
+    without that domain), normalised to sum to 1 (partition-free)."""
+    D = combine(DD, weights)
+    raw_ = {}
+    for drop in DOMAINS:
+        Dm = combine(DD, {d: (0.0 if d == drop else v) for d, v in weights.items()})
+        raw_[drop] = 1 - float(np.corrcoef(D[IU], Dm[IU])[0, 1])
+    tot = sum(raw_.values())
+    return {d: v / tot for d, v in raw_.items()}
+
+
+def calibrate(weights: dict[str, float], cap: float, iters: int = 60) -> tuple[dict[str, float], dict[str, float], int]:
+    """Damp any domain whose influence share exceeds the cap, renormalise, repeat. Domains below
+    the cap are never boosted directly; they gain only through renormalisation."""
+    w = dict(weights)
+    for it in range(iters):
+        sh = influence_shares(w)
+        if max(sh.values()) <= cap * 1.05:
+            return w, sh, it
+        for d in w:
+            if sh[d] > cap:
+                w[d] *= (cap / sh[d]) ** 0.7
+        t = sum(w.values())
+        w = {d: v / t for d, v in w.items()}
+    return w, influence_shares(w), iters
+
+
+INFLUENCE_CAP = 1.0 / len(DOMAINS)
+INFLUENCE_NOMINAL = influence_shares(W_DOMAIN)
+W, INFLUENCE_CALIBRATED, CAL_ITERS = calibrate(W_DOMAIN, INFLUENCE_CAP)
+D_BASE = combine(DD, W)
+
+
+# ── Core dimensions (the hard boundary) ──────────────────────────────────────
+def std_med_sd(s: pd.Series) -> tuple[pd.Series, float, float]:
+    med, sd = float(s.median()), float(s.std())
+    return (s - med) / sd, med, sd
+
+
+def domain_mean(d: str, min_obs: int) -> pd.Series:
+    cols = [c for c in ZF.columns if DOMAIN_OF[c] == d]
+    return ZF[cols].mean(axis=1).where(ZF[cols].notna().sum(axis=1) >= min_obs)
+
+
+CORE_META: list[dict] = []
+core_cols = {}
+for key, label, (kind, src, min_obs) in CORE:
+    parts = []
+    if kind == "mean":
+        s = domain_mean(src[0], min_obs)
+    elif kind in ("mean_of_domains", "mean_of_domains_all"):
+        cols = []
+        for d in src:
+            zd, pm, ps = std_med_sd(domain_mean(d, 1 if kind == "mean_of_domains" else min_obs))
+            cols.append(zd)
+            parts.append({"domain": d, "median": pm, "sd": ps})
+        s = pd.concat(cols, axis=1).mean(axis=1, skipna=(kind == "mean_of_domains"))
+    else:
+        s = num(src)
+    z, med, sd = std_med_sd(s)
+    core_cols[key] = z
+    CORE_META.append({"key": key, "label": label, "kind": kind, "from": src, "minObserved": min_obs,
+                      "parts": parts, "median": med, "sd": sd, "coverage": int(s.notna().sum())})
+CORE_DF = pd.DataFrame(core_cols, index=U)
+CORE_KEYS = list(CORE_DF.columns)
+CM = CORE_DF.loc[PLACED].to_numpy(float)
+
+
+# ── Partition search ─────────────────────────────────────────────────────────
+def fast_median(X: np.ndarray) -> np.ndarray:
+    """Column medians ignoring NaN (small arrays; ~10× faster than np.nanmedian)."""
+    nan = np.isnan(X)
+    Sx = np.sort(np.where(nan, np.inf, X), axis=0)
+    n = (~nan).sum(axis=0)
+    cols = np.arange(X.shape[1])
+    lo = Sx[np.maximum((n - 1) // 2, 0), cols]
+    hi = Sx[np.maximum(n // 2, 0), cols]
+    med = (lo + hi) / 2
+    med[n == 0] = np.nan
+    return med
+
+
+def outside(C: np.ndarray, members: list[int]) -> np.ndarray:
+    """Boolean (len(members) × dims): member outside TAU of the persona median on that dim."""
+    sub = C[members]
+    if len(members) < 2:
+        return np.zeros_like(sub, dtype=bool)
+    dev = np.abs(sub - fast_median(sub))
+    return np.nan_to_num(dev, nan=0.0) > TAU + 1e-9
+
+
+class Partition:
+    def __init__(self, D, C, K, labels):
+        self.D, self.C, self.K = D, C, K
+        self.lab = np.asarray(labels).copy()
+        self.members = [list(np.where(self.lab == k)[0]) for k in range(K)]
+        self.J = [self.obj(m) for m in self.members]
+
+    def obj(self, m):
+        if not m:
+            return 1e12
+        blk = self.D[np.ix_(m, m)]
+        return LAMBDA * float(outside(self.C, m).any(axis=1).sum()) + float(blk.sum(axis=1).min())
+
+    def violators(self):
+        return int(sum(outside(self.C, m).any(axis=1).sum() for m in self.members))
+
+    def cost(self):
+        return float(sum(self.D[np.ix_(m, m)].sum(axis=1).min() for m in self.members))
+
+    def move(self, i, dest):
+        src = self.lab[i]
+        if src == dest or len(self.members[src]) <= MIN_SIZE:
+            return None
+        ms = [x for x in self.members[src] if x != i]
+        md = self.members[dest] + [i]
+        js, jd = self.obj(ms), self.obj(md)
+        return (js + jd) - (self.J[src] + self.J[dest]), (src, dest, ms, md, js, jd)
+
+    def swap(self, i, j):
+        a, b = self.lab[i], self.lab[j]
+        if a == b:
+            return None
+        ma = [x for x in self.members[a] if x != i] + [j]
+        mb = [x for x in self.members[b] if x != j] + [i]
+        ja, jb = self.obj(ma), self.obj(mb)
+        return (ja + jb) - (self.J[a] + self.J[b]), (a, b, ma, mb, ja, jb)
+
+    def apply(self, spec):
+        a, b, ma, mb, ja, jb = spec
+        self.members[a], self.members[b] = ma, mb
+        self.J[a], self.J[b] = ja, jb
+        for x in ma:
+            self.lab[x] = a
+        for x in mb:
+            self.lab[x] = b
+
+
+def local_search(P: Partition, rng, near=8, sweeps=40):
+    order = np.argsort(P.D, axis=1)
+    for _ in range(sweeps):
+        improved = False
+        for i in rng.permutation(len(P.lab)):
+            nn = order[i, 1: near * 3]
+            dests = list(dict.fromkeys(int(P.lab[j]) for j in nn if P.lab[j] != P.lab[i]))[:near]
+            best = None
+            for dst in dests:
+                r = P.move(i, dst)
+                if r and r[0] < -1e-9 and (best is None or r[0] < best[0]):
+                    best = r
+            if best:
+                P.apply(best[1])
+                improved = True
+                continue
+            for j in nn[: near * 2]:
+                r = P.swap(i, int(j))
+                if r and r[0] < -1e-9:
+                    P.apply(r[1])
+                    improved = True
+                    break
+        if not improved:
+            break
+    return P
+
+
+def fix_sizes(D, lab, K):
+    """Turn any labelling into exactly K clusters of ≥ MIN_SIZE (merge small ones into their
+    nearest cluster; split the largest by average linkage until there are K)."""
+    lab = np.unique(np.asarray(lab), return_inverse=True)[1]
+    while True:
+        ks, cnt = np.unique(lab, return_counts=True)
+        small = [k for k, n in zip(ks, cnt) if n < MIN_SIZE]
+        if not small or len(ks) == 1:
+            break
+        k = small[0]
+        m = np.where(lab == k)[0]
+        others = [o for o in ks if o != k]
+        lab[m] = min(others, key=lambda o: D[np.ix_(m, np.where(lab == o)[0])].mean())
+        lab = np.unique(lab, return_inverse=True)[1]
+    while lab.max() + 1 < K:
+        ks, cnt = np.unique(lab, return_counts=True)
+        big = ks[np.argmax(cnt)]
+        m = np.where(lab == big)[0]
+        sub = fcluster(linkage(squareform(D[np.ix_(m, m)], checks=False), "average"), 2, "maxclust")
+        if min(np.bincount(sub)[1:]) < MIN_SIZE:
+            sub = np.where(np.arange(len(m)) < len(m) // 2, 1, 2)
+        lab[m[sub == 2]] = lab.max() + 1
+    while lab.max() + 1 > K:  # merge the closest pair
+        ks = np.unique(lab)
+        best = None
+        for a in ks:
+            for b in ks:
+                if a < b:
+                    dab = D[np.ix_(np.where(lab == a)[0], np.where(lab == b)[0])].mean()
+                    if best is None or dab < best[0]:
+                        best = (dab, a, b)
+        lab[lab == best[2]] = best[1]
+        lab = np.unique(lab, return_inverse=True)[1]
+    return lab
+
+
+def pam_init(D, K, rng):
+    """k-medoids++ seeding then Voronoi iteration on D."""
+    med = [int(rng.integers(len(D)))]
+    for _ in range(1, K):
+        dmin = D[:, med].min(axis=1)
+        med.append(int(rng.choice(len(D), p=dmin ** 2 / (dmin ** 2).sum())))
+    for _ in range(30):
+        lab = np.argmin(D[:, med], axis=1)
+        new = []
+        for k in range(K):
+            m = np.where(lab == k)[0]
+            new.append(int(m[np.argmin(D[np.ix_(m, m)].sum(axis=1))]) if len(m) else med[k])
+        if new == med:
+            break
+        med = new
+    return np.argmin(D[:, med], axis=1)
+
+
+def search(D, C, K, seed, starts=("average", "ward", "pam", "pam")):
+    rng = np.random.default_rng(seed)
+    best = None
+    for s_i, how in enumerate(starts):
+        if how in ("average", "ward", "complete"):
+            lab0 = fcluster(linkage(squareform(D, checks=False), how), K, "maxclust")
+        else:
+            lab0 = pam_init(D, K, rng)
+        P = Partition(D, C, K, fix_sizes(D, lab0, K))
+        local_search(P, rng)
+        bl, bj = P.lab.copy(), sum(P.J)
+        for _ in range(SEARCH_ROUNDS):
+            Q = Partition(D, C, K, bl)
+            for i in rng.choice(len(D), max(3, len(D) // 16), replace=False):
+                j = int(rng.choice(np.argsort(D[i])[1:10]))
+                r = Q.move(int(i), int(Q.lab[j]))
+                if r:
+                    Q.apply(r[1])
+            local_search(Q, rng)
+            if sum(Q.J) < bj - 1e-9:
+                bl, bj = Q.lab.copy(), sum(Q.J)
+        P = Partition(D, C, K, bl)
+        key = (P.violators(), P.cost())
+        if best is None or key < best[0]:
+            best = (key, bl, how)
+    return best
+
+
+def run_k(K):
+    (viol, cost), lab, how = search(D_BASE, CM, K, SEED + K, starts=("average", "pam", "pam"))
+    sil = float(silhouette_score(D_BASE, lab, metric="precomputed"))
+    return {"k": K, "violators": viol, "cost": cost, "silhouette": sil, "labels": lab.tolist(), "start": how,
+            "sizes": sorted(np.bincount(lab).tolist(), reverse=True)}
+
+
+# ── Stability ensemble (for the chosen K) ────────────────────────────────────
+def perturbed_distance(kind: str, i: int) -> np.ndarray:
+    rng = np.random.default_rng(SEED + 7000 + 97 * i + {"weights": 1, "drop-domain": 2, "indicators": 3}[kind] * 1000)
+    if kind == "weights":        # every calibrated domain weight × a Dirichlet factor (CV ≈ 18%)
+        f = rng.dirichlet(np.full(len(DOMAINS), 30.0)) * len(DOMAINS)
+        return combine(DD, {d: W[d] * f[k] for k, d in enumerate(DOMAINS)})
+    if kind == "drop-domain":    # leave one domain out
+        drop = DOMAINS[i % len(DOMAINS)]
+        return combine(DD, {d: (0.0 if d == drop else v) for d, v in W.items()})
+    # "indicators": resample each domain's indicators with replacement
+    DDb = {}
+    for d in DOMAINS:
+        cols = [c for c in ZF.columns if DOMAIN_OF[c] == d]
+        pick = [cols[j] for j in rng.integers(len(cols), size=len(cols))]
+        Zb = ZF[pick].copy()
+        Zb.columns = [f"{c}#{j}" for j, c in enumerate(pick)]
+        for c in Zb.columns:
+            DOMAIN_OF[c] = d
+        DDb[d] = normalise(domain_d2(d, Zb, list(Zb.columns)))[0]
+    return combine(DDb, W)
+
+
+def run_perturbation(args):
+    kind, i, K = args
+    Dp = perturbed_distance(kind, i)
+    global SEARCH_ROUNDS
+    SEARCH_ROUNDS = 1 if SMOKE else 6
+    (viol, cost), lab, _ = search(Dp, CM, K, SEED + 500 + i, starts=("average", "pam"))
+    return {"kind": kind, "i": i, "K": K, "labels": lab.tolist(), "violators": viol}
+
+
+def perturbation_jobs(K: int, n: int) -> list[tuple]:
+    """A balanced ensemble: re-weighted domains, one domain left out (rotating over all 15 across
+    the K sweep), indicators resampled."""
+    jobs = []
+    for j in range(n):
+        kind = ("weights", "drop-domain", "indicators")[j % 3]
+        i = (3 * (j // 3) + K) % len(DOMAINS) if kind == "drop-domain" else j // 3 + 100 * K
+        jobs.append((kind, i, K))
+    return jobs
+
+
+def domain_separation(lab: np.ndarray) -> dict[str, float]:
+    """How strongly each domain separates the personas: 1 − (mean within-persona squared distance
+    ÷ mean over all pairs), on the pairs that domain observes."""
+    same = lab[:, None] == lab[None, :]
+    off = ~np.eye(N, dtype=bool)
     out = {}
     for d in DOMAINS:
-        if len(d["indicators"]) < 2:
-            continue
-        X = pd.concat([ind["sign"] * transform(num(ind["var"]), ind["transform"]) for ind in d["indicators"]], axis=1)
-        R = X.corr(min_periods=40).values
-        ev = np.sort(np.linalg.eigvalsh(R))[::-1]
-        out[d["key"]] = {"firstComponentShare": float(ev[0] / len(d["indicators"])), "minCorrelation": float(np.nanmin(R[np.triu_indices(len(R), 1)]))}
+        D2 = DD[d]
+        ok = ~np.isnan(D2) & off
+        out[d] = round(float(1 - np.nanmean(D2[ok & same]) / np.nanmean(D2[ok])), 4)
     return out
 
 
-UNIDIM = unidimensionality()
-CROSS = SCORES.corr(min_periods=40)
-
-# ── Step 6: build set, provisional, unclassified ─────────────────────────────
-observed = SCORES.notna()
-obs_share = (observed * WEIGHTS).sum(axis=1) / WEIGHTS.sum()
-STATUS = pd.Series("built", index=U)
-STATUS[obs_share < BUILD_SHARE] = "provisional"
-STATUS[obs_share < UNCLASSIFIED_SHARE] = "unclassified"
-BUILD = [c for c in U if STATUS[c] == "built"]
-PROVISIONAL = [c for c in U if STATUS[c] == "provisional"]
-UNCLASSIFIED = [c for c in U if STATUS[c] == "unclassified"]
-
-Sb = SCORES.loc[BUILD].values
-imputations = [
-    IterativeImputer(sample_posterior=True, max_iter=30, random_state=SEED + m).fit_transform(Sb)
-    for m in range(M_IMPUTATIONS)
-]
-Xbar = np.mean(imputations, axis=0)
-Xw = Xbar * WEIGHTS
-n = len(BUILD)
-rng = np.random.default_rng(SEED)
-
-
-# ── Clustering primitives ────────────────────────────────────────────────────
-def kmeans(X, k, n_init=50, seed=SEED, init="k-means++"):
-    return KMeans(n_clusters=k, n_init=n_init if isinstance(init, str) else 1, init=init, random_state=seed).fit(X)
-
-
-def centroids_of(X, labels):
-    ks = sorted(set(labels))
-    return np.array([X[labels == k].mean(axis=0) for k in ks]), ks
-
-
-def enforce_min_size(X, labels, min_size=MIN_TYPE):
-    """Merge any type below min_size into its members' nearest other type, then re-run Lloyd
-    from the surviving centroids until assignments are stable (FIZZ: inspect, adjust, re-iterate)."""
-    labels = np.asarray(labels).copy()
-    for _ in range(50):
-        sizes = Counter(labels)
-        small = [k for k, s in sizes.items() if s < min_size]
-        if small:
-            C, ks = centroids_of(X, labels)
-            keep = [i for i, k in enumerate(ks) if k not in small]
-            for i in np.where(np.isin(labels, small))[0]:
-                d = ((C[keep] - X[i]) ** 2).sum(axis=1)
-                labels[i] = ks[keep[int(np.argmin(d))]]
-        C, ks = centroids_of(X, labels)
-        polished = kmeans(X, len(ks), init=C).labels_
-        if not small and adjusted_rand_score(polished, labels) == 1.0:
-            return polished
-        labels = polished
-    return labels
-
-
-def jaccard_vs(labels, idx, boot_labels):
-    drawn = set(idx.tolist())
-    boot_sets = [set(idx[boot_labels == k].tolist()) for k in set(boot_labels)]
+def best_match_jaccard(base: np.ndarray, other: np.ndarray) -> list[float]:
     out = []
-    for k in sorted(set(labels)):
-        cl = set(np.where(labels == k)[0].tolist()) & drawn
-        out.append(max((len(cl & b) / len(cl | b)) for b in boot_sets) if cl else np.nan)
+    for k in range(base.max() + 1):
+        a = set(np.where(base == k)[0])
+        out.append(max(len(a & set(np.where(other == o)[0])) / len(a | set(np.where(other == o)[0])) for o in range(other.max() + 1)))
     return out
 
 
-def bootstrap_jaccard(X, labels, fit, B=BOOTSTRAPS, seed=SEED):
-    r = np.random.default_rng(seed)
-    J = []
-    for b in range(B):
-        idx = r.choice(len(X), len(X), replace=True)
-        J.append(jaccard_vs(labels, idx, fit(X[idx], b)))
-    return np.nanmean(np.array(J, dtype=float), axis=0)
-
-
-# ── Step 8: choose the number of groups (top-down, OAC-style) ────────────────
-group_candidates = []
-for k in GROUP_K_RANGE:
-    lab = kmeans(Xw, k, n_init=500).labels_
-    sizes = np.bincount(lab)
-    J = bootstrap_jaccard(Xw, lab, lambda Xb, b, k=k: kmeans(Xb, k, n_init=10, seed=b).labels_)
-    group_candidates.append({
-        "k": k, "sizes": sorted(sizes.tolist(), reverse=True),
-        "sizesOk": bool(sizes.min() >= GROUP_SIZE[0] and sizes.max() <= GROUP_SIZE[1]),
-        "silhouette": float(silhouette_score(Xw, lab)), "ch": float(calinski_harabasz_score(Xw, lab)),
-        "jaccard": sorted([round(float(x), 2) for x in J], reverse=True), "jaccardMin": float(np.min(J)),
-    })
-passing = [g for g in group_candidates if g["sizesOk"] and g["jaccardMin"] >= GROUP_JACCARD]
-chosen_group = max(passing, key=lambda g: g["k"]) if passing else max(group_candidates, key=lambda g: (g["jaccardMin"], g["silhouette"]))
-K_G = chosen_group["k"]
-
-# ── Step 9: consensus across imputations × subsamples, then polish ───────────
-co = np.zeros((n, n))
-cs = np.zeros((n, n))
-for m, Xm in enumerate(imputations):
-    Xmw = Xm * WEIGHTS
-    r = np.random.default_rng(SEED + 1000 + m)
-    for s in range(CONSENSUS_SUBSAMPLES):
-        idx = np.sort(r.choice(n, int(0.8 * n), replace=False))
-        lab = kmeans(Xmw[idx], K_G, n_init=10, seed=m * 100 + s).labels_
-        co[np.ix_(idx, idx)] += lab[:, None] == lab[None, :]
-        cs[np.ix_(idx, idx)] += 1
-CONSENSUS = np.where(cs > 0, co / np.maximum(cs, 1), 0.0)
-np.fill_diagonal(CONSENSUS, 1.0)
-consensus_labels = fcluster(linkage(squareform(1 - CONSENSUS, checks=False), "average"), K_G, "maxclust") - 1
-reference_kmeans = kmeans(Xw, K_G, n_init=1000).labels_
-GROUPS = enforce_min_size(Xw, consensus_labels, min_size=GROUP_SIZE[0])
-C_G, ks = centroids_of(Xw, GROUPS)
-GROUPS = np.array([ks.index(v) for v in GROUPS])
-K_G = len(C_G)
-group_jaccard = bootstrap_jaccard(Xw, GROUPS, lambda Xb, b: kmeans(Xb, K_G, n_init=10, seed=b).labels_, B=200)
-
-# ── Types: split a group only where the split is itself stable ───────────────
-split_candidates = {}
-SPLIT_K = {}
-TYPES = np.zeros(n, dtype=int)
-G_OF_T, C_T, type_jaccard_list = [], [], []
-for g in range(K_G):
-    idx = np.where(GROUPS == g)[0]
-    Xg = Xw[idx]
-    cands, best = [], None
-    for k in SPLIT_K_RANGE:
-        if len(idx) < k * MIN_TYPE:
-            break
-        lab = kmeans(Xg, k, n_init=300).labels_
-        if np.bincount(lab).min() < MIN_TYPE:
-            cands.append({"k": k, "minSize": int(np.bincount(lab).min()), "jaccard": None})
-            continue
-        J = bootstrap_jaccard(Xg, lab, lambda Xb, b, k=k: kmeans(Xb, k, n_init=10, seed=b).labels_)
-        cands.append({"k": k, "minSize": int(np.bincount(lab).min()), "silhouette": float(silhouette_score(Xg, lab)),
-                      "jaccard": sorted([round(float(x), 2) for x in J], reverse=True)})
-        if J.min() >= TYPE_JACCARD and (best is None or k > best[0]):
-            best = (k, lab, J)
-    split_candidates[g] = cands
-    k, lab, J = best if best else (1, np.zeros(len(idx), dtype=int), np.array([float(group_jaccard[g])]))
-    SPLIT_K[g] = k
-    for s in range(k):
-        TYPES[idx[lab == s]] = len(C_T)
-        C_T.append(Xg[lab == s].mean(axis=0))
-        G_OF_T.append(g)
-        type_jaccard_list.append(float(J[s]))
-C_T = np.array(C_T)
-G_OF_T = np.array(G_OF_T)
-K_T = len(C_T)
-TYPE_SIZES = np.bincount(TYPES)
-type_jaccard = np.array(type_jaccard_list)
-
-
-def pipeline(X, seed=SEED, n_init=50):
-    """Re-run groups then the same per-group splits on (re-weighted) data X aligned with BUILD.
-    New groups are matched to final groups by majority overlap to pick each split's k."""
-    g = kmeans(X, K_G, n_init=n_init, seed=seed).labels_
-    t = np.zeros(len(X), dtype=int)
-    nxt = 0
-    for ng in range(K_G):
-        idx = np.where(g == ng)[0]
-        if len(idx) == 0:
-            continue
-        k = SPLIT_K[Counter(GROUPS[idx]).most_common(1)[0][0]]
-        sub = kmeans(X[idx], k, n_init=n_init, seed=seed).labels_ if k > 1 and len(idx) >= k else np.zeros(len(idx), dtype=int)
-        t[idx] = nxt + sub
-        nxt += k
-    return t, g
-
-
-# ── Codes: order groups (and types within groups) along the first family-tree axis ──
-pca = PCA(n_components=2).fit(Xw)
-flip = 1 if pca.components_[0][DKEYS.index("development")] >= 0 else -1  # development points right
-axis = pca.transform(C_G)[:, 0] * flip
-group_order = list(np.argsort(-axis))
-GROUP_LETTER = {g: "ABCDEFGHIJ"[i] for i, g in enumerate(group_order)}
-type_axis = pca.transform(C_T)[:, 0] * flip
-type_order = sorted(range(K_T), key=lambda t: (group_order.index(G_OF_T[t]), -type_axis[t]))
-TYPE_CODE = {t: f"{GROUP_LETTER[G_OF_T[t]]}{i + 1:02d}" for i, t in enumerate(type_order)}
-
-# ── Step 10: confidence and second choice (hierarchical, like future scoring) ─
-def nearest_two(dists):
-    order = np.argsort(dists)
-    return int(order[0]), (int(order[1]) if len(order) > 1 else None)
-
-
-def classify(xw, weights_ok=None):
-    """Nearest group centroid, then nearest type centroid inside that group. `weights_ok`
-    masks unobserved domains (partial distance, rescaled by observed weight)."""
-    ok = np.ones(len(xw), dtype=bool) if weights_ok is None else weights_ok
-    scale = (WEIGHTS ** 2).sum() / (WEIGHTS[ok] ** 2).sum()
-    dg = np.sqrt(((C_G[:, ok] - xw[ok]) ** 2).sum(axis=1) * scale)
-    g, g2 = nearest_two(dg)
-    members = [t for t in range(K_T) if G_OF_T[t] == g]
-    dt = np.sqrt(((C_T[members][:, ok] - xw[ok]) ** 2).sum(axis=1) * scale)
-    ti, t2i = nearest_two(dt)
-    out = {"group": GROUP_LETTER[g], "confidence": round(float(1 - dg[g] / dg[g2]), 3), "secondGroup": GROUP_LETTER[g2],
-           "type": TYPE_CODE[members[ti]]}
-    if t2i is not None:
-        out["typeConfidence"] = round(float(1 - dt[ti] / dt[t2i]), 3)
-        out["secondType"] = TYPE_CODE[members[t2i]]
-    return out, g, members[ti]
-
-
-assign: dict[str, dict] = {}
-mismatch = 0
-for i, c in enumerate(BUILD):
-    out, g, t = classify(Xw[i])
-    mismatch += (g != GROUPS[i]) or (t != TYPES[i])
-    mates = np.where(GROUPS == GROUPS[i])[0]
-    assign[c] = {"status": "built", **out, "consensus": round(float(CONSENSUS[i, mates].mean()), 3),
-                 "observedShare": round(float(obs_share[c]), 3),
-                 "imputedDomains": [DKEYS[j] for j in range(len(DKEYS)) if not observed.loc[c].iloc[j]]}
-for c in PROVISIONAL:
-    z = SCORES.loc[c].values
-    ok = ~np.isnan(z)
-    out, _, _ = classify(np.where(ok, z, 0) * WEIGHTS, ok)
-    assign[c] = {"status": "provisional", **out, "observedShare": round(float(obs_share[c]), 3),
-                 "imputedDomains": [DKEYS[j] for j in range(len(DKEYS)) if not ok[j]]}
-for c in UNCLASSIFIED:
-    assign[c] = {"status": "unclassified", "observedShare": round(float(obs_share[c]), 3)}
-
-# ── Stability, imputation agreement, sensitivity, leave-one-variable-out ─────
-imp_agree = []
-for Xm in imputations:
-    Xmw = Xm * WEIGHTS
-    imp_agree.append([classify(Xmw[i])[2] for i in range(n)])
-imp_agree = np.array(imp_agree)
-modal = np.array([Counter(imp_agree[:, i]).most_common(1)[0][0] for i in range(n)])
-imputation_agreement = float(np.mean(modal == TYPES))
-
-baseline_t, baseline_g = pipeline(Xw, seed=SEED, n_init=200)
-method_floor = {"types": float(adjusted_rand_score(TYPES, baseline_t)), "groups": float(adjusted_rand_score(GROUPS, baseline_g))}
-
-
-def rebuild_ari(X_, seed):
-    t, g = pipeline(X_, seed=seed, n_init=50)
-    return adjusted_rand_score(TYPES, t), adjusted_rand_score(GROUPS, g)
-
-
-one_at_a_time = []
-for j, key in enumerate(DKEYS):
-    for f in (0.5, 1.5):
-        w = WEIGHTS.copy()
-        w[j] *= f
-        at, ag = rebuild_ari(Xbar * w, SEED + j)
-        one_at_a_time.append({"domain": key, "factor": f, "typesARI": round(at, 3), "groupsARI": round(ag, 3)})
-dir_r = np.random.default_rng(SEED + 7)
-dirichlet, dirichlet_tight = [], []
-for b in range(200):
-    w = len(WEIGHTS) * dir_r.dirichlet(np.full(len(WEIGHTS), 10.0)) * WEIGHTS   # per-weight CV ≈ 27%
-    dirichlet.append(rebuild_ari(Xbar * w, SEED + 500 + b))
-    w = len(WEIGHTS) * dir_r.dirichlet(np.full(len(WEIGHTS), 40.0)) * WEIGHTS   # per-weight CV ≈ 14%
-    dirichlet_tight.append(rebuild_ari(Xbar * w, SEED + 900 + b))
-dirichlet, dirichlet_tight = np.array(dirichlet), np.array(dirichlet_tight)
-
-lovo = []
-for d in DOMAINS:
-    for ind in d["indicators"]:
-        Sx, _ = domain_scores(DOMAINS, drop=ind["var"])
-        keys = list(Sx.columns)
-        wx = np.array([dd["weight"] for dd in DOMAINS if dd["key"] in keys])
-        Xl = IterativeImputer(max_iter=30, random_state=SEED).fit_transform(Sx.loc[BUILD].values)
-        t_, g_ = pipeline(Xl * wx, seed=SEED, n_init=50)
-        lovo.append({"dropped": ind["var"], "domainRemoved": d["key"] not in keys,
-                     "typesARI": round(adjusted_rand_score(TYPES, t_), 3), "groupsARI": round(adjusted_rand_score(GROUPS, g_), 3)})
-
-# ── Step 11: Grand Index ─────────────────────────────────────────────────────
-ASSIGNED = [c for c in U if assign[c]["status"] != "unclassified"]
-group_of = {c: assign[c]["group"] for c in ASSIGNED}
-type_of = {c: assign[c]["type"] for c in ASSIGNED}
-CORE_VARS = {ind["var"] for d in DOMAINS for ind in d["indicators"]} | {"wb_gdppc_usd"}
-
-
+# ── Profiles: medians, member ranges and what may be claimed ─────────────────
 def analysis_scale(x: pd.Series) -> tuple[pd.Series, str]:
-    o = x.dropna()
-    if len(o) > 5 and o.min() >= 0 and skew(o) > 2:
+    """asinh for a heavily right-skewed non-negative variable (decided over the placed countries,
+    exactly as the app generator decides it), raw otherwise."""
+    o = x[PLACED].dropna()
+    if len(o) > 5 and o.min() >= 0 and skew(o) > 1.5:
         return np.arcsinh(x), "asinh"
     return x, "raw"
 
 
-def profile(members: list[str], reference: list[str]) -> list[dict]:
-    rows = []
+def profile_persona(members: list[str], size: int) -> dict:
+    out = {}
     for var, meta in VARS.items():
         kind = meta.get("kind")
-        if kind in ("numeric", "binary"):
+        if kind == "numeric":
             x = num(var)
+            world = x[PLACED].dropna()
+            if len(world) < 20 or world.std() == 0:
+                continue
             xs, scale = analysis_scale(x)
-            ref = xs[reference].dropna()
-            mem_raw = x[members].dropna()
-            mem = xs[members].dropna()
-            if len(ref) < 20 or ref.std() == 0 or len(mem) == 0:
-                continue
-            ref_raw = x[reference].dropna()
-            row = {"var": var, "label": meta.get("label", var), "theme": theme_of(var), "kind": kind, "scale": scale,
-                   "n": int(len(mem)), "share": round(len(mem) / len(members), 2),
-                   "mean": float(mem_raw.mean()), "referenceMean": float(ref_raw.mean()),
-                   "z": round(float((mem.mean() - ref.mean()) / ref.std()), 3)}
-            if ref_raw.min() >= 0 and ref_raw.mean() > 0:
-                row["index"] = round(float(100 * mem_raw.mean() / ref_raw.mean()))
-            rows.append(row)
-        elif kind == "category":
-            x = col(var)
-            ref = x[reference].dropna()
+            sd = float(xs[PLACED].std())
             mem = x[members].dropna()
-            if len(ref) < 20 or len(mem) == 0:
+            if len(mem) == 0:
                 continue
-            for level, p_ref in ref.value_counts(normalize=True).items():
-                p = float((mem == level).mean())
-                sd = math.sqrt(p_ref * (1 - p_ref))
-                rows.append({"var": f"{var}={level}", "label": f"{meta.get('label', var)}: {level}", "theme": theme_of(var),
-                             "kind": "category", "role": meta.get("role"), "n": int(len(mem)), "share": round(len(mem) / len(members), 2),
-                             "mean": round(p, 3), "referenceMean": round(float(p_ref), 3),
-                             "index": round(100 * p / p_ref) if p_ref > 0 else None,
-                             "z": round((p - p_ref) / sd, 3) if sd > 0 else 0.0})
-    return rows
-
-
-def geographic_memberships() -> set[str]:
-    """An organisation whose members are ≥ 80% from one continent is a geographic label (the
-    EU, the African Union, CARICOM, the Gulf Cooperation Council…). Featuring it would bring
-    geography back into the portraits, which the playbook forbids; it stays in the profile."""
-    out, cont = set(), col("geo_continent")
-    for var, meta in VARS.items():
-        if not var.startswith("member_"):
-            continue
-        members = [c for c in U if num(var)[c] == 1]
-        shares = Counter(cont[members].dropna()).values()
-        if members and max(shares) / len(members) >= 0.8:
-            out.add(var)
+            ms = xs[mem.index]
+            med_s = float(ms.median())
+            homogeneous = bool((np.abs(ms - med_s) <= TAU * sd + 1e-12).all())
+            z = (med_s - float(xs[PLACED].median())) / sd
+            enough = len(mem) == size or len(mem) >= 3
+            # quotable: every observed member within TAU world SD of the median, so a figure quoted
+            # for the persona (its median and member range) describes each member.
+            # claimable: quotable AND distinctive — eligible to be a key feature.
+            out[var] = {"n": int(len(mem)), "median": float(mem.median()), "min": float(mem.min()), "max": float(mem.max()),
+                        "z": round(float(z), 3), "scale": scale, "homogeneous": homogeneous,
+                        "quotable": bool(homogeneous and enough),
+                        "claimable": bool(homogeneous and enough and abs(z) >= CLAIM_MIN_Z)}
+        elif kind == "binary":
+            x = num(var)
+            mem = x[members].dropna()
+            if len(mem) == 0:
+                continue
+            share, wshare = float(mem.mean()), float(x[PLACED].dropna().mean())
+            out[var] = {"n": int(len(mem)), "share": round(share, 3), "worldShare": round(wshare, 3),
+                        "quotable": bool(len(mem) == size and share in (0.0, 1.0)),
+                        "claimable": bool(len(mem) == size and share in (0.0, 1.0) and abs(share - wshare) >= 0.5)}
+        elif kind == "category":
+            xc = pd.Series({c: (S["values"][c].get(var) or {}).get("v") for c in members}).dropna()
+            if len(xc) == 0:
+                continue
+            counts = Counter(xc)
+            level, cnt = counts.most_common(1)[0]
+            out[var] = {"n": int(len(xc)), "levels": dict(counts), "allShare": level if cnt == len(xc) else None,
+                        "quotable": bool(cnt == len(xc) == size),
+                        "claimable": bool(cnt == len(xc) == size and meta.get("role") != "benchmark")}
+    # core dimensions (standardised units)
+    for k in CORE_KEYS:
+        v = CORE_DF.loc[members, k].dropna()
+        if len(v):
+            out[f"core:{k}"] = {"n": int(len(v)), "median": float(v.median()), "min": float(v.min()), "max": float(v.max()),
+                                "z": round(float(v.median()), 3), "scale": "world SD", "homogeneous": bool((np.abs(v - v.median()) <= TAU + 1e-9).all()),
+                                "claimable": False}
     return out
 
 
-GEOGRAPHIC_MEMBERSHIPS = geographic_memberships()
+# ── Family map: classical MDS of the persona distance ────────────────────────
+def classical_mds(D: np.ndarray, dims: int = 2):
+    n = len(D)
+    J = np.eye(n) - np.ones((n, n)) / n
+    B = -0.5 * J @ (D ** 2) @ J
+    vals, vecs = np.linalg.eigh(B)
+    order = np.argsort(vals)[::-1]
+    vals, vecs = vals[order], vecs[:, order]
+    pos = vals[vals > 0]
+    coords = vecs[:, :dims] * np.sqrt(np.maximum(vals[:dims], 0))
+    return coords, (vals[:dims] / pos.sum()).tolist()
 
 
-def key_features(rows, size, k=6):
-    """Top six by |z|, observed for ≥ 60% of members (and ≥ 3 of them), drawn from ≥ 3 themes.
-    Never featured (profiled only): benchmarks (continent, region, income group), rating labels,
-    geographic memberships, and counts of the app's own listings (count_*), which measure our
-    catalogue as much as the country."""
-    need = max(3, math.ceil(0.6 * size))
-    cand = [r for r in rows if r["n"] >= need and r.get("role") != "benchmark"
-            and not r["var"].startswith(("geo_", "wb_region", "wb_income_group", "count_")) and "_rating" not in r["var"]
-            and r["var"] not in GEOGRAPHIC_MEMBERSHIPS]
-    cand.sort(key=lambda r: -abs(r["z"]))
-    picked, themes = [], []
-    for r in cand:  # the best row from each of the three strongest themes first
-        if r["theme"] not in themes and len(themes) < 3:
-            picked.append(r)
-            themes.append(r["theme"])
-    for r in cand:
-        if len(picked) >= k:
-            break
-        if r not in picked:
-            picked.append(r)
-    return sorted(picked, key=lambda r: -abs(r["z"]))[:k]
+if __name__ == "__main__":
+    import sys
 
+    print(f"placed {N} of {N0}; provisional {int((STATUS == 'provisional').sum())}; unclassified {[NAMES[c] for c in U if STATUS[c] == 'unclassified']}", flush=True)
+    sweep_file = Path(__file__).with_name(".sweep.json")
+    if os.environ.get("REUSE_SWEEP") and sweep_file.exists():
+        SWEEP = json.loads(sweep_file.read_text())
+    else:
+        with Pool(WORKERS) as pool:
+            SWEEP = pool.map(run_k, list(K_RANGE))
+        sweep_file.write_text(json.dumps(SWEEP))
+    for r in SWEEP:
+        print(f"K={r['k']}: violators={r['violators']} cost={r['cost']:.1f} silhouette={r['silhouette']:.3f} start={r['start']} sizes={r['sizes']}", flush=True)
+    if os.environ.get("SWEEP_ONLY"):
+        sys.exit(0)
 
-def typical(members_idx, C):
-    d = ((Xw[members_idx] - C) ** 2).sum(axis=1)
-    return [BUILD[i] for i in np.array(members_idx)[np.argsort(d)][:5]]
+    # ── Stability of every K (quick ensemble) ────────────────────────────────
+    stab_file = Path(__file__).with_name(".stability.json")
+    if os.environ.get("REUSE_SWEEP") and stab_file.exists():
+        STAB = {int(k): v for k, v in json.loads(stab_file.read_text()).items()}
+    else:
+        jobs = [job for r in SWEEP for job in perturbation_jobs(r["k"], STAB_RUNS_PER_K)]
+        with Pool(WORKERS) as pool:
+            quick = pool.map(run_perturbation, jobs)
+        STAB = {}
+        for r in SWEEP:
+            base = np.array(r["labels"])
+            J = np.array([best_match_jaccard(base, np.array(q["labels"])) for q in quick if q["K"] == r["k"]]).mean(axis=0)
+            STAB[r["k"]] = {"median": float(np.median(J)), "min": float(J.min()), "perPersona": J.round(3).tolist()}
+        stab_file.write_text(json.dumps(STAB))
+    for r in SWEEP:
+        r["stabilityMedian"] = round(STAB[r["k"]]["median"], 3)
+        r["stabilityMin"] = round(STAB[r["k"]]["min"], 3)
+        print(f"K={r['k']}: stability median {r['stabilityMedian']:.2f}, min {r['stabilityMin']:.2f}", flush=True)
 
+    # ── Choose K ─────────────────────────────────────────────────────────────
+    # Fixed before looking at the results: the MOST GRANULAR K (owner: "more granular is better",
+    # at most 30, at least 10) that (1) has no member outside the tolerance and (2) is reproducible
+    # — median persona Jaccard ≥ STABLE_MEDIAN and no persona dissolving (≤ DISSOLVED) under
+    # perturbation. If no K qualifies, the most reproducible K among those with the fewest
+    # members outside the tolerance.
+    fewest = min(r["violators"] for r in SWEEP)
+    ok = [r for r in SWEEP if r["violators"] == fewest]
+    qualifying = [r for r in ok if r["stabilityMedian"] >= STABLE_MEDIAN and r["stabilityMin"] > DISSOLVED]
+    CHOSEN = max(qualifying, key=lambda r: r["k"]) if qualifying else max(ok, key=lambda r: (r["stabilityMedian"], r["k"]))
+    K_RULE = "most granular reproducible K" if qualifying else "no K met the reproducibility bar; most reproducible K chosen"
+    K = CHOSEN["k"]
+    LAB = np.array(CHOSEN["labels"])
+    print(f"chosen K={K} ({K_RULE}; violators {CHOSEN['violators']}, silhouette {CHOSEN['silhouette']:.3f})", flush=True)
 
-pop = num("wb_population")
-continent = col("geo_continent")
-grand = {"groups": {}, "types": {}}
-for g in range(K_G):
-    L = GROUP_LETTER[g]
-    members = [c for c in ASSIGNED if group_of[c] == L]
-    rows = profile(members, ASSIGNED)
-    cont = Counter(continent[members].dropna())
-    p = np.array(list(cont.values()), dtype=float) / sum(cont.values())
-    grand["groups"][L] = {
-        "members": members, "size": len(members),
-        "worldPopulationShare": round(float(pop[members].sum() / pop[ASSIGNED].sum()), 4),
-        "continents": dict(cont.most_common()),
-        "continentEntropy": round(float(-(p * np.log(p)).sum() / math.log(max(len(continent.dropna().unique()), 2))), 3),
-        "typicalMembers": typical(np.where(GROUPS == g)[0], C_G[g]),
-        "keyFeatures": key_features(rows, len(members)), "profile": rows,
-    }
-for t in range(K_T):
-    code = TYPE_CODE[t]
-    members = [c for c in ASSIGNED if type_of[c] == code]
-    parent = [c for c in ASSIGNED if group_of[c] == code[0]]
-    rows_w = profile(members, ASSIGNED)
-    rows_p = profile(members, parent)
-    grand["types"][code] = {
-        "group": code[0], "members": members, "size": len(members),
-        "worldPopulationShare": round(float(pop[members].sum() / pop[ASSIGNED].sum()), 4),
-        "continents": dict(Counter(continent[members].dropna()).most_common()),
-        "typicalMembers": typical(np.where(TYPES == t)[0], C_T[t]),
-        "keyFeaturesVsWorld": key_features(rows_w, len(members)),
-        "keyFeaturesVsGroup": key_features(rows_p, len(members)),
-        "profile": rows_w,
-    }
+    INFLUENCE = {d: round(v, 4) for d, v in INFLUENCE_CALIBRATED.items()}
+    SEPARATION = domain_separation(LAB)
+    print("separation of the chosen personas:", {d: SEPARATION[d] for d in DOMAINS}, flush=True)
 
-# ── Step 13: validation ──────────────────────────────────────────────────────
-def eta2(values: pd.Series, labels: pd.Series) -> float:
-    """Share of a variable's variance explained by a partition (one-way ANOVA effect size)."""
-    ok = values.notna() & labels.notna()
-    v = values[ok].to_numpy(dtype=float)
-    if len(v) < 20 or v.var() == 0:
-        return float("nan")
-    codes, _ = pd.factorize(labels[ok])
-    counts = np.bincount(codes)
-    means = np.bincount(codes, weights=v) / counts
-    return float((counts * (means - v.mean()) ** 2).sum() / ((v - v.mean()) ** 2).sum())
+    # ── Full stability ensemble for the chosen K ─────────────────────────────
+    n_w, n_d = (1, 1) if SMOKE else (12, len(DOMAINS))
+    jobs = [("weights", i, K) for i in range(n_w)] + [("drop-domain", i, K) for i in range(n_d)] + \
+           [("indicators", i, K) for i in range(max(1, PERTURBATIONS - n_w - n_d))]
+    runs_file = Path(__file__).with_name(".runs.json")
+    if os.environ.get("REUSE_SWEEP") and runs_file.exists() and json.loads(runs_file.read_text()).get("K") == K:
+        RUNS = json.loads(runs_file.read_text())["runs"]
+    else:
+        with Pool(WORKERS) as pool:
+            RUNS = pool.map(run_perturbation, jobs)
+        runs_file.write_text(json.dumps({"K": K, "runs": RUNS}))
+    JAC = np.array([best_match_jaccard(LAB, np.array(r["labels"])) for r in RUNS])
+    ARI = [adjusted_rand_score(LAB, r["labels"]) for r in RUNS]
+    co = np.zeros((N, N))
+    for r in RUNS:
+        l = np.array(r["labels"])
+        co += l[:, None] == l[None, :]
+    co /= len(RUNS)
+    print(f"stability: median persona Jaccard {np.median(JAC.mean(axis=0)):.2f}; median ARI {np.median(ARI):.2f}", flush=True)
 
+    # ── Codes: order personas so that neighbours in the code order are similar ─
+    groups = [np.where(LAB == k)[0] for k in range(K)]
+    PD = np.array([[D_BASE[np.ix_(a, b)].mean() for b in groups] for a in groups])
+    Zp = optimal_leaf_ordering(linkage(squareform(PD, checks=False), "average"), squareform(PD, checks=False))
+    order = list(leaves_list(Zp))
+    dev_med = [float(np.nanmedian(CM[g, CORE_KEYS.index("development")])) for g in groups]
+    if dev_med[order[0]] < dev_med[order[-1]]:
+        order = order[::-1]                      # start from the most developed end
+    CODES = [chr(ord("A") + i) for i in range(K)] if K <= 26 else [f"{i + 1:02d}" for i in range(K)]
+    CODE_OF = {k: CODES[order.index(k)] for k in range(K)}
 
-groups_s = pd.Series(group_of).reindex(U)
-types_s = pd.Series(type_of).reindex(U)
-benchmarks = {"continent": col("geo_continent"), "sub-region": col("geo_subregion"), "World Bank region": col("wb_region"),
-              "World Bank income group": col("wb_income_group"), "Freedom House status": col("idx_freedomHouse_rating")}
-trailers = [v for v, m in VARS.items() if m.get("kind") in ("numeric",) and v not in CORE_VARS
-            and not v.startswith("geo_") and m.get("coverage", 0) >= 60]
-perm_r = np.random.default_rng(SEED + 99)
-validation = []
-for v in trailers:
-    xs, _ = analysis_scale(num(v))
-    e_g = eta2(xs, groups_s)
-    if math.isnan(e_g):
-        continue
-    ok = xs.notna() & groups_s.notna()
-    lab = groups_s[ok].values
-    null = [eta2(xs[ok], pd.Series(perm_r.permutation(lab), index=xs[ok].index)) for _ in range(1000)]
-    row = {"var": v, "label": VARS[v].get("label", v), "n": int(ok.sum()), "groups": e_g, "types": eta2(xs, types_s),
-           "p": float((np.sum(np.array(null) >= e_g) + 1) / 1001)}
-    for name, b in benchmarks.items():
-        row[name] = eta2(xs, b)
-    validation.append(row)
-agreement = {name: {"groupsARI": float(adjusted_rand_score(groups_s[b.notna() & groups_s.notna()], b[b.notna() & groups_s.notna()])),
-                    "typesARI": float(adjusted_rand_score(types_s[b.notna() & types_s.notna()], b[b.notna() & types_s.notna()]))}
-             for name, b in benchmarks.items()}
-
-# ── Family tree (step 14) ────────────────────────────────────────────────────
-coords = pca.transform(Xw) * np.array([flip, 1])
-family_tree = {
-    "explainedVariance": [round(float(v), 3) for v in pca.explained_variance_ratio_],
-    "loadings": {k: [round(float(pca.components_[0][j] * flip), 3), round(float(pca.components_[1][j]), 3)] for j, k in enumerate(DKEYS)},
-    "countries": {c: [round(float(x), 3) for x in coords[i]] for i, c in enumerate(BUILD)},
-    "types": {TYPE_CODE[t]: [round(float(x), 3) for x in (pca.transform(C_T[[t]])[0] * np.array([flip, 1]))] for t in range(K_T)},
-}
-
-# ── Acceptance criteria (playbook E3) ────────────────────────────────────────
-group_sizes = Counter(assign[c]["group"] for c in ASSIGNED)
-type_sizes = Counter(assign[c]["type"] for c in ASSIGNED)
-lovo_min = min(r["groupsARI"] for r in lovo)
-criteria = [
-    ("Every one of the 195 has a type, or is provisional or unclassified", len(assign) == len(U), f"{len(assign)} / {len(U)}"),
-    ("Group size 10–45 countries", all(GROUP_SIZE[0] <= s <= GROUP_SIZE[1] for s in group_sizes.values()), f"{min(group_sizes.values())}–{max(group_sizes.values())}"),
-    ("Type size ≥ 4 countries (built set)", int(TYPE_SIZES.min()) >= MIN_TYPE, f"min {int(TYPE_SIZES.min())}"),
-    ("Every group bootstrap Jaccard ≥ 0.75", bool(np.all(group_jaccard >= 0.75)), ", ".join(f"{x:.2f}" for x in sorted(group_jaccard, reverse=True))),
-    ("≥ 80% of types Jaccard ≥ 0.60, none ≤ 0.50 (within-group bootstrap)", bool(np.mean(type_jaccard >= 0.6) >= 0.8 and np.min(type_jaccard) > 0.5), f"{np.mean(type_jaccard >= 0.6):.0%} ≥ 0.60; min {np.min(type_jaccard):.2f}"),
-    ("Modal type across the 20 imputations = final type for ≥ 90%", imputation_agreement >= 0.9, f"{imputation_agreement:.1%}"),
-    ("Weight sensitivity: median group ARI ≥ 0.70 (Dirichlet, weight CV ≈ 27%)", float(np.median(dirichlet[:, 1])) >= 0.7, f"median {np.median(dirichlet[:, 1]):.2f}, types {np.median(dirichlet[:, 0]):.2f}; at CV ≈ 14%: {np.median(dirichlet_tight[:, 1]):.2f} / {np.median(dirichlet_tight[:, 0]):.2f}"),
-    ("Hierarchical nearest-centroid scoring reproduces every built assignment", mismatch == 0, f"{mismatch} mismatches"),
-    ("Leave-one-variable-out group ARI ≥ 0.80 for every variable", lovo_min >= 0.8, f"min {lovo_min:.2f}"),
-    ("Consensus groups vs direct 1,000-restart k-means ARI ≥ 0.60", adjusted_rand_score(GROUPS, reference_kmeans) >= 0.6, f"{adjusted_rand_score(GROUPS, reference_kmeans):.2f}"),
-    ("Beats the permutation null (p < 0.01) on ≥ 90% of trailers", float(np.mean([r["p"] < 0.01 for r in validation])) >= 0.9, f"{np.mean([r['p'] < 0.01 for r in validation]):.0%} of {len(validation)}"),
-    ("Average silhouette (reported, not gated)", None, f"groups {silhouette_score(Xw, GROUPS):.3f}; types {silhouette_score(Xw, TYPES):.3f}"),
-]
-
-# ── Write outputs ────────────────────────────────────────────────────────────
-model = {
-    "status": "DRAFT — not reviewed; nothing in src/ reads this file",
-    "builtBy": "scripts/country-personas/build.py",
-    "snapshot": {"file": "scripts/data/country-persona-inputs.json", "sha256": hashlib.sha256(snap_bytes).hexdigest(), "generated": S["generated"]},
-    "seed": SEED,
-    "rules": {"buildShare": BUILD_SHARE, "unclassifiedShare": UNCLASSIFIED_SHARE, "minTypeSize": MIN_TYPE,
-              "groupJaccard": GROUP_JACCARD, "typeJaccard": TYPE_JACCARD, "scoring": "nearest group centroid, then nearest type centroid within that group; partial distance over observed domains",
-              "imputations": M_IMPUTATIONS, "consensusSubsamples": CONSENSUS_SUBSAMPLES},
-    "domains": DOMAIN_META,
-    "structure": {"groups": K_G, "types": K_T,
-                  "groupCentroidsWeighted": {GROUP_LETTER[g]: [round(float(x), 5) for x in C_G[g]] for g in range(K_G)},
-                  "typeCentroidsWeighted": {TYPE_CODE[t]: [round(float(x), 5) for x in C_T[t]] for t in range(K_T)},
-                  "typeGroup": {TYPE_CODE[t]: GROUP_LETTER[G_OF_T[t]] for t in range(K_T)}},
-    "assignments": {c: assign[c] for c in U},
-    "familyTree": family_tree,
-}
-OUT_MODEL.write_text(json.dumps(model, indent=1, ensure_ascii=False) + "\n")
-OUT_GRAND_INDEX.write_text(json.dumps(grand, indent=1, ensure_ascii=False) + "\n")
-
-# ── Report ───────────────────────────────────────────────────────────────────
-N = lambda codes: ", ".join(NAMES[c] for c in codes)  # noqa: E731
-lines = [
-    "# Country Personas — research build report (DRAFT)",
-    "",
-    "Auto-generated by `scripts/country-personas/build.py` — do not edit by hand. Draft for owner review:",
-    "names and pen portraits are not written yet, and nothing in the app uses this build.",
-    "",
-    f"Snapshot `{model['snapshot']['file']}` (generated {S['generated']}, sha256 `{model['snapshot']['sha256'][:12]}…`), seed {SEED}.",
-    "",
-    "## Acceptance criteria (playbook E3)",
-    "",
-    "| Criterion | Result | Value |",
-    "|---|---|---|",
-    *[f"| {name} | {'—' if ok is None else ('PASS' if ok else '**FAIL**')} | {val} |" for name, ok, val in criteria],
-    "",
-    "## Domains",
-    "",
-    "| Domain | Indicators | Coverage | First-component share | Weight |",
-    "|---|---|---|---|---|",
-]
-for m in DOMAIN_META:
-    inds = "; ".join(f"{VARS[i['var']]['label']} ({'+' if i['sign'] > 0 else '−'}{', ' + i['transform'] if i['transform'] != 'none' else ''}{', Yeo-Johnson' if 'yeoJohnsonLambda' in i else ''})" for i in m["indicators"])
-    u = UNIDIM.get(m["key"], {}).get("firstComponentShare")
-    lines.append(f"| {m['label']}{' (residual on development, r = %.2f)' % m['residual']['r'] if m.get('residual') else ''} | {inds} | {int(SCORES[m['key']].notna().sum())} | {'—' if u is None else f'{u:.2f}'} | {m['weight']} |")
-high = [(a, b, CROSS.loc[a, b]) for i, a in enumerate(DKEYS) for b in DKEYS[i + 1:] if abs(CROSS.loc[a, b]) >= 0.81]
-lines += ["", f"Cross-domain correlations at or above the 0.81 duplication gate: {', '.join(f'{a}–{b} {r:.2f}' for a, b, r in high) if high else 'none'}.",
-          "", "Domain score correlations:", "", "| | " + " | ".join(DKEYS) + " |", "|---|" + "---|" * len(DKEYS)]
-lines += [f"| {a} | " + " | ".join(f"{CROSS.loc[a, b]:.2f}" for b in DKEYS) + " |" for a in DKEYS]
-lines += ["", "## Who is built, provisional, unclassified", "",
-          f"- **Built** ({len(BUILD)}): ≥ {BUILD_SHARE:.0%} of domain weight observed.",
-          f"- **Provisional** ({len(PROVISIONAL)}): scored against the frozen centroids by partial distance: {N(PROVISIONAL) or 'none'}.",
-          f"- **Unclassified** ({len(UNCLASSIFIED)}): {N(UNCLASSIFIED) or 'none'}.",
-          "", "## Choosing the number of groups (top-down)", "", "| k | sizes | silhouette | bootstrap Jaccard | sizes 10–45 |", "|---|---|---|---|---|"]
-lines += [f"| {g['k']} | {g['sizes']} | {g['silhouette']:.3f} | {g['jaccard']} | {'yes' if g['sizesOk'] else 'no'} |" for g in group_candidates]
-lines += ["", f"Chosen: **{K_G} groups** ({'the largest k where every group reaches Jaccard ≥ ' + str(GROUP_JACCARD) + ' within the size rule' if passing else 'no k met the rule; best available'}). "
-          f"Consensus groups vs a direct 1,000-restart k-means: ARI {adjusted_rand_score(GROUPS, reference_kmeans):.2f}.",
-          "", "## Splitting groups into types (only where the split is stable)", "",
-          f"A group is split into k = 2–4 types only when every type reaches a within-group bootstrap Jaccard ≥ {TYPE_JACCARD} with ≥ {MIN_TYPE} members; the largest such k wins.", "",
-          "| Group | candidates (k: min size, Jaccard) | chosen k |", "|---|---|---|"]
-lines += [f"| {GROUP_LETTER[g]} | " + "; ".join(f"k={c['k']}: {c['minSize']}, {c['jaccard'] if c['jaccard'] is not None else 'type below min size'}" for c in split_candidates[g]) + f" | {SPLIT_K[g]} |" for g in group_order]
-lines += ["", "## Structure (codes only — names come after review)", ""]
-for g in group_order:
-    L = GROUP_LETTER[g]
-    gi = grand["groups"][L]
-    lines += [f"### Group {L} — {gi['size']} countries, {gi['worldPopulationShare']:.1%} of world population",
-              "", f"Continents: {', '.join(f'{k} {v}' for k, v in gi['continents'].items())} (entropy {gi['continentEntropy']:.2f}). Typical: {N(gi['typicalMembers'])}.",
-              "", "Key features vs world: " + "; ".join(f"{r['label']} (z {r['z']:+.2f}{', index ' + str(r['index']) if r.get('index') is not None and r['kind'] != 'category' else ''})" for r in gi["keyFeatures"]) + ".", ""]
-    for t in type_order:
-        if G_OF_T[t] != g:
+    # ── Assignments ──────────────────────────────────────────────────────────
+    mean_to = np.array([[D_BASE[i, [j for j in g if j != i]].mean() if len([j for j in g if j != i]) else np.inf for g in groups] for i in range(N)])
+    assignments = {}
+    for c in U:
+        if STATUS[c] == "unclassified":
+            assignments[c] = {"status": "unclassified", "observedShare": round(float(obs_share[c]), 3)}
             continue
-        code = TYPE_CODE[t]
-        ti = grand["types"][code]
-        prov = [c for c in ti["members"] if assign[c]["status"] == "provisional"]
-        low = [c for c in ti["members"] if assign[c].get("confidence", 1) < 0.1]
-        lines += [f"- **{code}** ({ti['size']}): {N(ti['members'])}"
-                  + (f" — provisional: {N(prov)}" if prov else "") + (f" — borderline between groups (confidence < 0.1): {N(low)}" if low else ""),
-                  "  - vs group: " + "; ".join(f"{r['label']} (z {r['z']:+.2f})" for r in ti["keyFeaturesVsGroup"][:4])]
-    lines.append("")
-lines += ["## Stability", "",
-          f"- Type bootstrap Jaccard (within its group, 100 resamples): {', '.join(f'{TYPE_CODE[t]} {type_jaccard[t]:.2f}' for t in type_order)}.",
-          f"- Group bootstrap Jaccard (200 resamples): {', '.join(f'{GROUP_LETTER[g]} {group_jaccard[g]:.2f}' for g in group_order)}.",
-          f"- Imputation agreement (modal type over {M_IMPUTATIONS} imputations = final): {imputation_agreement:.1%}.",
-          f"- Method floor (plain k-means re-run vs final consensus model): types ARI {method_floor['types']:.2f}, groups ARI {method_floor['groups']:.2f}. "
-          "Sensitivity ARIs below are measured against the final model, so they cannot exceed this floor by much.",
-          "", "## Weight sensitivity", "",
-          f"Dirichlet, 200 draws centred on the defaults. Weight CV ≈ 27%: groups ARI median {np.median(dirichlet[:, 1]):.2f} (5th pct {np.percentile(dirichlet[:, 1], 5):.2f}), "
-          f"types {np.median(dirichlet[:, 0]):.2f}. Weight CV ≈ 14%: groups {np.median(dirichlet_tight[:, 1]):.2f} (5th pct {np.percentile(dirichlet_tight[:, 1], 5):.2f}), types {np.median(dirichlet_tight[:, 0]):.2f}.", "", "| Domain | ×0.5 groups / types | ×1.5 groups / types |", "|---|---|---|"]
-for key in DKEYS:
-    lo = next(r for r in one_at_a_time if r["domain"] == key and r["factor"] == 0.5)
-    hi = next(r for r in one_at_a_time if r["domain"] == key and r["factor"] == 1.5)
-    lines.append(f"| {key} | {lo['groupsARI']:.2f} / {lo['typesARI']:.2f} | {hi['groupsARI']:.2f} / {hi['typesARI']:.2f} |")
-lines += ["", "## Leave one variable out", "", "| Dropped | domain removed | groups ARI | types ARI |", "|---|---|---|---|"]
-lines += [f"| {VARS[r['dropped']]['label']} | {'yes' if r['domainRemoved'] else ''} | {r['groupsARI']:.2f} | {r['typesARI']:.2f} |" for r in lovo]
-med = lambda k: float(np.nanmedian([r[k] for r in validation]))  # noqa: E731
-lines += ["", "## Validation — discrimination on variables not used to build (η²)", "",
-          f"{len(validation)} trailer variables. Median η²: groups {med('groups'):.2f}, types {med('types'):.2f}, "
-          + ", ".join(f"{k} {med(k):.2f}" for k in benchmarks) + ".",
-          "", "| Variable | n | groups | types | income group | continent | p (groups) |", "|---|---|---|---|---|---|---|"]
-lines += [f"| {r['label']} | {r['n']} | {r['groups']:.2f} | {r['types']:.2f} | {r['World Bank income group']:.2f} | {r['continent']:.2f} | {r['p']:.3f} |"
-          for r in sorted(validation, key=lambda r: -r["groups"])]
-lines += ["", "## Agreement with existing typologies (ARI)", "", "| Typology | groups | types |", "|---|---|---|"]
-lines += [f"| {k} | {v['groupsARI']:.2f} | {v['typesARI']:.2f} |" for k, v in agreement.items()]
-lines += ["", "## Family tree axes", "",
-          f"Explained variance: {family_tree['explainedVariance']}. Loadings (axis 1, axis 2): "
-          + "; ".join(f"{k} {v}" for k, v in family_tree["loadings"].items()) + "."]
-OUT_REPORT.parent.mkdir(parents=True, exist_ok=True)
-OUT_REPORT.write_text("\n".join(lines) + "\n")
+        i = IDX[c]
+        k = int(LAB[i])
+        others = [(mean_to[i, q], q) for q in range(K) if q != k]
+        d2, q2 = min(others)
+        g = list(groups[k])
+        out = outside(CM, g)[g.index(i)]
+        assignments[c] = {
+            "status": str(STATUS[c]), "persona": CODE_OF[k], "secondPersona": CODE_OF[q2],
+            "confidence": round(max(0.0, 1 - mean_to[i, k] / d2), 3),
+            "stability": round(float(np.mean([co[i, j] for j in g if j != i])), 3),
+            "exceptions": [CORE_KEYS[t] for t in np.where(out)[0]],
+            "observedShare": round(float(obs_share[c]), 3),
+            "surveyed": bool(pd.notna(CORE_DF.loc[c, "values"])),
+            "core": {kk: (None if pd.isna(CORE_DF.loc[c, kk]) else round(float(CORE_DF.loc[c, kk]), 6)) for kk in CORE_KEYS},
+        }
 
-print(f"built {len(BUILD)}, provisional {len(PROVISIONAL)}, unclassified {len(UNCLASSIFIED)}; {K_G} groups, {K_T} types")
-for name, ok, val in criteria:
-    print(f"  {'—' if ok is None else ('PASS' if ok else 'FAIL')}  {name}: {val}")
+    # ── Profiles ─────────────────────────────────────────────────────────────
+    personas, profiles = [], {}
+    for k in order:
+        code = CODE_OF[k]
+        g = list(groups[k])
+        mem = [PLACED[i] for i in g]
+        med_i = g[int(np.argmin(D_BASE[np.ix_(g, g)].sum(axis=1)))]
+        prof = profile_persona(mem, len(mem))
+        profiles[code] = prof
+        centrality = D_BASE[np.ix_(g, g)].sum(axis=1)
+        typical = [PLACED[g[j]] for j in np.argsort(centrality)[:3]]
+        personas.append({
+            "code": code, "size": len(mem), "members": sorted(mem, key=lambda c: NAMES[c]), "medoid": PLACED[med_i],
+            "typical": typical,
+            "coreMedians": {kk: round(float(np.nanmedian(CM[g, t])), 3) for t, kk in enumerate(CORE_KEYS)},
+            "stability": round(float(JAC[:, k].mean()), 3),
+            "surveyed": int(sum(assignments[c].get("surveyed", False) for c in mem)),
+            "claimable": sorted(v for v, r in prof.items() if r.get("claimable")),
+        })
+    WORLD = {}
+    for var, meta in VARS.items():
+        if meta.get("kind") == "numeric":
+            x = num(var)[PLACED]
+            if x.notna().sum() >= 20 and x.std() > 0:
+                xs, scale = analysis_scale(num(var))
+                WORLD[var] = {"median": float(x.median()), "sd": float(xs[PLACED].std()), "scale": scale, "n": int(x.notna().sum())}
+
+    # ── Homogeneity: the owner's complaint, measured, v2 against v1 ──────────
+    def homogeneity(partition: dict[str, list[str]]) -> float:
+        rates = []
+        for mem in partition.values():
+            p = profile_persona(mem, len(mem))
+            num_rows = [r for v, r in p.items() if not v.startswith("core:") and "homogeneous" in r and r["n"] >= 2]
+            rates.append(np.mean([r["homogeneous"] for r in num_rows]))
+        return float(np.mean(rates))
+    V1 = json.loads((ROOT / "scripts/data/country-personas-model.json").read_text())
+    v1_types: dict[str, list[str]] = {}
+    for c, a in V1["assignments"].items():
+        if a.get("type"):
+            v1_types.setdefault(a["type"], []).append(c)
+    V2_PART = {p["code"]: p["members"] for p in personas}
+    HOMO = {"v1Types": homogeneity(v1_types), "v2": homogeneity(V2_PART)}
+    print(f"share of measured variables on which a persona's members ALL sit within 1 SD of its median: v1 types {HOMO['v1Types']:.0%}, v2 {HOMO['v2']:.0%}", flush=True)
+
+    # ── Family map ───────────────────────────────────────────────────────────
+    XY, EXPL = classical_mds(D_BASE)
+    corr = {kk: [float(pd.Series(XY[:, a]).corr(pd.Series(CM[:, t]))) for a in range(2)] for t, kk in enumerate(CORE_KEYS)}
+    if corr["development"][0] < 0:
+        XY[:, 0] *= -1
+        corr = {kk: [-v[0], v[1]] for kk, v in corr.items()}
+    ax2 = max(corr, key=lambda kk: abs(corr[kk][1]))
+    if corr[ax2][1] < 0:
+        XY[:, 1] *= -1
+        corr = {kk: [v[0], -v[1]] for kk, v in corr.items()}
+    family_map = {
+        "method": "classical multidimensional scaling of the persona distance",
+        "explainedVariance": [round(float(v), 3) for v in EXPL],
+        "axisCorrelations": {kk: [round(v[0], 3), round(v[1], 3)] for kk, v in corr.items()},
+        "countries": {PLACED[i]: [round(float(XY[i, 0]), 4), round(float(XY[i, 1]), 4)] for i in range(N)},
+        "personas": {CODE_OF[k]: [round(float(np.median(XY[groups[k], 0])), 4), round(float(np.median(XY[groups[k], 1])), 4)] for k in range(K)},
+    }
+
+    # ── Validation benchmarks ────────────────────────────────────────────────
+    def cat(var):
+        return pd.Series({c: (S["values"][c].get(var) or {}).get("v") for c in PLACED})
+    lab_codes = pd.Series({c: assignments[c]["persona"] for c in PLACED})
+    bench = {}
+    for var in ("geo_continent", "geo_subregion", "wb_income_group", "wb_region"):
+        x = cat(var).dropna()
+        bench[var] = round(float(adjusted_rand_score(x.values, lab_codes[x.index].values)), 3)
+    v1_groups = pd.Series({c: a.get("group") for c, a in V1["assignments"].items()}).dropna()
+    common = [c for c in PLACED if c in v1_groups.index]
+    bench["v1Groups"] = round(float(adjusted_rand_score(v1_groups[common].values, lab_codes[common].values)), 3)
+
+    # ── Write ────────────────────────────────────────────────────────────────
+    model = {
+        "status": "DRAFT — not reviewed; nothing in src/ reads this file",
+        "version": 2,
+        "builtBy": "scripts/country-personas/build.py",
+        "snapshot": {"file": "scripts/data/country-persona-inputs.json", "sha256": hashlib.sha256(snap_bytes).hexdigest(), "generated": S["generated"]},
+        "seed": SEED,
+        "rules": {"tau": TAU, "minSize": MIN_SIZE, "kRange": [min(K_RANGE), max(K_RANGE)], "lambda": LAMBDA,
+                  "claimMinZ": CLAIM_MIN_Z, "unclassifiedShare": UNCLASSIFIED_SHARE, "provisionalShare": PROVISIONAL_SHARE,
+                  "distance": "four pillars (facts, index scores, attitudes, heritage); domain weights start equal by pillar and are calibrated so no domain exceeds 1/15 of the leave-one-out influence; per domain the mean squared difference over the indicators both countries have, divided by that domain's mean over all pairs; no imputation",
+                  "boundary": f"every member within {TAU} world SD of its persona's median on each core dimension (members observed on that dimension); personas of at least {MIN_SIZE}",
+                  "claims": f"a variable may be claimed only if every observed member lies within {TAU} world SD of the persona median (on the variable's analysis scale) and the median is at least {CLAIM_MIN_Z} SD from the world median"},
+        "weighting": {"start": "equal pillars, equal domains within a pillar", "influenceCap": INFLUENCE_CAP, "calibrationIterations": CAL_ITERS,
+                      "influenceShareNominal": {d: round(v, 4) for d, v in INFLUENCE_NOMINAL.items()},
+                      "influenceShareCalibrated": {d: round(v, 4) for d, v in INFLUENCE_CALIBRATED.items()}},
+        "pillars": [{"key": p, "label": PILLARS[p]["label"], "nominalWeight": 1.0 / len(PILLARS), "weight": round(sum(W[d] for d in PILLARS[p]["domains"]), 6),
+                     "domains": [{"key": d, "label": PILLARS[p]["domains"][d][0], "nominalWeight": W_DOMAIN[d], "weight": W[d], "meanPairSquaredDistance": DOMAIN_SCALE[d],
+                                  "indicators": INDICATOR_META[d]} for d in PILLARS[p]["domains"]]} for p in PILLARS],
+        "core": CORE_META,
+        "sweep": [{k: r[k] for k in ("k", "violators", "cost", "silhouette", "stabilityMedian", "stabilityMin", "sizes", "start")} for r in SWEEP],
+        "kRule": K_RULE,
+        "chosenK": K,
+        "personas": personas,
+        "assignments": assignments,
+        "familyMap": family_map,
+        "validation": {"stability": {"runs": len(RUNS), "kinds": dict(Counter(r["kind"] for r in RUNS)),
+                                     "medianPersonaJaccard": round(float(np.median(JAC.mean(axis=0))), 3),
+                                     "personaJaccard": {CODE_OF[k]: round(float(JAC[:, k].mean()), 3) for k in range(K)},
+                                     "medianARI": round(float(np.median(ARI)), 3)},
+                       "homogeneity": HOMO, "benchmarksARI": bench,
+                       "domainInfluence": INFLUENCE, "domainSeparation": SEPARATION,
+                       "silhouette": round(CHOSEN["silhouette"], 4), "violators": CHOSEN["violators"]},
+    }
+    OUT_MODEL.write_text(json.dumps(model, indent=1, ensure_ascii=False) + "\n")
+    OUT_PROFILE.write_text(json.dumps({"world": WORLD, "personas": profiles}, indent=1, ensure_ascii=False) + "\n")
+    print(f"wrote {OUT_MODEL.relative_to(ROOT)} and {OUT_PROFILE.relative_to(ROOT)}", flush=True)
+
+    # ── Report ───────────────────────────────────────────────────────────────
+    def fmt_members(p):
+        return ", ".join(NAMES[c] for c in p["members"])
+    L = ["# Country Personas v2 — research build report", "",
+         f"_Generated by `scripts/country-personas/build.py` from snapshot `{S['generated']}` (sha256 `{model['snapshot']['sha256'][:12]}…`). "
+         "DRAFT: nothing in `src/` reads this build until the owner approves the personas._", "",
+         "## Brief (owner, 2026-09-24)", "",
+         "- One level of 20–30 personas.",
+         "- Greater use of the indices and World Values Survey attitudes; culture and heritage blended in.",
+         f"- Strict boundaries: every member within {TAU} world standard deviation of its persona's median.", "",
+         "## Data", "",
+         f"- {N0} states; {N} placed, {int((STATUS == 'provisional').sum())} of them provisional (under {PROVISIONAL_SHARE:.0%} of the similarity weight observed); "
+         f"unclassified: {', '.join(NAMES[c] for c in U if STATUS[c] == 'unclassified') or 'none'}.",
+         f"- Surveyed by the World Values Survey (attitudes observed): {int(CORE_DF.loc[PLACED, 'values'].notna().sum())} of {N}. Attitudes are never estimated for the others.", "",
+         "## Similarity: four pillars", ""]
+    for p in model["pillars"]:
+        L.append(f"- **{p['label']}** ({p['weight']:.0%} after calibration): " + "; ".join(f"{d['label']} ({len(d['indicators'])} indicator{'s' if len(d['indicators']) > 1 else ''}, {d['weight']:.1%})" for d in p["domains"]))
+    L += ["", "## Core dimensions (hard boundary: every member within 1 world SD of its persona median)", "",
+          "Religion is not a core dimension (owner, 2026-09-24). It is one of 15 similarity domains.", ""]
+    for c in CORE_META:
+        L.append(f"- {c['label']} — {c['coverage']} states observed")
+    L += ["", "## Number of personas", "", "| K | members outside tolerance | stability (median / min persona Jaccard) | silhouette | within-persona distance | sizes |", "|---:|---:|---:|---:|---:|---|"]
+    for r in SWEEP:
+        L.append(f"| {r['k']}{' **(chosen)**' if r['k'] == K else ''} | {r['violators']} | {r['stabilityMedian']:.2f} / {r['stabilityMin']:.2f} | {r['silhouette']:.3f} | {r['cost']:.1f} | {', '.join(map(str, r['sizes']))} |")
+    L += ["", f"Rule (fixed in advance): the most granular K with no member outside the tolerance whose personas are reproducible — median persona Jaccard ≥ {STABLE_MEDIAN} and none ≤ {DISSOLVED}. Outcome: {K_RULE}.", "",
+          "## Influence of each domain", "",
+          f"Weights start equal by pillar and are calibrated ({CAL_ITERS} iterations) so that no domain accounts for more than 1/{len(DOMAINS)} "
+          f"({INFLUENCE_CAP:.1%}) of the total leave-one-out influence on the similarity.", "",
+          "| domain | pillar | nominal weight | calibrated weight | influence share before | influence share after | separation of the personas |", "|---|---|---:|---:|---:|---:|---:|"]
+    for d in DOMAINS:
+        L.append(f"| {PILLARS[PILLAR_OF[d]]['domains'][d][0]} | {PILLARS[PILLAR_OF[d]]['label']} | {W_DOMAIN[d]:.1%} | {W[d]:.1%} | {INFLUENCE_NOMINAL[d]:.1%} | {INFLUENCE[d]:.1%} | {SEPARATION[d]:.3f} |")
+    L += ["",
+          "## Stability", "",
+          f"{len(RUNS)} rebuilds under perturbation ({', '.join(f'{v} × {k}' for k, v in Counter(r['kind'] for r in RUNS).items())}): "
+          f"median persona Jaccard **{np.median(JAC.mean(axis=0)):.2f}**, median ARI **{np.median(ARI):.2f}**.", "",
+          "## Homogeneity — the owner's complaint, measured", "",
+          f"Share of measured variables on which **every** member of a persona sits within 1 world SD of the persona's median: "
+          f"v1 types **{HOMO['v1Types']:.0%}** → v2 personas **{HOMO['v2']:.0%}**.", "",
+          "## Benchmarks (ARI; 0 = unrelated, 1 = identical)", ""]
+    for k2, v in bench.items():
+        L.append(f"- {k2}: {v}")
+    L += ["", "## Personas", ""]
+    for p in personas:
+        L.append(f"### {p['code']} — {p['size']} countries (stability {p['stability']:.2f}; surveyed {p['surveyed']})")
+        L.append("")
+        L.append(fmt_members(p))
+        L.append("")
+        prof = profiles[p["code"]]
+        feats = sorted(((v, r) for v, r in prof.items() if r.get("claimable") and "z" in r), key=lambda t: -abs(t[1]["z"]))[:8]
+        for v, r in feats:
+            L.append(f"- {VARS.get(v, {}).get('label', v)}: median {r['median']:.3g} (range {r['min']:.3g}–{r['max']:.3g}; {r['z']:+.2f} SD)")
+        ex = [c for c in p["members"] if assignments[c]["exceptions"]]
+        if ex:
+            L.append(f"- Exceptions: " + "; ".join(f"{NAMES[c]} ({', '.join(assignments[c]['exceptions'])})" for c in ex))
+        L.append("")
+    OUT_REPORT.parent.mkdir(parents=True, exist_ok=True)
+    OUT_REPORT.write_text("\n".join(L) + "\n")
+    print(f"wrote {OUT_REPORT.relative_to(ROOT)}", flush=True)
