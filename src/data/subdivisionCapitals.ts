@@ -116,7 +116,6 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
 
   // ── BA ──
   "BA-BRC": {"name":"Brčko","lon":18.8092,"lat":44.8783},
-  "BA-SRP": {"name":"Sarajevo","lon":18.4131,"lat":43.8564},
 
   // ── BD ──
   "BD-F": {"name":"Rangpur","lon":89.2444,"lat":25.75},
@@ -1242,6 +1241,7 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
   // ── RU ──
   "RU-KK": {"name":"Abakan","lon":91.4167,"lat":53.7167},
   "RU-LEN": {"name":"Gatchina","lon":30.1229,"lat":59.5684},
+  "RU-MOS": {"name":"Krasnogorsk","lon":37.3386,"lat":55.8217},
 
   // ── SA ──
   "SA-02": {"name":"Mecca","lon":39.8261,"lat":21.4225},

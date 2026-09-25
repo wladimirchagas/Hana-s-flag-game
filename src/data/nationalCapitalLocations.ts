@@ -160,7 +160,7 @@ export const NATIONAL_CAPITAL_SUBDIVISION: Record<string, string> = {
   "QA|Doha": "QA-DA",
   "RO|Bucharest": "RO-B",
   "RS|Belgrade": "RS-00",
-  "RU|Moscow": "RU-MOS",
+  "RU|Moscow": "RU-MOW",
   "RW|Kigali": "RW-01",
   "SA|Riyadh": "SA-01",
   "SB|Honiara": "SB-CT",

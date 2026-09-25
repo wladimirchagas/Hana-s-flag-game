@@ -63,7 +63,6 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "AU-WA": "capital-flags/au-wa.svg",
 
   // ── BA ──
-  "BA-SRP": "capital-flags/ba-srp.svg",
 
   // ── BE ──
   "BE-BRU": "capital-flags/be-bru.svg",

@@ -2088,7 +2088,7 @@ Every flag SVG must encode the **real-world official aspect ratio** in its `view
 |-----------|----------------------|
 | National/territory flags (`public/flags/*.svg`) | [hampusborgos/country-flags](https://github.com/hampusborgos/country-flags): `https://raw.githubusercontent.com/hampusborgos/country-flags/main/svg/{code}.svg` |
 | Constituent-country subdivision flags (`public/flags/sub/{CC}/`) | [hampusborgos/country-flags](https://github.com/hampusborgos/country-flags): `https://raw.githubusercontent.com/hampusborgos/country-flags/main/svg/{lowercase-code}.svg` (e.g. `gb-eng`, `gb-sct`, `gb-wls`, `gb-nir`) |
-| Other subdivision flags | [amckenna41/iso3166-flags](https://github.com/amckenna41/iso3166-flags) via jsDelivr CDN — **only** if the file has a real-world viewBox. If the CDN file is 640×480, suppress the code in `SUPPRESSED_SUBDIVISION_FLAGS` and document why. |
+| Other subdivision flags | [amckenna41/iso3166-flags](https://github.com/amckenna41/iso3166-flags) (downloaded and bundled — never served from the CDN at runtime) — **only** if the file has a real-world viewBox **and** it passes the entity checks in "A subdivision's flag must be ITS OWN flag" below. If the CDN file is 640×480, suppress the code in `SUPPRESSED_SUBDIVISION_FLAGS` and document why. |
 | Exceptions requiring Wikimedia Commons | Individual entries in `NATIONAL_SOURCE_OVERRIDES` or `LOCAL_FLAG_OVERRIDES` — document each one explicitly. |
 
 Known viewBox values for common real-world proportions:
@@ -2209,7 +2209,63 @@ flags are suspiciously similar (Hamming distance < 130) — the historical Misio
 every legitimate same-name-different-country pair currently bundled scores >= 171, so the
 threshold sits at a wide margin from both. This check only covers bundled **local** flags — it
 cannot fetch CDN-only flags over the network — so it is a safety net, not a substitute for manual
-verification per the rules above.
+verification per the rules above. (Since the 2026-09 audit every subdivision flag is bundled — see
+the next section — so no shown flag escapes it any more.)
+
+## A subdivision's flag must be ITS OWN flag — not its capital's, not an emblem, not a Commons fantasy — hard rule, do not override without approval
+
+**The 2026-09 subnational flag audit (`docs/SUBNATIONAL_FLAG_AUDIT_2026-09.md`) found 91 shown
+subdivision flags that were not that subdivision's flag at all.** Cuba's Guantánamo province
+showed the seal of the **US Naval Base, Guantánamo Bay**. Bosnia's Posavina Canton showed the
+**Republika Srpska** flag, together with RS's population and capital, because Natural Earth gave it
+RS's ISO code. All ten Zambian provinces, five Somali regions and four Ghanaian regions showed
+invented designs. Romanian counties and South African provinces showed coats of arms, and
+Nigerian states showed a logo or the bare word "KATSINA". Every Nicaraguan department, plus Spanish
+and Italian provinces, showed its capital city's flag. The bulk import passed every existing check
+because the checks could only ask "is this the parent's flag / a blank / a 640×480 file?", never
+"is this the right entity's flag?".
+
+### Rules
+
+1. **A capital city's flag never stands in for its province, department or district.** This
+   generalises the Portugal-district ruling. The city's flag belongs in "View capital". Where the
+   subdivision has no flag of its own (no government that adopted one — FOTW and the
+   local-language Wikipedia say so), show none.
+2. **A coat of arms, seal, logo, map or piece of text is not a flag.** Show an image only when a
+   source documents it as the subdivision's *flag*. A white field bearing the arms qualifies only
+   when that flag is documented as flown, as it is for the Free State, which is shown labelled
+   unofficial.
+3. **Wikidata `P41` and Commons are not proof on their own.** Read the Commons file page: files
+   tagged `{{fictitious flag}}`, `{{proposed flag}}`, or "own work" with no source are not flags.
+   Wikidata pointed five South African provinces at such files. Where the subdivisions of a country
+   usually have no flags, check FOTW's country index first; it states outright when "there is no
+   known flag".
+4. **Check the entity, not just the image.** A mis-coded subdivision drags every keyed dataset with
+   it: flag, population, capital, endonym, capital flag. When a flag looks like it belongs to
+   someone else, compare the app name with the Wikidata label of its ISO code. That is how
+   Posavina/BA-SRP and the swapped Moscow/Moscow-Oblast codes were found. Fix the code in
+   `public/subdivisions/*.json`; never paper over it with a name override.
+5. **Every subdivision flag is bundled — there is no CDN fallback — and suppression means
+   deletion.** `src/lib/subdivisionFlagIndex.ts` lists only files that exist under
+   `public/flags/sub/`. A code added to `SUPPRESSED_SUBDIVISION_FLAGS` has its file deleted in the
+   same change, and its explainer removed from `flagMeanings.ts`, because the panel renders an
+   explainer even when no flag is shown.
+6. **Record every decision in the audit ledger** with its evidence URL, as the political-party sweep
+   does. A decision that exists only in a PR description is lost.
+
+### Enforcement
+
+`scripts/check-subdivision-flags-bundled.mjs` (`npm run flags:check:bundled`, in `npm run flags:check`
+and the `check-proportions` CI job) **fails the build** when:
+- an indexed code has no bundled file;
+- a bundled file under `public/flags/sub/` is neither indexed nor a curated override target;
+- a suppressed code is still indexed, overridden, or bundled;
+- a file's bytes don't match its extension (the WebP-named-`.png` and HTML-saved-as-`.svg` failure
+  modes);
+- any remote URL appears in the index or the overrides.
+
+Whether an image is the *right* entity's flag cannot be automated. The guard for that is rules 1–4
+plus the montage and source review described in the ledger. Never weaken the check to land a flag.
 
 ## Disputed territory neutrality — hard rule, do not override without approval
 
