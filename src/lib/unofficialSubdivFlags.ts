@@ -48,6 +48,14 @@ export const UNOFFICIAL_SUBDIV_NOTES: Record<string, string> = {
   // (Also a disputed territory — see DISPUTED_SUBDIV_NOTES in disputedSubdivisions.ts.)
   "CY-NC~": "The flag shown is that of the self-declared Turkish Republic of Northern Cyprus (TRNC). Cyprus and virtually all countries other than Türkiye do not recognise the TRNC or its flag; Cyprus regards Northern Cyprus as part of its own sovereign territory.",
 
+  // Free State (South Africa) — no province except Mpumalanga has adopted a flag
+  // (FOTW za-.html). FOTW za-fs.html (Bruce Berry, 2 Jan 2022) records that a white
+  // flag bearing the provincial arms is flown at the provincial legislature and at
+  // public events, so it is shown — labelled — as the de facto flag. The other
+  // provinces' arms-on-white images had no such record and are suppressed
+  // (2026-09 subnational flag audit).
+  "ZA-FS": "South Africa has not given its provinces official flags (only Mpumalanga adopted one). The flag shown — the Free State's coat of arms on a white field — is flown at the provincial legislature and at public events where the province is represented, but it has no official status.",
+
   // Western Sahara under Morocco — the Sahrawi flag is shown but Morocco does not recognise it.
   // (Also a disputed territory — see DISPUTED_SUBDIV_NOTES in disputedSubdivisions.ts.)
   "MA-EH~": "The flag shown is that of the Sahrawi Arab Democratic Republic (SADR), which claims sovereignty over Western Sahara. Morocco, which administers the territory as its 'Southern Provinces', does not recognise the SADR or its flag.",

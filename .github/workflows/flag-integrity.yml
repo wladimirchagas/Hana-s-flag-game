@@ -31,6 +31,8 @@ on:
       - "src/data/nationalNewspapers.ts"
       - "public/newspaper-logos/**"
       - "src/api/subdivisions.ts"
+      - "src/lib/subdivisionFlagIndex.ts"
+      - "scripts/check-subdivision-flags-bundled.mjs"
       - "src/lib/subdivisionMeta.ts"
       - "src/data/flagMeanings.ts"
       - "src/data/cityFlagMeanings.ts"
@@ -210,6 +212,13 @@ jobs:
 
       - name: Verify every renderable subdivision has a SUBDIVISION_META entry
         run: node scripts/check-subdivision-meta-coverage.mjs
+
+      # 2026-09 subnational flag audit: ~350 flags were served from the jsDelivr
+      # CDN (which intermittently 403/404s) although the files were bundled, and
+      # "suppressed" wrong flags kept their files. Every subdivision flag must be a
+      # bundled, correctly-typed file; a suppressed code must have none.
+      - name: Verify every subdivision flag is bundled, indexed and correctly typed
+        run: node scripts/check-subdivision-flags-bundled.mjs
 
       - name: Verify the hierarchy table's type-colour palette has enough colours for every country
         run: node scripts/check-hierarchy-type-colors.mjs

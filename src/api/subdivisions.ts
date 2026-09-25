@@ -138,11 +138,14 @@ const LOCAL_FLAG_OVERRIDES: Record<string, string> = {
   // under public/flags/sub/<CC>/ (verified same territory by name); we point the
   // game's code at the existing file.
   "MX-DIF": `${BASE}flags/sub/MX/MX-CMX.png`, // Mexico City: Distrito Federal → Ciudad de México (2016)
-  "ZA-GT":  `${BASE}flags/sub/ZA/ZA-GP.png`,  // Gauteng: legacy ZA-GT → ISO ZA-GP
-  "ZA-NL":  `${BASE}flags/sub/ZA/ZA-KZN.png`, // KwaZulu-Natal: legacy ZA-NL → ISO ZA-KZN
+  // ZA-GT (Gauteng) and ZA-NL (KwaZulu-Natal) used to alias to ZA-GP.png / ZA-KZN.png
+  // here — both were the provincial COAT OF ARMS on white, not a flag. Neither
+  // province has a flag (FOTW za-.html); both are now in SUPPRESSED_SUBDIVISION_FLAGS
+  // (2026-09 subnational flag audit, docs/SUBNATIONAL_FLAG_AUDIT_2026-09.md).
   "TW-TPQ": `${BASE}flags/sub/TW/TW-NWT.svg`, // New Taipei: legacy TW-TPQ → ISO TW-NWT
   "HU-ED":  `${BASE}flags/sub/HU/HU-ER.svg`,  // Érd: legacy HU-ED → ISO HU-ER
-  "TT-RCM": `${BASE}flags/sub/TT/TT-MRC.png`, // Mayaro-Rio Claro: transposed code TT-RCM → ISO TT-MRC
+  // TT-RCM (Mayaro–Rio Claro) used to alias to TT-MRC.png — the regional
+  // corporation's badge, not a flag — now suppressed (see audit ledger).
 
   // GE-AB (Abkhazia under Georgia) — CDN serves the Abkhazia flag; un-suppressed
   // below so it renders as "(unofficial flag)" under Georgia.
@@ -291,6 +294,70 @@ const SUPPRESSED_SUBDIVISION_FLAGS: ReadonlySet<string> = new Set([
   // are intentionally NOT suppressed.
   "PT-01", "PT-02", "PT-03", "PT-04", "PT-05", "PT-06", "PT-07", "PT-08", "PT-09",
   "PT-10", "PT-11", "PT-12", "PT-13", "PT-14", "PT-15", "PT-16", "PT-17", "PT-18",
+
+  // ── 2026-09 subnational flag audit (docs/SUBNATIONAL_FLAG_AUDIT_2026-09.md) ──
+  // Every bulk-imported flag was compared with the subdivision's own Wikidata
+  // flag (P41), its Wikipedia infobox in the local language, and Flags of the
+  // World (FOTW). The codes below showed something that is NOT that
+  // subdivision's flag, and no authoritative image of a real one exists, so no
+  // flag is shown (a missing flag beats a wrong one). The bundled files were
+  // deleted. Evidence for each is in the audit ledger.
+  //
+  // Parent (national) flag shown as the subdivision's own:
+  "AE-FU", // Fujairah — file was the UAE flag; the emirate has flown it since 1975
+  //
+  // Invented / fictitious designs (no FOTW, Wikidata or Wikipedia record; some
+  // tagged {{fictitious flag}} on Commons):
+  "ZM-01", "ZM-02", "ZM-03", "ZM-04", "ZM-05", // Zambia — FOTW index (2025-09):
+  "ZM-06", "ZM-07", "ZM-08", "ZM-09", "ZM-10", //   no provincial flags exist
+  "SO-BK", "SO-GE", "SO-BR", "SO-SH", "SO-BY", // Somalia regions — FOTW records only
+  //   Banaadir (kept) and member-state flags; FOTW's Bari/Gedo flags differ
+  "GH-AA", "GH-TV", "GH-EP", // Ghana regions — no regional flags (FOTW gh.html);
+  //   GH-EP's source file is tagged {{fictitious flag}}
+  "GH-AH", // Ashanti — the image is the Asante people's traditional flag, not the region's
+  "ZA-EC", "ZA-NC", "ZA-NW", "ZA-WC", // South Africa — only Mpumalanga has a provincial
+  //   flag (FOTW za-.html); these Commons files are {{fictitious flag}} (2011)
+  "CR-SJ", // San José (CR) — never adopted; the design was used only briefly (FOTW cr-sj)
+  //
+  // A coat of arms, seal, logo or text placeholder shown as if it were a flag:
+  "ZA-LP", "ZA-NL", "ZA-GT", // Limpopo, KwaZulu-Natal, Gauteng — coats of arms
+  "RO-MH", "RO-CT", "RO-OT", "RO-SV", "RO-IF", "RO-AG", // Romanian counties — coat of
+  "RO-BZ", "RO-BV", "RO-SB", "RO-B", "RO-SM",          //   arms only; FOTW: no flag
+  "RO-TM", "RO-HD", // Timiș / Hunedoara — arms-and-lettering logos, no documented flag
+  "RO-CS", // Caraș-Severin — its flag is blue with the arms (FOTW); the file was arms only
+  "NG-KT", // Katsina — the word "KATSINA" on white; Wikipedia: no sourced flag
+  "NG-KE", "NG-FC", // Kebbi (map logo), Federal Capital Territory (Abuja brand logo)
+  "NG-EB", // Ebonyi — the state seal, not a flag
+  "NG-BA", "NG-KD", // Bauchi, Kaduna — no flag in FOTW, Wikipedia or Commons
+  "CU-14", // Guantánamo — the image was the seal of the US NAVAL BASE Guantanamo Bay
+  "CU-11", // Holguín — the city's "San Isidoro de Holguín" logo; provinces have no flags
+  "DO-05", // Dajabón — "Ayuntamiento Municipal" logo of the town council
+  "DO-02", "DO-31", // Azua (a shield), San José de Ocoa (an emblem)
+  "TT-DMN", "TT-PRT", "TT-RCM", // Diego Martin, Princes Town, Mayaro–Rio Claro — badges/logos
+  "UY-MO", "UY-TA", // Montevideo (black-and-white arms drawing), Tacuarembó (logo)
+  "NI-SJ", // Río San Juan — a municipal "Alcaldía" logo
+  //
+  // A capital CITY's flag shown as the province's flag (the Portugal-district
+  // rule: a municipality's flag must not represent the subdivision):
+  "CU-06", // Cienfuegos — the city's swallowtail flag
+  "NI-CA", "NI-CO", "NI-MD", // Carazo/Chontales/Madriz — flags of Jinotepe/Juigalpa/Somoto
+  "NI-MN", // Managua department — the image reads "Ciudad de Managua": the city's flag
+  "NI-BO", "NI-CI", "NI-ES", "NI-GR", "NI-LE", // Nicaragua's departments have no elected
+  "NI-MS", "NI-MT", "NI-NS", "NI-RI",          //   government or flag of their own: every
+  //   one of these images is its capital municipality's flag (Wikidata even files
+  //   Carazo/Chontales under Jinotepe/Juigalpa). The capital flags still show in
+  //   "View capital". The two autonomous regions (NI-AN, NI-AS) keep their flags.
+  "ES-ZA", // Zamora — the city's "Seña Bermeja"; the province has no flag
+  "ES-V",  // Valencia province — the Valencian/city senyera; the province has no flag
+  "ES-TF", // Santa Cruz de Tenerife province — Tenerife ISLAND's flag
+  "IT-CT", "IT-PT", "IT-FG", "IT-BG", "IT-ME", // city flags of Catania, Pistoia, Foggia,
+  //   Bergamo, Messina; the provinces have only a gonfalone or no clean flag image
+  "IT-AG", "IT-MC", "IT-AP", "IT-VI", // arms-on-white images; the provinces have only
+  //   a gonfalone (it.wikipedia), not a flag
+  //
+  // No documented flag at all (FOTW: "There is no known flag for the province",
+  // or no record anywhere):
+  "DO-10", "DO-09", "DO-32", "DO-15", "DO-13", "DO-24",
 ]);
 
 // Cache so we only fetch each country once per session.

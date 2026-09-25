@@ -8090,14 +8090,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "ES-V": {
-    description:
-      "A flag bearing the provincial arms, whose shield carries the red-and-gold bars of the old Kingdom " +
-      "of Aragón (and of Valencia), crowned and crested with a winged dragon (drac alat).",
-    sources: [
-      { title: "Valencia (Spain) — Flags of the World", url: "https://crwflags.com/fotw/flags/es-vc-v.html" },
-    ],
-  },
 
   "ES-BI": {
     description:
@@ -8887,16 +8879,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
 
 
 
-  "BA-SRP": {
-    description:
-      "A horizontal tricolour of red, blue and white. The colours are those associated with Serbian " +
-      "heritage but are also read as the pan-Slavic colours — the basis on which the constitutional " +
-      "court upheld the flag. It differs from Serbia’s civil flag mainly in its 1:2 proportion. Adopted " +
-      "1992.",
-    sources: [
-      { title: "Flag of Republika Srpska — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Republika_Srpska" },
-    ],
-  },
 
   "FR-73": {
     description:
@@ -11042,15 +11024,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "ZA-WC": {
-    description:
-      "The provincial arms on the flag: a golden Khoi clay pot on a blue pile, flanked by a red anchor " +
-      "for the Cape of Good Hope and a bunch of grapes for the winelands, over a blue Table Mountain; " +
-      "supported by a quagga and a bontebok and crowned with proteas. Motto: “Spes Bona” (Good Hope).",
-    sources: [
-      { title: "Coat of arms of the Western Cape — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_the_Western_Cape" },
-    ],
-  },
 
   "LI-11": {
     description:
@@ -11277,17 +11250,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "AE-FU": {
-    description:
-      "Fujairah flies the UAE national flag: a green–white–black tricolour with a red bar at the hoist, " +
-      "the pan-Arab colours of Arab unity (green for the land, white for its deeds, black for hard " +
-      "times, red for the sword). Its own historic emirate flag (1952–61) was red bearing the name " +
-      "“Al-Fujairah” in white.",
-    sources: [
-      { title: "Flag of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates" },
-      { title: "List of flags of the United Arab Emirates — Wikipedia", url: "https://en.wikipedia.org/wiki/List_of_flags_of_the_United_Arab_Emirates" },
-    ],
-  },
 
   "CN-HK": {
     description:
@@ -11620,17 +11582,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "NI-MT": {
-    description:
-      "Charged with the department arms and the motto “La Perla del Septentrión” (the Pearl of the " +
-      "North). Blue recalls Nicaragua's national colours and green the Matagalpa mountains; the white band " +
-      "is peace and carries the department's outline with maize and coffee, its principal crops. In the " +
-      "arms, yellow marks Matagalpa as a Catholic city, ten roundels stand for the town's first ten " +
-      "houses, and a loom recalls the region's indigenous weaving.",
-    sources: [
-      { title: "Matagalpa (Nicaragua) — Flags of the World", url: "https://crwflags.com/fotw/flags/ni-mt.html" },
-    ],
-  },
 
   "SV-CA": {
     description:
@@ -12795,16 +12746,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "IT-AG": {
-    description:
-      "The provincial arms (gonfalone): a shield of three parts for its historic towns — Agrigento " +
-      "(three giants bearing a triple-towered castle crowned by a consecrated Host for the faith), " +
-      "Sciacca (an armoured knight riding up to a fortress beneath a radiant sun), and Bivona (a river " +
-      "crab on a green field under sky and moon). Recognised by the Kingdom of Italy in 1938.",
-    sources: [
-      { title: "Provincia di Agrigento — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Agrigento" },
-    ],
-  },
 
   "IT-AL": {
     description:
@@ -12836,15 +12777,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "IT-AP": {
-    description:
-      "The provincial arms (gonfalone): a quartered shield with towered castles, an imperial eagle and " +
-      "a red cross, and the woodpecker (picchio) of the ancient Piceni — the bird sacred to Mars that, " +
-      "by legend, led the Piceni people into the valley of the Tronto.",
-    sources: [
-      { title: "Provincia di Ascoli Piceno — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Ascoli_Piceno" },
-    ],
-  },
 
   "IT-AQ": {
     description:
@@ -12857,15 +12789,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "IT-BG": {
-    description:
-      "The provincial arms (gonfalone): a red-and-gold party shield with a central inescutcheon bearing " +
-      "a black eagle displayed on gold (for imperial authority) and a running golden stag on red (for " +
-      "the province’s land), beneath a marquis’s crown.",
-    sources: [
-      { title: "Provincia di Bergamo — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Bergamo" },
-    ],
-  },
 
   "IT-AV": {
     description:
@@ -13621,17 +13544,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Provincia di Catanzaro — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Catanzaro" },
     ],
   },
-  "IT-CT": {
-    description:
-      "The arms (Catania’s civic arms, carried by the metropolitan city): on blue a red elephant with " +
-      "raised trunk and natural tusks, surmounted by a red letter A. The elephant is the Liotru, the ancient " +
-      "lava-stone statue in Piazza Duomo that has stood for the city for centuries (Catania was known in " +
-      "Arabic as Madīnat al-Fīl, “city of the elephant”); the A commemorates the patroness Sant’Agata and " +
-      "the 1357 battle-cry “Sant’Agata e Alagona”.",
-    sources: [
-      { title: "Stemma di Catania — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Stemma_di_Catania" },
-    ],
-  },
   "IT-CH": {
     description:
       "The province arms (royal decree 1938): on gold a natural boar’s head surmounted by a red yoke pierced " +
@@ -13639,15 +13551,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       "region’s ancient peoples.",
     sources: [
       { title: "Provincia di Chieti — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Chieti" },
-    ],
-  },
-  "IT-FG": {
-    description:
-      "The province arms (decree 1938): a sky field over a foothill landscape on which the Archangel " +
-      "Michael, in Roman armour, tramples a serpent. Michael is the patron of the Foggia province " +
-      "(the Gargano sanctuary of Monte Sant’Angelo is dedicated to him).",
-    sources: [
-      { title: "Provincia di Foggia — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Foggia" },
     ],
   },
 
@@ -13742,14 +13645,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Provincia di Monza e della Brianza — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Monza_e_della_Brianza" },
     ],
   },
-  "IT-MC": {
-    description:
-      "The arms (from the city of Macerata): a red field quartered by black filets, with silver cross " +
-      "patées in the first and fourth quarters and silver mill-wheels (mole) in the second and third.",
-    sources: [
-      { title: "Macerata — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Macerata" },
-    ],
-  },
   "IT-CE": {
     description:
       "The province arms: on blue two golden cornucopias crossed at the base and passed through a " +
@@ -13792,15 +13687,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       "The province arms: on silver a stylised uprooted green leafy tree.",
     sources: [
       { title: "Provincia di Oristano — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Oristano" },
-    ],
-  },
-  "IT-ME": {
-    description:
-      "The arms (from the city of Messina): a horse-head-shaped shield, red with a golden cross, framed by " +
-      "two natural vine branches with golden fruit and ensigned with a city crown. The golden cross is the " +
-      "chief charge; the fruited vines stand for fertility and prosperity.",
-    sources: [
-      { title: "Messina — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Messina" },
     ],
   },
 
@@ -13870,15 +13756,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       "republic.",
     sources: [
       { title: "Pisa — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Pisa" },
-    ],
-  },
-  "IT-PT": {
-    description:
-      "The province arms: per fess blue and green, the blue charged with a golden six-peaked mountain rising " +
-      "from the division (the Apennine heights over the plain), within a border checky of red and silver " +
-      "taken from the arms of the city of Pistoia.",
-    sources: [
-      { title: "Provincia di Pistoia — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Pistoia" },
     ],
   },
 
@@ -14124,16 +14001,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "IT-VI": {
-    description:
-      "The province arms: five silver war ossuaries on their green mounts, each named in black — PASUBIO, " +
-      "CIMONE, ASIAGO and GRAPPA — around a central red field with a silver cross (Vicenza’s own arms). The " +
-      "ossuaries commemorate the roughly 85,000 soldiers of the First World War buried on the province’s " +
-      "mountains.",
-    sources: [
-      { title: "Provincia di Vicenza — Wikipedia (Italian)", url: "https://it.wikipedia.org/wiki/Provincia_di_Vicenza" },
-    ],
-  },
 
   "IT-VV": {
     description:
@@ -14756,27 +14623,12 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
   // The game shows each province's coat of arms (only Mpumalanga also has a
   // distinct flag). Arms and symbolism registered with the South African Bureau
   // of Heraldry; descriptions from Flags of the World (FOTW).
-  "ZA-EC": {
-    description:
-      "The provincial arms show three flowers springing from a single stem — a symbol of unity among the " +
-      "different peoples of the Eastern Cape.",
-    sources: [
-      { title: "Eastern Cape — Flags of the World", url: "https://www.crwflags.com/fotw/flags/za-ec.html" },
-    ],
-  },
   "ZA-FS": {
     description:
       "The provincial arms feature a charging cheetah in pursuit of its prey — evoking the open plains of the " +
       "Free State.",
     sources: [
       { title: "Free State — Flags of the World", url: "https://www.crwflags.com/fotw/flags/za-fs.html" },
-    ],
-  },
-  "ZA-LP": {
-    description:
-      "The provincial arms stand on a black and green base and carry the motto “Peace, Unity and Prosperity”.",
-    sources: [
-      { title: "Limpopo — Flags of the World", url: "https://www.crwflags.com/fotw/flags/za-lp.html" },
     ],
   },
   "ZA-MP": {
@@ -14788,24 +14640,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       "represents the Highveld escarpment above the Lowveld.",
     sources: [
       { title: "Mpumalanga — Flags of the World", url: "https://www.crwflags.com/fotw/flags/za-mp.html" },
-    ],
-  },
-  "ZA-NC": {
-    description:
-      "The provincial arms show a red-and-blue shield with a silver lozenge bearing a camelthorn tree and two " +
-      "golden daisies, supported by a gemsbok (oryx) and a kudu. The motto is in the ǀʼAuni (San) language of " +
-      "the Kalahari.",
-    sources: [
-      { title: "Northern Cape — Flags of the World", url: "https://www.crwflags.com/fotw/flags/za-nc.html" },
-    ],
-  },
-  "ZA-NW": {
-    description:
-      "The provincial arms show a red-and-blue shield with a green saltire bearing a calabash water-gourd, a " +
-      "crest of horns supporting a sunflower, and two sable antelopes as supporters. The motto “Kagiso le " +
-      "Tswelelopele” means “Peace and Progress”.",
-    sources: [
-      { title: "North West — Flags of the World", url: "https://www.crwflags.com/fotw/flags/za-nw.html" },
     ],
   },
 
@@ -15218,16 +15052,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       "takes its name.",
     sources: [
       { title: "The Coat of Arms of Romania — Mureș County Council", url: "https://en.cjmures.ro/county/symbols/the-coat-of-arms-of-romania/" },
-    ],
-  },
-  "RO-CT": {
-    description:
-      "Constanța County's coat of arms is drawn from a statuary group unearthed in the city in 1962, " +
-      "depicting the Roman goddess Fortuna beside the sea-god Pontus — an image that has become emblematic " +
-      "of the county's continuity from the ancient Greek colony of Tomis (Constanța's predecessor) to the " +
-      "present day.",
-    sources: [
-      { title: "Constanța — Heraldry of the World", url: "https://www.heraldry-wiki.com/wiki/Constan%C8%9Ba" },
     ],
   },
 

@@ -29,11 +29,11 @@ export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
   "CH-SZ", // curated (audit): Schwyz canton ≡ town (red field, white canton cross)
   "CH-ZG", // perceptual distance 0
   "CH-ZH", // perceptual distance 0
+  "CN-HK", // byte-identical
+  "CN-MO", // byte-identical
   "CR-A", // curated (audit): Alajuela province ≡ city (arms + wreath on white)
   "CR-C", // curated (audit): Cartago province ≡ city (red-over-blue bicolour)
   "CR-P", // byte-identical
-  "CU-06", // curated (audit): Villa Clara ≡ capital (blue/white/red swallowtail + arms)
-  "CU-11", // byte-identical
   "CV-PR", // byte-identical
   "DE-HB", // byte-identical
   "EC-A", // perceptual distance 0
@@ -44,35 +44,26 @@ export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
   "EG-ASN", // byte-identical
   "EG-BH", // byte-identical
   "EG-DT", // byte-identical
-  "EG-GZ", // perceptual distance 5
-  "EG-KB", // perceptual distance 0
+  "EG-GZ", // byte-identical
+  "EG-KB", // byte-identical
   "EG-KFS", // byte-identical
-  "EG-LX", // perceptual distance 0
+  "EG-LX", // byte-identical
   "EG-PTS", // curated (audit): Port Said governorate ≡ city (red field + anchor & wreath)
-  "EG-SHG", // perceptual distance 0
+  "EG-SHG", // byte-identical
   "EG-SUZ", // byte-identical
   "ES-CE", // perceptual distance 0
   "ES-OR", // curated (audit): Ourense province ≡ city (blue field, arms + star border)
-  "ES-ZA", // byte-identical
   "ET-HA", // byte-identical
   "GB-GI", // perceptual distance 0
   "HN-FM", // curated (audit): Francisco Morazán ≡ Tegucigalpa (navy/gold + arms)
   "HN-OC", // curated (audit): Ocotepeque dept ≡ capital (red/white/green triband)
   "HN-SB", // byte-identical
-  "IT-AN", // byte-identical
-  "IT-BG", // perceptual distance 0
-  "IT-CO", // byte-identical
-  "IT-CT", // byte-identical
-  "IT-FG", // curated (audit): Foggia province ≡ city (red/blue + arms + wreath)
-  "IT-LC", // curated (audit): Lecco province ≡ city (blue field + arms)
-  "IT-ME", // curated (audit): Messina province ≡ city (red field, yellow Scandinavian cross)
-  "IT-PT", // byte-identical
   "KG-O", // byte-identical
   "LV-050", // byte-identical
   "LV-056", // curated (audit): Līvāni municipality ≡ town (light-blue field + emblem)
   "ME-06", // byte-identical
   "ME-08", // curated (audit): Herceg Novi ≡ town (ornate blue cross emblem)
-  "ME-11", // perceptual distance 0
+  "ME-11", // byte-identical
   "ME-13", // perceptual distance 0
   "ME-14", // curated (audit): Pljevlja ≡ town (blue field + shield)
   "ME-15", // byte-identical
@@ -86,41 +77,35 @@ export const SHARED_CAPITAL_FLAGS: ReadonlySet<string> = new Set([
   "MU-PL", // byte-identical
   "MX-ZAC", // curated (audit): Zacatecas state ≡ city (coat of arms on white)
   "MY-14", // byte-identical
-  "NG-FC", // byte-identical
+  "MY-16", // perceptual distance 0
   "NI-AN", // curated (audit): Nicaragua dept ≡ capital (shared departmental banner)
-  "NI-BO", // byte-identical
-  "NI-CA", // byte-identical
-  "NI-CI", // byte-identical
-  "NI-CO", // curated (audit): Nicaragua dept ≡ capital (green field + emblem)
-  "NI-ES", // byte-identical
-  "NI-GR", // curated (audit): Granada dept ≡ city (yellow/red + seal)
-  "NI-LE", // perceptual distance 1
-  "NI-MD", // byte-identical
-  "NI-MS", // curated (audit): Masaya dept ≡ capital (green/white/green + seal)
-  "NI-MT", // curated (audit): Nicaragua dept ≡ capital (blue/white/green + seal)
-  "NI-NS", // curated (audit): Nicaragua dept ≡ capital (white field + round seal)
-  "NI-SJ", // curated (audit): Nicaragua dept ≡ capital (white field + small seal)
+  "PA-3", // perceptual distance 0
+  "PE-ARE", // perceptual distance 2
   "PE-AYA", // perceptual distance 0
+  "PE-CAJ", // perceptual distance 5
   "PE-CUS", // byte-identical
   "PE-HUC", // curated (audit): Huánuco dept ≡ city (white/green diagonal)
   "PE-HUV", // curated (audit): Huancavelica dept ≡ city (light-blue field + arms)
   "PE-MDD", // byte-identical
   "PE-MOQ", // byte-identical
+  "PE-TAC", // perceptual distance 0
   "PE-TUM", // byte-identical
   "PW-212", // curated (audit): Koror state ≡ capital (red/blue starburst + emblem)
   "SI-030", // byte-identical
   "SI-032", // byte-identical
   "SI-034", // byte-identical
+  "SI-043", // byte-identical
   "SI-099", // byte-identical
   "SI-104", // byte-identical
   "SI-106", // byte-identical
   "SI-147", // byte-identical
-  "SV-AH", // perceptual distance 8
+  "SV-AH", // curated (audit): Ahuachapán dept ≡ capital (blue/white/blue + arms)
   "SV-CH", // byte-identical
-  "SV-SM", // perceptual distance 0
+  "SV-SM", // byte-identical
   "SV-SV", // byte-identical
   "SV-UN", // curated (audit): La Unión dept ≡ capital (yellow/red + emblem)
-  "UY-RV", // perceptual distance 9
+  "UY-RV", // byte-identical
+  "UY-SA", // perceptual distance 0
   "VE-T", // curated (audit): Táchira ≡ capital (white triangle + star)
   "VE-X", // byte-identical
 ]);

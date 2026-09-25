@@ -133,7 +133,6 @@ export const CAPITAL_ENDONYMS: Readonly<Record<string, string>> = {
   "AZ-ZAQ": "Zaqatala",
   "AZ-ZAR": "Zərdab",
   "BA-BRC": "Брчко",
-  "BA-SRP": "Сарајево",
   "BD-A": "বরিশাল",
   "BD-B": "চট্টগ্রাম",
   "BD-C": "ঢাকা",

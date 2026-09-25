@@ -39,7 +39,7 @@ const PLURAL_LABEL_OVERRIDES = {
   "AU": "States & Territories",
   "CN": "Provinces & Special Territories",
   "DK": "Regions & Autonomous Territories",
-  "ES": "Autonomous Communities & Claimed Territory",
+  "ES": "Provinces, Autonomous Communities & Claimed Territory",
   "FI": "Provinces & Autonomous Territory",
   "FR": "Departments & Overseas Territories",
   "GB": "Countries, Crown Dependencies & Territories",
@@ -103,7 +103,13 @@ const SUBDIVISION_NAME_OVERRIDES_NEW = {
   "RU": {
     "UA-43": "Republic of Crimea",
     "UA-40": "Sevastopol",
-    "RU-MOW": "Moscow Oblast" // the surrounding region; RU-MOS is Moscow the federal city
+    // ISO 3166-2:RU — RU-MOW is Moskva (the federal city), RU-MOS is Moskovskaya
+    // oblast'. Natural Earth had the two codes SWAPPED; this override used to paper
+    // over that by renaming RU-MOW "Moscow Oblast", which made every Wikidata-keyed
+    // figure land on the wrong card (the city showed the oblast's population and
+    // Krasnogorsk as its capital). RU.json now carries the correct ISO codes
+    // (2026-09 subnational flag audit), so only the oblast needs an English name.
+    "RU-MOS": "Moscow Oblast"
   },
   "UA": {
     "UA-32": "Kyiv Oblast" // the surrounding region; UA-30 is Kyiv City itself
@@ -171,6 +177,25 @@ const SUBDIVISION_NAME_OVERRIDES_NEW = {
 };
 
 const SUBDIVISION_TYPE_OVERRIDES_NEW = {
+  "ES": {
+    // Natural Earth tags every Spanish PROVINCE with the type of the autonomous
+    // community it belongs to ("Comunidad Autónoma"), so all 50 cards read
+    // "Autonomous Community". The app's ES codes are ISO 3166-2:ES PROVINCE codes
+    // (the 17 communities have their own codes, ES-AN, ES-CT…). The seven
+    // single-province communities (Asturias ES-O, Cantabria ES-S, Balearic
+    // Islands ES-PM, La Rioja ES-LO, Madrid ES-M, Murcia ES-MU, Navarre ES-NA)
+    // are both at once and keep "Autonomous Community"; the other 43 are
+    // provinces (ISO 3166-2:ES; Spanish Constitution art. 141). 2026-09 audit.
+    "ES-A": "Province", "ES-AB": "Province", "ES-AL": "Province", "ES-AV": "Province", "ES-B": "Province",
+    "ES-BA": "Province", "ES-BI": "Province", "ES-BU": "Province", "ES-C": "Province", "ES-CA": "Province",
+    "ES-CC": "Province", "ES-CO": "Province", "ES-CR": "Province", "ES-CS": "Province", "ES-CU": "Province",
+    "ES-GC": "Province", "ES-GI": "Province", "ES-GR": "Province", "ES-GU": "Province", "ES-H": "Province",
+    "ES-HU": "Province", "ES-J": "Province", "ES-L": "Province", "ES-LE": "Province", "ES-LU": "Province",
+    "ES-MA": "Province", "ES-OR": "Province", "ES-P": "Province", "ES-PO": "Province", "ES-SA": "Province",
+    "ES-SE": "Province", "ES-SG": "Province", "ES-SO": "Province", "ES-SS": "Province", "ES-T": "Province",
+    "ES-TE": "Province", "ES-TF": "Province", "ES-TO": "Province", "ES-V": "Province", "ES-VA": "Province",
+    "ES-VI": "Province", "ES-Z": "Province", "ES-ZA": "Province",
+  },
   "RU": {
     "UA-43": "Republic",
     "UA-40": "Federal City"

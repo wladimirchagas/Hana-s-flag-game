@@ -22,6 +22,10 @@ const codesFrom = (src, marker) => {
 };
 const idx = read("src/lib/subdivisionFlagIndex.ts");
 const flagged = codesFrom(idx, "const FLAG_CODES");
+// Curated LOCAL_FLAG_OVERRIDES also put a flag on screen (FR-BL, FI-AX, GB-SH…),
+// and since the 2026-09 audit an override code is no longer duplicated in
+// FLAG_CODES — so count the override keys too, or they would drop out of the sweep.
+for (const m of read("src/api/subdivisions.ts").matchAll(/"([A-Z]{2}-[A-Z0-9~]+)":\s*`\$\{BASE\}flags\//g)) flagged.add(m[1]);
 // codes the game actually DISPLAYS (every `code: "CC-XXX"` in SUBDIVISION_META)
 const meta = read("src/lib/subdivisionMeta.ts");
 const shown = new Set([...meta.matchAll(/code:\s*"([A-Z]{2}-[A-Z0-9~]+)"/g)].map(m=>m[1]));

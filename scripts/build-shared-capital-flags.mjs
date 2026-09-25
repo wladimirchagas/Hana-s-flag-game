@@ -43,11 +43,9 @@ const SHARED_THRESHOLD = 12;
 const EFFECTIVELY_SHARED = new Map([
   ["BO-L", "La Paz department ≡ city (red-over-green bicolour); shades differ (dHash 27)"],
   ["BR-DF", "Distrito Federal ≡ Brasília (golden-arrow cross); shade/crop differ"],
-  ["IT-ME", "Messina province ≡ city (red field, yellow Scandinavian cross)"],
   ["CH-SZ", "Schwyz canton ≡ town (red field, white canton cross)"],
   ["ES-OR", "Ourense province ≡ city (blue field, arms + star border)"],
   ["MX-ZAC", "Zacatecas state ≡ city (coat of arms on white)"],
-  ["CU-06", "Villa Clara ≡ capital (blue/white/red swallowtail + arms)"],
   ["HN-OC", "Ocotepeque dept ≡ capital (red/white/green triband)"],
   ["PE-HUV", "Huancavelica dept ≡ city (light-blue field + arms)"],
   ["PE-HUC", "Huánuco dept ≡ city (white/green diagonal)"],
@@ -61,25 +59,20 @@ const EFFECTIVELY_SHARED = new Map([
   ["CR-A", "Alajuela province ≡ city (arms + wreath on white)"],
   ["CR-C", "Cartago province ≡ city (red-over-blue bicolour)"],
   ["NI-AN", "Nicaragua dept ≡ capital (shared departmental banner)"],
-  ["NI-SJ", "Nicaragua dept ≡ capital (white field + small seal)"],
-  ["NI-MT", "Nicaragua dept ≡ capital (blue/white/green + seal)"],
-  ["NI-GR", "Granada dept ≡ city (yellow/red + seal)"],
-  ["NI-CO", "Nicaragua dept ≡ capital (green field + emblem)"],
-  ["NI-NS", "Nicaragua dept ≡ capital (white field + round seal)"],
   ["SV-UN", "La Unión dept ≡ capital (yellow/red + emblem)"],
   // Second audit pass (2026-07, band 100–175) — the first pass cut off at
   // distance < 100 and missed same-flag pairs sitting just above it.
   // (The ACT/Canberra pair surfaced here too, but Canberra has no distinct flag
   //  of its own — the ACT flag serves both — so the ACT is treated as a single
   //  city-territory in cityTerritories.ts rather than a shared division+capital.)
-  ["IT-LC", "Lecco province ≡ city (blue field + arms)"],
-  ["IT-FG", "Foggia province ≡ city (red/blue + arms + wreath)"],
   ["VE-T", "Táchira ≡ capital (white triangle + star)"],
   ["EG-PTS", "Port Said governorate ≡ city (red field + anchor & wreath)"],
-  ["NI-MS", "Masaya dept ≡ capital (green/white/green + seal)"],
   ["HN-FM", "Francisco Morazán ≡ Tegucigalpa (navy/gold + arms)"],
   ["EC-E", "Esmeraldas province ≡ capital (green/white bicolour)"],
   ["EC-T", "Tungurahua ≡ Ambato (red/green field)"],
+  // 2026-09 audit: this pair had been auto-shared at "distance 8" in a stale
+  // generated list; the bundled renders now score 24, so it is curated here.
+  ["SV-AH", "Ahuachapán dept ≡ capital (blue/white/blue + arms)"],
 ]);
 
 /** code -> bundled subdivision-flag path (bulk sub/** files + curated overrides). */
@@ -151,6 +144,12 @@ function hamming(a, b) {
 }
 
 const subFlags = collectSubdivisionFlags();
+const SUPPRESSED = (() => {
+  const src = readFileSync(join(projectRoot, "src", "api", "subdivisions.ts"), "utf8");
+  const s = src.indexOf("SUPPRESSED_SUBDIVISION_FLAGS: ReadonlySet<string> = new Set([");
+  const e = src.indexOf("]);", s);
+  return new Set([...src.slice(s, e).replace(/\/\/.*$/gm, "").matchAll(/"([^"]+)"/g)].map((m) => m[1]));
+})();
 const capFlags = collectCapitalFlags();
 
 const shared = [];
@@ -177,7 +176,13 @@ for (const [code, capPath] of [...capFlags.entries()].sort()) {
 // Fold in the curated audited pairs the perceptual pass can't reach, skipping
 // any the pass already caught.
 const autoCodes = new Set(shared.map((s) => s.code));
+// A curated pair only means something while the SUBDIVISION still shows a flag:
+// once its flag is suppressed or removed (2026-09 audit — a city flag had been
+// standing in for the province, e.g. Messina, Cienfuegos, Foggia), the capital's
+// own flag is the only one left and must NOT be hidden as a "duplicate".
 for (const [code, why] of EFFECTIVELY_SHARED) {
+  const subPath = subFlags.get(code);
+  if (!subPath || !existsSync(subPath) || SUPPRESSED.has(code)) continue;
   if (!autoCodes.has(code)) shared.push({ code, why: `curated (audit): ${why}` });
 }
 shared.sort((a, b) => a.code.localeCompare(b.code));

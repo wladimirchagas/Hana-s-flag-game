@@ -249,7 +249,6 @@ export const CAPITAL_DETAILS: Readonly<Record<string, CapitalDetail>> = {
 
   // ── BA ──
   "BA-BRC": {"name":"Brčko","population":39893,"year":2013,"basis":"census"},
-  "BA-SRP": {"name":"Sarajevo","population":275524,"year":2013,"basis":"census"},
 
   // ── BD ──
   "BD-A": {"name":"Barishal","population":328278,"year":2011,"basis":"estimate"},

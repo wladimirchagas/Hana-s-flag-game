@@ -145,7 +145,6 @@ export const SUBDIVISION_ENDONYMS: Readonly<Record<string, string>> = {
   "AZ-ZAQ": "Закатальский",
   "AZ-ZAR": "Зердабский",
   "BA-BRC": "Брчко дистрикт",
-  "BA-SRP": "Република Српска",
   "BD-A": "বরিশাল বিভাগ",
   "BD-B": "চট্টগ্রাম বিভাগ",
   "BD-C": "ঢাকা বিভাগ",

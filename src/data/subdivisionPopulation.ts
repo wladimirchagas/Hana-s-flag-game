@@ -486,7 +486,6 @@ export const SUBDIVISION_POPULATION: Record<string, SubdivisionPopulation> = {
 
   // ── BA ──
   "BA-BIH": { population: 2219220, year: 2013, basis: "estimate" },
-  "BA-SRP": { population: 1228423, year: 2013, basis: "estimate" },
   "BA-03": { population: 445028, year: 2013, basis: "census" },
   "BA-09": { population: 413593, year: 2013, basis: "estimate" },
   "BA-04": { population: 364433, year: 2013, basis: "census" },

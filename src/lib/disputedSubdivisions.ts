@@ -103,6 +103,7 @@ const COUNTRY_NAME: Record<string, string> = {
   RS: "Serbia",
   SO: "Somalia",
   TR: "Türkiye",
+  ZA: "South Africa",
 };
 
 /**
