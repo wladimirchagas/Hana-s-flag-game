@@ -4,7 +4,36 @@
 
 This supplements [the original audit](LEARN_FACTUAL_AUDIT_2026-09-13.md) and [the continuation findings F40–F59](LEARN_FACTUAL_AUDIT_2026-09-19.md). No application data was changed. The evidence ledgers below are intended to preserve both positive verification and failures for subsequent work.
 
-## Latest reconciliation — application revision db3ba05
+## Current continuation — 26 September 2026
+
+**Progress estimate: approximately 10% complete / 90% remaining.** This estimates the work required for universal independent verification, not the percentage of a fully enumerated atomic-claim inventory. The completed comparisons below do not establish that all narratives, boundaries, historical periods, logos, licences, or metadata are correct.
+
+Latest pinned application revision: **`e3c1a35e2d7930630c616be12c6510576ded0f6a`**. Complete recursive Git trees establish **521 changed paths (including 149 removals)** since `11e30bb`; GitHub's comparison response was capped at 300 files and is not a complete inventory. The full delta still requires substantive review. Current deployment has not been independently rechecked; previous live observations remain pinned to their observed build.
+
+### Primary-source comparisons completed in this continuation
+
+| Dataset | App records compared | Result and limits |
+|---|---:|---|
+| UNDP Human Development Index | 192 | Scores and publisher ranks match; 2023 observations in 2025 report; movement reconstructed within the same data vintage |
+| World Justice Project | 141 | Scores, ranks and common-country movement match; displayed score bands are app-derived |
+| Lowy Global Diplomacy Index | 64 | Post counts and ranks match; 2023 collection in 2024 edition; bands app-derived |
+| World Happiness Report | 144 | Scores, ranks and movement match; 2026 report, 2023–2025 survey average |
+| WEF Global Gender Gap | 145 | Scores, ranks and movement match; new entrants correctly have no movement; bands app-derived |
+| IMD World Competitiveness | 66 | Scores, ranks and movement match; normalized scores, not absolute percentages |
+| Ecological Threat Report | 170 | Overall scores and derived ranks/categories match; 2024 data in 2025 report |
+| Freedom House 2026 replacement | 193 | All scores and statuses match; all 207 repository source-table rows also match the primary table |
+| Global Peace Index | 160 | All scores, movements and categories match; **159 ranks match, Honduras does not** |
+| Reuters Digital News Report | 46 | All trust scores and app-derived ranks/bands match; online survey scope applies |
+
+These are **1,321 record instances**, not 1,321 universally certified country records. Every comparison has a field-level ledger in `docs/audit/*_CLAIM_VERIFICATION_2026-09-26.json` (Freedom House uses `FREEDOM_HOUSE_2026_CLAIM_VERIFICATION_2026-09-26.json`). Source URLs, hashes, values, comparison outcomes and limits are preserved there. All earlier index datasets listed here were confirmed unchanged in the current country-facts snapshot; Freedom House uses the replacement snapshot.
+
+**Resolution of earlier Freedom House finding:** F46's 2024 score/status discrepancies describe the old dataset. The current 2026 replacement corrects those discrepancies; do not report the old 94 score and seven status disagreements as current defects. Source ranks are still app-derived and require that qualification.
+
+### F77 — Global Peace Index gives Honduras Cambodia's rank
+
+**Confirmed, medium.** The current app gives Honduras score **2.075**, rank **96**, and movement **+27**. The publisher's 2026 ranking gives Cambodia **96** and Honduras **97**, despite both scores rounding to 2.075. Preserve publisher rank **97** for Honduras; do not re-rank rounded scores or infer a tie the publisher does not show. The other 159 app ranks match. Evidence: [Institute for Economics & Peace, Global Peace Index 2026](https://www.economicsandpeace.org/wp-content/uploads/2026/06/Global-Peace-Index-2026-Report.pdf), PDF pages 12–13, and the GPI ledger.
+
+## Earlier reconciliation — application revision db3ba05
 
 The audit now includes application changes through **`db3ba0559016b20bfd0243ef13b1d16413979b33`**. Audit-document commits after this hash are separate from application changes. The sections below that describe `43cfd13` retain their historical denominators.
 
