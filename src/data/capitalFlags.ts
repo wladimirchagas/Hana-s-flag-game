@@ -858,7 +858,6 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "LC-02": "capital-flags/lc-02.svg",
 
   // ── LI ──
-  "LI-08": "capital-flags/li-08.svg",
 
   // ── LK ──
   "LK-11": "capital-flags/lk-11.svg",

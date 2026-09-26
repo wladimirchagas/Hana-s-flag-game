@@ -1,0 +1,7 @@
+{
+  "_comment": "Subdivision capitals that Wikidata's P36 gets wrong: the statement names a place that is not the subdivision's capital. build-capital-details.mjs and build-subdivision-capitals.mjs both drop the named capital for the code (name, population, flag and map marker), so a regen cannot bring it back, and check-capital-flags.mjs fails if the generated files carry it again. Each entry cites the evidence. See docs/SUBNATIONAL_FLAG_AUDIT_2026-09.md.",
+  "LI-08": {
+    "capital": "Vaduz",
+    "reason": "Wikidata's Schellenberg item (Q49655) gives Vaduz (Q1844) as its capital (P36). Vaduz is a different municipality, LI-11, and the national capital; it is not in Schellenberg. The app showed Vaduz as Schellenberg's capital, with Vaduz's flag and a map marker at Vaduz."
+  }
+}

@@ -38,6 +38,13 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(__dirname, "..");
 const META = join(projectRoot, "src", "lib", "subdivisionMeta.ts");
 const CITIES = join(projectRoot, "src", "data", "cities.ts");
+
+// Subdivision capitals Wikidata gets wrong (a P36 that names another place).
+// Shared with build-capital-details.mjs so the map marker and the capital card
+// drop the same wrong city. See scripts/data/wikidata-capital-rejected.json.
+const REJECTED_WIKIDATA_CAPITALS = JSON.parse(
+  readFileSync(join(__dirname, "data", "wikidata-capital-rejected.json"), "utf8"),
+);
 const OUTPUT = join(projectRoot, "src", "data", "subdivisionCapitals.ts");
 
 const ENDPOINT = "https://query.wikidata.org/sparql";
@@ -423,6 +430,14 @@ async function main() {
     }
   }
   if (preserved) console.log(`\nPreserved ${preserved} capital(s) from the previous run.`);
+
+  for (const [code, rej] of Object.entries(REJECTED_WIKIDATA_CAPITALS)) {
+    if (code.startsWith("_")) continue;
+    if (capitals.get(code)?.name === rej.capital) {
+      capitals.delete(code);
+      console.log(`  ✗ ${code} → ${rej.capital} is not this subdivision's capital; dropped`);
+    }
+  }
 
   writeOutput(capitals);
 }
