@@ -35,6 +35,8 @@ export const CITY_TERRITORY_CODES: ReadonlySet<string> = new Set([
   "KR-11", // Seoul — South Korean Special City (single city)
   "KR-26", // Busan — South Korean Metropolitan City (single city)
   "CZ-PR", // Prague — Act No. 131/2000 Coll. on the Capital City of Prague, §1(1): Prague is at once the capital, a region (kraj) and a municipality (obec).
+  "RU-MOW", // Moscow — federal city, a federal subject that is one city (Constitution of Russia, art. 65; ISO 3166-2:RU "autonomous city").
+  "RU-SPE", // Saint Petersburg — federal city on the same footing as Moscow (Constitution of Russia, art. 65; ISO 3166-2:RU "autonomous city").
   "AU-ACT", // Australian Capital Territory — federal capital territory essentially
             // the city of Canberra (no separate city government); Canberra has no
             // distinct civic flag — the ACT flag serves both, like Washington DC.

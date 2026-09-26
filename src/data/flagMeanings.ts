@@ -12450,10 +12450,14 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
 
   "FR-74": {
     description:
-      "The department arms as a banner: on silver a red escutcheon charged with a silver cross — the " +
-      "cross of Savoy — beneath a blue chappé evoking the mountains of the Haute-Savoie.",
+      "Haute-Savoie has no flag of its own and uses the traditional flag of Savoy: a white cross " +
+      "reaching the edges on a red field, the arms of the Counts and Dukes of Savoy. This version, with " +
+      "“Haute-Savoie” written along the cross’s horizontal arm, is sometimes flown to tell the " +
+      "department apart from neighbouring Savoie, for instance at sports events. The department is " +
+      "named “Upper Savoy” after the former Duchy of Savoy, which became part of France in 1860.",
     sources: [
-      { title: "Armorial des départements de France — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Armorial_des_d%C3%A9partements_de_France" },
+      { title: "Haute-Savoie (Department, France) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/fr-74.html" },
+      { title: "Drapeau de la Savoie — Wikipédia (French)", url: "https://fr.wikipedia.org/wiki/Drapeau_de_la_Savoie" },
     ],
   },
 
@@ -15900,6 +15904,289 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Võru maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Võru_maakonna_lipp" },
       { title: "Võru maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Võru_maakonna_vapp" },
       { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  // ── Slovak self-governing regions (kraje) ─────────────────────────────────────
+  "SK-BL": {
+    description:
+      "Bratislava Region’s flag is divided into four fields, with the vertical division a third " +
+      "of the way from the hoist: a yellow square in the upper hoist beside a blue field, and a " +
+      "blue field beneath it beside a white one. Yellow, blue and white are the tinctures of the " +
+      "region’s coat of arms, which shows on blue a golden stag rising from a silver wheel above " +
+      "a golden wavy bar. The arms are based on those of the old Pressburg (Bratislava) County, " +
+      "which bore the arms of the Pálffy family, its hereditary župans: a golden stag rising from " +
+      "a golden wheel above a green triple hill. The region replaced the hill with the wavy bar, " +
+      "for the Danube and the Morava, the rivers that form its natural borders, and made the " +
+      "stag’s antlers and hooves and the wheel silver.",
+    sources: [
+      { title: "Bratislava region symbols (Slovakia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sk-0-.html" },
+      { title: "Význam a dedičstvo Pálfiovcov na území Bratislavského samosprávneho kraja — Bratislava Self-Governing Region (Slovak)", url: "https://bratislavskykraj.sk/vyznam-a-dedicstvo-palfiovcov-na-uzemi-bratislavskeho-samospravneho-kraja/" },
+      { title: "Bratislavský samosprávny kraj — SKsymbol (Slovak)", url: "https://sksymbol.sk/bratislavsky-samospravny-kraj/" },
+    ],
+  },
+
+  "SK-BC": {
+    description:
+      "Banská Bystrica Region’s flag, adopted in 2002, is divided into four fields with the " +
+      "vertical division set towards the hoist: blue over white at the hoist, white over red in " +
+      "the fly. Blue, white and red are the tinctures of the region’s quartered coat of arms. " +
+      "Each quarter is derived from the arms of the historical counties of the area. Spruces, " +
+      "counterchanged on blue and silver, recall Zvolen. A golden-haired knight in silver armour, " +
+      "holding a shield with the silver double cross, recalls Novohrad. A silver bend between a " +
+      "crescent and a star recalls Tekov and Hont. A silver castle with an open gate recalls " +
+      "Gemer-Malohont.",
+    sources: [
+      { title: "Banská Bystrica region symbols (Slovakia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sk-6-.html" },
+      { title: "Banskobystrický samosprávny kraj — SKsymbol (Slovak)", url: "https://sksymbol.sk/banskobystricky-samospravny-kraj/" },
+    ],
+  },
+
+  // ── Swiss cantons ─────────────────────────────────────────────────────────────
+  "CH-AG": {
+    description:
+      "Aargau’s flag is its coat of arms on a square banner. The hoist half is black, with a " +
+      "white wavy river divided by two thin blue wavy lines; the fly half is light blue, with " +
+      "three white five-pointed stars, two above one. Samuel Ringier of Zofingen designed the " +
+      "arms in 1803, when the canton was created, with no reference to the region’s earlier " +
+      "heraldry. The 1803 decree gave them no meaning, but 19th-century sources agree on one. The " +
+      "black field crossed by a river is the former Bernese Aargau on the Aare. The three stars " +
+      "are the three parts of eastern Aargau: the County of Baden, the Freie Ämter and the " +
+      "Fricktal. The number of the stars’ points and their arrangement were fixed only in 1930.",
+    myths: [
+      {
+        claim:
+          "The black stands for fertile soil, and the wavy lines for the Aare, Reuss and Limmat " +
+          "rivers.",
+        reality:
+          "The 1803 decree explained nothing and blazoned simply “a river”. These readings date " +
+          "from the 20th century, as do others: the stars as the Reformed, Catholic and Jewish " +
+          "faiths, or blue as abundant water. The 19th-century explanation is the Bernese Aargau " +
+          "on the Aare, and three stars for Baden, the Freie Ämter and the Fricktal.",
+      },
+    ],
+    sources: [
+      { title: "Wappen des Kantons Aargau — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Wappen_des_Kantons_Aargau" },
+      { title: "Aargau canton (Switzerland) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ch-ag.html" },
+    ],
+  },
+
+  "CH-AI": {
+    description:
+      "Appenzell Innerrhoden’s flag is its coat of arms: on white, an upright black bear with red " +
+      "claws and tongue. The bear comes from the arms of the Prince-Abbey of St. Gallen, as the " +
+      "attribute of Saint Gall. Appenzell carried it on its banners when it threw off the abbey’s " +
+      "rule in the Appenzell Wars of the early 15th century; a banner is recorded as early as " +
+      "1390. These were the arms of the whole of Appenzell until the division of 1597 along " +
+      "confessional lines. Arbitrators then let Innerrhoden keep them, and Ausserrhoden added the " +
+      "letters V R to the same bear. Appenzell always insisted the bear be shown as male: when a " +
+      "calendar of 1477 left this unclear, the government demanded that every copy be destroyed.",
+    sources: [
+      { title: "Wappen des Kantons Appenzell Innerrhoden — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Wappen_des_Kantons_Appenzell_Innerrhoden" },
+      { title: "Appenzell Innerrhoden canton (Switzerland) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ch-ai.html" },
+    ],
+  },
+
+  // ── Liechtenstein municipalities (Gemeinden) ──────────────────────────────────
+  "LI-01": {
+    description:
+      "Balzers flies three equal vertical stripes, blue, yellow and blue, as a long vertical " +
+      "banner. The flag is identical to Gamprin’s. Blue and yellow are also the tinctures of the " +
+      "municipal arms, granted by Prince Franz Joseph II on 16 August 1956: a golden griffin with " +
+      "red tongue and claws on blue. The griffin comes from the arms of the Barons of Frauenberg, " +
+      "who held Gutenberg Castle in Balzers around 1300. It replaced the village’s original arms, " +
+      "the “Balzner Förkle”, a three-pronged hayfork.",
+    sources: [
+      { title: "Balzers — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Balzers" },
+      { title: "Balzers (Liechtenstein) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/li-ba.html" },
+    ],
+  },
+
+  "LI-02": {
+    description:
+      "Eschen’s flag is blue, divided down the middle by a white wavy band: the silver band of " +
+      "the Esche stream. It repeats the lower part of the municipal arms, granted on 16 April " +
+      "1942, which show above the stream a silver dove holding a blood-stained wood chip in its " +
+      "beak. The dove comes from the arms of Pfäfers Abbey and recalls the abbey’s founding " +
+      "legend. Pfäfers held Eschen’s parish benefice until the abbey was dissolved in 1838.",
+    sources: [
+      { title: "Eschen (Liechtenstein) — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Eschen_(Liechtenstein)" },
+      { title: "Eschen (Liechtenstein) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/li-es.html" },
+    ],
+  },
+
+  "LI-03": {
+    description:
+      "Gamprin flies three equal vertical stripes, blue, yellow and blue, the same flag as " +
+      "Balzers. Gamprin had no recognised arms, colours or flag of its own until the 1950s. A " +
+      "commission set up in 1957 designed them around the village’s old name, campus Rheni, " +
+      "“field on the Rhine”. The arms show a golden wavy band for the Rhine on blue, between two " +
+      "silver roses. The roses bring in the historic village of Bendern: they come from the arms " +
+      "of the knight Rüdiger von Limbach, who owned the old parsonage and large estates there. " +
+      "Prince Franz Joseph II granted the arms and the right to fly the flag by a decree of 30 " +
+      "April 1958.",
+    sources: [
+      { title: "Gamprin — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Gamprin" },
+      { title: "Gamprin (Liechtenstein) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/li-ga.html" },
+    ],
+  },
+
+  // ── Dutch provinces ───────────────────────────────────────────────────────────
+  "NL-LI": {
+    description:
+      "Limburg’s flag was adopted by the Provincial States on 28 July 1953, from a design by the " +
+      "Maastricht architect Maris. Two equal stripes, white over yellow, are separated by a " +
+      "narrower blue stripe, and a red lion with a crown and a forked tail stands towards the " +
+      "hoist. The lion is that of the old Duchy of Limburg, from which the province takes its " +
+      "name, though the duchy lay almost entirely outside the present province. Its forked tail " +
+      "distinguishes it from the lion of the Netherlands. The blue stripe stands for the Maas. " +
+      "The colours come from the provincial arms granted in 1886. Red is taken from the arms of " +
+      "Valkenburg, Horne and Limburg, and white from Limburg and Valkenburg. Blue comes from " +
+      "Guelders, and yellow from Horne, Guelders and Jülich. Limburg had long wanted a flag: in " +
+      "the 1880s the national government twice refused it a white-and-red one.",
+    sources: [
+      { title: "Vlag van Limburg (Nederland) — Wikipedia (Dutch)", url: "https://nl.wikipedia.org/wiki/Vlag_van_Limburg_(Nederland)" },
+      { title: "Limburg province (The Netherlands) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/nl-li.html" },
+    ],
+  },
+
+  // ── Comoros autonomous islands ────────────────────────────────────────────────
+  "KM-A": {
+    description:
+      "Anjouan’s island flag is red, with the white crescent and four white stars of the Comorian " +
+      "national emblem at its centre. Red and white are Anjouan’s traditional colours, while the " +
+      "emblem stands for the Union of the Comoros. Its four stars also represent the four " +
+      "islands. On the national flag, whose four stripes stand for the four islands, yellow is " +
+      "Mohéli, white Mayotte, red Anjouan and blue Grande Comore. The flag was adopted in 2012, " +
+      "replacing an earlier red flag with a white open hand and crescent.",
+    sources: [
+      { title: "Anjouan (Comoros) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/km-nz.html" },
+      { title: "Flag of the Comoros — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Comoros" },
+    ],
+  },
+
+  "KM-M": {
+    description:
+      "Mohéli’s island flag is yellow with a red five-pointed star. Yellow is Mohéli’s colour. On " +
+      "the national flag, whose four stripes stand for the four islands, yellow is Mohéli, white " +
+      "Mayotte, red Anjouan and blue Grande Comore.",
+    sources: [
+      { title: "Mohéli (Comoros) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/km-mw.html" },
+      { title: "Flag of the Comoros — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Comoros" },
+    ],
+  },
+
+  "KM-G": {
+    description:
+      "Grande Comore (Ngazidja) flies a blue flag. As the island’s 2002 constitution describes " +
+      "it, a white crescent sits at the hoist, with four white stars aligned from one tip of the " +
+      "crescent to the other. Blue is Grande Comore’s colour. On the national flag, whose four " +
+      "stripes stand for the four islands, yellow is Mohéli, white Mayotte, red Anjouan and blue " +
+      "Grande Comore. The crescent and four stars are the national emblem, the stars again " +
+      "standing for the islands.",
+    sources: [
+      { title: "Grande Comore (Comoros) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/km-gk.html" },
+      { title: "Flag of the Comoros — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_the_Comoros" },
+    ],
+  },
+
+  // ── Saint Helena, Ascension and Tristan da Cunha ──────────────────────────────
+  "SH-TA": {
+    description:
+      "Tristan da Cunha’s flag was adopted on 20 October 2002, under a Royal Warrant. It is a " +
+      "Blue Ensign, the Union Jack in the canton of a blue field, defaced with the territory’s " +
+      "coat of arms, granted the same day. The shield bears four yellow-nosed albatrosses around " +
+      "a central diamond taken from the arms of the da Cunha family of Admiral Tristão da Cunha, " +
+      "after whom the island is named. Cunha means “wedge” in Portuguese, and the family bore " +
+      "blue wedges as a pun on its name. Two Tristan rock lobsters, found in the waters around " +
+      "the island, support the shield. Above the shield, a Tristan longboat sits on a naval " +
+      "crown, and the scroll below reads “Our faith is our strength”. Before 2002 Tristan used " +
+      "Saint Helena’s arms.",
+    sources: [
+      { title: "Flag of Tristan da Cunha — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Tristan_da_Cunha" },
+      { title: "Coat of arms of Tristan da Cunha — Wikipedia", url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Tristan_da_Cunha" },
+      { title: "Tristan da Cunha — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sh-tc.html" },
+    ],
+  },
+
+  "SH-AC": {
+    description:
+      "Ascension Island’s flag is a Blue Ensign defaced with the island’s coat of arms. Before " +
+      "it, the island flew the Union Flag. The Island Council agreed in 2009 to develop a flag of " +
+      "its own, and after public consultation the design was approved by the Queen in April 2013. " +
+      "It was raised for the first time on 11 May 2013, Ascension Day; the island was named after " +
+      "Ascension Day in 1503. The arms were approved in 2012. The College of Arms drew them up " +
+      "from the features islanders asked for. They show Green Mountain, which dominates the " +
+      "island’s skyline, and three wideawake birds. Two green turtles support the shield, for the " +
+      "turtles that famously lay their eggs on Ascension’s beaches.",
+    sources: [
+      { title: "Flag of Ascension Island — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Ascension_Island" },
+      { title: "Ascension Island — Flags of the World", url: "https://www.crwflags.com/fotw/flags/sh-ac.html" },
+    ],
+  },
+
+  // ── Russian federal subjects ──────────────────────────────────────────────────
+  "RU-MOW": {
+    description:
+      "Moscow’s flag is dark red, with the main charge of the city’s arms at its centre: Saint " +
+      "George on horseback, facing away from the hoist, striking a serpent with his spear. It was " +
+      "adopted in 1995, and its current description was set by Moscow law in 2003; it is No. 197 " +
+      "in the State Heraldic Register. The arms were restored in 1993 on the model granted by " +
+      "Catherine II in 1781. They show George in silver armour and a blue cloak on a silver " +
+      "horse, killing a black serpent with a golden spear. Moscow celebrates the Day of its arms " +
+      "and flag every year on 6 May.",
+    myths: [
+      {
+        claim:
+          "The horseman on Moscow’s arms has always been Saint George.",
+        reality:
+          "From Ivan III in the 15th century, a rider slaying a dragon was one of the two " +
+          "constant symbols on the seals of Russia’s rulers, beside the double-headed eagle. It " +
+          "stood for the sovereign defeating his enemies. Only from the 1710s, under Peter I, did " +
+          "the rider come to be read as Saint George, whose image it resembled. From then on it " +
+          "was also taken as the arms of Moscow.",
+      },
+    ],
+    sources: [
+      { title: "Флаг Москвы — Wikipedia (Russian)", url: "https://ru.wikipedia.org/wiki/Флаг_Москвы" },
+      { title: "Герб Москвы — Wikipedia (Russian)", url: "https://ru.wikipedia.org/wiki/Герб_Москвы" },
+      { title: "Moscow (Russia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ru-mow.html" },
+    ],
+  },
+
+  "RU-MOS": {
+    description:
+      "Moscow Oblast’s flag is red, with the figure from the oblast’s arms in the upper hoist. " +
+      "Saint George, in white armour and a blue cloak on a white horse, is turned towards the " +
+      "hoist. He spears a golden dragon with green wings, using a spear topped by an " +
+      "eight-pointed cross. Unlike the city of Moscow’s black serpent, the oblast’s dragon is " +
+      "golden. The flag was approved on 3 December 1997 (State Heraldic Register No. 777), and a " +
+      "law of 2005 redescribed it. It is based on the arms of the old Moscow Governorate. Its " +
+      "published symbolism calls George the patron of the Russian people and guardian of the " +
+      "Russian land, embodying the victory of good over evil and light over darkness. It gives " +
+      "the red as courage, bravery and self-sacrifice.",
+    sources: [
+      { title: "Флаг Московской области — Wikipedia (Russian)", url: "https://ru.wikipedia.org/wiki/Флаг_Московской_области" },
+      { title: "Moscow Oblast (Russia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ru-50.html" },
+    ],
+  },
+
+  "RU-ORL": {
+    description:
+      "Oryol Oblast’s flag, adopted on 26 July 2002 (State Heraldic Register No. 1217), is red. A " +
+      "blue stripe, a fifth of the flag’s height, runs along the bottom, and the oblast’s coat of " +
+      "arms sits at the centre of the red. Red is explained as courage, bravery and fearlessness, " +
+      "and blue as beauty, grandeur and purity of thought. The arms show a silver fortress of " +
+      "three towers crowned by a golden double-headed eagle. The eagle echoes the region’s name, " +
+      "since orel means “eagle”, and both the eagle and the fortress come from the Oryol " +
+      "Governorate arms of 1878. The fortress recalls the line of strongholds, Oryol, Mtsensk and " +
+      "Kromy, that defended Rus’. On the green base, golden ears of grain mark a farming region. " +
+      "An open silver book honours the region’s literary tradition, the land of Turgenev, Leskov, " +
+      "Fet and Bunin.",
+    sources: [
+      { title: "Флаг Орловской области — Wikipedia (Russian)", url: "https://ru.wikipedia.org/wiki/Флаг_Орловской_области" },
+      { title: "Герб Орловской области — Wikipedia (Russian)", url: "https://ru.wikipedia.org/wiki/Герб_Орловской_области" },
+      { title: "Oryol Oblast (Russia) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ru-57.html" },
     ],
   },
 

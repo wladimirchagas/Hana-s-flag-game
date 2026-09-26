@@ -322,7 +322,102 @@ and the other 14 cards have it. There is now a type override in `build-subdivisi
 and a municipality at once. `CZ-PR` joins `CITY_TERRITORY_CODES`, so the capital quiz never asks
 for "the capital of Prague".
 
+## Batch 5 — Slovakia, Switzerland, Liechtenstein, the Netherlands, Comoros, Saint Helena, Russia (2026-09-26)
+
+**16 real flags were missing and are now bundled from Commons.** Each file was compared with the
+division's FOTW page before bundling.
+
+| Code | Division | Commons file |
+|---|---|---|
+| SK-BL | Bratislava Region | `Bratislavsky vlajka.svg` |
+| SK-BC | Banská Bystrica Region | `Banskobystricky vlajka.svg` |
+| CH-AG | Aargau | `CHE Aargau Flag.svg` |
+| CH-AI | Appenzell Innerrhoden | `CHE Appenzell Innerrhoden Flag.svg` |
+| LI-01 | Balzers | `Flag of Balzers Liechtenstein-1.svg` |
+| LI-02 | Eschen | `Flag of Eschen Liechtenstein-1.svg` |
+| LI-03 | Gamprin | `Flag of Gamprin Liechtenstein-1.svg` |
+| NL-LI | Limburg | `Flag of Limburg (Netherlands).svg` |
+| KM-A | Anjouan | `Flag of Anjouan (official).svg` |
+| KM-M | Mohéli | `Flag of Mohéli (official).svg` |
+| KM-G | Grande Comore | `Flag of Grande Comore.svg` |
+| SH-TA | Tristan da Cunha | `Flag of Tristan da Cunha.svg` |
+| SH-AC | Ascension | `Flag of Ascension Island.svg` |
+| RU-MOW | Moscow | `Flag of Moscow, Russia.svg` |
+| RU-MOS | Moscow Oblast | `Flag of Moscow Oblast (large).svg` |
+| RU-ORL | Oryol Oblast | `Flag of Oryol Oblast.svg` |
+
+The Liechtenstein files are the long vertical banners (1:4) the municipalities fly.
+
+**No screen shows the Saint Helena territory's three parts yet.** The app opens sub-national views
+for UN members only, and on the UK's map the whole territory is one card, GB-SH. Ascension's and
+Tristan da Cunha's flags and explainers are bundled so the data is complete if a view is added.
+
+**Saint Helena island (SH-HL) stays blank, on purpose.** The app already shows Saint Helena's flag
+for the whole territory (`sh.svg`, both as GB-SH and as the SH parent). Showing it again on the
+island's card would repeat the parent's flag on a division, which the parent-collision check exists
+to stop.
+
+**Explainers.** 16 new entries. Every flag's FOTW page is cited, plus:
+- Slovakia: the Bratislava Self-Governing Region's own page on its arms, and SKsymbol's blazons.
+  FOTW traces each Banská Bystrica quarter to a historical county.
+- Switzerland: the German Wikipedia "Wappen des Kantons …" articles. Aargau's entry has a myth
+  entry. The 1803 decree gave the arms no meaning, and the rivers-and-fertile-soil reading is 20th
+  century. 19th-century sources read the stars as Baden, the Freie Ämter and the Fricktal.
+- Liechtenstein: the arms sections of the German Wikipedia municipality articles.
+- Limburg: the Dutch Wikipedia flag article, and FOTW for the designer (the architect Maris) and
+  the 1880s refusals of a white-and-red flag.
+- Comoros: FOTW, and English Wikipedia for the national flag's stripe for each island.
+- Tristan da Cunha and Ascension: the English Wikipedia flag and arms articles.
+- Russia: the Russian Wikipedia flag and arms articles. Moscow's entry has a myth entry: the
+  rider was read as Saint George only from the 1710s. Before that it stood for the sovereign.
+
+**Identical flags in the Sub-national game.** Balzers and Gamprin fly the same flag (FOTW
+li-ba.html). Measuring every same-country pair of division flags found four more identical pairs
+already in the game: Ajman and Dubai, Ras Al Khaimah and Sharjah, Nariño and Vichada, and the two
+Corsican departments. A player who named the other member of a pair was marked wrong.
+- `src/data/identicalSubdivisionFlags.ts` lists the five pairs, each with a source. The game now
+  accepts either answer, and the reveal names the other division.
+- `scripts/check-identical-subdivision-flags.mjs` (in `flags:check` and CI) fails on any
+  near-identical pair that is neither declared nor reviewed. It records five pairs checked by eye
+  and found different. The closest is Ida-Viru and Lääne-Viru, whose arms differ only in the
+  colour of the tower roof.
+
+**Haute-Savoie's explainer described a different image.** It described the department's arms as a
+banner. The bundled flag is the Savoy cross with "Haute-Savoie" written on it. FOTW says the
+department has no flag of its own, and that this version is sometimes used to tell it from Savoie,
+for instance at sports events. The explainer now says that. Which image French departments should
+show is still open (see the judgement areas below).
+
+**San Andrés.** Natural Earth's English name for CO-SAP was "Archipelago of Saint Andréws". It is
+now "San Andrés and Providencia", as English Wikipedia names the department.
+
+**Colombia's types.** Natural Earth kept statuses abolished in 1991. Five departments were typed
+"Commissiary" (a misspelling) and four "Intendancy", including Caquetá, a department since 1981.
+Bogotá was a "Federal District". Article 309 of the 1991 Constitution made them all departments,
+and article 322 makes Bogotá a capital district. Type overrides in `build-subdivision-meta.mjs`.
+
+**Moscow and Saint Petersburg are city-territories.** They are federal cities under article 65 of
+the Russian Constitution, so they join `CITY_TERRITORY_CODES`.
+
 ## Follow-ups (later batches)
+
+### Capital flags that match another place's flag (found in batch 5)
+The identical-flag scan was also run on capital flags against every other flag of the same
+country. It found 46 identical pairs, in three groups:
+- **One city, two subdivisions.** Kyiv, Budapest, Minsk, Oslo, Port Moresby, Honiara, Bishkek,
+  Damascus, Addis Ababa, Sofia, and the Hungarian county seats that are also cities with county
+  rights. The city is the capital of one subdivision and a division in its own right. A mixed deck
+  should accept both answers.
+- **Different places with the same design.** Probably right, but each needs checking: Genoa and
+  Milan (St George's cross), Warsaw and Łódź (yellow over red), Munich and Baden-Württemberg
+  (black and gold), and several Italian provincial capitals with the same bicolour.
+- **Probably wrong data.** The capital of North Sulawesi (ID-SA) is recorded as Gorontalo; it is
+  Manado. Schellenberg (LI-08) has Vaduz as its capital. České Budějovice (CZ-JC) shows Prague's
+  flag. Other pairs to check: Lons-le-Saunier and Grenoble, Taza and Beni Mellal, Caserta and
+  Catania, Brescia and Isernia, Ibagué and Bolívar, Zamora and Esmeraldas.
+
+To reproduce the list, run the measurement in `check-identical-subdivision-flags.mjs` with each
+country's capital flags from `capitalFlags.ts` added to its set.
 
 ### City-territory capital cards (found in batch 4)
 The Learn panel's capital card for a city-territory shows the territory's own figure for Kuala
@@ -360,14 +455,14 @@ nothing. Mostly this is an ISO-code mismatch between the flag data and the app's
 | Poland | ~~all 16 voivodeships~~ | Done in batch 4 |
 | Czechia | ~~all 14 regions~~ | Done in batch 4 |
 | Estonia | ~~11 of 15 counties~~ | Done in batch 4 |
-| Slovakia | Bratislava, Banská Bystrica | |
-| Switzerland | Aargau, Appenzell Innerrhoden | |
+| Slovakia | ~~Bratislava, Banská Bystrica~~ | Done in batch 5 |
+| Switzerland | ~~Aargau, Appenzell Innerrhoden~~ | Done in batch 5 |
 | South Korea | ~~Seoul, Busan~~ | Done in batch 3 |
-| Liechtenstein | Balzers, Eschen, Gamprin | |
-| Netherlands | Limburg | |
-| Saint Helena, Ascension and Tristan da Cunha | all 3 | |
-| Comoros | Anjouan, Mohéli, Grande Comore | |
-| Russia | Moscow, Moscow Oblast, Oryol | Codes now correct |
+| Liechtenstein | ~~Balzers, Eschen, Gamprin~~ | Done in batch 5 |
+| Netherlands | ~~Limburg~~ | Done in batch 5 |
+| Saint Helena, Ascension and Tristan da Cunha | ~~Ascension, Tristan da Cunha~~ | Bundled in batch 5, though no screen opens this territory's parts yet; Saint Helena stays blank |
+| Comoros | ~~Anjouan, Mohéli, Grande Comore~~ | Done in batch 5 |
+| Russia | ~~Moscow, Moscow Oblast, Oryol~~ | Done in batch 5 |
 | Norway | the 7 counties re-established in 2024 | Østfold, Akershus, Buskerud, Vestfold, Telemark, Troms, Finnmark |
 | Malta | 10 local councils | |
 | Guatemala | 22 departments | |
