@@ -4472,6 +4472,49 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
+  "MY-15": {
+    description:
+      "Three equal horizontal bands of red, white and blue, with a yellow crescent and fourteen-pointed " +
+      "star on the white. The red stands for courage — Labuan becoming a Federal Territory within the " +
+      "Federation of Malaysia; the white for purity, sincerity and earnestness; the blue for the unity of " +
+      "a multiracial people living together in peace and prosperity; and the yellow for the sovereignty " +
+      "of the constitutional monarchy and for upholding the Rukun Negara, the national philosophy. The " +
+      "crescent and star stand for Islam as the official religion, and the star's fourteen points for " +
+      "the states and the federal government united in the Federation.",
+    sources: [
+      {
+        title: "Identiti, Bendera dan jata Labuan — Wikipedia Bahasa Melayu",
+        url: "https://ms.wikipedia.org/wiki/Identiti,_Bendera_dan_jata_Labuan",
+      },
+      {
+        title: "Labuan (Malaysia) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/my-labua.html",
+      },
+    ],
+  },
+
+  "MY-16": {
+    description:
+      "Three vertical bands — blue, a double-width yellow centre, and blue — with the coat of arms of " +
+      "Malaysia in the yellow band, adopted on 1 February 2001, when Putrajaya became a federal " +
+      "territory. The national arms at the centre stand for Putrajaya as the administrative centre of " +
+      "Malaysia's federal government.",
+    sources: [
+      {
+        title: "Flag of the Federal Territories — Wikipedia",
+        url: "https://en.wikipedia.org/wiki/Flag_of_the_Federal_Territories",
+      },
+      {
+        title: "Identiti Putrajaya — Wikipedia Bahasa Melayu",
+        url: "https://ms.wikipedia.org/wiki/Identiti_Putrajaya",
+      },
+      {
+        title: "Putrajaya (Malaysia) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/my-pj.html",
+      },
+    ],
+  },
+
   "DE-BW": {
     description:
       "A black band over a gold one. The colours were drawn in 1952 from the flags of the states that " +

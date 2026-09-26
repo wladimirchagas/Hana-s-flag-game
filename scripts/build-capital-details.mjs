@@ -195,6 +195,7 @@ const CAPITAL_FLAG_SOURCE_OVERRIDES = {
   "AU-ACT": "Flag of the Australian Capital Territory.svg", // Canberra (ACT) — the ACT flag bears the City of Canberra coat of arms and Canberra is coextensive with the territory, so it functions as the capital's own flag (blue/gold, Southern Cross + Canberra arms; adopted 25 Mar 1993). Ref: en.wikipedia.org/wiki/Flag_of_the_Australian_Capital_Territory.
   "AU-TAS": "City of Hobart Flag.svg", // Hobart (Tasmania) — official City of Hobart municipal flag (the city arms: red lion of Tasmania over the gold star of Lord Hobart; designed 1951, first flown 1953). Ref: en.wikipedia.org/wiki/Coat_of_arms_of_Hobart.
   "MY-01": "Flag of Johor Bahru.svg", // Johor Bahru — official Johor Bahru City Council flag (horizontal red/white/blue tricolour with a yellow crescent and star), owner-confirmed against FOTW (crwflags.com/fotw/flags/my-j-jbc.html). Pinned because the earlier correction pointed at "Flag of Johor Bahru, Johor.svg", which is the Johor STATE flag, not the city's.
+  "MY-05": "Flag of Seremban.png", // Seremban — the Seremban City Council (Majlis Bandaraya Seremban, city since 1 Jan 2020) flag: vertical yellow/black/red with the council emblem (FOTW crwflags.com/fotw/flags/my-05-se.html). Hosted locally on en.wikipedia (PD-Malaysia). Replaces "Flag of Sungei Ujong.svg", the flag of the Sungai Ujong chiefdom — see scripts/data/capital-flag-rejected.json.
   "MY-14": "Flag of Kuala Lumpur, Malaysia.svg", // Kuala Lumpur (Federal Territory) — official DBKL city flag adopted 14 May 1990 (blue central band with a yellow crescent + 14-pointed star, red/white stripes on white above and below). NOT the national flag (blue is the dominant field). Ref: en.wikipedia.org/wiki/Flag_and_coat_of_arms_of_Kuala_Lumpur.
   "MY-16": "Flag of Putrajaya.svg", // Putrajaya (Federal Territory) — official city flag: three vertical bands blue/yellow(double-width)/blue with the Malaysian coat of arms in the yellow band. Ref: en.wikipedia.org/wiki/Flag_of_the_Federal_Territories.
   "DK-FO": "Flag of Tórshavn, Faroe Islands.svg", // Tórshavn (Faroe Islands) — the municipality's own flag, per its en.wikipedia infobox (`image_flag`); Tórshavn has no P41 statement on Wikidata.
@@ -212,6 +213,17 @@ const CAPITAL_FLAG_SOURCE_OVERRIDES = {
  * dropped rather than bundled as if it were Diego Garcia's own.
  */
 const SUPPRESS_TERRITORY_DUPLICATE_FLAG = new Set(["GB-IO"]);
+
+/**
+ * Capital flags VERIFIED NOT to be the capital city's own flag — a district's or
+ * a traditional chiefdom's flag that Wikidata P41, an infobox or an earlier
+ * manifest attached to the capital (Kuala Terengganu got its DISTRICT's flag;
+ * Seremban the Sungai Ujong chiefdom's). Shared with backfill-capital-flags.mjs
+ * and enforced by check-capital-flags.mjs; each entry cites its evidence.
+ */
+const REJECTED_CAPITAL_FLAGS = JSON.parse(
+  readFileSync(join(__dirname, "data", "capital-flag-rejected.json"), "utf8"),
+);
 
 /**
  * Curated capital-population overrides, keyed by ISO 3166-2 code →
@@ -615,6 +627,16 @@ async function main() {
     }
   }
   if (preservedFlags) console.log(`Preserved ${preservedFlags} backfilled flag source(s) from the previous manifest.`);
+
+  // Drop any flag verified NOT to be the capital's own (a district's or a
+  // chiefdom's) — whichever layer above re-introduced it.
+  for (const [code, rej] of Object.entries(REJECTED_CAPITAL_FLAGS)) {
+    if (code.startsWith("_")) continue;
+    if (flagSources[code] === rej.file) {
+      console.log(`  ✗ ${code} → ${rej.file} is not the capital's own flag; dropped`);
+      delete flagSources[code];
+    }
+  }
 
   writeOutput(details, flagSources);
 }

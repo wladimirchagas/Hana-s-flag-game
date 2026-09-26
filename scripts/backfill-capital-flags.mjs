@@ -53,6 +53,9 @@ const IB_CACHE = "/tmp/capbf_ib.json";
 const BAD_DESIGN = /hypothetic|proposed|fictional|conceptual|unofficial proposal|fictitious|fantasy/i;
 const PLACEHOLDER = /vlag ontbreekt|flag is missing|flag missing|no flag available|geen vlag|sin bandera|bandera ausente|brak flagi|нет флага|нема заставе|puudub lipp/i;
 
+// Flags verified NOT to be the capital's own (a district's, a chiefdom's) — shared
+// with build-capital-details.mjs; never propose them again.
+const REJECTED = JSON.parse(readFileSync(join(ROOT, "scripts/data/capital-flag-rejected.json"), "utf8"));
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const loadJSON = (p, d) => (existsSync(p) ? JSON.parse(readFileSync(p, "utf8")) : d);
 
@@ -221,6 +224,7 @@ async function main() {
     if (!file || manifest[code]) continue;
     if (BAD_DESIGN.test(file)) { console.log(`  ✗ ${code} → ${file} (hypothetical/proposed)`); continue; }
     if (PLACEHOLDER.test(file)) { console.log(`  ✗ ${code} → ${file} (flag-absent placeholder)`); continue; }
+    if (REJECTED[code]?.file === file) { console.log(`  ✗ ${code} → ${file} (verified not the capital's own flag)`); continue; }
     hits[code] = file;
   }
   console.log(`${Object.keys(hits).length} candidate flags after name filters.`);

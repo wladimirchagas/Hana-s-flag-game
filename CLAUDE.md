@@ -490,6 +490,14 @@ prompted by owner reports of a wrong Johor Bahru flag and missing Porto/Sydney f
 3. **Never weaken or raise the `check-capital-flags.mjs` threshold, or delete the national-flag guard in
    the generator, to force a flag through.** If a capital flag trips the check it IS the national flag —
    fix the flag, not the check.
+3a. **A district's or a traditional chiefdom's flag is not the city's flag** — the mirror of the
+   Portugal rule. The 2026-09 Malaysia audit found Kuala Terengganu showing its DISTRICT's flag (the
+   Commons file page says so) and Seremban showing the flag of Sungai Ujong, one of Negeri Sembilan's
+   nine chiefdoms. Read the Commons file page and the city's FOTW page before trusting a capital flag.
+   A flag verified to be another entity's goes in `scripts/data/capital-flag-rejected.json` with its
+   evidence. The generator and the backfill honour that file, and `check-capital-flags.mjs` fails if
+   such a flag is back in the manifest. Show the city council's own flag where a free file exists;
+   otherwise show none.
 4. **Verify in the running app** (the mandatory visual-verification rule applies): open a subdivision
    whose capital has a flag (e.g. Portugal → Porto district, Australia → New South Wales), tap
    "View capital", and confirm the correct municipal flag renders (Porto's white/green arms; the City of
