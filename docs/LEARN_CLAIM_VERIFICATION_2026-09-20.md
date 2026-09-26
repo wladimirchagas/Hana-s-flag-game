@@ -24,14 +24,22 @@ Latest pinned application revision: **`e3c1a35e2d7930630c616be12c6510576ded0f6a`
 | Freedom House 2026 replacement | 193 | All scores and statuses match; all 207 repository source-table rows also match the primary table |
 | Global Peace Index | 160 | All scores, movements and categories match; **159 ranks match, Honduras does not** |
 | Reuters Digital News Report | 46 | All trust scores and app-derived ranks/bands match; online survey scope applies |
+| Brand Finance Soft Power Index | 193 | All scores and current ranks match; Guatemala movement wrong; 19 movements omitted despite source availability |
+| Global Terrorism Index | 161 | All scores, publisher ranks, movement and categories match |
 
-These are **1,321 record instances**, not 1,321 universally certified country records. Every comparison has a field-level ledger in `docs/audit/*_CLAIM_VERIFICATION_2026-09-26.json` (Freedom House uses `FREEDOM_HOUSE_2026_CLAIM_VERIFICATION_2026-09-26.json`). Source URLs, hashes, values, comparison outcomes and limits are preserved there. All earlier index datasets listed here were confirmed unchanged in the current country-facts snapshot; Freedom House uses the replacement snapshot.
+These are **1,675 record instances**, not 1,321 universally certified country records. Every comparison has a field-level ledger in `docs/audit/*_CLAIM_VERIFICATION_2026-09-26.json` (Freedom House uses `FREEDOM_HOUSE_2026_CLAIM_VERIFICATION_2026-09-26.json`). Source URLs, hashes, values, comparison outcomes and limits are preserved there. All earlier index datasets listed here were confirmed unchanged in the current country-facts snapshot; Freedom House uses the replacement snapshot.
 
 **Resolution of earlier Freedom House finding:** F46's 2024 score/status discrepancies describe the old dataset. The current 2026 replacement corrects those discrepancies; do not report the old 94 score and seven status disagreements as current defects. Source ranks are still app-derived and require that qualification.
 
 ### F77 — Global Peace Index gives Honduras Cambodia's rank
 
 **Confirmed, medium.** The current app gives Honduras score **2.075**, rank **96**, and movement **+13**. The publisher's 2026 ranking gives Cambodia **96** and Honduras **97**, despite both scores rounding to 2.075. Preserve publisher rank **97** for Honduras; do not re-rank rounded scores or infer a tie the publisher does not show. The other 159 app ranks match. Evidence: [Institute for Economics & Peace, Global Peace Index 2026](https://www.economicsandpeace.org/wp-content/uploads/2026/06/Global-Peace-Index-2026-Report.pdf), PDF pages 12–13, and the GPI ledger.
+
+### F78 — Guatemala's Soft Power movement is wrong; 19 available movements are absent
+
+**Confirmed numeric error, medium; separate completeness gaps.** Guatemala's 2026 rank is **126** and its previous rank on the publisher's card is **120**, a movement of **−6**. The app displays **−4**. All 193 current ranks and scores match. Of 174 movement values provided by the app, 173 match. Another 19 entries omit movements available in the primary report; these omissions are not false numerical claims. They are AF, DJ, ER, FM, KI, KN, LC, LS, MH, NR, PW, SL, SO, SR, TL, TO, TV, VC and VU. Evidence: [Brand Finance Global Soft Power Index 2026](https://static.brandirectory.com/reports/brand-finance-soft-power-index-2026-digital.pdf), complete country cards on PDF pages 6–9 (Guatemala on page 8, visually checked), and the Soft Power ledger.
+
+**GTI presentation qualification:** positive rank movement means movement toward rank 1, which in this index means greater terrorism impact, not an improvement. The source table agrees with all 161 app entries; that comparison does not independently verify map colours, arrow semantics in the rendered UI or the underlying event coding. No-impact is an index category, not a guarantee of safety.
 
 ## Earlier reconciliation — application revision db3ba05
 
