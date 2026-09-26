@@ -221,6 +221,20 @@ const SUPPRESS_TERRITORY_DUPLICATE_FLAG = new Set(["GB-IO"]);
  * Seremban the Sungai Ujong chiefdom's). Shared with backfill-capital-flags.mjs
  * and enforced by check-capital-flags.mjs; each entry cites its evidence.
  */
+/**
+ * City-territories whose Wikidata P36 names the DISTRICT that houses city hall,
+ * not a capital city. Seoul's P36 is Jung District and Busan's is Yeonje
+ * District. The app shows each city-territory as its own capital (cityRoles:
+ * "Capital: Seoul"), so these records only leaked — the capital widget printed
+ * "Local name 중구" under "Seoul", and the Flag Master game used the Jung
+ * District flag as Seoul's. The name, population, flag and endonym of the seat
+ * district are never recorded for these codes. (2026-09 South Korea audit.)
+ */
+const SEAT_DISTRICT_NOT_A_CAPITAL = {
+  "KR-11": "Jung District — the district of Seoul where City Hall stands",
+  "KR-26": "Yeonje District — the district of Busan where City Hall stands",
+};
+
 const REJECTED_CAPITAL_FLAGS = JSON.parse(
   readFileSync(join(__dirname, "data", "capital-flag-rejected.json"), "utf8"),
 );
@@ -261,6 +275,16 @@ const CAPITAL_POPULATION_OVERRIDES = {
   // from the DOSM-2020-census local-authority table (per-council area); the unit
   // was confirmed by George Town/Shah Alam/KK matching our existing entries
   // exactly. These replace stale 2000–2017 estimates.
+  // South Korea (2026-09 audit). Wikidata's latest dated figures were the wrong
+  // entity or stale: Jeonju's 341,545 (2023) is about half the city's own count
+  // (618,908); Jeju City's 698,358 (2024) is the
+  // whole PROVINCE's figure from a Jeju Chamber of Commerce report, larger than
+  // the province's own census count; Chuncheon's newest was 2015. Replaced with
+  // each authority's own resident-registration count (Korean nationals) for the
+  // end of August 2026.
+  "KR-45": { population: 618908, year: 2026, basis: "estimate", source: "Jeonju City — 동별인구현황, resident registration (Korean nationals), end of August 2026 (www.jeonju.go.kr)" }, // Jeonju
+  "KR-49": { population: 484149, year: 2026, basis: "estimate", source: "Jeju Statistics Portal — 제주인구현황, Jeju-si Korean nationals, August 2026 (www.jeju.go.kr/stats)" }, // Jeju City
+  "KR-42": { population: 284783, year: 2026, basis: "estimate", source: "Chuncheon City — 주민등록 인구현황, Korean nationals, end of August 2026 (www.chuncheon.go.kr)" }, // Chuncheon
   "MY-01": { population: 858118, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Bandaraya Johor Bahru local-authority total)" }, // Johor Bahru
   "MY-02": { population: 423868, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Bandaraya Alor Setar local-authority total)" }, // Alor Setar
   "MY-03": { population: 396193, year: 2020, basis: "census", source: "DOSM 2020 Census (Majlis Perbandaran Kota Bharu local-authority total)" }, // Kota Bharu
@@ -627,6 +651,14 @@ async function main() {
     }
   }
   if (preservedFlags) console.log(`Preserved ${preservedFlags} backfilled flag source(s) from the previous manifest.`);
+
+  // A city-territory's seat district is not its capital (see
+  // SEAT_DISTRICT_NOT_A_CAPITAL): drop its name, population and flag.
+  for (const [code, why] of Object.entries(SEAT_DISTRICT_NOT_A_CAPITAL)) {
+    const had = details.delete(code);
+    delete flagSources[code];
+    if (had) console.log(`  ✗ ${code} → ${why}; not a capital`);
+  }
 
   // Drop any flag verified NOT to be the capital's own (a district's or a
   // chiefdom's) — whichever layer above re-introduced it.

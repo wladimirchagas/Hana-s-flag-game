@@ -201,7 +201,85 @@ flag". Shah Alam's was stale: its flag and explainer have displayed since the Kl
 - The population of Labuan's capital, Victoria, is still a 2000 estimate. DOSM publishes no
   newer figure for the town, only for the whole territory (95,120 in the 2020 census).
 
+## Batch 3 — South Korea (owner priority, 2026-09-26)
+
+I checked the 17 first-level divisions against Wikidata `P41`, the Korean Wikipedia infoboxes and
+the dedicated flag articles (`…기`), and every capital-city flag against its city's Korean Wikipedia
+infobox.
+
+**The 15 bundled flags are current.** Each matches its Commons original, including the new flags
+of Gangwon State (June 2023), North Chungcheong (October 2023) and Jeonbuk State (January 2024).
+Their explainers already describe those new flags.
+
+**Seoul and Busan now have flags.** Both had none.
+- **Seoul**: the 1996 flag. The logo's 서울 is drawn as a green mountain, a red sun and the blue
+  Han River.
+- **Busan**: the new flag adopted on 17 May 2023, which replaced the blue 1995 flag.
+
+Both explainers come from Korean Wikipedia's flag articles
+([서울특별시기](https://ko.wikipedia.org/wiki/서울특별시기),
+[부산광역시기](https://ko.wikipedia.org/wiki/부산광역시기)).
+
+**A district's flag was standing in for Seoul and Busan.** Both are city-territories, so the
+Flag Master sub-national game falls back to the capital-city flag. Wikidata's `P36` for Seoul is
+**Jung District**, where City Hall stands, and for Busan it is **Yeonje District**.
+- The game therefore showed the Jung-gu and Yeonje-gu district flags as "Seoul's" and "Busan's"
+  flags.
+- The capital widget printed "Capital: Seoul — Local name: 중구" (Jung-gu) and "…연제구".
+
+The fix:
+- The seat district's name, population, endonym and flag are removed.
+- `SEAT_DISTRICT_NOT_A_CAPITAL` in `build-capital-details.mjs` keeps them out on regen.
+- Both flags are added to `capital-flag-rejected.json`.
+
+**Types and plural label.** Natural Earth's `type_en` had called **South Jeolla** and
+**North Gyeongsang** "Metropolitan City", and Seoul a "Capital Metropolitan City". The plural label
+read "Metropolitan Citys". The types now follow ISO 3166-2:KR and Korean law:
+- Seoul: Special City;
+- Busan, Daegu, Incheon, Gwangju, Daejeon and Ulsan: Metropolitan City;
+- the six ordinary provinces: Province;
+- Gangwon (2023), Jeonbuk (2024) and Jeju (2006): Special Self-Governing Province;
+- Sejong: Special Self-Governing City.
+
+The label is now "Provinces & Metropolitan Cities".
+
+**Three capital populations were wrong.** Each is replaced with the authority's own
+resident-registration count for Korean nationals at the end of August 2026, in
+`CAPITAL_POPULATION_OVERRIDES`.
+
+| Capital | Was (Wikidata) | Problem | Now |
+|---|---|---|---|
+| Jeonju | 341,545 (2023) | about half the city | 618,908 ([Jeonju City](https://www.jeonju.go.kr/index.9is?contentUid=ff8080818990c349018b041a9f093a72)) |
+| Jeju City | 698,358 (2024) | the whole province's figure, larger than the province's own count | 484,149 ([Jeju Statistics Portal](https://www.jeju.go.kr/stats/stats/population.htm)) |
+| Chuncheon | 281,596 (2015) | eleven years stale | 284,783 ([Chuncheon City](https://www.chuncheon.go.kr/cityhall/administrative-info/municipal-info/resident-registration-population-status/)) |
+
+**Still open.**
+- Muan County has no population. The county publishes it only as a session-bound spreadsheet.
+- Jeju City has no free flag file.
+- South Korea's 2025 Population and Housing Census was released on 28 July 2026 and supersedes
+  the mixed-year provincial figures (2018–2025) now shown. That is a population refresh for the
+  whole country.
+
 ## Follow-ups (later batches)
+
+### Capital-name reconciliation (found in batch 3)
+The capital widget shows the capital from `cityRoles` (Natural Earth, placed by point-in-polygon).
+Its population and flag come from Wikidata `P36`, keyed by ISO code. A name check already hides the
+population and flag when the two capitals disagree, but the **local name** was never checked. In
+**255** subdivisions the two names differ:
+- **About 127 are the same city spelled differently** (Bamian/Bamyan, Gent/Ghent, Homyel/Gomel).
+  For these the check wrongly hides a real population and flag.
+- **About 128 are different cities.** Some come from the ISO-code generation mix in Iran and
+  Morocco. Others are seat districts (Beijing → Tongzhou, Taipei → Xinyi, Tokyo → Shinjuku). Others
+  are Natural Earth putting the capital in the wrong city:
+  - Eritrea's four regions are shifted by one;
+  - Greece: Kavala for Komotini, Chalkida for Lamia, Kalamata for Tripoli;
+  - Afghanistan: Paktia and Paktika are swapped;
+  - Ethiopia: Dese for Bahir Dar, Jima for Addis Ababa;
+  - A Coruña is given as Santiago;
+  - Azerbaijan's Zangilan is given as Kapan, a town in Armenia.
+
+  These need a sourced capital-correction layer and a local-name check.
 
 ### Gaps — real flags the app shows blank
 
@@ -215,7 +293,7 @@ nothing. Mostly this is an ISO-code mismatch between the flag data and the app's
 | Estonia | 11 of 15 counties | ISO renumbered in 2022 |
 | Slovakia | Bratislava, Banská Bystrica | |
 | Switzerland | Aargau, Appenzell Innerrhoden | |
-| South Korea | Seoul, Busan (2023 flag) | |
+| South Korea | ~~Seoul, Busan~~ | Done in batch 3 |
 | Liechtenstein | Balzers, Eschen, Gamprin | |
 | Netherlands | Limburg | |
 | Saint Helena, Ascension and Tristan da Cunha | all 3 | |

@@ -624,8 +624,6 @@ export const CAPITAL_ENDONYMS: Readonly<Record<string, string>> = {
   "KP-08": "함흥시",
   "KP-09": "청진시",
   "KP-10": "혜산시",
-  "KR-11": "중구",
-  "KR-26": "연제구",
   "KR-41": "수원시",
   "KR-42": "춘천시",
   "KR-43": "청주시",

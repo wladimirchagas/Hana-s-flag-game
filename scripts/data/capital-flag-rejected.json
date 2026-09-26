@@ -7,5 +7,13 @@
   "MY-11": {
     "file": "Flag of Kuala Terengganu, Terengganu.svg",
     "reason": "Flag of Kuala Terengganu DISTRICT (the Commons file page: 'Flag of Kuala Terengganu, a district in Terengganu'; FOTW my-ter-m.html lists it among the Terengganu district flags). The city's own flag is the Kuala Terengganu City Council (MBKT) flag on the same FOTW page, which has no free file."
+  },
+  "KR-11": {
+    "file": "Flag of Junggu, Seoul.svg",
+    "reason": "Flag of Jung District (Jung-gu), the district of Seoul where City Hall stands — Wikidata gives it as Seoul's P36. Seoul is a single city whose own flag is the KR-11 subdivision flag (ko.wikipedia 서울특별시기)."
+  },
+  "KR-26": {
+    "file": "Flag of Yeonje, Busan.svg",
+    "reason": "Flag of Yeonje District (Yeonje-gu), the district of Busan where City Hall stands — Wikidata gives it as Busan's P36. Busan's own flag is the KR-26 subdivision flag (ko.wikipedia 부산광역시기)."
   }
 }
