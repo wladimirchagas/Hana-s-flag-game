@@ -193,6 +193,12 @@ const SUBDIVISION_TYPE_OVERRIDES_NEW = {
     "KR-49": "Special Self-Governing Province",
     "KR-50": "Special Self-Governing City",
   },
+  "EE": {
+    // Natural Earth types Saare as "Novads" / "Municipality" (novads is the Latvian word
+    // for a municipality). EE-74 is Saare County, one of Estonia's 15 counties
+    // (maakonnad) in ISO 3166-2:EE, like the other 14 cards. 2026-09 audit.
+    "EE-74": "County",
+  },
   "ES": {
     // Natural Earth tags every Spanish PROVINCE with the type of the autonomous
     // community it belongs to ("Comunidad Autónoma"), so all 50 cards read

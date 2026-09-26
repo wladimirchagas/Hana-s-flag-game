@@ -260,7 +260,76 @@ resident-registration count for Korean nationals at the end of August 2026, in
   the mixed-year provincial figures (2018–2025) now shown. That is a population refresh for the
   whole country.
 
+## Batch 4 — Czechia, Poland, Estonia (2026-09-26)
+
+**41 real flags were bundled but never shown.** The files were named with the current ISO 3166-2
+codes, while the app's maps use older ones:
+- Poland: PL-02…PL-32 against the app's PL-DS…PL-ZP (16);
+- Czechia: CZ-10…CZ-80 against CZ-PR…CZ-ZL (14);
+- Estonia: the 2022 renumbering, e.g. EE-68 against EE-67 for Pärnu (11).
+
+The files are renamed to the app's codes. Their `sources.json` keys move with them and keep their
+original source URLs.
+
+**Every file was checked against the current Commons original** (Wikidata `P41`), rendered in
+Chromium. Two were out of date and are replaced from Commons:
+
+| Code | Was | Now |
+|---|---|---|
+| CZ-ST Central Bohemia | St Wenceslas's eagle drawn without its flames | `Vlajka Středočeského kraje.svg` |
+| PL-WP Greater Poland | older revision: the red hoist was 0.57 of the height instead of a square | `POL województwo wielkopolskie flag.svg` |
+
+Świętokrzyskie's file is the current flag (adopted 28 December 2012), not the 2001–2013 one.
+Opole's file has the 2:1 stripes its resolution sets. Polish Wikipedia's "5:2" is wrong.
+
+**Explainers.** 43 entries, each checked against the sources named:
+- 14 Czech regions, from the Czech Wikipedia "Symboly … kraje" articles.
+- 14 Polish voivodeships, from the Polish Wikipedia flag and arms articles and FOTW.
+  Kuyavia-Pomerania's comes from the voivodeship's own flag leaflet (archived). It explains why
+  black, not white, is the bottom stripe.
+- 15 Estonian counties, from the Estonian Wikipedia "… maakonna lipp" / "… maakonna vapp"
+  articles and FOTW [ee-sub](https://www.crwflags.com/fotw/flags/ee-sub.html). Every county flag
+  follows the pattern confirmed on 7 August 1939: white over green, with the county arms on the
+  white.
+
+Four existing Estonian explainers were wrong or incomplete:
+- **Harju (EE-37)** called the flag "the county arms as a banner". It is white over green with
+  the arms.
+- **Viljandi (EE-84)** said the grain meant "agrarian character" and the eagle "sovereignty and
+  authority". Its cited source says neither, so those claims are removed.
+- **Hiiu (EE-39) and Saare (EE-74)** described only the arms, not the flag.
+
+**Omitted, with sources recorded:** Łódzkie and Opolskie. FOTW, Polish Wikipedia and the
+voivodeships' own pages give the design, date and designer only. Opole's 2004 resolution, read in
+full, includes a justification with no symbolism.
+
+**Map-overlay shapes were wrong for 23 flags.** `build-flag-aspect-ratios.mjs` read the first
+`viewBox` anywhere in a file's first 2 KB. It also misread `width="2e3"` as 2 and ignored `pt`/`cm`
+units. Examples:
+- Roraima was recorded at 0.0014:1, East Riding and Hertfordshire at 0.0017:1, and Alsace at 42:1.
+- Five Polish flags came out at 0.71:1. They keep Inkscape's A4 page (`viewBox="0 0 210 297"`)
+  behind an 800×500 flag.
+
+The builder now reads the root `<svg>` tag and prefers its absolute width and height, as browsers
+do; the `viewBox` is the fallback. Chromium shows each of the 23 files painting its whole flag
+across the width×height box. That includes Nepal's 1743 pennant, now 0.6759 rather than 0.8182.
+
+**Saare County's type.** Natural Earth typed Saare "Novads" (Latvian for a municipality), so
+Estonia's grid split into "County (14)" and "Municipality (1)". It is a county, as ISO 3166-2:EE
+and the other 14 cards have it. There is now a type override in `build-subdivision-meta.mjs`.
+
+**Prague is a city-territory.** Act No. 131/2000 Coll., §1(1), makes Prague the capital, a region
+and a municipality at once. `CZ-PR` joins `CITY_TERRITORY_CODES`, so the capital quiz never asks
+for "the capital of Prague".
+
 ## Follow-ups (later batches)
+
+### City-territory capital cards (found in batch 4)
+The Learn panel's capital card for a city-territory shows the territory's own figure for Kuala
+Lumpur and Washington, but "No further sourced data" for Prague, Seoul and Busan. The city *is*
+the territory, so the card should show the territory's population. `CAPITAL_POPULATION_OVERRIDES`
+can only fill an existing record, so these need a record-creating path. Seoul's and Busan's
+figures should also wait for Korea's 2025 census refresh.
 
 ### Capital-name reconciliation (found in batch 3)
 The capital widget shows the capital from `cityRoles` (Natural Earth, placed by point-in-polygon).
@@ -288,9 +357,9 @@ nothing. Mostly this is an ISO-code mismatch between the flag data and the app's
 
 | Country | Divisions | Notes |
 |---|---|---|
-| Poland | all 16 voivodeships | Flags keyed PL-02…PL-32, app uses PL-DS…PL-ZP |
-| Czechia | all 14 regions | CZ-10… vs CZ-PR… |
-| Estonia | 11 of 15 counties | ISO renumbered in 2022 |
+| Poland | ~~all 16 voivodeships~~ | Done in batch 4 |
+| Czechia | ~~all 14 regions~~ | Done in batch 4 |
+| Estonia | ~~11 of 15 counties~~ | Done in batch 4 |
 | Slovakia | Bratislava, Banská Bystrica | |
 | Switzerland | Aargau, Appenzell Innerrhoden | |
 | South Korea | ~~Seoul, Busan~~ | Done in batch 3 |
