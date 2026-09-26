@@ -1232,7 +1232,7 @@ export const SUBDIVISION_META: Record<string, CountrySubdivisionMeta> = {
     { code: "EE-57", name: "Lääne", typeLabel: "County" },
     { code: "EE-37", name: "Harju", typeLabel: "County" },
     { code: "EE-59", name: "Lääne-Viru", typeLabel: "County" },
-    { code: "EE-74", name: "Saare", typeLabel: "Municipality" },
+    { code: "EE-74", name: "Saare", typeLabel: "County" },
     { code: "EE-39", name: "Hiiu", typeLabel: "County" },
     { code: "EE-70", name: "Rapla", typeLabel: "County" },
     { code: "EE-51", name: "Järva", typeLabel: "County" }

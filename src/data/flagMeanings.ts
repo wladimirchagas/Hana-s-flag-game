@@ -12991,15 +12991,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
     ],
   },
 
-  "EE-37": {
-    description:
-      "The county arms as a banner: on a red field a silver cross — the arms of Harju County, taken " +
-      "from the small arms of Tallinn, confirmed in 1937.",
-    sources: [
-      { title: "Harju maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Harju_maakonna_vapp" },
-    ],
-  },
-
   "AR-H": {
     description:
       "The province flag: green, white and light-blue vertical stripes; on the white a golden 32-ray " +
@@ -13099,37 +13090,6 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       "and the warrior’s mount; the star is taken from the arms of Utena city.",
     sources: [
       { title: "Utenos apskrities herbas — Wikipedia (Lithuanian)", url: "https://lt.wikipedia.org/wiki/Utenos_apskrities_herbas" },
-    ],
-  },
-  "EE-39": {
-    description:
-      "The county arms: a silver shield charged with a vertical red rope tied in three knots, flanked by " +
-      "four red lilies (two each side). The four lilies (drawn from the Ungern-Sternberg arms) stand for " +
-      "Hiiumaa’s four historic parishes; the knotted rope recalls the island legend of a Hiiumaa elder " +
-      "giving departing sailors a rope to secure their safe return.",
-    sources: [
-      { title: "Hiiu maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Hiiu_maakonna_vapp" },
-    ],
-  },
-
-  "EE-74": {
-    description:
-      "The county arms: on a blue shield a silver Viking ship under sail bearing seven round shields in a " +
-      "row, above three wavy silver bars at the base. The Viking ship recalls the Saaremaa islanders’ once-" +
-      "formidable naval power (the Oeselians); the wavy bars are the surrounding sea. Confirmed in 1937.",
-    sources: [
-      { title: "Saare maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Saare_maakonna_vapp" },
-    ],
-  },
-
-  "EE-84": {
-    description:
-      "The county arms: on a blue shield a silver eagle with raised wings and golden legs and beak, " +
-      "grasping a silver golden-hilted sword; on its breast a green shield with three golden ears of grain " +
-      "springing from one stalk. The three grain ears mark the county’s agrarian character; the eagle and " +
-      "sword denote sovereignty and authority. Confirmed in 1937.",
-    sources: [
-      { title: "Viljandi maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Viljandi_maakonna_vapp" },
     ],
   },
 
@@ -15315,6 +15275,634 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       { title: "Zamboanga Peninsula, Region IX, Philippines — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ph-ix.html" },
     ],
   },
+
+  // ── Czech regions (kraje) ─────────────────────────────────────────────────────
+  // Czech regional flags are heraldic: each region's arms laid out on a 2:3 field, granted by the
+  // Chair of the Chamber of Deputies. Symbolism from the Czech Wikipedia "Symboly … kraje" articles.
+  "CZ-PR": {
+    description:
+      "Prague’s flag has two equal horizontal stripes, yellow over red, on a 2:3 field. The colours " +
+      "come from the city’s arms, gold walls and towers on a red shield. The gold dates to a privilege " +
+      "of Emperor Frederick III of 9 June 1475, which turned the silver walls and towers of the Old " +
+      "Town arms gold (all but the battlements); Vladislaus II confirmed the change in 1477. The city " +
+      "archivist Josef Emler fixed yellow and red as Prague’s colours in 1891, for the city’s pavilion " +
+      "at the Jubilee Exhibition. The present flag is set by municipal decree No. 21/2004, in force " +
+      "since 1 January 2005.",
+    sources: [
+      { title: "Vlajka Prahy — Wikipedia (Czech)", url: "https://cs.wikipedia.org/wiki/Vlajka_Prahy" },
+    ],
+  },
+
+  "CZ-ST": {
+    description:
+      "A heraldic flag: the Central Bohemian Region’s arms laid out on a 2:3 field, quartered red and " +
+      "white, granted on 22 November 2001. The Bohemian lion (upper hoist and lower fly) marks the " +
+      "historic land of Bohemia, in which the region lies. The black flaming eagle of St Wenceslas " +
+      "(upper fly) is the dynastic emblem of the Přemyslids. The two wavy blue stripes (lower hoist) " +
+      "stand for the two largest Czech rivers, the Elbe and the Vltava, which both flow through the " +
+      "region.",
+    sources: [
+      { title: "Symboly Středočeského kraje — Wikipedia (Czech)", url: "https://cs.wikipedia.org/wiki/Symboly_Středočeského_kraje" },
+    ],
+  },
+
+  "CZ-JC": {
+    description:
+      "A heraldic flag: the South Bohemian Region’s arms laid out on a 2:3 field. The Bohemian lion " +
+      "(upper hoist) stands for historic Bohemia, which covers most of the region. The rose on white " +
+      "and blue (upper fly) recalls, in its first half, the arms of the Rosenberg family and their " +
+      "domain, and in its second the arms of the Lords of Hradec and their prominent place in today’s " +
+      "region. The green, gold and white stripes (lower hoist) are the region’s forests and natural " +
+      "wealth, the Golden Trail (Zlatá stezka) and the Vltava. The three-towered wall on red (lower " +
+      "fly) is taken from the arms of České Budějovice, the regional capital.",
+    sources: [
+      { title: "Symboly Jihočeského kraje — Wikipedia (Czech)", url: "https://cs.wikipedia.org/wiki/Symboly_Jihočeského_kraje" },
+    ],
+  },
+
+  "CZ-PL": {
+    description:
+      "A heraldic flag: the Plzeň Region’s arms laid out on a 2:3 field, granted on 31 January 2002. " +
+      "The Bohemian lion (upper hoist) is the historic arms of Bohemia. The gold two-humped camel on " +
+      "green (upper fly) comes from Plzeň’s arms: Emperor Sigismund added it after 1433, recalling how " +
+      "the townspeople, in a sortie against the Hussites besieging the city, captured a camel the " +
+      "Hussites had received as a gift from the King of Poland. In the stripes (lower hoist), green is " +
+      "the forested border of the Šumava and the Bohemian Forest; the white and gold stripes are the " +
+      "Berounka and the gold-bearing Otava, the two rivers that drain the region. The white rotunda on " +
+      "red (lower fly) is the Rotunda of Saints Peter and Paul at Starý Plzenec, the oldest surviving " +
+      "building in today’s Czech Republic and the main church of Old Plzeň, the region’s first " +
+      "administrative centre.",
+    sources: [
+      { title: "Symboly Plzeňského kraje — Wikipedia (Czech)", url: "https://cs.wikipedia.org/wiki/Symboly_Plzeňského_kraje" },
+    ],
+  },
+
+  "CZ-KA": {
+    description:
+      "A heraldic flag: the Karlovy Vary Region’s arms laid out on a 2:3 field, quartered red and blue, " +
+      "granted on 27 June 2001. The Bohemian lion (upper hoist) stands for historic Bohemia, in which " +
+      "the region lies. The fountain of spouting water (upper fly) stands for the region’s spas, and " +
+      "the crossed miners’ hammers (lower hoist) for its mining. The red and white wavy stripes with a " +
+      "crowned two-tailed lion (lower fly) are taken from the arms of the city of Karlovy Vary.",
+    sources: [
+      { title: "Symboly Karlovarského kraje — Wikipedia (Czech)", url: "https://cs.wikipedia.org/wiki/Symboly_Karlovarského_kraje" },
+    ],
+  },
+
+  "CZ-US": {
+    description:
+      "A heraldic flag: the Ústí nad Labem Region’s arms laid out on a 2:3 field, granted on 9 April " +
+      "2002. The Bohemian lion (upper hoist) stands for historic Bohemia. The white gate-tower on green " +
+      "hills above wavy water (upper fly) is a stylised Porta Bohemica, the Elbe’s gateway into " +
+      "Bohemia, and stands for prosperity; the waves are the region’s waters and the three hills its " +
+      "mountains. The plough (lower hoist) recalls that Přemysl the Ploughman, mythical founder of the " +
+      "first ruling dynasty, came from this region. The crowned, helmeted white lion (lower fly) comes " +
+      "from the arms of Ústí nad Labem, the regional capital.",
+    sources: [
+      { title: "Symboly Ústeckého kraje — Wikipedia (Czech)", url: "https://cs.wikipedia.org/wiki/Symboly_Ústeckého_kraje" },
+    ],
+  },
+
+  "CZ-LI": {
+    description:
+      "A heraldic flag: the Liberec Region’s arms laid out on a 2:3 field, quartered red and blue, " +
+      "granted on 8 October 2001. The Bohemian lion (upper hoist and lower fly) stands for historic " +
+      "Bohemia. The white eight-spoked cartwheel (upper fly) comes from the arms of the Redern family; " +
+      "it has been in Liberec’s arms since 12 April 1577, when Rudolf II raised Liberec to a town. The " +
+      "white triangle with curved sides (lower hoist) is the silhouette of Ještěd, the mountain that " +
+      "dominates the regional capital.",
+    sources: [
+      { title: "Symboly Libereckého kraje — Wikipedia (Czech)", url: "https://cs.wikipedia.org/wiki/Symboly_Libereckého_kraje" },
+    ],
+  },
+
+  "CZ-KR": {
+    description:
+      "A heraldic flag: the Hradec Králové Region’s arms laid out on a 2:3 field, quartered red and " +
+      "blue, granted on 8 October 2001. The Bohemian lion (upper hoist and lower fly) stands for " +
+      "historic Bohemia. The gold letter G (upper fly) comes from the arms of Hradec Králové, the " +
+      "regional seat. The gold crown (lower hoist) stands for the five historic dowry towns of the " +
+      "Czech queens (Hradec Králové, Jaroměř, Dvůr Králové, Trutnov and Nový Bydžov), for the historic " +
+      "Hradec region, and for the word Králové (“Queen’s”) in the names of the city and the region.",
+    sources: [
+      { title: "Symboly Královéhradeckého kraje — Wikipedia (Czech)", url: "https://cs.wikipedia.org/wiki/Symboly_Královéhradeckého_kraje" },
+    ],
+  },
+
+  "CZ-PA": {
+    description:
+      "A heraldic flag: the Pardubice Region’s arms laid out on a 2:3 field, quartered red and blue, " +
+      "granted on 27 June 2001. The Bohemian lion and the Moravian eagle (upper row) mark the two " +
+      "historic lands the region spans. The lower hoist is the region’s own emblem: the silver wall is " +
+      "the belt of mountains around it, and its four merlons are its four areas (the Elbe lowlands, the " +
+      "Orlické foothills, the Bohemian-Moravian Highlands and the Iron Mountains). The open gate with a " +
+      "gold globe is its openness to the world, and the black lyre recalls the composers who lived " +
+      "here, such as Smetana, Martinů and Tomášek. The blue stands for its many rivers, lakes and " +
+      "ponds. The half white horse (lower fly) is the arms of Pardubice, the regional seat.",
+    sources: [
+      { title: "Symboly Pardubického kraje — Wikipedia (Czech)", url: "https://cs.wikipedia.org/wiki/Symboly_Pardubického_kraje" },
+    ],
+  },
+
+  "CZ-VY": {
+    description:
+      "A heraldic flag: the Vysočina Region’s arms laid out on a 2:3 field, granted on 14 March 2002. " +
+      "The Moravian eagle (upper hoist) and the Bohemian lion (lower fly) mark the two historic lands " +
+      "the region spans. The red hedgehog (upper fly) is taken from the arms of Jihlava, the regional " +
+      "capital. The cluster of rowan berries (lower hoist) is the region’s own emblem: the rowan, the " +
+      "typical tree of the Highlands, expresses the region’s resilience and plain beauty.",
+    sources: [
+      { title: "Symboly Kraje Vysočina — Wikipedia (Czech)", url: "https://cs.wikipedia.org/wiki/Symboly_Kraje_Vysočina" },
+    ],
+  },
+
+  "CZ-JM": {
+    description:
+      "A heraldic flag: the South Moravian Region’s arms laid out on a 2:3 field, granted on 25 " +
+      "November 2003, the last Czech region to receive its symbols. Both eagles are Moravia’s. The " +
+      "red-and-white chequered eagle (upper hoist) is the land’s arms before 1915 and after 1918; the " +
+      "gold-and-red chequered, crowned eagle (lower fly) is the version used from 1915 to 1918, based " +
+      "on a privilege of Emperor Frederick III of 1462 whose legal effect is unclear. The white and red " +
+      "stripes (upper fly) come from the arms of Brno, and the bunch of grapes (lower hoist) is the " +
+      "emblem of the whole region.",
+    sources: [
+      { title: "Symboly Jihomoravského kraje — Wikipedia (Czech)", url: "https://cs.wikipedia.org/wiki/Symboly_Jihomoravského_kraje" },
+    ],
+  },
+
+  "CZ-OL": {
+    description:
+      "A heraldic flag: the Olomouc Region’s arms laid out on a 2:3 field, quartered blue and yellow, " +
+      "granted on 27 June 2001. The Moravian and Silesian eagles (upper row) mark the two historic " +
+      "lands the region spans. The wavy blue diagonal on gold (lower hoist) is the Morava river flowing " +
+      "through the wheat fields of the fertile Haná, running the way the river crosses the region. The " +
+      "letters SPQO (lower fly) come from the arms of Olomouc and stand for Senatus Populusque " +
+      "Olomucensis, after Rome’s SPQR. Maria Theresa added them on 12 November 1758 in honour of the " +
+      "citizens’ resistance during the second Prussian siege.",
+    sources: [
+      { title: "Symboly Olomouckého kraje — Wikipedia (Czech)", url: "https://cs.wikipedia.org/wiki/Symboly_Olomouckého_kraje" },
+    ],
+  },
+
+  "CZ-ZL": {
+    description:
+      "A heraldic flag: the Zlín Region’s arms laid out on a 2:3 field, quartered blue and yellow, " +
+      "granted on 22 November 2002. The Moravian eagle (upper hoist) stands for historic Moravia. The " +
+      "book with a patriarchal cross (upper fly) carries the symbol of Great Moravia and recalls the " +
+      "mission of Saints Cyril and Methodius. The lower hoist shows the region’s variety: crossed " +
+      "valaška axes for Moravian Wallachia around Vsetín and Zlín, a ploughshare for the Haná around " +
+      "Kroměříž, and grapes for the Uherské Hradiště area. The eight-pointed star (lower fly) comes " +
+      "from the arms of Zlín.",
+    sources: [
+      { title: "Symboly Zlínského kraje — Wikipedia (Czech)", url: "https://cs.wikipedia.org/wiki/Symboly_Zlínského_kraje" },
+    ],
+  },
+
+  "CZ-MO": {
+    description:
+      "A heraldic flag: the Moravian-Silesian Region’s arms laid out on a 2:3 field, granted on 13 " +
+      "November 2002. The Silesian eagle (upper hoist) takes precedence over the Moravian eagle (upper " +
+      "fly) because most of the region lies in Silesia. The white horse with a rose (lower hoist) is " +
+      "the arms of Ostrava, the regional seat. In the lower fly, the white and red stripes stand for " +
+      "the Opava area and the half gold eagle for the Těšín area.",
+    sources: [
+      { title: "Symboly Moravskoslezského kraje — Wikipedia (Czech)", url: "https://cs.wikipedia.org/wiki/Symboly_Moravskoslezského_kraje" },
+    ],
+  },
+
+  // ── Polish voivodeships ───────────────────────────────────────────────────────
+  // Flag and arms symbolism from the Polish Wikipedia flag/arms articles, FOTW and the voivodeships'
+  // own publications. Łódzkie and Opolskie have no documented symbolism (subdiv-meaning-omitted.txt).
+  "PL-DS": {
+    description:
+      "A gold 5:8 field with the black Lower Silesian eagle at its centre, adopted on 17 December 2009. " +
+      "The eagle, with a crescent-shaped band bearing a cross across its breast, comes straight from " +
+      "the historic arms of Silesia. It was the arms of Duke Henry II the Pious: he inherited the " +
+      "crescent and cross from his father, Henry I the Bearded, and added the eagle to show the power " +
+      "of Silesia and its dominance over the other Polish provinces. In time it became the symbol of " +
+      "all Silesia.",
+    sources: [
+      { title: "Flaga województwa dolnośląskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Flaga_województwa_dolnośląskiego" },
+      { title: "Herb województwa dolnośląskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Herb_województwa_dolnośląskiego" },
+    ],
+  },
+
+  "PL-KP": {
+    description:
+      "Three horizontal stripes, red, white and black in the ratio 1:2:1, on a 5:8 field, designed by " +
+      "Lech Tadeusz Karczewski and adopted on 10 July 2000. The flag is drawn from the voivodeship’s " +
+      "arms: a red half-eagle and a black half-lion under one crown on a silver field. That Kuyavian " +
+      "half-eagle, half-lion comes from the arms of the old Inowrocław and Brześć Kujawski " +
+      "voivodeships, and the white shield recalls the arms of the old Chełmno Voivodeship. Heraldic " +
+      "order would put red and black, the colours of the charge, above the white of the field. But a " +
+      "white bottom stripe looks the lightest, so the visually heaviest colour, black, was placed at " +
+      "the bottom. The unequal widths set the flag apart from the historic flag of the German Empire, " +
+      "which had the same three colours in a different order and in equal stripes.",
+    sources: [
+      { title: "Flag leaflet of the Kuyavian-Pomeranian Voivodeship (archived)", url: "https://web.archive.org/web/20170805221423/https://www.kujawsko-pomorskie.pl/pliki/promocja/ulotka_flaga_2.pdf" },
+      { title: "Herb województwa kujawsko-pomorskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Herb_województwa_kujawsko-pomorskiego" },
+      { title: "Kujawsko-Pomorskie Voivodship (Poland) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pl-kp.html" },
+    ],
+  },
+
+  "PL-LU": {
+    description:
+      "Three horizontal stripes, white (silver), red and gold, with the outer two each two-fifths of " +
+      "the height and the red one a fifth, and the voivodeship’s arms at the centre; adopted on 14 June " +
+      "2004. The arms show a white stag leaping on red, with a gold royal crown around its neck. The " +
+      "same crowned stag stood in the voivodeship’s interwar arms, which combined the arms of the old " +
+      "Lublin Voivodeship of the Polish–Lithuanian Commonwealth with those of Chełm Land.",
+    sources: [
+      { title: "Flaga województwa lubelskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Flaga_województwa_lubelskiego" },
+      { title: "Herb województwa lubelskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Herb_województwa_lubelskiego" },
+    ],
+  },
+
+  "PL-LB": {
+    description:
+      "Horizontal stripes of yellow and green, with a narrower white-over-red band between them, " +
+      "approved on 26 June 2000. Its colours are taken from the voivodeship’s arms. There, green stands " +
+      "for the forests that cover half the voivodeship, the crowned silver half-eagle for the region’s " +
+      "ties with Poland, and the two gold six-pointed stars for its two capitals, Gorzów and Zielona " +
+      "Góra.",
+    sources: [
+      { title: "Flaga województwa lubuskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Flaga_województwa_lubuskiego" },
+      { title: "Herb województwa lubuskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Herb_województwa_lubuskiego" },
+      { title: "Lubuskie Voivodship (Poland) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pl-lb.html" },
+    ],
+  },
+
+  "PL-MA": {
+    description:
+      "Three horizontal stripes, white, gold and red, with the outer two each two-fifths of the height " +
+      "and the gold one a fifth, on a 5:8 field; adopted on 24 May 1999. The colours reproduce the " +
+      "voivodeship’s arms: the white stripe is the white eagle, the gold one its golden crown, beak, " +
+      "talons and wing band, and the red one the red field of the shield. The arms recall those of the " +
+      "Kraków Voivodeship of the Polish–Lithuanian Commonwealth, which date from the reign of Casimir " +
+      "III the Great in the 14th century.",
+    sources: [
+      { title: "Flaga województwa małopolskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Flaga_województwa_małopolskiego" },
+      { title: "Herb województwa małopolskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Herb_województwa_małopolskiego" },
+    ],
+  },
+
+  "PL-MZ": {
+    description:
+      "A red 5:8 field with a white (silver) eagle with a golden beak and talons at the hoist, designed " +
+      "by Andrzej Heidrich and adopted on 29 May 2006; it replaced a flag with a slightly different " +
+      "eagle. The eagle is the voivodeship’s arms. It recalls the arms of the Piast dukes of Masovia, " +
+      "in the form used for 200 years from Masovia’s incorporation into the Polish Crown until the " +
+      "Third Partition of Poland.",
+    sources: [
+      { title: "Flaga województwa mazowieckiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Flaga_województwa_mazowieckiego" },
+      { title: "Herb województwa mazowieckiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Herb_województwa_mazowieckiego" },
+    ],
+  },
+
+  "PL-PD": {
+    description:
+      "Four equal horizontal stripes, white, red, yellow and blue, on a 5:8 field, adopted on 30 August " +
+      "2002. Each colour is taken from the voivodeship’s arms. White is for the White Eagle and the " +
+      "mounted knight of the Pogoń, and red for the shield. Yellow is for the eagle’s gold crown, beak " +
+      "and legs and for the knight’s cross, sword hilt, spur and harness; blue is for the knight’s " +
+      "shield, saddle and caparison. The arms place Poland’s White Eagle above Lithuania’s Pogoń " +
+      "because Podlasie belonged to both the Polish Crown and Lithuania.",
+    sources: [
+      { title: "Flaga województwa podlaskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Flaga_województwa_podlaskiego" },
+      { title: "Herb województwa podlaskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Herb_województwa_podlaskiego" },
+    ],
+  },
+
+  "PL-PK": {
+    description:
+      "A white field between two narrower sky-blue bands at the hoist and the fly, each a fifth of the " +
+      "length, with the voivodeship’s arms at the centre; adopted on 28 August 2000. The arms reflect " +
+      "the region’s history and geography: the crowned silver griffin stands for the old Bełz " +
+      "Voivodeship, the crowned gold lion for the Ruthenian Voivodeship, and the silver cross above " +
+      "them comes from the arms of Rzeszów.",
+    sources: [
+      { title: "Flaga województwa podkarpackiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Flaga_województwa_podkarpackiego" },
+      { title: "Herb województwa podkarpackiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Herb_województwa_podkarpackiego" },
+      { title: "Podkarpackie Voivodship (Poland) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pl-pk.html" },
+    ],
+  },
+
+  "PL-PM": {
+    description:
+      "A gold field with a black Pomeranian griffin, wings raised and red tongue out; adopted on 25 " +
+      "March 2002. The griffin follows a 16th-century fresco in the presbytery of Oliwa Cathedral in " +
+      "Gdańsk. A black griffin on gold is also the emblem of Kashubia.",
+    sources: [
+      { title: "Flaga województwa pomorskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Flaga_województwa_pomorskiego" },
+      { title: "Herb województwa pomorskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Herb_województwa_pomorskiego" },
+    ],
+  },
+
+  "PL-SL": {
+    description:
+      "Three horizontal stripes, blue, yellow and blue in the ratio 2:1:2, on a 5:8 field, designed by " +
+      "Barbara Widłak and adopted in 2001. They are the colours of the voivodeship’s arms, an uncrowned " +
+      "gold eagle on blue. The eagle, emblem of the Piast dynasty, follows the arms of the Upper " +
+      "Silesian Piasts of the Duchy of Opole and Racibórz, whose eagle already appears on a seal of " +
+      "1222. Silesian Flag Day is celebrated in the voivodeship on 15 July.",
+    sources: [
+      { title: "Flaga województwa śląskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Flaga_województwa_śląskiego" },
+      { title: "Herb województwa śląskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Herb_województwa_śląskiego" },
+      { title: "Śląskie Voivodship (Poland) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pl-sl.html" },
+    ],
+  },
+
+  "PL-SK": {
+    description:
+      "Adopted on 28 December 2012. Following the rules of heraldry and vexillology, its colours " +
+      "reproduce those of the voivodeship’s arms, which it carries on its white field. The gold double " +
+      "cross on blue is the emblem of the Benedictines of Łysa Góra, whose relic of the Holy Cross was " +
+      "given to the abbey in the early 14th century. The white eagle on red is the arms of the old " +
+      "Kraków Land. The stripes and gold stars are the arms of the old Sandomierz Voivodeship, which " +
+      "covered most of today’s region; the number of stars probably reflected its districts. It " +
+      "replaced the 2001–2013 flag, which had a gold stripe at the hoist beside blue, silver and red " +
+      "stripes.",
+    sources: [
+      { title: "Flaga województwa świętokrzyskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Flaga_województwa_świętokrzyskiego" },
+      { title: "Herb województwa świętokrzyskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Herb_województwa_świętokrzyskiego" },
+    ],
+  },
+
+  "PL-WN": {
+    description:
+      "A red flag in the ratio 1:2 whose fly end narrows to a point with a rounded lower edge, bordered " +
+      "on three sides by a white stripe; on the red is the head of the crowned White Eagle with a " +
+      "golden beak. It was approved in August 2002. The White Eagle comes from the first field of the " +
+      "voivodeship’s arms, where it recalls the arms of Poland under Władysław Jagiełło. The arms’ " +
+      "other fields hold the Lamb of God for Warmia and the black Prussian eagle with the letter S (for " +
+      "Sigismund the Old) from the arms of Ducal Prussia, sometimes taken to stand for Masuria.",
+    sources: [
+      { title: "Flaga województwa warmińsko-mazurskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Flaga_województwa_warmińsko-mazurskiego" },
+      { title: "Herb województwa warmińsko-mazurskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Herb_województwa_warmińsko-mazurskiego" },
+      { title: "Warmińsko-Mazurskie Voivodship (Poland) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/pl-wm.html" },
+    ],
+  },
+
+  "PL-WP": {
+    description:
+      "An unusual trapezoid flag in the ratio 5:11: a red square at the hoist bearing the voivodeship’s " +
+      "eagle, and a white trapezoid whose top edge is twice as long as its bottom. The uncrowned silver " +
+      "eagle follows the eagle on the majestic seal of Przemysł II, crowned King of Poland in 1295. " +
+      "Five years before his coronation the eagle was already associated with the Polish Piast dynasty.",
+    sources: [
+      { title: "Flaga województwa wielkopolskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Flaga_województwa_wielkopolskiego" },
+      { title: "Herb województwa wielkopolskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Herb_województwa_wielkopolskiego" },
+    ],
+  },
+
+  "PL-ZP": {
+    description:
+      "Three equal vertical stripes, white, red and white, on a 5:8 field, with the voivodeship’s arms " +
+      "on the red stripe, following Polish tradition; designed by Hanna Dąbrowska. The arms show a red " +
+      "rampant Pomeranian griffin on silver. The red griffin has been the symbol of the Griffin dynasty " +
+      "that ruled Pomerania since the 12th century. It is modelled on the griffin on the banner of Duke " +
+      "Casimir V of Szczecin, captured by King Władysław Jagiełło at Grunwald. From the 1530s it was " +
+      "the emblem of all Pomerania, united by Duke Bogislaw X.",
+    sources: [
+      { title: "Flaga województwa zachodniopomorskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Flaga_województwa_zachodniopomorskiego" },
+      { title: "Herb województwa zachodniopomorskiego — Wikipedia (Polish)", url: "https://pl.wikipedia.org/wiki/Herb_województwa_zachodniopomorskiego" },
+    ],
+  },
+
+  // ── Estonian counties (maakonnad) ─────────────────────────────────────────────
+  // Every county flag follows the 1939 pattern (white over green, county arms on the white): FOTW
+  // ee-sub.html and the Estonian Wikipedia "… maakonna lipp" / "… maakonna vapp" articles.
+  "EE-37": {
+    description:
+      "Harju County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 August " +
+      "1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the county’s arms " +
+      "at the centre of the white stripe as its distinguishing mark. It was registered on 24 December " +
+      "1996. The arms, a silver cross on red, are based on the small arms of Tallinn and were " +
+      "confirmed on 5 February 1937.",
+    sources: [
+      { title: "Harju maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Harju_maakonna_lipp" },
+      { title: "Harju maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Harju_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  "EE-39": {
+    description:
+      "Hiiu County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 August " +
+      "1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the county’s arms " +
+      "at the centre of the white stripe as its distinguishing mark. It was registered on 25 November " +
+      "1996. The arms show a vertical red rope tied in three knots between four red lilies on silver. " +
+      "The lilies, drawn from the arms of the Ungern-Sternberg family, stand for Hiiumaa’s four " +
+      "parishes. The rope comes from a legend in the collection Esivanemate varandus: an old man of " +
+      "Hiiumaa gave men from Tallinn, stranded on the island in distress at sea, a length of rope with " +
+      "three knots so that they would get home safely.",
+    sources: [
+      { title: "Hiiu maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Hiiu_maakonna_lipp" },
+      { title: "Hiiu maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Hiiu_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  "EE-44": {
+    description:
+      "Ida-Viru County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 " +
+      "August 1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the " +
+      "county’s arms at the centre of the white stripe as its distinguishing mark. It was registered on " +
+      "9 June 1997. The arms show, on blue, a silver castle wall ending in a red-roofed tower, with two " +
+      "crossed silver swords above it. They come from the arms of the old Virumaa county, first granted " +
+      "in 1928; the castle and wall are explained as defence against the enemy from the east, " +
+      "protecting the people’s culture and freedom.",
+    sources: [
+      { title: "Ida-Viru maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Ida-Viru_maakonna_lipp" },
+      { title: "Ida-Viru maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Ida-Viru_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  "EE-49": {
+    description:
+      "Jõgeva County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 August " +
+      "1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the county’s arms " +
+      "at the centre of the white stripe as its distinguishing mark. It was registered on 10 October " +
+      "1996. The arms are divided diagonally, blue over green, by a silver wavy band carrying two blue " +
+      "wavy lines, with a gold clover leaf on the blue and three gold ears of grain on the green.",
+    sources: [
+      { title: "Jõgeva maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Jõgeva_maakonna_lipp" },
+      { title: "Jõgeva maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Jõgeva_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  "EE-51": {
+    description:
+      "Järva County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 August " +
+      "1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the county’s arms " +
+      "at the centre of the white stripe as its distinguishing mark. It was registered on 3 October " +
+      "1996. The arms, confirmed on 5 February 1937, show a silver castle with a tower on blue, above " +
+      "three silver wavy bars.",
+    sources: [
+      { title: "Järva maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Järva_maakonna_lipp" },
+      { title: "Järva maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Järva_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  "EE-57": {
+    description:
+      "Lääne County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 August " +
+      "1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the county’s arms " +
+      "at the centre of the white stripe as its distinguishing mark. It was registered on 11 October " +
+      "1996. The arms, confirmed on 5 February 1937, show a silver hawk with raised wings, golden legs " +
+      "and a ring of gold around its head, on red. They are based on the arms of the Bishopric of " +
+      "Ösel–Wiek (Saare-Lääne).",
+    sources: [
+      { title: "Lääne maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Lääne_maakonna_lipp" },
+      { title: "Lääne maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Lääne_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  "EE-59": {
+    description:
+      "Lääne-Viru County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 " +
+      "August 1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the " +
+      "county’s arms at the centre of the white stripe as its distinguishing mark. It was registered on " +
+      "26 September 1996. The arms show, on blue, a silver castle wall ending in a gold-roofed tower, " +
+      "with two crossed silver swords above it. They come from the arms of the old Virumaa county (on " +
+      "the heraldry council’s advice their red was replaced with gold); the castle and wall are read as " +
+      "defence against the enemy from the east, protecting the people’s culture and freedom.",
+    sources: [
+      { title: "Lääne-Viru maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Lääne-Viru_maakonna_lipp" },
+      { title: "Lääne-Viru maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Lääne-Viru_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  "EE-65": {
+    description:
+      "Põlva County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 August " +
+      "1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the county’s arms " +
+      "at the centre of the white stripe as its distinguishing mark. It was registered on 7 November " +
+      "1996. The arms show three black beavers sitting in a diagonal row on gold. Põlva is a newcomer " +
+      "to Estonia’s administrative map, just as beavers are newcomers to its wildlife: a native species " +
+      "that had vanished through heavy hunting. People and beavers here are said to share traits too: " +
+      "they keep somewhat to themselves, are tenacious and hard-working, and go their own way. There " +
+      "are three beavers because the county’s parishes were formed from three earlier administrative " +
+      "units.",
+    sources: [
+      { title: "Põlva maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Põlva_maakonna_lipp" },
+      { title: "Põlva maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Põlva_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  "EE-67": {
+    description:
+      "Pärnu County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 August " +
+      "1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the county’s arms " +
+      "at the centre of the white stripe as its distinguishing mark. It was registered on 26 September " +
+      "1996. The arms, a black bear rampant on gold, were confirmed on 5 February 1937 and registered " +
+      "again on the same day as the flag.",
+    sources: [
+      { title: "Pärnu maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Pärnu_maakonna_lipp" },
+      { title: "Pärnu maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Pärnu_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  "EE-70": {
+    description:
+      "Rapla County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 August " +
+      "1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the county’s arms " +
+      "at the centre of the white stripe as its distinguishing mark. It was registered on 7 November " +
+      "1996. The arms are quartered by a silver cross, red, gold, blue and red. The colours are " +
+      "borrowed from the arms of the neighbouring counties: red from Harju and Lääne, blue from Järva " +
+      "and gold from Pärnu.",
+    sources: [
+      { title: "Rapla maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Rapla_maakonna_lipp" },
+      { title: "Rapla maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Rapla_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  "EE-74": {
+    description:
+      "Saare County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 August " +
+      "1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the county’s arms " +
+      "at the centre of the white stripe as its distinguishing mark. It was registered on 26 September " +
+      "1996. The arms, confirmed on 5 February 1937, show a silver Viking ship under sail, with seven " +
+      "round shields along its side, on three silver wavy bars on blue. The Viking ship at sea stands " +
+      "for the islanders’ once-powerful navy.",
+    sources: [
+      { title: "Saare maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Saare_maakonna_lipp" },
+      { title: "Saare maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Saare_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  "EE-78": {
+    description:
+      "Tartu County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 August " +
+      "1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the county’s arms " +
+      "at the centre of the white stripe as its distinguishing mark. It was registered on 25 September " +
+      "1996. The arms are divided diagonally, blue over green, by a silver wavy band carrying two blue " +
+      "wavy lines, with a gold six-pointed star above and a gold oak branch below; Günther Reindorff " +
+      "drew the present version in 1937. The elements go back to the county’s 1926 design, which " +
+      "explained the wavy band as the Emajõgi river that divides the county, the star as Tartu " +
+      "University spreading culture and education across Estonia, and the oak as the oak grove of Taara " +
+      "known from folk songs.",
+    sources: [
+      { title: "Tartu maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Tartu_maakonna_lipp" },
+      { title: "Tartu maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Tartu_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  "EE-82": {
+    description:
+      "Valga County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 August " +
+      "1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the county’s arms " +
+      "at the centre of the white stripe as its distinguishing mark. It was registered on 17 September " +
+      "1996. The arms are divided diagonally, with four silver five-pointed stars on the blue upper " +
+      "half and a plain silver lower half. The four stars are the four counties whose parts formed " +
+      "Valga County in 1920.",
+    sources: [
+      { title: "Valga maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Valga_maakonna_lipp" },
+      { title: "Valga maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Valga_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  "EE-84": {
+    description:
+      "Viljandi County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 " +
+      "August 1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the " +
+      "county’s arms at the centre of the white stripe as its distinguishing mark. It was registered on " +
+      "26 August 1996. The arms, confirmed on 5 February 1937, show on blue a silver eagle with raised " +
+      "wings, golden beak and legs, holding a silver sword with a golden hilt; on its breast is a green " +
+      "shield with three golden ears of grain on one stalk.",
+    sources: [
+      { title: "Viljandi maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Viljandi_maakonna_lipp" },
+      { title: "Viljandi maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Viljandi_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
+  "EE-86": {
+    description:
+      "Võru County’s flag follows the common pattern of Estonia’s county flags, confirmed on 7 August " +
+      "1939: two equal horizontal stripes, white over green, in the ratio 7:11, with the county’s arms " +
+      "at the centre of the white stripe as its distinguishing mark. It was registered on 12 December " +
+      "1996. The arms show, on blue, a gold ring and the silver sword of Kalevipoeg with a golden hilt, " +
+      "pointing downwards. Blue stands for a hopeful future and Võrumaa’s blue sky; the gold ring " +
+      "(võru) names the county, and the sword stands for its readiness to defend itself.",
+    sources: [
+      { title: "Võru maakonna lipp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Võru_maakonna_lipp" },
+      { title: "Võru maakonna vapp — Wikipedia (Estonian)", url: "https://et.wikipedia.org/wiki/Võru_maakonna_vapp" },
+      { title: "Estonia: Subdivisions — Flags of the World", url: "https://www.crwflags.com/fotw/flags/ee-sub.html" },
+    ],
+  },
+
 };
 
 /** True when a sourced flag-meaning explanation exists for the given code. */

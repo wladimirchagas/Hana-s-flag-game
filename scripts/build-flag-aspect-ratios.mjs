@@ -19,8 +19,9 @@
  * its tile, leaving the top/bottom (or side) edges of the landmass uncovered —
  * the "portion of some landmasses not covered" bug.
  *
- * Ratios come straight from each file's authoritative geometry (SVG viewBox,
- * PNG IHDR, JPEG SOF) — this script never invents proportions, exactly like
+ * Ratios come straight from each file's authoritative geometry (the SVG root's
+ * width/height, else its viewBox; PNG IHDR; JPEG SOF). This script never invents
+ * proportions, exactly like
  * the other flag scripts. Re-run after adding/changing any bundled flag:
  *
  *   node scripts/build-flag-aspect-ratios.mjs           # write the data file
@@ -69,22 +70,44 @@ async function collectFlags(dir, rel = "") {
   return results;
 }
 
-/** width/height from an SVG viewBox (or width/height attrs as a fallback). */
+// CSS absolute length units, in px. A root width/height in any of these gives
+// the image an intrinsic size; "%", "em" and the like do not.
+const ABSOLUTE_UNIT_PX = { "": 1, px: 1, pt: 4 / 3, pc: 16, mm: 96 / 25.4, cm: 96 / 2.54, in: 96 };
+
+/** An absolute CSS length ("1e3", "258.72pt", "6.1cm") in px, or null. */
+function absoluteLength(value) {
+  const m = /^\s*\+?((?:\d+\.?\d*|\.\d+)(?:e[-+]?\d+)?)\s*([a-z]*)\s*$/i.exec(value ?? "");
+  if (!m) return null;
+  const unit = ABSOLUTE_UNIT_PX[m[2].toLowerCase()];
+  const px = unit == null ? 0 : parseFloat(m[1]) * unit;
+  return px > 0 ? px : null;
+}
+
+/**
+ * The ratio the browser draws an SVG flag at: its intrinsic aspect ratio.
+ *
+ * Read from the ROOT <svg> tag only. An inner <pattern>/<symbol> viewBox or a
+ * <rect width> is not the flag's size. An absolute root width and height win,
+ * as they do in the browser, and the viewBox is the fallback.
+ *
+ * The two disagree where the drawing spills past a stale viewBox. The Polish
+ * voivodeship flags keep Inkscape's A4 page (viewBox "0 0 210 297") behind an
+ * 800×500 flag, and Nepal's 1743 pennant is drawn taller than its viewBox.
+ * Measured in Chromium (2026-09), every such file paints its whole flag across
+ * the width×height box, never the viewBox. The old reader took the first
+ * viewBox anywhere in the first 2 KB, and read width="2e3" as 2 and
+ * width="258.72pt" as 258.72 px, so it recorded Roraima at 0.0014:1 and Alsace
+ * at 42:1.
+ */
 function svgRatio(content) {
-  const head = content.slice(0, 2048);
-  const vb = head.match(/viewBox=["']\s*([-\d.eE]+)\s+([-\d.eE]+)\s+([-\d.eE]+)\s+([-\d.eE]+)\s*["']/);
-  if (vb) {
-    const w = parseFloat(vb[3]);
-    const h = parseFloat(vb[4]);
-    if (w > 0 && h > 0) return w / h;
-  }
-  const wm = head.match(/\bwidth=["']\s*([\d.]+)/);
-  const hm = head.match(/\bheight=["']\s*([\d.]+)/);
-  if (wm && hm) {
-    const w = parseFloat(wm[1]);
-    const h = parseFloat(hm[1]);
-    if (w > 0 && h > 0) return w / h;
-  }
+  const root = /<svg\b[^>]*>/i.exec(content)?.[0];
+  if (!root) return null;
+  const attr = (name) => new RegExp(`\\s${name}\\s*=\\s*["']([^"']*)["']`).exec(root)?.[1];
+  const w = absoluteLength(attr("width"));
+  const h = absoluteLength(attr("height"));
+  if (w && h) return w / h;
+  const vb = (attr("viewBox") ?? "").trim().split(/[\s,]+/).map(Number);
+  if (vb.length === 4 && vb[2] > 0 && vb[3] > 0) return vb[2] / vb[3];
   return null;
 }
 
