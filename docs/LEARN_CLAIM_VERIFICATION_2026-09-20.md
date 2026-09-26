@@ -41,6 +41,48 @@ These are **1,675 record instances**, not 1,321 universally certified country re
 
 **GTI presentation qualification:** positive rank movement means movement toward rank 1, which in this index means greater terrorism impact, not an improvement. The source table agrees with all 161 app entries; that comparison does not independently verify map colours, arrow semantics in the rendered UI or the underlying event coding. No-impact is an index category, not a guarantee of safety.
 
+### F79 — Necenzurirano.si and N1 are falsely merged
+
+**Confirmed, high.** `si-necenzurirano` is named “Necenzurirano.si / N1 Slovenija news”; its logo caption calls N1 “Necenzurirano.si” and assigns United Media / N1 ownership to the combined identity. These are separate outlets. [Necenzurirano's Slovenian imprint](https://necenzurirano.si/info) identifies Media Partner Agencija d.o.o. and editor Primož Cirman. [N1's Slovenian imprint](https://n1info.si/impresum/) identifies Adria News Network, part of United Media. The bundled N1 SVG does not substantiate a Necenzurirano identity. Select one outlet and align its ID, name, publisher, dates, source and artwork; do not create an alias relationship to justify a different logo.
+
+### F80 — Central-bank coverage includes false presence and absence claims
+
+**Confirmed, high.** The new `src/data/centralBanks.ts` contains 195 country entries, but its coverage rule confuses national banking institutions with central banks:
+
+| Country | App claim | Primary evidence / correction |
+|---|---|---|
+| San Marino | No national central bank; euro use offered as explanation | [BCSM](https://www.bcsm.sm/en/the-central-bank) identifies the Central Bank of the Republic of San Marino, established in 2005. Foreign-currency use does not determine whether a central bank exists. |
+| Andorra | AFA described as “this central bank” | [AFA](https://www.afa.ad/en/coneix-lafa/qui-som) describes its prudential supervisory role; [IMF analysis](https://www.elibrary.imf.org/abstract/journals/018/2025/152/article-A001-en.xml) distinguishes AFA from an absent central bank. |
+| Kiribati | Bank of Kiribati as current central bank | [IMF 2024 Pacific study](https://www.imf.org/-/media/files/publications/dp/2024/english/rdmea.pdf), PDF page 46, states no central bank; [2024 Article IV annex](https://www.elibrary.imf.org/view/journals/002/2024/103/article-A002-en.xml) identifies ANZ Bank (Kiribati) as commercial. |
+| Nauru | Bank of Nauru as current central bank | Same IMF study, PDF page 48, states no central bank. [IMF 2025 consultation](https://www.imf.org/en/news/articles/2025/09/19/pr-25306-republic-of-nauru-imf-executive-board-concludes-2025-article-iv-consultation) still identifies liabilities from Bank of Nauru's liquidation. |
+| Tuvalu | National Bank of Tuvalu as central bank | [IMF 2025 report](https://www.imf.org/-/media/files/publications/cr/2025/english/1tuvea2025001-source-pdf.pdf), PDF pages 11, 48 and 55, explicitly states no central bank. |
+| Panama | Banco Nacional de Panamá treated without qualification as central bank | [The bank's Spanish journal](https://www.banconal.com.pa/wp-content/uploads/2024/09/Pilar_Financiero_Vol_4.pdf), printed page 30, distinguishes its payment-system and state-financing functions from Panama's absence of a central bank. Retain those functions with the correct institution type. |
+
+These are identity/classification findings, not an assertion that the institutions perform no public monetary functions. The Vatican APSA classification remains under review rather than implicitly accepted.
+
+A separate completeness gap affects Bulgaria: the generator's Eurosystem country table omits BG. The [ECB's 1 January 2026 announcement](https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260101~c830245e42.en.html) confirms that the Bulgarian National Bank joined the Eurosystem. Add the same dated membership qualification supplied for other members.
+
+### F81 — Morocco's current logo is attached to a defunct predecessor
+
+**Confirmed, high.** The Morocco entry is named `Banque d'Etat du Maroc` and cites that historical entity's Wikidata item, while its artwork and caption identify **Bank Al-Maghrib**. The bank's [French institutional presentation](https://www.bkam.ma/content/download/413959/3380547/version/9/file/Pr%C3%A9sentation%2BMissions%2BBAM.pdf), page 10, distinguishes the predecessor's termination in 1959, its replacement by Banque du Maroc and the 1987 Bank Al-Maghrib name. Correct the current entity and retain predecessor dates only in an explicitly historical relationship. Fixing artwork alone does not fix this record.
+
+### F82 — Brunei displays the former AMBD logo as the current BDCB mark
+
+**Confirmed historical/current conflation, medium.** The bundled `brunei-darussalam-central-bank.jpg` visibly reads “AUTORITI MONETARI BRUNEI DARUSSALAM”; the record's website remains `ambd.gov.bn`, while the name and caption claim the current BDCB institution. [BDCB's own publication](https://cms.bdcb.gov.bn/storage/uploads/publications/17089419184813540.pdf), PDF page 12, dates the renaming to 26 June 2021 and expressly describes a refreshed logo. Its [2024 statement](https://www.bdcb.gov.bn/publications/details?id=01j6rrjmvh5hdwkc0hyc4nz5bm) also distinguishes the former name and logo. Use current primary artwork, or label the AMBD asset as historical with a date range; retain the former name as a previous-name fact.
+
+### F83 — Central-bank generators overstate what their checks establish
+
+**Confirmed implementation/documentation problem, high for assurance.** `harvest-central-banks.mjs` hard-codes San Marino into `NO_OWN_CB`, accepts positive-scoring candidates from a Wikidata type query, and uses name-pattern exclusions instead of current institutional evidence. It does not test dissolution dates or require a primary confirmation of institution type. `build-central-banks.mjs` then publishes all selected records. A logo path plus a caption of at least 25 characters and string-based rejection tests cannot establish the caption's “official” or “visually checked” assertions.
+
+**93 records** repeat the default claim that Wikidata, Commons and the official bank website were checked. KI, NR and TV have no website field or primary website source at all. The fallback is emitted by code without a per-source review log; it must not be presented as evidence of searches performed.
+
+Require separate verified fields for institution type, current existence, jurisdiction, monetary-union relationship, previous names and artwork validity dates. Keep harvest output as pending candidates until those fields have source evidence. Replace the default research-history claim with a factual image-availability statement. Store actual review events separately.
+
+### Latest image-delta screening and limits
+
+All **510 non-document changed files** at `e3c1a35` were downloaded and matched their Git blob hashes. All **249 added/modified images** decoded and were visually screened: **96 central-bank marks, 76 subdivision flags, two capital flags and 75 media images**. This is a complete visual screen of this delta, not universal identity/geometry/heraldic certification. The central-bank registry has 195 entries, 96 with images.
+
+
 ## Earlier reconciliation — application revision db3ba05
 
 The audit now includes application changes through **`db3ba0559016b20bfd0243ef13b1d16413979b33`**. Audit-document commits after this hash are separate from application changes. The sections below that describe `43cfd13` retain their historical denominators.
