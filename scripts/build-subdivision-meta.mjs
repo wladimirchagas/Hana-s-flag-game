@@ -43,6 +43,7 @@ const PLURAL_LABEL_OVERRIDES = {
   "FI": "Provinces & Autonomous Territory",
   "FR": "Departments & Overseas Territories",
   "GB": "Countries, Crown Dependencies & Territories",
+  "KR": "Provinces & Metropolitan Cities",
   "NL": "Provinces & Special Territories",
   "NO": "Counties & Dependencies",
   "NZ": "Regional Councils, Associated States & External Territories",
@@ -177,6 +178,21 @@ const SUBDIVISION_NAME_OVERRIDES_NEW = {
 };
 
 const SUBDIVISION_TYPE_OVERRIDES_NEW = {
+  "KR": {
+    // Natural Earth's type_en is wrong for South Korea: it tags South Jeolla (KR-46)
+    // and North Gyeongsang (KR-47) as "Metropolitan City" (they are provinces), and
+    // Seoul as "Capital Metropolitan City". Categories follow ISO 3166-2:KR (special
+    // city / metropolitan city / province / special self-governing province / special
+    // self-governing city) and Korean law, which made Gangwon (11 June 2023, Gangwon
+    // State) and Jeonbuk (18 January 2024, Jeonbuk State) special self-governing
+    // provinces like Jeju (2006). ISO still lists Jeonbuk as a province. 2026-09 audit.
+    "KR-11": "Special City",
+    "KR-41": "Province", "KR-43": "Province", "KR-44": "Province",
+    "KR-46": "Province", "KR-47": "Province", "KR-48": "Province",
+    "KR-42": "Special Self-Governing Province", "KR-45": "Special Self-Governing Province",
+    "KR-49": "Special Self-Governing Province",
+    "KR-50": "Special Self-Governing City",
+  },
   "ES": {
     // Natural Earth tags every Spanish PROVINCE with the type of the autonomous
     // community it belongs to ("Comunidad Autónoma"), so all 50 cards read

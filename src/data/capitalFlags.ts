@@ -835,8 +835,6 @@ export const CAPITAL_FLAGS: Readonly<Record<string, string>> = {
   "KG-Y": "capital-flags/kg-y.svg",
 
   // ── KR ──
-  "KR-11": "capital-flags/kr-11.svg",
-  "KR-26": "capital-flags/kr-26.svg",
   "KR-41": "capital-flags/kr-41.svg",
   "KR-42": "capital-flags/kr-42.svg",
   "KR-43": "capital-flags/kr-43.svg",

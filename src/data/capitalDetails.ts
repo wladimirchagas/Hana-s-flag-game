@@ -1829,17 +1829,15 @@ export const CAPITAL_DETAILS: Readonly<Record<string, CapitalDetail>> = {
   "KP-10": {"name":"Hyesan","population":192680,"year":2008,"basis":"census"},
 
   // ── KR ──
-  "KR-11": {"name":"Jung District","population":121230,"year":2023,"basis":"estimate"},
-  "KR-26": {"name":"Yeonje District"},
   "KR-41": {"name":"Suwon","population":1234300,"year":2020,"basis":"census"},
-  "KR-42": {"name":"Chuncheon","population":281596,"year":2015,"basis":"estimate"},
+  "KR-42": {"name":"Chuncheon","population":284783,"year":2026,"basis":"estimate"},
   "KR-43": {"name":"Cheongju","population":848000,"year":2024,"basis":"census"},
   "KR-44": {"name":"Hongseong County","population":99050,"year":2024,"basis":"census"},
-  "KR-45": {"name":"Jeonju","population":341545,"year":2023,"basis":"estimate"},
+  "KR-45": {"name":"Jeonju","population":618908,"year":2026,"basis":"estimate"},
   "KR-46": {"name":"Muan County"},
   "KR-47": {"name":"Andong","population":153131,"year":2025,"basis":"estimate"},
   "KR-48": {"name":"Changwon","population":1009998,"year":2023,"basis":"estimate"},
-  "KR-49": {"name":"Jeju","population":698358,"year":2024,"basis":"estimate"},
+  "KR-49": {"name":"Jeju","population":484149,"year":2026,"basis":"estimate"},
 
   // ── KW ──
   "KW-AH": {"name":"Al Ahmadi","population":30991,"year":2018,"basis":"estimate"},

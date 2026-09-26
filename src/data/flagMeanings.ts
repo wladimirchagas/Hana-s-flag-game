@@ -15111,6 +15111,32 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
       },
     ],
   },
+  "KR-11": {
+    description:
+      "Seoul's flag, adopted 28 October 1996, is white with the city's official logo: the Hangul word " +
+      "서울 (Seoul) drawn as a green mountain, a red sun and the blue Han River, joined by free brush " +
+      "strokes. Its motifs come from Jeong Seon's landscape painting of the sun rising over Mongmyeoksan " +
+      "(today's Namsan) and Kim Hong-do's genre painting of a dancing boy, and together they form a lively " +
+      "human figure for a people-centred city. The green mountain stands for love of the environment, the " +
+      "red sun for the vision and hope of the future, and the blue Han River for history and vitality.",
+    sources: [
+      { title: "서울특별시기 — 위키백과", url: "https://ko.wikipedia.org/wiki/서울특별시기" },
+    ],
+  },
+
+  "KR-26": {
+    description:
+      "Busan's flag, adopted 17 May 2023, is white with the city's official logo above the words " +
+      "부산광역시 and BUSAN METROPOLITAN CITY. The three-dimensional logo takes the initials B and S of " +
+      "Busan as its motif, for the city's values and vision. Per the city government, its violet-magenta " +
+      "and blue-cyan pairings stand for the embrace and harmony of Busan's citizens, and the flowing " +
+      "three-dimensional colours for the city's past, present and future joined as one. It replaced the " +
+      "1995 flag, a blue field with the city's silver emblem.",
+    sources: [
+      { title: "부산광역시기 — 위키백과", url: "https://ko.wikipedia.org/wiki/부산광역시기" },
+    ],
+  },
+
   "KR-27": {
     description:
       "Daegu's flag, adopted 10 October 1996 and revised 29 December 2001, carries the city's official logo — three triangles and an oval — on a green field. Korean Wikipedia's dedicated flag article explains the shapes as Palgongsan, the mountain that rings the city, and the Nakdong River that runs through it, together expressing a forward-looking, outward-reaching Daegu.",
