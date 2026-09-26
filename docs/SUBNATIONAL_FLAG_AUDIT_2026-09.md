@@ -145,6 +145,62 @@ The check also found:
   displayed flags with no explainer**: Jersey, Guernsey, Gibraltar, the Faroes, Åland, Cook
   Islands and others. See the follow-ups below.
 
+## Batch 2 — Malaysia (owner priority, 2026-09-26)
+
+Every flag the app shows for Malaysia was checked: the 13 state and 3 federal-territory flags, all
+capital-city flags, and every explainer against its cited source.
+
+**State and territory flags — all correct.** All 16 match Wikidata `P41` and the Commons originals
+side by side, and the 14 existing explainers match their cited articles, including the adoption
+dates: Negeri Sembilan 1895, Pahang 1903, Perak 1879, Malacca 16 July 1957, and Sabah and Sarawak
+1988.
+
+**Two missing explainers added.** Labuan and Putrajaya had been logged as unsourceable. The log
+cited FOTW pages `my-labuan` and `my-putrajaya`, which are guessed filenames that 404. FOTW's Malaysia
+index (`my_index.html`) links the real pages, `my-labua.html` and `my-pj.html`.
+- Labuan: the colour and emblem symbolism is from the Malay Wikipedia article
+  [Identiti, Bendera dan jata Labuan](https://ms.wikipedia.org/wiki/Identiti,_Bendera_dan_jata_Labuan).
+  The adoption year is left out: sources disagree (1984 on ms.wikipedia, 31 August 1992 on
+  en.wikipedia).
+- Putrajaya: the flag was adopted 1 February 2001, and the national arms mark the territory as the
+  federal administrative centre ([Identiti Putrajaya](https://ms.wikipedia.org/wiki/Identiti_Putrajaya)).
+  Colour meanings circulate for this flag, but their primary source is the Information Department
+  booklet *Mari Kenali Bendera Negeri-Negeri di Malaysia*. `dbook.penerangan.gov.my` could not be
+  reached, so they are not used.
+
+**Capital-city flags — two showed a different entity's flag.**
+
+| Capital | Was | Evidence | Now |
+|---|---|---|---|
+| **Seremban** (MY-05) | `Flag of Sungei Ujong.svg` — the flag of **Sungai Ujong**, one of the nine traditional chiefdoms (*luak*) of Negeri Sembilan | FOTW [my-n-su](https://www.crwflags.com/fotw/flags/my-n-su.html) ("quartered black, yellow, white and green") vs [my-05-se](https://www.crwflags.com/fotw/flags/my-05-se.html) | The **Seremban City Council** flag: yellow–black–red with the council emblem, city since 1 Jan 2020. en.wikipedia `Flag of Seremban.png` (PD-Malaysia), identical to FOTW's image. New explainer from the council's own [logo page](https://www.mbs.gov.my/ms/mbs/profil/logo) |
+| **Kuala Terengganu** (MY-11) | `Flag of Kuala Terengganu, Terengganu.svg` — the **district** flag (yellow with the state flag in the canton) | The Commons file page says "a district in Terengganu", and FOTW [my-ter-m](https://www.crwflags.com/fotw/flags/my-ter-m.html) lists it among the district flags. It gives the Kuala Terengganu City Council (MBKT) flag separately | **No flag**. MBKT's flag has no free file on Commons or en.wikipedia; its explainer is removed |
+
+Both rejections are recorded with their evidence in the new `scripts/data/capital-flag-rejected.json`.
+`build-capital-details.mjs` drops these entries on every regen, and `backfill-capital-flags.mjs` never
+proposes them. `check-capital-flags.mjs` fails the build if either is back in the manifest. A
+wrong-entity flag can therefore not return through the Wikidata pass, an override or a preserved
+manifest entry.
+
+**Explainers corrected.**
+- Kota Kinabalu (MY-12) had given its flag the colour meanings of Sabah's **1963 state flag**, which
+  no source ties to the city flag. It now says only what FOTW documents: Mount Kinabalu was chosen to
+  represent Sabah's capital, and the flag was first raised at midnight on 1 February 2000, when the
+  city was proclaimed.
+- Putrajaya's capital-city entry had given the flag the colour meanings of the 2006 combined
+  **Federal Territories flag**, a different flag. It is now aligned with the subdivision entry. The
+  capital widget hides this flag anyway, because it duplicates the territory's.
+
+**Omission logs cleaned.** Seremban's entry had described the chiefdom flag as the "MBS council
+flag". Shah Alam's was stale: its flag and explainer have displayed since the Klang/Shah Alam fix.
+
+**Gaps that stay open, with reasons.**
+- No free file exists for the city-council flags of Kota Bharu, Kuantan (city since 21 Feb 2021),
+  Kangar, Kuching (Kuching North City Hall and Kuching South City Council are separate councils) or
+  Kuala Terengganu. FOTW documents all of them except Kota Bharu. Commons holds only the Kota Bharu
+  **district** flag, an unsourced 2015 "own work", which is not used.
+- The population of Labuan's capital, Victoria, is still a 2000 estimate. DOSM publishes no
+  newer figure for the town, only for the whole territory (95,120 in the 2020 census).
+
 ## Follow-ups (later batches)
 
 ### Gaps — real flags the app shows blank
@@ -210,4 +266,6 @@ The 35 curated-override flags listed in §5.
 
 ### Capital-city flags
 Batch 1 fixed only the knock-on effects above. A systematic comparison of `capitalFlags.ts` with
-each capital's own Wikidata `P41` is a separate batch.
+each capital's own Wikidata `P41` is a separate batch. Malaysia (batch 2) showed what to look for:
+a capital given its **district's** flag (Kuala Terengganu) or a **traditional chiefdom's** flag
+(Seremban). Commons file pages that say "district" are the first thing to sweep for.

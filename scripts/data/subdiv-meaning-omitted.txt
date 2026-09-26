@@ -1,8 +1,8 @@
-# MY-15 (Labuan) & MY-16 (Putrajaya) federal territories — RE-VERIFIED against Flags of the World 2026-07:
-#   FOTW has no flag page for either (my-labuan, my-putrajaya both 404). Their flags are modern territory
-#   designs with no reachable per-element symbolism. US-UM (US Minor Outlying Islands) is a group of
-#   uninhabited islands with no flag of its own. Confirmed walls.
-MY-15 MY-16 US-UM
+# US-UM (US Minor Outlying Islands) — RE-VERIFIED against Flags of the World 2026-07: a group of uninhabited
+#   islands with no flag of its own. Confirmed wall.
+#   (MY-15 Labuan and MY-16 Putrajaya were logged here citing guessed FOTW pages "my-labuan"/"my-putrajaya"
+#   that 404; the real pages are my-labua.html and my-pj.html, and both flags are now explained — 2026-09.)
+US-UM
 
 # MT local councils — RE-VERIFIED against Flags of the World 2026-07 (crwflags.com/fotw/flags/mt-NN.html).
 #   NOTE: FOTW's mt-NN page numbers are NOT the ISO 3166-2 MT-NN codes — FOTW numbers the 11 cities first

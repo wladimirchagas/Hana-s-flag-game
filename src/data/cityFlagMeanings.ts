@@ -11825,17 +11825,25 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
-  // ── Kuala Terengganu — capital of the state of Terengganu, Malaysia ─────────
-  "MY-11": {
+  // ── Seremban — capital of the state of Negeri Sembilan, Malaysia ──────────
+  "MY-05": {
     description:
-      "A yellow field — the royal colour of Terengganu — with a black canton bearing a white crescent " +
-      "and star within a white border. The crescent and star denote Islam, the state religion; the " +
-      "black-and-white canton follows the Terengganu state flag, on which white stands for the Sultan " +
-      "and black for the subjects he protects.",
+      "The flag of the Seremban City Council (Majlis Bandaraya Seremban), proclaimed a city council on " +
+      "1 January 2020: vertical bands of yellow, black and red with the council's emblem on the black. " +
+      "Yellow, black and red are the official colours of Negeri Sembilan, and on the emblem they mark the " +
+      "council as serving under the patronage of the state's ruler, the Yang di-Pertuan Besar. The " +
+      "emblem's shield stands for the council protecting the community and driving the city's " +
+      "development; its carved awan larat motif for Negeri Sembilan's customs and culture; its two " +
+      "unsheathed kris for courage, strength and integrity — and, as national heritage, for the heritage " +
+      "the council preserves; and its finely striped pennants for a council that keeps progressing.",
     sources: [
       {
-        title: "Bendera Terengganu — Wikipedia Bahasa Melayu",
-        url: "https://ms.wikipedia.org/wiki/Bendera_Terengganu",
+        title: "Seremban City Council (Negeri Sembilan, Malaysia) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/my-05-se.html",
+      },
+      {
+        title: "Logo MBS — Majlis Bandaraya Seremban (official)",
+        url: "https://www.mbs.gov.my/ms/mbs/profil/logo",
       },
     ],
   },
@@ -11843,14 +11851,17 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
   // ── Kota Kinabalu — capital of the state of Sabah, Malaysia ─────────────────
   "MY-12": {
     description:
-      "A flag bearing Mount Kinabalu — the emblem of the Sabah state government — as a dark-blue " +
-      "silhouette on a light-blue canton, above horizontal bands of red, white, yellow and green. In " +
-      "Sabah’s flag tradition the red stands for courage and the readiness to sacrifice for the state, " +
-      "the white for purity, the yellow for the state’s wealth, and the green for its young land and " +
-      "forests.",
+      "The flag of Kota Kinabalu City Hall, first raised at midnight on 1 February 2000 as Kota Kinabalu " +
+      "was proclaimed a city. State officials chose Mount Kinabalu — at 4,095 m South-East Asia's " +
+      "highest mountain — as the image to represent Sabah's capital: it stands as a dark-blue silhouette " +
+      "in the light-blue canton, beside red and white bars and above bands of yellow and green. The same " +
+      "mountain silhouette represents the state itself on the flag of Sabah.",
     sources: [
+      {
+        title: "Kota Kinabalu (Sabah, Malaysia) — Flags of the World",
+        url: "https://www.crwflags.com/fotw/flags/my-sb-kk.html",
+      },
       { title: "Flag of Sabah — Wikipedia", url: "https://en.wikipedia.org/wiki/Flag_of_Sabah" },
-      { title: "Bendera Sabah — Wikipedia Bahasa Melayu", url: "https://ms.wikipedia.org/wiki/Bendera_Sabah" },
     ],
   },
 
@@ -11878,22 +11889,18 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
   // ── Putrajaya — capital of the Federal Territory of Putrajaya (federal administrative capital) ──
   "MY-16": {
     description:
-      "Three vertical bands — blue, a double-width yellow centre, and blue — bearing the coat of arms of " +
-      "Malaysia in the yellow band. The blue-and-yellow scheme is that of Malaysia’s Federal Territories, " +
-      "in which blue stands for unity, sincerity and harmony and yellow for respect, sovereignty and " +
-      "honour (yellow being the royal colour of the Malay rulers). Placing the federal arms — a shield " +
-      "upheld by two tigers, ensigned with a yellow crescent and fourteen-pointed federal star above a " +
-      "banner reading “Bersekutu Bertambah Mutu” (“Unity is Strength”) — at the flag’s centre marks " +
-      "Putrajaya as the nation’s federal administrative capital; the crescent and star again represent " +
-      "Islam and the Malay monarchy.",
+      "Three vertical bands — blue, a double-width yellow centre, and blue — with the coat of arms of " +
+      "Malaysia in the yellow band, adopted on 1 February 2001, when Putrajaya became a federal " +
+      "territory. The national arms at the centre stand for Putrajaya as the administrative centre of " +
+      "Malaysia's federal government.",
     sources: [
       {
         title: "Flag of the Federal Territories — Wikipedia",
         url: "https://en.wikipedia.org/wiki/Flag_of_the_Federal_Territories",
       },
       {
-        title: "Coat of arms of Malaysia — Wikipedia",
-        url: "https://en.wikipedia.org/wiki/Coat_of_arms_of_Malaysia",
+        title: "Identiti Putrajaya — Wikipedia Bahasa Melayu",
+        url: "https://ms.wikipedia.org/wiki/Identiti_Putrajaya",
       },
     ],
   },

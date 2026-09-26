@@ -1,7 +1,9 @@
 // Fails if any bundled capital-city flag (public/capital-flags/**) is visually the
 // SAME image as its country's NATIONAL flag — the "national flag dressed up as a
 // city flag" failure mode — or if a curated capital-flag override names a code
-// that is not bundled (a dangling override that would go unchecked).
+// that is not bundled (a dangling override that would go unchecked), or if the
+// manifest maps a capital to a flag verified NOT to be that city's own
+// (scripts/data/capital-flag-rejected.json — a district's or a chiefdom's flag).
 //
 // WHY (audit 2026-07): the capital-flag pipeline sources a city's flag from the
 // capital's Wikidata `P41`. That field can point at the NATIONAL flag (Porto's
@@ -111,6 +113,22 @@ async function main() {
       errors.push(
         `  ${code} is a CAPITAL_FLAG_SOURCE_OVERRIDES entry but public/capital-flags/${code.toLowerCase()}.* is not bundled. ` +
           `Bundle the file (node scripts/download-capital-flags.mjs) or remove the override.`,
+      );
+    }
+  }
+
+  // 1b. Wrong-entity guard: a flag verified NOT to be the capital's own (a
+  // district's or a traditional chiefdom's — scripts/data/capital-flag-rejected.json)
+  // must never be back in the manifest, whichever pipeline layer re-added it.
+  const rejected = JSON.parse(readFileSync(join(ROOT, "scripts", "data", "capital-flag-rejected.json"), "utf8"));
+  const manifest = JSON.parse(readFileSync(join(ROOT, "scripts", "data", "capital-flag-sources.json"), "utf8"));
+  for (const [code, rej] of Object.entries(rejected)) {
+    if (code.startsWith("_")) continue;
+    if (!rej.file || !rej.reason) errors.push(`  capital-flag-rejected.json: ${code} needs both "file" and "reason".`);
+    if (manifest[code] === rej.file) {
+      errors.push(
+        `  ${code} → "${rej.file}" is back in capital-flag-sources.json, but it was verified NOT to be ` +
+          `the capital's own flag: ${rej.reason}`,
       );
     }
   }

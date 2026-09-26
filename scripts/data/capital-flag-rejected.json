@@ -1,0 +1,11 @@
+{
+  "_comment": "Capital-city flag files VERIFIED NOT to be that capital city's own flag — a district's, a traditional chiefdom's or another neighbouring entity's flag that Wikidata P41, an infobox or an earlier manifest attached to the capital. build-capital-details.mjs drops these (so the P41 pass, a curated override or a preserved manifest entry can never re-add them), backfill-capital-flags.mjs never proposes them, and check-capital-flags.mjs fails the build if the manifest maps a code to one. Each entry cites the evidence. See docs/SUBNATIONAL_FLAG_AUDIT_2026-09.md.",
+  "MY-05": {
+    "file": "Flag of Sungei Ujong.svg",
+    "reason": "Flag of the luak of Sungai Ujong, one of the nine traditional chiefdoms of Negeri Sembilan (FOTW my-n-su.html: 'Quartered black, yellow, white and green'), not of the city of Seremban. Seremban City Council's own flag is on FOTW my-05-se.html and is the MY-05 override."
+  },
+  "MY-11": {
+    "file": "Flag of Kuala Terengganu, Terengganu.svg",
+    "reason": "Flag of Kuala Terengganu DISTRICT (the Commons file page: 'Flag of Kuala Terengganu, a district in Terengganu'; FOTW my-ter-m.html lists it among the Terengganu district flags). The city's own flag is the Kuala Terengganu City Council (MBKT) flag on the same FOTW page, which has no free file."
+  }
+}
