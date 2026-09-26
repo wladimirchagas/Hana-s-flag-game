@@ -165,6 +165,12 @@ const SUBDIVISION_NAME_OVERRIDES_NEW = {
     // region is named after: Pilsen.
     "CZ-PL": "Pilsen"
   },
+  "CO": {
+    // Natural Earth's name_en for CO-SAP is "Archipelago of Saint Andréws", a
+    // garbled translation. English Wikipedia names the department "San Andrés and
+    // Providencia" (Spanish: San Andrés y Providencia). 2026-09 audit.
+    "CO-SAP": "San Andrés and Providencia"
+  },
   "US": {
     // Natural Earth's name_en for US-DC is the bare "Washington" — identical
     // to the display name of the State of Washington (US-WA), a completely
@@ -192,6 +198,18 @@ const SUBDIVISION_TYPE_OVERRIDES_NEW = {
     "KR-42": "Special Self-Governing Province", "KR-45": "Special Self-Governing Province",
     "KR-49": "Special Self-Governing Province",
     "KR-50": "Special Self-Governing City",
+  },
+  "CO": {
+    // Natural Earth keeps Colombia's pre-1991 statuses, misspelling one of them
+    // ("Commissiary"). The 1991 Constitution, art. 309, made the intendancies of Arauca,
+    // Casanare and Putumayo and the commissaries of Amazonas, Guaviare, Guainía, Vaupés
+    // and Vichada departments. Caquetá was made a department on 15 December 1981. Bogotá
+    // "se organiza como Distrito Capital" (art. 322): a capital district, not a federal
+    // district. ISO 3166-2:CO lists 32 departments and one capital district. 2026-09 audit.
+    "CO-ARA": "Department", "CO-CAS": "Department", "CO-PUT": "Department",
+    "CO-AMA": "Department", "CO-GUV": "Department", "CO-GUA": "Department",
+    "CO-VAU": "Department", "CO-VID": "Department", "CO-CAQ": "Department",
+    "CO-DC": "Capital District",
   },
   "EE": {
     // Natural Earth types Saare as "Novads" / "Municipality" (novads is the Latvian word

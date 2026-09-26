@@ -3,6 +3,7 @@ import { fetchMergedSubdivisionGeo } from "../api/subdivisions";
 import { SUBDIVISION_META } from "../lib/subdivisionMeta";
 import { DISPUTED_TERRITORY_HIERARCHY } from "../lib/disputedSubdivisions";
 import { CITY_TERRITORY_CODES } from "../data/cityTerritories";
+import { identicalFlagTwins } from "../data/identicalSubdivisionFlags";
 import {
   getPlayableCapitalSubdivisions,
   getPlayableSubdivisions,
@@ -255,12 +256,18 @@ export function useSubdivisionGame(
     // in the dropdown with a "(Type)" suffix. Correct means the picked ENTITY
     // matches (code + kind) — except when the division and its capital share
     // the exact same flag (owner rule): the flag on screen belongs to both, so
-    // either row is accepted.
+    // either row is accepted. The same goes for two DIFFERENT divisions that fly
+    // an identical flag (Ajman and Dubai): each one's flag is the other's too.
     const selectedKind: SubdivQuestionKind =
       selected.answerKind === "capital" ? "capital" : "division";
+    const twinDivision =
+      current.kind === "division" &&
+      selectedKind === "division" &&
+      identicalFlagTwins(current.division.code).includes(selected.code);
     const correct =
-      selected.code === current.division.code &&
-      (selectedKind === current.kind || sharedRef.current.has(current.division.code));
+      twinDivision ||
+      (selected.code === current.division.code &&
+        (selectedKind === current.kind || sharedRef.current.has(current.division.code)));
     setWasCorrect(correct);
     setAttemptNonce((n) => n + 1);
     setScore((s) => (correct ? s + 1 : s - 1));
@@ -328,11 +335,18 @@ export function useSubdivisionGame(
       ? playableCapitalName(current.division.code)
       : current.division.name
     : null;
+  const twinNames = current && current.kind === "division"
+    ? identicalFlagTwins(current.division.code)
+        .map((code) => divisions.find((d) => d.code === code)?.name)
+        .filter((name): name is string => !!name)
+    : [];
   const revealNote = current
     ? current.kind === "capital"
       ? `capital of ${current.division.name}`
       : sharedRef.current.has(current.division.code)
       ? `also flown by its capital, ${playableCapitalName(current.division.code) ?? ""} — either answer counts`
+      : twinNames.length > 0
+      ? `${twinNames.join(" and ")} ${twinNames.length > 1 ? "fly" : "flies"} the same flag — either answer counts`
       : null
     : null;
 

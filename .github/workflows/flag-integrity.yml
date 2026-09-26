@@ -61,6 +61,9 @@ on:
       - "src/data/cityTerritories.ts"
       - "scripts/check-capital-flags.mjs"
       - "scripts/check-capital-subdivision-collision.mjs"
+      - "scripts/check-identical-subdivision-flags.mjs"
+      - "src/data/identicalSubdivisionFlags.ts"
+      - "src/hooks/useSubdivisionGame.ts"
       - "scripts/build-capital-details.mjs"
       - "scripts/check-hierarchy-type-colors.mjs"
       # Flag Master's symbol packs — the decks are derived from the national-symbols
@@ -321,6 +324,10 @@ jobs:
 
       - name: Verify no capital-city flag duplicates its own subdivision's flag
         run: node scripts/check-capital-subdivision-collision.mjs
+
+      # A quiz flag shared by two divisions must accept both answers.
+      - name: Verify every near-identical pair of division flags is declared or reviewed
+        run: node scripts/check-identical-subdivision-flags.mjs
 
       # Needs sharp, so it lives here rather than in check-proportions.
       - name: Verify no raster flag has a transparent border
