@@ -31,7 +31,7 @@ These are **1,321 record instances**, not 1,321 universally certified country re
 
 ### F77 — Global Peace Index gives Honduras Cambodia's rank
 
-**Confirmed, medium.** The current app gives Honduras score **2.075**, rank **96**, and movement **+27**. The publisher's 2026 ranking gives Cambodia **96** and Honduras **97**, despite both scores rounding to 2.075. Preserve publisher rank **97** for Honduras; do not re-rank rounded scores or infer a tie the publisher does not show. The other 159 app ranks match. Evidence: [Institute for Economics & Peace, Global Peace Index 2026](https://www.economicsandpeace.org/wp-content/uploads/2026/06/Global-Peace-Index-2026-Report.pdf), PDF pages 12–13, and the GPI ledger.
+**Confirmed, medium.** The current app gives Honduras score **2.075**, rank **96**, and movement **+13**. The publisher's 2026 ranking gives Cambodia **96** and Honduras **97**, despite both scores rounding to 2.075. Preserve publisher rank **97** for Honduras; do not re-rank rounded scores or infer a tie the publisher does not show. The other 159 app ranks match. Evidence: [Institute for Economics & Peace, Global Peace Index 2026](https://www.economicsandpeace.org/wp-content/uploads/2026/06/Global-Peace-Index-2026-Report.pdf), PDF pages 12–13, and the GPI ledger.
 
 ## Earlier reconciliation — application revision db3ba05
 
