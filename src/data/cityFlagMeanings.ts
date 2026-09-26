@@ -5118,6 +5118,21 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
     ],
   },
 
+  "ID-SA": {
+    description:
+      "Manado’s flag is white, bearing the city’s coat of arms. On the shield, a Manguni owl in flight stands " +
+      "for the native culture of the Minahasa people. The coconut palms carry dates in their counts: the right " +
+      "palm’s fronds and leaves stand for the Proclamation of Indonesia’s independence in 1945, and the rings of " +
+      "the trunks, the two palms and the left palm’s fronds, with the red-and-white flags on either side, stand " +
+      "for the Red-and-White Action of 14 February 1946, which defended the sovereignty of the proclaimed " +
+      "republic. Each palm’s five nuts stand for Pancasila. The sea marks Manado as a port and trading centre, " +
+      "and the mountains its terrain. The motto, Si Tou Timou Tumou Tou, means “people live to humanise others”.",
+    sources: [
+      { title: "Ini Arti Bentuk dan Warna Lambang Kota Manado — iNews Sulut, citing the Manado city government (Indonesian)", url: "https://www.inews.id/regional/sulut/ini-arti-bentuk-dan-warna-lambang-kota-manado" },
+      { title: "North Sulawesi city flags — Flags of the World", url: "https://www.crwflags.com/fotw/flags/id-sa-c.html" },
+    ],
+  },
+
   "ID-JA": {
     description:
       "Jambi’s emblem, on a sky-blue shield, carries the Keris Siginjai — the heirloom dagger whose holder was " +
@@ -6995,17 +7010,6 @@ export const CITY_FLAG_MEANINGS: Record<string, FlagMeaningData> = {
       "the first of the Roman Empire. A mural crown tops the shield.",
     sources: [
       { title: "Municipality of Beirut — Flags of the World (FOTW)", url: "https://www.crwflags.com/fotw/flags/lb-be-be.html" },
-    ],
-  },
-
-  "LI-08": {
-    description:
-      "Vaduz’s flag carries the municipality’s colours, red and white, drawn from its coat of arms. Those arms are " +
-      "quartered: a red princely hat on silver, for the princely residence Vaduz became, and a silver " +
-      "church-banner on red, recalling the Counts of Werdenberg-Sargans, who laid the foundation of " +
-      "Liechtenstein’s statehood in 1342.",
-    sources: [
-      { title: "Coat of arms and flag — Gemeinde Vaduz (official)", url: "https://www.vaduz.li/en/vaduz/portrait/coat-of-arms-and-flag" },
     ],
   },
 

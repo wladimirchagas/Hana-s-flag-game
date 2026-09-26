@@ -11070,11 +11070,15 @@ export const FLAG_MEANINGS: Record<string, FlagMeaning> = {
 
   "LI-11": {
     description:
-      "The commune arms on the flag: a quartered shield with a red princely hat (Fürstenhut) on silver " +
-      "for Vaduz’s role as the prince’s residence and capital, and the silver Montfort church banner on " +
-      "red — inherited from the Werdenberg counts — in the other two quarters.",
+      "Vaduz flies three stripes, red, white and red, in the proportions 1:1:2, usually as a long " +
+      "vertical banner. The flag was granted in 1932 together with the municipality’s first coat of arms, " +
+      "whose red field with a white bar it follows. When Prince Franz Joseph II granted new arms on 26 July " +
+      "1978, he confirmed the flag unchanged. The new arms are quartered: a red princely hat on silver " +
+      "stands for the princely residence, and a silver church flag on red commemorates the Counts of " +
+      "Werdenberg-Sargans, who laid the foundation stone of the country’s statehood in 1342.",
     sources: [
-      { title: "Vaduz — Wikipedia (German)", url: "https://de.wikipedia.org/wiki/Vaduz" },
+      { title: "Coat of arms and flag — Gemeinde Vaduz (official)", url: "https://www.vaduz.li/en/vaduz/portrait/coat-of-arms-and-flag" },
+      { title: "Vaduz (Liechtenstein) — Flags of the World", url: "https://www.crwflags.com/fotw/flags/li-vz.html" },
     ],
   },
 

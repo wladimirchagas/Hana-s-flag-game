@@ -757,7 +757,6 @@ export const SUBDIVISION_CAPITALS: Readonly<Record<string, City>> = {
 
   // ── LI ──
   "LI-07": {"name":"Schaan","lon":9.524,"lat":47.1743},
-  "LI-08": {"name":"Vaduz","lon":9.5222,"lat":47.1406},
 
   // ── LK ──
   "LK-22": {"name":"Matale","lon":80.6167,"lat":7.4667},

@@ -133,6 +133,24 @@ async function main() {
     }
   }
 
+  // 1c. Wrong-capital guard: a capital Wikidata gets wrong (its P36 names another
+  // place — scripts/data/wikidata-capital-rejected.json) must not be back in the
+  // capital card data or the map-marker fallback.
+  const rejectedCapitals = JSON.parse(readFileSync(join(ROOT, "scripts", "data", "wikidata-capital-rejected.json"), "utf8"));
+  const generated = {
+    "capitalDetails.ts": readFileSync(join(ROOT, "src", "data", "capitalDetails.ts"), "utf8"),
+    "subdivisionCapitals.ts": readFileSync(join(ROOT, "src", "data", "subdivisionCapitals.ts"), "utf8"),
+  };
+  for (const [code, rej] of Object.entries(rejectedCapitals)) {
+    if (code.startsWith("_")) continue;
+    if (!rej.capital || !rej.reason) errors.push(`  wikidata-capital-rejected.json: ${code} needs both "capital" and "reason".`);
+    for (const [file, src] of Object.entries(generated)) {
+      if (src.includes(`${JSON.stringify(code)}: {"name":${JSON.stringify(rej.capital)}`)) {
+        errors.push(`  ${code} → "${rej.capital}" is back in ${file}, but it is not this subdivision's capital: ${rej.reason}`);
+      }
+    }
+  }
+
   // 2. National-flag collision guard.
   const natCache = new Map();
   const rows = [];

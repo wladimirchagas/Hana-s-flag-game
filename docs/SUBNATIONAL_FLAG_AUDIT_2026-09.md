@@ -399,6 +399,33 @@ and article 322 makes Bogotá a capital district. Type overrides in `build-subdi
 **Moscow and Saint Petersburg are city-territories.** They are federal cities under article 65 of
 the Russian Constitution, so they join `CITY_TERRITORY_CODES`.
 
+## Batch 6a — wrong capitals found by the capital-flag scan (2026-09-26)
+
+**North Sulawesi's capital was Gorontalo; it is Manado.** Wikidata's North Sulawesi item (Q5068)
+lists two capitals. One is Gorontalo, the capital of the province that split off in 2000. The
+generator picked it, so ID-SA carried Gorontalo's population and Gorontalo City's flag, and so did
+the quiz. The Learn panel's name check hid it there, because the map already said Manado.
+- The generator now pins ID-SA to Manado (Q15847) and rejects the Gorontalo flag.
+- Manado's own flag, the city arms on white, is bundled from Commons ("City Flag of Manado.png",
+  public domain in Indonesia). It matches FOTW's image on
+  [id-sa-c](https://www.crwflags.com/fotw/flags/id-sa-c.html).
+- Population: 462,658, BPS's mid-2025 estimate (Kota Manado Dalam Angka 2026, as cited by English
+  Wikipedia). The 2020 census gave 451,916.
+- The flag's explainer comes from the city government's account of its arms, as published by
+  iNews Sulut (12 September 2022). The official page itself refuses automated reads.
+
+**Schellenberg's capital was Vaduz.** Wikidata's Schellenberg item (Q49655) gives Vaduz as its
+capital, although Vaduz is a different municipality (LI-11). The app showed Vaduz as
+Schellenberg's capital, with Vaduz's flag and a map marker at Vaduz.
+- The capital card, the flag and the map marker are gone.
+- The new `scripts/data/wikidata-capital-rejected.json` records the rejection. Both capital
+  generators honour it, and `check-capital-flags.mjs` fails if the capital comes back.
+
+**Vaduz's own explainer described arms that are not on its flag.** The flag is three stripes,
+red, white and red (1:1:2). The municipality's official page says the flag was granted in 1932
+with the first arms and confirmed unchanged when new arms were granted in 1978. FOTW explains that
+the stripes follow the first arms' red field with its white bar. The explainer now says that.
+
 ## Follow-ups (later batches)
 
 ### Capital flags that match another place's flag (found in batch 5)
@@ -411,10 +438,31 @@ country. It found 46 identical pairs, in three groups:
 - **Different places with the same design.** Probably right, but each needs checking: Genoa and
   Milan (St George's cross), Warsaw and Łódź (yellow over red), Munich and Baden-Württemberg
   (black and gold), and several Italian provincial capitals with the same bicolour.
-- **Probably wrong data.** The capital of North Sulawesi (ID-SA) is recorded as Gorontalo; it is
-  Manado. Schellenberg (LI-08) has Vaduz as its capital. České Budějovice (CZ-JC) shows Prague's
-  flag. Other pairs to check: Lons-le-Saunier and Grenoble, Taza and Beni Mellal, Caserta and
-  Catania, Brescia and Isernia, Ibagué and Bolívar, Zamora and Esmeraldas.
+- **Wrong data.** North Sulawesi and Schellenberg were fixed in batch 6a. Taza and Beni Mellal
+  both use the Fes *province* flag; see Morocco below.
+- **Checked and right.** České Budějovice's flag is yellow over red, like Prague's (Czech
+  Wikipedia). Lons-le-Saunier's is red and yellow (FOTW fr-39-ls, 2021).
+- **Still to check.** Grenoble's red-and-yellow file on Commons has no source for its design, and
+  FOTW (fr-38-gr, 2001) describes the flag as red and white. Also Caserta and Catania, Brescia and
+  Isernia, Ibagué and Bolívar, and Zamora and Esmeraldas.
+
+### The quiz does not check capital names (found in batch 6a)
+The Learn panel shows a capital's flag only when the capital card and the map name the same city.
+The capital quiz uses the card's name alone. So each of the 25 mismatches logged in
+`capital-meaning-omitted.txt` reaches the quiz with the card's city. Examples: Singaraja for Bali,
+Bau-Bau for Southeast Sulawesi, Pahandut for Central Kalimantan, and Trogen for Appenzell
+Ausserrhoden. Some are spelling only (Gent/Ghent, Luzern/Lucerne, Dumyat/Damietta). Others are
+real disagreements, and sometimes the map is the one that is out of date: South Kalimantan's
+capital moved from Banjarmasin to Banjarbaru in 2022. This is the capital-name reconciliation
+below, and the quiz should apply the same check.
+
+### Morocco (found in batch 6a)
+The map has the 16 regions abolished in 2015, under the pre-2015 ISO codes. The capital data was
+resolved against the 2015 codes, so MA-02 shows Oujda (for Gharb-Chrarda-Béni Hssen), MA-05 Beni
+Mellal (for Fès-Boulemane), and so on. Every Moroccan capital flag is a *province* flag
+(Kénitra, Fès, Settat, …), not a city's. This needs one structural fix, not per-code patches.
+
+
 
 To reproduce the list, run the measurement in `check-identical-subdivision-flags.mjs` with each
 country's capital flags from `capitalFlags.ts` added to its set.

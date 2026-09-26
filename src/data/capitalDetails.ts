@@ -1423,7 +1423,7 @@ export const CAPITAL_DETAILS: Readonly<Record<string, CapitalDetail>> = {
   "ID-PA": {"name":"Jayapura","population":413283,"year":2015,"basis":"estimate"},
   "ID-PB": {"name":"Manokwari","population":136302,"year":2010,"basis":"estimate"},
   "ID-RI": {"name":"Pekanbaru","population":983356,"year":2020,"basis":"estimate"},
-  "ID-SA": {"name":"Gorontalo","population":198539,"year":2020,"basis":"census"},
+  "ID-SA": {"name":"Manado","population":462658,"year":2025,"basis":"estimate"},
   "ID-SB": {"name":"Padang","population":909040,"year":2020,"basis":"census"},
   "ID-SG": {"name":"Bau-Bau","population":331013,"year":2015,"basis":"estimate"},
   "ID-SN": {"name":"Makassar","population":1338663,"year":2010,"basis":"estimate"},
@@ -1896,7 +1896,6 @@ export const CAPITAL_DETAILS: Readonly<Record<string, CapitalDetail>> = {
 
   // ── LI ──
   "LI-07": {"name":"Schaan"},
-  "LI-08": {"name":"Vaduz","population":5668,"year":2019,"basis":"estimate"},
 
   // ── LK ──
   "LK-11": {"name":"Colombo","population":647557,"year":2025,"basis":"estimate"},

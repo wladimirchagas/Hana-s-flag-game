@@ -136,6 +136,11 @@ const CAPITAL_CITY_QIDS = {
   "CN-HK": "Q8646", // Hong Kong (self — city-territory)
   "CN-MO": "Q14773", // Macau (self — city-territory)
   "MM-18": "Q37400", // Naypyidaw Union Territory → Naypyidaw (self — city-territory)
+  // North Sulawesi's item (Q5068) carries two P36 values, Manado and Gorontalo.
+  // Gorontalo is the capital of the province split off in 2000 (ID-GO), so the
+  // P300 pass named it as North Sulawesi's capital and bundled Gorontalo City's
+  // flag. Manado is its capital (en.wikipedia "Manado"). 2026-09 audit.
+  "ID-SA": "Q15847", // North Sulawesi → Manado
 };
 
 /**
@@ -188,6 +193,7 @@ const NO_ISO_CODE_TERRITORY_QIDS = {
  * the flag). The national-flag guard below still applies to overrides.
  */
 const CAPITAL_FLAG_SOURCE_OVERRIDES = {
+  "ID-SA": "City Flag of Manado.png", // Manado — the city arms on white ("Bendera Kota Manado", PD Indonesia); matches FOTW id-sa-c.html. Wikidata's Manado item has no P41. Replaces Gorontalo City's flag, see capital-flag-rejected.json.
   "PT-13": "Flag of Porto.svg", // Porto (Porto district) — municipal flag; the city item's P41 is Portugal's national flag
   "AU-NSW": "Flag of the City of Sydney.svg", // Sydney (New South Wales) — City of Sydney banner of arms; the "Sydney" item has no P41
   "AU-WA": "Flag of Perth.svg", // Perth (Western Australia) — official City of Perth flag (St George cross + black swan; perth.wa.gov.au); no P41
@@ -235,6 +241,15 @@ const SEAT_DISTRICT_NOT_A_CAPITAL = {
   "KR-26": "Yeonje District — the district of Busan where City Hall stands",
 };
 
+/**
+ * Subdivision capitals Wikidata gets wrong (a P36 that names another place).
+ * Shared with build-subdivision-capitals.mjs, so the capital card and the map
+ * marker drop the same wrong city; check-capital-flags.mjs fails if one returns.
+ */
+const REJECTED_WIKIDATA_CAPITALS = JSON.parse(
+  readFileSync(join(__dirname, "data", "wikidata-capital-rejected.json"), "utf8"),
+);
+
 const REJECTED_CAPITAL_FLAGS = JSON.parse(
   readFileSync(join(__dirname, "data", "capital-flag-rejected.json"), "utf8"),
 );
@@ -252,6 +267,10 @@ const REJECTED_CAPITAL_FLAGS = JSON.parse(
  * missing figure (and would correct a stale one) and survives every regen.
  */
 const CAPITAL_POPULATION_OVERRIDES = {
+  // Manado (North Sulawesi) — BPS mid-2025 estimate, Kota Manado Dalam Angka 2026
+  // (Katalog-BPS 1102001.7171), as cited by en.wikipedia "Manado"; the 2020
+  // census gave 451,916. Wikidata's latest dated figure is 461,636 (2015).
+  "ID-SA": { population: 462658, year: 2025, basis: "estimate", source: "BPS, Kota Manado Dalam Angka 2026 (mid-2025 estimate)" }, // Manado
   // Shah Alam (Selangor / MBSA) — DOSM 2020 Census, local-authority total. Its
   // Wikidata population statement is undated, so the dated-only pass drops it.
   // Same lineage as George Town (MY-07, 794,313 / 2020 census), which the
@@ -658,6 +677,17 @@ async function main() {
     const had = details.delete(code);
     delete flagSources[code];
     if (had) console.log(`  ✗ ${code} → ${why}; not a capital`);
+  }
+
+  // A capital Wikidata gets wrong (see REJECTED_WIKIDATA_CAPITALS): drop its
+  // name, population and flag, whichever layer above produced them.
+  for (const [code, rej] of Object.entries(REJECTED_WIKIDATA_CAPITALS)) {
+    if (code.startsWith("_")) continue;
+    if (details.get(code)?.name === rej.capital) {
+      details.delete(code);
+      delete flagSources[code];
+      console.log(`  ✗ ${code} → ${rej.capital} is not this subdivision's capital; dropped`);
+    }
   }
 
   // Drop any flag verified NOT to be the capital's own (a district's or a
