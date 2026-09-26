@@ -8,7 +8,7 @@ This supplements [the original audit](LEARN_FACTUAL_AUDIT_2026-09-13.md) and [th
 
 **Progress estimate: approximately 10% complete / 90% remaining.** This estimates the work required for universal independent verification, not the percentage of a fully enumerated atomic-claim inventory. The completed comparisons below do not establish that all narratives, boundaries, historical periods, logos, licences, or metadata are correct.
 
-Latest pinned application revision: **`e3c1a35e2d7930630c616be12c6510576ded0f6a`**. Complete recursive Git trees establish **521 changed paths (including 149 removals)** since `11e30bb`; GitHub's comparison response was capped at 300 files and is not a complete inventory. The full delta still requires substantive review. Current deployment has not been independently rechecked; previous live observations remain pinned to their observed build.
+Latest pinned application revision: **`e3c1a35e2d7930630c616be12c6510576ded0f6a`**. Complete recursive Git trees establish **521 added/modified paths plus 149 removals (670 paths total)** since `11e30bb`; GitHub's comparison response was capped at 300 files and is not a complete inventory. The full delta still requires substantive review. Current deployment has not been independently rechecked; previous live observations remain pinned to their observed build.
 
 ### Primary-source comparisons completed in this continuation
 
